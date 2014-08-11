@@ -1,2 +1,6 @@
 # Ignore EE config and database files
 wp-config.php
+
+# Ignore Sass-Cache
+frontend/stylesheets/.sass-cache
+frontend/stylesheets/.sass-cache/*
