@@ -11,7 +11,7 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base: #4c4c4c;
+$gray-base: #212121;
 
 $gray-darker:            lighten($gray-base, 0%) !default; // #222
 $gray-dark:              lighten($gray-base, 21%) !default;   // #333
@@ -46,7 +46,7 @@ $brand-colors-sufix-list: primary, success, info, warning, danger;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $gray-darker !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -58,7 +58,7 @@ $link-hover-color:      darken($link-color, 15%) !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  "futura-pt", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-alt:         "alt-name", $font-family-sans-serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
@@ -82,8 +82,8 @@ $line-height-base:        1.428571429 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    inherit !default;
-$headings-font-weight:    500 !default;
+$headings-font-family:    $font-family-sans-serif !default;
+$headings-font-weight:    700 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
@@ -121,7 +121,7 @@ $line-height-small:         1.5 !default;
 
 $border-radius-base:        3px !default;
 $border-radius-large:       5px !default;
-$border-radius-small:       1px !default;
+$border-radius-small:       3px !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;
