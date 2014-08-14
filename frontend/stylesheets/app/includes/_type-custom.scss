@@ -12,6 +12,19 @@ html {
 // MAIN TEXT
 
 
+// LINE HEIGHTS
+.lh-sm {
+  line-height: 19px;
+}
+
+.lh-md {
+  line-height: 21px;
+}
+
+.lh-lg {
+  line-height: 28px;
+}
+
 // TEXT IN REMS
 h1, .h1 { font-size: rem($font-size-h1); }
 h2, .h2 { font-size: rem($font-size-h2); }
@@ -88,6 +101,15 @@ p, .p, ul { font-size: rem($font-size-base); }
     }
   }
   color: $brand-primary!important;
+}
+.text-secondary {
+  a {
+    color: $brand-secondary!important;
+    &:hover {
+      color: darken($brand-secondary, 21%);
+    }
+  }
+  color: $brand-secondary!important;
 }
 .text-warning {
   a {

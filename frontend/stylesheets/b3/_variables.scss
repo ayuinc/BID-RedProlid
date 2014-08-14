@@ -30,7 +30,7 @@ $brand-secondary:       #e94472 !default; // Fuccsia
 $brand-inverse: 				#081A26 !default;
 
 // PANEL COLORS
-$panel-bg: 							#c4c09c !default;
+$panel-bg: 							lighten(#c3bf9b, 21%) !default;
 
 $grayscale-list: $gray-darker, $gray-dark, $gray, $gray-light, $gray-lighter;
 $brand-colors-list: $brand-primary, $brand-success, $brand-info, $brand-warning, $brand-danger;

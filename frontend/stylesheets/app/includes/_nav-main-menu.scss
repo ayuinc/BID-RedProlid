@@ -25,7 +25,7 @@
 						color: white;
 						padding: 12px 7px;
 						padding: rem(12) rem(7);
-						@include book;
+						@include light;
 						height: 42px;
 					}
 					i {
@@ -72,6 +72,7 @@
 					background: darken($brand-primary, 7%);
 					position: absolute;
 					display: none;
+					z-index: 1000;
 					li {
 						float: none;
 						position: relative;
