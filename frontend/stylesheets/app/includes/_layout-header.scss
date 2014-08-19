@@ -1,0 +1,9 @@
+header {
+	@include box-shadow(0 3px 21px 3px $gray-light);
+	.logo {
+		img {
+			width: 210px;
+			height: auto;
+		}
+	}
+}

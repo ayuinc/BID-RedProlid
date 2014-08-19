@@ -1,0 +1,6 @@
+header,
+section,
+footer {
+	padding: $grid-gutter-width 0;
+	padding: rem($grid-gutter-width) 0;
+}

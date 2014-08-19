@@ -1,0 +1,120 @@
+#nav-main-menu {
+	div {
+		> ul {
+			background: $brand-secondary;
+			@include clearfix;
+			height: 42px;
+			li {
+				float: left;
+				position: relative;
+				a {
+					display: block;
+					@include clearfix;
+					background: $brand-secondary;
+					border-right: 2px solid darken($brand-secondary, 7%);				
+					&:hover {
+						text-decoration: none;
+						background: $brand-primary;
+					}
+					i,
+					span {
+						float: left;
+						display: block;
+					}
+					span {
+						color: white;
+						padding: 12px 7px;
+						padding: rem(12) rem(7);
+						@include light;
+						height: 42px;
+					}
+					i {
+						width: 42px;
+						height: 42px;
+					}
+					&.home {
+						i {
+							background: url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px 0px;
+						}
+					}
+					&.red-prolid {
+						i {
+							background: url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -43px;
+						}
+					}
+					&.dtl {
+						i {
+							background: url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -85px;
+						}
+					}
+					&.enterate {
+						i {
+							background: url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -127px;
+						}
+					}
+					&.concursos {
+						i {
+							background: url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -169px;
+						}
+					}
+					&.charla-cafe {
+						i {
+							background: url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -210px;
+						}
+					}
+				}
+				&:last-child {
+					a {
+						border: none;
+					}
+				}
+				> ul {
+					background: darken($brand-primary, 7%);
+					position: absolute;
+					display: none;
+					z-index: 1000;
+					li {
+						float: none;
+						position: relative;
+						a {
+							color: white;
+							background: darken($brand-primary, 7%);
+							display: block;
+							padding: 7px;
+							border-bottom: 1px solid $brand-primary;
+							border-right: 0;
+							&:hover {
+								background: darken($brand-primary, 14%);
+							}
+							span {
+								height: 0;
+							}
+						}
+						ul {
+							min-height: 0;
+							width: 100%;
+							position: absolute;
+							left: 100%;
+							top: 0;
+						}
+					}
+				}
+				&:hover {
+					> ul {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+	form {
+		input,
+		button {
+			height: 42px;
+		}
+		button {
+			width: 42px;
+			background: $brand-primary url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px;
+		}
+	}
+}
