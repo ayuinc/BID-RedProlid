@@ -1,0 +1,32 @@
+.dtl-content {
+	p {
+		line-height: 28px;
+		color: $gray-dark;
+	}
+}
+
+.dtl-custom-heading {
+	width: 100%;
+	padding-left: 112px;
+	padding-top: 21px;
+	div {
+		width: 91px;
+		height: 91px;
+		position: absolute;
+		left: 14px;
+		top: 28px; 
+	}
+	h1 {
+		@include bold;
+	}
+} 
+
+.dtl-path {
+	background: url(../assets/img/dtl-dtl-path.png) no-repeat center center;
+	height: 397px;
+	background-size: cover;
+	a {
+		display: block;
+		height: 397px;
+	}
+}
