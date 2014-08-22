@@ -5665,6 +5665,13 @@ html {
     html {
       font-size: 12px; } }
 
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+p, strong, em, small, ul, ol, li {
+  line-height: 28px;
+  line-height: 2rem;
+  color: #575757; }
+
 .lh-sm {
   line-height: 19px; }
 
@@ -5825,10 +5832,39 @@ footer {
   padding: 28px 0;
   padding: 2rem 0; }
 
+.with-shadow {
+  padding-bottom: 56px;
+  background: url(../assets/img/shadow-container.png) no-repeat center bottom; }
+
+#hero-unit {
+  padding-top: 0; }
+  #hero-unit .content {
+    position: relative;
+    min-height: 350px;
+    background: #d0cdb1;
+    margin-bottom: 56px;
+    margin-bottom: 4rem; }
+    #hero-unit .content .network-right {
+      position: absolute;
+      right: 0;
+      top: -21px; }
+
 footer {
   background: #212121;
   margin-top: 35px;
   position: relative; }
+
+.to-top {
+  position: relative; }
+  .to-top a {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: -56px; }
+    .to-top a img {
+      width: 52px;
+      height: auto; }
 
 header {
   -webkit-box-shadow: 0 3px 21px 3px #c2c2c2;
@@ -6010,6 +6046,20 @@ header {
     font-size: 21px;
     font-size: 1.5rem; }
 
+.red-prolid-grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+.red-prolid-grid li {
+  float: left;
+  width: 19.95%;
+  text-align: center;
+  padding: 14px;
+  padding: 1rem; }
+  .red-prolid-grid li p {
+    margin-top: 14px;
+    margin-top: 1rem; }
+
 .dtl-content p {
   line-height: 28px;
   color: #575757; }
@@ -6017,7 +6067,8 @@ header {
 .dtl-custom-heading {
   width: 100%;
   padding-left: 112px;
-  padding-top: 21px; }
+  padding-top: 21px;
+  position: absolute; }
   .dtl-custom-heading div {
     width: 91px;
     height: 91px;
@@ -6036,3 +6087,77 @@ header {
   .dtl-path a {
     display: block;
     height: 397px; }
+
+.sumate-al-debate .container {
+  -webkit-box-shadow: inset -12px 5px 7px 3px #e5e5e5;
+  -moz-box-shadow: inset -12px 5px 7px 3px #e5e5e5;
+  box-shadow: inset -12px 5px 7px 3px #e5e5e5;
+  position: relative;
+  min-height: 350px;
+  padding-bottom: 35px;
+  padding-bottom: 2.5rem; }
+.sumate-al-debate .ribbon {
+  position: absolute;
+  top: -8px;
+  left: 35px; }
+.sumate-al-debate .title {
+  margin-bottom: 21px; }
+  .sumate-al-debate .title p {
+    color: #c2c2c2;
+    margin-bottom: 0; }
+  .sumate-al-debate .title span {
+    display: block;
+    color: #ed7133; }
+.sumate-al-debate .content {
+  text-align: justify; }
+  .sumate-al-debate .content p {
+    color: #575757;
+    line-height: 28px; }
+  .sumate-al-debate .content strong {
+    font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 28px;
+    color: #575757; }
+.sumate-al-debate .footer {
+  padding: 35px 0;
+  padding: 2.5rem 0;
+  text-align: center;
+  border-bottom: 2px dotted #e5e5e5; }
+.sumate-al-debate .debates-anteriores {
+  background: #ebeade;
+  padding: 21px;
+  color: #575757; }
+
+#dtl-grid ul:after {
+  content: "";
+  display: table;
+  clear: both; }
+#dtl-grid ul li {
+  width: 33.28%;
+  float: left;
+  padding: 21px;
+  padding: 1.5rem; }
+  #dtl-grid ul li a {
+    display: block; }
+    #dtl-grid ul li a img {
+      width: 100%;
+      height: auto; }
+    #dtl-grid ul li a:hover {
+      text-decoration: none; }
+    #dtl-grid ul li a .title {
+      position: relative;
+      padding-left: 84px; }
+      #dtl-grid ul li a .title:after {
+        content: "";
+        display: table;
+        clear: both; }
+      #dtl-grid ul li a .title img {
+        position: absolute;
+        top: -42px;
+        left: 0;
+        z-index: 30;
+        width: 77px;
+        height: auto; }
+      #dtl-grid ul li a .title hr {
+        border-top: 2px dotted #c2c2c2; }
