@@ -39,8 +39,9 @@
 						right: 0;
 						background-color: $brand-secondary;
 						top: 14px;
-						width: 42px;
-						height: 42px;
+					}
+					&.icon-lg {
+						width: 84px;
 					}
 				}
 			}
