@@ -5619,112 +5619,6 @@ input[type="button"].btn-block {
 /*========================================
 =            CSS3 ANIMATIONS             =
 ========================================*/
-/*!
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license
-
-Copyright (c) 2013 Daniel Eden
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
-.ad-0 {
-  -webkit-animation-delay: 0s;
-  -moz-animation-delay: 0s;
-  animation-delay: 0s; }
-
-.ad-2 {
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  animation-delay: 0.2s; }
-
-.ad-4 {
-  -webkit-animation-delay: 0.4s;
-  -moz-animation-delay: 0.4s;
-  animation-delay: 0.4s; }
-
-.ad-6 {
-  -webkit-animation-delay: 0.6s;
-  -moz-animation-delay: 0.6s;
-  animation-delay: 0.6s; }
-
-.ad-8 {
-  -webkit-animation-delay: 0.8s;
-  -moz-animation-delay: 0.8s;
-  animation-delay: 0.8s; }
-
-.ad-10 {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s; }
-
-.ad-12 {
-  -webkit-animation-delay: 1.2s;
-  -moz-animation-delay: 1.2s;
-  animation-delay: 1.2s; }
-
-.ad-14 {
-  -webkit-animation-delay: 1.4s;
-  -moz-animation-delay: 1.4s;
-  animation-delay: 1.4s; }
-
-.ad-16 {
-  -webkit-animation-delay: 1.6s;
-  -moz-animation-delay: 1.6s;
-  animation-delay: 1.6s; }
-
-.ad-18 {
-  -webkit-animation-delay: 1.8s;
-  -moz-animation-delay: 1.8s;
-  animation-delay: 1.8s; }
-
-.ad-20 {
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  animation-delay: 2s; }
-
-.ad-22 {
-  -webkit-animation-delay: 2.2s;
-  -moz-animation-delay: 2.2s;
-  animation-delay: 2.2s; }
-
-.ad-24 {
-  -webkit-animation-delay: 2.4s;
-  -moz-animation-delay: 2.4s;
-  animation-delay: 2.4s; }
-
-.ad-26 {
-  -webkit-animation-delay: 2.6s;
-  -moz-animation-delay: 2.6s;
-  animation-delay: 2.6s; }
-
-.ad-28 {
-  -webkit-animation-delay: 2.8s;
-  -moz-animation-delay: 2.8s;
-  animation-delay: 2.8s; }
-
-.ad-30 {
-  -webkit-animation-delay: 3s;
-  -moz-animation-delay: 3s;
-  animation-delay: 3s; }
-
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-.animated.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
-
-.animated.hinge {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s; }
-
 /*========================================
 =             APP CUSTOM                 =
 ========================================*/
@@ -5770,6 +5664,13 @@ html {
   @media only screen and (max-width: 480px) {
     html {
       font-size: 12px; } }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+p, strong, em, small, ul, ol, li {
+  line-height: 28px;
+  line-height: 2rem;
+  color: #575757; }
 
 .lh-sm {
   line-height: 19px; }
@@ -5931,10 +5832,39 @@ footer {
   padding: 28px 0;
   padding: 2rem 0; }
 
+.with-shadow {
+  padding-bottom: 56px;
+  background: url(../assets/img/shadow-container.png) no-repeat center bottom; }
+
+#hero-unit {
+  padding-top: 0; }
+  #hero-unit .content {
+    position: relative;
+    min-height: 350px;
+    background: #d0cdb1;
+    margin-bottom: 56px;
+    margin-bottom: 4rem; }
+    #hero-unit .content .network-right {
+      position: absolute;
+      right: 0;
+      top: -21px; }
+
 footer {
   background: #212121;
   margin-top: 35px;
   position: relative; }
+
+.to-top {
+  position: relative; }
+  .to-top a {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: -56px; }
+    .to-top a img {
+      width: 52px;
+      height: auto; }
 
 header {
   -webkit-box-shadow: 0 3px 21px 3px #c2c2c2;
@@ -5998,7 +5928,8 @@ header {
       background: #e85b14;
       position: absolute;
       display: none;
-      z-index: 1000; }
+      z-index: 1000;
+      min-width: 210px; }
       #nav-main-menu div > ul li > ul li {
         float: none;
         position: relative; }
@@ -6073,9 +6004,9 @@ header {
           z-index: 30;
           right: 0;
           background-color: #e94472;
-          top: 14px;
-          width: 42px;
-          height: 42px; }
+          top: 14px; }
+        .panel.panel-custom .panel-heading ul li.icon-lg {
+          width: 84px; }
   .panel.panel-custom .panel-body {
     padding: 21px 0;
     min-height: 350px; }
@@ -6115,3 +6046,119 @@ header {
   .events-calendar-placeholder .month {
     font-size: 21px;
     font-size: 1.5rem; }
+
+.red-prolid-grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+.red-prolid-grid li {
+  float: left;
+  width: 19.95%;
+  text-align: center;
+  padding: 14px;
+  padding: 1rem; }
+  .red-prolid-grid li p {
+    margin-top: 14px;
+    margin-top: 1rem; }
+
+.dtl-content p {
+  line-height: 28px;
+  color: #575757; }
+
+.dtl-custom-heading {
+  width: 100%;
+  padding-left: 112px;
+  padding-top: 21px;
+  position: absolute; }
+  .dtl-custom-heading div {
+    width: 91px;
+    height: 91px;
+    position: absolute;
+    left: 14px;
+    top: 28px; }
+  .dtl-custom-heading h1 {
+    font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+    font-weight: 700;
+    font-style: normal; }
+
+.dtl-path {
+  background: url(../assets/img/dtl-dtl-path.png) no-repeat center center;
+  height: 397px;
+  background-size: cover; }
+  .dtl-path a {
+    display: block;
+    height: 397px; }
+
+.sumate-al-debate .container {
+  -webkit-box-shadow: inset -12px 5px 7px 3px #e5e5e5;
+  -moz-box-shadow: inset -12px 5px 7px 3px #e5e5e5;
+  box-shadow: inset -12px 5px 7px 3px #e5e5e5;
+  position: relative;
+  min-height: 350px;
+  padding-bottom: 35px;
+  padding-bottom: 2.5rem; }
+.sumate-al-debate .ribbon {
+  position: absolute;
+  top: -8px;
+  left: 35px; }
+.sumate-al-debate .title {
+  margin-bottom: 21px; }
+  .sumate-al-debate .title p {
+    color: #c2c2c2;
+    margin-bottom: 0; }
+  .sumate-al-debate .title span {
+    display: block;
+    color: #ed7133; }
+.sumate-al-debate .content {
+  text-align: justify; }
+  .sumate-al-debate .content p {
+    color: #575757;
+    line-height: 28px; }
+  .sumate-al-debate .content strong {
+    font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 28px;
+    color: #575757; }
+.sumate-al-debate .footer {
+  padding: 35px 0;
+  padding: 2.5rem 0;
+  text-align: center;
+  border-bottom: 2px dotted #e5e5e5; }
+.sumate-al-debate .debates-anteriores {
+  background: #ebeade;
+  padding: 21px;
+  color: #575757; }
+
+#dtl-grid ul:after {
+  content: "";
+  display: table;
+  clear: both; }
+#dtl-grid ul li {
+  width: 33.28%;
+  float: left;
+  padding: 21px;
+  padding: 1.5rem; }
+  #dtl-grid ul li a {
+    display: block; }
+    #dtl-grid ul li a img {
+      width: 100%;
+      height: auto; }
+    #dtl-grid ul li a:hover {
+      text-decoration: none; }
+    #dtl-grid ul li a .title {
+      position: relative;
+      padding-left: 84px; }
+      #dtl-grid ul li a .title:after {
+        content: "";
+        display: table;
+        clear: both; }
+      #dtl-grid ul li a .title img {
+        position: absolute;
+        top: -42px;
+        left: 0;
+        z-index: 30;
+        width: 77px;
+        height: auto; }
+      #dtl-grid ul li a .title hr {
+        border-top: 2px dotted #c2c2c2; }

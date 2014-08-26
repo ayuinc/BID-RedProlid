@@ -4,3 +4,24 @@ footer {
 	padding: $grid-gutter-width 0;
 	padding: rem($grid-gutter-width) 0;
 }
+
+.with-shadow {
+	padding-bottom: 56px;
+	background: url(../assets/img/shadow-container.png) no-repeat center bottom;
+}
+
+#hero-unit {
+	padding-top: 0;
+	.content {
+		position: relative;
+		min-height: 350px;
+		background: darken($panel-bg, 14%);
+		margin-bottom: 56px;
+		margin-bottom: rem(56);
+		.network-right {
+			position: absolute;
+			right: 0;
+			top: -21px;
+		}
+	}
+}
