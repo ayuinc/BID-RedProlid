@@ -1,0 +1,35 @@
+/*========================================
+=             APP CUSTOM                 =
+========================================*/
+
+// APP Includes
+@import 
+  // TYPE
+  "includes/fonts-custom", 
+  "includes/type-custom",
+  "includes/icons",
+  // LAYOUT
+  "includes/layout-global",
+  "includes/layout-footer",
+  "includes/layout-header",
+  // "includes/layout-canvas-container",
+  // BUTTONS & LINKS
+  // "includes/buttons-custom",
+  // FORMS
+  // "includes/forms-custom",
+  // "includes/forms-multiuser",
+  // NAVS
+  // "includes/nav-off-canvas",
+  "includes/nav-main-menu",
+  "includes/nav-footer",
+  // LIST GROUPS
+  "includes/list-group-custom",
+  // PANELS
+  "includes/panels-custom";
+
+// APP Views
+@import 
+  // VIEW NAME
+  "views/home",
+  "views/red-prolid",
+  "views/dtl";
