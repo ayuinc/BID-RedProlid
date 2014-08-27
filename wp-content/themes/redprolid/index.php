@@ -1,63 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * For example, it puts together the home page when no home.php file exists.
+ *
+ * @link http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twelve
+ * @since Twenty Twelve 1.0
+ */
 
-    <title>Red Prolid | Banco Interamericano del Desarrollo BID</title>
-    <!-- Project SEO -->
-    <meta name="description" content="">
-    <meta name="keywords" content="" /> 
-    <meta name="author" content="Ayu Consulting S.A.C" />
-
-    <!-- Responsiveness -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:title" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:url" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:creator" content="">
-    <meta name="twitter:image" content="">
-
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="img/favicon.ico">
-
-    <!-- Apple Mobile -->
-    <meta name="apple-mobile-web-app-title" content="">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-    <!-- Apple icons -->
-    <link rel="apple-touch-icon" sizes="156x156" href="">
-    <link rel="apple-touch-icon" sizes="128x128" href="">
-    <link rel="apple-touch-icon" sizes="76x76" href="">
-    <link rel="apple-touch-icon" href="">
-
-    <!-- WebFonts -->
-    <script async type="text/javascript" src="//use.typekit.net/nsv5vjx.js"></script>
-    <script async type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-    <!-- APP STYLES -->
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <!-- <link rel="stylesheet" href="stylesheets/main.min.css"> -->
-  </head>
-  <body>
+get_header(); ?>
     <header>
       <div class="container">
         <div class="row">
           <div class="col-md-3">
             <div class="logo">
-              <a href="#"><img src="assets/img/logo_redprolid-header.png" class="img-responsive"></a>
+              <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png" class="img-responsive"></a>
             </div>
           </div>
           <div class="col-md-1"></div>
@@ -164,7 +127,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="slider-container text-center">
-                <img src="assets/img/home-slider.png" class="img-responsive">
+                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-slider.png" class="img-responsive">
               </div>
               <h3 class="text-center"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h3>
             </div>
@@ -187,7 +150,7 @@
                 <a href="#" class="btn btn-primary">Más aquí</a>
               </div>
               <div class="col-sm-8">
-                <img src="assets/img/home-dtl-path.png" alt="" class="img-responsive">
+                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-dtl-path.png" alt="" class="img-responsive">
               </div>
             </div>
           </div>
@@ -202,12 +165,12 @@
                   <ul class="list-unstyled">
                     <li class="title">Concursos</li>
                     <li class="rule"></li>
-                    <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -42px;"></li>
+                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -42px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body">
                   <div class="col-sm-12">
-                    <img src="assets/img/home-slider.png" alt="" class="img-responsive">
+                    <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-slider.png" alt="" class="img-responsive">
                     <h5>Concurso</h5>
                     <small class="help-block">Febrero 30 / 2014</small>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -222,7 +185,7 @@
                   <ul class="list-unstyled">
                     <li class="title">Noticias</li>
                     <li class="rule"></li>
-                    <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -84px;"></li>
+                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -84px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body">
@@ -255,7 +218,7 @@
                   <ul class="list-unstyled">
                     <li class="title">Eventos</li>
                     <li class="rule"></li>
-                    <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -126px;"></li>
+                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -126px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body">
@@ -278,7 +241,7 @@
                   <ul class="list-unstyled">
                     <li class="title">Tu opinión cuenta</li>
                     <li class="rule"></li>
-                    <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -168px;"></li>
+                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -168px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body">
@@ -300,12 +263,12 @@
                   <ul class="list-unstyled">
                     <li class="title">Puntos de vista</li>
                     <li class="rule"></li>
-                    <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
+                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body">
                   <div class="col-sm-5">
-                    <img src="assets/img/img-placeholder.png" alt="" class="img-responsive">
+                    <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img-placeholder.png" alt="" class="img-responsive">
                   </div>
                   <div class="col-sm-7">
                     <h4>Erika Brockman</h4>
@@ -321,12 +284,12 @@
                   <ul class="list-unstyled">
                     <li class="title">Campeonas</li>
                     <li class="rule"></li>
-                    <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
+                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body">
                   <div class="col-sm-5">
-                    <img src="assets/img/img-placeholder.png" alt="" class="img-responsive">
+                    <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img-placeholder.png" alt="" class="img-responsive">
                   </div>
                   <div class="col-sm-7">
                     <h4>Carolina Trivelli</h4>
@@ -380,7 +343,7 @@
                   <ul class="list-unstyled">
                     <li class="title">Lo último en las redes</li>
                     <li class="rule"></li>
-                    <li class="icon icon-lg" style="background-image: url(assets/icons/sprites-home-grid-social.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+                    <li class="icon icon-lg" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid-social.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body">
@@ -394,50 +357,4 @@
         </div>
       </section>
     </div>
-    <footer>
-      <div class="container">
-        <div class="row to-top">
-          <a href="#"><img src="assets/icons/to-top.png" alt=""></a>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <ul class="list-unstyled text-muted">
-              <li><a href="#">Contáctanos</a></li>
-              <li><a href="#">Mapa de sitio</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6 text-center">
-            <a href="#"><img src="assets/img/logo_redprolid-footer.png" width="322px" height="auto"></a>
-          </div>
-          <div class="col-md-3 text-center">
-            <a href="#"><img src="assets/img/logo_BID-footer.png" width="145px" height="auto"></a>
-          </div>
-        </div>
-        <div class="row mt-21">
-          <div class="col-md-3">
-            <p class="text-muted">Síguenos en las redes:</p>
-            <ul class="list-unstyled social-links">
-              <li><a href="#"></a></li>
-            </ul>
-          </div>
-          <div class="col-md-6 text-center">
-            <nav class="text-muted">
-              <a href="#">Políticas de privacidad </a>
-              <a href="#"> Políticas de cookies </a>
-              <a href="#"> Políticas de uso</a>
-            </nav>
-          </div>
-          <div class="col-md-3"></div>
-        </div>
-      </div>
-    </footer>
-    <section class="copyright bg-gray-dark">
-      <div class="container text-center">
-        <p class="text-muted m-0">2014. Todos los derechos reservados</p>
-      </div>
-    </section>
-
-    <script src="js/vendor/jquery-2.1.1.min.js"></script>
-    <script src="js/bid.js"></script>
-  </body>
-</html>
+<?php get_footer(); ?>
