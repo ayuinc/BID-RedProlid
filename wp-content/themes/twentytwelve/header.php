@@ -1,8 +1,12 @@
 <?php
 /**
+ * The Header template for our theme
+ *
+ * Displays all of the <head> section and everything up till <div id="main">
+ *
  * @package WordPress
- * @subpackage redprolid
- * @since Version 1.0
+ * @subpackage Twenty_Twelve
+ * @since Twenty Twelve 1.0
  */
 ?><!DOCTYPE html>
 <!--[if IE 7]>
