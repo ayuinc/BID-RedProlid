@@ -15,112 +15,11 @@
  */
 
 get_header(); ?>
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="logo">
-              <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png" class="img-responsive"></a>
-            </div>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-3">
-            <div class="user-sign-up text-center">
-              <h3>¿Quieres ser parte <br>de la Red PROLID?</h3>
-              <a href="#" class="btn btn-primary">Únete</a>
-            </div>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-4">
-            <div class="user-sign-in-form">
-              <form>
-                <h4>Mi información</h4>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Usuario o correo electrónico">
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control" placeholder="Contraseña">
-                </div>
-                <div class="form-group row">
-                  <div class="col-xs-7">
-                    <a href="#" class="">Olvidé mi contraseña</a>
-                  </div>
-                  <div class="col-xs-5 text-right">
-                    <button type="submit" class="btn btn-primary btn-sm">Ingresa</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div id="nav-main-menu">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 pr-0">
-            <ul class="list-unstyled m-0">
-              <li><a href="#" class="home"><i></i></a></li>
-              <li>
-                <a href="#" class="red-prolid"><i></i><span>Red PROLID</span></a>
-                <ul class="list-unstyled">
-                  <li><a href="#">Contáctanos</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="views/dtl.html" class="dtl"><i></i><span>Desarrolla tu liderazgo</span></a>
-                <ul class="list-unstyled">
-                  <li><a href="#">¿A dónde v@mos?</a></li>
-                  <li><a href="#">Carrera de vallas</a></li>
-                  <li><a href="#">Nivelando la cancha</a></li>
-                  <li><a href="#">Listas para la política</a></li>
-                  <li><a href="#">Agenda de género</a></li>
-                  <li>
-                    <a href="#">Pistas &gt;</a>
-                    <ul class="list-unstyled">
-                      <li><a href="#">"La pinta no es lo de menos"</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="enterate"><i></i><span>Entérate</span></a>
-                <ul class="list-unstyled">
-                  <li><a href="#">Noticias</a></li>
-                  <li><a href="#">Eventos</a></li>
-                  <li><a href="#">Nuestro boletín</a></li>
-                  <li><a href="#">Campeonas</a></li>
-                  <li><a href="#" class="videos"><span></span>Videos</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="concursos"><i></i><span>Concursos</span></a>
-                <ul class="list-unstyled">
-                  <li><a href="#">Concursos anteriores</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="charla-cafe"><i></i><span>Charlacafé</span></a>
-                <ul class="list-unstyled">
-                  <li><a href="#">Foros virtuales</a></li>
-                  <li><a href="#">Webinarios</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-4 pl-0">
-            <form>
-              <div class="input-group">
-                <input type="search" class="form-control" placeholder="Buscar">
-                <span class="input-group-btn">
-                  <button class="btn btn-primary" type="button"></button>
-                </span>
-              </div><!-- /input-group -->
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--HEADER-->
+    <?php get_template_part( 'include', 'header' ); ?>
+    
+    <!--NAV-->
+    <?php get_template_part( 'include', 'nav' ); ?>
     <div class="mh-700">
       <section id="hero-unit">
         <div class="container">
