@@ -1,0 +1,10 @@
+.list-group {
+	&.list-group-custom {
+		li {
+			border-bottom: 1px solid $gray-dark;
+			.date {
+				@include light;
+			}
+		}
+	}
+}
