@@ -21,7 +21,6 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
-
 	<meta name="google-site-verification" content="mpE5FQi3ajtCoeovXIZ7-hfIjF5t0NXpK0Tyvsjmtss" />
 
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
