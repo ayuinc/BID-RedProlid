@@ -1,0 +1,20 @@
+footer {
+	background: $gray-darker;
+	margin-top: 35px;
+	position: relative;
+}
+
+.to-top {
+	position: relative;
+	a {
+		display: block;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		top: -56px;
+		img {
+			width: 52px;
+			height: auto;
+		}
+	}
+}
