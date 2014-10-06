@@ -10,7 +10,7 @@
 	padding-left: 112px;
 	padding-top: 21px;
 	position: absolute;
-	div {
+	> div:first-child {
 		width: 91px;
 		height: 91px;
 		position: absolute;
