@@ -160,15 +160,53 @@
     </div>
     <div class="mh-700">
       <section id="hero-unit">
-        <div class="container">
-          <div class="row">
+        <div class="container pt-21">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> 
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="panel panel-custom panel-highlight-2">
+                  <div class="panel-body p-7-100" style="background-image: url(assets/img/red-prolid-network-right.png); background-repeat: no-repeat; background-position: top right;">
+                    <div class="row">
+                      <div class="col-sm-7">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe class="embed-responsive-item" width="100%" height="280" src="//www.youtube.com/embed/t4PTtXIQ3vs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="col-sm-5 with-hr pt-14-100">
+                        <p class="lead">Explora y descubre todo lo que la RED PROLID te ofrece</p>
+                        <div class="text-right">
+                          <a href="#" class="btn btn-white btn-outline">Más aquí</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
+          </div>
+          <h3 class="text-center"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h3>
+          <!-- <div class="row">
             <div class="col-md-12">
               <div class="slider-container text-center">
                 <img src="assets/img/home-slider.png" class="img-responsive">
               </div>
               <h3 class="text-center"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h3>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <section id="dtl-home">
@@ -438,6 +476,8 @@
     </section>
 
     <script src="js/vendor/jquery-2.1.1.min.js"></script>
+    <script src="js/b3/transition.js"></script>
+    <script src="js/b3/carousel.js"></script>
     <script src="js/bid.js"></script>
   </body>
 </html>

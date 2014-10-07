@@ -62,6 +62,11 @@
 				background: $panel-bg;
 			}
 		}
+		&.panel-highlight-2 {
+			.panel-body {
+				background: darken($panel-bg, 14%);
+			}
+		}
 		&.panel-highlight-silver {
 			.panel-body {
 				@include linear-gradient(to top, $gray-lighter, white);
