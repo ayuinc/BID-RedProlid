@@ -19,7 +19,7 @@
               <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/listas-para-la-politica/">Listas para la política</a></li>
               <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/">Agenda de género</a></li>
               <li>
-                <a href="#">Pistas &gt;</a>
+                <a href="#">Pistas →</a>
                 <ul class="list-unstyled">
                   <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas/">"La pinta no es lo de menos"</a></li>
                 </ul>

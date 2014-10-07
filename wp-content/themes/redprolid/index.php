@@ -65,13 +65,17 @@ get_header(); ?>
                   </ul>
                 </div>
                 <div class="panel-body">
+                	<?php query_posts( 'category_name=concursos&posts_per_page=1' ); ?>	
+									<?php while ( have_posts() ) : the_post(); ?>                 
                   <div class="col-sm-12">
                     <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-slider.png" alt="" class="img-responsive">
-                    <h5>Concurso</h5>
-                    <small class="help-block">Febrero 30 / 2014</small>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h5><?php the_title(); ?></h5>
+                    <small class="help-block"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_concurso'));
+echo $date->format('d M Y'); ?></small>
+                    <p><?php the_field('descripcion_concurso'); ?></p>
                     <div class="text-right"><a href="#" class="btn btn-primary">Más información</a></div>
                   </div>
+                  <?php endwhile; ?>
                 </div>
               </div>
             </div>
@@ -111,16 +115,22 @@ get_header(); ?>
                   </ul>
                 </div>
                 <div class="panel-body">
+                  <?php query_posts( 'category_name=eventos&posts_per_page=1' ); ?>	
+									<?php while ( have_posts() ) : the_post(); ?>  
                   <div class="col-sm-12">
                     <div class="events-calendar-placeholder">
-                      <div class="day">MIÉR</div>
-                      <div class="day-num">3</div>
-                      <div class="month">septiembre</div>
+                      <div class="day"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
+echo $date->format('D'); ?></div>
+                      <div class="day-num"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
+echo $date->format('d'); ?></div>
+                      <div class="month"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
+echo $date->format('M'); ?></div>
                     </div>
-                    <h5 class="text-center">Empoderamiento de la mujer</h5>
-                    <p class="text-center">Lorem ipsum dolor sit amet...</p>
+                    <h5 class="text-center"><?php the_title(); ?></h5>
+                    <p class="text-center"><?php the_field('descripcion_evento'); ?></p>
                     <div class="text-right"><a href="#" class="btn btn-primary">Ver más</a></div>
                   </div>
+                  <?php endwhile; ?>
                 </div>
               </div>
             </div>
@@ -134,9 +144,12 @@ get_header(); ?>
                   </ul>
                 </div>
                 <div class="panel-body">
+                  <?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>	
+									<?php while ( have_posts() ) : the_post(); ?>  
                   <div class="col-sm-12">
-                    
+                    <?php the_content(); ?>
                   </div>
+                  <?php endwhile; ?>
                 </div>
               </div>
             </div>
@@ -155,16 +168,19 @@ get_header(); ?>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body">
+                <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=1' ); ?>	
+								<?php while ( have_posts() ) : the_post(); ?>                      
+                <div class="panel-body">               
                   <div class="col-sm-5">
-                    <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img-placeholder.png" alt="" class="img-responsive">
+                    <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
                   </div>
                   <div class="col-sm-7">
-                    <h4>Erika Brockman</h4>
-                    <p class="light lh-lg">Exparlamentaria boliviana (1997 - 2005) y especialista en temas de democracia y género, comenta sobre las leyes de paridad para mujeres que ocupan posiciones en el sector público de Bolivia.</p>
+                    <h4><?php the_title(); ?></h4>
+                    <p class="light lh-lg"><?php the_field('descripcion_punto_de_vista'); ?></p>
                     <div class="text-right"><a href="#" class="btn btn-primary">Lee más</a></div>
                   </div>
                 </div>
+                <?php endwhile; ?>
               </div>
             </div>
             <div class="col-md-6">
@@ -176,17 +192,20 @@ get_header(); ?>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
                   </ul>
                 </div>
+                <?php query_posts( 'category_name=campeonas&posts_per_page=1' ); ?>	
+								<?php while ( have_posts() ) : the_post(); ?>                   
                 <div class="panel-body">
                   <div class="col-sm-5">
-                    <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img-placeholder.png" alt="" class="img-responsive">
+                    <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
                   </div>
                   <div class="col-sm-7">
-                    <h4>Carolina Trivelli</h4>
-                    <h5>Ex-ministra de Desarrollo e Inclusión Social del Perú (2011-2013)</h5>
-                    <p class="light-italic lh-lg">“...el desafío es lograr competir y avanzar manteniéndonos en una operación profesional totalmente femenina...”</p>
+                    <h4><?php the_title(); ?></h4>
+                    <h5><?php the_field('posicion_campeona'); ?></h5>
+                    <p class="light-italic lh-lg"><?php the_field('descripcion_campeona'); ?></p>
                     <div class="text-right"><a href="#" class="btn btn-primary">Entrevista completa</a></div>
                   </div>
                 </div>
+                <?php endwhile; ?>
               </div>
             </div>
           </div>
@@ -236,9 +255,12 @@ get_header(); ?>
                   </ul>
                 </div>
                 <div class="panel-body">
-                  <div class="col-sm-4"></div>
-                  <div class="col-sm-4"></div>
-                  <div class="col-sm-4"></div>
+                  <div class="col-sm-6">
+                  	<div class="fb-like-box" data-width="400" data-height="520" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+                  </div>
+                  <div class="col-sm-6">
+										<a class="twitter-timeline" width="400" height="520"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tweets by @redprolid</a>  
+                  </div>
                 </div>
               </div>
             </div>
