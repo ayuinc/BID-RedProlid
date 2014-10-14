@@ -23,8 +23,8 @@ get_header(); ?>
           <div class="row">
             <div class="col-md-12">
               <div class="slider-container text-center">
-                <!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-slider.png" class="img-responsive">-->
-                <?php echo do_shortcode("[huge_it_slider id='1']"); ?>
+                <a href="http://redprolid.org/desarrolla-tu-liderazgo/"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-slider.png" class="img-responsive"></a>
+                <?php //echo do_shortcode("[huge_it_slider id='1']"); ?>
               </div>
               <h3 class="text-center"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h3>
             </div>
