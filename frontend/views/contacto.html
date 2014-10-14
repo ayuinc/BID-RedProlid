@@ -49,6 +49,7 @@
 
     <!-- APP STYLES -->
     <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="../stylesheets/ebm-loops.css">
     <!-- <link rel="stylesheet" href="stylesheets/main.min.css"> -->
   </head>
   <body>
@@ -159,15 +160,50 @@
       </div>
     </div>
     <div class="mh-700">
-      <section id="dtl-adonde-vamos">
-        <div class="container relative dtl-content">
+      <section id="contacto">
+        <div class="container relative with-shadow">
           <div class="absolute dtl-custom-heading">
-            <div><img src="../assets/img/dtl-carrera-vallas-icon.png" alt=""></div>
-            <h1 style="color: #9a205c;">Carrera de vallas</h1>
-            <hr style="border-top: 3px dotted #9a205c;">
+            <div><img src="../assets/img/toc-main-icon.png" alt=""></div>
+            <h1 style="color: #aeab8b;">Contacto</h1>
+            <hr style="border-top: 3px dotted #aeab8b;">
           </div>
-          <img src="../assets/img/dtl-carrera-vallas.jpg" alt="" class="pull-right mr-21 img-circle" width="560px" height="auto">
-          <p class="text-left pt-14-100">Carrera de vallas es el espacio dedicado al tema de equidad de género en el acceso a posiciones de liderazgo en el sector público y en el mundo de la política en general. Estudiamos los mecanismos de acción afirmativa —las cuotas o incluso la paridad— que se han aplicado en distintos lugares de América Latina, así como otras políticas y buenas prácticas que podamos conocer en nuestros países y entornos específicos, ya sea en el sector público o en el de la militancia política. ¿Hasta qué punto han funcionado estos mecanismos y experiencias? ¿Han logrado cambiar sustancialmente el problema de la inequidad? ¿Han incrementado la presencia efectiva de la mujer en puestos de toma de decisiones, así como en las instituciones y partidos políticos?</p>
+          <div class="row pt-14-100">
+            <div class="col-sm-6">
+              <p class="lead">Nuestra red es para ti, y como usuaria que eres queremos que nos hagas llegar tus opiniones, sugerencias o preguntas; en definitiva, tú eres la que construye la red. Te proporcionamos el siguiente formulario para facilitar tus comentarios, que podrás también enviar a: comunicate@redprolid.org</p>
+              <p class="lead bold">¡Nos comprometemos a contestarte!</p>
+            </div>
+            <div class="col-sm-6">
+              <form>
+                <div class="form-group row">
+                  <div class="col-sm-3 text-right">
+                    <label class="h4 light">Nombre</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-3 text-right">
+                    <label class="h4 light">Email</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-3 text-right">
+                    <label class="h4 light">Mensaje</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <textarea type="text" class="form-control" rows="5"></textarea>
+                  </div>
+                </div>
+                <div class="form-group text-right">
+                  <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                </div>                
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -211,7 +247,46 @@
       </div>
     </section>
 
-    <script src="js/vendor/jquery-2.1.1.min.js"></script>
-    <script src="js/bid.js"></script>
+    <!-- MODAL -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="panel panel-custom panel-highlight">
+              <div class="panel-body pl-14 pr-14">
+                <div class="row">
+                  <div class="col-sm-1">
+                    <img src="../assets/img/pdv-main-topic-icon.png" alt="">
+                  </div>
+                  <div class="col-sm-11">
+                    <nav class="text-right"><a href="#">Iniciar sesión</a> / <a href="#">Registrarse</a></nav>
+                    <hr class="m-0" style="border-top: 3px dotted #aeab8b;">
+                  </div>
+                </div>
+                <div class="grid-block row">
+                  <div class="col-sm-6">
+                    <p>Adjuntar: <a href="#">O</a></p>
+                  </div>
+                  <div class="col-sm-6"></div>
+                </div>
+                <form>
+                  <div class="form-group">
+                    <label>¿Cuál es tu propuesta de tema? (Máximo 700 caracteres)</label>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                  </div>
+                  <div class="form-group text-right">
+                    <button type="submit" class="btn btn-primary">Enviar tema</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <script src="../js/vendor/jquery-2.1.1.min.js"></script>
+    <script src="../js/b3/transition.js"></script>
+    <script src="../js/b3/modal.js"></script>
+    <script src="../js/bid.js"></script>
   </body>
 </html>

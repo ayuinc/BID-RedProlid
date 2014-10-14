@@ -41,117 +41,34 @@ h6, .h6 { font-size: rem($font-size-h6); }
 p, .p, ul { font-size: rem($font-size-base); }
 
 // Contextual emphasis
-.text-muted {
-  a {
-    color: $text-muted!important;
-    &:hover {
-      color: darken($text-muted, 21%);
+@for $i from 1 through length($brand-colors-list) {
+  .text-#{nth($brand-colors-sufix-list, $i)} {
+    a {
+      color: #{nth($brand-colors-list, $i)} !important;
+      &:hover {
+        color: #{darken(nth($brand-colors-list, $i), 21%)};
+      }
+    }
+    color: #{nth($brand-colors-list, $i)} !important;
+    * {
+      color: #{nth($brand-colors-list, $i)} !important;
     }
   }
-  color: $text-muted!important;
 }
 
-// GRAYSCALE
-.text-gray-lighter {
-  a {
-    color: $gray-lighter!important;
-    &:hover {
-      color: darken($gray-lighter, 21%);
+@for $i from 1 through length($grayscale-list) {
+  .text-#{nth($grayscale-sufix-list, $i)} {
+    a {
+      color: #{nth($grayscale-list, $i)} !important;
+      &:hover {
+        color: #{darken(nth($grayscale-list, $i), 21%)};
+      }
+    }
+    color: #{nth($grayscale-list, $i)} !important;
+    * {
+      color: #{nth($grayscale-list, $i)} !important;
     }
   }
-  color: $gray-lighter!important;
-}
-.text-gray-light {
-  a {
-    color: $gray-light!important;
-    &:hover {
-      color: darken($gray-light, 21%);
-    }
-  }
-  color: $gray-light!important;
-}
-.text-gray {
-  a {
-    color: $gray!important;
-    &:hover {
-      color: darken($gray, 21%);
-    }
-  }
-  color: $gray!important;
-}
-.text-gray-dark {
-  a {
-    color: $gray-dark!important;
-    &:hover {
-      color: darken($gray-dark, 21%);
-    }
-  }
-  color: $gray-dark!important;
-}
-.text-gray-darker {
-  a {
-    color: $gray-darker!important;
-    &:hover {
-      color: darken($gray-darker, 21%);
-    }
-  }
-  color: $gray-darker!important;
-}
-
-// BRAND COLORS
-.text-primary {
-  a {
-    color: $brand-primary!important;
-    &:hover {
-      color: darken($brand-primary, 21%);
-    }
-  }
-  color: $brand-primary!important;
-}
-.text-secondary {
-  a {
-    color: $brand-secondary!important;
-    &:hover {
-      color: darken($brand-secondary, 21%);
-    }
-  }
-  color: $brand-secondary!important;
-}
-.text-warning {
-  a {
-    color: $brand-warning!important;
-    &:hover {
-      color: darken($brand-warning, 21%);
-    }
-  }
-  color: $brand-warning!important;
-}
-.text-danger {
-  a {
-    color: $brand-danger!important;
-    &:hover {
-      color: darken($brand-danger, 21%);
-    }
-  }
-  color: $brand-danger!important;
-}
-.text-success {
-  a {
-    color: $brand-success!important;
-    &:hover {
-      color: darken($brand-success, 21%);
-    }
-  }
-  color: $brand-success!important;
-}
-.text-info {
-  a {
-    color: $brand-info!important;
-    &:hover {
-      color: darken($brand-info, 21%);
-    }
-  }
-  color: $brand-info!important;
 }
 
 // Alignment

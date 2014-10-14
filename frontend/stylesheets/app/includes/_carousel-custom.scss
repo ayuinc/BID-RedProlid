@@ -1,0 +1,73 @@
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: $carousel-control-width;
+  // @include opacity($carousel-control-opacity);
+  font-size: $carousel-control-font-size;
+  color: $carousel-control-color;
+  text-align: center;
+  text-shadow: $carousel-text-shadow;
+  // We can't have this transition here because WebKit cancels the carousel
+  // animation if you trip this while in the middle of another animation.
+
+  // Set gradients for backgrounds
+  &.left {
+    // @include gradient-horizontal($start-color: rgba(0,0,0,.5), $end-color: rgba(0,0,0,.0001));
+  }
+  &.right {
+    left: auto;
+    right: 0;
+    // @include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.5));
+  }
+
+  // Hover/focus state
+  &:hover,
+  &:focus {
+    outline: 0;
+    color: $carousel-control-color;
+    text-decoration: none;
+    // @include opacity(.9);
+  }
+
+  // Toggles
+  .icon-prev,
+  .icon-next,
+  .glyphicon-chevron-left,
+  .glyphicon-chevron-right {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+  }
+  .icon-prev,
+  .glyphicon-chevron-left {
+    left: 8%;
+    margin-left: -10px;
+  }
+  .icon-next,
+  .glyphicon-chevron-right {
+    right: 8%;
+    margin-right: -10px;
+  }
+  .icon-prev,
+  .icon-next {
+    width:  25px;
+    height: 37px;
+    margin-top: -10px;
+    font-family: serif;
+  }
+
+
+  .icon-prev {
+    &:before {
+      content: url(../assets/icons/arrow-slider-left.png);// SINGLE LEFT-POINTING ANGLE QUOTATION MARK (U+2039)
+    }
+  }
+  .icon-next {
+    &:before {
+      content: url(../assets/icons/arrow-slider-right.png);// SINGLE RIGHT-POINTING ANGLE QUOTATION MARK (U+203A)
+    }
+  }
+}
