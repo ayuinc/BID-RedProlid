@@ -18,3 +18,24 @@ footer {
 		}
 	}
 }
+
+.social-links {
+	@include list-unstyled;
+	li {
+		float: left;
+		margin-right: 12px;
+		a {
+			color: white;
+			&:hover {
+				color: white;
+				i {
+					color: white;
+				}
+			}
+			i {
+				font-size: 21px;
+				color: white;
+			}
+		}
+	}
+}
