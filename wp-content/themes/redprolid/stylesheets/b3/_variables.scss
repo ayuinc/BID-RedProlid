@@ -32,11 +32,11 @@ $brand-inverse: 				#081A26 !default;
 // PANEL COLORS
 $panel-bg: 							lighten(#c3bf9b, 21%) !default;
 
-$grayscale-list: $gray-darker, $gray-dark, $gray, $gray-light, $gray-lighter;
-$brand-colors-list: $brand-primary, $brand-success, $brand-info, $brand-warning, $brand-danger;
+$grayscale-list: $gray-darker, $gray-dark, $gray, $gray-light, $gray-lighter, #fff;
+$brand-colors-list: $brand-primary, $brand-success, $brand-info, $brand-warning, $brand-danger, $brand-secondary;
 
-$grayscale-sufix-list: gray-lighter, gray-light, gray, gray-dark, gray-darker;
-$brand-colors-sufix-list: primary, success, info, warning, danger;
+$grayscale-sufix-list: gray-darker, gray-dark, gray, gray-light, gray-lighter, white;
+$brand-colors-sufix-list: primary, success, info, warning, danger, secondary;
 
 
 //== Scaffolding
@@ -804,7 +804,7 @@ $carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6) !default;
 
 $carousel-control-color:                      #fff !default;
 $carousel-control-width:                      15% !default;
-$carousel-control-opacity:                    .5 !default;
+$carousel-control-opacity:                    0 !default;
 $carousel-control-font-size:                  20px !default;
 
 $carousel-indicator-active-bg:                #fff !default;

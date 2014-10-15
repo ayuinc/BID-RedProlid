@@ -10,6 +10,11 @@ footer {
 	background: url(../assets/img/shadow-container.png) no-repeat center bottom;
 }
 
+.with-hr {
+	border-bottom: 2px dotted $panel-bg;
+	padding-bottom: 21px;
+}
+
 #hero-unit {
 	padding-top: 0;
 	.content {
@@ -23,5 +28,44 @@ footer {
 			right: 0;
 			top: -21px;
 		}
+	}
+}
+
+ul.table-list {
+	@include list-unstyled;
+	text-align: center;
+	li {
+		@include clearfix;
+		float: none;
+		display: inline-block;
+		min-width: 70%;
+		> span, 
+		> div,
+		> strong,
+		> p,
+		> h1, > h2, > h3, > h4, > h5, > h6 {
+			display: block;
+			float: left;
+			padding: 0 ($grid-gutter-width / 3);
+			margin: 0;
+			min-width: 21%;
+			&:last-child {
+				float: right;
+			}
+		}
+	}
+}
+
+.progress-bar {
+	width: 350px;
+	height: 21px;
+	position: relative;
+	background: $panel-bg;
+	span {
+		position: absolute;
+		display: block;
+		background: $brand-primary;
+		height: 21px;
+		left: 0;
 	}
 }
