@@ -61,5 +61,136 @@
     <!-- APP STYLES -->
     <link rel="stylesheet" href="<?php echo content_url('/'); ?>themes/redprolid/stylesheets/main.css">
     <!-- <link rel="stylesheet" href="stylesheets/main.min.css"> -->
+    
+    <style>
+    	.yop-poll-name {
+	    	display:none;
+    	}
+    	.yop-poll-container {
+	    	width:100% !important;
+    	}
+    	.yop-poll-question {
+	    	background-color: #e94472;
+				color: #FFF;
+				padding: 1rem;
+    	}
+			.yop_poll_vote_button {
+	    	color: white;
+	    	width:100px;
+				background-color: #ed7133;
+				border-color: #eb611c;
+				display: inline-block;
+				margin-bottom: 0;
+				font-weight: normal;
+				text-align: center;
+				vertical-align: middle;
+				cursor: pointer;
+				background-image: none;
+				border: 1px solid transparent;
+				white-space: nowrap;
+				padding: 6px 12px;
+				font-size: 14px;
+				line-height: 1.42857;
+				border-radius: 3px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;				
+			}    	
+			.yop_poll_result_link, .yop_poll_back_to_vote_link {
+				color: #ed7133 !important;
+				font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+			}		
+			/*MODAL*/
+			.modal-header {
+				background-color: #E7E5D6 !important;
+			}
+			/*FOOTER*/
+			footer .list-unstyled li a {
+				color:#CCC !important;
+				font-weight: 100;
+				padding-bottom:5px;
+				border-bottom:2px solid #000;
+			}
+			footer nav a {
+				color:#CCC !important;
+				font-weight: 100;
+				padding-right:5px;
+				margin-right:10px;
+				border-right:2px solid #000;
+			}	
+			footer nav a:last-child {
+				border:none;
+			}	
+			footer .social-links li a {
+				border-bottom:none;
+				color:#CCC;				
+			}
+			footer .social-links li a:hover {
+				text-decoration: none;
+			}			
+			footer .social-links li {
+				padding-right:10px;
+				margin-right:15px;
+				border-right:2px solid #000;
+			}		
+			footer .social-links li:last-child {
+				border:none;
+			}		
+			/*COMMENTS*/
+			.commentlist {
+				border-bottom:1px solid #e5e5e5;
+				margin: 2rem 0;
+				padding-bottom:1rem;
+			}
+			.comment-form-comment textarea {
+				width:100% !important;
+				border-color:#CCC !important;
+				height:120px;
+			}		
+			.form-submit input {
+	    	color: white;
+	    	width:100px;
+				background-color: #ed7133;
+				border-color: #eb611c;
+				display: inline-block;
+				margin-bottom: 0;
+				font-weight: normal;
+				text-align: center;
+				vertical-align: middle;
+				cursor: pointer;
+				background-image: none;
+				border: 1px solid transparent;
+				white-space: nowrap;
+				padding: 6px 12px;
+				font-size: 14px;
+				line-height: 1.42857;
+				border-radius: 3px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;	
+			}			
+			.depth-1 {
+				list-style: none;
+			}
+			.comment-author img {
+				width:40px;
+				height:40px;
+				margin-right:1rem;
+			}
+			.comment-meta {
+				text-align: right;
+				font-size: 0.9rem;
+			}
+			.comment-meta a {
+				color: #ccc !important;
+				font-weight: 100;
+			}
+			.reply {
+				text-align: right;
+			}
+    </style>
+    
   </head>
   <body>

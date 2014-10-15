@@ -33,11 +33,10 @@
           <div class="col-md-3">
             <p class="text-muted">Síguenos en las redes:</p>
             <ul class="list-unstyled social-links">
-              <li><a href="#"><i class="flaticon-facebook6"></i></a></li>
-              <li><a href="#"><i class="flaticon-google16"></i></a></li>
-              <li><a href="#"><i class="flaticon-logo3"></i></a></li>
+              <li><a href="https://www.facebook.com/redprolid" target="_blank"><i class="flaticon-facebook6"></i></a></li>
+              <li><a href="https://twitter.com/RedPROLID" target=_blank><i class="flaticon-social19"></i></a></li>
+              <li><a href="https://plus.google.com/u/0/110729207092973287817/about" target="_blank"><i class="flaticon-google16"></i></a></li>
               <li><a href="#"><i class="flaticon-logo4"></i></a></li>
-              <li><a href="#"><i class="flaticon-social19"></i></a></li>
             </ul>
           </div>
           <div class="col-md-6 text-center">
@@ -58,7 +57,7 @@
     </section>
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -66,6 +65,7 @@
           </div>
           <form>
             <div class="modal-body">
+            		<p>Envíaremos tu contraseña al correo electrónico que escribas a continuación, este debe ser el mismo que incluiste al registrarte en Red PROLID.</p>
                 <div class="form-group">
                   <label for="email">Correo Electrónico:</label>
                   <input type="email" class="form-control">
