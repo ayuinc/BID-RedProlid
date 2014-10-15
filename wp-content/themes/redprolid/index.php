@@ -23,8 +23,8 @@ get_header(); ?>
           <div class="row">
             <div class="col-md-12">
               <div class="slider-container text-center">
-                <a href="http://redprolid.org/desarrolla-tu-liderazgo/"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-slider.png" class="img-responsive"></a>
-                <?php //echo do_shortcode("[huge_it_slider id='1']"); ?>
+                <!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-slider.png" class="img-responsive">-->
+                <?php echo do_shortcode("[huge_it_slider id='1']"); ?>
               </div>
               <h3 class="text-center"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h3>
             </div>
@@ -69,10 +69,10 @@ get_header(); ?>
                 	<?php query_posts( 'category_name=concursos&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>                 
                   <div class="col-sm-12">
-                    <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-slider.png" alt="" class="img-responsive">
+                    <img src="<?php the_field('imagen_concurso'); ?>" alt="" class="img-responsive">
                     <h5><?php the_title(); ?></h5>
                     <small class="help-block"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_concurso'));
-echo $date->format('d M Y'); ?></small>
+echo $date->format('F jS, Y'); ?></small>
                     <p><?php the_field('descripcion_concurso'); ?></p>
                     <div class="text-right"><a href="#" class="btn btn-primary">Más información</a></div>
                   </div>
