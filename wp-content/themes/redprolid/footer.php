@@ -33,7 +33,11 @@
           <div class="col-md-3">
             <p class="text-muted">Síguenos en las redes:</p>
             <ul class="list-unstyled social-links">
-              <li><a href="#"></a></li>
+              <li><a href="#"><i class="flaticon-facebook6"></i></a></li>
+              <li><a href="#"><i class="flaticon-google16"></i></a></li>
+              <li><a href="#"><i class="flaticon-logo3"></i></a></li>
+              <li><a href="#"><i class="flaticon-logo4"></i></a></li>
+              <li><a href="#"><i class="flaticon-social19"></i></a></li>
             </ul>
           </div>
           <div class="col-md-6 text-center">
@@ -52,9 +56,32 @@
         <p class="text-muted m-0">2014. Todos los derechos reservados</p>
       </div>
     </section>
-
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Recupera tu contraseña</h4>
+          </div>
+          <form>
+            <div class="modal-body">
+                <div class="form-group">
+                  <label for="email">Correo Electrónico:</label>
+                  <input type="email" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/vendor/jquery-2.1.1.min.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/bid.js"></script>
+    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/transition.js"></script>
+    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/modal.js"></script>
     
     <!--LIKE BOX FACEBOOK-->
 		<div id="fb-root"></div>

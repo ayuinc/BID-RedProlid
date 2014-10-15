@@ -26,7 +26,7 @@
                 </div>
                 <div class="form-group row">
                   <div class="col-xs-7">
-                    <a href="#" class="">Olvidé mi contraseña</a>
+                    <a href="#" class="" data-toggle="modal" data-target="#myModal">Olvidé mi contraseña</a>
                   </div>
                   <div class="col-xs-5 text-right">
                     <button type="submit" class="btn btn-primary btn-sm">Ingresa</button>
