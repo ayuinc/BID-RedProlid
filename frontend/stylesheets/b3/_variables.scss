@@ -33,10 +33,10 @@ $brand-inverse: 				#081A26 !default;
 $panel-bg: 							lighten(#c3bf9b, 21%) !default;
 
 $grayscale-list: $gray-darker, $gray-dark, $gray, $gray-light, $gray-lighter, #fff;
-$brand-colors-list: $brand-primary, $brand-success, $brand-info, $brand-warning, $brand-danger, $brand-secondary;
+$brand-colors-list: $brand-primary, $brand-success, $brand-info, $brand-warning, $brand-danger, $brand-secondary, $panel-bg;
 
 $grayscale-sufix-list: gray-darker, gray-dark, gray, gray-light, gray-lighter, white;
-$brand-colors-sufix-list: primary, success, info, warning, danger, secondary;
+$brand-colors-sufix-list: primary, success, info, warning, danger, secondary, panel;
 
 
 //== Scaffolding

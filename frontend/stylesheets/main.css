@@ -4068,6 +4068,12 @@ button.close {
 .bg-secondary-shade {
   background: #ad143f !important; }
 
+.bg-panel {
+  background: #ebeade !important; }
+
+.bg-panel-shade {
+  background: #c3bf9b !important; }
+
 .bg-gray-darker {
   background: #212121 !important; }
 
@@ -6501,6 +6507,15 @@ p, .p, ul {
   .text-secondary * {
     color: #e94472 !important; }
 
+.text-panel {
+  color: #ebeade !important; }
+  .text-panel a {
+    color: #ebeade !important; }
+    .text-panel a:hover {
+      color: #c3bf9b; }
+  .text-panel * {
+    color: #ebeade !important; }
+
 .text-gray-darker {
   color: #212121 !important; }
   .text-gray-darker a {
@@ -6825,6 +6840,20 @@ input[type="submit"].btn.btn-secondary.btn-outline {
     border-radius: 0;
     border: 2px solid #e94472;
     color: #e94472; }
+a.btn.btn-panel.btn-outline,
+button.btn.btn-panel.btn-outline,
+input[type="submit"].btn.btn-panel.btn-outline {
+  background: none;
+  border: 2px solid white;
+  border-radius: 0;
+  color: white; }
+  a.btn.btn-panel.btn-outline:hover,
+  button.btn.btn-panel.btn-outline:hover,
+  input[type="submit"].btn.btn-panel.btn-outline:hover {
+    background: none;
+    border-radius: 0;
+    border: 2px solid #ebeade;
+    color: #ebeade; }
 a.btn.btn-gray-darker.btn-outline,
 button.btn.btn-gray-darker.btn-outline,
 input[type="submit"].btn.btn-gray-darker.btn-outline {
@@ -7012,6 +7041,13 @@ form.form-search-inline button {
 #nav-main-menu form button {
   height: 42px; }
 #nav-main-menu form button {
+  width: 42px;
+  background: #ed7133 url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px; }
+
+form.search input,
+form.search button {
+  height: 42px; }
+form.search button {
   width: 42px;
   background: #ed7133 url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px; }
 
