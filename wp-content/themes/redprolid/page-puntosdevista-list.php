@@ -1,24 +1,13 @@
 <?php
 /*
-Template Name: Posts List
+Template Name: Puntos de vista list
 */
 get_header(); ?>
 
 <!--HEADER-->
 <?php get_template_part( 'include', 'header' ); ?>
-  <?php query_posts( 'category_name=puntos-de-vista' ); ?> 
-  <?php while ( have_posts() ) : the_post(); ?>                      
-  <div class="panel-body">               
-    <div class="col-sm-5">
-      <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
-    </div>
-    <div class="col-sm-7">
-      <h4><?php the_title(); ?></h4>
-      <p class="light lh-lg"><?php the_field('descripcion_punto_de_vista'); ?></p>
-      <div class="text-right"><a href="#" class="btn btn-primary">Lee más</a></div>
-    </div>
-  </div>
-  <?php endwhile; ?>
+<!--NAV-->
+<?php get_template_part( 'include', 'nav' ); ?>
   <div class="mh-700">
       <section id="puntos-de-vista-anteriores">
         <div class="container">
@@ -68,12 +57,16 @@ get_header(); ?>
           <div class="col-sm-2"></div>
         </div>
         <div class="container grid-block-lg">
+
+          <?php query_posts( 'category_name=puntos-de-vista' ); ?> 
+          <?php while ( have_posts() ) : the_post(); ?>
           <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-10 with-hr">
-              <h3>Erika Brockmann Quiroga <small>(Bolivia)</small></h3>
-              <p>Psicóloga / <a href="#">@ErikaBrockmannQ</a></p>
-              <p class="lh-lg text-justify">Especialista en temas de democracia y género. Psicóloga, magíster en Ciencia Política y docente. Exparlamentaria boliviana (1997-2005), presidió, durante cinco años, la Comisión de Descentralización y Desarrollo Local del Senado, y promovió la constitución de las primeras comisiones de ética parlamentaria en el Senado y en la Cámara de Diputados. Es fundadora y miembro del directorio del Centro de Promoción de la Mujer Gregoria Apaza, del Foro Político Nacional de Mujeres y de la Coordinadora de la Mujer. </p>
+              <h3><?php the_field('nombre_completo'); ?> <small>(Bolivia)</small></h3>
+              <p><?php the_field('profesion'); ?> / <a href="#"><?php the_field('cuenta_de_twitter'); ?></a></p>
+              <p class="lh-lg text-justify"><?php the_title(); ?></p>
+              <p class="lh-lg text-justify"><?php the_field('contenido_punto_de_vista'); ?></p>
               <p class="text-gray">Diciembre 2013</p>
               <div class="text-right">
                 <a href="#">Lee el artículo >></a>
@@ -81,6 +74,8 @@ get_header(); ?>
             </div>
             <div class="col-sm-1"></div>
           </div>
+          <?php endwhile; ?>
+
           <div class="text-center">
             <ul class="pager">
               <li><a href="#">Previos</a></li>
