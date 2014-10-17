@@ -35,7 +35,8 @@
             <ul class="list-unstyled social-links">
               <li><a href="https://www.facebook.com/redprolid" target="_blank"><i class="flaticon-facebook6"></i></a></li>
               <li><a href="https://twitter.com/RedPROLID" target=_blank><i class="flaticon-social19"></i></a></li>
-              <li><a href="https://plus.google.com/u/0/110729207092973287817/about" target="_blank"><i class="flaticon-google16"></i></a></li>
+              <!-- <li><a href="https://plus.google.com/u/0/110729207092973287817/about" target="_blank"><i class="flaticon-google16"></i></a></li> -->
+              <li><a href="https://plus.google.com/110729207092973287817" rel="publisher"><i class="flaticon-google16"></i></a></li>
               <li><a href="#"><i class="flaticon-logo4"></i></a></li>
             </ul>
           </div>
@@ -97,7 +98,9 @@
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           
     <!--GOOGLE+-->
-    
+    <script src="https://apis.google.com/js/platform.js" async defer>
+      {lang: 'es'}
+    </script>
     
     <?php wp_footer(); ?>
   </body>
