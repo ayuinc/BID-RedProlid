@@ -59,17 +59,18 @@ get_header(); ?>
         <div class="container grid-block-lg">
 
           <?php query_posts( 'category_name=puntos-de-vista' ); ?> 
+          <?php //die(the_post()); ?>
           <?php while ( have_posts() ) : the_post(); ?>
           <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-10 with-hr">
               <h3><?php the_field('nombre_completo'); ?> <small>(Bolivia)</small></h3>
               <p><?php the_field('profesion'); ?> / <a href="#"><?php the_field('cuenta_de_twitter'); ?></a></p>
-              <p class="lh-lg text-justify"><?php the_title(); ?></p>
+              <h4><?php the_title(); ?></h4>
               <p class="lh-lg text-justify"><?php the_field('contenido_punto_de_vista'); ?></p>
               <p class="text-gray">Diciembre 2013</p>
               <div class="text-right">
-                <a href="#">Lee el artículo >></a>
+                <a href="<?php echo get_permalink( get_the_ID() ); ?>">Lee el artículo >></a>
               </div>
             </div>
             <div class="col-sm-1"></div>

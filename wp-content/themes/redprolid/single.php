@@ -51,7 +51,6 @@ get_header(); ?>
       </div>          
     </div>
     <div class="container with-shadow mh-350">
-      
     </div>
     <div class="container with-hr">
       <h4>Artículos comentados</h4>
@@ -65,5 +64,4 @@ get_header(); ?>
     </div>
   </section>
 </div>
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
