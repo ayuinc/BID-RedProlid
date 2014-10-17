@@ -9,7 +9,7 @@ get_header(); ?>
 <?php get_template_part( 'include', 'header' ); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
-<?php query_posts( 'category_name=puntos-de-vista' ); ?> 
+<?php //query_posts( 'category_name=puntos-de-vista' ); ?> 
 <div class="mh-700">
   <section id="puntos-de-vista">
     <div class="container relative with-shadow mb-28">
