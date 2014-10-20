@@ -3,7 +3,10 @@
 Template Name: Poll page
 */
 get_header(); ?>
-
+<!--HEADER-->
+<?php get_template_part( 'include', 'header' ); ?>
+<!--NAV-->
+<?php get_template_part( 'include', 'nav' ); ?>
 <div class="mh-700">
   <section id="toc-index">
     <div class="container">
