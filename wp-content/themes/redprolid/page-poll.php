@@ -7,6 +7,8 @@ get_header(); ?>
 <?php get_template_part( 'include', 'header' ); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
+<!--BREADCRUMBS-->
+<?php the_breadcrumb(); ?>
 <div class="mh-700">
   <section id="toc-index">
     <div class="container">
