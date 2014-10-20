@@ -11,7 +11,7 @@ get_header(); ?>
   <section id="toc-main">
     <div class="container relative with-shadow">
       <div class="absolute dtl-custom-heading">
-        <div><img src="../assets/img/toc-main-icon.png" alt=""></div>
+        <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon.png" alt=""></div>
         <h1 style="color: #aeab8b;">Tu opinión cuenta</h1>
         <hr style="border-top: 3px dotted #aeab8b;">
       </div>
@@ -36,14 +36,15 @@ get_header(); ?>
     <div class="container with-shadow">
       <div class="row">
         <div class="col-sm-6 with-hr">
-          <h3>¿Qué es lo que más descuidas de tu vida personal cuando estás trabajando?</h3>
+          <!-- <h3>¿Qué es lo que más descuidas de tu vida personal cuando estás trabajando?</h3>
 
           <h4>Razones</h4>
           <ul class="list-unstyled">
             <li>- (Sí) Sed accumsan neque purus, ac tincidunt sapien selerisque.</li>
             <li>- (No) Sed accumsan neque purus, ac tincidunt sapien selerisque.</li>
           </ul>
-          <p class="text-gray">Agosto 2014</p>
+          <p class="text-gray">Agosto 2014</p> -->
+          <?php the_content(); ?>
         </div>
         <div class="col-sm-6">
           <h3>Nos interesa lo que piensas</h3>
