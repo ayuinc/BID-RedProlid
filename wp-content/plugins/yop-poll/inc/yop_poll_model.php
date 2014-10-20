@@ -2960,7 +2960,7 @@
 				$template = self::strip_all_tags( $template );
 
 				$t = '<style type="text/css">' . self::return_poll_css( array( "location" => 'page', 'preview' => true, 'template_id' => $template_id, 'loc' => $loc ) ) . '</style>';
-				$t .= '<div id="yop-poll-container-preview-' . $loc . '" class="yop-poll-container">';
+				$t .= '<div id="yop-poll-container-preview-' . $loc . '" class="yop-poll-container bg-white box-shadow p-7">';
 				$t .= '' . $template . '</div>';
 				return $t;
 			}
@@ -3267,7 +3267,7 @@
 				$template .= '<style type="text/css">' . self::return_poll_css( array( "location" => $location ) ) . '</style>';
 			}
 
-			$template .= '<div id="yop-poll-container-' . $poll_id . $unique_id . '" class="yop-poll-container">';
+			$template .= '<div id="yop-poll-container-' . $poll_id . $unique_id . '" class="yop-poll-container bg-white box-shadow p-7">';
 			if ( !$msgDivS ){
 				$template .= '<div id="yop-poll-container-success-' . $poll_id . $unique_id . '" class="yop-poll-container-success"></div>';
 			}
