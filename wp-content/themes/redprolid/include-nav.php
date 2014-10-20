@@ -29,6 +29,7 @@
           <li>
             <a href="#" class="enterate"><i></i><span>Entérate</span></a>
             <ul class="list-unstyled">
+              <li><a href="<?php echo home_url('/'); ?>poll-page-main">Tu opinión importa</a></li>
               <li><a href="#">Noticias</a></li>
               <li><a href="#">Eventos</a></li>
               <li><a href="#">Nuestro boletín</a></li>
