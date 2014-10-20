@@ -31,6 +31,7 @@ get_header(); ?>
                       </span>
                     </div><!-- /input-group -->
                   </form>
+                  <?php get_search_form( $echo ); ?>
                 </div>
                 <div class="col-sm-6 text-right">
                   <strong>Resultados 0</strong>
