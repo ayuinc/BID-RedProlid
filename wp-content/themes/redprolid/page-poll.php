@@ -16,22 +16,6 @@ get_header(); ?>
         </div>
       </div>
       <ul class="grid-list grid-list-3">
-        <li>
-          <div class="bg-white box-shadow p-7">
-            <div class="bg-secondary p-14 text-white">
-              <p>¿Qué es lo que más descuidas de tu vida personal cuando estás trabajando?</p>
-            </div>
-            <div class="p-14">
-              <ul class="table-list with-hr">
-                <li>
-                  <span>Apariencia</span>
-                  <span class="bold">7%</span>
-                </li>
-              </ul>
-              <p class="text-gray">Agosto 2014</p> 
-            </div>
-          </div>
-        </li>
     	<?php while ( have_posts() ) : the_post(); ?>
         <li>
 			<?php the_content(); ?>
