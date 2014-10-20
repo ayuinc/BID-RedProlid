@@ -23,14 +23,6 @@ get_header(); ?>
               <div>
                 <hr style="border-top: 3px dotted #aeab8b;">
                 <div class="col-sm-6">
-                  <form class="form-search-inline">
-                    <div class="input-group">
-                      <input type="search" class="form-control" placeholder="Buscar">
-                      <span class="input-group-btn">
-                        <button class="btn btn-primary" type="button"></button>
-                      </span>
-                    </div><!-- /input-group -->
-                  </form>
                   <?php get_search_form(); ?>
                 </div>
                 <div class="col-sm-6 text-right">
