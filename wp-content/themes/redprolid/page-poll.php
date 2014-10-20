@@ -5,7 +5,6 @@ Template Name: Poll page
 get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 	<?php the_content(); ?>
-	<?php die(print_r(the_content())); ?>
 <?php endwhile; ?>
 <div class="mh-700">
   <section id="toc-index">
@@ -77,4 +76,5 @@ get_header(); ?>
     </div>
   </section>
 </div>
+<?php die(var_dump(the_content())); ?>
 <?php get_footer(); ?>    
