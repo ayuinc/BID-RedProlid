@@ -3267,7 +3267,7 @@
 				$template .= '<style type="text/css">' . self::return_poll_css( array( "location" => $location ) ) . '</style>';
 			}
 
-			$template .= '<div id="yop-poll-container-' . $poll_id . $unique_id . '" class="yop-poll-container bg-white box-shadow p-7">';
+			$template .= '<li id="yop-poll-container-' . $poll_id . $unique_id . '" class="yop-poll-container bg-white box-shadow p-7">';
 			if ( !$msgDivS ){
 				$template .= '<div id="yop-poll-container-success-' . $poll_id . $unique_id . '" class="yop-poll-container-success"></div>';
 			}
@@ -3275,7 +3275,7 @@
 				$template .= '<div id="yop-poll-container-error-' . $poll_id . $unique_id . '" class="yop-poll-container-error"></div>';
 			}
 
-			$template .= '<form id="yop-poll-form-' . $poll_id . $unique_id . '" class="yop-poll-forms">' . $temp . '<input type="hidden" id="yop-poll-tr-id-' . $poll_id . $unique_id . '" name="yop_poll_tr_id" value="' . $tr_id . '"/>' . wp_nonce_field( 'yop_poll-' . $poll_id . $unique_id . '-user-actions', 'yop-poll-nonce-' . $poll_id . $unique_id, false, false ) . '</form></div>';
+			$template .= '<form id="yop-poll-form-' . $poll_id . $unique_id . '" class="yop-poll-forms">' . $temp . '<input type="hidden" id="yop-poll-tr-id-' . $poll_id . $unique_id . '" name="yop_poll_tr_id" value="' . $tr_id . '"/>' . wp_nonce_field( 'yop_poll-' . $poll_id . $unique_id . '-user-actions', 'yop-poll-nonce-' . $poll_id . $unique_id, false, false ) . '</form></li>';
 			return $template;
 		}
 
