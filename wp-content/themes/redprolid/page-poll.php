@@ -3,9 +3,7 @@
 Template Name: Poll page
 */
 get_header(); ?>
-<?php while ( have_posts() ) : the_post(); ?>
-	<?php the_content(); ?>
-<?php endwhile; ?>
+
 <div class="mh-700">
   <section id="toc-index">
     <div class="container">
@@ -34,38 +32,11 @@ get_header(); ?>
             </div>
           </div>
         </li>
+    	<?php while ( have_posts() ) : the_post(); ?>
         <li>
-          <div class="bg-white box-shadow p-7">
-            <div class="bg-secondary p-14 text-white">
-              <p>¿Qué es lo que más descuidas de tu vida personal cuando estás trabajando?</p>
-            </div>
-            <div class="p-14">
-              <ul class="table-list with-hr">
-                <li>
-                  <span>Sí <strong>35%</strong></span>
-                  <span>No <strong>14%</strong></span>
-                </li>
-              </ul>
-              <p class="text-gray">Agosto 2014</p> 
-            </div>
-          </div>
+			<?php the_content(); ?>
         </li>
-        <li>
-          <div class="bg-white box-shadow p-7">
-            <div class="bg-secondary p-14 text-white">
-              <p>¿Qué es lo que más descuidas de tu vida personal cuando estás trabajando?</p>
-            </div>
-            <div class="p-14">
-              <ul class="table-list with-hr">
-                <li>
-                  <span>Apariencia</span>
-                  <span class="bold">7%</span>
-                </li>
-              </ul>
-              <p class="text-gray">Agosto 2014</p> 
-            </div>
-          </div>
-        </li>
+		<?php endwhile; ?>
       </ul>
       <div class="text-center">
         <ul class="pager">
@@ -76,5 +47,4 @@ get_header(); ?>
     </div>
   </section>
 </div>
-<?php die(var_dump(the_content())); ?>
 <?php get_footer(); ?>    
