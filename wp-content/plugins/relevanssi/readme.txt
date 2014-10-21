@@ -2,9 +2,11 @@
 Contributors: msaari
 Donate link: http://www.relevanssi.com/buy-premium/
 Tags: search, relevance, better search
-Requires at least: 2.5
-Tested up to: 3.2.1
-Stable tag: 2.9.12
+Requires at least: 3.3
+Tested up to: 4.0
+Stable tag: 3.3.7.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Relevanssi replaces the default search with a partial-match search that sorts results by relevance. It also indexes comments and shortcode content.
 
@@ -14,8 +16,9 @@ Relevanssi replaces the standard WordPress search with a better search engine, w
 and configurable options. You'll get better results, better presentation of results - your users
 will thank you.
 
-This is the free version of Relevanssi. There's also Relevanssi Premium, which has added features.
-For more information about Premium, see [Relevanssi.com](http://www.relevanssi.com/).
+This is the free version of Relevanssi. There's also Relevanssi Premium, which has added features,
+including Multisite support. This free version does not work properly on Multisite. For more
+information about Premium, see [Relevanssi.com](http://www.relevanssi.com/).
 
 = Key features =
 * Search results sorted in the order of relevance, not by date.
@@ -36,6 +39,8 @@ For more information about Premium, see [Relevanssi.com](http://www.relevanssi.c
 * Automatic support for [WPML multi-language plugin](http://wpml.org/).
 * Automatic support for [s2member membership plugin](http://www.s2member.com/).
 * Advanced filtering to help hacking the search results the way you want.
+* Search result throttling to improve performance on large databases.
+* Disable indexing of post content and post titles with a simple filter hook.
 
 Relevanssi is available in two versions, regular and Premium. Regular Relevanssi is and will remain
 free to download and use. Relevanssi Premium comes with a cost, but will get all the new features.
@@ -44,16 +49,16 @@ Also, support for standard Relevanssi depends very much on my mood and available
 pricing includes support.
 
 = Premium features (only in Relevanssi Premium) =
-* Search result throttling to improve performance on large databases.
 * Improved spelling correction in "Did you mean?" suggestions.
 * Multisite support.
 * Search and index user profiles.
 * Search and index taxonomy term pages (categories, tags, custom taxonomies).
-* Assign weights to post types.
-* Adjust weights manually with a filter hook.
+* Search and index arbitrary columns in wp_posts MySQL table.
+* Assign weights to any post types and taxonomies.
+* Assign extra weight to new posts.
+* Let the user choose between AND and OR searches, use + and - operator (AND and NOT).
 * Highlighting search terms for visitors from external search engines.
 * Export and import settings.
-* Disable indexing of post content and post titles with a simple filter hook.
 
 = Relevanssi in Facebook =
 You can find [Relevanssi in Facebook](http://www.facebook.com/relevanssi).
@@ -79,9 +84,18 @@ is in active development and does what Search Unleashed does.
 To update your installation, simply overwrite the old files with the new, activate the new
 version and if the new version has changes in the indexing, rebuild the index.
 
+= Note on updates =
+If it seems the plugin doesn't work after an update, the first thing to try is deactivating and
+reactivating the plugin. If there are changes in the database structure, those changes do not happen
+without a deactivation, for some reason.
+
 = Changes to templates =
 None necessary! Relevanssi uses the standard search form and doesn't usually need any changes in
 the search results template.
+
+If the search does not bring any results, your theme probably has a query_posts() call in the
+search results template. That throws Relevanssi off. For more information, see [The most
+important Relevanssi debugging trick](http://www.relevanssi.com/knowledge-base/query_posts/).
 
 = How to index =
 Check the options to make sure they're to your liking, then click "Save indexing options and
@@ -122,17 +136,14 @@ If you're doing something unusual with your search and Relevanssi doesn't work, 
 using `relevanssi_do_query()`. See [Knowledge Base](http://www.relevanssi.com/knowledge-base/relevanssi_do_query/).
 
 = Uninstalling =
-To uninstall the plugin, first click the "Remove plugin data" button on the plugin settins page
-to remove options and database tables, then remove the plugin using the normal WordPress
-plugin management tools.
+To uninstall the plugin remove the plugin using the normal WordPress plugin management tools
+(from the Plugins page, first Deactivate, then Delete). If you remove the plugin files manually,
+the database tables and options will remain.
 
 = Combining with other plugins =
 Relevanssi doesn't work with plugins that rely on standard WP search. Those plugins want to
 access the MySQL queries, for example. That won't do with Relevanssi. [Search Light](http://wordpress.org/extend/plugins/search-light/),
 for example, won't work with Relevanssi.
-
-[ThreeWP Ajax Search](http://wordpress.org/extend/plugins/threewp-ajax-search/) is
-an AJAX instant search plugin that works with Relevanssi.
 
 Some plugins cause problems when indexing documents. These are generally plugins that use shortcodes
 to do something somewhat complicated. One such plugin is [MapPress Easy Google Maps](http://wordpress.org/extend/plugins/mappress-google-maps-for-wordpress/).
@@ -149,6 +160,10 @@ You can find solutions and answers at the [Relevanssi Knowledge Base](http://www
 If you the results don't change after installing and activating Relevanssi, the most likely 
 reason is that you have a call to `query_posts()` on your search results template. This confuses
 Relevanssi. Try removing the query_posts call and see what happens.
+
+= Searching for words with ampersands or hyphens doesn't work =
+Please read [Words with punctuation can't be found](http://www.relevanssi.com/knowledge-base/words-ampersands-cant-found/).
+This is a Relevanssi feature, but you can circumvent it with a simple filter function.
 
 = Where are the user search logs? =
 See the top of the admin menu. There's 'User searches'. There. If the logs are empty, please note
@@ -204,7 +219,7 @@ accepts $post variable attributes and order can be "asc" or "desc". The most rel
 here are most likely "post_date" and "comment_count".
 
 If you want to give your users the ability to sort search results by date, you can just add a link
-to http://www.yourblogdomain.com/?s=search-term&orderby=date&order=desc to your search result
+to http://www.yourblogdomain.com/?s=search-term&orderby=post_date&order=desc to your search result
 page.
 
 Order by relevance is either orderby=relevance or no orderby parameter at all.
@@ -223,12 +238,6 @@ Using wrong letters for units or impossible date ranges will lead to either defa
 or no results at all, depending on case.
 
 Thanks to Charles St-Pierre for the idea.
-
-= Caching =
-Relevanssi has an included cache feature that'll store search results and
-post excerpts in the database for reuse. It's something of an experimental 
-feature right now, but should work and if there are lots of repeat queries,
-it'll give some actual boost in performance.
 
 = Displaying the relevance score =
 Relevanssi stores the relevance score it uses to sort results in the $post variable. Just add
@@ -366,15 +375,8 @@ inverted document frequency is really low, so they never have much power in matc
 removing those words helps to make the index smaller and searching faster.
 
 == Known issues and To-do's ==
-* Known issue: The most common cause of blank screens when indexing is the lack of the mbstring extension. Make sure it's installed.
 * Known issue: In general, multiple Loops on the search page may cause surprising results. Please make sure the actual search results are the first loop.
 * Known issue: Relevanssi doesn't necessarily play nice with plugins that modify the excerpt. If you're having problems, try using relevanssi_the_excerpt() instead of the_excerpt().
-* Known issue: I know the plugin works with WP 2.5, but it loses some non-essential functionality. The shortcode stuff doesn't work with WP 2.5, which doesn't support shortcodes. Compatibility with older versions of WP hasn't been tested.
-* Known issue: Custom post types and private posts is problematic - I'm using default 'read_private_*s' capability, which might not always work.
-* Known issue: There are reported problems with custom posts combined with custom taxonomies, the taxonomy restriction doesn't necessarily work.
-* Known issue: Phrase matching is only done to post content; phrases don't match to category titles and other content.
-* Known issue: User searches page requires MySQL 5.
-* For more features to come, see [Feature list](http://www.relevanssi.com/features/).
 
 == Thanks ==
 * Cristian Damm for tag indexing, comment indexing, post/page exclusion and general helpfulness.
@@ -383,6 +385,293 @@ removing those words helps to make the index smaller and searching faster.
 * Mohib Ebrahim for relentless bug hunting.
 
 == Changelog ==
+
+= 3.3.7.1 =
+* Fixed bbPress compatibility.
+
+= 3.3.7 =
+* Fixed bbPress compatibility.
+
+= 3.3.6 =
+* Relevanssi handles taxonomy terms in search better. The change requires a reindexing.
+* Fix in indexing: Relevanssi will now bypass the global $post when indexing. This should help with problems with the Cookie Law Info plugin, for example.
+* Tax query relation setting didn't work properly. It is now fixed.
+* Word-based excerpt building sometimes created too short excerpts. That is now fixed.
+* Synonyms are now highlighted.
+* Phrase matching had issues where searching for a too common phrase crashed the search. That has been fixed.
+* LIKE operator didn't work properly in meta_queries.
+* Problems with Avatar Upload plugin are fixed.
+* Offset errors with mb_stripos() shouldn't happen anymore.
+* A small problem in taxonomy search MySQL fixed, also a small problem with AND operator in tax_queries.
+* New filter: `relevanssi_post_to_index` lets you access the post object before the post is indexed.
+* New filter: `relevanssi_orderby` lets you modify the $orderby value before Relevanssi sorts posts.
+* New filter: `relevanssi_order` lets you modify the $order value before Relevanssi sorts posts.
+* New filter: `relevanssi_post_title_before_tokenize` lets you modify post titles before indexing.
+* New filter: `relevanssi_private_cap` lets you adjust the capability setting for private posts in custom post types.
+* Deprecated use of `like_escape` has been fixed.
+
+= 3.3.5 =
+* Fixed a bug where excluding posts would cause the search to fail.
+* Fixed a bug causing duplicate search results in WPML searches.
+* Increased plugin safety against hackers.
+* There was a bug in `relevanssi_comment_content_to_index` filter.
+* Some people had problems with the log entry timestamps. Fixed that.
+* New filter: `relevanssi_prevent_default_request` gives you more control over where Relevanssi prevents the default query from running.
+* New filter: `relevanssi_private_cap` lets you set the correct capability for finding private posts in custom post types.
+* The option to exclude categories and tags from search only worked for categories, not tags. Tags have been separated to a different option.
+
+= 3.3.4 =
+* Couple of bug fixes.
+
+= 3.3.3 =
+* OR fallback had problems.
+* Indexing sub pages didn't work.
+* Relevanssi now automatically treats 'ß' as 'ss'. If your site has 'ß' in text, reindexing the database is a good idea.
+* Query variable `post_status` is now supported.
+
+= 3.3.2 =
+* Fixed a warning on search results page.
+
+= 3.3.1 =
+* Fixed bugs related to the removal of the cache feature.
+
+= 3.3 =
+* Improvements to excerpts: excerpts with phrases work much better now, and the excerpt creation logic has been improved: the excerpts are now better. The process takes a bit more time, though.
+* Allowing HTML tags in excerpts could lead to those tags being left open. Relevanssi will now try to close open HTML tags in excerpts.
+* Allowed tags were not controlled in comments. They are now.
+* Highlighting in documents didn't always work; it should be more reliable now.
+* Non-integer values are removed from `post__in` and `post__not_in` before processing them.
+* Query variables `p` and `page_id` are now supported.
+* Relevanssi now understands `date_query` variables as well.
+* The original post excerpt is stored in $post->original_excerpt.
+* Taxonomy search works better with term id parameters (for example from `wp_category_dropdown`).
+* Errors about $wpdb->prepare() missing an argument removed.
+* New functions: `relevanssi_the_title()` and `relevanssi_get_the_title()` can be used to display highlighted titles in search results.
+* The old title highlighting method has been disabled, because it caused highlights in wrong places. Now the highlighted title is stored in $post->highlighted_post_title, take it from there or use the Relevanssi title functions to display it.
+* Polylang and WPML support was adjusted to perform better in edge cases.
+* Indexing is faster, thanks to some improved code from Tom Novelli.
+* MySQL injection attack vulnerability removed.
+* The cache feature is now removed. Relevanssi should automatically drop the cache tables.
+* New filter: `relevanssi_indexing_data` lets you modify the data before it's indexed.
+
+= 3.2 =
+* Fixed a bug in the TablePress support.
+* Titles are put through the_title filter before indexing.
+* New filter: `relevanssi_join` can be used to join tables in the Relevanssi search MySQL queries. Thanks to Ninos Ego.
+* New filter: `relevanssi_post_content` can be used to modify post content before any Relevanssi processing.
+* New filter: `relevanssi_post_content_before_tokenize` can be used to modify post content just before it's tokenized.
+* New filter: `relevanssi_indexing_values` can be used to modify what Relevanssi stores in the index.
+* New filter: `relevanssi_default_meta_query_relation` can be used to change the default meta query relation (default value is "AND").
+* When using a meta_query, `relation` can be set to OR now.
+* Phrases are now matched to excerpts.
+* Number of queries Relevanssi generates is much, much lower.
+* New filter: `relevanssi_didyoumean_url` lets you modify the URL generated by the did you mean feature.
+* Better set of Russian stopwords. 
+* Relevanssi now highlights search query synonyms as well in documents.
+
+= 3.1.9 =
+* Fix to make Relevanssi compatible with WordPress 3.7.
+* Fixed a mistyped database table name.
+* Relevanssi disables responsive-flipbook shortcode in indexing; it was causing problems.
+* Fixed a problem with an author dropdown with no author selected.
+
+= 3.1.8 =
+* Category restriction and exclusion and couple of other category-related settings didn't work properly.
+* Support for Polylang broke the support for WPML. That is now fixed.
+* One deprecated `$wpdb->escape()` was still left; it's gone now.
+* Shortcode `layerslider` was causing problems with Relevanssi; Relevanssi now disables it before building excerpts.
+* Relevanssi won't break BBPress search anymore.
+* If Relevanssi Premium is installed, deleting Relevanssi will not remove the databases and the options.
+
+= 3.1.7 =
+* New filter: `relevanssi_comment_content_to_index` lets you modify comment content before it's indexed by Relevanssi (to index comment meta, for example).
+* Facetious support: if post_type is set to -1, Relevanssi will not hang up on it.
+* Numerical search terms work better now.
+* Excerpt-building had issues, which are now fixed.
+* Punctuation removal now replaces &nbsp; with a space.
+* "starrater" short code from GD Star Rating is now disabled in indexing.
+* Punctuation removal now replaces invisible spaces with a normal space.
+* Division by zero error caused by 0 in posts_per_page is now prevented, and -1 value for posts_per_page handled better.
+* Relevanssi doesn't apply `get_the_excerpt` filters to excerpts it builds any more.
+* New filter: `relevanssi_excerpt` lets you modify the excerpts Relevanssi creates.
+* Relevanssi now suspends WP post cache while indexing, making indexing a lot more efficient. Thanks to Julien Mession for this one.
+* Deprecated function errors in 3.6 removed.
+* When search included user profiles or taxonomy terms, Relevanssi would generate lots of MySQL errors. Not anymore.
+* New filter: `relevanssi_valid_status` lets you modify the post statuses Relevanssi indexes.
+* New filter: `relevanssi_index_taxonomies_args` lets you modify the arguments passed to get_terms() when indexing taxonomies (for example to set 'hide_empty' to false).
+* Searching by taxonomy ID could confuse two taxonomies with the same term_id. The search is now checking the taxonomy as well to see it's correct. 
+* Basic support for Polylang plugin.
+* Russian and Italian stopwords are now included, thanks to Flector and Valerio Vendrame.
+* Small fix in the way user meta fields are handled.
+
+= 3.1.6 =
+* DEACTIVATE AND ACTIVATE THE PLUGIN AFTER YOU UPDATE.
+* Fuzzy searches are now a lot more efficient; they were a huge resource hog before.
+* Fixed a possible MySQL injection attack.
+* Fixed MySQL errors from empty meta queries.
+* Sort order (orderby and order variables) are now read from query variables instead of global variables.
+* Relevanssi will not choke on bad values of orderby anymore.
+* Limit searches is improved: when using AND search it is less likely to miss results.
+* Phrase recognition read the whole post content (which it didn't need) from database, causing memory issues in some cases. Fixed that.
+* Highlighting was broken, and should work much better now.
+
+= 3.1.5 =
+* OR fallback didn't actually fall back to OR, but instead got stuck in an endless loop of AND searches.
+* Meta queries didn't work without a key; now they work with just meta_value or meta_value_num.
+* Meta queries had problems with meta_value being set to null.
+* Relevanssi now supports category__and. By default this sets include_children to false.
+* When querying by slug, the term taxonomy is also taken into consideration, fixing problems when same slug appears in different taxonomies.
+* Author search didn't work.
+* Fixed an error message caused by all-number synonyms starting with zero, like 02.
+* Synonyms are now case-insensitive.
+* New filter: `relevanssi_default_tax_query_relation` can be used to change the default tax query relation from OR to AND.
+* Fixed undefined variable errors when doing an OR fallback.
+* New filter: `relevanssi_bots_to_not_log` makes it possible to block bots from logs. The format matches what other plugins, ie. WP-Useronline, use for bot blocking, so you can share block lists.
+* New filter: `relevanssi_admin_search_ok` gives you more control when Relevanssi overrides the default WP search in admin, useful for fixing P2P_Box AJAX search.
+* Ordering search results by title or date in admin search works now.
+* Modified the way the highlights work; now highlighting words with apostrophes should produce more meaningful results.
+* Highlighting should not highlight anything between & and ; or in <style> or <script> tags, thus solving some of the problems related to highlights. Reports of how well this works are welcome.
+* On-post highlighting now only highlights content in the loop, so menu texts and other off-the-loop stuff should not get highlights anymore.
+* New action hook: `relevanssi_pre_indexing_query` can be used to "SET OPTION SQL_BIG_SELECTS=1" if needed.
+* Major indexing problems caused by shortcodes changing the post ID during the indexing of posts are now fixed.
+* Relevanssi was being called twice when a post was saved, on `save_post` and `wp_insert_post`. I removed the hook on `save_post`.
+* Unsuccessful searches are now ordered by count, like the successful queries are.
+
+= 3.1.4 =
+* Choosing which taxonomies to index is now done with an easy-to-use checkbox list.
+* Support for WP Table Reloaded and TablePress. Tables created with these plugins will now be expanded and the content indexed by Relevanssi.
+* New filter: `relevanssi_index_comments_exclude` can be used to exclude comments from indexing. The filter gets the post ID as a parameter, so you can prevent comments of particular posts being indexed, yet index those posts.
+* Relevanssi now adds spaces between tags when creating excerpts to make neater excerpts from tables and other similar situations.
+* Relevanssi now indexes unattached attachments, if you choose to index attachments.
+* Fixed the problems with Twenty Ten and Twenty Eleven themes better.
+* $match->tag now contains the number of tag hits.
+* Relevanssi now adds relevance score to posts before passing them to relevanssi_hits_filter. You can find it in $post->relevance_score.
+* Tags in breakdowns always showed 0, even though tags were indexed and searched correctly. That's now fixed.
+
+= 3.1.3 =
+* AND search did not work in all cases.
+* Posts couldn't be found by category name. Fixed that.
+
+= 3.1.2 =
+* Exclude category option was broken. Fixed that.
+* Searching for a non-existing category ID caused an error. Fixed that.
+* Occasional blank screens of death occurred when multibyte string operations weren't installed. That should not happen anymore.
+* Fallback to OR search was a bit broken.
+
+= 3.1.1 =
+* Small fix to prevent database errors.
+* Small fix to prevent disappearing excerpts.
+
+= 3.1 =
+* Fixed the uninstalling instructions.
+* Fixes a problem with Twenty Ten and Twenty Eleven themes that caused doubled "Continue Reading" links.
+* Fixed a notice about undefined variable on plugin update pages.
+* Small bug fixes on search to remove warning notices.
+* New filter: `relevanssi_index_custom_fields` can be used to modify the list of custom fields to index.
+* Deleting menus caused a warning. That is now fixed.
+* Relevanssi has an option to disable IP logging (which is actually illegal in some countries). Thanks to Stefan Eufinger.
+* Searching in subcategories worked sometimes, but not always. Thanks to Faebu.
+* The "Limit searches" option didn't work too well in the case of strong weightings, as it didn't take note of any weights. Now it works better.
+* Added a note about disabling custom excerpts when they are not needed - they can slow down the search quite a bit.
+* New filter: `relevanssi_options_capability` can be used to modify the capability required to see the options page (default is `manage_options`).
+* Fixed the way IDF is calculated to account some extreme cases with small databases.
+* New filter: `relevanssi_index_custom_fields` gives added control over which custom fields are indexed.
+* Fixed filter: `relevanssi_pre_excerpt_content` wasn't working properly.
+* Relevanssi now supports tax_query, for most part. You can query multiple taxonomies, use relation AND and OR, use operators AND, IN and NOT IN and choose include_children (which defaults to true). Old `taxonomy` and `term` still work, but I recommend using tax_query for the level of control it offers.
+* Relevanssi now works better with category restrictions. The extra `cats` query variable is no longer necessary, Relevanssi can now read multiple categories from `cat`. You can also use `category__and`, `category__in` and `category__not_in`.
+* Same goes with tags: `tags` is now longer necessary. Relevanssi has full support for `tag`, `tag_id`, `tag__and`, `tag__in`, `tag__not_in`, `tag_slug__and`, `tag_slug__in` and `tag_slug__not_in`. For `tag`, both `term1+term2` and `term1,term2` is supported.
+* Relevanssi now supports `author_name` and negative values for `author`.
+* Relevanssi now supports `offset` query variable.
+* Relevanssi now supports meta_query. You can use all comparisons (also EXISTS and NOT EXISTS, even if you don't have WP 3.5). You can also use the older `meta_key` and `meta_value` query variables, including all the comparisons. I have not tested all possible meta_query constructions, so bug reports of things that don't work as expected are welcome.
+* New index on the database makes some database operations faster.
+* Removed a bug that prevents one-character words from being indexed in titles, despite the minimum word length setting.
+* Removed a warning when searching for nothing.
+* Fixes a warning about $wpdb->prepare() caused by a change in WordPress 3.5.
+
+= 3.0.5 =
+* AFTER UPGRADING FROM 2.x: Make sure you deactivate and reactivate Relevanssi in order to make the database changes happen.
+* Fixed a major bug that caused the searches to fail when "Limit searches" was enabled, but "Limit" was not defined.
+* Modified `relevanssi_remove_punct()` to replace curly apostrophes and quotes with spaces instead of removing them, to make the index more consistent (regular apostrophes were replaced with spaces). Reindexing the database is a good idea.
+* Fixed some misleading text on the options page.
+
+= 3.0.4 =
+* AFTER UPGRADING FROM 2.x: Make sure you deactivate and reactivate Relevanssi in order to make the database changes happen.
+* Fixed another problem with the Jetpack Contact Form.
+* Fixed an error message caused by searching for numbers.
+* Phrases are now also recognized in drafts and attachments.
+* You can now set `post_types` to 'any'.
+
+= 3.0.3 =
+* AFTER UPGRADING FROM 2.x: Make sure you deactivate and reactivate Relevanssi in order to make the database changes happen.
+* Fixed a bug that made custom taxonomy term searches fail.
+* New filter: `relevanssi_user_searches_capability` lets you modify the minimum capability required to see the User searches page.
+
+= 3.0.2 =
+* AFTER UPGRADING FROM 2.x: Make sure you deactivate and reactivate Relevanssi in order to make the database changes happen.
+* Fixed the "Cannot use a scalar value as an array" bug in indexing.
+* Role-Scoper users: in order to make Relevanssi work with Role-Scoper, replace the Relevanssi helper file in Role-Scoper with [this file](http://www.relevanssi.com/relevanssi-helper-front_rs.txt).
+* Removed an error message about set_time_limit() under safe_mode.
+* Jetpack Contact Form shortcode caused problems when indexing. Relevanssi will now simply remove the shortcode before indexing.
+* Fixed errors caused by / characters in highlighting.
+
+= 3.0.1 =
+* AFTER UPGRADING FROM 2.x: Make sure you deactivate and reactivate Relevanssi in order to make the database changes happen.
+* Fixed lots of problems in logging searches.
+* Added an alert when user hasn't selected any post types to index (and default values).
+* Custom field setting 'visible' works now.
+* Searching by category title works now, and you can adjust the category weight in the settings.
+
+= 3.0 =
+* AFTER UPGRADING FROM 2.x: Make sure you deactivate and reactivate Relevanssi in order to make the database changes happen.
+* WORD OF WARNING: This is a major update, with lots of changes as you can see, and since I couldn't find any beta testers to help test it out, consider this a beta release, with bugs probable.
+* The database has been updated to match the more advanced structure in Relevanssi Premium. This requires a re-indexing of the database.
+* The indexing process is more efficient now.
+* Relevanssi now includes a throttle feature, which makes the searches more efficient.
+* Relevanssi now disables the default WP search.
+* The custom field search hack using `cat` set to "custom" doesn't work any more. If you wish to filter by custom field, you need Relevanssi Premium, which does it better anyway.
+* Relevanssi can handle certain whitespace characters better in indexing.
+* Apostrophes are now replaced with whitespace instead of being removed.
+* Relevanssi now shows correct number of results when posts_per_page is set to -1.
+* Fuzzy search didn't always activate when it should, if all found posts are private posts that can't be shown to user.
+* Tab characters in excerpts are handled better now.
+* Relevanssi search logs will now store user ID's and IP addresses for each query.
+* You can now use user logins as well as numeric ID's to stop user from being logged.
+* Attachments are now handled better. I'd still like to hear any complaints about attachments.
+* Relevanssi now updates index for posts added with wp_update_post() function. (Thanks to Simon Blackbourn)
+* Searching for pages in admin didn't work properly. Fixed that.
+* Fixed warnings for undefined variables.
+* Relevanssi won't mess media library searches any more.
+* Search terms are no longer highlighted in titles on post pages. That caused too many problems.
+* New collation rules to MySQL databases will make sure that word pairs like "pode" and "pôde" will not be considered duplicates in the stopword database.
+* You can now set the "Custom fields to index" to "all" to index all custom fields and "visible" to index all visible custom fields (but not the ones with names starting with an underscore).
+* Plugin now works properly without multibyte string functions.
+* You can now choose to allow HTML tags in excerpts.
+* New filter: `relevanssi_modify_wp_query` lets you modify $wp_query before it is passed to Relevanssi.
+* New filter: `relevanssi_search_ok` lets you adjust when search is enabled.
+* New filter: `relevanssi_pre_excerpt_content` lets you adjust post content before excerpt creation.
+* New filter: `relevanssi_excerpt_content` lets you adjust post content before excerpt creation, but after `the_content`.
+* New filter: `relevanssi_ellipsis` lets you change the default '...' in excerpts to something else.
+* New filter: `relevanssi_do_not_index` is given a post ID and expects a boolean in return: should this post be indexed or not?
+* New filter: `relevanssi_match` lets you meddle with the matching engine.
+* New filter: `relevanssi_results` filters the result set from the search.
+* New filter: `relevanssi_content_to_index` let's you add whatever content you wish to posts before they are indexed.
+* New filter: `relevanssi_didyoumean_query` let's you modify the query for Did you mean? queries
+* Changed filter: `relevanssi_post_ok` has different arguments, see source code for details.
+* New shortcode: use shortcode `noindex` to wrap parts of posts you want to keep from the index.
+* And a bunch of other changes.
+
+= 2.9.14 =
+* Relevanssi will now index pending and future posts. These posts are only shown in the admin search.
+
+= 2.9.13 =
+* Stripping shortcodes from excerpts didn't work properly. Should work now.
+* Fixed a mistake in the FAQ: correct post date parameter is `post_date`, not `date`.
+* New filter `relevanssi_results` added. This filter will process an array with (post->ID => document weight) pairs.
+* Private and draft posts were deleted from the index when they were edited. This bug has been fixed. (Thanks to comprock.)
+* When continuing indexing, Relevanssi now tells if there's more to index. (Thanks to mrose17.)
+* Fixed problems with searching attachments. Indexing attachments still has some problems. When you build the index, attachments are indexed properly.
+* Improved WPML support.
+* The `relevanssi_index_doc()` function has a new parameter that allows you to bypass global $post and force the function to index the document given as a parameter (see 2.9.13 release notes at Relevanssi.com for more details).
 
 = 2.9.12 =
 * Scheduled cache truncate wasn't scheduled properly. It is now.
@@ -734,7 +1023,7 @@ removing those words helps to make the index smaller and searching faster.
 
 = 1.3.2 =
 * Quicktags are now stripped from custom-created excerpts.
-* Added a function `relevanssi_the_excerpt()', which prints out the excerpt without triggering `wp_trim_excerpt()` filters.
+* Added a function `relevanssi_the_excerpt()`, which prints out the excerpt without triggering `wp_trim_excerpt()` filters.
 
 = 1.3.1 =
 * Another bug fix release.
@@ -761,3 +1050,41 @@ removing those words helps to make the index smaller and searching faster.
 
 = 1.0 =
 * First published version.
+
+== Upgrade notice ==
+
+= 3.3.7.1 =
+* Improved bbPress compatibility.
+
+= 3.3.7 =
+* Fixed bbPress compatibility.
+
+= 3.3.6 =
+* Many new features, small bug fixes and WP 4.0 compatibility.
+
+= 3.3.5 =
+* Bug fixes and security updates.
+
+= 3.3.4 =
+* Bug fixes.
+
+= 3.3.3 =
+* OR fallback and indexing sub pages fixed.
+
+= 3.3.2 =
+* Fixes a warning on search page.
+
+= 3.3.1 =
+* Removing the cache feature wasn't complete, which caused problems. Those should be fixed now.
+
+= 3.3 =
+* Critical MySQL injection vulnerability fixed, better excerpts and highlights, bug fixes. This version removes the cache feature.
+
+= 3.2 =
+* New filters, better search efficiency, new features, small bug fixes.
+
+= 3.1.9 =
+* WordPress 3.7 compatibility, couple of minor bug fixes.
+
+= 3.1.8 =
+Recommended for users of WPML and BBpress. Category exclusions and restrictions are also fixed.
