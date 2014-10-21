@@ -53,14 +53,15 @@
         </ul>
       </div>
       <div class="col-sm-4 pl-0">
-        <form>
+        <!-- <form>
           <div class="input-group">
             <input type="search" class="form-control" placeholder="Buscar">
             <span class="input-group-btn">
               <button class="btn btn-primary" type="button"></button>
             </span>
-          </div><!-- /input-group -->
-        </form>
+          </div>
+        </form> -->
+        <?php get_search_form(); ?>
       </div>
     </div>
   </div>
