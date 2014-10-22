@@ -18,7 +18,7 @@
             <div class="user-sign-in-form">
               <form>
                 <h4>Mi información</h4>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <input type="text" class="form-control" placeholder="Usuario o correo electrónico">
                 </div>
                 <div class="form-group">
@@ -31,7 +31,8 @@
                   <div class="col-xs-5 text-right">
                     <button type="submit" class="btn btn-primary btn-sm">Ingresa</button>
                   </div>
-                </div>
+                </div> -->
+                <?php echo do_shortcode('[dm_login_form]'); ?>
               </form>
             </div>
           </div>
