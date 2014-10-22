@@ -16,24 +16,7 @@
           <div class="col-md-1"></div>
           <div class="col-md-4">
             <div class="user-sign-in-form">
-              <form>
-                <h4>Mi información</h4>
-                <!-- <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Usuario o correo electrónico">
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control" placeholder="Contraseña">
-                </div>
-                <div class="form-group row">
-                  <div class="col-xs-7">
-                    <a href="#" class="" data-toggle="modal" data-target="#myModal">Olvidé mi contraseña</a>
-                  </div>
-                  <div class="col-xs-5 text-right">
-                    <button type="submit" class="btn btn-primary btn-sm">Ingresa</button>
-                  </div>
-                </div> -->
                 <?php echo do_shortcode('[dm_login_form]'); ?>
-              </form>
             </div>
           </div>
         </div>

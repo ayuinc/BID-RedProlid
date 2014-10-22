@@ -8,23 +8,9 @@
 function dlf_form() {
  
 ?>
- 
-<form method="post" action="<?php //echo $_SERVER['REQUEST_URI']; ?>">
-    <!-- <div class="login-form"> -->
-       <!--  <div class="form-group">
-            <input name="login_name" type="text" class="form-control login-field" value="" placeholder="Username" id="login-name" />
-            <label class="login-field-icon fui-user" for="login-name"></label>
-        </div> -->
- 
-        <!-- <div class="form-group">
-            <input  name="login_password" type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass" />
-            <label class="login-field-icon fui-lock" for="login-pass"></label>
-        </div> -->
-        <!-- <input class="btn btn-primary btn-lg btn-block" type="submit"  name="dlf_submit" value="Log in" /> -->
-	<!-- </div> -->
-</form>
 
 <form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
+	<h4>Mi información</h4>
 	<div class="form-group">
 	  <!-- <input name="login_name" id="login-name" type="text" class="form-control login-field" placeholder="Usuario o correo electrónico"> -->
 	  <input name="login_name" type="text" class="form-control login-field" value="" placeholder="Username" id="login-name" />
@@ -60,10 +46,6 @@ function dlf_auth( $username, $password ) {
 	}
 
 	if ( !is_wp_error($user) ) {
-
-		// wp_redirect(home_url('wp-admin'));
-		// die(print_r($_SERVER[REQUEST_URI]));
-		// $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 		$actual_link = "$_SERVER[REQUEST_URI]";
 
 		wp_redirect(home_url($actual_link));
