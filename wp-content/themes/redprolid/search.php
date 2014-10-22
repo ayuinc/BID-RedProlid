@@ -2,15 +2,36 @@
 /**
  * The template for displaying Search Results pages
  *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
  */
 
 get_header(); ?>
-
-	<section id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+<!--HEADER-->
+<?php get_template_part( 'include', 'header' ); ?>
+<!--NAV-->
+<?php get_template_part( 'include', 'nav' ); ?>
+	<div class="container">
+    <div class="panel panel-custom panel-highlight panel-flex">
+      <div class="panel-body">
+        <div class="pdv-icon">
+          <img src="../assets/img/pdv-main-icon.png" alt="">
+        </div>
+        <div class="col-sm-6 mb-ch-21">
+          <h1>Puntos de vista anteriores</h1>
+          <a href="#" class="block">Puntos de vista >></a>
+        </div>
+        <div>
+          <hr style="border-top: 3px dotted #aeab8b;">
+          <div class="col-sm-6">
+            <?php get_search_form(); ?>
+          </div>
+          <div class="col-sm-6 text-right">
+            <strong>Resultados 0</strong>
+            <p>Resultados por página: <a href="#">10</a> - <a href="#">50</a> - <a href="#">100</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 			<?php if ( have_posts() ) : ?>
 
@@ -43,7 +64,4 @@ get_header(); ?>
 		</div><!-- #content -->
 	</section><!-- #primary -->
 
-<?php
-get_sidebar( 'content' );
-get_sidebar();
-get_footer();
+<?php get_footer(); ?>
