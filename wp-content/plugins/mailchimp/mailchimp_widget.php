@@ -241,8 +241,8 @@ function mailchimpSF_signup_form($args = array()) {
 		?>
 		</div>
 		<div class="modal-footer">
-		<div class="btn btn-primary">
-			<input style="width:inherit" type="submit" name="mc_signup_submit" id="mc_signup_submit" value="<?php echo esc_attr($submit_text); ?>" class="button" />
+		<div class="">
+			<input style="width:inherit" type="submit" name="mc_signup_submit" id="mc_signup_submit" value="<?php echo esc_attr($submit_text); ?>" class="button btn btn-primary" />
 		</div><!-- /mc_signup_submit -->
 		</div>
 	
