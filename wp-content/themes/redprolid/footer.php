@@ -79,6 +79,30 @@
         </div>
       </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="mailChimp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Recupera tu contraseña</h4>
+          </div>
+          <form>
+            <div class="modal-body">
+                <p>Envíaremos tu contraseña al correo electrónico que escribas a continuación, este debe ser el mismo que incluiste al registrarte en Red PROLID.</p>
+                <div class="form-group">
+                  <label for="email">Correo Electrónico:</label>
+                  <input type="email" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+          <?php mailchimpSF_signup_form(); ?>
+        </div>
+      </div>
+    </div>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/vendor/jquery-2.1.1.min.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/bid.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/transition.js"></script>
