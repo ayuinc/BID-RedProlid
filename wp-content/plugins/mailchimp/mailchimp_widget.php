@@ -38,9 +38,9 @@ function mailchimpSF_signup_form($args = array()) {
 	if (!empty($header)) {
 		// See if we need to wrap the header content in our own div
 		if (strlen($header) == strlen(strip_tags($header))){
-			echo !empty($before_title) ? $before_title : '<div class="mc_custom_border_hdr">';
+			echo !empty($before_title) ? $before_title : '<div class="mc_custom_border_hdr modal-header"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button><h4>';
 			echo $header; // don't escape $header b/c it may have HTML allowed
-			echo !empty($after_title) ? $after_title : '</div><!-- /mc_custom_border_hdr -->';
+			echo !empty($after_title) ? $after_title : '</h4></div><!-- /mc_custom_border_hdr -->';
 		}
 		else {
 			echo $header; // don't escape $header b/c it may have HTML allowed
@@ -145,8 +145,8 @@ function mailchimpSF_signup_form($args = array()) {
 	} 
 	?>
 	
-	<div class="mc_form_inside">
-		
+	<div class="mc_form_inside ">
+		<div class="modal-body">
 		<div class="updated" id="mc_message">
 			<?php echo mailchimpSF_global_msg(); ?>
 		</div><!-- /mc_message -->
@@ -239,11 +239,12 @@ function mailchimpSF_signup_form($args = array()) {
 		}
 
 		?>
-
+		</div>
+		<div class="modal-footer">
 		<div class="mc_signup_submit">
 			<input type="submit" name="mc_signup_submit" id="mc_signup_submit" value="<?php echo esc_attr($submit_text); ?>" class="button" />
 		</div><!-- /mc_signup_submit -->
-	
+		</div>
 	
 		<?php
 		$user = get_option('mc_sopresto_user');
