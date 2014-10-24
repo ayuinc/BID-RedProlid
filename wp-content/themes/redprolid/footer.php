@@ -60,10 +60,6 @@
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Recupera tu contraseña</h4>
-          </div>
           <form>
             <div class="modal-body">
             		<p>Envíaremos tu contraseña al correo electrónico que escribas a continuación, este debe ser el mismo que incluiste al registrarte en Red PROLID.</p>
@@ -76,6 +72,10 @@
               <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
           </form>
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Recupera tu contraseña</h4>
+          </div>
           <?php  
   
             global $wpdb;
@@ -135,19 +135,20 @@
                 echo '<div class="error_login"><p class="success">'. $success .'</p></div>';
             }
           ?>
-
           <!--html code-->
           <form method="post">
-            <fieldset>
-              <p>Please enter your username or email address. You will receive a link to create a new password via email.</p>
-              <p><label for="user_login">Username or E-mail:</label>
+            <div class="modal-body">
+              <p>Envíaremos tu contraseña al correo electrónico que escribas a continuación, este debe ser el mismo que incluiste al registrarte en Red PROLID.</p>
+              <div class="form-group">
+                <label for="user_login">Correo Electrónico:</label>
                 <?php $user_login = isset( $_POST['user_login'] ) ? $_POST['user_login'] : ''; ?>
-                <input type="text" name="user_login" id="user_login" value="<?php echo $user_login; ?>" /></p>
-              <p>
-                <input type="hidden" name="action" value="reset" />
-                <input type="submit" value="Get New Password" class="button" id="submit" />
-              </p>
-            </fieldset> 
+                <input class="form-control" type="text" name="user_login" id="user_login" value="<?php echo $user_login; ?>" />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <input type="hidden" name="action" value="reset" />
+              <input type="submit" value="Enviar" class="button btn btn-primary" id="submit" />
+            </div>
           </form>
         </div>
       </div>
