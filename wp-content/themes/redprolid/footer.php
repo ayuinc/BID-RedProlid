@@ -60,18 +60,6 @@
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <form>
-            <div class="modal-body">
-            		<p>Envíaremos tu contraseña al correo electrónico que escribas a continuación, este debe ser el mismo que incluiste al registrarte en Red PROLID.</p>
-                <div class="form-group">
-                  <label for="email">Correo Electrónico:</label>
-                  <input type="email" class="form-control">
-                </div>
-            </div>
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-          </form>
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             <h4 class="modal-title" id="myModalLabel">Recupera tu contraseña</h4>
@@ -93,11 +81,11 @@
                   $email = trim($_POST['user_login']);
                   
                   if( empty( $email ) ) {
-                    $error = 'Enter a username or e-mail address..';
+                    $error = 'Ingresa nombre de usuario o email...';
                   } else if( ! is_email( $email )) {
-                    $error = 'Invalid username or e-mail address.';
+                    $error = 'Nombre de usuario o email invalido.';
                   } else if( ! email_exists( $email ) ) {
-                    $error = 'There is no user registered with that email address.';
+                    $error = 'No hay un usuario registrado con ese email.';
                   } else {
                     
                     $random_password = wp_generate_password( 12, false );
@@ -124,10 +112,10 @@
                       
                       $mail = wp_mail( $to, $subject, $message, $headers );
                       if( $mail )
-                        $success = 'Check your email address for you new password.';
+                        $success = 'Revisa tu nuevo password en tu bandeja de correo.';
                         
                     } else {
-                      $error = 'Oops something went wrong updaing your account.';
+                      $error = 'Oops algo salió mal actualizando tu cuenta.';
                     }
                     
                   }
