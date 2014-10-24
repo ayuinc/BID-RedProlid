@@ -115,7 +115,8 @@ get_header(); ?>
 									 */
 									echo '<li>';
 									// get_template_part( 'content', get_post_format() );
-									the_content();
+                  the_title();
+                  the_content();
 									echo '</li>';
 
 								endwhile;
