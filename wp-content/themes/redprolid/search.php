@@ -103,32 +103,48 @@ get_header(); ?>
               <hr>
             </li>
 
-						<?php if ( have_posts() ) : ?>
-							<?php
-								// Start the Loop.
-								while ( have_posts() ) : the_post();
-
-									/*
-									 * Include the post format-specific template for the content. If you want to
-									 * use this in a child theme, then include a file called called content-___.php
-									 * (where ___ is the post format) and that will be used instead.
-									 */
-									echo '<li>';
-									// get_template_part( 'content', get_post_format() );
-                  the_title();
-                  the_content();
-									echo '</li>';
-
-								endwhile;
-								// Previous/next post navigation.
-								twentyfourteen_paging_nav();
-
-							else :
-								// If no content, include the "No posts found" template.
-								get_template_part( 'content', 'none' );
-
-							endif;
-						?>
+            <?php if ( have_posts() ) : ?>
+              <?php while ( have_posts() ) : the_post(); ?>
+              <li>
+                <h4 class="m-0"><?php the_title(); ?></h4>
+                <?php $conte = (wp_get_post_terms(get_the_ID(),'country',array("fields" => "names"))[0]); ?>
+                <span class="text-gray-light"><?php if(isset($conte)){echo $conte.',';} ?> <?php echo get_the_date(); ?> / </span> <a><?php the_field('fuente-debates'); ?></a>
+                <!-- <span class="text-gray-light">Bolivia, Julio 24/2014 / </span> <a href="#">El Tiempo</a> -->
+                <p class="m-0">
+                  <?php 
+                    switch (true) {
+                      case the_field('contenido_punto_de_vista'):
+                        echo the_field('contenido_punto_de_vista');
+                        break;
+                      case the_field('contenido_campeona'):
+                        echo the_field('contenido_campeona');
+                        break;
+                      case the_field('contenido_concurso'):
+                        echo the_field('contenido_concurso');
+                        break;
+                      case the_field('contenido-debates'):
+                        echo the_field('contenido-debates');
+                        break;
+                      case the_field('contenido-dtl'):
+                        echo the_field('contenido-dtl');
+                        break;
+                      case the_field('contenido-dtl-seccion'):
+                        echo the_field('contenido-dtl-seccion');
+                        break; 
+                      case the_field('contenido_evento'):
+                        echo the_field('contenido_evento');
+                        break; 
+                      case the_field('contenido_noticias'):
+                        echo the_field('contenido_noticias');
+                        break;                
+                    }
+                  ?>
+                </p>
+                <a href="<?php echo get_permalink( get_the_ID() ); ?>">Leer más &gt; &gt;</a>
+                <hr>
+              </li>
+              <?php endwhile; ?>
+            <?php endif; ?> 
           </ol>
         </div>
         <div class="col-sm-1"></div>
