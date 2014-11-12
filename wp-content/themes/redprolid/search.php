@@ -95,14 +95,6 @@ get_header(); ?>
         <div class="col-sm-1"></div>
         <div class="col-sm-10">
           <ol>
-            <li>
-              <h4 class="m-0">Alternancia y paridad lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
-              <span class="text-gray-light">Bolivia, Julio 24/2014 / </span> <a href="#">El Tiempo</a>
-              <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, obcaecati! Illum reiciendis voluptas eius ducimus. Repudiandae, eligendi corrupti repellendus pariatur veritatis, ab adipisci tempora magni, vel at eaque voluptatibus molestias.</p>
-              <a href="#">Leer más &gt; &gt;</a>
-              <hr>
-            </li>
-
             <?php if ( have_posts() ) : ?>
               <?php while ( have_posts() ) : the_post(); ?>
               <li>
