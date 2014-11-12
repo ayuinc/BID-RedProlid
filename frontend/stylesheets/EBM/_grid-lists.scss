@@ -8,8 +8,8 @@ ul.grid-list {
 	@include list-unstyled;
 	> li {
 		float: left;
-		// padding: $grid-gutter-width / 2;
-		// padding: rem($grid-gutter-width / 2);
+		padding: $grid-gutter-width / 2;
+		padding: rem($grid-gutter-width / 2);
 	}
 	@for $i from 1 through 12 {
 		&.grid-list-#{$i} {
@@ -34,6 +34,13 @@ ul.grid-list {
 		> li {
 			float: none;
 			display: inline-block;
+		}
+	}
+	&.grid-list-anchors {
+		> li {
+			a {
+				display: block;
+			}
 		}
 	}
 }
