@@ -119,3 +119,14 @@
 		}
 	}
 }
+
+form.search {
+	input,
+	button {
+		height: 42px;
+	}
+	button {
+		width: 42px;
+		background: $brand-primary url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px;
+	}
+}

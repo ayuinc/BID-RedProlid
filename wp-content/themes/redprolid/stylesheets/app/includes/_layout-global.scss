@@ -15,6 +15,13 @@ footer {
 	padding-bottom: 21px;
 }
 
+.see-more {
+	@include bold;
+	&:after {
+		content: " >>";
+	}
+}
+
 #hero-unit {
 	padding-top: 0;
 	.content {

@@ -1,0 +1,21 @@
+.enterate-search {
+	position: relative;
+	min-height: 390px;
+	width: 350px;
+	.bookshelf {
+		position: absolute;
+		width: 350px;
+		height: 275px;
+		background: url(../assets/img/enterate-search.png) no-repeat center center;
+		bottom: -101px;
+		left: 0;
+		background-size: cover;
+	}
+}
+
+.enterate-calendar {
+	.calendar {
+		width: 210px;
+		min-height: 210px;
+	}
+}
