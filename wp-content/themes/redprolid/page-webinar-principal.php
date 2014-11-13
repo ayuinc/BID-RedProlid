@@ -43,7 +43,7 @@ get_header(); ?>
         <?php if ($count <= 1) : ?>
         <div class="container">
           <h1 class="mb-21"><?php the_title(); ?></h1>
-          <p><?php get_post_field('post_content', get_the_ID()); ?></p>
+          <p><?php echo get_post_field('post_content', get_the_ID()); ?></p>
         </div>
         <div class="container-sm">
           <!-- <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive"> -->
