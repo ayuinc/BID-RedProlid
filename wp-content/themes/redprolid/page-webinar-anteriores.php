@@ -31,25 +31,28 @@ get_header(); ?>
               </div>
             </div>
           </form>
+          <?php query_posts( 'category_name=webinario' ); ?>
+          <?php while ( have_posts() ) : the_post(); ?>
           <div class="row pv-ch-14">
             <div class="col-sm-4 bg-panel">
               <img src="../assets/img/img.png" alt="" class="img-responsive">
             </div>
             <div class="col-sm-8">
-              <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores in eligendi maiores tempora repellat sapiente laborum facere harum magni optio qui veritatis ab ipsa perspiciatis pariatur ratione, reprehenderit officia fugiat.</p>
-              <span class="help-block">177,050 visualizaciones</span>
+              <h3><?php the_title(); ?></h3>
+              <p><?php echo get_post_field('post_content', get_the_ID()); ?></p>
+              <span class="help-block"><?php echo_views(get_the_ID()); ?> visualizaciones</span>
               <div class="row mt-35">
                 <div class="col-sm-6">
                   <span class="bold block">Fecha:</span>
-                  <strong>1 de septiembre de 2014. 07:00:00 am.</strong>
+                  <strong><?php echo get_the_date(); ?>. <?php echo get_the_time(); ?>.</strong>
                 </div>
                 <div class="col-sm-6 mt-21 text-right">
-                  <a href="#">Ver webinario</a> | <a href="#">Resumen del webinario</a>
+                  <a href="<?php echo get_permalink( get_the_ID() ); ?>">Ver webinario</a> | <a href="#">Resumen del webinario</a>
                 </div>
               </div>
             </div>
           </div>
+          <?php endwhile; ?>
           <div class="text-center">
             <nav>
               <ul class="pagination">
