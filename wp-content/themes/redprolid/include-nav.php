@@ -47,7 +47,7 @@
             <a href="#" class="charla-cafe"><i></i><span>Charlacafé</span></a>
             <ul class="list-unstyled">
               <li><a href="#">Foros virtuales</a></li>
-              <li><a href="#">Webinarios</a></li>
+              <li><a href="<?php echo home_url('/'); ?>webinar-principal">Webinarios</a></li>
             </ul>
           </li>
         </ul>
