@@ -34,7 +34,7 @@ get_header(); ?>
                 <div class="col-sm-6">
                   <a href="#" class="block text-center"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/charlacafe-webinarios.png" alt="" class=""></a>
                   <div class="text-right">
-                    <a href="#">Webinarios aquí &gt; &gt;</a>
+                    <a href="<?php echo home_url('/'); ?>webinar-principal/">Webinarios aquí &gt; &gt;</a>
                   </div>
                 </div>
               </div>

@@ -44,7 +44,7 @@ get_header(); ?>
               <div class="row mt-35">
                 <div class="col-sm-6">
                   <span class="bold block">Fecha:</span>
-                  <strong><?php echo get_the_date(); ?>. <?php echo get_the_time(); ?>.</strong>
+                  <strong><?php echo get_the_time(); ?>.</strong>
                 </div>
                 <div class="col-sm-6 mt-21 text-right">
                   <a href="<?php echo get_permalink( get_the_ID() ); ?>">Ver webinario</a> | <a href="#">Resumen del webinario</a>

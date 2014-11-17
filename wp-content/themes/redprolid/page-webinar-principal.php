@@ -21,7 +21,14 @@ get_header(); ?>
               </div>
               <div class="col-sm-6 pt-28">
                 <nav class="text-right">
-                  <a href="#" class="see-more">Charlacafé</a> 
+                  <div class="row">
+                    <div class="col-sm-6">
+                        <a href="#" class="see-more">¿Quieres proponernos un tema?</a> 
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="<?php echo home_url('/'); ?>webinarios-anteriores" class="see-more">Webinarios anteriores</a> 
+                    </div>      
+                  </div>
                 </nav>
               </div>
             </div>
