@@ -59,7 +59,7 @@ get_header(); ?>
             // echo $videocode['v'];    
               // Output: C4kxS1ksqtw
           ?> 
-          <div class="video-container">
+          <div class="video-containerrr">
             <iframe src="//www.youtube.com/embed/<?php echo $videocode['v']; ?>" frameborder="0" allowfullscreen></iframe>
           </div>
           <!-- <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive"> -->
