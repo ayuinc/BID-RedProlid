@@ -47,6 +47,7 @@ get_header(); ?>
         <?php $count++; ?>
 
         <?php if ($count <= 1) : ?>
+          <?php $id_post_comentarios = get_the_ID(); ?> 
         <div class="container">
           <h1 class="mb-21"><?php the_title(); ?></h1>
           <p><?php echo get_post_field('post_content', get_the_ID()); ?></p>
@@ -81,7 +82,6 @@ get_header(); ?>
           
           comment_form($comments_args); ?>
           
-          <?php $id_post_comentarios = get_the_ID(); ?> 
           
           <div class="commentlist">
             <?php
