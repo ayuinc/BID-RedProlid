@@ -53,13 +53,13 @@ get_header(); ?>
         </div>
         <div class="container-sm">
           <?php
-            $url = the_field('publication_year');
+            $url = the_field('video');
             parse_str( parse_url( $url, PHP_URL_QUERY ), $videocode );
             echo $videocode['v'];    
               // Output: C4kxS1ksqtw
           ?> 
           <div class="video-container">
-            <iframe src='//www.youtube.com/embed/<?php $videocode["v"]?>' frameborder="0" allowfullscreen></iframe>
+            <iframe src='//www.youtube.com/embed/<?php echo $videocode["v"];?>' frameborder="0" allowfullscreen></iframe>
           </div>
           <!-- <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive"> -->
           <ul class="list-unstyled pv-35">
