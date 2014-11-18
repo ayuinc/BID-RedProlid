@@ -56,7 +56,7 @@ get_header(); ?>
             $url = the_field('video');
             echo $url + " viiiideo";
             parse_str( parse_url( $url, PHP_URL_QUERY ), $videocode );
-            echo $videocode['v'];    
+            // echo $videocode['v'];    
               // Output: C4kxS1ksqtw
           ?> 
           <div class="video-container">
