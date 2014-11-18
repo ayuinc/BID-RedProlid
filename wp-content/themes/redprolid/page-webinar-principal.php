@@ -53,10 +53,9 @@ get_header(); ?>
         </div>
         <div class="container-sm">
           <?php
-            // $url = the_field('video');
-            // echo $url + " viiiideo";
+            $url = get_field('video');
             parse_str( parse_url( $url, PHP_URL_QUERY ), $videocode );
-            // echo $videocode['v'];    
+            echo $videocode['v'];    
               // Output: C4kxS1ksqtw
           ?> 
           <div class="video-containerrr">
