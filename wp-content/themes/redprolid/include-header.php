@@ -25,7 +25,7 @@
 
                 } else {
 
-                  echo do_shortcode('[dm_login_formm]'); 
+                  echo do_shortcode('[dm_login_form]'); 
 
                 }
               ?>
