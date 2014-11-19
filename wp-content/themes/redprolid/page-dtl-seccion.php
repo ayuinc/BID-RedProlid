@@ -53,7 +53,7 @@ get_header(); ?>
 	                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
 	              </div>
 								<div>
-									<?php comments_template( '', true ); ?>
+									<?php comments_template(); ?>
 								</div>		
 							<?php endwhile; ?>    
      
