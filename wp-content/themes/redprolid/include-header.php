@@ -21,7 +21,8 @@
                 if ( is_user_logged_in() ) {
 
                   $current_user = wp_get_current_user();
-                  echo 'Hola ' . $current_user->user_firstname . '!';
+                  print_r($current_user);
+                  echo 'Bienvenido ' . $current_user->user_firstname . '!';
 
                 } else {
 
