@@ -147,7 +147,7 @@ echo $date->format('M'); ?></div>
                 <div class="panel-body">
                   <?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
-                  <div class="col-sm-12">
+                  <div class="col-sm-12 panel-lost">
                     <?php the_content(); ?>
                   </div>
                   <?php endwhile; ?>
