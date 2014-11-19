@@ -52,11 +52,11 @@ get_header(); ?>
 	              <div class="footer">
 	                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
 	              </div>
+								<div>
+									<?php comments_template( '', true ); ?>
+								</div>		
 							<?php endwhile; ?>    
      
-							<div>
-								<?php comments_template( '', true ); ?>
-							</div>		
           
             </div>
             <div class="col-sm-3">
