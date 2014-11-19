@@ -20,12 +20,12 @@
               <?php 
                 if ( is_user_logged_in() ) {
 
-                   echo do_shortcode('[dm_login_formm]'); 
+                  $current_user = wp_get_current_user();
+                  echo 'Hola ' . $current_user->user_firstname . '!';
 
                 } else {
 
-                  $current_user = wp_get_current_user();
-                  echo 'Hola ' . $current_user->user_firstname . '!';
+                  echo do_shortcode('[dm_login_formm]'); 
 
                 }
               ?>
