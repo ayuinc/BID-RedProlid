@@ -17,7 +17,18 @@
           <div class="col-md-1"></div>
           <div class="col-md-4">
             <div class="user-sign-in-form">
-                <?php echo do_shortcode('[dm_login_form]'); ?>
+              <?php 
+                if ( is_user_logged_in() ) {
+
+                   echo do_shortcode('[dm_login_form]'); 
+
+                } else {
+
+                  $current_user = wp_get_current_user();
+                  echo 'Hola ' . $current_user->user_firstname . '!';
+
+                }
+              ?>
             </div>
           </div>
         </div>
