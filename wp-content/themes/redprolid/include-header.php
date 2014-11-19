@@ -21,7 +21,7 @@
                 if ( is_user_logged_in() ) {
 
                   $current_user = wp_get_current_user();
-                  echo 'Bienvenido ' . $current_user->user_nicename . '!';
+                  echo '<div class="text-primary">Bienvenido ' . $current_user->user_nicename . '!</div>';
 
                 } else {
 
