@@ -22,7 +22,7 @@ get_header(); ?>
       </div>
       <ul class="grid-list grid-list-3">
       	<?php while ( have_posts() ) : the_post(); ?>
-          <li class="not_front">
+          <li class="not_front hidden">
   			   <?php the_content(); ?>
           </li>
   		  <?php endwhile; ?>
