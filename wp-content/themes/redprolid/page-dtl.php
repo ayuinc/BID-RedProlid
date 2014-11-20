@@ -24,7 +24,10 @@ get_header(); ?>
 		          <img src="<?php the_field('imagen-dtl'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-21" width="630px" height="auto">
 		          <p class="text-right pt-14-100"><?php the_field('contenido-dtl'); ?></p> 
 						<?php endwhile; ?>
-					<?php endif; ?>                 
+					<?php endif; ?>   
+          <div class="comments">
+                  <?php echo "comment"; comments_template(); ?>
+                </div>                
         </div>
       </section>      
       <section>
