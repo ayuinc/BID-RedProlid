@@ -25,12 +25,12 @@ get_header(); ?>
   			  <?php the_content(); ?>
   		  <?php endwhile; ?>
       </ul>
-      <div class="text-center">
+      <!-- <div class="text-center">
         <ul class="pager">
           <li><a href="#">Previos</a></li>
           <li><a href="#">Siguiente</a></li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </section>
 </div>
