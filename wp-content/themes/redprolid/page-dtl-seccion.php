@@ -39,7 +39,7 @@ get_header(); ?>
 							    $segment2 = $elements[2] ; //For the 2nd segment
 							    $segment3 = $elements[3] ; //For the 3rd segment
 							?>         
-	            <?php //query_posts( 'category_name='.$segment2.'&posts_per_page=1' ); ?>
+	            <?php query_posts( 'category_name='.$segment2.'&posts_per_page=1' ); ?>
 	            <?php //query_posts( 'category_name=puntos-de-vista' ); ?>
 							<?php while ( have_posts() ) : the_post(); ?>
 	              <div class="title">
