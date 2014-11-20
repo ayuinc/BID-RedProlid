@@ -54,7 +54,6 @@ get_header(); ?>
 	              </div>
 								<div class="comments">
 									<?php echo "comment"; comments_template(); ?>
-									<?php comment_form(); ?>
 								</div>		
 							<?php endwhile; ?>    
      
