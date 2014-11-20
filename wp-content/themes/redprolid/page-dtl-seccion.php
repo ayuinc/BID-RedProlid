@@ -57,7 +57,7 @@ get_header(); ?>
 								<?php
 									$wp_query->is_single = true;
 										comments_template();
-									$wp_query->is_single = false;
+									// $wp_query->is_single = false;
 								?>
 								</div>		
 							<?php endwhile; ?>    
