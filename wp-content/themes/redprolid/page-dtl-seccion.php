@@ -32,14 +32,14 @@ get_header(); ?>
           <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate.png" alt="" class="ribbon">
           <div class="row">
             <div class="col-sm-9 pt-35">
-						<?php 
-						    $uri = $_SERVER['REQUEST_URI'];
-						    $elements = explode('/', $uri) ;
-						    $segment1 = $elements[1] ; // For the first segment
-						    $segment2 = $elements[2] ; //For the 2nd segment
-						    $segment3 = $elements[3] ; //For the 3rd segment
-						?>         
-            <?php query_posts( 'category_name='.$segment2.'&posts_per_page=1' ); ?>	
+							<?php 
+							    $uri = $_SERVER['REQUEST_URI'];
+							    $elements = explode('/', $uri) ;
+							    $segment1 = $elements[1] ; // For the first segment
+							    $segment2 = $elements[2] ; //For the 2nd segment
+							    $segment3 = $elements[3] ; //For the 3rd segment
+							?>         
+	            <?php query_posts( 'category_name='.$segment2.'&posts_per_page=1' ); ?>	
 							<?php while ( have_posts() ) : the_post(); ?>
 	              <div class="title">
 	                <h3><?php the_title(); ?></h3>
@@ -53,10 +53,10 @@ get_header(); ?>
 	                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
 	              </div>
 							<?php endwhile; ?>    
-            </div>
-            <div class="comments">
+								<div class="comments">
 									<?php echo "comment"; comments_template(); ?>
-								</div>	
+								</div>		
+            </div>
             <div class="col-sm-3">
               <div class="debates-anteriores">
                 <h4>¿Quieres ver los debates anteriores?</h4>
