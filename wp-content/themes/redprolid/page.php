@@ -13,10 +13,10 @@ get_header(); ?>
 <div class="entry">
 <?php the_content('Read the rest of this page &raquo;'); ?>
 
-<?php comments_template(); ?>
 
 <?php wp_link_pages(array('before' => '<strong>Pages:</strong> ', 'after' => '', 'next_or_number' => 'number')); ?>
 </div>
 <?php endwhile; endif; ?>
+<?php comments_template(); ?>
 <?php get_footer(); ?>
 </div>
