@@ -18,6 +18,7 @@ get_header(); ?>
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
     <div class="mh-700">
+      <?php comments_template(); ?>
       <section id="hero-unit">
         <div class="container">
           <div class="row">
