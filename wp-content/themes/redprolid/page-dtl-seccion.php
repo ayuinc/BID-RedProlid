@@ -53,14 +53,14 @@ get_header(); ?>
 	              <div class="footer">
 	                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
 	              </div>
-							<?php endwhile; ?>    
 								<div class="comments">
 								<?php
-									//$wp_query->is_single = true;
+									$wp_query->is_single = true;
 									comments_template();
-									//$wp_query->is_single = false;
+									$wp_query->is_single = false;
 								?>	
 								</div>		
+							<?php endwhile; ?>    
             </div>
             <div class="col-sm-3">
               <div class="debates-anteriores">
