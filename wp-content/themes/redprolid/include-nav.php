@@ -21,7 +21,7 @@
               <li>
                 <a href="#">Pistas →</a>
                 <ul class="list-unstyled">
-                  <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas/">"La pinta no es lo de menos"</a></li>
+                  <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">"La pinta no es lo de menos"</a></li>
                 </ul>
               </li>
             </ul>

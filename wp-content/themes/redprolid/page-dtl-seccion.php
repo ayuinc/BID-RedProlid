@@ -56,9 +56,9 @@ get_header(); ?>
 								<div class="comments">
 								<?php
 									$wp_query->is_single = true;
-									comments_template();
+										comments_template();
 									$wp_query->is_single = false;
-								?>	
+								?>
 								</div>		
 							<?php endwhile; ?>    
             </div>
