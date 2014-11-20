@@ -74,9 +74,11 @@ function dlf_shortcode() {
  
 add_shortcode('dm_login_form', 'dlf_shortcode');
 
-
-
-
+add_action('wp_logout','go_home');
+function go_home(){
+  wp_redirect( home_url() );
+  exit();
+}
 
 
 
