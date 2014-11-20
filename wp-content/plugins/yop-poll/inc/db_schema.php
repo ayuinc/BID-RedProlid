@@ -228,7 +228,7 @@
 			$sql	= "UPDATE `" . $wpdb->yop_poll_templates . "` SET ";
 
 		$before_vote_template           = <<<NOWDOC
-<div id="yop-poll-name-%POLL-ID%" class="yop-poll-name">%POLL-NAME%</div>
+<div id="yop-poll-name-%POLL-ID%" class="yop-poll-name hidden">%POLL-NAME%</div>
 	<div id="yop-poll-question-%POLL-ID%" class="yop-poll-question">%POLL-QUESTION%</div>
 	<div id="yop-poll-answers-%POLL-ID%" class="yop-poll-answers">
 	<ul>
@@ -280,7 +280,7 @@ NOWDOC;
 		$before_vote_template           = addslashes($before_vote_template);
 
 		$after_vote_template            = <<<NOWDOC
-<div id="yop-poll-name-%POLL-ID%" class="yop-poll-name">%POLL-NAME%</div>
+<div id="yop-poll-name-%POLL-ID%" class="yop-poll-name hidden">%POLL-NAME%</div>
 <div id="yop-poll-question-%POLL-ID%" class="yop-poll-question">%POLL-QUESTION%</div>
 <div id="yop-poll-answers-%POLL-ID%" class="yop-poll-answers">
 	<ul>

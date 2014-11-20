@@ -2960,7 +2960,7 @@
 				$template = self::strip_all_tags( $template );
 
 				$t = '<style type="text/css">' . self::return_poll_css( array( "location" => 'page', 'preview' => true, 'template_id' => $template_id, 'loc' => $loc ) ) . '</style>';
-				$t .= '<div id="yop-poll-container-preview-' . $loc . '" class="yop-poll-container bg-white box-shadow p-7">';
+				$t .= '<div id="yop-poll-container-preview-' . $loc . '" class="yop-poll-container bg-white p-7">';
 				$t .= '' . $template . '</div>';
 				return $t;
 			}
@@ -3263,7 +3263,10 @@
 			$temp     = self::strip_all_tags( $template );
 			$template = "";
 
-			if ( $load_css ){
+			if ( $load_css and is_front_page()){
+				$template .= '<li class="front-list"><style type="text/css">' . self::return_poll_css( array( "location" => $location ) ) . '</style>';
+			}
+			else  {
 				$template .= '<li><style type="text/css">' . self::return_poll_css( array( "location" => $location ) ) . '</style>';
 			}
 
@@ -3275,7 +3278,7 @@
 				$template .= '<div id="yop-poll-container-error-' . $poll_id . $unique_id . '" class="yop-poll-container-error"></div>';
 			}
 
-			$template .= '<form id="yop-poll-form-' . $poll_id . $unique_id . '" class="yop-poll-forms">' . $temp . '<input type="hidden" id="yop-poll-tr-id-' . $poll_id . $unique_id . '" name="yop_poll_tr_id" value="' . $tr_id . '"/>' . wp_nonce_field( 'yop_poll-' . $poll_id . $unique_id . '-user-actions', 'yop-poll-nonce-' . $poll_id . $unique_id, false, false ) . '</form></div></li>';
+			$template .= '<form id="yop-poll-form-' . $poll_id . $unique_id . '" class="yop-poll-forms bg-secondary">' . $temp . '<input type="hidden" id="yop-poll-tr-id-' . $poll_id . $unique_id . '" name="yop_poll_tr_id" value="' . $tr_id . '"/>' . wp_nonce_field( 'yop_poll-' . $poll_id . $unique_id . '-user-actions', 'yop-poll-nonce-' . $poll_id . $unique_id, false, false ) . '</form></div></li>';
 			return $template;
 		}
 
