@@ -26,8 +26,8 @@ get_header(); ?>
 						<?php endwhile; ?>
 					<?php endif; ?>   
           <div class="comments">
-                  <?php echo "comment"; comments_template(); ?>
-                </div>                
+            <?php echo "comment"; comments_template(); ?>
+          </div>                
         </div>
       </section>      
       <section>
