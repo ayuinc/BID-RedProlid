@@ -55,10 +55,11 @@ get_header(); ?>
 	              </div>
 							<?php endwhile; ?>    
 								<div class="comments">
-
+								<?php
 									$wp_query->is_single = true;
 									comments_template();
 									$wp_query->is_single = false;
+								?>	
 								</div>		
             </div>
             <div class="col-sm-3">
