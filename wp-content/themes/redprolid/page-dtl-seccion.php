@@ -55,10 +55,13 @@ get_header(); ?>
 	              </div>
 								<div class="comments">
 								<?php
-									$wp_query->is_single = true;
-										comments_template();
+									//$wp_query->is_single = true;
+									//	comments_template();
 									// $wp_query->is_single = false;
 								?>
+								<?php global $withcomments;
+								$withcomments=1;
+								comments_template();?>
 								</div>		
 							<?php endwhile; ?>    
             </div>
