@@ -57,7 +57,7 @@ get_header(); ?>
             $url = get_field('video');
             parse_str( parse_url( $url, PHP_URL_QUERY ), $videocode );
           ?> 
-          <div class="video-container">
+          <div class="video-container videoWrapper">
             <iframe src="//www.youtube.com/embed/<?php echo $videocode['v']; ?>" frameborder="0" allowfullscreen></iframe>
           </div>
           <!-- <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive"> -->

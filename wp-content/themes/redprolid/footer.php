@@ -154,6 +154,7 @@
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/bid.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/transition.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/modal.js"></script>
+    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/src/costum.js"></script>
     
     <!--LIKE BOX FACEBOOK-->
 		<div id="fb-root"></div>
