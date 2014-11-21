@@ -8,7 +8,7 @@ get_header(); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
 <!--BREADCRUMBS-->
-<?php the_breadcrumb(); ?>
+<?php //the_breadcrumb(); ?>
 <div class="mh-700">
   <section id="toc-index">
     <div class="container">
@@ -21,18 +21,16 @@ get_header(); ?>
         </div>
       </div>
       <ul class="grid-list grid-list-3">
-    	<?php while ( have_posts() ) : the_post(); ?>
-        <li>
-			<?php the_content(); ?>
-        </li>
-		<?php endwhile; ?>
+      	<?php while ( have_posts() ) : the_post(); ?>
+  			  <?php the_content(); ?>
+  		  <?php endwhile; ?>
       </ul>
-      <div class="text-center">
+      <!-- <div class="text-center">
         <ul class="pager">
           <li><a href="#">Previos</a></li>
           <li><a href="#">Siguiente</a></li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </section>
 </div>

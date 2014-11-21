@@ -154,7 +154,11 @@
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/bid.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/transition.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/modal.js"></script>
+<<<<<<< HEAD
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/src/costum.js"></script>
+=======
+    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/src/custom.js"></script>
+>>>>>>> 66ccf7d089545f678d6c8f3f20f5b2976ae50f37
     
     <!--LIKE BOX FACEBOOK-->
 		<div id="fb-root"></div>

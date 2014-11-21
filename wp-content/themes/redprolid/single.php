@@ -51,36 +51,37 @@ get_header(); ?>
       </div>          
     </div>
     <div class="container text-justify with-hr">
-    	<?php $comments_args = array(
-			        // change the title of send button 
-			        'label_submit'=>'Enviar',
-			        // change the title of the reply section
-			        'title_reply'=>'Escribe un comentario',
-			        // remove "Text or HTML to be displayed after the set of comment fields"
-			        'comment_notes_after' => '',
-			        // redefine your own textarea (the comment body)
-			        'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comentario', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
-			);
+     	<?php //$comments_args = array(
+			//         // change the title of send button 
+			//         'label_submit'=>'Enviar',
+			//         // change the title of the reply section
+			//         'title_reply'=>'Escribe un comentario',
+			//         // remove "Text or HTML to be displayed after the set of comment fields"
+			//         'comment_notes_after' => '',
+			//         // redefine your own textarea (the comment body)
+			//         'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comentario', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
+			// );
 			
-			comment_form($comments_args); ?>
+			//comment_form($comments_args); ?>
 			
-			<?php $id_post_comentarios = get_the_ID(); ?> 
+			<?php //$id_post_comentarios = get_the_ID(); ?> 
 			
 			<div class="commentlist">
 				<?php
 					//Gather comments for a specific page/post 
-					$comments = get_comments(array(
-						'post_id' => $id_post_comentarios,
-						'status' => 'approve' //Change this to the type of comments to be displayed
-					));
+					//$comments = get_comments(array(
+						//'post_id' => $id_post_comentarios,
+						//'status' => 'approve' //Change this to the type of comments to be displayed
+					//));
 			
 					//Display the list of comments
-					wp_list_comments(array(
-						'per_page' => 10, //Allow comment pagination
-						'reverse_top_level' => false //Show the latest comments at the top of the list
-					), $comments);
+					//wp_list_comments(array(
+						//'per_page' => 10, //Allow comment pagination
+						//'reverse_top_level' => false //Show the latest comments at the top of the list
+					//), $comments);
 				?>
 			</div>
+      <?php comments_template(); ?>
 		</div>	
     </div>
     <div class="container with-shadow mh-350">

@@ -193,6 +193,9 @@ get_header(); ?>
         </div>
       </section>
       <section>
+        <!-- <div id="comments">
+        <?php comments_template(); ?>
+        </div> -->
         <div class="container">
           <div class="row">
             <div class="col-md-3">
