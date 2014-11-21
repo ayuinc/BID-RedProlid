@@ -33,7 +33,7 @@ get_header(); ?>
           <div class="row">
             <div class="col-sm-9 pt-35">
 					  
-							<?php get_template_part( 'single' ); ?>
+							<?php get_template_part( 'single-section' ); ?>
             </div>
             <div class="col-sm-3">
               <div class="debates-anteriores">

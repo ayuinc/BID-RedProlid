@@ -1,4 +1,5 @@
 
+<?php query_posts( 'category_name='.$segment2.'&posts_per_page=1' ); ?>   
 <?php //query_posts( 'category_name=puntos-de-vista' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
   <div class="title">
