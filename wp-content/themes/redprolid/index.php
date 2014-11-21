@@ -226,9 +226,9 @@ echo $date->format('M'); ?></div>
                   <div class="col-sm-12">
                     <ul class="list-unstyled list-group list-group-custom">
                     <?php
-                    $posts = get_comments();
+                    $comments = get_comments();
 
-                    foreach ($posts as $post): ?>
+                    foreach ($comments as $comment): ?>
                       <li>
                         <h5><?php echo($comment->comment_author);?></h5>
                         <p><?php echo($comment->comment_content):?></p>
