@@ -40,7 +40,7 @@ get_header(); ?>
 							    $segment3 = $elements[3] ; //For the 3rd segment
 							?> 
 							<?php query_posts( 'category_name='.$segment2.'&posts_per_page=1' ); ?>     
-							<?php get_template_part( 'single-sections' ); ?>    
+							<?php get_template_part( 'single' ); ?>
             </div>
             <div class="col-sm-3">
               <div class="debates-anteriores">
