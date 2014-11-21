@@ -178,7 +178,7 @@ echo $date->format('M'); ?></div>
                   <div class="col-sm-7">
                     <h4><?php the_title(); ?></h4>
                     <p class="light lh-lg"><?php the_field('descripcion_punto_de_vista'); ?></p>
-                    <div class="text-right"><a href="#" class="btn btn-primary">Lee más</a></div>
+                    <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee más</a></div>
                   </div>
                 </div>
                 <?php endwhile; ?>
@@ -203,7 +203,7 @@ echo $date->format('M'); ?></div>
                     <h4><?php the_title(); ?></h4>
                     <h5><?php the_field('posicion_campeona'); ?></h5>
                     <p class="light-italic lh-lg"><?php the_field('descripcion_campeona'); ?></p>
-                    <div class="text-right"><a href="#" class="btn btn-primary">Entrevista completa</a></div>
+                    <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Entrevista completa</a></div>
                   </div>
                 </div>
                 <?php endwhile; ?>
@@ -225,21 +225,17 @@ echo $date->format('M'); ?></div>
                 <div class="panel-body">
                   <div class="col-sm-12">
                     <ul class="list-unstyled list-group list-group-custom">
+                    <?php
+                    $posts = get_comments();
+
+                    foreach ($posts as $post): ?>
                       <li>
-                        <h5>Lorem ipsum dolor sit amet.</h5>
-                        <p>Lorem ipsum dolor sit amet...</p>
-                        <small class="date">Febrero 30 / 2014</small> <a href="#" class="text-primary">Lee más &gt;&gt;</a>
+                        <h5><?php echo($comment->comment_author);?></h5>
+                        <p><?php echo($comment->comment_content):?></p>
+                        <small class="date"><?php echo($comment->comment_date);?></small> <a href="<?php echo get_permalink( $comment->comment_post_ID ); ?>" class="text-primary">Lee más &gt;&gt;</a>
                       </li>
-                      <li>
-                        <h5>Lorem ipsum dolor sit amet.</h5>
-                        <p>Lorem ipsum dolor sit amet...</p>
-                        <small class="date">Febrero 30 / 2014</small> <a href="#" class="text-primary">Lee más &gt;&gt;</a>
-                      </li>
-                      <li>
-                        <h5>Lorem ipsum dolor sit amet.</h5>
-                        <p>Lorem ipsum dolor sit amet...</p>
-                        <small class="date">Febrero 30 / 2014</small> <a href="#" class="text-primary">Lee más &gt;&gt;</a>
-                      </li>
+                    
+                    <?php endforeach;?>
                     </ul>
                     <div class="text-right"><a href="#" class="btn btn-primary">Ver más</a></div>
                   </div>
