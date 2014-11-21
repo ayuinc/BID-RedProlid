@@ -1,3 +1,11 @@
+<?php 
+    $uri = $_SERVER['REQUEST_URI'];
+    $elements = explode('/', $uri) ;
+    $segment1 = $elements[1] ; // For the first segment
+    $segment2 = $elements[2] ; //For the 2nd segment
+    $segment3 = $elements[3] ; //For the 3rd segment
+?> 
+
 <?php
 
 $customposts = get_posts('category_name='.$segment2.'&showposts=1' ); // note: you assign your query to a custom post object ($customposts)
@@ -20,4 +28,4 @@ foreach( $customposts as $post ) :  // start you custom loop
       <?php comments_template();?>
     </div> 
 
-<?php endforeach; ?> // end the custom loop
+<?php endforeach; ?>
