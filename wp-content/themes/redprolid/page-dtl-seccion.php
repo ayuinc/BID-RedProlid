@@ -39,31 +39,8 @@ get_header(); ?>
 							    $segment2 = $elements[2] ; //For the 2nd segment
 							    $segment3 = $elements[3] ; //For the 3rd segment
 							?>         
-	            <?php query_posts( 'category_name='.$segment2.'&posts_per_page=1' ); ?>
-	            <?php //query_posts( 'category_name=puntos-de-vista' ); ?>
-							<?php while ( have_posts() ) : the_post(); ?>
-	              <div class="title">
-	                <h3><?php the_title(); ?></h3>
-	                <p>FUENTE: <?php the_field('fuente-debates'); ?></p>
-	                <span>Blog: <?php the_field('blog-debates'); ?></span>
-	              </div>
-	              <div class="content">
-	                <?php the_field('contenido-debates'); ?>
-	              </div>
-	              <div class="footer">
-	                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
-	              </div>
-								<div class="comments">
-								<?php
-									//$wp_query->is_single = true;
-									//	comments_template();
-									// $wp_query->is_single = false;
-								?>
-								<?php global $withcomments;
-								$withcomments=1;
-								comments_template();?>
-								</div>		
-							<?php endwhile; ?>    
+
+							<?php get_template_part( 'single' ); ?>    
             </div>
             <div class="col-sm-3">
               <div class="debates-anteriores">
