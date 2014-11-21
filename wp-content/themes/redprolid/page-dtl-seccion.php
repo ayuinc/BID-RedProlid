@@ -39,7 +39,7 @@ get_header(); ?>
 							    $segment2 = $elements[2] ; //For the 2nd segment
 							    $segment3 = $elements[3] ; //For the 3rd segment
 							?>      
-							<?php get_template_part( 'single-section' ); ?>    
+							<?php get_template_part( 'single-sections' ); ?>    
             </div>
             <div class="col-sm-3">
               <div class="debates-anteriores">
