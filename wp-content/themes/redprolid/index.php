@@ -226,12 +226,12 @@ echo $date->format('M'); ?></div>
                   <div class="col-sm-12">
                     <ul class="list-unstyled list-group list-group-custom">
                     <?php
-                    $comments = get_comments();
+                    $comments = get_comments();?>
 
-                    foreach ($comments as $comment): ?>
+                    <?php foreach ($comments as $comment) : ?>
                       <li>
                         <h5><?php echo($comment->comment_author);?></h5>
-                        <p><?php echo($comment->comment_content):?></p>
+                        <p><?php echo($comment->comment_content);?></p>
                         <small class="date"><?php echo($comment->comment_date);?></small> <a href="<?php echo get_permalink( $comment->comment_post_ID ); ?>" class="text-primary">Lee más &gt;&gt;</a>
                       </li>
                     
