@@ -1,3 +1,10 @@
+<?php 
+    $uri = $_SERVER['REQUEST_URI'];
+    $elements = explode('/', $uri) ;
+    $segment1 = $elements[1] ; // For the first segment
+    $segment2 = $elements[2] ; //For the 2nd segment
+    $segment3 = $elements[3] ; //For the 3rd segment
+?> 
 <?php query_posts( 'category_name='.$segment2.'&posts_per_page=1' ); ?>
 <?php //query_posts( 'category_name=puntos-de-vista' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
