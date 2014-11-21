@@ -226,7 +226,10 @@ echo $date->format('M'); ?></div>
                   <div class="col-sm-12">
                     <ul class="list-unstyled list-group list-group-custom">
                     <?php
-                    $comments = get_comments();?>
+                    $args = array(
+                      'number' => '3'
+                    );
+                    $comments = get_comments($args);?>
 
                     <?php foreach ($comments as $comment) : ?>
                       <li>
