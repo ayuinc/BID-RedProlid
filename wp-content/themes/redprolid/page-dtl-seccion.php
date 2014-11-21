@@ -38,9 +38,8 @@ get_header(); ?>
 							    $segment1 = $elements[1] ; // For the first segment
 							    $segment2 = $elements[2] ; //For the 2nd segment
 							    $segment3 = $elements[3] ; //For the 3rd segment
-							?>         
-
-							<?php get_template_part( 'single' ); ?>    
+							?>      
+							<?php get_template_part( 'single-section' ); ?>    
             </div>
             <div class="col-sm-3">
               <div class="debates-anteriores">
