@@ -1,4 +1,4 @@
-
+get_header(); ?>
 <?php //query_posts( 'category_name=puntos-de-vista' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
   <div class="title">
