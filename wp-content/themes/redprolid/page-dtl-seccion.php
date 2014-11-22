@@ -32,15 +32,8 @@ get_header(); ?>
           <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate.png" alt="" class="ribbon">
           <div class="row">
             <div class="col-sm-9 pt-35">
-							<?php 
-							    $uri = $_SERVER['REQUEST_URI'];
-							    $elements = explode('/', $uri) ;
-							    $segment1 = $elements[1] ; // For the first segment
-							    $segment2 = $elements[2] ; //For the 2nd segment
-							    $segment3 = $elements[3] ; //For the 3rd segment
-							?>         
-
-							<?php get_template_part( 'single' ); ?>    
+					  
+							<?php get_template_part( 'single-section' ); ?>
             </div>
             <div class="col-sm-3">
               <div class="debates-anteriores">
