@@ -97,5 +97,37 @@ get_header(); ?>
       </ul>
     </div> -->
   </section>
+  <?php
+
+  $post = $wp_query->post;
+
+  print_r($post);
+
+  if ( in_category('2') ) {
+
+    echo "11111"; 
+
+  } 
+
+  elseif ( in_category('15') ) {
+
+    echo "22222";
+  
+  }
+
+  elseif ( in_category('18') ) {
+
+    echo "3333"; 
+  
+  } 
+
+  else {
+
+    echo "4444";
+
+  }
+
+  ?>
+  <?php //get_template_part( 'single-section' ); ?>
 </div>
 <?php get_footer(); ?>
