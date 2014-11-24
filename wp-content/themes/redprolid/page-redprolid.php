@@ -31,7 +31,7 @@ get_header(); ?>
           <h5 class="text-center light pt-42 lead"><?php the_field('texto_central_redprolid'); ?></h5>
         </div>
       </section>
-      <section>
+      <section class="pb-0">
         <div class="container with-shadow pb-28">
           <div class="panel panel-custom">
             <div class="panel-heading">
@@ -88,11 +88,11 @@ get_header(); ?>
       <section class="pt-0">
         <div class="container pt-0">
           <div class="row">
-            <div class="col-sm-5">
+            <div class="col-sm-3">
               <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-como-nace.jpg" alt="" class="img-responsive">
             </div>
-            <div class="col-sm-7">
-              <div class="panel panel-custom">
+            <div class="col-sm-9 pt-42">
+              <div class="panel panel-custom mh-70">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
                     <li class="title">¿Cómo nace Red PROLID?</li>
@@ -100,7 +100,7 @@ get_header(); ?>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-red-prolid.png); background-repeat: no-repeat; background-position: 0px -84px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body mh-70">
                   <p><?php the_field('como_nace_redprolid'); ?></p>
                 </div>
               </div>
