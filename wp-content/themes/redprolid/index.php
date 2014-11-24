@@ -26,7 +26,7 @@ get_header(); ?>
                 <!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-slider.png" class="img-responsive">-->
                 <?php echo do_shortcode("[huge_it_slider id='1']"); ?>
               </div>
-              <h3 class="text-center"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h3>
+              <h3 class="text-center lh-xl"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h3>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@ get_header(); ?>
               <ul class="list-unstyled">
                 <li class="title">Desarrolla tu liderazgo</li>
                 <li class="rule"></li>
-                <li class="icon" style="background-image: url(assets/icons/sprites-nav-main-menu.png); background-repeat: no-repeat; background-position: 0px -85px;"></li>
+                <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-nav-main-menu.png); background-repeat: no-repeat; background-position: 0px -85px;"></li>
               </ul>
             </div>
             <div class="panel-body panel-body-shadow">
@@ -104,7 +104,7 @@ echo $date->format('F jS, Y'); ?></small>
                       <li>
                         <h5><?php the_title(); ?></h5>
                         <p><?php the_field('descripcion_rapida_noticias'); ?></p>
-                        <small class="date"><?php the_time('F jS, Y') ?></small> <a href="#" class="text-primary">Lee más &gt;&gt;</a>
+                        <small class="date"><?php the_time('F jS, Y') ?> </small> <a href="#" class="text-primary small">Lee más &gt;&gt;</a>
                       </li>
 											<?php endwhile; ?>                     
                     </ul>
@@ -134,8 +134,8 @@ echo $date->format('d'); ?></div>
                       <div class="month"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
 echo $date->format('M'); ?></div>
                     </div>
-                    <h5 class="text-center"><?php the_title(); ?></h5>
-                    <p class="text-center"><?php the_field('descripcion_evento'); ?></p>
+                    <h5 class=""><?php the_title(); ?></h5>
+                    <p class=""><?php the_field('descripcion_evento'); ?></p>
                     <div class="text-right"><a href="#" class="btn btn-primary">Ver más</a></div>
                   </div>
                   <?php endwhile; ?>
@@ -242,7 +242,8 @@ echo $date->format('M'); ?></div>
                       <li>
                         <h5><?php echo($comment->comment_author);?></h5>
                         <p><?php echo($comment->comment_content);?></p>
-                        <small class="date"><?php echo($comment->comment_date);?></small> <a href="<?php echo get_permalink( $comment->comment_post_ID ); ?>" class="text-primary">Lee más &gt;&gt;</a>
+                        <small class="date"><?php echo($comment->comment_date);?> / </small> <a href="<?php echo get_permalink( $comment->comment_post_ID ); ?>" class="text-primary small">Lee más &gt;&gt;</a>
+
                       </li>
                     
                     <?php endforeach;?>

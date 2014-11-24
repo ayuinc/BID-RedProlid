@@ -3264,6 +3264,9 @@ p, strong, em, small, ul, ol, li {
 .lh-lg {
   line-height: 28px; }
 
+.lh-lg {
+  line-height: 35px; }
+
 h1.lead, .h1.lead {
   font-size: 3.125rem !important; }
 
@@ -3570,7 +3573,12 @@ footer {
   margin: 0; }
   .social-links li {
     float: left;
-    margin-right: 12px; }
+    border-right: 2px solid black;
+    padding: 0 12px; }
+    .social-links li:last-child {
+      border: none; }
+    .social-links li:first-child {
+      padding: 0 12px 0 0; }
     .social-links li a {
       color: white; }
       .social-links li a:hover {
@@ -3580,6 +3588,15 @@ footer {
       .social-links li a i {
         font-size: 21px;
         color: white; }
+
+.site-map li a {
+  border-bottom: 2px solid black; }
+
+.terms nav a {
+  border-right: 2px solid black;
+  padding: 0 12px; }
+  .terms nav a:last-child {
+    border: none; }
 
 header {
   -webkit-box-shadow: 0 3px 21px 3px #c2c2c2;
@@ -3899,7 +3916,7 @@ form.search button {
   background: #ed7133 url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px; }
 
 .list-group.list-group-custom li {
-  border-bottom: 1px solid #575757; }
+  border-bottom: 1px solid #7a7a7a; }
   .list-group.list-group-custom li .date {
     font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
     font-weight: 300;
@@ -4055,24 +4072,28 @@ form.search button {
   width: 100%;
   height: 210px;
   background: url(../assets/img/home-events-calendar.png) no-repeat 21px center;
-  padding: 7px;
+  padding: 35px;
   text-align: center;
   font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
   font-weight: 700;
   font-style: normal; }
   .events-calendar-placeholder .day {
-    width: 49px;
-    height: 49px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background: #ed7133;
     color: white;
-    padding: 16px 0; }
+    padding: 9px 0; }
   .events-calendar-placeholder .day-num,
   .events-calendar-placeholder .month {
     color: #7a7a7a; }
   .events-calendar-placeholder .day-num {
     font-size: 70px;
-    font-size: 4.375rem; }
+    font-size: 4.375rem;
+    line-height: 70px;
+    font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+    font-weight: 700;
+    font-style: normal; }
   .events-calendar-placeholder .month {
     font-size: 21px;
     font-size: 1.3125rem; }

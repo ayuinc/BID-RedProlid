@@ -1,7 +1,7 @@
 .list-group {
 	&.list-group-custom {
 		li {
-			border-bottom: 1px solid $gray-dark;
+			border-bottom: 1px solid $gray;
 			.date {
 				@include light;
 			}
