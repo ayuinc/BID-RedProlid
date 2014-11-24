@@ -24,6 +24,7 @@ function dlf_form() {
 	    <a href="#" class="" data-toggle="modal" data-target="#myModal">Olvidé mi contraseña</a>
 	    <!-- <a href="<?php //echo wp_lostpassword_url(); ?>" title="Lost Password">Lost Password</a> -->
 	    <?php wp_register(); ?>
+	    <!-- <a href="<?php echo home_url('/'); ?>wp-login.php?action=register">Register</a> -->
 	  </div>
 	  <div class="col-xs-5 text-right">
 	    <input type="submit" name="dlf_submit" class="btn btn-primary btn-sm" value="Ingresa">
