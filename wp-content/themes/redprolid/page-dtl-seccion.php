@@ -13,15 +13,66 @@ get_header(); ?>
     <div class="mh-700">
       <section id="dtl-adonde-vamos">
         <div class="container relative dtl-content">
+        	<?php 
+					    $uri = $_SERVER['REQUEST_URI'];
+					    $elements = explode('/', $uri) ;
+					    $segment1 = $elements[1] ; // For the first segment
+					    $segment2 = $elements[2] ; //For the 2nd segment
+					    $segment3 = $elements[3] ; //For the 3rd segment
+					?> 
          <!-- Start the Loop. -->
 					<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 		          <div class="absolute dtl-custom-heading">
+							<?php if ($segment2 == "a-donde-vamos") : ?>
 		            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png" alt="<?php the_title(); ?>"></div>
 		            <h1 style="color: #007c8d;"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #007c8d;">
 		          </div>
 		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle" width="560px" height="auto">
+							<?php endif; ?>
+							<?php if ($segment2 == "a-donde-vamos") : ?>
+		            <div><img src="../assets/img/dtl-agenda-genero-icon.png" alt="<?php the_title(); ?>"></div>
+		            <h1 style="color: #c02f73;"><?php the_title(); ?></h1>
+		            <hr style="border-top: 3px dotted #c02f73;">
+		          </div>
+		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle" width="560px" height="auto">
+							<?php endif; ?>
+							<?php if ($segment2 == "carrera-de-vallas") : ?>
+								<div><img src="../assets/img/dtl-carrera-vallas-icon.png" alt="<?php the_title(); ?>"></div>
+		            <h1 style="color: #9a205c;"><?php the_title(); ?></h1>
+		            <hr style="border-top: 3px dotted #9a205c;">
+		          </div>
+		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle" width="560px" height="auto">							
+							<?php endif; ?>
+							<?php if ($segment2 == "la-pinta-no-es-lo-de-menos") : ?>
+								<div><img src="../assets/img/dtl-la-pinta-icon.png" alt="<?php the_title(); ?>"></div>
+		            <h1 style="color: #007c8d;"><?php the_title(); ?></h1>
+		            <hr style="border-top: 3px dotted #007c8d;">
+		          </div>
+		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle" width="560px" height="auto">
+							<?php endif; ?>
+							<?php if ($segment2 == "listas-para-la-politica") : ?>
+								<div><img src="../assets/img/dtl-listas-politica-icon.png" alt="<?php the_title(); ?>"></div>
+		            <h1 style="color: #015a71;"><?php the_title(); ?></h1>
+		            <hr style="border-top: 3px dotted #015a71;">
+		          </div>
+		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle" width="560px" height="auto">
+							<?php endif; ?>
+							<?php if ($segment2 == "nivelando-la-cancha") : ?>
+								<div><img src="../assets/img/dtl-nivelando-cancha-icon.png" alt="<?php the_title(); ?>"></div>
+		            <h1 style="color: #599a97;"><?php the_title(); ?></h1>
+		            <hr style="border-top: 3px dotted #599a97;">
+		          </div>
+		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-21 img-circle pt-7-100" width="560px" height="auto">
+							<?php endif; ?>
+							<?php if ($segment2 == "pistas") : ?>
+								<div><img src="../assets/img/dtl-pistas-icon.png" alt="<?php the_title(); ?>"></div>
+		            <h1 style="color: #007c8d;"><?php the_title(); ?></h1>
+		            <hr style="border-top: 3px dotted #007c8d;">
+		          </div>
+		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle" width="560px" height="auto">	
+							<?php endif; ?>
 		          <p class="text-left pt-14-100"><?php the_field('contenido-dtl-seccion'); ?></p>
 						<?php endwhile; ?>
 					<?php endif; ?>        
