@@ -18,7 +18,7 @@ get_header(); ?>
       <section id="hero-unit">
         <div class="container with-shadow">
           <div class="content clearfix">
-            <div class="col-sm-6">
+            <div class="col-sm-7">
               <div class="dtl-custom-heading">
                 <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" alt=""></div>
                 <h1 style="color: #fff;">¿Qué es Red PROLID?</h1>
