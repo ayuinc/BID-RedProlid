@@ -1,8 +1,7 @@
 <?php
-/**
- * The Template for displaying all single posts
- *
- */
+/*
+Template Name: Puntos de vista
+*/
 
 get_header(); ?>
 <!--HEADER-->
@@ -12,7 +11,7 @@ get_header(); ?>
 <?php //query_posts( 'category_name=puntos-de-vista' ); ?> 
 <div class="mh-700">
   <section id="puntos-de-vista">
-    <!-- <div class="container relative with-shadow mb-28">
+    <div class="container relative with-shadow mb-28">
       <div class="absolute dtl-custom-heading">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt=""></div>
         <div class="clearfix">
@@ -42,51 +41,21 @@ get_header(); ?>
           </p>
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="container text-justify with-hr">
   	  <h4><?php the_title(); ?></h4>
       <p><?php the_field('contenido_punto_de_vista'); ?></p>
       <div class="text-center">
         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
-      </div>
-      <?php
-
-        /*
-        *  get all custom fields and dump for texting
-        */
-
-        $fields = get_fields();
-        var_dump( $fields ); 
-
-        /*
-        *  get all custom fields, loop through them and load the field object to create a label => value markup
-        */
-
-        $fields = get_fields();
-
-        if( $fields )
-        {
-          foreach( $fields as $field_name => $value )
-          {
-            // get_field_object( $field_name, $post_id, $options )
-            // - $value has already been loaded for us, no point to load it again in the get_field_object function
-            $field = get_field_object($field_name, false, array('load_value' => false));
-
-            echo '<div>';
-              echo '<h3>' . $field_name . '</h3>';
-              echo $value;
-            echo '</div>';
-          }
-        }
-
-      ?>          
+      </div>          
     </div>
     <div class="container text-justify with-hr">
       <?php comments_template(); ?>
 		</div>	
+    </div>
     <div class="container with-shadow mh-350">
     </div>
-    <!-- <div class="container with-hr">
+    <div class="container with-hr">
       <h4>Artículos comentados</h4>
       <ul class="grid-list grid-list-2 pb-ch-7">
         <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
@@ -95,7 +64,7 @@ get_header(); ?>
         <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
         <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
       </ul>
-    </div> -->
+    </div>
   </section>
 </div>
 <?php get_footer(); ?>
