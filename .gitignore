@@ -3,5 +3,5 @@ wp-config.php
 .htaccess
 
 # Ignore Sass-Cache
-frontend/stylesheets/.sass-cache
-frontend/stylesheets/.sass-cache/*
+*.sass-cache
+.sass-cache/*

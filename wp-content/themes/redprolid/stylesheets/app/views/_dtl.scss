@@ -19,6 +19,11 @@
 	}
 	h1 {
 		@include bold;
+		font-size: 42px;
+		margin-top: 35px;
+	}
+	hr {
+		margin-top: 12px;
 	}
 } 
 
