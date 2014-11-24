@@ -57,6 +57,11 @@ get_header(); ?>
                   <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
                 </div>                
               </form>
+              <?php
+              // Formbuilder manual form display. Replace the # in the following line with the ID number of the form to be displayed.
+              if(function_exists('formbuilder_process_form')) echo formbuilder_process_form(1);
+              // End of FormBuilder manual form display.
+              ?>
             </div>
           </div>
         </div>
