@@ -26,7 +26,7 @@ get_header(); ?>
                 <!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-slider.png" class="img-responsive">-->
                 <?php echo do_shortcode("[huge_it_slider id='1']"); ?>
               </div>
-              <h3 class="text-center"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h3>
+              <h3 class="text-center lh-xl"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h3>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@ echo $date->format('F jS, Y'); ?></small>
                       <li>
                         <h5><?php the_title(); ?></h5>
                         <p><?php the_field('descripcion_rapida_noticias'); ?></p>
-                        <small class="date"><?php the_time('F jS, Y') ?> / </small> <a href="#" class="text-primary small">Lee más &gt;&gt;</a>
+                        <small class="date"><?php the_time('F jS, Y') ?> </small> <a href="#" class="text-primary small">Lee más &gt;&gt;</a>
                       </li>
 											<?php endwhile; ?>                     
                     </ul>

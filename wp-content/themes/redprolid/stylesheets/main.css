@@ -3264,6 +3264,9 @@ p, strong, em, small, ul, ol, li {
 .lh-lg {
   line-height: 28px; }
 
+.lh-lg {
+  line-height: 35px; }
+
 h1.lead, .h1.lead {
   font-size: 3.125rem !important; }
 
