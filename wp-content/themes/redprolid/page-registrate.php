@@ -31,6 +31,7 @@ get_header(); ?>
 			      </div>
 			      <div class="col-sm-6">
 				      <h3>Ingresa Utilizando las redes sociales</h3>
+				      <p><?php do_action( 'wordpress_social_login' ); ?></p>
 			      </div>			      
 			    </div>
 		    </div>
