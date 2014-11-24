@@ -104,6 +104,12 @@
 				}
 				&:hover {
 					text-decoration: none;
+					.color {
+						display: block;
+					}
+					.gs {
+						display: none;
+					}
 				}
 				.title {
 					@include clearfix;
@@ -120,6 +126,9 @@
 					hr {
 						border-top: 2px dotted $gray-light;
 					}
+				}
+				.color {
+					display: none;
 				}
 			}
 		}

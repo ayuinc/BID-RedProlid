@@ -4218,6 +4218,10 @@ form.search button {
       height: auto; }
     #dtl-grid ul li a:hover {
       text-decoration: none; }
+      #dtl-grid ul li a:hover .color {
+        display: block; }
+      #dtl-grid ul li a:hover .gs {
+        display: none; }
     #dtl-grid ul li a .title {
       position: relative;
       padding-left: 84px; }
@@ -4235,5 +4239,7 @@ form.search button {
         height: auto; }
       #dtl-grid ul li a .title hr {
         border-top: 2px dotted #c2c2c2; }
+    #dtl-grid ul li a .color {
+      display: none; }
 
 /*# sourceMappingURL=main.css.map */
