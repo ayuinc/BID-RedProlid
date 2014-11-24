@@ -28,7 +28,7 @@ get_header(); ?>
               <p class="lead bold">¡Nos comprometemos a contestarte!</p>
             </div>
             <div class="col-sm-6">
-              <form>
+              <!-- <form>
                 <div class="form-group row">
                   <div class="col-sm-3 text-right">
                     <label class="h4 light">Nombre</label>
@@ -56,7 +56,7 @@ get_header(); ?>
                 <div class="form-group text-right">
                   <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
                 </div>                
-              </form>
+              </form> -->
               <?php
               // Formbuilder manual form display. Replace the # in the following line with the ID number of the form to be displayed.
               if(function_exists('formbuilder_process_form')) echo formbuilder_process_form(1);
