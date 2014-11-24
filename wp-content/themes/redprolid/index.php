@@ -89,7 +89,7 @@ echo $date->format('F jS, Y'); ?></small>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -84px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body pt-0">
                   <div class="col-sm-12">
                     <ul class="list-unstyled list-group list-group-custom">
                     	<?php query_posts( 'category_name=noticias&posts_per_page=3' ); ?>	
@@ -115,7 +115,7 @@ echo $date->format('F jS, Y'); ?></small>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -126px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body pt-0">
                   <?php query_posts( 'category_name=eventos&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
                   <div class="col-sm-12">
@@ -144,7 +144,7 @@ echo $date->format('M'); ?></div>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -168px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body pt-0">
                   <?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
                   <div class="col-sm-12 panel-lost">
@@ -222,7 +222,7 @@ echo $date->format('M'); ?></div>
                     <li class="title">Comentarios recientes</li>
                   </ul>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body pt-0">
                   <div class="col-sm-12">
                     <ul class="list-unstyled list-group list-group-custom">
                       <li>
