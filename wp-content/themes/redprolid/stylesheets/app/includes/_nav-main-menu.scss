@@ -1,4 +1,6 @@
 #nav-main-menu {
+	position: relative;
+	z-index: 9999;
 	div {
 		> ul {
 			background: $brand-secondary;

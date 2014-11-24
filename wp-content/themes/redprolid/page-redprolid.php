@@ -28,7 +28,7 @@ get_header(); ?>
             </div>
             <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png" alt="" class="network-right">
           </div>
-          <h4 class="text-center book"><?php the_field('texto_central_redprolid'); ?></h4>
+          <h5 class="text-center light pt-42 lead"><?php the_field('texto_central_redprolid'); ?></h5>
         </div>
       </section>
       <section>
