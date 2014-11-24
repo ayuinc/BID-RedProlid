@@ -38,7 +38,7 @@ get_header(); ?>
               <ul class="list-unstyled">
                 <li class="title">Desarrolla tu liderazgo</li>
                 <li class="rule"></li>
-                <li class="icon" style="background-image: url(assets/icons/sprites-nav-main-menu.png); background-repeat: no-repeat; background-position: 0px -85px;"></li>
+                <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-nav-main-menu.png); background-repeat: no-repeat; background-position: 0px -85px;"></li>
               </ul>
             </div>
             <div class="panel-body panel-body-shadow">
