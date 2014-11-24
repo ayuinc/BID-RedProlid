@@ -134,8 +134,8 @@ echo $date->format('d'); ?></div>
                       <div class="month"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
 echo $date->format('M'); ?></div>
                     </div>
-                    <h5 class="text-center"><?php the_title(); ?></h5>
-                    <p class="text-center"><?php the_field('descripcion_evento'); ?></p>
+                    <h5 class=""><?php the_title(); ?></h5>
+                    <p class=""><?php the_field('descripcion_evento'); ?></p>
                     <div class="text-right"><a href="#" class="btn btn-primary">Ver más</a></div>
                   </div>
                   <?php endwhile; ?>

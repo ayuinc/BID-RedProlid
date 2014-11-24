@@ -3570,7 +3570,10 @@ footer {
   margin: 0; }
   .social-links li {
     float: left;
-    margin-right: 12px; }
+    border-right: 2px solid black;
+    padding: 0 12px; }
+    .social-links li:last-child {
+      border: none; }
     .social-links li a {
       color: white; }
       .social-links li a:hover {
