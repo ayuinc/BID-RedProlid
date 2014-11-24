@@ -38,7 +38,7 @@ get_header(); ?>
               <ul class="list-unstyled">
                 <li class="title">Desarrolla tu liderazgo</li>
                 <li class="rule"></li>
-                <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+                <li class="icon" style="background-image: url(assets/icons/sprites-nav-main-menu.png); background-repeat: no-repeat; background-position: 0px -85px;"></li>
               </ul>
             </div>
             <div class="panel-body panel-body-shadow">
@@ -46,7 +46,7 @@ get_header(); ?>
                 <p class="light lh-lg">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
                 <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo" class="btn btn-primary">Más aquí</a>
               </div>
-              <div class="col-sm-8 dtl-path-sm">
+              <div class="col-sm-8 dtl-path dtl-path-sm">
                <div class="row">
                   <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/"></a></div>
                   <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/carrera-de-vallas/"></a></div>
