@@ -4159,6 +4159,10 @@ form.search button {
   .dtl-path a {
     display: block;
     height: 397px; }
+  .dtl-path.dtl-path-sm {
+    height: 240px; }
+    .dtl-path.dtl-path-sm a {
+      height: 240px; }
 
 .sumate-al-debate .container {
   -webkit-box-shadow: inset -12px 5px 7px 3px #e5e5e5;
