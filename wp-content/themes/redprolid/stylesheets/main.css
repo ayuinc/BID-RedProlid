@@ -3821,7 +3821,7 @@ form.form-search-inline button {
         display: table; }
       #nav-main-menu div > ul li a:after {
         clear: both; }
-      #nav-main-menu div > ul li a:hover {
+      #nav-main-menu div > ul li a:hover, #nav-main-menu div > ul li a.active {
         text-decoration: none;
         background: #ed7133; }
       #nav-main-menu div > ul li a i,
