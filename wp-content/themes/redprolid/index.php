@@ -22,7 +22,7 @@ get_header(); ?>
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="slider-container text-center">
+              <div class="slider-container text-center pt-35">
                 <!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-slider.png" class="img-responsive">-->
                 <?php echo do_shortcode("[huge_it_slider id='1']"); ?>
               </div>
