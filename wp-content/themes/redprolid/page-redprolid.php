@@ -32,7 +32,7 @@ get_header(); ?>
         </div>
       </section>
       <section>
-        <div class="container with-shadow">
+        <div class="container with-shadow pb-28">
           <div class="panel panel-custom">
             <div class="panel-heading">
               <ul class="list-unstyled">
@@ -74,7 +74,7 @@ get_header(); ?>
                 <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-red-prolid.png); background-repeat: no-repeat; background-position: 0px -42px;"></li>
               </ul>
             </div>
-            <div class="panel-body">
+            <div class="panel-body pb-0">
               <div class="col-sm-6">
                 <p><?php the_field('quien_va_dirigida_redprolid'); ?></p>
               </div>
