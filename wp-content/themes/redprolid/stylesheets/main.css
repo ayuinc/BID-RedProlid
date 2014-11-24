@@ -3589,6 +3589,12 @@ footer {
 .site-map li a {
   border-bottom: 2px solid black; }
 
+.terms nav a {
+  border-right: 2px solid black;
+  padding: 0 12px; }
+  .terms nav a:last-child {
+    border: none; }
+
 header {
   -webkit-box-shadow: 0 3px 21px 3px #c2c2c2;
   -moz-box-shadow: 0 3px 21px 3px #c2c2c2;

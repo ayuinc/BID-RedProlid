@@ -39,8 +39,8 @@
               <li><a href="#"><i class="flaticon-logo4"></i></a></li>
             </ul>
           </div>
-          <div class="col-md-6 text-center">
-            <nav class="text-muted">
+          <div class="col-md-6 text-center pt-42">
+            <nav class="text-muted terms">
               <a href="#">Políticas de privacidad </a>
               <a href="#"> Políticas de cookies </a>
               <a href="#"> Políticas de uso</a>

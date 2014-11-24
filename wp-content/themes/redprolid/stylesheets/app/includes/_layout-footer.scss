@@ -55,3 +55,15 @@ footer {
 		}
 	}
 }
+
+.terms {
+	nav {
+		a {
+			border-right: 2px solid black;	
+			&:last-child {
+				border: none;
+			}
+			padding: 0 12px;
+		}
+	}
+}
