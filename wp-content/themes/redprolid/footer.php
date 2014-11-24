@@ -13,11 +13,11 @@
     <footer>
       <div class="container">
         <div class="row to-top">
-          <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/to-top.png" alt=""></a>
+          <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/nav-footer-to-top.png" alt=""></a>
         </div>
-        <div class="row">
+        <div class="row pt-21">
           <div class="col-md-3">
-            <ul class="list-unstyled text-muted">
+            <ul class="list-unstyled text-white site-map">
               <li><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li>
               <li><a href="<?php echo home_url('/'); ?>sitemap/">Mapa de sitio</a></li>
             </ul>

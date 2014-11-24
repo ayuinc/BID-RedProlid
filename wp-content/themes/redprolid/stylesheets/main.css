@@ -3574,6 +3574,8 @@ footer {
     padding: 0 12px; }
     .social-links li:last-child {
       border: none; }
+    .social-links li:first-child {
+      padding: 0 12px 0 0; }
     .social-links li a {
       color: white; }
       .social-links li a:hover {
@@ -3583,6 +3585,9 @@ footer {
       .social-links li a i {
         font-size: 21px;
         color: white; }
+
+.site-map li a {
+  border-bottom: 2px solid black; }
 
 header {
   -webkit-box-shadow: 0 3px 21px 3px #c2c2c2;
