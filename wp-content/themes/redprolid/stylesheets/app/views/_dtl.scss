@@ -19,6 +19,11 @@
 	}
 	h1 {
 		@include bold;
+		font-size: 42px;
+		margin-top: 35px;
+	}
+	hr {
+		margin-top: 12px;
 	}
 } 
 
@@ -29,6 +34,12 @@
 	a {
 		display: block;
 		height: 397px;
+	}
+	&.dtl-path-sm {
+		height: 240px;
+		a {
+			height: 240px;
+		}
 	}
 }
 
@@ -99,6 +110,12 @@
 				}
 				&:hover {
 					text-decoration: none;
+					.color {
+						display: block;
+					}
+					.gs {
+						display: none;
+					}
 				}
 				.title {
 					@include clearfix;
@@ -115,6 +132,9 @@
 					hr {
 						border-top: 2px dotted $gray-light;
 					}
+				}
+				.color {
+					display: none;
 				}
 			}
 		}

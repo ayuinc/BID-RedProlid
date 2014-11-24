@@ -23,7 +23,15 @@ footer {
 	@include list-unstyled;
 	li {
 		float: left;
-		margin-right: 12px;
+		// margin-right: 12px;
+		border-right: 2px solid black;
+		padding: 0 12px;
+		&:last-child {
+			border: none;
+		}
+		&:first-child {
+			padding: 0 12px 0 0;
+		}
 		a {
 			color: white;
 			&:hover {
@@ -36,6 +44,26 @@ footer {
 				font-size: 21px;
 				color: white;
 			}
+		}
+	}
+}
+
+.site-map {
+	li {
+		a {
+			border-bottom: 2px solid black;
+		}
+	}
+}
+
+.terms {
+	nav {
+		a {
+			border-right: 2px solid black;	
+			&:last-child {
+				border: none;
+			}
+			padding: 0 12px;
 		}
 	}
 }

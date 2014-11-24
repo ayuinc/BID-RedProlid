@@ -1,4 +1,6 @@
 #nav-main-menu {
+	position: relative;
+	z-index: 9999;
 	div {
 		> ul {
 			background: $brand-secondary;
@@ -12,7 +14,8 @@
 					@include clearfix;
 					background: $brand-secondary;
 					border-right: 2px solid darken($brand-secondary, 7%);				
-					&:hover {
+					&:hover,
+					&.active {
 						text-decoration: none;
 						background: $brand-primary;
 					}

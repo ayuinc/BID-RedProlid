@@ -34,7 +34,7 @@
               <li><a href="#">Eventos</a></li>
               <li><a href="#">Nuestro boletín</a></li>
               <li><a href="#">Campeonas</a></li>
-              <li><a href="#" class="videos"><span></span>Videos</a></li>
+              <li><a href="#" class="videos"><span style="width: 16px; height: 16px; background: url(assets/icons/video-nav-main-top.png) no-repeat center center;"></span>Videos</a></li>
             </ul>
           </li>
           <li>

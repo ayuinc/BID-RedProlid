@@ -13,11 +13,11 @@
     <footer>
       <div class="container">
         <div class="row to-top">
-          <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/to-top.png" alt=""></a>
+          <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/nav-footer-to-top.png" alt=""></a>
         </div>
-        <div class="row">
+        <div class="row pt-21">
           <div class="col-md-3">
-            <ul class="list-unstyled text-muted">
+            <ul class="list-unstyled text-white site-map">
               <li><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li>
               <li><a href="<?php echo home_url('/'); ?>sitemap/">Mapa de sitio</a></li>
             </ul>
@@ -34,14 +34,13 @@
             <p class="text-muted">Síguenos en las redes:</p>
             <ul class="list-unstyled social-links">
               <li><a href="https://www.facebook.com/redprolid" target="_blank"><i class="flaticon-facebook6"></i></a></li>
-              <li><a href="https://twitter.com/RedPROLID" target=_blank><i class="flaticon-social19"></i></a></li>
+              <li><a href="https://twitter.com/RedPROLID" target="_blank"><i class="flaticon-social19"></i></a></li>
               <li><a href="https://plus.google.com/u/0/110729207092973287817/about" target="_blank"><i class="flaticon-google16"></i></a></li>
-              <li><a href="https://plus.google.com/110729207092973287817" rel="publisher"><i class="flaticon-google16"></i></a></li>
               <li><a href="#"><i class="flaticon-logo4"></i></a></li>
             </ul>
           </div>
-          <div class="col-md-6 text-center">
-            <nav class="text-muted">
+          <div class="col-md-6 text-center pt-42">
+            <nav class="text-muted terms">
               <a href="#">Políticas de privacidad </a>
               <a href="#"> Políticas de cookies </a>
               <a href="#"> Políticas de uso</a>

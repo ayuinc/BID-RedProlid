@@ -9,7 +9,7 @@
           <div class="col-md-1"></div>
           <div class="col-md-3">
             <div class="user-sign-up text-center">
-              <h3>¿Quieres ser parte <br>de la Red PROLID?</h3>
+              <h3 class="lg-lg">¿Quieres ser parte <br>de la Red PROLID?</h3>
               <!-- <a href="#" class="btn btn-primary">Únete</a> -->
               <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#mailChimp">Únete</a>
             </div>
