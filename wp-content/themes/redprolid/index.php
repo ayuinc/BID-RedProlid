@@ -104,7 +104,7 @@ echo $date->format('F jS, Y'); ?></small>
                       <li>
                         <h5><?php the_title(); ?></h5>
                         <p><?php the_field('descripcion_rapida_noticias'); ?></p>
-                        <small class="date"><?php the_time('F jS, Y') ?></small> <a href="#" class="text-primary">Lee más &gt;&gt;</a>
+                        <small class="date"><?php the_time('F jS, Y') ?></small> <a href="#" class="text-primary small">Lee más &gt;&gt;</a>
                       </li>
 											<?php endwhile; ?>                     
                     </ul>
@@ -235,17 +235,17 @@ echo $date->format('M'); ?></div>
                       <li>
                         <h5>Lorem ipsum dolor sit amet.</h5>
                         <p>Lorem ipsum dolor sit amet...</p>
-                        <small class="date">Febrero 30 / 2014</small> <a href="#" class="text-primary">Lee más &gt;&gt;</a>
+                        <small class="date">Febrero 30 / 2014</small> <a href="#" class="text-primary small">Lee más &gt;&gt;</a>
                       </li>
                       <li>
                         <h5>Lorem ipsum dolor sit amet.</h5>
                         <p>Lorem ipsum dolor sit amet...</p>
-                        <small class="date">Febrero 30 / 2014</small> <a href="#" class="text-primary">Lee más &gt;&gt;</a>
+                        <small class="date">Febrero 30 / 2014</small> <a href="#" class="text-primary small">Lee más &gt;&gt;</a>
                       </li>
                       <li>
                         <h5>Lorem ipsum dolor sit amet.</h5>
                         <p>Lorem ipsum dolor sit amet...</p>
-                        <small class="date">Febrero 30 / 2014</small> <a href="#" class="text-primary">Lee más &gt;&gt;</a>
+                        <small class="date">Febrero 30 / 2014</small> <a href="#" class="text-primary small">Lee más &gt;&gt;</a>
                       </li>
                     </ul>
                     <div class="text-right"><a href="#" class="btn btn-primary">Ver más</a></div>
