@@ -24,7 +24,7 @@ get_header(); ?>
                 <h1 style="color: #fff;">¿Qué es Red PROLID?</h1>
                 <hr style="border-top: 3px dotted #fff;">
               </div>
-              <p class="pt-28-100 pl-7-100 text-justify"><?php the_field('que_es_redprolid'); ?></p>
+              <p class="pt-28-100 pl-7-100 text-justify lead"><?php the_field('que_es_redprolid'); ?></p>
             </div>
             <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png" alt="" class="network-right">
           </div>
