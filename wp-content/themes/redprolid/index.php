@@ -46,8 +46,15 @@ get_header(); ?>
                 <p class="light lh-lg">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
                 <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo" class="btn btn-primary">Más aquí</a>
               </div>
-              <div class="col-sm-8">
-                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-dtl-path.png" alt="" class="img-responsive">
+              <div class="col-sm-8 dtl-path-sm">
+               <div class="row">
+                  <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/"></a></div>
+                  <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/carrera-de-vallas/"></a></div>
+                  <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/nivelando-la-cancha/"></a></div>
+                  <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/listas-para-la-politica/"></a></div>
+                  <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/"></a></div>
+                  <div class="col-xs-2"><a href="#"></a></div>
+                </div>
               </div>
             </div>
           </div>
@@ -89,7 +96,7 @@ echo $date->format('F jS, Y'); ?></small>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -84px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body pt-0">
                   <div class="col-sm-12">
                     <ul class="list-unstyled list-group list-group-custom">
                     	<?php query_posts( 'category_name=noticias&posts_per_page=3' ); ?>	
@@ -115,7 +122,7 @@ echo $date->format('F jS, Y'); ?></small>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -126px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body pt-0">
                   <?php query_posts( 'category_name=eventos&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
                   <div class="col-sm-12">
@@ -144,7 +151,7 @@ echo $date->format('M'); ?></div>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -168px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body pt-0">
                   <?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
                   <div class="col-sm-12 panel-lost">
@@ -222,7 +229,7 @@ echo $date->format('M'); ?></div>
                     <li class="title">Comentarios recientes</li>
                   </ul>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body pt-0">
                   <div class="col-sm-12">
                     <ul class="list-unstyled list-group list-group-custom">
                     <?php
