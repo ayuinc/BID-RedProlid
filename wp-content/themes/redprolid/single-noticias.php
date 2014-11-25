@@ -1,7 +1,7 @@
 <section class="">
   <div class="container">
     <div class="row">
-	    <?php if( get_field('field_name') ) { ?>
+	    <?php if( get_field('imagen_noticias') ) { ?>
       <div class="col-sm-4 col-md-offset-1">
         <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
       </div>
