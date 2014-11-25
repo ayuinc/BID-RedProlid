@@ -78,8 +78,8 @@ get_header(); ?>
                   <div class="col-sm-12">
                     <img src="<?php the_field('imagen_concurso'); ?>" alt="" class="img-responsive">
                     <h5><?php the_title(); ?></h5>
-                    <small class="help-block"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_concurso'));
-echo $date->format('F jS, Y'); ?></small>
+                    <!--<small class="help-block"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_concurso'));
+echo $date->format('d-m-Y'); ?></small>-->
                     <p><?php the_field('descripcion_concurso'); ?></p>
                     <div class="text-right"><a href="#" class="btn btn-primary">Más información</a></div>
                   </div>
@@ -103,12 +103,12 @@ echo $date->format('F jS, Y'); ?></small>
 											<?php while ( have_posts() ) : the_post(); ?>                    
                       <li>
                         <h5><?php the_title(); ?></h5>
-                        <p><?php the_field('descripcion_rapida_noticias'); ?></p>
-                        <small class="date"><?php the_time('F jS, Y') ?> </small> <a href="#" class="text-primary small">Lee más &gt;&gt;</a>
+                        <!--<p><?php the_field('descripcion_rapida_noticias'); ?></p>-->
+                        <small class="date"><?php the_time('d-m-Y') ?> </small> <a href="#" class="text-primary small">Lee más &gt;&gt;</a>
                       </li>
 											<?php endwhile; ?>                     
                     </ul>
-                    <div class="text-right"><a href="#" class="btn btn-primary">Ver más</a></div>
+                    <div class="text-right"><a href="#" class="btn btn-primary">Ve más</a></div>
                   </div>
                 </div>
               </div>
