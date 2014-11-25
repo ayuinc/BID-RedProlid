@@ -31,7 +31,7 @@
             <ul class="list-unstyled">
               <!--<li><a href="<?php echo home_url('/'); ?>poll">Tu opinión importa</a></li>-->
               <li><a href="<?php echo home_url('/'); ?>noticias">Noticias</a></li>
-              <li><a href="#">Eventos</a></li>
+              <li><a href="<?php echo home_url('/'); ?>eventos">Eventos</a></li>
               <li><a href="#">Nuestro boletín</a></li>
               <li><a href="#">Campeonas</a></li>
               <li><a href="#" class="videos"><span style="width: 16px; height: 16px; background: url(<?php echo home_url('/'); ?>wp-content/themes/redprolid/assets/icons/video-nav-main-menu.png) no-repeat center center;"></span> Videos</a></li>
