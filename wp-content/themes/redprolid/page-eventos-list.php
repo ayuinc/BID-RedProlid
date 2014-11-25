@@ -37,22 +37,18 @@ get_header(); ?>
           <?php //die(the_post()); ?>
           <?php while ( have_posts() ) : the_post(); ?>
           <div class="row">
-
-            <?php if( get_field('imagen_evento') ) { ?>
-            <div class="col-sm-4 col-md-offset-1">
-              <img src="<?php the_field('imagen_evento'); ?>" alt="" class="img-responsive">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 with-hr">
+              <h3><?php the_title(); ?></h3>
+              <p></p>
+              <h4></h4>
+              <p class="lh-lg text-justify"><?php the_field('descripcion_evento'); ?></p>
+              <!-- <p class="text-gray">Diciembre 2013</p> -->
+              <div class="text-right">
+                <a href="<?php echo get_permalink( get_the_ID() ); ?>">Lee el artículo >></a>
+              </div>
             </div>
-            <div class="col-sm-6">
-            <?php } else {?>  
-            <div class="col-sm-10 col-md-offset-1">
-            <?php } ?>
-              
-              <h1 class="lh-lg"><?php the_title(); ?></h1>
-              <h3 class="light "><?php the_field('descripcion_evento'); ?></h3>
-              <p class="lh-lg text-justify">
-              </p>
-
-            </div>
+            <div class="col-sm-1"></div>
           </div>
           <?php endwhile; ?>
 
