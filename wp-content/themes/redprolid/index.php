@@ -109,7 +109,7 @@ echo $date->format('d-m-Y'); ?></small>-->
                       </li>
 											<?php endwhile; ?>                     
                     </ul>
-                    <div class="text-right"><a href="#" class="btn btn-primary">Ve más</a></div>
+                    <div class="text-right"><a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary">Ve más</a></div>
                   </div>
                 </div>
               </div>
