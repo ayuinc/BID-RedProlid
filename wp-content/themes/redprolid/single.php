@@ -83,6 +83,12 @@ get_header(); ?>
       get_template_part( 'single-campeonas' );
 
     }
+
+    elseif ( $cat[0]->slug == 'webinario' ) {
+
+      get_template_part( 'single-webinario' );
+
+    }
   
   ?>
 </div>
