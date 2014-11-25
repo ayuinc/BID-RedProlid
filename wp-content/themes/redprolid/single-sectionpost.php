@@ -1,6 +1,6 @@
 <section class="sumate-al-debate">
   <div class="container">
-    <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate.png" alt="" class="ribbon">
+    
     <div class="row">
       <div class="col-sm-9 pt-35">
         <div class="title">
@@ -14,6 +14,9 @@
         <div class="footer">
           <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
         </div>
+        <div class="comments">
+          <?php comments_template();?>
+        </div> 
       </div>
     </div>
   </div>
