@@ -105,7 +105,7 @@ get_header(); ?>
 
   $cat = get_the_category($post->id);
 
-  print_r($cat);
+  print_r($cat[0]->slug);
 
   if ( in_category('2') ) {
 
