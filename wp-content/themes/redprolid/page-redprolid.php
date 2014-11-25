@@ -17,7 +17,7 @@ get_header(); ?>
     <div class="mh-700">
       <section id="hero-unit">
         <div class="container with-shadow">
-          <div class="content clearfix">
+          <div class="content clearfix mt-35">
             <div class="col-sm-7">
               <div class="dtl-custom-heading">
                 <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" alt=""></div>
@@ -26,7 +26,7 @@ get_header(); ?>
               </div>
               <p class="pt-28-100 pl-7-100 text-justify lead"><?php the_field('que_es_redprolid'); ?></p>
             </div>
-            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png" alt="" class="network-right">
+            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png" alt="" class="network-right mt-21">
           </div>
           <h5 class="text-center light pt-42 lead"><?php the_field('texto_central_redprolid'); ?></h5>
         </div>
@@ -38,11 +38,11 @@ get_header(); ?>
               <ul class="list-unstyled">
                 <li class="title">La Red PROLID quiere ser</li>
                 <li class="rule"></li>
-                <li class="icon" style="background-image: url(../assets/icons/sprites-red-prolid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+                <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-red-prolid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
               </ul>
             </div>
             <div class="panel-body">
-              <ul class="list-unstyled red-prolid-grid">
+              <ul class="list-unstyled red-prolid-grid ml-70 pl-21">
                 <li>
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" alt="">
                   <p class="light h5"><?php the_field('quiere_ser_op1'); ?></p>
@@ -59,10 +59,10 @@ get_header(); ?>
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" alt="">
                   <p class="light h5"><?php the_field('quiere_ser_op4'); ?></p>
                 </li>
-                <li>
+                <!--<li>
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-5.png" alt="">
                   <p class="light h5"><?php the_field('quiere_ser_op5'); ?></p>
-                </li>
+                </li>-->
               </ul>
             </div>
           </div>

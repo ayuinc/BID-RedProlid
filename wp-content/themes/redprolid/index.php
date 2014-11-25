@@ -242,10 +242,9 @@ echo $date->format('M'); ?></div>
                       <li>
                         <h5><?php echo($comment->comment_author);?></h5>
                         <p><?php echo($comment->comment_content);?></p>
-                        <small class="date"><?php echo($comment->comment_date);?> / </small> <a href="<?php echo get_permalink( $comment->comment_post_ID ); ?>" class="text-primary small">Lee más &gt;&gt;</a>
-
+                        <small class="date"><?php echo($comment->comment_date);?> / </small> 
+                        <!--<a href="<?php echo get_permalink( $comment->comment_post_ID ); ?>" class="text-primary small">Lee más &gt;&gt;</a>-->
                       </li>
-                    
                     <?php endforeach;?>
                     </ul>
                     <div class="text-right"><a href="#" class="btn btn-primary">Ver más</a></div>
