@@ -79,7 +79,7 @@ get_header(); ?>
 
     }
 
-    elseif ( $cat[0]->slug == 'concurso' ) {
+    elseif ( $cat[0]->slug == 'concursos' ) {
 
       get_template_part( 'single-concurso' );
 
