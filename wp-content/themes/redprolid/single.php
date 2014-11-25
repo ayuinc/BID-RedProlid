@@ -103,6 +103,10 @@ get_header(); ?>
 
   print_r($post);
 
+  $cat = get_the_category($post->id);
+
+  var_dump($cat);
+
   if ( in_category('2') ) {
 
     echo "11111"; 
