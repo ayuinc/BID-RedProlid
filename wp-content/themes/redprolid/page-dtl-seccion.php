@@ -66,7 +66,7 @@ get_header(); ?>
 		          </div>
 		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-21 img-circle pt-7-100" width="560px" height="auto">
 							<?php endif; ?>
-							<?php if ($segment2 == "pistas") : ?>
+							<?php if ($segment2 == "pistas-2") : ?>
 								<div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-pistas-icon.png" alt="<?php the_title(); ?>"></div>
 		            <h1 style="color: #007c8d;"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #007c8d;">
