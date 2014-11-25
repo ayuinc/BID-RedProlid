@@ -81,7 +81,7 @@ get_header(); ?>
                     <!--<small class="help-block"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_concurso'));
 echo $date->format('d-m-Y'); ?></small>-->
                     <p><?php the_field('descripcion_concurso'); ?></p>
-                    <div class="text-right"><a href="#" class="btn btn-primary">Más información</a></div>
+                    <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Más información</a></div>
                   </div>
                   <?php endwhile; ?>
                 </div>
@@ -104,7 +104,7 @@ echo $date->format('d-m-Y'); ?></small>-->
                       <li>
                         <h5><?php the_title(); ?></h5>
                         <!--<p><?php the_field('descripcion_rapida_noticias'); ?></p>-->
-                        <small class="date"><?php the_time('d-m-Y') ?> </small> <a href="#" class="text-primary small">Lee más &gt;&gt;</a>
+                        <small class="date"><?php the_time('d-m-Y') ?> </small> <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary small">Lee más &gt;&gt;</a>
                       </li>
 											<?php endwhile; ?>                     
                     </ul>
@@ -136,7 +136,7 @@ echo $date->format('M'); ?></div>
                     </div>
                     <h5 class=""><?php the_title(); ?></h5>
                     <p class=""><?php the_field('descripcion_evento'); ?></p>
-                    <div class="text-right"><a href="#" class="btn btn-primary">Ve más</a></div>
+                    <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Ve más</a></div>
                   </div>
                   <?php endwhile; ?>
                 </div>
@@ -247,7 +247,7 @@ echo $date->format('M'); ?></div>
                       </li>
                     <?php endforeach;?>
                     </ul>
-                    <div class="text-right"><a href="#" class="btn btn-primary">Ver más</a></div>
+                    <!--<div class="text-right"><a href="#" class="btn btn-primary">Ver más</a></div>-->
                   </div>
                 </div>
               </div>
