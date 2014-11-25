@@ -31,7 +31,6 @@
   <?php if (have_posts()) : ?>
   <?php $count = 0; ?>
 
-  <?php query_posts( 'category_name=webinario' ); ?>
   <?php while ( have_posts() ) : the_post(); ?>
   <?php $count++; ?>
 
