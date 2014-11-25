@@ -78,8 +78,8 @@ get_header(); ?>
                   <div class="col-sm-12">
                     <img src="<?php the_field('imagen_concurso'); ?>" alt="" class="img-responsive">
                     <h5><?php the_title(); ?></h5>
-                    <small class="help-block"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_concurso'));
-echo $date->format('F jS, Y'); ?></small>
+                    <!--<small class="help-block"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_concurso'));
+echo $date->format('d-m-Y'); ?></small>-->
                     <p><?php the_field('descripcion_concurso'); ?></p>
                     <div class="text-right"><a href="#" class="btn btn-primary">Más información</a></div>
                   </div>
@@ -103,12 +103,12 @@ echo $date->format('F jS, Y'); ?></small>
 											<?php while ( have_posts() ) : the_post(); ?>                    
                       <li>
                         <h5><?php the_title(); ?></h5>
-                        <p><?php the_field('descripcion_rapida_noticias'); ?></p>
-                        <small class="date"><?php the_time('F jS, Y') ?> </small> <a href="#" class="text-primary small">Lee más &gt;&gt;</a>
+                        <!--<p><?php the_field('descripcion_rapida_noticias'); ?></p>-->
+                        <small class="date"><?php the_time('d-m-Y') ?> </small> <a href="#" class="text-primary small">Lee más &gt;&gt;</a>
                       </li>
 											<?php endwhile; ?>                     
                     </ul>
-                    <div class="text-right"><a href="#" class="btn btn-primary">Ver más</a></div>
+                    <div class="text-right"><a href="#" class="btn btn-primary">Ve más</a></div>
                   </div>
                 </div>
               </div>
@@ -136,7 +136,7 @@ echo $date->format('M'); ?></div>
                     </div>
                     <h5 class=""><?php the_title(); ?></h5>
                     <p class=""><?php the_field('descripcion_evento'); ?></p>
-                    <div class="text-right"><a href="#" class="btn btn-primary">Ver más</a></div>
+                    <div class="text-right"><a href="#" class="btn btn-primary">Ve más</a></div>
                   </div>
                   <?php endwhile; ?>
                 </div>
@@ -185,7 +185,7 @@ echo $date->format('M'); ?></div>
                   <div class="col-sm-7">
                     <h4><?php the_title(); ?></h4>
                     <p class="light lh-lg"><?php the_field('descripcion_punto_de_vista'); ?></p>
-                    <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee más</a></div>
+                    <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee aquí</a></div>
                   </div>
                 </div>
                 <?php endwhile; ?>
@@ -242,10 +242,9 @@ echo $date->format('M'); ?></div>
                       <li>
                         <h5><?php echo($comment->comment_author);?></h5>
                         <p><?php echo($comment->comment_content);?></p>
-                        <small class="date"><?php echo($comment->comment_date);?> / </small> <a href="<?php echo get_permalink( $comment->comment_post_ID ); ?>" class="text-primary small">Lee más &gt;&gt;</a>
-
+                        <small class="date"><?php echo($comment->comment_date);?> </small> 
+                        <!--<a href="<?php echo get_permalink( $comment->comment_post_ID ); ?>" class="text-primary small">Lee más &gt;&gt;</a>-->
                       </li>
-                    
                     <?php endforeach;?>
                     </ul>
                     <div class="text-right"><a href="#" class="btn btn-primary">Ver más</a></div>
@@ -267,7 +266,7 @@ echo $date->format('M'); ?></div>
                   	<div class="fb-like-box" data-width="250" data-height="520" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
                   </div>
                   <div class="col-sm-4">
-										<a class="twitter-timeline" width="250" height="520"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tweets by @redprolid</a>  
+										<a class="twitter-timeline" width="250" height="520"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a>  
                   </div>
                   <div class="col-sm-4">
                     <div class="g-person" data-width="250" data-height="520" data-href="//plus.google.com/u/0/107403271684877473593" data-rel="author"></div>
