@@ -40,14 +40,7 @@ get_header(); ?>
           <?php while ( have_posts() ) : the_post(); ?>
           <div class="row">
             <div class="col-sm-1"></div>
-            <?php if( get_field('imagen_noticias') ) { ?>
-            <div class="col-sm-4 col-md-offset-1">
-              <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
-            </div>
-            <div class="col-sm-6">
-            <?php } else {?>
             <div class="col-sm-10 with-hr">
-            <?php } ?>
               <h3><?php the_title(); ?></h3>
               <p><?php the_field('descripcion_rapida_noticias'); ?></p>
               <h4></h4>
