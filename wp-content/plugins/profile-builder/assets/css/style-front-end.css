@@ -137,7 +137,7 @@
 --------------------------------------------------------------*/
 .wppb-user-forms ul{
 	max-width:900px;
-	list-style:none;
+	list-style:none !;
 	margin-left:0;
 	margin-right:0;
     padding-left:0;
