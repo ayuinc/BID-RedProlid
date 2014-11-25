@@ -75,7 +75,7 @@ get_header(); ?>
 
     elseif ( $cat[0]->slug == 'noticias' ) {
 
-      get_template_part( 'single-snoticias' );
+      get_template_part( 'single-noticias' );
 
     }
   
