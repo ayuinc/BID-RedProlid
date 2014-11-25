@@ -31,7 +31,7 @@ get_header(); ?>
 		          </div>
 		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle" width="560px" height="auto">
 							<?php endif; ?>
-							<?php if ($segment2 == "a-donde-vamos") : ?>
+							<?php if ($segment2 == "agenda-de-genero") : ?>
 		            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-icon.png" alt="<?php the_title(); ?>"></div>
 		            <h1 style="color: #c02f73;"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #c02f73;">
