@@ -41,12 +41,13 @@ get_header(); ?>
                 <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-nav-main-menu.png); background-repeat: no-repeat; background-position: 0px -85px;"></li>
               </ul>
             </div>
-            <div class="panel-body panel-body-shadow">
-              <div class="col-sm-4 pt-35">
-                <p class="light lh-lg">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
+            <div class="panel-body panel-body-shadow pl-7 pr-14">
+              <div class="col-sm-3 pt-0">
+                <p class="light">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
                 <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo" class="btn btn-primary">Más aquí</a>
               </div>
-              <div class="col-sm-8 dtl-path dtl-path-sm">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-8 dtl-path dtl-path-sm pr-14">
                <div class="row">
                   <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/"></a></div>
                   <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/carrera-de-vallas/"></a></div>

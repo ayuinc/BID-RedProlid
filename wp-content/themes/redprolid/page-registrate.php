@@ -67,15 +67,16 @@ get_header(); ?>
 		  </div>
 		  <div class="container text-justify with-hr pb-70">
 			  <div class="row">
-					<div class="col-sm-10 col-md-offset-1">  	  
+					<div class="col-sm-11 col-md-offset-1">  	  
 			      <div class="row mt-35">
-				      <div class="col-sm-6 formulario-perfil">
-					      <h3 class="light text-left lh-lg">Crea tu perfil ahora incluyendo los siguientes datos</h3>
+				      <div class="col-sm-5 formulario-perfil">
+					      <h3 class="light text-left">Crea tu perfil ahora incluyendo los siguientes datos</h3>
 				      	<?php the_content(); ?>
 				      </div>
-				      <div class="col-sm-6">
-					      <h3 class="light text-left lh-lg">Ingresa Utilizando las redes sociales</h3>
-					      <p><?php do_action( 'wordpress_social_login' ); ?></p>
+				      <div class="col-sm-1"></div>
+				      <div class="col-sm-5">
+					      <h3 class="light text-left">Ingresa Utilizando las redes sociales</h3>
+					      <p class="mt-70"><?php do_action( 'wordpress_social_login' ); ?></p>
 				      </div>			      
 				    </div>
 					</div>
