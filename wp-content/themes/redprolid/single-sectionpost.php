@@ -1,4 +1,4 @@
-<section class="sumate-al-debate">
+<section class="">
   <div class="container">
     
     <div class="row">

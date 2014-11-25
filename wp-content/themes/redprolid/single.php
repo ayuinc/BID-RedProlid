@@ -78,6 +78,24 @@ get_header(); ?>
       get_template_part( 'single-noticias' );
 
     }
+
+    elseif ( $cat[0]->slug == 'concurso' ) {
+
+      get_template_part( 'single-concurso' );
+
+    }
+
+    elseif ( $cat[0]->slug == 'eventos' ) {
+
+      get_template_part( 'single-eventos' );
+
+    }
+
+    elseif ( $cat[0]->slug == 'campeonas' ) {
+
+      get_template_part( 'single-campeonas' );
+
+    }
   
   ?>
 </div>
