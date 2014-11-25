@@ -72,6 +72,12 @@ get_header(); ?>
       get_template_part( 'single-sectionpost' );
 
     }
+
+    elseif ( $cat[0]->slug == 'noticias' ) {
+
+      get_template_part( 'single-snoticias' );
+
+    }
   
   ?>
 </div>
