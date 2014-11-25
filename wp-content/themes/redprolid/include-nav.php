@@ -46,8 +46,18 @@
           <li>
             <a href="<?php echo home_url('/'); ?>charlacafe/" class="charla-cafe"><i></i><span>Charlacafé</span></a>
             <ul class="list-unstyled">
-              <li><a href="#">Foros virtuales</a></li>
-              <li><a href="<?php echo home_url('/'); ?>webinar-principal">Webinarios</a></li>
+              <li>
+              	<a href="#">Foros virtuales →</a>
+                <ul class="list-unstyled">
+                  <li><a href="#">¿Quieres ver los foros anteriores?</a></li>
+                </ul>              	
+              </li>
+              <li>
+              	<a href="<?php echo home_url('/'); ?>webinar-principal">Webinarios →</a>
+                <ul class="list-unstyled">
+                  <li><a href="#">¿Quieres ver los foros anteriores?</a></li>
+                </ul> 
+              </li>
             </ul>
           </li>
         </ul>
