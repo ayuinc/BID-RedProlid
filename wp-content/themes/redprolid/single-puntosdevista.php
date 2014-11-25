@@ -14,43 +14,57 @@
       </div>
       <hr style="border-top: 3px dotted #aeab8b;">
     </div>
-    <h4 class="pt-14-100 light">Te ofrecemos artículos escritos por mujeres líderes en la región latinoamericana: políticas, especialistas o profesionales relevantes que ponen sobre el papel su experiencia en pro de unas sociedades más equitativas.</h4>
+    <div clas="row">
+	    <div class="col-sm-10 col-md-offset-1">
+	    	<h4 class="pt-14-100 light mt-35 mb-35">Te ofrecemos artículos escritos por mujeres líderes en la región latinoamericana: políticas, especialistas o profesionales relevantes que ponen sobre el papel su experiencia en pro de unas sociedades más equitativas.</h4>
+	    </div>
+    </div>
   </div>
-  <div class="container text-justify with-hr">
+  <div class="container text-left mt-70 mb-35">
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-3 col-md-offset-1">
         <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" class="img-responsive">
       </div>
-      <div class="col-sm-9">
-        <h3><?php the_field('nombre_completo'); ?> <small>(Bolivia)</small></h3>
+      <div class="col-sm-6">
+        <h1><?php the_title(); ?><small>(Bolivia)</small></h1>
         <p><?php the_field('profesion'); ?> / <a href="http://twitter.com/<?php the_field('cuenta_de_twitter'); ?>">@<?php the_field('cuenta_de_twitter'); ?></a></p>
-        <p class="lh-lg text-justify">
+        <p class="text-justify">
         	<?php the_field('descripcion_punto_de_vista'); ?>
         </p>
       </div>
     </div>
   </div>
-  <div class="container text-justify with-hr">
-	  <h4><?php the_title(); ?></h4>
-    <p><?php the_field('contenido_punto_de_vista'); ?></p>
-    <div class="text-center">
-      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
-    </div>          
+  <div class="container text-left">
+    <div class="row">
+      <div class="col-sm-10 col-md-offset-1 with-hr pb-70">	  
+			  <h4><?php the_field('nombre_completo'); ?></h4>
+		    <p><?php the_field('contenido_punto_de_vista'); ?></p>
+		    <div class="text-center mt-35">
+		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
+		    </div>   
+      </div>
+    </div>       
   </div>
-  <div class="container text-justify with-hr">
-    <?php comments_template(); ?>
+  <div class="container text-justify">
+    <div class="row">
+      <div class="col-sm-10 col-md-offset-1 with-hr pt-49 pb-49">	  
+				<?php comments_template(); ?>
+      </div>
+    </div>
 	</div>	
   </div>
-  <div class="container with-shadow mh-350">
-  </div>
-  <div class="container with-hr">
-    <h4>Artículos comentados</h4>
-    <ul class="grid-list grid-list-2 pb-ch-7">
-      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-    </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-md-offset-1 pt-35">		  
+		    <h4>Artículos comentados</h4>
+		    <ul class="grid-list grid-list-2 pb-ch-7">
+		      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
+		      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
+		      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
+		      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
+		      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
+		    </ul>
+      </div>
+    </div>
   </div>
 </section>
