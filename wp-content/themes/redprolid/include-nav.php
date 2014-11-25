@@ -55,7 +55,7 @@
               <li>
               	<a href="<?php echo home_url('/'); ?>webinar-principal">Webinarios →</a>
                 <ul class="list-unstyled">
-                  <li><a href="#">¿Quieres ver los foros anteriores?</a></li>
+                  <li><a href="<?php echo home_url('/'); ?>webinarios-anteriores">¿Quieres ver los webinarios anteriores?</a></li>
                 </ul> 
               </li>
             </ul>
