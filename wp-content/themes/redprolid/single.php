@@ -14,22 +14,9 @@ get_header(); ?>
   
   <?php
 
-    $uri = $_SERVER['REQUEST_URI'];
-    $elements = explode('/', $uri) ;
-    $segment1 = $elements[1] ; // For the first segment
-    $segment2 = $elements[2] ; //For the 2nd segment
-    $segment3 = $elements[3] ; //For the 3rd segment
-
-    echo $segment1;
-    echo $segment2;
-    echo $segment3;
-
     $post = $wp_query->post;
 
     $cat = get_the_category($post->id);
-
-    print_r($cat[0]->slug);
-
     
     if ( $cat[0]->slug == 'puntos-de-vista' ) {
 
