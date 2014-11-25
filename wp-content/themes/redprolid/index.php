@@ -136,7 +136,7 @@ echo $date->format('M'); ?></div>
                     </div>
                     <h5 class=""><?php the_title(); ?></h5>
                     <p class=""><?php the_field('descripcion_evento'); ?></p>
-                    <div class="text-right"><a href="#" class="btn btn-primary">Ver más</a></div>
+                    <div class="text-right"><a href="#" class="btn btn-primary">Ve más</a></div>
                   </div>
                   <?php endwhile; ?>
                 </div>
@@ -185,7 +185,7 @@ echo $date->format('M'); ?></div>
                   <div class="col-sm-7">
                     <h4><?php the_title(); ?></h4>
                     <p class="light lh-lg"><?php the_field('descripcion_punto_de_vista'); ?></p>
-                    <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee más</a></div>
+                    <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee aquí</a></div>
                   </div>
                 </div>
                 <?php endwhile; ?>
