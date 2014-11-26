@@ -12,7 +12,7 @@ get_header(); ?>
     <?php get_template_part( 'include', 'nav' ); ?>
     <div class="mh-700">
       <section id="dtl" class="pt-0">
-        <div class="container relative dtl-content">
+        <div class="container relative dtl-content with-shadow">
           <!-- Start the Loop. -->
 					<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ) : the_post(); ?>
@@ -21,13 +21,10 @@ get_header(); ?>
 		            <h1 style="color: #808080;"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #808080;">
 		          </div>
-		          <img src="<?php the_field('imagen-dtl'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-21" width="630px" height="auto">
-		          <p class="text-right pt-14-100"><?php the_field('contenido-dtl'); ?></p> 
+		          <img src="<?php the_field('imagen-dtl'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-28 mb-21" width="630px" height="auto">
+		          <p class="text-right pt-14-100 mb-28"><?php the_field('contenido-dtl'); ?></p> 
 						<?php endwhile; ?>
-					<?php endif; ?>   
-          <div class="comments">
-            <?php comments_template(); ?>
-          </div>                
+					<?php endif; ?>                 
         </div>
       </section>      
       <section>
@@ -38,7 +35,8 @@ get_header(); ?>
             <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/nivelando-la-cancha/"></a></div>
             <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/listas-para-la-politica/"></a></div>
             <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/"></a></div>
-            <div class="col-xs-2"><a href="#"></a></div>
+            <div class="col-xs-1"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/"></a></div>
+            <div class="col-xs-1"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/"></a></div>
           </div>
         </div>
       </section>
