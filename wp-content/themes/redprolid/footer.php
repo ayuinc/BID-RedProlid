@@ -26,7 +26,7 @@
             <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-footer.png" width="322px" height="auto"></a>
           </div>
           <div class="col-md-3 text-center">
-            <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_BID-footer.png" width="145px" height="auto"></a>
+            <a href="http://www.iadb.org/" target="_blank"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_BID-footer.png" width="145px" height="auto"></a>
           </div>
         </div>
         <div class="row mt-21">
@@ -36,14 +36,14 @@
               <li><a href="https://www.facebook.com/redprolid" target="_blank"><i class="flaticon-facebook6"></i></a></li>
               <li><a href="https://twitter.com/RedPROLID" target="_blank"><i class="flaticon-social19"></i></a></li>
               <li><a href="https://plus.google.com/u/0/110729207092973287817/about" target="_blank"><i class="flaticon-google16"></i></a></li>
-              <li><a href="#"><i class="flaticon-logo4"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCpntjKraZb6A3qpClZTA5aQ" target="_blank"><i class="flaticon-logo4"></i></a></li>
             </ul>
           </div>
           <div class="col-md-6 text-center pt-42">
             <nav class="text-muted terms">
-              <a href="#">Políticas de privacidad </a>
-              <a href="#"> Políticas de cookies </a>
-              <a href="#"> Políticas de uso</a>
+              <a href="<?php echo content_url('/'); ?>politicas-de-privacidad/">Políticas de privacidad </a>
+              <a href="<?php echo content_url('/'); ?>politicas-de-cookies/"> Políticas de cookies </a>
+              <a href="<?php echo content_url('/'); ?>politicas-de-uso/"> Políticas de uso</a>
             </nav>
           </div>
           <div class="col-md-3"></div>
