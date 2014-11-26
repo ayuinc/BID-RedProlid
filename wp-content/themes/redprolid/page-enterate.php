@@ -52,14 +52,7 @@ get_header(); ?>
                   <h1>Búsqueda</h1>
                   <hr class="hr-gray-light">
                   <p class="lead">Filtra tu búsqueda y encuentra lo que necesitas:</p>
-                  <form class="search">
-                    <div class="input-group">
-                      <input type="search" class="form-control" placeholder="Palabra clave">
-                      <span class="input-group-btn">
-                        <button class="btn btn-primary" type="button"></button>
-                      </span>
-                    </div><!-- /input-group -->
-                  </form>
+                  <?php get_search_form(); ?>
                   <div class="bookshelf"></div>
                 </div>
               </div>
