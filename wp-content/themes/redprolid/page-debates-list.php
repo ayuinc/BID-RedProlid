@@ -13,7 +13,7 @@ get_header(); ?>
         <div class="container">
 	        <div class="row">
 	        	<div class="col-sm-10 col-md-offset-1 mt-35 mb-35">
-		        	<h1>Debates</h1>
+		        	<h1>Debates Anteriores</h1>
 	        	</div>
 	        </div>
         </div>
