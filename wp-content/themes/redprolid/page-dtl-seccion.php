@@ -89,7 +89,7 @@ get_header(); ?>
               <div class="debates-anteriores">
                 <h4>¿Quieres ver los debates anteriores?</h4>
                 <div class="text-right">
-                  <a href="#" class="btn btn-primary">Ir a archivos</a>
+                  <a href="http://redprolid.org/debates/" class="btn btn-primary">Ir a archivos</a>
                 </div>
               </div>
               <h4>Lo último en las redes</h4>
