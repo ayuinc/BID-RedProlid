@@ -15,7 +15,7 @@ get_header(); ?>
       <section>
         <div class="container relative mh-140">
           <div class="absolute dtl-custom-heading">
-            <div><img src="../assets/icons/enterate-icon.png" alt=""></div>
+            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt=""></div>
             <ul class="flex flex-row flex-space-between normalize-text pt-28">
               <li>
                 <h1 style="color: #aeab8b;">Entérate</h1>
@@ -29,11 +29,11 @@ get_header(); ?>
         </div>
         <div class="container with-shadow">
           <ul class="grid-list grid-list-centered grid-list-5 text-center">
-            <li><img src="../assets/icons/enterate-grid-1.png" alt=""><p>De dónde podrás encontrar todos los recursos y artículos</p></li>
-            <li><img src="../assets/icons/enterate-grid-2.png" alt=""><p>De las noticias y de los eventos que no podrás perderte </p></li>
-            <li><img src="../assets/icons/enterate-grid-3.png" alt=""><p>De lo que otras mujeres, con intereses similares, piensan</p></li>
-            <li><img src="../assets/icons/enterate-grid-4.png" alt=""><p>De diversos videos que podrás ver y compratir</p></li>
-            <li><img src="../assets/icons/enterate-grid-5.png" alt=""><p>De cómo estar conectada con lo que pasa en la Red PROLID</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-1.png" alt=""><p>De dónde podrás encontrar todos los recursos y artículos</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2.png" alt=""><p>De las noticias y de los eventos que no podrás perderte </p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3.png" alt=""><p>De lo que otras mujeres, con intereses similares, piensan</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt=""><p>De diversos videos que podrás ver y compratir</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5.png" alt=""><p>De cómo estar conectada con lo que pasa en la Red PROLID</p></li>
           </ul>
           <p class="lead">Imagina esta sección como una biblioteca en la que almacenamos todo tipo de recursos de nuestra red:  libros, legislación, investigaciones, blogs y noticias, al igual que material audiovisual como entrevistas o vídeos. Queremos también incluir material eminentemente práctico como compendios de buenas prácticas, guías para las mujeres en el sector público o estudios de casos concretos. Aspiramos a que aquí puedas encontrar todo lo que puede serte útil en el desarrollo y fortalecimiento de tu liderazgo en el sector público y la política.</p>
         </div>
@@ -114,7 +114,7 @@ get_header(); ?>
                   <ul class="grid-list grid-list-3 item active">
                     <li>
                       <div class="p-14 bg-white">
-                        <img src="../assets/img/img.png" alt="" class="img-responsive">
+                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
@@ -123,7 +123,7 @@ get_header(); ?>
                     </li>
                     <li>
                       <div class="p-14 bg-white">
-                        <img src="../assets/img/img.png" alt="" class="img-responsive">
+                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
@@ -132,7 +132,7 @@ get_header(); ?>
                     </li>
                     <li>
                       <div class="p-14 bg-white">
-                        <img src="../assets/img/img.png" alt="" class="img-responsive">
+                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
@@ -143,7 +143,7 @@ get_header(); ?>
                   <ul class="grid-list grid-list-3 item">
                     <li>
                       <div class="p-14 bg-white">
-                        <img src="../assets/img/img.png" alt="" class="img-responsive">
+                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
@@ -152,7 +152,7 @@ get_header(); ?>
                     </li>
                     <li>
                       <div class="p-14 bg-white">
-                        <img src="../assets/img/img.png" alt="" class="img-responsive">
+                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
@@ -161,7 +161,7 @@ get_header(); ?>
                     </li>
                     <li>
                       <div class="p-14 bg-white">
-                        <img src="../assets/img/img.png" alt="" class="img-responsive">
+                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
@@ -251,7 +251,7 @@ get_header(); ?>
                       <h3 class="m-0">Carolina Trivelli</h3>
                       <span>(Perú)</span><br>
                       <a href="#">@CaroTrivelli</a>
-                      <p class="lead mt-14">Exministra de Desarrollo e Inclusión Social (2011-2013)...</p>
+                      <p class="lead mt-14">Exministra de Desarrollo e Inclusión Social (2011-2013)<?php echo content_url('/'); ?>themes/redprolid</p>
                       <div class="text-right">
                         <a href="#" class="btn btn-primary">Leer más</a>
                       </div>
