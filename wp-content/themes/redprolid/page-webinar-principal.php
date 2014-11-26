@@ -39,15 +39,12 @@ get_header(); ?>
         <div class="container">
           <h5>Próximo Webinario</h5>
         </div>
-        <?php if (have_posts()) : ?>
-        <?php $count = 0; ?>
 
-        <?php query_posts( 'category_name=webinario' ); ?>
-        <?php while ( have_posts() ) : the_post(); ?>
-        <?php $count++; ?>
+        <?php
+        $customposts = get_posts('category_name=webinario&showposts=1' );
+        foreach( $customposts as $post ) :  // start you custom loop
+        setup_postdata($post); ?>
 
-        <?php if ($count <= 1) : ?>
-          <?php $id_post_comentarios = get_the_ID(); ?> 
         <div class="container">
           <h1 class="mb-21"><?php the_title(); ?></h1>
           <p><?php echo get_post_field('post_content', get_the_ID()); ?></p>
@@ -73,9 +70,7 @@ get_header(); ?>
             <?php comments_template();?>
           </div> 
         </div>
-        <?php endif; ?>
-        <?php endwhile; ?>
-        <?php endif; ?>
+        <?php endforeach; ?>
       </section>
     </div>
 
