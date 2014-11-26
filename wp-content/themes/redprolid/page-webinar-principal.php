@@ -69,35 +69,9 @@ get_header(); ?>
             <li><strong>Publication year:</strong><span><?php the_field('publication_year'); ?></span></li>
           </ul>
           <hr style="border-top: 3px dotted #aeab8b;">
-          <?php $comments_args = array(
-                  // change the title of send button 
-                  'label_submit'=>'Enviar',
-                  // change the title of the reply section
-                  'title_reply'=>'Escribe un comentario',
-                  // remove "Text or HTML to be displayed after the set of comment fields"
-                  'comment_notes_after' => '',
-                  // redefine your own textarea (the comment body)
-                  'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comentario', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
-          );
-          
-          comment_form($comments_args); ?>
-          
-          
-          <div class="commentlist">
-            <?php
-              //Gather comments for a specific page/post 
-              $comments = get_comments(array(
-                'post_id' => $id_post_comentarios,
-                'status' => 'approve' //Change this to the type of comments to be displayed
-              ));
-          
-              //Display the list of comments
-              wp_list_comments(array(
-                'per_page' => 10, //Allow comment pagination
-                'reverse_top_level' => false //Show the latest comments at the top of the list
-              ), $comments);
-            ?>
-          </div>
+          <div class="comments">
+            <?php comments_template();?>
+          </div> 
         </div>
         <?php endif; ?>
         <?php endwhile; ?>
