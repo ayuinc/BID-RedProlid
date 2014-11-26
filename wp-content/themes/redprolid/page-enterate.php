@@ -257,7 +257,7 @@ get_header(); ?>
                       </div>
                     </div>
                     <div class="col-sm-6 pl-0-sm">
-                      <img src="../assets/img/user.jpg" alt="" class="img-responsive">
+                      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/user.jpg" alt="" class="img-responsive">
                     </div>
                   </div>
                 </div>
@@ -275,7 +275,7 @@ get_header(); ?>
                 <div class="panel-body pt-0">
                   <h3 class="m-0">Conoce la Red Prolid</h3>
                   <p>La red para mujeres líderes del sector público. </p>
-                  <img src="../assets/img/img.png" alt="" class="img-responsive">
+                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                   <div class="text-right mt-21">
                     <a href="#" class="see-more">Más aquí</a>
                   </div>
@@ -289,7 +289,7 @@ get_header(); ?>
         <div class="container-sm">
           <div class="row">
             <div class="col-xs-3">
-              <img src="../assets/img/enterate-buzon.png" alt="" class="img-responsive">
+              <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/enterate-buzon.png" alt="" class="img-responsive">
             </div>
             <div class="col-xs-6">
               <h3 class="bold lh-lg">Suscríbete a nuestro boletín y descárgalo gratis </h3>
