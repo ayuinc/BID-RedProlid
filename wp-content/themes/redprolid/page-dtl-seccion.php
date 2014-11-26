@@ -83,7 +83,6 @@ get_header(); ?>
           <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate.png" alt="" class="ribbon">
           <div class="row">
             <div class="col-sm-9 pt-35">
-					  
 							<?php get_template_part( 'single-section' ); ?>
             </div>
             <div class="col-sm-3">
