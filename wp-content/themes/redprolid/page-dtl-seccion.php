@@ -82,19 +82,21 @@ get_header(); ?>
         <div class="container">
           <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate.png" alt="" class="ribbon">
           <div class="row">
-            <div class="col-sm-9 pt-35">
+            <div class="col-sm-8 pt-70">
 							<?php get_template_part( 'single-section' ); ?>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-4">
               <div class="debates-anteriores">
-                <h4>¿Quieres ver los debates anteriores?</h4>
+                <h4 >¿Quieres ver los debates anteriores?</h4>
                 <div class="text-right">
                   <a href="http://redprolid.org/debates/" class="btn btn-primary">Ir a archivos</a>
                 </div>
               </div>
-              <h4>Lo último en las redes</h4>
-              <div>
-								<div class="fb-like-box" data-width="250" data-height="520" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>              
+              <div class="pl-21 pr-21">
+	            	<h4 class="mt-35">Lo último en las redes</h4>
+								<div class="fb-like-box" data-width="100%" data-height="220" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+								<a class="twitter-timeline" width="95%" height="220"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a>  
+								<div class="g-person" data-width="100%" data-height="220" data-href="//plus.google.com/u/0/107403271684877473593" data-rel="author"></div>
               </div>
             </div>
           </div>

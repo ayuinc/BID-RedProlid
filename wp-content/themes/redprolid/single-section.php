@@ -24,7 +24,7 @@ foreach( $customposts as $post ) :  // start you custom loop
     <div class="footer">
       <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
     </div>
-    <div class="comments">
+    <div class="comments mt-35">
       <?php comments_template();?>
     </div> 
 
