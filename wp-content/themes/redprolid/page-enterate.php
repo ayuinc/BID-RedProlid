@@ -43,7 +43,7 @@ get_header(); ?>
               <ul class="list-unstyled">
                 <li class="title">Recursos</li>
                 <li class="rule"></li>
-                <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+                <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
               </ul>
             </div>
             <div class="panel-body">
@@ -97,7 +97,7 @@ get_header(); ?>
               <ul class="list-unstyled mh-70">
                 <li class="title bg-panel">Últimas noticias</li>
                 <li class="rule"></li>
-                <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+                <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
               </ul>
               <a href="#" class="see-more">Todas las noticias</a>
             </div>
@@ -190,7 +190,7 @@ get_header(); ?>
               <ul class="list-unstyled mh-70">
                 <li class="title">Eventos</li>
                 <li class="rule"></li>
-                <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+                <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
               </ul>
               <a href="#" class="see-more">Eventos aquí</a>
             </div>
@@ -241,7 +241,7 @@ get_header(); ?>
                   <ul class="list-unstyled mh-70">
                     <li class="title bg-panel">Campeonas</li>
                     <li class="rule"></li>
-                    <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
                   </ul>
                   <a href="#" class="see-more">Entrevistas</a>
                 </div>
@@ -269,7 +269,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title bg-panel">Videos</li>
                     <li class="rule"></li>
-                    <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body pt-0">
