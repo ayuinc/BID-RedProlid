@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Noticias list
+Template Name: Debates list
 */
 get_header(); ?>
 
