@@ -1,0 +1,308 @@
+<?php
+/*
+Template Name: Enterate
+*/
+
+get_header(); ?>
+
+    <!--HEADER-->
+    <?php get_template_part( 'include', 'header' ); ?>
+    
+    <!--NAV-->
+    <?php get_template_part( 'include', 'nav' ); ?>
+
+    <div class="mh-700">
+      <section>
+        <div class="container relative mh-140">
+          <div class="absolute dtl-custom-heading">
+            <div><img src="../assets/icons/enterate-icon.png" alt=""></div>
+            <ul class="flex flex-row flex-space-between normalize-text pt-28">
+              <li>
+                <h1 style="color: #aeab8b;">Entérate</h1>
+              </li>
+              <li class="text-right">
+                <a href="#" class="bold">¿Quieres compartir un recurso? &gt; &gt;</a>
+              </li>
+            </ul>
+            <hr style="border-top: 3px dotted #aeab8b;">
+          </div>
+        </div>
+        <div class="container with-shadow">
+          <ul class="grid-list grid-list-centered grid-list-5 text-center">
+            <li><img src="../assets/icons/enterate-grid-1.png" alt=""><p>De dónde podrás encontrar todos los recursos y artículos</p></li>
+            <li><img src="../assets/icons/enterate-grid-2.png" alt=""><p>De las noticias y de los eventos que no podrás perderte </p></li>
+            <li><img src="../assets/icons/enterate-grid-3.png" alt=""><p>De lo que otras mujeres, con intereses similares, piensan</p></li>
+            <li><img src="../assets/icons/enterate-grid-4.png" alt=""><p>De diversos videos que podrás ver y compratir</p></li>
+            <li><img src="../assets/icons/enterate-grid-5.png" alt=""><p>De cómo estar conectada con lo que pasa en la Red PROLID</p></li>
+          </ul>
+          <p class="lead">Imagina esta sección como una biblioteca en la que almacenamos todo tipo de recursos de nuestra red:  libros, legislación, investigaciones, blogs y noticias, al igual que material audiovisual como entrevistas o vídeos. Queremos también incluir material eminentemente práctico como compendios de buenas prácticas, guías para las mujeres en el sector público o estudios de casos concretos. Aspiramos a que aquí puedas encontrar todo lo que puede serte útil en el desarrollo y fortalecimiento de tu liderazgo en el sector público y la política.</p>
+        </div>
+        <div class="container">
+          <div class="panel panel-custom">
+            <div class="panel-heading">
+              <ul class="list-unstyled">
+                <li class="title">Recursos</li>
+                <li class="rule"></li>
+                <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+              </ul>
+            </div>
+            <div class="panel-body">
+              <div class="col-sm-4 pt-35">
+                <div class="enterate-search bg-panel p-14">
+                  <h1>Búsqueda</h1>
+                  <hr class="hr-gray-light">
+                  <p class="lead">Filtra tu búsqueda y encuentra lo que necesitas:</p>
+                  <form class="search">
+                    <div class="input-group">
+                      <input type="search" class="form-control" placeholder="Palabra clave">
+                      <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button"></button>
+                      </span>
+                    </div><!-- /input-group -->
+                  </form>
+                  <div class="bookshelf"></div>
+                </div>
+              </div>
+              <div class="col-sm-8 pt-70">
+                <ul class="flex flex-row flex-space-between normalize-text">
+                  <li>
+                    <h3>Últimos recursos</h3>
+                  </li>
+                  <li>
+                    <a href="#" class="bold see-more">Todos los recursos </a>
+                  </li>
+                </ul>
+                <hr class="hr-gray-light">
+                <ul class="list-unstyled">
+                  <li>
+                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque aut libero eveniet assumenda enim, repudiandae veniam fuga natus ipsa harum est in ipsum soluta officia, debitis voluptatem accusamus recusandae sunt.</p>
+                    <small class="date">Febrero 30 / 2014</small> <a href="#" class="text-primary">Lee más &gt;&gt;</a>
+                  </li>
+                  <li>
+                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quaerat iusto voluptate, consectetur omnis sequi molestiae sint, cumque, assumenda voluptatibus non labore ipsa blanditiis culpa, dolorum amet cupiditate facilis id?</p>
+                    <small class="date">Febrero 30 / 2014</small> <a href="#" class="text-primary">Lee más &gt;&gt;</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-panel mh-350">
+        <div class="container">
+          <div class="panel panel-custom">
+            <div class="panel-heading">
+              <ul class="list-unstyled mh-70">
+                <li class="title bg-panel">Últimas noticias</li>
+                <li class="rule"></li>
+                <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+              </ul>
+              <a href="#" class="see-more">Todas las noticias</a>
+            </div>
+            <div class="panel-body">
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> 
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li> 
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <ul class="grid-list grid-list-3 item active">
+                    <li>
+                      <div class="p-14 bg-white">
+                        <img src="../assets/img/img.png" alt="" class="img-responsive">
+                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <span class="help-block mt-0">Septiembre 08/2014</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
+                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="p-14 bg-white">
+                        <img src="../assets/img/img.png" alt="" class="img-responsive">
+                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <span class="help-block mt-0">Septiembre 08/2014</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
+                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="p-14 bg-white">
+                        <img src="../assets/img/img.png" alt="" class="img-responsive">
+                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <span class="help-block mt-0">Septiembre 08/2014</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
+                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="grid-list grid-list-3 item">
+                    <li>
+                      <div class="p-14 bg-white">
+                        <img src="../assets/img/img.png" alt="" class="img-responsive">
+                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <span class="help-block mt-0">Septiembre 08/2014</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
+                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="p-14 bg-white">
+                        <img src="../assets/img/img.png" alt="" class="img-responsive">
+                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <span class="help-block mt-0">Septiembre 08/2014</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
+                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="p-14 bg-white">
+                        <img src="../assets/img/img.png" alt="" class="img-responsive">
+                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <span class="help-block mt-0">Septiembre 08/2014</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
+                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="icon-next"></span>
+                </a>
+              </div> <!-- END:CAROUSEL -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="panel panel-custom">
+            <div class="panel-heading">
+              <ul class="list-unstyled mh-70">
+                <li class="title">Eventos</li>
+                <li class="rule"></li>
+                <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+              </ul>
+              <a href="#" class="see-more">Eventos aquí</a>
+            </div>
+            <div class="panel-body">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-10">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <ul class="flex flex-row flex-space-between normalize-text ph-ch-7">
+                      <li>
+                        <h3 class="lh-lg">Empoderamiento de la mujer</h3>
+                      </li>
+                      <li>
+                        <span>Septiembre 3 / 2014 <br>9:00 am <br>Corferias, pabellón 3</span>
+                      </li>
+                    </ul>
+                    <p>El próximo miércoles 3 de septiembre, se llevará acabo la reunión anual de mujeres  la vanguardial. Panelistas invitadas: Rossana Andia y Vivian Roza.</p>
+                    <div class="text-right">
+                      <a href="#" class="see-more">Más información</a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="enterate-calendar box-shadow flex flex-row flex-space-between normalize-text">
+                      <div class="text-center ph-14 pv-28">
+                        <h1 class="text-panel">Miércoles</h1>
+                        <h1 class="text-panel lead bold">3</h1>
+                        <h4 class="bold">Empoderamiento de la mujer</h4>
+                      </div>
+                      <div>
+                        <div class="calendar bg-panel">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-panel mh-350">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="panel panel-custom">
+                <div class="panel-heading">
+                  <ul class="list-unstyled mh-70">
+                    <li class="title bg-panel">Campeonas</li>
+                    <li class="rule"></li>
+                    <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+                  </ul>
+                  <a href="#" class="see-more">Entrevistas</a>
+                </div>
+                <div class="panel-body mt-42">
+                  <div class="bg-white clearfix">
+                    <div class="col-sm-6 ph-14 pv-28">
+                      <h3 class="m-0">Carolina Trivelli</h3>
+                      <span>(Perú)</span><br>
+                      <a href="#">@CaroTrivelli</a>
+                      <p class="lead mt-14">Exministra de Desarrollo e Inclusión Social (2011-2013)...</p>
+                      <div class="text-right">
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 pl-0-sm">
+                      <img src="../assets/img/user.jpg" alt="" class="img-responsive">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="panel panel-custom">
+                <div class="panel-heading">
+                  <ul class="list-unstyled">
+                    <li class="title bg-panel">Videos</li>
+                    <li class="rule"></li>
+                    <li class="icon" style="background-image: url(assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+                  </ul>
+                </div>
+                <div class="panel-body pt-0">
+                  <h3 class="m-0">Conoce la Red Prolid</h3>
+                  <p>La red para mujeres líderes del sector público. </p>
+                  <img src="../assets/img/img.png" alt="" class="img-responsive">
+                  <div class="text-right mt-21">
+                    <a href="#" class="see-more">Más aquí</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-sm">
+          <div class="row">
+            <div class="col-xs-3">
+              <img src="../assets/img/enterate-buzon.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-xs-6">
+              <h3 class="bold lh-lg">Suscríbete a nuestro boletín y descárgalo gratis </h3>
+              <div class="text-right">
+                <a href="#" class="see-more">Aquí</a>
+              </div>
+            </div>
+            <div class="col-sm-3 flex flex-column flex-center flex-middle mh-140">
+              <a href="#" class="btn btn-primary">Boletines</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+<?php get_footer(); ?>    
