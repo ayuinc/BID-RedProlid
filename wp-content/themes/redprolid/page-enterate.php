@@ -122,7 +122,7 @@ get_header(); ?>
 			                        <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
 			                        <a href="#" class="h4 block mb-0"><?php the_title(); ?></a>
 			                        <span class="help-block mt-0"><?php echo get_the_date(); ?></span>
-			                        <p><?php the_field('contenido_noticias');?></p>
+			                        <p><?php the_field('descripcion_rapida_noticias');?></p>
 			                        <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="see-more">Ve más</a></div>
 			                      </div>
 			                    </li>
