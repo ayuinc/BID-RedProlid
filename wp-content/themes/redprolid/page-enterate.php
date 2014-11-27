@@ -185,7 +185,7 @@ get_header(); ?>
 				                  <div class="col-sm-6">
 				                    <div class="enterate-calendar box-shadow flex flex-row flex-space-between normalize-text">
 				                      <div class="text-center ph-14 pv-28">
-				                      	<?php $tempDate = the_field('fecha_evento'); ?>
+				                      	<?php $tempDate = get_field('fecha_evento'); ?>
 				                        <h1 class="text-panel"><?php echo date('l', strtotime( $tempDate)); ?></h1>
 				                        <h1 class="text-panel lead bold"><?php echo date('j', strtotime( $tempDate)); ?></h1>
 				                        <h4 class="bold"><?php the_title(); ?></h4>
