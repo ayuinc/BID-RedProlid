@@ -70,11 +70,15 @@ get_header(); ?>
                 	<!-- Start the Loop. -->
 									<?php if ( have_posts() ) : ?>
 										<?php while ( have_posts() ) : the_post(); ?>
-                  <li>
-                    <h5><?php the_title(); ?></h5>
-                    <p><?php get_post_field('post_content', get_the_ID()); ?></p>
-                    <small class="date"><?php echo get_the_date(); ?></small> <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más &gt;&gt;</a>
-                  </li>
+											<?php $myposts = get_posts(array('posts_per_page'=>'2')); ?>
+											<?php foreach ($myposts as $post) : ?>
+												<?php setup_postdata($post); ?>
+			                  <li>
+			                    <h5><?php the_title(); ?></h5>
+			                    <p><?php get_post_field('post_content', get_the_ID()); ?></p>
+			                    <small class="date"><?php echo get_the_date(); ?></small> <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más &gt;&gt;</a>
+			                  </li>
+			                 <?php endforeach; ?>
 				            <?php endwhile; ?>
 									<?php endif; ?>  
                 </ul>
