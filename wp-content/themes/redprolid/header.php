@@ -25,11 +25,11 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:title" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
+    <meta property="og:url" content="<?php echo home_url('/'); ?>">
+    <meta property="og:title" content="Red Prolid | Banco Interamericano del Desarrollo BID">
+    <meta property="og:site_name" content="Red PROLID">
+    <meta property="og:description" content="La Red PROLID es una plataforma para conectar, promover intercambios y aprendizajes">
+    <meta property="og:image" content="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="">
