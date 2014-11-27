@@ -75,6 +75,7 @@ get_header(); ?>
 												<?php setup_postdata($post); ?>
 			                  <li>
 			                    <h5><?php the_title(); ?></h5>
+			                    <p><?php the_content(); ?></p>
 			                    <p><?php get_post_field('post_content', get_the_ID()); ?></p>
 			                    <small class="date"><?php echo get_the_date(); ?></small> <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más &gt;&gt;</a>
 			                  </li>
