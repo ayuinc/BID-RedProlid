@@ -123,7 +123,7 @@ get_header(); ?>
 															<?php } else {?>
 			                        	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
 															<?php } ?>
-			                        <a href="#" class="h4 block mb-0"><?php the_title(); ?></a>
+			                        <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="h4 block mb-0"><?php the_title(); ?></a>
 			                        <span class="help-block mt-0"><?php echo get_the_date(); ?></span>
 			                        <p><?php the_field('descripcion_rapida_noticias');?></p>
 			                        <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="see-more">Ve más</a></div>
@@ -132,35 +132,6 @@ get_header(); ?>
 				                 <?php endforeach; ?>
 					            <?php endwhile; ?>
 										<?php endif; ?>	
-                  </ul>
-                  <ul class="grid-list grid-list-3 item">
-                    <li>
-                      <div class="p-14 bg-white">
-                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
-                        <span class="help-block mt-0">Septiembre 08/2014</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
-                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="p-14 bg-white">
-                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
-                        <span class="help-block mt-0">Septiembre 08/2014</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
-                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="p-14 bg-white">
-                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
-                        <span class="help-block mt-0">Septiembre 08/2014</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
-                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
-                      </div>
-                    </li>
                   </ul>
                 </div>
 
@@ -185,40 +156,50 @@ get_header(); ?>
                 <li class="rule"></li>
                 <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
               </ul>
-              <a href="#" class="see-more">Eventos aquí</a>
+              <a href="<?php echo home_url('/'); ?>eventos" class="see-more">Eventos aquí</a>
             </div>
             <div class="panel-body">
               <div class="col-sm-2"></div>
               <div class="col-sm-10">
                 <div class="row">
-                  <div class="col-sm-6">
-                    <ul class="flex flex-row flex-space-between normalize-text ph-ch-7">
-                      <li>
-                        <h3 class="lh-lg">Empoderamiento de la mujer</h3>
-                      </li>
-                      <li>
-                        <span>Septiembre 3 / 2014 <br>9:00 am <br>Corferias, pabellón 3</span>
-                      </li>
-                    </ul>
-                    <p>El próximo miércoles 3 de septiembre, se llevará acabo la reunión anual de mujeres  la vanguardial. Panelistas invitadas: Rossana Andia y Vivian Roza.</p>
-                    <div class="text-right">
-                      <a href="#" class="see-more">Más información</a>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="enterate-calendar box-shadow flex flex-row flex-space-between normalize-text">
-                      <div class="text-center ph-14 pv-28">
-                        <h1 class="text-panel">Miércoles</h1>
-                        <h1 class="text-panel lead bold">3</h1>
-                        <h4 class="bold">Empoderamiento de la mujer</h4>
-                      </div>
-                      <div>
-                        <div class="calendar bg-panel">
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                	<!-- Start the Loop. -->
+										<?php if ( have_posts() ) : ?>
+											<?php while ( have_posts() ) : the_post(); ?>
+												<?php $myposts = get_posts(array('posts_per_page'=>'1','category'=>'eventos')); ?>
+												<?php foreach ($myposts as $post) : ?>
+													<?php setup_postdata($post); ?>
+				                  <div class="col-sm-6">
+				                    <ul class="flex flex-row flex-space-between normalize-text ph-ch-7">
+				                      <li>
+				                        <h3 class="lh-lg"><?php the_title(); ?></h3>
+				                      </li>
+				                      <li>
+				                        <span><?php the_field('fecha_evento');?> <br>9:00 am <br>Corferias, pabellón 3</span>
+				                      </li>
+				                    </ul>
+				                    <p><?php the_field('descripcion_evento');?></p>
+				                    <div class="text-right">
+				                      <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="see-more">Más información</a>
+				                    </div>
+				                  </div>
+				                  <div class="col-sm-6">
+				                    <div class="enterate-calendar box-shadow flex flex-row flex-space-between normalize-text">
+				                      <div class="text-center ph-14 pv-28">
+				                      	<?php $tempDate = the_field('fecha_evento'); ?>
+				                        <h1 class="text-panel"><?php echo date('l', strtotime( $tempDate)); ?></h1>
+				                        <h1 class="text-panel lead bold"><?php echo date('j', strtotime( $tempDate)); ?></h1>
+				                        <h4 class="bold"><?php the_title(); ?></h4>
+				                      </div>
+				                      <div>
+				                        <div class="calendar bg-panel">
+				                          
+				                        </div>
+				                      </div>
+				                    </div>
+				                  </div>
+												<?php endforeach; ?>
+					            <?php endwhile; ?>
+										<?php endif; ?>       
                 </div>
               </div>
             </div>
