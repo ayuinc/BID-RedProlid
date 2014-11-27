@@ -62,7 +62,7 @@ get_header(); ?>
                     <h3>Últimos recursos</h3>
                   </li>
                   <li>
-                    <a href="#" class="bold see-more">Todos los recursos </a>
+                    <a href="<?php echo home_url('/'); ?>all-posts" class="bold see-more">Todos los recursos </a>
                   </li>
                 </ul>
                 <hr class="hr-gray-light">

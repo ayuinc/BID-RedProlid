@@ -27,7 +27,7 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="enterate"><i></i><span>Entérate</span></a>
+            <a href="<?php echo home_url('/'); ?>enterate" class="enterate"><i></i><span>Entérate</span></a>
             <ul class="list-unstyled">
               <!--<li><a href="<?php echo home_url('/'); ?>poll">Tu opinión importa</a></li>-->
               <li><a href="<?php echo home_url('/'); ?>noticias">Noticias</a></li>
