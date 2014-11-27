@@ -109,8 +109,7 @@ get_header(); ?>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
-                  <ul class="grid-list grid-list-3 item active">
-											
+                  <ul class="grid-list grid-list-3 item active">	
 										<!-- Start the Loop. -->
 										<?php if ( have_posts() ) : ?>
 											<?php while ( have_posts() ) : the_post(); ?>
@@ -119,7 +118,11 @@ get_header(); ?>
 													<?php setup_postdata($post); ?>
 				                  <li>
 			                      <div class="p-14 bg-white">
-			                        <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
+			                      	<?php if( get_field('imagen_noticias') ) { ?>
+				                        <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
+															<?php } else {?>
+			                        	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
+															<?php } ?>
 			                        <a href="#" class="h4 block mb-0"><?php the_title(); ?></a>
 			                        <span class="help-block mt-0"><?php echo get_the_date(); ?></span>
 			                        <p><?php the_field('descripcion_rapida_noticias');?></p>
@@ -128,7 +131,7 @@ get_header(); ?>
 			                    </li>
 				                 <?php endforeach; ?>
 					            <?php endwhile; ?>
-										<?php endif; ?>		
+										<?php endif; ?>	
                   </ul>
                   <ul class="grid-list grid-list-3 item">
                     <li>
