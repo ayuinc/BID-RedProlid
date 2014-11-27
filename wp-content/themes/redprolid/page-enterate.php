@@ -238,7 +238,7 @@ get_header(); ?>
 			                      </div>
 			                    </div>
 			                    <div class="col-sm-6 pl-0-sm">
-			                      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/user.jpg" alt="" class="img-responsive">
+			                      <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive">
 			                    </div>
 		                    <?php endforeach; ?>
 					            <?php endwhile; ?>
