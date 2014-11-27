@@ -174,7 +174,8 @@ get_header(); ?>
 				                        <h3 class="lh-lg"><?php the_title(); ?></h3>
 				                      </li>
 				                      <li>
-				                        <span><?php the_field('fecha_evento');?> <br>9:00 am <br>Corferias, pabellón 3</span>
+				                      	<?php the_field('fecha_evento'); ?>
+				                        <span><?php the_field('fecha_evento'); ?> <br>9:00 am <br>Corferias, pabellón 3</span>
 				                      </li>
 				                    </ul>
 				                    <p><?php the_field('descripcion_evento');?></p>
