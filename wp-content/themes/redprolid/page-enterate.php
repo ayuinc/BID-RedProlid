@@ -67,16 +67,16 @@ get_header(); ?>
                 </ul>
                 <hr class="hr-gray-light">
                 <ul class="list-unstyled">
+                	<!-- Start the Loop. -->
+									<?php if ( have_posts() ) : ?>
+										<?php while ( have_posts() ) : the_post(); ?>
                   <li>
-                    <h5>Lorem ipsum dolor sit amet.</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque aut libero eveniet assumenda enim, repudiandae veniam fuga natus ipsa harum est in ipsum soluta officia, debitis voluptatem accusamus recusandae sunt.</p>
-                    <small class="date">Febrero 30 / 2014</small> <a href="#" class="text-primary">Lee más &gt;&gt;</a>
+                    <h5><?php the_title(); ?></h5>
+                    <p><?php get_post_field('post_content', get_the_ID()); ?></p>
+                    <small class="date"><?php echo get_the_date(); ?></small> <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más &gt;&gt;</a>
                   </li>
-                  <li>
-                    <h5>Lorem ipsum dolor sit amet.</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quaerat iusto voluptate, consectetur omnis sequi molestiae sint, cumque, assumenda voluptatibus non labore ipsa blanditiis culpa, dolorum amet cupiditate facilis id?</p>
-                    <small class="date">Febrero 30 / 2014</small> <a href="#" class="text-primary">Lee más &gt;&gt;</a>
-                  </li>
+				            <?php endwhile; ?>
+									<?php endif; ?>  
                 </ul>
               </div>
             </div>
