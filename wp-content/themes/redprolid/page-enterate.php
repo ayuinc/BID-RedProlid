@@ -97,7 +97,7 @@ get_header(); ?>
                 <li class="rule"></li>
                 <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
               </ul>
-              <a href="#" class="see-more">Todas las noticias</a>
+              <a href="<?php echo home_url('/'); ?>noticias" class="see-more">Todas las noticias</a>
             </div>
             <div class="panel-body">
               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -110,33 +110,25 @@ get_header(); ?>
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                   <ul class="grid-list grid-list-3 item active">
-                    <li>
-                      <div class="p-14 bg-white">
-                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
-                        <span class="help-block mt-0">Septiembre 08/2014</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
-                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="p-14 bg-white">
-                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
-                        <span class="help-block mt-0">Septiembre 08/2014</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
-                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="p-14 bg-white">
-                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
-                        <span class="help-block mt-0">Septiembre 08/2014</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
-                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
-                      </div>
-                    </li>
+											
+										<!-- Start the Loop. -->
+										<?php if ( have_posts() ) : ?>
+											<?php while ( have_posts() ) : the_post(); ?>
+												<?php $myposts = get_posts(array('posts_per_page'=>'3','category'=>'noticias')); ?>
+												<?php foreach ($myposts as $post) : ?>
+													<?php setup_postdata($post); ?>
+				                  <li>
+			                      <div class="p-14 bg-white">
+			                        <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
+			                        <a href="#" class="h4 block mb-0"><?php the_title(); ?></a>
+			                        <span class="help-block mt-0"><?php echo get_the_date(); ?></span>
+			                        <p><?php the_field('contenido_noticias');?></p>
+			                        <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="see-more">Ve más</a></div>
+			                      </div>
+			                    </li>
+				                 <?php endforeach; ?>
+					            <?php endwhile; ?>
+										<?php endif; ?>		
                   </ul>
                   <ul class="grid-list grid-list-3 item">
                     <li>
