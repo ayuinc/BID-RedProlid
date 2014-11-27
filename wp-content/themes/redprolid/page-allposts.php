@@ -13,30 +13,37 @@ get_header(); ?>
     <div class="mh-700">
       <section id="dtl-adonde-vamos">
         <div class="container relative dtl-content">
-         <!-- Start the Loop. -->
-					<?php if ( have_posts() ) : ?>
-						<?php while ( have_posts() ) : the_post(); ?>
-							<?php $fields = get_fields(); ?>
-
-							<?php if( $fields )
-							{
-								foreach( $fields as $field_name => $value )
-								{
-									// get_field_object( $field_name, $post_id, $options )
-									// - $value has already been loaded for us, no point to load it again in the get_field_object function
-									$field = get_field_object($field_name, false, array('load_value' => false));
-
-									echo '<div>';
-										echo '<h3>' . $the_title() . '</h3>';
-										echo '<h3>' . $field_name . '</h3>';
-										echo $value;
-									echo '</div>';
-								}
-							}
-
-							?>
-						<?php endwhile; ?>
-					<?php endif; ?>        
+         <!-- Start the Loop. -->  
+					<?php if(have_posts()) : ?>
+			     	<?php while(have_posts()) : the_post(); ?>
+		          <div class="post"> 
+	               <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+	               <div class="entry">    
+                  <?php the_content(); ?>
+                  <?php
+                  $current_date ="";
+                  $count_posts = wp_count_posts();
+                  $nextpost = 0;
+                  $published_posts = $count_posts->publish;
+                  $myposts = get_posts(array('posts_per_page'=>$published_posts)); 
+                 	foreach($myposts as $post) :
+                       $nextpost++;
+                       setup_postdata($post);
+                       $date = get_the_date("F Y");   
+                       if($current_date!=$date): 
+                            if($nextpost>1): ?> 
+                                 </ol>
+                            <?php endif; ?> 
+                            <strong><?php echo $date; ?></strong><ol start = "<?php echo $nextpost; ?>">
+                            <?php $current_date=$date;
+                       endif; ?>
+                       <li><?php the_title(); ?> &bull; <a href = "<?php the_permalink(); ?>">link</a></li>
+                  <?php endforeach; wp_reset_postdata(); ?>
+                  </ol>
+	              </div>
+		          </div>
+					   <?php endwhile; ?>
+					<?php endif; ?>     
         </div>
       </section>  
     </div>
