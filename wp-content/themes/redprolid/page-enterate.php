@@ -163,44 +163,44 @@ get_header(); ?>
               <div class="col-sm-10">
                 <div class="row">
                 	<!-- Start the Loop. -->
-										<?php if ( have_posts() ) : ?>
-											<?php while ( have_posts() ) : the_post(); ?>
-												<?php $myposts = get_posts(array('posts_per_page'=>'1','category'=>'eventos')); ?>
-												<?php foreach ($myposts as $post) : ?>
-													<?php setup_postdata($post); ?>
-				                  <div class="col-sm-6">
-				                    <ul class="flex flex-row flex-space-between normalize-text ph-ch-7">
-				                      <li>
-				                        <h3 class="lh-lg"><?php the_title(); ?></h3>
-				                      </li>
-				                      <li>
-				                      	<?php the_field('fecha_evento'); ?>
-				                        <span><?php the_field('fecha_evento'); ?> <br>9:00 am <br>Corferias, pabellón 3</span>
-				                      </li>
-				                    </ul>
-				                    <p><?php the_field('descripcion_evento');?></p>
-				                    <div class="text-right">
-				                      <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="see-more">Más información</a>
-				                    </div>
-				                  </div>
-				                  <div class="col-sm-6">
-				                    <div class="enterate-calendar box-shadow flex flex-row flex-space-between normalize-text">
-				                      <div class="text-center ph-14 pv-28">
-				                      	<?php $tempDate = get_field('fecha_evento'); ?>
-				                        <h1 class="text-panel"><?php echo date('l', strtotime( $tempDate)); ?></h1>
-				                        <h1 class="text-panel lead bold"><?php echo date('j', strtotime( $tempDate)); ?></h1>
-				                        <h4 class="bold"><?php the_title(); ?></h4>
-				                      </div>
-				                      <div>
-				                        <div class="calendar bg-panel">
-				                          
-				                        </div>
-				                      </div>
-				                    </div>
-				                  </div>
-												<?php endforeach; ?>
-					            <?php endwhile; ?>
-										<?php endif; ?>       
+									<?php if ( have_posts() ) : ?>
+										<?php while ( have_posts() ) : the_post(); ?>
+											<?php $myposts = get_posts(array('posts_per_page'=>'1','category'=>'eventos')); ?>
+											<?php foreach ($myposts as $post) : ?>
+												<?php setup_postdata($post); ?>
+			                  <div class="col-sm-6">
+			                    <ul class="flex flex-row flex-space-between normalize-text ph-ch-7">
+			                      <li>
+			                        <h3 class="lh-lg"><?php the_title(); ?></h3>
+			                      </li>
+			                      <li>
+			                      	<?php the_field('fecha_evento'); ?>
+			                        <span><?php the_field('fecha_evento'); ?> <br>9:00 am <br>Corferias, pabellón 3</span>
+			                      </li>
+			                    </ul>
+			                    <p><?php the_field('descripcion_evento');?></p>
+			                    <div class="text-right">
+			                      <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="see-more">Más información</a>
+			                    </div>
+			                  </div>
+			                  <div class="col-sm-6">
+			                    <div class="enterate-calendar box-shadow flex flex-row flex-space-between normalize-text">
+			                      <div class="text-center ph-14 pv-28">
+			                      	<?php $tempDate = get_field('fecha_evento'); ?>
+			                        <h1 class="text-panel"><?php echo date('l', strtotime( $tempDate)); ?></h1>
+			                        <h1 class="text-panel lead bold"><?php echo date('j', strtotime( $tempDate)); ?></h1>
+			                        <h4 class="bold"><?php the_title(); ?></h4>
+			                      </div>
+			                      <div>
+			                        <div class="calendar bg-panel">
+			                          
+			                        </div>
+			                      </div>
+			                    </div>
+			                  </div>
+											<?php endforeach; ?>
+				            <?php endwhile; ?>
+									<?php endif; ?>       
                 </div>
               </div>
             </div>
@@ -222,18 +222,27 @@ get_header(); ?>
                 </div>
                 <div class="panel-body mt-42">
                   <div class="bg-white clearfix">
-                    <div class="col-sm-6 ph-14 pv-28">
-                      <h3 class="m-0">Carolina Trivelli</h3>
-                      <span>(Perú)</span><br>
-                      <a href="#">@CaroTrivelli</a>
-                      <p class="lead mt-14">Exministra de Desarrollo e Inclusión Social (2011-2013)<?php echo content_url('/'); ?>themes/redprolid</p>
-                      <div class="text-right">
-                        <a href="#" class="btn btn-primary">Leer más</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 pl-0-sm">
-                      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/user.jpg" alt="" class="img-responsive">
-                    </div>
+                  	<!-- Start the Loop. -->
+										<?php if ( have_posts() ) : ?>
+											<?php while ( have_posts() ) : the_post(); ?>
+												<?php $myposts = get_posts(array('posts_per_page'=>'1','category'=>'campeonas')); ?>
+												<?php foreach ($myposts as $post) : ?>
+													<?php setup_postdata($post); ?>
+			                    <div class="col-sm-6 ph-14 pv-28">
+			                      <h3 class="m-0"><?php the_title(); ?></h3>
+			                      <span>(<?php the_field('pais_campeona'); ?>)</span><br>
+			                      <a href="#"><?php the_field('twitter_campeona'); ?></a>
+			                      <p class="lead mt-14"><?php the_field('posicion_campeona'); ?></p>
+			                      <div class="text-right">
+			                        <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Leer más</a>
+			                      </div>
+			                    </div>
+			                    <div class="col-sm-6 pl-0-sm">
+			                      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/user.jpg" alt="" class="img-responsive">
+			                    </div>
+		                    <?php endforeach; ?>
+					            <?php endwhile; ?>
+										<?php endif; ?> 
                   </div>
                 </div>
               </div>
