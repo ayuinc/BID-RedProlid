@@ -28,17 +28,17 @@
     <meta property="og:url" content="<?php echo home_url('/'); ?>">
     <meta property="og:title" content="Red Prolid | Banco Interamericano del Desarrollo BID">
     <meta property="og:site_name" content="Red PROLID">
-    <meta property="og:description" content="La Red PROLID es una plataforma para conectar, promover intercambios y aprendizajes">
+    <meta property="og:description" content="La Red PROLID es una plataforma para conectar, promover intercambios y aprendizajes entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica">
     <meta property="og:image" content="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png">
 
     <!-- Twitter Cards -->
-    <meta name="twitter:card" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:url" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:site" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@redprolid">
+    <meta name="twitter:title" content="Red PROLID">
+    <meta name="twitter:url" content="<?php echo home_url('/'); ?>">
+    <meta name="twitter:description" content="La Red PROLID es una plataforma para conectar, promover intercambios y aprendizajes entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica">
     <meta name="twitter:creator" content="">
-    <meta name="twitter:image" content="">
+    <meta name="twitter:image" content="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png">
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="img/favicon.ico">
