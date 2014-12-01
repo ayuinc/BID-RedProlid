@@ -90,15 +90,6 @@
               </div>
               <div class="col-sm-6"></div>
             </div>
-            <form>
-              <div class="form-group">
-                <label>¿Cuál es tu propuesta de tema? (Máximo 700 caracteres)</label>
-                <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
-              </div>
-              <div class="form-group text-right">
-                <button type="submit" class="btn btn-primary">Enviar tema</button>
-              </div>
-            </form>
             <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 2 ); } ?>
           </div>
         </div>
