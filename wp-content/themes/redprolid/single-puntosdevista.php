@@ -99,6 +99,7 @@
                 <button type="submit" class="btn btn-primary">Enviar tema</button>
               </div>
             </form>
+            <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 2 ); } ?>
           </div>
         </div>
       </div>
