@@ -8,7 +8,7 @@
         </div>
         <div class="col-sm-6 pt-28">
           <nav class="text-right">
-            <a href="#">Puntos de vista anteriores</a> | <a href="#" data-toggle="modal" data-target="#myModal">¿Te gustaría proponernos un tema?</a>
+            <a href="<?php echo home_url('/'); ?>puntos-de-vista-list">Puntos de vista anteriores</a> | <a href="#" data-toggle="modal" data-target="#pdv-modal">¿Te gustaría proponernos un tema?</a>
           </nav>
         </div>
       </div>
@@ -68,3 +68,40 @@
     </div>
   </div>
 </section>
+<!-- MODAL -->
+<div class="modal fade" id="pdv-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div class="panel panel-custom panel-highlight">
+          <div class="panel-body pl-14 pr-14">
+            <div class="row">
+              <div class="col-sm-1">
+                <img src="../assets/img/pdv-main-topic-icon.png" alt="">
+              </div>
+              <div class="col-sm-11">
+                <nav class="text-right"><a href="#">Iniciar sesión</a> / <a href="#">Registrarse</a></nav>
+                <hr class="m-0" style="border-top: 3px dotted #aeab8b;">
+              </div>
+            </div>
+            <div class="grid-block row">
+              <div class="col-sm-6">
+                <p>Adjuntar: <a href="#">O</a></p>
+              </div>
+              <div class="col-sm-6"></div>
+            </div>
+            <form>
+              <div class="form-group">
+                <label>¿Cuál es tu propuesta de tema? (Máximo 700 caracteres)</label>
+                <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+              </div>
+              <div class="form-group text-right">
+                <button type="submit" class="btn btn-primary">Enviar tema</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
