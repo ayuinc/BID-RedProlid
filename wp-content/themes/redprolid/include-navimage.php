@@ -7,7 +7,7 @@
                 <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.jpg" alt="" class="color">
                 <div class="title">                  
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png" alt="">                  
-                  <h3>¿A dónde v@mos?</h3>
+                  <h3>¿Adónde v@mos?</h3>
                   <hr>
                 </div>
               </a>
