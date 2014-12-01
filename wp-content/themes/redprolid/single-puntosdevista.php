@@ -80,6 +80,14 @@
                 <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-topic-icon.png" alt="">
               </div>
               <div class="col-sm-11">
+                <?php 
+                  if ( is_user_logged_in() ) {
+
+
+                  } else {
+
+                  }
+                ?>
                 <nav class="text-right"><a href="#">Iniciar sesión</a> / <a href="#">Registrarse</a></nav>
                 <hr class="m-0" style="border-top: 3px dotted #aeab8b;">
               </div>
