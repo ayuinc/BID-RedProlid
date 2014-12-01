@@ -77,7 +77,7 @@
           <div class="panel-body pl-14 pr-14">
             <div class="row">
               <div class="col-sm-1">
-                <img src="../assets/img/pdv-main-topic-icon.png" alt="">
+                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-topic-icon.png" alt="">
               </div>
               <div class="col-sm-11">
                 <nav class="text-right"><a href="#">Iniciar sesión</a> / <a href="#">Registrarse</a></nav>
