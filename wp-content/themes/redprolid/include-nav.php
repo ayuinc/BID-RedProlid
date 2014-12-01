@@ -13,7 +13,7 @@
           <li>
             <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo" class="dtl"><i></i><span>Desarrolla tu liderazgo</span></a>
             <ul class="list-unstyled">
-              <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/">¿A dónde v@mos?</a></li>
+              <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/">¿Adónde v@mos?</a></li>
               <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/carrera-de-vallas/">Carrera de vallas</a></li>
               <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/nivelando-la-cancha/">Nivelando la cancha</a></li>
               <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/listas-para-la-politica/">Listas para la política</a></li>

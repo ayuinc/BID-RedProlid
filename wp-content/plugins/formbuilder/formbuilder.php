@@ -618,11 +618,11 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 			$formBuilderTextStrings['captcha_unavailable'] = __("Captcha functionality unavailable.  Please inform the website administrator.", 'formbuilder');
 			$formBuilderTextStrings['previous'] = __('Previous', 'formbuilder');
 			$formBuilderTextStrings['next'] = __('Next', 'formbuilder');
-			$formBuilderTextStrings['send'] = __("Send!", 'formbuilder');
+			$formBuilderTextStrings['send'] = __("Enviar", 'formbuilder');
 			$formBuilderTextStrings['success'] = __("Success!", 'formbuilder');
 			$formBuilderTextStrings['failed'] = __("Failed!", 'formbuilder');
-			$formBuilderTextStrings['send_success'] = __("Your message has been sent successfully.", 'formbuilder');
-			$formBuilderTextStrings['send_failed'] = __("Your message has NOT been sent successfully.", 'formbuilder');
+			$formBuilderTextStrings['send_success'] = __("Su mensaje fue enviado con éxito.", 'formbuilder');
+			$formBuilderTextStrings['send_failed'] = __("Su mensaje NO fue enviado.", 'formbuilder');
 			$formBuilderTextStrings['send_mistakes'] = __("You seem to have missed or had mistakes in the following required field(s).", 'formbuilder');
 			$formBuilderTextStrings['display_error'] = __("ERROR!  Unable to display form!", 'formbuilder');
 			$formBuilderTextStrings['storage_error'] = __("Error: Form processing failure.  Unable to store the form data in the database.", 'formbuilder');

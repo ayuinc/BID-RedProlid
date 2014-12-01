@@ -26,7 +26,7 @@ get_header(); ?>
         </div>
         <hr style="border-top: 3px dotted #aeab8b;">
       </div>
-      <h4 class="pt-14-100 light">Te ofrecemos artículos escritos por mujeres líderes en la región latinoamericana: políticas, especialistas o profesionales relevantes que ponen sobre el papel su experiencia en pro de unas sociedades más equitativas.</h4>
+      <h4 class="pt-14-100 light text-center">Te ofrecemos artículos escritos por mujeres líderes en la región latinoamericana: políticas, especialistas o profesionales relevantes que ponen sobre el papel su experiencia en pro de unas sociedades más equitativas.</h4>
     </div>
     <div class="container text-justify with-hr">
       <div class="row">
@@ -34,8 +34,8 @@ get_header(); ?>
           <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" class="img-responsive">
         </div>
         <div class="col-sm-9">
-          <h3><?php the_field('nombre_completo'); ?> <small>(Bolivia)</small></h3>
-          <p><?php the_field('profesion'); ?> / <a href="http://twitter.com/<?php the_field('cuenta_de_twitter'); ?>">@<?php the_field('cuenta_de_twitter'); ?></a></p>
+          <h3><?php the_field('nombre_completo'); ?>  <small>(Bolivia)</small></h3>
+          <p><?php the_field('profesion'); ?></p>
           <p class="lh-lg text-justify">
           	<?php the_field('descripcion_punto_de_vista'); ?>
           </p>
@@ -53,7 +53,7 @@ get_header(); ?>
       <?php comments_template(); ?>
 		</div>	
     </div>
-    <div class="container with-shadow mh-350">
+    <!--<div class="container with-shadow mh-350">
     </div>
     <div class="container with-hr">
       <h4>Artículos comentados</h4>
@@ -64,7 +64,7 @@ get_header(); ?>
         <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
         <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
       </ul>
-    </div>
+    </div>-->
   </section>
 </div>
 <?php get_footer(); ?>

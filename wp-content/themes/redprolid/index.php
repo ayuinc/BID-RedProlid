@@ -185,8 +185,9 @@ echo $date->format('M'); ?></div>
                     <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
                   </div>
                   <div class="col-sm-7">
-                    <h4><?php the_title(); ?></h4>
-                    <p class="light lh-lg"><?php the_field('descripcion_punto_de_vista'); ?></p>
+                    <h4 class="pt-0"><?php the_title(); ?><br><small><?php the_field('profesion'); ?></small></h4>
+                    
+                    <p class="light"><?php the_field('descripcion_punto_de_vista'); ?></p>
                     <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee aquí</a></div>
                   </div>
                 </div>
@@ -211,7 +212,7 @@ echo $date->format('M'); ?></div>
                   <div class="col-sm-7">
                     <h4><?php the_title(); ?></h4>
                     <h5><?php the_field('posicion_campeona'); ?></h5>
-                    <p class="light-italic lh-lg"><?php the_field('descripcion_campeona'); ?></p>
+                    <p class="light-italic"><?php the_field('descripcion_campeona'); ?></p>
                     <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Entrevista completa</a></div>
                   </div>
                 </div>

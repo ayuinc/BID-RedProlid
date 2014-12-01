@@ -93,10 +93,16 @@ get_header(); ?>
                 </div>
               </div>
               <div class="pl-21 pr-21">
-	            	<h4 class="mt-35">Lo último en las redes</h4>
-								<div class="fb-like-box" data-width="100%" data-height="220" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
-								<a class="twitter-timeline" width="95%" height="220"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a>  
-								<div class="g-person" data-width="100%" data-height="220" data-href="//plus.google.com/u/0/107403271684877473593" data-rel="author"></div>
+	            	<h4 class="mt-35 mb-14">Lo último en las redes</h4>
+	            	<div class="mb-14">
+									<div class="fb-like-box" data-width="100%" data-height="420" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+	            	</div>
+	            	<div class="mb-14">
+									<a class="twitter-timeline" width="298" height="220"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a> 
+	            	</div>
+	            	<div class="mb-14"> 
+									<div class="g-person" data-width="100%" data-height="220" data-href="//plus.google.com/u/0/107403271684877473593" data-rel="author"></div>
+	            	</div>
               </div>
             </div>
           </div>
