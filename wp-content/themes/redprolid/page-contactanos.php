@@ -19,7 +19,7 @@ get_header(); ?>
         <div class="container relative with-shadow">
           <div class="absolute dtl-custom-heading">
             <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon.png" alt=""></div>
-            <h1 style="color: #aeab8b;">Contacto</h1>
+            <h1 style="color: #aeab8b;">Contáctanos</h1>
             <hr style="border-top: 3px dotted #aeab8b;">
           </div>
           <div class="row pt-14-100">
@@ -28,40 +28,52 @@ get_header(); ?>
               <p class="lead bold">¡Nos comprometemos a contestarte!</p>
             </div>
             <div class="col-sm-6">
-              <!-- <form>
-                <div class="form-group row">
-                  <div class="col-sm-3 text-right">
-                    <label class="h4 light">Nombre</label>
-                  </div>
-                  <div class="col-sm-9">
-                    <input type="text" class="form-control">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-3 text-right">
-                    <label class="h4 light">Email</label>
-                  </div>
-                  <div class="col-sm-9">
-                    <input type="text" class="form-control">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-3 text-right">
-                    <label class="h4 light">Mensaje</label>
-                  </div>
-                  <div class="col-sm-9">
-                    <textarea type="text" class="form-control" rows="5"></textarea>
-                  </div>
-                </div>
-                <div class="form-group text-right">
-                  <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                </div>                
-              </form> -->
+	            <p class="text-left">
+		          <style>
+			        	.formBuilderLabelRequired, .formBuilderLabel {
+				        	text-align: left !important;
+				        	color: #575757;
+			        	}
+			        	#fieldformBuilderFieldEmail, #fieldformBuilderFieldName {
+				        	width:50%;
+				        	padding:0.5rem 0.7rem;
+				        	border:1px solid #ccc;
+			        	}  
+			        	#fieldformBuilderFieldComments {
+				        	width:100%;
+				        	padding:0.5rem 0.7rem;
+				        	border:1px solid #ccc;
+			        	}
+			        	.formBuilderSubmit input {
+				        	padding: 5px 10px;
+									font-size: 12px;
+									line-height: 1.5;
+									border-radius: 3px;
+									color: #FFF;
+									background-color: #ED7133;
+									border-color: #EB611C;
+									display: inline-block;
+									margin-bottom: 0px;
+									font-weight: normal;
+									text-align: center;
+									vertical-align: middle;
+									cursor: pointer;
+									background-image: none;
+									border: 1px solid transparent;
+									white-space: nowrap;
+									padding: 6px 12px;
+									font-size: 14px;
+									line-height: 1.42857;
+									border-radius: 3px;
+									-moz-user-select: none;
+			        	}
+			        </style>  
               <?php
               // Formbuilder manual form display. Replace the # in the following line with the ID number of the form to be displayed.
               if(function_exists('formbuilder_process_form')) echo formbuilder_process_form(1);
               // End of FormBuilder manual form display.
               ?>
+	            </p>
             </div>
           </div>
         </div>
