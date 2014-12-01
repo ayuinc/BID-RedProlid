@@ -72,9 +72,6 @@
 <div class="modal fade" id="pdv-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-      </div>
       <div class="modal-body p-0">
         <div class="panel panel-custom panel-highlight">
           <div class="panel-body pl-14 pr-14">
@@ -94,6 +91,7 @@
               <div class="col-sm-6"></div>
             </div>
             <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 2 ); } ?>
+            <button type="button" class="btn btn-default pull-right pl-28 pr-28" data-dismiss="modal">Cerrar</button>
           </div>
         </div>
       </div>
