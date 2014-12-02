@@ -31,8 +31,14 @@
 }
 
 #evento {
-	li:nth-child(5) {
-		display: none;
-		visibility: hidden;
-	}
+	.panel {
+		.panel-body {
+			.panel-lost {
+				li:nth-child(5) {
+				display: none;
+				visibility: hidden;
+				}
+			}
+		}	
+	}	
 }
