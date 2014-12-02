@@ -23,7 +23,7 @@ get_header(); ?>
 		          </div>
 		          <img src="<?php the_field('imagen-dtl'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-28 mb-21" width="630px" height="auto">
 		          <div>
-                <p class="text-right pt-14-100 mb-28"><?php the_field('contenido-dtl'); ?></p> 
+                <p class="text-right pt-14-100 mb-28 lead" style="color: #aaa;"><?php the_field('contenido-dtl'); ?></p> 
               </div>
 						<?php endwhile; ?>
 					<?php endif; ?>                 
