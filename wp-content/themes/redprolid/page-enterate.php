@@ -166,14 +166,14 @@ get_header(); ?>
 									<?php if ( have_posts() ) : ?>
 										<?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 1 ) ); ?>
 										<?php while ( have_posts() ) : the_post(); ?>
+											<?php $tempDate = get_field('fecha_evento'); ?>
 		                  <div class="col-sm-6">
 		                    <ul class="flex flex-row flex-space-between normalize-text ph-ch-7">
 		                      <li>
 		                        <h3 class="lh-lg"><?php the_title(); ?></h3>
 		                      </li>
 		                      <li>
-		                      	<?php the_field('fecha_evento'); ?>
-		                        <span><?php the_field('fecha_evento'); ?> <br>9:00 am <br>Corferias, pabellón 3</span>
+		                        <span><?php echo date('F', strtotime( $tempDate)); ?> <?php echo date('j', strtotime( $tempDate)); ?><br><?php echo date('g', strtotime( $tempDate)); ?> <?php echo date('a', strtotime( $tempDate)); ?> <br>Corferias, pabellón 3</span>
 		                      </li>
 		                    </ul>
 		                    <p><?php the_field('descripcion_evento');?></p>
@@ -184,7 +184,7 @@ get_header(); ?>
 		                  <div class="col-sm-6">
 		                    <div class="enterate-calendar box-shadow flex flex-row flex-space-between normalize-text">
 		                      <div class="text-center ph-14 pv-28">
-		                      	<?php $tempDate = get_field('fecha_evento'); ?>
+		                      	
 		                        <h1 class="text-panel"><?php echo date('l', strtotime( $tempDate)); ?></h1>
 		                        <h1 class="text-panel lead bold"><?php echo date('j', strtotime( $tempDate)); ?></h1>
 		                        <h4 class="bold"><?php the_title(); ?></h4>
