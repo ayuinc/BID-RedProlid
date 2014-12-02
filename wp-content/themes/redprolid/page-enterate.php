@@ -272,7 +272,7 @@ get_header(); ?>
             <div class="col-xs-6">
               <h3 class="bold lh-lg">Suscríbete a nuestro boletín y descárgalo gratis </h3>
               <div class="text-right">
-                <a href="#" class="see-more">Aquí</a>
+                <a href="#" class="see-more" data-toggle="modal" data-target="#mailChimp">Aquí</a>
               </div>
             </div>
             <div class="col-sm-3 flex flex-column flex-center flex-middle mh-140">
