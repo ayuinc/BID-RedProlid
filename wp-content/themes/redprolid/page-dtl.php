@@ -22,8 +22,8 @@ get_header(); ?>
 		            <hr style="border-top: 3px dotted #808080;">
 		          </div>
 		          <img src="<?php the_field('imagen-dtl'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-28 mb-21" width="630px" height="auto">
-		          <div class="text-gris lead text-gray">
-                <p class="text-right pt-14-100 mb-28"><?php the_field('contenido-dtl'); ?></p> 
+		          <div>
+                <p class="text-right pt-14-100 mb-28 lead" style="color: #aaa;"><?php the_field('contenido-dtl'); ?></p> 
               </div>
 						<?php endwhile; ?>
 					<?php endif; ?>                 
