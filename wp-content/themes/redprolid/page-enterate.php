@@ -173,7 +173,7 @@ get_header(); ?>
 		                        <h3 class="lh-lg"><?php the_title(); ?></h3>
 		                      </li>
 		                      <li>
-		                        <span><?php echo date_i18n(date('F', strtotime( $tempDate))); ?> <?php echo date('j', strtotime( $tempDate)); ?><br><?php echo date('g', strtotime( $tempDate)); ?> <?php echo date('a', strtotime( $tempDate)); ?> <br>Corferias, pabellón 3</span>
+		                        <span><?php echo date_i18n('F', strtotime( $tempDate)); ?> <?php echo date('j', strtotime( $tempDate)); ?><br><?php echo date('g', strtotime( $tempDate)); ?> <?php echo date('a', strtotime( $tempDate)); ?> <br>Corferias, pabellón 3</span>
 		                      </li>
 		                    </ul>
 		                    <p><?php the_field('descripcion_evento');?></p>
