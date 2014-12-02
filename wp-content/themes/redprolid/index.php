@@ -62,7 +62,7 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      <section>
+      <section >
         <div class="container">
           <div class="row">
             <div class="col-md-3">
@@ -80,8 +80,7 @@ get_header(); ?>
                   <div class="col-sm-12">
                     <img src="<?php the_field('imagen_concurso'); ?>" alt="" class="img-responsive">
                     <h5><?php the_title(); ?></h5>
-                    <!--<small class="help-block"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_concurso'));
-echo $date->format('d-m-Y'); ?></small>-->
+                    <!--<small class="help-block"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_concurso')); echo $date->format('d-m-Y'); ?></small>-->
                     <p><?php the_field('descripcion_concurso'); ?></p>
                     <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Más información</a></div>
                   </div>
@@ -129,12 +128,12 @@ echo $date->format('d-m-Y'); ?></small>-->
 									<?php while ( have_posts() ) : the_post(); ?>  
                   <div class="col-sm-12">
                     <div class="events-calendar-placeholder">
-                      <div class="day"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
-echo $date->format('D'); ?></div>
+                      <div class="day"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento')); 
+                      echo $date->format('D'); ?></div>
                       <div class="day-num"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
-echo $date->format('d'); ?></div>
+                      echo $date->format('d'); ?></div>
                       <div class="month"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
-echo $date->format('M'); ?></div>
+                      echo $date->format('M'); ?></div>
                     </div>
                     <h5 class=""><?php the_title(); ?></h5>
                     <p class=""><?php the_field('descripcion_evento'); ?></p>
@@ -144,7 +143,7 @@ echo $date->format('M'); ?></div>
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div id="evento" class="col-md-3">
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled">

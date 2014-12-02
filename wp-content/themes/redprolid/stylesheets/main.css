@@ -4098,6 +4098,10 @@ form.search button {
     font-size: 21px;
     font-size: 1.5rem; }
 
+#evento li:nth-child(5) {
+  display: none;
+  visibility: hidden; }
+
 .red-prolid-grid:before, .red-prolid-grid:after {
   content: " ";
   display: table; }
