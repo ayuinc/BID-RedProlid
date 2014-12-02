@@ -158,7 +158,7 @@ get_header(); ?>
               </ul>
               <a href="<?php echo home_url('/'); ?>eventos" class="see-more">Eventos aquí</a>
             </div>
-            <div class="panel-body" style="z-index:-2; padding: 0; margin: 21px 0;">
+            <div class="panel-body" style="padding: 0; margin: 21px 0;">
               <div class="col-sm-2"></div>
               <div class="col-sm-10">
                 <div class="row">
