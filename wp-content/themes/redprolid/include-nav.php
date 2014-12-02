@@ -38,7 +38,7 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="concursos"><i></i><span>Concursos</span></a>
+            <a href="<?php echo home_url('/'); ?>concursos" class="concursos"><i></i><span>Concursos</span></a>
             <ul class="list-unstyled">
               <li><a href="<?php echo home_url('/'); ?>concursos">Concursos anteriores</a></li>
             </ul>
