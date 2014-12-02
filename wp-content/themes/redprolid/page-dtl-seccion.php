@@ -26,7 +26,7 @@ get_header(); ?>
 		          <div class="absolute dtl-custom-heading">
 							<?php if ($segment2 == "a-donde-vamos") : ?>
 		            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png" alt="<?php the_title(); ?>"></div>
-		            <h1 style="color: #007c8d;"><?php the_title(); ?></h1>
+		            <h1 style="color: #f05f6a;"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #aaa; width: 830px; margin-right: 178px;">
 		          </div>
 		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative" width="560px" height="auto">
@@ -73,7 +73,7 @@ get_header(); ?>
 		          </div>
 		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative" width="560px" height="auto">	
 							<?php endif; ?>
-		          <p class="text-left pt-14-100"><?php the_field('contenido-dtl-seccion'); ?></p>
+		          <p class="text-left pt-14-100 lead" style="color: #aaa;"><?php the_field('contenido-dtl-seccion'); ?></p>
 						<?php endwhile; ?>
 					<?php endif; ?>        
         </div>
