@@ -26,13 +26,19 @@ function qnt_date_translate($days = '', $months = '', $months_s = ''){
   if($months_s != '') $loc_mons = $months_s;
 
   // Checks if the user has provided the localized version of the dates, if not it will not initialize the English counterpart
-  $eng_days = array(Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday);
-  $eng_mon = array(January,February,March,April,May,June,July,August,September,October,November,December);
-  $eng_mons = array(Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec);
+  // $eng_days = array(Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday);
+  // $eng_mon = array(January,February,March,April,May,June,July,August,September,October,November,December);
+  // $eng_mons = array(Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec);
+
+  $eng_days = array(Domingo,Lunes,Martes,Miercoles,Jueves,Viernes,Sabado);
+  $eng_mon = array(Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre);
+  // $esp_mons = array(Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec);
 
   if($days == '') $loc_days = $eng_days;
   if($months == '') $loc_mon =$eng_mon;
   if($months_s == '') $loc_mons = $eng_mons;
+
+
 
   // Creates an array, depending on what the user has inputted above
   $loc_arr = array_merge((array)$loc_days, (array)$loc_mon, (array)$loc_mons);
