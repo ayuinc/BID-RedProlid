@@ -74,7 +74,10 @@
     <div class="modal-content">
       <div class="modal-body p-0">
         <div class="panel panel-custom panel-highlight">
-          <div class="panel-body pl-14 pr-14">
+          <div class="panel-body pl-14 pr-14 pt-7">
+            <div class="row pr-21 mb-21">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            </div>
             <div class="row">
               <div class="col-sm-1">
                 <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-topic-icon.png" alt="">
@@ -99,7 +102,6 @@
               <div class="col-sm-6"></div>
             </div>
             <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 2 ); } ?>
-            <button type="button" class="btn btn-default pull-right pl-28 pr-28" data-dismiss="modal">Cerrar</button>
           </div>
         </div>
       </div>
