@@ -22,12 +22,24 @@ get_header(); ?>
 	    margin-top:1.3rem;
 	    font-weight: 100;
     }
-    .formulario-perfil input
+    .formulario-perfil input,
+    .formulario-perfil select
     { 
 	  	width:100%;
 	  	border:1px solid #CCC;
 	  	padding:0.5rem; 
 	  }   
+	  ul.wppb-radios li {
+			float: left;
+			width: 35%;
+		}
+	  .formulario-perfil input[type="radio"]
+    { 
+	  	width:10%;
+	  } 
+	  .formulario-perfil input[type="radio"]+label {
+			width: 50%;
+		}
 	  .formulario-perfil #send_credentials_via_email {
 		  width:30px;
 	  }
