@@ -143,7 +143,7 @@ get_header(); ?>
                 </div>
               </div>
             </div>
-            <div id="evento" class="col-md-3">
+            <div id="opinion" class="col-md-3">
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
@@ -172,9 +172,9 @@ get_header(); ?>
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
-                    <li class="title">Puntos de vista</li>
-                    <li class="rule"></li>
-                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
+                    <li class="title pt-7">Puntos de vista</li>
+                    <li class="rule relative" style="top: 22px;"></li>
+                    <li class="icon" style="top: 1px; background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
                   </ul>
                 </div>
                 <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=1' ); ?>	
@@ -185,7 +185,7 @@ get_header(); ?>
                   </div>
                   <div class="col-sm-7">
                     <h4><?php the_title(); ?></h4>
-                    <p class="light lh-lg"><?php the_field('descripcion_punto_de_vista'); ?></p>
+                    <p class="light lh-lg" style="color: #aaa;"><?php the_field('descripcion_punto_de_vista'); ?></p>
                     <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee aquí</a></div>
                   </div>
                 </div>
@@ -255,14 +255,14 @@ get_header(); ?>
             </div>
             <div class="col-md-9">
               <div class="panel panel-custom panel-highlight">
-                <div class="panel-heading">
-                  <ul class="list-unstyled">
-                    <li class="title">Lo último en las redes</li>
-                    <li class="rule"></li>
-                    <li class="icon icon-lg" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid-social.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
-                  </ul>
-                </div>
-                <div class="panel-body">
+                <div class="panel-body pt-0">
+                  <div class="panel-heading">
+                    <ul class="list-unstyled m-0">
+                      <li class="title pl-14" style="background:#ebeade; padding-top: 12px">Lo último en las redes</li>
+                      <li class="rule relative" style="top: 27px;"></li>
+                      <li class="icon icon-lg" style="top: 1px; background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid-social.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+                    </ul>
+                  </div>                
                   <div class="col-sm-4">
                   	<div class="fb-like-box" data-width="250" data-height="520" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
                   </div>
