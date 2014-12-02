@@ -71,9 +71,9 @@ get_header(); ?>
 		            <h1 style="color: #007c8d;"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #aaa; width: 830px; margin-right: 178px;">
 		          </div>
-		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative" width="560px" height="auto">	
+		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="460px" height="auto">	
 							<?php endif; ?>
-		          <p class="text-left pt-14-100 lead" style="color: #aaa;"><?php the_field('contenido-dtl-seccion'); ?></p>
+		          <p class="text-justify pt-14-100 lead" style="color: #aaa;"><?php the_field('contenido-dtl-seccion'); ?></p>
 						<?php endwhile; ?>
 					<?php endif; ?>        
         </div>
