@@ -215,7 +215,7 @@ get_header(); ?>
                     <li class="rule"></li>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
                   </ul>
-                  <a href="#" class="see-more">Entrevistas</a>
+                  <a href="<?php echo home_url('/'); ?>campeonas" class="see-more">Entrevistas</a>
                 </div>
                 <div class="panel-body mt-42">
                   <div class="bg-white clearfix">
