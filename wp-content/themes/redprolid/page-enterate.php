@@ -227,7 +227,6 @@ get_header(); ?>
 			                    <div class="col-sm-6 ph-14 pv-28">
 			                      <h3 class="m-0"><?php the_title(); ?></h3>
 			                      <span>(<?php the_field('pais_campeona'); ?>)</span><br>
-			                      <a href="#"><?php the_field('twitter_campeona'); ?></a>
 			                      <p class="lead mt-14"><?php the_field('posicion_campeona'); ?></p>
 			                      <div class="text-right">
 			                        <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Leer más</a>
