@@ -173,7 +173,7 @@ get_header(); ?>
 		                        <h3 class="lh-lg"><?php the_title(); ?></h3>
 		                      </li>
 		                      <li>
-		                        <span><?php echo date_i18n('F', strtotime( $tempDate)); ?> <?php echo date('j', strtotime( $tempDate)); ?><br><?php echo date('g', strtotime( $tempDate)); ?> <?php echo date('a', strtotime( $tempDate)); ?> <br>Corferias, pabellón 3</span>
+		                        <span><?php echo date('F', strtotime( $tempDate)); ?> <?php echo date('j', strtotime( $tempDate)); ?><br><?php echo date('g', strtotime( $tempDate)); ?> <?php echo date('a', strtotime( $tempDate)); ?> <br>Corferias, pabellón 3</span>
 		                      </li>
 		                    </ul>
 		                    <p><?php the_field('descripcion_evento');?></p>
@@ -221,9 +221,8 @@ get_header(); ?>
                   <div class="bg-white clearfix">
                   	<!-- Start the Loop. -->
 										<?php if ( have_posts() ) : ?>
+                    <?php query_posts( array( 'category_name' => 'campeonas', 'posts_per_page' => 1 ) ); ?>
 											<?php while ( have_posts() ) : the_post(); ?>
-												<?php $myposts = get_posts(array('posts_per_page'=>'1','category'=>'campeonas')); ?>
-												<?php foreach ($myposts as $post) : ?>
 													<?php setup_postdata($post); ?>
 			                    <div class="col-sm-6 ph-14 pv-28">
 			                      <h3 class="m-0"><?php the_title(); ?></h3>
@@ -237,7 +236,6 @@ get_header(); ?>
 			                    <div class="col-sm-6 pl-0-sm">
 			                      <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive">
 			                    </div>
-		                    <?php endforeach; ?>
 					            <?php endwhile; ?>
 										<?php endif; ?> 
                   </div>
