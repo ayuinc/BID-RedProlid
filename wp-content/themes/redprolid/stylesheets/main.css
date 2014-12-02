@@ -4098,7 +4098,7 @@ form.search button {
     font-size: 21px;
     font-size: 1.5rem; }
 
-#evento li:nth-child(5) {
+#evento .panel .panel-body .panel-lost ul:nth-child(5) {
   display: none;
   visibility: hidden; }
 
