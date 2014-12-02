@@ -58,7 +58,7 @@ get_header(); ?>
             <div class="col-sm-1"></div>
             <div class="col-sm-10 with-hr">
               <h3><?php the_field('nombre_completo'); ?> <small>(Bolivia)</small></h3>
-              <p><?php the_field('profesion'); ?> / <a href="#"><?php the_field('cuenta_de_twitter'); ?></a></p>
+              <p><?php the_field('profesion'); ?> / <a href="#">@<?php the_field('cuenta_de_twitter'); ?></a></p>
               <h4><?php the_title(); ?></h4>
               <p class="lh-lg text-justify"><?php the_field('contenido_punto_de_vista'); ?></p>
               <p class="text-gray">Diciembre 2013</p>
