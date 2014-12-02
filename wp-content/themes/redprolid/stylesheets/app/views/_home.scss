@@ -30,12 +30,12 @@
 	}
 }
 
-#evento {
+#opinion {
 	.panel {
 		.panel-body {
 			.panel-lost {
-				ul:nth-child(6) {
-					visibility: hidden;
+				.yop-poll-answers li:nth-child(6) {
+					display: none;
 				}
 			}
 		}	

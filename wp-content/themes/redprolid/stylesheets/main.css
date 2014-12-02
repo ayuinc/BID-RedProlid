@@ -4098,8 +4098,8 @@ form.search button {
     font-size: 21px;
     font-size: 1.5rem; }
 
-#evento .panel .panel-body .panel-lost ul:nth-child(6) {
-  visibility: hidden; }
+#opinion .panel .panel-body .panel-lost .yop-poll-answers li:nth-child(6) {
+  display: none; }
 
 .red-prolid-grid:before, .red-prolid-grid:after {
   content: " ";
