@@ -4098,6 +4098,10 @@ form.search button {
     font-size: 21px;
     font-size: 1.5rem; }
 
+#evento li:nth-child(5) {
+  display: none;
+  visibility: hidden; }
+
 .red-prolid-grid:before, .red-prolid-grid:after {
   content: " ";
   display: table; }
@@ -4266,5 +4270,8 @@ form.search button {
         border-top: 2px dotted #c2c2c2; }
     #dtl-grid ul li a .color {
       display: none; }
+
+.z-index-100 {
+  z-index: 100; }
 
 /*# sourceMappingURL=main.css.map */

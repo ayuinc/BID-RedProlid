@@ -29,3 +29,10 @@
 		font-size: rem(21);
 	}
 }
+
+#evento {
+	li:nth-child(5) {
+		display: none;
+		visibility: hidden;
+	}
+}
