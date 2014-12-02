@@ -50,7 +50,7 @@ get_header(); ?>
 		            <h1 style="color: #007c8d;"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #aaa; width: 830px; margin-right: 178px;">
 		          </div>
-		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="5460px" height="auto">
+		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="460px" height="auto">
 							<?php endif; ?>
 							<?php if ($segment2 == "listas-para-la-politica") : ?>
 								<div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-listas-politica-icon.png" alt="<?php the_title(); ?>"></div>
