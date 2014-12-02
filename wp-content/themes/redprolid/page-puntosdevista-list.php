@@ -26,8 +26,8 @@ get_header(); ?>
                   <?php get_search_form(); ?>
                 </div>
                 <div class="col-sm-6 text-right">
-                  <strong>Resultados 0</strong>
-                  <p>Resultados por página: <a href="#">10</a> - <a href="#">50</a> - <a href="#">100</a></p>
+                  <!-- <strong>Resultados 0</strong>
+                  <p>Resultados por página: <a href="#">10</a> - <a href="#">50</a> - <a href="#">100</a></p> -->
                 </div>
               </div>
             </div>
