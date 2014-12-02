@@ -1,4 +1,4 @@
-<div id="nav-main-menu">
+<div id="nav-main-menu" style="z-index:999">
   <div class="container">
     <div class="row">
       <div class="col-sm-8 pr-0">
