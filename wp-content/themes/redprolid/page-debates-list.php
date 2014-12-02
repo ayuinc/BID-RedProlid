@@ -23,7 +23,7 @@ get_header(); ?>
 		          <?php query_posts( 'category_name=dtl-debates' ); ?> 
 		          <?php while ( have_posts() ) : the_post(); ?>
 		            <div class="title">
-		              <h3><?php the_title(); ?></h3>
+		              <h3><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 		              <p>FUENTE: <?php the_field('fuente-debates'); ?></p>
 		              <span>Blog: <?php the_field('blog-debates'); ?></span>
 		            </div>
