@@ -29,6 +29,9 @@ get_header(); ?>
 	  	border:1px solid #CCC;
 	  	padding:0.5rem; 
 	  }   
+	  .formulario-perfil select {
+			height: 44px;
+		}
 	  ul.wppb-radios li {
 			float: left;
 			width: 35%;
