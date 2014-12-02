@@ -34,11 +34,9 @@
 	.panel {
 		.panel-body {
 			.panel-lost {
-				ul {
-					li:nth-child(5) {
-						display: none;
-						visibility: hidden;
-					}
+				ul:nth-child(5) {
+					display: none;
+					visibility: hidden;
 				}
 			}
 		}	
