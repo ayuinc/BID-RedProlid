@@ -24,15 +24,23 @@ get_header(); ?>
           </div>
           <div class="row pt-14-100">
             <div class="col-sm-6">
-              <p class="lead"><?php the_field('texto_introductorio_contactanos'); ?></p>
-              <p class="lead bold">¡Nos comprometemos a contestarte!</p>
+              <p class="lead" style="color: #aaa;"><?php the_field('texto_introductorio_contactanos'); ?></p>
+              <p class="lead bold text-gray">¡Nos comprometemos a contestarte!</p>
             </div>
             <div class="col-sm-6">
 	            <p class="text-left">
 		          <style>
 			        	.formBuilderLabelRequired, .formBuilderLabel {
 				        	text-align: left !important;
-				        	color: #575757;
+				        	color: #aaa;
+				        	float: left !important;
+				        	margin-right: 7px;
+			        	}
+			        	#formBuilderFieldName .formBuilderLabelRequired {
+			        		margin-left: 66px;
+			        	}
+			        	.control-group {
+			        		margin-bottom: 14px;
 			        	}
 			        	#fieldformBuilderFieldEmail, #fieldformBuilderFieldName {
 				        	width:50%;
@@ -43,6 +51,9 @@ get_header(); ?>
 				        	width:100%;
 				        	padding:0.5rem 0.7rem;
 				        	border:1px solid #ccc;
+			        	}
+			        	#formBuilderFieldComments .formBuilderLabel {
+			        		margin-left: 23px;
 			        	}
 			        	.formBuilderSubmit input {
 				        	padding: 5px 10px;
