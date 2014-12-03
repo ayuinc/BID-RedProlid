@@ -19,6 +19,9 @@ get_header(); ?>
         width: 42px !important;
         display: inline-block;
       }
+      .carousel-control .icon-next:before{
+        content: '\203a';
+      }
     </style>
     <div class="mh-700">
       <section>
