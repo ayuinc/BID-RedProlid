@@ -188,7 +188,7 @@ get_header(); ?>
               <?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 1 ) ); ?>
               <?php while ( have_posts() ) : the_post(); ?>
                 <?php $tempDate = get_field('fecha_evento'); ?>
-              <div class="col-sm-2"><img src="<?php the_field('imagen_evento');?>"></div>
+              <div class="col-sm-2"><img src="<?php the_field('imagen_evento');?>" style="width:100%"></div>
               <div class="col-sm-10">
                 <div class="row">
 		                  <div class="col-sm-6">
@@ -215,7 +215,7 @@ get_header(); ?>
 		                      </div>
 		                      <div>
 		                        <div class="calendar bg-panel">
-		                          
+		                          <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png" alt="" style="width:100%">
 		                        </div>
 		                      </div>
 		                    </div>
