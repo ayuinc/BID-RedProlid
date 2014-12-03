@@ -73,7 +73,7 @@ get_header(); ?>
 											<?php $myposts = get_posts(array('posts_per_page'=>'2')); ?>
 											<?php foreach ($myposts as $post) : ?>
 												<?php setup_postdata($post); ?>
-			                  <li>
+			                  <li class="mb-49">
 			                    <h5><?php the_title(); ?></h5>
 			                    <small class="date"><?php echo get_the_date(); ?></small> <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más &gt;&gt;</a>
 			                  </li>
