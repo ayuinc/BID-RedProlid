@@ -55,6 +55,9 @@ get_header(); ?>
 			        	#formBuilderFieldComments .formBuilderLabel {
 			        		margin-left: 23px;
 			        	}
+			        	.formBuilderInput input {
+			        		box-shadow: inset -2px 5px 17px #eee;
+			        	}
 			        	.formBuilderSubmit input {
 				        	padding: 5px 10px;
 									font-size: 12px;
