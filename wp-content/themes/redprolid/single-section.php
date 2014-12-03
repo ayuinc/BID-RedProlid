@@ -16,11 +16,11 @@ foreach( $customposts as $post ) :  // start you custom loop
     <div class="title">
     <h3><?php the_title(); ?></h3>
     <p>
-	  FUENTE:<a href="<?php the_field('url'); ?>"><?php the_field('fuente-debates'); ?></a>
-       <?php $blog = the_field('blog-debates'); ?>
+	  FUENTE:<?php the_field('fuente-debates'); ?>
+    <?php $blog = the_field('blog-debates'); ?>
 	  <?php if ($blog!='') { ?>  
-        <?php the_field('blog-debates'); ?>
-    <?php } ?><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/enterate-grid-4-01.png" alt="">
+        <a href="<?php the_field('url'); ?>"><?php the_field('blog-debates'); ?></a>
+    <?php } ?><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/enterate-grid-4-01.png" alt="" style="width:20px">
     </p>
     </div>
     <div class="content">
