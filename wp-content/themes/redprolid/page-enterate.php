@@ -110,10 +110,8 @@ get_header(); ?>
                   <ul class="grid-list grid-list-3 item active">	
 										<!-- Start the Loop. -->
 										<?php if ( have_posts() ) : ?>
+                      <?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 3 ) ); ?>
 											<?php while ( have_posts() ) : the_post(); ?>
-												<?php $myposts = get_posts(array('posts_per_page'=>'3','category'=>'noticias')); ?>
-												<?php foreach ($myposts as $post) : ?>
-													<?php setup_postdata($post); ?>
 				                  <li>
 			                      <div class="p-14 bg-white">
 			                      	<?php if( get_field('imagen_noticias') ) { ?>
@@ -127,7 +125,6 @@ get_header(); ?>
 			                        <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="see-more">Ve más</a></div>
 			                      </div>
 			                    </li>
-				                 <?php endforeach; ?>
 					            <?php endwhile; ?>
 										<?php endif; ?>	
                   </ul>
