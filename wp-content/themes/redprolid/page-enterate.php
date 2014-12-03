@@ -73,10 +73,8 @@ get_header(); ?>
 											<?php $myposts = get_posts(array('posts_per_page'=>'2')); ?>
 											<?php foreach ($myposts as $post) : ?>
 												<?php setup_postdata($post); ?>
-			                  <li>
+			                  <li class="mb-49">
 			                    <h5><?php the_title(); ?></h5>
-			                    <p><?php the_content(); ?></p>
-			                    <p><?php get_post_field('post_content', get_the_ID()); ?></p>
 			                    <small class="date"><?php echo get_the_date(); ?></small> <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más &gt;&gt;</a>
 			                  </li>
 			                 <?php endforeach; ?>
@@ -99,7 +97,7 @@ get_header(); ?>
               </ul>
               <a href="<?php echo home_url('/'); ?>noticias" class="see-more">Todas las noticias</a>
             </div>
-            <div class="panel-body">
+            <div class="panel-body p-0 mt-42">
               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -112,10 +110,8 @@ get_header(); ?>
                   <ul class="grid-list grid-list-3 item active">	
 										<!-- Start the Loop. -->
 										<?php if ( have_posts() ) : ?>
+                      <?php query_posts( array( 'category_name' => 'noticias', 'posts_per_page' => 3 ) ); ?>
 											<?php while ( have_posts() ) : the_post(); ?>
-												<?php $myposts = get_posts(array('posts_per_page'=>'3','category'=>'noticias')); ?>
-												<?php foreach ($myposts as $post) : ?>
-													<?php setup_postdata($post); ?>
 				                  <li>
 			                      <div class="p-14 bg-white">
 			                      	<?php if( get_field('imagen_noticias') ) { ?>
@@ -129,9 +125,37 @@ get_header(); ?>
 			                        <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="see-more">Ve más</a></div>
 			                      </div>
 			                    </li>
-				                 <?php endforeach; ?>
 					            <?php endwhile; ?>
 										<?php endif; ?>	
+                  </ul>
+                  <ul class="grid-list grid-list-3 item">
+                    <li>
+                      <div class="p-14 bg-white">
+                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
+                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <span class="help-block mt-0">Septiembre 08/2014</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
+                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="p-14 bg-white">
+                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
+                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <span class="help-block mt-0">Septiembre 08/2014</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
+                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="p-14 bg-white">
+                        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
+                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <span class="help-block mt-0">Septiembre 08/2014</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
+                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
 
@@ -159,14 +183,14 @@ get_header(); ?>
               <a href="<?php echo home_url('/'); ?>eventos" class="see-more">Eventos aquí</a>
             </div>
             <div class="panel-body" style="padding: 0; margin: 21px 0;">
-              <div class="col-sm-2"></div>
+            <!-- Start the Loop. -->
+            <?php if ( have_posts() ) : ?>
+              <?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 1 ) ); ?>
+              <?php while ( have_posts() ) : the_post(); ?>
+                <?php $tempDate = get_field('fecha_evento'); ?>
+              <div class="col-sm-2"><img src="<?php the_field('imagen_evento');?>" style="width:100%"></div>
               <div class="col-sm-10">
                 <div class="row">
-                	<!-- Start the Loop. -->
-									<?php if ( have_posts() ) : ?>
-										<?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 1 ) ); ?>
-										<?php while ( have_posts() ) : the_post(); ?>
-											<?php $tempDate = get_field('fecha_evento'); ?>
 		                  <div class="col-sm-6">
 		                    <ul class="flex flex-row flex-space-between normalize-text ph-ch-7">
 		                      <li>
@@ -191,15 +215,16 @@ get_header(); ?>
 		                      </div>
 		                      <div>
 		                        <div class="calendar bg-panel">
-		                          
+		                          <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png" alt="" style="width:100%">
 		                        </div>
 		                      </div>
 		                    </div>
 		                  </div>
-				            <?php endwhile; ?>
-									<?php endif; ?>       
+				                 
                 </div>
               </div>
+              <?php endwhile; ?>
+                  <?php endif; ?>  
             </div>
           </div>
         </div>

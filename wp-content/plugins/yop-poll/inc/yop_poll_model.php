@@ -3267,7 +3267,7 @@
 				$template .= '<li class="front-list"><style type="text/css">' . self::return_poll_css( array( "location" => $location ) ) . '</style>';
 			}
 			else  {
-				$template .= '<li><style type="text/css">' . self::return_poll_css( array( "location" => $location ) ) . '</style>';
+				$template .= '<li style="list-style:none"><style type="text/css">' . self::return_poll_css( array( "location" => $location ) ) . '</style>';
 			}
 
 			$template .= '<div id="yop-poll-container-' . $poll_id . $unique_id . '" class="yop-poll-container bg-white box-shadow p-7">';
