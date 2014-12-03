@@ -114,7 +114,7 @@ get_header(); ?>
                       <?php query_posts( array( 'category_name' => 'noticias', 'posts_per_page' => 3 ) ); ?>
 											<?php while ( have_posts() ) : the_post(); ?>
 				                  <li>
-			                      <div class="p-14 bg-white" style="border:1px solid #B8B8B8;">
+			                      <div class="p-14 bg-white" style="border:1px solid #B8B8B8; height: 480px;">
 			                      	<?php if( get_field('imagen_noticias') ) { ?>
 				                        <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
 															<?php } else {?>
@@ -131,7 +131,7 @@ get_header(); ?>
                   </ul>
                   <ul class="grid-list grid-list-3 item">
                     <li>
-                      <div class="p-14 bg-white">
+                      <div class="p-14 bg-white" style="border:1px solid #B8B8B8; height: 480px;">
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0" style="color:#ed7133;">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
@@ -140,7 +140,7 @@ get_header(); ?>
                       </div>
                     </li>
                     <li>
-                      <div class="p-14 bg-white">
+                      <div class="p-14 bg-white" style="border:1px solid #B8B8B8; height: 480px;">
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0" style="color:#ed7133;">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
@@ -149,7 +149,7 @@ get_header(); ?>
                       </div>
                     </li>
                     <li>
-                      <div class="p-14 bg-white">
+                      <div class="p-14 bg-white" style="border:1px solid #B8B8B8; height: 480px;">
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0" style="color:#ed7133;">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
