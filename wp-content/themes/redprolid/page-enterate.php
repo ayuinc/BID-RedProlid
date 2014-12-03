@@ -107,14 +107,14 @@ get_header(); ?>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
-                  <ul class="grid-list grid-list-3 item active">	
+                  <ul class="grid-list grid-list-3 active">	
 										<!-- Start the Loop. -->
 										<?php if ( have_posts() ) : ?>
 											<?php while ( have_posts() ) : the_post(); ?>
 												<?php $myposts = get_posts(array('posts_per_page'=>'3','category'=>'noticias')); ?>
 												<?php foreach ($myposts as $post) : ?>
 													<?php setup_postdata($post); ?>
-				                  <li>
+				                  <li class="item">
 			                      <div class="p-14 bg-white">
 			                      	<?php if( get_field('imagen_noticias') ) { ?>
 				                        <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
@@ -130,35 +130,6 @@ get_header(); ?>
 				                 <?php endforeach; ?>
 					            <?php endwhile; ?>
 										<?php endif; ?>	
-                  </ul>
-                  <ul class="grid-list grid-list-3 item">
-                    <li>
-                      <div class="p-14 bg-white">
-                        <img src="../assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
-                        <span class="help-block mt-0">Septiembre 08/2014</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
-                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="p-14 bg-white">
-                        <img src="../assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
-                        <span class="help-block mt-0">Septiembre 08/2014</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
-                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="p-14 bg-white">
-                        <img src="../assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
-                        <span class="help-block mt-0">Septiembre 08/2014</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
-                        <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
-                      </div>
-                    </li>
                   </ul>
                 </div>
 
