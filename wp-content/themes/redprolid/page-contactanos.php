@@ -59,7 +59,7 @@ get_header(); ?>
 			        		box-shadow: inset -2px 5px 17px #eee;
 			        		width: 428px;
 			        	}
-			        	.formBuilderLargeTextarea textarea {
+			        	#fieldformBuilderFieldComments {
 			        		width: 77%;
 			        	}
 			        	.formBuilderSubmit input {
