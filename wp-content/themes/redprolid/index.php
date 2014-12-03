@@ -62,7 +62,7 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      <section >
+      <section id="widgets">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
