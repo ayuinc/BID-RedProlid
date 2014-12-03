@@ -69,7 +69,7 @@ get_header(); ?>
               <div class="panel panel-custom panel-highlight">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
-                    <li class="title">Concursos</li>
+                    <li class="title">Concurso</li>
                     <li class="rule"></li>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -42px;"></li>
                   </ul>
