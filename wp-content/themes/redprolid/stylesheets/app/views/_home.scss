@@ -30,14 +30,23 @@
 	}
 }
 
-#opinion {
-	.panel {
-		.panel-body {
-			.panel-lost {
-				.yop-poll-answers li:nth-child(6) {
-					display: none;
-				}
+#widgets {
+	.container .row {
+		.col-md-3 {
+			.panel-custom {
+			height: 1200px !important;
 			}
+		}
+	}
+	#opinion {
+		.panel {
+			.panel-body {
+				.panel-lost {
+					.yop-poll-answers li:nth-child(6) {
+						display: none;
+					}
+				}
+			}	
 		}	
-	}	
+	}
 }
