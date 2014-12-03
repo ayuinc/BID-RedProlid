@@ -57,6 +57,10 @@ get_header(); ?>
 			        	}
 			        	.formBuilderInput input {
 			        		box-shadow: inset -2px 5px 17px #eee;
+			        		width: 428px;
+			        	}
+			        	.formBuilderLargeTextarea textarea {
+			        		width: 77%;
 			        	}
 			        	.formBuilderSubmit input {
 				        	padding: 5px 10px;
