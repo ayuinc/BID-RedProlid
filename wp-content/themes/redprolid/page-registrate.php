@@ -107,7 +107,7 @@ get_header(); ?>
 	  	width: 58%;
 			box-shadow: inset -2px 5px 17px #eee;
 	  }
-	  #wppb-form-element-12 span {
+	  #wppb-form-element-12 .wppb-description-delimiter {
 	  	margin-left: 42%;
 	  }
 	  #wppb-form-element-13 label {
@@ -181,7 +181,10 @@ get_header(); ?>
 					      <h3 class="light text-left">Crea tu perfil ahora incluyendo los siguientes datos</h3>
 				      	<?php the_content(); ?>
 				      </div>
-				      <div class="col-sm-6">
+				      <div class="col-sm-1">
+				      	<img src="http://redprolid.org/wp-content/themes/redprolid/assets/icons/division-02.png" alt="" style="width:50px">
+				      </div>
+				      <div class="col-sm-5">
 					      <h3 class="light text-left">Ingresa Utilizando las redes sociales</h3>
 					      <p class="mt-70"><?php do_action( 'wordpress_social_login' ); ?></p>
 				      </div>			      
