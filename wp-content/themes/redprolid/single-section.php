@@ -17,7 +17,7 @@ foreach( $customposts as $post ) :  // start you custom loop
     <h3><?php the_title(); ?></h3>
     <p>
 	  FUENTE:<?php the_field('fuente-debates'); ?>
-    <?php $blog = the_field('blog-debates'); ?>
+    <?php $blog = get_field('blog-debates'); ?>
 	  <?php if ($blog!='') { ?>  
         <a href="<?php the_field('url'); ?>"><?php the_field('blog-debates'); ?></a>
     <?php } ?><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/enterate-grid-4-01.png" alt="" style="width:20px">
