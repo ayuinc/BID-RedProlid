@@ -111,7 +111,7 @@ get_header(); ?>
 										<!-- Start the Loop. -->
 										<?php if ( have_posts() ) : ?>
 											<?php while ( have_posts() ) : the_post(); ?>
-												<?php $myposts = get_posts(array('posts_per_page'=>'3','category'=>'noticias')); ?>
+												<?php $myposts = get_posts(array('category'=>'noticias')); ?>
 												<?php foreach ($myposts as $post) : ?>
 													<?php setup_postdata($post); ?>
 				                  <li>
