@@ -114,7 +114,7 @@ get_header(); ?>
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 eventos">
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
@@ -136,7 +136,7 @@ get_header(); ?>
                       echo $date->format('M'); ?></div>
                     </div>
                     <h5 class=""><?php the_title(); ?></h5>
-                    <p class=""><?php the_field('descripcion_evento'); ?></p>
+                    <p class="event-des"><?php the_field('descripcion_evento'); ?></p>
                     <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary"  style="margin-top: 4px;">Ve más</a></div>
                   </div>
                   <?php endwhile; ?>
