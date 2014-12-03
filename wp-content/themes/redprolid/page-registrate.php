@@ -181,8 +181,8 @@ get_header(); ?>
 					      <h3 class="light text-left">Crea tu perfil ahora incluyendo los siguientes datos</h3>
 				      	<?php the_content(); ?>
 				      </div>
-				      <div class="col-sm-1 pt-7">
-				      	<img src="http://redprolid.org/wp-content/themes/redprolid/assets/icons/division-02.png" alt="" style="width:50px">
+				      <div class="col-sm-1 pt-21">
+				      	<img src="http://redprolid.org/wp-content/themes/redprolid/assets/icons/division-02.png" alt="" style="width: 16px;">
 				      </div>
 				      <div class="col-sm-5 mt-35">
 					      <h3 class="light text-left">Ingresa Utilizando las redes sociales</h3>
