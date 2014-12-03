@@ -18,7 +18,7 @@ get_header(); ?>
             <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt=""></div>
             <ul class="flex flex-row flex-space-between normalize-text pt-28">
               <li>
-                <h1 style="color: #aeab8b;">Entérate</h1>
+                <h1 class="mt-14" style="color: #aeab8b;">Entérate</h1>
               </li>
               <li class="text-right">
                 <a href="#" class="bold">¿Quieres compartir un recurso? &gt; &gt;</a>
@@ -29,11 +29,11 @@ get_header(); ?>
         </div>
         <div class="container with-shadow">
           <ul class="grid-list grid-list-centered grid-list-5 text-center">
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-1.png" alt=""><p>De dónde podrás encontrar todos los recursos y artículos</p></li>
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2.png" alt=""><p>De las noticias y de los eventos que no podrás perderte </p></li>
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3.png" alt=""><p>De lo que otras mujeres, con intereses similares, piensan</p></li>
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt=""><p>De diversos videos que podrás ver y compratir</p></li>
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5.png" alt=""><p>De cómo estar conectada con lo que pasa en la Red PROLID</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-1.png" alt=""><p style="color:#C4C09C">De dónde podrás encontrar todos los recursos y artículos</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2.png" alt=""><p style="color:#C4C09C">De las noticias y de los eventos que no podrás perderte </p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3.png" alt=""><p style="color:#C4C09C">De lo que otras mujeres, con intereses similares, piensan</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt=""><p style="color:#C4C09C">De diversos videos que podrás ver y compratir</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5.png" alt=""><p style="color:#C4C09C">De cómo estar conectada con lo que pasa en la Red PROLID</p></li>
           </ul>
           <p class="lead">Imagina esta sección como una biblioteca en la que almacenamos todo tipo de recursos de nuestra red:  libros, legislación, investigaciones, blogs y noticias, al igual que material audiovisual como entrevistas o vídeos. Queremos también incluir material eminentemente práctico como compendios de buenas prácticas, guías para las mujeres en el sector público o estudios de casos concretos. Aspiramos a que aquí puedas encontrar todo lo que puede serte útil en el desarrollo y fortalecimiento de tu liderazgo en el sector público y la política.</p>
         </div>
@@ -46,7 +46,7 @@ get_header(); ?>
                 <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
               </ul>
             </div>
-            <div class="panel-body">
+            <div class="panel-body pt-0">
               <div class="col-sm-4 pt-35">
                 <div class="enterate-search bg-panel p-14">
                   <h1>Búsqueda</h1>
@@ -77,6 +77,7 @@ get_header(); ?>
 			                    <h5><?php the_title(); ?></h5>
 			                    <small class="date"><?php echo get_the_date(); ?></small> <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más &gt;&gt;</a>
 			                  </li>
+                        <hr>
 			                 <?php endforeach; ?>
 				            <?php endwhile; ?>
 									<?php endif; ?>  
@@ -86,7 +87,7 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      <section class="bg-panel mh-350">
+      <section class="bg-panel mh-350 mt-49">
         <div class="container">
           <div class="panel panel-custom">
             <div class="panel-heading">
@@ -100,10 +101,10 @@ get_header(); ?>
             <div class="panel-body p-0 mt-42">
               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
-                <ol class="carousel-indicators">
+                <!-- <ol class="carousel-indicators">
                   <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> 
                   <li data-target="#carousel-example-generic" data-slide-to="1"></li> 
-                </ol>
+                </ol> -->
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
@@ -113,13 +114,13 @@ get_header(); ?>
                       <?php query_posts( array( 'category_name' => 'noticias', 'posts_per_page' => 3 ) ); ?>
 											<?php while ( have_posts() ) : the_post(); ?>
 				                  <li>
-			                      <div class="p-14 bg-white">
+			                      <div class="p-14 bg-white" style="border:1px solid #B8B8B8; height: 480px;">
 			                      	<?php if( get_field('imagen_noticias') ) { ?>
 				                        <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
 															<?php } else {?>
 			                        	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
 															<?php } ?>
-			                        <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="h4 block mb-0"><?php the_title(); ?></a>
+			                        <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="h4 block mb-0" style="color:#ed7133;"><?php the_title(); ?></a>
 			                        <span class="help-block mt-0"><?php echo get_the_date(); ?></span>
 			                        <p><?php the_field('descripcion_rapida_noticias');?></p>
 			                        <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="see-more">Ve más</a></div>
@@ -130,27 +131,27 @@ get_header(); ?>
                   </ul>
                   <ul class="grid-list grid-list-3 item">
                     <li>
-                      <div class="p-14 bg-white">
+                      <div class="p-14 bg-white" style="border:1px solid #B8B8B8; height: 480px;">
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <a href="#" class="h4 block mb-0" style="color:#ed7133;">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
                         <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
                       </div>
                     </li>
                     <li>
-                      <div class="p-14 bg-white">
+                      <div class="p-14 bg-white" style="border:1px solid #B8B8B8; height: 480px;">
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <a href="#" class="h4 block mb-0" style="color:#ed7133;">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
                         <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
                       </div>
                     </li>
                     <li>
-                      <div class="p-14 bg-white">
+                      <div class="p-14 bg-white" style="border:1px solid #B8B8B8; height: 480px;">
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <a href="#" class="h4 block mb-0" style="color:#ed7133;">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
                         <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
@@ -160,10 +161,10 @@ get_header(); ?>
                 </div>
 
                 <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" style="width: 2%;">
                   <span class="icon-prev"></span>
                 </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" style="width: 2%;">
                   <span class="icon-next"></span>
                 </a>
               </div> <!-- END:CAROUSEL -->
