@@ -21,9 +21,9 @@ get_header(); ?>
 		            <h1 style="color: #808080;"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #808080;">
 		          </div>
-		          <img src="<?php the_field('imagen-dtl'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-28 mb-21" width="630px" height="auto">
+		          <img src="<?php the_field('imagen-dtl'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-28 mb-21" width="530px" height="auto">
 		          <div>
-                <p class="text-right pt-14-100 mb-28 lead" style="color: #aaa;"><?php the_field('contenido-dtl'); ?></p> 
+                <p class="text-right pt-14-100 mb-28" style="color: #aaa;"><?php the_field('contenido-dtl'); ?></p> 
               </div>
 						<?php endwhile; ?>
 					<?php endif; ?>                 
