@@ -98,7 +98,7 @@
 			if ( version_compare( $installed_version, '1.5', '<=' ) ){
 				$default_options = get_option( 'yop_poll_options' );
 				if ( !isset ( $default_options ['vote_button_label'] ) ){
-					$default_options ['vote_button_label'] = 'Vote';
+					$default_options ['vote_button_label'] = 'Vota';
 				}
 				update_option( "yop_poll_version", $wpdb->yop_poll_version );
 				update_option( 'yop_poll_options', $default_options );
