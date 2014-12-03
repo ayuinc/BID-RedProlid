@@ -137,7 +137,7 @@ get_header(); ?>
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
                         <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
                       </div>
                     </li>
@@ -146,7 +146,7 @@ get_header(); ?>
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
                         <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
                       </div>
                     </li>
@@ -155,7 +155,7 @@ get_header(); ?>
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae, corporis quasi dolor ipsum totam praesentium eos eveniet veniam explicabo doloremque dolorum, nemo doloribus rerum ab velit alias.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
                         <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
                       </div>
                     </li>
