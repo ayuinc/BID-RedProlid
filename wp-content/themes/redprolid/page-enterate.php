@@ -13,7 +13,7 @@ get_header(); ?>
     <style>
       .carousel-control .icon-prev:before,
       .carousel-control .icon-next:before {
-        content: '\2039' !important;
+        content: '\2039';
         border-radius: 50%;
         background: #fff;
         width: 42px !important;
