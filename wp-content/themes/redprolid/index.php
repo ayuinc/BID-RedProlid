@@ -26,7 +26,7 @@ get_header(); ?>
                 <!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-slider.png" class="img-responsive">-->
                 <?php echo do_shortcode("[huge_it_slider id='1']"); ?>
               </div>
-              <h3 class="text-center lh-xl"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h3>
+              <h3 class="text-center lh-xl"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light" style="color: #aaa;">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h3>
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@ get_header(); ?>
             </div>
             <div class="panel-body panel-body-shadow pl-7 pr-14">
               <div class="col-sm-3 pt-0">
-                <p class="light">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
+                <p class="light" style="color: #aaa;">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
                 <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo" class="btn btn-primary">Más aquí</a>
               </div>
               <div class="col-sm-1"></div>
@@ -62,7 +62,7 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      <section>
+      <section >
         <div class="container">
           <div class="row">
             <div class="col-md-3">
@@ -80,9 +80,8 @@ get_header(); ?>
                   <div class="col-sm-12">
                     <img src="<?php the_field('imagen_concurso'); ?>" alt="" class="img-responsive">
                     <h5><?php the_title(); ?></h5>
-                    <!--<small class="help-block"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_concurso'));
-echo $date->format('d-m-Y'); ?></small>-->
-                    <p><?php the_field('descripcion_concurso'); ?></p>
+                    <!--<small class="help-block"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_concurso')); echo $date->format('d-m-Y'); ?></small>-->
+                    <p class="text-gray"><?php the_field('descripcion_concurso'); ?></p>
                     <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Más información</a></div>
                   </div>
                   <?php endwhile; ?>
@@ -129,12 +128,12 @@ echo $date->format('d-m-Y'); ?></small>-->
 									<?php while ( have_posts() ) : the_post(); ?>  
                   <div class="col-sm-12">
                     <div class="events-calendar-placeholder">
-                      <div class="day"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
-echo $date->format('D'); ?></div>
+                      <div class="day"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento')); 
+                      echo $date->format('D'); ?></div>
                       <div class="day-num"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
-echo $date->format('d'); ?></div>
+                      echo $date->format('d'); ?></div>
                       <div class="month"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
-echo $date->format('M'); ?></div>
+                      echo $date->format('M'); ?></div>
                     </div>
                     <h5 class=""><?php the_title(); ?></h5>
                     <p class=""><?php the_field('descripcion_evento'); ?></p>
@@ -144,7 +143,7 @@ echo $date->format('M'); ?></div>
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div id="opinion" class="col-md-3">
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
@@ -173,21 +172,22 @@ echo $date->format('M'); ?></div>
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
-                    <li class="title">Puntos de vista</li>
-                    <li class="rule"></li>
-                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
+                    <li class="title pt-7">Puntos de vista</li>
+                    <li class="rule relative" style="top: 22px;"></li>
+                    <li class="icon" style="top: 1px; background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
                   </ul>
                 </div>
                 <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                      
-                <div class="panel-body">               
+                <div class="panel-body p-0">               
                   <div class="col-sm-5">
                     <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
                   </div>
                   <div class="col-sm-7">
+
                     <h4 class="pt-0"><?php the_title(); ?><br><small><?php the_field('profesion'); ?></small></h4>
-                    
-                    <p class="light"><?php the_field('descripcion_punto_de_vista'); ?></p>
+                    <p class="light lh-lg" style="color: #aaa;"><?php the_field('descripcion_punto_de_vista'); ?></p>
+
                     <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee aquí</a></div>
                   </div>
                 </div>
@@ -195,17 +195,17 @@ echo $date->format('M'); ?></div>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="panel panel-custom panel-highlight">
-                <div class="panel-heading">
-                  <ul class="list-unstyled">
-                    <li class="title">Campeonas</li>
-                    <li class="rule"></li>
-                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
-                  </ul>
-                </div>
+              <div class="panel panel-custom panel-highlight">               
                 <?php query_posts( 'category_name=campeonas&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                   
-                <div class="panel-body">
+                <div class="panel-body pt-7">
+                  <div class="panel-heading">
+                    <ul class="list-unstyled m-0">
+                      <li class="title pl-7 pt-0" style="background:#ebeade;">Campeonas</li>
+                      <li class="rule relative" style="top: 19px;"></li>
+                      <li class="icon" style="top: -7px; background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
+                    </ul>
+                  </div>
                   <div class="col-sm-5">
                     <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
                   </div>
@@ -257,14 +257,14 @@ echo $date->format('M'); ?></div>
             </div>
             <div class="col-md-9">
               <div class="panel panel-custom panel-highlight">
-                <div class="panel-heading">
-                  <ul class="list-unstyled">
-                    <li class="title">Lo último en las redes</li>
-                    <li class="rule"></li>
-                    <li class="icon icon-lg" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid-social.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
-                  </ul>
-                </div>
-                <div class="panel-body">
+                <div class="panel-body pt-0">
+                  <div class="panel-heading">
+                    <ul class="list-unstyled m-0">
+                      <li class="title pl-14" style="background:#ebeade; padding-top: 12px">Lo último en las redes</li>
+                      <li class="rule relative" style="top: 27px;"></li>
+                      <li class="icon icon-lg" style="top: 1px; background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid-social.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+                    </ul>
+                  </div>                
                   <div class="col-sm-4">
                   	<div class="fb-like-box" data-width="250" data-height="520" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
                   </div>

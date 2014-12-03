@@ -29,3 +29,15 @@
 		font-size: rem(21);
 	}
 }
+
+#opinion {
+	.panel {
+		.panel-body {
+			.panel-lost {
+				.yop-poll-answers li:nth-child(6) {
+					display: none;
+				}
+			}
+		}	
+	}	
+}
