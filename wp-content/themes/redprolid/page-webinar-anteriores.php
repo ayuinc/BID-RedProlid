@@ -10,7 +10,7 @@ get_header(); ?>
     
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
-    <div class="mh-700">
+    <!-- <div class="mh-700">
       <section>
         <div class="container relative bg-panel pv-14">
           <h1 class="mb-7-100">Webinarios anteriores</h1>
@@ -68,6 +68,39 @@ get_header(); ?>
           </div>
         </div>
       </section>
-    </div>
+    </div> -->
+
+  <div class="mh-700">
+    <section id="puntos-de-vista-anteriores">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-md-offset-1 mt-35 mb-35">
+            <h1>Webinarios Anteriores</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container grid-block-lg">
+        <div class="row">
+          <div class="col-sm-10 col-md-offset-1">
+            <?php query_posts( 'category_name=webinario' ); ?> 
+            <?php while ( have_posts() ) : the_post(); ?>
+              <div class="title">
+                <h3><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+              </div>
+              <div class="content mb-70">
+                <?php echo get_post_field('post_content', get_the_ID()); ?>
+              </div>
+            <?php endwhile; ?>
+            <div class="text-center">
+              <ul class="pager">
+                <li><a href="#">Previos</a></li>
+                <li><a href="#">Siguiente</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>          
+      </div>
+    </section>
+  </div>
 
 <?php get_footer(); ?>
