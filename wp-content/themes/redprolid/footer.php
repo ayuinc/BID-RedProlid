@@ -152,6 +152,7 @@
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/vendor/jquery-2.1.1.min.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/bid.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/transition.js"></script>
+    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/carousel.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/modal.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/src/custom.js"></script>
     
