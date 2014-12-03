@@ -16,11 +16,15 @@ get_header(); ?>
         content: '\2039';
         border-radius: 50%;
         background: #fff;
-        width: 42px !important;
+        width: 45px !important;
         display: inline-block;
+        height: 45px;
       }
       .carousel-control .icon-next:before{
         content: '\203a';
+      }
+      .carousel-control {
+        left: -29px;
       }
     </style>
     <div class="mh-700">
