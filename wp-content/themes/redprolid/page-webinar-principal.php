@@ -22,7 +22,7 @@ get_header(); ?>
                 <nav class="text-right">
                   <div class="row">
                     <div class="col-sm-6">
-                        <a href="#" class="">¿Quieres proponernos un tema?</a> 
+                      <a href="#" data-toggle="modal" data-target="#pdv-modal">¿Quieres proponernos un tema?</a>
                     </div>
                     <div class="col-sm-6">
                         <a href="<?php echo home_url('/'); ?>webinarios-anteriores" class="">Webinarios anteriores</a> 
