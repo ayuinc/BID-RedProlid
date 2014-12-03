@@ -68,101 +68,96 @@ get_header(); ?>
 			width:150px;
 	  }
 	  #wppb-form-element-2 label {
-	  	width: 202px;
-			margin-left: 87px;
+	  	width: 37%;
+			margin-left: 4%;
 	  }
 	  #wppb-form-element-2 input {
-	  	width: 295px;
+	  	width: 58%;
 			box-shadow: inset -2px 5px 17px #eee;
 	  }
 	  #wppb-form-element-3 label {
-	  	width: 54px;
-			margin-left: 228px;
-			margin-right: 6px;
+	  	width: 11%;
+			margin-left: 30%;
 	  } 
 	  #wppb-form-element-3 input {
-	  	width: 296px;
+	  	width: 58%;
 			box-shadow: inset -2px 5px 17px #eee;
 	  }
 	  #wppb-form-element-4 label {
-	  	width: 58px;
-			margin-left: 230px;
+	  	width: 11%;
+			margin-left: 30%;
 	  }
 	  #wppb-form-element-4 input {
-	  	width: 296px;
+	  	width: 58%;
 			box-shadow: inset -2px 5px 17px #eee;
 	  }
 	  #wppb-form-element-8 label {
-	  	width: 53px;
-			margin-left: 236px;
+	  	width: 11%;
+			margin-left: 30%;
 	  }
 	  #wppb-form-element-8 input {
-	  	width: 296px;
+	  	width: 58%;
 			box-shadow: inset -2px 5px 17px #eee;
 	  }
 	  #wppb-form-element-12 label {
-	  	width: 82px;
-			margin-left: 202px;
+	  	width: 11%;
+			margin-left: 24%;
 	  }
 	  #wppb-form-element-12 input {
-	  	width: 296px;
+	  	width: 58%;
 			box-shadow: inset -2px 5px 17px #eee;
 	  }
-	  #wppb-form-element-12 span {
-	  	margin-left: 291px;
+	  #wppb-form-element-12 .wppb-description-delimiter {
+	  	margin-left: 42%;
 	  }
 	  #wppb-form-element-13 label {
-	  	width: 148px;
-			margin-left: 142px;
+	  	width: 29%;
+			margin-left: 59px;
 	  }
 	  #wppb-form-element-13 input {
-	  	width: 296px;
+	  	width: 58%;
 			box-shadow: inset -2px 5px 17px #eee;
 	  }
 	  #wppb-form-element-14 {
-	  	margin-left: 239px;
+	  	margin-left: 30%
 	  }
 	  #wppb-form-element-14 label {
-	  	width: 46px;
+	  	width: 16%;
 			float: left;
-			margin-left: 10px;
-	  }
-	  #wppb-form-element-14 .wppb-radios li {
-	  	float: left;
 	  }
 	  #wppb-form-element-15 label {
-	  	width: 42px;
-			margin-left: 248px;
+	  	width: 10%;
+			margin-left: 31%
 	  }
 	  #wppb-form-element-15 select {
-	  	width: 296px;
+	  	width: 58%;
 			box-shadow: inset -2px 5px 17px #eee;
 	  }
 	  #wppb-form-element-16 {
-	  		margin-left: 209px;
+	  		margin-left: 23%;
 	  }
 	  #wppb-form-element-16 label {
-	  		width: 81px;
+	  	width: 23%;
 	  }
 	  #wppb-form-element-16 select {
-	  	width: 296px;
-			box-shadow: inset -2px 5px 17px #eee;
+	  	width: 75%;			
+	  	box-shadow: inset -2px 5px 17px #eee;
 	  }
 	  #wppb-form-element-17 {
-	  	margin-left: 187px;
+	  	margin-left: 20%;
 	  }
 	  #wppb-form-element-17 label {
-	  	width: 103px;
+	  	width: 26%;
 	  }
 	  #wppb-form-element-17 select {
-	  	width: 296px;
+	  	width: 71%;
 			box-shadow: inset -2px 5px 17px #eee;
 	  }
 	  .wppb-send-credentials-checkbox label {
-	  	margin-left: 286px;
+	  	margin-left: 40%;
 	  }
 	  .form-submit #register {
-	  	margin-left: 442px;
+	  	margin-left: 71%;
 	  }
 
   </style>
@@ -181,12 +176,15 @@ get_header(); ?>
 		  <div class="container-fluid text-justify with-hr pb-70">
 			  <div class="row">
 					<div class="col-sm-11 col-md-offset-1">  	  
-			      <div class="row mt-35">
-				      <div class="col-sm-6 formulario-perfil">
+			      <div class="row mt-21">
+				      <div class="col-sm-6 formulario-perfil mt-35">
 					      <h3 class="light text-left">Crea tu perfil ahora incluyendo los siguientes datos</h3>
 				      	<?php the_content(); ?>
 				      </div>
-				      <div class="col-sm-6">
+				      <div class="col-sm-1 pt-7">
+				      	<img src="http://redprolid.org/wp-content/themes/redprolid/assets/icons/division-02.png" alt="" style="width:50px">
+				      </div>
+				      <div class="col-sm-5 mt-35">
 					      <h3 class="light text-left">Ingresa Utilizando las redes sociales</h3>
 					      <p class="mt-70"><?php do_action( 'wordpress_social_login' ); ?></p>
 				      </div>			      
