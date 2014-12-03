@@ -114,7 +114,7 @@ get_header(); ?>
                       <?php query_posts( array( 'category_name' => 'noticias', 'posts_per_page' => 3 ) ); ?>
 											<?php while ( have_posts() ) : the_post(); ?>
 				                  <li>
-			                      <div class="p-14 bg-white">
+			                      <div class="p-14 bg-white" style="border:1px solid #B8B8B8;">
 			                      	<?php if( get_field('imagen_noticias') ) { ?>
 				                        <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
 															<?php } else {?>
