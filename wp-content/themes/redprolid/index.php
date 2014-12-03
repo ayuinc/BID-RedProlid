@@ -82,7 +82,7 @@ get_header(); ?>
                     <h5><?php the_title(); ?></h5>
                     <!--<small class="help-block"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_concurso')); echo $date->format('d-m-Y'); ?></small>-->
                     <p class="text-gray"><?php the_field('descripcion_concurso'); ?></p>
-                    <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Más información</a></div>
+                    <div class="text-right mt-56"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Más información</a></div>
                   </div>
                   <?php endwhile; ?>
                 </div>
@@ -137,7 +137,7 @@ get_header(); ?>
                     </div>
                     <h5 class=""><?php the_title(); ?></h5>
                     <p class=""><?php the_field('descripcion_evento'); ?></p>
-                    <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Ve más</a></div>
+                    <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary"  style="margin-top: 4px;">Ve más</a></div>
                   </div>
                   <?php endwhile; ?>
                 </div>

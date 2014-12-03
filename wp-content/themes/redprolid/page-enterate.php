@@ -10,7 +10,16 @@ get_header(); ?>
     
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
-
+    <style>
+      .carousel-control .icon-prev:before,
+      .carousel-control .icon-next:before {
+        content: '\2039';
+        border-radius: 50%;
+        background: #fff;
+        width: 42px !important;
+        display: inline-block;
+      }
+    </style>
     <div class="mh-700">
       <section>
         <div class="container relative mh-140">
