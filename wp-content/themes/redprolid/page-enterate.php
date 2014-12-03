@@ -120,7 +120,7 @@ get_header(); ?>
 															<?php } else {?>
 			                        	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
 															<?php } ?>
-			                        <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="h4 block mb-0"><?php the_title(); ?></a>
+			                        <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="h4 block mb-0" style="color:#ed7133;"><?php the_title(); ?></a>
 			                        <span class="help-block mt-0"><?php echo get_the_date(); ?></span>
 			                        <p><?php the_field('descripcion_rapida_noticias');?></p>
 			                        <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="see-more">Ve más</a></div>
@@ -133,7 +133,7 @@ get_header(); ?>
                     <li>
                       <div class="p-14 bg-white">
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <a href="#" class="h4 block mb-0" style="color:#ed7133;">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
                         <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
@@ -142,7 +142,7 @@ get_header(); ?>
                     <li>
                       <div class="p-14 bg-white">
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <a href="#" class="h4 block mb-0" style="color:#ed7133;">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
                         <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
@@ -151,7 +151,7 @@ get_header(); ?>
                     <li>
                       <div class="p-14 bg-white">
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
-                        <a href="#" class="h4 block mb-0">Lorem ipsum dolor sit amet</a>
+                        <a href="#" class="h4 block mb-0" style="color:#ed7133;">Lorem ipsum dolor sit amet</a>
                         <span class="help-block mt-0">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
                         <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
