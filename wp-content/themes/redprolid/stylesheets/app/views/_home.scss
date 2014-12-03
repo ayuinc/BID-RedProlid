@@ -36,6 +36,15 @@
 			.panel-custom {
 			height: 1200px !important;
 			}
+			&.eventos {
+				.panel-body {
+					p {
+						.event-des {
+							line-height: 1rem !important;
+						}
+					}
+				}
+			}
 		}
 	}
 	#opinion {
