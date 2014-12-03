@@ -29,11 +29,11 @@ get_header(); ?>
         </div>
         <div class="container with-shadow">
           <ul class="grid-list grid-list-centered grid-list-5 text-center">
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-1.png" alt=""><p style="color:##C4C09C">De dónde podrás encontrar todos los recursos y artículos</p></li>
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2.png" alt=""><p style="color:##C4C09C">De las noticias y de los eventos que no podrás perderte </p></li>
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3.png" alt=""><p style="color:##C4C09C">De lo que otras mujeres, con intereses similares, piensan</p></li>
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt=""><p style="color:##C4C09C">De diversos videos que podrás ver y compratir</p></li>
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5.png" alt=""><p style="color:##C4C09C">De cómo estar conectada con lo que pasa en la Red PROLID</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-1.png" alt=""><p style="color:#C4C09C">De dónde podrás encontrar todos los recursos y artículos</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2.png" alt=""><p style="color:#C4C09C">De las noticias y de los eventos que no podrás perderte </p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3.png" alt=""><p style="color:#C4C09C">De lo que otras mujeres, con intereses similares, piensan</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt=""><p style="color:#C4C09C">De diversos videos que podrás ver y compratir</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5.png" alt=""><p style="color:#C4C09C">De cómo estar conectada con lo que pasa en la Red PROLID</p></li>
           </ul>
           <p class="lead">Imagina esta sección como una biblioteca en la que almacenamos todo tipo de recursos de nuestra red:  libros, legislación, investigaciones, blogs y noticias, al igual que material audiovisual como entrevistas o vídeos. Queremos también incluir material eminentemente práctico como compendios de buenas prácticas, guías para las mujeres en el sector público o estudios de casos concretos. Aspiramos a que aquí puedas encontrar todo lo que puede serte útil en el desarrollo y fortalecimiento de tu liderazgo en el sector público y la política.</p>
         </div>
