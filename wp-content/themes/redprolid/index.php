@@ -184,10 +184,8 @@ get_header(); ?>
                     <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
                   </div>
                   <div class="col-sm-7">
-
                     <h4 class="pt-0"><?php the_title(); ?><br><small><?php the_field('profesion'); ?></small></h4>
                     <p class="light lh-lg" style="color: #aaa;"><?php the_field('descripcion_punto_de_vista'); ?></p>
-
                     <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee aquí</a></div>
                   </div>
                 </div>

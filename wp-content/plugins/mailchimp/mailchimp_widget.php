@@ -79,6 +79,7 @@ function mailchimpSF_signup_form($args = array()) {
 	}
 	.mc_input.mc_phone {
 		width: auto;
+		border:1px solid #CCC;
 	}
 	select.mc_select {
 		margin-top: 0.5em;
@@ -181,7 +182,7 @@ function mailchimpSF_signup_form($args = array()) {
 		if ($num_fields > 1) {
 			?>
 			<div id="mc-indicates-required">
-				* = <?php esc_html_e('required field', 'mailchimp_i18n'); ?>
+				* = <?php esc_html_e('Campo Obligatorio', 'mailchimp_i18n'); ?>
 			</div><!-- /mc-indicates-required -->
 			<?php
 		}
@@ -235,7 +236,7 @@ function mailchimpSF_signup_form($args = array()) {
 
 		$submit_text = get_option('mc_submit_text');
 		if (!$submit_text && MAILCHIMP_DEV_MODE == true) {
-			$submit_text = apply_filters( 'mailchimp_dev_mode_submit_text', 'Subscribe' );
+			$submit_text = apply_filters( 'mailchimp_dev_mode_submit_text', 'Subscribete' );
 		}
 
 		?>
@@ -261,7 +262,7 @@ function mailchimpSF_signup_form($args = array()) {
 			?>
 			<br/>
 			<div id="mc_display_rewards" align="center">
-				<?php esc_html_e('powered by', 'mailchimp_i18n'); ?> <a href="<?php echo esc_url('http://www.mailchimp.com/affiliates/?aid='.$user['user_id'].'&amp;afl=1'); ?>">MailChimp</a>!
+				<?php //esc_html_e('powered by', 'mailchimp_i18n'); ?> <!--<a href="<?php //echo esc_url('http://www.mailchimp.com/affiliates/?aid='.$user['user_id'].'&amp;afl=1'); ?>">MailChimp</a>!-->
 			</div><!-- /mc_display_rewards -->
 			<?php
 		}

@@ -16,7 +16,7 @@ foreach( $customposts as $post ) :  // start you custom loop
     <div class="title">
     <h3><?php the_title(); ?></h3>
     <p>
-	  FUENTE:<?php the_field('fuente-debates'); ?>
+	  FUENTE: <?php the_field('fuente-debates'); ?>
     <?php $blog = get_field('blog-debates'); ?>
 	  <?php if ($blog!='') { ?>  
         <a href="<?php the_field('url'); ?>"><?php the_field('blog-debates'); ?></a>
