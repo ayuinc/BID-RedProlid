@@ -4,4 +4,5 @@ $(document).ready(function(){
   $(".yop-poll-question").addClass("text-white text-center p-14");
   $(".yop-poll-container").removeClass("box-shadow");
   $(".front-list").addClass("list-unstyled");
+  $("button[id^='yop_poll_vote-button-3']").html("Vota")
 });
