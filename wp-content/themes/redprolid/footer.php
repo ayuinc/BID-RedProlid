@@ -55,6 +55,46 @@
         <p class="text-muted m-0">2014. Todos los derechos reservados</p>
       </div>
     </section>
+    <!-- MODAL -->
+    <div class="modal fade" id="pdv-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="panel panel-custom panel-highlight">
+              <div class="panel-body pl-14 pr-14 pt-7">
+                <div class="row pr-21 mb-21">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                </div>
+                <div class="row">
+                  <div class="col-sm-1">
+                    <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-topic-icon.png" alt="">
+                  </div>
+                  <div class="col-sm-11">
+                    <?php 
+                      if ( is_user_logged_in() ) {
+
+
+                      } else {
+
+                      }
+                    ?>
+                    <nav class="text-right"><a href="#">Iniciar sesión</a> / <a href="#">Registrarse</a></nav>
+                    <hr class="m-0" style="border-top: 3px dotted #aeab8b;">
+                  </div>
+                </div>
+                <div class="grid-block row">
+                  <div class="col-sm-6">
+                    <p>Adjuntar: <a href="#">O</a></p>
+                  </div>
+                  <div class="col-sm-6"></div>
+                </div>
+                <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 2 ); } ?>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
