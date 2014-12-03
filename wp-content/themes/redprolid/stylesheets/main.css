@@ -4100,7 +4100,7 @@ form.search button {
 
 #widgets .container .row .col-md-3 .panel-custom {
   height: 1200px !important; }
-#widgets .container .row .col-md-3.eventos .panel-body p .event-des {
+#widgets .container .row .col-md-3.eventos .panel-body p.event-des {
   line-height: 1rem !important; }
 #widgets #opinion .panel .panel-body .panel-lost .yop-poll-answers li:nth-child(6) {
   display: none; }
