@@ -97,7 +97,7 @@ get_header(); ?>
               </ul>
               <a href="<?php echo home_url('/'); ?>noticias" class="see-more">Todas las noticias</a>
             </div>
-            <div class="panel-body">
+            <div class="panel-body p-0 mt-42">
               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
