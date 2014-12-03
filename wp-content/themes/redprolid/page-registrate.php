@@ -176,15 +176,15 @@ get_header(); ?>
 		  <div class="container-fluid text-justify with-hr pb-70">
 			  <div class="row">
 					<div class="col-sm-11 col-md-offset-1">  	  
-			      <div class="row mt-35">
-				      <div class="col-sm-6 formulario-perfil">
+			      <div class="row mt-21">
+				      <div class="col-sm-6 formulario-perfil mt-35">
 					      <h3 class="light text-left">Crea tu perfil ahora incluyendo los siguientes datos</h3>
 				      	<?php the_content(); ?>
 				      </div>
-				      <div class="col-sm-1">
+				      <div class="col-sm-1 pt-7">
 				      	<img src="http://redprolid.org/wp-content/themes/redprolid/assets/icons/division-02.png" alt="" style="width:50px">
 				      </div>
-				      <div class="col-sm-5">
+				      <div class="col-sm-5 mt-35">
 					      <h3 class="light text-left">Ingresa Utilizando las redes sociales</h3>
 					      <p class="mt-70"><?php do_action( 'wordpress_social_login' ); ?></p>
 				      </div>			      
