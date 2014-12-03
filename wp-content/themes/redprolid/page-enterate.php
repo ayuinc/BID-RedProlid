@@ -183,14 +183,14 @@ get_header(); ?>
               <a href="<?php echo home_url('/'); ?>eventos" class="see-more">Eventos aquí</a>
             </div>
             <div class="panel-body" style="padding: 0; margin: 21px 0;">
-              <div class="col-sm-2"></div>
+            <!-- Start the Loop. -->
+            <?php if ( have_posts() ) : ?>
+              <?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 1 ) ); ?>
+              <?php while ( have_posts() ) : the_post(); ?>
+                <?php $tempDate = get_field('fecha_evento'); ?>
+              <div class="col-sm-2"><?php the_field('imagen_evento');?></div>
               <div class="col-sm-10">
                 <div class="row">
-                	<!-- Start the Loop. -->
-									<?php if ( have_posts() ) : ?>
-										<?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 1 ) ); ?>
-										<?php while ( have_posts() ) : the_post(); ?>
-											<?php $tempDate = get_field('fecha_evento'); ?>
 		                  <div class="col-sm-6">
 		                    <ul class="flex flex-row flex-space-between normalize-text ph-ch-7">
 		                      <li>
@@ -220,10 +220,11 @@ get_header(); ?>
 		                      </div>
 		                    </div>
 		                  </div>
-				            <?php endwhile; ?>
-									<?php endif; ?>       
+				                 
                 </div>
               </div>
+              <?php endwhile; ?>
+                  <?php endif; ?>  
             </div>
           </div>
         </div>
