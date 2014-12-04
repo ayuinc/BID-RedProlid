@@ -66,7 +66,7 @@
 
         <?php foreach ($comments as $comment) : ?>
         <?php $comm_post_id = $comment->comment_post_ID; ?>
-        <?php  if (!in_category("puntos-de-vista", $comm_post_id)){ ?>
+        <?php  if (in_category("puntos-de-vista", $comm_post_id)){ ?>
 
             <li><a href="<?php echo get_permalink( $comm_post_id ); ?>"><?php echo($comment->comment_content);?></a>/ <?php echo($comment->comment_author);?></li>          
 
