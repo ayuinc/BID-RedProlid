@@ -3971,6 +3971,8 @@ form.search button {
 
 .panel.panel-custom {
   min-height: 210px; }
+  .panel.panel-custom.highlight {
+    background: #ebeade; }
   .panel.panel-custom .panel-heading {
     height: 77px; }
     .panel.panel-custom .panel-heading ul {
@@ -4013,6 +4015,8 @@ form.search button {
       box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.3); }
     .panel.panel-custom .panel-body.highlight {
       background: #ebeade; }
+    .panel.panel-custom .panel-body.tall {
+      height: 610px !important; }
   .panel.panel-custom .panel-footer {
     padding-bottom: 14px; }
     .panel.panel-custom .panel-footer.highlight {

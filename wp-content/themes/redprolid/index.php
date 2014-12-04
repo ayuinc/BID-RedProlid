@@ -202,10 +202,10 @@ get_header(); ?>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="panel panel-custom panel-highlight">               
+              <div class="panel panel-custom">               
                 <?php query_posts( 'category_name=campeonas&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                   
-                <div class="panel-body pt-7">
+                <div class="panel-body highlight pt-7">
                   <div class="panel-heading">
                     <ul class="list-unstyled m-0">
                       <li class="title pl-7 pt-0" style="background:#ebeade;">Campeonas</li>
@@ -220,8 +220,10 @@ get_header(); ?>
                     <h4><?php the_title(); ?></h4>
                     <h5><?php the_field('posicion_campeona'); ?></h5>
                     <p class="light-italic"><?php the_field('descripcion_campeona'); ?></p>
-                    <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Entrevista completa</a></div>
                   </div>
+                </div>
+                <div class="panel-footer highlight">
+                  <div class="pr-14 text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Entrevista completa</a></div>
                 </div>
                 <?php endwhile; ?>
               </div>
@@ -263,8 +265,8 @@ get_header(); ?>
               </div>
             </div>
             <div class="col-md-9">
-              <div class="panel panel-custom panel-highlight">
-                <div class="panel-body pt-0">
+              <div class="panel panel-custom highlight">
+                <div class="panel-body tall pt-0">
                   <div class="panel-heading">
                     <ul class="list-unstyled m-0">
                       <li class="title pl-14" style="background:#ebeade; padding-top: 12px">Lo último en las redes</li>

@@ -1,6 +1,9 @@
 .panel {
 	&.panel-custom {
 		min-height: 210px;
+		&.highlight {
+			background: $panel-bg;
+		}
 		.panel-heading,
 		.panel-body,
 		.panel-footer {
@@ -55,6 +58,9 @@
 			}
 			&.highlight {
 				background: $panel-bg;
+			}
+			&.tall {
+				height: 610px !important;
 			}
 		}
 		.panel-footer {
