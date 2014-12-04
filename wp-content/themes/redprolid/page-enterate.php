@@ -45,9 +45,9 @@ get_header(); ?>
         </div>
         <div class="container with-shadow">
           <ul class="grid-list grid-list-centered grid-list-5 text-center">
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-1.png" alt=""><p style="color:#C4C09C">De dónde podrás encontrar todos los recursos y artículos</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-1.png" alt=""><p style="color:#C4C09C">De dónde podrásencontrar todos los recursos y artículos</p></li>
             <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2.png" alt=""><p style="color:#C4C09C">De las noticias y de los eventos que no podrás perderte </p></li>
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3.png" alt=""><p style="color:#C4C09C">De lo que otras mujeres, con intereses similares, piensan</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3.png" alt=""><p style="color:#C4C09C">De lo que otras mujeres, con intereses similares a los tuyos, piensan</p></li>
             <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt=""><p style="color:#C4C09C">De diversos videos que podrás ver y compratir</p></li>
             <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5.png" alt=""><p style="color:#C4C09C">De cómo estar conectada con lo que pasa en la Red PROLID</p></li>
           </ul>
