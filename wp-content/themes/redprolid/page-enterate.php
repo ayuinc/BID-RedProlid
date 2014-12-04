@@ -275,7 +275,7 @@ get_header(); ?>
 			                      </div>
 			                    </div>
 			                    <div class="col-sm-6 pl-0-sm pr-0 text-right">
-			                      <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive">
+			                      <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive" style="width: 100%;">
 			                    </div>
 					            <?php endwhile; ?>
 										<?php endif; ?> 
