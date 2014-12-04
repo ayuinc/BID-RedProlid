@@ -4098,6 +4098,8 @@ form.search button {
   height: 400px !important; }
 #widgets #opinion .panel .panel-body .panel-lost .yop-poll-answers li:nth-child(6) {
   display: none; }
+#widgets #opinion .panel .panel-body .panel-lost div[id^="yop-poll-results-3"] {
+  display: none !important; }
 
 .red-prolid-grid:before, .red-prolid-grid:after {
   content: " ";
@@ -4152,6 +4154,9 @@ form.search button {
 
 .text-brown {
   color: #c4c09c; }
+
+.text-size {
+  font-size: 5.57143rem !important; }
 
 .dtl-content p {
   line-height: 28px;
