@@ -74,7 +74,7 @@
 
             <li><a href="<?php echo get_permalink( $comm_post_id ); ?>"><?php echo($comment->comment_content);?></a>/ <?php echo($comment->comment_author);?></li>          
 
-        <?php endif ?>
+        <?php endif; ?>
           
         <?php endforeach;?>
         </ul>
