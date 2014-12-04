@@ -143,7 +143,7 @@ get_header(); ?>
                       <div class="month"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
                       echo $date->format('M'); ?></div>
                     </div>
-                    <h5 class=""><?php the_title(); ?></h5>
+                    <h5><?php the_title(); ?></h5>
                     <p class="event-des"><?php the_field('descripcion_evento'); ?></p>
                     <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary"  style="margin-top: 4px;">Ve más</a></div>
                   </div>
