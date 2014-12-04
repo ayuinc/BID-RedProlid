@@ -37,7 +37,7 @@ get_header(); ?>
                             <strong><?php echo $date; ?></strong><ol start = "<?php echo $nextpost; ?>">
                             <?php $current_date=$date;
                        endif; ?>
-                       <li><?php the_title(); ?> &bull; <a href = "<?php the_permalink(); ?>">link</a></li>
+                       <li><a href = "<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
                   <?php endforeach; wp_reset_postdata(); ?>
                   </ol>
 	              </div>
