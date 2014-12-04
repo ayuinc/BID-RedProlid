@@ -5,4 +5,6 @@ $(document).ready(function(){
   $(".yop-poll-container").removeClass("box-shadow");
   $(".front-list").addClass("list-unstyled");
   $("button[id^='yop_poll_vote-button-3']").html("Vota")
+  var votaButton = $("div[id^='yop_poll_vote-button-3']");
+  votaButton.addClass("custom-vote");
 });
