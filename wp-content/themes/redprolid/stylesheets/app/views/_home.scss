@@ -39,7 +39,7 @@
 			&.eventos {
 				.panel-body {
 					p {
-						.event-des {
+						&.event-des {
 							line-height: 1rem !important;
 						}
 					}
