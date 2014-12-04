@@ -45,13 +45,13 @@ get_header(); ?>
         </div>
         <div class="container with-shadow">
           <ul class="grid-list grid-list-centered grid-list-5 text-center">
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-1.png" alt=""><p style="color:#C4C09C">De dónde podrás encontrar todos los recursos y artículos</p></li>
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2.png" alt=""><p style="color:#C4C09C">De las noticias y de los eventos que no podrás perderte </p></li>
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3.png" alt=""><p style="color:#C4C09C">De lo que otras mujeres, con intereses similares, piensan</p></li>
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt=""><p style="color:#C4C09C">De diversos videos que podrás ver y compratir</p></li>
-            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5.png" alt=""><p style="color:#C4C09C">De cómo estar conectada con lo que pasa en la Red PROLID</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-1.png" alt=""><p style="color:#C4C09C" class="pl-21 pr-21">De dónde podrás encontrar todos los recursos y artículos</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2.png" alt=""><p style="color:#C4C09C" class="pl-21 pr-21">De las noticias y de los eventos que no podrás perderte </p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3.png" alt=""><p style="color:#C4C09C" class="pl-14 pr-14">De lo que otras mujeres, con intereses similares a los tuyos, piensan</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt=""><p style="color:#C4C09C" class="pl-35 pr-35">De diversos videos que podrás ver y compratir</p></li>
+            <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5.png" alt=""><p style="color:#C4C09C" class="pl-14 pr-14">De cómo estar conectada con lo que pasa en la Red PROLID</p></li>
           </ul>
-          <p class="lead">Imagina esta sección como una biblioteca en la que almacenamos todo tipo de recursos de nuestra red:  libros, legislación, investigaciones, blogs y noticias, al igual que material audiovisual como entrevistas o vídeos. Queremos también incluir material eminentemente práctico como compendios de buenas prácticas, guías para las mujeres en el sector público o estudios de casos concretos. Aspiramos a que aquí puedas encontrar todo lo que puede serte útil en el desarrollo y fortalecimiento de tu liderazgo en el sector público y la política.</p>
+          <p class="lead text-gray text-justify">Imagina esta sección como una biblioteca en la que almacenamos todo tipo de recursos de nuestra red:  libros, legislación, investigaciones, blogs y noticias, al igual que material audiovisual como entrevistas o vídeos. Queremos también incluir material eminentemente práctico como compendios de buenas prácticas, guías para las mujeres en el sector público o estudios de casos concretos. Aspiramos a que aquí puedas encontrar todo lo que puede serte útil en el desarrollo y fortalecimiento de tu liderazgo en el sector público y la política.</p>
         </div>
         <div class="container">
           <div class="panel panel-custom">
@@ -67,7 +67,7 @@ get_header(); ?>
                 <div class="enterate-search bg-panel p-14">
                   <h1>Búsqueda</h1>
                   <hr class="hr-gray-light">
-                  <p class="lead">Filtra tu búsqueda y encuentra lo que necesitas:</p>
+                  <p class="lead text-gray">Filtra tu búsqueda y encuentra lo que necesitas:</p>
                   <?php get_search_form(); ?>
                   <div class="bookshelf"></div>
                 </div>
@@ -137,7 +137,7 @@ get_header(); ?>
 			                        	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
 															<?php } ?>
 			                        <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="h4 block mb-0" style="color:#ed7133;"><?php the_title(); ?></a>
-			                        <span class="help-block mt-0"><?php echo get_the_date(); ?></span>
+			                        <span class="help-block mt-0" style="color: #aaa;"><?php echo get_the_date(); ?></span>
 			                        <p><?php the_field('descripcion_rapida_noticias');?></p>
 			                        <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="see-more">Ve más</a></div>
 			                      </div>
@@ -150,7 +150,7 @@ get_header(); ?>
                       <div class="p-14 bg-white" style="border:1px solid #B8B8B8; height: 480px;">
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0" style="color:#ed7133;">Lorem ipsum dolor sit amet</a>
-                        <span class="help-block mt-0">Septiembre 08/2014</span>
+                        <span class="help-block mt-0" style="color: #aaa;">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
                         <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
                       </div>
@@ -159,7 +159,7 @@ get_header(); ?>
                       <div class="p-14 bg-white" style="border:1px solid #B8B8B8; height: 480px;">
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0" style="color:#ed7133;">Lorem ipsum dolor sit amet</a>
-                        <span class="help-block mt-0">Septiembre 08/2014</span>
+                        <span class="help-block mt-0" style="color: #aaa;">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
                         <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
                       </div>
@@ -168,7 +168,7 @@ get_header(); ?>
                       <div class="p-14 bg-white" style="border:1px solid #B8B8B8; height: 480px;">
                         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
                         <a href="#" class="h4 block mb-0" style="color:#ed7133;">Lorem ipsum dolor sit amet</a>
-                        <span class="help-block mt-0">Septiembre 08/2014</span>
+                        <span class="help-block mt-0" style="color: #aaa;">Septiembre 08/2014</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt, aliquid molestiae</p>
                         <div class="text-right"><a href="#" class="see-more">Ve más</a></div>
                       </div>
@@ -205,29 +205,29 @@ get_header(); ?>
               <?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 1 ) ); ?>
               <?php while ( have_posts() ) : the_post(); ?>
                 <?php $tempDate = get_field('fecha_evento'); ?>
-              <div class="col-sm-2"><img src="<?php the_field('imagen_evento');?>" style="width:100%"></div>
+              <div class="col-sm-2 pt-14 pl-0"><img src="<?php the_field('imagen_evento');?>" style="width:100%"></div>
               <div class="col-sm-10">
                 <div class="row">
-		                  <div class="col-sm-6">
-		                    <ul class="flex flex-row flex-space-between normalize-text ph-ch-7">
+		                  <div class="col-sm-6 p-0">
+		                    <ul class="flex flex-row flex-space-between normalize-text ph-ch-7 mt-14">
 		                      <li>
 		                        <h3 class="lh-lg"><?php the_title(); ?></h3>
 		                      </li>
-		                      <li>
+		                      <li style="border-left: 1px solid #ccc; width: 40%;">
 		                        <span><?php echo date('F', strtotime( $tempDate)); ?> <?php echo date('j', strtotime( $tempDate)); ?><br><?php echo date('g', strtotime( $tempDate)); ?> <?php echo date('a', strtotime( $tempDate)); ?> <br>Corferias, pabellón 3</span>
 		                      </li>
 		                    </ul>
-		                    <p class="mt-21"><?php the_field('descripcion_evento');?></p>
+		                    <p class="mt-21" style="color: #aaa;"><?php the_field('descripcion_evento');?></p>
 		                    <div class="text-right">
 		                      <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="see-more">Más información</a>
 		                    </div>
 		                  </div>
 		                  <div class="col-sm-6">
 		                    <div class="enterate-calendar box-shadow flex flex-row flex-space-between normalize-text">
-		                      <div class="text-center ph-14 pv-28">
+		                      <div class="text-center ph-14 pt-14">
 		                      	
-		                        <h1 class="text-panel"><?php echo date('l', strtotime( $tempDate)); ?></h1>
-		                        <h1 class="text-panel lead bold"><?php echo date('j', strtotime( $tempDate)); ?></h1>
+		                        <h1 class="text-brown"><?php echo date('l', strtotime( $tempDate)); ?></h1>
+		                        <h1 class="text-brown lead bold" style="font-size: 5.57143rem;"><?php echo date('j', strtotime( $tempDate)); ?></h1>
 		                        <h4 class="bold"><?php the_title(); ?></h4>
 		                      </div>
 		                      <div>

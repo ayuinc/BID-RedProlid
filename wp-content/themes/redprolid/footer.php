@@ -26,10 +26,10 @@
             <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-footer.png" width="322px" height="auto"></a>
           </div>
           <div class="col-md-3 text-center">
-            <a href="http://www.iadb.org/" target="_blank"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_BID-footer.png" width="145px" height="auto"></a>
+            <a href="http://www.iadb.org/" target="_blank"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_BID-footer.png" width="190px" height="auto"></a>
           </div>
         </div>
-        <div class="row mt-21">
+        <div class="row">
           <div class="col-md-3">
             <p class="text-muted">Síguenos en las redes:</p>
             <ul class="list-unstyled social-links">
@@ -41,16 +41,16 @@
           </div>
           <div class="col-md-6 text-center pt-42">
             <nav class="text-muted terms">
-              <a href="<?php echo content_url('/'); ?>politicas-de-privacidad/">Políticas de privacidad </a>
-              <a href="<?php echo content_url('/'); ?>politicas-de-cookies/"> Políticas de cookies </a>
-              <a href="<?php echo content_url('/'); ?>politicas-de-uso/"> Políticas de uso</a>
+              <a href="<?php echo content_url('/'); ?>politicas-de-privacidad/" class="text-white pr-7">Políticas de privacidad </a>
+              <a href="<?php echo content_url('/'); ?>politicas-de-cookies/" class="text-white pr-7"> Políticas de cookies </a>
+              <a href="<?php echo content_url('/'); ?>politicas-de-uso/" class="text-white pr-7"> Políticas de uso</a>
             </nav>
           </div>
           <div class="col-md-3"></div>
         </div>
       </div>
     </footer>
-    <section class="copyright bg-gray-dark">
+    <section class="copyright" style="background-color: #3c3c3c;">
       <div class="container text-center">
         <p class="text-muted m-0">2014. Todos los derechos reservados</p>
       </div>

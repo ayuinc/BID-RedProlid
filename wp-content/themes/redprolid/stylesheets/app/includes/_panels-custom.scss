@@ -1,11 +1,14 @@
 .panel {
 	&.panel-custom {
 		min-height: 210px;
+		&.highlight {
+			background: $panel-bg;
+		}
 		.panel-heading,
 		.panel-body,
 		.panel-footer {
-			@include clearfix;
-			position: relative;
+			// @include clearfix;
+			// position: relative;
 		}
 		.panel-heading {
 			height: 77px;
@@ -53,12 +56,16 @@
 			&.panel-body-shadow {
 				@include box-shadow(0px 7px 7px 0px rgba(0,0,0,0.3));
 			}
+			&.highlight {
+				background: $panel-bg;
+			}
+			&.tall {
+				height: 610px !important;
+			}
 		}
 		.panel-footer {
-
-		}
-		&.panel-highlight {
-			.panel-body {
+			padding-bottom: 14px;
+			&.highlight {
 				background: $panel-bg;
 			}
 		}
