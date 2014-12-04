@@ -62,18 +62,19 @@
         $args = array(
           'number' => '3'
         );
+        $prev_post_id = '';
         $comments = get_comments();?>
 
         <?php foreach ($comments as $comment) : ?>
           <?php   
             $comm_post_id = $comment->comment_post_ID; 
-            $cat = get_the_category( $comm_post_id );  
-            // die(print_r($cat));  
+            $cat = get_the_category( $comm_post_id );
           ?>
           <?php if ( $cat[0]->slug == "puntos-de-vista") : ?>
-
-              <li><a href="<?php echo get_permalink( $comm_post_id ); ?>"><?php echo($comment->comment_content);?></a>/ <?php echo($comment->comment_author);?></li>          
-
+            <?php if ($prev_post_id != $comm_post_id) : ?>
+              <?php $prev_post_id = $comm_post_id; ?>
+                <li><a href="<?php echo get_permalink( $comm_post_id ); ?>"><?php echo($comment->comment_content);?></a>/ <?php echo($comment->comment_author);?></li>          
+            <?php endif; ?>
           <?php endif; ?>
           
         <?php endforeach;?>
