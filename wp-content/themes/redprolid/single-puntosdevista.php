@@ -59,7 +59,7 @@
 		    <h4>Artículos comentados</h4>
 		    <ul class="grid-list grid-list-2 pb-ch-7">
         <?php
-        $category = get_the_category(get_the_ID());
+        $category = "puntos-de-vista";
         // die(print_r($category));  
         $args = array(
           'number' => '3'
@@ -70,7 +70,7 @@
           <?php   
             $comm_post_id = $comment->comment_post_ID;   
           ?>
-          <?php if ( $category[0]->slug == "puntos-de-vista") : ?>
+          <?php if ( $category == "puntos-de-vista") : ?>
 
               <li><a href="<?php echo get_permalink( $comm_post_id ); ?>"><?php echo($comment->comment_content);?></a>/ <?php echo($comment->comment_author);?></li>          
 
