@@ -68,7 +68,9 @@
 
         <?php foreach ($comments as $comment) : ?>
           <?php   
-            $comm_post_id = $comment->comment_post_ID;   
+            $comm_post_id = $comment->comment_post_ID; 
+            $cat = get_the_category( $comm_post_id );  
+            die(print_r($cat));  
           ?>
           <?php if ( $category == "puntos-de-vista") : ?>
 
