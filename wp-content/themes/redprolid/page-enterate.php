@@ -217,7 +217,7 @@ get_header(); ?>
 		                        <span><?php echo date('F', strtotime( $tempDate)); ?> <?php echo date('j', strtotime( $tempDate)); ?><br><?php echo date('g', strtotime( $tempDate)); ?> <?php echo date('a', strtotime( $tempDate)); ?> <br>Corferias, pabellón 3</span>
 		                      </li>
 		                    </ul>
-		                    <p><?php the_field('descripcion_evento');?></p>
+		                    <p class="mt-21"><?php the_field('descripcion_evento');?></p>
 		                    <div class="text-right">
 		                      <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="see-more">Más información</a>
 		                    </div>
