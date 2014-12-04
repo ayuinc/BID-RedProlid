@@ -41,9 +41,9 @@
           </div>
           <div class="col-md-6 text-center pt-42">
             <nav class="text-muted terms">
-              <a href="<?php echo content_url('/'); ?>politicas-de-privacidad/" class="text-white">Políticas de privacidad </a>
-              <a href="<?php echo content_url('/'); ?>politicas-de-cookies/" class="text-white"> Políticas de cookies </a>
-              <a href="<?php echo content_url('/'); ?>politicas-de-uso/" class="text-white"> Políticas de uso</a>
+              <a href="<?php echo content_url('/'); ?>politicas-de-privacidad/" class="text-white pr-7">Políticas de privacidad </a>
+              <a href="<?php echo content_url('/'); ?>politicas-de-cookies/" class="text-white pr-7"> Políticas de cookies </a>
+              <a href="<?php echo content_url('/'); ?>politicas-de-uso/" class="text-white pr-7"> Políticas de uso</a>
             </nav>
           </div>
           <div class="col-md-3"></div>
