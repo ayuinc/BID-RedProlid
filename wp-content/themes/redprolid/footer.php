@@ -41,16 +41,16 @@
           </div>
           <div class="col-md-6 text-center pt-42">
             <nav class="text-muted terms">
-              <a href="<?php echo content_url('/'); ?>politicas-de-privacidad/">Políticas de privacidad </a>
-              <a href="<?php echo content_url('/'); ?>politicas-de-cookies/"> Políticas de cookies </a>
-              <a href="<?php echo content_url('/'); ?>politicas-de-uso/"> Políticas de uso</a>
+              <a href="<?php echo content_url('/'); ?>politicas-de-privacidad/" class="text-white">Políticas de privacidad </a>
+              <a href="<?php echo content_url('/'); ?>politicas-de-cookies/" class="text-white"> Políticas de cookies </a>
+              <a href="<?php echo content_url('/'); ?>politicas-de-uso/" class="text-white"> Políticas de uso</a>
             </nav>
           </div>
           <div class="col-md-3"></div>
         </div>
       </div>
     </footer>
-    <section class="copyright bg-gray-dark">
+    <section class="copyright" style="background-color: #3c3c3c;">
       <div class="container text-center">
         <p class="text-muted m-0">2014. Todos los derechos reservados</p>
       </div>
