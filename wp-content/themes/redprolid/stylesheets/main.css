@@ -4098,6 +4098,8 @@ form.search button {
   height: 400px !important; }
 #widgets #opinion .panel .panel-body .panel-lost .yop-poll-answers li:nth-child(6) {
   display: none; }
+#widgets #opinion .panel .panel-body .panel-lost div[id^="yop-poll-results-3"] {
+  display: none !important; }
 
 .red-prolid-grid:before, .red-prolid-grid:after {
   content: " ";
