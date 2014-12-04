@@ -169,6 +169,9 @@ get_header(); ?>
                   </div>
                   <?php endwhile; ?>
                 </div>
+                <div class="panel-footer">
+                  <a href="http://www.redprolid.org/poll">Ver resultados ></a>
+                </div>
               </div>
             </div>
           </div>
@@ -197,9 +200,6 @@ get_header(); ?>
                     <p class="light lh-lg" style="color: #aaa;"><?php the_field('descripcion_punto_de_vista'); ?></p>
                     <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee aquí</a></div>
                   </div>
-                </div>
-                <div class="panel-footer">
-                  <a href="http://redprolid.org/poll">Ver resultados >></a>
                 </div>
                 <?php endwhile; ?>
               </div>
