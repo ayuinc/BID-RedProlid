@@ -4094,6 +4094,9 @@ form.search button {
     font-size: 1.5rem;
     text-transform: uppercase !important; }
 
+.custom-vote {
+  float: right !important; }
+
 #widgets .container .row .col-md-3 .panel-custom .panel-body {
   height: 410px !important; }
 #widgets #opinion .panel .panel-body .panel-lost .yop-poll-answers li:nth-child(6) {
