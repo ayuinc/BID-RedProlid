@@ -59,10 +59,19 @@
 		    <h4>Artículos comentados</h4>
 		    <ul class="grid-list grid-list-2 pb-ch-7">
         <?php
-        $comments = get_comments();?>
+        $args = array(
+          'number' => '3'
+        );
+        $comments = get_comments($args);?>
 
         <?php foreach ($comments as $comment) : ?>
-          <li><a href="<?php echo get_permalink( $comment->comment_post_ID ); ?>"><?php echo($comment->comment_content);?></a>/ <?php echo($comment->comment_author);?></li>          
+        <?php $comm_post_id = $comment->comment_post_ID; ?>
+        <?php  if (!in_category("puntos-de-vista", $comm_post_id)){ ?>
+
+            <li><a href="<?php echo get_permalink( $comm_post_id ); ?>"><?php echo($comment->comment_content);?></a>/ <?php echo($comment->comment_author);?></li>          
+
+        <?php } ?>
+          
         <?php endforeach;?>
         </ul>
       </div>
