@@ -17,6 +17,11 @@ get_header(); ?>
     
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
+    <style>
+      #widgets .container .row .col-md-3 .panel-custom{
+        height: inherit !important;
+      }
+    </style>
     <div class="mh-700">
       <section id="hero-unit">
         <div class="container">
