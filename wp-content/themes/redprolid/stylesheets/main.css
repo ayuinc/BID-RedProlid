@@ -4092,8 +4092,6 @@ form.search button {
 
 #widgets .container .row .col-md-3 .panel-custom .panel-body {
   height: 400px !important; }
-#widgets .container .row .col-md-3.eventos .panel-body .col-sm-12 p.event-des {
-  line-height: 1rem !important; }
 #widgets #opinion .panel .panel-body .panel-lost .yop-poll-answers li:nth-child(6) {
   display: none; }
 
