@@ -4095,10 +4095,11 @@ form.search button {
     text-transform: uppercase !important; }
 
 .custom-vote {
-  float: right !important; }
+  float: right !important;
+  margin-top: 91px !important; }
 
 #widgets .container .row .col-md-3 .panel-custom .panel-body {
-  height: 410px !important; }
+  height: 445px !important; }
 #widgets #opinion .panel .panel-body .panel-lost .yop-poll-answers li:nth-child(6) {
   display: none; }
 #widgets #opinion .panel .panel-body .panel-lost div[id^="yop-poll-results-3"] {
