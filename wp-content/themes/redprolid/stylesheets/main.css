@@ -4098,9 +4098,7 @@ form.search button {
     font-size: 21px;
     font-size: 1.5rem; }
 
-#widgets .container .row .col-md-3 .panel-custom {
-  height: 1200px !important; }
-#widgets .container .row .col-md-3.eventos .panel-body p.event-des {
+#widgets .container .row .col-md-3.eventos .panel-body .col-sm-12 p.event-des {
   line-height: 1rem !important; }
 #widgets #opinion .panel .panel-body .panel-lost .yop-poll-answers li:nth-child(6) {
   display: none; }
