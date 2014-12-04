@@ -4094,8 +4094,15 @@ form.search button {
     font-size: 1.5rem;
     text-transform: uppercase !important; }
 
+.custom-vote {
+  float: right !important;
+  margin-top: 126px !important; }
+
+.view-results {
+  margin-top: -31px !important; }
+
 #widgets .container .row .col-md-3 .panel-custom .panel-body {
-  height: 410px !important; }
+  height: 445px !important; }
 #widgets #opinion .panel .panel-body .panel-lost .yop-poll-answers li:nth-child(6) {
   display: none; }
 #widgets #opinion .panel .panel-body .panel-lost div[id^="yop-poll-results-3"] {
