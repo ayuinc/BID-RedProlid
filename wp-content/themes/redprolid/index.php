@@ -21,6 +21,9 @@ get_header(); ?>
       #widgets .container .row .col-md-3 .panel-custom{
         height: inherit !important;
       }
+      #widgets .container .row .col-md-3.eventos .panel-body p.event-des {
+       line-height: 2rem !important; 
+      }
     </style>
     <div class="mh-700">
       <section id="hero-unit">
