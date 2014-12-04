@@ -4155,6 +4155,9 @@ form.search button {
 .text-brown {
   color: #c4c09c; }
 
+.text-size {
+  font-size: 5.57143rem !important; }
+
 .dtl-content p {
   line-height: 28px;
   color: #575757; }

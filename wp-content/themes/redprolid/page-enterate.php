@@ -227,7 +227,7 @@ get_header(); ?>
 		                      <div class="text-center ph-14 pt-14">
 		                      	
 		                        <h1 class="text-brown"><?php echo date('l', strtotime( $tempDate)); ?></h1>
-		                        <h1 class="text-brown lead bold" style="font-size: 5.57143rem;"><?php echo date('j', strtotime( $tempDate)); ?></h1>
+		                        <h1 class="text-brown lead bold text-size"><?php echo date('j', strtotime( $tempDate)); ?></h1>
 		                        <h4 class="bold"><?php the_title(); ?></h4>
 		                      </div>
 		                      <div>
