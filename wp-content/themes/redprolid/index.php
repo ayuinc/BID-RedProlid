@@ -169,6 +169,9 @@ get_header(); ?>
                   </div>
                   <?php endwhile; ?>
                 </div>
+                <div class="panel-footer">
+                  <a href="http://www.redprolid.org/poll">Ver resultados ></a>
+                </div>
               </div>
             </div>
           </div>
