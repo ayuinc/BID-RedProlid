@@ -482,7 +482,8 @@ function wppb_check_password_strength(){
 function wppb_password_length_text(){
     $wppb_generalSettings = get_option( 'wppb_general_settings' );
     if( !empty( $wppb_generalSettings['minimum_password_length'] ) ){
-        return sprintf(__('Minimum length of %d characters', 'profilebuilder'), $wppb_generalSettings['minimum_password_length']);
+        // return sprintf(__('Minimum length of %d characters', 'profilebuilder'), $wppb_generalSettings['minimum_password_length']);
+        return sprintf(__('Mínimo %d caracteres', 'profilebuilder'), $wppb_generalSettings['minimum_password_length']);
     }
     return '';
 }
