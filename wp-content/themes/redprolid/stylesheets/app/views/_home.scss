@@ -61,6 +61,9 @@
 					.yop-poll-answers li:nth-child(6) {
 						display: none;
 					}
+					div[id^="yop-poll-results-3"] {
+						display: none !important;
+					}
 				}
 			}	
 		}	
