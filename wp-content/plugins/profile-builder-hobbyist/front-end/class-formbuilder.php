@@ -271,7 +271,8 @@ class Profile_Builder_Form_Creator{
 			<p class="form-submit">
 				<?php 
 				if( $this->args['form_type'] == 'register' )
-					$button_name = ( current_user_can( 'create_user' ) ? __( 'Add User', 'profilebuilder' ) : __( 'Register', 'profilebuilder' ) );
+                    $button_name = ( current_user_can( 'create_user' ) ? __( 'Add User', 'profilebuilder' ) : __( 'Inscríbete', 'profilebuilder' ) );
+					// $button_name = ( current_user_can( 'create_user' ) ? __( 'Add User', 'profilebuilder' ) : __( 'Register', 'profilebuilder' ) );
 					
 				elseif( $this->args['form_type'] == 'edit_profile' )
 					$button_name = __( 'Update', 'profilebuilder' );
