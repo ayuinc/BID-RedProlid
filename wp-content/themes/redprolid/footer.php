@@ -26,10 +26,10 @@
             <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-footer.png" width="322px" height="auto"></a>
           </div>
           <div class="col-md-3 text-center">
-            <a href="http://www.iadb.org/" target="_blank"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_BID-footer.png" width="145px" height="auto"></a>
+            <a href="http://www.iadb.org/" target="_blank"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_BID-footer.png" width="190px" height="auto"></a>
           </div>
         </div>
-        <div class="row mt-21">
+        <div class="row">
           <div class="col-md-3">
             <p class="text-muted">Síguenos en las redes:</p>
             <ul class="list-unstyled social-links">
