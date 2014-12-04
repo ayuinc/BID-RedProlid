@@ -227,7 +227,7 @@ get_header(); ?>
 		                      <div class="text-center ph-14 pt-14">
 		                      	
 		                        <h1 class="text-brown"><?php echo date('l', strtotime( $tempDate)); ?></h1>
-		                        <h1 class="text-brown lead bold text-size"><?php echo date('j', strtotime( $tempDate)); ?></h1>
+		                        <p class="text-brown lead bold text-size"><?php echo date('j', strtotime( $tempDate)); ?></p>
 		                        <h4 class="bold"><?php the_title(); ?></h4>
 		                      </div>
 		                      <div>
@@ -266,7 +266,7 @@ get_header(); ?>
                     <?php query_posts( array( 'category_name' => 'campeonas', 'posts_per_page' => 1 ) ); ?>
 											<?php while ( have_posts() ) : the_post(); ?>
 													<?php setup_postdata($post); ?>
-			                    <div class="col-sm-6 ph-14 pt-21">
+			                    <div class="col-sm-6 ph-14 pt-21 arrow_box">
 			                      <h3 class="m-0"><?php the_title(); ?></h3>
 			                      <span>(<?php the_field('pais_campeona'); ?>)</span><br>
 			                      <p class="lead mt-14"><?php the_field('posicion_campeona'); ?></p>
@@ -275,7 +275,7 @@ get_header(); ?>
 			                      </div>
 			                    </div>
 			                    <div class="col-sm-6 pl-0-sm pr-0 text-right">
-			                      <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive inline-block">
+			                      <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive">
 			                    </div>
 					            <?php endwhile; ?>
 										<?php endif; ?> 
