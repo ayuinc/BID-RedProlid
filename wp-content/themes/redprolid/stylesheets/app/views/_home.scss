@@ -34,13 +34,15 @@
 	.container .row {
 		.col-md-3 {
 			.panel-custom {
-			height: 1200px !important;
+			// height: 1200px !important;
 			}
 			&.eventos {
 				.panel-body {
-					p {
-						&.event-des {
-							line-height: 1rem !important;
+					.col-sm-12 {
+						p {
+							&.event-des {
+								line-height: 1rem !important;
+							}
 						}
 					}
 				}
