@@ -13,6 +13,8 @@
 		background: $brand-primary;
 		color: white;
 		padding: 9px 0;
+		text-transform: uppercase !important;
+		margin-top: 21px;
 	}
 	.day-num,
 	.month {
@@ -20,13 +22,14 @@
 	}
 	.day-num {
 		font-size: 70px;
-		font-size: rem(70);
+		font-size: rem(80);
 		line-height: 70px;
 		@include bold;
 	}
 	.month {
 		font-size: 21px;
 		font-size: rem(21);
+		text-transform: uppercase !important;
 	}
 }
 
@@ -34,7 +37,9 @@
 	.container .row {
 		.col-md-3 {
 			.panel-custom {
-			// height: 1200px !important;
+				.panel-body {
+					height: 400px !important;
+				}
 			}
 			&.eventos {
 				.panel-body {
