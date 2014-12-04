@@ -266,7 +266,7 @@ get_header(); ?>
                     <?php query_posts( array( 'category_name' => 'campeonas', 'posts_per_page' => 1 ) ); ?>
 											<?php while ( have_posts() ) : the_post(); ?>
 													<?php setup_postdata($post); ?>
-			                    <div class="col-sm-6 ph-14 pt-21">
+			                    <div class="col-sm-6 ph-14 pt-21 arrow_box">
 			                      <h3 class="m-0"><?php the_title(); ?></h3>
 			                      <span>(<?php the_field('pais_campeona'); ?>)</span><br>
 			                      <p class="lead mt-14"><?php the_field('posicion_campeona'); ?></p>
