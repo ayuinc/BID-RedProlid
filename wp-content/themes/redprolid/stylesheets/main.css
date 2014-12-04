@@ -4180,14 +4180,14 @@ form.search button {
   border-color: rgba(255, 255, 255, 0);
   border-left-color: #ffffff;
   border-width: 10px;
-  margin-top: -10px;
-  z-index: 100px; }
+  margin-top: -10px; }
 
 .arrow_box:before {
   border-color: rgba(255, 255, 255, 0);
   border-left-color: #ffffff;
   border-width: 14px;
-  margin-top: -14px; }
+  margin-top: -14px;
+  z-index: 100; }
 
 .dtl-content p {
   line-height: 28px;
