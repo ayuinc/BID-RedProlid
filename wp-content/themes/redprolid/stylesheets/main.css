@@ -4165,7 +4165,7 @@ form.search button {
 
 .arrow_box:after, .arrow_box:before {
   left: 100%;
-  top: 50%;
+  top: 20%;
   border: solid transparent;
   content: " ";
   height: 0;
@@ -4177,7 +4177,8 @@ form.search button {
   border-color: rgba(255, 255, 255, 0);
   border-left-color: #ffffff;
   border-width: 10px;
-  margin-top: -10px; }
+  margin-top: -10px;
+  z-index: 100px; }
 
 .arrow_box:before {
   border-color: rgba(255, 255, 255, 0);
