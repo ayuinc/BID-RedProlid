@@ -198,6 +198,9 @@ get_header(); ?>
                     <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee aquí</a></div>
                   </div>
                 </div>
+                <div class="panel-footer">
+                  <a href="http://redprolid.org/poll">Ver resultados >></a>
+                </div>
                 <?php endwhile; ?>
               </div>
             </div>
