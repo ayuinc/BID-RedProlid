@@ -62,7 +62,7 @@
         $args = array(
           'number' => '3'
         );
-        $comments = get_comments($args);?>
+        $comments = get_comments();?>
 
         <?php foreach ($comments as $comment) : ?>
         <?php 
@@ -70,11 +70,11 @@
           $category = get_the_category($comm_post_id);
           die(print_r($category));   
         ?>
-        <?php  if ( $category == "puntos-de-vista")){ ?>
+        <?php  //if ( $category == "puntos-de-vista")){ ?>
 
             <li><a href="<?php echo get_permalink( $comm_post_id ); ?>"><?php echo($comment->comment_content);?></a>/ <?php echo($comment->comment_author);?></li>          
 
-        <?php } ?>
+        <?php //} ?>
           
         <?php endforeach;?>
         </ul>
