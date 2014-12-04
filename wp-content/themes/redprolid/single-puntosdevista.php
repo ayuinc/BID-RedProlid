@@ -67,14 +67,14 @@
         $comments = get_comments();?>
 
         <?php foreach ($comments as $comment) : ?>
-        <?php 
-          $comm_post_id = $comment->comment_post_ID;   
-        ?>
-        <?php if ( $category[0]->slug == "puntos-de-vista")) : ?>
+          <?php   
+            $comm_post_id = $comment->comment_post_ID;   
+          ?>
+          <?php if ( $category[0]->slug == "puntos-de-vista") : ?>
 
-            <li><a href="<?php echo get_permalink( $comm_post_id ); ?>"><?php echo($comment->comment_content);?></a>/ <?php echo($comment->comment_author);?></li>          
+              <li><a href="<?php echo get_permalink( $comm_post_id ); ?>"><?php echo($comment->comment_content);?></a>/ <?php echo($comment->comment_author);?></li>          
 
-        <?php endif; ?>
+          <?php endif; ?>
           
         <?php endforeach;?>
         </ul>
