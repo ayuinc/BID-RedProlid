@@ -3831,7 +3831,8 @@ form.form-search-inline button {
       clear: both; }
     #nav-main-menu div > ul li {
       float: left;
-      position: relative; }
+      position: relative;
+      font-size: 13px !important; }
       #nav-main-menu div > ul li a {
         display: block;
         background: #e94472;
