@@ -5,3 +5,4 @@ wp-config.php
 # Ignore Sass-Cache
 *.sass-cache
 .sass-cache/*
+main.css.map

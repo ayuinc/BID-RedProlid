@@ -33,12 +33,21 @@
 	}
 }
 
+.custom-vote {
+	float: right !important;
+	margin-top: 126px !important;
+}
+
+.view-results {
+	margin-top: -31px !important;
+}
+
 #widgets {
 	.container .row {
 		.col-md-3 {
 			.panel-custom {
 				.panel-body {
-					height: 410px !important;
+					height: 445px !important;
 				}
 			}
 			&.eventos {
