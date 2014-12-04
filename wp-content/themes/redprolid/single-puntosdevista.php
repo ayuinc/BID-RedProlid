@@ -58,12 +58,13 @@
       <div class="col-sm-10 col-md-offset-1 pt-35">		  
 		    <h4>Artículos comentados</h4>
 		    <ul class="grid-list grid-list-2 pb-ch-7">
-		      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-		      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-		      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-		      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-		      <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-		    </ul>
+        <?php
+        $comments = get_comments();?>
+
+        <?php foreach ($comments as $comment) : ?>
+          <li><a href="<?php echo get_permalink( $comment->comment_post_ID ); ?>"><?php echo($comment->comment_content);?></a>/ <?php echo($comment->comment_author);?></li>          
+        <?php endforeach;?>
+        </ul>
       </div>
     </div>
   </div>

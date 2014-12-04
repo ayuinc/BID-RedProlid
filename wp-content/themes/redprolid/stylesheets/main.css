@@ -4150,6 +4150,9 @@ form.search button {
   width: 210px;
   min-height: 210px; }
 
+.text-brown {
+  color: #c4c09c; }
+
 .dtl-content p {
   line-height: 28px;
   color: #575757; }
