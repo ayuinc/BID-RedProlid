@@ -119,7 +119,8 @@ get_header(); ?>
 			box-shadow: inset -2px 5px 17px #eee;
 	  }
 	  #wppb-form-element-14 {
-	  	margin-left: 30%
+	  	margin-left: 30%;
+	  	margin-top: 1rem;
 	  }
 	  #wppb-form-element-14 label {
 	  	width: 16%;
