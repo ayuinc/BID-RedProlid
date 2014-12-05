@@ -14,7 +14,7 @@
           <li>
             <a href="<?php echo home_url('/'); ?>redprolid/" class="red-prolid <?php if($segment1='redprolid' || $segment1='contactanos'){ echo 'active'; } ?>"><i></i><span>Red PROLID</span></a>
             <ul class="list-unstyled">
-              <li><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li>
+              <li><a href="<?php echo home_url('/'); ?>contactanos/">Contáctanos</a></li>
             </ul>
           </li>
           <li>
