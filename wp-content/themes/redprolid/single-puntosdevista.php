@@ -34,7 +34,7 @@
         <h1><?php the_title(); ?><small>(Bolivia)</small></h1>
         <p><?php the_field('profesion'); ?> / <a href="http://twitter.com/<?php the_field('cuenta_de_twitter'); ?>">@<?php the_field('cuenta_de_twitter'); ?></a></p>
         <p class="text-justify">
-        	<?php the_field('descripcion_punto_de_vista'); ?>
+        	<?php the_field('descripcion_larga_punto_de_vista'); ?>
         </p>
       </div>
     </div>
