@@ -68,8 +68,8 @@ get_header(); ?>
 			width:150px;
 	  }
 	  #wppb-form-element-2 label {
-	  	width: 37%;
-			margin-left: 4%;
+			width: 35%;
+			margin-left: 6%;
 	  }
 	  #wppb-form-element-2 input {
 	  	width: 58%;
@@ -92,8 +92,8 @@ get_header(); ?>
 			box-shadow: inset -2px 5px 17px #eee;
 	  }
 	  #wppb-form-element-8 label {
-	  	width: 11%;
-			margin-left: 30%;
+			width: 24%;
+			margin-left: 17%;
 	  }
 	  #wppb-form-element-8 input {
 	  	width: 58%;
@@ -111,18 +111,19 @@ get_header(); ?>
 	  	margin-left: 42%;
 	  }
 	  #wppb-form-element-13 label {
-	  	width: 29%;
-			margin-left: 59px;
+			width: 27%;
+			margin-left: 78px;
 	  }
 	  #wppb-form-element-13 input {
 	  	width: 58%;
 			box-shadow: inset -2px 5px 17px #eee;
 	  }
 	  #wppb-form-element-14 {
-	  	margin-left: 30%
+	  	margin-left: 30%;
+	  	margin-top: 1rem;
 	  }
 	  #wppb-form-element-14 label {
-	  	width: 16%;
+	  	width: 17%;
 			float: left;
 	  }
 	  #wppb-form-element-15 label {
@@ -140,7 +141,7 @@ get_header(); ?>
 	  	width: 23%;
 	  }
 	  #wppb-form-element-16 select {
-	  	width: 75%;			
+	  	width: 76%;			
 	  	box-shadow: inset -2px 5px 17px #eee;
 	  }
 	  #wppb-form-element-17 {
@@ -150,14 +151,14 @@ get_header(); ?>
 	  	width: 26%;
 	  }
 	  #wppb-form-element-17 select {
-	  	width: 71%;
+	  	width: 73%;
 			box-shadow: inset -2px 5px 17px #eee;
 	  }
 	  .wppb-send-credentials-checkbox label {
 	  	margin-left: 40%;
 	  }
 	  .form-submit #register {
-	  	margin-left: 71%;
+	  	margin-left: 73%;
 	  }
 
   </style>

@@ -4223,7 +4223,7 @@ form.search button {
 .dtl-path {
   background: url(../assets/img/dtl-dtl-path.png) no-repeat center center;
   height: 397px;
-  background-size: cover; }
+  background-size: 89%; }
   .dtl-path a {
     display: block;
     height: 397px; }

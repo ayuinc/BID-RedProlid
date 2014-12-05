@@ -19,7 +19,7 @@ get_header(); ?>
 		          <div class="absolute dtl-custom-heading">
 		            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-dtl-icon.png" alt="<?php the_title(); ?>"></div>
 		            <h3 class="lead" style="color: #808080;"><?php the_title(); ?></h3>
-		            <hr style="border-top: 3px dotted #808080;">
+		            <!-- <hr style="border-top: 3px dotted #808080;"> -->
 		          </div>
 		          <img src="<?php the_field('imagen-dtl'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-28 mb-21" width="530px" height="auto">
 		          <div>

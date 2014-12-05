@@ -117,7 +117,7 @@ get_header(); ?>
                   </div>
                 </div>
                 <div class="panel-footer">
-                  <div class="text-right"><a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary">Ver más</a></div>
+                  <div class="text-right"><a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary">Ve más</a></div>
                 </div>
               </div>
             </div>
@@ -146,7 +146,7 @@ get_header(); ?>
                   </div>
                 </div>
                 <div class="panel-footer">
-                  <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary"  style=";">Ver más</a></div>
+                  <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary"  style=";">Ve más</a></div>
                 </div>
                   <?php endwhile; ?>
               </div>
@@ -208,7 +208,7 @@ get_header(); ?>
                 <div class="panel-body highlight pt-7">
                   <div class="panel-heading">
                     <ul class="list-unstyled m-0">
-                      <li class="title pl-7 pt-0" style="background:#ebeade;">Campeonas</li>
+                      <li class="title pl-14 pt-7" style="background:#ebeade;">Campeonas</li>
                       <li class="rule relative" style="top: 19px;"></li>
                       <li class="icon" style="top: -7px; background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
                     </ul>
@@ -275,10 +275,10 @@ get_header(); ?>
                     </ul>
                   </div>                
                   <div class="col-sm-4">
-                  	<div class="fb-like-box" data-width="250" data-height="520" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+										<a class="twitter-timeline" width="250" height="520"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a>  
                   </div>
                   <div class="col-sm-4">
-										<a class="twitter-timeline" width="250" height="520"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a>  
+                  	<div class="fb-like-box" data-width="250" data-height="520" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
                   </div>
                   <div class="col-sm-4">
                     <div class="g-person" data-width="250" data-height="520" data-href="//plus.google.com/u/0/107403271684877473593" data-rel="author"></div>
