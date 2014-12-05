@@ -4104,9 +4104,9 @@ form.search button {
 
 #widgets .container .row .col-md-3 .panel-custom .panel-body {
   height: 445px !important; }
-#widgets #opinion .panel .panel-body .panel-lost .yop-poll-answers li:nth-child(6) {
+#widgets #opinion .panel .panel-body .yop-poll-answers li:nth-child(6) {
   display: none; }
-#widgets #opinion .panel .panel-body .panel-lost div[id^="yop-poll-results-3"] {
+#widgets #opinion .panel .panel-body div[id^="yop-poll-results-3"] {
   display: none !important; }
 
 .red-prolid-grid:before, .red-prolid-grid:after {

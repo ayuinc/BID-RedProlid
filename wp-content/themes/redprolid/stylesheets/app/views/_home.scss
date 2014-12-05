@@ -66,13 +66,11 @@
 	#opinion {
 		.panel {
 			.panel-body {
-				.panel-lost {
-					.yop-poll-answers li:nth-child(6) {
-						display: none;
-					}
-					div[id^="yop-poll-results-3"] {
-						display: none !important;
-					}
+				.yop-poll-answers li:nth-child(6) {
+					display: none;
+				}
+				div[id^="yop-poll-results-3"] {
+					display: none !important;
 				}
 			}	
 		}	
