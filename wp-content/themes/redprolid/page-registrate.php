@@ -170,7 +170,7 @@ get_header(); ?>
 		  <div class="container">
 		    <div class="row mt-35">
 					<div class="col-sm-1">
-            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/registrate.png" class="pull-left mr-21 relative pt-70 mt-42" width="60px" height="auto">
+            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/registrate.png" class="pull-left mr-21 relative" width="60px" height="auto">
 					</div>	
 		      <div class="col-sm-10"> 
 						<h1 style="color: #aeab8b;"><?php the_title(); ?></h1>
