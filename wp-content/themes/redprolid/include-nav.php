@@ -1,15 +1,16 @@
-<?php 
-  $uri = $_SERVER['REQUEST_URI'];
-  $elements = explode('/', $uri) ;
-  $segment1 = $elements[1] ; // For the first segment
-  $segment2 = $elements[2] ; //For the 2nd segment
-  $segment3 = $elements[3] ; //For the 3rd segment
-?>
 <div id="nav-main-menu" style="z-index:999">
   <div class="container">
     <div class="row">
       <div class="col-sm-8 pr-0">
         <ul class="list-unstyled m-0">
+          <?php 
+            $uri = $_SERVER['REQUEST_URI'];
+            $elements = explode('/', $uri) ;
+            $segment1 = $elements[1] ; // For the first segment
+            $segment2 = $elements[2] ; //For the 2nd segment
+            $segment3 = $elements[3] ; //For the 3rd segment
+            echo $segment2 ;
+          ?>
           <li><a href="<?php echo home_url(); ?>" class="home"><i></i></a></li>
           <li>
             <a href="<?php echo home_url('/'); ?>redprolid/" class="red-prolid <?php echo $segment2; if($segment2='redprolid' || $segment2='contactanos'){ echo 'active'; } ?>"><i></i><span>Red PROLID</span></a>
