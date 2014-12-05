@@ -1,4 +1,4 @@
-<section id="puntos-de-vista">
+<section id="puntos-de-vista" class="pt-0">
   <div class="container relative with-shadow mb-28">
     <div class="row">
       <div class="col-md-12">
