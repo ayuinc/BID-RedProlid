@@ -90,7 +90,7 @@ class Profile_Builder_Form_Creator{
                 $current_user_capability = apply_filters ( 'wppb_registration_user_capability', 'create_users' );
 
                 if ( current_user_can( $current_user_capability ) && $registration )
-                    $this->wppb_form_content( apply_filters( 'wppb_register_pre_form_message', '<p class="alert" id="wppb_register_pre_form_message">'.__( 'Users can register themselves or you can manually create users here.', 'profilebuilder'). '<img src="'.WPPB_PLUGIN_URL.'assets/images/pencil_delete.png" title="'.__( 'This message is only visible by administrators', 'profilebuilder' ).'"/>' . '</p>' ) );
+                    $this->wppb_form_content( apply_filters( 'wppb_register_pre_form_message', '<p class="alert" id="wppb_register_pre_form_message">'.__( 'Los usuarios pueden registrarse a sí mismos o puede crear manualmente desde aquí.', 'profilebuilder'). '<img src="'.WPPB_PLUGIN_URL.'assets/images/pencil_delete.png" title="'.__( 'This message is only visible by administrators', 'profilebuilder' ).'"/>' . '</p>' ) );
 
                 elseif ( current_user_can( $current_user_capability ) && !$registration )
                     $this->wppb_form_content( apply_filters( 'wppb_register_pre_form_message', '<p class="alert" id="wppb_register_pre_form_message">'.__( 'Users cannot currently register themselves, but you can manually create users here.', 'profilebuilder'). '<img src="'.WPPB_PLUGIN_URL.'assets/images/pencil_delete.png" title="'.__( 'This message is only visible by administrators', 'profilebuilder' ).'"/>' . '</p>' ) );
@@ -324,7 +324,7 @@ class Profile_Builder_Form_Creator{
 			echo '';
 		
 		else{
-			$checkbox = apply_filters( 'wppb_send_credentials_checkbox_logic', '<li class="wppb-form-field wppb-send-credentials-checkbox"><label for="send_credentials_via_email"><input id="send_credentials_via_email" type="checkbox" name="send_credentials_via_email" value="sending"'.( ( isset( $request_data['send_credentials_via_email'] ) && ( $request_data['send_credentials_via_email'] == 'sending' ) ) ? ' checked' : '' ).'/>'.__( 'Enviarme estas credenciales vía correo electrónico.', 'profilebuilder').'</label></li>', $request_data, $form );
+			$checkbox = apply_filters( 'wppb_send_credentials_checkbox_logic', '<li class="wppb-form-field wppb-send-credentials-checkbox"><label for="send_credentials_via_email"><input id="send_credentials_via_email" type="checkbox" name="send_credentials_via_email" value="sending"'.( ( isset( $request_data['send_credentials_via_email'] ) && ( $request_data['send_credentials_via_email'] == 'sending' ) ) ? ' checked' : '' ).'/>'.__( 'Envíenme esta información por correo electrónico', 'profilebuilder').'</label></li>', $request_data, $form );
             // $checkbox = apply_filters( 'wppb_send_credentials_checkbox_logic', '<li class="wppb-form-field wppb-send-credentials-checkbox"><label for="send_credentials_via_email"><input id="send_credentials_via_email" type="checkbox" name="send_credentials_via_email" value="sending"'.( ( isset( $request_data['send_credentials_via_email'] ) && ( $request_data['send_credentials_via_email'] == 'sending' ) ) ? ' checked' : '' ).'/>'.__( 'Send these credentials via email.', 'profilebuilder').'</label></li>', $request_data, $form );
 		
 			if ( !is_multisite() ){
