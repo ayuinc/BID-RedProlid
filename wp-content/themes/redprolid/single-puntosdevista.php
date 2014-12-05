@@ -1,5 +1,6 @@
 <section id="puntos-de-vista">
   <div class="container relative with-shadow mb-28">
+    <div class="row"><?php the_breadcrumb(); ?></div>
     <div class="absolute dtl-custom-heading z-index-100">
       <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt=""></div>
       <div class="clearfix">
