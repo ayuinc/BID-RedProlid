@@ -42,7 +42,7 @@ get_header(); ?>
               </ul>
             </div>
             <div class="panel-body">
-              <ul class="list-unstyled red-prolid-grid ml-70 pl-21">
+              <ul class="list-unstyled red-prolid-grid">
                 <li>
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" alt="">
                   <p class="light h5"><?php the_field('quiere_ser_op1'); ?></p>
