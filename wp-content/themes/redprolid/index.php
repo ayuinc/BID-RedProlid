@@ -57,7 +57,7 @@ get_header(); ?>
                   <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/nivelando-la-cancha/"></a></div>
                   <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/listas-para-la-politica/"></a></div>
                   <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/"></a></div>
-                  <div class="col-xs-1"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/"></a></div>
+                  <div class="col-xs-1"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas/"></a></div>
                   <div class="col-xs-1"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/"></a></div>
                 </div>
               </div>
@@ -117,7 +117,7 @@ get_header(); ?>
                   </div>
                 </div>
                 <div class="panel-footer">
-                  <div class="text-right"><a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary">Ver más</a></div>
+                  <div class="text-right"><a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary">Ve más</a></div>
                 </div>
               </div>
             </div>
@@ -133,21 +133,20 @@ get_header(); ?>
                 <div class="panel-body pt-0">
                   <?php query_posts( 'category_name=eventos&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
+                    
+                    <?php $tempDate = get_field('fecha_evento'); ?>
                   <div class="col-sm-12">
                     <div class="events-calendar-placeholder">
-                      <div class="day"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento')); 
-                      echo $date->format('D'); ?></div>
-                      <div class="day-num"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
-                      echo $date->format('d'); ?></div>
-                      <div class="month"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
-                      echo $date->format('M'); ?></div>
+                      <div class="day"><?php echo date_i18n('D', strtotime( $tempDate)); ?></div>
+                      <div class="day-num"><?php echo date_i18n('d', strtotime( $tempDate)); ?></div>
+                      <div class="month"><?php echo date_i18n('M', strtotime( $tempDate)); ?></div>
                     </div>
                     <h5><?php the_title(); ?></h5>
                     <p class="event-des"><?php the_field('descripcion_evento'); ?></p>
                   </div>
                 </div>
                 <div class="panel-footer">
-                  <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary"  style=";">Ver más</a></div>
+                  <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary"  style=";">Ve más</a></div>
                 </div>
                   <?php endwhile; ?>
               </div>
@@ -164,12 +163,10 @@ get_header(); ?>
                 <div class="panel-body pt-0">
                   <?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
-                  <div class="col-sm-12 panel-lost pl-0">
                     <?php the_content(); ?>
                     <div class="pull-left view-results">
                       <a href="http://www.redprolid.org/poll">Ver resultados >></a>
                     </div>
-                  </div>
                   <?php endwhile; ?>
                 </div>
               </div>
@@ -278,10 +275,10 @@ get_header(); ?>
                     </ul>
                   </div>                
                   <div class="col-sm-4">
-                  	<div class="fb-like-box" data-width="250" data-height="520" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+										<a class="twitter-timeline" width="250" height="520"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a>  
                   </div>
                   <div class="col-sm-4">
-										<a class="twitter-timeline" width="250" height="520"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a>  
+                  	<div class="fb-like-box" data-width="250" data-height="520" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
                   </div>
                   <div class="col-sm-4">
                     <div class="g-person" data-width="250" data-height="520" data-href="//plus.google.com/u/0/107403271684877473593" data-rel="author"></div>

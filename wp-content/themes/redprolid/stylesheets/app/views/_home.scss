@@ -40,6 +40,8 @@
 
 .view-results {
 	margin-top: -31px !important;
+	position: absolute;
+	z-index: 10000;
 }
 
 #widgets {
@@ -66,13 +68,11 @@
 	#opinion {
 		.panel {
 			.panel-body {
-				.panel-lost {
-					.yop-poll-answers li:nth-child(6) {
-						display: none;
-					}
-					div[id^="yop-poll-results-3"] {
-						display: none !important;
-					}
+				.yop-poll-answers li:nth-child(6) {
+					display: none;
+				}
+				div[id^="yop-poll-results-3"] {
+					display: none !important;
 				}
 			}	
 		}	

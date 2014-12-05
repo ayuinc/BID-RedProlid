@@ -3831,7 +3831,8 @@ form.form-search-inline button {
       clear: both; }
     #nav-main-menu div > ul li {
       float: left;
-      position: relative; }
+      position: relative;
+      font-size: 13px !important; }
       #nav-main-menu div > ul li a {
         display: block;
         background: #e94472;
@@ -4099,13 +4100,15 @@ form.search button {
   margin-top: 126px !important; }
 
 .view-results {
-  margin-top: -31px !important; }
+  margin-top: -31px !important;
+  position: absolute;
+  z-index: 10000; }
 
 #widgets .container .row .col-md-3 .panel-custom .panel-body {
   height: 445px !important; }
-#widgets #opinion .panel .panel-body .panel-lost .yop-poll-answers li:nth-child(6) {
+#widgets #opinion .panel .panel-body .yop-poll-answers li:nth-child(6) {
   display: none; }
-#widgets #opinion .panel .panel-body .panel-lost div[id^="yop-poll-results-3"] {
+#widgets #opinion .panel .panel-body div[id^="yop-poll-results-3"] {
   display: none !important; }
 
 .red-prolid-grid:before, .red-prolid-grid:after {
@@ -4220,7 +4223,7 @@ form.search button {
 .dtl-path {
   background: url(../assets/img/dtl-dtl-path.png) no-repeat center center;
   height: 397px;
-  background-size: cover; }
+  background-size: 89%; }
   .dtl-path a {
     display: block;
     height: 397px; }
