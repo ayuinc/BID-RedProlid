@@ -194,7 +194,7 @@ get_header(); ?>
                   </div>
                   <div class="col-sm-7">
                     <h4 class="pt-0"><?php the_title(); ?><br><small><?php the_field('profesion'); ?></small></h4>
-                    <p class="light text-gray" style="line-height: 24px;"><?php the_field('descripcion_punto_de_vista'); ?></p>
+                    <p class="light text-gray" style="line-height: 24px; height: 131px;"><?php the_field('descripcion_punto_de_vista'); ?></p>
                     <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee aquí</a></div>
                   </div>
                 </div>
@@ -205,17 +205,10 @@ get_header(); ?>
               <div class="panel panel-custom">               
                 <?php query_posts( 'category_name=campeonas&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                   
-                <div class="panel-heading highlight pt-7">
-                  <ul class="list-unstyled m-0">
-                    <li class="title pl-14 pt-7" style="background:#ebeade;">Campeonas</li>
-                    <li class="rule relative" style="top: 19px;"></li>
-                    <li class="icon" style="top: -7px; background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
-                  </ul>
-                </div>
                 <div class="panel-body highlight pt-7">
                   <div class="panel-heading">
                     <ul class="list-unstyled m-0">
-                      <li class="title pl-14 pt-7" style="background:#ebeade; padding-top: 3px;">Campeonas</li>
+                      <li class="title pl-14" style="background:#ebeade; padding-top: 3px;">Campeonas</li>
                       <li class="rule relative" style="top: 19px;"></li>
                       <li class="icon" style="top: -7px; background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
                     </ul>
