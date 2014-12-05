@@ -12,7 +12,7 @@
         <ul class="list-unstyled m-0">
           <li><a href="<?php echo home_url(); ?>" class="home"><i></i></a></li>
           <li>
-            <a href="<?php echo home_url('/'); ?>redprolid/" class='red-prolid <?php if($segment2="redprolid" || $segment2="contactanos"){ echo "active"; } ?>'><i></i><span>Red PROLID</span></a>
+            <a href="<?php echo home_url('/'); ?>redprolid/" class="red-prolid <?php if($segment2='redprolid' || $segment2='contactanos'){ echo 'active'; } ?>"><i></i><span>Red PROLID</span></a>
             <ul class="list-unstyled">
               <li><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li>
             </ul>
