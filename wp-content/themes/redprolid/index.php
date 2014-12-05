@@ -164,12 +164,10 @@ get_header(); ?>
                 <div class="panel-body pt-0">
                   <?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
-                  <div class="col-sm-12 panel-lost pl-0">
                     <?php the_content(); ?>
                     <div class="pull-left view-results">
                       <a href="http://www.redprolid.org/poll">Ver resultados >></a>
                     </div>
-                  </div>
                   <?php endwhile; ?>
                 </div>
               </div>
