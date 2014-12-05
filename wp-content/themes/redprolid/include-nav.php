@@ -9,6 +9,7 @@
             $segment1 = $elements[1] ; // For the first segment
             $segment2 = $elements[2] ; //For the 2nd segment
             $segment3 = $elements[3] ; //For the 3rd segment
+            echo $segment1;
           ?>
           <li><a href="<?php echo home_url(); ?>" class="home"><i></i></a></li>
           <li>
