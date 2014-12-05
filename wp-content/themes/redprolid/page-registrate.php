@@ -168,13 +168,13 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 		<section class="">
 		  <div class="container">
-		    <div class="row mt-35">
-		      <div class="col-sm-10 col-md-offset-1"> 
+	      <div class="absolute dtl-custom-heading" style="padding-top: 6px;">
+	      	<div>
+          	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/registrate.png" class="pull-left mr-21 relative pt-70 mt-42" width="70" height="auto">
 						<h1 style="color: #aeab8b;"><?php the_title(); ?></h1>
 						<hr style="border-top: 3px dotted #aaa;">
-            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/registrate.png" class="pull-left mr-21 img-circle relative pt-70 mt-42" width="70" height="auto">
-		      </div>
-		    </div>
+	      	</div>
+	      </div>
 		  </div>
 		  <div class="container-fluid text-justify with-hr pb-70">
 			  <div class="row">
