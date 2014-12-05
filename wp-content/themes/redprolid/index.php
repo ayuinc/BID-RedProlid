@@ -136,11 +136,11 @@ get_header(); ?>
                   <div class="col-sm-12">
                     <div class="events-calendar-placeholder">
                       <div class="day"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento')); 
-                      echo $date->format('D'); ?></div>
+                      echo date_i18n($date->format('D')); ?></div>
                       <div class="day-num"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
                       echo $date->format('d'); ?></div>
                       <div class="month"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
-                      echo $date->format('M'); ?></div>
+                      echo date_i18n($date->format('M')); ?></div>
                     </div>
                     <h5><?php the_title(); ?></h5>
                     <p class="event-des"><?php the_field('descripcion_evento'); ?></p>
