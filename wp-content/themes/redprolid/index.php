@@ -138,10 +138,8 @@ get_header(); ?>
                   <div class="col-sm-12">
                     <div class="events-calendar-placeholder">
                       <div class="day"><?php echo date_i18n('D', strtotime( $tempDate)); ?></div>
-                      <div class="day-num"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
-                      echo $date->format('d'); ?></div>
-                      <div class="month"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
-                      echo $date->format('M'); ?></div>
+                      <div class="day-num"><?php echo date_i18n('d', strtotime( $tempDate)); ?></div>
+                      <div class="month"><?php echo date_i18n('M', strtotime( $tempDate)); ?></div>
                     </div>
                     <h5><?php the_title(); ?></h5>
                     <p class="event-des"><?php the_field('descripcion_evento'); ?></p>
