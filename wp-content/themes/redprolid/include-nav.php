@@ -9,17 +9,16 @@
             $segment1 = $elements[1] ; // For the first segment
             $segment2 = $elements[2] ; //For the 2nd segment
             $segment3 = $elements[3] ; //For the 3rd segment
-            echo $segment1 ;
           ?>
           <li><a href="<?php echo home_url(); ?>" class="home"><i></i></a></li>
           <li>
-            <a href="<?php echo home_url('/'); ?>redprolid/" class="red-prolid <?php echo $segment1; if($segment1='redprolid' || $segment1='contactanos'){ echo 'active'; } ?>"><i></i><span>Red PROLID</span></a>
+            <a href="<?php echo home_url('/'); ?>redprolid/" class="red-prolid <?php if($segment1='redprolid' || $segment1='contactanos'){ echo 'active'; } ?>"><i></i><span>Red PROLID</span></a>
             <ul class="list-unstyled">
               <li><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li>
             </ul>
           </li>
           <li>
-            <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo" class="dtl"><i></i><span>Desarrolla tu liderazgo</span></a>
+            <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo" class="dtl <?php if($segment1='desarrolla-tu-liderazgo'){ echo 'active'; } ?>"><i></i><span>Desarrolla tu liderazgo</span></a>
             <ul class="list-unstyled">
               <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/">¿Adónde v@mos?</a></li>
               <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/carrera-de-vallas/">Carrera de vallas</a></li>
@@ -35,7 +34,7 @@
             </ul>
           </li>
           <li>
-            <a href="<?php echo home_url('/'); ?>enterate" class="enterate"><i></i><span>Entérate</span></a>
+            <a href="<?php echo home_url('/'); ?>enterate" class="enterate <?php if($segment1='enterate'||$segment1='noticias'||$segment1='eventos'||$segment1='campeonas'||$segment1='videos'){ echo 'active'; } ?>"><i></i><span>Entérate</span></a>
             <ul class="list-unstyled">
               <!--<li><a href="<?php echo home_url('/'); ?>poll">Tu opinión importa</a></li>-->
               <li><a href="<?php echo home_url('/'); ?>noticias">Noticias</a></li>
@@ -46,13 +45,13 @@
             </ul>
           </li>
           <li>
-            <a href="<?php echo home_url('/'); ?>concursos" class="concursos"><i></i><span>Concursos</span></a>
+            <a href="<?php echo home_url('/'); ?>concursos" class="concursos <?php if($segment1='concursos'){ echo 'active'; } ?>"><i></i><span>Concursos</span></a>
             <ul class="list-unstyled">
               <li><a href="<?php echo home_url('/'); ?>concursos">Concursos anteriores</a></li>
             </ul>
           </li>
           <li>
-            <a href="<?php echo home_url('/'); ?>charlacafe/" class="charla-cafe"><i></i><span>Charlacafé</span></a>
+            <a href="<?php echo home_url('/'); ?>charlacafe/" class="charla-cafe <?php if($segment1='charlacafe'||$segment1='webinar-principal'||$segment1='webinarios-anteriores'){ echo 'active'; } ?>"><i></i><span>Charlacafé</span></a>
             <ul class="list-unstyled">
               <li>
               	<a href="#">Foros virtuales →</a>
