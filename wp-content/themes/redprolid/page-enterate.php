@@ -226,7 +226,7 @@ get_header(); ?>
 		                    <div class="enterate-calendar box-shadow flex flex-row flex-space-between normalize-text">
 		                      <div class="text-center ph-14 pt-14">
 		                      	
-		                        <h1 class="text-brown"><?php echo date('l', strtotime( $tempDate)); ?></h1>
+		                        <h1 class="text-brown"><?php echo date_i18n('l', strtotime( $tempDate)); ?></h1>
 		                        <p class="text-brown lead bold text-size"><?php echo date('j', strtotime( $tempDate)); ?></p>
 		                        <h4 class="bold"><?php the_title(); ?></h4>
 		                      </div>
