@@ -172,7 +172,7 @@ get_header(); ?>
 		      <div class="col-sm-10 col-md-offset-1"> 
 						<h1 style="color: #aeab8b;"><?php the_title(); ?></h1>
 						<hr style="border-top: 3px dotted #aaa;">
-            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/registrate.png" class="pull-left mr-21 img-circle relative pt-70 mt-42" width="560px" height="auto">
+            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/registrate.png" class="pull-left mr-21 img-circle relative pt-70 mt-42" width="70" height="auto">
 		      </div>
 		    </div>
 		  </div>
