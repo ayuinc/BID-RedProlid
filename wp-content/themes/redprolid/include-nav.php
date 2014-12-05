@@ -9,11 +9,11 @@
             $segment1 = $elements[1] ; // For the first segment
             $segment2 = $elements[2] ; //For the 2nd segment
             $segment3 = $elements[3] ; //For the 3rd segment
-            echo $segment2 ;
+            echo $segment1 ;
           ?>
           <li><a href="<?php echo home_url(); ?>" class="home"><i></i></a></li>
           <li>
-            <a href="<?php echo home_url('/'); ?>redprolid/" class="red-prolid <?php echo $segment2; if($segment2='redprolid' || $segment2='contactanos'){ echo 'active'; } ?>"><i></i><span>Red PROLID</span></a>
+            <a href="<?php echo home_url('/'); ?>redprolid/" class="red-prolid <?php echo $segment1; if($segment1='redprolid' || $segment1='contactanos'){ echo 'active'; } ?>"><i></i><span>Red PROLID</span></a>
             <ul class="list-unstyled">
               <li><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li>
             </ul>
