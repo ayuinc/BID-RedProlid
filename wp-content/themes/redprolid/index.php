@@ -205,7 +205,7 @@ get_header(); ?>
               <div class="panel panel-custom">               
                 <?php query_posts( 'category_name=campeonas&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                   
-                <div class="panel-heading">
+                <div class="panel-heading highlight">
                   <ul class="list-unstyled m-0">
                     <li class="title pl-14 pt-7" style="background:#ebeade;">Campeonas</li>
                     <li class="rule relative" style="top: 19px;"></li>

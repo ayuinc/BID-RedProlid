@@ -4007,6 +4007,8 @@ form.search button {
           top: 14px; }
         .panel.panel-custom .panel-heading ul li.icon-lg {
           width: 84px; }
+    .panel.panel-custom .panel-heading.highlight {
+      background: #ebeade; }
   .panel.panel-custom .panel-body {
     padding: 21px 0;
     min-height: 280px; }

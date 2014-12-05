@@ -49,6 +49,9 @@
 					}
 				}
 			}
+			&.highlight {
+				background: $panel-bg;
+			}
 		}
 		.panel-body {
 			padding: 21px 0;
