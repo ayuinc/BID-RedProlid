@@ -117,7 +117,7 @@ get_header(); ?>
                   </div>
                 </div>
                 <div class="panel-footer">
-                  <div class="text-right"><a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary">Ver más</a></div>
+                  <div class="text-right"><a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary">Ve más</a></div>
                 </div>
               </div>
             </div>
@@ -146,7 +146,7 @@ get_header(); ?>
                   </div>
                 </div>
                 <div class="panel-footer">
-                  <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary"  style=";">Ver más</a></div>
+                  <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary"  style=";">Ve más</a></div>
                 </div>
                   <?php endwhile; ?>
               </div>
