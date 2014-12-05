@@ -12,7 +12,7 @@ get_header(); ?>
     <div class="mh-700">
       <section class="pb-0">
         <div class="container relative mh-140">
-          <div class="absolute dtl-custom-heading" style="padding-top: 6px;">
+          <div class="absolute dtl-custom-heading" style="padding-top: 6px;" style="padding-left: 91px;">
             <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="90" height="auto"></div>
             <div class="clearfix">
               <div class="col-sm-6">
