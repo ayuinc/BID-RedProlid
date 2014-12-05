@@ -4100,7 +4100,9 @@ form.search button {
   margin-top: 126px !important; }
 
 .view-results {
-  margin-top: -31px !important; }
+  margin-top: -31px !important;
+  position: absolute;
+  z-index: 10000; }
 
 #widgets .container .row .col-md-3 .panel-custom .panel-body {
   height: 445px !important; }

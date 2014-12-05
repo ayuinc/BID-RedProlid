@@ -40,6 +40,8 @@
 
 .view-results {
 	margin-top: -31px !important;
+	position: absolute;
+	z-index: 10000;
 }
 
 #widgets {
