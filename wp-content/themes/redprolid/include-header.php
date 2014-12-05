@@ -10,7 +10,7 @@
           <div class="col-md-3">
             <div class="user-sign-up text-center">
               <h3 class="lh-lg">¿Quieres ser parte <br>de la Red PROLID?</h3>
-              <a href="<?php echo home_url(); ?>registrate" class="btn btn-primary">Únete</a>
+              <a href="<?php echo home_url("/"); ?>registrate" class="btn btn-primary">Únete</a>
 <!--               <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#mailChimp">Únete</a> -->
             </div>
           </div>
