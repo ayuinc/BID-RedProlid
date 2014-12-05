@@ -194,7 +194,7 @@ get_header(); ?>
                   </div>
                   <div class="col-sm-7">
                     <h4 class="pt-0"><?php the_title(); ?><br><small><?php the_field('profesion'); ?></small></h4>
-                    <p class="light text-gray" style="line-height: 24px;"><?php the_field('descripcion_punto_de_vista'); ?></p>
+                    <p class="light text-gray" style="line-height: 24px; height: 131px;"><?php the_field('descripcion_punto_de_vista'); ?></p>
                     <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee aquí</a></div>
                   </div>
                 </div>
