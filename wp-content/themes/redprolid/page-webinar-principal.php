@@ -10,21 +10,21 @@ get_header(); ?>
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
     <div class="mh-700">
-      <section>
+      <section class="pb-0">
         <div class="container relative mh-140">
-          <div class="absolute dtl-custom-heading">
-            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="77" height="auto"></div>
+          <div class="absolute dtl-custom-heading" style="padding-top: 6px;">
+            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="90" height="auto"></div>
             <div class="clearfix">
               <div class="col-sm-6">
-                <h1 style="color: #aeab8b;">Webinarios</h1>
+                <h1 style="color: #aeab8b;" class="mb-0">Webinarios</h1>
               </div>
-              <div class="col-sm-6 pt-28">
+              <div class="col-sm-6 pt-28 pl-70">
                 <nav class="text-right">
                   <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 mt-21">
                       <a href="#" data-toggle="modal" data-target="#pdv-modal">¿Quieres proponernos un tema?</a>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 mt-21 text-left">
                         <a href="<?php echo home_url('/'); ?>webinarios-anteriores" class="">Webinarios anteriores</a> 
                     </div>      
                   </div>
@@ -47,7 +47,7 @@ get_header(); ?>
 
         <div class="container">
           <h1 class="mb-21"><?php the_title(); ?></h1>
-          <p><?php echo get_post_field('post_content', get_the_ID()); ?></p>
+          <p class="text-gray"><?php echo get_post_field('post_content', get_the_ID()); ?></p>
         </div>
         <div class="container-sm">
           <?php
