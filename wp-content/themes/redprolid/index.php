@@ -77,7 +77,7 @@ get_header(); ?>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -42px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body highlight">
+                <div class="panel-body highlight" style="height: 410px !important;">
                 	<?php query_posts( 'category_name=concursos&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>                 
                   <div class="col-sm-12">
@@ -102,7 +102,7 @@ get_header(); ?>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -84px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body pt-0">
+                <div class="panel-body pt-0" style="height: 410px !important;">
                   <div class="col-sm-12">
                     <ul class="list-unstyled list-group list-group-custom">
                     	<?php query_posts( 'category_name=noticias&posts_per_page=3' ); ?>	
@@ -130,7 +130,7 @@ get_header(); ?>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -126px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body pt-0">
+                <div class="panel-body pt-0" style="height: 410px !important;">
                   <?php query_posts( 'category_name=eventos&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
                     
