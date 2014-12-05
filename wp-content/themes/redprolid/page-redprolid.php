@@ -42,28 +42,28 @@ get_header(); ?>
               </ul>
             </div>
             <div class="panel-body">
-              <div class="row">
-                <div class="col-sm-3">
+              <ul class="list-unstyled red-prolid-grid ml-70 pl-21">
+                <li>
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" alt="">
                   <p class="light h5"><?php the_field('quiere_ser_op1'); ?></p>
-                </div>
-                <div class="col-sm-3">
+                </li>
+                <li>
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-2.png" alt="">
                   <p class="light h5"><?php the_field('quiere_ser_op2'); ?></p>
-                </div>
-                <div class="col-sm-3">
+                </li>
+                <li>
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" alt="">
                   <p class="light h5"><?php the_field('quiere_ser_op3'); ?></p>
-                </div>
-                <div class="col-sm-3">
+                </li>
+                <li>
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" alt="">
                   <p class="light h5"><?php the_field('quiere_ser_op4'); ?></p>
-                </div>
-              </div>
-                <!--<li>
+                </li>
+                <li>
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-5.png" alt="">
                   <p class="light h5"><?php the_field('quiere_ser_op5'); ?></p>
-                </li>-->
+                </li>
+              </ul>
             </div>
           </div>
           <div class="panel panel-custom">
