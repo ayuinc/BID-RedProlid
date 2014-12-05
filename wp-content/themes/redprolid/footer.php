@@ -139,7 +139,7 @@
                     // if  update user return true then lets send user an email containing the new password
                     if( $update_user ) {
                       $to = $email;
-                      $subject = 'Your new password';
+                      $subject = 'Tu nueva contraseña';
                       $sender = get_option('name');
                       
                       $message = 'Your new password is: '.$random_password;
@@ -151,7 +151,7 @@
                       
                       $mail = wp_mail( $to, $subject, $message, $headers );
                       if( $mail )
-                        $success = 'Revisa tu nuevo password en tu bandeja de correo.';
+                        $success = 'Revisa tu nueva contraseña en la bandeja de entrada de tu correo.';
                         
                     } else {
                       $error = 'Oops algo salió mal actualizando tu cuenta.';
@@ -168,7 +168,7 @@
               ?>
               <p>Envíaremos tu contraseña al correo electrónico que escribas a continuación, este debe ser el mismo que incluiste al registrarte en Red PROLID.</p>
               <div class="form-group">
-                <label for="user_login">Correo Electrónico:</label>
+                <label for="user_login">Correo electrónico:</label>
                 <?php $user_login = isset( $_POST['user_login'] ) ? $_POST['user_login'] : ''; ?>
                 <input class="form-control" type="text" name="user_login" id="user_login" value="<?php echo $user_login; ?>" />
               </div>

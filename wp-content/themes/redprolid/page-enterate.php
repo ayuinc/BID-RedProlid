@@ -214,7 +214,7 @@ get_header(); ?>
 		                        <h3 class="lh-lg"><?php the_title(); ?></h3>
 		                      </li>
 		                      <li style="border-left: 1px solid #ccc; width: 40%;">
-		                        <span><?php echo date('F', strtotime( $tempDate)); ?> <?php echo date('j', strtotime( $tempDate)); ?><br><?php echo date('g', strtotime( $tempDate)); ?> <?php echo date('a', strtotime( $tempDate)); ?> <br>Corferias, pabellón 3</span>
+		                        <span><?php echo date_i18n('F', strtotime( $tempDate)); ?> <?php echo date('j', strtotime( $tempDate)); ?><br><?php echo date('g', strtotime( $tempDate)); ?> <?php echo date('a', strtotime( $tempDate)); ?> <br>Corferias, pabellón 3</span>
 		                      </li>
 		                    </ul>
 		                    <p class="mt-21" style="color: #aaa;"><?php the_field('descripcion_evento');?></p>
@@ -226,7 +226,7 @@ get_header(); ?>
 		                    <div class="enterate-calendar box-shadow flex flex-row flex-space-between normalize-text">
 		                      <div class="text-center ph-14 pt-14">
 		                      	
-		                        <h1 class="text-brown"><?php echo date('l', strtotime( $tempDate)); ?></h1>
+		                        <h1 class="text-brown"><?php echo date_i18n('l', strtotime( $tempDate)); ?></h1>
 		                        <p class="text-brown lead bold text-size"><?php echo date('j', strtotime( $tempDate)); ?></p>
 		                        <h4 class="bold"><?php the_title(); ?></h4>
 		                      </div>

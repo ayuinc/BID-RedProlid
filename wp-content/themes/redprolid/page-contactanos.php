@@ -53,7 +53,7 @@ get_header(); ?>
 				        	border:1px solid #ccc;
 			        	}
 			        	#formBuilderFieldComments .formBuilderLabel {
-			        		margin-left: 23px;
+			        		margin-left: 61px;
 			        	}
 			        	.formBuilderInput input {
 			        		box-shadow: inset -2px 5px 17px #eee;
