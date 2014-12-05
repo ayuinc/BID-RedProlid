@@ -74,12 +74,13 @@
 			#breadcrumbs li{
 			    float:left;
 			    margin-right:5px;
+                color:#ed7133;
 			}
 			 
 			#breadcrumbs .separator{
 			    font-weight:100;
 			    font-size:20px;
-			    color:#CCC;
+			    color:#ed7133;
 			}			
 		</style>	
 

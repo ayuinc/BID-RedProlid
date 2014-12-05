@@ -42,7 +42,7 @@ get_header(); ?>
               </ul>
             </div>
             <div class="panel-body">
-              <ul class="list-unstyled red-prolid-grid pl-14-100">
+              <ul class="list-unstyled red-prolid-grid ml-70">
                 <li>
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" alt="">
                   <p class="light h5"><?php the_field('quiere_ser_op1'); ?></p>
@@ -59,10 +59,10 @@ get_header(); ?>
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" alt="">
                   <p class="light h5"><?php the_field('quiere_ser_op4'); ?></p>
                 </li>
-                <!--<li>
+                <li>
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-5.png" alt="">
                   <p class="light h5"><?php the_field('quiere_ser_op5'); ?></p>
-                </li>-->
+                </li>
               </ul>
             </div>
           </div>
