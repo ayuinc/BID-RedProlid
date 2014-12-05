@@ -133,12 +133,11 @@ get_header(); ?>
                 <div class="panel-body pt-0">
                   <?php query_posts( 'category_name=eventos&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
-                    <?php //echo date_i18n('F', strtotime( $tempDate)); ?>
-                    <?php //$tempDate = get_field('fecha_evento'); ?>
+                    
+                    <?php $tempDate = get_field('fecha_evento'); ?>
                   <div class="col-sm-12">
                     <div class="events-calendar-placeholder">
-                      <div class="day"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento')); 
-                      echo $date->format('D'); ?></div>
+                      <div class="day"><?php echo date_i18n('D', strtotime( $tempDate)); ?></div>
                       <div class="day-num"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
                       echo $date->format('d'); ?></div>
                       <div class="month"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_evento'));
