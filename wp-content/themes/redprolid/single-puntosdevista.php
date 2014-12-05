@@ -36,7 +36,8 @@
   </div>
   <div class="container text-left">
     <div class="row">
-      <div class="col-sm-10 col-md-offset-1 with-hr pb-70">	  
+      <div class="col-sm-10 col-md-offset-1 with-hr pb-70">
+        <hr style="border-top: 3px dotted #aeab8b;">	  
 			  <h4><?php the_field('nombre_completo'); ?></h4>
 		    <p><?php the_field('contenido_punto_de_vista'); ?></p>
 		    <div class="text-center mt-35">
