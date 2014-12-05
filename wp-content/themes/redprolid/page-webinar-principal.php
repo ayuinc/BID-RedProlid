@@ -18,13 +18,13 @@ get_header(); ?>
               <div class="col-sm-6">
                 <h1 style="color: #aeab8b;" class="mb-0">Webinarios</h1>
               </div>
-              <div class="col-sm-6 pt-28 pl-70">
+              <div class="col-sm-6 pt-28 pl-42">
                 <nav class="text-right">
                   <div class="row">
                     <div class="col-sm-6 mt-21">
                       <a href="#" data-toggle="modal" data-target="#pdv-modal">¿Quieres proponernos un tema?</a>
                     </div>
-                    <div class="col-sm-6 mt-21 text-left">
+                    <div class="col-sm-6 mt-21 text-left " style="border-left: 1px solid #ed7133;">
                         <a href="<?php echo home_url('/'); ?>webinarios-anteriores" class="">Webinarios anteriores</a> 
                     </div>      
                   </div>
