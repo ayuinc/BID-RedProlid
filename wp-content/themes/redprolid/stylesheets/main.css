@@ -4099,10 +4099,10 @@ form.search button {
 
 .custom-vote {
   float: right !important;
-  margin-top: 91px !important; }
+  margin-top: 59px !important; }
 
 .view-results {
-  margin-top: -31px !important;
+  margin-top: -25px !important;
   position: absolute;
   z-index: 10000; }
 
