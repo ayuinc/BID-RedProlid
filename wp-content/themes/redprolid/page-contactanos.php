@@ -16,7 +16,7 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>    
     <div class="mh-700">
       <section id="contacto">
-        <div class="container relative with-shadow">
+        <div class="container relative">
           <div class="absolute dtl-custom-heading">
             <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon.png" alt=""></div>
             <h1 style="color: #aeab8b;">Contáctanos</h1>
@@ -24,7 +24,7 @@ get_header(); ?>
           </div>
           <div class="row pt-14-100">
             <div class="col-sm-6">
-              <p class="lead" style="color: #aaa;"><?php the_field('texto_introductorio_contactanos'); ?></p>
+              <p class="lead text-justify" style="color: #aaa;"><?php the_field('texto_introductorio_contactanos'); ?></p>
               <p class="lead bold text-gray">¡Nos comprometemos a contestarte!</p>
             </div>
             <div class="col-sm-6">

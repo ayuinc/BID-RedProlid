@@ -4210,6 +4210,10 @@ form.search button {
   margin-top: -14px;
   z-index: 100; }
 
+#contacto #formBuilderCSSIDContact_form .formBuilderSubmit input {
+  float: right !important;
+  margin-right: 8px; }
+
 .dtl-content p {
   line-height: 28px;
   color: #575757; }
