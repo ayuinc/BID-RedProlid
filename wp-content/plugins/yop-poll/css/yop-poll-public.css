@@ -12,7 +12,7 @@
 	border: 1px solid transparent;
 	white-space: nowrap;
 	padding: 6px 12px;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 1.42857;
 	border-radius: 3px;
 	-webkit-user-select: none;
@@ -28,6 +28,6 @@
 	padding: 10px;
 	color: #555;
 	overflow: hidden;
-	font-size: 12px;
+	font-size: 15px;
 	margin-left: -20px !important;
 }

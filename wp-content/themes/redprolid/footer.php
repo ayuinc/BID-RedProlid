@@ -194,7 +194,8 @@
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/transition.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/carousel.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/modal.js"></script>
-    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/src/custom.js"></script>
+    <!--<script src="<?php echo content_url('/'); ?>themes/redprolid/js/src/custom.js"></script>-->
+    <script src="http://redprolid.dev/wp-content/themes/redprolid/js/src/custom.js"></script>
     
     <!--LIKE BOX FACEBOOK-->
 		<div id="fb-root"></div>
