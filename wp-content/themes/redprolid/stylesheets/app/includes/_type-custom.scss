@@ -13,13 +13,30 @@ html {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
 p, strong, em, small, ul, ol, li {
-  line-height: 28px;
-  line-height: rem(28);
-  color: $gray-dark;
+  // line-height: 28px;
+  // line-height: rem(28);
+  // color: $gray-dark;
+}
+
+h1, h2, h3 {
+  color: #333333 !important
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 115% !important;
+}
+
+h4, h5, p, li {
+  color: #888888 !important
 }
 
 p {
   font-size: 14px !important;
+  line-height: 135% !important;
+}
+
+li, small {
+  line-height: 135% !important;
 }
 
 h1, h2, h3, h4, h5 {
