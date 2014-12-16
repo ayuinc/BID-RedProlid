@@ -18,8 +18,12 @@ foreach( $customposts as $post ) :  // start you custom loop
     <p>
 	  FUENTE: <?php the_field('fuente-debates'); ?>
     <?php $blog = get_field('blog-debates'); ?>
-	  <?php if ($blog!='') { ?>  
+      <?php if ($blog!='') { ?>  
+        <?php if ($segment2 == 'listas-para-la-politica')  {?>
+        <p><?php the_field('blog-debates'); ?></p>
+        <?php else: ?>
         <a href="<?php the_field('url'); ?>"><?php the_field('blog-debates'); ?></a>
+        <?php endif ?>
     <?php } ?>
     <?php if ($segment2 == 'agenda-de-genero' || $segment2 == 'carrera-de-vallas' || $segment2 == 'nivelando-la-cancha') {?>
       <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/enterate-grid-4-01.png" alt="" style="width:20px">
