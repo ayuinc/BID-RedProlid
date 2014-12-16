@@ -24,9 +24,9 @@ foreach( $customposts as $post ) :  // start you custom loop
     <?php $blog = get_field('blog-debates'); ?>
       <?php if ($blog!=''): ?>  
         <?php if ($segment2 == 'listas-para-la-politica'): ?>
-        <a href="<?php the_field('url'); ?>"><?php the_field('blog-debates'); ?></a>
-        <?php else: ?>
         <p><?php the_field('blog-debates'); ?></p>
+        <?php else: ?>
+        <a href="<?php the_field('url'); ?>"><?php the_field('blog-debates'); ?></a>
         <?php endif; ?>
     <?php endif; ?>
     <?php if ($segment2 == 'agenda-de-genero' || $segment2 == 'carrera-de-vallas' || $segment2 == 'nivelando-la-cancha') {?>
