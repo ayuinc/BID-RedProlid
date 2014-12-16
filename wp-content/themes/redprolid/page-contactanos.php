@@ -24,7 +24,7 @@ get_header(); ?>
           </div>
           <div class="row pt-14-100">
             <div class="col-sm-6">
-              <h4 class="text-justify" style="color: #aaa;"><?php the_field('texto_introductorio_contactanos'); ?></h4>
+              <h4 class="book text-justify" style="color: #aaa;"><?php the_field('texto_introductorio_contactanos'); ?></h4>
               <h4 class="bold text-gray">¡Nos comprometemos a contestarte!</h4>
             </div>
             <div class="col-sm-6">
