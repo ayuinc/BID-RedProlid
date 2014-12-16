@@ -1,5 +1,5 @@
 <section id="puntos-de-vista" class="pt-0">
-  <div class="container relative with-shadow mb-28">
+  <div class="container relative mb-28">
     <div class="row">
       <div class="col-md-12">
         <?php the_breadcrumb(); ?>
@@ -17,7 +17,7 @@
           </nav>
         </div>
       </div>
-      <hr style="border-top: 3px dotted #aeab8b;">
+      <hr style="border-top: 2px dotted #888888;">
     </div>
     <div clas="row">
 	    <div class="col-sm-10 col-md-offset-1">
@@ -42,8 +42,8 @@
   <div class="container text-left">
     <div class="row">
       <div class="col-sm-10 col-md-offset-1 with-hr pb-70">
-        <hr style="border-top: 3px dotted #aeab8b;">	  
-			  <h4><?php the_field('nombre_completo'); ?></h4>
+        <hr style="border-top: 2px dotted #888888;">	  
+			  <h4 class="mt--5"><?php the_field('nombre_completo'); ?></h4>
 		    <p><?php the_field('contenido_punto_de_vista'); ?></p>
 		    <div class="text-center mt-35">
 		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
