@@ -214,6 +214,28 @@
       {lang: 'es'}
     </script>
     
+		<script>
+		$("#wppb-form-element-18").hide();
+		$("#wppb-form-element-19").hide();
+			
+		$("#trabajo").change(function(){
+		  var name = $("#trabajo").val();
+		  if (name === 'Otro trabajo') { 
+				$("#wppb-form-element-18").show();
+		  } else {
+			  $("#wppb-form-element-18").hide();
+		  }
+		});
+		$("#posicion").change(function(){
+		  var name = $("#posicion").val();
+		  if (name === 'Otra posición') { 
+				$("#wppb-form-element-19").show();
+		  } else {
+			  $("#wppb-form-element-19").hide();
+		  }
+		});		
+		</script>    
+    
     <?php wp_footer(); ?>
   </body>
 </html>

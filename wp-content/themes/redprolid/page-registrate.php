@@ -157,6 +157,22 @@ get_header(); ?>
 	  .wppb-send-credentials-checkbox label {
 	  	margin-left: 40%;
 	  }
+	  #wppb-form-element-18 label {
+			width: 18%;
+			margin-left: 126px;
+	  }
+	  #wppb-form-element-18 input {
+	  	width: 30%;
+			box-shadow: inset -2px 5px 17px #eee;
+	  }	  
+	  #wppb-form-element-19 label {
+			width: 19%;
+			margin-left: 120px;
+	  }
+	  #wppb-form-element-19 input {
+	  	width: 30%;
+			box-shadow: inset -2px 5px 17px #eee;
+	  }	  
 	  .form-submit #register {
 	  	margin-left: 73%;
 	  }
@@ -190,7 +206,7 @@ get_header(); ?>
 				      	<img src="http://redprolid.org/wp-content/themes/redprolid/assets/icons/division-02.png" alt="" style="width: 16px;">
 				      </div>
 				      <div class="col-sm-5 mt-35">
-					      <h3 class="light text-left">Ingresa Utilizando las redes sociales</h3>
+					      <h3 class="light text-left">Ingresa utilizando las redes sociales</h3>
 					      <p class="mt-70"><?php do_action( 'wordpress_social_login' ); ?></p>
 				      </div>			      
 				    </div>
