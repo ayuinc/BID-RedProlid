@@ -43,7 +43,7 @@
     <div class="row">
       <div class="col-sm-10 col-md-offset-1 with-hr pb-70">
         <hr style="border-top: 2px dotted #888888;">	  
-			  <h4><?php the_field('nombre_completo'); ?></h4>
+			  <h4 class="mt--5"><?php the_field('nombre_completo'); ?></h4>
 		    <p><?php the_field('contenido_punto_de_vista'); ?></p>
 		    <div class="text-center mt-35">
 		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
