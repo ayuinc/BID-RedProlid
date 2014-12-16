@@ -4126,7 +4126,8 @@ form.search button {
 
 .respuesta {
   font-size: 15px !important;
-  margin-left: 7px !important; }
+  margin-left: 7px !important;
+  font-weight: 100 !important; }
 
 .widgets .container .row .col-md-3 .highlight {
   background-color: #EBEADE;
@@ -4135,7 +4136,7 @@ form.search button {
   color: #333333 !important; }
 .widgets .container .row .col-md-3 .panel-custom .panel-body {
   min-height: 400px;
-  padding: 0; }
+  padding: 0 0 14px 0; }
   .widgets .container .row .col-md-3 .panel-custom .panel-body h5 {
     font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
     font-weight: 500;
@@ -4147,6 +4148,8 @@ form.search button {
   .widgets .container .row .col-md-3 .panel-custom .panel-body .btn {
     position: absolute;
     bottom: 14px; }
+.widgets #opinion .panel .panel-body .yop-poll-answers {
+  padding-left: 3px; }
 .widgets #opinion .panel .panel-body .yop-poll-answers li:nth-child(6) {
   display: none; }
 .widgets #opinion .panel .panel-body div[id^="yop-poll-results-3"] {

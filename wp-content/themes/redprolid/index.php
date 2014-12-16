@@ -80,7 +80,7 @@ get_header(); ?>
 									<?php while ( have_posts() ) : the_post(); ?>                 
                     <img src="<?php the_field('imagen_concurso'); ?>" alt="" class="img-responsive mb-14">
                     <h5><?php the_title(); ?></h5>
-                    <p class="text-gray"><?php the_field('descripcion_concurso'); ?></p>
+                    <p class="light"><?php the_field('descripcion_concurso'); ?></p>
                     <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Más información</a>
                   <?php endwhile; ?>
                 </div>
@@ -102,7 +102,7 @@ get_header(); ?>
 											<?php while ( have_posts() ) : the_post(); ?>                    
                       <li class="mb-14">
                         <h5><?php the_title(); ?></h5>
-                        <small class="date">
+                        <small class="date light">
                         	<?php the_time('d-m-Y') ?><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary p ml-7">Lee más &gt;&gt;</a>
                         </small>
                       </li>
@@ -132,7 +132,7 @@ get_header(); ?>
                       <div class="month"><?php echo date_i18n('M', strtotime( $tempDate)); ?></div>
                     </div>
                     <h5><?php the_title(); ?></h5>
-                    <p class="event-des"><?php the_field('descripcion_evento'); ?></p>
+                    <p class="event-des light"><?php the_field('descripcion_evento'); ?></p>
                     <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Ve más</a>
                   <?php endwhile; ?>
                 </div>
@@ -168,31 +168,31 @@ get_header(); ?>
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled m-0">
-                    <li class="title pt-7">Puntos de vista</li>
+                    <li class="title pt-7 text-gray-darker">Puntos de vista</li>
                     <li class="rule relative" style="top: 22px;"></li>
                     <li class="icon" style="top: 1px; background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
                   </ul>
                 </div>
                 <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                      
-                <div class="panel-body p-0 mt-7">               
+                <div class="panel-body">               
                   <div class="col-sm-5">
                     <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
                   </div>
                   <div class="col-sm-7">
-                    <h4 class="pt-0"><?php the_title(); ?><br><small><?php the_field('profesion'); ?></small></h4>
-                    <p class="light text-gray" style="line-height: 24px; height: 131px;"><?php the_field('descripcion_punto_de_vista'); ?></p>
-                    <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee aquí</a></div>
+                    <h3 class="pt-0 medium mb-0"><?php the_title(); ?></h3>
+                    <h5 class="medium mt-0"><?php the_field('profesion'); ?></h5>
+                    <p class="light"><?php the_field('descripcion_punto_de_vista'); ?></p>
+                    <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee aquí</a>
                   </div>
                 </div>
                 <?php endwhile; ?>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="panel panel-custom">               
+              <div class="panel panel-custom  highlight">               
                 <?php query_posts( 'category_name=campeonas&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                   
-                <div class="panel-body highlight pt-7">
                   <div class="panel-heading">
                     <ul class="list-unstyled m-0">
                       <li class="title pl-14" style="background:#ebeade; padding-top: 3px;">Campeonas</li>
@@ -204,14 +204,11 @@ get_header(); ?>
                     <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
                   </div>
                   <div class="col-sm-7">
-                    <h4><?php the_title(); ?></h4>
-                    <h5><?php the_field('posicion_campeona'); ?></h5>
-                    <p class="light-italic"><?php the_field('descripcion_campeona'); ?></p>
+                    <h3 class="pt-0 medium mb-0"><?php the_title(); ?></h3>
+                    <h5 class="medium mt-0"><?php the_field('posicion_campeona'); ?></h5>
+                    <p class="light"><?php the_field('descripcion_campeona'); ?></p>
+                    <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Entrevista completa</a>
                   </div>
-                </div>
-                <div class="panel-footer highlight">
-                  <div class="pr-14 text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Entrevista completa</a></div>
-                </div>
                 <?php endwhile; ?>
               </div>
             </div>
