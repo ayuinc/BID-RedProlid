@@ -3,21 +3,27 @@
 		.formBuilderLabelRequired.control-label {
 			font-size: 16px !important;
 		}
-		.formBuilderInput.controls {
-			input#fieldformBuilderFieldName {
-				margin-left: 7px;
-			}
+		#formBuilderFieldName {
+			.formBuilderLabel.control-label {
+				margin-left: 72px !important;
+				margin-right: 0px !important;
+			}	
+		}
+		#formBuilderFieldEmail {
+			.formBuilderLabel.control-label {
+				margin-left: 72px !important;
+				margin-right: 0px !important;
+			}	
 		}
 		.control-group.formBuilderField.large-text-area {
-			.formBuilderLabel.control-label {
 				font-size: 16px !important;
+				margin-right: 14px !important;
 			}
-			.formBuilderLargeTextarea.controls {
-				textarea {
-					width: 70% !important;
-				}
-
-			}
+			// .formBuilderLargeTextarea.controls {
+			// 	textarea {
+			// 		width: 70% !important;
+			// 	}
+			// }
 		}
 		.formBuilderSubmit {
 			input {
@@ -25,5 +31,4 @@
 				margin-right: 8px;
 			}
 		}		
-	}
 }

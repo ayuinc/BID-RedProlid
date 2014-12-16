@@ -34,10 +34,10 @@ get_header(); ?>
 				        	text-align: left !important;
 				        	color: #aaa;
 				        	float: left !important;
-				        	margin-right: 7px;
+				        	/*margin-right: 7px;*/
 			        	}
 			        	#formBuilderFieldName .formBuilderLabelRequired {
-			        		margin-left: 66px;
+			        		/*margin-left: 66px;*/
 			        	}
 			        	.control-group {
 			        		margin-bottom: 14px;
@@ -53,14 +53,14 @@ get_header(); ?>
 				        	border:1px solid #ccc;
 			        	}
 			        	#formBuilderFieldComments .formBuilderLabel {
-			        		margin-left: 61px;
+			        		/*margin-left: 61px;*/
 			        	}
 			        	.formBuilderInput input {
 			        		box-shadow: inset -2px 5px 17px #eee;
 			        		width: 428px;
 			        	}
 			        	#fieldformBuilderFieldComments {
-			        		width: 77%;
+			        		width: 70%;
 			        	}
 			        	.formBuilderSubmit input {
 				        	padding: 5px 10px;
