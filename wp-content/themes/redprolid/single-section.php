@@ -15,7 +15,7 @@ foreach( $customposts as $post ) :  // start you custom loop
 
     <div class="title">
     <h3><?php the_title(); ?></h3>
-    <p>
+    <div>
     <?php if ($segment2 == 'listas-para-la-politica'): ?>
       FUENTE: <a href="<?php the_field('url'); ?>"><?php the_field('fuente-debates'); ?></a>
     <?php else: ?>
@@ -32,7 +32,7 @@ foreach( $customposts as $post ) :  // start you custom loop
     <?php if ($segment2 == 'agenda-de-genero' || $segment2 == 'carrera-de-vallas' || $segment2 == 'nivelando-la-cancha') {?>
       <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/enterate-grid-4-01.png" alt="" style="width:20px">
     <?php } ?>
-    </p>
+    </div>
     </div>
     <div class="content">
       <?php the_field('contenido-debates'); ?>
