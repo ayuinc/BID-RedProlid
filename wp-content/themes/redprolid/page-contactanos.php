@@ -37,7 +37,7 @@ get_header(); ?>
 				        	margin-right: 7px;
 			        	}
 			        	#formBuilderFieldName .formBuilderLabelRequired {
-			        		margin-left: 66px;
+			        		margin-left: 73px;
 			        	}
 			        	.control-group {
 			        		margin-bottom: 14px;
@@ -53,7 +53,7 @@ get_header(); ?>
 				        	border:1px solid #ccc;
 			        	}
 			        	#formBuilderFieldComments .formBuilderLabel {
-			        		margin-left: 61px;
+			        		margin-left: 69px;
 			        	}
 			        	.formBuilderInput input {
 			        		box-shadow: inset -2px 5px 17px #eee;
