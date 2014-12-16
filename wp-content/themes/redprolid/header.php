@@ -55,8 +55,8 @@
     <link rel="apple-touch-icon" href="">
 
     <!-- WebFonts -->
-    <script async type="text/javascript" src="//use.typekit.net/nsv5vjx.js"></script>
-    <script async type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="//use.typekit.net/nsv5vjx.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
 
     <!-- APP STYLES -->
     <link rel="stylesheet" href="<?php echo content_url('/'); ?>themes/redprolid/stylesheets/main.css">

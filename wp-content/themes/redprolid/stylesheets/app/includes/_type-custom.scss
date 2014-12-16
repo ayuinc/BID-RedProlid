@@ -18,6 +18,14 @@ p, strong, em, small, ul, ol, li {
   color: $gray-dark;
 }
 
+p {
+  font-size: 14px !important;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0px !important;
+}
+
 // LINE HEIGHTS
 .lh-sm {
   line-height: 19px;

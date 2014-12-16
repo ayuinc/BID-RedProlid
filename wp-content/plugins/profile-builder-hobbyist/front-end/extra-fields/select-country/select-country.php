@@ -5,7 +5,201 @@ function wppb_country_select_handler( $output, $form_location, $field, $user_id,
 		$item_title = apply_filters( 'wppb_'.$form_location.'_country_select_custom_field_'.$field['id'].'_item_title', wppb_icl_t( 'plugin profile-builder-pro', 'custom_field_'.$field['id'].'_title_translation', $field['field-title'] ) );
 		$item_description = wppb_icl_t( 'plugin profile-builder-pro', 'custom_field_'.$field['id'].'_description_translation', $field['description'] );
 
-		$country_array = apply_filters( 'wppb_'.$form_location.'_country_select_array', array( "", "Afghanistan", "Aland Islands", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", "Anguilla", "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia, Plurinational State of", "Bonaire, Sint Eustatius and Saba", "Bosnia and Herzegovina", "Botswana", "Bouvet Island", "Brazil", "British Indian Ocean Territory", "Brunei Darussalam", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada", "Cabo Verde", "Cayman Islands", "Central African Republic", "Chad", "Chile", "China", "Christmas Island", "Cocos (Keeling) Islands", "Colombia", "Comoros", "Congo", "Congo, the Democratic Republic of the", "Cook Islands", "Costa Rica", "Cote dIvoire", "Croatia", "Cuba", "Curacao", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Falkland Islands (Malvinas)", "Faroe Islands", "Fiji", "Finland", "France", "French Guiana", "French Polynesia", "French Southern Territories", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Gibraltar", "Greece", "Greenland", "Grenada", "Guadeloupe", "Guam", "Guatemala", "Guernsey", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Heard Island and McDonald Islands", "Holy See (Vatican City State)", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran, Islamic Republic of", "Iraq", "Ireland", "Isle of Man", "Israel", "Italy", "Jamaica", "Japan", "Jersey", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, Democratic Peoples Republic of", "Korea, Republic of", "Kuwait", "Kyrgyzstan", "Lao Peoples Democratic Republic", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macao", "Macedonia, the former Yugoslav Republic of", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Martinique", "Mauritania", "Mauritius", "Mayotte", "Mexico", "Micronesia, Federated States of", "Moldova, Republic of", "Monaco", "Mongolia", "Montenegro", "Montserrat", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Niue", "Norfolk Island", "Northern Mariana Islands", "Norway", "Oman", "Pakistan", "Palau", "Palestine, State of", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Pitcairn", "Poland", "Portugal", "Puerto Rico", "Qatar", "Reunion", "Romania", "Russian Federation", "Rwanda", "Saint Barthelemy", "Saint Helena, Ascension and Tristan da Cunha", "Saint Kitts and Nevis", "Saint Lucia", "Saint Martin (French part)", "Saint Pierre and Miquelon", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Sint Maarten (Dutch part)", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Georgia and the South Sandwich Islands", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Svalbard and Jan Mayen", "Swaziland", "Sweden", "Switzerland", "Syrian Arab Republic", "Taiwan, Province of China", "Tajikistan", "Tanzania, United Republic of", "Thailand", "Timor-Leste", "Togo", "Tokelau", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Turks and Caicos Islands", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "United States Minor Outlying Islands", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela, Bolivarian Republic of", "Viet Nam", "Virgin Islands, British", "Virgin Islands, U.S.", "Wallis and Futuna", "Western Sahara", "Yemen", "Zambia", "Zimbabwe" ) );
+		$country_array = apply_filters( 'wppb_'.$form_location.'_country_select_array', array( "","Afganistán
+","Albania
+","Alemania
+","Andorra
+","Angola
+","Antigua y Barbuda
+","Arabia Saudita
+","Argelia
+","Argentina
+","Armenia
+","Australia
+","Austria
+","Azerbaiyán
+","Bahamas
+","Bangladés
+","Barbados
+","Baréin
+","Bélgica
+","Belice
+","Benín
+","Bielorrusia
+","Birmania
+","Bolivia
+","Bosnia y Herzegovina
+","Botsuana
+","Brasil
+","Brunéi
+","Bulgaria
+","Burkina Faso
+","Burundi
+","Bután
+","Cabo Verde
+","Camboya
+","Camerún
+","Canadá
+","Catar
+","Chad
+","Chile
+","China
+","Chipre
+","Ciudad del Vaticano
+","Colombia
+","Comoras
+","Corea del Norte
+","Corea del Sur
+","Costa de Marfil
+","Costa Rica
+","Croacia
+","Cuba
+","Dinamarca
+","Dominica
+","Ecuador
+","Egipto
+","El Salvador
+","Emiratos Árabes Unidos
+","Eritrea
+","Eslovaquia
+","Eslovenia
+","España
+","Estados Unidos
+","Estonia
+","Etiopía
+","Filipinas
+","Finlandia
+","Fiyi
+","Francia
+","Gabón
+","Gambia
+","Georgia
+","Ghana
+","Granada
+","Grecia
+","Guatemala
+","Guyana
+","Guinea
+","Guinea ecuatorial
+","Guinea-Bisáu
+","Haití
+","Honduras
+","Hungría
+","India
+","Indonesia
+","Irak
+","Irán
+","Irlanda
+","Islandia
+","Islas Marshall
+","Islas Salomón
+","Israel
+","Italia
+","Jamaica
+","Japón
+","Jordania
+","Kazajistán
+","Kenia
+","Kirguistán
+","Kiribati
+","Kuwait
+","Laos
+","Lesoto
+","Letonia
+","Líbano
+","Liberia
+","Libia
+","Liechtenstein
+","Lituania
+","Luxemburgo
+","Madagascar
+","Malasia
+","Malaui
+","Maldivas
+","Malí
+","Malta
+","Marruecos
+","Mauricio
+","Mauritania
+","México
+","Micronesia
+","Moldavia
+","Mónaco
+","Mongolia
+","Montenegro
+","Mozambique
+","Namibia
+","Nauru
+","Nepal
+","Nicaragua
+","Níger
+","Nigeria
+","Noruega
+","Nueva Zelanda
+","Omán
+","Países Bajos
+","Pakistán
+","Palaos
+","Panamá
+","Papúa Nueva Guinea
+","Paraguay
+","Perú
+","Polonia
+","Portugal
+","Reino Unido
+","República Centroafricana
+","República Checa
+","República de Macedonia
+","República del Congo
+","República Democrática del Congo
+","República Dominicana
+","República Sudafricana
+","Ruanda
+","Rumanía
+","Rusia
+","Samoa
+","San Cristóbal y Nieves
+","San Marino
+","San Vicente y las Granadinas
+","Santa Lucía
+","Santo Tomé y Príncipe
+","Senegal
+","Serbia
+","Seychelles
+","Sierra Leona
+","Singapur
+","Siria
+","Somalia
+","Sri Lanka
+","Suazilandia
+","Sudán
+","Sudán del Sur
+","Suecia
+","Suiza
+","Surinam
+","Tailandia
+","Tanzania
+","Tayikistán
+","Timor Oriental
+","Togo
+","Tonga
+","Trinidad y Tobago
+","Túnez
+","Turkmenistán
+","Turquía
+","Tuvalu
+","Ucrania
+","Uganda
+","Uruguay
+","Uzbekistán
+","Vanuatu
+","Venezuela
+","Vietnam
+","Yemen
+","Yibuti
+","Zambia
+","Zimbabue" ) );
+		
 
         if( $form_location != 'register' )
 		    $input_value = ( ( wppb_user_meta_exists ( $user_id, $field['meta-name'] ) != null ) ? get_user_meta( $user_id, $field['meta-name'], true ) : '' );

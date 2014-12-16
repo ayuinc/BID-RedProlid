@@ -31,8 +31,8 @@
         <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" class="img-responsive">
       </div>
       <div class="col-sm-6">
-        <h1><?php the_title(); ?><small>(Bolivia)</small></h1>
-        <p><?php the_field('profesion'); ?> / <a href="http://twitter.com/<?php the_field('cuenta_de_twitter'); ?>">@<?php the_field('cuenta_de_twitter'); ?></a></p>
+        <h1><?php the_title(); ?></h1>
+        <p><?php the_field('profesion'); ?> <!--/ <a href="http://twitter.com/<?php //the_field('cuenta_de_twitter'); ?>">@<?php the_field('cuenta_de_twitter'); ?></a>--></p>
         <p class="text-justify">
         	<?php the_field('descripcion_larga_punto_de_vista'); ?>
         </p>

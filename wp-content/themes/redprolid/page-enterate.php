@@ -51,9 +51,9 @@ get_header(); ?>
             <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt=""><p style="color:#C4C09C" class="pl-35 pr-35">De diversos videos que podrás ver y compratir</p></li>
             <li><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5.png" alt=""><p style="color:#C4C09C" class="pl-14 pr-14">De cómo estar conectada con lo que pasa en la Red PROLID</p></li>
           </ul>
-          <p class="lead text-gray text-justify">Imagina esta sección como una biblioteca en la que almacenamos todo tipo de recursos de nuestra red:  libros, legislación, investigaciones, blogs y noticias, al igual que material audiovisual como entrevistas o vídeos. Queremos también incluir material eminentemente práctico como compendios de buenas prácticas, guías para las mujeres en el sector público o estudios de casos concretos. Aspiramos a que aquí puedas encontrar todo lo que puede serte útil en el desarrollo y fortalecimiento de tu liderazgo en el sector público y la política.</p>
+          <p class="lead text-gray text-center pl-0 pr-0 mt-35">Imagina esta sección como una biblioteca en la que almacenamos todo tipo de recursos de nuestra red:  libros, legislación, investigaciones, blogs y noticias, al igual que material audiovisual como entrevistas o vídeos. Queremos también incluir material eminentemente práctico como compendios de buenas prácticas, guías para las mujeres en el sector público o estudios de casos concretos. Aspiramos a que aquí puedas encontrar todo lo que puede serte útil en el desarrollo y fortalecimiento de tu liderazgo en el sector público y la política.</p>
         </div>
-        <div class="container">
+        <div class="container mb-56">
           <div class="panel panel-custom">
             <div class="panel-heading">
               <ul class="list-unstyled">
@@ -218,7 +218,7 @@ get_header(); ?>
 		                      </li>
 		                    </ul>
 		                    <p class="mt-21" style="color: #aaa;"><?php the_field('descripcion_evento');?></p>
-		                    <div class="text-right">
+		                    <div class="text-right pr-21">
 		                      <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="see-more">Más información</a>
 		                    </div>
 		                  </div>
@@ -252,14 +252,14 @@ get_header(); ?>
             <div class="col-sm-6">
               <div class="panel panel-custom">
                 <div class="panel-heading">
-                  <ul class="list-unstyled mh-70">
+                  <ul class="list-unstyled mh-70 mt-7">
                     <li class="title bg-panel">Campeonas</li>
                     <li class="rule"></li>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
                   </ul>
                   <a href="<?php echo home_url('/'); ?>campeonas" class="see-more">Entrevistas</a>
                 </div>
-                <div class="panel-body mt-42">
+                <div class="panel-body mt-49">
                   <div class="bg-white clearfix">
                   	<!-- Start the Loop. -->
 										<?php if ( have_posts() ) : ?>
