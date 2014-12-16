@@ -419,22 +419,22 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 36px; }
+  font-size: 26px; }
 
 h2, .h2 {
-  font-size: 30px; }
-
-h3, .h3 {
   font-size: 24px; }
 
+h3, .h3 {
+  font-size: 22px; }
+
 h4, .h4 {
-  font-size: 18px; }
+  font-size: 20px; }
 
 h5, .h5 {
-  font-size: 14px; }
+  font-size: 18px; }
 
 h6, .h6 {
-  font-size: 12px; }
+  font-size: 16px; }
 
 p {
   margin: 0 0 10px; }
@@ -3255,6 +3255,12 @@ p, strong, em, small, ul, ol, li {
   line-height: 2rem;
   color: #575757; }
 
+p {
+  font-size: 14px !important; }
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0px !important; }
+
 .lh-sm {
   line-height: 19px; }
 
@@ -3268,22 +3274,22 @@ p, strong, em, small, ul, ol, li {
   line-height: 35px; }
 
 h1.lead, .h1.lead {
-  font-size: 3.57143rem !important; }
+  font-size: 2.85714rem !important; }
 
 h2.lead, .h2.lead {
-  font-size: 3.14286rem !important; }
-
-h3.lead, .h3.lead {
   font-size: 2.71429rem !important; }
 
+h3.lead, .h3.lead {
+  font-size: 2.57143rem !important; }
+
 h4.lead, .h4.lead {
-  font-size: 2.28571rem !important; }
+  font-size: 2.42857rem !important; }
 
 h5.lead, .h5.lead {
-  font-size: 2rem !important; }
+  font-size: 2.28571rem !important; }
 
 h6.lead, .h6.lead {
-  font-size: 1.85714rem !important; }
+  font-size: 2.14286rem !important; }
 
 .normalize-text h1, .normalize-text h2, .normalize-text h3, .normalize-text h4, .normalize-text h5, .normalize-text h6,
 .normalize-text .h1, .normalize-text .h2, .normalize-text .h3, .normalize-text .h4, .normalize-text .h5, .normalize-text .h6,
