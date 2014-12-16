@@ -25,16 +25,15 @@ get_header(); ?>
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="slider-container text-center pt-35">
-                <!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/home-slider.png" class="img-responsive">-->
+              <div class="slider-container text-center mt-21">
                 <?php echo do_shortcode("[huge_it_slider id='1']"); ?>
               </div>
-              <h3 class="text-center lh-xl"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light" style="color: #aaa;">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h3>
+              <h2 class="text-center mt-21"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h2>
             </div>
           </div>
         </div>
       </section>
-      <section id="dtl-home">
+      <section class="dtl-home mb-21">
         <div class="container">
           <div class="panel panel-custom panel-highlight-silver">
             <div class="panel-heading">
@@ -44,12 +43,11 @@ get_header(); ?>
                 <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-nav-main-menu.png); background-repeat: no-repeat; background-position: 0px -85px;"></li>
               </ul>
             </div>
-            <div class="panel-body panel-body-shadow pl-7 pr-14">
-              <div class="col-sm-3 pt-0">
-                <p class="light" style="color: #aaa;">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
+            <div class="panel-body panel-body-shadow pt-14 pl-14 pr-14">
+              <div class="col-sm-4 pt-0">
+                <h5 class="medium mb-14">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</h5>
                 <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo" class="btn btn-primary">Más aquí</a>
               </div>
-              <div class="col-sm-1"></div>
               <div class="col-sm-8 dtl-path dtl-path-sm pr-14">
                <div class="row">
                   <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/"></a></div>
@@ -65,7 +63,7 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      <section id="widgets">
+      <section class="widgets mb-21">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
@@ -77,23 +75,18 @@ get_header(); ?>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -42px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body highlight" style="height: 410px !important;">
+                <div class="panel-body highlight">
                 	<?php query_posts( 'category_name=concursos&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>                 
-                  <div class="col-sm-12">
-                    <img src="<?php the_field('imagen_concurso'); ?>" alt="" class="img-responsive">
+                    <img src="<?php the_field('imagen_concurso'); ?>" alt="" class="img-responsive mb-14">
                     <h5><?php the_title(); ?></h5>
-                    <!--<small class="help-block"><?php $date = DateTime::createFromFormat('Ymd', get_field('fecha_concurso')); echo $date->format('d-m-Y'); ?></small>-->
                     <p class="text-gray"><?php the_field('descripcion_concurso'); ?></p>
-                  </div>
-                </div>
-                <div class="panel-footer highlight">
-                  <div class="text-right pr-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Más información</a></div>
-                </div>
+                    <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Más información</a>
                   <?php endwhile; ?>
+                </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 noticias">
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
@@ -102,22 +95,21 @@ get_header(); ?>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -84px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body pt-0" style="height: 410px !important;">
-                  <div class="col-sm-12">
+                <div class="panel-body">
+
                     <ul class="list-unstyled list-group list-group-custom">
                     	<?php query_posts( 'category_name=noticias&posts_per_page=3' ); ?>	
 											<?php while ( have_posts() ) : the_post(); ?>                    
-                      <li>
+                      <li class="mb-14">
                         <h5><?php the_title(); ?></h5>
-                        <!--<p><?php the_field('descripcion_rapida_noticias'); ?></p>-->
-                        <small class="date"><?php the_time('d-m-Y') ?> </small> <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary small">Lee más &gt;&gt;</a>
+                        <small class="date">
+                        	<?php the_time('d-m-Y') ?><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary p ml-7">Lee más &gt;&gt;</a>
+                        </small>
                       </li>
 											<?php endwhile; ?>                     
                     </ul>
-                  </div>
-                </div>
-                <div class="panel-footer">
-                  <div class="text-right"><a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary">Ve más</a></div>
+                    <a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary">Ve más</a>
+
                 </div>
               </div>
             </div>
@@ -130,25 +122,20 @@ get_header(); ?>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -126px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body pt-0" style="height: 410px !important;">
+                <div class="panel-body pt-0">
                   <?php query_posts( 'category_name=eventos&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
-                    
-                    <?php $tempDate = get_field('fecha_evento'); ?>
-                  <div class="col-sm-12">
-                    <div class="events-calendar-placeholder">
+                  <?php $tempDate = get_field('fecha_evento'); ?>
+                    <div class="events-calendar-placeholder mb-14">
                       <div class="day"><?php echo date_i18n('D', strtotime( $tempDate)); ?></div>
                       <div class="day-num"><?php echo date_i18n('d', strtotime( $tempDate)); ?></div>
                       <div class="month"><?php echo date_i18n('M', strtotime( $tempDate)); ?></div>
                     </div>
                     <h5><?php the_title(); ?></h5>
                     <p class="event-des"><?php the_field('descripcion_evento'); ?></p>
-                  </div>
-                </div>
-                <div class="panel-footer">
-                  <div class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary"  style=";">Ve más</a></div>
-                </div>
+                    <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Ve más</a>
                   <?php endwhile; ?>
+                </div>
               </div>
             </div>
             <div id="opinion" class="col-md-3">

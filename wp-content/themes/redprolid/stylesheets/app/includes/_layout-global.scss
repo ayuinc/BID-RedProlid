@@ -1,5 +1,10 @@
 header,
-section,
+section {
+	padding:0rem;
+	margin:0rem;
+}
+
+
 footer {
 	padding: $grid-gutter-width 0;
 	padding: rem($grid-gutter-width) 0;
@@ -23,7 +28,7 @@ footer {
 }
 
 #hero-unit {
-	padding-top: 0;
+	padding: 0;
 	.content {
 		position: relative;
 		min-height: 350px;
