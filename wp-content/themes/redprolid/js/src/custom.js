@@ -10,3 +10,4 @@ $(document).ready(function(){
   $('div.yop-poll-answers ul li:first').addClass("mt-35");
   $('.yop-poll-answers ul li label').addClass('respuesta');
 });
+

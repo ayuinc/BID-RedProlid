@@ -5,4 +5,6 @@ wp-config.php
 # Ignore Sass-Cache
 *.sass-cache
 .sass-cache/*
-main.css.map
+wp-content/themes/redprolid/stylesheets/main.css.map
+wp-content/themes/redprolid/header.php
+wp-content/themes/redprolid/footer.php
