@@ -208,7 +208,7 @@ get_header(); ?>
                     <h5 class="medium mt-0"><?php the_field('posicion_campeona'); ?></h5>
                     <p class="light"><?php the_field('descripcion_campeona'); ?></p>
                     <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Entrevista completa</a>
-                  </div>
+                  </div> 
                 <?php endwhile; ?>
               </div>
             </div>
