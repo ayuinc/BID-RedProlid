@@ -212,7 +212,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "futura-pt", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #212121;
@@ -364,7 +364,7 @@ hr {
     border: 1px solid #ddd !important; } }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "futura-pt", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1.1;
   color: inherit; }
@@ -3210,32 +3210,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ========================================*/
 /* PROJECT ESPECIFIC FONTS */
 .light {
-  font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
   font-weight: 300;
   font-style: normal; }
 
 .light-italic {
-  font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
   font-weight: 300;
   font-style: italic; }
 
 .book {
-  font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
   font-weight: 400;
   font-style: normal; }
 
 .book-italic {
-  font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
   font-weight: 400;
   font-style: italic; }
 
 .medium {
-  font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
   font-style: normal; }
 
 .bold {
-  font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
   font-weight: 700;
   font-style: normal; }
 
@@ -3488,7 +3488,7 @@ footer {
   padding-bottom: 21px; }
 
 .see-more {
-  font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
   font-weight: 700;
   font-style: normal; }
   .see-more:after {
@@ -3853,7 +3853,7 @@ form.form-search-inline button {
           color: white;
           padding: 12px 7px;
           padding: 0.85714rem 0.5rem;
-          font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+          font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
           font-weight: 300;
           font-style: normal;
           height: 42px; }
@@ -3919,7 +3919,7 @@ form.search button {
 .list-group.list-group-custom li {
   border-bottom: 1px solid #7a7a7a; }
   .list-group.list-group-custom li .date {
-    font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
     font-weight: 300;
     font-style: normal; }
 
@@ -3985,7 +3985,7 @@ form.search button {
         .panel.panel-custom .panel-heading ul li.title {
           font-size: 21px;
           font-size: 1.5rem;
-          font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+          font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
           font-weight: 700;
           font-style: normal;
           background: white;
@@ -4070,7 +4070,7 @@ form.search button {
   background: url(../assets/img/home-events-calendar.png) no-repeat 21px center;
   padding: 35px;
   text-align: center;
-  font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
   font-weight: 700;
   font-style: normal; }
   .events-calendar-placeholder .day {
@@ -4089,7 +4089,7 @@ form.search button {
     font-size: 70px;
     font-size: 5.71429rem;
     line-height: 70px;
-    font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
     font-weight: 700;
     font-style: normal; }
   .events-calendar-placeholder .month {
@@ -4214,7 +4214,7 @@ form.search button {
     left: 14px;
     top: 28px; }
   .dtl-custom-heading h1 {
-    font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
     font-weight: 700;
     font-style: normal;
     font-size: 42px;
@@ -4260,7 +4260,7 @@ form.search button {
     color: #575757;
     line-height: 28px; }
   .sumate-al-debate .content strong {
-    font-family: "futura-pt", Helvetica, Arial, sans-serif !important;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
     font-weight: 700;
     font-style: normal;
     line-height: 28px;
