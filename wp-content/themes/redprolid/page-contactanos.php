@@ -16,7 +16,7 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>    
     <div class="mh-700">
       <section id="contacto">
-        <div class="container relative with-shadow">
+        <div class="container relative">
           <div class="absolute dtl-custom-heading">
             <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon.png" alt=""></div>
             <h1 style="color: #aeab8b;">Contáctanos</h1>
@@ -24,8 +24,8 @@ get_header(); ?>
           </div>
           <div class="row pt-14-100">
             <div class="col-sm-6">
-              <p class="lead" style="color: #aaa;"><?php the_field('texto_introductorio_contactanos'); ?></p>
-              <p class="lead bold text-gray">¡Nos comprometemos a contestarte!</p>
+              <h4 class="text-justify" style="color: #aaa;"><?php the_field('texto_introductorio_contactanos'); ?></h4>
+              <h4 class="bold text-gray">¡Nos comprometemos a contestarte!</h4>
             </div>
             <div class="col-sm-6">
 	            <p class="text-left">
@@ -37,7 +37,7 @@ get_header(); ?>
 				        	margin-right: 7px;
 			        	}
 			        	#formBuilderFieldName .formBuilderLabelRequired {
-			        		margin-left: 66px;
+			        		margin-left: 73px;
 			        	}
 			        	.control-group {
 			        		margin-bottom: 14px;
@@ -53,14 +53,14 @@ get_header(); ?>
 				        	border:1px solid #ccc;
 			        	}
 			        	#formBuilderFieldComments .formBuilderLabel {
-			        		margin-left: 61px;
+			        		margin-left: 69px;
 			        	}
 			        	.formBuilderInput input {
 			        		box-shadow: inset -2px 5px 17px #eee;
 			        		width: 428px;
 			        	}
 			        	#fieldformBuilderFieldComments {
-			        		width: 77%;
+			        		width: 70%;
 			        	}
 			        	.formBuilderSubmit input {
 				        	padding: 5px 10px;
