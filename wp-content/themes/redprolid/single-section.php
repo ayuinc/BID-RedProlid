@@ -17,7 +17,7 @@ foreach( $customposts as $post ) :  // start you custom loop
     <h3><?php the_title(); ?></h3>
     <p>
     <?php if ($segment2 == 'listas-para-la-politica'): ?>
-      FUENTE: <a href="<?php the_field('fuente-debates'); ?>"><?php the_field('fuente-debates'); ?></a>
+      FUENTE: <a href="<?php the_field('url'); ?>"><?php the_field('fuente-debates'); ?></a>
     <?php else: ?>
       FUENTE: <?php the_field('fuente-debates'); ?>
     <?php endif; ?>
