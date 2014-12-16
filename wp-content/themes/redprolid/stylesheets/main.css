@@ -4190,9 +4190,39 @@ form.search button {
   position: absolute;
   z-index: 10000; }
 
+<<<<<<< HEAD
 #widgets .container .row .col-md-3 .panel-custom .panel-body {
   height: 445px !important; }
 #widgets #opinion .panel .panel-body .yop-poll-answers li:nth-child(6) {
+=======
+.respuesta {
+  font-size: 15px !important;
+  margin-left: 7px !important;
+  font-weight: 100 !important; }
+
+.widgets .container .row .col-md-3 .highlight {
+  background-color: #EBEADE;
+  padding: 14px !important; }
+.widgets .container .row .col-md-3 .panel-custom .title {
+  color: #333333 !important; }
+.widgets .container .row .col-md-3 .panel-custom .panel-body {
+  min-height: 400px;
+  padding: 0 0 14px 0; }
+  .widgets .container .row .col-md-3 .panel-custom .panel-body h5 {
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    color: #666666 !important; }
+  .widgets .container .row .col-md-3 .panel-custom .panel-body .list-unstyled li, .widgets .container .row .col-md-3 .panel-custom .panel-body .list-inline li {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px; }
+  .widgets .container .row .col-md-3 .panel-custom .panel-body .btn {
+    position: absolute;
+    bottom: 14px; }
+.widgets #opinion .panel .panel-body .yop-poll-answers {
+  padding-left: 3px; }
+.widgets #opinion .panel .panel-body .yop-poll-answers li:nth-child(6) {
+>>>>>>> f62290275c3f2e985f77986e8add47c235d43cb2
   display: none; }
 #widgets #opinion .panel .panel-body div[id^="yop-poll-results-3"] {
   display: none !important; }
