@@ -30,7 +30,7 @@
 	    </div>
     </div>
   </div>
-  <div class="container text-left mt-70 mb-35">
+  <div class="container text-left mb-35">
     <div class="row">
       <div class="col-sm-3 col-md-offset-1">
         <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" class="img-responsive">
