@@ -19,29 +19,41 @@ p, strong, em, small, ul, ol, li {
 }
 
 h1, h2, h3 {
-  color: #333333 !important
+  color: #232323 !important
 }
 
 h1, h2, h3, h4, h5 {
-  line-height: 115% !important;
+  line-height: 110% !important;
+  letter-spacing: -0.02rem;
 }
 
 h4, h5, p, li {
-  color: #888888 !important
+  color: #555 !important
 }
 
 p {
-  font-size: 14px !important;
+  font-size: 17px !important;
   line-height: 135% !important;
 }
 
 li, small {
-  line-height: 135% !important;
+  line-height: 130% !important;
+}
+
+small {
+	font-size: 13px;
 }
 
 h1, h2, h3, h4, h5 {
   margin-top: 0px !important;
 }
+
+.btn {
+	letter-spacing: -0.01rem;
+	@include light;
+	font-size: 15px;
+}
+
 
 // LINE HEIGHTS
 .lh-sm {
