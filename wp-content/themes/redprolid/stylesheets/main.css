@@ -215,7 +215,7 @@ body {
   font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857;
-  color: #565656;
+  color: #555;
   background-color: #fff; }
 
 input,
@@ -1901,7 +1901,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #969696; }
+  color: #959595; }
 
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -3760,6 +3760,10 @@ footer {
       width: 52px;
       height: auto; }
 
+.copyright {
+  background-color: #292929;
+  padding: 14px 0; }
+
 .social-links {
   padding-left: 0;
   list-style: none;
@@ -3785,6 +3789,11 @@ footer {
 .site-map li a {
   border-bottom: 2px solid black; }
 
+.terms a {
+  font-size: 16px;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 300;
+  font-style: normal; }
 .terms nav a {
   border-right: 2px solid black;
   padding: 0 12px; }
@@ -4307,12 +4316,12 @@ form.search button {
 
 .custom-vote {
   float: right !important;
-  margin-top: 6.1rem !important;
+  margin-top: 6.9rem !important;
   font-weight: 100 !important;
   font-size: 15px !important; }
 
 .view-results {
-  bottom: 1.5rem;
+  bottom: 1.7rem;
   position: relative;
   z-index: 10000; }
 

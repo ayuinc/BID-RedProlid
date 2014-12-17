@@ -25,8 +25,8 @@
           <div class="col-md-6 text-center">
             <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-footer.png" width="322px" height="auto"></a>
           </div>
-          <div class="col-md-3 text-center">
-            <a href="http://www.iadb.org/" target="_blank"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_BID-footer.png" width="190px" height="auto"></a>
+          <div class="col-md-3 text-right">
+            <a href="http://www.iadb.org/" target="_blank"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_BID-footer.png" width="130px" height="auto"></a>
           </div>
         </div>
         <div class="row">
@@ -50,9 +50,9 @@
         </div>
       </div>
     </footer>
-    <section class="copyright" style="background-color: #3c3c3c;">
+    <section class="copyright">
       <div class="container text-center">
-        <p class="text-muted m-0">2014. Todos los derechos reservados</p>
+        <p class="text-gray m-0">2014. Todos los derechos reservados</p>
       </div>
     </section>
     <!-- MODAL -->
