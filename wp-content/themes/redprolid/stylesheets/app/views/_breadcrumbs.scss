@@ -1,0 +1,16 @@
+#breadcrumbs{
+  list-style:none;
+  margin:0.7rem 0;
+  padding-left:0;
+  overflow:hidden;
+	li{
+    float:left;
+    margin-right:5px;
+    color:#ed7133;
+	}    
+	.separator{
+	    font-weight:100;
+	    font-size:20px;
+	    color:#ed7133;
+	}			
+}
