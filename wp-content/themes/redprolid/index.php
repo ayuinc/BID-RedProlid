@@ -28,24 +28,24 @@ get_header(); ?>
               <div class="slider-container text-center mt-21">
                 <?php echo do_shortcode("[huge_it_slider id='1']"); ?>
               </div>
-              <h2 class="text-center mt-21"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h2>
+              <h2 class="text-center mt-21"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
             </div>
           </div>
         </div>
       </section>
-      <section class="dtl-home mb-21">
+      <section class="dtl-home mt-21 mb-21">
         <div class="container">
           <div class="panel panel-custom panel-highlight-silver">
             <div class="panel-heading">
               <ul class="list-unstyled">
-                <li class="title">Desarrolla tu liderazgo</li>
+                <li class="title highlight-white">Desarrolla tu liderazgo</li>
                 <li class="rule"></li>
                 <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-nav-main-menu.png); background-repeat: no-repeat; background-position: 0px -85px;"></li>
               </ul>
             </div>
-            <div class="panel-body panel-body-shadow pt-14 pl-14 pr-14">
+            <div class="panel-body panel-body-shadow pt-21 pl-14 pr-14">
               <div class="col-sm-4 pt-0">
-                <h5 class="medium mb-14">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</h5>
+                <h5 class="light mb-14">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</h5>
                 <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo" class="btn btn-primary">Más aquí</a>
               </div>
               <div class="col-sm-8 dtl-path dtl-path-sm pr-14">
@@ -70,7 +70,7 @@ get_header(); ?>
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
-                    <li class="title">Concursos</li>
+                    <li class="title highlight-white">Concursos</li>
                     <li class="rule"></li>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -42px;"></li>
                   </ul>
@@ -90,7 +90,7 @@ get_header(); ?>
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
-                    <li class="title">Noticias</li>
+                    <li class="title highlight-white">Noticias</li>
                     <li class="rule"></li>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -84px;"></li>
                   </ul>
@@ -117,7 +117,7 @@ get_header(); ?>
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
-                    <li class="title">Eventos</li>
+                    <li class="title highlight-white">Eventos</li>
                     <li class="rule"></li>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -126px;"></li>
                   </ul>
@@ -142,7 +142,7 @@ get_header(); ?>
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
-                    <li class="title">Tu opinión cuenta</li>
+                    <li class="title highlight-white">Tu opinión cuenta</li>
                     <li class="rule"></li>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -168px;"></li>
                   </ul>
@@ -161,22 +161,22 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      <section>
+      <section class="mb-21">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled m-0">
-                    <li class="title pt-7 text-gray-darker">Puntos de vista</li>
-                    <li class="rule relative" style="top: 22px;"></li>
-                    <li class="icon" style="top: 1px; background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
+                    <li class="title text-gray-darker highlight-white">Puntos de vista</li>
+                    <li class="rule relative"></li>
+                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
                   </ul>
                 </div>
                 <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                      
-                <div class="panel-body">               
-                  <div class="col-sm-5">
+                <div class="panel-body pt-0 pb-0">               
+                  <div class="col-sm-5 pl-0">
                     <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
                   </div>
                   <div class="col-sm-7">
@@ -190,25 +190,27 @@ get_header(); ?>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="panel panel-custom  highlight">               
+              <div class="panel panel-custom highlight">  
+	              <div class="panel-heading">
+                    <ul class="list-unstyled m-0">
+                      <li class="title highlight-campeonas pl-14 text-gray-darker">Campeonas</li>
+                      <li class="rule relative"></li>
+                      <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
+                    </ul>
+                  </div>             
                 <?php query_posts( 'category_name=campeonas&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                   
-                  <div class="panel-heading">
-                    <ul class="list-unstyled m-0">
-                      <li class="title pl-14" style="background:#ebeade; padding-top: 3px;">Campeonas</li>
-                      <li class="rule relative" style="top: 19px;"></li>
-                      <li class="icon" style="top: -7px; background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
-                    </ul>
-                  </div>
-                  <div class="col-sm-5">
+                  <div class="panel-body pt-0 pb-0 pl-14 pr-14">
+	                  <div class="col-sm-5 pl-0">
                     <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
                   </div>
-                  <div class="col-sm-7">
+	                  <div class="col-sm-7">
                     <h3 class="pt-0 medium mb-0"><?php the_title(); ?></h3>
                     <h5 class="medium mt-0"><?php the_field('posicion_campeona'); ?></h5>
                     <p class="light"><?php the_field('descripcion_campeona'); ?></p>
                     <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Entrevista completa</a>
                   </div> 
+                  </div>
                 <?php endwhile; ?>
               </div>
             </div>
@@ -218,16 +220,12 @@ get_header(); ?>
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-md-3">
-              <div class="panel panel-custom">
-                <div class="panel-heading">
-                  <ul class="list-unstyled">
-                    <li class="title">Comentarios recientes</li>
-                  </ul>
-                </div>
-                <div class="panel-body pt-0">
-                  <div class="col-sm-12">
-                    <ul class="list-unstyled list-group list-group-custom">
+            <div class="col-md-3 comentarios">
+              <div class="panel-heading">
+                <h3 class="title text-gray-darker">Comentarios recientes</h3>
+              </div>
+              <div class="panel-body">
+                  <ul class="list-unstyled list-group list-group-custom">
                     <?php
                     $args = array(
                       'number' => '3'
@@ -235,27 +233,23 @@ get_header(); ?>
                     $comments = get_comments($args);?>
 
                     <?php foreach ($comments as $comment) : ?>
-                      <li>
-                        <h5><?php echo($comment->comment_author);?></h5>
-                        <p><?php echo($comment->comment_content);?></p>
-                        <small class="date"><?php echo($comment->comment_date);?> </small> 
-                        <!--<a href="<?php echo get_permalink( $comment->comment_post_ID ); ?>" class="text-primary small">Lee más &gt;&gt;</a>-->
+                      <li class="mb-14">
+                        <h5 class="medium"><?php echo($comment->comment_author);?></h5>
+                        <p class="light"><?php echo($comment->comment_content);?></p>
+                        <small class="date light"><?php echo($comment->comment_date);?> </small> 
                       </li>
                     <?php endforeach;?>
                     </ul>
-                    <!--<div class="text-right"><a href="#" class="btn btn-primary">Ver más</a></div>-->
-                  </div>
                 </div>
-              </div>
             </div>
             <div class="col-md-9">
               <div class="panel panel-custom highlight">
                 <div class="panel-body tall pt-0">
                   <div class="panel-heading">
                     <ul class="list-unstyled m-0">
-                      <li class="title pl-14" style="background:#ebeade; padding-top: 12px">Lo último en las redes</li>
-                      <li class="rule relative" style="top: 27px;"></li>
-                      <li class="icon icon-lg" style="top: 1px; background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid-social.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
+                      <li class="title highlight-campeonas pl-14 text-gray-darker">Lo último en las redes</li>
+                      <li class="rule relative"></li>
+                      <li class="icon icon-lg" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid-social.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
                     </ul>
                   </div>                
                   <div class="col-sm-4">

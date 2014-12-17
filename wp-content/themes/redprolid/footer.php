@@ -61,7 +61,7 @@
         <div class="modal-content">
           <div class="modal-body p-0">
             <div class="panel panel-custom panel-highlight">
-              <div class="panel-body pl-14 pr-14 pt-7" style="background: #ebeade;">
+              <div class="panel-body pl-28 pr-28 pt-7" style="background: #ebeade;">
                 <div class="row pr-21 mb-21">
                   <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
                 </div>
