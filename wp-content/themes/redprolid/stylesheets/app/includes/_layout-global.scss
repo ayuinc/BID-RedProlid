@@ -90,9 +90,16 @@ ul.table-list {
   }
 }
 
+@for $h from -25 to -1 {
+  .ml-#{$h} {
+    margin-left: ($h) + px!important;
+    margin-left: rem($h)!important;
+  }
+}
+
 @for $h from -10 to -1 {
   .mb-#{$h} {
-    margin-top: ($h) + px!important;
-    margin-top: rem($h)!important;
+    margin-bottom: ($h) + px!important;
+    margin-bottom: rem($h)!important;
   }
 }
