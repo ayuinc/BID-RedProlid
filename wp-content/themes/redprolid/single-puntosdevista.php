@@ -13,7 +13,12 @@
         </div>
         <div class="col-sm-6 pt-28">
           <nav class="text-right">
-            <a href="<?php echo home_url('/'); ?>puntos-de-vista-list">Puntos de vista anteriores</a> | <a href="#" data-toggle="modal" data-target="#pdv-modal">¿Te gustaría proponernos un tema?</a>
+            <a href="<?php echo home_url('/'); ?>puntos-de-vista-list">Puntos de vista anteriores</a> 
+            <?php
+            if ( is_user_logged_in() ) {
+              echo '|<a href="#" data-toggle="modal" data-target="#pdv-modal">¿Te gustaría proponernos un tema?</a>';
+            }
+            ?>
           </nav>
         </div>
       </div>
@@ -31,7 +36,7 @@
         <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" class="img-responsive">
       </div>
       <div class="col-sm-6">
-        <h1><?php the_title(); ?></h1>
+        <h1 class="mt--5"><?php the_title(); ?></h1>
         <p><?php the_field('profesion'); ?> <!--/ <a href="http://twitter.com/<?php //the_field('cuenta_de_twitter'); ?>">@<?php the_field('cuenta_de_twitter'); ?></a>--></p>
         <p class="text-justify">
         	<?php the_field('descripcion_larga_punto_de_vista'); ?>
@@ -41,11 +46,11 @@
   </div>
   <div class="container text-left">
     <div class="row">
-      <div class="col-sm-10 col-md-offset-1 with-hr pb-70">
+      <div class="col-sm-10 col-md-offset-1 with-hr pb-14">
         <hr style="border-top: 2px dotted #888888;">	  
-			  <h4 class="mt--5"><?php the_field('nombre_completo'); ?></h4>
+			  <h4><?php the_field('nombre_completo'); ?></h4>
 		    <p><?php the_field('contenido_punto_de_vista'); ?></p>
-		    <div class="text-center mt-35">
+		    <div class="text-center mt-14">
 		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
 		    </div>   
       </div>
@@ -63,7 +68,7 @@
     <div class="row">
       <div class="col-sm-10 col-md-offset-1 pt-35">		  
 		    <h4>Artículos comentados</h4>
-		    <ul class="grid-list grid-list-2 pb-ch-7">
+		    <ul class="ml--14 grid-list grid-list-2 pb-ch-7">
         <?php 
         $args = array(
           'number' => '3'
