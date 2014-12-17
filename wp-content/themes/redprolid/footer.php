@@ -18,8 +18,8 @@
         <div class="row pt-21">
           <div class="col-md-3">
             <ul class="list-unstyled text-white site-map">
-              <li><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li>
-              <li><a href="<?php echo home_url('/'); ?>sitemap/">Mapa de sitio</a></li>
+              <li class="mb-7 light"><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li>
+              <li class="mb-7 light"><a href="<?php echo home_url('/'); ?>sitemap/">Mapa de sitio</a></li>
             </ul>
           </div>
           <div class="col-md-6 text-center">

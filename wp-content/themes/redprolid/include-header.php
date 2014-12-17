@@ -1,4 +1,4 @@
-    <header>
+    <header class="pt-7">
       <div class="container">
         <div class="row">
           <div class="col-md-3">
@@ -6,12 +6,10 @@
               <a href="<?php echo home_url(); ?>"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png" class="img-responsive"></a>
             </div>
           </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-3">
-            <div class="user-sign-up text-center">
-              <h3 class="lh-lg">¿Quieres ser parte <br>de la Red PROLID?</h3>
+          <div class="col-md-4">
+            <div class="user-sign-up text-center mt-28">
+              <h3 class="medium">¿Quieres ser parte de la Red PROLID?</h3>
               <a href="<?php echo home_url("/"); ?>registrate" class="btn btn-primary">Únete</a>
-<!--               <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#mailChimp">Únete</a> -->
             </div>
           </div>
           <div class="col-md-1"></div>

@@ -64,27 +64,5 @@
     <link rel="stylesheet" href="http://www.redprolid.dev/wp-content/themes/redprolid/stylesheets/main.css">
     <link rel="stylesheet" href="http://www.redprolid.dev/wp-content/themes/redprolid/stylesheets/ebm-loops.css">
     <!-- <link rel="stylesheet" href="stylesheets/main.min.css"> -->
-
-		<style>
-			#breadcrumbs{
-			    list-style:none;
-			    margin:0.7rem 0;
-			    padding-left:0;
-			    overflow:hidden;
-			}
-			 
-			#breadcrumbs li{
-			    float:left;
-			    margin-right:5px;
-                color:#ed7133;
-			}
-			 
-			#breadcrumbs .separator{
-			    font-weight:100;
-			    font-size:20px;
-			    color:#ed7133;
-			}			
-		</style>	
-
   </head>
   <body>

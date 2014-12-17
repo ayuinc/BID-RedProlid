@@ -28,7 +28,7 @@ get_header(); ?>
               <div class="slider-container text-center mt-21">
                 <?php echo do_shortcode("[huge_it_slider id='1']"); ?>
               </div>
-              <h2 class="text-center mt-21"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
+              <h2 class="text-center mt-21 mb-0"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@ get_header(); ?>
             </div>
             <div class="panel-body panel-body-shadow pt-21 pl-14 pr-14">
               <div class="col-sm-4 pt-0">
-                <h5 class="medium mb-14">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</h5>
+                <h5 class="light mb-14">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</h5>
                 <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo" class="btn btn-primary">Más aquí</a>
               </div>
               <div class="col-sm-8 dtl-path dtl-path-sm pr-14">
