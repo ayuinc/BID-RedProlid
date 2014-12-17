@@ -26,7 +26,7 @@
     </div>
     <div clas="row">
 	    <div class="col-sm-10 col-md-offset-1">
-	    	<h4 class="pt-14-100 light mt-35 mb-35">Te ofrecemos artículos escritos por mujeres líderes en la región latinoamericana: políticas, especialistas o profesionales relevantes que ponen sobre el papel su experiencia en pro de unas sociedades más equitativas.</h4>
+	    	<h4 class="pt-14-100 light">Te ofrecemos artículos escritos por mujeres líderes en la región latinoamericana: políticas, especialistas o profesionales relevantes que ponen sobre el papel su experiencia en pro de unas sociedades más equitativas.</h4>
 	    </div>
     </div>
   </div>
