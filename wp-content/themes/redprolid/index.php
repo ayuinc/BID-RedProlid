@@ -45,7 +45,7 @@ get_header(); ?>
             </div>
             <div class="panel-body panel-body-shadow pt-21 pl-14 pr-14">
               <div class="col-sm-4 pt-0">
-                <h5 class="light mb-14">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</h5>
+                <h5 class="medium mb-14">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</h5>
                 <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo" class="btn btn-primary">Más aquí</a>
               </div>
               <div class="col-sm-8 dtl-path dtl-path-sm pr-14">
@@ -228,7 +228,7 @@ get_header(); ?>
                   <ul class="list-unstyled list-group list-group-custom">
                     <?php
                     $args = array(
-                      'number' => '3'
+                      'number' => '2'
                     );
                     $comments = get_comments($args);?>
 
@@ -251,16 +251,18 @@ get_header(); ?>
                       <li class="rule relative"></li>
                       <li class="icon icon-lg" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid-social.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
                     </ul>
-                  </div>                
-                  <div class="col-sm-4">
-										<a class="twitter-timeline" width="250" height="520"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a>  
+                  </div> 
+                  <div class="row ml-14 mr-7">               
+	                  <div class="col-sm-4 pl-0 pr-0">
+										<a class="twitter-timeline" width="250" height="310"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a>  
                   </div>
-                  <div class="col-sm-4">
-                  	<div class="fb-like-box" data-width="250" data-height="520" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+	                  <div class="col-sm-4 pl-0 pr-0">
+                  	<div class="fb-like-box" data-width="250" data-height="310" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
                   </div>
-                  <div class="col-sm-4">
-                    <div class="g-person" data-width="250" data-height="520" data-href="//plus.google.com/u/0/107403271684877473593" data-rel="author"></div>
+	                  <div class="col-sm-4 pl-0 pr-0">
+                    <div class="g-person" data-width="250" data-height="300" data-href="//plus.google.com/u/0/107403271684877473593" data-rel="author"></div>
                   </div>  
+                  </div>
                 </div>
               </div>
             </div>
