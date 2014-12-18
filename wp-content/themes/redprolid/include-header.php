@@ -1,4 +1,4 @@
-    <header class="pt-7">
+    <header class="pt-7 pb-7">
       <div class="container">
         <div class="row">
           <div class="col-md-3">

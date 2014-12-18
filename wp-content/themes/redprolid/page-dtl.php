@@ -23,9 +23,9 @@ get_header(); ?>
 		          <img src="<?php the_field('imagen-dtl'); ?>" alt="<?php the_title(); ?>" class="pull-left" width="100%">
 						</div>  
 						<div class="col-md-6">
-              <p><?php the_field('introduccion-dtl'); ?></p>
+              <h3 class="light"><?php the_field('introduccion-dtl'); ?></h3>
 						</div>
-						<div class="col-md-12">
+						<div class="col-md-12 mt-21 pl-0">
 							<p><?php the_field('contenido-dtl'); ?></p>
 						</div>
 						<?php endwhile; ?>
