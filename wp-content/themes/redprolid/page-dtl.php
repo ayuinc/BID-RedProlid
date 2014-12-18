@@ -11,20 +11,20 @@ get_header(); ?>
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
     <div class="mh-700">
-      <section id="dtl" class="pt-0">
-        <div class="container relative dtl-content with-shadow">
-          <!-- Start the Loop. -->
+      <section id="dtl" class="mt-21">
+        <div class="container relative dtl-content">
 					<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ) : the_post(); ?>
+						<div class="col-md-6 pl-0">
 		          <div class="absolute dtl-custom-heading">
-		            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-dtl-icon.png" alt="<?php the_title(); ?>"></div>
-		            <h3 class="lead" style="color: #808080;"><?php the_title(); ?></h3>
-		            <!-- <hr style="border-top: 3px dotted #808080;"> -->
+		            <div class="pl-0"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-dtl-icon.png" alt="<?php the_title(); ?>"></div>
+		            <h1 class="mt-21"><?php the_title(); ?></h1>
 		          </div>
-		          <img src="<?php the_field('imagen-dtl'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-28 mb-21" width="530px" height="auto">
-		          <div>
-                <p class="text-right pt-14-100 mb-28" style="color: #aaa;"><?php the_field('contenido-dtl'); ?></p> 
-              </div>
+		          <img src="<?php the_field('imagen-dtl'); ?>" alt="<?php the_title(); ?>" class="pull-left" width="100%">
+						</div>  
+						<div class="col-md-6">
+              <p><?php the_field('contenido-dtl'); ?></p>
+						</div>
 						<?php endwhile; ?>
 					<?php endif; ?>                 
         </div>
