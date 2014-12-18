@@ -134,3 +134,12 @@ form.search {
 		background: $brand-primary url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px;
 	}
 }
+
+.nav-video {
+	margin:0;
+	padding: 0;
+	img {
+		float:left;
+		margin:7px 7px 0 7px;
+	}
+}

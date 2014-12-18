@@ -20,15 +20,15 @@
           <li>
             <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo" class="dtl <?php if($segment1=='desarrolla-tu-liderazgo'){ echo 'active'; } ?>"><i></i><span>Desarrolla tu liderazgo</span></a>
             <ul class="list-unstyled">
-              <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/">¿Adónde v@mos?</a></li>
-              <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/carrera-de-vallas/">Carrera de vallas</a></li>
-              <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/nivelando-la-cancha/">Nivelando la cancha</a></li>
-              <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/listas-para-la-politica/">Listas para la política</a></li>
-              <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/">Agenda de género</a></li>
-              <li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/">¿Adónde v@mos?</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/carrera-de-vallas/">Carrera de vallas</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/nivelando-la-cancha/">Nivelando la cancha</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/listas-para-la-politica/">Listas para la política</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/">Agenda de género</a></li>
+              <li class="light">
                 <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas">Pistas →</a>
                 <ul class="list-unstyled">
-                  <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a></li>
+                  <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a></li>
                 </ul>
               </li>
             </ul>
@@ -37,17 +37,19 @@
             <a href="<?php echo home_url('/'); ?>enterate" class="enterate <?php if($segment1=='enterate'||$segment1=='noticias'||$segment1=='eventos'||$segment1=='campeonas'||$segment1=='videos'){ echo 'active'; } ?>"><i></i><span>Entérate</span></a>
             <ul class="list-unstyled">
               <!--<li><a href="<?php echo home_url('/'); ?>poll">Tu opinión importa</a></li>-->
-              <li><a href="<?php echo home_url('/'); ?>noticias">Noticias</a></li>
-              <li><a href="<?php echo home_url('/'); ?>eventos">Eventos</a></li>
-              <li><a href="#">Nuestro boletín</a></li>
-              <li><a href="<?php echo home_url('/'); ?>campeonas">Campeonas</a></li>
-              <li><a href="#" class="videos"><span style="width: 16px; height: 16px; background: url(<?php echo home_url('/'); ?>wp-content/themes/redprolid/assets/icons/video-nav-main-menu.png) no-repeat center center;"></span> Videos</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>noticias">Noticias</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>eventos">Eventos</a></li>
+              <li class="light"><a href="#">Nuestro boletín</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>campeonas">Campeonas</a></li>
+              <li class="light nav-video">
+              	<img src="<?php echo home_url('/'); ?>wp-content/themes/redprolid/assets/icons/video-nav-main-menu.png"> <a href="#" class="videos">Videos</a>
+              </li>
             </ul>
           </li>
           <li>
             <a href="<?php echo home_url('/'); ?>concursos" class="concursos <?php if($segment1=='concursos'){ echo 'active'; } ?>"><i></i><span>Concursos</span></a>
             <ul class="list-unstyled">
-              <li><a href="<?php echo home_url('/'); ?>concursos">Concursos anteriores</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>concursos">Concursos anteriores</a></li>
             </ul>
           </li>
           <li>
@@ -56,13 +58,13 @@
               <li>
               	<a href="#">Foros virtuales →</a>
                 <ul class="list-unstyled">
-                  <li style="width:250px"><a href="#">¿Quieres ver los foros anteriores?</a></li>
+                  <li  class="light" style="width:250px"><a href="#">¿Quieres ver los foros anteriores?</a></li>
                 </ul>              	
               </li>
               <li>
               	<a href="<?php echo home_url('/'); ?>webinar-principal">Webinarios →</a>
                 <ul class="list-unstyled">
-                  <li style="width:250px"><a href="<?php echo home_url('/'); ?>webinarios-anteriores">¿Quieres ver los webinarios anteriores?</a></li>
+                  <li  class="light" style="width:250px"><a href="<?php echo home_url('/'); ?>webinarios-anteriores">¿Quieres ver los webinarios anteriores?</a></li>
                 </ul> 
               </li>
             </ul>

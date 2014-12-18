@@ -4118,6 +4118,13 @@ form.search button {
   width: 42px;
   background: #ed7133 url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px; }
 
+.nav-video {
+  margin: 0;
+  padding: 0; }
+  .nav-video img {
+    float: left;
+    margin: 7px 7px 0 7px; }
+
 .table.table-unstyled tr td {
   border: none; }
 
@@ -4316,7 +4323,7 @@ form.search button {
 
 .custom-vote {
   float: right !important;
-  margin-top: 6.9rem !important;
+  margin-top: 7.2rem !important;
   font-weight: 100 !important;
   font-size: 15px !important; }
 
@@ -4382,6 +4389,10 @@ form.search button {
   .red-prolid-grid li p {
     margin-top: 14px;
     margin-top: 1rem; }
+
+.redprolid-banner {
+  background: #ebeade !important;
+  padding: 0 20px; }
 
 .videoWrapper {
   position: relative;

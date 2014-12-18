@@ -15,22 +15,40 @@ get_header(); ?>
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
     <div class="mh-700">
-      <section id="hero-unit">
-        <div class="container with-shadow">
-          <div class="content clearfix mt-35">
-            <div class="col-sm-7">
-              <div class="dtl-custom-heading">
-                <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" alt=""></div>
-                <h1 style="color: #fff;">¿Qué es Red PROLID?</h1>
-                <hr style="border-top: 3px dotted #fff;">
-              </div>
-              <p class="pt-28-100 pl-7-100 text-justify lead"><?php the_field('que_es_redprolid'); ?></p>
-            </div>
-            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png" alt="" class="network-right mt-21">
-          </div>
-          <h5 class="text-center light pt-42 lead"><?php the_field('texto_central_redprolid'); ?></h5>
+      
+      <section class="mt-21 mb-21">
+	      <div class="container redprolid-banner">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+		          <div class="col-sm-1">
+			          <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" alt="">
+		          </div>
+		          <div class="col-sm-11">
+		            <h1 class="text-gray-darker ml-21 mt-21 mb-0 pb-0 medium">¿Qué es Red PROLID?</h1>	          
+		          </div>
+						</div>
+							<div class="row">
+		          <div class="col-sm-6">
+		            <p class="text-justify light"><?php the_field('que_es_redprolid'); ?></p>		          
+		          </div>
+						</div>						
+						</div>
+					</div>
+	        <!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png" alt="" class="network-right mt-21">-->
         </div>
       </section>
+      
+      <section id="hero-unit mb-21">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <h2 class="text-center light"><?php the_field('texto_central_redprolid'); ?></h2>
+            </div>
+          </div>
+        </div>
+      </section>      
+      
       <section class="pb-0">
         <div class="container with-shadow pb-28">
           <div class="panel panel-custom">
