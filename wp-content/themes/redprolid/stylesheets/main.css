@@ -3258,6 +3258,9 @@ h4, h5, p, li {
   color: #555 !important; }
 
 p {
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 300;
+  font-style: normal;
   font-size: 16px !important;
   line-height: 140% !important; }
 
@@ -3276,6 +3279,11 @@ h1, h2, h3, h4, h5 {
   font-weight: 300;
   font-style: normal;
   font-size: 15px; }
+
+b, strong {
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
+  font-style: normal; }
 
 .lh-sm {
   line-height: 19px; }
@@ -3523,14 +3531,13 @@ footer {
   padding: 0; }
   #hero-unit .content {
     position: relative;
-    min-height: 350px;
-    background: #d0cdb1;
-    margin-bottom: 56px;
-    margin-bottom: 4rem; }
+    min-height: 300px;
+    background: #d0cdb1; }
     #hero-unit .content .network-right {
       position: absolute;
       right: 0;
-      top: -21px; }
+      top: -21px;
+      height: 300px; }
 
 ul.table-list {
   padding-left: 0;
@@ -4118,6 +4125,13 @@ form.search button {
   width: 42px;
   background: #ed7133 url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px; }
 
+.nav-video {
+  margin: 0;
+  padding: 0; }
+  .nav-video img {
+    float: left;
+    margin: 7px 7px 0 7px; }
+
 .table.table-unstyled tr td {
   border: none; }
 
@@ -4316,7 +4330,7 @@ form.search button {
 
 .custom-vote {
   float: right !important;
-  margin-top: 6.9rem !important;
+  margin-top: 7.2rem !important;
   font-weight: 100 !important;
   font-size: 15px !important; }
 
@@ -4382,6 +4396,10 @@ form.search button {
   .red-prolid-grid li p {
     margin-top: 14px;
     margin-top: 1rem; }
+
+.redprolid-banner {
+  background: #ebeade !important;
+  padding: 0 20px; }
 
 .videoWrapper {
   position: relative;
@@ -4487,13 +4505,13 @@ form.search button {
   color: #565656; }
 
 .dtl-custom-heading {
-  width: 97%;
-  padding-left: 112px;
-  padding-top: 21px;
+  width: 95%;
+  padding-left: 114px;
+  padding-top: 25px;
   position: absolute; }
   .dtl-custom-heading > div:first-child {
-    width: 91px;
-    height: 91px;
+    width: 85px;
+    height: 85px;
     position: absolute;
     left: 14px;
     top: 28px; }
@@ -4501,7 +4519,7 @@ form.search button {
     font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
     font-weight: 700;
     font-style: normal;
-    font-size: 42px;
+    font-size: 40px;
     margin-top: 35px; }
   .dtl-custom-heading hr {
     margin-top: 12px; }
