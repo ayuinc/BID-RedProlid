@@ -23,7 +23,10 @@ get_header(); ?>
 		          <img src="<?php the_field('imagen-dtl'); ?>" alt="<?php the_title(); ?>" class="pull-left" width="100%">
 						</div>  
 						<div class="col-md-6">
-              <p><?php the_field('contenido-dtl'); ?></p>
+              <p><?php the_field('introduccion-dtl'); ?></p>
+						</div>
+						<div class="col-md-12">
+							<p><?php the_field('contenido-dtl'); ?></p>
 						</div>
 						<?php endwhile; ?>
 					<?php endif; ?>                 
