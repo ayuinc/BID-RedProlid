@@ -26,49 +26,49 @@ get_header(); ?>
 		          <div class="absolute dtl-custom-heading">
 							<?php if ($segment2 == "a-donde-vamos") : ?>
 		            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png" alt="<?php the_title(); ?>"></div>
-		            <h1 style="color: #f05f6a;"><?php the_title(); ?></h1>
+		            <h1 class="title-a-donde-vamos"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #aaa; width: 830px; margin-right: 178px;">
 		          </div>
 		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="460px" height="auto">
 							<?php endif; ?>
 							<?php if ($segment2 == "agenda-de-genero") : ?>
 		            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-icon.png" alt="<?php the_title(); ?>"></div>
-		            <h1 style="color: #c02f73;"><?php the_title(); ?></h1>
+		            <h1 class="title-agenda-de-genero"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #aaa; width: 830px; margin-right: 178px;">
 		          </div>
 		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="460px" height="auto">
 							<?php endif; ?>
 							<?php if ($segment2 == "carrera-de-vallas") : ?>
 								<div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-carrera-vallas-icon.png" alt="<?php the_title(); ?>"></div>
-		            <h1 style="color: #9a205c;"><?php the_title(); ?></h1>
+		            <h1 class="title-carrera-de-vallas"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #aaa; width: 830px; margin-right: 178px;">
 		          </div>
 		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="470px" height="auto">							
 							<?php endif; ?>
 							<?php if ($segment2 == "la-pinta-no-es-lo-de-menos") : ?>
 								<div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-icon.png" alt="<?php the_title(); ?>"></div>
-		            <h1 style="color: #007c8d;"><?php the_title(); ?></h1>
+		            <h1 class="title-la-pinta-no-es-lo-de-menos"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #aaa; width: 830px; margin-right: 178px;">
 		          </div>
 		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="460px" height="auto">
 							<?php endif; ?>
 							<?php if ($segment2 == "listas-para-la-politica") : ?>
 								<div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-listas-politica-icon.png" alt="<?php the_title(); ?>"></div>
-		            <h1 style="color: #015a71;"><?php the_title(); ?></h1>
+		            <h1 class="title-listas-para-la-politica"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #aaa; width: 830px; margin-right: 178px;">
 		          </div>
 		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="460px" height="auto">
 							<?php endif; ?>
 							<?php if ($segment2 == "nivelando-la-cancha") : ?>
 								<div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-nivelando-cancha-icon.png" alt="<?php the_title(); ?>"></div>
-		            <h1 style="color: #599a97;"><?php the_title(); ?></h1>
+		            <h1 class="title-nivelando-la-cancha"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #aaa;">
 		          </div>
 		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-21 img-circle relative pt-70 mt-42" width="560px" height="auto">
 							<?php endif; ?>
 							<?php if ($segment2 == "pistas-2") : ?>
 								<div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-pistas-icon.png" alt="<?php the_title(); ?>"></div>
-		            <h1 style="color: #007c8d;"><?php the_title(); ?></h1>
+		            <h1 class="title-pistas-2"><?php the_title(); ?></h1>
 		            <hr style="border-top: 3px dotted #aaa; width: 830px; margin-right: 178px;">
 		          </div>
 		          <img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="460px" height="auto">	
