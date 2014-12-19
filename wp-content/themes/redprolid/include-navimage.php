@@ -15,8 +15,7 @@
                 <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.jpg" alt="" class="color">
                 <div class="title">                  
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png" alt="">                  
-                  <h3>¿Adónde v@mos?</h3>
-                  <hr>
+                  <p class="medium">¿Adónde v@mos?</p>
                 </div>
               </a>
             </li>
@@ -28,8 +27,7 @@
                 <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-carrera-vallas-col.jpg" alt="" class="color">
                 <div class="title">                  
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-carrera-vallas-icon.png" alt="">                  
-                  <h3>Carrera de vallas</h3>
-                  <hr>
+                  <p class="medium">Carrera de vallas</p>
                 </div>
               </a>
             </li>
@@ -41,8 +39,7 @@
                 <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-nivelando-cancha-col.jpg" alt="" class="color">
                 <div class="title">                  
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-nivelando-cancha-icon.png" alt="">                  
-                  <h3>Nivelando la cancha</h3>
-                  <hr>
+                  <p class="medium">Nivelando la cancha</p>
                 </div>
               </a>
             </li>
@@ -54,12 +51,11 @@
                 <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-listas-politica-col.jpg" alt="" class="color">
                 <div class="title">                  
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-listas-politica-icon.png" alt="">                  
-                  <h3>Listas para la política</h3>
-                  <hr>
+                  <p class="medium">Listas para la política</p>
                 </div>
               </a>
             </li>
-            <?php } ?>
+            <?php } ?>           
             <?php if ($segment2!='agenda-de-genero') { ?>
             <li>
               <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/">
@@ -67,8 +63,7 @@
                 <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-col.jpg" alt="" class="color">
                 <div class="title">                  
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-icon.png" alt="">                  
-                  <h3>Agenda de género</h3>
-                  <hr>
+                  <p class="medium">Agenda de género</p>
                 </div>
               </a>
             </li>
@@ -80,8 +75,7 @@
                 <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-pistas-col.jpg" alt="" class="color">
                 <div class="title">                  
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-pistas-icon.png" alt="">                  
-                  <h3>Pistas</h3>
-                  <hr>
+                  <p class="medium">Pistas</p>
                 </div>
               </a>
             </li>  
@@ -93,8 +87,7 @@
                 <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-col.jpg" alt="" class="color">
                 <div class="title">                  
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-icon.png" alt="">                  
-                  <h3>La pinta no es lo de menos</h3>
-                  <hr>
+                  <p class="medium">La pinta no es lo de menos</p>
                 </div>
               </a>
             </li>

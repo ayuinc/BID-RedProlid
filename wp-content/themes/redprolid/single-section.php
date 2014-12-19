@@ -14,15 +14,13 @@ foreach( $customposts as $post ) :  // start you custom loop
     setup_postdata($post); ?>
 
     <div class="title">
-    <h3><?php the_title(); ?></h3>
-    <p>
-      FUENTE: <?php the_field('fuente-debates'); ?>
-    </p>
+	    <h3><?php the_title(); ?></h3>
+	    <p>FUENTE: <?php the_field('fuente-debates'); ?></p>
     </div>
     <div class="content">
       <?php the_field('contenido-debates'); ?>
     </div>
-    <div class="footer">
+    <div class="footer pt-0 pb-14">
       <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
     </div>
     <div class="comments mt-35">

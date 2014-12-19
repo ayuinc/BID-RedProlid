@@ -4513,7 +4513,7 @@ form.search button {
     width: 85px;
     height: 85px;
     position: absolute;
-    left: 14px;
+    left: 0px;
     top: 28px; }
   .dtl-custom-heading h1 {
     font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
@@ -4561,12 +4561,6 @@ form.search button {
   .sumate-al-debate .content p {
     color: #565656;
     line-height: 28px; }
-  .sumate-al-debate .content strong {
-    font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 28px;
-    color: #565656; }
 .sumate-al-debate .footer {
   padding: 35px 0;
   padding: 2.5rem 0;
@@ -4604,10 +4598,10 @@ form.search button {
 #dtl-grid ul:after {
   clear: both; }
 #dtl-grid ul li {
-  width: 33.28%;
+  width: 25%;
   float: left;
-  padding: 21px;
-  padding: 1.5rem; }
+  padding: 11px;
+  padding: 0.78571rem; }
   #dtl-grid ul li a {
     display: block; }
     #dtl-grid ul li a img {
@@ -4621,7 +4615,7 @@ form.search button {
         display: none; }
     #dtl-grid ul li a .title {
       position: relative;
-      padding-left: 84px; }
+      padding-left: 46px; }
       #dtl-grid ul li a .title:before, #dtl-grid ul li a .title:after {
         content: " ";
         display: table; }
@@ -4629,10 +4623,10 @@ form.search button {
         clear: both; }
       #dtl-grid ul li a .title img {
         position: absolute;
-        top: -42px;
-        left: 0;
+        top: -15px;
+        left: 0px;
         z-index: 30;
-        width: 77px;
+        width: 40px;
         height: auto; }
       #dtl-grid ul li a .title hr {
         border-top: 2px dotted #bcbcbc; }
