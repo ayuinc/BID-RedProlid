@@ -3255,7 +3255,8 @@ h1, h2, h3, h4, h5 {
   line-height: 130% !important; }
 
 h4, h5, p, li {
-  color: #555 !important; }
+  color: #555 !important;
+  line-height: 140%; }
 
 p {
   font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
@@ -3265,7 +3266,10 @@ p {
   line-height: 140% !important; }
 
 li, small {
-  line-height: 130% !important; }
+  line-height: 130% !important;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 300;
+  font-style: normal; }
 
 small {
   font-size: 12px;
@@ -4494,11 +4498,12 @@ form.search button {
   #breadcrumbs li {
     float: left;
     margin-right: 5px;
-    color: #ed7133; }
+    font-weight: 100;
+    font-size: 15px; }
   #breadcrumbs .separator {
     font-weight: 100;
-    font-size: 20px;
-    color: #ed7133; }
+    font-size: 10px;
+    margin-top: 5px; }
 
 .dtl-content p {
   line-height: 28px;

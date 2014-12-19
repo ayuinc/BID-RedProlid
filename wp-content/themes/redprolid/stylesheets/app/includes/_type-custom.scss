@@ -27,7 +27,8 @@ h1, h2, h3, h4, h5 {
 }
 
 h4, h5, p, li {
-  color: #555 !important
+  color: #555 !important;
+  line-height: 140%;
 }
 
 p {
@@ -38,6 +39,7 @@ p {
 
 li, small {
   line-height: 130% !important;
+  @include light;
 }
 
 small {

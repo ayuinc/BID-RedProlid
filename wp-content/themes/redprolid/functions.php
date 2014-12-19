@@ -315,7 +315,7 @@ function the_breadcrumb() {
         echo '<li><a href="';
         echo get_option('home');
         echo '">';
-        echo 'Home';
+        echo 'Inicio';
         echo '</a></li><li class="separator"> / </li>';
         if (is_category() || is_single()) {
             echo '<li>';
