@@ -4585,6 +4585,9 @@ form.search button {
   width: 150px;
   padding: 5px 10px; }
 
+.wp-social-login-provider-list img {
+  width: 50px; }
+
 .dtl-content p {
   line-height: 28px;
   color: #565656; }
