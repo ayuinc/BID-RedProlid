@@ -422,7 +422,7 @@ h1, .h1 {
   font-size: 40px; }
 
 h2, .h2 {
-  font-size: 24px; }
+  font-size: 28px; }
 
 h3, .h3 {
   font-size: 22px; }
@@ -3328,7 +3328,7 @@ h1.lead, .h1.lead {
   font-size: 3.85714rem !important; }
 
 h2.lead, .h2.lead {
-  font-size: 2.71429rem !important; }
+  font-size: 3rem !important; }
 
 h3.lead, .h3.lead {
   font-size: 2.57143rem !important; }
@@ -4447,9 +4447,43 @@ form.search button {
   right: 70px;
   top: 0; }
 
+.carousel-inner ul li div {
+  min-height: 470px; }
+.carousel-inner ul li .vermas {
+  position: absolute;
+  bottom: 35px; }
+
+.carousel-control .icon-next {
+  border-radius: 50%;
+  background: #fff;
+  width: 45px !important;
+  display: inline-block;
+  height: 45px;
+  font-size: 29px !important;
+  text-shadow: none;
+  color: #232323; }
+
+.carousel-control .icon-next:before {
+  content: '›';
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif; }
+
+.carousel-control .icon-prev {
+  border-radius: 50%;
+  background: #fff;
+  width: 45px !important;
+  display: inline-block;
+  height: 45px;
+  font-size: 29px !important;
+  text-shadow: none;
+  color: #232323; }
+
+.carousel-control .icon-prev:before {
+  content: '‹';
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif; }
+
 .enterate-search {
   position: relative;
-  min-height: 390px;
+  min-height: 350px;
   width: 350px; }
   .enterate-search .bookshelf {
     position: absolute;
@@ -4460,9 +4494,8 @@ form.search button {
     left: 0;
     background-size: cover; }
 
-.enterate-calendar .calendar {
-  width: 210px;
-  min-height: 210px; }
+.enterate-calendar p {
+  font-size: 70px !important; }
 
 .text-brown {
   color: #c4c09c; }
