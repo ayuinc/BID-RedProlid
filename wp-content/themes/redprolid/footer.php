@@ -78,8 +78,8 @@
 
                       }
                     ?>
-                    <nav class="text-right"><a href="#">Iniciar sesión</a> / <a href="#">Registrarse</a></nav>
-                    <hr class="m-0" style="border-top: 3px dotted #aeab8b;">
+                    <nav class="text-right light"><a href="#">Iniciar sesión</a> / <a href="#">Registrarse</a></nav>
+                    <hr class="m-0">
                   </div>
                 </div>
                 <div class="grid-block row">

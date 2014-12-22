@@ -17,6 +17,9 @@ p, strong, em, small, ul, ol, li {
   // line-height: rem(28);
   // color: $gray-dark;
 }
+h1.brand-titular {
+	color: $brand-titular !important;
+}
 
 h1, h2, h3 {
   color: #232323 !important
@@ -24,10 +27,12 @@ h1, h2, h3 {
 
 h1, h2, h3, h4, h5 {
   line-height: 130% !important;
+  margin-top: 0px !important;
 }
 
 h4, h5, p, li {
-  color: #555 !important
+  color: #555 !important;
+  line-height: 140%;
 }
 
 p {
@@ -38,15 +43,12 @@ p {
 
 li, small {
   line-height: 130% !important;
+  @include light;
 }
 
 small {
 	font-size: 12px;
 	color:#969696;
-}
-
-h1, h2, h3, h4, h5 {
-  margin-top: 0px !important;
 }
 
 .btn {
@@ -58,6 +60,26 @@ b, strong {
 	@include medium;
 }
 
+input[type=text],input[type=password], select, .form-control {
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	border-bottom:1px solid $gray-lighter;
+	padding:0.2rem 0.4rem;
+	background: rgba(239,239,239,1);
+	background: -moz-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(246,246,246,1) 42%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(239,239,239,1)), color-stop(42%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(246,246,246,1) 42%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(246,246,246,1) 42%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(239,239,239,1) 0%, rgba(246,246,246,1) 42%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(239,239,239,1) 0%, rgba(246,246,246,1) 42%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#ffffff', GradientType=0 );	
+	-webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  @include light;
+  color:$gray-light;
+  font-size: 14px;
+}
 
 // LINE HEIGHTS
 .lh-sm {
