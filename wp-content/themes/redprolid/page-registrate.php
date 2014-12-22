@@ -17,7 +17,7 @@ get_header(); ?>
 		<section>
 		  <div class="container">
 		    <div class="row">
-		      <div class="col-md-12">
+		      <div class="col-md-12 mt-7">
 		        <?php the_breadcrumb(); ?>
 		      </div>
 		    </div>			  
