@@ -6,13 +6,13 @@
       </div>
     </div>
     <div class="absolute dtl-custom-heading z-index-100">
-      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt=""></div>
+      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt="" width="80"></div>
       <div class="clearfix">
         <div class="col-md-6">
-          <h1 class="mt-21 ml--15 mb-0">Puntos de vista</h1>
+          <h1 class="mt-14 ml--25 mb-0 brand-titular">Puntos de vista</h1>
         </div>
         <div class="col-md-6 pt-28">
-          <nav class="text-right mb-0 mt-14">
+          <nav class="text-right mb-0 mt-0">
             <a href="<?php echo home_url('/'); ?>puntos-de-vista-list" class="light">Puntos de vista anteriores</a> 
             <?php
             if ( is_user_logged_in() ) {

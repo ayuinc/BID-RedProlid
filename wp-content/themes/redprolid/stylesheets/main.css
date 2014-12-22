@@ -419,7 +419,7 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 26px; }
+  font-size: 40px; }
 
 h2, .h2 {
   font-size: 24px; }
@@ -3248,11 +3248,15 @@ html {
     html {
       font-size: 14px; } }
 
+h1.brand-titular {
+  color: #AEAB8B !important; }
+
 h1, h2, h3 {
   color: #232323 !important; }
 
 h1, h2, h3, h4, h5 {
-  line-height: 130% !important; }
+  line-height: 130% !important;
+  margin-top: 0px !important; }
 
 h4, h5, p, li {
   color: #555 !important;
@@ -3275,9 +3279,6 @@ small {
   font-size: 12px;
   color: #969696; }
 
-h1, h2, h3, h4, h5 {
-  margin-top: 0px !important; }
-
 .btn {
   font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
   font-weight: 300;
@@ -3288,6 +3289,28 @@ b, strong {
   font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
   font-style: normal; }
+
+input[type=text], input[type=password], select, .form-control {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #efefef;
+  padding: 0.2rem 0.4rem;
+  background: #efefef;
+  background: -moz-linear-gradient(top, #efefef 0%, #f6f6f6 42%, white 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #efefef), color-stop(42%, #f6f6f6), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #efefef 0%, #f6f6f6 42%, white 100%);
+  background: -o-linear-gradient(top, #efefef 0%, #f6f6f6 42%, white 100%);
+  background: -ms-linear-gradient(top, #efefef 0%, #f6f6f6 42%, white 100%);
+  background: linear-gradient(to bottom, #efefef 0%, #f6f6f6 42%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#ffffff', GradientType=0 );
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 300;
+  font-style: normal;
+  color: #bcbcbc;
+  font-size: 14px; }
 
 .lh-sm {
   line-height: 19px; }
@@ -3302,7 +3325,7 @@ b, strong {
   line-height: 35px; }
 
 h1.lead, .h1.lead {
-  font-size: 2.85714rem !important; }
+  font-size: 3.85714rem !important; }
 
 h2.lead, .h2.lead {
   font-size: 2.71429rem !important; }
@@ -4504,6 +4527,63 @@ form.search button {
     font-weight: 100;
     font-size: 10px;
     margin-top: 5px; }
+
+.formulario-perfil ul {
+  list-style: none !important;
+  padding-left: 0px; }
+  .formulario-perfil ul li {
+    margin-bottom: 7px; }
+    .formulario-perfil ul li label {
+      width: 40%;
+      font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+      font-weight: 300;
+      font-style: normal;
+      color: #555;
+      font-size: 14px; }
+    .formulario-perfil ul li input {
+      margin: 0 !important;
+      width: 35%; }
+    .formulario-perfil ul li select {
+      margin: 0 !important;
+      width: 35%; }
+    .formulario-perfil ul li span.wppb-description-delimiter {
+      font-size: 12px;
+      color: #969696;
+      margin-left: 7px; }
+.formulario-perfil .wppb-radios {
+  margin-left: 40.5%; }
+  .formulario-perfil .wppb-radios li {
+    margin-bottom: 0px; }
+    .formulario-perfil .wppb-radios li input {
+      width: 8%; }
+    .formulario-perfil .wppb-radios li label {
+      width: 30%; }
+.formulario-perfil .wppb-send-credentials-checkbox {
+  margin-top: 14px; }
+  .formulario-perfil .wppb-send-credentials-checkbox label {
+    width: 100%; }
+    .formulario-perfil .wppb-send-credentials-checkbox label input {
+      width: 5%; }
+.formulario-perfil .submit {
+  color: #FFF;
+  background-color: #ED7133;
+  border-color: #EB611C;
+  display: inline-block;
+  margin-bottom: 0px;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  line-height: 1.42857;
+  border-radius: 3px;
+  -moz-user-select: none;
+  width: 150px;
+  padding: 5px 10px; }
 
 .dtl-content p {
   line-height: 28px;

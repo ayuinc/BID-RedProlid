@@ -31,6 +31,8 @@ $brand-success:         #5cb85c !default; // Verde
 $brand-info:            #5bc0de !default; // Azul
 $brand-warning:         #f0ad4e !default; // Amarillo
 $brand-danger:          #d9534f !default; // Rojo
+$brand-titular:				  #AEAB8B !default; // cafe
+
 
 $brand-secondary:       #e94472 !default; // Fuccsia
 $brand-inverse: 				#081A26 !default;
@@ -74,7 +76,7 @@ $font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
-$font-size-h1:            26px !default;
+$font-size-h1:            40px !default;
 $font-size-h2:            24px !default; // ~30px
 $font-size-h3:            22px !default; // ~24px
 $font-size-h4:            20px !default; // ~18px
