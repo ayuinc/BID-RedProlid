@@ -3290,7 +3290,7 @@ b, strong {
   font-weight: 500;
   font-style: normal; }
 
-input[type=text], input[type=password], select, .form-control {
+input[type=text], input[type=password], select, .form-control, textarea {
   border-top: none;
   border-right: none;
   border-left: none;
