@@ -21,7 +21,7 @@ function dlf_form() {
 	</div>
 	<div class="form-group row">
 	  <div class="col-xs-7">
-	    <a href="#" class="light" data-toggle="modal" data-target="#myModal">Olvidé mi contraseña</a>
+	    <small><a href="<?php echo home_url('/'); ?>registrate/" class="light">Regístrate</a> | <a href="#" class="light" data-toggle="modal" data-target="#myModal">Olvidé mi contraseña</a></small>
 	    <!-- <a href="<?php //echo wp_lostpassword_url(); ?>" title="Lost Password">Lost Password</a> -->
 	    <!--<a href="<?php echo home_url('/'); ?>registrate">Regístrate</a>-->
 	  </div>

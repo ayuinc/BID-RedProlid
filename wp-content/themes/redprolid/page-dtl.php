@@ -11,7 +11,16 @@ get_header(); ?>
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
     <div class="mh-700">
-      <section id="dtl" class="mt-21">
+	    <section class="mb-0 mt-7">
+		    <div class="container">
+			    <div class="row">
+			      <div class="col-md-12">
+			        <?php the_breadcrumb(); ?>
+			      </div>
+			    </div>
+		    </div>
+	    </section>	    
+      <section id="dtl" class="mt-7">
         <div class="container relative dtl-content">
 					<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ) : the_post(); ?>
@@ -23,10 +32,10 @@ get_header(); ?>
 		          <img src="<?php the_field('imagen-dtl'); ?>" alt="<?php the_title(); ?>" class="pull-left" width="100%">
 						</div>  
 						<div class="col-md-6">
-              <h3 class="light"><?php the_field('introduccion-dtl'); ?></h3>
+              <h4 class="light"><?php the_field('introduccion-dtl'); ?></h4>
 						</div>
 						<div class="col-md-12 mt-21 pl-0">
-							<p><?php the_field('contenido-dtl'); ?></p>
+							<h4 class="light"><?php the_field('contenido-dtl'); ?></h4>
 						</div>
 						<?php endwhile; ?>
 					<?php endif; ?>                 

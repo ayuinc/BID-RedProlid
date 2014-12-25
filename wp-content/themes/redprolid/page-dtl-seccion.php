@@ -11,7 +11,16 @@ get_header(); ?>
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
     <div class="mh-700">
-      <section id="dtl-adonde-vamos" class="mt-21 mb-21">
+	    <section class="mb-0 mt-7">
+		    <div class="container">
+			    <div class="row">
+			      <div class="col-md-12">
+			        <?php the_breadcrumb(); ?>
+			      </div>
+			    </div>
+		    </div>
+	    </section>	    
+      <section id="dtl-adonde-vamos" class="mt-7 mb-21">
         <div class="container relative dtl-content">
         	<?php 
 					    $uri = $_SERVER['REQUEST_URI'];

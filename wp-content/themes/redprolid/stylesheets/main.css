@@ -4584,7 +4584,8 @@ form.search button {
       color: #969696;
       margin-left: 7px; }
 .formulario-perfil .wppb-radios {
-  margin-left: 40.5%; }
+  margin-left: 40.5%;
+  margin-top: -20px !important; }
   .formulario-perfil .wppb-radios li {
     margin-bottom: 0px; }
     .formulario-perfil .wppb-radios li input {

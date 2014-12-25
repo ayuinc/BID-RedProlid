@@ -14,7 +14,7 @@ get_header(); ?>
     
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>    
-    <div class="mh-700">
+    <div>
       <section id="contacto">
         <div class="container relative">
           <div class="absolute dtl-custom-heading">
