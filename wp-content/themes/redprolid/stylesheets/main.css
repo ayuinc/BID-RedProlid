@@ -4442,6 +4442,9 @@ form.search button {
   width: 100%;
   height: 100%; }
 
+.webinario-datos li div {
+  width: 15%; }
+
 .pdv-icon {
   position: absolute;
   right: 70px;
@@ -4452,6 +4455,9 @@ form.search button {
 .carousel-inner ul li .vermas {
   position: absolute;
   bottom: 35px; }
+
+.separador-boletines {
+  border-right: 1px solid #CCC; }
 
 .carousel-control .icon-next {
   border-radius: 50%;
