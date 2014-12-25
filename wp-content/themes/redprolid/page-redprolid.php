@@ -15,16 +15,24 @@ get_header(); ?>
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
     <div class="mh-700">
-      
-      <section id="hero-unit" class="mt-21 mb-21">
+	    <section class="mb-0 mt-7">
+		    <div class="container">
+			    <div class="row">
+			      <div class="col-md-12">
+			        <?php the_breadcrumb(); ?>
+			      </div>
+			    </div>
+		    </div>
+	    </section>
+      <section id="hero-unit" class="mt-7 mb-21">
         <div class="container">
-          <div class="content clearfix">
+          <div class="content clearfix pb-14">
             <div class="col-sm-7">
               <div class="dtl-custom-heading mt-0">
                 <div class="ml-0"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" alt=""></div>
                 <h1 class="medium mt-21 ml-0">¿Qué es Red PROLID?</h1>
               </div>
-              <p class="pt-21-100 ml-21 text-justify lead"><?php the_field('que_es_redprolid'); ?></p>
+              <h4 class="pt-21-100 ml-21 light text-justify"><?php the_field('que_es_redprolid'); ?></h4>
             </div>
             <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png" alt="" class="network-right mt-21">
           </div>
@@ -35,7 +43,7 @@ get_header(); ?>
         <div class="container">
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
-              <h2 class="text-center light"><?php the_field('texto_central_redprolid'); ?></h2>
+              <h4 class="text-center light"><?php the_field('texto_central_redprolid'); ?></h4>
             </div>
           </div>
         </div>
