@@ -55,12 +55,16 @@ get_header(); ?>
 		            $url = get_field('video');
 		            parse_str( parse_url( $url, PHP_URL_QUERY ), $videocode );
 		          ?>
-		          <div class="video-container videoWrapper mt-35 mb-0">
-								<iframe src="//www.youtube.com/embed/<?php echo $videocode['v']; ?>" frameborder="0" allowfullscreen></iframe>
+		          <div class="row">
+			          <div class="col-md-10 col-md-offset-1">
+				          <div class="video-container videoWrapper mt-35 mb-0">
+										<iframe src="//www.youtube.com/embed/<?php echo $videocode['v']; ?>" frameborder="0" allowfullscreen></iframe>
+				          </div>				          
+			          </div>
 		          </div>
 		          <div class="row">
-			          <div class="col-md-8 col-md-offset-2">
-				          <ul class="list-unstyled pv-7 webinario-datos">
+			          <div class="col-md-10 col-md-offset-1">
+				          <ul class="list-unstyled mt-35 mb-35 webinario-datos">
 				            <li>
 				            	<h5 class="medium mb-0">Resource type:</h5>
 				            	<p><?php the_field('source_type'); ?></p>

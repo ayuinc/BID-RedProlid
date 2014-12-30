@@ -13,9 +13,29 @@
 }
 
 .webinario-datos {
+	padding:21px;
+	background-color: #ebeade;
 	li {
 		div {
 			width:15%;
 		}	
+	}
+}
+
+.title {
+	h3 {
+		a {
+			color:$gray-base;
+		}
+	}
+}
+
+.content {
+	@include light;
+	ul {
+		margin:14px 0;
+		li {
+			margin-bottom:5px;
+		}
 	}
 }
