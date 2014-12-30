@@ -306,16 +306,16 @@ get_header(); ?>
       <section class="pt-7">
         <div class="container-sm">
           <div class="row">
-            <div class="col-xs-3">
+            <div class="col-md-3">
               <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/enterate-buzon.png" alt="" class="img-responsive">
             </div>
-            <div class="col-xs-6">
-              <h3 class="medium">Suscríbete a nuestro boletín y descárgalo gratis </h3>
+            <div class="col-md-6 separador-boletines pt-14 pb-14 pr-14 ">
+              <h3 class="medium text-right">Suscríbete a nuestro boletín y descárgalo gratis </h3>
               <div class="text-right">
                 <a href="#" class="light" data-toggle="modal" data-target="#mailChimp">Aquí >></a>
               </div>
             </div>
-            <div class="col-sm-3 flex flex-column flex-center flex-middle mh-140">
+            <div class="col-md-3 mt-35 pl-14">
               <a href="#" class="btn btn-primary">Boletines</a>
             </div>
           </div>

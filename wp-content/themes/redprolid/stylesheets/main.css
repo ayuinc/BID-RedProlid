@@ -4442,6 +4442,24 @@ form.search button {
   width: 100%;
   height: 100%; }
 
+.webinario-datos {
+  padding: 21px;
+  background-color: #ebeade; }
+  .webinario-datos li div {
+    width: 15%; }
+
+.title h3 a {
+  color: #232323; }
+
+.content {
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 300;
+  font-style: normal; }
+  .content ul {
+    margin: 14px 0; }
+    .content ul li {
+      margin-bottom: 5px; }
+
 .pdv-icon {
   position: absolute;
   right: 70px;
@@ -4452,6 +4470,9 @@ form.search button {
 .carousel-inner ul li .vermas {
   position: absolute;
   bottom: 35px; }
+
+.separador-boletines {
+  border-right: 1px solid #CCC; }
 
 .carousel-control .icon-next {
   border-radius: 50%;
