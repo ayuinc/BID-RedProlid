@@ -4312,6 +4312,19 @@ form.search button {
       -ms-flex: 1;
       flex: 1; }
 
+.titulos-anteriores {
+  background: none repeat scroll 0% 0% #EBEADE;
+  padding: 21px; }
+  .titulos-anteriores .col-md-1 div {
+    background: none repeat scroll 0% 0% #AEAB8B;
+    position: relative;
+    top: -1.3rem;
+    right: 2rem; }
+
+.mostrar-anteriores {
+  background: none repeat scroll 0% 0% #EBEADE;
+  padding: 21px; }
+
 .dtl-home .list-unstyled, .dtl-home .list-inline {
   margin-top: -1rem; }
   .dtl-home .list-unstyled .title, .dtl-home .list-inline .title {
@@ -4642,6 +4655,14 @@ form.search button {
 
 .wp-social-login-provider-list img {
   width: 50px; }
+
+.noticias-grid .col-md-4 img {
+  width: 359px;
+  max-height: 240px; }
+.noticias-grid .col-md-4 div {
+  background-color: #efefef;
+  padding: 14px;
+  min-height: 480px; }
 
 .dtl-content p {
   line-height: 28px;
