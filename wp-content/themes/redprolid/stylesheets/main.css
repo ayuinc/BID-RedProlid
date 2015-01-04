@@ -4312,6 +4312,15 @@ form.search button {
       -ms-flex: 1;
       flex: 1; }
 
+.titulos-anteriores {
+  background: none repeat scroll 0% 0% #EBEADE;
+  padding: 21px; }
+  .titulos-anteriores .col-md-1 div {
+    background: none repeat scroll 0% 0% #AEAB8B;
+    position: relative;
+    top: -1.3rem;
+    right: 2rem; }
+
 .mostrar-anteriores {
   background: none repeat scroll 0% 0% #EBEADE;
   padding: 21px; }

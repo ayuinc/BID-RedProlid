@@ -45,7 +45,7 @@ get_header(); ?>
 					<div class="mostrar-anteriores mt-21">
 						<h4 class="medium">¿Quieres ver las noticias anteriores?</h4>
 						<div class="text-right">
-							<a class="btn btn-primary" href="<?php echo content_url('/'); ?>noticias/">Ve todas</a>
+							<a class="btn btn-primary" href="<?php echo content_url('/'); ?>noticias-anteriores/">Ve todas</a>
 						</div>
 					</div>
 				</div>
@@ -118,19 +118,15 @@ get_header(); ?>
 													<?php } ?>
 												</small>
 		                  </li>
-	                    <hr>
-		            
-		            <!-- Add the pagination functions here. -->
-		            <div class="row">
-			            <div class="col-md-6">
-				            <p class="text-left"><?php next_posts_link( 'Anteriores' ); ?></p>
-			            </div>
-			            <div class="col-md-6">
-				            <p class="text-right"><?php previous_posts_link( 'Posteriores' ); ?></p>
-			            </div>
-		            </div>
+	                    <hr> 
 		            <?php endwhile; ?> 
 	            </ul>
+	            <div class="text-center">
+	              <ul class="pager">
+	                <li><?php next_posts_link( 'Anteriores' ); ?></li>
+	                <li><?php previous_posts_link( 'Posteriores' ); ?></li>
+	              </ul>
+	            </div> 	            
 	        	</div>
 	          <div class="col-md-4 mostrar-anteriores">
 	            <h4 class="medium text-gray-darker mb-14">Lo último en las redes</h4> 
