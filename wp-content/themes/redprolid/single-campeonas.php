@@ -31,7 +31,7 @@
 				<div class="mostrar-anteriores mt-21">
 					<h4 class="medium">¿Quieres leer nuestras entrevistas anteriores?</h4>
 					<div class="text-right">
-						<a class="btn btn-primary" href="<?php echo content_url('/'); ?>noticias-anteriores/">Ve todas</a>
+						<a class="btn btn-primary" href="<?php echo content_url('/'); ?>campeonas-anteriores/">Ve todas</a>
 					</div>
 				</div>
 			</div>
