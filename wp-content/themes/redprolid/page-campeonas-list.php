@@ -30,7 +30,7 @@ get_header(); ?>
 				    </div>
 				    <div class="col-md-1 pl-0 pr-0">
 					    <div>
-					    	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" width="100%">
+					    	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-square.png" alt="" width="100%">
 					    </div>
 				    </div>
 			    </div>
