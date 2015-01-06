@@ -1,42 +1,70 @@
-<section class="">
-  <div class="container mt-35">
+<section class="mt-7 mb-21"> 
+  <div class="container relative mb-14">
     <div class="row">
-	    <div class="col-sm-10 col-md-offset-1">
-		    <?php the_breadcrumb(); ?>
-	    </div>
+      <div class="col-md-12">
+        <?php the_breadcrumb(); ?>
+      </div>
     </div>
-  </div>			
-  <div class="container mt-35 mb-35">
+  </div>      
+</section>
+<section class="mb-21">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<p class="text-right">
+					<a href="">Ve eventos anteriores</a> | <a href="">Ve próximos eventos</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="mb-35">	
+  <div class="container">
+	  <div class="row">
+		  <div class="col-md-10 col-md-offset-1">
+			  <h2 class="medium mb-14"><?php the_title(); ?></h2>
+		  </div>
+	  </div>
     <div class="row">
 	    <?php if( get_field('imagen_evento') ) { ?>
-      <div class="col-sm-3 col-md-offset-1">
+      <div class="col-md-2 col-md-offset-1">
         <img src="<?php the_field('imagen_evento'); ?>" alt="" class="img-responsive">
       </div>
-      <div class="col-sm-7">
+      <div class="col-md-5">
 	    <?php } else {?>
-	    <div class="col-sm-10 col-md-offset-1">  
+	    <div class="col-md-7 col-md-offset-1">  
       <?php } ?>
-      	<small>EVENTOS</small>
-        <h2 class="lh-lg"><?php the_title(); ?></h2>
-        <h4 class="light lh-lg"><?php the_field('descripcion_evento'); ?></h4>
+        <h5 class="medium mb-0">Organizan</h5>
+        <p><?php the_field('organizan_evento'); ?></p>
+        <h5 class="medium mb-0">Convocan</h5>
+        <p><?php the_field('convocan'); ?></p>
+        <p>Para mayores informes contactar a <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_nombre_evento'); ?></a></p>
+      </div>
+      <div class="col-md-3 event-separator">
+	      <h5 class="medium mb-0">Fecha</h5>
+	      <?php $tempDate = get_field('fecha_evento'); ?>
+	      <p><?php echo date_i18n('dd', strtotime( $tempDate)); ?> de <?php echo date_i18n('MM', strtotime( $tempDate)); ?> de <?php echo date_i18n('yy', strtotime( $tempDate)); ?></p>
+	      <h5 class="medium mb-0">Ciudad</h5>
+	      <p><?php the_field('ciudad_evento'); ?></p>
+	      <h5 class="medium mb-0">Lugar</h5>
+	      <p><?php the_field('lugar_evento'); ?></p>
       </div>
     </div>
   </div>
-  <div class="container text-left pb-70">
+</section>
+
+<section> 
+  <div class="container">
 	  <div class="row">
-			<div class="col-sm-10 col-md-offset-1 with-hr">  	  
-		    <p><?php the_field('contenido_evento'); ?></p>
-		    <div class="text-center mt-35 mb-35 ">
-		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
-		    </div>   
+			<div class="col-sm-6 col-md-offset-3">  	  
+		    <h5 class="medium mb-0">Tipo de recurso</h5>
+		    <p><?php the_field('tipo_de_recurso_evento'); ?></p>
+		    <h5 class="medium mb-0">Tema</h5>
+		    <p><?php the_field('tema_evento'); ?></p>
+		    <h5 class="medium mb-0">Año de publicación</h5>
+				<p><?php the_field('año_publicacion_evento'); ?></p>
 			</div>
 	  </div>       
-  </div>
-  <div class="container pb-70">
-	  <div class="row">
-			<div class="col-sm-10 col-md-offset-1">  
-	    	<?php comments_template(); ?>
-			</div>
-	  </div>
   </div>
 </section>

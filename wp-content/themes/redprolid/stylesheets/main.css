@@ -4664,6 +4664,9 @@ form.search button {
   padding: 14px;
   min-height: 480px; }
 
+.event-separator {
+  border-left: 1px solid #898989; }
+
 .dtl-content p {
   line-height: 28px;
   color: #565656; }
