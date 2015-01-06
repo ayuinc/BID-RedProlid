@@ -235,6 +235,23 @@
 			  $("#wppb-form-element-19").hide();
 		  }
 		});		
+		
+		//MOSTRAR Y OCULATAR ENTREVISTA
+		$('#entrevista_full').hide();
+		$('#boton_ocultar_entrevista_full').hide();
+		
+		$('#boton_entrevista_full').click(function() {
+			$('#boton_ocultar_entrevista_full').show(100);
+			$('#entrevista_full').show(100);
+			$('#boton_entrevista_full').hide(100);
+		})
+		
+		$('#boton_ocultar_entrevista_full').click(function() {
+			$('#boton_entrevista_full').show(100);
+			$('#entrevista_full').hide(100);
+			$('#boton_ocultar_entrevista_full').hide(100);
+		})		
+		
 		</script>    
     
     <?php wp_footer(); ?>

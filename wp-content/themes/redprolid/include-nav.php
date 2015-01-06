@@ -40,7 +40,12 @@
               <li class="light"><a href="<?php echo home_url('/'); ?>noticias">Noticias</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>eventos">Eventos</a></li>
               <li class="light"><a href="#">Nuestro boletín</a></li>
-              <li class="light"><a href="<?php echo home_url('/'); ?>campeonas">Campeonas</a></li>
+              <?php if ( have_posts() ) : ?>
+							<?php query_posts( 'cat=2&posts_per_page=1' ); ?>
+								<?php while ( have_posts() ) : the_post(); ?>	
+	              	<li class="light"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Campeonas</a></li>
+	              <?php endwhile; ?>
+							<?php endif; ?>	
               <li class="light nav-video">
               	<img src="<?php echo home_url('/'); ?>wp-content/themes/redprolid/assets/icons/video-nav-main-menu.png"> <a href="#" class="videos">Videos</a>
               </li>
