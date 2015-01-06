@@ -20,14 +20,14 @@ get_header(); ?>
 	      </div>
 	    </div>
 	    <div class="absolute dtl-custom-heading z-index-100">
-	      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" width="100%"></div>
+	      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-circle.png" alt="" width="100%"></div>
 	      <div class="clearfix">
 	        <div class="col-md-6">
-	          <h1 class="mt-14 ml--25 mb-0 brand-titular">Noticias</h1>
+	          <h1 class="mt-14 ml--25 mb-0 brand-titular">Eventos</h1>
 	        </div>
 	        <div class="col-md-6 pt-28">
 	          <nav class="text-right mb-0 mt-0">
-	            <a href="<?php echo home_url('/'); ?>compartir-noticias" class="light">¿Quieres compartir una noticia?</a> 
+	            <a href="<?php echo home_url('/'); ?>compartir-noticias" class="light">¿Quieres proponernos un evento?</a> | <a href="<?php echo home_url('/'); ?>compartir-noticias" class="light">Eventos anteriores</a>
 	          </nav>
 	        </div>
 	      </div>
@@ -38,16 +38,8 @@ get_header(); ?>
 	<section class="pt-7-100 mb-21"> 
 	  <div class="container">
 	    <div class="row">
-				<div class="col-md-8">
+				<div class="col-md-12">
 					<h3 class="light mt-21">Todos los días encontramos en los medios noticias, buenas o malas, que nos hablan de los avances o retrocesos de la mujer en el espacio público. Hemos recogido algunas de las más relevantes o significativas de entre las que tienen que ver con nosotras y nos ayudan a entender cómo está cambiando el mundo para las mujeres. Anímate a proponer las noticias que te parezcan destacadas.</h3>
-				</div>
-				<div class="col-md-4">
-					<div class="mostrar-anteriores mt-21">
-						<h4 class="medium">¿Quieres ver las noticias anteriores?</h4>
-						<div class="text-right">
-							<a class="btn btn-primary" href="<?php echo content_url('/'); ?>noticias-anteriores/">Ve todas</a>
-						</div>
-					</div>
 				</div>
 	    </div>	
 	  </div>      
@@ -57,7 +49,7 @@ get_header(); ?>
 	  <div class="container">
 	    <div class="panel panel-custom">
 	      <div class="panel-heading mb-0 pb-0">
-					<h2>Últimas noticias</h2>
+					<h2>Eventos destacados</h2>
 	      </div>         
 	      <div class="panel-body pt-14">
 	        <div class="row">
@@ -99,26 +91,45 @@ get_header(); ?>
 	<section>
 	  <div class="container">
 	    <div class="panel panel-custom">         
-	      <div class="panel-body pt-14">	      
+	      <div class="panel-body pt-14">	
+		      <div class="row">
+		      	<div class="col-md-10 col-md-offset-1">
+			      	<h2>Próximos eventos</h2>
+		      	</div>
+		      </div>      
 					<div class="row">
-	          <div class="col-md-8 pr-14">
-	            <h2>Otras Noticias</h2>  
+	          <div class="col-md-10 col-md-offset-1"> 
 	            <ul class="list-unstyled">
 	            	<!-- Start the Loop. -->
 	            	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-	            	<?php query_posts( 'cat=12,-256&posts_per_page=10&paged=' . $paged ); ?>
+	            	<?php query_posts( 'cat=11&posts_per_page=10&paged=' . $paged ); ?>
 								<?php while ( have_posts() ) : the_post(); ?>    
-		                  <li class="mb-14">
-		                    <h5 class="medium"><?php the_title(); ?></h5>
-		                    <p><?php the_field('descripcion_rapida_noticias'); ?></p>
+	                <li class="mb-14 events-next">
+	                  <div class="row">
+		                  <div class="col-md-2">
+							          <div class="panel">
+								          <?php $tempDate = get_the_date(); ?>
+								          <h3 class="text-center medium h1 mt-0 mb-0 pb-0"><?php echo date_i18n('j', strtotime( $tempDate)); ?></h3>
+								          <p class="text-center pt-0 mb-0"><?php echo date_i18n('M', strtotime( $tempDate)); ?></p>
+							          </div>				                  
+		                  </div>
+		                  <div class="col-md-10">
+		                    <h4 class="medium mt-7"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h4>
+		                    <p>
+			                    <span>Lugar:</span> <?php the_field('lugar_evento'); ?><br>
+			                    <span>Hora:</span> <?php the_field('hora_evento'); ?><br>
+			                    <span>Organizan:</span> <?php the_field('organizan_evento'); ?><br>
+			                    <span>Convocan:</span> <?php the_field('convocan'); ?>
+		                    </p>
+		                    <p>Para mayores informes contactar a <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_nombre_evento'); ?></a></p>
 	                      <small>
-	                      	<?php echo get_the_date(); ?>
 	                      	<?php if ($publicacion!='') { ?> 
 														/ <a href="<?php the_field('link_publicacion_noticias'); ?>"><?php the_field('publicacion_noticias'); ?></a>
 													<?php } ?>
-												</small>
-		                  </li>
-	                    <hr> 
+												</small>				                  
+		                  </div>
+	                  </div>
+	                </li>
 		            <?php endwhile; ?> 
 	            </ul>
 	            <div class="text-center">
@@ -128,18 +139,6 @@ get_header(); ?>
 	              </ul>
 	            </div> 	            
 	        	</div>
-	          <div class="col-md-4 mostrar-anteriores">
-	            <h4 class="medium text-gray-darker mb-14">Lo último en las redes</h4> 
-	          	<div class="mb-14">
-								<div class="fb-like-box" data-width="100%" data-height="310" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
-	          	</div>
-	          	<div class="mb-14">
-								<a class="twitter-timeline" width="298" height="310"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a> 
-	          	</div>
-	          	<div class="mb-14"> 
-								<div class="g-person" data-width="100%" data-height="310" data-href="//plus.google.com/u/0/107403271684877473593" data-rel="author"></div>
-	          	</div>			            
-	          </div>
 					</div>
 	      </div>
 	    </div>
