@@ -7,6 +7,7 @@
     </div>
   </div>      
 </section>
+
 <section class="mb-21">
 	<div class="container">
 		<div class="row">
@@ -41,7 +42,7 @@
         <p><?php the_field('convocan'); ?></p>
         <p>Para mayores informes contactar a <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_nombre_evento'); ?></a></p>
       </div>
-      <div class="col-md-3 event-separator">
+      <div class="col-md-3 event-separator pl-21">
 	      <h5 class="medium mb-0">Fecha</h5>
 	      <?php $tempDate = get_field('fecha_evento'); ?>
 	      <p><?php echo date_i18n('dd', strtotime( $tempDate)); ?> de <?php echo date_i18n('MM', strtotime( $tempDate)); ?> de <?php echo date_i18n('yy', strtotime( $tempDate)); ?></p>
@@ -57,7 +58,7 @@
 <section> 
   <div class="container">
 	  <div class="row">
-			<div class="col-sm-6 col-md-offset-3">  	  
+			<div class="col-sm-5 col-md-offset-3">  	  
 		    <h5 class="medium mb-0">Tipo de recurso</h5>
 		    <p><?php the_field('tipo_de_recurso_evento'); ?></p>
 		    <h5 class="medium mb-0">Tema</h5>
