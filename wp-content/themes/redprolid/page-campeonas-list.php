@@ -26,7 +26,7 @@ get_header(); ?>
 			    <div class="row titulos-anteriores">
 				    <div class="col-md-11">
 							<h1>Entrevistas anteriores</h1>
-							<a href="<?php echo content_url('/'); ?>noticias">Campeonas >></a>
+							<a href="<?php echo content_url('/'); ?>campeonas">Campeonas >></a>
 				    </div>
 				    <div class="col-md-1 pl-0 pr-0">
 					    <div>
