@@ -17,6 +17,10 @@
 		left: 0px;
 		top: 28px; 
 	}
+	nav {
+		position:relative;
+		right:-2.9rem;	
+	}
 	h1 {
 		@include bold;
 		font-size: 40px;

@@ -45,7 +45,7 @@
       <div class="col-md-3 event-separator pl-21">
 	      <h5 class="medium mb-0">Fecha</h5>
 	      <?php $tempDate = get_field('fecha_evento'); ?>
-	      <p><?php echo date_i18n('dd', strtotime( $tempDate)); ?> de <?php echo date_i18n('MM', strtotime( $tempDate)); ?> de <?php echo date_i18n('yy', strtotime( $tempDate)); ?></p>
+	      <p><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?>, <?php the_field('hora_evento'); ?></p>
 	      <h5 class="medium mb-0">Ciudad</h5>
 	      <p><?php the_field('ciudad_evento'); ?></p>
 	      <h5 class="medium mb-0">Lugar</h5>

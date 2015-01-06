@@ -1,3 +1,18 @@
 .event-separator {
 	border-left:1px solid $gray-light;
 } 
+.events-next {
+	border-top:1px solid $gray-light;
+	.panel {
+		background: none repeat scroll 0% 0% #EBEADE;
+		padding:14px;
+			h3 {
+				line-height: 80% !important;
+			}
+	}
+	p {
+		span {
+			@include medium;
+		}
+	}	
+}
