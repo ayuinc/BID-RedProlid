@@ -16,3 +16,10 @@
 		}
 	}	
 }
+.event-destacados {
+	p {
+		span {
+			@include medium;
+		}
+	}	
+}
