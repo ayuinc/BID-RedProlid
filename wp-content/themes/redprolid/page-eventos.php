@@ -49,7 +49,11 @@ get_header(); ?>
 	  <div class="container">
 	    <div class="panel panel-custom">
 	      <div class="panel-heading mb-0 pb-0">
-					<h2>Eventos destacados</h2>
+		      <div class="row">
+			      <div class="col-md-10 col-md-offset-1">
+							<h2>Eventos destacados</h2>
+			      </div>
+		      </div>
 	      </div>         
         <div class="panel-body pt-0">
           <div class="row">
@@ -63,16 +67,29 @@ get_header(); ?>
 											<?php while ( have_posts() ) : the_post(); ?>
 				                <div class="row">
 				                	<div class="col-md-12">
-					                	<h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+					                	<h3 class="medium mt-7 mb-14 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 				                	</div>
 				                </div> 
 				                <div class="row">
 				                	<div class="col-md-3">
-					                	dfgdfsg
+					                	<img src="<?php the_field('imagen_evento'); ?>" alt="" class="img-responsive">
 				                	</div>
-				                	<div class="col-md-9">
-					                	dfgsfd
+				                	<div class="col-md-9 event-destacados">
+					                	<?php $tempDate = get_the_date(); ?>
+					                	<p>
+						                	<span>Fecha:</span> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><br>
+						                	<span>Hora:</span> <?php the_field('hora_evento'); ?><br>
+						                	<span>Lugar:</span> <?php the_field('lugar_evento'); ?><br>
+						                	<span>Organizan:</span> <?php the_field('organizan_evento'); ?><br>
+															<span>Convocan:</span> <?php the_field('convocan'); ?>
+						                </p>
+														<p class="text-center pt-0 mb-0"></p>
 				                	</div>
+				                </div>
+				                <div class="row">
+					                <div class="col-md-12">
+						                <p class="text-right mt-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Más Información >></a></p>
+					                </div>
 				                </div>   
 					            <?php endwhile; ?>
 										<?php endif; ?>	

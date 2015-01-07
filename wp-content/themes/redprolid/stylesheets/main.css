@@ -4679,6 +4679,11 @@ form.search button {
     font-weight: 500;
     font-style: normal; }
 
+.event-destacados p span {
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
+  font-style: normal; }
+
 .dtl-content p {
   line-height: 28px;
   color: #565656; }
