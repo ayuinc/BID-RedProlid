@@ -51,39 +51,44 @@ get_header(); ?>
 	      <div class="panel-heading mb-0 pb-0">
 					<h2>Eventos destacados</h2>
 	      </div>         
-	      <div class="panel-body pt-14">
-	        <div class="row">
-	          <div class="col-md-12">
-	            <div class="row noticias-grid">
-								<!-- Start the Loop. -->
-								<?php if ( have_posts() ) : ?>
-	                <?php query_posts( 'cat=256,-12&posts_per_page=3' ); ?>
-									<?php while ( have_posts() ) : the_post(); ?>				            
-				            <div class="col-md-4">
-					            <div>
-	                  	<?php if( get_field('imagen_noticias') ) { ?>
-	                      <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
-											<?php } else {?>
-	                    	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
-											<?php } ?>
-	                    <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0 pb-0"><?php the_title(); ?></h3></a>
-	                    <?php $publicacion = the_field('publicacion_noticias'); ?>
-	                    <small>
-	                    	<?php echo get_the_date(); ?>
-	                    	<?php if ($publicacion!='') { ?> 
-													/ <a href="<?php the_field('link_publicacion_noticias'); ?>"><?php the_field('publicacion_noticias'); ?></a>
-												<?php } ?>
-											</small>
-	                    <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
-	                    <small class="vermas"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Noticia completa >></a></small>
-					            </div>							            
-				            </div>
-			            <?php endwhile; ?>
-								<?php endif; ?>				            				            
-	            </div>
-	          </div>
-	        </div>
-	      </div>
+        <div class="panel-body pt-0">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner pl-56 pr-56">
+										<!-- Start the Loop. -->
+										<?php if ( have_posts() ) : ?>
+                      <?php query_posts( array( 'category_name' => 'eventos-destacados', 'posts_per_page' => 1 ) ); ?>
+											<?php while ( have_posts() ) : the_post(); ?>
+				                <div class="row">
+				                	<div class="col-md-12">
+					                	<h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+				                	</div>
+				                </div> 
+				                <div class="row">
+				                	<div class="col-md-3">
+					                	dfgdfsg
+				                	</div>
+				                	<div class="col-md-9">
+					                	dfgsfd
+				                	</div>
+				                </div>   
+					            <?php endwhile; ?>
+										<?php endif; ?>	
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="icon-next"></span>
+                </a>
+              </div> <!-- END:CAROUSEL -->			            
+            </div>
+          </div>
+        </div>
 	    </div>
 	  </div>
 	</section> 
