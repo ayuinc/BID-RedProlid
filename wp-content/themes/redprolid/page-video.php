@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Noticias
+Template Name: Video
 */
 
 get_header(); ?>
