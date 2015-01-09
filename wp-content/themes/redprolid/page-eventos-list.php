@@ -8,33 +8,66 @@ get_header(); ?>
 <?php get_template_part( 'include', 'header' ); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
-<div class="mh-700">
+<div>
   <section id="puntos-de-vista-anteriores">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-10 col-md-offset-1 mt-35 mb-35">
-          <h1>Eventos Anteriores</h1>
-        </div>
-      </div>
+	    <div class="row mt-7">
+	      <div class="col-md-12">
+	        <?php the_breadcrumb(); ?>
+	      </div>
+	    </div>	      
     </div>
+  </section>
+  
+  <section class="mb-21">
+    <div class="container">
+	    <div class="row">
+		    <div class="col-md-12 clearfix">
+			    <div class="row titulos-anteriores">
+				    <div class="col-md-11">
+							<h1>Eventos Anteriores</h1>
+							<a href="<?php echo content_url('/'); ?>eventos">Eventos >></a>
+				    </div>
+				    <div class="col-md-1 pl-0 pr-0">
+					    <div>
+					    	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-circle.png" alt="" width="100%">
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+    </div>
+  </section>
+  
+  <section>  
     <div class="container grid-block-lg">
       <div class="row">
         <div class="col-sm-10 col-md-offset-1">
-          <?php query_posts( 'category_name=eventos' ); ?> 
+          <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+          <?php query_posts( 'category_name=eventos&posts_per_page=10&paged=' . $paged ); ?>
           <?php while ( have_posts() ) : the_post(); ?>
             <div class="title">
-              <h3><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+              <h3 class="medium text-primary mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+              <h5 class="medium"><span>Fecha:</span> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></h5>
             </div>
-            <div class="content mb-70">
-              <?php the_field('descripcion_evento'); ?>
+            <div class="content mb-14 event-destacados">
+					    <?php $tempDate = get_the_date(); ?>	            
+            	<p>
+              	<span>Hora:</span> <?php the_field('hora_evento'); ?><br>
+              	<span>Lugar:</span> <?php the_field('lugar_evento'); ?><br>
+              	<span>Organizan:</span> <?php the_field('organizan_evento'); ?><br>
+								<span>Convocan:</span> <?php the_field('convocan'); ?>
+              </p>
+							<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve evento >></a></p>
             </div>
+            <hr>
           <?php endwhile; ?>
           <div class="text-center">
             <ul class="pager">
-              <li><a href="#">Previos</a></li>
-              <li><a href="#">Siguiente</a></li>
+              <li><?php next_posts_link( 'Anteriores' ); ?></li>
+              <li><?php previous_posts_link( 'Posteriores' ); ?></li>
             </ul>
-          </div>
+          </div>          
         </div>
       </div>          
     </div>
