@@ -5,7 +5,20 @@
 		    <?php the_breadcrumb(); ?>
 	    </div>
     </div>
-  </div>		
+  </div>
+</section>
+
+<section>
+  <div class="container mt-7">
+    <div class="row">
+	    <div class="col-sm-10 col-md-offset-1">
+		    <p class="text-right"><a href="<?php echo home_url('/'); ?>video/video-anteriores" class="light">Video Anteriores >></a></p>
+	    </div>
+    </div>
+  </div>
+</section>
+
+<section> 		
   <div class="container">
     <div class="row">
 	    <div class="col-sm-10 col-md-offset-1">  
