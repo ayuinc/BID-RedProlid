@@ -62,6 +62,14 @@ get_header(); ?>
     elseif ( $cat[0]->slug == 'webinario' ) {
       get_template_part( 'single-webinario' );
     }
+    
+    elseif ( $cat[0]->slug == 'video-nuevo' ) {
+      get_template_part( 'single-video' );
+    }
+
+    elseif ( $cat[0]->slug == 'videos-anteriores' ) {
+      get_template_part( 'single-video' );
+    }        
   ?>
 </div>
 <?php get_footer(); ?>
