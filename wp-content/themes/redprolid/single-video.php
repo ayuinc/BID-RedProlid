@@ -1,4 +1,4 @@
-<section class="">
+<section>
   <div class="container mt-35">
     <div class="row">
 	    <div class="col-sm-10 col-md-offset-1">
@@ -14,13 +14,13 @@
         <p class="mt-14"><?php the_field('descripcion_video'); ?></p> 
 				<?php $tempDate = get_the_date(); ?>
 				<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>        
-		    <div class="text-center mt-35 mb-35 ">
+		    <div class="text-center mt-7 mb-7 ">
 		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
 		    </div>   
 			</div>
 	  </div>       
   </div>
-  <div class="container pb-70">
+  <div class="container">
 	  <div class="row">
 			<div class="col-sm-10 col-md-offset-1">  
 	    	<?php comments_template(); ?>
