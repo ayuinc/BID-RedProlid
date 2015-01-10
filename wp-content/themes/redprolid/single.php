@@ -65,8 +65,7 @@ get_header(); ?>
     
     elseif ( $cat[0]->slug == 'video' ) {
       get_template_part( 'single-video' );
-    }
-       
+    }       
   ?>
 </div>
 <?php get_footer(); ?>
