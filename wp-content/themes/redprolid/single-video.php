@@ -1,12 +1,12 @@
 <section>
-  <div class="container mt-35">
+  <div class="container">
     <div class="row">
 	    <div class="col-sm-10 col-md-offset-1">
 		    <?php the_breadcrumb(); ?>
 	    </div>
     </div>
   </div>		
-  <div class="container mt-35 mb-35">
+  <div class="container">
     <div class="row">
 	    <div class="col-sm-10 col-md-offset-1">  
         <h2 class="medium"><?php the_title(); ?></h2>
