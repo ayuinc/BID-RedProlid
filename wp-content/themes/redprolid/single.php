@@ -63,13 +63,9 @@ get_header(); ?>
       get_template_part( 'single-webinario' );
     }
     
-    elseif ( $cat[0]->slug == 'video-nuevo' ) {
+    elseif ( $cat[0]->slug == 'video' ) {
       get_template_part( 'single-video' );
-    }
-
-    elseif ( $cat[0]->slug == 'videos-anteriores' ) {
-      get_template_part( 'single-video' );
-    }        
+    }       
   ?>
 </div>
 <?php get_footer(); ?>
