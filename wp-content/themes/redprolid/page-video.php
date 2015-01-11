@@ -27,7 +27,7 @@ get_header(); ?>
 	        </div>
 	        <div class="col-md-6 pt-28">
 	          <nav class="text-right mb-0 mt-0">
-	            <a href="<?php echo home_url('/'); ?>video/video-anteriores" class="light">Video Anteriores</a> | <a href="<?php echo home_url('/'); ?>compartir-video" class="light">¿Quieres compartir un video?</a>
+	            <a href="<?php echo home_url('/'); ?>video/videos-anteriores" class="light">Video Anteriores</a> | <a href="<?php echo home_url('/'); ?>compartir-video" class="light">¿Quieres compartir un video?</a>
 	          </nav>
 	        </div>
 	      </div>

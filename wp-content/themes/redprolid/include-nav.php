@@ -42,7 +42,7 @@
               <li class="light"><a href="#">Nuestro boletín</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>campeonas">Campeonas</a></li>
               <li class="light nav-video">
-              	<img src="<?php echo home_url('/'); ?>wp-content/themes/redprolid/assets/icons/video-nav-main-menu.png"> <a href="#" class="videos">Videos</a>
+              	<img src="<?php echo home_url('/'); ?>wp-content/themes/redprolid/assets/icons/video-nav-main-menu.png"> <a href="<?php echo home_url('/'); ?>video" class="videos">Videos</a>
               </li>
             </ul>
           </li>
