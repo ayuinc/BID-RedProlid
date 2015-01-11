@@ -9,41 +9,38 @@ get_header(); ?>
 <?php get_template_part( 'include', 'header' ); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
-<div class="mh-700">
+<div>
   <section id="search">
     <div class="container relative mh-140">
       <div class="absolute dtl-custom-heading">
-        <div><img src="../assets/img/pdv-main-icon.png" alt=""></div>
+        <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt=""></div>
         <h1 style="color: #aeab8b;" class="bg-panel pt-21 pb-21 pl-14 border-radius">Resultados de tu búsqueda</h1>
       </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-5">
+        <!--<div class="col-md-5">
           <form action="" class="search">
             <div class="form-group clearfix">
-              <div class="col-sm-3 pt-14">
-                <label>Búsqueda</label>
-              </div>
-              <div class="col-sm-9">
+              <div class="col-md-12">
                 <div class="input-group">
-                  <input type="search" class="form-control" placeholder="Buscar">
+                  <input type="search" class="form-control" placeholder="Nueva Buscar">
                   <span class="input-group-btn">
                     <button class="btn btn-primary" type="button"></button>
                   </span>
-                </div><!-- /input-group -->
+                </div>
                 <a href="#" class="text-primary toggle-adv-search">Búsqueda avanzada &gt; &gt;</a>
               </div>
             </div>
           </form>
-        </div>
-        <div class="col-sm-7 text-right">
+        </div>-->
+        <div class="col-md-11 text-right">
           <p class="m-0">Resultados: </p>
           <span>Resultados por página: 15, 50, 100</span>
         </div>
       </div>
     </div>
-    <div class="container adv-search hidden">
+    <!--<div class="container adv-search hidden">
       <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
@@ -89,7 +86,8 @@ get_header(); ?>
         </div>
         <div class="col-sm-3"></div>
       </div>
-    </div>
+    </div>-->
+    
     <div class="container pt-21">
       <div class="row">
         <div class="col-sm-1"></div>
@@ -98,10 +96,10 @@ get_header(); ?>
             <?php if ( have_posts() ) : ?>
               <?php while ( have_posts() ) : the_post(); ?>
               <li>
-                <h4 class="m-0"><?php the_title(); ?></h4>
+                <h4 class="medium m-0"><?php the_title(); ?></h4>
                 <?php $conte = (wp_get_post_terms(get_the_ID(),'country',array("fields" => "names"))[0]); ?>
-                <span class="text-gray-light"><?php if(isset($conte)){echo $conte.',';} ?> <?php echo get_the_date(); ?> / </span> <a><?php the_field('fuente-debates'); ?></a>
-                <!-- <span class="text-gray-light">Bolivia, Julio 24/2014 / </span> <a href="#">El Tiempo</a> -->
+                <?php $tempDate = get_the_date(); ?>
+								<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>  
                 <p class="m-0">
                   <?php 
                     switch (true) {
@@ -128,11 +126,14 @@ get_header(); ?>
                         break; 
                       case the_field('contenido_noticias'):
                         echo the_field('contenido_noticias');
-                        break;                
+                        break;  
+                      case the_field('descripcion_video'):
+                        echo the_field('descripcion_video');
+                        break;                                        
                     }
                   ?>
                 </p>
-                <a href="<?php echo get_permalink( get_the_ID() ); ?>">Leer más &gt; &gt;</a>
+                <small><a href="<?php echo get_permalink( get_the_ID() ); ?>">Leer más >></a></small>
                 <hr>
               </li>
               <?php endwhile; ?>
