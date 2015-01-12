@@ -50,7 +50,7 @@ get_header(); ?>
 						<div class="row">
 							<div class="col-md-12">
 								<h4 class="text-center light mt-21 mb-14">Si te suscribes a nuestro boletin electrónico, te vamos a mantener al corriente de todas nuestras actividades en la red. Para que estés enterada a la primera.</h4>
-								<h1 class="text-center mb-35">Último boletín</h1>
+								<h1 class="text-center mt-28 mb-42">Último boletín</h1>
 							</div>
 						</div>
 						<div class="row">
