@@ -4338,16 +4338,17 @@ form.search button {
   font-weight: 500;
   font-style: normal; }
   .events-calendar-placeholder .day {
-    width: 35px;
+    width: 38px;
     height: 35px;
     border-radius: 50%;
     background: none repeat scroll 0% 0% #ED7133;
     color: #FFF;
-    padding: 7px 6px;
+    padding: 8px 6px;
     text-transform: uppercase !important;
     position: relative;
     top: 3.7rem;
-    left: 2.5rem; }
+    left: 2.5rem;
+    font-size: 0.9rem; }
   .events-calendar-placeholder .day-num,
   .events-calendar-placeholder .month {
     color: #898989; }
@@ -4356,13 +4357,13 @@ form.search button {
     font-size: 5rem;
     position: relative;
     top: 2rem;
-    left: 4.2rem;
+    left: 5rem;
     font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
     font-weight: 500;
     font-style: normal; }
   .events-calendar-placeholder .month {
-    font-size: 20px;
-    font-size: 1.42857rem;
+    font-size: 18px;
+    font-size: 1.28571rem;
     text-transform: uppercase !important;
     position: relative;
     top: 0;
@@ -4683,6 +4684,9 @@ form.search button {
   font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
   font-style: normal; }
+
+.boletin .mostrar-anteriores {
+  border-bottom: 2px dotted #bcbcbc; }
 
 .dtl-content p {
   line-height: 28px;
