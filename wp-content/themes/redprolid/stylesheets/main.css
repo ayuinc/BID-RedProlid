@@ -4687,6 +4687,9 @@ form.search button {
 
 .boletin .mostrar-anteriores {
   border-bottom: 2px dotted #bcbcbc; }
+.boletin .buzon {
+  top: 0.8rem;
+  left: 3rem; }
 
 .dtl-content p {
   line-height: 28px;

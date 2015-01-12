@@ -36,7 +36,7 @@ get_header(); ?>
 								<p class="text-center mt-21 mb-21"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/boletin_anterior_interna_V6-02.png"></p>
 							</div>					
 							<div class="col-md-3">
-								<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/boletin_suscribete.png" class="absolute">
+								<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/boletin_suscribete.png" class="absolute buzon">
 							</div>					
 						</div>
 					</div>
