@@ -77,7 +77,8 @@ get_header(); ?>
 	                    <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0 pb-0"><?php the_title(); ?></h3></a>
 	                    <?php $publicacion = the_field('publicacion_noticias'); ?>
 	                    <small>
-	                    	<?php echo get_the_date(); ?>
+	                    	<?php $tempDate = get_the_date(); ?>
+		                    <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?>
 	                    	<?php if ($publicacion!='') { ?> 
 													/ <a href="<?php the_field('link_publicacion_noticias'); ?>"><?php the_field('publicacion_noticias'); ?></a>
 												<?php } ?>
@@ -109,10 +110,11 @@ get_header(); ?>
 	            	<?php query_posts( 'cat=12,-256&posts_per_page=10&paged=' . $paged ); ?>
 								<?php while ( have_posts() ) : the_post(); ?>    
 		                  <li class="mb-14">
-		                    <h5 class="medium"><?php the_title(); ?></h5>
-		                    <p><?php the_field('descripcion_rapida_noticias'); ?></p>
+		                    <h5 class="medium mb-0"><?php the_title(); ?></h5>
+		                    <p class="mb-0"><?php the_field('descripcion_rapida_noticias'); ?></p>
 	                      <small>
-	                      	<?php echo get_the_date(); ?>
+	                      	<?php $tempDate = get_the_date(); ?>
+													<?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?>
 	                      	<?php if ($publicacion!='') { ?> 
 														/ <a href="<?php the_field('link_publicacion_noticias'); ?>"><?php the_field('publicacion_noticias'); ?></a>
 													<?php } ?>
