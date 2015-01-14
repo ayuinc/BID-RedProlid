@@ -12,42 +12,34 @@ get_header(); ?>
 <?php get_template_part( 'include', 'nav' ); ?>
 
 <div class="">
-	<section class="mt-7 mb-21"> 
-	  <div class="container relative mb-14">
+	<section class="mt-7"> 
+	  <div class="container">
 	    <div class="row">
 	      <div class="col-md-12">
 	        <?php the_breadcrumb(); ?>
 	      </div>
 	    </div>
-	    <div class="absolute dtl-custom-heading z-index-100">
-	      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" width="100%"></div>
-	      <div class="clearfix">
-	        <div class="col-md-6">
-	          <h1 class="mt-14 ml--25 mb-0 brand-titular">Noticias</h1>
-	        </div>
-	        <div class="col-md-6 pt-28">
-	          <nav class="text-right mb-0 mt-0">
-	            <a href="<?php echo home_url('/'); ?>compartir-noticias" class="light">¿Quieres compartir una noticia?</a> 
-	          </nav>
-	        </div>
-	      </div>
-	    </div>	
-	  </div>      
+	    <div class="row">
+	      <div class="col-md-1">
+		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" width="100%">
+		    </div>
+        <div class="col-md-4">
+          <h1 class="mt-14 mb-0 brand-titular">Noticias</h1>
+        </div>
+        <div class="col-md-7 pt-28">
+          <nav class="text-right">
+            <a href="<?php echo home_url('/'); ?>compartir-noticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/">¿Quieres ver las noticias anteriores?</a>
+          </nav>
+        </div>
+	    </div>
+	    <hr>	
+	  </div> 
 	</section>
-	
-	<section class="pt-7-100 mb-21"> 
+	<section class="mb-21"> 
 	  <div class="container">
 	    <div class="row">
-				<div class="col-md-8">
-					<h3 class="light mt-21">Todos los días encontramos en los medios noticias, buenas o malas, que nos hablan de los avances o retrocesos de la mujer en el espacio público. Hemos recogido algunas de las más relevantes o significativas de entre las que tienen que ver con nosotras y nos ayudan a entender cómo está cambiando el mundo para las mujeres. Anímate a proponer las noticias que te parezcan destacadas.</h3>
-				</div>
-				<div class="col-md-4">
-					<div class="mostrar-anteriores mt-21">
-						<h4 class="medium">¿Quieres ver las noticias anteriores?</h4>
-						<div class="text-right">
-							<a class="btn btn-primary" href="<?php echo content_url('/'); ?>noticias-anteriores/">Ve todas</a>
-						</div>
-					</div>
+				<div class="col-md-12">
+					<h3 class="light">Todos los días encontramos en los medios noticias, buenas o malas, que nos hablan de los avances o retrocesos de la mujer en el espacio público. Hemos recogido algunas de las más relevantes o significativas de entre las que tienen que ver con nosotras y nos ayudan a entender cómo está cambiando el mundo para las mujeres. Anímate a proponer las noticias que te parezcan destacadas.</h3>
 				</div>
 	    </div>	
 	  </div>      
@@ -120,7 +112,7 @@ get_header(); ?>
 													<?php } ?>
 												</small>
 												<br>
-												<small class="vermas"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Noticia completa >></a></small>
+												<small class="vermas"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Noticia completa >></a></small>
 		                  </li>
 	                    <hr> 
 		            <?php endwhile; ?> 
