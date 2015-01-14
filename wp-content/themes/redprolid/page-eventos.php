@@ -27,7 +27,7 @@ get_header(); ?>
 	        </div>
 	        <div class="col-md-6 pt-28">
 	          <nav class="text-right mb-0 mt-0">
-	            <a href="<?php echo home_url('/'); ?>compartir-noticias" class="light">¿Quieres proponernos un evento?</a> | <a href="<?php echo home_url('/'); ?>compartir-noticias" class="light">Eventos anteriores</a>
+	            <a href="<?php echo home_url('/'); ?>compartir-noticias" class="light">¿Quieres proponernos un evento?</a> | <a href="<?php echo home_url('/'); ?>eventos-anteriores" class="light">Eventos anteriores</a>
 	          </nav>
 	        </div>
 	      </div>

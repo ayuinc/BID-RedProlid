@@ -27,7 +27,7 @@ get_header(); ?>
 	        </div>
 	        <div class="col-md-6 pt-28">
 	          <nav class="text-right mb-0 mt-0">
-	            <a href="<?php echo home_url('/'); ?>video/videos-anteriores" class="light">Video Anteriores</a> | <a href="<?php echo home_url('/'); ?>compartir-video" class="light">¿Quieres compartir un video?</a>
+	            <a href="<?php echo home_url('/'); ?>video/videos-anteriores" class="light">Videos Anteriores</a> | <a href="<?php echo home_url('/'); ?>compartir-video" class="light">¿Quieres compartir un video?</a>
 	          </nav>
 	        </div>
 	      </div>
@@ -60,7 +60,7 @@ get_header(); ?>
 	      <div class="panel-body pt-14">	
 		      <div class="row">
 		      	<div class="col-md-12">
-			      	<h2>Video mas vistos</h2>
+			      	<h2>Videos más vistos</h2>
 		      	</div>
 		      </div>      
 					<div class="row">

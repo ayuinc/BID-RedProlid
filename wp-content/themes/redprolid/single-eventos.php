@@ -13,7 +13,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<p class="text-right">
-					<a href="">Ve eventos anteriores</a> | <a href="">Ve próximos eventos</a>
+					<a href="<?php echo home_url('/'); ?>eventos-anteriores">Ve eventos anteriores</a> | <a href="">Ve próximos eventos</a>
 				</p>
 			</div>
 		</div>

@@ -65,7 +65,7 @@ get_header(); ?>
 	            <div class="row noticias-grid">
 								<!-- Start the Loop. -->
 								<?php if ( have_posts() ) : ?>
-	                <?php query_posts( 'cat=256,-12&posts_per_page=3' ); ?>
+	                <?php query_posts( 'cat=256&posts_per_page=3' ); ?>
 									<?php while ( have_posts() ) : the_post(); ?>				            
 				            <div class="col-md-4">
 					            <div>
@@ -107,7 +107,7 @@ get_header(); ?>
 	            <ul class="list-unstyled">
 	            	<!-- Start the Loop. -->
 	            	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-	            	<?php query_posts( 'cat=12,-256&posts_per_page=10&paged=' . $paged ); ?>
+	            	<?php query_posts( 'cat=12&posts_per_page=10&paged=' . $paged ); ?>
 								<?php while ( have_posts() ) : the_post(); ?>    
 		                  <li class="mb-14">
 		                    <h5 class="medium mb-0"><?php the_title(); ?></h5>
@@ -119,6 +119,8 @@ get_header(); ?>
 														/ <a href="<?php the_field('link_publicacion_noticias'); ?>"><?php the_field('publicacion_noticias'); ?></a>
 													<?php } ?>
 												</small>
+												<br>
+												<small class="vermas"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Noticia completa >></a></small>
 		                  </li>
 	                    <hr> 
 		            <?php endwhile; ?> 
