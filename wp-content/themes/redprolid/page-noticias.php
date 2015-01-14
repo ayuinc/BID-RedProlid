@@ -127,7 +127,7 @@ get_header(); ?>
 	          <div class="col-md-4 mostrar-anteriores">
 	            <h4 class="medium text-gray-darker mb-14">Lo último en las redes</h4> 
 	          	<div class="mb-14">
-								<div class="fb-like-box" data-width="100%" data-height="310" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+								<div class="fb-like-box" data-href="https://www.facebook.com/redprolid" data-width="350" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
 	          	</div>
 	          	<div class="mb-14">
 								<a class="twitter-timeline" width="298" height="310"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a> 
