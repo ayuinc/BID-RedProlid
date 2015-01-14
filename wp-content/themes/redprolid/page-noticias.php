@@ -76,7 +76,7 @@ get_header(); ?>
 												<?php } ?>
 											</small>
 	                    <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
-	                    <small class="vermas"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Noticia completa >></a></small>
+	                    <small class="vermas"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Noticia completa >></a></small>
 					            </div>							            
 				            </div>
 			            <?php endwhile; ?>
