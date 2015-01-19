@@ -4317,11 +4317,12 @@ form.search button {
 
 .titulos-anteriores {
   background: none repeat scroll 0% 0% #EBEADE;
-  padding: 21px; }
+  padding: 7px;
+  margin: 0px; }
   .titulos-anteriores .col-md-1 div {
     background: none repeat scroll 0% 0% #AEAB8B;
     position: relative;
-    top: -1.3rem;
+    top: -0.4rem;
     right: 2rem; }
 
 .mostrar-anteriores {

@@ -130,7 +130,7 @@ get_header(); ?>
 								<div class="fb-like-box" data-href="https://www.facebook.com/redprolid" data-width="350" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
 	          	</div>
 	          	<div class="mb-14">
-								<a class="twitter-timeline" width="353" height="310"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a> 
+								<a class="twitter-timeline" width="350" height="310"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a> 
 	          	</div>
 	          	<div class="mb-14"> 
 								<div class="g-person" data-width="350" data-height="310" data-href="//plus.google.com/u/0/107403271684877473593" data-rel="author"></div>
