@@ -19,7 +19,21 @@ get_header(); ?>
 	        <?php the_breadcrumb(); ?>
 	      </div>
 	    </div>
-	    <div class="absolute dtl-custom-heading z-index-100">
+	    <div class="row">
+	      <div class="col-md-1">
+		      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-circle.png" alt="" width="100%"></div>
+		    </div>
+        <div class="col-md-4">
+          <h1 class="mt-14 mb-0 brand-titular">Eventos</h1>
+        </div>
+        <div class="col-md-7 pt-28">
+          <nav class="text-right">
+            <a href="<?php echo home_url('/'); ?>compartir-noticias" class="light">¿Quieres proponernos un evento?</a> | <a href="<?php echo home_url('/'); ?>eventos-anteriores" class="light">Eventos anteriores</a>
+          </nav>
+        </div>
+	    </div>
+	    <hr class="hr-primary">
+	    <!-- <div class="absolute dtl-custom-heading z-index-100">
 	      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-circle.png" alt="" width="100%"></div>
 	      <div class="clearfix">
 	        <div class="col-md-6">
@@ -31,7 +45,7 @@ get_header(); ?>
 	          </nav>
 	        </div>
 	      </div>
-	    </div>	
+	    </div>	 -->
 	  </div>      
 	</section>
 	

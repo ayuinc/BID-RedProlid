@@ -14,7 +14,7 @@ get_header(); ?>
     <div class="container relative mh-140">
       <div class="absolute dtl-custom-heading">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt=""></div>
-        <h1 style="color: #aeab8b;" class="bg-panel pt-21 pb-21 pl-14 border-radius">Resultados de tu búsqueda</h1>
+        <h1 style="color: #aeab8b;" class="bg-panel pv-7 pl-14 border-radius">Resultados de tu búsqueda</h1>
       </div>
     </div>
     <div class="container">

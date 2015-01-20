@@ -2438,9 +2438,9 @@ tbody.collapse.in {
       padding: 6px 12px;
       line-height: 1.42857;
       text-decoration: none;
-      color: #ed7133;
-      background-color: #fff;
-      border: 1px solid #ddd;
+      color: #efefef;
+      background-color: #ed7133;
+      border: 1px solid #ed7133;
       margin-left: -1px; }
     .pagination > li:first-child > a,
     .pagination > li:first-child > span {
@@ -2454,9 +2454,9 @@ tbody.collapse.in {
   .pagination > li > a:hover, .pagination > li > a:focus,
   .pagination > li > span:hover,
   .pagination > li > span:focus {
-    color: #c24c11;
-    background-color: #efefef;
-    border-color: #ddd; }
+    color: #efefef;
+    background-color: #ec6725;
+    border-color: #ed7133; }
   .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
   .pagination > .active > span,
   .pagination > .active > span:hover,
@@ -2519,13 +2519,13 @@ tbody.collapse.in {
     .pager li > span {
       display: inline-block;
       padding: 5px 14px;
-      background-color: #fff;
-      border: 1px solid #ddd;
+      background-color: #ed7133;
+      border: 1px solid #ed7133;
       border-radius: 15px; }
     .pager li > a:hover,
     .pager li > a:focus {
       text-decoration: none;
-      background-color: #efefef; }
+      background-color: #ec6725; }
   .pager .next > a,
   .pager .next > span {
     float: right; }
@@ -2537,7 +2537,7 @@ tbody.collapse.in {
   .pager .disabled > a:focus,
   .pager .disabled > span {
     color: #bcbcbc;
-    background-color: #fff;
+    background-color: #ed7133;
     cursor: not-allowed; }
 
 .media,
@@ -3247,6 +3247,11 @@ html {
   @media only screen and (max-width: 480px) {
     html {
       font-size: 14px; } }
+
+a {
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
+  font-style: normal; }
 
 h1.brand-titular {
   color: #AEAB8B !important; }
@@ -4054,13 +4059,13 @@ form.form-search-inline button {
   .input-group-lg > .input-group-btn > .select-override.btn {
     line-height: 28px; }
 
-input::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder {
   color: #232323; }
-input::-moz-placeholder {
+.form-control::-moz-placeholder {
   color: #232323; }
-input:-moz-placeholder {
+.form-control:-moz-placeholder {
   color: #232323; }
-input:-ms-input-placeholder {
+.form-control:-ms-input-placeholder {
   color: #232323; }
 
 #nav-main-menu {
