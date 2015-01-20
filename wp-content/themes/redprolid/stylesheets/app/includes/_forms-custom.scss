@@ -21,3 +21,9 @@ form.form-search-inline {
     // background: white url(/img/arrow-down.svg) no-repeat 98%;
   }
 }
+
+input {
+	@include placeholder {
+		color: $gray-darker;
+	}
+}

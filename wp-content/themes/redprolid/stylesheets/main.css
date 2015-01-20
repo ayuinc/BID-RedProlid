@@ -4054,6 +4054,15 @@ form.form-search-inline button {
   .input-group-lg > .input-group-btn > .select-override.btn {
     line-height: 28px; }
 
+input::-webkit-input-placeholder {
+  color: #232323; }
+input::-moz-placeholder {
+  color: #232323; }
+input:-moz-placeholder {
+  color: #232323; }
+input:-ms-input-placeholder {
+  color: #232323; }
+
 #nav-main-menu {
   position: relative;
   z-index: 9999; }
@@ -4502,7 +4511,7 @@ form.search button {
   color: #232323; }
 
 .carousel-control .icon-next:before {
-  content: '›';
+  content: '>';
   font-family: "proxima-nova", Helvetica, Arial, sans-serif; }
 
 .carousel-control .icon-prev {
@@ -4516,7 +4525,7 @@ form.search button {
   color: #232323; }
 
 .carousel-control .icon-prev:before {
-  content: '‹';
+  content: '<';
   font-family: "proxima-nova", Helvetica, Arial, sans-serif; }
 
 .enterate-search {
