@@ -4216,6 +4216,7 @@ form.search button {
   .carousel-control .icon-next {
     width: 25px;
     height: 37px;
+    background: rgba(255, 255, 255, 0.3);
     margin-top: -10px;
     font-family: serif; }
   .carousel-control .icon-prev:before {
@@ -4331,11 +4332,11 @@ form.search button {
 
 .titulos-anteriores {
   background: none repeat scroll 0% 0% #EBEADE;
-  padding: 21px; }
+  padding: 14px; }
   .titulos-anteriores .col-md-1 div {
     background: none repeat scroll 0% 0% #AEAB8B;
     position: relative;
-    top: -1.3rem;
+    top: -14rem;
     right: 2rem; }
 
 .mostrar-anteriores {
@@ -4516,7 +4517,7 @@ form.search button {
   color: #232323; }
 
 .carousel-control .icon-next:before {
-  content: '>';
+  content: '\203a';
   font-family: "proxima-nova", Helvetica, Arial, sans-serif; }
 
 .carousel-control .icon-prev {
@@ -4530,7 +4531,7 @@ form.search button {
   color: #232323; }
 
 .carousel-control .icon-prev:before {
-  content: '<';
+  content: '\2039';
   font-family: "proxima-nova", Helvetica, Arial, sans-serif; }
 
 .enterate-search {

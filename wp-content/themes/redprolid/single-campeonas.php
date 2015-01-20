@@ -13,7 +13,8 @@
         </div>
         <div class="col-md-6 pt-28">
           <nav class="text-right mb-0 mt-0">
-            <a href="<?php echo home_url('/'); ?>compartir-campeonas" class="light">Nos propones un tema >></a> 
+            <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores" class="light">¿Quieres leer una entrevista?</a> <span class="text-primary">|</span>
+            <a href="<?php echo home_url('/'); ?>compartir-campeonas" class="light">Nos propones un tema >></a>
           </nav>
         </div>
       </div>

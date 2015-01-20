@@ -29,10 +29,10 @@
 	  </div>
     <div class="row">
 	    <?php if( get_field('imagen_evento') ) { ?>
-      <div class="col-md-2 col-md-offset-1">
+      <div class="col-md-3">
         <img src="<?php the_field('imagen_evento'); ?>" alt="" class="img-responsive">
       </div>
-      <div class="col-md-5">
+      <div class="col-md-6">
 	    <?php } else {?>
 	    <div class="col-md-7 col-md-offset-1">  
       <?php } ?>

@@ -28,11 +28,10 @@ get_header(); ?>
         </div>
         <div class="col-md-7 pt-28">
           <nav class="text-right">
-            <a href="<?php echo home_url('/'); ?>compartir-noticias" class="light">¿Quieres proponernos un evento?</a> | <a href="<?php echo home_url('/'); ?>eventos-anteriores" class="light">Eventos anteriores</a>
+            <a href="<?php echo home_url('/'); ?>compartir-noticias" class="light">¿Quieres proponernos un evento?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>eventos-anteriores" class="light">Eventos anteriores</a>
           </nav>
         </div>
 	    </div>
-	    <hr class="hr-primary">
 	    <!-- <div class="absolute dtl-custom-heading z-index-100">
 	      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-circle.png" alt="" width="100%"></div>
 	      <div class="clearfix">
@@ -74,7 +73,7 @@ get_header(); ?>
             <div class="col-md-10 col-md-offset-1">
               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner pl-56 pr-56">
+                <div class="carousel-inner">
 										<!-- Start the Loop. -->
 										<?php if ( have_posts() ) : ?>
                       <?php query_posts( array( 'category_name' => 'eventos-destacados', 'posts_per_page' => 1 ) ); ?>
