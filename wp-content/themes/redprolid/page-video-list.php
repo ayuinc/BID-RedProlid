@@ -38,6 +38,21 @@ get_header(); ?>
 	    </div>
     </div>
   </section>
+
+  <section class="pv-21">
+  	<div class="container">
+  		<div class="row">
+  			<form action="">
+  				<div class="col-sm-4 form-group">
+  					<select name="" id="" class="form-control select-override">
+  						<option value="Del más antiguo al más nuevo">Del más antiguo al más nuevo</option>
+  					</select>
+  				</div>
+  			</form>
+  		</div>
+  	</div>
+  	<hr>
+  </section>
   
 	<section>
 	  <div class="container">
