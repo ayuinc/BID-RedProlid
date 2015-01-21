@@ -23,7 +23,7 @@ get_header(); ?>
     <div class="mh-700">
       <section id="hero-unit">
         <div class="container pv-21">
-          <div id="carousel-example-generic" class="carousel slide bg-panel border-radius ph-21 pv-42" data-ride="carousel" style="background-image: url(assets/img/red-prolid-network-right.png); background-repeat: no-repeat; background-position: top right;">
+          <div id="carousel-example-generic" class="carousel slide bg-panel border-radius ph-21 pv-42" data-ride="carousel" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png); background-repeat: no-repeat; background-position: top right;">
             <!-- Indicators -->
             <!-- <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> 
@@ -35,7 +35,7 @@ get_header(); ?>
                 <div class="row">
                   <div class="col-sm-7 minh-350 flex-middle">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" width="100%" height="280" src="//www.youtube.com/embed/t4PTtXIQ3vs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                      <iframe width="100%" height="315" src="//www.youtube.com/embed/JJqT7jaHXN0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                   </div>
                   <div class="col-sm-5 minh-350 flex-middle-end">
