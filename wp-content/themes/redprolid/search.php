@@ -11,16 +11,20 @@ get_header(); ?>
 <?php get_template_part( 'include', 'nav' ); ?>
 <div>
   <section id="search">
-    <div class="container relative mh-140">
-      <div class="row">
-        <div class="container bg-panel pv-7 pl-14 border-radius">
-          <div class="col-sm-1">
-            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt=""></div>
+    <div class="container relative mh-140 mt-14">
+      <div class="clearfix bg-panel pv-7 border-radius sub-header">
+        <div class="col-sm-1">
+          <div>
+            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt="">
           </div>
-          <div class="col-sm-7">
+        </div>
+        <div class="col-sm-7">
+          <div>
             <h1 style="color: #aeab8b;" class="">Resultados de tu búsqueda</h1>
           </div>
-          <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+          <div class="text-right">
             <p class="m-0">Resultados: </p>
             <span>Resultados por página: 15, 50, 100</span>
           </div>

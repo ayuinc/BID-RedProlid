@@ -7,3 +7,14 @@ header {
 		}
 	}
 }
+
+.sub-header {
+	> [class*="col-"] {
+		@include flex-middle;
+		min-height: 21px;
+		padding: $container-fluid 0;
+		> div {
+			
+		}
+	}
+}

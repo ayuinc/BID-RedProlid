@@ -33,12 +33,105 @@ $brand-warning:         #f0ad4e !default; // Amarillo
 $brand-danger:          #d9534f !default; // Rojo
 $brand-titular:				  #AEAB8B !default; // cafe
 
-
 $brand-secondary:       #e94472 !default; // Fuccsia
 $brand-inverse: 				#081A26 !default;
 
 // PANEL COLORS
 $panel-bg: 							lighten(#c3bf9b, 21%) !default;
+
+// EBM:REF
+// SOCIAL COLORS
+$color-facebook: 		#3B5998 !default;
+$color-twitter: 		#34CCFE !default;
+$color-pinterest: 	#D02420 !default;
+$color-google-plus: #DC4335 !default;
+$color-linkedin: 		#1C87BD !default;
+$color-youtube: 		#F23030 !default;
+$color-instagram: 	#4187FB !default;
+
+// COLOR LISTS
+// EBM:REF
+$grayscale-list: 
+	$gray-darker, 
+	$gray-dark, 
+	$gray, 
+	$gray-light, 
+	$gray-lighter, 
+	#fff;
+
+$brand-colors-list: 
+	$brand-primary, 
+	$brand-success, 
+	$brand-info, 
+	$brand-warning, 
+	$brand-danger,
+	$brand-titular,
+	$brand-secondary,
+	$brand-inverse,
+	$panel-bg;
+
+$social-colors-list: 
+	$color-facebook,
+	$color-twitter, 	
+	$color-pinterest, 
+	$color-google-plus,
+	$color-youtube,
+	$color-instagram,
+	$color-linkedin; 	
+
+// COLOR SUFIX's
+// EBM:REF
+$grayscale-sufix-list: 
+	'gray-darker', 
+	'gray-dark', 
+	'gray', 
+	'gray-light', 
+	'gray-lighter', 
+	'white';
+
+$brand-colors-sufix-list: 
+	'primary', 
+	'success', 
+	'info', 
+	'warning', 
+	'danger'
+	'titular',
+	'secondary',
+	'inverse',
+	'panel-bg';
+
+$social-colors-sufix-list: 
+	'facebook',
+	'twitter',	
+	'pinterest',
+	'google-plus',
+	'youtube',
+	'instagram',
+	'linkedin';
+
+// EBM:REF
+$breakpoints-sufix-list:  
+	'xs', 
+	'sm', 
+	'md', 
+	'lg';
+
+// EBM:REF
+$text-elements-list: 
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6",
+  "p",
+  "span",
+  "a",
+  "em",
+  "i",
+  "strong",
+  "li";
+
 
 $grayscale-list: $gray-darker, $gray-dark, $gray, $gray-light, $gray-lighter, #fff;
 $brand-colors-list: $brand-primary, $brand-success, $brand-info, $brand-warning, $brand-danger, $brand-secondary, $panel-bg;
