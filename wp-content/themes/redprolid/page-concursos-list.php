@@ -11,9 +11,14 @@ get_header(); ?>
   <div class="mh-700">
     <section id="puntos-de-vista-anteriores">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-10 col-md-offset-1 mt-35 mb-35">
-            <h1>Concursos Anteriores</h1>
+        <div class="clearfix sub-header">
+          <div class="col-md-1">
+            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/concursos-icon-circle.png" alt="" width="100%"></div>
+          </div>
+          <div class="col-md-4">
+            <h1 class="brand-titular">Concursos anteriores</h1>
+          </div>
+          <div class="col-md-7">
           </div>
         </div>
       </div>
