@@ -22,7 +22,7 @@ get_header(); ?>
 	    <div class="clearfix sub-header">
 	    	<div class="col-sm-1">
           <div>
-            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-circle.png" alt="" width="100%">
+            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/video-icon-circle.png" alt="" width="100%">
           </div>
         </div>
         <div class="col-sm-7">
@@ -32,7 +32,7 @@ get_header(); ?>
         </div>
         <div class="col-sm-4">
           <nav class="text-right mb-0 mt-0">
-            <a href="<?php echo home_url('/'); ?>video/videos-anteriores" class="light">Videos Anteriores</a> | <a href="<?php echo home_url('/'); ?>compartir-video" class="light">¿Quieres compartir un video?</a>
+            <a href="<?php echo home_url('/'); ?>video/videos-anteriores" class="light">Videos Anteriores</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>compartir-video" class="light">¿Quieres compartir un video?</a>
           </nav>
         </div>
 	    </div>

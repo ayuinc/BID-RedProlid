@@ -2438,7 +2438,7 @@ tbody.collapse.in {
       padding: 6px 12px;
       line-height: 1.42857;
       text-decoration: none;
-      color: #efefef;
+      color: white;
       background-color: #ed7133;
       border: 1px solid #ed7133;
       margin-left: -1px; }
@@ -2454,7 +2454,7 @@ tbody.collapse.in {
   .pagination > li > a:hover, .pagination > li > a:focus,
   .pagination > li > span:hover,
   .pagination > li > span:focus {
-    color: #efefef;
+    color: white;
     background-color: #ec6725;
     border-color: #ed7133; }
   .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
