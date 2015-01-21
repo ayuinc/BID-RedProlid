@@ -33,14 +33,14 @@ get_header(); ?>
             <div class="carousel-inner">
               <div class="item active">
                 <div class="row">
-                  <div class="col-sm-7 minh-350 flex-middle-center">
+                  <div class="col-sm-7 minh-350 flex-middle">
                     <div class="embed-responsive embed-responsive-16by9">
                       <iframe class="embed-responsive-item" width="100%" height="280" src="//www.youtube.com/embed/t4PTtXIQ3vs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                   </div>
                   <div class="col-sm-5 minh-350 flex-middle-end">
                     <div>
-                      <h3><span class="uppercase">Explora y descubre</span><br>todo lo que la Red PROLID te ofrece</h3>
+                      <h3 class="light text-gray-dark"><span class="uppercase">Explora y descubre</span><br>todo lo que la Red PROLID te ofrece</h3>
                       <hr class="hr-white">
                       <div class="text-right">
                         <a href="#" class="btn btn-outline btn-white">Más aquí</a>
@@ -61,15 +61,6 @@ get_header(); ?>
           </div>
           <h2 class="text-center mt-21 mb-0"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
         </div>
-        <!-- <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="slider-container text-center mt-21">
-                <?php echo do_shortcode("[huge_it_slider id='1']"); ?>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </section>
       <section class="dtl-home mt-21 mb-21">
         <div class="container">
