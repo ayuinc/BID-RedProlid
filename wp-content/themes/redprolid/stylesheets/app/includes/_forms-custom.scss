@@ -25,5 +25,6 @@ form.form-search-inline {
 .form-control {
 	@include placeholder {
 		color: $gray-darker;
+		@include medium;
 	}
 }

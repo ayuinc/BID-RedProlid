@@ -4060,13 +4060,25 @@ form.form-search-inline button {
     line-height: 28px; }
 
 .form-control::-webkit-input-placeholder {
-  color: #232323; }
+  color: #232323;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
+  font-style: normal; }
 .form-control::-moz-placeholder {
-  color: #232323; }
+  color: #232323;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
+  font-style: normal; }
 .form-control:-moz-placeholder {
-  color: #232323; }
+  color: #232323;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
+  font-style: normal; }
 .form-control:-ms-input-placeholder {
-  color: #232323; }
+  color: #232323;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
+  font-style: normal; }
 
 #nav-main-menu {
   position: relative;

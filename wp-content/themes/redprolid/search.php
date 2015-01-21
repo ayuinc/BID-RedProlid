@@ -12,81 +12,21 @@ get_header(); ?>
 <div>
   <section id="search">
     <div class="container relative mh-140">
-      <div class="absolute dtl-custom-heading">
-        <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt=""></div>
-        <h1 style="color: #aeab8b;" class="bg-panel pv-7 pl-14 border-radius">Resultados de tu búsqueda</h1>
-      </div>
-    </div>
-    <div class="container">
       <div class="row">
-        <!--<div class="col-md-5">
-          <form action="" class="search">
-            <div class="form-group clearfix">
-              <div class="col-md-12">
-                <div class="input-group">
-                  <input type="search" class="form-control" placeholder="Nueva Buscar">
-                  <span class="input-group-btn">
-                    <button class="btn btn-primary" type="button"></button>
-                  </span>
-                </div>
-                <a href="#" class="text-primary toggle-adv-search">Búsqueda avanzada &gt; &gt;</a>
-              </div>
-            </div>
-          </form>
-        </div>-->
-        <div class="col-md-11 text-right">
+        <div class="col-sm-2">
+          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt=""></div>
+        </div>
+        <div class="col-sm-6">
+          <h1 style="color: #aeab8b;" class="bg-panel pv-7 pl-14 border-radius">Resultados de tu búsqueda</h1>
+        </div>
+        <div class="col-sm-4">
           <p class="m-0">Resultados: </p>
           <span>Resultados por página: 15, 50, 100</span>
         </div>
       </div>
-    </div>
-    <!--<div class="container adv-search hidden">
-      <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-          <form action="">
-            <div class="form-group clearfix">
-              <div class="col-sm-5">
-                <label for="">Que contenga todas las palabras</label>
-              </div>
-              <div class="col-sm-7">
-                <input type="text" class="form-control">
-              </div>
-            </div>
-            <div class="form-group clearfix">
-              <div class="col-sm-5">
-                <label for="">Frase exacta</label>
-              </div>
-              <div class="col-sm-7">
-                <input type="text" class="form-control">
-              </div>
-            </div>
-            <div class="form-group clearfix">
-              <div class="col-sm-5">
-                <label for="">Temas</label>
-              </div>
-              <div class="col-sm-7">
-                <select name="" id="" class="select-override form-control">
-                  <option value=""></option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group clearfix">
-              <div class="col-sm-5">
-                <label for="">Recurso</label>
-              </div>
-              <div class="col-sm-7">
-                <input type="text" class="form-control">
-              </div>
-            </div>
-            <div class="form-group text-right">
-              <input type="submit" class="btn btn-primary" value="Busca">
-            </div>
-          </form>
-        </div>
-        <div class="col-sm-3"></div>
+      <div class="absolute dtl-custom-heading">
       </div>
-    </div>-->
+    </div>
     
     <div class="container pt-21">
       <div class="row">
