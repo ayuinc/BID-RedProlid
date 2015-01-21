@@ -12,9 +12,10 @@ header {
 	> [class*="col-"] {
 		@include flex-middle;
 		min-height: 21px;
-		padding: $container-fluid 0;
+		padding-top: $container-fluid;
+		padding-bottom: $container-fluid;
 		> div {
-			
+
 		}
 	}
 }

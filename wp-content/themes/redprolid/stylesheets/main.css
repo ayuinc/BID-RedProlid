@@ -4142,7 +4142,8 @@ header {
   justify-content: center;
   -ms-flex-pack: center;
   min-height: 21px;
-  padding: 10.5px 0; }
+  padding-top: 10.5px;
+  padding-bottom: 10.5px; }
 
 a.btn.form-control,
 button.btn.form-control,
