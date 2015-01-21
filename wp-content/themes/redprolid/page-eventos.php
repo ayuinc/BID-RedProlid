@@ -19,14 +19,14 @@ get_header(); ?>
 	        <?php the_breadcrumb(); ?>
 	      </div>
 	    </div>
-	    <div class="row">
+	    <div class="clearfix sub-header">
 	      <div class="col-md-1">
 		      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-circle.png" alt="" width="100%"></div>
 		    </div>
         <div class="col-md-4">
-          <h1 class="mt-14 mb-0 brand-titular">Eventos</h1>
+          <h1 class="brand-titular">Eventos</h1>
         </div>
-        <div class="col-md-7 pt-28">
+        <div class="col-md-7">
           <nav class="text-right">
             <a href="<?php echo home_url('/'); ?>compartir-noticias" class="light">¿Quieres proponernos un evento?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>eventos-anteriores" class="light">Eventos anteriores</a>
           </nav>
