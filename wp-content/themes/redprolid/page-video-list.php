@@ -50,8 +50,8 @@ get_header(); ?>
   				</div>
   			</form>
   		</div>
+  		<hr>
   	</div>
-  	<hr>
   </section>
   
 	<section>
