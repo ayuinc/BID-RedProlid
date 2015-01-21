@@ -9,9 +9,11 @@ header {
 }
 
 .sub-header {
+	border-radius: $border-radius-base;
 	> [class*="col-"] {
 		@include flex-middle;
-		min-height: 21px;
+		min-height: 112px;
+		min-height: rem(112px);
 		padding-top: $container-fluid;
 		padding-bottom: $container-fluid;
 		> div {

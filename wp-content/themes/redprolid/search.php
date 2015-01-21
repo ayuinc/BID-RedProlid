@@ -12,7 +12,7 @@ get_header(); ?>
 <div>
   <section id="search">
     <div class="container relative mh-140 mt-14">
-      <div class="clearfix bg-panel pv-7 border-radius sub-header">
+      <div class="clearfix bg-panel sub-header">
         <div class="col-sm-1">
           <div>
             <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt="">
