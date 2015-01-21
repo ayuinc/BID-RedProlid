@@ -13,18 +13,18 @@ get_header(); ?>
   <section id="search">
     <div class="container relative mh-140">
       <div class="row">
-        <div class="col-sm-2">
-          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt=""></div>
+        <div class="container bg-panel pv-7 pl-14 border-radius">
+          <div class="col-sm-1">
+            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt=""></div>
+          </div>
+          <div class="col-sm-7">
+            <h1 style="color: #aeab8b;" class="">Resultados de tu búsqueda</h1>
+          </div>
+          <div class="col-sm-4">
+            <p class="m-0">Resultados: </p>
+            <span>Resultados por página: 15, 50, 100</span>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <h1 style="color: #aeab8b;" class="bg-panel pv-7 pl-14 border-radius">Resultados de tu búsqueda</h1>
-        </div>
-        <div class="col-sm-4">
-          <p class="m-0">Resultados: </p>
-          <span>Resultados por página: 15, 50, 100</span>
-        </div>
-      </div>
-      <div class="absolute dtl-custom-heading">
       </div>
     </div>
     
