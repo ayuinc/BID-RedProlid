@@ -5,20 +5,20 @@
         <?php the_breadcrumb(); ?>
       </div>
     </div>
-    <div class="absolute dtl-custom-heading z-index-100">
-      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" alt="" width="100%"></div>
-      <div class="clearfix">
-        <div class="col-md-6">
-          <h1 class="mt-14 ml--25 mb-0 brand-titular">Campeonas</h1>
-        </div>
-        <div class="col-md-6 pt-28">
-          <nav class="text-right mb-0 mt-0">
-            <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores" class="light">¿Quieres leer una entrevista?</a> <span class="text-primary">|</span>
-            <a href="<?php echo home_url('/'); ?>compartir-campeonas" class="light">Nos propones un tema >></a>
-          </nav>
-        </div>
+    <div class="clearfix sub-header">
+      <div class="col-md-1">
+        <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" alt="" width="100%"></div>
       </div>
-    </div>	
+      <div class="col-md-4">
+        <h1 class="brand-titular">Campeonas</h1>
+      </div>
+      <div class="col-md-7">
+        <nav class="text-right">
+          <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores" class="light">¿Quieres leer una entrevista?</a> <span class="text-primary">|</span>
+          <a href="<?php echo home_url('/'); ?>compartir-campeonas" class="light">Nos propones un tema >></a>
+        </nav>
+      </div>
+    </div>
   </div>      
 </section>
 
