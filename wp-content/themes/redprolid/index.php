@@ -23,7 +23,7 @@ get_header(); ?>
     <div class="mh-700">
       <section id="hero-unit">
         <div class="container pv-21">
-          <div id="carousel-example-generic" class="carousel slide bg-panel border-radius ph-21 pv-42" data-ride="carousel" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png); background-repeat: no-repeat; background-position: top right;">
+          <div id="carousel-example-generic" class="carousel slide bg-panel border-radius p-21" data-ride="carousel" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png); background-repeat: no-repeat; background-position: top right;">
             <!-- Indicators -->
             <!-- <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> 
