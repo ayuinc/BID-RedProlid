@@ -29,7 +29,7 @@ get_header(); ?>
             </div>
           </div>
           <div class="sub-header-icon">
-            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" width="70px" height="auto" alt="">
+            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" width="94px" height="auto" alt="">
           </div>
         </div>
 		  </div>      

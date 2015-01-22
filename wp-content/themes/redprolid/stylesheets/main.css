@@ -4151,9 +4151,12 @@ header {
   .sub-header .sub-header-icon {
     position: absolute;
     top: 0;
-    right: 10.5px;
+    right: 31.5px;
     padding: 10.5px;
     background-color: #c3bf9b; }
+    .sub-header .sub-header-icon img {
+      width: 94px;
+      height: auto; }
 
 a.btn.form-control,
 button.btn.form-control,

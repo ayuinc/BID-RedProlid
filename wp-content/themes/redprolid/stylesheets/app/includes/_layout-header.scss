@@ -22,8 +22,12 @@ header {
 		}
 	}
 	.sub-header-icon {
-		@include position(absolute, 0 $container-fluid null null);
+		@include position(absolute, 0 ($container-fluid * 3) null null);
 		padding: $container-fluid;
 		background-color: darken($panel-bg, 21%);
+		img {
+			width: 94px;
+			height: auto;
+		}
 	}
 }
