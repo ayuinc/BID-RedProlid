@@ -10,6 +10,7 @@ header {
 
 .sub-header {
 	border-radius: $border-radius-base;
+	@include position(relative);
 	> [class*="col-"] {
 		@include flex-middle;
 		min-height: 112px;
@@ -19,5 +20,10 @@ header {
 		> div {
 
 		}
+	}
+	.sub-header-icon {
+		@include position(absolute, 0 $container-fluid null null);
+		padding: $container-fluid;
+		background-color: darken($panel-bg, 21%);
 	}
 }

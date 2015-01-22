@@ -19,25 +19,19 @@ get_header(); ?>
 		        <?php the_breadcrumb(); ?>
 		      </div>
 		    </div>
-		    <div class="absolute dtl-custom-heading z-index-100">
-		      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="80"></div>
-		      <div class="clearfix">
-		        <div class="col-md-3">
-		          <h1 class="mt-14 ml--25 mb-0 brand-titular">Webinarios</h1>
-		        </div>
-		        <div class="col-md-9 pt-28">
-		          <nav class="text-right mb-0 mt-0">
-			          <div class="row">
-		            	<div class="col-md-12">
-			            	<p class="text-right">
-			            	<a href="#" data-toggle="modal" data-target="#pdv-modal">¿Quieres proponernos un tema?</a> 
-			            	</p>
-		            	</div>
-			          </div>
-		          </nav>
-		        </div>
-		      </div>
-		    </div>	
+        <div class="clearfix bg-panel sub-header">
+          <div class="col-sm-7">
+            <div>
+              <h1 style="color: #aeab8b;" class="">Webinarios anteriores</h1>
+              <nav class="mt-21">
+                <a href="#">Charlacafé &gt;&gt;</a>
+              </nav>
+            </div>
+          </div>
+          <div class="sub-header-icon">
+            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" width="70px" height="auto" alt="">
+          </div>
+        </div>
 		  </div>      
     </section>		  
     <section id="puntos-de-vista-anteriores" class="pt-7-100 mt-35">

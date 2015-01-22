@@ -4118,7 +4118,8 @@ header {
     height: auto; }
 
 .sub-header {
-  border-radius: 3px; }
+  border-radius: 3px;
+  position: relative; }
   .sub-header > [class*="col-"] {
     display: -webkit-box;
     display: -moz-box;
@@ -4147,6 +4148,12 @@ header {
     min-height: 8rem;
     padding-top: 10.5px;
     padding-bottom: 10.5px; }
+  .sub-header .sub-header-icon {
+    position: absolute;
+    top: 0;
+    right: 10.5px;
+    padding: 10.5px;
+    background-color: #c3bf9b; }
 
 a.btn.form-control,
 button.btn.form-control,
