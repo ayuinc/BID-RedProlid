@@ -4584,7 +4584,7 @@ form.search button {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    min-height: 210px; }
+    min-height: 350px; }
     .banner .banner-pic img {
       width: 100%;
       height: auto; }
@@ -4597,14 +4597,14 @@ form.search button {
     .banner .banner-label span {
       text-transform: uppercase; }
   .banner .banner-content {
-    min-height: 210px;
-    min-height: 15rem;
-    padding: 0 21px; }
+    min-height: 350px;
+    min-height: 25rem;
+    padding: 21px; }
     @media only screen and (max-width: 768px) {
       .banner .banner-content {
-        min-height: 105px;
-        min-height: 7.5rem;
-        padding: 0 10.5px; } }
+        min-height: 175px;
+        min-height: 12.5rem;
+        padding: 10.5px; } }
   .banner.banner-label-bottom .banner-label {
     position: absolute;
     bottom: 0;

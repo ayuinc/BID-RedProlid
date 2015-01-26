@@ -62,7 +62,7 @@ get_header(); ?>
                 <p><?php echo get_post_field('post_content', get_the_ID()); ?></p>
                 <span class="text-gray">177.001 visualizaciones</span>
               </div>
-              <div class="flex-space-between pv-21">
+              <div class="flex-space-between pt-21">
                 <div class="left">
                   <strong>Fecha:</strong>
                   <div>

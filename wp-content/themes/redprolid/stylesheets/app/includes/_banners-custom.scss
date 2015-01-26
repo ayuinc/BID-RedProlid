@@ -29,11 +29,11 @@
 	.banner-content {
 		min-height: $banner-height;
 		min-height: rem($banner-height);
-		padding: 0 $container-fluid * 2;
+		padding: $container-fluid * 2;
 		@media #{$sm-down} {
 			min-height: $banner-height / 2;
 			min-height: rem($banner-height / 2);
-			padding: 0 $container-fluid;
+			padding: $container-fluid;
 		}
 	}
 	// a:not(.btn) {
