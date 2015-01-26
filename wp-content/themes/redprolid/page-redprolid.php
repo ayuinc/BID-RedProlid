@@ -22,7 +22,7 @@ get_header(); ?>
 			        <?php the_breadcrumb(); ?>
 			      </div>
 			    </div>
-          <div class="mh-350 pb-21 mb-21" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png)">
+          <div class="mh-350 pb-21 mb-21" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right-half.png)">
             <div class="clearfix sub-header">
               <div class="col-sm-1">
                 <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" alt="" width="100%"></div>
@@ -33,7 +33,7 @@ get_header(); ?>
             </div>
             <div class="row">
               <div class="col-sm-6 col-sm-offset-1">
-                <p class="lead">
+                <p class="lead text-justify">
                   <?php the_field('que_es_redprolid'); ?>
                 </p>
               </div>
