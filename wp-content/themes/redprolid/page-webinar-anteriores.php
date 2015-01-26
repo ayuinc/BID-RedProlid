@@ -53,20 +53,23 @@ get_header(); ?>
         <?php query_posts( 'category_name=webinario' ); ?> 
         <?php while ( have_posts() ) : the_post(); ?>
         <div class="banner">
-          <div class="banner-pic bg-panel">
-            <iframe class="embed-responsive-item" width="100%" height="315" src="//www.youtube.com/embed/JJqT7jaHXN0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <div class="banner-pic bg-panel col-sm-4">
+            <iframe class="embed-responsive-item" width="100%" height="210" src="//www.youtube.com/embed/JJqT7jaHXN0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
           </div>
-          <div class="banner-content">
+          <div class="banner-content col-sm-8">
               <h3>
                 <a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a>
               </h3>
-              <p>
-                <?php echo get_post_field('post_content', get_the_ID()); ?>
-              </p>
+              <div>
+                <p><?php echo get_post_field('post_content', get_the_ID()); ?></p>
+                <span class="text-gray">177.001 visualizaciones</span>
+              </div>
               <div class="flex-space-between">
                 <div class="left">
                   <strong>Fecha:</strong>
-                  <span>1 de septiembre de 2014</span> <span class="text-gray">07:00:00 a.m.</span>
+                  <div>
+                    <span>1 de septiembre de 2014</span> <span class="text-gray">07:00:00 a.m.</span>
+                  </div>
                 </div>
                 <div class="right">
                   <nav>

@@ -4560,9 +4560,6 @@ form.search button {
   background-position: center center;
   background-size: cover;
   min-height: 350px; }
-  @media only screen and (min-width: 768px) {
-    .banner .banner-pic {
-      padding: 0; } }
   .banner .banner-pic img {
     width: 100%;
     height: auto; }
@@ -4606,10 +4603,6 @@ form.search button {
       min-height: 175px;
       min-height: 12.5rem;
       padding: 0 10.5px; } }
-.banner a:not(.btn) {
-  color: #898989; }
-.banner:hover {
-  background-color: #efefef; }
 .banner.banner-label-bottom .banner-label {
   position: absolute;
   bottom: 0;
