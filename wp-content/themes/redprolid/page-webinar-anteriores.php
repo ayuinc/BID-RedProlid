@@ -34,7 +34,7 @@ get_header(); ?>
         </div>
 		  </div>      
     </section>
-    <section class="pv-21">
+    <section class="pv-7">
       <div class="container">
         <div class="row">
           <form action="">
@@ -45,10 +45,9 @@ get_header(); ?>
             </div>
           </form>
         </div>
-        <hr>
       </div>
     </section> 
-    <section id="puntos-de-vista-anteriores" class="pt-7-100 mt-35">
+    <section id="puntos-de-vista-anteriores">
       <div class="container mh-560">
         <?php query_posts( 'category_name=webinario' ); ?> 
         <?php while ( have_posts() ) : the_post(); ?>

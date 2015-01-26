@@ -4052,6 +4052,14 @@ ul.table-list {
   margin-bottom: -2px !important;
   margin-bottom: -0.14286rem !important; }
 
+.pager li > a,
+.pager li > span {
+  color: white; }
+  .pager li > a:hover, .pager li > a:focus,
+  .pager li > span:hover,
+  .pager li > span:focus {
+    color: white; }
+
 footer {
   background: #232323;
   margin-top: 35px;
@@ -4548,7 +4556,7 @@ form.search button {
     content: url(../assets/icons/arrow-slider-right.png); }
 
 .banner {
-  border-bottom: 1px solid #898989; }
+  border-bottom: 1px solid #efefef; }
   .banner:before, .banner:after {
     content: " ";
     display: table; }
@@ -4584,7 +4592,7 @@ form.search button {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    min-height: 350px; }
+    min-height: 280px; }
     .banner .banner-pic img {
       width: 100%;
       height: auto; }
@@ -4597,13 +4605,13 @@ form.search button {
     .banner .banner-label span {
       text-transform: uppercase; }
   .banner .banner-content {
-    min-height: 350px;
-    min-height: 25rem;
+    min-height: 280px;
+    min-height: 20rem;
     padding: 21px; }
     @media only screen and (max-width: 768px) {
       .banner .banner-content {
-        min-height: 175px;
-        min-height: 12.5rem;
+        min-height: 140px;
+        min-height: 10rem;
         padding: 10.5px; } }
   .banner.banner-label-bottom .banner-label {
     position: absolute;

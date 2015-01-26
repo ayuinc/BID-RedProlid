@@ -1,7 +1,7 @@
 // BANNERS
 .banner {
 	@include clearfix;
-	border-bottom: 1px solid $gray;
+	border-bottom: 1px solid $gray-lighter;
 	.banner-pic,
 	.banner-content {
 		position: relative;
