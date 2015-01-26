@@ -3065,6 +3065,41 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+.bg-img-control-center {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.bg-img-control-center-x {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center; }
+
+.bg-img-control-center-y {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center; }
+
+.bg-img-control-bottom {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom; }
+
+.bg-img-control-top {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top; }
+
+.bg-img-control-left {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: left; }
+
+.bg-img-control-right {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right; }
+
 /*========================================
 =                  BOURBON               =
 ========================================*/
@@ -4590,7 +4625,6 @@ form.search button {
     -ms-flex-pack: center; }
   .banner .banner-pic {
     background-repeat: no-repeat;
-    background-position: center center;
     background-size: cover;
     min-height: 280px; }
     .banner .banner-pic img {

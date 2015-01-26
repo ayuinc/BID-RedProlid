@@ -14,8 +14,56 @@
 // CONTROL FULL WIDTH BG IMAGES
 @mixin bg-img-control {
 	background-repeat: no-repeat;
-	background-position: center center;
 	background-size: cover;
+}
+@mixin bg-img-control-center {
+	@include bg-img-control;
+	background-position: center center;
+}
+@mixin bg-img-control-center-x {
+	@include bg-img-control;
+	background-position-x: center;
+}
+@mixin bg-img-control-center-y {
+	@include bg-img-control;
+	background-position-y: center;
+}
+@mixin bg-img-control-bottom {
+	@include bg-img-control;
+	background-position-y: bottom;
+}
+@mixin bg-img-control-top {
+	@include bg-img-control;
+	background-position-y: top;
+}
+@mixin bg-img-control-left {
+	@include bg-img-control;
+	background-position-x: left;
+}
+@mixin bg-img-control-right {
+	@include bg-img-control;
+	background-position-x: right;
+}
+.bg-img-control-center {
+	@include bg-img-control-center;
+}
+.bg-img-control-center-x {
+	@include bg-img-control-center-x;
+}
+.bg-img-control-center-y {
+	@include bg-img-control-center-y;
+}
+.bg-img-control-bottom {
+	@include bg-img-control-bottom;
+}
+.bg-img-control-top {
+	@include bg-img-control-top;
+}
+.bg-img-control-left {
+	@include bg-img-control-left;
+}
+.bg-img-control-right {
+	@include bg-img-control-right;
 }
 
 // EBM:REF
