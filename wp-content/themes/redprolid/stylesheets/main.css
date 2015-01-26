@@ -4547,6 +4547,75 @@ form.search button {
   .carousel-control .icon-next:before {
     content: url(../assets/icons/arrow-slider-right.png); }
 
+.banner:before, .banner:after {
+  content: " ";
+  display: table; }
+.banner:after {
+  clear: both; }
+.banner .banner-pic,
+.banner .banner-content {
+  position: relative; }
+.banner .banner-pic {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 350px; }
+  @media only screen and (min-width: 768px) {
+    .banner .banner-pic {
+      padding: 0; } }
+  .banner .banner-pic img {
+    width: 100%;
+    height: auto; }
+.banner .banner-label {
+  position: absolute;
+  top: -14px;
+  left: 10.5px;
+  text-align: center;
+  padding: 3px 7px; }
+  .banner .banner-label span {
+    text-transform: uppercase; }
+.banner .banner-content {
+  min-height: 350px;
+  min-height: 25rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  padding: 0 21px; }
+  @media only screen and (max-width: 768px) {
+    .banner .banner-content {
+      min-height: 175px;
+      min-height: 12.5rem;
+      padding: 0 10.5px; } }
+.banner a:not(.btn) {
+  color: #898989; }
+.banner:hover {
+  background-color: #efefef; }
+.banner.banner-label-bottom .banner-label {
+  position: absolute;
+  bottom: 0;
+  left: 10.5px;
+  top: inherit; }
+
 .panel.panel-custom {
   min-height: 210px; }
   .panel.panel-custom.highlight {

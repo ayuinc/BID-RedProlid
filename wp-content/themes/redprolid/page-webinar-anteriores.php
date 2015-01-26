@@ -49,8 +49,37 @@ get_header(); ?>
       </div>
     </section> 
     <section id="puntos-de-vista-anteriores" class="pt-7-100 mt-35">
-      <div class="container grid-block-lg">
-        <div class="row">
+      <div class="container mh-560">
+        <?php query_posts( 'category_name=webinario' ); ?> 
+        <?php while ( have_posts() ) : the_post(); ?>
+        <div class="banner">
+          <div class="banner-pic bg-panel">
+            <iframe class="embed-responsive-item" width="100%" height="315" src="//www.youtube.com/embed/JJqT7jaHXN0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="banner-content">
+              <h3>
+                <a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a>
+              </h3>
+              <p>
+                <?php echo get_post_field('post_content', get_the_ID()); ?>
+              </p>
+              <div class="flex-space-between">
+                <div class="left">
+                  <strong>Fecha:</strong>
+                  <span>1 de septiembre de 2014</span> <span class="text-gray">07:00:00 a.m.</span>
+                </div>
+                <div class="right">
+                  <nav>
+                    <a href="<?php echo get_permalink( get_the_ID() ); ?>">Ver webinario</a> 
+                    <span class="text-primary">|</span> 
+                    <a href="#">Resumen del webinario</a>
+                  </nav>
+                </div>
+              </div>
+          </div>
+        </div>
+        <?php endwhile; ?> 
+        <!-- <div class="row">
           <div class="col-sm-10 col-md-offset-1">
             <?php query_posts( 'category_name=webinario' ); ?> 
             <?php while ( have_posts() ) : the_post(); ?>
@@ -62,14 +91,14 @@ get_header(); ?>
                 <small><a href="<?php echo get_permalink( get_the_ID() ); ?>">Lee más >></a></small>
               </div>
             <?php endwhile; ?>
-            <div class="text-center">
-              <ul class="pager">
-                <li><a href="#">Previos</a></li>
-                <li><a href="#">Siguiente</a></li>
-              </ul>
-            </div>
           </div>
-        </div>          
+        </div> -->
+      </div>
+      <div class="container text-center">
+        <ul class="pager">
+          <li><a href="#">Previos</a></li>
+          <li><a href="#">Siguiente</a></li>
+        </ul>
       </div>
     </section>
   </div>
