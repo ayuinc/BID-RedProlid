@@ -1,9 +1,11 @@
 // BANNERS
 .banner {
 	@include clearfix;
+	border-bottom: 1px solid $gray;
 	.banner-pic,
 	.banner-content {
 		position: relative;
+		@include flex-middle;
 	}
 	.banner-pic {
 		@include bg-img-control;
@@ -27,7 +29,6 @@
 	.banner-content {
 		min-height: $banner-height;
 		min-height: rem($banner-height);
-		@include flex-middle;
 		padding: 0 $container-fluid * 2;
 		@media #{$sm-down} {
 			min-height: $banner-height / 2;

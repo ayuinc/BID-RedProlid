@@ -57,21 +57,19 @@ get_header(); ?>
             <iframe class="embed-responsive-item" width="100%" height="210" src="//www.youtube.com/embed/JJqT7jaHXN0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
           </div>
           <div class="banner-content col-sm-8">
-              <h3>
-                <a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a>
-              </h3>
+              <h3 class="text-gray-dark"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
               <div>
                 <p><?php echo get_post_field('post_content', get_the_ID()); ?></p>
                 <span class="text-gray">177.001 visualizaciones</span>
               </div>
-              <div class="flex-space-between">
+              <div class="flex-space-between pv-21">
                 <div class="left">
                   <strong>Fecha:</strong>
                   <div>
                     <span>1 de septiembre de 2014</span> <span class="text-gray">07:00:00 a.m.</span>
                   </div>
                 </div>
-                <div class="right">
+                <div class="right flex-middle">
                   <nav>
                     <a href="<?php echo get_permalink( get_the_ID() ); ?>">Ver webinario</a> 
                     <span class="text-primary">|</span> 
