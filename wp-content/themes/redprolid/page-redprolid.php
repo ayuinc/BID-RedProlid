@@ -31,9 +31,13 @@ get_header(); ?>
                 <h1 class="text-white">¿Qué es Red PROLID?</h1>
               </div>
             </div>
-            <p class="lead">
-              <?php the_field('que_es_redprolid'); ?>
-            </p>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-1">
+                <p class="lead">
+                  <?php the_field('que_es_redprolid'); ?>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 	    </section>
