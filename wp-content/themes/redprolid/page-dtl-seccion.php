@@ -32,7 +32,7 @@ get_header(); ?>
          <!-- Start the Loop. -->
 					<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ) : the_post(); ?>
-		          <div class="absolute dtl-custom-heading">
+		          <div class="dtl-custom-heading">
 							<?php if ($segment2 == "a-donde-vamos") : ?>
 		            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png" alt="<?php the_title(); ?>"></div>
 		            <h1 class="title-a-donde-vamos medium mt-21"><?php the_title(); ?></h1>

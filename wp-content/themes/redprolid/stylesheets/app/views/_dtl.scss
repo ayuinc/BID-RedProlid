@@ -6,30 +6,41 @@
 }
 
 .dtl-custom-heading {
-	width: 95%;
-	padding-left: 114px;
-	padding-top: 25px;
-	position: absolute;
-	> div:first-child {
-		width: 85px;
-		height: 85px;
-		position: absolute;
-		left: 0px;
-		top: 28px; 
-	}
-	nav {
-		position:relative;
-		right:-2.9rem;	
+	@include clearfix;
+	@include flex-row;
+	> div {
+		@extend .col-xs-1; 
 	}
 	h1 {
-		@include bold;
-		font-size: 40px;
-		margin-top: 35px;
+		@extend .col-xs-11;
 	}
-	hr {
-		margin-top: 12px;
-	}
-} 
+}
+
+// .dtl-custom-heading {
+// 	width: 95%;
+// 	padding-left: 114px;
+// 	padding-top: 25px;
+// 	position: absolute;
+// 	> div:first-child {
+// 		width: 85px;
+// 		height: 85px;
+// 		position: absolute;
+// 		left: 0px;
+// 		top: 28px; 
+// 	}
+// 	nav {
+// 		position:relative;
+// 		right:-2.9rem;	
+// 	}
+// 	h1 {
+// 		@include bold;
+// 		font-size: 40px;
+// 		margin-top: 35px;
+// 	}
+// 	hr {
+// 		margin-top: 12px;
+// 	}
+// } 
 
 .dtl-path {
 	background: url(../assets/img/dtl-dtl-path.png) no-repeat center center;
