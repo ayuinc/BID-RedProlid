@@ -23,8 +23,16 @@ get_header(); ?>
 			      </div>
 			    </div>
 		    </div>
+        <div class="clearfix sub-header">
+          <div class="col-md-1">
+            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" alt=""></div>
+          </div>
+          <div class="col-md-6">
+            <h1>¿Qué es Red PROLID?</h1>
+          </div>
+        </div>
 	    </section>
-      <section id="hero-unit" class="mt-7 mb-21">
+      <!-- <section id="hero-unit" class="mt-7 mb-21">
         <div class="container">
           <div class="content clearfix pb-14">
             <div class="col-sm-7">
@@ -37,7 +45,7 @@ get_header(); ?>
             <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png" alt="" class="network-right mt-21">
           </div>
         </div>
-      </section>
+      </section> -->
       
       <section id="hero-unit mb-21">
         <div class="container">
