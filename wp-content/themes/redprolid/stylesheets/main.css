@@ -5071,12 +5071,19 @@ form.search button {
   -ms-flex-direction: row;
   padding-left: 0;
   list-style: none;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 21px 0; }
   .dtl-custom-heading:before, .dtl-custom-heading:after {
     content: " ";
     display: table; }
   .dtl-custom-heading:after {
     clear: both; }
+  .dtl-custom-heading > div img {
+    width: 100%;
+    height: auto; }
+  .dtl-custom-heading h1 {
+    border-bottom: 1px dotted #f39f75; }
 
 .dtl-path {
   background: url(../assets/img/dtl-dtl-path.png) no-repeat center center;

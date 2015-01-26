@@ -8,10 +8,17 @@
 .dtl-custom-heading {
 	@include clearfix;
 	@include flex-row;
+	margin-bottom: 21px;
+	padding: 21px 0;
 	> div {
 		@extend .col-xs-1; 
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 	h1 {
+		border-bottom: 1px dotted lighten($brand-primary, 14%);
 		@extend .col-xs-11;
 	}
 }
