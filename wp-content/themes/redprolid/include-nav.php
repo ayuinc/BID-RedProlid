@@ -71,7 +71,7 @@
           </li>
         </ul>
       </div>
-      <div class="right" style="width: 21%; ">
+      <div class="right" style="width: 32%; ">
         <!-- <form>
           <div class="input-group">
             <input type="search" class="form-control" placeholder="Buscar">
