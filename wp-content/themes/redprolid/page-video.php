@@ -11,33 +11,24 @@ get_header(); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
 
-<div class="">
+<div>
 	<section class="mt-7"> 
-	  <div class="container relative mb-14">
-	    <div class="row">
-	      <div class="col-sm-12">
-	        <?php the_breadcrumb(); ?>
-	      </div>
-	    </div>
-	    <div class="clearfix sub-header">
-	    	<div class="col-sm-1">
-          <div>
-            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/video-icon-circle.png" alt="" width="100%">
-          </div>
+    <div class="container">
+      <?php the_breadcrumb(); ?> 
+      <div class="clearfix sub-header">
+        <div class="col-md-1">
+          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/video-icon-circle.png" alt="" width="100%"></div>
         </div>
-        <div class="col-sm-7">
-          <div>
-            <h1>Video</h1>
-          </div>
+        <div class="col-md-7">
+          <h1>Video</h1>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <nav class="text-right mb-0 mt-0">
             <a href="<?php echo home_url('/'); ?>video/videos-anteriores" class="light">Videos Anteriores</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>compartir-video" class="light">¿Quieres compartir un video?</a>
-          </nav>
+          </nav>	          
         </div>
-	    </div>
-	    <hr>
-	  </div>      
+      </div>
+    </div>
 	</section>
 	
 	<section class="pt-7-100 mb-21"> 

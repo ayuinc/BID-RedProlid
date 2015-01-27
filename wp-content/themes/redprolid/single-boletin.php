@@ -16,13 +16,13 @@
 						<div class="row">
 							<div class="col-md-3">
 								<h2 class="medium mt-28 mb-0 h3">Boletín enero 2015</h2>
-								<p class="mt-0"><a href="">Boletínes anteriores >></a></p>
+								<p class="mt-0"><a href="<?php echo home_url('/'); ?>boletin/boletines-anteriores">Boletínes anteriores >></a></p>
 							</div>
 							<div class="col-md-6">
 								<p class="text-center mt-21 mb-21"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/boletin_anterior_interna_V6-02.png"></p>
 							</div>					
 							<div class="col-md-3">
-								<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/boletin_suscribete.png" class="absolute buzon">
+								<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/boletin_suscribete.png" class="absolute">
 							</div>					
 						</div>
 					</div>
