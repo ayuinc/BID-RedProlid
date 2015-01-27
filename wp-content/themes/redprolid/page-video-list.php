@@ -30,13 +30,28 @@ get_header(); ?>
 				    </div>
 				    <div class="col-md-1 pl-0 pr-0">
 					    <div>
-					    	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-circle.png" alt="" width="100%">
+					    	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/video-icon-square.png" alt="" width="100%">
 					    </div>
 				    </div>
 			    </div>
 		    </div>
 	    </div>
     </div>
+  </section>
+
+  <section class="pv-21">
+  	<div class="container">
+  		<div class="row">
+  			<form action="">
+  				<div class="col-sm-4 form-group">
+  					<select name="" id="" class="form-control select-override">
+  						<option value="Del más antiguo al más nuevo">Del más antiguo al más nuevo</option>
+  					</select>
+  				</div>
+  			</form>
+  		</div>
+  		<hr>
+  	</div>
   </section>
   
 	<section>

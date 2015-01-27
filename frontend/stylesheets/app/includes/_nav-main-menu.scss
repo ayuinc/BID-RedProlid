@@ -1,4 +1,6 @@
 #nav-main-menu {
+	position: relative;
+	z-index: 9999;
 	div {
 		> ul {
 			background: $brand-secondary;
@@ -7,12 +9,14 @@
 			li {
 				float: left;
 				position: relative;
+				font-size: 13px !important;
 				a {
 					display: block;
 					@include clearfix;
 					background: $brand-secondary;
 					border-right: 2px solid darken($brand-secondary, 7%);				
-					&:hover {
+					&:hover,
+					&.active {
 						text-decoration: none;
 						background: $brand-primary;
 					}
@@ -107,7 +111,7 @@
 				}
 			}
 		}
-	}
+	}	
 	form {
 		input,
 		button {
@@ -129,4 +133,17 @@ form.search {
 		width: 42px;
 		background: $brand-primary url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px;
 	}
+}
+
+.nav-video {
+	margin:0;
+	padding: 0;
+	img {
+		float:left;
+		margin:7px 7px 0 7px;
+	}
+}
+
+.last-piece {
+	width:183px;
 }

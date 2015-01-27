@@ -7,3 +7,27 @@ header {
 		}
 	}
 }
+
+.sub-header {
+	border-radius: $border-radius-base;
+	@include position(relative);
+	> [class*="col-"] {
+		@include flex-middle;
+		min-height: 112px;
+		min-height: rem(112px);
+		padding-top: $container-fluid;
+		padding-bottom: $container-fluid;
+		> div {
+
+		}
+	}
+	.sub-header-icon {
+		@include position(absolute, 0 ($container-fluid * 3) null null);
+		padding: $container-fluid;
+		background-color: darken($panel-bg, 21%);
+		img {
+			width: 94px;
+			height: auto;
+		}
+	}
+}

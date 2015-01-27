@@ -19,19 +19,23 @@ get_header(); ?>
 	        <?php the_breadcrumb(); ?>
 	      </div>
 	    </div>
-	    <div class="absolute dtl-custom-heading z-index-100">
-	      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-circle.png" alt="" width="100%"></div>
-	      <div class="clearfix">
-	        <div class="col-md-6">
-	          <h1 class="mt-14 ml--25 mb-0 brand-titular">Video</h1>
-	        </div>
-	        <div class="col-md-6 pt-28">
-	          <nav class="text-right mb-0 mt-0">
-	            <a href="<?php echo home_url('/'); ?>video/videos-anteriores" class="light">Videos Anteriores</a> | <a href="<?php echo home_url('/'); ?>compartir-video" class="light">¿Quieres compartir un video?</a>
-	          </nav>
-	        </div>
-	      </div>
-	    </div>	
+	    <div class="clearfix sub-header">
+	    	<div class="col-sm-1">
+          <div>
+            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/video-icon-circle.png" alt="" width="100%">
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <div>
+            <h1>Video</h1>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <nav class="text-right mb-0 mt-0">
+            <a href="<?php echo home_url('/'); ?>video/videos-anteriores" class="light">Videos Anteriores</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>compartir-video" class="light">¿Quieres compartir un video?</a>
+          </nav>
+        </div>
+	    </div>
 	  </div>      
 	</section>
 	

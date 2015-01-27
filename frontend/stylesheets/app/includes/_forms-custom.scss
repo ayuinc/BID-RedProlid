@@ -10,8 +10,6 @@ form.form-search-inline {
 		background: $brand-primary url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px;
 	}
 }
-
-
 // Form overrides 
 .select-override {
   @include user-select(none);
@@ -22,4 +20,11 @@ form.form-search-inline {
     line-height: 28px;
     // background: white url(/img/arrow-down.svg) no-repeat 98%;
   }
+}
+
+.form-control {
+	@include placeholder {
+		color: $gray-darker;
+		@include medium;
+	}
 }

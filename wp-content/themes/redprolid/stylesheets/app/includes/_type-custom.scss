@@ -9,6 +9,14 @@ html {
   }
 }
 
+a {
+  @include medium;
+  &:hover,
+  &.active {
+    // text-decoration: none;
+  }
+}
+
 // MAIN TEXT
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
