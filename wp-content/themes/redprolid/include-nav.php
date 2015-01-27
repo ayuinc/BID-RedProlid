@@ -49,7 +49,7 @@
           <li>
             <a href="<?php echo home_url('/'); ?>concursos" class="concursos <?php if($segment1=='concursos'){ echo 'active'; } ?>"><i></i><span>Concursos</span></a>
             <ul class="list-unstyled">
-              <li class="light"><a href="<?php echo home_url('/'); ?>concursos">Concursos anteriores</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>concursos-anteriores">Concursos anteriores</a></li>
             </ul>
           </li>
           <li class="last-piece">
