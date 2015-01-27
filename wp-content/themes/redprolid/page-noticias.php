@@ -13,28 +13,23 @@ get_header(); ?>
 
 <div class="">
 	<section class="mt-7"> 
-	  <div class="container">
-	    <div class="row">
-	      <div class="col-md-12">
-	        <?php the_breadcrumb(); ?>
-	      </div>
-	    </div>
-	    <div class="row">
-	      <div class="col-md-1">
-		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" width="100%">
-		    </div>
-        <div class="col-md-4">
-          <h1 class="mt-14 mb-0 brand-titular">Noticias</h1>
+    <div class="container">
+      <?php the_breadcrumb(); ?> 
+      <div class="clearfix sub-header">
+        <div class="col-md-1">
+          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" width="100%"></div>
         </div>
-        <div class="col-md-7 pt-28">
+        <div class="col-md-5">
+          <h1>Noticias</h1>
+        </div>
+        <div class="col-md-6">
           <nav class="text-right">
             <a href="<?php echo home_url('/'); ?>compartir-noticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/">¿Quieres ver las noticias anteriores?</a>
-          </nav>
+          </nav>	          
         </div>
-	    </div>
-	    <hr>	
-	  </div> 
-	</section>
+      </div>
+    </div>
+	</section>	
 	<section class="mb-21"> 
 	  <div class="container">
 	    <div class="row">

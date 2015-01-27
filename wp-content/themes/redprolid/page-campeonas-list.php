@@ -18,7 +18,6 @@ get_header(); ?>
 	    </div>	      
     </div>
   </section>
-  
   <section class="mb-21">
     <div class="container">
 	    <div class="row">
@@ -38,7 +37,6 @@ get_header(); ?>
 	    </div>
     </div>
   </section>
-  
   <section>  
     <div class="container grid-block-lg">
       <div class="row">
