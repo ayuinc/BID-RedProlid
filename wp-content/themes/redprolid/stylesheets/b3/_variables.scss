@@ -37,6 +37,10 @@ $brand-secondary:       #e94472 !default; // Fuccsia
 $brand-inverse: 				#081A26 !default;
 
 // PANEL COLORS
+$panel: 								#c3bf9b;
+.bg-panel-dark {
+	background-color: $panel;
+}
 $panel-bg: 							lighten(#c3bf9b, 21%) !default;
 
 // EBM:REF

@@ -22,7 +22,7 @@ get_header(); ?>
 	    <div class="clearfix sub-header">
 	    	<!-- IF NO POSTS in FOROS -->
 	      <!-- <div class="col-md-1">
-		      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/foros-icon.png" alt="" width="100%"></div>
+		      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/foros_icon.png" alt="" width="100%"></div>
 		    </div>
         <div class="col-md-5">
           <h1 class="brand-titular">Foro virtual</h1>
@@ -35,7 +35,7 @@ get_header(); ?>
         <!-- END:IF NO POSTS in FOROS -->
         <!-- IF POSTS in FOROS -->
         <div class="col-md-1">
-		      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/foros-icon.png" alt="" width="100%"></div>
+		      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/foros_icon.png" alt="" width="100%"></div>
 		    </div>
         <div class="col-md-5">
           <h1 class="brand-titular">Foro virtual</h1>
