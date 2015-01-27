@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Noticias
+Template Name: Foros principal page
 */
 
 get_header(); ?>
