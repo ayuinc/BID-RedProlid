@@ -113,10 +113,10 @@ get_header(); ?>
 			<div class="left col-sm-9">
 				<div class="row pv-ch-14">
 					<div class="col-xs-1 minh-70 bg-panel flex-middle-center">
-						<span class="h1 text-panel-dark">1,2,3</span>
+						<span class="h3 text-panel-dark">1,2,3</span>
 					</div>
 					<div class="col-xs-11 minh-70 flex-middle">
-						<h3></h3>
+						<h3>&nbsp;</h3>
 						<div class="text-right">
 							<a href="#">Responde aquí las 3 preguntas &gt;&gt;</a>
 						</div>
