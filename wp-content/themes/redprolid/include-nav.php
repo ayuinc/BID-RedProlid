@@ -39,7 +39,7 @@
               <!--<li><a href="<?php echo home_url('/'); ?>poll">Tu opinión importa</a></li>-->
               <li class="light"><a href="<?php echo home_url('/'); ?>noticias">Noticias</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>eventos">Eventos</a></li>
-              <li class="light"><a href="#">Nuestro boletín</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>boletin">Nuestro boletín</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>campeonas">Campeonas</a></li>
               <li class="light nav-video">
               	<img src="<?php echo home_url('/'); ?>wp-content/themes/redprolid/assets/icons/video-nav-main-menu.png"> <a href="<?php echo home_url('/'); ?>video" class="videos">Videos</a>
