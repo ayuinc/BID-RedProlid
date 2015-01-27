@@ -16,6 +16,12 @@
 /*========================================
 =          Twitter Bootstrap 3.2      =
 ========================================*/
+.bg-panel-dark {
+  background-color: #c3bf9b !important; }
+
+.text-panel-dark {
+  color: #c3bf9b !important; }
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -4688,20 +4694,12 @@ form.search button {
 
 .titulos-anteriores {
   background: none repeat scroll 0% 0% #EBEADE;
-<<<<<<< HEAD
   padding: 7px;
   margin: 0px; }
   .titulos-anteriores .col-md-1 div {
     background: none repeat scroll 0% 0% #AEAB8B;
     position: relative;
     top: -0.4rem;
-=======
-  padding: 14px; }
-  .titulos-anteriores .col-md-1 div {
-    background: none repeat scroll 0% 0% #AEAB8B;
-    position: relative;
-    top: -14px;
->>>>>>> 5d78172eab160e6d15b4bb4e34e87ccb867b7ea8
     right: 2rem; }
 
 .mostrar-anteriores {

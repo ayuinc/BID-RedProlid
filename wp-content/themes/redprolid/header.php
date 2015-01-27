@@ -59,6 +59,7 @@
     <script>try{Typekit.load();}catch(e){}</script>
 
     <!-- APP STYLES -->
+<<<<<<< HEAD
 
     <!--<link rel="stylesheet" href="<?php echo content_url('/'); ?>themes/redprolid/stylesheets/main.css">
     <link rel="stylesheet" href="<?php echo content_url('/'); ?>themes/redprolid/stylesheets/ebm-loops.css">-->
@@ -67,5 +68,9 @@
     <link rel="stylesheet" href="http://redprolid.dev/wp-content/themes/redprolid/stylesheets/ebm.css">
 
     <!-- <link rel="stylesheet" href="stylesheets/main.min.css"> -->
+=======
+    <link rel="stylesheet" href="<?php echo content_url('/'); ?>themes/redprolid/stylesheets/main.css">
+    <link rel="stylesheet" href="<?php echo content_url('/'); ?>themes/redprolid/stylesheets/ebm.css">
+>>>>>>> 88c9265b81389420604996ecb2b1dedb9c664ba8
   </head>
   <body>
