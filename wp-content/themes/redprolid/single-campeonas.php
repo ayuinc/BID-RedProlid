@@ -1,4 +1,4 @@
-<section class="mt-7 mb-21"> 
+<section class="mt-7 "> 
   <div class="container relative mb-14">
     <div class="row">
       <div class="col-md-12">
@@ -14,27 +14,20 @@
       </div>
       <div class="col-md-7">
         <nav class="text-right">
-          <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores" class="light">¿Quieres leer una entrevista?</a> <span class="text-primary">|</span>
-          <a href="<?php echo home_url('/'); ?>compartir-campeonas" class="light">Nos propones un tema >></a>
+          <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores" class="light">¿Quieres leer nuestras entrevistas anteriores?</a> <span class="text-primary">|</span>
+          <a href="<?php echo home_url('/'); ?>compartir-campeonas" class="light">Nos propones un tema</a>
         </nav>
       </div>
     </div>
+    <hr>
   </div>      
 </section>
 
 <section class="pt-7-100 mb-35"> 
   <div class="container">
     <div class="row">
-			<div class="col-md-8">
-				<h3 class="light mt-21">Esta es la sección donde incluimos las entrevistas con testimonios de aquellas mujeres latinoamericanas que han dejado huella y han marcado o van a marcar las agendas de sus países para imprimir mayor equidad en las politicas públicas y en el quehacer diario de la política.</h3>
-			</div>
-			<div class="col-md-4">
-				<div class="mostrar-anteriores mt-21">
-					<h4 class="medium">¿Quieres leer nuestras entrevistas anteriores?</h4>
-					<div class="text-right">
-						<a class="btn btn-primary" href="<?php echo content_url('/'); ?>campeonas-anteriores/">Ve todas</a>
-					</div>
-				</div>
+			<div class="col-md-12">
+				<h3 class="light">Esta es la sección donde incluimos las entrevistas con testimonios de aquellas mujeres latinoamericanas que han dejado huella y han marcado o van a marcar las agendas de sus países para imprimir mayor equidad en las politicas públicas y en el quehacer diario de la política.</h3>
 			</div>
     </div>	
   </div>      
