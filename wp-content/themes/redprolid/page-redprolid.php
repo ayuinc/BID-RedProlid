@@ -22,9 +22,26 @@ get_header(); ?>
 			        <?php the_breadcrumb(); ?>
 			      </div>
 			    </div>
-		    </div>
+          <div class="mh-350 pb-21 mb-21 bg-img-block-right bg-img-block-top" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right-half.png)">
+            <div class="clearfix sub-header">
+              <div class="col-sm-1">
+                <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" alt="" width="100%"></div>
+              </div>
+              <div class="col-sm-6">
+                <h1 class="text-white">¿Qué es Red PROLID?</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-1">
+                <p class="lead text-justify">
+                  <?php the_field('que_es_redprolid'); ?>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 	    </section>
-      <section id="hero-unit" class="mt-7 mb-21">
+      <!-- <section id="hero-unit" class="mt-7 mb-21">
         <div class="container">
           <div class="content clearfix pb-14">
             <div class="col-sm-7">
@@ -37,15 +54,11 @@ get_header(); ?>
             <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png" alt="" class="network-right mt-21">
           </div>
         </div>
-      </section>
+      </section> -->
       
-      <section id="hero-unit mb-21">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <h4 class="text-center light"><?php the_field('texto_central_redprolid'); ?></h4>
-            </div>
-          </div>
+      <section>
+        <div class="container p-21">
+          <h4 class="text-center light"><?php the_field('texto_central_redprolid'); ?></h4>
         </div>
       </section>      
       

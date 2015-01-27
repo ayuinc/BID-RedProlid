@@ -6,29 +6,44 @@
 }
 
 .dtl-custom-heading {
-	width: 97%;
-	padding-left: 112px;
-	padding-top: 21px;
+	width: 95%;
+	padding-left: 114px;
+	padding-top: 25px;
 	position: absolute;
 	> div:first-child {
-		width: 91px;
-		height: 91px;
+		width: 85px;
+		height: 85px;
 		position: absolute;
-		left: 14px;
+		left: 0px;
 		top: 28px; 
+	}
+	nav {
+		position:relative;
+		right:-2.9rem;	
 	}
 	h1 {
 		@include bold;
+		font-size: 40px;
+		margin-top: 35px;
+	}
+	hr {
+		margin-top: 12px;
 	}
 } 
 
 .dtl-path {
 	background: url(../assets/img/dtl-dtl-path.png) no-repeat center center;
 	height: 397px;
-	background-size: cover;
+	background-size: 89%;
 	a {
 		display: block;
 		height: 397px;
+	}
+	&.dtl-path-sm {
+		height: 240px;
+		a {
+			height: 240px;
+		}
 	}
 }
 
@@ -62,11 +77,6 @@
 			color: $gray-dark;
 			line-height: 28px;
 		}
-		strong {
-			@include bold;
-			line-height: 28px;
-			color: $gray-dark;
-		}
 	}
 	.footer {
 		padding: 35px 0;
@@ -83,14 +93,36 @@
 	}
 }
 
+.title-a-donde-vamos {
+	color: #f05f6a !important;
+}
+.title-agenda-de-genero {
+	color: #c02f73 !important;
+}
+.title-carrera-de-vallas {
+	color: #9a205c !important;
+}
+.title-la-pinta-no-es-lo-de-menos {
+	color: #007c8d !important;
+}
+.title-listas-para-la-politica {
+	color: #015a71 !important;
+}
+.title-nivelando-la-cancha {
+	color: #599a97 !important;
+}
+.title-pistas-2 {
+	color: #007c8d !important;
+} 
+
 #dtl-grid {
 	ul {
 		@include clearfix;
 		li {
-			width: 33.28%;
+			width: 25%;
 			float: left;
-			padding: 21px;
-			padding: rem(21);
+			padding: 11px;
+			padding: rem(11);
 			a {
 				display: block;
 				img {
@@ -99,30 +131,40 @@
 				}
 				&:hover {
 					text-decoration: none;
+					.color {
+						display: block;
+					}
+					.gs {
+						display: none;
+					}
 				}
 				.title {
 					@include clearfix;
 					position: relative;
-					padding-left: 84px;
+					padding-left: 46px;
 					img {
 						position: absolute;
-						top: -42px;
-						left: 0;
+						top: -15px;
+						left: 0px;
 						z-index: 30;
-						width: 77px;
+						width: 40px;
 						height: auto;
 					}
 					hr {
 						border-top: 2px dotted $gray-light;
 					}
 				}
+				.color {
+					display: none;
+				}
 			}
 		}
 	}
 }
 
-
-
+.z-index-100 {
+	z-index: 100;
+}
 
 
 

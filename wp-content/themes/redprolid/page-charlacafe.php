@@ -19,14 +19,14 @@ get_header(); ?>
 			        <?php the_breadcrumb(); ?>
 			      </div>
 			    </div>
-			    <div class="absolute dtl-custom-heading z-index-100">
-			      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" alt="" width="80"></div>
-			      <div class="clearfix">
-			        <div class="col-md-12">
-			          <h1 class="mt-14 ml--25 mb-0 brand-titular">Charlacafé</h1>
-			        </div>
-			      </div>
-			    </div>	
+          <div class="clearfix sub-header">
+            <div class="col-xs-1">
+              <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" alt="" class="img-responsive"></div>
+            </div>
+            <div class="col-xs-6">
+              <h1 class="brand-titular">Charlacafé</h1>
+            </div>
+          </div>
 			  </div>      
       </section>	    
       <section class="pt-7-100 mb-21">

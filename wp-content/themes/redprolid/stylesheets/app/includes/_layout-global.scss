@@ -1,3 +1,6 @@
+// GLOBAL SIZE CONTROL
+$banner-height: 280px;
+
 header,
 section {
 	padding:0rem;
@@ -101,4 +104,18 @@ ul.table-list {
     margin-bottom: ($h) + px!important;
     margin-bottom: rem($h)!important;
   }
+}
+
+// PAGER CUSTOM
+.pager {
+	li {
+		> a,
+		> span {
+			color: white;
+			&:hover,
+			&:focus {
+				color: white;
+			}
+		}
+	}
 }

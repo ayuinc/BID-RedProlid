@@ -2,6 +2,8 @@
 =             APP CUSTOM                 =
 ========================================*/
 
+$em-base: 14px;
+
 // APP Includes
 @import 
   // TYPE
@@ -36,6 +38,13 @@
   // VIEW NAME
   "views/home",
   "views/red-prolid",
+  "views/webinarios",
   "views/pdv",
   "views/enterate",
+  //"views/contacto",
+  "views/breadcrumbs.scss",
+  "views/registrate.scss",
+  "views/noticias.scss",
+  "views/eventos.scss",
+  "views/boletin.scss",
   "views/dtl";

@@ -19,19 +19,19 @@ get_header(); ?>
 			        <?php the_breadcrumb(); ?>
 			      </div>
 			    </div>
-			    <div class="absolute dtl-custom-heading z-index-100">
-			      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" width="80"></div>
-			      <div class="clearfix">
-			        <div class="col-md-6">
-			          <h1 class="mt-14 ml--25 mb-0 brand-titular">Entérate</h1>
-			        </div>
-			        <div class="col-md-6 pt-28">
-			          <nav class="text-right mb-0 mt-0">
-			            <a href="<?php echo home_url('/'); ?>puntos-de-vista-list" class="light">¿Quieres compartir un recurso?</a> 
-			          </nav>
-			        </div>
-			      </div>
-			    </div>	
+          <div class="clearfix sub-header">
+            <div class="col-xs-1">
+              <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" class="img-responsive"></div>
+            </div>
+            <div class="col-xs-6">
+              <h1 class="brand-titular">Entérate</h1>
+            </div>
+            <div class="col-xs-4">
+              <nav class="text-right mb-0 mt-0">
+                <a href="<?php echo home_url('/'); ?>puntos-de-vista-list" class="light">¿Quieres compartir un recurso?</a> 
+              </nav>
+            </div>
+          </div>
 			  </div>      
       </section>
       

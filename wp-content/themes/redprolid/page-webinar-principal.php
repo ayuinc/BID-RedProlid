@@ -17,26 +17,20 @@ get_header(); ?>
 			        <?php the_breadcrumb(); ?>
 			      </div>
 			    </div>
-			    <div class="absolute dtl-custom-heading z-index-100">
-			      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="80"></div>
-			      <div class="clearfix">
-			        <div class="col-md-3">
-			          <h1 class="mt-14 ml--25 mb-0 brand-titular">Webinarios</h1>
-			        </div>
-			        <div class="col-md-9 pt-28">
-			          <nav class="text-right mb-0 mt-0">
-				          <div class="row">
-			            	<div class="col-md-12">
-				            	<p class="text-right">
-				            	<a href="#" data-toggle="modal" data-target="#pdv-modal">¿Quieres proponernos un tema?</a> | 
-				            	<a href="<?php echo home_url('/'); ?>webinarios-anteriores" class="">Webinarios anteriores</a> 
-				            	</p>
-			            	</div>
-				          </div>
-			          </nav>
-			        </div>
-			      </div>
-			    </div>	
+			    <div class="clearfix sub-header">
+			      <div class="col-md-1">
+				      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="100%"></div>
+				    </div>
+		        <div class="col-md-4">
+		          <h1 class="brand-titular">Webinarios</h1>
+		        </div>
+		        <div class="col-md-7">
+		          <nav class="text-right">
+		          	<a href="#" data-toggle="modal" data-target="#pdv-modal">¿Quieres proponernos un tema?</a> <span class="text-primary">|</span> 
+				        <a href="<?php echo home_url('/'); ?>webinarios-anteriores" class="">Webinarios anteriores</a>
+		          </nav>
+		        </div>
+			    </div>
 			  </div>      
       </section>	    
       <section class="pt-7-100 mt-35">

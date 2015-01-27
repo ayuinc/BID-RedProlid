@@ -2,8 +2,22 @@ header {
 	@include box-shadow(0 3px 21px 3px $gray-light);
 	.logo {
 		img {
-			width: 210px;
+			width: 200px;
 			height: auto;
+		}
+	}
+}
+
+.sub-header {
+	border-radius: $border-radius-base;
+	> [class*="col-"] {
+		@include flex-middle;
+		min-height: 112px;
+		min-height: rem(112px);
+		padding-top: $container-fluid;
+		padding-bottom: $container-fluid;
+		> div {
+
 		}
 	}
 }

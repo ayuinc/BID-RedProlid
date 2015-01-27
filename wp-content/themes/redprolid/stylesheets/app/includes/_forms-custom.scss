@@ -21,3 +21,10 @@ form.form-search-inline {
     // background: white url(/img/arrow-down.svg) no-repeat 98%;
   }
 }
+
+.form-control {
+	@include placeholder {
+		color: $gray-darker;
+		@include medium;
+	}
+}

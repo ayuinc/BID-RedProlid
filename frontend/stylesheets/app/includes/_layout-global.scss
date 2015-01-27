@@ -1,5 +1,10 @@
 header,
-section,
+section {
+	padding:0rem;
+	margin:0rem;
+}
+
+
 footer {
 	padding: $grid-gutter-width 0;
 	padding: rem($grid-gutter-width) 0;
@@ -23,17 +28,16 @@ footer {
 }
 
 #hero-unit {
-	padding-top: 0;
+	padding: 0;
 	.content {
 		position: relative;
-		min-height: 350px;
+		min-height: 300px;
 		background: darken($panel-bg, 14%);
-		margin-bottom: 56px;
-		margin-bottom: rem(56);
 		.network-right {
 			position: absolute;
 			right: 0;
 			top: -21px;
+			height:300px;
 		}
 	}
 }
@@ -75,4 +79,26 @@ ul.table-list {
 		height: 21px;
 		left: 0;
 	}
+}
+
+//  Negative Margins
+@for $h from -10 to -1 {
+  .mt-#{$h} {
+    margin-top: ($h) + px!important;
+    margin-top: rem($h)!important;
+  }
+}
+
+@for $h from -25 to -1 {
+  .ml-#{$h} {
+    margin-left: ($h) + px!important;
+    margin-left: rem($h)!important;
+  }
+}
+
+@for $h from -10 to -1 {
+  .mb-#{$h} {
+    margin-bottom: ($h) + px!important;
+    margin-bottom: rem($h)!important;
+  }
 }
