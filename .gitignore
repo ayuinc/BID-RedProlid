@@ -6,5 +6,5 @@ wp-config.php
 *.sass-cache
 .sass-cache/*
 //wp-content/themes/redprolid/stylesheets/main.css.map
-wp-content/themes/redprolid/header.php
-wp-content/themes/redprolid/footer.php
+header.php
+footer.php
