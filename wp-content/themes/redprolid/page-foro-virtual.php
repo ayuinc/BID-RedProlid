@@ -35,29 +35,27 @@ get_header(); ?>
 	  </div>
 	</section>
 
-	<section>
-		<div class="bg-panel-dark">
-			<div class="container text-white">
-				<h1>Título: Mujeres en la política</h1>
-				<p>Fecha del foro: del 30 de nomviembre al 20 de dicimebre</p>
-			</div>
+	<section class="container ph-ch-70 pv-ch-14">
+		<div class="bg-panel-dark text-white normalize-text">
+			<h1>Título: Mujeres en la política</h1>
+			<p>Fecha del foro: del 30 de nomviembre al 20 de dicimebre</p>
 		</div>
 		<div class="bg-panel">
-			<div class="container">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam hic amet quos a temporibus, in quibusdam voluptatibus neque nobis nihil tempore eveniet officia, adipisci minima assumenda voluptatem. Eius, quisquam suscipit.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui enim deleniti voluptas culpa sint delectus eum quisquam veniam, ratione aliquam quam! Illo distinctio recusandae, qui reprehenderit ut neque, ad ea!</p>
-				<div class="text-right">
-					<a href="#" class="btn btn-primary">Ve más aquí</a>
-				</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam hic amet quos a temporibus, in quibusdam voluptatibus neque nobis nihil tempore eveniet officia, adipisci minima assumenda voluptatem. Eius, quisquam suscipit.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui enim deleniti voluptas culpa sint delectus eum quisquam veniam, ratione aliquam quam! Illo distinctio recusandae, qui reprehenderit ut neque, ad ea!</p>
+			<div class="text-right">
+				<a href="#" class="btn btn-primary">Ve más aquí</a>
 			</div>
 		</div>
+	</section>
+	<section class="container">
 		<div class="flex-space-between">
 			<div class="left col-sm-9">
 				<div class="row">
-					<div class="col-xs-1 mh-70 bg-panel flex-middle-center">
+					<div class="col-xs-1 minh-70 bg-panel flex-middle-center">
 						<span class="h1">1</span>
 					</div>
-					<div class="col-xs-11 mh-70 flex-middle">
+					<div class="col-xs-11 minh-70 flex-middle">
 						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit?</h3>
 						<div class="text-right">
 							<a href="#">Responde &gt;&gt;</a>
