@@ -41,6 +41,9 @@ $panel: 								#c3bf9b;
 .bg-panel-dark {
 	background-color: $panel;
 }
+.text-panel-dark {
+	color: $panel;
+}
 $panel-bg: 							lighten(#c3bf9b, 21%) !default;
 
 // EBM:REF

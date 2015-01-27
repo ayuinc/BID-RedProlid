@@ -51,9 +51,9 @@ get_header(); ?>
 	<section class="container">
 		<div class="flex-space-between">
 			<div class="left col-sm-9">
-				<div class="row">
+				<div class="row pv-ch-14">
 					<div class="col-xs-1 minh-70 bg-panel flex-middle-center">
-						<span class="h1">1</span>
+						<span class="h1 text-panel-dark">1</span>
 					</div>
 					<div class="col-xs-11 minh-70 flex-middle">
 						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit?</h3>
@@ -63,7 +63,67 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			<div class="right col-sm-3 normalize-text">
+			<div class="right col-sm-3 normalize-text pv-14">
+				<p><strong>Último comentario</strong> por Lulation</p>
+				<p>Re: Mujeres al poder...</p>
+				<small class="text-gray">23 de Julio, 11:13:07 a.m.</small>
+			</div>
+		</div>
+		<div class="flex-space-between">
+			<div class="left col-sm-9">
+				<div class="row pv-ch-14">
+					<div class="col-xs-1 minh-70 bg-panel flex-middle-center">
+						<span class="h1 text-panel-dark">2</span>
+					</div>
+					<div class="col-xs-11 minh-70 flex-middle">
+						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit?</h3>
+						<div class="text-right">
+							<a href="#">Responde &gt;&gt;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right col-sm-3 normalize-text pv-14">
+				<p><strong>Último comentario</strong> por Lulation</p>
+				<p>Re: Mujeres al poder...</p>
+				<small class="text-gray">23 de Julio, 11:13:07 a.m.</small>
+			</div>
+		</div>
+		<div class="flex-space-between">
+			<div class="left col-sm-9">
+				<div class="row pv-ch-14">
+					<div class="col-xs-1 minh-70 bg-panel flex-middle-center">
+						<span class="h1 text-panel-dark">3</span>
+					</div>
+					<div class="col-xs-11 minh-70 flex-middle">
+						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit?</h3>
+						<div class="text-right">
+							<a href="#">Responde &gt;&gt;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right col-sm-3 normalize-text pv-14">
+				<p><strong>Último comentario</strong> por Lulation</p>
+				<p>Re: Mujeres al poder...</p>
+				<small class="text-gray">23 de Julio, 11:13:07 a.m.</small>
+			</div>
+		</div>
+		<div class="flex-space-between">
+			<div class="left col-sm-9">
+				<div class="row pv-ch-14">
+					<div class="col-xs-1 minh-70 bg-panel flex-middle-center">
+						<span class="h1 text-panel-dark">1,2,3</span>
+					</div>
+					<div class="col-xs-11 minh-70 flex-middle">
+						<h3></h3>
+						<div class="text-right">
+							<a href="#">Responde aquí las 3 preguntas &gt;&gt;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right col-sm-3 normalize-text pv-14">
 				<p><strong>Último comentario</strong> por Lulation</p>
 				<p>Re: Mujeres al poder...</p>
 				<small class="text-gray">23 de Julio, 11:13:07 a.m.</small>
