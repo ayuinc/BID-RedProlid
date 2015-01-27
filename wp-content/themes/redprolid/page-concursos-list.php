@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Concursos list
+Template Name: Concursos anteriores
 */
 get_header(); ?>
 
