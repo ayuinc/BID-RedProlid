@@ -21,7 +21,7 @@ get_header(); ?>
 	    </div>
 	    <div class="clearfix sub-header">
         <div class="col-md-1">
-		      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/eventos-icon-circle.png" alt="" width="100%"></div>
+		      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/concursos-icon-circle.png" alt="" width="100%"></div>
 		    </div>
         <div class="col-md-5">
           <h1 class="brand-titular">Concursos</h1>
