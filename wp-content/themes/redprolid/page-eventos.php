@@ -42,67 +42,53 @@ get_header(); ?>
 	</section>
 	
 	<section class="bg-panel pt-21 pb-28 mb-21">
-	  <div class="container">
-	    <div class="panel panel-custom">
-	      <div class="panel-heading mb-0 pb-0">
-		      <div class="row">
-			      <div class="col-md-10 col-md-offset-1">
-							<h2>Eventos destacados</h2>
-			      </div>
-		      </div>
-	      </div>         
-        <div class="panel-body pt-0">
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-										<!-- Start the Loop. -->
-										<?php if ( have_posts() ) : ?>
-                      <?php query_posts( array( 'category_name' => 'eventos-destacados', 'posts_per_page' => 1 ) ); ?>
-											<?php while ( have_posts() ) : the_post(); ?>
-				                <div class="row">
-				                	<div class="col-md-12">
-					                	<h3 class="medium mt-7 mb-14 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-				                	</div>
-				                </div> 
-				                <div class="row">
-				                	<div class="col-md-3">
-					                	<img src="<?php the_field('imagen_evento'); ?>" alt="" class="img-responsive">
-				                	</div>
-				                	<div class="col-md-9 event-destacados">
-					                	<?php $tempDate = get_the_date(); ?>
-					                	<p>
-						                	<span>Fecha:</span> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><br>
-						                	<span>Hora:</span> <?php the_field('hora_evento'); ?><br>
-						                	<span>Lugar:</span> <?php the_field('lugar_evento'); ?><br>
-						                	<span>Organizan:</span> <?php the_field('organizan_evento'); ?><br>
-															<span>Convocan:</span> <?php the_field('convocan'); ?>
-						                </p>
-														<p class="text-center pt-0 mb-0"></p>
-				                	</div>
-				                </div>
-				                <div class="row">
-					                <div class="col-md-12">
-						                <p class="text-right mt-14 medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Más Información >></a></p>
-					                </div>
-				                </div>   
-					            <?php endwhile; ?>
-										<?php endif; ?>	
+	  <div class="container ph-70-md">
+	  	<h2>Eventos destacados</h2>
+	  	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+						<!-- Start the Loop. -->
+						<?php if ( have_posts() ) : ?>
+              <?php query_posts( array( 'category_name' => 'eventos-destacados', 'posts_per_page' => 1 ) ); ?>
+							<?php while ( have_posts() ) : the_post(); ?>
+                <div class="row">
+                	<div class="col-md-12">
+	                	<h3 class="medium mt-7 mb-14 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+                	</div>
+                </div> 
+                <div class="row">
+                	<div class="col-md-3">
+	                	<img src="<?php the_field('imagen_evento'); ?>" alt="" class="img-responsive">
+                	</div>
+                	<div class="col-md-9 event-destacados">
+	                	<?php $tempDate = get_the_date(); ?>
+	                	<p>
+		                	<span>Fecha:</span> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><br>
+		                	<span>Hora:</span> <?php the_field('hora_evento'); ?><br>
+		                	<span>Lugar:</span> <?php the_field('lugar_evento'); ?><br>
+		                	<span>Organizan:</span> <?php the_field('organizan_evento'); ?><br>
+											<span>Convocan:</span> <?php the_field('convocan'); ?>
+		                </p>
+										<p class="text-center pt-0 mb-0"></p>
+                	</div>
                 </div>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                  <span class="icon-prev out"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                  <span class="icon-next out"></span>
-                </a>
-              </div> <!-- END:CAROUSEL -->			            
-            </div>
-          </div>
+                <div class="row">
+	                <div class="col-md-12">
+		                <p class="text-right mt-14 medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Más Información >></a></p>
+	                </div>
+                </div>   
+	            <?php endwhile; ?>
+						<?php endif; ?>	
         </div>
-	    </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="icon-prev out"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="icon-next out"></span>
+        </a>
+      </div> <!-- END:CAROUSEL -->
 	  </div>
 	</section> 
 	          
