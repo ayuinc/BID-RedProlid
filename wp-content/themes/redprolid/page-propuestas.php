@@ -33,8 +33,10 @@ get_header(); ?>
 	  </div>
 	  <div class="container-xs">
 	  	<!-- IF NOT LOGGED IN -->
-	  	<h3>¡Alerta!</h3>
-	  	<p>Sólo los usuarios registrados tienen acceso a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident omnis ratione et tempora impedit facere, illo, repellendus ipsa fugit illum veniam maiores possimus voluptatum aliquam esse pariatur soluta nobis officia.</p>
+	  	<div class="text-center">
+		  	<h3>¡Alerta!</h3>
+		  	<p>Sólo los usuarios registrados tienen acceso a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident omnis ratione et tempora impedit facere, illo, repellendus ipsa fugit illum veniam maiores possimus voluptatum aliquam esse pariatur soluta nobis officia.</p>
+	  	</div>
 	  	<!-- END: if not logged in -->
 	  	<!-- <form action="">
 	  		<div class="form-group">
@@ -60,7 +62,7 @@ get_header(); ?>
 	  <!-- IF NOT LOGGED IN -->
 	  <div class="container-sm">
 	  	<div class="row">
-	  		<div class="col-sm-6">
+	  		<div class="col-sm-6 text-center">
 	  			<h5>Nuevos usuarios</h5>
 	  			<div class="pv-21">
 	  				<a href="#" class="btn btn-primary btn-lg">Únete</a>
@@ -68,7 +70,7 @@ get_header(); ?>
 	  		</div>
 	  		<div class="col-sm-6">
 	  			<h5>Usuarios registrados</h5>
-	  			<div class="minh-420 flex-middle">
+	  			<div class="pv-21">
 	  				<form action="">
 	  					<div class="form-group">
 	  						<label for="" class="sr-only">Usuario</label>
@@ -89,7 +91,7 @@ get_header(); ?>
 	  							<a href="#">¿Olvidaste tu contraseña?</a>
 	  						</div>
 	  						<div class="col-xs-4 minh-70 flex-middle">
-	  							<button type="submit" class="btn btn-primary form-control"></button>
+	  							<button type="submit" class="btn btn-primary form-control">Ingresar</button>
 	  						</div>
 	  					</div>
 	  				</form>
