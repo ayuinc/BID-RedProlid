@@ -47,10 +47,6 @@ get_header(); ?>
 	  	</form>
 	  </div>
 	</section>
-
-
-
-
 </div>
 
 <?php get_footer(); ?>    
