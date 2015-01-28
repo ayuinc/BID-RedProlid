@@ -34,7 +34,11 @@ get_header(); ?>
 	  <div class="container">
 	    <div class="row">
 				<div class="col-md-12">
-					<h3 class="light"><?php the_content(); ?></h3>
+					<h3 class="light"><?php 
+global $more;    // Declare global $more (before the loop).
+$more = 1;       // Set (inside the loop) to display all content, including text below more.
+the_content();
+?>dsf</h3>
 				</div>
 	    </div>	
 	  </div>      
@@ -67,7 +71,7 @@ get_header(); ?>
 	                    	<?php $tempDate = get_the_date(); ?>
 		                    <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?>
 	                    	<?php if ($publicacion!='') { ?> 
-													/ <a href="<?php the_field('link_publicacion_noticias'); ?>"><?php the_field('publicacion_noticias'); ?></a>
+													/ <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
 												<?php } ?>
 											</small>
 	                    <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
