@@ -4417,6 +4417,10 @@ ul.table-list {
   .pager li > span:focus {
     color: white; }
 
+.comment-icon-content:before {
+  content: url(assets/icons/comment-icon-content.png);
+  margin-right: 14px; }
+
 footer {
   background: #232323;
   margin-top: 35px;

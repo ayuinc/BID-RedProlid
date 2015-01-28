@@ -55,7 +55,7 @@ get_header(); ?>
 	  <div class="container">
 	  	<h3>Todas las respuestas</h3>
 	  	<hr>
-	  	<div class="clearfix text-white">
+	  	<div class="clearfix text-white bg-panel">
 	  		<div class="col-sm-2 minh-70 flex-middle text-center">
 	  			<h5>Autor</h5>
 	  		</div>

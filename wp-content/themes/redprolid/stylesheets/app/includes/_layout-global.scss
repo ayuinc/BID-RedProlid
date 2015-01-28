@@ -119,3 +119,11 @@ ul.table-list {
 		}
 	}
 }
+
+// FOROS COMMENT ICONS
+.comment-icon-content {
+	&:before {
+		content: url(assets/icons/comment-icon-content.png);
+		margin-right: 14px;
+	}
+}
