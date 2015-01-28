@@ -12,7 +12,7 @@ get_header(); ?>
 <?php get_template_part( 'include', 'nav' ); ?>
 
 <div>
-	<section class="mt-7 mb-21"> 
+	<section class="mt-7 mb-21 pb-70"> 
 	  <div class="container relative mb-14">
 	    <div class="row">
 	      <div class="col-md-12">
@@ -84,7 +84,7 @@ get_header(); ?>
 	  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam modi alias animi itaque vel. Eaque, cumque, velit! Cum aliquid in, qui sint aliquam, fuga consectetur odio sit autem placeat similique!</p>
 	  				</div>
 	  				<div class="col-sm-2 text-center">
-	  					<a href="#" class="h5">Comenta</a>
+	  					<a href="#">Comenta</a>
 	  					<div class="pv-14 online-icon">En línea</div>
 	  				</div>
 	  			</div>

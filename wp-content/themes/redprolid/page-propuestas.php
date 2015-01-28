@@ -68,7 +68,7 @@ get_header(); ?>
 	  				<a href="#" class="btn btn-primary btn-lg">Únete</a>
 	  			</div>
 	  		</div>
-	  		<div class="col-sm-6">
+	  		<div class="col-sm-6 border-left-gray-lighter">
 	  			<h5>Usuarios registrados</h5>
 	  			<div class="pv-21">
 	  				<form action="">
