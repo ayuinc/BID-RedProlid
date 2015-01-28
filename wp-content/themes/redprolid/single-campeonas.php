@@ -19,7 +19,6 @@
         </nav>
       </div>
     </div>
-    <hr>
   </div>      
 </section>
 

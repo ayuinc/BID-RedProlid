@@ -20,7 +20,7 @@ get_header(); ?>
           <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" width="100%"></div>
         </div>
         <div class="col-md-5">
-          <h1>Noticias</h1>
+          <h1><?php the_title(); ?></h1>
         </div>
         <div class="col-md-6">
           <nav class="text-right">
@@ -34,7 +34,7 @@ get_header(); ?>
 	  <div class="container">
 	    <div class="row">
 				<div class="col-md-12">
-					<h3 class="light">Todos los días encontramos en los medios noticias, buenas o malas, que nos hablan de los avances o retrocesos de la mujer en el espacio público. Hemos recogido algunas de las más relevantes o significativas de entre las que tienen que ver con nosotras y nos ayudan a entender cómo está cambiando el mundo para las mujeres. Anímate a proponer las noticias que te parezcan destacadas.</h3>
+					<h3 class="light"><?php the_content(); ?></h3>
 				</div>
 	    </div>	
 	  </div>      
@@ -62,7 +62,7 @@ get_header(); ?>
 	                    	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
 											<?php } ?>
 	                    <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0 pb-0"><?php the_title(); ?></h3></a>
-	                    <?php $publicacion = the_field('publicacion_noticias'); ?>
+	                    <?php $publicacion = get_field('publicacion_noticias'); ?>
 	                    <small>
 	                    	<?php $tempDate = get_the_date(); ?>
 		                    <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?>
