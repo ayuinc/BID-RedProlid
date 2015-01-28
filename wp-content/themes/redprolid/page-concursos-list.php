@@ -11,6 +11,7 @@ get_header(); ?>
   <div class="mh-700">
     <section id="puntos-de-vista-anteriores">
       <div class="container">
+	      <?php the_breadcrumb(); ?>
         <div class="clearfix sub-header">
           <div class="col-md-1">
             <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/concursos-icon-circle.png" alt="" width="100%"></div>

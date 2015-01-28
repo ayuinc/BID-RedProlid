@@ -29,7 +29,7 @@ get_header(); ?>
 			    <div class="row">
 				    <div class="col-sm-12">  
 			        <h2 class="medium"><?php the_title(); ?></h2>
-			        <p><?php the_field('contenido_noticias'); ?></p>		        
+			        <p><?php the_content(); ?></p>		        
 			      </div>
 			    </div>
 			  </div>
