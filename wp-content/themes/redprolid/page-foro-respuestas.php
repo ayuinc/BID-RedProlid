@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Foro Virtual
+Template Name: Foro respuestas
 */
 
 get_header(); ?>
