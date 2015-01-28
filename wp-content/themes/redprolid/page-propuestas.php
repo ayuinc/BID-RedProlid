@@ -12,7 +12,7 @@ get_header(); ?>
 <?php get_template_part( 'include', 'nav' ); ?>
 
 <div>
-	<section class="mt-7 mb-21"> 
+	<section class="mt-7 mb-21 pb-70"> 
 	  <div class="container relative mb-14">
 	    <?php the_breadcrumb(); ?>
 	    <div class="clearfix sub-header">
@@ -31,11 +31,18 @@ get_header(); ?>
         </div>
 	    </div> 
 	  </div>
-	  <div class="container-sm">
+	  <div class="container-xs">
 	  	<form action="">
 	  		<div class="form-group">
 	  			<label for="">Título</label>
-	  			<input type="text" class="form-control input-lg">
+	  			<input type="text" class="form-control">
+	  		</div>
+	  		<div class="form-group">
+	  			<label for="">Sección</label>
+	  			<select name="" id="" class="form-control select-override">
+	  				<option value="opción 1">Sección 1</option>
+	  			</select>
+	  			<small class="help-block">Esta es la sección para la que deseas proponer el tema</small>
 	  		</div>
 	  		<div class="form-group">
 	  			<label for="">Tema</label>
