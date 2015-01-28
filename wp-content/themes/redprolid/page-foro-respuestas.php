@@ -52,6 +52,70 @@ get_header(); ?>
 	  		</div>
 	  	</form>
 	  </div>
+	  <div class="container">
+	  	<h3>Todas las respuestas</h3>
+	  	<hr>
+	  	<div class="clearfix text-white">
+	  		<div class="col-sm-3 minh-70 flex-middle">
+	  			<h5>Autor</h5>
+	  		</div>
+	  		<div class="col-sm-9 minh-70 flex-middle">
+	  			<h3>Título del foro: Mujeres en la política <span class="light">(Leído 770 veces)</span></h3>
+	  		</div>
+	  	</div>
+	  	<div class="banner">
+	  		<div class="banner-pic col-sm-3 bg-panel text-center">
+	  			<div>
+	  				<h5>Red Prolid</h5>
+	  				<div>
+	  					<span>Administrador</span>
+	  					<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/foros_icon.png" alt="" width="70px" class="img-circle">
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<div class="banner-content col-sm-9">
+	  			<div class="row">
+	  				<div class="col-sm-9">
+	  					<div class="comment-icon-content">
+	  						<h5>Mujeres en la política</h5>
+	  						<small class="text-gray">Agosto 1 del 2014, 07:00:00 a.m.</small>
+	  					</div>
+	  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam modi alias animi itaque vel. Eaque, cumque, velit! Cum aliquid in, qui sint aliquam, fuga consectetur odio sit autem placeat similique!</p>
+	  				</div>
+	  				<div class="col-sm-3 text-center">
+	  					<a href="#" class="h5">Comenta</a>
+	  					<div class="pv-14 online-icon">En línea</div>
+	  				</div>
+	  			</div>
+	  		</div>
+	  	</div>
+	  	<div class="banner">
+	  		<div class="banner-pic col-sm-3 bg-panel text-center">
+	  			<div>
+	  				<h5>Red Prolid</h5>
+	  				<div>
+	  					<span>Administrador</span>
+	  					<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/foros_icon.png" alt="" width="70px" class="img-circle">
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<div class="banner-content col-sm-9">
+	  			<div class="row">
+	  				<div class="col-sm-9">
+	  					<div class="comment-icon-content">
+	  						<h5>Mujeres en la política</h5>
+	  						<small class="text-gray">Agosto 1 del 2014, 07:00:00 a.m.</small>
+	  					</div>
+	  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam modi alias animi itaque vel. Eaque, cumque, velit! Cum aliquid in, qui sint aliquam, fuga consectetur odio sit autem placeat similique!</p>
+	  				</div>
+	  				<div class="col-sm-3 text-center">
+	  					<a href="#" class="h5">Comenta</a>
+	  					<div class="pv-14 online-icon">En línea</div>
+	  				</div>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div>
 	</section>
 </div>
 
