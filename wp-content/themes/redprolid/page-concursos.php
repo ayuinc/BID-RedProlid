@@ -37,7 +37,7 @@ get_header(); ?>
 			    <hr>               
 			    <p class="light"><?php the_field('contenido_concurso'); ?></p>
 			    <div class="row">
-			    	<div class="col-xs-8 pull-right bg-gray p-7 flex-space-between">
+			    	<div class="col-xs-8 pull-right bg-gray-light p-7 flex-space-between">
 			    		<div class="left">
 			    			<span>Invita a tus amigos a participar en el concurso</span>
 			    		</div>
@@ -52,7 +52,7 @@ get_header(); ?>
 	    		<div class="bg-panel minh-560">
 	    			<div class="bg-img-block minh-210" style="background-image: url(<?php the_field('imagen_concurso'); ?>)"></div>
 	    			<div class="p-14">
-		    			<ul class="span-gray normalize-text">
+		    			<ul class="span-gray normalize-text mb-ch-14">
 		    				<li>
 		    					<h5>Vigencia del concurso:</h5>
 		    					<span><?php the_field('vigencia_concurso'); ?></span>

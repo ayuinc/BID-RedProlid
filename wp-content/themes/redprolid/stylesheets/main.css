@@ -3071,6 +3071,11 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+.bg-img-block {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
 .bg-img-block-center {
   background-repeat: no-repeat;
   background-size: cover;

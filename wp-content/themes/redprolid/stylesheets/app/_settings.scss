@@ -44,6 +44,10 @@
 	@include bg-img-control;
 	background-position-x: right;
 }
+.bg-img-block {
+	@include bg-img-control;
+	background-position: center center;
+}
 .bg-img-block-center {
 	@include bg-img-control-center;
 }
