@@ -41,9 +41,7 @@
           </div>
           <div class="col-md-6 text-center pt-42">
             <nav class="text-muted terms">
-              <a href="<?php echo content_url('/'); ?>politicas-de-privacidad/" class="text-white pr-7">Políticas de privacidad </a>
-              <a href="<?php echo content_url('/'); ?>politicas-de-cookies/" class="text-white pr-7"> Políticas de cookies </a>
-              <a href="<?php echo content_url('/'); ?>politicas-de-uso/" class="text-white pr-7"> Políticas de uso</a>
+              <a href="<?php echo content_url('/'); ?>terminos-y-condiciones/" class="text-white pr-7">Términos y Condiciones</a>
             </nav>
           </div>
           <div class="col-md-3"></div>
@@ -52,7 +50,7 @@
     </footer>
     <section class="copyright">
       <div class="container text-center">
-        <p class="text-gray m-0">2014. Todos los derechos reservados</p>
+        <p class="text-gray m-0">2015. Todos los derechos reservados</p>
       </div>
     </section>
     <!-- MODAL -->
