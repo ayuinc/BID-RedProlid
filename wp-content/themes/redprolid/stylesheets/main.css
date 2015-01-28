@@ -4095,7 +4095,9 @@ header {
 
 .sub-header {
   border-radius: 3px;
-  border-bottom: 1px dotted #f39f75;
+  border-bottom: 1px dotted #ebeade;
+  margin-bottom: 42px;
+  margin-bottom: 3rem;
   position: relative; }
   .sub-header > [class*="col-"] {
     display: -webkit-box;

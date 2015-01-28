@@ -10,7 +10,9 @@ header {
 
 .sub-header {
 	border-radius: $border-radius-base;
-	border-bottom: 1px dotted lighten($brand-primary, 14%);
+	border-bottom: 1px dotted $panel-bg;
+	margin-bottom: 42px;
+	margin-bottom: rem(42px);
 	@include position(relative);
 	> [class*="col-"] {
 		@include flex-middle;
