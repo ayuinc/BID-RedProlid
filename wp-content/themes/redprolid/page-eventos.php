@@ -45,7 +45,7 @@ get_header(); ?>
 	  <div class="container ph-70-md">
 	  	<h2>Eventos destacados</h2>
 	  	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-	  	
+
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
 					<!-- Start the Loop. -->
@@ -93,7 +93,7 @@ get_header(); ?>
     	<?php query_posts( 'cat=11&posts_per_page=10&paged=' . $paged ); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 	  	<div class="banner">
-	  		<div class="banner-pic col-sm-2 bg-panel text-center">
+	  		<div class="banner-pic col-sm-2 bg-panel text-center lead-ch normalize-text">
 	  			<?php $tempDate = get_the_date(); ?>
 	  			<h3 class="h1"><?php echo date_i18n('j', strtotime( $tempDate)); ?></h3>
 			    <p><?php echo date_i18n('M', strtotime( $tempDate)); ?></p>

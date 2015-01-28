@@ -117,12 +117,12 @@ input[type=text],input[type=password], select, .form-control, textarea {
 // p, .p, ul { font-size: rem($font-size-base); }
 
 // .lead utility class to increase text for emphasis
-h1, .h1 { &.lead {font-size: rem($font-size-h1 + 14) !important;} }
-h2, .h2 { &.lead {font-size: rem($font-size-h2 + 14) !important;} }
-h3, .h3 { &.lead {font-size: rem($font-size-h3 + 14) !important;} }
-h4, .h4 { &.lead {font-size: rem($font-size-h4 + 14) !important;} }
-h5, .h5 { &.lead {font-size: rem($font-size-h5 + 14) !important;} }
-h6, .h6 { &.lead {font-size: rem($font-size-h6 + 14) !important;} }
+// h1, .h1 { &.lead {font-size: rem($font-size-h1 + 14) !important;} }
+// h2, .h2 { &.lead {font-size: rem($font-size-h2 + 14) !important;} }
+// h3, .h3 { &.lead {font-size: rem($font-size-h3 + 14) !important;} }
+// h4, .h4 { &.lead {font-size: rem($font-size-h4 + 14) !important;} }
+// h5, .h5 { &.lead {font-size: rem($font-size-h5 + 14) !important;} }
+// h6, .h6 { &.lead {font-size: rem($font-size-h6 + 14) !important;} }
 
 // REMOVE DEFAULT MARGINS MIXIN
 @mixin normalize-text {
@@ -138,35 +138,35 @@ h6, .h6 { &.lead {font-size: rem($font-size-h6 + 14) !important;} }
 }
 
 // Contextual emphasis
-@for $i from 1 through length($brand-colors-list) {
-  .text-#{nth($brand-colors-sufix-list, $i)} {
-    a {
-      color: #{nth($brand-colors-list, $i)} !important;
-      &:hover {
-        color: #{darken(nth($brand-colors-list, $i), 21%)};
-      }
-    }
-    color: #{nth($brand-colors-list, $i)} !important;
-    * {
-      color: #{nth($brand-colors-list, $i)} !important;
-    }
-  }
-}
+// @for $i from 1 through length($brand-colors-list) {
+//   .text-#{nth($brand-colors-sufix-list, $i)} {
+//     a {
+//       color: #{nth($brand-colors-list, $i)} !important;
+//       &:hover {
+//         color: #{darken(nth($brand-colors-list, $i), 21%)};
+//       }
+//     }
+//     color: #{nth($brand-colors-list, $i)} !important;
+//     * {
+//       color: #{nth($brand-colors-list, $i)} !important;
+//     }
+//   }
+// }
 
-@for $i from 1 through length($grayscale-list) {
-  .text-#{nth($grayscale-sufix-list, $i)} {
-    a {
-      color: #{nth($grayscale-list, $i)} !important;
-      &:hover {
-        color: #{darken(nth($grayscale-list, $i), 21%)};
-      }
-    }
-    color: #{nth($grayscale-list, $i)} !important;
-    * {
-      color: #{nth($grayscale-list, $i)} !important;
-    }
-  }
-}
+// @for $i from 1 through length($grayscale-list) {
+//   .text-#{nth($grayscale-sufix-list, $i)} {
+//     a {
+//       color: #{nth($grayscale-list, $i)} !important;
+//       &:hover {
+//         color: #{darken(nth($grayscale-list, $i), 21%)};
+//       }
+//     }
+//     color: #{nth($grayscale-list, $i)} !important;
+//     * {
+//       color: #{nth($grayscale-list, $i)} !important;
+//     }
+//   }
+// }
 
 // Alignment
 .text-left {
