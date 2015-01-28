@@ -34,7 +34,13 @@ get_header(); ?>
 	  <div class="container">
 	    <div class="row">
 				<div class="col-md-12">
-					<h3 class="light"><?php the_content(); ?></h3>
+					<h3 class="light">
+					<?php
+						$page = get_page_by_title( 'noticias' );
+						$content = apply_filters('the_content', $page->post_content); 
+						echo $content;
+					?>
+					</h3>
 				</div>
 	    </div>	
 	  </div>      
