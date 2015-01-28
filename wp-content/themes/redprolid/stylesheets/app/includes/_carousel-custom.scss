@@ -65,10 +65,16 @@
     &:before {
       content: url(../assets/icons/arrow-slider-left.png);// SINGLE LEFT-POINTING ANGLE QUOTATION MARK (U+2039)
     }
+    &.out {
+      left: -42%;
+    }
   }
   .icon-next {
     &:before {
       content: url(../assets/icons/arrow-slider-right.png);// SINGLE RIGHT-POINTING ANGLE QUOTATION MARK (U+203A)
+    }
+    &.out {
+      right: -42%;
     }
   }
 }

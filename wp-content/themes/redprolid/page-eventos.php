@@ -93,10 +93,10 @@ get_header(); ?>
 
                 <!-- Controls -->
                 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                  <span class="icon-prev"></span>
+                  <span class="icon-prev out"></span>
                 </a>
                 <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                  <span class="icon-next"></span>
+                  <span class="icon-next out"></span>
                 </a>
               </div> <!-- END:CAROUSEL -->			            
             </div>
@@ -108,58 +108,41 @@ get_header(); ?>
 	          
 	<section>
 	  <div class="container">
-	    <div class="panel panel-custom">         
-	      <div class="panel-body pt-14">	
-		      <div class="row">
-		      	<div class="col-md-10 col-md-offset-1">
-			      	<h2>Próximos eventos</h2>
-		      	</div>
-		      </div>      
-					<div class="row">
-	          <div class="col-md-10 col-md-offset-1"> 
-	            <ul class="list-unstyled">
-	            	<!-- Start the Loop. -->
-	            	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-	            	<?php query_posts( 'cat=11&posts_per_page=10&paged=' . $paged ); ?>
-								<?php while ( have_posts() ) : the_post(); ?>    
-	                <li class="mb-14 events-next">
-	                  <div class="row">
-		                  <div class="col-md-2">
-							          <div class="panel">
-								          <?php $tempDate = get_the_date(); ?>
-								          <h3 class="text-center medium h1 mt-0 mb-0 pb-0"><?php echo date_i18n('j', strtotime( $tempDate)); ?></h3>
-								          <p class="text-center pt-0 mb-0"><?php echo date_i18n('M', strtotime( $tempDate)); ?></p>
-							          </div>				                  
-		                  </div>
-		                  <div class="col-md-10">
-		                    <h4 class="medium mt-7"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h4>
-		                    <p>
-			                    <span>Lugar:</span> <?php the_field('lugar_evento'); ?><br>
-			                    <span>Hora:</span> <?php the_field('hora_evento'); ?><br>
-			                    <span>Organizan:</span> <?php the_field('organizan_evento'); ?><br>
-			                    <span>Convocan:</span> <?php the_field('convocan'); ?>
-		                    </p>
-		                    <p>Para mayores informes contactar a <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_nombre_evento'); ?></a></p>
-	                      <small>
-	                      	<?php if ($publicacion!='') { ?> 
-														/ <a href="<?php the_field('link_publicacion_noticias'); ?>"><?php the_field('publicacion_noticias'); ?></a>
-													<?php } ?>
-												</small>				                  
-		                  </div>
-	                  </div>
-	                </li>
-		            <?php endwhile; ?> 
-	            </ul>
-	            <div class="text-center">
-	              <ul class="pager">
-	                <li><?php next_posts_link( 'Anteriores' ); ?></li>
-	                <li><?php previous_posts_link( 'Posteriores' ); ?></li>
-	              </ul>
-	            </div> 	            
-	        	</div>
-					</div>
-	      </div>
-	    </div>
+			<h2>Próximos eventos</h2>
+			<hr>
+    	<!-- Start the Loop. -->
+    	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+    	<?php query_posts( 'cat=11&posts_per_page=10&paged=' . $paged ); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+	  	<div class="banner">
+	  		<div class="banner-pic col-sm-2 bg-panel">
+	  			<?php $tempDate = get_the_date(); ?>
+	  			<h3 class="h1"><?php echo date_i18n('j', strtotime( $tempDate)); ?></h3>
+			    <p><?php echo date_i18n('M', strtotime( $tempDate)); ?></p>
+	  		</div>
+	  		<div class="banner-content col-sm-10">
+	  			<h4 class="medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h4>
+          <p>
+            <strong>Lugar:</strong> <?php the_field('lugar_evento'); ?><br>
+            <strong>Hora:</strong> <?php the_field('hora_evento'); ?><br>
+            <strong>Organizan:</strong> <?php the_field('organizan_evento'); ?><br>
+            <strong>Convocan:</strong> <?php the_field('convocan'); ?>
+          </p>
+          <p>Para mayores informes contactar a <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_nombre_evento'); ?></a></p>
+          <small>
+          	<?php if ($publicacion!='') { ?> 
+							/ <a href="<?php the_field('link_publicacion_noticias'); ?>"><?php the_field('publicacion_noticias'); ?></a>
+						<?php } ?>
+					</small>
+	  		</div>
+	  	</div>
+      <?php endwhile; ?> 
+      <div class="text-center">
+        <ul class="pager">
+          <li><?php next_posts_link( 'Anteriores' ); ?></li>
+          <li><?php previous_posts_link( 'Posteriores' ); ?></li>
+        </ul>
+      </div> 
 	  </div>
 	</section>
 </div>

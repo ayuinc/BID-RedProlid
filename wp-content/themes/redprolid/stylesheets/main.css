@@ -4523,8 +4523,12 @@ form.search button {
     font-family: serif; }
   .carousel-control .icon-prev:before {
     content: url(../assets/icons/arrow-slider-left.png); }
+  .carousel-control .icon-prev.out {
+    left: -42%; }
   .carousel-control .icon-next:before {
     content: url(../assets/icons/arrow-slider-right.png); }
+  .carousel-control .icon-next.out {
+    right: -42%; }
 
 .banner {
   border-bottom: 1px solid #efefef; }
