@@ -13,10 +13,10 @@
 		// @media #{$sm-up} {
 		// 	padding: 0;
 		// }
-		img {
-			width: 100%;
-			height: auto;
-		}
+		// img {
+		// 	width: 100%;
+		// 	height: auto;
+		// }
 	}
 	.banner-label {
 		@include position(absolute, -14px null null $container-fluid);

@@ -4958,9 +4958,6 @@ form.search button {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 280px; }
-    .banner .banner-pic img {
-      width: 100%;
-      height: auto; }
   .banner .banner-label {
     position: absolute;
     top: -14px;

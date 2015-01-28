@@ -56,65 +56,41 @@ get_header(); ?>
 	  	<h3>Todas las respuestas</h3>
 	  	<hr>
 	  	<div class="clearfix text-white">
-	  		<div class="col-sm-3 minh-70 flex-middle">
+	  		<div class="col-sm-2 minh-70 flex-middle text-center">
 	  			<h5>Autor</h5>
 	  		</div>
-	  		<div class="col-sm-9 minh-70 flex-middle">
+	  		<div class="col-sm-10 minh-70 flex-middle">
 	  			<h3>Título del foro: Mujeres en la política <span class="light">(Leído 770 veces)</span></h3>
 	  		</div>
 	  	</div>
+	  	<!-- LOOP BEGINS -->
 	  	<div class="banner">
-	  		<div class="banner-pic col-sm-3 bg-panel text-center">
+	  		<div class="banner-pic col-sm-2 bg-panel text-center">
 	  			<div>
 	  				<h5>Red Prolid</h5>
 	  				<div>
-	  					<span>Administrador</span>
-	  					<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/foros_icon.png" alt="" width="70px" class="img-circle">
+	  					<small class="block">Administrador</small>
+	  					<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/foros_icon.png" alt="" width="91px" class="img-thumbnail">
 	  				</div>
 	  			</div>
 	  		</div>
-	  		<div class="banner-content col-sm-9">
+	  		<div class="banner-content col-sm-10">
 	  			<div class="row">
-	  				<div class="col-sm-9">
-	  					<div class="comment-icon-content">
+	  				<div class="col-sm-10">
+	  					<div class="comment-icon-content normalize-text mb-21">
 	  						<h5>Mujeres en la política</h5>
 	  						<small class="text-gray">Agosto 1 del 2014, 07:00:00 a.m.</small>
 	  					</div>
 	  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam modi alias animi itaque vel. Eaque, cumque, velit! Cum aliquid in, qui sint aliquam, fuga consectetur odio sit autem placeat similique!</p>
 	  				</div>
-	  				<div class="col-sm-3 text-center">
+	  				<div class="col-sm-2 text-center">
 	  					<a href="#" class="h5">Comenta</a>
 	  					<div class="pv-14 online-icon">En línea</div>
 	  				</div>
 	  			</div>
 	  		</div>
 	  	</div>
-	  	<div class="banner">
-	  		<div class="banner-pic col-sm-3 bg-panel text-center">
-	  			<div>
-	  				<h5>Red Prolid</h5>
-	  				<div>
-	  					<span>Administrador</span>
-	  					<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/foros_icon.png" alt="" width="70px" class="img-circle">
-	  				</div>
-	  			</div>
-	  		</div>
-	  		<div class="banner-content col-sm-9">
-	  			<div class="row">
-	  				<div class="col-sm-9">
-	  					<div class="comment-icon-content">
-	  						<h5>Mujeres en la política</h5>
-	  						<small class="text-gray">Agosto 1 del 2014, 07:00:00 a.m.</small>
-	  					</div>
-	  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam modi alias animi itaque vel. Eaque, cumque, velit! Cum aliquid in, qui sint aliquam, fuga consectetur odio sit autem placeat similique!</p>
-	  				</div>
-	  				<div class="col-sm-3 text-center">
-	  					<a href="#" class="h5">Comenta</a>
-	  					<div class="pv-14 online-icon">En línea</div>
-	  				</div>
-	  			</div>
-	  		</div>
-	  	</div>
+	  	<!-- END: loop -->
 	  </div>
 	</section>
 </div>
