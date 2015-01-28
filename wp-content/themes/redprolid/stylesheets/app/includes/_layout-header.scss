@@ -33,4 +33,7 @@ header {
 			height: auto;
 		}
 	}
+	&.no-border {
+		border: none !important;
+	}
 }

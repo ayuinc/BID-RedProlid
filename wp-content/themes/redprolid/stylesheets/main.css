@@ -4525,6 +4525,8 @@ header {
     .sub-header .sub-header-icon img {
       width: 94px;
       height: auto; }
+  .sub-header.no-border {
+    border: none !important; }
 
 a.btn.form-control,
 button.btn.form-control,

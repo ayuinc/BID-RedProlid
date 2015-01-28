@@ -60,7 +60,7 @@ get_header(); ?>
 	  	</form> -->
 	  </div>
 	  <!-- IF NOT LOGGED IN -->
-	  <div class="container-sm">
+	  <div class="container-sm pt-21">
 	  	<div class="row">
 	  		<div class="col-sm-6 text-center">
 	  			<h5>Nuevos usuarios</h5>
@@ -91,7 +91,7 @@ get_header(); ?>
 	  							<a href="#">¿Olvidaste tu contraseña?</a>
 	  						</div>
 	  						<div class="col-xs-4 minh-70 flex-middle">
-	  							<button type="submit" class="btn btn-primary form-control">Ingresar</button>
+	  							<button type="submit" class="btn btn-primary">Ingresar</button>
 	  						</div>
 	  					</div>
 	  				</form>
