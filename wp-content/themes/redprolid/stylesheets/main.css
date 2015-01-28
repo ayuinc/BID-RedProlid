@@ -4418,8 +4418,14 @@ ul.table-list {
     color: white; }
 
 .comment-icon-content:before {
-  content: url(assets/icons/comment-icon-content.png);
-  margin-right: 14px; }
+  content: url(../assets/icons/comment-icon-content.png);
+  margin-right: 14px;
+  float: left; }
+
+.online-icon:before {
+  content: url(../assets/icons/online-icon.png);
+  margin-right: 7px;
+  float: left; }
 
 footer {
   background: #232323;
