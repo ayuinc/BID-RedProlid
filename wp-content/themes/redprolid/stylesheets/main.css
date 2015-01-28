@@ -4498,6 +4498,10 @@ header {
   margin-bottom: 42px;
   margin-bottom: 2.625rem;
   position: relative; }
+  .sub-header h1, .sub-header h2, .sub-header h3, .sub-header h4, .sub-header h5, .sub-header h6,
+  .sub-header .h1, .sub-header .h2, .sub-header .h3, .sub-header .h4, .sub-header .h5, .sub-header .h6,
+  .sub-header p, .sub-header .p {
+    margin: 0; }
   .sub-header > [class*="col-"] {
     display: -webkit-box;
     display: -moz-box;
