@@ -29,10 +29,7 @@ get_header(); ?>
 			    <div class="row">
 				    <div class="col-sm-12">  
 			        <h2 class="medium"><?php the_title(); ?></h2>
-			        <p><?php the_field('contenido_noticias'); ?></p>
-					    <div class="text-center">
-					      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
-					    </div>  			        
+			        <p><?php the_field('contenido_noticias'); ?></p>		        
 			      </div>
 			    </div>
 			  </div>
