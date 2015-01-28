@@ -50,11 +50,32 @@ get_header(); ?>
 	    	</div>
 	    	<div class="col-sm-4">
 	    		<div class="bg-panel minh-560">
-		    		<img src="<?php the_field('imagen_concurso'); ?>" alt="" class="img-responsive mb-14">
-		    		<h4>Vigencia del Concurso</h4>
-		    		<p><?php the_field('vigencia_concurso'); ?></p>
-		    		<h4>Términos y Condiciones</h4>
-		    		<p><?php the_field('terminos_concurso'); ?></p>
+	    			<div class="bg-img-block minh-210" style="background-image: url(<?php the_field('imagen_concurso'); ?>)"></div>
+	    			<div class="p-14">
+		    			<ul class="span-gray normalize-text">
+		    				<li>
+		    					<h5>Vigencia del concurso:</h5>
+		    					<span><?php the_field('vigencia_concurso'); ?></span>
+		    				</li>
+		    				<li>
+		    					<h5>Título:</h5>
+		    					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+		    				</li>
+		    				<li>
+		    					<h5>Fecha:</h5>
+		    					<span>del 01/30/15 al 06/12/15</span>
+		    				</li>
+		    				<li>
+		    					<a href="#">Términos y condiciones del concurso</a>
+		    				</li>
+		    			</ul>
+		    			<div class="text-center">
+			    			<h3>
+			    				Participa en el concurso inscribiéndote
+			    			</h3>
+		    				<a href="#" class="btn btn-primary">Aquí</a>
+		    			</div>
+	    			</div>
 	    		</div>
 	    	</div>
 	    </div>
