@@ -17,10 +17,14 @@ get_header(); ?>
     <div>
       <section id="contacto">
         <div class="container relative">
-          <div class="absolute dtl-custom-heading">
-            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon.png" alt=""></div>
-            <h1 class="mt-21 brand-titular">Contáctanos</h1>
-          </div>
+        	<div class="clearfix sub-header">
+		        <div class="col-md-1">
+		          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon.png" alt="" width="100%"></div>
+		        </div>
+		        <div class="col-md-5">
+		          <h1>Contáctanos</h1>
+		        </div>
+		      </div>
           <div class="row pt-14-100">
 	          <div class="col-md-10 col-md-offset-1">
 		          <div class="row">
