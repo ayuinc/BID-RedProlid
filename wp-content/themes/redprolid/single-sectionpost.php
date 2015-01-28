@@ -8,7 +8,7 @@
           <span>Blog: <?php the_field('blog-debates'); ?></span>
         </div>
         <div class="content">
-          <?php the_field('contenido-debates'); ?>
+          <?php the_content(); ?>
         </div>
         <div class="footer">
           <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
