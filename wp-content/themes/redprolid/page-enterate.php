@@ -159,7 +159,12 @@ get_header(); ?>
 					                        	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
 																	<?php } ?>
 					                        <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0 pb-0"><?php the_title(); ?></h3></a>
-					                        <small><?php echo get_the_date(); ?></small>
+							                    <?php $publicacion = get_field('publicacion_noticias'); ?>
+							                    <small>
+							                    	<?php $tempDate = get_the_date(); ?>
+								                    <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+																		<?php } ?>
+																	</small>
 					                        <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
 					                        <small class="vermas"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
 					                      </div>
@@ -204,7 +209,6 @@ get_header(); ?>
             <?php if ( have_posts() ) : ?>
               <?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 1 ) ); ?>
               <?php while ( have_posts() ) : the_post(); ?>
-                <?php $tempDate = get_field('fecha_evento'); ?>
                 <div class="row">
 	                <div class="col-md-6 pr-21">
 		                <div class="row">
@@ -213,7 +217,8 @@ get_header(); ?>
 			                </div>
 			                <div class="col-md-8">
 				                <h3 class="medium mb-0"><?php the_title(); ?></h3>
-				                <small><?php echo date_i18n('F', strtotime( $tempDate)); ?> <?php echo date('j', strtotime( $tempDate)); ?>, <?php echo date('g', strtotime( $tempDate)); ?> <?php echo date('a', strtotime( $tempDate)); ?>- Corferias, pabellón 3</small>
+	                    	<?php $tempDate = get_field('fecha_evento'); ?>
+		                    <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
 				                <p class="mt-14"><?php the_field('descripcion_evento');?></p>
 				                <p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="light">Más información >></a></p>
 			                </div>

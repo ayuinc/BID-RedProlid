@@ -131,9 +131,11 @@ get_header(); ?>
 											<?php while ( have_posts() ) : the_post(); ?>                    
                       <li class="mb-14">
                         <h5><?php the_title(); ?></h5>
-                        <small class="date light">
-                        	<?php the_time('d-m-Y') ?><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary p ml-7">Lee más &gt;&gt;</a>
-                        </small>
+		                    <?php $publicacion = get_field('publicacion_noticias'); ?>
+		                    <small class="date light">
+		                    	<?php $tempDate = get_the_date(); ?>
+			                    <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a><?php } ?> | <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary p">Lee más</a>
+												</small>                      
                       </li>
 											<?php endwhile; ?>                     
                     </ul>
