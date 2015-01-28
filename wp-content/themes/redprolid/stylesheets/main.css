@@ -4095,6 +4095,7 @@ header {
 
 .sub-header {
   border-radius: 3px;
+  border-bottom: 1px dotted #f39f75;
   position: relative; }
   .sub-header > [class*="col-"] {
     display: -webkit-box;
