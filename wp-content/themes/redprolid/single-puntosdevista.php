@@ -13,7 +13,7 @@
         </div>
         <div class="col-md-6 pt-28">
           <nav class="text-right mb-0 mt-0">
-            <a href="<?php echo home_url('/'); ?>puntos-de-vista-list" class="light">Puntos de vista anteriores</a> 
+            <a href="<?php echo home_url('/'); ?>puntos-de-vista-list">Puntos de vista anteriores</a> 
             <?php
             if ( is_user_logged_in() ) {
               echo '|<a href="#" data-toggle="modal" data-target="#pdv-modal">¿Te gustaría proponernos un tema?</a>';

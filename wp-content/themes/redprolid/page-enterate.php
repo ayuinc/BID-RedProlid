@@ -28,7 +28,7 @@ get_header(); ?>
             </div>
             <div class="col-xs-4">
               <nav class="text-right mb-0 mt-0">
-                <a href="<?php echo home_url('/'); ?>puntos-de-vista-list" class="light">¿Quieres compartir un recurso?</a> 
+                <a href="<?php echo home_url('/'); ?>puntos-de-vista-list">¿Quieres compartir un recurso?</a> 
               </nav>
             </div>
           </div>

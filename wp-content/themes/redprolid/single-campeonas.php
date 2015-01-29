@@ -14,8 +14,8 @@
       </div>
       <div class="col-md-7">
         <nav class="text-right">
-          <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores" class="light">¿Quieres leer nuestras entrevistas anteriores?</a> <span class="text-primary">|</span>
-          <a href="<?php echo home_url('/'); ?>compartir-campeonas" class="light">Nos propones un tema</a>
+          <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores">¿Quieres leer nuestras entrevistas anteriores?</a> <span class="text-primary">|</span>
+          <a href="<?php echo home_url('/'); ?>compartir-campeonas">Nos propones un tema</a>
         </nav>
       </div>
     </div>
