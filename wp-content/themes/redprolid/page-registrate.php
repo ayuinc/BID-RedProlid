@@ -14,23 +14,19 @@ get_header(); ?>
 
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-		<section>
-		  <div class="container">
-		    <div class="row">
-		      <div class="col-md-12 mt-7">
-		        <?php the_breadcrumb(); ?>
-		      </div>
-		    </div>			  
-		    <div class="dtl-custom-heading">
-		      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/registrate.png" alt="" width="80"></div>
-		      <div class="clearfix">
-		        <div class="col-md-11">
-		          <h1 class="medium mt-14 ml--25 mb-0 brand-titular"><?php the_title(); ?></h1>
-		        </div>
-		      </div>
-		    </div>
-		  </div>	
-		</section>
+		<section class="mt-7"> 
+	    <div class="container">
+	      <?php the_breadcrumb(); ?> 
+	      <div class="clearfix sub-header">
+	        <div class="col-md-1">
+	          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/registrate.png" alt="" width="100%"></div>
+	        </div>
+	        <div class="col-md-11">
+	          <h1><?php the_title(); ?></h1>
+	        </div>
+	      </div>
+	    </div>
+		</section>		
 		<section class="pt-7-100">	  
 		  <div class="container">
 			  <div class="row">
