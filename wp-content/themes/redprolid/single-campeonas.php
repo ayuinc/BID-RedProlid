@@ -49,14 +49,16 @@
     <div class="row">
       <div class="col-sm-10 col-md-offset-1 with-hr">     
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
-        <div class="text-right mt-14 mb-14">
-	        <a class="btn btn-primary" id="boton_entrevista_full" >Lee la entrevista completa</a>
-	        <a class="btn btn-primary" id="boton_ocultar_entrevista_full" >Ocultar la entrevista completa</a>
-	      </div>
-        <div id="entrevista_full"><?php the_field('entrevista_completa_campeona'); ?></div>
-        <div class="text-right">
-          <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
-        </div>   
+        <div class="content-display">
+          <div class="text-right mt-14 mb-14">
+  	        <a class="btn btn-primary" id="boton_entrevista_full" >Lee la entrevista completa</a>
+  	        <a class="btn btn-primary" id="boton_ocultar_entrevista_full" >Ocultar la entrevista completa</a>
+  	      </div>
+          <div id="entrevista_full"><?php the_field('entrevista_completa_campeona'); ?></div>
+          <div class="text-right">
+            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
+          </div>
+        </div>
       </div>
     </div>       
   </div>

@@ -241,6 +241,7 @@
 		$('#boton_ocultar_entrevista_full').hide();
 		
 		$('#boton_entrevista_full').click(function() {
+      $('.content-display').hide()
 			$('#boton_ocultar_entrevista_full').show(100);
 			$('#entrevista_full').show(100);
 			$('#boton_entrevista_full').hide(100);
