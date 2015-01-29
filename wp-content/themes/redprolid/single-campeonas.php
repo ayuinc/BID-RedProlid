@@ -54,12 +54,12 @@
   	        <a class="btn btn-primary" id="boton_entrevista_full" >Lee la entrevista completa</a>
   	        <a class="btn btn-primary" id="boton_ocultar_entrevista_full" >Ocultar la entrevista completa</a>
   	      </div>
-          <div class="text-right">
-            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
-          </div>
         </div>
         <div id="entrevista_full">
           <p><?php the_field('entrevista_completa_campeona'); ?></p>
+        </div>
+        <div class="text-right">
+          <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
         </div>
       </div>
     </div>       
