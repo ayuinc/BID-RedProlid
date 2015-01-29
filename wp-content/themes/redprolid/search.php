@@ -15,7 +15,7 @@ get_header(); ?>
       <div class="clearfix bg-panel sub-header">
         <div class="col-sm-1">
           <div>
-            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt="">
+            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" alt="">
           </div>
         </div>
         <div class="col-sm-7">
