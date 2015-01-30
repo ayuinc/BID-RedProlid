@@ -3500,7 +3500,7 @@ h1.brand-titular {
   color: #AEAB8B !important; }
 
 h1, h2, h3 {
-  color: #232323 !important; }
+  color: #232323; }
 
 h1, h2, h3, h4, h5 {
   line-height: 130% !important;
