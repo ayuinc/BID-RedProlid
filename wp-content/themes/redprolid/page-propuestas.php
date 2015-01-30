@@ -38,6 +38,9 @@ get_header(); ?>
 		  	<p>Sólo los usuarios registrados tienen acceso a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident omnis ratione et tempora impedit facere, illo, repellendus ipsa fugit illum veniam maiores possimus voluptatum aliquam esse pariatur soluta nobis officia.</p>
 	  	</div>
 	  	<!-- END: if not logged in -->
+	  	<!-- IF LOGGED IN -->
+			<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 2 ); } ?>
+			<!-- END: if logged in -->
 	  	<!-- <form action="">
 	  		<div class="form-group">
 	  			<label for="">Título</label>
