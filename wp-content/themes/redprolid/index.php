@@ -70,12 +70,13 @@ get_header(); ?>
           </div>
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-            <!-- <ol class="carousel-indicators">
+            <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> 
-            </ol> -->
+              <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li> 
+            </ol>
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner">
+            <div class="carousel-inner" role="listbox">
               <div class="item active">
                 <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
                   <li>
