@@ -30,12 +30,23 @@ form.form-search-inline {
 }
 
 .wppb-form-field {
+	margin-bottom: $container-fluid;
+	@include clearfix;
 	input[type="text"],
 	input[type="password"],
 	select {
 		@extend .form-control;
+		width: 50%;
+		float: left;
 	}
 	select {
 		@extend .select-override;
+	}
+	span {
+		display: block;
+	}
+	label {
+		float: left;
+		width: 50%;
 	}
 }
