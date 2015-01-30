@@ -70,7 +70,24 @@ get_header(); ?>
 	  		</div>
 	  		<div class="col-sm-6">
 	  			<h5>Usuarios registrados</h5>
-	  			<div class="pv-21">
+	  			<div class="user-sign-in-form pv-21">
+              <?php 
+                if ( is_user_logged_in() ) {
+
+                  $current_user = wp_get_current_user();
+                  echo '<div class="text-right">';
+                  echo '<h4 class="light">Hola '.$current_user->user_nicename.'</h4>';
+									echo '<a href="'.wp_logout_url().'" title="Logout" class="light">Cierra tu sesión</a>';
+                  echo '</div>';
+
+                } else {
+
+                  echo do_shortcode('[dm_login_form]'); 
+
+                }
+              ?>
+            </div>
+	  			<!-- <div class="pv-21">
 	  				<form action="">
 	  					<div class="form-group">
 	  						<label for="" class="sr-only">Usuario</label>
@@ -95,7 +112,7 @@ get_header(); ?>
 	  						</div>
 	  					</div>
 	  				</form>
-	  			</div>
+	  			</div> -->
 	  		</div>
 	  	</div>	
 	  </div>
