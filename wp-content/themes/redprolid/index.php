@@ -23,7 +23,7 @@ get_header(); ?>
     <div class="mh-700">
       <section id="hero-unit">
         <div class="container pv-21">
-          <div id="carousel-example-generic" class="carousel slide bg-panel border-radius p-21" data-ride="carousel" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png); background-repeat: no-repeat; background-position: top right;">
+          <div id="carousel-example-generic" class="carousel slide bg-panel border-radius p-21 bg-img-block bg-img-block-top bg-img-block-right" data-ride="carousel" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png);">
             <!-- Indicators -->
             <!-- <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> 
@@ -64,7 +64,44 @@ get_header(); ?>
       </section>
       <section class="dtl-home mt-21 mb-21">
         <div class="container">
-          <div class="panel panel-custom panel-highlight-silver">
+          <div class="text-center">
+            <h2>Desarrolla tu liderazgo</h2>
+            <p class="lead">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
+          </div>
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <!-- <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> 
+            </ol> -->
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
+                  <li>
+                    <div class="bg-img-block" style="background-image: url(<?php the_field('imagen-dtl-seccion'); ?>);"></div>
+                    <div class="title">
+                      <h3>¿Adónde v@mos?</h3>
+                    </div>
+                    <div class="text-right">
+                      <a href="#" class="btn btn-sm btn-default">Ver más</a>
+                    </div>
+                    <div class="dtl-icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png);"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
+          </div>
+
+          <!-- <div class="panel panel-custom panel-highlight-silver">
             <div class="panel-heading">
               <ul class="list-unstyled">
                 <li class="title highlight-white">Desarrolla tu liderazgo</li>
@@ -89,7 +126,7 @@ get_header(); ?>
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <section class="widgets mb-21">

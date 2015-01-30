@@ -17,31 +17,31 @@
 	background-size: cover;
 }
 @mixin bg-img-control-center {
-	@include bg-img-control;
+	// @include bg-img-control;
 	background-position: center center;
 }
 @mixin bg-img-control-center-x {
-	@include bg-img-control;
+	// @include bg-img-control;
 	background-position-x: center;
 }
 @mixin bg-img-control-center-y {
-	@include bg-img-control;
+	// @include bg-img-control;
 	background-position-y: center;
 }
 @mixin bg-img-control-bottom {
-	@include bg-img-control;
+	// @include bg-img-control;
 	background-position-y: bottom;
 }
 @mixin bg-img-control-top {
-	@include bg-img-control;
+	// @include bg-img-control;
 	background-position-y: top;
 }
 @mixin bg-img-control-left {
-	@include bg-img-control;
+	// @include bg-img-control;
 	background-position-x: left;
 }
 @mixin bg-img-control-right {
-	@include bg-img-control;
+	// @include bg-img-control;
 	background-position-x: right;
 }
 .bg-img-block {

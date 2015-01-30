@@ -133,3 +133,15 @@
 		}	
 	}
 }
+
+/* DTL CAROUSEL */
+.dtl-carousel {
+	> li {
+		position: relative;
+		.bg-img-block {
+			height: 280px;
+		}
+		.title {}
+		.dtl-icon {}
+	}
+}

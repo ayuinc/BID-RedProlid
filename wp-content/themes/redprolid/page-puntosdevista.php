@@ -11,22 +11,21 @@ get_header(); ?>
 <?php //query_posts( 'category_name=puntos-de-vista' ); ?> 
 <div class="mh-700">
   <section id="puntos-de-vista">
-    <div class="container relative with-shadow mb-28">
-      <div class="absolute dtl-custom-heading">
-        <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt=""></div>
-        <div class="clearfix">
-          <div class="col-sm-6">
-            <h1 style="color: #aeab8b;">Puntos de vista</h1>
-          </div>
-          <div class="col-sm-6 pt-28">
-            <nav class="text-right">
-              <a href="#">Puntos de vista anteriores</a> | <a href="#" data-toggle="modal" data-target="#myModal">¿Te gustaría proponernos un tema?</a>
-            </nav>
-          </div>
+    <div class="container with-shadow mb-28">
+      <div class="clearfix sub-header">
+        <div class="col-md-1">
+          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt=""></div>
         </div>
-        <hr style="border-top: 3px dotted #aeab8b;">
+        <div class="col-md-5">
+          <h1>Puntos de vista</h1>
+        </div>
+        <div class="col-md-6">
+          <nav class="text-right">
+            <a href="#">Puntos de vista anteriores</a> <span class="text-primary">|</span> <a href="#" data-toggle="modal" data-target="#myModal">¿Te gustaría proponernos un tema?</a>
+          </nav>          
+        </div>
       </div>
-      <h4 class="pt-14-100 light text-center">Te ofrecemos artículos escritos por mujeres líderes en la región latinoamericana: políticas, especialistas o profesionales relevantes que ponen sobre el papel su experiencia en pro de unas sociedades más equitativas.</h4>
+      <h4 class="light text-center">Te ofrecemos artículos escritos por mujeres líderes en la región latinoamericana: políticas, especialistas o profesionales relevantes que ponen sobre el papel su experiencia en pro de unas sociedades más equitativas.</h4>
     </div>
     <div class="container text-justify with-hr">
       <div class="row">

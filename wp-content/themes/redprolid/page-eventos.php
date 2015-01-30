@@ -52,7 +52,7 @@ get_header(); ?>
 					<?php if ( have_posts() ) : ?>
             <?php query_posts( array( 'category_name' => 'eventos-destacados', 'posts_per_page' => 1 ) ); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
-		        	<div class="item active">
+		        	<div class="item">
 		        		<div class="banner">
 		        			<div class="banner-pic col-sm-4" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
 		        			<div class="banner-content col-sm-8">

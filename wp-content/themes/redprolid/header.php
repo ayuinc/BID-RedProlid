@@ -41,7 +41,7 @@
     <meta name="twitter:image" content="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo content_url('/'); ?>themes/redprolid/assets/img/favicon.png">
 
     <!-- Apple Mobile -->
     <meta name="apple-mobile-web-app-title" content="">

@@ -3263,38 +3263,24 @@ button.close {
   background-position: center center; }
 
 .bg-img-block-center {
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center center; }
 
 .bg-img-block-center-x {
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-x: center; }
 
 .bg-img-block-center-y {
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: center; }
 
 .bg-img-block-bottom {
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: bottom; }
 
 .bg-img-block-top {
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: top; }
 
 .bg-img-block-left {
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-x: left; }
 
 .bg-img-block-right {
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-x: right; }
 
 /*========================================
@@ -5450,6 +5436,12 @@ form.search button {
 .widgets #opinion .panel .panel-body .yop-poll-question {
   padding: 10px !important;
   font-size: 18px; }
+
+/* DTL CAROUSEL */
+.dtl-carousel > li {
+  position: relative; }
+  .dtl-carousel > li .bg-img-block {
+    height: 280px; }
 
 .red-prolid-grid:before, .red-prolid-grid:after {
   content: " ";
