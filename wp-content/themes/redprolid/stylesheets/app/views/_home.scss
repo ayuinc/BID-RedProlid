@@ -150,7 +150,7 @@
 		@include border-bottom-radius($border-radius-base);
 		border: 1px solid darken(white, 3%);
 		.bg-img-block {
-			height: 280px;
+			height: 210px;
 			@include border-top-radius($border-radius-base);
 		}
 		.dtl-title {
