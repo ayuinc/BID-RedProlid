@@ -39,10 +39,17 @@ form.form-search-inline {
 		width: 50%;
 		float: left;
 	}
+	ul {
+		float: left;
+		width: 50%;
+		li {
+			margin-bottom: $container-fluid / 2;
+		}
+	}
 	select {
 		@extend .select-override;
 	}
-	span {
+	span:not(.wppb-required) {
 		display: block;
 	}
 	label {
