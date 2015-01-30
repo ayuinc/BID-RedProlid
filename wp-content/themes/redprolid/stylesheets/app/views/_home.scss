@@ -142,11 +142,20 @@
 		}
 	}
 	> li {
+	}
+	.dtl-item {
 		position: relative;
+		@include border-top-radius($border-radius-base);
+		@include border-bottom-radius($border-radius-base);
+		border: 1px solid darken(white, 3%);
 		.bg-img-block {
 			height: 280px;
+			@include border-top-radius($border-radius-base);
 		}
-		.title {}
+		.title {
+			padding: $container-fluid;
+			text-align: center;
+		}
 		.dtl-icon {
 			width: 35px;
 			height: 35px;
@@ -154,5 +163,9 @@
 			@include position(absolute, 0 0 null null);
 			@include bg-img-control;
 		}
+		&:hover {
+			@include box-shadow-default;
+		}
 	}
 }
+

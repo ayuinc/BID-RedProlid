@@ -5440,11 +5440,21 @@ form.search button {
 /* DTL CAROUSEL */
 .dtl-carousel li div {
   min-height: 0 !important; }
-.dtl-carousel > li {
-  position: relative; }
-  .dtl-carousel > li .bg-img-block {
-    height: 280px; }
-  .dtl-carousel > li .dtl-icon {
+.dtl-carousel .dtl-item {
+  position: relative;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: 1px solid #f7f7f7; }
+  .dtl-carousel .dtl-item .bg-img-block {
+    height: 280px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+  .dtl-carousel .dtl-item .title {
+    padding: 10.5px;
+    text-align: center; }
+  .dtl-carousel .dtl-item .dtl-icon {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -5453,6 +5463,10 @@ form.search button {
     right: 0;
     background-repeat: no-repeat;
     background-size: cover; }
+  .dtl-carousel .dtl-item:hover {
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
+    box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15); }
 
 .red-prolid-grid:before, .red-prolid-grid:after {
   content: " ";

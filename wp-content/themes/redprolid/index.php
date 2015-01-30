@@ -75,24 +75,24 @@ get_header(); ?>
             </ol> -->
 
             <!-- Wrapper for slides -->
-            <?php if ( have_posts() ) : the_post(); ?>
             <div class="carousel-inner">
               <div class="item active">
                 <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
                   <li>
-                    <div class="bg-img-block" style="background-image: url(<?php the_field('imagen-dtl-seccion'); ?>);"></div>
-                    <div class="title">
-                      <h3>¿Adónde v@mos?</h3>
+                    <div class="dtl-item">
+                      <div class="bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.png);"></div>
+                      <div class="title">
+                        <h3>¿Adónde v@mos?</h3>
+                      </div>
+                      <div class="text-right">
+                        <a href="#" class="btn btn-sm btn-default">Ver más</a>
+                      </div>
+                      <div class="dtl-icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png);"></div>
                     </div>
-                    <div class="text-right">
-                      <a href="#" class="btn btn-sm btn-default">Ver más</a>
-                    </div>
-                    <div class="dtl-icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png);"></div>
                   </li>
                 </ul>
               </div>
             </div>
-            <?php endif; ?>
 
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
