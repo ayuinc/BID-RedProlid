@@ -128,6 +128,46 @@ get_header(); ?>
                   </li>
                 </ul>
               </div>
+              <div class="item">
+                <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
+                  <li>
+                    <div class="dtl-item">
+                      <div class="bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-col.jpg);"></div>
+                      <div class="dtl-title">
+                        <h3>Agenda de género</h3>
+                        <div class="text-right">
+                          <a href="#" class="btn btn-xs btn-default">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dtl-icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-icon.png);"></div>
+                  </li>
+                  <li>
+                    <div class="dtl-item">
+                      <div class="bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-pistas-col.jpg);"></div>
+                      <div class="dtl-title">
+                        <h3>Pistas</h3>
+                        <div class="text-right">
+                          <a href="#" class="btn btn-xs btn-default">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dtl-icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-pistas-icon.png);"></div>
+                  </li>
+                  <li>
+                    <div class="dtl-item">
+                      <div class="bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-col.jpg);"></div>
+                      <div class="dtl-title">
+                        <h3>La pinta no es lo de menos</h3>
+                        <div class="text-right">
+                          <a href="#" class="btn btn-xs btn-default">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dtl-icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-icon.png);"></div>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <!-- Controls -->
