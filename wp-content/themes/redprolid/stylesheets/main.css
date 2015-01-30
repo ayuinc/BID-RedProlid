@@ -4736,6 +4736,10 @@ a.btn.borderless,
 button.btn.borderless,
 input[type="submit"].btn.borderless {
   border-radius: 0 !important; }
+a.btn.btn-xs,
+button.btn.btn-xs,
+input[type="submit"].btn.btn-xs {
+  font-size: 12px !important; }
 
 a.btn.btn-primary.btn-outline,
 button.btn.btn-primary.btn-outline,
@@ -5456,7 +5460,8 @@ form.search button {
   .dtl-carousel .dtl-item .dtl-title {
     padding: 10.5px; }
     .dtl-carousel .dtl-item .dtl-title h3 {
-      text-align: center; }
+      text-align: center;
+      font-size: 18px; }
   .dtl-carousel .dtl-item:hover {
     -webkit-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
     -moz-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);

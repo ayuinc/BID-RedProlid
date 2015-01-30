@@ -9,6 +9,9 @@ input[type="submit"].btn {
 	&.borderless {
 		border-radius: 0 !important;
 	}
+	&.btn-xs {
+		font-size: 12px !important;
+	}
 }
 a.btn,
 button.btn,

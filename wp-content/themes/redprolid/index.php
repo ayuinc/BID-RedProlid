@@ -84,7 +84,7 @@ get_header(); ?>
                       <div class="dtl-title">
                         <h3>¿Adónde v@mos?</h3>
                         <div class="text-right">
-                          <a href="#" class="btn btn-sm btn-default">Ver más</a>
+                          <a href="#" class="btn btn-xs btn-default">Ver más</a>
                         </div>
                       </div>
                     </div>
@@ -96,7 +96,7 @@ get_header(); ?>
                       <div class="dtl-title">
                         <h3>Carrera de vallas</h3>
                         <div class="text-right">
-                          <a href="#" class="btn btn-sm btn-default">Ver más</a>
+                          <a href="#" class="btn btn-xs btn-default">Ver más</a>
                         </div>
                       </div>
                     </div>
@@ -108,7 +108,7 @@ get_header(); ?>
                       <div class="dtl-title">
                         <h3>Nivelando la cancha</h3>
                         <div class="text-right">
-                          <a href="#" class="btn btn-sm btn-default">Ver más</a>
+                          <a href="#" class="btn btn-xs btn-default">Ver más</a>
                         </div>
                       </div>
                     </div>
@@ -120,7 +120,7 @@ get_header(); ?>
                       <div class="dtl-title">
                         <h3>Listas para la política</h3>
                         <div class="text-right">
-                          <a href="#" class="btn btn-sm btn-default">Ver más</a>
+                          <a href="#" class="btn btn-xs btn-default">Ver más</a>
                         </div>
                       </div>
                     </div>
