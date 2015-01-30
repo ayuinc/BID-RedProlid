@@ -80,15 +80,15 @@ get_header(); ?>
                 <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
                   <li>
                     <div class="dtl-item">
-                      <div class="bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.png);"></div>
-                      <div class="title">
+                      <div class="bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.jpg);"></div>
+                      <div class="dtl-title">
                         <h3>¿Adónde v@mos?</h3>
+                        <div class="text-right">
+                          <a href="#" class="btn btn-sm btn-default">Ver más</a>
+                        </div>
                       </div>
-                      <div class="text-right">
-                        <a href="#" class="btn btn-sm btn-default">Ver más</a>
-                      </div>
-                      <div class="dtl-icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png);"></div>
                     </div>
+                    <div class="dtl-icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png);"></div>
                   </li>
                 </ul>
               </div>
