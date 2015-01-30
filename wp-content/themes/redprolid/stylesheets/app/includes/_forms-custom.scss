@@ -28,3 +28,14 @@ form.form-search-inline {
 		@include medium;
 	}
 }
+
+.wppb-form-field {
+	input[type="text"],
+	input[type="password"],
+	select {
+		@extend .form-control;
+	}
+	select {
+		@extend .select-override;
+	}
+}
