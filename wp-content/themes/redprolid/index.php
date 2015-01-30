@@ -75,6 +75,7 @@ get_header(); ?>
             </ol> -->
 
             <!-- Wrapper for slides -->
+            <?php if ( have_posts() ) : the_post(); ?>
             <div class="carousel-inner">
               <div class="item active">
                 <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
@@ -91,6 +92,7 @@ get_header(); ?>
                 </ul>
               </div>
             </div>
+            <?php endif; ?>
 
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">

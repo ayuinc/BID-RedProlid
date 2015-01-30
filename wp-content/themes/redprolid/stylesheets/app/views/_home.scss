@@ -136,12 +136,23 @@
 
 /* DTL CAROUSEL */
 .dtl-carousel {
+	li {
+		div {
+			min-height: 0 !important;
+		}
+	}
 	> li {
 		position: relative;
 		.bg-img-block {
 			height: 280px;
 		}
 		.title {}
-		.dtl-icon {}
+		.dtl-icon {
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			@include position(absolute, 0 0 null null);
+			@include bg-img-control;
+		}
 	}
 }
