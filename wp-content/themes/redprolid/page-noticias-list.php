@@ -11,33 +11,22 @@ get_header(); ?>
 <div>
   <section id="puntos-de-vista-anteriores">
     <div class="container">
-	    <div class="row pv-7">
-	      <div class="col-md-12">
-	        <?php the_breadcrumb(); ?>
-	      </div>
-	    </div>	      
+      <?php the_breadcrumb(); ?>
+      <div class="clearfix bg-panel sub-header">
+        <div class="col-sm-7">
+          <div>
+            <h1 style="color: #aeab8b;" class="">Noticias anteriores</h1>
+            <nav class="mt-21">
+              <a href="<?php echo content_url('/'); ?>noticias">Noticias >></a>
+            </nav>
+          </div>
+        </div>
+        <div class="sub-header-icon">
+          <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" width="94px" height="auto" alt="">
+        </div>
+      </div>	      
     </div>
   </section>
-  <section class="mb-21">
-    <div class="container">
-	    <div class="row">
-		    <div class="col-md-12 clearfix">
-			    <div class="row titulos-anteriores">
-				    <div class="col-md-11">
-							<h1 class="mb-0">Noticias Anteriores</h1>
-							<a href="<?php echo content_url('/'); ?>noticias">Noticias >></a>
-				    </div>
-				    <div class="col-md-1 pl-0 pr-0">
-					    <div>
-					    	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" width="100%">
-					    </div>
-				    </div>
-			    </div>
-		    </div>
-	    </div>
-    </div>
-  </section>
-  
   <section>  
     <div class="container p-21">
       <div class="row">

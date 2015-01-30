@@ -37,4 +37,10 @@ header {
 	&.no-border {
 		border: none !important;
 	}
+	&:not(.bg-panel) {
+		h1 {
+			color: $panel;
+			@include medium;
+		}
+	}
 }

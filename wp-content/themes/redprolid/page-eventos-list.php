@@ -11,31 +11,20 @@ get_header(); ?>
 <div>
   <section id="puntos-de-vista-anteriores">
     <div class="container">
-	    <div class="row mt-7">
-	      <div class="col-md-12">
-	        <?php the_breadcrumb(); ?>
-	      </div>
-	    </div>	      
-    </div>
-  </section>
-  
-  <section class="mb-21">
-    <div class="container">
-	    <div class="row">
-		    <div class="col-md-12 clearfix">
-			    <div class="row titulos-anteriores">
-				    <div class="col-md-11">
-							<h1>Eventos Anteriores</h1>
-							<a href="<?php echo content_url('/'); ?>eventos">Eventos >></a>
-				    </div>
-				    <div class="col-md-1 pl-0 pr-0">
-					    <div>
-					    	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-circle.png" alt="" width="100%">
-					    </div>
-				    </div>
-			    </div>
-		    </div>
-	    </div>
+      <?php the_breadcrumb(); ?>
+      <div class="clearfix bg-panel sub-header">
+        <div class="col-sm-7">
+          <div>
+            <h1 style="color: #aeab8b;" class="">Eventos anteriores</h1>
+            <nav class="mt-21">
+              <a href="<?php echo content_url('/'); ?>eventos">Eventos >></a>
+            </nav>
+          </div>
+        </div>
+        <div class="sub-header-icon">
+          <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-circle.png" width="94px" height="auto" alt="">
+        </div>
+      </div>  
     </div>
   </section>
   

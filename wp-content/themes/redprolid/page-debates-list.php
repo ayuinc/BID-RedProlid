@@ -11,13 +11,13 @@ get_header(); ?>
   <div class="mh-700">
     <section id="puntos-de-vista-anteriores">
       <div class="container">
-        <div class="row">
-        	<div class="col-sm-10 col-md-offset-1 mt-35 mb-35">
-	        	<h1>Debates Anteriores</h1>
-        	</div>
-        </div>
-      </div>
-      <div class="container grid-block-lg">
+      	<div class="clearfix bg-panel sub-header">
+	        <div class="col-sm-7">
+	          <div>
+	            <h1 style="color: #aeab8b;" class="">Debates anteriores</h1>
+	          </div>
+	        </div>
+	      </div>  
         <div class="row">
         	<div class="col-sm-10 col-md-offset-1">
 	          <?php query_posts( 'category_name=dtl-debates' ); ?> 

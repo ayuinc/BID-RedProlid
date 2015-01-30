@@ -11,34 +11,20 @@ get_header(); ?>
 <div>
   <section id="puntos-de-vista-anteriores">
     <div class="container">
-	    <div class="row mt-7">
-	      <div class="col-md-12">
-	        <?php the_breadcrumb(); ?>
-	      </div>
-	    </div>	      
-    </div>
-  </section>
-  <section class="mb-21">
-    <div class="container">
-	    <div class="row">
-		    <div class="col-md-12 clearfix">
-			    <div class="row titulos-anteriores">
-				    <div class="col-md-11">
-							<h1>Entrevistas anteriores</h1>
-							<a href="<?php echo content_url('/'); ?>campeonas">Campeonas >></a>
-				    </div>
-				    <div class="col-md-1 pl-0 pr-0">
-					    <div>
-					    	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-square.png" alt="" width="100%">
-					    </div>
-				    </div>
-			    </div>
-		    </div>
-	    </div>
-    </div>
-  </section>
-  <section>  
-    <div class="container grid-block-lg">
+      <?php the_breadcrumb(); ?>
+      <div class="clearfix bg-panel sub-header">
+        <div class="col-sm-7">
+          <div>
+            <h1 style="color: #aeab8b;" class="">Entrevistas anteriores</h1>
+            <nav class="mt-21">
+              <a href="<?php echo content_url('/'); ?>campeonas">Campeonas >></a>
+            </nav>
+          </div>
+        </div>
+        <div class="sub-header-icon">
+          <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-square.png" width="94px" height="auto" alt="">
+        </div>
+      </div>  
       <div class="row">
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
         <?php query_posts( 'category_name=campeonas&posts_per_page=10&paged=' . $paged ); ?>

@@ -14,11 +14,7 @@ get_header(); ?>
   <div class="mh-700">
     <section class="mt-7 mb-21"> 
 		  <div class="container relative mb-14">
-		    <div class="row">
-		      <div class="col-md-12">
-		        <?php the_breadcrumb(); ?>
-		      </div>
-		    </div>
+		    <?php the_breadcrumb(); ?>        
         <div class="clearfix bg-panel sub-header">
           <div class="col-sm-7">
             <div>
