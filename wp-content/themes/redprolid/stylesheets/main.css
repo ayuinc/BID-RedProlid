@@ -4611,85 +4611,24 @@ ul.table-list {
   .hidden-xs-up {
     display: none !important; } }
 @media only screen and (min-width: 768px) {
-  .hidden-xs-up {
-    display: none !important; } }
-@media only screen and (min-width: 992px) {
-  .hidden-xs-up {
-    display: none !important; } }
-@media only screen and (min-width: 1200px) {
-  .hidden-xs-up {
-    display: none !important; } }
-
-@media only screen and (min-width: 480px) {
   .hidden-sm-up {
-    display: none !important; } }
-@media only screen and (min-width: 768px) {
-  .hidden-sm-up {
-    display: none !important; } }
-@media only screen and (min-width: 992px) {
-  .hidden-sm-up {
-    display: none !important; } }
-@media only screen and (min-width: 1200px) {
-  .hidden-sm-up {
-    display: none !important; } }
-
-@media only screen and (min-width: 480px) {
-  .hidden-md-up {
-    display: none !important; } }
-@media only screen and (min-width: 768px) {
-  .hidden-md-up {
     display: none !important; } }
 @media only screen and (min-width: 992px) {
   .hidden-md-up {
     display: none !important; } }
 @media only screen and (min-width: 1200px) {
-  .hidden-md-up {
-    display: none !important; } }
-
-@media only screen and (min-width: 480px) {
   .hidden-lg-up {
     display: none !important; } }
-@media only screen and (min-width: 768px) {
-  .hidden-lg-up {
-    display: none !important; } }
-@media only screen and (min-width: 992px) {
-  .hidden-lg-up {
-    display: none !important; } }
-@media only screen and (min-width: 1200px) {
-  .hidden-lg-up {
-    display: none !important; } }
-
 /* MEDIA QUERIES FOR DISPLAY NONE UP */
 @media only screen and (max-width: 768px) {
   .hidden-sm-down {
     display: none !important; } }
 @media only screen and (max-width: 992px) {
-  .hidden-sm-down {
-    display: none !important; } }
-@media only screen and (max-width: 1200px) {
-  .hidden-sm-down {
-    display: none !important; } }
-
-@media only screen and (max-width: 768px) {
   .hidden-md-down {
-    display: none !important; } }
-@media only screen and (max-width: 992px) {
-  .hidden-md-down {
-    display: none !important; } }
-@media only screen and (max-width: 1200px) {
-  .hidden-md-down {
-    display: none !important; } }
-
-@media only screen and (max-width: 768px) {
-  .hidden-lg-down {
-    display: none !important; } }
-@media only screen and (max-width: 992px) {
-  .hidden-lg-down {
     display: none !important; } }
 @media only screen and (max-width: 1200px) {
   .hidden-lg-down {
     display: none !important; } }
-
 footer {
   background: #232323;
   margin-top: 35px;
