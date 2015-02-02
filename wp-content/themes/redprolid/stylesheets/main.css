@@ -3752,22 +3752,58 @@ input[type=text], input[type=password], select, .form-control, .wppb-form-field 
   margin: 0; }
 
 .text-left {
-  text-align: left !important; }
+  text-align: left; }
 
 .text-right {
-  text-align: right !important; }
+  text-align: right; }
 
-.text-left-mob {
-  text-align: left !important; }
-  @media only screen and (max-width: 480px) and (max-width: 768px) {
-    .text-left-mob {
-      text-align: center !important; } }
+@media only screen and (max-width: 480px) {
+  .text-left-xs {
+    text-align: left; } }
 
-.text-right-mob {
-  text-align: right !important; }
-  @media only screen and (max-width: 480px) and (max-width: 768px) {
-    .text-right-mob {
-      text-align: center !important; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .text-left-sm {
+    text-align: left; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .text-left-md {
+    text-align: left; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .text-left-lg {
+    text-align: left; } }
+
+@media only screen and (max-width: 480px) {
+  .text-right-xs {
+    text-align: right; } }
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .text-right-sm {
+    text-align: right; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .text-right-md {
+    text-align: right; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .text-right-lg {
+    text-align: right; } }
+
+@media only screen and (max-width: 480px) {
+  .text-center-xs {
+    text-align: center; } }
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .text-center-sm {
+    text-align: center; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .text-center-md {
+    text-align: center; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .text-center-lg {
+    text-align: center; } }
 
 .uppercase {
   text-transform: uppercase; }
