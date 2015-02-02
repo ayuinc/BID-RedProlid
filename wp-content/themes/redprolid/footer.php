@@ -53,6 +53,7 @@
         <p class="text-gray m-0">2015. Todos los derechos reservados</p>
       </div>
     </section>
+  </div> <!-- END:Site wrapper -->
     <!-- MODAL -->
     <div class="modal fade" id="pdv-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">

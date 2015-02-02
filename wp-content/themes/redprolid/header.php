@@ -43,17 +43,6 @@
     <!-- FAVICON -->
     <link rel="shortcut icon" href="<?php echo content_url('/'); ?>themes/redprolid/assets/img/favicon.png">
 
-    <!-- Apple Mobile -->
-    <meta name="apple-mobile-web-app-title" content="">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-    <!-- Apple icons -->
-    <link rel="apple-touch-icon" sizes="156x156" href="">
-    <link rel="apple-touch-icon" sizes="128x128" href="">
-    <link rel="apple-touch-icon" sizes="76x76" href="">
-    <link rel="apple-touch-icon" href="">
-
     <!-- WebFonts -->
     <script src="//use.typekit.net/nsv5vjx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -63,3 +52,152 @@
     <link rel="stylesheet" href="<?php echo content_url('/'); ?>themes/redprolid/stylesheets/ebm.css">
   </head>
   <body>
+    <div class="site-wrapper">
+      <div class="mobile-navbar hidden-sm-up"> <!-- MOBILE NAVBAR -->
+        <div class="left">
+          <div class="logo" style="background-image: url(assets/img/img-sq.png)"></div>
+        </div>
+        <div class="right">
+          <a href="#" class="menu-trigger icon-menu">M</a>
+        </div>
+      </div> <!-- END:Mobile navbar -->
+      <div class="mobile-menu hidden-sm-up"> <!-- MOBILE MENU -->
+        <div class="mobile-nav-display-triggers">
+          <ul>
+            <li>
+              <a href="#mobile-nav-display-1">mobile-nav-display-1</a>
+            </li>
+            <li>
+              <a href="#mobile-nav-display-2">mobile-nav-display-2</a>
+            </li>
+            <li>
+              <a href="#mobile-nav-display-3">mobile-nav-display-3</a>
+            </li>
+            <li>
+              <a href="#mobile-nav-display-4">mobile-nav-display-4</a>
+            </li>
+            <li>
+              <a href="#mobile-nav-display-5">mobile-nav-display-5</a>
+            </li>
+            <li>
+              <a href="#mobile-nav-display-6">mobile-nav-display-6</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-nav-display" id="mobile-nav-display-1">
+          <div class="top">
+            <a class="back">Regresar</a>
+            <h1>mobile-nav-display-1</h1>           
+          </div>
+          <div class="center">
+            <ul>
+              <li>
+                <a href="#">Respaldo</a>
+              </li>
+              <li>
+                <a href="#">Autoridades</a>
+              </li>           
+            </ul>
+          </div>
+          <div class="bottom"></div>
+        </div>
+        <div class="mobile-nav-display" id="mobile-nav-display-2">
+          <div class="top">
+            <a class="back">Regresar</a>
+            <h1>mobile-nav-display-2</h1>           
+          </div>
+          <div class="center">
+            <ul>
+              <li>
+                <a href="#">Publicaciones</a>
+              </li>
+              <li>
+                <a href="#"><span>Empresas</span> y clientes</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom"></div>
+        </div>
+        <div class="mobile-nav-display" id="mobile-nav-display-3">
+          <div class="top">
+            <a class="back">Regresar</a>
+            <h1>mobile-nav-display-3</h1>           
+          </div>
+          <div class="center">
+            <ul>
+              <li>
+                <a href="#"><span>Ingeniería</span> Industrial</a>
+              </li>
+              <li>
+                <a href="#"><span>Ingeniería</span> De la Energía</a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-primary btn-custom bold">Postular</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom"></div>
+        </div>
+        <div class="mobile-nav-display" id="mobile-nav-display-4">
+          <div class="top">
+            <a class="back">Regresar</a>
+            <h1>mobile-nav-display-4</h1>           
+          </div>
+          <div class="center">
+            <ul>
+              <li>
+                <a href="#"><span>Modalidades</span> de admisión</a>
+              </li>
+              <li>
+                <a href="#"><span>Charlas</span> informativas</a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-primary btn-custom bold">Postular a la pre</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom"></div>
+        </div>
+        <div class="mobile-nav-display" id="mobile-nav-display-5">
+          <div class="top">
+            <a class="back">Regresar</a>
+            <h1>mobile-nav-display-5</h1>           
+          </div>
+          <div class="center">
+            <ul>
+              <li>
+                <a href="#"><span>Proceso de</span> ampliación</a>
+              </li>
+              <li>
+                <a href="#"><span>Ven a</span> la utec</a>
+              </li>
+              <li>
+                <a href="#"><span>Convenios de</span> Intercambio</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom"></div>
+        </div>
+        <div class="mobile-nav-display" id="mobile-nav-display-6">
+          <div class="top">
+            <a class="back">Regresar</a>
+            <h1>mobile-nav-display-6</h1>           
+          </div>
+          <div class="center">
+            <ul>
+              <li><a href="#">Diplomados</a></li>
+              <li>
+                <a href="#"><span>Cursos</span> online</a>
+              </li>
+              <li>
+                <a href="#"><span>Cursos</span> Cortos</a>
+              </li>
+              <li>
+                <a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold">Inscríbete</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom"></div>
+        </div>
+      </div> <!-- END:Mobile menu -->
+    
