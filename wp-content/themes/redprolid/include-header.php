@@ -35,33 +35,3 @@
     </div>
   </div>
 </header>
-
-<!-- MOBILE NAVIGATION -->
-<div class="mobile-header hidden-sm-up">
-  <div class="top-bar">
-    <div class="left">
-      <a href="#" class="logo" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png)"></a>
-    </div>
-    <div class="right">
-      <div class="menu-trigger"><i class="flaticon-logo3"></i></div>
-    </div>
-  </div>
-  <div class="nav-display"></div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

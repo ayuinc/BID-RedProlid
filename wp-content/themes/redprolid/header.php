@@ -55,7 +55,7 @@
     <div class="site-wrapper">
       <div class="mobile-navbar hidden-sm-up"> <!-- MOBILE NAVBAR -->
         <div class="left">
-          <div class="logo" style="background-image: url(assets/img/img-sq.png)"></div>
+          <div class="logo" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png)"></div>
         </div>
         <div class="right">
           <a href="#" class="menu-trigger icon-menu">M</a>

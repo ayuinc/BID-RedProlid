@@ -194,6 +194,7 @@
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/carousel.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/modal.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/src/custom.js"></script>
+    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/lib/mobile-menu-control.js"></script>
     
     <!--LIKE BOX FACEBOOK-->
 		<div id="fb-root"></div>
