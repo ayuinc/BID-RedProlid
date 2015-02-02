@@ -136,3 +136,24 @@ ul.table-list {
 		float: left;
 	}
 }
+
+/* MEDIA QUERIES FOR DISPLAY NONE UP */
+@for $z from 1 through length($breakpoints-sufix-list) {
+	.hidden-#{nth($breakpoints-sufix-list, $z)}-up {
+		@for $i from 1 through length($media-up-list) {
+			@media #{nth($media-up-list, $i)} {
+				display: none;
+			}
+		}
+	}
+}
+/* MEDIA QUERIES FOR DISPLAY NONE UP */
+@for $z from 2 through length($breakpoints-sufix-list) {
+	.hidden-#{nth($breakpoints-sufix-list, $z)}-down {
+		@for $i from 1 through length($media-down-list) {
+			@media #{nth($media-down-list, $i)} {
+				display: none;
+			}
+		}
+	}
+}
