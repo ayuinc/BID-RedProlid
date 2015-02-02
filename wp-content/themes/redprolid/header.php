@@ -52,7 +52,7 @@
     <link rel="stylesheet" href="<?php echo content_url('/'); ?>themes/redprolid/stylesheets/ebm.css">
   </head>
   <body>
-    <div class="site-wrapper">
+    <div class="site-wrapper pt-56-xs">
       <div class="mobile-navbar hidden-sm-up"> <!-- MOBILE NAVBAR -->
         <div class="left">
           <div class="logo" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png)"></div>
