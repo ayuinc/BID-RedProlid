@@ -1,42 +1,28 @@
 <div class="mh-700">
 	<section class="mt-7 mb-21"> 
 	  <div class="container relative mb-14">
-	    <div class="row">
-	      <div class="col-md-12">
-	        <?php the_breadcrumb(); ?>
+      <?php the_breadcrumb(); ?>
+      <div class="clearfix sub-header">
+	      <div class="col-md-1">
+	        <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="100%"></div>
 	      </div>
-	    </div>
-	    <div class="absolute dtl-custom-heading z-index-100">
-	      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="80"></div>
-	      <div class="clearfix">
-	        <div class="col-md-3">
-	          <h1 class="mt-14 ml--25 mb-0 brand-titular">Webinarios</h1>
-	        </div>
-	        <div class="col-md-9 pt-28">
-	          <nav class="text-right mb-0 mt-0">
-		          <div class="row">
-	            	<div class="col-md-12">
-		            	<p class="text-right">
-		            	<a href="#" data-toggle="modal" data-target="#pdv-modal">¿Quieres proponernos un tema?</a> 
-		            	</p>
-	            	</div>
-		          </div>
-	          </nav>
-	        </div>
+	      <div class="col-md-4">
+	        <h1 class="brand-titular">Webinarios</h1>
+	      </div>
+	      <div class="col-md-7">
+	        <nav class="text-right">
+	          <a href="<?php echo home_url('/'); ?>compartir-campeonas">¿Quieres proponernos un tema?</a>
+	        </nav>
 	      </div>
 	    </div>	
-	  </div>      
-	</section>	
-	<section class="pt-7-100 mt-35">
-	  <?php if (have_posts()) : ?>
-	  <?php $count = 0; ?>
-	
-	  <?php while ( have_posts() ) : the_post(); ?>
-	  <?php $count++; ?>
-	
-	  <?php if ($count <= 1) : ?>
-	  <?php $id_post_comentarios = get_the_ID(); ?> 		
-		  <div class="container">
+		  <?php if (have_posts()) : ?>
+		  <?php $count = 0; ?>
+		
+		  <?php while ( have_posts() ) : the_post(); ?>
+		  <?php $count++; ?>
+		
+		  <?php if ($count <= 1) : ?>
+		  <?php $id_post_comentarios = get_the_ID(); ?> 		
 		    <div class="row">
 		      <div class="col-md-10 col-md-offset-1">		
 				    <h1 class="mb-21"><?php the_title(); ?></h1>
@@ -82,9 +68,9 @@
 				      <?php comments_template();?>
 				    </div> 
 		      </div>
-		    </div>	   
-	  <?php endif; ?>
-	  <?php endwhile; ?>
-	  <?php endif; ?>
-	</section>
+		    </div>
+		  <?php endif; ?>
+		  <?php endwhile; ?>
+		  <?php endif; ?>
+	  </div>
 </div>

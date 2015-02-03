@@ -1,12 +1,6 @@
 <section>
   <div class="container mt-35">
-    <div class="row">
-	    <div class="col-sm-10 col-md-offset-1">
-		    <?php the_breadcrumb(); ?>
-	    </div>
-    </div>
-  </div>
-  <div class="container mt-35 mb-35">
+		<?php the_breadcrumb(); ?>
     <div class="row">
       <?php if( get_field('imagen_concurso') ) { ?>
       <div class="col-sm-3 col-md-offset-1">
@@ -21,8 +15,6 @@
         <h4 class="light lh-lg"><?php the_field('descripcion_concurso'); ?></h4>
       </div>
     </div>
-  </div>
-  <div class="container text-left pb-70">
     <div class="row">
       <div class="col-sm-10 col-md-offset-1 with-hr">     
         <p><?php the_field('contenido_concurso'); ?></p>
@@ -31,8 +23,6 @@
         </div>   
       </div>
     </div>       
-  </div>
-  <div class="container pb-70">
     <div class="row">
       <div class="col-sm-10 col-md-offset-1">  
         <?php comments_template(); ?>

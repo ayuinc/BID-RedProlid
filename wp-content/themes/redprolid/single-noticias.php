@@ -1,15 +1,6 @@
 <section class="pv-7"> 
   <div class="container relative">
-    <div class="row">
-      <div class="col-md-12">
-        <?php the_breadcrumb(); ?>
-      </div>
-    </div>
-  </div>      
-</section>
-
-<section class="mb-14">	
-  <div class="container">
+    <?php the_breadcrumb(); ?>
     <div class="row">
 	    <?php if( get_field('imagen_noticias') ) { ?>
       <div class="col-sm-4">
@@ -29,11 +20,6 @@
         <h4 class="mt-14 light lh-lg"><?php the_field('descripcion_rapida_noticias'); ?></h4>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="mb-21">	
-  <div class="container text-left mt-7">
 	  <div class="row">
 			<div class="col-sm-12 with-hr">  	  
 		    <p><?php the_field('contenido_noticias'); ?></p>
@@ -42,15 +28,10 @@
 		    </div>   
 			</div>
 	  </div>       
-  </div>
-</section>
-
-<section>
-  <div class="container">
 	  <div class="row">
 			<div class="col-sm-12">  
 	    	<?php comments_template(); ?>
 			</div>
 	  </div>
-  </div>
+  </div>      
 </section>

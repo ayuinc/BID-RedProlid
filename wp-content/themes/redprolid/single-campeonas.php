@@ -15,21 +15,11 @@
         </nav>
       </div>
     </div>
-  </div>      
-</section>
-
-<section class="pt-7-100 mb-35"> 
-  <div class="container">
     <div class="row">
 			<div class="col-md-12">
 				<h3 class="light">Esta es la sección donde incluimos las entrevistas con testimonios de aquellas mujeres latinoamericanas que han dejado huella y han marcado o van a marcar las agendas de sus países para imprimir mayor equidad en las politicas públicas y en el quehacer diario de la política.</h3>
 			</div>
     </div>	
-  </div>      
-</section>
-
-<section class="mb-21">
-  <div class="container">
     <div class="row">
       <?php if( get_field('imagen_campeonas') ) { ?>
       <div class="col-md-3 col-md-offset-1">
@@ -41,11 +31,6 @@
       <small><?php the_field('posicion_campeona'); ?> <?php if (get_field('twitter_campeona')!='') { ?>/ <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank">@<?php the_field('twitter_campeona'); ?></a><?php } ?></small>
       <h4 class="mt-14 light lh-lg"><?php the_field('descripcion_campeona'); ?></h4>	      
     </div>
-  </div>		
-</section>
-          
-<section>
-  <div class="container text-left">
     <div class="row">
       <div class="col-sm-10 col-md-offset-1 with-hr">     
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
@@ -63,12 +48,10 @@
         </div>
       </div>
     </div>       
-  </div>
-  <div class="container pt-14">
     <div class="row">
       <div class="col-sm-10 col-md-offset-1">  
         <?php comments_template(); ?>
       </div>
     </div>
-  </div>
+  </div>      
 </section>

@@ -1,25 +1,11 @@
 <section>
   <div class="container mt-7">
-    <div class="row">
-	    <div class="col-md-12">
-		    <?php the_breadcrumb(); ?>
-	    </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container mt-7">
+    <?php the_breadcrumb(); ?>
     <div class="row">
 	    <div class="col-md-12">
 		    <p class="text-right"><a href="<?php echo home_url('/'); ?>video/videos-anteriores" class="light">Video Anteriores >></a></p>
 	    </div>
     </div>
-  </div>
-</section>
-
-<section> 		
-  <div class="container">
     <div class="row">
 	    <div class="col-md-10 col-md-offset-1">  
         <h2 class="medium"><?php the_title(); ?></h2>
@@ -32,8 +18,6 @@
 		    </div>   
 			</div>
 	  </div>       
-  </div>
-  <div class="container">
 	  <div class="row">
 			<div class="col-md-10 col-md-offset-1">  
 	    	<?php comments_template(); ?>

@@ -1,15 +1,6 @@
 <section class="mt-7 mb-21"> 
   <div class="container relative mb-14">
-    <div class="row">
-      <div class="col-md-12">
-        <?php the_breadcrumb(); ?>
-      </div>
-    </div>
-  </div>      
-</section>
-
-<section class="mb-21">
-	<div class="container">
+    <?php the_breadcrumb(); ?>
 		<div class="row">
 			<div class="col-md-12">
 				<p class="text-right">
@@ -17,11 +8,6 @@
 				</p>
 			</div>
 		</div>
-	</div>
-</section>
-
-<section class="mb-35">	
-  <div class="container">
 	  <div class="row">
 		  <div class="col-md-10 col-md-offset-1">
 			  <h2 class="medium mb-14"><?php the_title(); ?></h2>
@@ -52,11 +38,6 @@
 	      <p><?php the_field('lugar_evento'); ?></p>
       </div>
     </div>
-  </div>
-</section>
-
-<section> 
-  <div class="container">
 	  <div class="row">
 			<div class="col-sm-5 col-md-offset-3">  	  
 		    <h5 class="medium mb-0">Tipo de recurso</h5>
@@ -67,5 +48,5 @@
 				<p><?php the_field('año_publicacion_evento'); ?></p>
 			</div>
 	  </div>       
-  </div>
+  </div>      
 </section>
