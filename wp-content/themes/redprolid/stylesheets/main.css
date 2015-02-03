@@ -4732,7 +4732,6 @@ header {
 
 .sub-header {
   border-radius: 3px;
-  border-bottom: 1px dotted #ebeade;
   margin-bottom: 42px;
   margin-bottom: 2.625rem;
   position: relative; }
@@ -4784,6 +4783,15 @@ header {
     font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
     font-weight: 500;
     font-style: normal; }
+  @media only screen and (min-width: 992px) {
+    .sub-header > div:nth-child(2) {
+      position: relative; }
+      .sub-header > div:nth-child(2):after {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 217%;
+        border-bottom: 1px dotted #f08854; } }
 
 /* 
 

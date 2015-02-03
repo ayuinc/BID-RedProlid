@@ -10,7 +10,7 @@ header {
 
 .sub-header {
 	border-radius: $border-radius-base;
-	border-bottom: 1px dotted $panel-bg;
+	// border-bottom: 1px dotted $panel-bg;
 	margin-bottom: 42px;
 	margin-bottom: rem(42px);
 	@include position(relative);
@@ -41,6 +41,18 @@ header {
 		h1 {
 			color: $panel;
 			@include medium;
+		}
+	}
+	@media #{$md-up} {
+		> div:nth-child(2) {
+			position: relative;
+			&:after {
+				content: " ";
+				position: absolute;
+				display: block;
+				width: 217%;
+				border-bottom: 1px dotted lighten($brand-primary, 7%);
+			}
 		}
 	}
 }
