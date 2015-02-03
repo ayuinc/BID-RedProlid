@@ -54,7 +54,7 @@ header {
 				}
 				&.col-md-4 {
 					&:after {
-						width: 217%;
+						width: 270%;
 					}
 				}
 			}
@@ -64,6 +64,11 @@ header {
 		img {
 			width: 75px;
 			height: auto;
+		}
+	}
+	&.bg-panel {
+		h1 {
+			color: $gray-dark;
 		}
 	}
 }
