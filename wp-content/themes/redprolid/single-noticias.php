@@ -1,4 +1,4 @@
-<section class="pv-7"> 
+<section> 
   <div class="container relative">
     <?php the_breadcrumb(); ?>
     <div class="ph-70">
