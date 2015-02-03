@@ -49,7 +49,7 @@ get_header(); ?>
 			    </div>
 	    	</div>
 	    	<div class="col-sm-1"></div>
-	    	<div class="col-sm-3">
+	    	<div class="col-sm-4">
 	    		<div class="bg-panel minh-560">
 	    			<div class="bg-img-block minh-210" style="background-image: url(<?php the_field('imagen_concurso'); ?>)"></div>
 	    			<div class="p-14">

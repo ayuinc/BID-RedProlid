@@ -8,27 +8,23 @@ get_header(); ?>
 <?php get_template_part( 'include', 'header' ); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
-<div>
-  <section id="puntos-de-vista-anteriores">
-    <div class="container">
-      <?php the_breadcrumb(); ?>
-      <div class="clearfix bg-panel sub-header">
-        <div class="col-sm-7">
-          <div>
-            <h1 style="color: #aeab8b;" class="">Noticias anteriores</h1>
-            <nav class="mt-21">
-              <a href="<?php echo content_url('/'); ?>noticias">Noticias >></a>
-            </nav>
-          </div>
+<section id="puntos-de-vista-anteriores">
+  <div class="container">
+    <?php the_breadcrumb(); ?>
+    <div class="clearfix bg-panel sub-header">
+      <div class="col-sm-7">
+        <div>
+          <h1 style="color: #aeab8b;" class="">Noticias anteriores</h1>
+          <nav class="mt-21">
+            <a href="<?php echo content_url('/'); ?>noticias">Noticias >></a>
+          </nav>
         </div>
-        <div class="sub-header-icon">
-          <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" width="94px" height="auto" alt="">
-        </div>
-      </div>	      
-    </div>
-  </section>
-  <section>  
-    <div class="container p-21">
+      </div>
+      <div class="sub-header-icon">
+        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" width="94px" height="auto" alt="">
+      </div>
+    </div>	      
+    <div class="ph-70">
       <div class="row">
         <div class="col-sm-12">
           <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
@@ -52,6 +48,10 @@ get_header(); ?>
         </div>
       </div>          
     </div>
-  </section>
-</div>
+  </div>
+</section>
+<section>  
+  <div class="container p-21">
+  </div>
+</section>
 <?php get_footer(); ?>
