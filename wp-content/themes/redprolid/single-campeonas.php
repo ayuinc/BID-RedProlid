@@ -2,14 +2,14 @@
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>    
     <div class="clearfix sub-header">
-      <div class="col-md-1">
+      <div class="col-sm-1 col-xs-3">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" alt="" width="100%"></div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-4 col-xs-9">
         <h1 class="brand-titular">Campeonas</h1>
       </div>
-      <div class="col-md-7">
-        <nav class="text-right">
+      <div class="col-sm-7 col-xs-12">
+        <nav class="text-right text-center-xs">
           <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores">¿Quieres leer nuestras entrevistas anteriores?</a> <span class="text-primary">|</span>
           <a href="<?php echo home_url('/'); ?>compartir-campeonas">Nos propones un tema</a>
         </nav>

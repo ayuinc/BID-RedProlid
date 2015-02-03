@@ -20,10 +20,10 @@ get_header(); ?>
 			      </div>
 			    </div>
           <div class="clearfix sub-header">
-            <div class="col-xs-1">
+            <div class="col-xs-3">
               <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" alt="" class="img-responsive"></div>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-9">
               <h1 class="brand-titular">Charlacafé</h1>
             </div>
           </div>

@@ -14,20 +14,16 @@ get_header(); ?>
     <div class="mh-700">
       <section class="mt-7 mb-21"> 
 			  <div class="container relative mb-14">
-			    <div class="row">
-			      <div class="col-md-12">
-			        <?php the_breadcrumb(); ?>
-			      </div>
-			    </div>
+			     <?php the_breadcrumb(); ?>
           <div class="clearfix sub-header">
-            <div class="col-xs-1">
+            <div class="col-xs-3 col-sm-3">
               <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" class="img-responsive"></div>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-9 col-sm-4">
               <h1 class="brand-titular">Entérate</h1>
             </div>
-            <div class="col-xs-4">
-              <nav class="text-right mb-0 mt-0">
+            <div class="col-xs-12 col-sm-4">
+              <nav class="text-right text-center-xs mb-0 mt-0">
                 <a href="<?php echo home_url('/'); ?>puntos-de-vista-list">¿Quieres compartir un recurso?</a> 
               </nav>
             </div>

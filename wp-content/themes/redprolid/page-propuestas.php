@@ -16,14 +16,14 @@ get_header(); ?>
 	  <div class="container relative mb-14">
 	    <?php the_breadcrumb(); ?>
 	    <div class="clearfix sub-header">
-        <div class="col-md-1">
+        <div class="col-sm-1 col-xs-3">
 		      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" alt="" width="100%"></div>
 		    </div>
-        <div class="col-md-5">
+        <div class="col-sm-5 col-xs-9">
           <h1 class="brand-titular">Nuevas propuestas</h1>
         </div>
-        <div class="col-md-6">
-          <nav class="text-right">
+        <div class="col-sm-6 col-xs-12">
+          <nav class="text-right text-center-xs">
             <a href="<?php echo home_url('/'); ?>">Ingresa</a> 
             <span class="text-primary">|</span> 
             <a href="<?php echo home_url('/'); ?>">Regístrate</a>

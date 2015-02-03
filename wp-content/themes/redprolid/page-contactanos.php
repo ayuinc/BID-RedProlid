@@ -18,10 +18,10 @@ get_header(); ?>
       <section id="contacto">
         <div class="container relative">
         	<div class="clearfix sub-header">
-		        <div class="col-md-1">
+		        <div class="col-sm-1 col-xs-3">
 		          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon.png" alt="" width="100%"></div>
 		        </div>
-		        <div class="col-md-5">
+		        <div class="col-sm-5 col-xs-9">
 		          <h1>Contáctanos</h1>
 		        </div>
 		      </div>

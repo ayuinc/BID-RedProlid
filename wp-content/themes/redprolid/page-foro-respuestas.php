@@ -14,17 +14,13 @@ get_header(); ?>
 <div>
 	<section class="mt-7 mb-21 pb-70"> 
 	  <div class="container relative mb-14">
-	    <div class="row">
-	      <div class="col-md-12">
-	        <?php the_breadcrumb(); ?>
-	      </div>
-	    </div>
+	    <?php the_breadcrumb(); ?>
 	    <div class="clearfix sub-header">
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <h1 class="brand-titular">Tus respuestas</h1>
         </div>
-        <div class="col-md-6">
-          <nav class="text-right">
+        <div class="col-sm-6">
+          <nav class="text-right text-center-xs">
             <a href="<?php echo home_url('/'); ?>charlacafe">Foro virtual &gt;&gt;</a>
           </nav>
         </div>
