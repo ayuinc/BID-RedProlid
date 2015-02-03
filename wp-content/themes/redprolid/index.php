@@ -390,7 +390,7 @@ get_header(); ?>
                 </div>
             </div>
             <div class="col-md-9">
-              <div class="panel panel-custom highlight">
+              <div class="panel panel-custom highlight hidden-sm-down">
                 <div class="panel-body tall pt-0">
                   <div class="panel-heading">
                     <ul class="list-unstyled m-0">

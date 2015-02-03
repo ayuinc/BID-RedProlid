@@ -65,22 +65,22 @@
         <div class="mobile-nav-display-triggers">
           <ul>
             <li>
-              <a href="#mobile-nav-display-1">mobile-nav-display-1</a>
+              <a href="<?php echo home_url(); ?>">Inicio</a>
             </li>
             <li>
-              <a href="#mobile-nav-display-2">mobile-nav-display-2</a>
+              <a href="#mobile-nav-display-2">Red PROLID</a>
             </li>
             <li>
-              <a href="#mobile-nav-display-3">mobile-nav-display-3</a>
+              <a href="#mobile-nav-display-3">Desarrolla tu liderazgo</a>
             </li>
             <li>
-              <a href="#mobile-nav-display-4">mobile-nav-display-4</a>
+              <a href="#mobile-nav-display-4">Entérate</a>
             </li>
             <li>
-              <a href="#mobile-nav-display-5">mobile-nav-display-5</a>
+              <a href="#mobile-nav-display-5">Concursos</a>
             </li>
             <li>
-              <a href="#mobile-nav-display-6">mobile-nav-display-6</a>
+              <a href="#mobile-nav-display-6">Charlacafé</a>
             </li>
           </ul>
         </div>
@@ -104,15 +104,15 @@
         <div class="mobile-nav-display" id="mobile-nav-display-2">
           <div class="top">
             <a class="back">Regresar</a>
-            <h1>mobile-nav-display-2</h1>           
+            <h1>Red PROLID</h1>           
           </div>
           <div class="center">
             <ul>
               <li>
-                <a href="#">Publicaciones</a>
+                <a href="<?php echo home_url('/'); ?>redprolid/">¿Qué es Red PROLID?</a>
               </li>
               <li>
-                <a href="#"><span>Empresas</span> y clientes</a>
+                <a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a>
               </li>
             </ul>
           </div>
@@ -121,18 +121,30 @@
         <div class="mobile-nav-display" id="mobile-nav-display-3">
           <div class="top">
             <a class="back">Regresar</a>
-            <h1>mobile-nav-display-3</h1>           
+            <h1>Desarrolla tu liderazgo</h1>           
           </div>
           <div class="center">
             <ul>
               <li>
-                <a href="#"><span>Ingeniería</span> Industrial</a>
+                <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/">¿Adónde v@mos?</a>
               </li>
               <li>
-                <a href="#"><span>Ingeniería</span> De la Energía</a>
+                <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/carrera-de-vallas/">Carrera de vallas</a>
               </li>
               <li>
-                <a href="#" class="btn btn-primary btn-custom bold">Postular</a>
+                <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/nivelando-la-cancha/">Nivelando la cancha</a>
+              </li>
+              <li>
+                <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/listas-para-la-politica/">Listas para la política</a>
+              </li>
+              <li>
+                <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/">Agenda de género</a>
+              </li>
+              <li>
+                <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas">Pistas →</a>
+              </li>
+              <li>
+                <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a>
               </li>
             </ul>
           </div>
@@ -141,18 +153,24 @@
         <div class="mobile-nav-display" id="mobile-nav-display-4">
           <div class="top">
             <a class="back">Regresar</a>
-            <h1>mobile-nav-display-4</h1>           
+            <h1>Entérate</h1>           
           </div>
           <div class="center">
             <ul>
               <li>
-                <a href="#"><span>Modalidades</span> de admisión</a>
+                <a href="<?php echo home_url('/'); ?>noticias">Noticias</a>
               </li>
               <li>
-                <a href="#"><span>Charlas</span> informativas</a>
+                <a href="<?php echo home_url('/'); ?>eventos">Eventos</a>
               </li>
               <li>
-                <a href="#" class="btn btn-primary btn-custom bold">Postular a la pre</a>
+                <a href="<?php echo home_url('/'); ?>boletin">Nuestro boletín</a>
+              </li>
+              <li>
+                <a href="<?php echo home_url('/'); ?>campeonas">Campeonas</a>
+              </li>
+              <li>
+                <a href="<?php echo home_url('/'); ?>video" class="videos">Videos</a>
               </li>
             </ul>
           </div>
@@ -161,18 +179,15 @@
         <div class="mobile-nav-display" id="mobile-nav-display-5">
           <div class="top">
             <a class="back">Regresar</a>
-            <h1>mobile-nav-display-5</h1>           
+            <h1>Concursos</h1>           
           </div>
           <div class="center">
             <ul>
               <li>
-                <a href="#"><span>Proceso de</span> ampliación</a>
+                <a href="<?php echo home_url('/'); ?>concursos">Concursos</a>
               </li>
               <li>
-                <a href="#"><span>Ven a</span> la utec</a>
-              </li>
-              <li>
-                <a href="#"><span>Convenios de</span> Intercambio</a>
+                <a href="<?php echo home_url('/'); ?>concursos-anteriores">Concursos anteriores</a>
               </li>
             </ul>
           </div>
@@ -181,19 +196,21 @@
         <div class="mobile-nav-display" id="mobile-nav-display-6">
           <div class="top">
             <a class="back">Regresar</a>
-            <h1>mobile-nav-display-6</h1>           
+            <h1>Charlacafé</h1>
           </div>
           <div class="center">
             <ul>
-              <li><a href="#">Diplomados</a></li>
               <li>
-                <a href="#"><span>Cursos</span> online</a>
+                <a href="<?php echo home_url('/'); ?>foros-principal">Foros virtuales →</a>
               </li>
               <li>
-                <a href="#"><span>Cursos</span> Cortos</a>
+                <a href="#">¿Quieres ver los foros anteriores?</a>
               </li>
               <li>
-                <a href="http://escuela-edp.utec.edu.pe/" class="btn btn-primary btn-custom bold">Inscríbete</a>
+                <a href="<?php echo home_url('/'); ?>webinar-principal">Webinarios →</a>
+              </li>
+              <li>
+                <a href="<?php echo home_url('/'); ?>webinarios-anteriores">Webinarios anteriores</a>
               </li>
             </ul>
           </div>
