@@ -42,17 +42,28 @@ header {
 			color: $panel;
 			@include medium;
 		}
-	}
-	@media #{$md-up} {
-		> div:nth-child(2) {
-			position: relative;
-			&:after {
-				content: " ";
-				position: absolute;
-				display: block;
-				width: 217%;
-				border-bottom: 1px dotted lighten($brand-primary, 7%);
+		@media #{$md-up} {
+			> div:nth-child(2) {
+				position: relative;
+				&:after {
+					content: " ";
+					position: absolute;
+					display: block;
+					width: 217%;
+					border-bottom: 1px dotted lighten($brand-primary, 7%);
+				}
+				&.col-md-4 {
+					&:after {
+						width: 217%;
+					}
+				}
 			}
+		}
+	}
+	> div:first-child {
+		img {
+			width: 75px;
+			height: auto;
 		}
 	}
 }
