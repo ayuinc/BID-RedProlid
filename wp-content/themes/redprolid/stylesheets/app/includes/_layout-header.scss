@@ -57,6 +57,11 @@ header {
 						width: 270%;
 					}
 				}
+				&.col-sm-6 {
+					&:after {
+						width: 180%;
+					}
+				}
 			}
 		}
 	}

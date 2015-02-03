@@ -4793,7 +4793,9 @@ header {
         width: 217%;
         border-bottom: 1px dotted #f08854; }
       .sub-header:not(.bg-panel) > div:nth-child(2).col-sm-4:after {
-        width: 270%; } }
+        width: 270%; }
+      .sub-header:not(.bg-panel) > div:nth-child(2).col-sm-6:after {
+        width: 180%; } }
   .sub-header > div:first-child img {
     width: 75px;
     height: auto; }
