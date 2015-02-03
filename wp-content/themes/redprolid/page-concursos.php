@@ -31,7 +31,7 @@ get_header(); ?>
     	<?php query_posts( 'category_name=concursos&posts_per_page=1' ); ?>	
 			<?php while ( have_posts() ) : the_post(); ?>  	    
 	    <div class="row">		    
-	    	<div class="col-sm-8">
+	    	<div class="col-sm-7">
 					<h3 class="light"><?php the_title(); ?></h3>
 					<p class="light"><?php the_field('descripcion_concurso'); ?></p>
 			    <hr>               
@@ -48,7 +48,8 @@ get_header(); ?>
 			    	</div>
 			    </div>
 	    	</div>
-	    	<div class="col-sm-4">
+	    	<div class="col-sm-1"></div>
+	    	<div class="col-sm-3">
 	    		<div class="bg-panel minh-560">
 	    			<div class="bg-img-block minh-210" style="background-image: url(<?php the_field('imagen_concurso'); ?>)"></div>
 	    			<div class="p-14">

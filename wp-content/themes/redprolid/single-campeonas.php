@@ -15,24 +15,20 @@
         </nav>
       </div>
     </div>
-    <div class="row">
-			<div class="col-md-12">
-				<h3 class="light">Esta es la sección donde incluimos las entrevistas con testimonios de aquellas mujeres latinoamericanas que han dejado huella y han marcado o van a marcar las agendas de sus países para imprimir mayor equidad en las politicas públicas y en el quehacer diario de la política.</h3>
-			</div>
-    </div>	
-    <div class="row">
-      <?php if( get_field('imagen_campeonas') ) { ?>
-      <div class="col-md-3 col-md-offset-1">
-        <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive">
+    <div class="ph-70">
+  		<h3 class="light">Esta es la sección donde incluimos las entrevistas con testimonios de aquellas mujeres latinoamericanas que han dejado huella y han marcado o van a marcar las agendas de sus países para imprimir mayor equidad en las politicas públicas y en el quehacer diario de la política.</h3>
+      <div class="row">
+        <?php if( get_field('imagen_campeonas') ) { ?>
+        <div class="col-md-3">
+          <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive">
+        </div>
+        <div class="col-md-9">
+        <?php } else {  } ?>
+        <h2 class="lh-lg mb-0"><?php the_title(); ?></h2>
+        <small><?php the_field('posicion_campeona'); ?> <?php if (get_field('twitter_campeona')!='') { ?>/ <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank">@<?php the_field('twitter_campeona'); ?></a><?php } ?></small>
+        <h4 class="mt-14 light lh-lg"><?php the_field('descripcion_campeona'); ?></h4>	      
       </div>
-      <div class="col-md-7">
-      <?php } else {  } ?>
-      <h2 class="lh-lg mb-0"><?php the_title(); ?></h2>
-      <small><?php the_field('posicion_campeona'); ?> <?php if (get_field('twitter_campeona')!='') { ?>/ <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank">@<?php the_field('twitter_campeona'); ?></a><?php } ?></small>
-      <h4 class="mt-14 light lh-lg"><?php the_field('descripcion_campeona'); ?></h4>	      
-    </div>
-    <div class="row">
-      <div class="col-sm-10 col-md-offset-1 with-hr">     
+      <div class="with-hr">
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
         <div class="content-display">
           <div class="text-right mt-14 mb-14">
@@ -46,12 +42,8 @@
         <div class="text-right">
           <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
         </div>
-      </div>
-    </div>       
-    <div class="row">
-      <div class="col-sm-10 col-md-offset-1">  
-        <?php comments_template(); ?>
-      </div>
+      </div>       
+      <?php comments_template(); ?>
     </div>
   </div>      
 </section>

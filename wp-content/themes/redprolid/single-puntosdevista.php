@@ -10,10 +10,10 @@
       </div>
       <div class="col-md-7">
         <nav class="text-right">
-           <a href="<?php echo home_url('/'); ?>puntos-de-vista-list">Puntos de vista anteriores</a> <span class="text-primary">|</span> 
+           <a href="<?php echo home_url('/'); ?>puntos-de-vista-list">Puntos de vista anteriores</a> 
             <?php
             if ( is_user_logged_in() ) {
-              echo '|<a href="#" data-toggle="modal" data-target="#pdv-modal">¿Te gustaría proponernos un tema?</a>';
+              echo '<span class="text-primary">|</span> <a href="#" data-toggle="modal" data-target="#pdv-modal">¿Te gustaría proponernos un tema?</a>';
             }
             ?>
         </nav>
