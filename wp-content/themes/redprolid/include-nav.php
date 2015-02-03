@@ -34,7 +34,18 @@
             </ul>
           </li>
           <li>
-            <a href="<?php echo home_url('/'); ?>enterate" class="enterate <?php if($segment1=='enterate'||$segment1=='noticias'||$segment1=='eventos'||$segment1=='campeonas'||$segment1=='videos'){ echo 'active'; } ?>"><i></i><span>Entérate</span></a>
+            <a href="<?php echo home_url('/'); ?>enterate" class="enterate 
+	            <?php if( $segment1=='enterate' || $segment1=='noticias' || $segment1=='eventos' || $segment1=='campeonas' || $segment1=='video' ) 
+		            { 	
+			            echo 'active';
+			          } 
+				      ?>
+				      <?php if ( (in_category('ultimas-noticias')) OR (in_category('noticias')) OR (in_category('eventos')) OR (in_category('eventos-destacados')) OR (in_category('boletin')) OR (in_category('campeonas')) OR (in_category('videos-anteriores')) ) 
+					      {		            
+		            		echo 'active'; 
+		          	}
+		          ?>		
+				      "><i></i><span>Entérate</span></a>
             <ul class="list-unstyled">
               <!--<li><a href="<?php echo home_url('/'); ?>poll">Tu opinión importa</a></li>-->
               <li class="light"><a href="<?php echo home_url('/'); ?>noticias">Noticias</a></li>
