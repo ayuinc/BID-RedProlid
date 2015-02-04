@@ -39,7 +39,7 @@ get_header(); ?>
 	  </div>
 	</section>
 	<section> 
-	  <div class="container-sm">
+	  <div class="container">
 	    <div class="row">
 				<div class="col-md-12">
 					<h3 class="light">Si quieres proponer un tema en esta sección, debes ser un usuario registrado, o haber ingresado a tu cuenta en Red PROLID.</h3>
