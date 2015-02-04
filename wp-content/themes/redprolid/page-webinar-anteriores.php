@@ -17,7 +17,7 @@ get_header(); ?>
     <div class="clearfix bg-panel sub-header">
       <div class="col-sm-7">
         <div>
-          <h1 style="color: #aeab8b;" class="">Webinarios anteriores</h1>
+          <h1>Webinarios anteriores</h1>
           <nav class="mt-21">
             <a href="#">Charlacafé &gt;&gt;</a>
           </nav>

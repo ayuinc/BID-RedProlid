@@ -18,14 +18,14 @@ get_header(); ?>
 			      </div>
 			    </div>
 			    <div class="clearfix sub-header">
-			      <div class="col-md-1">
+			      <div class="col-sm-1 col-xs-3">
 				      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="100%"></div>
 				    </div>
-		        <div class="col-md-4">
+		        <div class="col-sm-4 col-xs-9">
 		          <h1 class="brand-titular">Webinarios</h1>
 		        </div>
-		        <div class="col-md-7">
-		          <nav class="text-right">
+		        <div class="col-sm-7 col-xs-12">
+		          <nav class="text-right text-center-xs">
 		          	<a href="#" data-toggle="modal" data-target="#pdv-modal">¿Quieres proponernos un tema?</a> <span class="text-primary">|</span> 
 				        <a href="<?php echo home_url('/'); ?>webinarios-anteriores" class="">Webinarios anteriores</a>
 		          </nav>

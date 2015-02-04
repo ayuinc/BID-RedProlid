@@ -14,7 +14,7 @@ get_header(); ?>
     <div class="clearfix bg-panel sub-header">
       <div class="col-sm-7">
         <div>
-          <h1 style="color: #aeab8b;" class="">Videos anteriores</h1>
+          <h1>Videos anteriores</h1>
           <nav class="mt-21">
             <a href="<?php echo content_url('/'); ?>eventos">Videos >></a>
           </nav>

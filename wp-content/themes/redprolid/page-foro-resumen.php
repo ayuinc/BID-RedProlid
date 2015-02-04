@@ -16,11 +16,11 @@ get_header(); ?>
 	  <div class="container relative mb-14">
 	    <?php the_breadcrumb(); ?>	    
 	    <div class="clearfix sub-header bg-panel">
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <h1>Resumen del foro</h1>
         </div>
-        <div class="col-md-6">
-          <nav class="text-right">
+        <div class="col-sm-6">
+          <nav class="text-right text-center-xs">
             <a href="<?php echo home_url('/'); ?>charlacafe">Descargar como PDF</a> <span class="text-primary">|</span> <a href="#">Foros anteriores</a>
           </nav>
         </div>

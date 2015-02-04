@@ -20,7 +20,7 @@ get_header(); ?>
         </div>
         <div class="col-sm-7">
           <div>
-            <h1 style="color: #aeab8b;" class="">Resultados de tu búsqueda</h1>
+            <h1>Resultados de tu búsqueda</h1>
           </div>
         </div>
         <div class="col-sm-4">

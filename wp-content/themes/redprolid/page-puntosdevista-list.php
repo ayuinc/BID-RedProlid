@@ -14,7 +14,7 @@ get_header(); ?>
       <div class="clearfix bg-panel sub-header">
         <div class="col-sm-7">
           <div>
-            <h1 style="color: #aeab8b;" class="">Puntos de vista anteriores</h1>
+            <h1>Puntos de vista anteriores</h1>
           </div>
         </div>
       </div>

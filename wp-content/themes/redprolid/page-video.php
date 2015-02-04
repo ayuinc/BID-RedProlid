@@ -16,14 +16,14 @@ get_header(); ?>
     <div class="container">
       <?php the_breadcrumb(); ?> 
       <div class="clearfix sub-header">
-        <div class="col-md-1">
+        <div class="col-sm-1 col-xs-3">
           <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/video-icon-circle.png" alt="" width="100%"></div>
         </div>
-        <div class="col-md-7">
+        <div class="col-sm-4 col-xs-9">
           <h1>Video</h1>
         </div>
-        <div class="col-md-4">
-          <nav class="text-right mb-0 mt-0">
+        <div class="col-sm-7 col-xs-12">
+          <nav class="text-right text-center-xs">
             <a href="<?php echo home_url('/'); ?>video/videos-anteriores">Videos Anteriores</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>compartir-video">¿Quieres compartir un video?</a>
           </nav>	          
         </div>
