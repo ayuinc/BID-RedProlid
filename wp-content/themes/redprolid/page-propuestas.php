@@ -54,7 +54,7 @@ get_header(); ?>
 				<?php if( function_exists( 'ninja_forms_display_form' ) ){ ?>
 					<?php if ($tipo_de_formulario=='noticias') { ?>
 				  	<div class="text-center">
-					  	<h3>Ingresa los datos de la noticia</h3>
+					  	<h3>¿Quieres compartir una noticia?</h3>
 				  	</div>					
 						<?php ninja_forms_display_form( 3 ); ?>
 					<?php } ?>
