@@ -50,14 +50,12 @@ get_header(); ?>
 	<section>  
 	  <?php if ( is_user_logged_in() ) { ?>
 		  <div class="container-xs">
-		  	<div class="text-center">
-			  	<h3>¡Alerta!</h3>
-			  	<p>Sólo los usuarios registrados tienen acceso a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident omnis ratione et tempora impedit facere, illo, repellendus ipsa fugit illum veniam maiores possimus voluptatum aliquam esse pariatur soluta nobis officia.</p>
-		  	</div>
-				
 				<!--Noticias-->
 				<?php if( function_exists( 'ninja_forms_display_form' ) ){ ?>
 					<?php if ($tipo_de_formulario=='noticias') { ?>
+				  	<div class="text-center">
+					  	<h3>Ingresa los datos de la noticia</h3>
+				  	</div>					
 						<?php ninja_forms_display_form( 3 ); ?>
 					<?php } ?>
 				<?php } ?>
