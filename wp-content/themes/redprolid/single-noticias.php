@@ -2,7 +2,7 @@
   <div class="container relative">
     <?php the_breadcrumb(); ?>
     <div class="ph-70">
-      <div class="row">
+      <div class="row pb-14">
   	    <?php if( get_field('imagen_noticias') ) { ?>
         <div class="col-sm-4">
           <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
@@ -24,13 +24,22 @@
   	  <div class="row">
   			<div class="col-sm-12 with-hr">  	  
   		    <p><?php the_field('contenido_noticias'); ?></p>
-  		    <div class="text-center">
+  		    <p class="text-right"><a href="<?php the_field('link_publicacion_noticias'); ?>"  class="btn btn-primary">Lee la noticia completa</a></p>
+  		    <div class="text-right">
   		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
   		    </div>   
   			</div>
+  			<div class="col-sm-12 with-hr pv-21">
+	  			<div class="container-sm">
+					<p>
+						<span class="medium">Tipo de Recursos:</span> <?php the_field('tipo_recursos_noticias'); ?><br>
+						<span class="medium">Temas:</span> <?php the_field('tema_noticias'); ?>
+					</p> 
+  				</div>
+  			</div>
   	  </div>       
   	  <div class="row">
-  			<div class="col-sm-12">  
+  			<div class="col-sm-12 pv-21">  
   	    	<?php comments_template(); ?>
   			</div>
   	  </div>
