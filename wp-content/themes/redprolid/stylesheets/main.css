@@ -3265,7 +3265,7 @@ button.close {
 .bg-img-block-no-cover {
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: inherit !important;
+  background-size: 112px;
   background-position: center center; }
 
 .bg-img-block-center {
