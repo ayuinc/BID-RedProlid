@@ -81,7 +81,7 @@ get_header(); ?>
                 <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
                   <li>
                     <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-dtl-adonde-vamos" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png);"></div>
+                      <div class="bg-img-block-no-cover bg-img-block bg-dtl-adonde-vamos" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png);"></div>
                       <div class="dtl-title">
                         <h3>¿Adónde v@mos?</h3>
                         <div class="text-right">
@@ -92,7 +92,7 @@ get_header(); ?>
                   </li>
                   <li>
                     <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-dtl-carrera-vallas" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-carrera-vallas-icon.png);"></div>
+                      <div class="bg-img-block-no-cover bg-img-block bg-dtl-carrera-vallas" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-carrera-vallas-icon.png);"></div>
                       <div class="dtl-title">
                         <h3>Carrera de vallas</h3>
                         <div class="text-right">
@@ -103,7 +103,7 @@ get_header(); ?>
                   </li>
                   <li>
                     <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-dtl-nivelando-cancha" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-nivelando-cancha-icon.png);"></div>
+                      <div class="bg-img-block-no-cover bg-img-block bg-dtl-nivelando-cancha" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-nivelando-cancha-icon.png);"></div>
                       <div class="dtl-title">
                         <h3>Nivelando la cancha</h3>
                         <div class="text-right">
@@ -114,7 +114,7 @@ get_header(); ?>
                   </li>
                   <li>
                     <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-dtl-listas-politica" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-listas-politica-icon.png);"></div>
+                      <div class="bg-img-block-no-cover bg-img-block bg-dtl-listas-politica" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-listas-politica-icon.png);"></div>
                       <div class="dtl-title">
                         <h3>Listas para la política</h3>
                         <div class="text-right">
@@ -129,7 +129,7 @@ get_header(); ?>
                 <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
                   <li>
                     <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-dtl-agenda-genero" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-icon.png);"></div>
+                      <div class="bg-img-block-no-cover bg-img-block bg-dtl-agenda-genero" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-icon.png);"></div>
                       <div class="dtl-title">
                         <h3>Agenda de género</h3>
                         <div class="text-right">
@@ -140,7 +140,7 @@ get_header(); ?>
                   </li>
                   <li>
                     <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-dtl-pistas" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-pistas-icon.png);"></div>
+                      <div class="bg-img-block-no-cover bg-img-block bg-dtl-pistas" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-pistas-icon.png);"></div>
                       <div class="dtl-title">
                         <h3>Pistas</h3>
                         <div class="text-right">
@@ -151,7 +151,7 @@ get_header(); ?>
                   </li>
                   <li>
                     <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-dtl-la-pinta" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-icon.png);"></div>
+                      <div class="bg-img-block-no-cover bg-img-block bg-dtl-la-pinta" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-icon.png);"></div>
                       <div class="dtl-title">
                         <h3>La pinta no es lo...</h3>
                         <div class="text-right">
