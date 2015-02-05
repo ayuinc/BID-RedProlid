@@ -21,7 +21,7 @@ get_header(); ?>
         </div>
       </div>
       <div class="sub-header-icon">
-        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/video-icon-square.png" width="94px" height="auto" alt="">
+        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/video-icon-square-alpha.png" width="94px" height="auto" alt="">
       </div>
     </div>
     <div class="ph-70">
