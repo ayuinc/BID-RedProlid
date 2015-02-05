@@ -86,11 +86,11 @@ get_header(); ?>
 									<?php //while ( have_posts() ) : the_post(); ?>  									               
                   <li>
                     <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php the_field('imagen_home_dtl'); ?>);"></div>
+                      <div class="bg-img-block-no-cover bg-img-block" style="background-image: url();"></div>
                       <div class="dtl-title">
-                        <h3><?php the_title(); ?></h3>
+                        <h3><?php //the_title(); ?></h3>
                         <div class="text-right">
-                          <a href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>" class="btn btn-xs btn-primary">Ver más</a>
+                          <a href="<?php //the_field('link_a_seccion_interna_home_dtl'); ?>" class="btn btn-xs btn-primary">Ver más</a>
                         </div>
                       </div>
                     </div>
