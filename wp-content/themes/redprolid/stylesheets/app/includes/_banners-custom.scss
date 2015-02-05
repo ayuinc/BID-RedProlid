@@ -17,9 +17,6 @@
 		// 	width: 100%;
 		// 	height: auto;
 		// }
-		&.half-height {
-			min-height: $banner-height / 2;
-		}
 	}
 	.banner-label {
 		@include position(absolute, -14px null null $container-fluid);
@@ -51,4 +48,14 @@
 			top: inherit;
 		}
 	}
+	&.half-height {
+		.banner-pic,
+		.banner-content {
+			min-height: $banner-height / 2;
+		}
+	}	
+}
+
+.flex-none {
+	display: block;
 }
