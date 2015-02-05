@@ -297,7 +297,6 @@ get_header(); ?>
                   <h3 class="mediumt mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 									<?php $tempDate = get_the_date(); ?>
 									<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>                  
-                  <p><?php the_field('descripcion_video'); ?></p>
                   <iframe width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
                   <div class="text-right mt-21">
                     <p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="light">Más aquí >></a></p>
