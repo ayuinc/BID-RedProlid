@@ -5942,7 +5942,7 @@ form.search button {
     left: 0;
     background-size: cover; }
   .enterate-search form input[type="search"] {
-    width: 275px; }
+    width: 275px !important; }
 
 .enterate-calendar p {
   font-size: 70px !important; }
