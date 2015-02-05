@@ -98,12 +98,12 @@ get_header(); ?>
                     <h3 class="medium">Últimos recursos</h3>
                   </li>
                   <li>
-                    <a href="<?php echo home_url('/'); ?>all-posts" class="light">Todos los recursos >></a>
+                    <a href="<?php echo home_url('/'); ?>recursos" class="light">Todos los recursos >></a>
                   </li>
                 </ul>
                 <ul class="list-unstyled">
                 	<!-- Start the Loop. -->
-                	<?php query_posts( 'category_name=dtl-debates&posts_per_page=3' ); ?>	
+                	<?php query_posts( 'category_name=recursos&posts_per_page=3' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>    
 			                  <li class="mb-14">
 			                    <h5 class="medium"><?php the_title(); ?></h5>
