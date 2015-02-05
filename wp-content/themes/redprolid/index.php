@@ -88,7 +88,7 @@ get_header(); ?>
 							while ( $the_query->have_posts() ) :
 							$the_query->the_post();
 							?>	            
-              <div class="item  class="item<?php if ($i == 1) echo 'active'; ?>"">
+              <div class="item<?php if ($i == 1) echo 'active'; ?>">
                 <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">	                
                   <li>
                     <div class="dtl-item" data-href="#">
