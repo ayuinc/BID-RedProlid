@@ -5941,6 +5941,8 @@ form.search button {
     bottom: -101px;
     left: 0;
     background-size: cover; }
+  .enterate-search form input[type="search"] {
+    width: 275px; }
 
 .enterate-calendar p {
   font-size: 70px !important; }
