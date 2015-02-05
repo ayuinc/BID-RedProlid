@@ -82,87 +82,21 @@ get_header(); ?>
             <div class="carousel-inner" role="listbox">
               <div class="item active">
                 <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
+			          	<?php query_posts( 'category_name=video-homepage&posts_per_page=3' ); ?>	
+									<?php while ( have_posts() ) : the_post(); ?>  	                
                   <li>
                     <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png);"></div>
+                      <div class="bg-img-block-no-cover bg-img-block bg-dtl-adonde-vamos" style="background-image: url(<?php the_field('imagen_home_dtl'); ?>);"></div>
+
                       <div class="dtl-title">
-                        <h3>¿Adónde v@mos?</h3>
+                        <h3><?php the_title(); ?></h3>
                         <div class="text-right">
-                          <a href="#" class="btn btn-xs btn-primary">Ver más</a>
+                          <a href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>" class="btn btn-xs btn-primary">Ver más</a>
                         </div>
                       </div>
                     </div>
                   </li>
-                  <li>
-                    <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-carrera-vallas-icon.png);"></div>
-                      <div class="dtl-title">
-                        <h3>Carrera de vallas</h3>
-                        <div class="text-right">
-                          <a href="#" class="btn btn-xs btn-primary">Ver más</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-nivelando-cancha-icon.png);"></div>
-                      <div class="dtl-title">
-                        <h3>Nivelando la cancha</h3>
-                        <div class="text-right">
-                          <a href="#" class="btn btn-xs btn-primary">Ver más</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-listas-politica-icon.png);"></div>
-                      <div class="dtl-title">
-                        <h3>Listas para la política</h3>
-                        <div class="text-right">
-                          <a href="#" class="btn btn-xs btn-primary">Ver más</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="item">
-                <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
-                  <li>
-                    <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-icon.png);"></div>
-                      <div class="dtl-title">
-                        <h3>Agenda de género</h3>
-                        <div class="text-right">
-                          <a href="#" class="btn btn-xs btn-primary">Ver más</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-pistas-icon.png);"></div>
-                      <div class="dtl-title">
-                        <h3>Pistas</h3>
-                        <div class="text-right">
-                          <a href="#" class="btn btn-xs btn-primary">Ver más</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-icon.png);"></div>
-                      <div class="dtl-title">
-                        <h3>La pinta no es lo...</h3>
-                        <div class="text-right">
-                          <a href="#" class="btn btn-xs btn-primary">Ver más</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
+                  <?php endwhile; ?>
                 </ul>
               </div>
             </div>
