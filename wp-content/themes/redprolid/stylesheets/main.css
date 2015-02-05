@@ -4797,7 +4797,7 @@ header {
         position: absolute;
         display: block;
         width: 217%;
-        border-bottom: 1px dotted #f08854; }
+        border-bottom: 1px dotted #f1f0e8; }
       .sub-header:not(.bg-panel) > div:nth-child(2).col-sm-4:after {
         width: 270%; }
       .sub-header:not(.bg-panel) > div:nth-child(2).col-sm-6:after {
@@ -5560,6 +5560,12 @@ form.search button {
     bottom: 0;
     left: 10.5px;
     top: inherit; }
+  .banner.half-height .banner-pic,
+  .banner.half-height .banner-content {
+    min-height: 140px; }
+
+.flex-none {
+  display: block; }
 
 .panel.panel-custom {
   min-height: 210px; }

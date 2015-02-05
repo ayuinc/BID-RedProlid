@@ -48,4 +48,14 @@
 			top: inherit;
 		}
 	}
+	&.half-height {
+		.banner-pic,
+		.banner-content {
+			min-height: $banner-height / 2;
+		}
+	}	
+}
+
+.flex-none {
+	display: block;
 }
