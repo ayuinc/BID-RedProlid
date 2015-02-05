@@ -260,8 +260,15 @@
       $('.jcarousel').jcarousel({
           // Configuration goes here
       });
+      $('.left.carousel-control').click(function() {
+          $('.jcarousel').jcarousel('scroll', '-=1');
+      });
+
+      $('.right.carousel-control').click(function() {
+          $('.jcarousel').jcarousel('scroll', '+=1');
+      });
     });
-    
+
 		</script>    
     
     <?php wp_footer(); ?>

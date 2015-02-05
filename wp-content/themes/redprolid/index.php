@@ -72,7 +72,7 @@ get_header(); ?>
             <p>Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
           </div>
           <div class="carousel">
-            <div class="jcarousel carousel">
+            <div class="jcarousel">
               <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
                 <?php query_posts( 'category_name=home-desarrolla-tu-liderazgo' ); ?> 
                 <?php while ( have_posts() ) : the_post(); ?>                   

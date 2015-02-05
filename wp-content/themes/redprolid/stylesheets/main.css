@@ -5794,7 +5794,7 @@ form.search button {
 .dtl-carousel {
   width: 2000px; }
   .dtl-carousel li {
-    width: 240px; }
+    width: 240px !important; }
     .dtl-carousel li div {
       min-height: 0 !important; }
   .dtl-carousel > li {
