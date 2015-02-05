@@ -30,27 +30,30 @@ get_header(); ?>
             </ol> -->
 
             <!-- Wrapper for slides -->
+          	<?php query_posts( 'category_name=video-homepage&posts_per_page=3' ); ?>	
+						<?php while ( have_posts() ) : the_post(); ?>  
             <div class="carousel-inner">
               <div class="item active">
                 <div class="row">
                   <div class="col-sm-7 minh-350 flex-middle">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" width="100%" height="315" src="//www.youtube.com/embed/JJqT7jaHXN0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                      <iframe class="embed-responsive-item" width="100%" height="315" src="//www.youtube.com/embed/<?php the_field('id_video_homepage'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                   </div>
                   <div class="col-sm-5 minh-350 flex-middle-end">
                     <div>
-                      <h3 class="light text-gray-dark"><span class="uppercase">Explora y descubre</span><br>todo lo que la Red PROLID te ofrece</h3>
+                      <h3 class="light text-gray-dark"><span class="uppercase"><?php the_title(); ?></h3>
                       <hr class="hr-white">
                       <div class="text-right">
-                        <a href="#" class="btn btn-outline btn-white">Más aquí</a>
+                        <a href="<?php the_field('link_contenido_homepage'); ?>" class="btn btn-outline btn-white">Más aquí</a>
                       </div>
                     </div>
                   </div>
                 </div>          
               </div>
             </div>
-
+						<?php endwhile; ?> 
+						
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
               <span class="icon-prev"></span>
