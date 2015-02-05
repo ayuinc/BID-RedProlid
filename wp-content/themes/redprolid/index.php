@@ -69,7 +69,7 @@ get_header(); ?>
         <div class="container ph-70-sm">
           <div class="text-center">
             <h2>Desarrolla tu liderazgo</h2>
-            <p class="lead">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
+            <p>Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
           </div>
           <div id="carousel-home-dtl" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
