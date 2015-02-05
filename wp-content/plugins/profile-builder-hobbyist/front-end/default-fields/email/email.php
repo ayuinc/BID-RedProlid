@@ -46,20 +46,20 @@ function wppb_check_email_value( $message, $field, $request_data, $form_location
 		$user_signup = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM ".$wpdb->prefix."signups WHERE user_email = %s", $request_data['email'] ) );
 	
 		if ( !empty( $user_signup ) )	
-			return __( 'This email is already reserved to be used soon.', 'profilebuilder' ) .'<br/>'. __( 'Please try a different one!', 'profilebuilder' );
+			return __( 'Este correo electrónico ya está reservado para ser utilizado pronto.', 'profilebuilder' ) .'<br/>'. __( 'Por favor, pruebe con otro!', 'profilebuilder' );
 	}
 	
 	$users = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM {$wpdb->users} WHERE user_email = %s", $request_data['email'] ) );
 	if ( !empty( $users ) ){
 		if ( $form_location == 'register' )
-			return __( 'This email is already in use.', 'profilebuilder' ) .'<br/>'. __( 'Please try a different one!', 'profilebuilder' );
+			return __( 'Este correo electrónico ya está en uso.', 'profilebuilder' ) .'<br/>'. __( 'Por favor, pruebe con otro!', 'profilebuilder' );
 		
 		if ( $form_location == 'edit_profile' ){
 			$current_user = wp_get_current_user();
 			
 			foreach ( $users as $user )
 				if ( $user->ID != $current_user->ID )
-					return __( 'This email is already in use.', 'profilebuilder' ) .'<br/>'. __( 'Please try a different one!', 'profilebuilder' );
+					return __( 'Este correo electrónico ya está en uso.', 'profilebuilder' ) .'<br/>'. __( 'Por favor, pruebe con otro!', 'profilebuilder' );
 		}
 	}
 

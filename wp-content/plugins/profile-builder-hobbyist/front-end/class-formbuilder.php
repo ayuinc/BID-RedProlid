@@ -221,16 +221,16 @@ class Profile_Builder_Form_Creator{
 
                         switch ( $account_management_settings ){
                             case 'ec-no_aa-no':
-                                $wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "The account %1s has been successfully created!", 'profilebuilder' ), $account_name ), $account_name );
+                                $wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "La cuenta %1s se ha creado con éxito!", 'profilebuilder' ), $account_name ), $account_name );
                                 break;
                             case 'ec-yes_aa-no':
-                                $wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "Before you can access your account %1s, you need to confirm your email address. Please check your inbox and click the activation link.", 'profilebuilder' ), $account_name ), $account_name );
+                                $wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "Antes de que pueda acceder a su cuenta %1s, tiene que confirmar su dirección de correo electrónico. Por favor revisa tu correo y haga clic en el enlace de activación.", 'profilebuilder' ), $account_name ), $account_name );
                                 break;
                             case 'ec-no_aa-yes':
-                                $wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "Before you can access your account %1s, an administrator has to approve it. You will be notified via email.", 'profilebuilder' ), $account_name ), $account_name );
+                                $wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "Antes de que pueda acceder a su cuenta %1s, un administrador tiene que aprobarlo. Se le notificará por correo electrónico.", 'profilebuilder' ), $account_name ), $account_name );
                                 break;
                             case 'ec-yes_aa-yes':
-                                $wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "Before you can access your account %1s, you need to confirm your email address. Please check your inbox and click the activation link.", 'profilebuilder' ), $account_name ), $account_name );
+                                $wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "Antes de que pueda acceder a su cuenta% 1s, tiene que confirmar su dirección de correo electrónico. Por favor revisa tu correo y haga clic en el enlace de activación.", 'profilebuilder' ), $account_name ), $account_name );
                                 break;
                         }
                         $redirect = apply_filters( 'wppb_register_redirect', $this->wppb_get_redirect() );
@@ -240,7 +240,7 @@ class Profile_Builder_Form_Creator{
                         return;
                     } elseif ( $this->args['form_type'] == 'edit_profile' ){
 						$redirect = apply_filters( 'wppb_edit_profile_redirect', $this->wppb_get_redirect() );
-						echo $form_message_tpl_start  . apply_filters( 'wppb_edit_profile_success_message', __( 'Your profile has been successfully updated!', 'profilebuilder' ) ) . $form_message_tpl_end . $redirect;
+						echo $form_message_tpl_start  . apply_filters( 'wppb_edit_profile_success_message', __( 'Su perfil ha sido actualizado con éxito!', 'profilebuilder' ) ) . $form_message_tpl_end . $redirect;
 						//action hook after edit profile success
 	                    do_action('wppb_edit_profile_success', $_REQUEST, $this->args['form_name'], $user_id);
                         if ( apply_filters( 'wppb_no_form_after_profile_update', false ) )
@@ -250,7 +250,7 @@ class Profile_Builder_Form_Creator{
 				}
 			
 			}else
-				echo $message.apply_filters( 'wppb_general_top_error_message', '<p id="wppb_general_top_error_message">'.__( 'There was an error in the submitted form', 'profilebuilder' ).'</p>' );
+				echo $message.apply_filters( 'wppb_general_top_error_message', '<p id="wppb_general_top_error_message">'.__( 'Se produjo un error en el formulario enviado', 'profilebuilder' ).'</p>' );
 		
 		}else
 			echo $message;
@@ -287,7 +287,8 @@ class Profile_Builder_Form_Creator{
 		// use this action hook to add extra content after the register form
 		do_action( 'wppb_after_'. $this->args['form_type'] .'_fields' );
 		
-	}
+	}max upload size
+Please try a different one!
 	
 	function wppb_output_form_fields( $global_request, $field_check_errors ){
 		
