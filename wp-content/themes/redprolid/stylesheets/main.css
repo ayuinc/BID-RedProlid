@@ -4797,7 +4797,7 @@ header {
         position: absolute;
         display: block;
         width: 217%;
-        border-bottom: 1px dotted #f9f8f4; }
+        border-bottom: 1px dotted #f1f0e8; }
       .sub-header:not(.bg-panel) > div:nth-child(2).col-sm-4:after {
         width: 270%; }
       .sub-header:not(.bg-panel) > div:nth-child(2).col-sm-6:after {
