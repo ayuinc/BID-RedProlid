@@ -5538,8 +5538,6 @@ form.search button {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 280px; }
-    .banner .banner-pic.half-height {
-      min-height: 140px; }
   .banner .banner-label {
     position: absolute;
     top: -14px;
@@ -5562,6 +5560,12 @@ form.search button {
     bottom: 0;
     left: 10.5px;
     top: inherit; }
+  .banner.half-height .banner-pic,
+  .banner.half-height .banner-content {
+    min-height: 140px; }
+
+.flex-none {
+  display: block; }
 
 .panel.panel-custom {
   min-height: 210px; }

@@ -92,13 +92,13 @@ get_header(); ?>
     	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
     	<?php query_posts( 'cat=11&posts_per_page=10&paged=' . $paged ); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-	  	<div class="banner">
-	  		<div class="banner-pic half-height col-sm-2 bg-panel text-center lead-ch normalize-text">
+	  	<div class="banner half-height">
+	  		<div class="banner-pic col-sm-2 bg-panel text-center lead-ch normalize-text">
 	  			<?php $tempDate = get_the_date(); ?>
 	  			<h3 class="h1"><?php echo date_i18n('j', strtotime( $tempDate)); ?></h3>
 			    <p><?php echo date_i18n('M', strtotime( $tempDate)); ?></p>
 	  		</div>
-	  		<div class="banner-content col-sm-10">
+	  		<div class="banner-content flex-none col-sm-10">
 	  			<h4 class="medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h4>
           <p>
             <strong>Lugar:</strong> <?php the_field('lugar_evento'); ?><br>
