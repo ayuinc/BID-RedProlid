@@ -83,7 +83,7 @@ get_header(); ?>
               <div class="item active">
                 <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
 			          	<?php query_posts( 'category_name=home-desarrolla-tu-liderazgo' ); ?>	
-									<?php while ( have_posts() ) : the_post(); ?>  	                
+									<?php while ( have_posts() ) : the_post(); ?>  									               
                   <li>
                     <div class="dtl-item" data-href="#">
                       <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php the_field('imagen_home_dtl'); ?>);"></div>
