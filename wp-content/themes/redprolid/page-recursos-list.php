@@ -20,9 +20,9 @@ get_header(); ?>
           </nav>
         </div>
       </div>
-      <div class="sub-header-icon">
-        <!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" width="94px" height="auto" alt="">-->
-      </div>
+      <!--<div class="sub-header-icon">
+        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" width="94px" height="auto" alt="">
+      </div>-->
     </div>	      
     <div class="ph-70">
       <div class="row">
@@ -33,7 +33,7 @@ get_header(); ?>
             <div class="title">
               <h3 class="medium mb-0"><a href="<?php the_field('recurso_link'); ?>"><?php the_title(); ?></a></h3>
               <small class="date">
-              	<?php the_field('recurso_autor'); ?>, <?php the_field('recurso_año_de_publicacion'); ?> <a href="<?php the_field('recurso_link'); ?>" class="text-primary">Lee más &gt;&gt;</a>
+              	<?php the_field('recurso_autor'); ?>, <?php the_field('recurso_año_de_publicacion'); ?>
               </small>                
             </div>
             <div class="content mb-7">
