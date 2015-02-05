@@ -250,7 +250,7 @@ class Profile_Builder_Form_Creator{
 				}
 			
 			}else
-				echo $message.apply_filters( 'wppb_general_top_error_message', '<p id="wppb_general_top_error_message">'.__( 'There was an error in the submitted form', 'profilebuilder' ).'</p>' );
+				echo $message.apply_filters( 'wppb_general_top_error_message', '<p id="wppb_general_top_error_message">'.__( 'Se produjo un error en el formulario enviado', 'profilebuilder' ).'</p>' );
 		
 		}else
 			echo $message;
@@ -287,7 +287,8 @@ class Profile_Builder_Form_Creator{
 		// use this action hook to add extra content after the register form
 		do_action( 'wppb_after_'. $this->args['form_type'] .'_fields' );
 		
-	}
+	}max upload size
+Please try a different one!
 	
 	function wppb_output_form_fields( $global_request, $field_check_errors ){
 		
