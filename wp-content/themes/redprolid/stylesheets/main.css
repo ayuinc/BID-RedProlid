@@ -5538,6 +5538,8 @@ form.search button {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 280px; }
+    .banner .banner-pic.half-height {
+      min-height: 140px; }
   .banner .banner-label {
     position: absolute;
     top: -14px;

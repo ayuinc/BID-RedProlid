@@ -17,6 +17,9 @@
 		// 	width: 100%;
 		// 	height: auto;
 		// }
+		&.half-height {
+			min-height: $banner-height / 2;
+		}
 	}
 	.banner-label {
 		@include position(absolute, -14px null null $container-fluid);
