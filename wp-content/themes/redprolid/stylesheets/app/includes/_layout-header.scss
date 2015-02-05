@@ -11,8 +11,8 @@ header {
 .sub-header {
 	border-radius: $border-radius-base;
 	// border-bottom: 1px dotted $panel-bg;
-	margin-bottom: 42px;
-	margin-bottom: rem(42px);
+	margin-bottom: 21px;
+	margin-bottom: rem(21px);
 	@include position(relative);
 	@include normalize-text;
 	> [class*="col-"] {

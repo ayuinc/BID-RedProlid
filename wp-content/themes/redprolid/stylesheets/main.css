@@ -4738,8 +4738,8 @@ header {
 
 .sub-header {
   border-radius: 3px;
-  margin-bottom: 42px;
-  margin-bottom: 2.625rem;
+  margin-bottom: 21px;
+  margin-bottom: 1.3125rem;
   position: relative; }
   .sub-header h1, .sub-header h2, .sub-header h3, .sub-header h4, .sub-header h5, .sub-header h6,
   .sub-header .h1, .sub-header .h2, .sub-header .h3, .sub-header .h4, .sub-header .h5, .sub-header .h6,
