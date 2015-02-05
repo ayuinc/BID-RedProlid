@@ -91,10 +91,10 @@ get_header(); ?>
               </ul>
             </div>
             <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-home-dtl" role="button" data-slide="prev">
+            <a class="left carousel-control" href="#">
               <span class="icon-prev out"></span>
             </a>
-            <a class="right carousel-control" href="#carousel-home-dtl" role="button" data-slide="next">
+            <a class="right carousel-control" href="#">
               <span class="icon-next out"></span>
             </a>
           </div>
