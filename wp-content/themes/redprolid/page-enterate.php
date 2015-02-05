@@ -16,13 +16,13 @@ get_header(); ?>
 			  <div class="container relative mb-14">
 			     <?php the_breadcrumb(); ?>
           <div class="clearfix sub-header">
-            <div class="col-xs-3 col-sm-3">
+            <div class="col-xs-3 col-sm-1">
               <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" class="img-responsive"></div>
             </div>
             <div class="col-xs-9 col-sm-4">
               <h1 class="brand-titular">Entérate</h1>
             </div>
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-7">
               <nav class="text-right text-center-xs mb-0 mt-0">
                 <a href="<?php echo home_url('/'); ?>puntos-de-vista-list">¿Quieres compartir un recurso?</a> 
               </nav>
