@@ -48,6 +48,11 @@
 	@include bg-img-control;
 	background-position: center center;
 }
+.bg-img-block-no-cover {
+	@include bg-img-control;
+	background-size: inherit !important;
+	background-position: center center;
+}
 .bg-img-block-center {
 	@include bg-img-control-center;
 }
