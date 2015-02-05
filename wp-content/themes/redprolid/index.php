@@ -80,14 +80,18 @@ get_header(); ?>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
-			          	<?php query_posts( 'category_name=home-desarrolla-tu-liderazgo' ); ?>	
-									<?php while ( have_posts() ) : the_post(); ?>  	                
+							<?php query_posts( 'category_name=home-desarrolla-tu-liderazgo' ); ?>	
+							<?php
+							// Previous code here...
+							$i = 1;
+							while ( $the_query->have_posts() ) :
+							$the_query->the_post();
+							?>	            
+              <div class="item  class="item<?php if ($i == 1) echo 'active'; ?>"">
+                <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">	                
                   <li>
                     <div class="dtl-item" data-href="#">
                       <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php the_field('imagen_home_dtl'); ?>);"></div>
-
                       <div class="dtl-title">
                         <h3><?php the_title(); ?></h3>
                         <div class="text-right">
@@ -96,9 +100,13 @@ get_header(); ?>
                       </div>
                     </div>
                   </li>
-                  <?php endwhile; ?>
-                </ul>
+	              </ul>
               </div>
+							<?php
+							$i++;
+							endwhile;
+							wp_reset_postdata();
+							?>              
             </div>
 
             <!-- Controls -->
