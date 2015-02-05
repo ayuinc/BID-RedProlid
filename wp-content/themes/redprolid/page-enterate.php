@@ -292,7 +292,7 @@ get_header(); ?>
                 </div>
                 <div class="panel-body pt-0">
 								<?php if ( have_posts() ) : ?>
-                <?php query_posts( array( 'category_name' => 'campeonas', 'posts_per_page' => 1 ) ); ?>
+                <?php query_posts( array( 'category_name' => 'video', 'posts_per_page' => 1 ) ); ?>
 									<?php while ( have_posts() ) : the_post(); ?>	                
                   <h3 class="mediumt mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 									<?php $tempDate = get_the_date(); ?>
