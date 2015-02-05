@@ -80,7 +80,8 @@ get_header(); ?>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-							<?php query_posts( 'category_name=home-desarrolla-tu-liderazgo' ); ?>	
+							<?php $the_query = new WP_Query( 'category_name=home-desarrolla-tu-liderazgo&posts_per_page=5' ); ?>
+							<?php if ( $the_query->have_posts() ) : ?>							
 							<?php
 							// Previous code here...
 							$i = 1;
@@ -106,7 +107,8 @@ get_header(); ?>
 							$i++;
 							endwhile;
 							wp_reset_postdata();
-							?>              
+							?>     
+							<?php endif; ?>         
             </div>
 
             <!-- Controls -->
