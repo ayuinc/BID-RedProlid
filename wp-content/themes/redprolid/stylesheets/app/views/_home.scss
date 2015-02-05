@@ -135,8 +135,15 @@
 }
 
 /* DTL CAROUSEL */
+.jcarousel {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
 .dtl-carousel {
+	width: 2000px;
 	li {
+		width: 240px;
 		div {
 			min-height: 0 !important;
 		}
