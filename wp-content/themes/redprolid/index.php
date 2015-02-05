@@ -83,7 +83,7 @@ get_header(); ?>
               <div class="item active">
                 <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
 			          	<?php $wp_query = query_posts( 'category_name=home-desarrolla-tu-liderazgo' ); ?>
-			          	<?php echo $myposts = $wp_query->post_count;	?>
+			          	<?php echo $wp_query->post_count;	?>
 									<?php while ( have_posts() ) : the_post(); ?>  	                
                   <li>
                     <div class="dtl-item" data-href="#">
