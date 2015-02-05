@@ -109,7 +109,7 @@ get_header(); ?>
 			                    <h5 class="medium"><?php the_title(); ?></h5>
 			                    <p><?php the_field('recurso_descripcion'); ?></p>
 			                    <small class="date">
-			                    	Autor: <?php the_field('recurso_autor'); ?>, <?php the_field('recurso_año_de_publicacion'); ?> <a href="<?php the_field('recurso_link'); ?>" class="text-primary">Lee más &gt;&gt;</a>
+			                    	<?php the_field('recurso_autor'); ?>, <?php the_field('recurso_año_de_publicacion'); ?> <a href="<?php the_field('recurso_link'); ?>" class="text-primary">Lee más &gt;&gt;</a>
 			                    </small>
 			                  </li>
                         <hr>
