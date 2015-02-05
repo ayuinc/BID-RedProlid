@@ -291,12 +291,19 @@ get_header(); ?>
                   </ul>
                 </div>
                 <div class="panel-body pt-0">
-                  <h3 class="mediumt mb-0 pb-0">Conoce la Red Prolid</h3>
-                  <p>La red para mujeres líderes del sector público. </p>
-                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
+								<?php if ( have_posts() ) : ?>
+                <?php query_posts( array( 'category_name' => 'campeonas', 'posts_per_page' => 1 ) ); ?>
+									<?php while ( have_posts() ) : the_post(); ?>	                
+                  <h3 class="mediumt mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+									<?php $tempDate = get_the_date(); ?>
+									<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>                  
+                  <p><?php the_field('descripcion_video'); ?></p>
+                  <iframe width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
                   <div class="text-right mt-21">
-                    <p class="text-right"><a href="#" class="light">Más aquí >></a></p>
+                    <p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="light">Más aquí >></a></p>
                   </div>
+			            <?php endwhile; ?>
+								<?php endif; ?>                   
                 </div>
               </div>
             </div>
