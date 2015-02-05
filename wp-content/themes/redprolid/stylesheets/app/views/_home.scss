@@ -174,3 +174,37 @@
 	}
 }
 
+
+
+
+// DTL HOME CAROUSEL 
+$dtl-colors-list: 
+	$dtl-adonde-vamos,
+	$dtl-agenda-genero,
+	$dtl-carrera-vallas,
+	$dtl-la-pinta,
+	$dtl-listas-politica,
+	$dtl-nivelando-cancha,
+	$dtl-pistas;
+
+$dtl-colors-sufix-list:
+	"dtl-adonde-vamos",
+	"dtl-agenda-genero",
+	"dtl-carrera-vallas",
+	"dtl-la-pinta",
+	"dtl-listas-politica",
+	"dtl-nivelando-cancha",
+	"dtl-pistas";
+
+@for $i from 1 through length($dtl-colors-list) {
+	.bg-#{nth($dtl-colors-sufix-list, $i)} {
+		background-color: #{nth($dtl-colors-list, $i)};
+	}
+}
+
+
+
+
+
+
+

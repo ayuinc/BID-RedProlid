@@ -5809,6 +5809,27 @@ form.search button {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.bg-dtl-adonde-vamos {
+  background-color: #F05F6A; }
+
+.bg-dtl-agenda-genero {
+  background-color: #C02F73; }
+
+.bg-dtl-carrera-vallas {
+  background-color: #9A205C; }
+
+.bg-dtl-la-pinta {
+  background-color: #037E8F; }
+
+.bg-dtl-listas-politica {
+  background-color: #015A71; }
+
+.bg-dtl-nivelando-cancha {
+  background-color: #599A97; }
+
+.bg-dtl-pistas {
+  background-color: #007C8D; }
+
 .red-prolid-grid:before, .red-prolid-grid:after {
   content: " ";
   display: table; }
