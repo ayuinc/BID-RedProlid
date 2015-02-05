@@ -23,10 +23,10 @@ get_header(); ?>
     <div class="mh-700">
       <section id="hero-unit">
         <div class="container pv-21">
-          <div id="carousel-example-generic" class="hidden-sm-down carousel slide bg-panel border-radius p-21 bg-img-block bg-img-block-top bg-img-block-right" data-ride="carousel" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png);">
+          <div id="carousel-home" class="hidden-sm-down carousel slide bg-panel border-radius p-21 bg-img-block bg-img-block-top bg-img-block-right" data-ride="carousel" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png);">
             <!-- Indicators -->
             <!-- <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> 
+              <li data-target="#carousel-home" data-slide-to="0" class="active"></li> 
             </ol> -->
 
             <!-- Wrapper for slides -->
@@ -52,10 +52,10 @@ get_header(); ?>
             </div>
 
             <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
               <span class="icon-prev"></span>
             </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
               <span class="icon-next"></span>
             </a>
           </div>
@@ -63,16 +63,16 @@ get_header(); ?>
         </div>
       </section>
       <section class="dtl-home mt-21 mb-21">
-        <div class="container ph-70-sm pb-70">
+        <div class="container ph-70-sm">
           <div class="text-center">
             <h2>Desarrolla tu liderazgo</h2>
             <p class="lead">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
           </div>
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <div id="carousel-home-dtl" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> 
-              <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li> 
+              <li data-target="#carousel-home-dtl" data-slide-to="0" class="active"></li> 
+              <li data-target="#carousel-home-dtl" data-slide-to="1" class=""></li> 
             </ol>
 
             <!-- Wrapper for slides -->
@@ -172,10 +172,10 @@ get_header(); ?>
             </div>
 
             <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <a class="left carousel-control" href="#carousel-home-dtl" role="button" data-slide="prev">
               <span class="icon-prev out"></span>
             </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <a class="right carousel-control" href="#carousel-home-dtl" role="button" data-slide="next">
               <span class="icon-next out"></span>
             </a>
           </div>
