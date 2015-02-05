@@ -123,7 +123,7 @@ get_header(); ?>
             <div class="panel-body pt-0">
 	            <div class="row">
 		            <div class="col-md-12">
-		              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		              <div id="carousel-enterate" class="carousel slide" data-ride="carousel">
 		                <!-- Wrapper for slides -->
 		                <div class="carousel-inner pl-35 pr-35">
 		                  <ul class="grid-list grid-list-3 item active pl-7">	
@@ -155,10 +155,10 @@ get_header(); ?>
 		                </div>
 		
 		                <!-- Controls -->
-		                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		                <a class="left carousel-control" href="#carousel-enterate" role="button" data-slide="prev">
 		                  <span class="icon-prev"></span>
 		                </a>
-		                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		                <a class="right carousel-control" href="#carousel-enterate" role="button" data-slide="next">
 		                  <span class="icon-next"></span>
 		                </a>
 		              </div> <!-- END:CAROUSEL -->			            
@@ -289,21 +289,19 @@ get_header(); ?>
           </div>
         </div>
       </div>
-      <div>
-        <div class="container-sm">
-          <div class="row">
-            <div class="col-md-3">
-              <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/enterate-buzon.png" alt="" class="img-responsive">
+      <div class="container-sm pv-21">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/enterate-buzon.png" alt="" class="img-responsive">
+          </div>
+          <div class="col-md-6 separador-boletines pt-14 pb-14 pr-14 ">
+            <h3 class="medium text-right">Suscríbete a nuestro boletín y descárgalo gratis </h3>
+            <div class="text-right">
+              <a href="#" class="light" data-toggle="modal" data-target="#mailChimp">Aquí >></a>
             </div>
-            <div class="col-md-6 separador-boletines pt-14 pb-14 pr-14 ">
-              <h3 class="medium text-right">Suscríbete a nuestro boletín y descárgalo gratis </h3>
-              <div class="text-right">
-                <a href="#" class="light" data-toggle="modal" data-target="#mailChimp">Aquí >></a>
-              </div>
-            </div>
-            <div class="col-md-3 mt-35 pl-14">
-              <a href="#" class="btn btn-primary">Boletines</a>
-            </div>
+          </div>
+          <div class="col-md-3 mt-35 pl-14">
+            <a href="#" class="btn btn-primary">Boletines</a>
           </div>
         </div>
       </div>

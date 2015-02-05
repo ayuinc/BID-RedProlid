@@ -44,7 +44,7 @@ get_header(); ?>
 	<section class="bg-panel pt-21 pb-28 mb-21">
 	  <div class="container ph-70-md">
 	  	<h2>Eventos destacados</h2>
-	  	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	  	<div id="carousel-eventos-destacados" class="carousel slide" data-ride="carousel">
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
@@ -52,7 +52,7 @@ get_header(); ?>
 					<?php if ( have_posts() ) : ?>
             <?php query_posts( array( 'category_name' => 'eventos-destacados', 'posts_per_page' => 1 ) ); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
-		        	<div class="item">
+		        	<div class="item active">
 		        		<div class="banner">
 		        			<div class="banner-pic col-sm-4" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
 		        			<div class="banner-content col-sm-8">
@@ -74,10 +74,10 @@ get_header(); ?>
         </div>
 
         <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <a class="left carousel-control" href="#carousel-eventos-destacados" role="button" data-slide="prev">
           <span class="icon-prev out"></span>
         </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <a class="right carousel-control" href="#carousel-eventos-destacados" role="button" data-slide="next">
           <span class="icon-next out"></span>
         </a>
       </div> <!-- END:CAROUSEL -->
