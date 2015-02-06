@@ -9,13 +9,12 @@
           <small>
 			      <?php the_field('recurso_autor'); ?>, <?php the_field('recurso_año_de_publicacion'); ?> 
   				</small>        
-          <h4 class="mt-14 light lh-lg"><?php the_field('descripcion_rapida_noticias'); ?></h4>
         </div>
       </div>
   	  <div class="row">
   			<div class="col-sm-12 with-hr">  	  
-  		    <p><?php the_field('contenido_noticias'); ?></p>
-  		    <p class="text-right"><a href="<?php the_field('link_publicacion_noticias'); ?>"  class="btn btn-primary">Lee la noticia completa</a></p>
+  		    <p><?php the_field('recurso_descripcion'); ?></p>
+  		    <p class="text-right"><a href="<?php the_field('recurso_link'); ?>"  class="btn btn-primary">Ir al recurso</a></p>
   		    <div class="text-right">
   		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
   		    </div>   
@@ -23,8 +22,10 @@
   			<div class="col-sm-12 with-hr pv-21">
 	  			<div class="container-sm">
 					<p>
-						<span class="medium">Tipo de Recursos:</span> <?php the_field('tipo_recursos_noticias'); ?><br>
-						<span class="medium">Temas:</span> <?php the_field('tema_noticias'); ?>
+						<span class="medium">Idioma:</span> <?php the_field('recurso_idioma'); ?><br>
+						<span class="medium">Tipo de Recurso:</span> <?php the_field('recurso_tipo'); ?><br>
+						<span class="medium">Tema:</span> <?php the_field('recurso_tema'); ?><br>
+						<span class="medium">Organización:</span> <?php the_field('recurso_organizacion'); ?>
 					</p> 
   				</div>
   			</div>
