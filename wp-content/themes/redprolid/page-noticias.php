@@ -137,7 +137,7 @@ get_header(); ?>
 	<!-- Modal NOTICIAS -->
 	<div class="modal fade" id="modalNoticias" tabindex="-1" role="dialog" aria-labelledby="modalNoticiasLabel" aria-hidden="true">
 	  <div class="modal-dialog">
-	    <div class="modal-content">
+	    <div class="modal-content bg-panel">
 	      <!-- <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	        <h4 class="modal-title" id="modalNoticiasLabel">Modal title</h4>
