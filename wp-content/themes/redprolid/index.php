@@ -168,7 +168,7 @@ get_header(); ?>
                     <div class="events-calendar-placeholder mb-14">
                       <div class="day"><?php echo date_i18n('D', strtotime( $tempDate)); ?></div>
                       <div class="day-num"><?php echo date_i18n('d', strtotime( $tempDate)); ?></div>
-                      <div class="month mt-7 ml-14"><?php echo date_i18n('M', strtotime( $tempDate)); ?></div>
+                      <div class="month mt-7 ml-7"><?php echo date_i18n('M', strtotime( $tempDate)); ?></div>
                     </div>
                     <h5><?php the_title(); ?></h5>
                     <p class="event-des light"><?php the_field('descripcion_evento'); ?></p>
