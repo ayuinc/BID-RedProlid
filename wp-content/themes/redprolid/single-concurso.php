@@ -26,10 +26,6 @@
         <?php } ?>
           <h2 class="lh-lg"><?php the_title(); ?></h2>
           <h4 class="light lh-lg"><?php the_field('descripcion_concurso'); ?></h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-10 col-md-offset-1 with-hr">     
           <p><?php the_field('contenido_concurso'); ?></p>
           <a name="terminos-y-condiciones"></a>
           <div class="content-display">
@@ -46,7 +42,7 @@
             <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
           </div>   
         </div>
-      </div>  
+      </div>
       <?php comments_template(); ?>
     </div>
   </div>
