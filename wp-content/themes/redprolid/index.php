@@ -81,7 +81,7 @@ get_header(); ?>
                     <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php the_field('imagen_home_dtl'); ?>);"></div>
                     <div class="dtl-title">
                       <h3><?php the_title(); ?></h3>
-                      <div class="text-right">
+                      <div class="text-center">
                         <a href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>" class="btn btn-xs btn-primary">Ver más</a>
                       </div>
                     </div>
