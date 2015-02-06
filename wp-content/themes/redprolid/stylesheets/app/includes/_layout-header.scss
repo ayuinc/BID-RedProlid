@@ -87,6 +87,14 @@ header {
 			color: $gray-dark;
 		}
 	}
+	&.sub-header-sm {
+		> div:first-child {
+			img {
+				width: 42px;
+				height: auto;
+			}
+		}
+	}
 }
 
 /* 

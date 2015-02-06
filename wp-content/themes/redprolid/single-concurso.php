@@ -1,7 +1,7 @@
 <section>
   <div class="container">
 		<?php the_breadcrumb(); ?>
-    <div class="row">
+    <div class="row pv-21">
       <?php if( get_field('imagen_concurso') ) { ?>
       <div class="col-sm-3 col-md-offset-1">
         <img src="<?php the_field('imagen_concurso'); ?>" alt="" class="img-responsive">

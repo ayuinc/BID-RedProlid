@@ -136,32 +136,57 @@ get_header(); ?>
 
 	<!-- Modal NOTICIAS -->
 	<div class="modal fade" id="modalNoticias" tabindex="-1" role="dialog" aria-labelledby="modalNoticiasLabel" aria-hidden="true">
-	  <div class="modal-dialog">
+	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content bg-panel">
 	      <!-- <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	        <h4 class="modal-title" id="modalNoticiasLabel">Modal title</h4>
 	      </div> -->
 	      <div class="modal-body">
-	        <div class="clearfix sub-header">
+	        <div class="clearfix sub-header sub-header-sm">
 		        <div class="col-sm-1 col-xs-3">
 		          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-topic-icon.png" alt="" width="100%"></div>
 		        </div>
 		        <div class="col-sm-5 col-xs-9"></div>
-		        <div class="col-sm-6 col-xs-12">
-		          <nav class="text-right text-center-xs">
-		            <a href="<?php echo home_url('/'); ?>">Regístrate</a> | <a href="<?php echo home_url('/'); ?>">Inicia sesión</a>
-		          </nav>	          
-		        </div>
+		        <div class="col-sm-6 col-xs-12"></div>
 		      </div>
-		      <?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
-					<?php if ($tipo_de_formulario=='noticias') { ?>
-						<?php ninja_forms_display_form( 3 ); ?>
-					<?php } } ?>
+		      <?php if ( is_user_logged_in() ) { ?>
+		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
+							<?php ninja_forms_display_form( 3 ); ?>
+						<?php } ?>
+					<?php } else { ?>
+						<div class="row">
+				  		<div class="col-sm-6 text-center">
+				  			<h3 class="medium">Registrate como un nuevo usuario</h3>
+				  			<div class="pv-21">
+				  				<a href="#" class="btn btn-primary btn-lg">Únete</a>
+				  			</div>
+				  		</div>
+				  		<div class="col-sm-6">
+				  			<h3 class="medium">Ingresa al sistema</h3>
+				  			<div class="user-sign-in-form pv-21">
+			            <?php 
+			              if ( is_user_logged_in() ) {
+
+			                $current_user = wp_get_current_user();
+			                echo '<div class="text-right">';
+			                echo '<h4 class="light">Hola '.$current_user->user_nicename.'</h4>';
+											echo '<a href="'.wp_logout_url().'" title="Logout" class="light">Cierra tu sesión</a>';
+			                echo '</div>';
+
+			              } else {
+
+			                echo do_shortcode('[dm_login_form]'); 
+
+			              }
+			            ?>
+			           </div>
+				  		</div>
+				  	</div>
+			  	<?php } ?>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-	        <button type="button" class="btn btn-primary">Sube tu evento</button>
 	      </div>
 	    </div>
 	  </div>
