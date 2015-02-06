@@ -42,7 +42,7 @@ function wppb_add_plugin_stylesheet() {
 }
 
 
-/*function wppb_show_admin_bar($content){
+function wppb_show_admin_bar($content){
 	global $current_user;
 
 	$adminSettingsPresent = get_option('wppb_display_admin_settings','not_found');
@@ -61,7 +61,7 @@ function wppb_add_plugin_stylesheet() {
 			}
 		}
 	return $show === null ? $content : $show;
-}*/
+}
 
 
 if(!function_exists('wppb_curpageurl')){
