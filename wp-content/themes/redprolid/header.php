@@ -46,10 +46,6 @@
     <!-- WebFonts -->
     <script src="//use.typekit.net/nsv5vjx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
-
-    <!-- APP STYLES -->
-    <link rel="stylesheet" href="<?php echo content_url('/'); ?>themes/redprolid/stylesheets/main.css">
-    <link rel="stylesheet" href="<?php echo content_url('/'); ?>themes/redprolid/stylesheets/ebm.css">
   </head>
   <body>
     <div class="site-wrapper pt-56-xs">
