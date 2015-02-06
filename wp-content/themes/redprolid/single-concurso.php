@@ -24,6 +24,11 @@
       </div>
     </div>       
     <div class="row">
+	    <div class="col-sm-10 col-md-offset-1">
+		    <?php the_field('terminos_concurso'); ?>
+	    </div>
+    </div>
+    <div class="row">
       <div class="col-sm-10 col-md-offset-1">  
         <?php comments_template(); ?>
       </div>
