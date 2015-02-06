@@ -74,7 +74,7 @@ get_header(); ?>
           <div class="carousel">
             <div class="jcarousel">
               <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
-                <?php query_posts( 'category_name=home-desarrolla-tu-liderazgo' ); ?> 
+                <?php query_posts( 'category_name=home-desarrolla-tu-liderazgo&order=ASC' ); ?> 
                 <?php while ( have_posts() ) : the_post(); ?>                   
                 <li>
                   <div class="dtl-item" data-href="#">
@@ -168,7 +168,7 @@ get_header(); ?>
                     <div class="events-calendar-placeholder mb-14">
                       <div class="day"><?php echo date_i18n('D', strtotime( $tempDate)); ?></div>
                       <div class="day-num"><?php echo date_i18n('d', strtotime( $tempDate)); ?></div>
-                      <div class="month"><?php echo date_i18n('M', strtotime( $tempDate)); ?></div>
+                      <div class="month mt-7"><?php echo date_i18n('M', strtotime( $tempDate)); ?></div>
                     </div>
                     <h5><?php the_title(); ?></h5>
                     <p class="event-des light"><?php the_field('descripcion_evento'); ?></p>
