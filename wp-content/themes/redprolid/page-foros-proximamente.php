@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Foros principal page
+Template Name: Foros proximamente
 */
 
 get_header(); ?>
