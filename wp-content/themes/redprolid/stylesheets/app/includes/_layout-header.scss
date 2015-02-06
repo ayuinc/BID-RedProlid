@@ -88,8 +88,11 @@ header {
 		}
 	}
 	&.sub-header-sm {
-		img {
-			width: 42px;
+		> div:first-child {
+			img {
+				width: 42px;
+				height: auto;
+			}
 		}
 	}
 }

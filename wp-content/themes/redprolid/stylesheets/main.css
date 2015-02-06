@@ -4828,8 +4828,9 @@ header {
     height: auto; }
   .sub-header.bg-panel h1 {
     color: #565656; }
-  .sub-header.sub-header-sm img {
-    width: 42px; }
+  .sub-header.sub-header-sm > div:first-child img {
+    width: 42px;
+    height: auto; }
 
 /* 
 
