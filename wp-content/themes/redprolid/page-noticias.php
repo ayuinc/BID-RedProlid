@@ -11,7 +11,6 @@ get_header(); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
 
-<div class="">
 	<section class="mt-7"> 
     <div class="container">
       <?php the_breadcrumb(); ?> 
@@ -24,7 +23,7 @@ get_header(); ?>
         </div>
         <div class="col-sm-6 col-xs-12">
           <nav class="text-right text-center-xs">
-            <a href="<?php echo home_url('/'); ?>/propuestas/?propuesta=noticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/">¿Quieres ver las noticias anteriores?</a>
+            <a href="<?php echo home_url('/'); ?>/propuestas/?propuesta=noticias" data-toggle="modal" data-target="#modalNoticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/">¿Quieres ver las noticias anteriores?</a>
           </nav>	          
         </div>
       </div>
@@ -134,6 +133,24 @@ get_header(); ?>
 	    </div>
 	  </div>
 	</section>
-</div>
+
+	<!-- Modal NOTICIAS -->
+	<div class="modal fade" id="modalNoticias" tabindex="-1" role="dialog" aria-labelledby="modalNoticiasLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <!-- <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="modalNoticiasLabel">Modal title</h4>
+	      </div> -->
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+	        <button type="button" class="btn btn-primary">Sube tu evento</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 <?php get_footer(); ?>    
