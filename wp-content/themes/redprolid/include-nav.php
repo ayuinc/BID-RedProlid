@@ -67,7 +67,7 @@
             <a href="<?php echo home_url('/'); ?>charlacafe/" class="charla-cafe <?php if($segment1=='charlacafe'||$segment1=='webinar-principal'||$segment1=='webinarios-anteriores'){ echo 'active'; } ?>"><i></i><span>Charlacafé</span></a>
             <ul class="list-unstyled">
               <li>
-              	<a href="<?php echo home_url('/'); ?>foros-principal">Foros virtuales →</a>
+              	<a href="<?php echo home_url('/'); ?>foros">Foros virtuales →</a>
                 <ul class="list-unstyled">
                   <li  class="light" style="width:250px"><a href="#">¿Quieres ver los foros anteriores?</a></li>
                 </ul>              	
