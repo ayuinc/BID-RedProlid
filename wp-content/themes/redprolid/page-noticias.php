@@ -143,7 +143,21 @@ get_header(); ?>
 	        <h4 class="modal-title" id="modalNoticiasLabel">Modal title</h4>
 	      </div> -->
 	      <div class="modal-body">
-	        ...
+	        <div class="clearfix sub-header">
+		        <div class="col-sm-1 col-xs-3">
+		          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-topic-icon.png" alt="" width="100%"></div>
+		        </div>
+		        <div class="col-sm-5 col-xs-9"></div>
+		        <div class="col-sm-6 col-xs-12">
+		          <nav class="text-right text-center-xs">
+		            <a href="<?php echo home_url('/'); ?>">Regístrate</a> | <a href="<?php echo home_url('/'); ?>">Inicia sesión</a>
+		          </nav>	          
+		        </div>
+		      </div>
+		      <?php if( function_exists( 'ninja_forms_display_form' ) ); ?>
+					<?php if ($tipo_de_formulario=='noticias'); ?>
+						<?php ninja_forms_display_form( 3 ); ?>
+					<?php endif; endif; ?>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
