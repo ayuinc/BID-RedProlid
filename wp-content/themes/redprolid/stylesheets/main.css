@@ -4831,6 +4831,11 @@ header {
   .sub-header.sub-header-sm > div:first-child img {
     width: 42px;
     height: auto; }
+  .sub-header.sub-header-sm > [class*="col-"] {
+    min-height: 112px;
+    min-height: 7rem; }
+  .sub-header.sub-header-sm > div:nth-child(2):after {
+    border-bottom: 1px dotted #565656; }
 
 /* 
 
