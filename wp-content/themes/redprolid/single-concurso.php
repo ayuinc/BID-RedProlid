@@ -6,7 +6,7 @@
         <div>
           <h1>Concurso blablabla</h1>
           <nav class="mt-21">
-            <a href="<?php echo content_url('/'); ?>concursos">Noticias >></a>
+            <a href="<?php echo content_url('/'); ?>concursos">Concursos >></a>
           </nav>
         </div>
       </div>
