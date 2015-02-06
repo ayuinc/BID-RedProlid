@@ -38,9 +38,10 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>  	    
 	    <div class="row">		    
 	    	<div class="col-sm-7">
-					<h3 class="light"><?php the_title(); ?></h3>
-					<p class="light"><?php the_field('descripcion_concurso'); ?></p>
-			    <hr>               
+					<h3 class="light">¿Quieres ganar premios que te ayuden en tu desarrollo profesional? Participa en los concursos de la Red aportando ideas, relatando tus experiencias y compartiendo tu creatividad.</h3>
+			    <hr>    
+			    <h5 class="medium"><?php the_title(); ?></h5>         
+			    <p><?php the_field('descripcion_concurso'); ?></p>  
 			    <p class="light"><?php the_field('contenido_concurso'); ?></p>
 			    <div class="row">
 			    	<div class="col-xs-8 pull-right bg-gray-light p-7 flex-space-between">
