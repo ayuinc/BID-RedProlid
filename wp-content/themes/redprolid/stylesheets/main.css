@@ -5494,6 +5494,8 @@ form.form-search-inline button {
             top: 0; }
       #nav-main-menu div > ul > li:hover ul.dropdown-menu {
         display: block; }
+      #nav-main-menu div > ul > li .sub-menu {
+        display: none; }
       #nav-main-menu div > ul > li ul.dropdown-menu li:hover .sub-menu {
         display: block; }
   #nav-main-menu form input,

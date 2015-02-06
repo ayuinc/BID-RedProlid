@@ -126,6 +126,9 @@ $nav-main-menu-height: 42px;
 						display: block;
 					}
 				}
+				.sub-menu {
+					display: none;
+				}
 				ul.dropdown-menu {
 					li {
 						&:hover {
