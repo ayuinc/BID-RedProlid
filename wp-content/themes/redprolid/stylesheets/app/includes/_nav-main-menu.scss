@@ -71,16 +71,17 @@
 					a {
 						border: none;
 						position: relative;
-					}
-					a:hover,
-					a.active {
-						&:after {
-							content: " ";
+						&:hover,
+						&.active {
 							background: $brand-primary;
-							width: 21px;
-							height: 42px;
-							position: absolute;
-							right: 0;
+							&:after {
+								content: " ";
+								background: $brand-primary;
+								width: 21px;
+								height: 42px;
+								position: absolute;
+								right: -18px;
+							}
 						}
 					}
 				}

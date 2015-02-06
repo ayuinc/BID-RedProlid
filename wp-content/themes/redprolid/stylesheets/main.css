@@ -5455,14 +5455,15 @@ form.form-search-inline button {
       #nav-main-menu div > ul li:last-child a {
         border: none;
         position: relative; }
-      #nav-main-menu div > ul li:last-child a:hover:after,
-      #nav-main-menu div > ul li:last-child a.active:after {
-        content: " ";
-        background: #ed7133;
-        width: 21px;
-        height: 42px;
-        position: absolute;
-        right: 0; }
+        #nav-main-menu div > ul li:last-child a:hover, #nav-main-menu div > ul li:last-child a.active {
+          background: #ed7133; }
+          #nav-main-menu div > ul li:last-child a:hover:after, #nav-main-menu div > ul li:last-child a.active:after {
+            content: " ";
+            background: #ed7133;
+            width: 21px;
+            height: 42px;
+            position: absolute;
+            right: -18px; }
       #nav-main-menu div > ul li > ul {
         background: #e85b14;
         position: absolute;
