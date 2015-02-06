@@ -549,6 +549,12 @@ function wppb_password_strength_check(){
         }
     }
 }
+
+//HIDE ADMIN MENU BAR
+if (!current_user_can(‘edit_posts’)) {
+	show_admin_bar(false);
+}
+
 /**
  * Create functions for repeating error messages in front-end forms
  */
