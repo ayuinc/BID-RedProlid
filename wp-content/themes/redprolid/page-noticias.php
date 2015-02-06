@@ -154,10 +154,10 @@ get_header(); ?>
 		          </nav>	          
 		        </div>
 		      </div>
-		      <?php if( function_exists( 'ninja_forms_display_form' ) ); ?>
-					<?php if ($tipo_de_formulario=='noticias'); ?>
+		      <?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
+					<?php if ($tipo_de_formulario=='noticias') { ?>
 						<?php ninja_forms_display_form( 3 ); ?>
-					<?php endif; endif; ?>
+					<?php } } ?>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
