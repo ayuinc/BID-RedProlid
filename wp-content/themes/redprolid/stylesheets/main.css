@@ -4671,6 +4671,15 @@ ul.table-list {
 @media only screen and (max-width: 1200px) {
   .hidden-lg-down {
     display: none !important; } }
+.new-ribbon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 21px;
+  width: 85px;
+  height: 84px; }
+
 footer {
   background: #232323;
   margin-top: 35px;
@@ -5790,7 +5799,7 @@ form.search button {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 320px; }
+  height: 300px; }
 
 .dtl-carousel {
   width: 2000px;
@@ -5809,7 +5818,7 @@ form.search button {
     border-bottom-right-radius: 3px;
     border: 1px solid #f7f7f7; }
     .dtl-carousel .dtl-item .bg-img-block {
-      height: 210px;
+      height: 180px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px; }
     .dtl-carousel .dtl-item .dtl-title {

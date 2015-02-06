@@ -139,7 +139,7 @@
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	height: 320px;
+	height: 300px;
 }
 .dtl-carousel {
 	width: 2000px;
@@ -159,7 +159,7 @@
 		@include border-bottom-radius($border-radius-base);
 		border: 1px solid darken(white, 3%);
 		.bg-img-block {
-			height: 210px;
+			height: 180px;
 			@include border-top-radius($border-radius-base);
 		}
 		.dtl-title {

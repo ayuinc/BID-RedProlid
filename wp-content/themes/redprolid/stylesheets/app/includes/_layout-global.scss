@@ -156,3 +156,11 @@ ul.table-list {
 		}
 	}
 }
+
+// VIDEOS: 'New' Ribbon
+.new-ribbon {
+	@include bg-img-control;
+	@include position(absolute, 0 null null $grid-gutter-width);
+	width: 85px;
+	height: 84px;
+}

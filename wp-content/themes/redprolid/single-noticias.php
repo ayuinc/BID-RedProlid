@@ -1,7 +1,7 @@
 <section> 
   <div class="container relative">
     <?php the_breadcrumb(); ?>
-    <div class="ph-70">
+    <div class="ph-70 pv-21">
       <div class="row pb-14">
   	    <?php if( get_field('imagen_noticias') ) { ?>
         <div class="col-sm-4">
