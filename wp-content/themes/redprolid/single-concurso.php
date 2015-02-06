@@ -24,7 +24,7 @@
         	<h4 class="medium">Términos y condiciones</h4>
 					<p><?php the_field('terminos_concurso'); ?></p>
         </div>
-        <div class="text-center mb-35 ">
+        <div class="text-center">
           <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
         </div>   
       </div>
