@@ -56,15 +56,11 @@ get_header(); ?>
 		    					<span><?php the_field('vigencia_concurso'); ?></span>
 		    				</li>
 		    				<li>
-		    					<h5>Título:</h5>
-		    					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-		    				</li>
-		    				<li>
 		    					<h5>Fecha:</h5>
-		    					<span>del 01/30/15 al 06/12/15</span>
+		    					<span>Del <?php the_field ('fecha_inicio_concurso'); ?> al <?php the_field ('fecha_fin_concurso'); ?></span>
 		    				</li>
 		    				<li>
-		    					<a href="#">Términos y condiciones del concurso</a>
+		    					<a href="<?php echo get_permalink( get_the_ID() ); ?>#terminos-y-condiciones">Términos y condiciones del concurso</a>
 		    				</li>
 		    			</ul>
 		    			<div class="text-center">
