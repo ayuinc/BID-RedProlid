@@ -4383,6 +4383,10 @@ h6 {
 .flaticon-social19:before {
   content: "\e004"; }
 
+.html,
+body {
+  overflow-x: hidden; }
+
 header,
 section {
   padding: 0rem;
