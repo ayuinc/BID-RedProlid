@@ -5789,10 +5789,12 @@ form.search button {
 .jcarousel {
   position: relative;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 320px; }
 
 .dtl-carousel {
-  width: 2000px; }
+  width: 2000px;
+  position: absolute; }
   .dtl-carousel li {
     width: 240px !important; }
     .dtl-carousel li div {

@@ -139,9 +139,11 @@
 	position: relative;
 	width: 100%;
 	overflow: hidden;
+	height: 320px;
 }
 .dtl-carousel {
 	width: 2000px;
+	position: absolute;
 	li {
 		width: 240px !important;
 		div {
