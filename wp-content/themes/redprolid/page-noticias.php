@@ -28,11 +28,7 @@ get_header(); ?>
           </nav>	          
         </div>
       </div>
-    </div>
-	</section>	
-	<section class="mb-21"> 
-	  <div class="container">
-	    <div class="row">
+	    <div class="row text-justify">
 				<div class="col-md-12">
 					<h3 class="light">
 					<?php
@@ -43,7 +39,7 @@ get_header(); ?>
 					</h3>
 				</div>
 	    </div>	
-	  </div>      
+    </div>
 	</section>
 	
 	<section class="bg-panel pt-21 pb-28 mb-21">
@@ -124,7 +120,7 @@ get_header(); ?>
 	          <div class="col-md-4 mostrar-anteriores">
 	            <h4 class="medium text-gray-darker mb-14">Lo último en las redes</h4> 
 	          	<div class="mb-14">
-								<div class="fb-like-box" data-href="https://www.facebook.com/redprolid" data-width="350" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+								<div class="fb-like-box bg-white" data-href="https://www.facebook.com/redprolid" data-width="350" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
 	          	</div>
 	          	<div class="mb-14">
 								<a class="twitter-timeline" width="350" height="310"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a> 

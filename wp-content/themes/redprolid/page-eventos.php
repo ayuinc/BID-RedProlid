@@ -11,7 +11,6 @@ get_header(); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
 
-<div class="">
 	<section class="mt-7"> 
     <div class="container">
       <?php the_breadcrumb(); ?> 
@@ -28,11 +27,7 @@ get_header(); ?>
           </nav>          
         </div>
       </div>
-	    <div class="row">
-				<div class="col-md-12">
-					<h3 class="light">Todos los días encontramos en los medios noticias, buenas o malas, que nos hablan de los avances o retrocesos de la mujer en el espacio público. Hemos recogido algunas de las más relevantes o significativas de entre las que tienen que ver con nosotras y nos ayudan a entender cómo está cambiando el mundo para las mujeres. Anímate a proponer las noticias que te parezcan destacadas.</h3>
-				</div>
-	    </div>	
+			<h3 class="light text-justify">Todos los días encontramos en los medios noticias, buenas o malas, que nos hablan de los avances o retrocesos de la mujer en el espacio público. Hemos recogido algunas de las más relevantes o significativas de entre las que tienen que ver con nosotras y nos ayudan a entender cómo está cambiando el mundo para las mujeres. Anímate a proponer las noticias que te parezcan destacadas.</h3>
     </div>
 	</section>		
 	
@@ -118,6 +113,5 @@ get_header(); ?>
       </div> 
 	  </div>
 	</section>
-</div>
 
 <?php get_footer(); ?>    

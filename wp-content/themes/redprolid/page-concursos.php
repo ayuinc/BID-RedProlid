@@ -28,6 +28,12 @@ get_header(); ?>
           </nav>
         </div>
 	    </div>
+	    <!-- IF NO POSTS in FOROS -->
+	    <!-- <div class="pv-21 text-center">
+	    	<h3>Próximamente anunciaremos nuestro primer concurso</h3>
+	    	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/concursos-proximamente.jpg" alt="" class="img-responsive">
+	    </div> -->
+	    <!-- END:IF NO POSTS in FOROS -->
     	<?php query_posts( 'category_name=concursos&posts_per_page=1' ); ?>	
 			<?php while ( have_posts() ) : the_post(); ?>  	    
 	    <div class="row">		    
