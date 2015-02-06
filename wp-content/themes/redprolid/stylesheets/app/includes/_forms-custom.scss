@@ -69,6 +69,8 @@ form.form-search-inline {
 	.ninja-forms-field:not(.btn) {
 		width: 100%;
 		background: white;
+	}
+	.ninja-forms-field{
 		&select {
 			@extend .select-override;
 		}
