@@ -551,10 +551,12 @@ function wppb_password_strength_check(){
 }
 
 //HIDE ADMIN MENU BAR
-if (!current_user_can(‘edit_posts’)) {
-	show_admin_bar(false);
+add_action('after_setup_theme', 'remove_admin_bar');
+function remove_admin_bar() {
+	if (!current_user_can('administrator') && !is_admin()) {
+	  show_admin_bar(false);
+	}
 }
-
 /**
  * Create functions for repeating error messages in front-end forms
  */
