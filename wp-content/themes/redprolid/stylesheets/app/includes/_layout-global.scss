@@ -182,6 +182,8 @@ ul.table-list {
 		@extend .col-xs-9;
 	}
 	img {
+		width: 100%;
+		height: auto;
 		display: block;
 		@extend .col-xs-3;
 	}

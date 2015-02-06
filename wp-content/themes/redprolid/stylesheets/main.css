@@ -4696,6 +4696,8 @@ ul.table-list {
   .user-sign-in-form:after {
     clear: both; }
   .user-sign-in-form img {
+    width: 100%;
+    height: auto;
     display: block; }
 
 footer {
