@@ -11,6 +11,23 @@
  * Register our sidebars and widgetized areas.
  *
  */
+function redprolid_theme_styles(){
+  wp_enqueue_style( 'main_css', get_template_directory_uri() . '/stylesheets/main.css');
+  wp_enqueue_style( 'ebm_css', get_template_directory_uri() . '/stylesheets/ebm.css');
+}
+add_action('wp_enqueue_scripts', 'redprolid_theme_styles');
+
+function redprolid_theme_js(){
+  wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery-2.1.3.min.js', '', true );
+  wp_enqueue_script( 'transitions_b3', get_template_directory_uri() . '/js/b3/transition.js', array('jquery'), '', true );
+  wp_enqueue_script( 'carousel_b3', get_template_directory_uri() . '/js/b3/carousel.js', array('jquery'), '', true );
+  wp_enqueue_script( 'modal_b3', get_template_directory_uri() . '/js/b3/modal.js', array('jquery'), '', true );
+  wp_enqueue_script( 'custom_js', get_template_directory_uri() . '/js/src/custom.js', array('jquery'), '', true );
+  wp_enqueue_script( 'mobilemenucontrol_js', get_template_directory_uri() . '/js/lib/mobile-menu-control.js', array('jquery'), '', true );
+  wp_enqueue_script( 'jcarousel_b3', get_template_directory_uri() . '/js/vendor/jquery.jcarousel.min.js', array('jquery'), '', true );
+}
+add_action('wp_enqueue_scripts', 'redprolid_theme_js');
+
 function redprolid_widgets_init() {
 
     register_sidebar( array(
