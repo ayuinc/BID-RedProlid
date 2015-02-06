@@ -256,22 +256,29 @@
 			$('#boton_ocultar_entrevista_full').hide(100);
 		})		
 		
-    $(function() {
+    // $(function() {
       $(document).ready(function(){
         $('.jcarousel').jcarousel();
-        $('.left.carousel-control').click(function(e) {
-            e.preventDefault();
-            console.log('slide');
-            $('.jcarousel').jcarousel('scroll', '-=1');
+        $('.left.carousel-control').jcarouselControl({
+            target: '-=1'
         });
 
-        $('.right.carousel-control').click(function(e) {
-            e.preventDefault();
-            console.log('slide');
-            $('.jcarousel').jcarousel('scroll', '+=1');
+        $('.right.carousel-control').jcarouselControl({
+            target: '+=1'
         });
+        // $('.left.carousel-control').click(function(e) {
+        //     e.preventDefault();
+        //     console.log('slide');
+        //     $('.jcarousel').jcarousel('scroll', '-=1');
+        // });
+
+        // $('.right.carousel-control').click(function(e) {
+        //     e.preventDefault();
+        //     console.log('slide');
+        //     $('.jcarousel').jcarousel('scroll', '+=1');
+        // });
       });
-    });
+    // });
 
 		</script>    
     
