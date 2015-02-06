@@ -150,12 +150,9 @@ get_header(); ?>
 		        <div class="col-sm-5 col-xs-9"></div>
 		        <div class="col-sm-6 col-xs-12"></div>
 		      </div>
-		      <?php $tipo_de_formulario = $_GET["propuesta"]; ?>
 		      <?php if ( is_user_logged_in() ) { ?>
 		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
-							<?php if ($tipo_de_formulario=='noticias') { ?>
-								<?php ninja_forms_display_form( 3 ); ?>
-							<?php } ?>
+							<?php ninja_forms_display_form( 3 ); ?>
 						<?php } ?>
 					<?php } else { ?>
 						<div class="row">
