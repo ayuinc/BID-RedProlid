@@ -55,7 +55,7 @@
       </section>
     </div> <!-- END:Site wrapper -->
     
-    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/vendor/jquery-2.1.1.min.js"></script>
+    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/vendor/jquery-2.1.3.min.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/bid.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/transition.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/b3/carousel.js"></script>

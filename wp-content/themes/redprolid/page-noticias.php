@@ -41,7 +41,7 @@ get_header(); ?>
     </div>
 	</section>
 	
-	<section class="bg-panel pt-21 pb-28 mb-21">
+	<section class="bg-panel pv-21">
 	  <div class="container">
 	    <div class="panel panel-custom">
 	      <div class="panel-heading mb-0 pb-0">
