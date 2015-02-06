@@ -4828,6 +4828,8 @@ header {
     height: auto; }
   .sub-header.bg-panel h1 {
     color: #565656; }
+  .sub-header.sub-header-sm .sub-header-icon img {
+    width: 42px; }
 
 /* 
 

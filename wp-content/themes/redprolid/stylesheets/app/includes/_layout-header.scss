@@ -87,6 +87,13 @@ header {
 			color: $gray-dark;
 		}
 	}
+	&.sub-header-sm {
+		.sub-header-icon {
+			img {
+				width: 42px;
+			}
+		}
+	}
 }
 
 /* 
