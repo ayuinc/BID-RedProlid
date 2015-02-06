@@ -257,17 +257,19 @@
 		})		
 		
     $(function() {
-      $('.jcarousel').jcarousel();
-      $('.left.carousel-control').click(function(e) {
-          e.preventDefault();
-          console.log('slide');
-          $('.jcarousel').jcarousel('scroll', '-=1');
-      });
+      $(document).ready(function(){
+        $('.jcarousel').jcarousel();
+        $('.left.carousel-control').click(function(e) {
+            e.preventDefault();
+            console.log('slide');
+            $('.jcarousel').jcarousel('scroll', '-=1');
+        });
 
-      $('.right.carousel-control').click(function(e) {
-          e.preventDefault();
-          console.log('slide');
-          $('.jcarousel').jcarousel('scroll', '+=1');
+        $('.right.carousel-control').click(function(e) {
+            e.preventDefault();
+            console.log('slide');
+            $('.jcarousel').jcarousel('scroll', '+=1');
+        });
       });
     });
 
