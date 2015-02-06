@@ -23,13 +23,17 @@
               echo '<h4 class="light">Hola '.$current_user->user_nicename.'</h4>';
 							echo '<a href="'.wp_logout_url().'" title="Logout" class="light">Cierra tu sesión</a>';
               echo '</div>';
+							
+							if ( ($current_user instanceof WP_User) ) {
+							    echo get_avatar( $current_user->user_email, 32 );
+							}              
 
             } else {
 
               echo do_shortcode('[dm_login_form]'); 
 
             }
-          ?>
+          ?>       
         </div>
       </div>
     </div>
