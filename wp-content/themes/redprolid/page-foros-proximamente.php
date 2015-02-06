@@ -36,7 +36,7 @@ get_header(); ?>
     <div class="pv-21">
     	<h3>Próximamente anunciaremos nuestro primer foto virtual</h3>
     	<p class="light">¡Vuelve a visitar este espacio pronto!</p>
-    	<img src="">
+    	<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/foros.jpg">
     </div>
     <!-- END:IF NO POSTS in FOROS -->
   </div>
