@@ -1,3 +1,5 @@
+$nav-main-menu-height: 42px;
+
 #nav-main-menu {
 	position: relative;
 	z-index: 9999;
@@ -5,7 +7,7 @@
 		> ul {
 			background: $brand-secondary;
 			@include clearfix;
-			height: 42px;
+			height: $nav-main-menu-height;
 			li {
 				float: left;
 				position: relative;
@@ -15,6 +17,7 @@
 					@include clearfix;
 					background: $brand-secondary;
 					border-right: 2px solid darken($brand-secondary, 7%);
+					height: $nav-main-menu-height;
 					&:hover,
 					&.active {
 						text-decoration: none;
@@ -30,11 +33,11 @@
 						padding: 12px 7px;
 						padding: rem(12) rem(7);
 						@include light;
-						height: 42px;
+						height: $nav-main-menu-height;
 					}
 					i {
-						width: 42px;
-						height: 42px;
+						width: $nav-main-menu-height;
+						height: $nav-main-menu-height;
 					}
 					&.home {
 						i {
@@ -78,7 +81,7 @@
 								content: " ";
 								background: $brand-primary;
 								width: 21px;
-								height: 42px;
+								height: $nav-main-menu-height;
 								position: absolute;
 								right: -18px;
 							}
@@ -129,10 +132,10 @@
 	form {
 		input,
 		button {
-			height: 42px;
+			height: $nav-main-menu-height;
 		}
 		button {
-			width: 42px;
+			width: $nav-main-menu-height;
 			background: $brand-primary url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px;
 		}
 	}
@@ -141,10 +144,10 @@
 form.search {
 	input,
 	button {
-		height: 42px;
+		height: $nav-main-menu-height;
 	}
 	button {
-		width: 42px;
+		width: $nav-main-menu-height;
 		background: $brand-primary url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px;
 	}
 }

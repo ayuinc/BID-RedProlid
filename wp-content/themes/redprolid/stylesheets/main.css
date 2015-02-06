@@ -5416,7 +5416,8 @@ form.form-search-inline button {
       #nav-main-menu div > ul li a {
         display: block;
         background: #e94472;
-        border-right: 2px solid #e5245a; }
+        border-right: 2px solid #e5245a;
+        height: 42px; }
         #nav-main-menu div > ul li a:before, #nav-main-menu div > ul li a:after {
           content: " ";
           display: table; }
