@@ -4823,9 +4823,11 @@ header {
         width: 270%; }
       .sub-header:not(.bg-panel) > div:nth-child(2).col-sm-6:after {
         width: 180%; } }
-  .sub-header > div:first-child img {
-    width: 75px;
-    height: auto; }
+  .sub-header > div:first-child {
+    padding-left: 0; }
+    .sub-header > div:first-child img {
+      width: 75px;
+      height: auto; }
   .sub-header.bg-panel h1 {
     color: #565656; }
   .sub-header.sub-header-sm > div:first-child img {
