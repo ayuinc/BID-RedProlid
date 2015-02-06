@@ -250,7 +250,7 @@ class Profile_Builder_Form_Creator{
 				}
 			
 			}else
-				echo $message.apply_filters( 'wppb_general_top_error_message', '<p id="wppb_general_top_error_message">'.__( 'There was an error in the submitted form', 'profilebuilder' ).'</p>' );
+				echo $message.apply_filters( 'wppb_general_top_error_message', '<p id="wppb_general_top_error_message">'.__( 'Se produjo un error en el formulario enviado', 'profilebuilder' ).'</p>' );
 		
 		}else
 			echo $message;
