@@ -10,7 +10,6 @@
       <?php } else {?>
       <div class="col-sm-10 col-md-offset-1">  
       <?php } ?>
-        <p class="mb-0 pb-0">CONCURSOS</p>
         <h2 class="lh-lg"><?php the_title(); ?></h2>
         <h4 class="light lh-lg"><?php the_field('descripcion_concurso'); ?></h4>
       </div>
