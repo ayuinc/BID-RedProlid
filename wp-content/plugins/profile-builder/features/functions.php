@@ -42,7 +42,7 @@ function wppb_add_plugin_stylesheet() {
 }
 
 
-function wppb_show_admin_bar($content){
+/*function wppb_show_admin_bar($content){
 	global $current_user;
 
 	$adminSettingsPresent = get_option('wppb_display_admin_settings','not_found');
@@ -61,7 +61,7 @@ function wppb_show_admin_bar($content){
 			}
 		}
 	return $show === null ? $content : $show;
-}
+}*/
 
 
 if(!function_exists('wppb_curpageurl')){
@@ -122,7 +122,7 @@ if ( is_admin() ){
 	add_shortcode( 'wppb-recover-password', 'wppb_front_end_password_recovery' );
 
 	// set the front-end admin bar to show/hide
-	add_filter( 'show_admin_bar' , '__return_false');
+	add_filter( 'show_admin_bar' , 'wppb_show_admin_bar');
 
 	// Shortcodes used for the widget area
 	add_filter( 'widget_text', 'do_shortcode', 11 );
