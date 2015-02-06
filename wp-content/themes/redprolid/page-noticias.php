@@ -136,7 +136,11 @@ get_header(); ?>
 
 	<!-- Modal NOTICIAS -->
 	<div class="modal fade" id="modalNoticias" tabindex="-1" role="dialog" aria-labelledby="modalNoticiasLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-lg">
+		<?php if ( is_user_logged_in() ) { ?>
+  	<div class="modal-dialog">
+  	<?php } else { ?>
+  	<div class="modal-dialog modal-lg">
+  	<?php } ?>
 	    <div class="modal-content bg-panel">
 	      <!-- <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>

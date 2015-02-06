@@ -57,3 +57,19 @@ form.form-search-inline {
 		width: 50%;
 	}
 }
+
+.ninja-forms-form {
+	label[for*="ninja"] {
+		@include book;
+	}
+	.field-wrap {
+		margin: 0;
+		padding: 9px 0;
+	}
+	.ninja-forms-field {
+		background: white;
+		&select {
+			@extend .select-override;
+		}
+	}
+}

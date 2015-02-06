@@ -5293,7 +5293,7 @@ form.form-search-inline button {
   width: 42px;
   background: #ed7133 url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px; }
 
-.select-override, .wppb-form-field select {
+.select-override, .wppb-form-field select, .ninja-forms-form .ninja-forms-fieldselect {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5301,16 +5301,27 @@ form.form-search-inline button {
   position: relative;
   text-indent: 1px;
   text-overflow: ""; }
-  .select-override.input-lg, .form-horizontal .form-group-lg .select-override.form-control, .form-horizontal .form-group-lg .wppb-form-field input.select-override[type="text"], .wppb-form-field .form-horizontal .form-group-lg input.select-override[type="text"],
+  .select-override.input-lg, .form-horizontal .form-group-lg .select-override.form-control, .form-horizontal .form-group-lg .wppb-form-field input.select-override[type="text"], .wppb-form-field .form-horizontal .form-group-lg input.select-override[type="text"], .form-horizontal .form-group-lg .wppb-form-field .ninja-forms-form input[type="text"].ninja-forms-fieldselect, .wppb-form-field .ninja-forms-form .form-horizontal .form-group-lg input[type="text"].ninja-forms-fieldselect, .form-horizontal .form-group-lg .ninja-forms-form .wppb-form-field input[type="text"].ninja-forms-fieldselect, .ninja-forms-form .wppb-form-field .form-horizontal .form-group-lg input[type="text"].ninja-forms-fieldselect,
   .form-horizontal .form-group-lg .wppb-form-field input.select-override[type="password"],
   .wppb-form-field .form-horizontal .form-group-lg input.select-override[type="password"],
+  .form-horizontal .form-group-lg .wppb-form-field .ninja-forms-form input[type="password"].ninja-forms-fieldselect,
+  .wppb-form-field .ninja-forms-form .form-horizontal .form-group-lg input[type="password"].ninja-forms-fieldselect,
+  .form-horizontal .form-group-lg .ninja-forms-form .wppb-form-field input[type="password"].ninja-forms-fieldselect,
+  .ninja-forms-form .wppb-form-field .form-horizontal .form-group-lg input[type="password"].ninja-forms-fieldselect,
   .form-horizontal .form-group-lg .wppb-form-field select,
-  .wppb-form-field .form-horizontal .form-group-lg select, .input-group-lg > .select-override.form-control, .wppb-form-field .input-group-lg > input.select-override[type="text"],
+  .wppb-form-field .form-horizontal .form-group-lg select, .form-horizontal .form-group-lg .ninja-forms-form .form-control.ninja-forms-fieldselect, .ninja-forms-form .form-horizontal .form-group-lg .form-control.ninja-forms-fieldselect, .input-group-lg > .select-override.form-control, .wppb-form-field .input-group-lg > input.select-override[type="text"], .wppb-form-field .ninja-forms-form .input-group-lg > input[type="text"].ninja-forms-fieldselect, .ninja-forms-form .wppb-form-field .input-group-lg > input[type="text"].ninja-forms-fieldselect,
   .wppb-form-field .input-group-lg > input.select-override[type="password"],
-  .wppb-form-field .input-group-lg > select,
+  .wppb-form-field .ninja-forms-form .input-group-lg > input[type="password"].ninja-forms-fieldselect,
+  .ninja-forms-form .wppb-form-field .input-group-lg > input[type="password"].ninja-forms-fieldselect,
+  .wppb-form-field .input-group-lg > select, .ninja-forms-form .input-group-lg > .form-control.ninja-forms-fieldselect,
+  .wppb-form-field .ninja-forms-form .input-group-lg > select.ninja-forms-fieldselect,
   .input-group-lg > .select-override.input-group-addon,
+  .ninja-forms-form .input-group-lg > .input-group-addon.ninja-forms-fieldselect,
   .input-group-lg > .input-group-btn > .select-override.btn,
-  .wppb-form-field .input-group-lg > .input-group-btn > select.btn, .wppb-form-field select.input-lg {
+  .wppb-form-field .input-group-lg > .input-group-btn > select.btn,
+  .ninja-forms-form .input-group-lg > .input-group-btn > .btn.ninja-forms-fieldselect, .wppb-form-field select.input-lg, .ninja-forms-form .input-lg.ninja-forms-fieldselect, .ninja-forms-form .form-horizontal .form-group-lg .wppb-form-field input.ninja-forms-fieldselect[type="text"], .wppb-form-field .form-horizontal .form-group-lg .ninja-forms-form input.ninja-forms-fieldselect[type="text"],
+  .ninja-forms-form .form-horizontal .form-group-lg .wppb-form-field input.ninja-forms-fieldselect[type="password"],
+  .wppb-form-field .form-horizontal .form-group-lg .ninja-forms-form input.ninja-forms-fieldselect[type="password"] {
     line-height: 28px; }
 
 .form-control::-webkit-input-placeholder, .wppb-form-field input[type="text"]::-webkit-input-placeholder,
@@ -5364,6 +5375,16 @@ form.form-search-inline button {
   .wppb-form-field label {
     float: left;
     width: 50%; }
+
+.ninja-forms-form label[for*="ninja"] {
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 400;
+  font-style: normal; }
+.ninja-forms-form .field-wrap {
+  margin: 0;
+  padding: 9px 0; }
+.ninja-forms-form .ninja-forms-field {
+  background: white; }
 
 #nav-main-menu {
   position: relative;
