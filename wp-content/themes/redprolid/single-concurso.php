@@ -1,5 +1,5 @@
 <section>
-  <div class="container mt-35">
+  <div class="container">
 		<?php the_breadcrumb(); ?>
     <div class="row">
       <?php if( get_field('imagen_concurso') ) { ?>
