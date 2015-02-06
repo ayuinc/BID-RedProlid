@@ -18,7 +18,7 @@
 		}
 	}
 	h1 {
-		border-bottom: 1px dotted lighten($brand-primary, 14%);
+		border-bottom: 1px dotted $panel-bg;
 		@extend .col-xs-11;
 	}
 }

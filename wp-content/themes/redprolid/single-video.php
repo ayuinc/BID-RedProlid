@@ -1,8 +1,14 @@
 <section>
   <div class="container mt-7">
     <?php the_breadcrumb(); ?>
+    <div class="clearfix sub-header">
+      <div class="col-sm-12">
+        <nav class="mt-21">
+          <a href="<?php echo home_url('/'); ?>video/videos-anteriores">Video Anteriores >></a>
+        </nav>
+      </div>
+    </div>
     <div class="ph-70">
-	    <p class="text-right"><a href="<?php echo home_url('/'); ?>video/videos-anteriores" class="light">Video Anteriores >></a></p>
 	    <h2 class="medium"><?php the_title(); ?></h2>
 	    <iframe width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
 	    <p class="mt-14"><?php the_field('descripcion_video'); ?></p> 

@@ -33,6 +33,17 @@ header {
 			width: 77px;
 			height: auto;
 		}
+		&.boletines-icon {
+			width: 98px;
+			height: 81px;
+			img {
+				width: 100px;
+				height: auto;
+				position: absolute;
+				bottom: -23px;
+				left: 0;
+			}
+		}
 	}
 	&.no-border {
 		border: none !important;

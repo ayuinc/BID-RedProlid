@@ -10,17 +10,12 @@ get_header(); ?>
     
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
-    <div class="mh-700">
-	    <section class="mb-0 mt-7">
+	    <section>
 		    <div class="container">
-			    <div class="row">
-			      <div class="col-md-12">
-			        <?php the_breadcrumb(); ?>
-			      </div>
-			    </div>
+			    <?php the_breadcrumb(); ?>
 		    </div>
 	    </section>	    
-      <section id="dtl-adonde-vamos" class="mt-7 mb-21">
+      <section id="dtl-adonde-vamos">
         <div class="container relative dtl-content">
         	<?php 
 					    $uri = $_SERVER['REQUEST_URI'];
@@ -119,6 +114,4 @@ get_header(); ?>
       </section>
     <!--NAVIMAGEN-->
     <?php get_template_part( 'include', 'navimage' ); ?>    
-    </div>
-
 <?php get_footer(); ?>    

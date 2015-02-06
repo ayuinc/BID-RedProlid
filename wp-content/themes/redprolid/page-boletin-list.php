@@ -21,7 +21,7 @@ get_header(); ?>
             </nav>
           </div>
         </div>
-        <div class="sub-header-icon">
+        <div class="sub-header-icon boletines-icon" data-href="#">
           <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/boletin_suscribete.png" width="94px" height="auto" alt="">
         </div>
       </div>        
