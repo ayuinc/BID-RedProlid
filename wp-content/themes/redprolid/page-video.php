@@ -43,11 +43,8 @@ get_header(); ?>
     <?php endwhile; ?>	
     <div class="panel panel-custom">         
       <div class="panel-body pt-14">	
-	      <div class="row">
-	      	<div class="col-sm-12">
-		      	<h2>Videos más vistos</h2>
-	      	</div>
-	      </div>      
+      	<h2>Videos más vistos</h2>
+      	<hr>
 				<div class="row">
         	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
         	<?php query_posts( 'cat=260&posts_per_page=10&paged=' . $paged ); ?>

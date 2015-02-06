@@ -28,18 +28,13 @@ get_header(); ?>
           </nav>          
         </div>
       </div>
-    </div>
-	</section>		
-		
-	<section class="mb-21"> 
-	  <div class="container">
 	    <div class="row">
 				<div class="col-md-12">
 					<h3 class="light">Todos los días encontramos en los medios noticias, buenas o malas, que nos hablan de los avances o retrocesos de la mujer en el espacio público. Hemos recogido algunas de las más relevantes o significativas de entre las que tienen que ver con nosotras y nos ayudan a entender cómo está cambiando el mundo para las mujeres. Anímate a proponer las noticias que te parezcan destacadas.</h3>
 				</div>
 	    </div>	
-	  </div>      
-	</section>
+    </div>
+	</section>		
 	
 	<section class="bg-panel pt-21 pb-28 mb-21">
 	  <div class="container ph-70-md">
