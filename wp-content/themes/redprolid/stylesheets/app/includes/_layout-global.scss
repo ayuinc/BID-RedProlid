@@ -179,11 +179,11 @@ ul.table-list {
 .user-sign-in-form {
 	@include make-row();
 	.text-right {
-		@extend .col-xs-9;
+		@extend .col-xs-10;
 	}
 	img {
 		height: auto;
 		display: block;
-		@extend .col-xs-3;
+		@extend .col-xs-2;
 	}
 }
