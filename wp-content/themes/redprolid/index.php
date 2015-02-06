@@ -71,70 +71,33 @@ get_header(); ?>
             <h2>Desarrolla tu liderazgo</h2>
             <p>Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
           </div>
-          <div id="carousel-home-dtl" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-home-dtl" data-slide-to="0" class="active"></li> 
-              <li data-target="#carousel-home-dtl" data-slide-to="1" class=""></li> 
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
-			          	<?php query_posts( 'category_name=home-desarrolla-tu-liderazgo' ); ?>	
-									<?php while ( have_posts() ) : the_post(); ?>  	                
-                  <li>
-                    <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php the_field('imagen_home_dtl'); ?>);"></div>
-                      <div class="dtl-title">
-                        <h3><?php the_title(); ?></h3>
-                        <div class="text-right">
-                          <a href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>" class="btn btn-xs btn-primary">Ver más</a>
-                        </div>
+          <div class="carousel">
+            <div class="jcarousel">
+              <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
+                <?php query_posts( 'category_name=home-desarrolla-tu-liderazgo' ); ?> 
+                <?php while ( have_posts() ) : the_post(); ?>                   
+                <li>
+                  <div class="dtl-item" data-href="#">
+                    <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php the_field('imagen_home_dtl'); ?>);"></div>
+                    <div class="dtl-title">
+                      <h3><?php the_title(); ?></h3>
+                      <div class="text-right">
+                        <a href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>" class="btn btn-xs btn-primary">Ver más</a>
                       </div>
                     </div>
-                  </li>
-                  <?php endwhile; ?>
-                </ul>
-              </div>
+                  </div>
+                </li>
+                <?php endwhile; ?>
+              </ul>
             </div>
-
             <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-home-dtl" role="button" data-slide="prev">
+            <a class="left carousel-control" href="#">
               <span class="icon-prev out"></span>
             </a>
-            <a class="right carousel-control" href="#carousel-home-dtl" role="button" data-slide="next">
+            <a class="right carousel-control" href="#">
               <span class="icon-next out"></span>
             </a>
           </div>
-
-          <!-- <div class="panel panel-custom panel-highlight-silver">
-            <div class="panel-heading">
-              <ul class="list-unstyled">
-                <li class="title highlight-white">Desarrolla tu liderazgo</li>
-                <li class="rule"></li>
-                <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-nav-main-menu.png); background-repeat: no-repeat; background-position: 0px -85px;"></li>
-              </ul>
-            </div>
-            <div class="panel-body panel-body-shadow pt-21 pl-14 pr-14">
-              <div class="col-sm-4 pt-0">
-                <h5 class="light mb-14">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</h5>
-                <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo" class="btn btn-primary">Más aquí</a>
-              </div>
-              <div class="col-sm-8 dtl-path dtl-path-sm pr-14">
-               <div class="row">
-                  <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/"></a></div>
-                  <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/carrera-de-vallas/"></a></div>
-                  <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/nivelando-la-cancha/"></a></div>
-                  <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/listas-para-la-politica/"></a></div>
-                  <div class="col-xs-2"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/"></a></div>
-                  <div class="col-xs-1"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas/"></a></div>
-                  <div class="col-xs-1"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/"></a></div>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </section>
       <section class="widgets mb-21">

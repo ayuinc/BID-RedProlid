@@ -4780,7 +4780,7 @@ header {
     padding: 10.5px;
     background-color: #c3bf9b; }
     .sub-header .sub-header-icon img {
-      width: 94px;
+      width: 77px;
       height: auto; }
   .sub-header.no-border {
     border: none !important; }
@@ -4797,7 +4797,7 @@ header {
         position: absolute;
         display: block;
         width: 217%;
-        border-bottom: 1px dotted #f1f0e8; }
+        border-bottom: 1px dotted #ebeade; }
       .sub-header:not(.bg-panel) > div:nth-child(2).col-sm-4:after {
         width: 270%; }
       .sub-header:not(.bg-panel) > div:nth-child(2).col-sm-6:after {
@@ -5786,40 +5786,49 @@ form.search button {
   font-size: 18px; }
 
 /* DTL CAROUSEL */
-.dtl-carousel li div {
-  min-height: 0 !important; }
-.dtl-carousel > li {
-  position: relative; }
-.dtl-carousel .dtl-item {
+.jcarousel {
   position: relative;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border: 1px solid #f7f7f7; }
-  .dtl-carousel .dtl-item .bg-img-block {
-    height: 210px;
+  width: 100%;
+  overflow: hidden; }
+
+.dtl-carousel {
+  width: 2000px; }
+  .dtl-carousel li {
+    width: 240px !important; }
+    .dtl-carousel li div {
+      min-height: 0 !important; }
+  .dtl-carousel > li {
+    position: relative; }
+  .dtl-carousel .dtl-item {
+    position: relative;
     border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
-  .dtl-carousel .dtl-item .dtl-title {
-    padding: 10.5px; }
-    .dtl-carousel .dtl-item .dtl-title h3 {
-      text-align: center;
-      font-size: 18px; }
-  .dtl-carousel .dtl-item:hover {
-    -webkit-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
-    -moz-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
-    box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
-    cursor: pointer; }
-.dtl-carousel .dtl-icon {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-repeat: no-repeat;
-  background-size: cover; }
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #f7f7f7; }
+    .dtl-carousel .dtl-item .bg-img-block {
+      height: 210px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+    .dtl-carousel .dtl-item .dtl-title {
+      padding: 10.5px; }
+      .dtl-carousel .dtl-item .dtl-title h3 {
+        text-align: center;
+        font-size: 18px; }
+    .dtl-carousel .dtl-item:hover {
+      -webkit-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
+      -moz-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
+      box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
+      cursor: pointer; }
+  .dtl-carousel .dtl-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .bg-dtl-adonde-vamos {
   background-color: #F05F6A; }
