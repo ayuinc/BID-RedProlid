@@ -12,7 +12,7 @@ $nav-main-menu-height: 42px;
 				float: left;
 				position: relative;
 				font-size: 13px !important;
-				a {
+				> a {
 					display: block;
 					@include clearfix;
 					background: $brand-secondary;
@@ -71,7 +71,7 @@ $nav-main-menu-height: 42px;
 					}
 				}
 				&:last-child {
-					a {
+					> a {
 						border: none;
 						position: relative;
 						&:hover,

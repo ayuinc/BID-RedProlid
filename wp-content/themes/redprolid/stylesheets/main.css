@@ -5413,24 +5413,24 @@ form.form-search-inline button {
       float: left;
       position: relative;
       font-size: 13px !important; }
-      #nav-main-menu div > ul li a {
+      #nav-main-menu div > ul li > a {
         display: block;
         background: #e94472;
         border-right: 2px solid #e5245a;
         height: 42px; }
-        #nav-main-menu div > ul li a:before, #nav-main-menu div > ul li a:after {
+        #nav-main-menu div > ul li > a:before, #nav-main-menu div > ul li > a:after {
           content: " ";
           display: table; }
-        #nav-main-menu div > ul li a:after {
+        #nav-main-menu div > ul li > a:after {
           clear: both; }
-        #nav-main-menu div > ul li a:hover, #nav-main-menu div > ul li a.active {
+        #nav-main-menu div > ul li > a:hover, #nav-main-menu div > ul li > a.active {
           text-decoration: none;
           background: #ed7133; }
-        #nav-main-menu div > ul li a i,
-        #nav-main-menu div > ul li a span {
+        #nav-main-menu div > ul li > a i,
+        #nav-main-menu div > ul li > a span {
           float: left;
           display: block; }
-        #nav-main-menu div > ul li a span {
+        #nav-main-menu div > ul li > a span {
           color: white;
           padding: 12px 7px;
           padding: 0.75rem 0.4375rem;
@@ -5438,27 +5438,27 @@ form.form-search-inline button {
           font-weight: 300;
           font-style: normal;
           height: 42px; }
-        #nav-main-menu div > ul li a i {
+        #nav-main-menu div > ul li > a i {
           width: 42px;
           height: 42px; }
-        #nav-main-menu div > ul li a.home i {
+        #nav-main-menu div > ul li > a.home i {
           background: url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px 0px; }
-        #nav-main-menu div > ul li a.red-prolid i {
+        #nav-main-menu div > ul li > a.red-prolid i {
           background: url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -43px; }
-        #nav-main-menu div > ul li a.dtl i {
+        #nav-main-menu div > ul li > a.dtl i {
           background: url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -85px; }
-        #nav-main-menu div > ul li a.enterate i {
+        #nav-main-menu div > ul li > a.enterate i {
           background: url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -127px; }
-        #nav-main-menu div > ul li a.concursos i {
+        #nav-main-menu div > ul li > a.concursos i {
           background: url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -169px; }
-        #nav-main-menu div > ul li a.charla-cafe i {
+        #nav-main-menu div > ul li > a.charla-cafe i {
           background: url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -210px; }
-      #nav-main-menu div > ul li:last-child a {
+      #nav-main-menu div > ul li:last-child > a {
         border: none;
         position: relative; }
-        #nav-main-menu div > ul li:last-child a:hover, #nav-main-menu div > ul li:last-child a.active {
+        #nav-main-menu div > ul li:last-child > a:hover, #nav-main-menu div > ul li:last-child > a.active {
           background: #ed7133; }
-          #nav-main-menu div > ul li:last-child a:hover:after, #nav-main-menu div > ul li:last-child a.active:after {
+          #nav-main-menu div > ul li:last-child > a:hover:after, #nav-main-menu div > ul li:last-child > a.active:after {
             content: " ";
             background: #ed7133;
             width: 21px;
