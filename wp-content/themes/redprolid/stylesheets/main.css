@@ -4831,6 +4831,11 @@ header {
   .sub-header.sub-header-sm > div:first-child img {
     width: 42px;
     height: auto; }
+  .sub-header.sub-header-sm > [class*="col-"] {
+    min-height: 112px;
+    min-height: 7rem; }
+  .sub-header.sub-header-sm > div:nth-child(2):after {
+    border-bottom: 1px dotted #565656; }
 
 /* 
 
@@ -5383,7 +5388,8 @@ form.form-search-inline button {
 .ninja-forms-form .field-wrap {
   margin: 0;
   padding: 9px 0; }
-.ninja-forms-form .ninja-forms-field {
+.ninja-forms-form .ninja-forms-field:not(.btn) {
+  width: 100%;
   background: white; }
 
 #nav-main-menu {

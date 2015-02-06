@@ -94,6 +94,15 @@ header {
 				height: auto;
 			}
 		}
+		> [class*="col-"] {
+			min-height: 112px;
+			min-height: rem(112px);
+		}
+		> div:nth-child(2) {
+			&:after {
+				border-bottom: 1px dotted $gray-dark;
+			}
+		}
 	}
 }
 
