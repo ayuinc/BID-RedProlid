@@ -148,13 +148,7 @@ get_header(); ?>
 		          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-topic-icon.png" alt="" width="100%"></div>
 		        </div>
 		        <div class="col-sm-5 col-xs-9"></div>
-		        <div class="col-sm-6 col-xs-12">
-		        	<?php if ( is_user_logged_in() ) { ?>
-		          <nav class="text-right text-center-xs">
-		            <a href="<?php echo home_url('/'); ?>">Regístrate</a> | <a href="<?php echo home_url('/'); ?>">Inicia sesión</a>
-		          </nav>	          
-		          <?php } ?>
-		        </div>
+		        <div class="col-sm-6 col-xs-12"></div>
 		      </div>
 		      <?php if ( is_user_logged_in() ) { ?>
 		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
@@ -195,7 +189,6 @@ get_header(); ?>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-	        <button type="button" class="btn btn-primary">Sube tu evento</button>
 	      </div>
 	    </div>
 	  </div>
