@@ -24,8 +24,10 @@
       </div>
     </div>       
     <div class="row">
-	    <div class="col-sm-10 col-md-offset-1">
-		    <?php the_field('terminos_concurso'); ?>
+	    <div class="col-sm-10 col-md-offset-1 pv-14">
+		    <a name="terminos-y-condiciones"></a>
+		    <h4 class="medium">Términos y condiciones</h4>
+		    <p><?php the_field('terminos_concurso'); ?></p>
 	    </div>
     </div>
     <div class="row">
