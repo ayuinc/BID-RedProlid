@@ -122,8 +122,17 @@ $nav-main-menu-height: 42px;
 					}
 				}
 				&:hover {
-					> ul {
+					ul.dropdown-menu {
 						display: block;
+					}
+				}
+				ul.dropdown-menu {
+					li {
+						&:hover {
+							.sub-menu {
+								display: block;
+							}
+						}
 					}
 				}
 			}

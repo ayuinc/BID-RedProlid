@@ -5492,7 +5492,9 @@ form.form-search-inline button {
             position: absolute;
             left: 100%;
             top: 0; }
-      #nav-main-menu div > ul > li:hover > ul {
+      #nav-main-menu div > ul > li:hover ul.dropdown-menu {
+        display: block; }
+      #nav-main-menu div > ul > li ul.dropdown-menu li:hover .sub-menu {
         display: block; }
   #nav-main-menu form input,
   #nav-main-menu form button {
