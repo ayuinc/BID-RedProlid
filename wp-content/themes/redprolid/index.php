@@ -42,7 +42,7 @@ get_header(); ?>
                   </div>
                   <div class="col-sm-5 minh-350 flex-middle-end">
                     <div>
-                      <h3 class="light text-gray-dark"><span class="uppercase"><?php the_title(); ?></h3>
+                      <h3 class="medium text-gray-dark"><span class="uppercase"><?php the_title(); ?></h3>
                       <hr class="hr-white">
                       <div class="text-right">
                         <a href="<?php the_field('link_contenido_homepage'); ?>" class="btn btn-outline btn-white">Más aquí</a>

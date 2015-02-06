@@ -69,7 +69,11 @@ get_header(); ?>
     
     elseif ( $cat[0]->slug == 'boletin' ) {
       get_template_part( 'single-boletin' );
-    }         
+    }
+    
+     elseif ( $cat[0]->slug == 'recursos' ) {
+      get_template_part( 'single-recursos' );
+    }            
   ?>
 </div>
 <?php get_footer(); ?>
