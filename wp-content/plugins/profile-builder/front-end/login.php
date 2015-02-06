@@ -196,7 +196,7 @@ function wppb_front_end_login( $atts ){
 		else
 			$display_name = $wppb_user->display_name;
 		
-		$loged_in_message = '<p class="wppb-alert">'.sprintf(__( 'You are currently logged in as %1$s. %2$s', 'profilebuilder' ), '<a href="'.$authorPostsUrl = get_author_posts_url( $wppb_user->ID ).'" title="'.$display_name.'">'.$display_name.'</a>', '<a href="'.wp_logout_url( $redirectTo = wppb_curpageurl() ).'" title="'.__( 'Log out of this account', 'profilebuilder' ).'">'. __( 'Log out', 'profilebuilder').' &raquo;</a>' ) . '</p><!-- .alert-->';
+		$loged_in_message = '<p class="wppb-alert">'.sprintf(__( 'En este momento está conectado como %1$s. %2$s', 'profilebuilder' ), '<a href="'.$authorPostsUrl = get_author_posts_url( $wppb_user->ID ).'" title="'.$display_name.'">'.$display_name.'</a>', '<a href="'.wp_logout_url( $redirectTo = wppb_curpageurl() ).'" title="'.__( 'Log out of this account', 'profilebuilder' ).'">'. __( 'Log out', 'profilebuilder').' &raquo;</a>' ) . '</p><!-- .alert-->';
 		
 		return apply_filters( 'wppb_login_message', $loged_in_message, $wppb_user->ID, $display_name );
 		

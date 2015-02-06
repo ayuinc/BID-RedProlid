@@ -105,7 +105,7 @@ class Profile_Builder_Form_Creator{
                     if ( isset( $wppb_general_settings['loginWith'] ) && ( $wppb_general_settings['loginWith'] == 'email' ) )
                         $display_name = $userdata->data->user_email;
 
-                    echo apply_filters( 'wppb_register_pre_form_message', '<p class="alert" id="wppb_register_pre_form_message">'.sprintf( __( "You are currently logged in as %1s. You don't need another account. %2s", 'profilebuilder' ), '<a href="'.get_author_posts_url( $user_ID ).'" title="'.$display_name.'">'.$display_name.'</a>', '<a href="'.wp_logout_url( get_permalink() ).'" title="'.__( 'Log out of this account.', 'profilebuilder' ).'">'.__( 'Logout', 'profilebuilder' ).'  &raquo;</a>' ).'</p>', $user_ID );
+                    echo apply_filters( 'wppb_register_pre_form_message', '<p class="alert" id="wppb_register_pre_form_message">'.sprintf( __( "Usted está actualmente conectado como %1s. Usted no necesita otra cuenta. %2s", 'profilebuilder' ), '<a href="'.get_author_posts_url( $user_ID ).'" title="'.$display_name.'">'.$display_name.'</a>', '<a href="'.wp_logout_url( get_permalink() ).'" title="'.__( 'Log out of this account.', 'profilebuilder' ).'">'.__( 'Logout', 'profilebuilder' ).'  &raquo;</a>' ).'</p>', $user_ID );
                 }
             }
 
@@ -221,7 +221,7 @@ class Profile_Builder_Form_Creator{
 
                         switch ( $account_management_settings ){
                             case 'ec-no_aa-no':
-                                $wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "The account %1s has been successfully created!", 'profilebuilder' ), $account_name ), $account_name );
+                                $wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "La cuenta %1s se ha creado con éxito!", 'profilebuilder' ), $account_name ), $account_name );
                                 break;
                             case 'ec-yes_aa-no':
                                 $wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "Before you can access your account %1s, you need to confirm your email address. Please check your inbox and click the activation link.", 'profilebuilder' ), $account_name ), $account_name );
