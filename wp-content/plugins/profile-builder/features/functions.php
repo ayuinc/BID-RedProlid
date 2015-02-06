@@ -122,7 +122,7 @@ if ( is_admin() ){
 	add_shortcode( 'wppb-recover-password', 'wppb_front_end_password_recovery' );
 
 	// set the front-end admin bar to show/hide
-	add_filter( 'show_admin_bar' , 'wppb_show_admin_bar');
+	add_filter( 'show_admin_bar' , '__return_false');
 
 	// Shortcodes used for the widget area
 	add_filter( 'widget_text', 'do_shortcode', 11 );
@@ -550,8 +550,6 @@ function wppb_password_strength_check(){
     }
 }
 
-//HIDE ADMIN MENU BAR
-show_admin_bar(false);
 /**
  * Create functions for repeating error messages in front-end forms
  */
