@@ -14,20 +14,16 @@
   	  <div class="row">
   			<div class="col-sm-12 with-hr">  	  
   		    <p><?php the_field('recurso_descripcion'); ?></p>
-  		    <p class="text-right"><a href="<?php the_field('recurso_link'); ?>"  class="btn btn-primary">Ir al recurso</a></p>
-  		    <div class="text-right">
-  		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
-  		    </div>   
-  			</div>
-  			<div class="col-sm-12 with-hr pv-21">
-	  			<div class="container-sm">
 					<p>
 						<span class="medium">Idioma:</span> <?php the_field('recurso_idioma'); ?><br>
 						<span class="medium">Tipo de Recurso:</span> <?php the_field('recurso_tipo'); ?><br>
 						<span class="medium">Tema:</span> <?php the_field('recurso_tema'); ?><br>
 						<span class="medium">Organización:</span> <?php the_field('recurso_organizacion'); ?>
-					</p> 
-  				</div>
+					</p>   		    
+  		    <p class="text-right"><a href="<?php the_field('recurso_link'); ?>"  class="btn btn-primary">Ir al recurso</a></p>
+  		    <div class="text-right">
+  		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
+  		    </div>   
   			</div>
   	  </div>       
   	  <div class="row">
