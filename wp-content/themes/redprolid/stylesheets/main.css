@@ -5453,9 +5453,10 @@ form.form-search-inline button {
         #nav-main-menu div > ul li a.charla-cafe i {
           background: url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -210px; }
       #nav-main-menu div > ul li:last-child a {
-        border: none; }
-      #nav-main-menu div > ul li:last-child a:hover,
-      #nav-main-menu div > ul li:last-child a.active {
+        border: none;
+        position: relative; }
+      #nav-main-menu div > ul li:last-child a:hover:after,
+      #nav-main-menu div > ul li:last-child a.active:after {
         content: " ";
         background: #ed7133;
         width: 21px;

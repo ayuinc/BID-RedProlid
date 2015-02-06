@@ -70,15 +70,18 @@
 				&:last-child {
 					a {
 						border: none;
+						position: relative;
 					}
 					a:hover,
 					a.active {
-						content: " ";
-						background: $brand-primary;
-						width: 21px;
-						height: 42px;
-						position: absolute;
-						right: 0;
+						&:after {
+							content: " ";
+							background: $brand-primary;
+							width: 21px;
+							height: 42px;
+							position: absolute;
+							right: 0;
+						}
 					}
 				}
 				> ul {
