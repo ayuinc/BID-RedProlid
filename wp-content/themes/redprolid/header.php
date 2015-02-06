@@ -46,6 +46,8 @@
     <!-- WebFonts -->
     <script src="//use.typekit.net/nsv5vjx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
+
+    <?php wp_head(); ?> <!-- AVISAMOS QUE TERMINA EL HEAD -->
   </head>
   <body>
     <div class="site-wrapper pt-56-xs">
