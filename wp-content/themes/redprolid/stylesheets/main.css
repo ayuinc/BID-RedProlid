@@ -5454,12 +5454,21 @@ form.form-search-inline button {
           background: url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -210px; }
       #nav-main-menu div > ul li:last-child a {
         border: none; }
+      #nav-main-menu div > ul li:last-child a:hover,
+      #nav-main-menu div > ul li:last-child a.active {
+        content: " ";
+        background: #ed7133;
+        width: 21px;
+        height: 42px;
+        position: absolute;
+        right: 0; }
       #nav-main-menu div > ul li > ul {
         background: #e85b14;
         position: absolute;
         display: none;
         z-index: 1000;
-        min-width: 210px; }
+        min-width: 210px;
+        top: 100%; }
         #nav-main-menu div > ul li > ul li {
           float: none;
           position: relative; }

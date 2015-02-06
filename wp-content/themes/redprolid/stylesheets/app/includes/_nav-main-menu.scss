@@ -14,7 +14,7 @@
 					display: block;
 					@include clearfix;
 					background: $brand-secondary;
-					border-right: 2px solid darken($brand-secondary, 7%);				
+					border-right: 2px solid darken($brand-secondary, 7%);
 					&:hover,
 					&.active {
 						text-decoration: none;
@@ -71,6 +71,15 @@
 					a {
 						border: none;
 					}
+					a:hover,
+					a.active {
+						content: " ";
+						background: $brand-primary;
+						width: 21px;
+						height: 42px;
+						position: absolute;
+						right: 0;
+					}
 				}
 				> ul {
 					background: darken($brand-primary, 7%);
@@ -78,6 +87,7 @@
 					display: none;
 					z-index: 1000;
 					min-width: 210px;
+					top: 100%;
 					li {
 						float: none;
 						position: relative;
