@@ -174,3 +174,15 @@ ul.table-list {
 .modal-dialog {
 	z-index: 2000;
 }
+
+// USER SIGNIN FORM 
+.user-sign-in-form {
+	@include make-row();
+	.text-right {
+		@extend .col-xs-9;
+	}
+	img {
+		display: block;
+		@extend .col-xs-3;
+	}
+}
