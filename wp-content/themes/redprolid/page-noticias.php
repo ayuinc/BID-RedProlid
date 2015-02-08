@@ -156,15 +156,9 @@ get_header(); ?>
 						<?php } ?>
 					<?php } else { ?>
 						<div class="row">
-				  		<div class="col-sm-6 text-center">
-				  			<h3 class="medium">Registrate como un nuevo usuario</h3>
-				  			<div class="pv-21">
-				  				<a href="#" class="btn btn-primary btn-lg">Únete</a>
-				  			</div>
-				  		</div>
-				  		<div class="col-sm-6">
-				  			<h3 class="medium">Ingresa al sistema</h3>
+				  		<div class="col-sm-6 col-sm-offset-3">
 				  			<div class="user-sign-in-form pv-21">
+					  			<h2 class="medium">Ingresa al sistema</h2>
 			            <?php 
 			              if ( is_user_logged_in() ) {
 
@@ -186,10 +180,11 @@ get_header(); ?>
 			  	<?php } ?>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar X</button>
 	      </div>
 	    </div>
 	  </div>
 	</div>
+	<!-- END Modal NOTICIAS-->
 
 <?php get_footer(); ?>    
