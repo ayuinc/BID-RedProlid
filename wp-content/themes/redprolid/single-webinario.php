@@ -25,7 +25,7 @@
 		  <?php $id_post_comentarios = get_the_ID(); ?> 		
 		    <div class="row">
 		      <div class="col-md-10 col-md-offset-1">		
-				    <h1 class="mb-21"><?php the_title(); ?></h1>
+				    <h1 class="mb-21 medium"><?php the_title(); ?></h1>
 				    <p><?php echo get_post_field('post_content', get_the_ID()); ?></p>
 				    <?php
 				      $url = get_field('video');
