@@ -4776,6 +4776,10 @@ ul.table-list {
     height: auto;
     display: block; }
 
+@media only screen and (max-width: 768px) {
+  #breadcrumbs {
+    display: none; } }
+
 footer {
   background: #232323;
   margin-top: 35px;
