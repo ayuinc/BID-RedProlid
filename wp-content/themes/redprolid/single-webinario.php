@@ -34,7 +34,7 @@
 	          <div class="row">
 		          <div class="col-md-10 col-md-offset-1">
 						    <div class="video-container videoWrapper mt-35 mb-0">
-						      <iframe src="//www.youtube.com/embed/<?php echo $videocode['v']; ?>" frameborder="0" allowfullscreen></iframe>
+						      <iframe src="//www.youtube.com/embed/<?php the_field('video'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 						    </div>
 		          </div>
 	          </div>
