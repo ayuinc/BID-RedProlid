@@ -51,23 +51,23 @@ get_header(); ?>
           <div class="col-md-10 col-md-offset-1">
 	          <ul class="list-unstyled mt-35 mb-35 webinario-datos">
 	            <li>
-	            	<h5 class="medium mb-0">Resource type:</h5>
+	            	<h5 class="medium mb-0">Tipo de recurso:</h5>
 	            	<p><?php the_field('source_type'); ?></p>
 	            </li>
 	            <li>
-		            <h5 class="medium mb-0">Region:</h5>
+		            <h5 class="medium mb-0">Región:</h5>
 		            <p><?php the_field('region'); ?></p>
 	            </li>
 	            <li>
-	            	<h5 class="medium mb-0">Theme:</h5>
+	            	<h5 class="medium mb-0">Tema:</h5>
 	            	<p><?php the_field('theme'); ?></p>
 	            </li>
 	            <li>
-	            	<h5 class="medium mb-0">Publisher:</h5>
+	            	<h5 class="medium mb-0">Publicación:</h5>
 	            	<p><?php the_field('publisher'); ?></p>
 	            </li>
 	            <li>
-	            	<h5 class="medium mb-0">Publication year:</h5>
+	            	<h5 class="medium mb-0">Año de Publicación:</h5>
 	            	<p><?php the_field('publication_year'); ?></p>
 	            </li>
 	          </ul>			          
