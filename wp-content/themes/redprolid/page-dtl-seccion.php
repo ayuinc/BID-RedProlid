@@ -38,7 +38,7 @@ get_header(); ?>
 				          <h1 class="title-a-donde-vamos"><?php the_title(); ?></h1>
 				        </div>
 		          </div>
-		          <div class="pb-21">
+		          <div class="pb-21 clearfix">
 		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="350px" height="auto">
 		          
 							<?php endif; ?>
@@ -50,7 +50,7 @@ get_header(); ?>
 				          <h1 class="title-agenda-de-genero"><?php the_title(); ?></h1>
 				        </div>
 				      </div>
-		          <div class="pb-21">
+		          <div class="pb-21 clearfix">
 		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="350px" height="auto">
 		          
 							<?php endif; ?>
@@ -62,7 +62,7 @@ get_header(); ?>
 				          <h1 class="title-carrera-de-vallas"><?php the_title(); ?></h1>
 				        </div>
 				      </div>
-		          <div class="pb-21">
+		          <div class="pb-21 clearfix">
 		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="350px" height="auto">
 		          
 							<?php endif; ?>
@@ -74,7 +74,7 @@ get_header(); ?>
 				          <h1 class="title-la-pinta-no-es-lo-de-menos"><?php the_title(); ?></h1>
 				        </div>
 				      </div>
-		          <div class="pb-21">
+		          <div class="pb-21 clearfix">
 		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="350px" height="auto">
 		          
 							<?php endif; ?>
@@ -86,7 +86,7 @@ get_header(); ?>
 				          <h1 class="title-listas-para-la-politica"><?php the_title(); ?></h1>
 				        </div>
 				      </div>
-		          <div class="pb-21">
+		          <div class="pb-21 clearfix">
 		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="350px" height="auto">
 		          
 							<?php endif; ?>
@@ -98,7 +98,7 @@ get_header(); ?>
 				          <h1 class="title-nivelando-la-cancha"><?php the_title(); ?></h1>
 				        </div>
 				      </div>
-				      <div class="pb-21">
+				      <div class="pb-21 clearfix">
 		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-21 img-circle relative pt-70 mt-42" width="350px" height="auto">
 				      
 							<?php endif; ?>
@@ -110,7 +110,7 @@ get_header(); ?>
 				          <h1 class="title-pistas-2"><?php the_title(); ?></h1>
 				        </div>
 				      </div>
-		          <div class="pb-21">
+		          <div class="pb-21 clearfix">
 		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="350px" height="auto">
 		          
 							<?php endif; ?>
