@@ -22,7 +22,7 @@
             <div class="col-sm-8">
 	          <?php } else { ?>
             <div class="col-sm-4">
-              <img src="" alt="<?php the_title(); ?>" class="img-responsive">
+              <img src="<?php the_field('imagen'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
             </div>
             <div class="col-sm-8">
 	          <?php } ?>  
