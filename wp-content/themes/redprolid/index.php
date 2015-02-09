@@ -248,9 +248,8 @@ get_header(); ?>
 
                     <?php foreach ($comments as $comment) : ?>
                       <li class="mb-14">
-                        <h5 class="medium"><?php echo($comment->comment_author);?></h5>
                         <p class="light"><?php echo($comment->comment_content);?></p>
-                        <small class="date light"><?php echo($comment->comment_date);?> </small> 
+                        <small class="date light"><?php echo($comment->comment_date);?> | <?php echo($comment->comment_author);?></small> 
                       </li>
                     <?php endforeach;?>
                     </ul>
