@@ -40,6 +40,11 @@
 	          </div>
 	          <div class="row">
 		          <div class="col-md-10 col-md-offset-1">
+		          	<p><?php the_field('descripcion_resumen'); ?></p>
+		          </div>
+	          </div>
+	          <div class="row">
+		          <div class="col-md-10 col-md-offset-1">
 			          <ul class="list-unstyled mt-35 mb-35 webinario-datos">
 			            <li>
 			            	<h5 class="medium mb-0">Tipo de recurso:</h5>
