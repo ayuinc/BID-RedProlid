@@ -187,3 +187,10 @@ ul.table-list {
 		@extend .col-xs-2;
 	}
 }
+
+// BREADCRUMBS
+#breadcrumbs {
+	@media #{$sm-down} {
+		display: none;
+	}
+}
