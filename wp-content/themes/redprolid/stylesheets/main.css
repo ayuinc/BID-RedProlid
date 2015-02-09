@@ -6295,6 +6295,9 @@ form.search button {
   float: left;
   padding: 11px;
   padding: 0.6875rem; }
+  @media only screen and (max-width: 768px) {
+    #dtl-grid ul li {
+      width: 100%; } }
   #dtl-grid ul li a {
     display: block; }
     #dtl-grid ul li a img {
