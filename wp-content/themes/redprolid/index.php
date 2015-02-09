@@ -222,7 +222,7 @@ get_header(); ?>
                     <h3 class="pt-0 medium mb-0"><?php the_title(); ?></h3>
                     <h5 class="medium mt-0"><?php the_field('profesion'); ?></h5>
                     <p class="light"><?php the_field('descripcion_punto_de_vista'); ?></p>
-                    <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee aquí</a>
+                    <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee más</a>
                   </div>
                 </div>
                 <?php endwhile; ?>
