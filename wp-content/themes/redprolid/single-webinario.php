@@ -93,8 +93,7 @@
 		      </div>
 		      <?php if ( is_user_logged_in() ) { ?>
 		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
-		      		<p>¿Nos propones un tema para desarrollar en nuestras entrevistas y/o a quíen te gustaría que entrevistemos?</p>
-							<?php ninja_forms_display_form( 5 ); ?>
+							<?php ninja_forms_display_form( 7 ); ?>
 						<?php } ?>
 					<?php } else { ?>
 						<div class="row">
