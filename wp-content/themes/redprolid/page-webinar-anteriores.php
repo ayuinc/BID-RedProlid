@@ -47,7 +47,7 @@ get_header(); ?>
             <h3 class="text-gray-dark"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
             <div>
               <p><?php the_field('descripcion_resumen'); ?></p>
-              <span class="text-gray">177.001 visualizaciones</span>
+              <span class="text-gray"><?php echo_post_views(get_the_ID()); ?> visualizaciones</span>
             </div>
             <div class="flex-space-between pt-21">
               <div class="left">
