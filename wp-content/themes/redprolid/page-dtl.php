@@ -33,7 +33,7 @@ get_header(); ?>
       </div>
     </section>      
     <section>
-      <div class="container dtl-path">
+      <div class="container">
         <!-- DTL CAROUSEL -->
         <?php get_template_part( 'include', 'dtl-carousel' ); ?>
       </div>
