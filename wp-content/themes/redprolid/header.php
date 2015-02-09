@@ -202,17 +202,17 @@
           <div class="center">
             <ul>
               <li>
-                <a href="<?php echo home_url('/'); ?>foros-principal">Foros virtuales →</a>
+                <a href="<?php echo home_url('/'); ?>foros-proximamente">Foros virtuales →</a>
               </li>
-              <li>
+              <!--<li>
                 <a href="#">¿Quieres ver los foros anteriores?</a>
-              </li>
+              </li>-->
               <li>
-                <a href="<?php echo home_url('/'); ?>webinar-principal">Webinarios →</a>
+                <a href="<?php echo home_url('/'); ?>webinarios-proximamente">Webinarios →</a>
               </li>
-              <li>
+              <!--<li>
                 <a href="<?php echo home_url('/'); ?>webinarios-anteriores">Webinarios anteriores</a>
-              </li>
+              </li>-->
             </ul>
           </div>
           <div class="bottom"></div>

@@ -68,15 +68,15 @@
             <ul class="list-unstyled dropdown-menu">
               <li>
               	<a href="<?php echo home_url('/'); ?>foros-proximamente">Foros virtuales →</a>
-                <ul class="list-unstyled sub-menu">
+                <!--<ul class="list-unstyled sub-menu">
                   <li  class="light" style="width:250px"><a href="#">¿Quieres ver los foros anteriores?</a></li>
-                </ul>              	
+                </ul>-->              	
               </li>
               <li>
               	<a href="<?php echo home_url('/'); ?>webinarios-proximamente">Webinarios →</a>
-                <ul class="list-unstyled sub-menu">
+                <!--<ul class="list-unstyled sub-menu">
                   <li  class="light" style="width:250px"><a href="<?php echo home_url('/'); ?>webinarios-anteriores">¿Quieres ver los webinarios anteriores?</a></li>
-                </ul> 
+                </ul>--> 
               </li>
             </ul>
           </li>
