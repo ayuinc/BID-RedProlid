@@ -11,7 +11,7 @@
 	      </div>
 	      <div class="col-sm-7 col-xs-12">
 	        <nav class="text-right text-center-xs">
-	          <a href="#" data-toggle="modal" data-target="#modalWebinarios">¿Quieres proponernos un tema?</a>
+	          <a href="#" data-toggle="modal" data-target="#modalWebinarios">¿Quieres proponernos un tema?</a> <span class="brand-primary">|</span> <a href="<?php echo home_url('/'); ?>webinarios-anteriores">Webinarios anteriores</a>
 	        </nav>
 	      </div>
 	    </div>	
