@@ -93,7 +93,7 @@ get_header(); ?>
 		      </div>
 		      <?php if ( is_user_logged_in() ) { ?>
 		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
-							<?php ninja_forms_display_form( 4 ); ?>
+							<?php ninja_forms_display_form( 6 ); ?>
 						<?php } ?>
 					<?php } else { ?>
 						<div class="row">
