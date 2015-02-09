@@ -73,7 +73,11 @@ get_header(); ?>
     
      elseif ( $cat[0]->slug == 'recursos' ) {
       get_template_part( 'single-recursos' );
-    }            
+    }  
+
+     elseif ( $cat[0]->slug == 'webinario-resumen' ) {
+      get_template_part( 'single-webinario-resumen' );
+    }                
   ?>
 </div>
 <?php get_footer(); ?>
