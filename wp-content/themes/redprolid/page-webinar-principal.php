@@ -4,81 +4,16 @@ Template Name: Webinar principal Page
 */
 get_header(); ?>
 
-    <!--HEADER-->
-    <?php get_template_part( 'include', 'header' ); ?>
-    
-    <!--NAV-->
-    <?php get_template_part( 'include', 'nav' ); ?>
-<section> 
-  <div class="container">
-    <?php the_breadcrumb(); ?> 
-    <div class="clearfix sub-header">
-      <div class="col-sm-1 col-xs-3">
-	      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="100%"></div>
-	    </div>
-      <div class="col-sm-4 col-xs-9">
-        <h1 class="brand-titular">Webinarios</h1>
-      </div>
-      <div class="col-sm-7 col-xs-12">
-        <nav class="text-right text-center-xs">
-        	<a href="#" data-toggle="modal" data-target="#pdv-modal">¿Quieres proponernos un tema?</a> <span class="text-primary">|</span> 
-	        <a href="<?php echo home_url('/'); ?>webinarios-anteriores" class="">Webinarios anteriores</a>
-        </nav>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-	      <h5 class="medium">Próximo Webinario</h5>
-        <?php
-	        $customposts = get_posts('category_name=webinario&showposts=1' );
-	        foreach( $customposts as $post ) :  // start you custom loop
-	        setup_postdata($post); 
-        ?>				      
-        <h1 class="mb-0 medium"><?php the_title(); ?></h1>
-        <p><?php echo get_post_field('post_content', get_the_ID()); ?></p>
-        <?php
-          $url = get_field('video');
-          parse_str( parse_url( $url, PHP_URL_QUERY ), $videocode );
-        ?>
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-	          <div class="video-container videoWrapper mt-35 mb-0">
-							<iframe src="//www.youtube.com/embed/<?php echo $videocode['v']; ?>" frameborder="0" allowfullscreen></iframe>
-	          </div>				          
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-	          <ul class="list-unstyled mt-35 mb-35 webinario-datos">
-	            <li>
-	            	<h5 class="medium mb-0">Tipo de recurso:</h5>
-	            	<p><?php the_field('source_type'); ?></p>
-	            </li>
-	            <li>
-		            <h5 class="medium mb-0">Región:</h5>
-		            <p><?php the_field('region'); ?></p>
-	            </li>
-	            <li>
-	            	<h5 class="medium mb-0">Tema:</h5>
-	            	<p><?php the_field('theme'); ?></p>
-	            </li>
-	            <li>
-	            	<h5 class="medium mb-0">Publicación:</h5>
-	            	<p><?php the_field('publisher'); ?></p>
-	            </li>
-	            <li>
-	            	<h5 class="medium mb-0">Año de Publicación:</h5>
-	            	<p><?php the_field('publication_year'); ?></p>
-	            </li>
-	          </ul>			          
-          </div>
-        </div>	
-        <div class="comments">
-          <?php comments_template();?>
-        </div> 	
-        <?php endforeach; ?>	          	           		          
-      </div>
-    </div>
-  </div>      
-</section>
+<!--HEADER-->
+<?php get_template_part( 'include', 'header' ); ?>
+<!--NAV-->
+<?php get_template_part( 'include', 'nav' ); ?>
+
+<?php query_posts( 'category_name=webinarios&posts_per_page=1' ); ?>	
+<?php while ( have_posts() ) : the_post(); ?> 
+	<?php $location =  get_permalink( get_the_ID() ); ?>
+	<?php wp_redirect( $location, $status ); ?>
+	<?php exit; ?>
+<?php endwhile; ?>
+
 <?php get_footer(); ?>
