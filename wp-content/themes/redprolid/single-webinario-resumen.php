@@ -40,7 +40,6 @@
               </div>
             </div>
           </div>
-          <hr style="border-top: 3px dotted #aeab8b;">
         </div>
         <div class="container-sm pv-35">
           <?php comments_template(); ?>
