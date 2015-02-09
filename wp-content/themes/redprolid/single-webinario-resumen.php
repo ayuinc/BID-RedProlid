@@ -36,7 +36,7 @@
 		  	        <a class="btn btn-primary" id="boton_ocultar_entrevista_full" >Ocultar el resumen completo</a>
 		  	      </div>
               <div class="pv-21" id="entrevista_full">
-	              <p><?php the_content('contenido_resumen_webinario'); ?></p>
+	              <p><?php the_field('contenido_resumen_webinario'); ?></p>
               </div>
             </div>
           </div>
