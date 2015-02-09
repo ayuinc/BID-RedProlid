@@ -25,26 +25,17 @@
 		  <?php $id_post_comentarios = get_the_ID(); ?> 		
 		    <div class="row">
 		      <div class="col-md-10 col-md-offset-1">		
-				    <h1 class="mb-21"><?php the_title(); ?></h1>
-				    <p><?php echo get_post_field('post_content', get_the_ID()); ?></p>
-				    <?php
-				      $url = get_field('video');
-				      parse_str( parse_url( $url, PHP_URL_QUERY ), $videocode );
-				    ?> 
+				    <h1 class="mb-14 medium"><?php the_title(); ?></h1>
+				    <p class="mt-14"><?php the_field('descripcion_resumen'); ?></p>
 	          <div class="row">
-		          <div class="col-md-10 col-md-offset-1">
+		          <div class="col-md-12">
 						    <div class="video-container videoWrapper mt-35 mb-0">
 						      <iframe src="//www.youtube.com/embed/<?php the_field('video'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 						    </div>
 		          </div>
 	          </div>
 	          <div class="row">
-		          <div class="col-md-10 col-md-offset-1">
-		          	<p><?php the_field('descripcion_resumen'); ?></p>
-		          </div>
-	          </div>
-	          <div class="row">
-		          <div class="col-md-10 col-md-offset-1">
+		          <div class="col-md-12">
 			          <ul class="list-unstyled mt-35 mb-35 webinario-datos">
 			            <li>
 			            	<h5 class="medium mb-0">Tipo de recurso:</h5>
