@@ -29,9 +29,11 @@ get_header(); ?>
             <div class="title">
               <h3><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
             </div>
-            <div class="content mb-70">
+            <div class="content mb-7">
               <?php the_field('descripcion_concurso'); ?>
+							<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Ve más >></a></p>
             </div>
+            <hr>
           <?php endwhile; ?>
           <div class="text-center">
             <ul class="pager">
