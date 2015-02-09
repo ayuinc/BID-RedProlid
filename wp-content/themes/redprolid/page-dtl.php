@@ -10,11 +10,9 @@ get_header(); ?>
     
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
-    <section>
-      <?php the_breadcrumb(); ?> 
-    </section>	    
     <section id="dtl">
       <div class="container dtl-content">
+        <?php the_breadcrumb(); ?> 
 				<?php if ( have_posts() ) : ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 					<div class="col-md-6 pl-0 relative">

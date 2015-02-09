@@ -178,7 +178,7 @@ ul.table-list {
 // USER SIGNIN FORM 
 .user-sign-in-form {
 	@include make-row();
-	.text-right {
+	.text-right:not(.col-xs-5) {
 		@extend .col-xs-10;
 	}
 	img {

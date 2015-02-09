@@ -138,6 +138,9 @@
 		@include clearfix;
 		li {
 			width: 25%;
+			@media #{$sm-down} {
+				width: 100%;
+			}
 			float: left;
 			padding: 11px;
 			padding: rem(11);
