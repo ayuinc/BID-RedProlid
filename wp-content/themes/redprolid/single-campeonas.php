@@ -11,7 +11,7 @@
       <div class="col-sm-7 col-xs-12">
         <nav class="text-right text-center-xs">
           <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores">¿Quieres leer nuestras entrevistas anteriores?</a> <span class="text-primary">|</span>
-          <a href="#" data-toggle="modal" data-target="#modalCampeonas">Nos propones un tema</a>
+          <a href="#" data-toggle="modal" data-target="#modalWebinarios">Nos propones un tema</a>
         </nav>
       </div>
     </div>
@@ -49,7 +49,7 @@
 </section>
 
 	<!-- Modal EVENTOS -->
-	<div class="modal fade" id="modalCampeonas" tabindex="-1" role="dialog" aria-labelledby="modalCampeonasLabel" aria-hidden="true">
+	<div class="modal fade" id="modalWebinarios" tabindex="-1" role="dialog" aria-labelledby="modalWebinariosLabel" aria-hidden="true">
 		<?php if ( is_user_logged_in() ) { ?>
   	<div class="modal-dialog">
   	<?php } else { ?>
@@ -67,7 +67,7 @@
 		      <?php if ( is_user_logged_in() ) { ?>
 		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
 		      		<p>¿Nos propones un tema para desarrollar en nuestras entrevistas y/o a quíen te gustaría que entrevistemos?</p>
-							<?php ninja_forms_display_form( 5 ); ?>
+							<?php ninja_forms_display_form( 7 ); ?>
 						<?php } ?>
 					<?php } else { ?>
 						<div class="row">

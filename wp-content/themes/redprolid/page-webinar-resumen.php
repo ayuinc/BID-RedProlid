@@ -47,6 +47,6 @@ get_header(); ?>
           <h3>Comentarios</h3>
         </div>
       </section>
-    </div>
+    </div>    
 
 <?php get_footer(); ?>
