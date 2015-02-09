@@ -10,6 +10,9 @@ $(document).ready ->
 		$siteWrapper.toggleClass('menu-on')
 		return
 
+	# TRANSFORM ICOMS
+	transformicons.add('.tcon')
+
 	$mobileNavRefGlobal = ''
 	$mobileNavDisplayTriggers.on('click', '[href^=#]', (e)->
 		$navRef = $(this).attr('href')

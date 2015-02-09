@@ -56,7 +56,10 @@
           <div class="logo" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png)"></div>
         </div>
         <div class="right">
-          <a href="#" class="menu-trigger icon-menu">M</a>
+          <button type="button" class="tcon tcon-menu--xcross menu-trigger" aria-label="toggle menu">
+            <span class="tcon-menu__lines" aria-hidden="true"></span>
+            <span class="tcon-visuallyhidden">toggle menu</span>
+          </button>
         </div>
       </div> <!-- END:Mobile navbar -->
       <div class="mobile-menu hidden-sm-up"> <!-- MOBILE MENU -->
