@@ -6361,49 +6361,52 @@ form.search button {
 .title-pistas-2 {
   color: #007c8d !important; }
 
-#dtl-grid ul:before, #dtl-grid ul:after {
-  content: " ";
-  display: table; }
-#dtl-grid ul:after {
-  clear: both; }
-#dtl-grid ul li {
-  width: 25%;
-  float: left;
-  padding: 11px;
-  padding: 0.6875rem; }
-  @media only screen and (max-width: 768px) {
-    #dtl-grid ul li {
-      width: 100%; } }
-  #dtl-grid ul li a {
-    display: block; }
-    #dtl-grid ul li a img {
-      width: 100%;
-      height: auto; }
-    #dtl-grid ul li a:hover {
-      text-decoration: none; }
-      #dtl-grid ul li a:hover .color {
-        display: block; }
-      #dtl-grid ul li a:hover .gs {
-        display: none; }
-    #dtl-grid ul li a .title {
-      position: relative;
-      padding-left: 46px; }
-      #dtl-grid ul li a .title:before, #dtl-grid ul li a .title:after {
-        content: " ";
-        display: table; }
-      #dtl-grid ul li a .title:after {
-        clear: both; }
-      #dtl-grid ul li a .title img {
-        position: absolute;
-        top: -15px;
-        left: 0px;
-        z-index: 30;
-        width: 40px;
+#dtl-grid ul {
+  text-align: center; }
+  #dtl-grid ul:before, #dtl-grid ul:after {
+    content: " ";
+    display: table; }
+  #dtl-grid ul:after {
+    clear: both; }
+  #dtl-grid ul li {
+    width: 24.7%;
+    float: none;
+    display: inline-block;
+    padding: 11px;
+    padding: 0.6875rem; }
+    @media only screen and (max-width: 768px) {
+      #dtl-grid ul li {
+        width: 100%; } }
+    #dtl-grid ul li a {
+      display: block; }
+      #dtl-grid ul li a img {
+        width: 100%;
         height: auto; }
-      #dtl-grid ul li a .title hr {
-        border-top: 2px dotted #bcbcbc; }
-    #dtl-grid ul li a .color {
-      display: none; }
+      #dtl-grid ul li a:hover {
+        text-decoration: none; }
+        #dtl-grid ul li a:hover .color {
+          display: block; }
+        #dtl-grid ul li a:hover .gs {
+          display: none; }
+      #dtl-grid ul li a .title {
+        position: relative;
+        padding-left: 46px; }
+        #dtl-grid ul li a .title:before, #dtl-grid ul li a .title:after {
+          content: " ";
+          display: table; }
+        #dtl-grid ul li a .title:after {
+          clear: both; }
+        #dtl-grid ul li a .title img {
+          position: absolute;
+          top: -15px;
+          left: 0px;
+          z-index: 30;
+          width: 40px;
+          height: auto; }
+        #dtl-grid ul li a .title hr {
+          border-top: 2px dotted #bcbcbc; }
+      #dtl-grid ul li a .color {
+        display: none; }
 
 .z-index-100 {
   z-index: 100; }

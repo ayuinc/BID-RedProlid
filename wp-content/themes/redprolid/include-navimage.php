@@ -5,7 +5,7 @@
 			    $segment2 = $elements[2] ; //For the 2nd segment
 			    $segment3 = $elements[3] ; //For the 3rd segment
 			?>       
-      <section id="dtl-grid">
+      <section id="dtl-grid" class="pv-21">
         <div class="container">
           <ul class="list-unstyled">
 	          <?php if ($segment2!='a-donde-vamos') { ?>
