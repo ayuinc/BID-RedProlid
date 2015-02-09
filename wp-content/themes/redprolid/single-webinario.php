@@ -76,7 +76,7 @@
 </div>
 
 	<!-- Modal WEBINARIOS -->
-	<div class="modal fade" id="modalCampeonas" tabindex="-1" role="dialog" aria-labelledby="modalCampeonasLabel" aria-hidden="true">
+	<div class="modal fade" id="modalWebinarios" tabindex="-1" role="dialog" aria-labelledby="modalWebinariosLabel" aria-hidden="true">
 		<?php if ( is_user_logged_in() ) { ?>
   	<div class="modal-dialog">
   	<?php } else { ?>
