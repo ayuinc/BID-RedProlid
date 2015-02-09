@@ -31,10 +31,11 @@
               <div class="pv-21">
                 <p><?php the_field('descripcion_webinario_resumen'); ?></p>
               </div>
-              <div class="text-right">
-                <a href="#" class="btn btn-primary">Ver todo el documento</a>
-              </div>
-              <div class="pv-21">
+		          <div class="text-right mt-14 mb-14">
+		  	        <a class="btn btn-primary" id="boton_entrevista_full" >Lee el resumen completo</a>
+		  	        <a class="btn btn-primary" id="boton_ocultar_entrevista_full" >Ocultar el resumen completo</a>
+		  	      </div>
+              <div class="pv-21" id="entrevista_full">
 	              <p><?php the_content('contenido_resumen_webinario'); ?></p>
               </div>
             </div>
