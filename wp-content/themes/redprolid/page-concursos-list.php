@@ -31,7 +31,9 @@ get_header(); ?>
             </div>
             <div class="content mb-70">
               <?php the_field('descripcion_concurso'); ?>
+							<p><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Ve más >></a></p>
             </div>
+            <hr>
           <?php endwhile; ?>
           <div class="text-center">
             <ul class="pager">
