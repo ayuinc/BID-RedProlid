@@ -46,7 +46,7 @@ get_header(); ?>
         <div class="banner-content col-sm-8">
             <h3 class="text-gray-dark"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
             <div>
-              <p><?php echo get_post_field('post_content', get_the_ID()); ?></p>
+              <p><?php the_field('descripcion_resumen'); ?></p>
               <span class="text-gray">177.001 visualizaciones</span>
             </div>
             <div class="flex-space-between pt-21">
@@ -54,7 +54,7 @@ get_header(); ?>
                 <strong>Fecha:</strong>
                 <div>
 	                <?php $tempDate = $field = get_field('fecha_inicio_resumen'); ?>
-                  <span><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></span> <span class="text-gray"><?php the_field('hora_inicio_resumen'); ?></span>
+                  <span><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></span> a las <span class="text-gray"><?php the_field('hora_inicio_resumen'); ?> horas</span>
                 </div>
               </div>
               <div class="right flex-middle">
