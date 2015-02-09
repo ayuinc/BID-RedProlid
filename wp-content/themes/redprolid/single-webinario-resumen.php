@@ -17,21 +17,25 @@
 	          <?php $video = get_field('video'); ?>
 	          <?php if ($video!='') { ?>
             <div class="col-sm-4">
-              <iframe class="embed-responsive-item" width="100%" height="210" src="//www.youtube.com/embed/<?php the_field('video'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" width="100%" height="210" src="//www.youtube.com/embed/<?php the_field('video_resumen_webinario'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="col-sm-8">
 	          <?php } else { ?>
-	          <div class="col-sm-12">
+            <div class="col-sm-4">
+              <img src="" alt="<?php the_title(); ?>" class="img-responsive">
+            </div>
+            <div class="col-sm-8">
 	          <?php } ?>  
               <h3 class="mb-0"><?php the_title(); ?></h3>
-              <strong>La red para mujeres líderes del sector público.</strong>
+              <strong><?php the_field('sub_titulo'); ?></strong>
               <div class="pv-21">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio autem fugit nemo delectus eum porro, tempora pariatur commodi nobis animi accusantium nulla sequi molestiae in neque perferendis perspiciatis ab rem.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem reprehenderit illum vero, alias ipsa? Ut accusamus vitae, maiores cumque nihil et sunt repellendus, veniam quam totam! Totam dolorum a, doloribus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit enim assumenda nisi, veniam est, veritatis. Fugiat quae similique illo a libero eum delectus dolorum ratione excepturi ut, pariatur eos quo.</p>
+                <p><?php the_field('descripcion_webinario_resumen'); ?></p>
               </div>
               <div class="text-right">
                 <a href="#" class="btn btn-primary">Ver todo el documento</a>
+              </div>
+              <div class="pv-21">
+	              <p><?php the_content('contenido_resumen_webinario'); ?></p>
               </div>
             </div>
           </div>
