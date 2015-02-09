@@ -6,7 +6,7 @@
               <h1>Resumen del webinario</h1>
             </div>
             <div class="col-sm-5 pt-7">
-              <a href="#" class="see-more">Descargar archivo en PDF</a> | <a href="#">Webinarios anteriores</a>
+              <a href="#" class="see-more">Descargar archivo en PDF <?php if (function_exists("wpptopdfenh_display_icon")) echo wpptopdfenh_display_icon();?></a> | <a href="#">Webinarios anteriores</a>
             </div>
           </div>
         </div>
