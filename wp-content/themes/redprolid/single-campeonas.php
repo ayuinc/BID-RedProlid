@@ -37,8 +37,9 @@
   	      </div>
         </div>
         <div id="entrevista_full">
+	        <hr>
 	        <?php $tempDate = get_field('fecha_entrevista'); ?>
-	        <h3 class="medium">Entrevista / <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small></h3>
+	        <h3 class="medium mt-21">Entrevista / <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small></h3>
           <p><?php the_field('entrevista_completa_campeona'); ?></p>
         </div>
         <div class="text-right">
