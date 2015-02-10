@@ -59,7 +59,7 @@ function ninja_forms_new_field(){
 		$label = $type_name;
 	}
 
-	$input_limit_msg = __( 'character(s) left', 'ninja-forms' );
+	$input_limit_msg = __( 'caracter(es) disponible(s)', 'ninja-forms' );
 
 	$data = serialize( array( 'label' => $label, 'input_limit_msg' => $input_limit_msg ) );
 
