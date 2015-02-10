@@ -5941,10 +5941,11 @@ form.search button {
   padding-left: 3px; }
 .widgets #opinion .panel .panel-body .yop-poll-answers li:nth-child(6) {
   display: none; }
-.widgets #opinion .panel .panel-body div[id^="yop-poll-results-3"] {
-  display: none !important; }
 .widgets #opinion .panel .panel-body .yop-poll-question {
   font-size: 18px; }
+
+div[id^="yop-poll-results-3"] {
+  display: none !important; }
 
 /* DTL CAROUSEL */
 .jcarousel {

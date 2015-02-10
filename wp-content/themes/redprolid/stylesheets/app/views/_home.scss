@@ -118,9 +118,6 @@
 				.yop-poll-answers li:nth-child(6) {
 					display: none;
 				}
-				div[id^="yop-poll-results-3"] {
-					display: none !important;
-				}			
 				// .yop-poll-container {
 				// 	padding:0px !important;
 				// 	width:100%;
@@ -133,6 +130,10 @@
 		}	
 	}
 }
+
+div[id^="yop-poll-results-3"] {
+	display: none !important;
+}			
 
 /* DTL CAROUSEL */
 .jcarousel {
