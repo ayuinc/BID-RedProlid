@@ -16,7 +16,7 @@ get_header(); ?>
         <div>
           <h1>Puntos de vista anteriores</h1>
           <nav class="mt-21">
-            <a href="<?php echo content_url('/'); ?>noticias">Puntos de vista >></a>
+            <a href="<?php echo content_url('/'); ?>puntos-de-vista">Puntos de vista >></a>
           </nav>
         </div>
       </div>
@@ -34,7 +34,7 @@ get_header(); ?>
               <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
             </div>
             <div class="content mb-7">
-              <?php the_field('descripcion_rapida_noticias'); ?>
+              <?php the_field('descripcion_punto_de_vista'); ?>
 							<p><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Lee el artículo >></a></p>
             </div>
             <hr>

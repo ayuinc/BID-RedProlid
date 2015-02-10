@@ -10,12 +10,8 @@
       </div>
       <div class="col-sm-7 col-xs-12">
         <nav class="text-right text-center-xs">
-           <a href="<?php echo home_url('/'); ?>puntos-de-vista-list">Puntos de vista anteriores</a> 
-            <?php
-            if ( is_user_logged_in() ) {
-              echo '<span class="text-primary">|</span> <a href="#" data-toggle="modal" data-target="#pdv-modal">¿Te gustaría proponernos un tema?</a>';
-            }
-            ?>
+           <a href="<?php echo home_url('/'); ?>puntos-de-vista-anteriores">Puntos de vista anteriores</a> <span class="text-primary">|</span> 
+           <a href="#" data-toggle="modal" data-target="#pdv-modal">¿Te gustaría proponernos un tema?</a>        
         </nav>
       </div>
     </div>
