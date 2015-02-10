@@ -32,11 +32,11 @@ get_header(); ?>
           <?php while ( have_posts() ) : the_post(); ?>
             <div class="title">
               <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-              <spam><?php the_field('profesion'); ?></spam>
+              <span><?php the_field('profesion'); ?></span>
             </div>
             <div class="content mb-7">
               <?php the_field('descripcion_punto_de_vista'); ?>
-							<p><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Lee el artículo >></a></p>
+							<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Lee el artículo >></a></p>
             </div>
             <hr>
           <?php endwhile; ?>
