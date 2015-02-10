@@ -9,13 +9,11 @@ get_header(); ?>
 <?php get_template_part( 'include', 'nav' ); ?>
   <section class="minh-630 bg-panel-dark">
     <div class="container">
-      <!--BREADCRUMBS-->
-      <?php //the_breadcrumb(); ?>
-      <div class="clearfix sub-header">
-        <div class="col-sm-5 col-xs-12">
+      <?php the_breadcrumb(); ?>
+      <div class="clearfix sub-header bg-panel">
+        <div class="col-sm-6 col-xs-12">
           <h1>Encuestas anteriores</h1>
         </div>
-        <div class="col-xs-1"></div>
         <div class="col-sm-6 col-xs-12">
           <nav class="text-right text-center-xs">
             <a href="#" data-toggle="modal" data-target="#modalEventos">Tu opinión cuenta &gt;&gt;</a>

@@ -5943,9 +5943,6 @@ form.search button {
   display: none; }
 .widgets #opinion .panel .panel-body div[id^="yop-poll-results-3"] {
   display: none !important; }
-.widgets #opinion .panel .panel-body .yop-poll-container {
-  padding: 0px !important;
-  width: 100%; }
 .widgets #opinion .panel .panel-body .yop-poll-question {
   font-size: 18px; }
 
