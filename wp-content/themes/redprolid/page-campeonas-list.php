@@ -40,7 +40,8 @@ get_header(); ?>
           <div class="content mt-14 mb-35">
             <p><?php the_field('descripcion_campeona'); ?></p>
 						<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Lee la entrevista >></a></p>
-          </div>    
+          </div> 
+          <hr>   
         </div>
         <?php endwhile; ?>
         <div class="text-center">
