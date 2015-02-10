@@ -3278,7 +3278,7 @@
 				$template .= '<div id="yop-poll-container-error-' . $poll_id . $unique_id . '" class="yop-poll-container-error"></div>';
 			}
 
-			$template .= '<form id="yop-poll-form-' . $poll_id . $unique_id . '" class="yop-poll-forms bg-secondary">' . $temp . '<input type="hidden" id="yop-poll-tr-id-' . $poll_id . $unique_id . '" name="yop_poll_tr_id" value="' . $tr_id . '"/>' . wp_nonce_field( 'yop_poll-' . $poll_id . $unique_id . '-user-actions', 'yop-poll-nonce-' . $poll_id . $unique_id, false, false ) . '</form></div></li>';
+			$template .= '<form id="yop-poll-form-' . $poll_id . $unique_id . '" class="yop-poll-forms">' . $temp . '<input type="hidden" id="yop-poll-tr-id-' . $poll_id . $unique_id . '" name="yop_poll_tr_id" value="' . $tr_id . '"/>' . wp_nonce_field( 'yop_poll-' . $poll_id . $unique_id . '-user-actions', 'yop-poll-nonce-' . $poll_id . $unique_id, false, false ) . '</form></div></li>';
 			return $template;
 		}
 

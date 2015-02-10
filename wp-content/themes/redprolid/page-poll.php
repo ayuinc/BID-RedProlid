@@ -7,7 +7,7 @@ get_header(); ?>
 <?php get_template_part( 'include', 'header' ); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
-  <section class="minh-630 bg-panel-dark">
+  <section class="minh-630">
     <div class="container">
       <?php the_breadcrumb(); ?>
       <div class="clearfix sub-header bg-panel">
