@@ -37,6 +37,10 @@
   	      </div>
         </div>
         <div id="entrevista_full">
+	        <?php $tempDate = get_field('fecha_entrevista'); ?>
+          <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?>, <?php if ($publicacion!='') { ?><a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+  				<?php } ?>
+	        <h3 class="medium">Entrevista / <span></span></h3>
           <p><?php the_field('entrevista_completa_campeona'); ?></p>
         </div>
         <div class="text-right">
