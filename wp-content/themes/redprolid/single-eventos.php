@@ -2,7 +2,7 @@
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>
     <div class="clearfix sub-header">
-      <div class="col-sm-12 col-xs-12">
+      <div class="col-sm-12 col-xs-12 with-hr pb-0 mb-21">
         <nav class="text-right text-center-xs">
           <a href="<?php echo home_url('/'); ?>eventos-anteriores">Ve todos los eventos</a> <span class="text-primary"> </span> <?php previous_post_link('%link', '| Ve eventos anteriores', TRUE); ?>  <?php next_post_link( '%link', '| Ve próximos eventos', TRUE ); ?>
         </nav>          
