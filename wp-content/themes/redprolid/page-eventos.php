@@ -47,6 +47,7 @@ get_header(); ?>
 		        			<div class="banner-pic col-sm-4" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
 		        			<div class="banner-content col-sm-8">
 		        				<h3 class="medium mt-7 mb-14 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+		        				<p><?php the_field('descripcion_evento'); ?></p>
 		        				<?php $tempDate = get_the_date(); ?>
 		              	<p>
 		                	<strong>Fecha:</strong> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><br>
