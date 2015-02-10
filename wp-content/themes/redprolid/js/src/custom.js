@@ -5,8 +5,8 @@ $(document).ready(function(){
   $(".yop-poll-container").removeClass("box-shadow");
   $(".front-list").addClass("list-unstyled");
   $("button[id^='yop_poll_vote-button-3']").html("Vota")
-  var votaButton = $("button[id^='yop_poll_vote-button-3']");
-  votaButton.addClass("custom-vote");
+  // var votaButton = $("button[id^='yop_poll_vote-button-3']");
+  // votaButton.addClass("custom-vote");
   $('div.yop-poll-answers ul li:first').addClass("mt-35");
   $('.yop-poll-answers ul li label').addClass('respuesta');
 });
