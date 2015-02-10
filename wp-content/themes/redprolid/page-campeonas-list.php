@@ -37,7 +37,7 @@ get_header(); ?>
             <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
             <small><?php the_field('posicion_campeona'); ?> <?php if (get_field('twitter_campeona')!='') { ?>/ <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank">@<?php the_field('twitter_campeona'); ?></a><?php } ?></small>
           </div>
-          <div class="content mt-14 mb-35">
+          <div class="content mv-14">
             <p><?php the_field('descripcion_campeona'); ?></p>
 						<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Lee la entrevista >></a></p>
           </div> 
