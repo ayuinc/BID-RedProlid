@@ -59,8 +59,8 @@ get_header(); ?>
 					            <div>
 	                  	<?php if( get_field('imagen_noticias') ) { ?>
 	                      <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
-											<?php } else {?>
-	                    	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
+											<?php //} else {?>
+	                    	<!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">-->
 											<?php } ?>
 	                    <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0 pb-0"><?php the_title(); ?></h3></a>
 	                    <?php $publicacion = get_field('publicacion_noticias'); ?>
