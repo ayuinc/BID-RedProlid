@@ -40,7 +40,7 @@ get_header(); ?>
         <div class="carousel-inner">
 					<!-- Start the Loop. -->
 					<?php if ( have_posts() ) : ?>
-            <?php query_posts( array( 'category_name' => 'eventos-destacados', 'posts_per_page' => 1 ) ); ?>
+            <?php query_posts( array( 'category_name' => 'eventos-destacados', 'posts_per_page' => 3 ) ); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 		        	<div class="item active">
 		        		<div class="banner">
