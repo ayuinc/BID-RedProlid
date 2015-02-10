@@ -35,7 +35,7 @@ get_header(); ?>
             </div>
             <div class="content mb-7">
               <?php the_field('descripcion_rapida_noticias'); ?>
-							<p><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Lee la noticia >></a></p>
+							<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Lee la noticia >></a></p>
             </div>
             <hr>
           <?php endwhile; ?>
