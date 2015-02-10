@@ -165,7 +165,7 @@ get_header(); ?>
                   <?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
                     <?php the_content(); ?>
-                    <div class="pull-left view-results">
+                    <div class="mt-sm text-right small">
                       <a href="http://www.redprolid.org/poll">Resultados >></a>
                     </div>
                   <?php endwhile; ?>
