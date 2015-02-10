@@ -39,10 +39,11 @@ get_header(); ?>
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
 					<!-- Start the Loop. -->
+					<?php $aux = 0; ?>
 					<?php if ( have_posts() ) : ?>
             <?php query_posts( array( 'category_name' => 'eventos-destacados', 'posts_per_page' => 3 ) ); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
-		        	<div class="item active">
+		        	<div class="item <?php if ($aux<1) { ?>active <?php } ?>">
 		        		<div class="banner">
 		        			<div class="banner-pic col-sm-4" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
 		        			<div class="banner-content col-sm-8">
