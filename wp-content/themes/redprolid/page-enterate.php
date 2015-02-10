@@ -23,7 +23,7 @@ get_header(); ?>
           </div>
           <div class="col-xs-12 col-sm-7">
             <nav class="text-right text-center-xs mb-0 mt-0">
-              <a href="<?php echo home_url('/'); ?>puntos-de-vista-list">¿Quieres compartir un recurso?</a> 
+              <a href="#" data-toggle="modal" data-target="#modalRecursos">¿Quieres compartir un recurso?</a> 
             </nav>
           </div>
         </div>
@@ -306,5 +306,58 @@ get_header(); ?>
         </div>
       </div>
     </section>
+    
+	<!-- Modal PUNTOS DE VISTA -->
+	<div class="modal fade" id="modalRecursos" tabindex="-1" role="dialog" aria-labelledby="modalRecursosLabel" aria-hidden="true">
+		<?php if ( is_user_logged_in() ) { ?>
+  	<div class="modal-dialog">
+  	<?php } else { ?>
+  	<div class="modal-dialog modal-lg">
+  	<?php } ?>
+	    <div class="modal-content bg-panel">
+	      <div class="modal-body">
+	        <div class="clearfix sub-header sub-header-sm">
+		        <div class="col-sm-1 col-xs-3">
+		          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-topic-icon.png" alt="" width="100%"></div>
+		        </div>
+		        <div class="col-sm-5 col-xs-9"></div>
+		        <div class="col-sm-6 col-xs-12"></div>
+		      </div>
+		      <?php if ( is_user_logged_in() ) { ?>
+		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
+							<?php ninja_forms_display_form( 10 ); ?>
+						<?php } ?>
+					<?php } else { ?>
+						<div class="row">
+				  		<div class="col-sm-6 col-sm-offset-3">
+				  			<div class="user-sign-in-form pv-21">
+					  			<h2 class="medium">Ingresa al sistema</h2>
+			            <?php 
+			              if ( is_user_logged_in() ) {
+
+			                $current_user = wp_get_current_user();
+			                echo '<div class="text-right">';
+			                echo '<h4 class="light">Hola '.$current_user->user_nicename.'</h4>';
+											echo '<a href="'.wp_logout_url().'" title="Logout" class="light">Cierra tu sesión</a>';
+			                echo '</div>';
+
+			              } else {
+
+			                echo do_shortcode('[dm_login_form]'); 
+
+			              }
+			            ?>
+			           </div>
+				  		</div>
+				  	</div>
+			  	<?php } ?>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar X</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- END Modal PUNTOS DE VISTA-->    
 
 <?php get_footer(); ?>    
