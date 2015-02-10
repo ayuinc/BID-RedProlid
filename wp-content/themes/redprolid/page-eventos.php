@@ -35,7 +35,6 @@ get_header(); ?>
 	  <div class="container ph-70-md">
 	  	<h2>Eventos destacados</h2>
 	  	<div id="carousel-eventos-destacados" class="carousel slide" data-ride="carousel">
-
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
 					<!-- Start the Loop. -->
