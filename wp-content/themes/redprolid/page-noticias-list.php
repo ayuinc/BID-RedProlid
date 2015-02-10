@@ -32,6 +32,12 @@ get_header(); ?>
           <?php while ( have_posts() ) : the_post(); ?>
             <div class="title">
               <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+              <?php $publicacion = get_field('publicacion_noticias'); ?>
+              <small>
+              	<?php $tempDate = get_the_date(); ?>
+                <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+								<?php } ?>
+							</small>              
             </div>
             <div class="content mb-7">
               <?php the_field('descripcion_rapida_noticias'); ?>
