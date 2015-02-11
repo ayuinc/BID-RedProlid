@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-10 col-md-offset-1 with-hr pb-14 pl-0 pr-0">  
+      <div class="col-sm-10 col-md-offset-1 with-hr pb-14 pl-0 pr-0 mt-14">  
 			  <h3 class="medium mb-0"><?php the_field('nombre_completo'); ?></h3>
 		    <?php the_field('contenido_punto_de_vista'); ?>
 		    <div class="text-center mt-14">
@@ -47,7 +47,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-10 col-md-offset-1 pl-0 pr-0">		  
+      <div class="col-sm-10 col-md-offset-1 pl-0 pr-0 mt-21">		  
 		    <h3 class="text-gray-darker">Artículos comentados</h3>
 		    <ul class="ml--14 grid-list grid-list-2 pb-ch-7 light">
         <?php 
