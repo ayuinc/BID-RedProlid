@@ -83,7 +83,7 @@ get_header(); ?>
                     }
                   ?>
                 </p>
-                <small><a href="<?php echo get_permalink( get_the_ID() ); ?>">Leer más >></a></small>
+                <small><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
                 <hr>
               </li>
               <?php endwhile; ?>
