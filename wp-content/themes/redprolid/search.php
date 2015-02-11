@@ -30,7 +30,7 @@ get_header(); ?>
             	Resultados por página:
 							<?php
 								$mySearch =& new WP_Query("s=$s & showposts=-1");
-								echo $NumResults = $mySearch->post_count;
+								echo $num = $mySearch->post_count;
 							?>
             </span>
           </div>
