@@ -25,7 +25,7 @@ get_header(); ?>
         </div>
         <div class="col-sm-4">
           <div class="text-right">
-            <p class="m-0">Resultados: </p>
+            <p class="m-0">Resultados: 
             <span>
 						<?php 
 							$num = $wp_query->post_count; 
@@ -38,6 +38,7 @@ get_header(); ?>
               <?php endwhile; ?>
               <?php $cantidad; ?> Resultados								
             </span>
+            </p>
           </div>
         </div>
       </div>
