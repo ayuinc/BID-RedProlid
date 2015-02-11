@@ -29,9 +29,7 @@
 							}              
 
             } else {
-
               echo do_shortcode('[dm_login_form]'); 
-
             }
           ?>       
         </div>

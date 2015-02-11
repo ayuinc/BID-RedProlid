@@ -202,13 +202,13 @@
           <div class="center">
             <ul>
               <li>
-                <a href="<?php echo home_url('/'); ?>foros-proximamente">Foros virtuales →</a>
+                <a href="<?php echo home_url('/'); ?>foros-proximamente">Foros virtuales</a>
               </li>
               <!--<li>
                 <a href="#">¿Quieres ver los foros anteriores?</a>
               </li>-->
               <li>
-                <a href="<?php echo home_url('/'); ?>webinarios-proximamente">Webinarios →</a>
+                <a href="<?php echo home_url('/'); ?>webinarios-proximamente">Webinarios</a>
               </li>
               <!--<li>
                 <a href="<?php echo home_url('/'); ?>webinarios-anteriores">Webinarios anteriores</a>
