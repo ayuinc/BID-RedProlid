@@ -27,7 +27,16 @@ get_header(); ?>
           <div class="text-right">
             <p class="m-0">Resultados: </p>
             <span>
-Desplegando <?php $num = $wp_query->post_count; if (have_posts()) : echo $num; endif;?> de <?php $search_count = 0; $search = new WP_Query("s=$s & showposts=-1"); if($search->have_posts()) : while($search->have_posts()) : $search->the_post(); $search_count++; endwhile; endif; echo $search_count;?> Resultados
+						<?php 
+							$num = $wp_query->post_count; 
+							if (have_posts()) : 
+								echo $num; 
+							endif;?> 
+							<?php $cantidad = 0; ?>
+							<?php while ( have_posts() ) : the_post(); ?>
+								<?php $cantidad++; ?>
+              <?php endwhile; ?>
+              <?php $cantidad; ?> Resultados								
             </span>
           </div>
         </div>
