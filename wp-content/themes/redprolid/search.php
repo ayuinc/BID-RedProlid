@@ -29,8 +29,8 @@ get_header(); ?>
             <span>
             	Resultados por página:
 							<?php
-							global $wp_query;
-							$total_results = $wp_query->found_posts;
+								$mySearch =& new WP_Query("s=$s & showposts=-1");
+								echo $NumResults = $mySearch->post_count;
 							?>
             </span>
           </div>
