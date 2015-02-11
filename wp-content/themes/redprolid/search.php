@@ -26,7 +26,13 @@ get_header(); ?>
         <div class="col-sm-4">
           <div class="text-right">
             <p class="m-0">Resultados: </p>
-            <span>Resultados por página: 15, 50, 100</span>
+            <span>
+            	Resultados por página:
+							<?php
+							global $wp_query;
+							$total_results = $wp_query->found_posts;
+							?>
+            </span>
           </div>
         </div>
       </div>
