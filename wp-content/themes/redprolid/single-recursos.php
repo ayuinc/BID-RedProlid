@@ -15,10 +15,22 @@
   			<div class="col-sm-12 with-hr">  	  
   		    <p><?php the_field('recurso_descripcion'); ?></p>
 					<p>
-						<span class="medium">Idioma:</span> <?php the_field('recurso_idioma'); ?><br>
-						<span class="medium">Tipo de recurso:</span> <?php the_field('recurso_tipo'); ?><br>
-						<span class="medium">Tema:</span> <?php the_field('recurso_tema'); ?><br>
-						<span class="medium">Organización:</span> <?php the_field('recurso_organizacion'); ?>
+						<?php $recurso_idioma = get_field('recurso_idioma'); ?>
+						<?php if ($recurso_idioma!='') { ?>							
+						<span class="medium">Idioma:</span> <?php echo $recurso_idioma; ?><br>
+						<?php } ?>
+						<?php $recurso_tipo = get_field('recurso_tipo'); ?>
+						<?php if ($recurso_tipo!='') { ?>	
+						<span class="medium">Tipo de recurso:</span> <?php echo $recurso_tipo; ?><br>
+						<?php } ?>
+						<?php $recurso_tema = get_field('recurso_tema'); ?>
+						<?php if ($recurso_tema!='') { ?>						
+						<span class="medium">Tema:</span> <?php echo $recurso_tema; ?><br>
+						<?php } ?>
+						<?php $recurso_organizacion = get_field('recurso_organizacion'); ?>
+						<?php if ($recurso_organizacion!='') { ?>
+						<span class="medium">Organización:</span> <?php echo $recurso_organizacion; ?>
+						<?php } ?>
 					</p>   		    
   		    <p class="text-right"><a href="<?php the_field('recurso_link'); ?>"  class="btn btn-primary">Ir al recurso</a></p>
   		    <div class="text-right">
