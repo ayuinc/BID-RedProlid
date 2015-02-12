@@ -7,7 +7,7 @@
           <h2 class="medium mb-0"><?php the_title(); ?></h2>
           <?php $publicacion = get_field('recurso_descripcion'); ?>
           <small>
-			      <?php the_field('recurso_autor'); ?>, <?php the_field('recurso_año_de_publicacion'); ?> 
+			      <span class="brand-primary"><?php the_field('recurso_autor'); ?></span>, <?php the_field('recurso_año_de_publicacion'); ?> 
   				</small>        
         </div>
       </div>
@@ -16,7 +16,7 @@
   		    <p><?php the_field('recurso_descripcion'); ?></p>
 					<p>
 						<span class="medium">Idioma:</span> <?php the_field('recurso_idioma'); ?><br>
-						<span class="medium">Tipo de Recurso:</span> <?php the_field('recurso_tipo'); ?><br>
+						<span class="medium">Tipo de recurso:</span> <?php the_field('recurso_tipo'); ?><br>
 						<span class="medium">Tema:</span> <?php the_field('recurso_tema'); ?><br>
 						<span class="medium">Organización:</span> <?php the_field('recurso_organizacion'); ?>
 					</p>   		    
