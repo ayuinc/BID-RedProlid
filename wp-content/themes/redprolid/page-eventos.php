@@ -27,7 +27,7 @@ get_header(); ?>
           </nav>          
         </div>
       </div>
-			<h3 class="light text-justify">Todos los días encontramos en los medios noticias, buenas o malas, que nos hablan de los avances o retrocesos de la mujer en el espacio público. Hemos recogido algunas de las más relevantes o significativas de entre las que tienen que ver con nosotras y nos ayudan a entender cómo está cambiando el mundo para las mujeres. Anímate a proponer las noticias que te parezcan destacadas.</h3>
+			<h3 class="light text-justify"><?php the_content(); ?></h3>
     </div>
 	</section>		
 	
