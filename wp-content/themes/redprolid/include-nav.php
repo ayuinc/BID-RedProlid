@@ -26,7 +26,7 @@
               <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/listas-para-la-politica/">Listas para la política</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/">Agenda de género</a></li>
               <li class="light">
-                <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas">Pistas →</a>
+                <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2">Pistas →</a>
                 <ul class="list-unstyled sub-menu">
                   <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a></li>
                 </ul>
