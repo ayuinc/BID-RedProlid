@@ -9,7 +9,7 @@
           <div class="dtl-title">
             <h3><?php the_title(); ?></h3>
             <div class="text-center">
-              <a href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>" class="btn btn-xs btn-primary">Ver más</a>
+              <a href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>" class="btn btn-xs btn-primary">Ve más</a>
             </div>
           </div>
         </div>
