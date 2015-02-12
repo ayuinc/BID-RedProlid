@@ -29,13 +29,7 @@ get_header(); ?>
       </div>
 	    <div class="row text-justify">
 				<div class="col-md-12">
-					<h3 class="light">
-					<?php
-						$page = get_page_by_title( 'noticias' );
-						$content = apply_filters('the_content', $page->post_content); 
-						echo $content;
-					?>
-					</h3>
+					<h3 class="light">Todos los días encontramos en los medios noticias, buenas o malas, que nos hablan de los avances o retrocesos de la mujer en el espacio público. Hemos recogido algunas de las más relevantes o significativas de entre las que tienen que ver con nosotras y nos ayudan a entender cómo está cambiando el mundo para las mujeres. Anímate a proponer las noticias que te parezcan destacadas.</h3>
 				</div>
 	    </div>	
     </div>

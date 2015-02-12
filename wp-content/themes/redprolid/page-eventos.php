@@ -27,13 +27,7 @@ get_header(); ?>
           </nav>          
         </div>
       </div>
-			<h3 class="light text-justify">
-				<?php
-					$page = get_page_by_title( 'eventos' );
-					$content = apply_filters('the_content', $page->post_content); 
-					echo $content;
-				?>
-			</h3>
+			<h3 class="light text-justify">¿Te resulta difícil estar al día de todos los eventos sobre asuntos de género, políticas públicas, liderazgo y participación de la mujer en política? Aquí tratamos de sistematizar para ti todos esos eventos, incluyendo además los distintos programas de capacitación a los que te puedes presentar. Te ofrecemos también la posibilidad de que tú misma incluyas los eventos que pueden interesarnos y que encuentres que faltan en la sección.</h3>
     </div>
 	</section>		
 	
