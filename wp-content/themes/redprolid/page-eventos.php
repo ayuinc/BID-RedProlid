@@ -19,7 +19,7 @@ get_header(); ?>
           <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-circle.png" alt="" width="100%"></div>
         </div>
         <div class="col-sm-5 col-xs-9">
-          <h1>Eventos</h1>
+          <h1><?php the_title(); ?></h1>
         </div>
         <div class="col-sm-6 col-xs-12">
           <nav class="text-right text-center-xs">
@@ -27,7 +27,13 @@ get_header(); ?>
           </nav>          
         </div>
       </div>
-			<h3 class="light text-justify"><?php the_content(); ?></h3>
+			<h3 class="light text-justify">
+				<?php
+					$page = get_page_by_title( 'eventos' );
+					$content = apply_filters('the_content', $page->post_content); 
+					echo $content;
+				?>
+			</h3>
     </div>
 	</section>		
 	
