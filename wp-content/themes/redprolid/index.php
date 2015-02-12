@@ -175,7 +175,7 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      <section class="mb-21">
+      <section class="mb-28">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
