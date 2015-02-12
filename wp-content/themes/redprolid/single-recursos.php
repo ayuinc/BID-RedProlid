@@ -1,7 +1,7 @@
 <section> 
   <div class="container relative">
     <?php the_breadcrumb(); ?>
-    <div class="ph-70">
+    <div class="ph-70 pv-21">
       <div class="row pb-14">
   	    <div class="col-sm-12">  
           <h2 class="medium mb-0"><?php the_title(); ?></h2>
