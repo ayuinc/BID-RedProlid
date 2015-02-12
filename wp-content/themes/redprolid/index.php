@@ -65,7 +65,7 @@ get_header(); ?>
           <h2 class="text-center mt-21 mb-0"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
         </div>
       </section>
-      <section class="dtl-home pv-21">
+      <section class="dtl-home pv-14">
         <div class="container ph-70-sm">
           <div class="text-center">
             <h2>Desarrolla tu liderazgo</h2>
@@ -75,7 +75,7 @@ get_header(); ?>
           <?php get_template_part( 'include', 'dtl-carousel' ); ?>
         </div>
       </section>
-      <section class="widgets pv-21">
+      <section class="widgets pv-14">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
@@ -175,7 +175,7 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      <section class="pv-21">
+      <section class="pv-14">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -231,7 +231,7 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      <section class="pv-21">
+      <section class="pv-14">
         <div class="container">
           <div class="row">
             <div class="col-md-3 comentarios">
