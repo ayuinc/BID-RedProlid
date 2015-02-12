@@ -41,7 +41,7 @@
             </div>
             <div class="col-md-6 text-center pt-42">
               <nav class="text-muted terms">
-                <a href="<?php echo content_url('/'); ?>terminos-y-condiciones/" class="text-white pr-7">Términos y Condiciones</a>
+                <a href="<?php echo content_url('/'); ?>terminos-y-condiciones/" class="text-white pr-7">Términos y condiciones</a>
               </nav>
             </div>
             <div class="col-md-3"></div>
