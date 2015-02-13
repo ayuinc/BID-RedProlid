@@ -32,7 +32,7 @@ get_header(); ?>
           <?php query_posts( 'category_name='.$categoria.'&posts_per_page=10&paged=' . $paged ); ?>
           <?php while ( have_posts() ) : the_post(); ?>
             <div class="title">
-              <h3><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+              <h3 class="medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
               <?php $fuente_debates = get_field('fuente-debates'); ?>
               <?php if ($fuente_debates!='') { ?>
               	<p>FUENTE: <?php echo $fuente_debates; ?></p>
