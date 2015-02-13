@@ -42,7 +42,7 @@ get_header(); ?>
               	<span>Blog: <?php echo $blog_debates; ?></span>
 							<?php } ?>
             </div>
-            <div class="content mb-70">
+            <div class="content">
               <?php the_field('contenido-debates'); ?>
             </div>
             <hr>
