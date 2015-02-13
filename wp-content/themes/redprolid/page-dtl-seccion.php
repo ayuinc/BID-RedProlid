@@ -99,7 +99,7 @@ get_header(); ?>
 				        </div>
 				      </div>
 				      <div class="pb-21 clearfix">
-		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-21 img-circle relative pt-70 mt-42" width="210px" height="auto">
+		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-21 relative pt-21" width="210px" height="auto">
 				      
 							<?php endif; ?>
 							<?php if ($segment2 == "pistas-2") : ?>
