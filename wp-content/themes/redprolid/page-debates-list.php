@@ -28,7 +28,7 @@ get_header(); ?>
               <?php if ($fuente_debates!='') { ?>
               	<p>FUENTE: <?php echo $fuente_debates; ?></p>
               <?php } ?>
-              <?php blog-debates = get_field('blog-debates'); ?>
+              <?php $blog_debates = get_field('blog-debates'); ?>
               <?php if ($blog_debates!='') { ?>
               	<span>Blog: <?php echo $blog_debates; ?></span>
 							<?php } ?>
