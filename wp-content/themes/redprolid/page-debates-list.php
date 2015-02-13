@@ -20,12 +20,20 @@ get_header(); ?>
 		<div class="ph-70">
       <div class="row">
       	<div class="col-sm-10 col-md-offset-1">
-          <?php query_posts( 'category_name=dtl-debates' ); ?> 
+	      	<?php $categoria = $_GET['categoria']; ?>
+          <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+          <?php query_posts( 'category_name='.$categoria.'&posts_per_page=10&paged=' . $paged ); ?>          
           <?php while ( have_posts() ) : the_post(); ?>
             <div class="title">
               <h3><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-              <p>FUENTE: <?php the_field('fuente-debates'); ?></p>
-              <span>Blog: <?php the_field('blog-debates'); ?></span>
+              <?php $fuente_debates = get_field('fuente-debates'); ?>
+              <?php if ($fuente_debates!='') { ?>
+              	<p>FUENTE: <?php echo $fuente_debates; ?></p>
+              <?php } ?>
+              <?php blog-debates = get_field('blog-debates'); ?>
+              <?php if ($blog_debates!='') { ?>
+              	<span>Blog: <?php echo $blog_debates; ?></span>
+							<?php } ?>
             </div>
             <div class="content mb-70">
               <?php the_field('contenido-debates'); ?>
@@ -33,8 +41,8 @@ get_header(); ?>
           <?php endwhile; ?>
           <div class="text-center">
             <ul class="pager">
-              <li><a href="#">Previos</a></li>
-              <li><a href="#">Siguiente</a></li>
+              <li><?php next_posts_link( 'Anteriores' ); ?></li>
+              <li><?php previous_posts_link( 'Posteriores' ); ?></li>
             </ul>
           </div>
       	</div>
