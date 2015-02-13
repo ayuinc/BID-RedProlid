@@ -20,7 +20,7 @@ get_header(); ?>
 		<div class="ph-70">
       <div class="row">
       	<div class="col-sm-10 col-md-offset-1">
-	      	<?php echo $categoria = $_GET['categoria']; ?>
+	      	<?php //echo $categoria = $_GET['categoria']; ?>
           <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
           <?php query_posts( 'category_name=dtl-debates&posts_per_page=10&paged=' . $paged ); ?>          
           <?php while ( have_posts() ) : the_post(); ?>
