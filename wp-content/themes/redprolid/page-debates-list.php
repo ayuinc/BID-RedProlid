@@ -17,7 +17,7 @@ get_header(); ?>
         <div>
           <h1>Debates anteriores</h1>
           <nav class="mt-21">
-            <a href="/desarrolla-tu-liderazgo/<?php echo $categoria; ?> ">Noticias >></a>
+            <a href="/desarrolla-tu-liderazgo/<?php echo $categoria; ?> ">Atrás >></a>
           </nav>
         </div>
       </div>
