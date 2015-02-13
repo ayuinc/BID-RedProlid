@@ -131,7 +131,7 @@ get_header(); ?>
               <div class="debates-anteriores">
                 <h4 class="medium text-gray-darker">¿Quieres ver los debates anteriores?</h4>
                 <div class="text-right">
-                  <a href="http://redprolid.org/debates/?categoria=<?php echo $segment2; ?>" class="btn btn-primary">Archivos</a>
+                  <a href="http://redprolid.org/debates-anteriores?categoria=<?php echo $segment2; ?>" class="btn btn-primary">Archivos</a>
                 </div>
               </div>
               <div class="pl-21 pr-21">
