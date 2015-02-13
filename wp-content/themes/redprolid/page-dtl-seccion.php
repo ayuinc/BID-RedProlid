@@ -39,7 +39,7 @@ get_header(); ?>
 				        </div>
 		          </div>
 		          <div class="pb-21 clearfix">
-		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="250px" height="auto">
+		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="210px" height="auto">
 		          
 							<?php endif; ?>
 							<?php if ($segment2 == "agenda-de-genero") : ?>
@@ -51,7 +51,7 @@ get_header(); ?>
 				        </div>
 				      </div>
 		          <div class="pb-21 clearfix">
-		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="250px" height="auto">
+		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="210px" height="auto">
 		          
 							<?php endif; ?>
 							<?php if ($segment2 == "carrera-de-vallas") : ?>
@@ -63,7 +63,7 @@ get_header(); ?>
 				        </div>
 				      </div>
 		          <div class="pb-21 clearfix">
-		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="250px" height="auto">
+		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="210px" height="auto">
 		          
 							<?php endif; ?>
 							<?php if ($segment2 == "la-pinta-no-es-lo-de-menos") : ?>
@@ -75,7 +75,7 @@ get_header(); ?>
 				        </div>
 				      </div>
 		          <div class="pb-21 clearfix">
-		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="250px" height="auto">
+		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="210px" height="auto">
 		          
 							<?php endif; ?>
 							<?php if ($segment2 == "listas-para-la-politica") : ?>
@@ -87,7 +87,7 @@ get_header(); ?>
 				        </div>
 				      </div>
 		          <div class="pb-21 clearfix">
-		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="250px" height="auto">
+		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="210px" height="auto">
 		          
 							<?php endif; ?>
 							<?php if ($segment2 == "nivelando-la-cancha") : ?>
@@ -99,7 +99,7 @@ get_header(); ?>
 				        </div>
 				      </div>
 				      <div class="pb-21 clearfix">
-		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-21 img-circle relative pt-70 mt-42" width="250px" height="auto">
+		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-left mr-21 img-circle relative pt-70 mt-42" width="210px" height="auto">
 				      
 							<?php endif; ?>
 							<?php if ($segment2 == "pistas-2") : ?>
@@ -111,7 +111,7 @@ get_header(); ?>
 				        </div>
 				      </div>
 		          <div class="pb-21 clearfix">
-		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="250px" height="auto">
+		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="210px" height="auto">
 		          
 							<?php endif; ?>
 		          	<h3 class=" pt-14-100 light" style="color: #aaa;"><?php the_field('contenido-dtl-seccion'); ?></h3>
