@@ -33,7 +33,7 @@ get_header(); ?>
 	            </div>
 	            <div class="col-md-6">
 			          <style>
-									.control-label {
+									.control-label, .formBuilderLabel {
 										font-weight: 100;
 										text-align: left !important;
 										margin-bottom:7px;
