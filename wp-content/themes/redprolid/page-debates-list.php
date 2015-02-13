@@ -11,12 +11,13 @@ get_header(); ?>
 <section id="puntos-de-vista-anteriores">
   <div class="container">
     <?php the_breadcrumb(); ?>
+    <?php echo $categoria = $_GET['categoria']; ?>
     <div class="clearfix bg-panel sub-header">
       <div class="col-sm-7">
         <div>
           <h1>Debates anteriores</h1>
           <nav class="mt-21">
-            <a href="<?php echo content_url('/'); ?>noticias">Noticias >></a>
+            <a href="<?php echo content_url('/'); ?>desarrolla-tu-liderazgo/<?php echo $categoria; ?> ">Noticias >></a>
           </nav>
         </div>
       </div>
@@ -27,7 +28,6 @@ get_header(); ?>
     <div class="ph-70">
       <div class="row">
         <div class="col-sm-12">
-	        <?php echo $categoria = $_GET['categoria']; ?>
           <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
           <?php query_posts( 'category_name=dtl-debates&posts_per_page=10&paged=' . $paged ); ?>
           <?php while ( have_posts() ) : the_post(); ?>
