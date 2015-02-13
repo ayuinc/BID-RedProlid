@@ -1,41 +1,68 @@
+@charset "UTF-8";
 /*
-Error: Invalid charset directive '@charset': expected string.
-        on line 1 of main.css
 
-1: @charset "UTF-8";
-2: /*
-3: 
-4:   Ayu Consulting Frontend Boilerplate - @MadeByGus
-5:   ultima actualizacion: 26 de Septiembre 2014
-6:   Author: @MadeByGus - G. Andres Ibarra yo@soygus.com
+  Ayu Consulting Frontend Boilerplate - @MadeByGus
+  ultima actualizacion: 12 de Noviembre 2014
+  Author: @MadeByGus - G. Andres Ibarra yo@soygus.com
+  Desde la consola navega hasta el directorio "stylesheets" y ejecuta: 
 
-Backtrace:
-main.css:1
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:862:in `parse_charset_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:788:in `parse_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:635:in `parse_line'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:525:in `build_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:544:in `block in append_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:543:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:543:in `append_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:396:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:293:in `watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin.rb:108:in `method_missing'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:370:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:50:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-/usr/bin/sass:23:in `load'
-/usr/bin/sass:23:in `<main>'
+  sass --watch main.scss:main.css
+  sass --watch main.scss:main.css -t compressed
+
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid charset directive '@charset': expected string.\A         on line 1 of main.css\A \A 1: @charset \"UTF-8\";\A 2: /*\A 3: \A 4:   Ayu Consulting Frontend Boilerplate - @MadeByGus\A 5:   ultima actualizacion: 26 de Septiembre 2014\A 6:   Author: @MadeByGus - G. Andres Ibarra yo@soygus.com"; }
+
+/*========================================
+=          Twitter Bootstrap 3.1.0      =
+========================================*/
+
+
+@import "b3/b3";
+
+// Override some default variables:
+@import "app/settings"; 
+
+
+/*========================================
+=                  BOURBON               =
+========================================*/
+/* Bourbon (uncomment if you want it in your project.
+    Run
+      gem install bourbon
+    Go into your stylesheets directory and run
+      bourbon install
+*/
+
+// Bourbon sass tools
+// http://bourbon.io/docs/
+
+@import "bourbon/bourbon"; 
+
+/*========================================
+=                EASY BOX MODEL         =
+========================================*/
+// EBM - EasyBoxModel by @MadeByGus
+
+// @import "EBM/ebm-loops";
+@import "EBM/ebm";
+
+/*========================================
+=            CSS3 ANIMATIONS             =
+========================================*/
+// Animations
+// http://daneden.github.io/animate.css/
+
+@import "animate/animate-init";
+
+/*========================================
+=                TRANSFORMICONS         =
+========================================*/
+// http://www.transformicons.com/docs.html
+
+@import "transformicons/tcons";
+
+/*========================================
+=             APP CUSTOM                 =
+========================================*/
+
+
+@import "app/app"; 
