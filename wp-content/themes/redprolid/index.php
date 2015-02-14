@@ -104,7 +104,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title highlight-white">Noticias</li>
                     <li class="rule"></li>
-                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -84px;"></li>
+                    <li class="icon" data-href="/noticias" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -84px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body">
@@ -133,7 +133,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title highlight-white">Eventos</li>
                     <li class="rule"></li>
-                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -126px;"></li>
+                    <li class="icon" data-href="/eventos" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -126px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body pt-0">
@@ -158,7 +158,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title highlight-white">Tu opinión cuenta</li>
                     <li class="rule"></li>
-                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -168px;"></li>
+                    <li class="icon" data-href="/resultados" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -168px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body pt-0">
@@ -184,7 +184,10 @@ get_header(); ?>
                   <ul class="list-unstyled m-0">
                     <li class="title text-gray-darker highlight-white">Puntos de vista</li>
                     <li class="rule relative"></li>
-                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
+	                  <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=1' ); ?>	
+										<?php while ( have_posts() ) : the_post(); ?>  
+                    <li class="icon" data-href="<?php echo get_permalink( get_the_ID() ); ?>" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
+                    <?php endwhile; ?>
                   </ul>
                 </div>
                 <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=1' ); ?>	
@@ -209,7 +212,10 @@ get_header(); ?>
                     <ul class="list-unstyled m-0">
                       <li class="title highlight-campeonas pl-14 text-gray-darker">Campeonas</li>
                       <li class="rule relative"></li>
-                      <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
+			                <?php query_posts( 'category_name=campeonas&posts_per_page=1' ); ?>	
+											<?php while ( have_posts() ) : the_post(); ?>                       
+                      <li class="icon" data-href="<?php echo get_permalink( get_the_ID() ); ?>" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
+                      <?php endwhile; ?>
                     </ul>
                   </div>             
                 <?php query_posts( 'category_name=campeonas&posts_per_page=1' ); ?>	
