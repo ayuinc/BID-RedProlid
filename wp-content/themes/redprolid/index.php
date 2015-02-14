@@ -41,7 +41,7 @@ get_header(); ?>
                     </div>
                   </div>
                   <div class="col-sm-5 minh-350 flex-middle-end">
-                    <div class="">
+                    <div>
                       <h3 class="medium text-gray-dark"><span class="uppercase"><?php the_title(); ?></h3>
                       <hr class="hr-white">
                       <div class="text-right">
@@ -84,8 +84,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title highlight-white">Concursos</li>
                     <li class="rule"></li>
-                    <li class="icon"><a href="http://google.com"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png"></a></li>
-                    <!--<li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -42px;"></li>-->
+                    <li class="icon" data-href="/concurso" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -42px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body highlight">
