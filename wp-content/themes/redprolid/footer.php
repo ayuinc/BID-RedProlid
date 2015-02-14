@@ -124,6 +124,10 @@
           target: '+=1'
       });
     });
+    
+		$('.icon').each(function() { 
+		 $(this).attr('href', $(this).attr('data-href'));
+		});    
 
 		</script>    
     
