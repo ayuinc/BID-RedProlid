@@ -125,7 +125,7 @@
       });
     });
     
-		$('.icon').each(function() { 
+		$('.icon[data-href]').each(function() { 
 		 $(this).attr('href', $(this).attr('data-href'));
 		});    
 
