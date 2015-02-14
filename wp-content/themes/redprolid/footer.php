@@ -125,6 +125,10 @@
       });
     });
 
+		$('a[data-href]').each(function() { 
+		 $(this).attr('href', $(this).attr('data-href'));
+		});
+
 		</script>    
     
     <?php wp_footer(); ?>
