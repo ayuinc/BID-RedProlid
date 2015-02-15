@@ -77,6 +77,11 @@ form.form-search-inline {
 	}
 }
 
+.formBuilderError {
+	color:red !important;
+	@include light;
+}
+
 .formBuilderFailure { 
 	border:none !important;
 	padding:10px !important;
