@@ -46,23 +46,23 @@ get_header(); ?>
             <div class="panel-body pt-0 pb-0">
               <ul class="list-unstyled red-prolid-grid mb-0">
                 <li class="light">
-                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" alt="">
+                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" alt="diálogo entre pares, en el que intercambiemos opiniones" width="98">
                   <?php the_field('quiere_ser_op1'); ?>
                 </li>
                 <li class="light">
-                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-2.png" alt="">
+                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-2.png" alt="aprendizaje que nos ayude a sistematizar nuestras propias experiencias" width="98">
                   <p><?php the_field('quiere_ser_op2'); ?></p>
                 </li>
                 <li class="light">
-                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" alt="">
+                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" alt="encontrar informacióny recursos prácticos" width="98">
                   <p><?php the_field('quiere_ser_op3'); ?></p>
                 </li>
                 <li class="light">
-                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" alt="">
+                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" alt="desarrollar contactos profesionalesque nos permitan avanzar" width="98">
                   <p><?php the_field('quiere_ser_op4'); ?></p>
                 </li>
                 <li class="light">
-                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-5.png" alt="">
+                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-5.png" alt="escapar del estrés y sentirnos como en familia." width="98">
                   <p><?php the_field('quiere_ser_op5'); ?></p>
                 </li>
               </ul>
