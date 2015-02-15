@@ -128,6 +128,8 @@
 		$('.icon[data-href]').each(function() { 
 		 $(this).attr('href', $(this).attr('data-href'));
 		});    
+		
+		$('.wppb-max-upload').hide();		
 
 		</script>    
     
