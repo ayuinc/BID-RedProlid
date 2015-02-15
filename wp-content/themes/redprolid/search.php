@@ -48,6 +48,8 @@ get_header(); ?>
       <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-10">
+	        <?php $resultado = $_GET['s']; ?>
+	        <?php if ($resultado!='') { ?>
           <ol>
             <?php if ( have_posts() ) : ?>
               <?php while ( have_posts() ) : the_post(); ?>
@@ -95,6 +97,9 @@ get_header(); ?>
               <?php endwhile; ?>
             <?php endif; ?> 
           </ol>
+          <?php } else { ?>
+          <p>No insertaste ningúna palabra o frase para buscar. Vuelve a intentarlo.</p>
+          <?php } ?>
         </div>
         <div class="col-sm-1"></div>
       </div>
