@@ -41,7 +41,7 @@ get_header(); ?>
                     </div>
                   </div>
                   <div class="col-sm-5 minh-350 flex-middle-end">
-                    <div>
+                    <div class"slide-content relative">
                       <h3 class="medium text-gray-dark"><span class="uppercase"><?php the_title(); ?></h3>
                       <hr class="hr-white">
                       <div class="text-right">
