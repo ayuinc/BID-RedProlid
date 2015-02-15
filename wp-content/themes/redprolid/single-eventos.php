@@ -19,27 +19,53 @@
 				<div class="banner-content col-sm-9">
 					<div class="row">
 						<div class="col-sm-7">
+							<?php $organizan_evento = get_field('organizan_evento'); ?>
+							<?php if ($organizan_evento!='') { ?>							
 							<h5 class="medium mb-0">Organizan</h5>
-			        <p><?php the_field('organizan_evento'); ?></p>
+			        <p><?php echo $organizan_evento; ?></p>
+			        <?php } ?>
+			        <?php $convocan = get_field('convocan'); ?>
+							<?php if ($convocan!='') { ?>
 			        <h5 class="medium mb-0">Convocan</h5>
-			        <p><?php the_field('convocan'); ?></p>
+			        <p><?php echo $convocan; ?></p>
+			        <?php } ?>
 			        <p>Para mayores informes contactar a <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_nombre_evento'); ?></a></p>
 			        <hr>
+			        <?php $tipo_de_recurso_evento = get_field('tipo_de_recurso_evento'); ?>
+							<?php if ($tipo_de_recurso_evento!='') { ?>			        
 			        <h5 class="medium mb-0">Tipo de recurso</h5>
-					    <p><?php the_field('tipo_de_recurso_evento'); ?></p>
+					    <p><?php echo $tipo_de_recurso_evento; ?></p>
+					    <?php } ?>
+			        <?php $tema_evento = get_field('tema_evento'); ?>
+							<?php if ($tema_evento!='') { ?>						    
 					    <h5 class="medium mb-0">Tema</h5>
-					    <p><?php the_field('tema_evento'); ?></p>
+					    <p><?php echo $tema_evento; ?></p>
+					    <?php } ?>
+			        <?php $ano_publicacion_evento = get_field('ano_publicacion_evento'); ?>
+							<?php if ($ano_publicacion_evento!='') { ?>					    
 					    <h5 class="medium mb-0">Año de publicación</h5>
-							<p><?php the_field('año_publicacion_evento'); ?></p>
+							<p><?php echo $ano_publicacion_evento; ?></p>
+							<?php } ?>
 						</div>
 						<div class="col-sm-5">
 							<h5 class="medium mb-0">Fecha</h5>
 				      <?php $tempDate = get_field('fecha_evento'); ?>
 				      <p><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?>, <?php the_field('hora_evento'); ?></p>
+			        <?php $ciudad_evento = get_field('ciudad_evento'); ?>
+							<?php if ($ciudad_evento!='') { ?>				      
 				      <h5 class="medium mb-0">Ciudad</h5>
-				      <p><?php the_field('ciudad_evento'); ?></p>
+				      <p><?php echo $ciudad_evento; ?></p>
+				      <?php } ?>
+			        <?php $pais_evento = get_field('pais_evento'); ?>
+							<?php if ($pais_evento!='') { ?>					      
+				      <h5 class="medium mb-0">País</h5>
+				      <p><?php echo $pais_evento; ?></p>
+				      <?php } ?>
+			        <?php $lugar_evento = get_field('lugar_evento'); ?>
+							<?php if ($lugar_evento!='') { ?>				       
 				      <h5 class="medium mb-0">Lugar</h5>
-				      <p><?php the_field('lugar_evento'); ?></p>
+				      <p><?php echo $lugar_evento; ?></p>
+				      <?php } ?>
 						</div>
 					</div>
 				</div>
