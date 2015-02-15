@@ -61,19 +61,19 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 			$data = $_POST['formbuilder'];
 			
 			if(!preg_match('/^.+$/isu', $data['name']))
-				$message = "\n " . __("You must enter a name for this autoresponse.", 'formbuilder');
+				$message = "\n " . __("Debe ingresar un nombre para esta respuesta automática.", 'formbuilder');
 
 			if(!preg_match('/^.+$/isu', $data['subject']))
-				$message = "\n " . __("You must enter a subject for this autoresponse.", 'formbuilder');
+				$message = "\n " . __("Debe introducir un tema para esta respuesta automática.", 'formbuilder');
 
 			if(!preg_match('/^.+$/isu', $data['message']))
-				$message = "\n " . __("You must enter a message for this autoresponse.", 'formbuilder');
+				$message = "\n " . __("Debe introducir un mensaje para este autoresponse.", 'formbuilder');
 
 			if(!preg_match('/^.+$/isu', $data['from_name']))
-				$message = "\n " . __("You must enter a from name for this autoresponse.", 'formbuilder');
+				$message = "\n " . __("Debe ingresar un nombre de esta respuesta automática.", 'formbuilder');
 
 			if(!preg_match('/^.+$/isu', $data['from_email']))
-				$message = "\n " . __("You must enter a from email address for this autoresponse.", 'formbuilder');
+				$message = "\n " . __("Debe introducir una dirección de correo electrónico a partir de esta respuesta automática.", 'formbuilder');
 
 			// Check to ensure that we can save the form data.  List an error message if not.
 			if($_POST['Save'] AND !$message)
