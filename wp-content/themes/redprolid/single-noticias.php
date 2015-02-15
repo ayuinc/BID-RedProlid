@@ -5,9 +5,9 @@
       <div class="row pb-14">
 	      <?php echo $image = get_field('imagen_noticias'); ?>
 				<?php echo $url = $image['url']; ?>
-				<?php echo $title = $image['title']; ?>
+				<?php echo $title = $image['título']; ?>
 				<?php echo $alt = $image['alt']; ?>
-				<?php echo $caption = $image['caption']; ?>
+				<?php echo $caption = $image['leyenda']; ?>
 	
   	    <?php if( get_field('imagen_noticias') ) { ?>
         <div class="col-sm-4">
