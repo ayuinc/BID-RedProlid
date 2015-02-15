@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Webinario proximamente
+Template Name: Concurso proximamente
 */
 
 get_header(); ?>
