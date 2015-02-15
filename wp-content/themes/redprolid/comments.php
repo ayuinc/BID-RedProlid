@@ -22,6 +22,6 @@
 
 <div id="comments" class="comments-area">
 
-	<?php comment_form(); ?>
+	<?php comment_form(); ?>dd
 
 </div><!-- #comments .comments-area -->

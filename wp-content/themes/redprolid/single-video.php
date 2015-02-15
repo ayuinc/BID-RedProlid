@@ -22,7 +22,7 @@
 	    <p class="mt-14"><?php the_field('descripcion_video'); ?></p>			   
 	    <div class="text-center mt-7 mb-7 ">
 	      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
-	    </div>   
+	    </div>   	    
 		  <?php comments_template(); ?>
     </div>
   </div>
