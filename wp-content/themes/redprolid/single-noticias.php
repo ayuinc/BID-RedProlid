@@ -3,8 +3,7 @@
     <?php the_breadcrumb(); ?>
     <div class="ph-70 pv-21">
       <div class="row pb-14">
-	      ss
-	      <?php echo $imagen = get_field('imagen_noticias'); ?>
+	      <?php echo $image = get_field('imagen_noticias'); ?>
 				<?php echo $url = $image['url']; ?>
 				<?php echo $title = $image['title']; ?>
 				<?php echo $alt = $image['alt']; ?>
