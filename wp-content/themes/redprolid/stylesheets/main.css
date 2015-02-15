@@ -5496,14 +5496,14 @@ form.form-search-inline button {
 .formBuilderFailure {
   border: none !important;
   padding: 10px !important;
-  background-color: #FFD3D3 !important; }
+  background-color: none; }
   .formBuilderFailure h4 {
     font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
     font-weight: 500;
     font-style: normal;
-    color: #565656 !important; }
+    color: red !important; }
   .formBuilderFailure p {
-    color: #898989 !important; }
+    color: red !important; }
 
 #nav-main-menu {
   position: relative;

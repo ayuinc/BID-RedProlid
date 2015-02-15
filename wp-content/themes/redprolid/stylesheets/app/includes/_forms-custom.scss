@@ -85,12 +85,12 @@ form.form-search-inline {
 .formBuilderFailure { 
 	border:none !important;
 	padding:10px !important;
-	background-color: #FFD3D3 !important;
+	background-color: none;
 	h4 {
 		@include medium;
-		color:$gray-dark !important;
+		color:red !important;
 	}
 	p {
-		color:$gray !important;
+		color:red !important;
 	}
 }
