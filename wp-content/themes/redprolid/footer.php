@@ -74,7 +74,7 @@
     </script>
     
 		<!-- Go to www.addthis.com/dashboard to customize your tools -->
-		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=hermanmarin" async="async"></script>    
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54e102b5429d3567" async="async"></script>  
     
 		<script>
 		$("#wppb-form-element-18").hide();
