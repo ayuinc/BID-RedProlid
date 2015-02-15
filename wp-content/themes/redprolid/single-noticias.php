@@ -4,11 +4,10 @@
     <div class="ph-70 pv-21">
       <div class="row pb-14">
 	      <?php echo $image = get_field('imagen_noticias'); ?>
-				<?php echo $url = $image['url']; ?>
-				<?php echo $title = $image['título']; ?>
-				<?php echo $alt = $image['alt']; ?>
-				<?php echo $caption = $image['leyenda']; ?>
-	
+				<?php 
+					echo $thumb_img->post_title;
+					echo $thumb_img->post_excerpt;
+				?>
   	    <?php if( get_field('imagen_noticias') ) { ?>
         <div class="col-sm-4">
           <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
