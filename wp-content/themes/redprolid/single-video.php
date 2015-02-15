@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="ph-70">
-	    <h2 class="medium pb-0"><?php the_title(); ?></h2>
+	    <h2 class="medium mb-0"><?php the_title(); ?></h2>
 			<?php $tempDate = get_the_date(); ?>
 			<p>
 				Publicado el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?> 
