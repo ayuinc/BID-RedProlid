@@ -5,8 +5,8 @@
       <div class="row pb-14">
 	      <?php echo $image = get_field('imagen_noticias'); ?>
 				<?php 
-					echo $thumb_img->post_title;
-					echo $thumb_img->post_excerpt;
+					echo $image->post_title;
+					echo $image->post_excerpt;
 				?>
   	    <?php if( get_field('imagen_noticias') ) { ?>
         <div class="col-sm-4">
