@@ -7,7 +7,7 @@
           <h2 class="medium mb-0"><?php the_title(); ?></h2>
           <?php $publicacion = get_field('recurso_descripcion'); ?>
           <small>
-			      <strong><?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
+			      <span class="reslatar"><?php the_field('recurso_autor'); ?></span>, <?php the_field('recurso_año_de_publicacion'); ?> 
   				</small>        
         </div>
       </div>
