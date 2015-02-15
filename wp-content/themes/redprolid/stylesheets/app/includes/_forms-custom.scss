@@ -76,3 +76,12 @@ form.form-search-inline {
 		}
 	}
 }
+
+.formBuilderFailure { 
+	border:none !important;
+	padding:10px !important;
+	h4 {
+		@include medium;
+		color:$gray !important;
+	}
+}
