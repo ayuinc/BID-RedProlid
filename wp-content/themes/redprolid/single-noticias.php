@@ -32,9 +32,13 @@
   			<div class="col-sm-12 with-hr pv-21">
 	  			<div class="container-sm">
 					<p>
+						<?php $pais_noticias = get_field('pais_noticias'); ?>
+						<?php if ($pais_noticias!='') { ?>						
+						<span class="medium">País:</span> <?php echo $pais_noticias; ?><br>
+						<?php } ?>
 						<?php $tipo_recursos_noticias = get_field('tipo_recursos_noticias'); ?>
 						<?php if ($tipo_recursos_noticias!='') { ?>						
-						<span class="medium">Tipo de Recursos:</span> <?php echo $tipo_recursos_noticias; ?><br>
+						<span class="medium">Tipo de recursos:</span> <?php echo $tipo_recursos_noticias; ?><br>
 						<?php } ?>
 						<?php $tema_noticias = get_field('tema_noticias'); ?>
 						<?php if ($tema_noticias!='') { ?>									
