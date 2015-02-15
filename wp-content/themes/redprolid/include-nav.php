@@ -58,10 +58,10 @@
             </ul>
           </li>
           <li>
-            <a href="<?php echo home_url('/'); ?>concursos" class="concursos <?php if($segment1=='concursos'){ echo 'active'; } ?>"><i></i><span>Concursos</span></a>
-            <ul class="list-unstyled dropdown-menu">
+            <a href="<?php echo home_url('/'); ?>concursos-proximamente" class="concursos <?php if($segment1=='concursos'){ echo 'active'; } ?>"><i></i><span>Concursos</span></a>
+            <!--<ul class="list-unstyled dropdown-menu">
               <li class="light"><a href="<?php echo home_url('/'); ?>concursos-anteriores">Concursos anteriores</a></li>
-            </ul>
+            </ul>-->
           </li>
           <li class="last-piece">
             <a href="<?php echo home_url('/'); ?>charlacafe/" class="charla-cafe <?php if($segment1=='charlacafe'||$segment1=='webinar-principal'||$segment1=='webinarios-anteriores'){ echo 'active'; } ?>"><i></i><span>Charlacafé</span></a>
