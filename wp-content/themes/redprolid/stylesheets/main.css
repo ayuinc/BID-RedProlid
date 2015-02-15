@@ -5504,6 +5504,11 @@ form.form-search-inline button {
     color: red !important; }
   .formBuilderFailure p {
     color: red !important; }
+  .formBuilderFailure ul li a {
+    color: red !important;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+    font-weight: 300;
+    font-style: normal; }
 
 #nav-main-menu {
   position: relative;

@@ -93,4 +93,12 @@ form.form-search-inline {
 	p {
 		color:red !important;
 	}
+	ul {
+		li {
+			a {
+				color:red !important;
+				@include light;
+			}
+		}
+	}
 }
