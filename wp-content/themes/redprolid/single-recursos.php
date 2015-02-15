@@ -6,9 +6,9 @@
   	    <div class="col-sm-12">  
           <h2 class="medium mb-0"><?php the_title(); ?></h2>
           <?php $publicacion = get_field('recurso_descripcion'); ?>
-          <small>
+          <p>
 			      <span class="reslatar"><?php the_field('recurso_autor'); ?></span>, <?php the_field('recurso_año_de_publicacion'); ?> 
-  				</small>        
+  				</p>        
         </div>
       </div>
   	  <div class="row">

@@ -6181,7 +6181,10 @@ div[id^="yop-poll-results-3"] {
   z-index: 100; }
 
 .resaltar {
-  color: #232323; }
+  color: #232323 !important;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
+  font-style: normal; }
 
 #breadcrumbs {
   list-style: none;

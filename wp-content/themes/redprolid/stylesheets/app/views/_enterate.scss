@@ -114,5 +114,6 @@
 	z-index: 100;
 }
 .resaltar {
-	color:$gray-darker;
+	color:$gray-darker !important;
+	@include medium;
 }
