@@ -42,7 +42,11 @@
           </div>
         </div>
         <div class="container-sm pv-35">
-          <?php comments_template(); ?>
+					<?php	if ( is_user_logged_in() ) { ?>
+						<?php comments_template();?>
+					<?php } else { ?>
+						<p>Para poder comentar es necesario <a href="/registrate/">registrarse</a> a Red PROLD.</p>
+					<?php }	?>
         </div>
       </section>
     </div>    

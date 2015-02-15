@@ -43,7 +43,11 @@
           </div>   
         </div>
       </div>
-      <?php comments_template(); ?>
+				<?php	if ( is_user_logged_in() ) { ?>
+					<?php comments_template();?>
+				<?php } else { ?>
+					<p>Para poder comentar es necesario <a href="/registrate/">registrarse</a> a Red PROLD.</p>
+				<?php }	?>
     </div>
   </div>
 </section>
