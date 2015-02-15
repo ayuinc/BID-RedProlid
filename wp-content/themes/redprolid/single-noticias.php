@@ -32,8 +32,14 @@
   			<div class="col-sm-12 with-hr pv-21">
 	  			<div class="container-sm">
 					<p>
-						<span class="medium">Tipo de Recursos:</span> <?php the_field('tipo_recursos_noticias'); ?><br>
-						<span class="medium">Temas:</span> <?php the_field('tema_noticias'); ?>
+						<?php $tipo_recursos_noticias = get_field('tipo_recursos_noticias'); ?>
+						<?php if ($tipo_recursos_noticias!='') { ?>						
+						<span class="medium">Tipo de Recursos:</span> <?php echo $tipo_recursos_noticias; ?><br>
+						<?php } ?>
+						<?php $tema_noticias = get_field('tema_noticias'); ?>
+						<?php if ($tema_noticias!='') { ?>									
+						<span class="medium">Temas:</span> <?php echo $tema_noticias; ?>
+						<?php } ?>
 					</p> 
   				</div>
   			</div>
