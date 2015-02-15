@@ -4,7 +4,7 @@
     <div class="clearfix bg-panel sub-header">
       <div class="col-sm-7">
         <div>
-          <h1>Concurso blablabla</h1>
+          <h1>Concurso</h1>
           <nav class="mt-21">
             <a href="<?php echo content_url('/'); ?>concursos">Concursos >></a>
           </nav>
