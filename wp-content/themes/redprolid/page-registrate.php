@@ -21,7 +21,7 @@ get_header(); ?>
 	        <div class="col-sm-1 col-xs-3">
 	          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/registrate.png" alt="" width="100%"></div>
 	        </div>
-	        <div class="col-sm-11 col-xs-12">
+	        <div class="col-sm-11 col-xs-9">
 	          <h1><?php the_title(); ?></h1>
 	        </div>
 	      </div>
