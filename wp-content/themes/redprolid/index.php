@@ -88,13 +88,13 @@ get_header(); ?>
                   </ul>
                 </div>
                 <div class="panel-body highlight">
-                	<?php query_posts( 'category_name=concursos&posts_per_page=1' ); ?>	
-									<?php while ( have_posts() ) : the_post(); ?>                 
-                    <img src="<?php the_field('imagen_concurso'); ?>" alt="" class="img-responsive mb-14">
-                    <h5><?php the_title(); ?></h5>
-                    <p class="light"><?php the_field('descripcion_concurso'); ?></p>
-                    <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Más información</a>
-                  <?php endwhile; ?>
+                	<?php //query_posts( 'category_name=concursos&posts_per_page=1' ); ?>	
+									<?php //while ( have_posts() ) : the_post(); ?>                 
+                    <img src="/wp-content/uploads/2014/10/Screen-Shot-2014-10-14-at-10.47.19-PM.png" alt="" class="img-responsive mb-14">
+                    <h5>¿Quieres ganar premios que te ayuden en tu desarrollo profesional? </h5>
+                    <p class="light">Participa en los concursos de la Red aportando ideas, relatando tus experiencias y compartiendo tu creatividad.</p>
+                    <a href="/concurso" class="btn btn-primary">Más información</a>
+                  <?php //endwhile; ?>
                 </div>
               </div>
             </div>
