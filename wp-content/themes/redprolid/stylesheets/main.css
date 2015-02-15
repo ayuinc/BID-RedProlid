@@ -6035,6 +6035,10 @@ div[id^="yop-poll-results-3"] {
 .bg-dtl-pistas {
   background-color: #007C8D; }
 
+.carousel-inner .slide-content {
+  bottom: 1.2rem;
+  z-index: 1000; }
+
 .red-prolid-grid:before, .red-prolid-grid:after {
   content: " ";
   display: table; }
