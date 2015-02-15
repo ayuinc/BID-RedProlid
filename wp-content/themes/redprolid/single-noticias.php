@@ -3,11 +3,9 @@
     <?php the_breadcrumb(); ?>
     <div class="ph-70 pv-21">
       <div class="row pb-14">
-	      <?php echo $image = get_field('imagen_noticias'); ?>
-				<?php 
-					echo $image->post_title;
-					echo $image->post_excerpt;
-				?>
+	      <?php $image = get_field('imagen_noticias'); ?>
+	      <?php var_dump( $image ); ?>
+	      
   	    <?php if( get_field('imagen_noticias') ) { ?>
         <div class="col-sm-4">
           <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
