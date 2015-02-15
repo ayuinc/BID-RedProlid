@@ -9,10 +9,10 @@
       </div>
     </div>
     <div class="ph-70">
-	    <h2 class="medium"><?php the_title(); ?></h2>
+	    <h2 class="medium pb-0"><?php the_title(); ?></h2>
 			<?php $tempDate = get_the_date(); ?>
 			<p>
-				<?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?> 
+				Publicado el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?> 
         <?php $pais_video = get_field('pais_video'); ?>
 				<?php if ($pais_video!='') { ?>
 				, <strong><?php echo $pais_video; ?></strong>
