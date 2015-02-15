@@ -4,7 +4,7 @@
     <div class="ph-70 pv-21">
       <div class="row pb-14">
 	      <?php $image = get_field('imagen_noticias'); ?>
-	      <?php var_dump( $image ); ?>
+	      <?php echo $image['alt']; ?>
 	      
   	    <?php if( get_field('imagen_noticias') ) { ?>
         <div class="col-sm-4">
