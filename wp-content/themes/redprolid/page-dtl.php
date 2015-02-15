@@ -32,8 +32,8 @@ get_header(); ?>
 				<?php endif; ?>                 
       </div>
     </section>      
-    <section>
-      <div class="container">
+    <section class="dtl-home pv-14">
+      <div class="container ph-70-sm">
         <!-- DTL CAROUSEL -->
         <?php get_template_part( 'include', 'dtl-carousel' ); ?>
       </div>
