@@ -68,7 +68,7 @@ get_header(); ?>
 				<?php if ( have_posts() ) : ?>
           <?php query_posts( 'cat=256&posts_per_page=4' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>				            
-            <div class="banner col-md-3 banner-label-bottom half-height">
+            <div class="banner col-md-3 banner-label-bottom">
             	<div class="bg-white">
 	            	<div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
 	            	<div class="banner-content flex-none">

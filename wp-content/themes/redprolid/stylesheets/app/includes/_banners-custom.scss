@@ -9,7 +9,8 @@
 	}
 	.banner-pic {
 		@include bg-img-control;
-		min-height: $banner-height;
+		min-height: $banner-height - 70;
+		min-height: rem($banner-height - 70);
 		// @media #{$sm-up} {
 		// 	padding: 0;
 		// }
