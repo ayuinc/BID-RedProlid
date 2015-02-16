@@ -20,8 +20,9 @@
 	}
 	.banner-label {
 		@include position(absolute, -14px null null $container-fluid);
-		text-align: center;
+		// text-align: center;
 		padding: 3px 7px;
+		width: 100%;
 		span {
 			text-transform: uppercase;
 		}
@@ -44,7 +45,7 @@
 	// }
 	&.banner-label-bottom {
 		.banner-label {
-			@include position(absolute, null null 0 $container-fluid); 
+			@include position(absolute, null null 0 0);
 			top: inherit;
 		}
 	}
@@ -57,5 +58,5 @@
 }
 
 .flex-none {
-	display: block;
+	display: block !important;
 }

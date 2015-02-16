@@ -68,7 +68,7 @@ get_header(); ?>
 				<?php if ( have_posts() ) : ?>
           <?php query_posts( 'cat=256&posts_per_page=4' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>				            
-            <div class="banner col-md-3">
+            <div class="banner col-md-3 banner-label-bottom half-height">
             	<div class="bg-white">
 	            	<div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
 	            	<div class="banner-content">
@@ -76,8 +76,8 @@ get_header(); ?>
 		              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 		              <?php $publicacion = get_field('publicacion_noticias'); ?>
 		              <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
-		              <div class="text-right">
-		              	<a href="#" class="vermas medium">Ver más</a>
+		              <div class="text-right banner-label">
+		              	<a href="#" class="vermas medium">Ver más &gt;&gt;</a>
 		              </div>
 	            	</div>
             	</div>

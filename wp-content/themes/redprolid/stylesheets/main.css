@@ -5727,8 +5727,8 @@ form.search button {
     position: absolute;
     top: -14px;
     left: 10.5px;
-    text-align: center;
-    padding: 3px 7px; }
+    padding: 3px 7px;
+    width: 100%; }
     .banner .banner-label span {
       text-transform: uppercase; }
   .banner .banner-content {
@@ -5743,14 +5743,14 @@ form.search button {
   .banner.banner-label-bottom .banner-label {
     position: absolute;
     bottom: 0;
-    left: 10.5px;
+    left: 0;
     top: inherit; }
   .banner.half-height .banner-pic,
   .banner.half-height .banner-content {
     min-height: 140px; }
 
 .flex-none {
-  display: block; }
+  display: block !important; }
 
 .panel.panel-custom {
   min-height: 210px; }
@@ -6249,13 +6249,11 @@ div[id^="yop-poll-results-3"] {
 .wp-social-login-provider-list img {
   width: 50px; }
 
-.noticias-grid .col-md-4 img {
-  width: 359px;
-  max-height: 240px; }
-.noticias-grid .col-md-4 div {
+.noticias-grid [class*="col-"] > div {
   background-color: white;
-  padding: 14px;
-  min-height: 480px; }
+  padding: 10.5px;
+  min-height: 350px;
+  min-height: 21.875rem; }
 
 .event-separator {
   border-left: 1px solid #bcbcbc; }
