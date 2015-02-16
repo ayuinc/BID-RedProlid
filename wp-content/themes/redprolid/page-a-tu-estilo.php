@@ -71,7 +71,7 @@ get_header(); ?>
             <div class="banner col-md-3 banner-label-bottom half-height">
             	<div class="bg-white">
 	            	<div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
-	            	<div class="banner-content">
+	            	<div class="banner-content flex-none">
 	            		<small>Restaurantes</small>
 		              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 		              <?php $publicacion = get_field('publicacion_noticias'); ?>
