@@ -63,24 +63,24 @@ get_header(); ?>
 					</nav>
 				</div>
 			</div>
-			<div class="row noticias-grid">
+			<div class="row">
 				<!-- Start the Loop. -->
 				<?php if ( have_posts() ) : ?>
           <?php query_posts( 'cat=256&posts_per_page=4' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>				            
-            <div class="col-md-3">
-            	<?php if( get_field('imagen_noticias') ) { ?>
-                <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
-							<?php //} else {?>
-              	<!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">-->
-							<?php } ?>
-							<small>Restaurantes</small>
-              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-              <?php $publicacion = get_field('publicacion_noticias'); ?>
-              <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
-              <div class="text-right">
-              	<a href="#" class="vermas medium">Ver más</a>
-              </div>
+            <div class="banner col-md-3">
+            	<div class="bg-white">
+	            	<div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
+	            	<div class="banner-content">
+	            		<small>Restaurantes</small>
+		              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+		              <?php $publicacion = get_field('publicacion_noticias'); ?>
+		              <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
+		              <div class="text-right">
+		              	<a href="#" class="vermas medium">Ver más</a>
+		              </div>
+	            	</div>
+            	</div>
             </div>
           <?php endwhile; ?>
 				<?php endif; ?>				            				            
@@ -88,7 +88,6 @@ get_header(); ?>
       <nav>
 			  <ul class="pager">
 			    <li><a href="#">Anteriores</a></li>
-			    <li><span>|</span></li>
 			    <li><a href="#">Siguiente</a></li>
 			  </ul>
 			</nav>
