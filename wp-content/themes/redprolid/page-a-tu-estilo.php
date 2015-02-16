@@ -18,12 +18,12 @@ get_header(); ?>
       	<div class="col-sm-8">
 		      <div class="clearfix sub-header">
 		        <div class="col-sm-2 col-xs-3">
-		          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/a-tu-estilo.png" alt="" width="100%"></div>
+		          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/a-tu-estilo.png" alt="" width="100%"></div>
 		        </div>
 		        <div class="col-sm-5 col-xs-9">
 		          <h1><?php the_title(); ?></h1>
 		        </div>
-		        <div class="col-sm-6 col-xs-12">
+		        <div class="col-sm-5 col-xs-12">
 		          <nav class="text-right text-center-xs">
 		            <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a> <span class="brand-primary">|</span> <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/">Pistas</a>
 		          </nav>          
@@ -36,7 +36,7 @@ get_header(); ?>
 		      </div>
       	</div>
       	<div class="col-sm-4 hidden-xs">
-					<img src="assets/img/img-sq.png" alt="" class="img-responsive">
+					<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/a-tu-estilo-rombo.png" alt="" class="img-responsive">
       	</div>
       </div>
     </div>
