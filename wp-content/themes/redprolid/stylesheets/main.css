@@ -4788,6 +4788,9 @@ ul.table-list {
 [data-href]:hover {
   cursor: pointer; }
 
+.modal-body {
+  padding: 0 28px; }
+
 footer {
   background: #232323;
   margin-top: 35px;
