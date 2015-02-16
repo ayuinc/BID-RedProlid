@@ -73,6 +73,11 @@ get_header(); ?>
 				        <div class="col-sm-6 col-xs-9">
 				          <h1 class="title-la-pinta-no-es-lo-de-menos"><?php the_title(); ?></h1>
 				        </div>
+								<div class="col-sm-5 col-xs-12">
+									<nav class="text-right">
+										<a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/">Pistas</a>
+									</nav>
+								</div>
 				      </div>
 		          <div class="pb-21 clearfix">
 		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="210px" height="auto">
@@ -109,6 +114,11 @@ get_header(); ?>
 				        <div class="col-sm-5 col-xs-9">
 				          <h1 class="title-pistas-2"><?php the_title(); ?></h1>
 				        </div>
+				        <div class="col-sm-6 col-xs-12">
+									<nav class="text-right">
+										<a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a>
+									</nav>
+								</div>
 				      </div>
 		          <div class="pb-21 clearfix">
 		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56" width="210px" height="auto">
