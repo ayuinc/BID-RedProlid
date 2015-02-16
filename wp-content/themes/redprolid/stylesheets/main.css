@@ -4785,6 +4785,9 @@ ul.table-list {
     background-color: #ed7133;
     text-decoration: none; }
 
+[data-href]:hover {
+  cursor: pointer; }
+
 footer {
   background: #232323;
   margin-top: 35px;

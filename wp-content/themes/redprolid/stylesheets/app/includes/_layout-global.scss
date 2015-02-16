@@ -208,3 +208,10 @@ ul.table-list {
 		}
 	}
 }
+
+// DATA HREF 
+[data-href] {
+	&:hover {
+		cursor: pointer;
+	}
+}

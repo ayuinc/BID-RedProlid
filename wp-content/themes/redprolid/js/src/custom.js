@@ -9,5 +9,15 @@ $(document).ready(function(){
   // votaButton.addClass("custom-vote");
   // $('div.yop-poll-answers ul li:first').addClass("mt-35");
   $('.yop-poll-answers ul li label').addClass('respuesta');
+  $('[data-href]').click(function(e) {
+    var lastPath, locationArr, mainPath, pathObj;
+    locationArr = window.location.pathname.split('/');
+    lastPath = locationArr[locationArr.length - 1];
+    mainPath = locationArr[locationArr.length - 2];
+    pathObj = {};
+    pathObj[mainPath] = lastPath;
+    window.history.pushState(pathObj, '', lastPath);
+    document.location.replace($(this).data('href'));
+  });
 });
 
