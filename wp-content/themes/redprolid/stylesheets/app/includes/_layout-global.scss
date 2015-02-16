@@ -194,3 +194,17 @@ ul.table-list {
 		display: none;
 	}
 }
+
+// CUSTOM NAV 
+.custom-nav {
+	a {
+		display: inline-block;
+		color: white;
+		padding: 7px;
+		&:hover,
+		&.active {
+			background-color: $brand-primary;
+			text-decoration: none;
+		}
+	}
+}

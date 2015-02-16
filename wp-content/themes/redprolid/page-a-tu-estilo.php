@@ -56,8 +56,8 @@ get_header(); ?>
 						</div>
 					</form>
 				</div>
-				<div class="col-sm-8 bg-secondary">
-					<nav>
+				<div class="col-sm-8 bg-secondary p-0-sm">
+					<nav class="custom-nav">
 						<a href="#">Restaurantes</a>
 						<a href="#">Tiendas</a>
 					</nav>

@@ -4777,6 +4777,14 @@ ul.table-list {
   #breadcrumbs {
     display: none; } }
 
+.custom-nav a {
+  display: inline-block;
+  color: white;
+  padding: 7px; }
+  .custom-nav a:hover, .custom-nav a.active {
+    background-color: #ed7133;
+    text-decoration: none; }
+
 footer {
   background: #232323;
   margin-top: 35px;
