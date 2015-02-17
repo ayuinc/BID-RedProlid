@@ -83,11 +83,11 @@ get_header(); ?>
 	      <div class="panel-body pt-14">	      
 					<div class="row">
 	          <div class="col-md-8 pr-14">
-	            <h2>Otras Noticias</h2>  
+	            <h2>Otras noticias</h2>  
 	            <ul class="list-unstyled">
 	            	<!-- Start the Loop. -->
 	            	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-	            	<?php query_posts( 'cat=12&posts_per_page=10&paged=' . $paged ); ?>
+	            	<?php query_posts( 'cat=12&posts_per_page=6&offset=3&paged=' . $paged ); ?>
 								<?php while ( have_posts() ) : the_post(); ?>    
 		                  <li class="mb-14">
 		                    <h5 class="medium mb-0"><?php the_title(); ?></h5>
