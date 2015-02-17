@@ -47,7 +47,7 @@ get_header(); ?>
 	            <div class="row noticias-grid">
 								<!-- Start the Loop. -->
 								<?php if ( have_posts() ) : ?>
-	                <?php query_posts( 'cat=256&posts_per_page=3' ); ?>
+	                <?php query_posts( 'cat=12&posts_per_page=3' ); ?>
 									<?php while ( have_posts() ) : the_post(); ?>				            
 				            <div class="col-md-4">
 					            <div>
