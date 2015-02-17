@@ -166,7 +166,7 @@ get_header(); ?>
 									<?php while ( have_posts() ) : the_post(); ?>  
                     <?php the_content(); ?>
                     <!-- <div class="mt-sm text-right small">
-                      <a href="http://www.redprolid.org/poll">Resultados >></a>
+                      <a href="http://www.redprolid.org/resultados">Resultados >></a>
                     </div> -->
                   <?php endwhile; ?>
                 </div>
