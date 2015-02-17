@@ -26,7 +26,7 @@ get_header(); ?>
           </h4>
         </div>
         <div class="col-sm-4">
-          <div class="bg-panel border-radius">
+          <div class="bg-panel border-radius p-21">
             <h5 class="light">¿Quieres ver las encuestas anteriores?</h5>
             <div class="text-right">
               <a href="<?php echo content_url('/'); ?>poll" class="btn btn-primary">Ver todas</a>
@@ -34,7 +34,7 @@ get_header(); ?>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row pv-42">
         <div class="col-sm-6 with-hr">
           <h3>¿Qué es lo que más descuidas de tu vida personal cuando estás trabajando?</h3>
           <h4>Razones</h4>
@@ -52,7 +52,7 @@ get_header(); ?>
             <div class="col-xs-6">
               <label>Tu propuesta</label>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-6 text-right">
               <nav><a href="#">Regístrate</a> / <a href="#">Inicia sesión</a></nav>
             </div>
           </div>
