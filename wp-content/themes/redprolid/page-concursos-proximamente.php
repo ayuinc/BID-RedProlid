@@ -27,7 +27,6 @@ get_header(); ?>
     <!-- IF NO POSTS in FOROS -->
     <div class="ph-70 text-center">
     	<h3>Próximamente anunciaremos nuestro primer concurso</h3>
-    	<p class="light">¡Vuelve a visitar este espacio pronto!</p>
     	<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/Concursos_proximamente.png">
     </div>
     <!-- END:IF NO POSTS in FOROS -->
