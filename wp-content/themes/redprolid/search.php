@@ -98,7 +98,7 @@ get_header(); ?>
             <?php endif; ?> 
           </ol>
           <?php } else { ?>
-          <h3 class="medium text-center">No insertaste ningúna palabra o frase para buscar. Vuelve a intentarlo.</h3>
+          <h3 class="medium text-center">No insertaste ninguna palabra o frase para buscar. Vuelve a intentarlo.</h3>
           <?php } ?>
         </div>
         <div class="col-sm-1"></div>

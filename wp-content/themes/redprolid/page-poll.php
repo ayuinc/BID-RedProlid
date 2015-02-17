@@ -16,7 +16,7 @@ get_header(); ?>
         </div>
         <div class="col-sm-6 col-xs-12">
           <nav class="text-right text-center-xs">
-            <a href="<?php echo content_url('/'); ?>tu-opinion-cuenta" data-toggle="modal" data-target="#modalEventos">Tu opinión cuenta &gt;&gt;</a>
+            <a href="<?php echo content_url('/'); ?>tu-opinion-cuenta">Tu opinión cuenta &gt;&gt;</a>
           </nav>          
         </div>
       </div>

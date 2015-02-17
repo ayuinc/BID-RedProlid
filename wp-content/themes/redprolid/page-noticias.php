@@ -47,7 +47,7 @@ get_header(); ?>
 	            <div class="row noticias-grid">
 								<!-- Start the Loop. -->
 								<?php if ( have_posts() ) : ?>
-	                <?php query_posts( 'cat=256&posts_per_page=3' ); ?>
+	                <?php query_posts( 'cat=12&posts_per_page=3' ); ?>
 									<?php while ( have_posts() ) : the_post(); ?>				            
 				            <div class="banner col-md-4 banner-label-bottom">
 				            	<div class="bg-white">
@@ -141,15 +141,15 @@ get_header(); ?>
   	<?php } ?>
 	    <div class="modal-content bg-panel">
 	      <div class="modal-body">
-	        <div class="clearfix sub-header sub-header-sm mb-0">
+	        <!--<div class="clearfix sub-header sub-header-sm mb-0">
 		        <div class="col-sm-1 col-xs-3">
 		          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-topic-icon.png" alt="" width="100%"></div>
 		        </div>
 		        <div class="col-sm-5 col-xs-9"></div>
 		        <div class="col-sm-6 col-xs-12"></div>
-		      </div>
+		      </div>-->
 		      <?php if ( is_user_logged_in() ) { ?>
-		      	<h3>¿Quieres compartir una noticia?</h3>
+		      	<h3 class="medium">¿Quieres compartir una noticia?</h3>
 		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
 							<?php ninja_forms_display_form( 3 ); ?>
 						<?php } ?>
@@ -157,7 +157,7 @@ get_header(); ?>
 						<div class="row">
 				  		<div class="col-sm-6 col-sm-offset-3">
 				  			<div class="user-sign-in-form pv-21">
-					  			<h2 class="medium">Ingresa al sistema</h2>
+					  			<h2 class="medium">Ingresa o regístrate</h2>
 			            <?php 
 			              if ( is_user_logged_in() ) {
 
