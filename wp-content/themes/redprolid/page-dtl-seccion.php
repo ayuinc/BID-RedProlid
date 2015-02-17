@@ -96,11 +96,11 @@ get_header(); ?>
 		          
 							<?php endif; ?>
 							<?php if ($segment2 == "nivelando-la-cancha") : ?>
-								<div class="col-sm-1 col-xs-3">
-				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-nivelando-cancha-icon.png"></div>
-				        </div>
 				        <div class="col-sm-5 col-xs-9">
 				          <h1 class="title-nivelando-la-cancha"><?php the_title(); ?></h1>
+				        </div>
+								<div class="col-sm-1 col-xs-3">
+				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-nivelando-cancha-icon.png"></div>
 				        </div>
 				      </div>
 				      <div class="pb-21 clearfix">

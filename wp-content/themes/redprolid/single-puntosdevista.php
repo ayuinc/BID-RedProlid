@@ -126,7 +126,7 @@
 			  	<?php } ?>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar X</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar X</button>
 	      </div>
 	    </div>
 	  </div>
