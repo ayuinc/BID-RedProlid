@@ -103,12 +103,12 @@ get_header(); ?>
 	                    <hr> 
 		            <?php endwhile; ?> 
 	            </ul>
-	            <div class="text-center">
+	            <!--<div class="text-center">
 	              <ul class="pager">
-	                <li><?php next_posts_link( 'Anteriores' ); ?></li>
-	                <li><?php previous_posts_link( 'Posteriores' ); ?></li>
+	                <li><?php //next_posts_link( 'Anteriores' ); ?></li>
+	                <li><?php //previous_posts_link( 'Posteriores' ); ?></li>
 	              </ul>
-	            </div> 	            
+	            </div>--> 	            
 	        	</div>
 	          <div class="col-md-4 mostrar-anteriores">
 	            <h4 class="medium text-gray-darker mb-14">Lo último en las redes</h4> 
