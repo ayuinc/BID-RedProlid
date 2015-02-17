@@ -7,13 +7,17 @@ get_header(); ?>
 <?php get_template_part( 'include', 'header' ); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
-<div class="mh-700">
   <section id="toc-main">
-    <div class="container relative with-shadow">
-      <div class="absolute dtl-custom-heading">
-        <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon.png" alt=""></div>
-        <h1 style="color: #aeab8b;">Tu opinión cuenta</h1>
-        <hr style="border-top: 3px dotted #aeab8b;">
+    <div class="container">
+      <?php the_breadcrumb(); ?>
+      <div class="clearfix sub-header bg-panel">
+        <div class="col-sm-1 col-xs-3">
+          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon.png" alt="" width="100%"></div>
+        </div>
+        <div class="col-sm-5 col-xs-12">
+          <h1>Tu opinión cuenta</h1>
+        </div>
+        <div class="col-sm-6 col-xs-12"></div>
       </div>
       <div class="row">
         <div class="col-sm-9 pt-14-100">
@@ -32,8 +36,6 @@ get_header(); ?>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container with-shadow">
       <div class="row">
         <div class="col-sm-6 with-hr">
           <!-- <h3>¿Qué es lo que más descuidas de tu vida personal cuando estás trabajando?</h3>
@@ -69,5 +71,4 @@ get_header(); ?>
       </div>
     </div>
   </section>
-</div>
 <?php get_footer(); ?>
