@@ -140,7 +140,7 @@ get_header(); ?>
 						<div class="row">
 				  		<div class="col-sm-6 col-sm-offset-3">
 				  			<div class="user-sign-in-form pv-21">
-					  			<h2 class="medium">Ingresa al sistema</h2>
+					  			<h2 class="medium">Ingresa o regístrate en Red PROLID</h2>
 			            <?php 
 			              if ( is_user_logged_in() ) {
 
