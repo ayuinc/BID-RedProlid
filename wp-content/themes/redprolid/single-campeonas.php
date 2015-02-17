@@ -76,8 +76,8 @@
 		        <div class="col-sm-6 col-xs-12"></div>
 		      </div>
 		      <?php if ( is_user_logged_in() ) { ?>
+		      	<h3 class="medium">¿Nos propones un tema para desarrollar en nuestras entrevistas y/o a quíen te gustaría que entrevistemos?</h3>
 		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
-		      		<p>¿Nos propones un tema para desarrollar en nuestras entrevistas y/o a quíen te gustaría que entrevistemos?</p>
 							<?php ninja_forms_display_form( 5 ); ?>
 						<?php } ?>
 					<?php } else { ?>

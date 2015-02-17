@@ -97,7 +97,7 @@
 		        <div class="col-sm-6 col-xs-12"></div>
 		      </div>
 		      <?php if ( is_user_logged_in() ) { ?>
-		      	<h3>¿Te gustaría proponernos un tema?</h3>
+		      	<h3 class="medium">¿Te gustaría proponernos un tema?</h3>
 		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
 							<?php ninja_forms_display_form( 9 ); ?>
 						<?php } ?>
