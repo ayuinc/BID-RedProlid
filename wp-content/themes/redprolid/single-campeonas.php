@@ -68,7 +68,7 @@
   	<?php } ?>
 	    <div class="modal-content bg-panel">
 	      <div class="modal-body">
-	        <div class="clearfix sub-header sub-header-sm">
+	        <div class="clearfix sub-header sub-header-sm mb-0">
 		        <div class="col-sm-1 col-xs-3">
 		          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-topic-icon.png" alt="" width="100%"></div>
 		        </div>
