@@ -10,11 +10,15 @@
     </div>      
     <div class="ph-70">
     	<div class="bg-white border-radius p-21">
-    		<div class="ph-70">
-    			<h1>Qué es lo que más descuidas de tu vida personal cuando estás trabajando?</h1>
-    		</div>
-    		<hr>
-    		<span class="text-gray">Agosto 1 / 2014</span>
+  			<?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>	
+				<?php while ( have_posts() ) : the_post(); ?>  
+	    		<div class="ph-70">
+	            <?php the_content(); ?>
+	    			<!-- <h1>Qué es lo que más descuidas de tu vida personal cuando estás trabajando?</h1> -->
+	    		</div>
+	    		<hr>
+	    		<span class="text-gray">Agosto 1 / 2014</span>
+        <?php endwhile; ?>
     	</div>
     </div>
   </div> 
