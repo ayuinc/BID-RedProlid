@@ -29,7 +29,7 @@ get_header(); ?>
           <div class="bg-panel border-radius p-21">
             <h5 class="light">¿Quieres ver las encuestas anteriores?</h5>
             <div class="text-right">
-              <a href="<?php echo content_url('/'); ?>poll" class="btn btn-primary">Ver todas</a>
+              <a href="<?php echo content_url('/'); ?>resultados" class="btn btn-primary">Ver todas</a>
             </div>
           </div>
         </div>
