@@ -51,8 +51,10 @@ get_header(); ?>
 									<?php while ( have_posts() ) : the_post(); ?>				            
 				            <div class="banner col-md-4 banner-label-bottom">
 				            	<div class="bg-white">
-					            	<?php get_field('imagen_noticias'); ?>
+					            	<?php $imagen = get_field('imagen_noticias'); ?>
+					            	<?php if ($imagen!='') { ?>
 					            	<div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
+					            	<?php } ?>
 					            	<div class="banner-content flex-none">
 			                    <h3 class="medium mt-7 mb-0 pb-0">
 			                    	<a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a>
