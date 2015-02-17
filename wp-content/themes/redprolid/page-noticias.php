@@ -83,11 +83,11 @@ get_header(); ?>
 	      <div class="panel-body pt-14">	      
 					<div class="row">
 	          <div class="col-md-8 pr-14">
-	            <h2>Otras Noticias</h2>  
+	            <h2>Otras noticias</h2>  
 	            <ul class="list-unstyled">
 	            	<!-- Start the Loop. -->
 	            	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-	            	<?php query_posts( 'cat=12&posts_per_page=10&paged=' . $paged ); ?>
+	            	<?php query_posts( 'cat=12&posts_per_page=6&offset=3&paged=' . $paged ); ?>
 								<?php while ( have_posts() ) : the_post(); ?>    
 		                  <li class="mb-14">
 		                    <h5 class="medium mb-0"><?php the_title(); ?></h5>
@@ -103,12 +103,12 @@ get_header(); ?>
 	                    <hr> 
 		            <?php endwhile; ?> 
 	            </ul>
-	            <div class="text-center">
+	            <!--<div class="text-center">
 	              <ul class="pager">
-	                <li><?php next_posts_link( 'Anteriores' ); ?></li>
-	                <li><?php previous_posts_link( 'Posteriores' ); ?></li>
+	                <li><?php //next_posts_link( 'Anteriores' ); ?></li>
+	                <li><?php //previous_posts_link( 'Posteriores' ); ?></li>
 	              </ul>
-	            </div> 	            
+	            </div>--> 	            
 	        	</div>
 	          <div class="col-md-4 mostrar-anteriores">
 	            <h4 class="medium text-gray-darker mb-14">Lo último en las redes</h4> 
@@ -137,7 +137,7 @@ get_header(); ?>
   	<?php } ?>
 	    <div class="modal-content bg-panel">
 	      <div class="modal-body">
-	        <div class="clearfix sub-header sub-header-sm">
+	        <div class="clearfix sub-header sub-header-sm mb-0">
 		        <div class="col-sm-1 col-xs-3">
 		          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-topic-icon.png" alt="" width="100%"></div>
 		        </div>
@@ -145,6 +145,7 @@ get_header(); ?>
 		        <div class="col-sm-6 col-xs-12"></div>
 		      </div>
 		      <?php if ( is_user_logged_in() ) { ?>
+		      	<h3>¿Quieres compartir una noticia?</h3>
 		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
 							<?php ninja_forms_display_form( 3 ); ?>
 						<?php } ?>
@@ -174,7 +175,7 @@ get_header(); ?>
 			  	<?php } ?>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar X</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar X</button>
 	      </div>
 	    </div>
 	  </div>

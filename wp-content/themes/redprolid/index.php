@@ -84,7 +84,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title highlight-white">Concursos</li>
                     <li class="rule"></li>
-                    <li class="icon" data-href="/concursos" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -42px;"></li>
+                    <li class="icon" data-href="/concursos-proximamente/" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -42px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body highlight">
@@ -93,7 +93,7 @@ get_header(); ?>
                     <img src="/wp-content/uploads/2014/10/Screen-Shot-2014-10-14-at-10.47.19-PM.png" alt="" class="img-responsive mb-14">
                     <h5>¿Quieres ganar premios que te ayuden en tu desarrollo profesional? </h5>
                     <p class="light">Participa en los concursos de la Red aportando ideas, relatando tus experiencias y compartiendo tu creatividad.</p>
-                    <a href="/concursos" class="btn btn-primary">Más información</a>
+                    <a href="/concursos-proximamente/" class="btn btn-primary">Más información</a>
                   <?php //endwhile; ?>
                 </div>
               </div>
@@ -166,7 +166,7 @@ get_header(); ?>
 									<?php while ( have_posts() ) : the_post(); ?>  
                     <?php the_content(); ?>
                     <!-- <div class="mt-sm text-right small">
-                      <a href="http://www.redprolid.org/poll">Resultados >></a>
+                      <a href="http://www.redprolid.org/resultados">Resultados >></a>
                     </div> -->
                   <?php endwhile; ?>
                 </div>
