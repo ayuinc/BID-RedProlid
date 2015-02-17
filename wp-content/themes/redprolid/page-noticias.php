@@ -49,23 +49,27 @@ get_header(); ?>
 								<?php if ( have_posts() ) : ?>
 	                <?php query_posts( 'cat=256&posts_per_page=3' ); ?>
 									<?php while ( have_posts() ) : the_post(); ?>				            
-				            <div class="col-md-4">
-					            <div>
-	                  	<?php if( get_field('imagen_noticias') ) { ?>
-	                      <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
-											<?php //} else {?>
-	                    	<!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">-->
-											<?php } ?>
-	                    <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0 pb-0"><?php the_title(); ?></h3></a>
-	                    <?php $publicacion = get_field('publicacion_noticias'); ?>
-	                    <small>
-	                    	<?php $tempDate = get_the_date(); ?>
-		                    <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
-												<?php } ?>
-											</small>
-	                    <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
-	                    <small class="vermas"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Noticia completa >></a></small>
-					            </div>							            
+				            <div class="banner col-md-4 banner-label-bottom">
+				            	<div class="bg-white">
+					            	<?php get_field('imagen_noticias'); ?>
+					            	<div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
+					            	<div class="banner-content flex-none">
+			                    <h3 class="medium mt-7 mb-0 pb-0">
+			                    	<a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a>
+			                    </h3>
+			                    <?php $publicacion = get_field('publicacion_noticias'); ?>
+			                    <small>
+			                    	<?php $tempDate = get_the_date(); ?>
+				                    <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+														<?php } ?>
+													</small>
+			                    <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
+			                    <small class="vermas"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Noticia completa >></a></small>
+			                    <div class="text-right banner-label">
+						              	<a href="#">Ver más &gt;&gt;</a>
+						              </div>
+					            	</div>
+				            	</div>
 				            </div>
 			            <?php endwhile; ?>
 								<?php endif; ?>				            				            
