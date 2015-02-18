@@ -30,6 +30,10 @@
       </div>
       <div class="with-hr">
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
+        <div class="contaner-sm">
+        <p>Tipo de recurso: <?php the_field('tipo_de_recurso'); ?></p>
+        <p>Tema: <?php the_field('tema'); ?></p>
+        </div>
         <div class="content-display">
           <div class="text-right mt-14 mb-14">
   	        <a class="btn btn-primary" id="boton_entrevista_full" >Lee la entrevista completa</a>
