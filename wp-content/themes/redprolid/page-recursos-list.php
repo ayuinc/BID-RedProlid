@@ -32,9 +32,9 @@ get_header(); ?>
           <?php while ( have_posts() ) : the_post(); ?>
             <div class="title">
               <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-              <small class="date">
-              	<?php the_field('recurso_autor'); ?>, <?php the_field('recurso_año_de_publicacion'); ?>
-              </small>                
+		          <p>
+					      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
+		  				</p>               
             </div>
             <div class="content mb-7">
               <?php the_field('recurso_descripcion'); ?>
