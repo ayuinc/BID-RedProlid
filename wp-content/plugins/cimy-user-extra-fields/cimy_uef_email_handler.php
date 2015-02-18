@@ -206,9 +206,9 @@ function cimy_signup_user_notification($user, $user_email, $key, $meta = '') {
 	$admin_email = get_site_option( 'admin_email' );
 	if ( $admin_email == '' )
 		$admin_email = 'support@' . $_SERVER['SERVER_NAME'];
-	$from_name = get_site_option( 'blogname' ) == '' ? 'WordPress' : esc_html( get_site_option( 'blogname' ) );
+	$from_name = get_site_option( 'blogname' ) == '' ? 'Red PROLID' : esc_html( get_site_option( 'blogname' ) );
 	$message_headers = "From: \"{$from_name}\" <{$admin_email}>\n" . "Content-Type: text/plain; charset=\"" . get_option('blog_charset') . "\"\n";
-	$message = sprintf( apply_filters( 'wpmu_signup_user_notification_email', __( "To activate your user, please click the following link:\n\n%s\n\nAfter you activate, you will receive *another email* with your login.\n\n", $cimy_uef_domain) ), site_url( "wp-login.php?cimy_key=$key$redirect_to" ), $key );
+	$message = sprintf( apply_filters( 'wpmu_signup_user_notification_email', __( "Para activar tu usuario, por favor sigue el siguiente enlace:\n\n%s\n\nDespués de activarlo*, recibirás otro correo electrónico con tu nombre de usuario.\n\n", $cimy_uef_domain) ), site_url( "wp-login.php?cimy_key=$key$redirect_to" ), $key );
 	// TODO: Don't hard code activation link.
 	$subject = sprintf(
 		apply_filters('wpmu_signup_user_notification_subject',
