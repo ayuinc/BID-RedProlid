@@ -481,7 +481,7 @@ function wppb_notify_user_registration_email( $bloginfo, $user_name, $email, $se
 		$user_message_subject = sprintf( __( '[%1$s] Your new account information', 'profilebuilder' ), $user_message_from, $user_name, $password );
 		$user_message_subject = apply_filters( 'wppb_register_user_email_subject_without_admin_approval', $user_message_subject, $email, $password, $user_message_subject, 'wppb_user_emailc_default_registration_email_subject' );
 		
-		$user_message_content = sprintf( __( 'Welcome to %1$s!<br/><br/><br/>Your username is:%2$s and password:%3$s', 'profilebuilder' ), $user_message_from, $user_name, $password );
+		$user_message_content = sprintf( __( 'Bienvenido a %1$s!<br/><br/><br/>Tu nombre de usuario es:%2$s y tu contraseña:%3$s', 'profilebuilder' ), $user_message_from, $user_name, $password );
 		
 		if ( $adminApproval == 'yes' ){
 			$user_message_subject = apply_filters( 'wppb_register_user_email_subject_with_admin_approval', $user_message_subject, $email, $password, $user_message_subject, 'wppb_user_emailc_registration_with_admin_approval_email_subject' );
