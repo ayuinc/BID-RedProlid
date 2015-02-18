@@ -137,7 +137,7 @@ get_header(); ?>
 					                      	<?php if( $imagen !='' ) { ?>
 						                        <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
 																	<?php } else {?>
-					                        	<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia1.png" alt="" class="img-responsive">
+					                        	<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia-placeholder.png" alt="" class="img-responsive">
 																	<?php } ?>
 					                        <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0 pb-0"><?php the_title(); ?></h3></a>
 							                    <?php $publicacion = get_field('publicacion_noticias'); ?>
