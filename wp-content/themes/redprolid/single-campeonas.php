@@ -31,9 +31,18 @@
       <div class="with-hr">
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
       	<p>
+	      	<?php $pais_campeona = get_field('pais_campeona'); ?>
+					<?php if ($pais_campeonan!='') { ?>
 	      	<strong>País:</strong> <?php the_field('pais_campeona'); ?><br>
+	      	<?php } ?>
+	      	<?php $tipo_de_recurso = get_field('tipo_de_recurso'); ?>
+					<?php if ($tipo_de_recurso!='') { ?>	      	
 					<strong>Tipo de recurso:</strong> <?php the_field('tipo_de_recurso'); ?><br>
+					<?php } ?>
+	      	<?php $tema = get_field('tema'); ?>
+					<?php if ($tema!='') { ?>					
 					<strong>Tema:</strong> <?php the_field('tema'); ?>
+					<?php } ?>
 				</p>
 
         <div class="content-display">
