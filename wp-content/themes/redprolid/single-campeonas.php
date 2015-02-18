@@ -36,18 +36,18 @@
 	      	<strong>País:</strong> <?php the_field('pais_campeona'); ?><br>
 	      	<?php } ?>
 	      	<?php $tipo_de_recurso = get_field('tipo_de_recurso'); ?>
+	      	<?php $tags_tipo_de_recurso_campeona = get_field('tags_tipo_de_recurso_campeona'); ?>
 					<?php if ($tipo_de_recurso!='') { ?>	      	
 					<strong>Tipo de recurso:</strong> <?php the_field('tipo_de_recurso'); ?>
-						<?php $tags_tipo_de_recurso_campeona = get_field('tags_tipo_de_recurso_campeona'); ?>
 						<?php if ($tags_tipo_de_recurso_campeona!='') { ?>
 							<?php echo $tags_tipo_de_recurso_campeona; ?>
 						<?php } ?>
 					<br>
 					<?php } ?>
 	      	<?php $tema = get_field('tema'); ?>
+	      	<?php $tag_tema_campeona = get_field('tag_tema_campeona'); ?>
 					<?php if ($tema!='') { ?>					
 					<strong>Tema:</strong> <?php the_field('tema'); ?>
-						<?php $tag_tema_campeona = get_field('tag_tema_campeona'); ?>
 						<?php if ($tag_tema_campeona!='') { ?>
 							<?php echo $tag_tema_campeona; ?>
 						<?php } ?>					
