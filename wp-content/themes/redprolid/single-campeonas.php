@@ -40,7 +40,7 @@
 					<?php if ($tipo_de_recurso!='') { ?>	      	
 					<strong>Tipo de recurso:</strong> <?php the_field('tipo_de_recurso'); ?>
 						<?php if ($tags_tipo_de_recurso_campeona!='') { ?>
-							<?php echo $tags_tipo_de_recurso_campeona; ?>
+							<?php echo ', '.$tags_tipo_de_recurso_campeona; ?>
 						<?php } ?>
 					<br>
 					<?php } ?>
@@ -49,7 +49,7 @@
 					<?php if ($tema!='') { ?>					
 					<strong>Tema:</strong> <?php the_field('tema'); ?>
 						<?php if ($tag_tema_campeona!='') { ?>
-							<?php echo $tag_tema_campeona; ?>
+							<?php echo ', '.$tag_tema_campeona; ?>
 						<?php } ?>					
 					<?php } ?>					
 				</p>           
