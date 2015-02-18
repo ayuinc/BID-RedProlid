@@ -9,7 +9,7 @@
           <p>
 			      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
   				</p>
-  				<p><a href="<?php the_field('recurso_pdf-word')?>" target="_blank">Descarga el recurso</a></p>        
+  				<p><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/Download-50.png"><a href="<?php the_field('recurso_pdf-word')?>" target="_blank">Descarga el recurso</a></p>        
         </div>
       </div>
   	  <div class="row">
