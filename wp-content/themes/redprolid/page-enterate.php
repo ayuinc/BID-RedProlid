@@ -91,7 +91,7 @@ get_header(); ?>
                 	<?php query_posts( 'category_name=recursos&posts_per_page=3' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>    
 			                  <li class="mb-14">
-			                    <h5 class="medium"><?php the_title(); ?></h5>
+			                    <h4 class="medium"><?php the_title(); ?></h4>
 			                    <p><?php the_field('recurso_descripcion'); ?></p>
 								          <p>
 											      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
