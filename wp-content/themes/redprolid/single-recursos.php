@@ -12,7 +12,7 @@
   				<?php $folleto_recurso = get_field('folleto_recurso');?>
   				<?php if ($folleto_recurso!='') { ?>
   				<div class="pv-14">
-  					<img src="<?php echo $folleto_recurso; ?>">   
+  					<img src="<?php echo $folleto_recurso; ?>" width="100%">   
   				</div>    
   				<?php } ?> 
   				<?php $recurso = get_field('recurso_pdf-word');?>
