@@ -208,7 +208,7 @@ function cimy_signup_user_notification($user, $user_email, $key, $meta = '') {
 		$admin_email = 'support@' . $_SERVER['SERVER_NAME'];
 	$from_name = get_site_option( 'blogname' ) == '' ? 'WordPress' : esc_html( get_site_option( 'blogname' ) );
 	$message_headers = "From: \"{$from_name}\" <{$admin_email}>\n" . "Content-Type: text/plain; charset=\"" . get_option('blog_charset') . "\"\n";
-	$message = sprintf( apply_filters( 'wpmu_signup_user_notification_email', __( "Hola,\n\nPara activar tu usuario, haz clic en el siguiente link:\n\n%s\n\nPronto recibirás *otro correo* con tu clave de aaceso.\n\n", $cimy_uef_domain) ), site_url( "wp-login.php?cimy_key=$key$redirect_to" ), $key );
+	$message = sprintf( apply_filters( 'wpmu_signup_user_notification_email', __( "Hola,\n\nPara activar tu usuario, haz clic en el siguiente link:\n\n %s \n\nPronto recibirás *otro correo* con tu clave de aaceso.\n\n", $cimy_uef_domain) ), site_url( "wp-login.php?cimy_key=$key$redirect_to" ), $key );
 	// TODO: Don't hard code activation link.
 	$subject = sprintf(
 		apply_filters('wpmu_signup_user_notification_subject',
