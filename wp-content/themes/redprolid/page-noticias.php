@@ -55,7 +55,7 @@ get_header(); ?>
 					            	<?php if ($imagen!='') { ?>
 					            	<div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
 					            	<?php } else { ?>
-					            	<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia-placeholder.png"></div>
+					            	<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia-placeholder.png)"></div>
 					            	<?php } ?>
 					            	<div class="banner-content flex-none">
 			                    <h3 class="medium mt-7 mb-0 pb-0">
