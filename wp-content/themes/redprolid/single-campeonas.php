@@ -26,7 +26,7 @@
         <h2 class="lh-lg mb-0"><?php the_title(); ?></h2>
         <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
         <small><?php the_field('posicion_campeona'); ?> <?php if (get_field('twitter_campeona')!='') { ?>/ <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank">@<?php the_field('twitter_campeona'); ?></a><?php } ?></small>
-        <h4 class="mt-14 medium lh-lg"><strong><?php the_field('descripcion_campeona'); ?></strong></h4>	            
+        <h4 class="mt-14 medium lh-lg"><?php the_field('descripcion_campeona'); ?></h4>	            
       </div>
       <div class="with-hr">
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
