@@ -9,6 +9,12 @@
           <p>
 			      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
   				</p>
+  				<?php $folleto_recurso = get_field('folleto_recurso');?>
+  				<?php if ($folleto_recurso!='') { ?>
+  				<div class="pv-14">
+  					<img src="<?php echo $folleto_recurso; ?>">   
+  				</div>    
+  				<?php } ?> 
   				<?php $recurso = get_field('recurso_pdf-word');?>
   				<?php if ($recurso!='') { ?>
   				<p>Usa este <a href="<?php echo $recurso; ?>" target="_blank">link</a> para descargar el recurso.</p>       
