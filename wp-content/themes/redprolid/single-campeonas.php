@@ -32,7 +32,7 @@
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
       	<p>
 	      	<?php $pais_campeona = get_field('pais_campeona'); ?>
-					<?php if ($pais_campeonan!='') { ?>
+					<?php if ($pais_campeona!='') { ?>
 	      	<strong>País:</strong> <?php the_field('pais_campeona'); ?><br>
 	      	<?php } ?>
 	      	<?php $tipo_de_recurso = get_field('tipo_de_recurso'); ?>
