@@ -225,7 +225,7 @@ get_header(); ?>
                     <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
                   </div>
 	                  <div class="col-sm-7">
-                    <h3 class="pt-0 medium mb-0"><?php the_title(); ?></h3>
+                    <h3 class="pt-0 medium mb-0 pb-0"><?php the_title(); ?></h3>
                     <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
                     <h5 class="medium mt-0"><?php the_field('posicion_campeona'); ?></h5>
                     <p class="light"><?php the_field('descripcion_campeona'); ?></p>
