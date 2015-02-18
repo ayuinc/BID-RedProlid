@@ -30,13 +30,12 @@
       </div>
       <div class="with-hr">
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
-        <div class="container-sm">
-	      	<p>
-		      	<strong>País:</strong> <?php the_field('pais_campeona'); ?><br>
-						<strong>Tipo de recurso:</strong> <?php the_field('tipo_de_recurso'); ?><br>
-						<strong>Tema:</strong> <?php the_field('tema'); ?>
-					</p>
-        </div>
+      	<p>
+	      	<strong>País:</strong> <?php the_field('pais_campeona'); ?><br>
+					<strong>Tipo de recurso:</strong> <?php the_field('tipo_de_recurso'); ?><br>
+					<strong>Tema:</strong> <?php the_field('tema'); ?>
+				</p>
+
         <div class="content-display">
           <div class="text-right mt-14 mb-14">
   	        <a class="btn btn-primary" id="boton_entrevista_full" >Lee la entrevista completa</a>
