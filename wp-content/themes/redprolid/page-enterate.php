@@ -93,9 +93,10 @@ get_header(); ?>
 			                  <li class="mb-14">
 			                    <h5 class="medium"><?php the_title(); ?></h5>
 			                    <p><?php the_field('recurso_descripcion'); ?></p>
-			                    <small class="date">
-			                    	<?php the_field('recurso_autor'); ?>, <?php the_field('recurso_año_de_publicacion'); ?> <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más >></a> 
-			                    </small>
+								          <p>
+											      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
+														<a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más >></a> 
+			                    </p>
 			                  </li>
                         <hr>
 			            <?php endwhile; ?>  
