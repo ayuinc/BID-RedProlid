@@ -133,10 +133,11 @@ get_header(); ?>
 													<?php while ( have_posts() ) : the_post(); ?>
 						                  <li class="pl-14 pr-14">
 					                      <div class="p-14 bg-white">
-					                      	<?php if( get_field('imagen_noticias') ) { ?>
+						                      <?php $imagen = get_field('imagen_noticias'); ?>
+					                      	<?php if( $imagen !='' ) { ?>
 						                        <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
 																	<?php } else {?>
-					                        	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
+					                        	<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia.png" alt="" class="img-responsive">
 																	<?php } ?>
 					                        <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0 pb-0"><?php the_title(); ?></h3></a>
 							                    <?php $publicacion = get_field('publicacion_noticias'); ?>
