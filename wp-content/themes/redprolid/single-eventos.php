@@ -38,7 +38,7 @@
 							<?php if ($tipo_de_recurso_evento!='') { ?>			        
 			        <h5 class="medium mb-0">Tipo de recurso</h5>
 					    <p>
-						    <?php echo $tipo_de_recurso_evento; ?>
+						    <?php the_field('tipo_de_recurso_evento') ?>
 								<?php if ($tag_tipo_de_recurso_evento!='') { ?>
 									<?php echo ', '.$tag_tipo_de_recurso_evento; ?>
 								<?php } ?>	
@@ -49,7 +49,7 @@
 							<?php if ($tema_evento!='') { ?>						    
 					    <h5 class="medium mb-0">Tema</h5>
 					    <p>
-						    <?php echo $tema_evento; ?>
+						    <?php the_field('tema_evento') ?>
 								<?php if ($tag_tema_evento!='') { ?>
 									<?php echo ', '.$tag_tema_evento; ?>
 								<?php } ?>
