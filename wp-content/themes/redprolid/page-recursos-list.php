@@ -31,14 +31,14 @@ get_header(); ?>
           <?php query_posts( 'category_name=recursos&posts_per_page=10&paged=' . $paged ); ?>
           <?php while ( have_posts() ) : the_post(); ?>
             <div class="title">
-              <h3 class="medium mb-0"><a href="<?php the_field('recurso_link'); ?>"><?php the_title(); ?></a></h3>
+              <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
               <small class="date">
               	<?php the_field('recurso_autor'); ?>, <?php the_field('recurso_año_de_publicacion'); ?>
               </small>                
             </div>
             <div class="content mb-7">
               <?php the_field('recurso_descripcion'); ?>
-							<p><a href="<?php the_field('recurso_link'); ?>" class="text-primary">Lee más >></a></p>
+							<p><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más >></a></p>
             </div>
             <hr>
           <?php endwhile; ?>
