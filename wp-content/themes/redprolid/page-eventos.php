@@ -44,17 +44,25 @@ get_header(); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 		        	<div class="item <?php if ($aux == 0) { ?> active <?php $aux++; } ?>">
 		        		<div class="banner">
-		        			<div class="banner-pic col-sm-4 mt-28" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
+		        			<div class="banner-pic col-sm-4 mt-2" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
 		        			<div class="banner-content col-sm-8">
 		        				<h3 class="medium mt-7 mb-14 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 		        				<p><?php the_field('descripcion_evento'); ?></p>
 		        				<?php $tempDate = get_the_date(); ?>
 		              	<p>
-		                	<strong>Fecha:</strong> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><br>
-		                	<strong>Hora:</strong> <?php the_field('hora_evento'); ?><br>
+		                	<strong>Fecha:</strong> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?>, <?php the_field('hora_evento'); ?><br>
+		                	<?php $lugar_evento = get_field('lugar_evento'); ?>
+											<?php if ($lugar_evento!='') { ?>
 		                	<strong>Lugar:</strong> <?php the_field('lugar_evento'); ?><br>
+		                	<?php } ?>
+		                	<?php $organizan_evento = get_field('organizan_evento'); ?>
+											<?php if ($organizan_evento!='') { ?>		                	
 		                	<strong>Organizan:</strong> <?php the_field('organizan_evento'); ?><br>
+		                	<?php } ?>
+		                	<?php $convocan = get_field('convocan'); ?>
+											<?php if ($convocan!='') { ?>		                	
 											<strong>Convocan:</strong> <?php the_field('convocan'); ?>
+											<?php } ?>
 		                </p>
 		                <p class="text-right mt-14 medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Más Información >></a></p>
 		        			</div>
@@ -92,10 +100,22 @@ get_header(); ?>
 	  		<div class="banner-content flex-none col-sm-10">
 	  			<h4 class="medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h4>
           <p>
+	        	<?php $lugar_evento = get_field('lugar_evento'); ?>
+						<?php if ($lugar_evento!='') { ?>		          
             <strong>Lugar:</strong> <?php the_field('lugar_evento'); ?><br>
+            <?php } ?>
+	        	<?php $hora_evento = get_field('hora_evento'); ?>
+						<?php if ($hora_evento!='') { ?>	            
             <strong>Hora:</strong> <?php the_field('hora_evento'); ?><br>
+            <?php } ?>
+	        	<?php $organizan_evento = get_field('organizan_evento'); ?>
+						<?php if ($organizan_evento!='') { ?>	                        
             <strong>Organizan:</strong> <?php the_field('organizan_evento'); ?><br>
+            <?php } ?>
+	        	<?php $convocan = get_field('convocan'); ?>
+						<?php if ($convocan!='') { ?>	                        
             <strong>Convocan:</strong> <?php the_field('convocan'); ?>
+            <?php } ?>
           </p>
           <p>Para mayores informes contactar a <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_nombre_evento'); ?></a></p>
           <small>
