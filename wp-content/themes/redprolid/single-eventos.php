@@ -29,7 +29,9 @@
 			        <h5 class="medium mb-0">Convocan</h5>
 			        <p><?php echo $convocan; ?></p>
 			        <?php } ?>
-			        <p>Para mayores informes contactar a <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_nombre_evento'); ?></a></p>
+			        <p>
+				        Para mayores informes contactar a <?php the_field('contacto_nombre_evento'); ?> a través de su correo electrónico <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_email_evento'); ?></a>
+			        </p>
 			        <hr>
 			        <?php $tipo_de_recurso_evento = get_field('tipo_de_recurso_evento'); ?>
 			        <?php $tag_tipo_de_recurso_evento = get_field('tag_tipo_de_recurso_evento'); ?>
