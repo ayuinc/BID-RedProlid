@@ -75,9 +75,7 @@ get_header(); ?>
 				        	}
 				        </style>  
 	              <?php
-	              // Formbuilder manual form display. Replace the # in the following line with the ID number of the form to be displayed.
-	              if(function_exists('formbuilder_process_form')) echo formbuilder_process_form(1);
-	              // End of FormBuilder manual form display.
+	              if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); }
 	              ?>
 	            </div>
 	          </div>	          
