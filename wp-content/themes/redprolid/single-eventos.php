@@ -32,20 +32,27 @@
 			        <p>Para mayores informes contactar a <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_nombre_evento'); ?></a></p>
 			        <hr>
 			        <?php $tipo_de_recurso_evento = get_field('tipo_de_recurso_evento'); ?>
+			        <?php $tag_tipo_de_recurso_evento = get_field('tag_tipo_de_recurso_evento'); ?>
 							<?php if ($tipo_de_recurso_evento!='') { ?>			        
 			        <h5 class="medium mb-0">Tipo de recurso</h5>
-					    <p><?php echo $tipo_de_recurso_evento; ?></p>
+					    <p>
+						    <?php echo $tipo_de_recurso_evento; ?>
+								<?php if ($tag_tipo_de_recurso_evento!='') { ?>
+									<?php echo ', '.$tag_tipo_de_recurso_evento; ?>
+								<?php } ?>	
+							</p>					    
 					    <?php } ?>
 			        <?php $tema_evento = get_field('tema_evento'); ?>
+			        <?php $tag_tema_evento = get_field('tag_tema_evento'); ?>
 							<?php if ($tema_evento!='') { ?>						    
 					    <h5 class="medium mb-0">Tema</h5>
-					    <p><?php echo $tema_evento; ?></p>
+					    <p>
+						    <?php echo $tema_evento; ?>
+								<?php if ($tag_tema_evento!='') { ?>
+									<?php echo ', '.$tag_tema_evento; ?>
+								<?php } ?>
+							</p>						    
 					    <?php } ?>
-			        <?php $ano_publicacion_evento = get_field('ano_publicacion_evento'); ?>
-							<?php if ($ano_publicacion_evento!='') { ?>					    
-					    <h5 class="medium mb-0">Año de publicación</h5>
-							<p><?php echo $ano_publicacion_evento; ?></p>
-							<?php } ?>
 						</div>
 						<div class="col-sm-5">
 							<h5 class="medium mb-0">Fecha</h5>
