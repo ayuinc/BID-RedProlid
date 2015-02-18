@@ -26,7 +26,10 @@
         <h2 class="lh-lg mb-0"><?php the_title(); ?></h2>
         <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
         <small><?php the_field('posicion_campeona'); ?> <?php if (get_field('twitter_campeona')!='') { ?>/ <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank">@<?php the_field('twitter_campeona'); ?></a><?php } ?></small>
-        <h4 class="mt-14 light lh-lg"><?php the_field('descripcion_campeona'); ?></h4>	     
+        <h4 class="mt-14 light lh-lg"><?php the_field('descripcion_campeona'); ?></h4>	            
+      </div>
+      <div class="with-hr">
+        <p><?php the_field('intro_entrevista_campeona'); ?></p>
 	    	<p>
 	      	<?php $pais_campeona = get_field('pais_campeona'); ?>
 					<?php if ($pais_campeona!='') { ?>
@@ -40,10 +43,7 @@
 					<?php if ($tema!='') { ?>					
 					<strong>Tema:</strong> <?php the_field('tema'); ?>
 					<?php } ?>
-				</p>          
-      </div>
-      <div class="with-hr">
-        <p><?php the_field('intro_entrevista_campeona'); ?></p>
+				</p>           
         <div class="content-display">
           <div class="text-right mt-14 mb-14">
   	        <a class="btn btn-primary" id="boton_entrevista_full" >Lee la entrevista completa</a>
