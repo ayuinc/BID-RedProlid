@@ -129,7 +129,7 @@ get_header(); ?>
 		                  <ul class="grid-list grid-list-3 item active pl-7">	
 												<!-- Start the Loop. -->
 												<?php if ( have_posts() ) : ?>
-		                      <?php query_posts( array( 'category_name' => 'noticias', 'posts_per_page' => 3 ) ); ?>
+		                      <?php query_posts( array( 'category_name' => 'noticias', 'posts_per_page' => 6 ) ); ?>
 													<?php while ( have_posts() ) : the_post(); ?>
 						                  <li class="pl-14 pr-14">
 					                      <div class="p-14 bg-white">
