@@ -83,7 +83,7 @@ get_header(); ?>
                     <h3 class="medium">Últimos recursos</h3>
                   </li>
                   <li>
-                    <a href="<?php echo home_url('/'); ?>recursos" class="light">Todos los recursos >></a>
+                    <a href="<?php echo home_url('/'); ?>recursos" class="medium">Todos los recursos >></a>
                   </li>
                 </ul>
                 <ul class="list-unstyled">
@@ -117,7 +117,7 @@ get_header(); ?>
             </div>
             <div class="row">
               <div class="col-md-12">
-	              <p class="text-right mr-56"><a href="<?php echo home_url('/'); ?>noticias" class="light">Todas las noticias >></a></p>
+	              <p class="text-right mr-56"><a href="<?php echo home_url('/'); ?>noticias" class="medium">Todas las noticias >></a></p>
               </div>
             </div>            
             <div class="panel-body pt-0">
@@ -179,7 +179,7 @@ get_header(); ?>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <p class="text-right"><a href="<?php echo home_url('/'); ?>eventos" class="light">Eventos aquí >></a></p>
+              <p class="text-right"><a href="<?php echo home_url('/'); ?>eventos" class="medium">Eventos aquí >></a></p>
             </div>
           </div>             
           <div class="panel-body" style="padding: 0; margin: 21px 0;">
@@ -198,7 +198,7 @@ get_header(); ?>
                     	<?php $tempDate = get_field('fecha_evento'); ?>
 	                    <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
 			                <p class="mt-14"><?php the_field('descripcion_evento');?></p>
-			                <p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="light">Más información >></a></p>
+			                <p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más información >></a></p>
 		                </div>
 	                </div>
                 </div>
@@ -234,7 +234,7 @@ get_header(); ?>
                 </div>
                 <div class="row">
                 	<div class="col-md-12 text-right">
-	                	<a href="<?php echo home_url('/'); ?>campeonas" class="light">Entrevistas >></a>
+	                	<a href="<?php echo home_url('/'); ?>campeonas" class="medium">Entrevistas >></a>
                 	</div>
                 </div>
                 <div class="panel-body">
@@ -279,7 +279,7 @@ get_header(); ?>
 									<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>                  
                   <iframe width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
                   <div class="text-right mt-21">
-                    <p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="light">Más aquí >></a></p>
+                    <p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más aquí >></a></p>
                   </div>
 			            <?php endwhile; ?>
 								<?php endif; ?>                   
