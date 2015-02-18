@@ -12,10 +12,6 @@ get_header(); ?>
 <?php get_template_part( 'include', 'nav' ); ?>
 <section> 
   <div class="container">
-    <?php the_breadcrumb(); ?>
-    <div class="clearfix sub-header">
-
-    </div> 
     <!-- IF NO POSTS in FOROS -->
     <div class="ph-70 text-center">
     	<h3>Tu email fue activado exitosamente.</h3>
@@ -23,7 +19,7 @@ get_header(); ?>
 	    	<div class="row">
 	    		<div class="col-sm-6 col-sm-offset-3">
 						<div class="user-sign-in-form pv-21">
-			  			<h2 class="medium">Ingresa con tus claves de accso</h2>
+			  			<h2 class="medium">Ingresa con tus claves de acceso</h2>
 			        <?php echo do_shortcode('[dm_login_form]'); ?>
 			      </div>		    		
 		    	</div>
