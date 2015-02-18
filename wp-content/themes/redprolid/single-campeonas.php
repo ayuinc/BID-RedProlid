@@ -10,8 +10,7 @@
       </div>
       <div class="col-sm-7 col-xs-12">
         <nav class="text-right text-center-xs">
-          <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores">¿Quieres leer nuestras entrevistas anteriores?</a> <span class="text-primary">|</span>
-          <a href="#" data-toggle="modal" data-target="#modalCampeonas">Nos propones un tema</a>
+          <a href="#" data-toggle="modal" data-target="#modalCampeonas">Nos propones un tema</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores">¿Quieres leer nuestras entrevistas anteriores?</a>
         </nav>
       </div>
     </div>
@@ -91,7 +90,7 @@
 		        <div class="col-sm-6 col-xs-12"></div>
 		      </div>-->
 		      <?php if ( is_user_logged_in() ) { ?>
-		      	<h3 class="medium">¿Nos propones un tema para desarrollar en nuestras entrevistas y/o a quíen te gustaría que entrevistemos?</h3>
+		      	<h3 class="medium">¿Nos propones un tema para desarrollar en nuestras entrevistas y/o a quién te gustaría que entrevistemos?</h3>
 		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
 							<?php ninja_forms_display_form( 5 ); ?>
 						<?php } ?>
