@@ -38,12 +38,20 @@
 						<span class="medium">País:</span> <?php echo $pais_noticias; ?><br>
 						<?php } ?>
 						<?php $tipo_recursos_noticias = get_field('tipo_recursos_noticias'); ?>
+						<?php $tag_tema_noticia = get_field('tag_tema_noticia'); ?>
 						<?php if ($tipo_recursos_noticias!='') { ?>						
 						<span class="medium">Tipo de recursos:</span> <?php echo $tipo_recursos_noticias; ?><br>
+								<?php if ($tag_tema_noticia!='') { ?>
+									<?php echo ', '.$tag_tema_noticia; ?>
+								<?php } ?>						
 						<?php } ?>
 						<?php $tema_noticias = get_field('tema_noticias'); ?>
+						<?php $tag_tipo_de_recurso_noticia = get_field('tag_tipo_de_recurso_noticia'); ?>
 						<?php if ($tema_noticias!='') { ?>									
 						<span class="medium">Temas:</span> <?php echo $tema_noticias; ?>
+								<?php if ($tag_tipo_de_recurso_noticia!='') { ?>
+									<?php echo ', '.$tag_tipo_de_recurso_noticia; ?>
+								<?php } ?>							
 						<?php } ?>
 					</p> 
   				</div>
