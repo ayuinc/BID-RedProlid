@@ -31,8 +31,9 @@
       <div class="with-hr">
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
         <div class="container-sm">
-        <p><strong>Tipo de recurso:</strong> <?php the_field('tipo_de_recurso'); ?></p>
-        <p><strong>Tema:</strong> <?php the_field('tema'); ?></p>
+	      	<p><strong>País:</strong> <?php the_field('pais_campeona'); ?></p> 
+					<p><strong>Tipo de recurso:</strong> <?php the_field('tipo_de_recurso'); ?></p>
+					<p><strong>Tema:</strong> <?php the_field('tema'); ?></p>
         </div>
         <div class="content-display">
           <div class="text-right mt-14 mb-14">
