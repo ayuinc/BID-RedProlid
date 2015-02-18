@@ -14,7 +14,7 @@ get_header(); ?>
     <div class="clearfix bg-panel sub-header">
       <div class="col-sm-7">
         <div>
-          <h1>Todos los Recursos</h1>
+          <h1>Todos los recursos</h1>
           <nav class="mt-21">
             <a href="<?php echo content_url('/'); ?>enterate">Enterate >></a>
           </nav>
