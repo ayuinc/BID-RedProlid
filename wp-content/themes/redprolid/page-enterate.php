@@ -249,7 +249,7 @@ get_header(); ?>
 			                      <small>(<?php the_field('pais_campeona'); ?>)</small>
 			                      <p><?php the_field('posicion_campeona'); ?></p>
 			                      <div class="mt-14">
-			                        <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Leer más</a>
+			                        <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee más</a>
 			                      </div>
 			                    </div>
 			                    <div class="col-sm-6 pl-0-sm pr-0 text-right">
