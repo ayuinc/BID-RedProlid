@@ -8,7 +8,8 @@
           <?php $publicacion = get_field('recurso_descripcion'); ?>
           <p>
 			      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
-  				</p>        
+  				</p>
+  				<p><a href="<?php the_field('recurso_pdf-word')?>" target="_blank">Descarga el recurso</a></p>        
         </div>
       </div>
   	  <div class="row">
