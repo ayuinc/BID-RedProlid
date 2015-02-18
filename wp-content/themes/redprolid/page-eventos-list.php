@@ -32,15 +32,23 @@ get_header(); ?>
           <?php while ( have_posts() ) : the_post(); ?>
             <div class="title">
               <h3 class="medium text-primary mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-              <h5 class="medium"><span>Fecha:</span> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></h5>
+              <h5 class="medium"><span>Fecha:</span> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?>, <?php the_field('hora_evento'); ?></h5>
             </div>
             <div class="content mb-14 event-destacados">
 					    <?php $tempDate = get_the_date(); ?>	            
             	<p>
-              	<span>Hora:</span> <?php the_field('hora_evento'); ?><br>
-              	<span>Lugar:</span> <?php the_field('lugar_evento'); ?><br>
-              	<span>Organizan:</span> <?php the_field('organizan_evento'); ?><br>
-								<span>Convocan:</span> <?php the_field('convocan'); ?>
+              	<?php $lugar_evento = get_field('lugar_evento'); ?>
+								<?php if ($lugar_evento!='') { ?>
+              	<strong>Lugar:</strong> <?php the_field('lugar_evento'); ?><br>
+              	<?php } ?>
+              	<?php $organizan_evento = get_field('organizan_evento'); ?>
+								<?php if ($organizan_evento!='') { ?>		                	
+              	<strong>Organizan:</strong> <?php the_field('organizan_evento'); ?><br>
+              	<?php } ?>
+              	<?php $convocan = get_field('convocan'); ?>
+								<?php if ($convocan!='') { ?>		                	
+								<strong>Convocan:</strong> <?php the_field('convocan'); ?>
+								<?php } ?>
               </p>
 							<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve evento >></a></p>
             </div>
