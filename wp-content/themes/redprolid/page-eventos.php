@@ -44,7 +44,7 @@ get_header(); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 		        	<div class="item <?php if ($aux == 0) { ?> active <?php $aux++; } ?>">
 		        		<div class="banner">
-		        			<div class="banner-pic col-sm-4 mt-2" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
+		        			<div class="banner-pic col-sm-4 mt-28" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
 		        			<div class="banner-content col-sm-8">
 		        				<h3 class="medium mt-7 mb-14 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 		        				<p><?php the_field('descripcion_evento'); ?></p>
