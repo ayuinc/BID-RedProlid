@@ -8,12 +8,15 @@
 	}
 }
 
+.enterate-calendar {
+	h2 {
+		display: none;
+	}
+}
+
 #wp-calendar {
 	width: 100%;
 	text-align: center;
-	h2 {
-		display: none; 
-	}
 	caption,
 	thead ,
 	tfoot ,

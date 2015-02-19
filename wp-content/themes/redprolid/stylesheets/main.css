@@ -5669,11 +5669,12 @@ form.search button {
 .table.table-unstyled tr td {
   border: none; }
 
+.enterate-calendar h2 {
+  display: none; }
+
 #wp-calendar {
   width: 100%;
   text-align: center; }
-  #wp-calendar h2 {
-    display: none; }
   #wp-calendar caption,
   #wp-calendar thead,
   #wp-calendar tfoot,
