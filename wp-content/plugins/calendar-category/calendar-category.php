@@ -235,14 +235,15 @@ function calcat_get_calendar( $initial = true, $echo = true, $category = -1 ) {
 
 				$post_title = esc_attr( apply_filters( 'the_title', $ak_post_title->post_title, $ak_post_title->ID ) );
 
+				$herman['day_'.$ak_post_title->dom] = $ak_post_title->post_name;
+
 				if ( empty( $ak_titles_for_day['day_'.$ak_post_title->dom] ) )
 					$ak_titles_for_day['day_'.$ak_post_title->dom] = '';
 				if ( empty( $ak_titles_for_day["$ak_post_title->dom"])  ) {// first one
 					$ak_titles_for_day["$ak_post_title->dom"] = $post_title;
-					$ak_names_for_day["$ak_post_title->dom"] = $ak_post_title->post_name;
+					
 				} else {
 					$ak_titles_for_day["$ak_post_title->dom"] .= $ak_title_separator . $post_title;
-					$ak_names_for_day["$ak_post_title->dom"] = $ak_post_title->post_name;
 				}	
 		}
 	}
@@ -271,7 +272,7 @@ function calcat_get_calendar( $initial = true, $echo = true, $category = -1 ) {
 				$vinculo = esc_attr( $ak_titles_for_day[$day] );
 				$vinculo = strtolower($vinculo);
 				$vinculo = str_replace(" ","-",$vinculo);
-				$calendar_output .= '<a href="'. $ak_names_for_day[$day] . "\">$day</a>";
+				$calendar_output .= '<a href="'. $herman[$day] . "\">$day</a>";
 		} else {
 			$calendar_output .= $day;
 			$calendar_output .= '</td>';
