@@ -208,7 +208,7 @@ get_header(); ?>
 	                </div>
                 </div>
                 <div class="col-md-6 box-shadow pl-0 pr-0 enterate-calendar">
-                  <div class="p-14 bg-panel">
+                  <div class="p-14 bg-panel-dark">
   									<?php
   										if(is_active_sidebar('calendario-eventos')){
   										dynamic_sidebar('calendario-eventos');

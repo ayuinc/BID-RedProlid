@@ -19,6 +19,7 @@
 	}
 	caption {
 		padding-bottom: 7px; 
+		text-transform: uppercase;
 	}
 	thead {
 		tr {
@@ -26,6 +27,7 @@
 				color: white;
 				text-transform: uppercase;
 				@include light;
+				text-align: center;
 			}
 		}
 	}

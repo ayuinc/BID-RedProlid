@@ -5678,13 +5678,15 @@ form.search button {
   #wp-calendar tbody {
     text-align: center; }
   #wp-calendar caption {
-    padding-bottom: 7px; }
+    padding-bottom: 7px;
+    text-transform: uppercase; }
   #wp-calendar thead tr th {
     color: white;
     text-transform: uppercase;
     font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
     font-weight: 300;
-    font-style: normal; }
+    font-style: normal;
+    text-align: center; }
   #wp-calendar tbody tr td {
     color: white;
     font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
