@@ -100,6 +100,7 @@ get_header(); ?>
 			                  </li>
                         <hr>
 			            <?php endwhile; ?>  
+			            <?php wp_reset_query(); ?>
                 </ul>
               </div>
             </div>
@@ -130,7 +131,9 @@ get_header(); ?>
 		                  <ul class="grid-list grid-list-3 item active pl-7">	
 												<!-- Start the Loop. -->
 												<?php if ( have_posts() ) : ?>
-		                      <?php query_posts( array( 'category_name' => 'ultimas-noticias', 'posts_per_page' => 3 ) ); ?>
+		                      <?php //query_posts( array( 'category_name' => 'ultimas-noticias', 'posts_per_page' => 3 ) ); ?>
+		                      <?php query_posts( 'category_name=noticias&posts_per_page=3'); ?> 
+		                      
 													<?php while ( have_posts() ) : the_post(); ?>
 						                  <li class="pl-14 pr-14">
 					                      <div class="p-14 bg-white">
@@ -205,16 +208,13 @@ get_header(); ?>
 	                </div>
                 </div>
                 <div class="col-md-6 box-shadow pl-0 pr-0 enterate-calendar">
-	                <div class="row">
-		                <div class="col-md-6 p-21">
-                      <h2 class="text-brown text-center medium"><?php echo date_i18n('l', strtotime( $tempDate)); ?></h2>
-                      <p class="text-brown text-center mt-0 mb-0"><?php echo date('j', strtotime( $tempDate)); ?></p>
-                      <h4 class="text-center light"><?php the_title(); ?></h4>
-		                </div>
-		                <div class="col-md-6 pl-0 pr-0">
-											<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png" alt="" width="93%">
-		                </div>
-	                </div>
+                  <div class="p-14 bg-panel-dark">
+  									<?php
+  										if(is_active_sidebar('calendario-eventos')){
+  										dynamic_sidebar('calendario-eventos');
+  										}
+  									?>
+                  </div>
                 </div>
               </div>
             <?php endwhile; ?>
@@ -303,7 +303,7 @@ get_header(); ?>
             </div>
           </div>
           <div class="col-md-3 mt-35 pl-14">
-            <a href="#" class="btn btn-primary">Boletines</a>
+            <a href="<?php echo home_url('/'); ?>boletin" class="btn btn-primary">Boletines</a>
           </div>
         </div>
       </div>
