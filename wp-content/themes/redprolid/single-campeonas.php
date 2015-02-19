@@ -36,17 +36,17 @@
 		        <?php $google_campeonas = get_field('google_campeonas'); ?>
 		        <?php if ($facebook_campeonas!='') { ?>
 		        <li>
-			        <img src="http://redprolid.org/wp-content/uploads/2015/02/facebook.png">
+			        <a href="<?php echo $facebook_campeonas; ?>" target="_blank"><img src="http://redprolid.org/wp-content/uploads/2015/02/facebook.png"></a>
 		        </li>
 		        <?php } ?>
 		        <?php if ($twitter_campeona!='') { ?>
 	        	<li>
-		        	<img src="http://redprolid.org/wp-content/uploads/2015/02/twitter.png">
+		        	<a href="<?php echo $twitter_campeona; ?>" target="_blank"><img src="http://redprolid.org/wp-content/uploads/2015/02/twitter.png"></a>
 	        	</li>
 	        	<?php } ?>
 	        	<?php if ($google_campeonas!='') { ?>
 	        	<li>
-		        	<img src="http://redprolid.org/wp-content/uploads/2015/02/googleplus.png">
+		        	<a href="<?php echo $google_campeonas; ?>" target="_blank"><img src="http://redprolid.org/wp-content/uploads/2015/02/googleplus.png"></a>
 	        	</li>
 	        	<?php } ?>
 	        </ul>
