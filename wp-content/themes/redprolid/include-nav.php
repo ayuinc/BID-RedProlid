@@ -29,6 +29,7 @@
                 <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2">Pistas →</a>
                 <ul class="list-unstyled sub-menu">
                   <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a></li>
+                  <li class="light"><a href="<?php echo home_url('/'); ?>a-tu-estilo/">A tu estilo</a></li>
                 </ul>
               </li>
             </ul>
