@@ -222,7 +222,7 @@ function calcat_get_calendar( $initial = true, $echo = true, $category = -1 ) {
 		$ak_title_separator = ', ';
 
 	$ak_titles_for_day = array();
-	$sql = "SELECT DISTINCT ID, post_title, DAYOFMONTH(post_date) as dom, post_name "
+	$sql = "SELECT DISTINCT ID, post_title, DAYOFMONTH(post_date) as dom, post_name"
 		."FROM $wpdb->posts " . calcat_maybe_single_category_joins( $category )
 		."WHERE YEAR(post_date) = '$thisyear' "
 		."AND MONTH(post_date) = '$thismonth' " . calcat_maybe_single_category_cat( $category )
@@ -239,7 +239,7 @@ function calcat_get_calendar( $initial = true, $echo = true, $category = -1 ) {
 					$ak_titles_for_day['day_'.$ak_post_title->dom] = '';
 				if ( empty( $ak_titles_for_day["$ak_post_title->dom"])  ) {// first one
 					$ak_titles_for_day["$ak_post_title->dom"] = $post_title;
-					$ak_titles_for_day["$ak_post_title->dom"] = $post_name;
+					$ak_names_for_day["$ak_post_title->dom"] = $ak_post_title->post_name;
 				} else {
 					$ak_titles_for_day["$ak_post_title->dom"] .= $ak_title_separator . $post_title;
 				}	
@@ -270,7 +270,7 @@ function calcat_get_calendar( $initial = true, $echo = true, $category = -1 ) {
 				$vinculo = esc_attr( $ak_titles_for_day[$day] );
 				$vinculo = strtolower($vinculo);
 				$vinculo = str_replace(" ","-",$vinculo);
-				$calendar_output .= '<a href="'. $vinculo . "\">$day</a>";
+				$calendar_output .= '<a href="'. $ak_names_for_day[$day] . "\">$day</a>";
 		} else {
 			$calendar_output .= $day;
 			$calendar_output .= '</td>';
