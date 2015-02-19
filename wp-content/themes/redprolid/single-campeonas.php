@@ -23,9 +23,12 @@
         </div>
         <div class="col-md-9">
         <?php } else {  } ?>
-        <h2 class="lh-lg mb-0"><?php the_title(); ?></h2>
-        <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
-        <div class="container-sm">
+        <div class="row">
+	        <div class="col-sm-8">
+		        <h2 class="lh-lg mb-0"><?php the_title(); ?></h2>
+		        <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+	        </div>
+	        <div class="col-sm-4">
 	        <ul class="list-inline">
 		        <li>
 			        <img src="http://redprolid.org/wp-content/uploads/2015/02/facebook.png">
@@ -37,6 +40,7 @@
 		        	<img src="http://redprolid.org/wp-content/uploads/2015/02/googleplus.png">
 	        	</li>
 	        </ul>
+	        </div>	        
         </div>
         
         <?php the_field('posicion_campeona'); ?> 
