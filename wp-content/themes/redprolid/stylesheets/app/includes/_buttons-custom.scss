@@ -45,3 +45,32 @@ input[type="submit"].btn {
 		}
 	}
 } 
+
+
+// BOTONES PISTA Y PINTA
+.btn-pista,
+.btn-pinta {
+	position: relative;
+	&:before {
+		@include position(absolute, 0 null null 0);
+		width: 35px;
+		height: 35px;
+	}
+}
+.btn-pista {
+	&:before {
+		content: url(../icons/btn-pistas.png);
+	}
+}
+.btn-pinta {
+	&:before {
+		content: url(../icons/btn-pinta.png);
+	}
+}
+
+
+
+
+
+
+

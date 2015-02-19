@@ -78,7 +78,7 @@ get_header(); ?>
 				        </div>
 								<div class="col-sm-5 col-xs-12">
 									<nav class="text-right">
-										<a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/">Pistas</a>
+										<a class="btn btn-default btn-pistas" href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/">Pistas</a>
 									</nav>
 								</div>
 				      </div>
@@ -122,7 +122,7 @@ get_header(); ?>
 				        </div>
 				        <div class="col-sm-6 col-xs-12">
 									<nav class="text-right">
-										<a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a>
+										<a class="btn btn-default btn-pinta" href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a>
 									</nav>
 								</div>
 				      </div>
