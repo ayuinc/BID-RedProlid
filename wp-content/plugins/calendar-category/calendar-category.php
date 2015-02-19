@@ -237,11 +237,12 @@ function calcat_get_calendar( $initial = true, $echo = true, $category = -1 ) {
 
 				if ( empty( $ak_titles_for_day['day_'.$ak_post_title->dom] ) )
 					$ak_titles_for_day['day_'.$ak_post_title->dom] = '';
-				if ( empty( $ak_titles_for_day["$ak_post_title->dom"])  ) // first one
+				if ( empty( $ak_titles_for_day["$ak_post_title->dom"])  ) {// first one
 					$ak_titles_for_day["$ak_post_title->dom"] = $post_title;
 					$ak_name_for_day["$ak_post_name->dom"] = $post_name;
-				else
+				} else {
 					$ak_titles_for_day["$ak_post_title->dom"] .= $ak_title_separator . $post_title;
+				}	
 		}
 	}
 
