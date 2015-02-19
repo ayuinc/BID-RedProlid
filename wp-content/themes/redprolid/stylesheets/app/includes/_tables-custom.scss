@@ -54,12 +54,12 @@
 				}
 				a {
 					color: $brand-primary;
-					&:hover {
-						color: white;
-					}
 				}
 				&:hover {
 					background-color: $brand-primary;
+					a {
+						color: white;
+					}
 				}
 			}
 		}

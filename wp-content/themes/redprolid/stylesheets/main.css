@@ -5704,10 +5704,10 @@ form.search button {
       border-right: none; }
     #wp-calendar tbody tr td a {
       color: #ed7133; }
-      #wp-calendar tbody tr td a:hover {
-        color: white; }
     #wp-calendar tbody tr td:hover {
       background-color: #ed7133; }
+      #wp-calendar tbody tr td:hover a {
+        color: white; }
 
 .carousel-control {
   position: absolute;
