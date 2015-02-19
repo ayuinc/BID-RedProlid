@@ -31,7 +31,7 @@ get_header(); ?>
 		      </div>
 		      <div class="row">
 			      <div class="col-sm-offset-2">
-							<p class="light text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore enim totam, ipsa harum in. Officia unde iste placeat, ullam corrupti quia expedita blanditiis necessitatibus saepe velit maxime maiores, aliquid provident.</p>
+							<p class="light text-justify">No todo es trabajo en esta vida, ni actividad política. Te gusta (¡nos gusta!) aprovechar el tiempo libre:  salir a comer con tu gente, ir de tiendas o tomarte un café en esos lugares especiales. En esta sección vas a encontrar las pistas para sacar partido a tu ocio más allá de las guías de viajes.</p>
 			      </div>		      	
 		      </div>
       	</div>
@@ -44,8 +44,8 @@ get_header(); ?>
 	
 	<section class="bg-panel pv-21">
 		<div class="container">
-			<h3>¿Dónde puedo comer y/o comprar?</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur vitae expedita quibusdam enim, esse, neque rem sed ipsum pariatur repudiandae iure voluptatum distinctio modi animi error sint porro quam provident!</p>
+			<h3>Dónde puedo comer y comprar</h3>
+			<p>Te ofrecemos, ordenadas por ciudades, sugerencias de restaurantes y tiendas concretas de las principales ciudades de Latinoamérica para que, en tus viajes de trabajo o cuando asistas a foros y congresos, puedas tener mejores alternativas que la cafetería del hotel o el Mall al frente. En definitiva, donde poder darte un gusto.</p>
 			<div class="row">
 				<div class="col-sm-4">
 					<form action="">
@@ -99,13 +99,7 @@ get_header(); ?>
 			<div class="row normalize-text">
 				<div class="col-sm-6">
 					<h3>¿Tienes alguna recomendación?</h3>
-				</div>
-				<div class="col-sm-6">
-					<nav class="text-right">
-						<a href="#">Regístrate</a>
-						<span class="text-primary">|</span>
-						<a href="#">Inicia sesión</a>
-					</nav>
+					<p>Anímate a mandarnos los nombres de los lugares que tú recomendarías, esos restaurantes donde siempre comes rico, esas tiendas donde encuentran ropa o complementos originales. Tú conoces tu ciudad como la palma de la mano, igual que conoces otras a  las que viajes con frecuencia. Tu opinión nos puede ser muy útil a todas las demás.</p>
 				</div>
 			</div>
 			<hr>
