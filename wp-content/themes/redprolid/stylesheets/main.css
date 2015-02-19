@@ -5402,20 +5402,21 @@ input[type="submit"].btn.btn-white.btn-outline {
 
 .btn-pista,
 .btn-pinta {
-  position: relative; }
+  position: relative;
+  padding-left: 21px; }
   .btn-pista:before,
   .btn-pinta:before {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -19px;
     width: 35px;
     height: 35px; }
 
 .btn-pista:before {
-  content: url(../icons/btn-pistas.png); }
+  content: url(../assets/icons/btn-pistas.png); }
 
 .btn-pinta:before {
-  content: url(../icons/btn-pinta.png); }
+  content: url(../assets/icons/btn-pinta.png); }
 
 form.form-search-inline input,
 form.form-search-inline button {

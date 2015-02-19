@@ -51,20 +51,21 @@ input[type="submit"].btn {
 .btn-pista,
 .btn-pinta {
 	position: relative;
+	padding-left: 21px;
 	&:before {
-		@include position(absolute, 0 null null 0);
+		@include position(absolute, 0 null null -19px);
 		width: 35px;
 		height: 35px;
 	}
 }
 .btn-pista {
 	&:before {
-		content: url(../icons/btn-pistas.png);
+		content: url(../assets/icons/btn-pistas.png);
 	}
 }
 .btn-pinta {
 	&:before {
-		content: url(../icons/btn-pinta.png);
+		content: url(../assets/icons/btn-pinta.png);
 	}
 }
 
