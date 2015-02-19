@@ -27,6 +27,7 @@
 	        <div class="col-sm-9">
 		        <h2 class="lh-lg mb-0"><?php the_title(); ?></h2>
 		        <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+		        <?php the_field('posicion_campeona'); ?> 
 	        </div>
 	        <div class="col-sm-3">
 	        <ul class="list-inline text-right">
@@ -42,10 +43,7 @@
 	        </ul>
 	        </div>	        
         </div>
-        
-        <?php the_field('posicion_campeona'); ?> 
-        
-        <h4 class="pb-14 medium lh-lg"><?php the_field('descripcion_campeona'); ?></h4>	            
+        <h4 class="pv-14 medium lh-lg"><?php the_field('descripcion_campeona'); ?></h4>	            
       </div>
       <div class="with-hr">
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
