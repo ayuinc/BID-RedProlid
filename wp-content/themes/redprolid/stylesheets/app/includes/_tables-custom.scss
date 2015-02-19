@@ -7,3 +7,49 @@
 		}
 	}
 }
+
+#wp-calendar {
+	width: 100%;
+	text-align: center;
+	caption,
+	thead ,
+	tfoot ,
+	tbody {
+		text-align: center;
+	}
+	caption {
+		padding-bottom: 7px; 
+	}
+	thead {
+		tr {
+			th {
+				color: white;
+				text-transform: uppercase;
+				@include light;
+			}
+		}
+	}
+	tfoot {}
+	tbody {
+		tr {
+			td {
+				color: white;
+				@include light;
+				padding: 3px;
+				border: 1px solid white;
+				&:first-child {
+					border-left: none;
+				}
+				&:last-child {
+					border-right: none;
+				}
+				a {
+					color: white;
+				}
+				&:hover {
+					background-color: $brand-primary;
+				}
+			}
+		}
+	}
+}
