@@ -235,12 +235,14 @@ function calcat_get_calendar( $initial = true, $echo = true, $category = -1 ) {
 
 				$post_title = esc_attr( apply_filters( 'the_title', $ak_post_title->post_title, $ak_post_title->ID ) );
 
-				if ( empty( $ak_titles_for_day['day_'.$ak_post_title->dom] ) )
+				if ( empty( $ak_titles_for_day['day_'.$ak_post_title->dom] ) ) {
 					$ak_titles_for_day['day_'.$ak_post_title->dom] = '';
-				if ( empty( $ak_titles_for_day["$ak_post_title->dom"])  ) // first one
+				}	
+				if ( empty( $ak_titles_for_day["$ak_post_title->dom"])  ) { // first one
 					$ak_titles_for_day["$ak_post_title->dom"] = $post_title;
-				else
+				} else {
 					$ak_titles_for_day["$ak_post_title->dom"] .= $ak_title_separator . $post_title;
+				}
 		}
 	}
 
