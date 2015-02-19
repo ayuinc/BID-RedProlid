@@ -242,6 +242,7 @@ function calcat_get_calendar( $initial = true, $echo = true, $category = -1 ) {
 					$ak_names_for_day["$ak_post_title->dom"] = $ak_post_title->post_name;
 				} else {
 					$ak_titles_for_day["$ak_post_title->dom"] .= $ak_title_separator . $post_title;
+					$ak_names_for_day["$ak_post_title->dom"] = $ak_post_title->post_name;
 				}	
 		}
 	}
