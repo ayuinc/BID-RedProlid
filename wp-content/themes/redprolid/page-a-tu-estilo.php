@@ -97,7 +97,7 @@ get_header(); ?>
 	<section class="pv-21">
 		<div class="container pv-70">
 			<div class="row normalize-text">
-				<div class="col-sm-6">
+				<div class="col-sm-12">
 					<h3>¿Tienes alguna recomendación?</h3>
 					<p>Anímate a mandarnos los nombres de los lugares que tú recomendarías, esos restaurantes donde siempre comes rico, esas tiendas donde encuentran ropa o complementos originales. Tú conoces tu ciudad como la palma de la mano, igual que conoces otras a  las que viajes con frecuencia. Tu opinión nos puede ser muy útil a todas las demás.</p>
 				</div>
