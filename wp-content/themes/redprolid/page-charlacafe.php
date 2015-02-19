@@ -27,15 +27,15 @@ get_header(); ?>
         <p class="lead text-justify">Seguro que tienes mucho que aportar en los debates que vamos a propiciar en esta sección: por un lado, los webinarios, más cortos, de aproximadamente una hora de duración ; y por otro, los foros virtuales que durarán alrededor de tres semanas, en  las cuales te animamos a intervenir para aportarnos tu experiencia y tu opinión...así como si nos estuviéramos tomando un café.</p>
         <div class="row">
           <div class="col-sm-6">
-            <a href="#" class="block text-center"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/charlacafe-foros-virtuales.png" alt="" class=""></a>
+            <a href="<?php echo home_url('/'); ?>foros-proximamente" class="block text-center"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/charlacafe-foros-virtuales.png" alt="" class=""></a>
             <div class="text-right mr-63">
-              <a href="#">Foros aquí &gt; &gt;</a>
+              <a href="<?php echo home_url('/'); ?>foros-proximamente">Foros aquí &gt; &gt;</a>
             </div>
           </div>
           <div class="col-sm-6">
-            <a href="<?php echo home_url('/'); ?>webinar-principal" class="block text-center"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/charlacafe-webinarios.png" alt="" class=""></a>
+            <a href="<?php echo home_url('/'); ?>webinarios-proximamente/" class="block text-center"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/charlacafe-webinarios.png" alt="" class=""></a>
             <div class="text-right mr-63">
-              <a href="<?php echo home_url('/'); ?>webinar-principal">Webinarios aquí &gt; &gt;</a>
+              <a href="<?php echo home_url('/'); ?>webinarios-proximamente/">Webinarios aquí &gt; &gt;</a>
             </div>
           </div>
         </div>
