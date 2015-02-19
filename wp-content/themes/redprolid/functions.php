@@ -58,6 +58,22 @@
       ) );
   }
   add_action( 'widgets_init', 'redprolid_widgets_init' );
+  
+  
+
+	function eventos_widgets_init() {
+	
+		register_sidebar( array(
+			'name'          => 'Eventos',
+			'id'            => 'eventos',
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="medium">',
+			'after_title'   => '</h2>',
+		) );
+	
+	}
+	add_action( 'widgets_init', 'eventos_widgets_init' );  
 
 
   function add_custom_taxonomies() {

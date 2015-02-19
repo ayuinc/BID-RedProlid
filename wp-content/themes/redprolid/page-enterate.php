@@ -215,8 +215,7 @@ get_header(); ?>
                       <h4 class="text-center light"><?php the_title(); ?></h4>
 		                </div>
 		                <div class="col-md-6 pl-0 pr-0">
-											<!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png" alt="" width="93%">-->
-											<?php the_content(); ?>
+											<?php dynamic_sidebar( 'eventos_widgets_init' ); ?>
 		                </div>
 	                </div>
                 </div>
