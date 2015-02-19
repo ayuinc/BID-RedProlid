@@ -25,6 +25,20 @@
         <?php } else {  } ?>
         <h2 class="lh-lg mb-0"><?php the_title(); ?></h2>
         <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+        <div class="container-sm">
+	        <div class="row">
+		        <div class="col-sm-4">
+			        <img src="http://redprolid.org/wp-content/uploads/2015/02/facebook.png">
+		        </div>
+	        	<div class="col-sm-4">
+		        	<img src="http://redprolid.org/wp-content/uploads/2015/02/twitter.png">
+	        	</div>
+	        	<div class="col-sm-4">
+		        	<img src="http://redprolid.org/wp-content/uploads/2015/02/googleplus.png">
+	        	</div>
+	        </div>
+        </div>
+        
         <?php the_field('posicion_campeona'); ?> 
         
         <h4 class="pv-14 medium lh-lg"><?php the_field('descripcion_campeona'); ?></h4>	            
