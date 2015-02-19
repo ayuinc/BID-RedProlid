@@ -100,6 +100,7 @@ get_header(); ?>
 			                  </li>
                         <hr>
 			            <?php endwhile; ?>  
+			            <?php wp_reset_query(); ?>
                 </ul>
               </div>
             </div>
@@ -131,7 +132,7 @@ get_header(); ?>
 												<!-- Start the Loop. -->
 												<?php if ( have_posts() ) : ?>
 		                      <?php //query_posts( array( 'category_name' => 'ultimas-noticias', 'posts_per_page' => 3 ) ); ?>
-		                      <?php query_posts( 'cat=12&posts_per_page=3'); ?>
+		                      <?php query_posts( 'category_name=noticias&posts_per_page=3'); ?>
 													<?php while ( have_posts() ) : the_post(); ?>
 						                  <li class="pl-14 pr-14">
 					                      <div class="p-14 bg-white">
