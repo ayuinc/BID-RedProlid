@@ -26,7 +26,7 @@
         <h2 class="lh-lg mb-0"><?php the_title(); ?></h2>
         <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
         <div class="container-sm">
-	        <ul class="list-unstyled">
+	        <ul class="list-inline">
 		        <li>
 			        <img src="http://redprolid.org/wp-content/uploads/2015/02/facebook.png">
 		        </li>
