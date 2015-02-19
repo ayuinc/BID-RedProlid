@@ -30,12 +30,22 @@
 						<span class="medium">Idioma:</span> <?php echo $recurso_idioma; ?><br>
 						<?php } ?>
 						<?php $recurso_tipo = get_field('recurso_tipo'); ?>
+						<?php $tag_tipo_de_recurso_recurso = get_field('tag_tipo_de_recurso_recurso'); ?>
 						<?php if ($recurso_tipo!='') { ?>	
-						<span class="medium">Tipo de recurso:</span> <?php echo $recurso_tipo; ?><br>
+						<span class="medium">Tipo de recurso:</span> <?php the_field('recurso_tipo'); ?>
+							<?php if ($tag_tipo_de_recurso_recurso!='') { ?>
+								<?php echo ', '.$tag_tipo_de_recurso_recurso; ?>
+							<?php } ?>						
+						<br>
 						<?php } ?>
 						<?php $recurso_tema = get_field('recurso_tema'); ?>
+						<?php $tag_tema_recurso = get_field('tag_tema_recurso'); ?>
 						<?php if ($recurso_tema!='') { ?>						
-						<span class="medium">Tema:</span> <?php echo $recurso_tema; ?><br>
+						<span class="medium">Tema:</span> <?php the_field('recurso_tema'); ?>
+							<?php if ($tag_tema_recurso!='') { ?>
+								<?php echo ', '.$tag_tema_recurso; ?>
+							<?php } ?>							
+						<br>
 						<?php } ?>
 						<?php $recurso_organizacion = get_field('recurso_organizacion'); ?>
 						<?php if ($recurso_organizacion!='') { ?>
