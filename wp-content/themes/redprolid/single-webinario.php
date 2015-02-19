@@ -27,6 +27,8 @@
 		      <div class="col-md-10 col-md-offset-1">		
 				    <h1 class="mb-14 medium"><?php the_title(); ?></h1>
 				    <p class="mt-14"><?php the_field('descripcion_resumen'); ?></p>
+				    <?php $video = get_field('video'); ?>
+				    <?php if ($video!='') { ?>
 	          <div class="row">
 		          <div class="col-md-12">
 						    <div class="video-container videoWrapper mt-35 mb-0">
@@ -34,29 +36,57 @@
 						    </div>
 		          </div>
 	          </div>
+	          <?php } ?>
 	          <div class="row">
 		          <div class="col-md-12">
 			          <ul class="list-unstyled mt-35 mb-35 webinario-datos">
+									<?php $source_type = get_field('source_type'); ?>
+									<?php $tag_tipo_de_recurso_webinario = get_field('tag_tipo_de_recurso_webinario'); ?>
+							    <?php if ($source_type!='') { ?>			            
 			            <li>
 			            	<h5 class="medium mb-0">Tipo de recurso:</h5>
-			            	<p><?php the_field('source_type'); ?></p>
+			            	<p>
+				            	<?php the_field('source_type'); ?>
+											<?php if ($tag_tipo_de_recurso_webinario!='') { ?>
+												<?php echo ', '.$tag_tipo_de_recurso_webinario; ?>
+											<?php } ?>				            	
+			            	</p>
 			            </li>
+			            <?php } ?>
+									<?php $tag_tipo_de_recurso_webinario = get_field('tag_tipo_de_recurso_webinario'); ?>
+							    <?php if ($source_type!='') { ?>				            
 			            <li>
 				            <h5 class="medium mb-0">Región:</h5>
 				            <p><?php the_field('region'); ?></p>
 			            </li>
+			            <?php } ?>
+									<?php $theme = get_field('theme'); ?>
+									<?php $tag_temas_webinario = get_field('tag_temas_webinario'); ?>
+							    <?php if ($theme!='') { ?>				            
 			            <li>
 			            	<h5 class="medium mb-0">Tema:</h5>
-			            	<p><?php the_field('theme'); ?></p>
+			            	<p>
+				            	<?php the_field('theme'); ?>
+											<?php if ($tag_temas_webinario!='') { ?>
+												<?php echo ', '.$tag_temas_webinario; ?>
+											<?php } ?>					            	
+			            	</p>
 			            </li>
+			            <?php } ?>
+									<?php $publisher = get_field('publisher'); ?>
+							    <?php if ($publisher!='') { ?>				            
 			            <li>
 			            	<h5 class="medium mb-0">Publicación:</h5>
 			            	<p><?php the_field('publisher'); ?></p>
 			            </li>
+			            <?php } ?>
+									<?php $publication_year = get_field('publication_year'); ?>
+							    <?php if ($publication_year!='') { ?>				            
 			            <li>
 			            	<h5 class="medium mb-0">Año de Publicación:</h5>
 			            	<p><?php the_field('publication_year'); ?></p>
 			            </li>
+			            <?php } ?>
 			          </ul>			          
 		          </div>
 	          </div>				
