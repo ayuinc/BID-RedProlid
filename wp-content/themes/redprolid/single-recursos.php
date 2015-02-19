@@ -15,6 +15,12 @@
   					<img src="<?php echo $folleto_recurso; ?>" width="100%">   
   				</div>    
   				<?php } ?> 
+  				<?php $folleto_adicional_recurso = get_field('folleto_adicional_recurso');?>
+  				<?php if ($folleto_adicional_recurso!='') { ?>
+  				<div class="pv-14">
+  					<img src="<?php echo $folleto_adicional_recurso; ?>" width="100%">   
+  				</div>    
+  				<?php } ?>   				
   				<?php $recurso = get_field('recurso_pdf-word');?>
   				<?php if ($recurso!='') { ?>
   				<p>Usa este <a href="<?php echo $recurso; ?>" target="_blank">link</a> para descargar el recurso.</p>       
