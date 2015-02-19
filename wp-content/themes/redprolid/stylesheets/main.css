@@ -5672,6 +5672,8 @@ form.search button {
 #wp-calendar {
   width: 100%;
   text-align: center; }
+  #wp-calendar h2 {
+    display: none; }
   #wp-calendar caption,
   #wp-calendar thead,
   #wp-calendar tfoot,
@@ -5679,7 +5681,8 @@ form.search button {
     text-align: center; }
   #wp-calendar caption {
     padding-bottom: 7px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: white; }
   #wp-calendar thead tr th {
     color: white;
     text-transform: uppercase;
@@ -5699,7 +5702,7 @@ form.search button {
     #wp-calendar tbody tr td:last-child {
       border-right: none; }
     #wp-calendar tbody tr td a {
-      color: white; }
+      color: #ed7133; }
     #wp-calendar tbody tr td:hover {
       background-color: #ed7133; }
 

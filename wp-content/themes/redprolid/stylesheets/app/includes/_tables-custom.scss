@@ -11,6 +11,9 @@
 #wp-calendar {
 	width: 100%;
 	text-align: center;
+	h2 {
+		display: none;
+	}
 	caption,
 	thead ,
 	tfoot ,
@@ -20,6 +23,7 @@
 	caption {
 		padding-bottom: 7px; 
 		text-transform: uppercase;
+		color: white;
 	}
 	thead {
 		tr {
@@ -46,7 +50,7 @@
 					border-right: none;
 				}
 				a {
-					color: white;
+					color: $brand-primary;
 				}
 				&:hover {
 					background-color: $brand-primary;
