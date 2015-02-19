@@ -5400,11 +5400,11 @@ input[type="submit"].btn.btn-white.btn-outline {
     border: 2px solid #fff;
     color: #fff; }
 
-.btn-pista,
+.btn-pistas,
 .btn-pinta {
   position: relative;
   padding-left: 21px; }
-  .btn-pista:before,
+  .btn-pistas:before,
   .btn-pinta:before {
     position: absolute;
     top: 0;
@@ -5412,7 +5412,7 @@ input[type="submit"].btn.btn-white.btn-outline {
     width: 35px;
     height: 35px; }
 
-.btn-pista:before {
+.btn-pistas:before {
   content: url(../assets/icons/btn-pistas.png); }
 
 .btn-pinta:before {

@@ -48,7 +48,7 @@ input[type="submit"].btn {
 
 
 // BOTONES PISTA Y PINTA
-.btn-pista,
+.btn-pistas,
 .btn-pinta {
 	position: relative;
 	padding-left: 21px;
@@ -58,7 +58,7 @@ input[type="submit"].btn {
 		height: 35px;
 	}
 }
-.btn-pista {
+.btn-pistas { 
 	&:before {
 		content: url(../assets/icons/btn-pistas.png);
 	}
