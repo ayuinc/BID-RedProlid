@@ -263,15 +263,16 @@ function calcat_get_calendar( $initial = true, $echo = true, $category = -1 ) {
 			$calendar_output .= ' class="day-with-post"';
 		$calendar_output .= '>';
 
-		if ( in_array( $day, $daywithpost ) ) // any posts today?
+		if ( in_array( $day, $daywithpost ) ) {// any posts today?
 				//$calendar_output .= '<a href="' . get_day_link( $thisyear, $thismonth, $day ) . "?cat=$category\" title=\"" . esc_attr( $ak_titles_for_day[$day] ) . "\">$day</a>";
 				//strtolower("Hello WORLD.");
-				echo $ak_titles_for_day[$day];
+				echoesc_attr( $ak_titles_for_day[$day]);
 				$calendar_output .= '<a href="'. esc_attr( $ak_titles_for_day[$day] ) . "\">$day</a>";
-		else
+		} else {
 			$calendar_output .= $day;
-		$calendar_output .= '</td>';
-
+			$calendar_output .= '</td>';
+		}
+		
 		if ( 6 == calendar_week_mod( date( 'w', mktime( 0, 0 , 0, $thismonth, $day, $thisyear ) )-$week_begins ) )
 			$newrow = true;
 	}
