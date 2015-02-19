@@ -208,20 +208,13 @@ get_header(); ?>
 	                </div>
                 </div>
                 <div class="col-md-6 box-shadow pl-0 pr-0 enterate-calendar">
-	                <div class="row">
-		                <!--<div class="col-md-6 p-21">
-                      <h2 class="text-brown text-center medium"><?php echo date_i18n('l', strtotime( $tempDate)); ?></h2>
-                      <p class="text-brown text-center mt-0 mb-0"><?php echo date('j', strtotime( $tempDate)); ?></p>
-                      <h4 class="text-center light"><?php the_title(); ?></h4>
-		                </div>-->
-		                <div class="col-md-12 p-21">
-											<?php
-												if(is_active_sidebar('calendario-eventos')){
-												dynamic_sidebar('calendario-eventos');
-												}
-											?>
-		                </div>
-	                </div>
+                  <div class="p-14 bg-panel-dark">
+  									<?php
+  										if(is_active_sidebar('calendario-eventos')){
+  										dynamic_sidebar('calendario-eventos');
+  										}
+  									?>
+                  </div>
                 </div>
               </div>
             <?php endwhile; ?>
