@@ -31,15 +31,24 @@
 	        </div>
 	        <div class="col-sm-3">
 	        <ul class="list-inline text-right">
+		        <?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
+		        <?php $twitter_campeona = get_field('twitter_campeona'); ?>
+		        <?php $google_campeonas = get_field('google_campeonas'); ?>
+		        <?php if ($facebook_campeonas!='') { ?>
 		        <li>
 			        <img src="http://redprolid.org/wp-content/uploads/2015/02/facebook.png">
 		        </li>
+		        <?php } ?>
+		        <?php if ($twitter_campeona!='') { ?>
 	        	<li>
 		        	<img src="http://redprolid.org/wp-content/uploads/2015/02/twitter.png">
 	        	</li>
+	        	<?php } ?>
+	        	<?php if ($google_campeonas!='') { ?>
 	        	<li>
 		        	<img src="http://redprolid.org/wp-content/uploads/2015/02/googleplus.png">
 	        	</li>
+	        	<?php } ?>
 	        </ul>
 	        </div>	        
         </div>
