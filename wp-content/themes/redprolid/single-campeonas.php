@@ -20,6 +20,7 @@
         <?php if( get_field('imagen_campeonas') ) { ?>
         <div class="col-md-3">
           <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive">
+          <small><?php the_field('fuente_imagen_campeonas'); ?></small>
         </div>
         <div class="col-md-9">
         <?php } else {  } ?>

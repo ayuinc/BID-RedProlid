@@ -223,6 +223,7 @@ get_header(); ?>
                   <div class="panel-body pt-0 pb-0 pl-14 pr-14">
 	                  <div class="col-sm-5 pl-0">
                     <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
+                    <small><?php the_field('fuente_imagen_campeonas'); ?></small>
                   </div>
 	                  <div class="col-sm-7">
                     <h3 class="pt-0 medium mb-0 pb-0"><?php the_title(); ?></h3>
