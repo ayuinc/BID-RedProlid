@@ -215,7 +215,11 @@ get_header(); ?>
                       <h4 class="text-center light"><?php the_title(); ?></h4>
 		                </div>
 		                <div class="col-md-6 pl-0 pr-0">
-											<?php dynamic_sidebar( 'eventos_widgets_init' ); ?>
+											<?php
+												if(is_active_sidebar('calendario-eventos')){
+												dynamic_sidebar('calendario-eventos');
+												}
+											?>
 		                </div>
 	                </div>
                 </div>
