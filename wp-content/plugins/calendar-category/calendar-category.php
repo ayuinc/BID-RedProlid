@@ -268,7 +268,8 @@ function calcat_get_calendar( $initial = true, $echo = true, $category = -1 ) {
 		$calendar_output .= '>';
 
 		if ( in_array( $day, $daywithpost ) ) // any posts today?
-				$calendar_output .= $vinculo[$day].'<a href="' . get_day_link( $thisyear, $thismonth, $day ) . "?calcat=$category\" title=\"" . esc_attr( $ak_titles_for_day[$day] ) . "\">$day</a>";
+				//$calendar_output .= '<a href="' . get_day_link( $thisyear, $thismonth, $day ) . "?calcat=$category\" title=\"" . esc_attr( $ak_titles_for_day[$day] ) . "\">$day</a>";
+				$calendar_output .= '<a href="/'.$vinculo[$day].'" title="'.esc_attr( $ak_titles_for_day[$day] ).'">'.$day.'</a>';
 		else
 			$calendar_output .= $day;
 		$calendar_output .= '</td>';
