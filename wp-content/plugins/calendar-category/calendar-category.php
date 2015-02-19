@@ -270,7 +270,7 @@ function calcat_get_calendar( $initial = true, $echo = true, $category = -1 ) {
 				$vinculo = esc_attr( $ak_titles_for_day[$day] );
 				$vinculo = strtolower($vinculo);
 				$vinculo = str_replace(" ","-",$vinculo);
-				$calendar_output .= '<a href="'. $ak_titles_for_day[$day] . "\">$day</a>";
+				$calendar_output .= '<a href="'. $ak_name_for_day[$day] . "\">$day</a>";
 		} else {
 			$calendar_output .= $day;
 			$calendar_output .= '</td>';
