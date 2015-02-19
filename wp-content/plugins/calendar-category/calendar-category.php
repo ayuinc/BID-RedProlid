@@ -222,7 +222,7 @@ function calcat_get_calendar( $initial = true, $echo = true, $category = -1 ) {
 		$ak_title_separator = ', ';
 
 	$ak_titles_for_day = array();
-	$sql = "SELECT DISTINCT ID, post_title, DAYOFMONTH(post_date) as dom"
+	$sql = "SELECT DISTINCT ID, post_title, DAYOFMONTH(post_date) as dom "
 		."FROM $wpdb->posts " . calcat_maybe_single_category_joins( $category )
 		."WHERE YEAR(post_date) = '$thisyear' "
 		."AND MONTH(post_date) = '$thismonth' " . calcat_maybe_single_category_cat( $category )
@@ -237,11 +237,10 @@ function calcat_get_calendar( $initial = true, $echo = true, $category = -1 ) {
 
 				if ( empty( $ak_titles_for_day['day_'.$ak_post_title->dom] ) )
 					$ak_titles_for_day['day_'.$ak_post_title->dom] = '';
-				if ( empty( $ak_titles_for_day["$ak_post_title->dom"])  ) {// first one
+				if ( empty( $ak_titles_for_day["$ak_post_title->dom"])  ) // first one
 					$ak_titles_for_day["$ak_post_title->dom"] = $post_title;
-				} else {
+				else
 					$ak_titles_for_day["$ak_post_title->dom"] .= $ak_title_separator . $post_title;
-				}	
 		}
 	}
 
@@ -264,17 +263,12 @@ function calcat_get_calendar( $initial = true, $echo = true, $category = -1 ) {
 			$calendar_output .= ' class="day-with-post"';
 		$calendar_output .= '>';
 
-		if ( in_array( $day, $daywithpost ) ) {// any posts today?
-				//$calendar_output .= '<a href="' . get_day_link( $thisyear, $thismonth, $day ) . "?cat=$category\" title=\"" . esc_attr( $ak_titles_for_day[$day] ) . "\">$day</a>";
-				//$vinculo = $ak_titles_for_day[$day];
-				//$vinculo = strtolower($vinculo);
-				//$vinculo = str_replace(" ","-",$vinculo);
-				$calendar_output .= '<a href="' . esc_attr( $ak_titles_for_day[$day] ) . "\">$day</a>";
-		} else {
+		if ( in_array( $day, $daywithpost ) ) // any posts today?
+				$calendar_output .= '<a href="' . get_day_link( $thisyear, $thismonth, $day ) . "?calcat=$category\" title=\"" . esc_attr( $ak_titles_for_day[$day] ) . "\">$day</a>";
+		else
 			$calendar_output .= $day;
-			$calendar_output .= '</td>';
-		}
-		
+		$calendar_output .= '</td>';
+
 		if ( 6 == calendar_week_mod( date( 'w', mktime( 0, 0 , 0, $thismonth, $day, $thisyear ) )-$week_begins ) )
 			$newrow = true;
 	}
