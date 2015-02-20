@@ -21,11 +21,11 @@ get_header(); ?>
           <div class="col-xs-9 col-sm-4">
             <h1 class="brand-titular">Entérate</h1>
           </div>
-          <div class="col-xs-12 col-sm-7">
+          <!--<div class="col-xs-12 col-sm-7">
             <nav class="text-right text-center-xs mb-0 mt-0">
               <a href="#" data-toggle="modal" data-target="#modalRecursos">¿Quieres compartir un recurso?</a> 
             </nav>
-          </div>
+          </div>-->
         </div>
         <div class="row">
 	        <div class="col-md-12">

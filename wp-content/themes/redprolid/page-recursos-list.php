@@ -14,10 +14,12 @@ get_header(); ?>
     <div class="clearfix bg-panel sub-header">
       <div class="col-sm-7">
         <div>
-          <h1>Todos los recursos</h1>
-          <nav class="mt-21">
-            <a href="<?php echo content_url('/'); ?>enterate">Enterate >></a>
-          </nav>
+          <h1>Recursos</h1>
+          <div class="col-xs-12 col-sm-7">
+            <nav class="text-right text-center-xs mb-0 mt-0">
+              <a href="#" data-toggle="modal" data-target="#modalRecursos">¿Quieres compartir un recurso?</a> <span class="text-primary">|</span> <a href="<?php echo content_url('/'); ?>enterate">Entérate >></a>
+            </nav>
+          </div>          
         </div>
       </div>
       <!--<div class="sub-header-icon">
