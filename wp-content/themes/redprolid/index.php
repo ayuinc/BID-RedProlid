@@ -238,7 +238,7 @@ get_header(); ?>
             <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
                     <p>
 							        <strong><em><?php the_field('posicion_campeona'); ?></em></strong><br>
-							        <?php the_field('descripcion_campeona'); ?> 
+							        <?php the_field('descripcion_home_campeonas'); ?> 
 				            </p>
                     <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Entrevista completa</a>
                   </div> 
