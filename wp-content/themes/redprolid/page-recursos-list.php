@@ -33,7 +33,7 @@ get_header(); ?>
     </div>
 	</section>
 
-<section id="puntos-de-vista-anteriores">
+<section id="puntos-de-vista-anteriores mt-35">
   <div class="container">
     <?php // the_breadcrumb(); ?>
     <!--<div class="clearfix bg-panel sub-header">
