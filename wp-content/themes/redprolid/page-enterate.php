@@ -203,7 +203,7 @@ get_header(); ?>
                     	<?php $tempDate = get_field('fecha_evento'); ?>
 	                    <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
 			                <p class="mt-14"><?php the_field('descripcion_evento');?></p>
-			                <p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más información >></a></p>
+			                <p class="text-right mr-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más información >></a></p>
 		                </div>
 	                </div>
                 </div>
