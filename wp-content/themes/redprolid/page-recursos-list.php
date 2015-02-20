@@ -13,7 +13,7 @@ get_header(); ?>
   <div class="container">
     <?php the_breadcrumb(); ?> 
     <div class="clearfix sub-header">
-      <div class="col-sm-5 col-xs-9">
+      <div class="col-sm-6 col-xs-9">
         <h1>Recursos</h1>
       </div>
       <div class="col-sm-6 col-xs-12">
