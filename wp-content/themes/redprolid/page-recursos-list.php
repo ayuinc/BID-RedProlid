@@ -13,6 +13,9 @@ get_header(); ?>
     <div class="container">
       <?php the_breadcrumb(); ?> 
       <div class="clearfix sub-header">
+        <div class="col-sm-1 col-xs-3">
+          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" width="100%"></div>
+        </div>
         <div class="col-sm-6 col-xs-12">
           <h1><?php the_title(); ?></h1>
         </div>
@@ -29,28 +32,6 @@ get_header(); ?>
 	    </div>	
     </div>
 	</section>
-
-
-<section class="mt-7"> 
-  <div class="container">
-    <?php the_breadcrumb(); ?> 
-    <div class="clearfix sub-header">
-      <div class="col-sm-6 col-xs-9">
-        <h1>Recursos</h1>
-      </div>
-      <div class="col-sm-6 col-xs-12">
-        <nav class="text-right text-center-xs">
-          <a href="#" data-toggle="modal" data-target="#modalRecursos">¿Quieres compartir un recurso?</a> <span class="text-primary">|</span> <a href="<?php echo content_url('/'); ?>enterate">Entérate</a>
-        </nav>	          
-      </div>
-    </div>
-    <div class="row text-justify">
-			<div class="col-md-12">
-				<h3 class="light mb-14">Texto introductorio</h3>
-			</div>
-    </div>	
-  </div>
-</section>
 
 <section id="puntos-de-vista-anteriores">
   <div class="container">
