@@ -9,6 +9,31 @@ get_header(); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
 
+	<section class="mt-7"> 
+    <div class="container">
+      <?php the_breadcrumb(); ?> 
+      <div class="clearfix sub-header">
+        <div class="col-sm-1 col-xs-3">
+          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" width="100%"></div>
+        </div>
+        <div class="col-sm-5 col-xs-9">
+          <h1><?php the_title(); ?></h1>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <nav class="text-right text-center-xs">
+            <a href="#" data-toggle="modal" data-target="#modalNoticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/">¿Quieres ver las noticias anteriores?</a>
+          </nav>	          
+        </div>
+      </div>
+	    <div class="row text-justify">
+				<div class="col-md-12">
+					<h3 class="light mb-14">Todos los días encontramos en los medios noticias, buenas o malas, que nos hablan de los avances o retrocesos de la mujer en el espacio público. Hemos recogido algunas de las más relevantes o significativas de entre las que tienen que ver con nosotras y nos ayudan a entender cómo está cambiando el mundo para las mujeres. Anímate a proponer las noticias que te parezcan destacadas.</h3>
+				</div>
+	    </div>	
+    </div>
+	</section>
+
+
 <section class="mt-7"> 
   <div class="container">
     <?php the_breadcrumb(); ?> 
