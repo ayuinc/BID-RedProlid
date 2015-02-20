@@ -143,16 +143,13 @@ div[id^="yop-poll-results-3"] {
 	height: 300px;
 }
 .dtl-carousel {
-	width: 2000px;
-	position: absolute;
-	li {
+	// width: 2000px;
+	// position: absolute;
+	.grid-list-item {
 		width: 240px !important;
 		div {
 			min-height: 0 !important;
 		}
-	}
-	> li {
-		position: relative;
 	}
 	.dtl-item {
 		position: relative;
