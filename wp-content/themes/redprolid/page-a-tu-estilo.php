@@ -150,7 +150,7 @@ get_header(); ?>
 								<option value="Escoge">Escoge</option>
 							</select>
 						</div>
-						<div class="form-group">
+						<!--<div class="form-group">
 							<label for="" class="sr-only">País</label>
 							<select name="" id="" class="select-override form-control">
 								<option value="País">País</option>
@@ -161,7 +161,7 @@ get_header(); ?>
 							<select name="" id="" class="select-override form-control">
 								<option value="Ciudad">Ciudad</option>
 							</select>
-						</div>
+						</div>-->
 						<div class="form-group">
 							<label for="" class="sr-only">Dirección del lugar</label>
 							<input type="text" class="form-control" placeholder="Dirección del lugar">
