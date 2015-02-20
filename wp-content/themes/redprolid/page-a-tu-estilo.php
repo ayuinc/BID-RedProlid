@@ -108,6 +108,17 @@ get_header(); ?>
 					<div class="col-sm-4">
 						<div class="form-group">
 							<label for="" class="sr-only">Escoge</label>
+							<?php
+							$args = array(
+								'show_option_none' => __( 'Select category' ),
+								'show_count'       => 1,
+								'orderby'          => 'name',
+								'echo'             => 0,
+								'child_of'				 =>	266,
+							);
+							?>
+					
+							<?php $select  = wp_dropdown_categories( $args ); ?>							
 							<select name="" id="" class="select-override form-control">
 								<option value="Escoge">Escoge</option>
 							</select>
