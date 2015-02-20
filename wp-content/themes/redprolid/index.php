@@ -237,7 +237,7 @@ get_header(); ?>
                     <small><?php $tempDate = get_field(fecha_de_la_entrevista); ?>
             <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
                     <p>
-							        <?php the_field('posicion_campeona'); ?>
+							        <em><?php the_field('posicion_campeona'); ?></em>
                     </p>
                     <p>
 							        <strong><?php the_field('descripcion_home_campeonas'); ?></strong>
