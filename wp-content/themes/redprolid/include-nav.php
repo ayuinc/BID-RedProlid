@@ -49,6 +49,7 @@
 				      "><i></i><span>Entérate</span></a>
             <ul class="list-unstyled dropdown-menu">
               <!--<li><a href="<?php echo home_url('/'); ?>poll">Tu opinión importa</a></li>-->
+              <li class="light"><a href="<?php echo home_url('/'); ?>recursos">Recursos</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>noticias">Noticias</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>eventos">Eventos</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>boletin">Nuestro boletín</a></li>
