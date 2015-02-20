@@ -37,7 +37,7 @@
 		        <small><?php $tempDate = get_field(fecha_de_la_entrevista); ?>
             <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
             <p>
-		        		<em class="light">
+		        		<em>
 		        		<?php the_field('posicion_campeona'); ?>
 								<?php the_field('descripcion_campeona'); ?>
 		        		</em>
