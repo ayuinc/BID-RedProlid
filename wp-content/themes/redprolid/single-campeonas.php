@@ -61,7 +61,7 @@
 	        </ul>
 	        </div>	        
         </div>
-        <h4 class="pv-14 medium lh-lg"><?php the_field('descripcion_campeona'); ?></h4>	            
+        <p><?php the_field('descripcion_campeona'); ?></p>	            
       </div>
       <div class="with-hr">
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
