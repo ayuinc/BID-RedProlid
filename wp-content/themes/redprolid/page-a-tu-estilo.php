@@ -141,7 +141,8 @@ get_header(); ?>
 				</div>
 			</div>
 			<hr>
-			<form action="">
+			<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 12 ); } ?>			
+			<!--<form action="">
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="form-group">
@@ -150,7 +151,7 @@ get_header(); ?>
 								<option value="Escoge">Escoge</option>
 							</select>
 						</div>
-						<!--<div class="form-group">
+						<div class="form-group">
 							<label for="" class="sr-only">País</label>
 							<select name="" id="" class="select-override form-control">
 								<option value="País">País</option>
@@ -161,7 +162,7 @@ get_header(); ?>
 							<select name="" id="" class="select-override form-control">
 								<option value="Ciudad">Ciudad</option>
 							</select>
-						</div>-->
+						</div>
 						<div class="form-group">
 							<label for="" class="sr-only">Dirección del lugar</label>
 							<input type="text" class="form-control" placeholder="Dirección del lugar">
@@ -192,7 +193,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-			</form>
+			</form>-->
 		</div>
 	</section>
 
