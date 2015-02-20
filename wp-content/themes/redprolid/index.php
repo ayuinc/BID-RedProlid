@@ -232,7 +232,7 @@ get_header(); ?>
 	                    <?php } ?>
 											<small><?php the_field('fuente_imagen_campeonas'); ?></small>
                   	</div>
-	                  <div class="col-sm-7">
+	                  <div class="col-sm-7 pr-0">
                     <h3 class="pt-0 medium mb-0 pb-0"><?php the_title(); ?></h3>
                     <small><?php $tempDate = get_field(fecha_de_la_entrevista); ?>
             <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
