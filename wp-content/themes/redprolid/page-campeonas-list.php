@@ -30,7 +30,14 @@ get_header(); ?>
         <?php query_posts( 'category_name=campeonas&posts_per_page=10&offset=1&paged=' . $paged ); ?>
         <?php while ( have_posts() ) : the_post(); ?>	      
 	      <div class="col-md-2">
-		      <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive">
+          <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
+          <?php if ($imagen_campeona!='') { ?>
+          <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
+          <?php } ?>
+          <?php $video = get_field('video_campeonas'); ?>
+          <?php if ($video!='') { ?>
+          <iframe class="embed-responsive-item" width="100%" height="209" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <?php } ?>
 	      </div>
         <div class="col-md-10">
           <div class="title">
