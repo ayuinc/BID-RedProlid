@@ -15327,29 +15327,41 @@ a.bg-hover-linkedin:hover,
     padding: 0.75rem; }
   .grid-list.grid-list-item-height > li {
     min-height: 350px; }
-  .grid-list.grid-list-1 > li {
+  .grid-list.grid-list-1 > li,
+  .grid-list.grid-list-1 .gallery-cell {
     width: 99.7%; }
-  .grid-list.grid-list-2 > li {
+  .grid-list.grid-list-2 > li,
+  .grid-list.grid-list-2 .gallery-cell {
     width: 49.7%; }
-  .grid-list.grid-list-3 > li {
+  .grid-list.grid-list-3 > li,
+  .grid-list.grid-list-3 .gallery-cell {
     width: 33.03333%; }
-  .grid-list.grid-list-4 > li {
+  .grid-list.grid-list-4 > li,
+  .grid-list.grid-list-4 .gallery-cell {
     width: 24.7%; }
-  .grid-list.grid-list-5 > li {
+  .grid-list.grid-list-5 > li,
+  .grid-list.grid-list-5 .gallery-cell {
     width: 19.7%; }
-  .grid-list.grid-list-6 > li {
+  .grid-list.grid-list-6 > li,
+  .grid-list.grid-list-6 .gallery-cell {
     width: 16.36667%; }
-  .grid-list.grid-list-7 > li {
+  .grid-list.grid-list-7 > li,
+  .grid-list.grid-list-7 .gallery-cell {
     width: 13.98571%; }
-  .grid-list.grid-list-8 > li {
+  .grid-list.grid-list-8 > li,
+  .grid-list.grid-list-8 .gallery-cell {
     width: 12.2%; }
-  .grid-list.grid-list-9 > li {
+  .grid-list.grid-list-9 > li,
+  .grid-list.grid-list-9 .gallery-cell {
     width: 10.81111%; }
-  .grid-list.grid-list-10 > li {
+  .grid-list.grid-list-10 > li,
+  .grid-list.grid-list-10 .gallery-cell {
     width: 9.7%; }
-  .grid-list.grid-list-11 > li {
+  .grid-list.grid-list-11 > li,
+  .grid-list.grid-list-11 .gallery-cell {
     width: 8.79091%; }
-  .grid-list.grid-list-12 > li {
+  .grid-list.grid-list-12 > li,
+  .grid-list.grid-list-12 .gallery-cell {
     width: 8.03333%; }
   @media only screen and (max-width: 480px) {
     .grid-list.grid-list-1-xs > li,

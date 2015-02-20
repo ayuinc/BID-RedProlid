@@ -18,7 +18,8 @@ $grid-list-item-height: 350px;
 	}
 	@for $i from 1 through 12 {
 		&.grid-list-#{$i} {
-			> li {
+			> li,
+			.gallery-cell {
 				width: percentage(1/$i) - 0.30;
 			}
 		}
