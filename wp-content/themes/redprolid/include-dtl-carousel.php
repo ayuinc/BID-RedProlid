@@ -1,7 +1,7 @@
-<ul class="gallery js-flickity dtl-carousel grid-list grid-list-4 grid-list-1-xs">
+<div class="gallery js-flickity dtl-carousel grid-list grid-list-4 grid-list-1-xs">
   <?php query_posts( 'category_name=home-desarrolla-tu-liderazgo&order=ASC' ); ?> 
   <?php while ( have_posts() ) : the_post(); ?>  
-  <li class="gallery-cell">
+  <div class="gallery-cell">
     <div class="dtl-item" data-href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>">
       <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php the_field('imagen_home_dtl'); ?>);"></div>
         <div class="dtl-title pt-0">
@@ -12,6 +12,6 @@
         </div>
       </div>
     </div>
-  </li>
+  </div>
   <?php endwhile; ?>
-</ul>
+</div>
