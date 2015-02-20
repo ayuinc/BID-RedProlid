@@ -193,7 +193,7 @@ get_header(); ?>
             <?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 1 ) ); ?>
             <?php while ( have_posts() ) : the_post(); ?>
               <div class="row">
-                <div class="col-md-6 pr-21">
+                <div class="col-md-8 pr-21">
 	                <div class="row">
 		                <div class="col-md-4">
 			                <img src="<?php the_field('imagen_evento');?>" width="100%">
@@ -207,7 +207,7 @@ get_header(); ?>
 		                </div>
 	                </div>
                 </div>
-                <div class="col-md-6 box-shadow pl-0 pr-0 enterate-calendar">
+                <div class="col-md-4 box-shadow pl-0 pr-0 enterate-calendar">
                   <div class="p-14 bg-panel-dark">
   									<?php
   										if(is_active_sidebar('calendario-eventos')){
