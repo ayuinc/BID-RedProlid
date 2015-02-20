@@ -48,7 +48,7 @@ get_header(); ?>
             <p>
 			        <strong><em><?php the_field('posicion_campeona'); ?></em></strong>
             </p>
-            <p>  
+            <p class="mt-14">  
 			        <?php the_field('descripcion_home_campeonas'); ?> 
             </p>
 						<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Lee la entrevista >></a></p>
