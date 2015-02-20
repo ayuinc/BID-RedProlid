@@ -45,7 +45,10 @@ get_header(); ?>
             <small><?php the_field('posicion_campeona'); ?> <?php if (get_field('twitter_campeona')!='') { ?>/ <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank">@<?php the_field('twitter_campeona'); ?></a><?php } ?></small>
           </div>
           <div class="content mv-14">
-            <p><?php the_field('descripcion_campeona'); ?></p>
+            <p>
+			        <strong><em><?php the_field('posicion_campeona'); ?></em></strong><br>
+			        <?php the_field('descripcion_home_campeonas'); ?> 
+            </p>
 						<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Lee la entrevista >></a></p>
           </div> 
           <hr>   
