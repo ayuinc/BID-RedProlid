@@ -240,7 +240,7 @@ get_header(); ?>
 							        <?php the_field('posicion_campeona'); ?>
                     </p>
                     <p>
-							        <?php the_field('descripcion_home_campeonas'); ?>
+							        <strong><?php the_field('descripcion_home_campeonas'); ?></strong>
 				            </p>
                     <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Entrevista completa</a>
                   </div> 
