@@ -144,8 +144,6 @@ get_header(); ?>
   	<?php } ?>
 	    <div class="modal-content bg-panel">
 	      <div class="modal-body">
-					
-<!--
 		      <?php if ( is_user_logged_in() ) { ?>
 		      	<h3 class="medium">¿Quieres compartir una noticia?</h3>
 		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
@@ -175,9 +173,6 @@ get_header(); ?>
 				  		</div>
 				  	</div>
 			  	<?php } ?>
--->
-					<iframe
-src="http://redprolid.org/propuesta-recibida-noticias/" height="900" width="100%" frameborder="0" scrolling="no">You need an iframes capable browser to view this content.</iframe>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar X</button>
