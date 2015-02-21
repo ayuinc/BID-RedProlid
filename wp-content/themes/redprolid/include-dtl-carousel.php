@@ -1,4 +1,4 @@
-<div class="gallery js-flickity dtl-carousel grid-list grid-list-4 grid-list-1-xs mb-14"
+<div class="gallery js-flickity dtl-carousel grid-list grid-list-4 grid-list-1-xs"
     data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
   <?php query_posts( 'category_name=home-desarrolla-tu-liderazgo&order=ASC' ); ?> 
   <?php while ( have_posts() ) : the_post(); ?>  

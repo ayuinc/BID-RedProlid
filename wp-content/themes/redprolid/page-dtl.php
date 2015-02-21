@@ -34,8 +34,10 @@ get_header(); ?>
     </section>      
     <section class="dtl-home pv-14">
       <div class="container ph-70-sm">
+	      <div class="pb-14">
         <!-- DTL CAROUSEL -->
         <?php get_template_part( 'include', 'dtl-carousel' ); ?>
+	      </div>
       </div>
     </section>
 
