@@ -3745,8 +3745,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height: 44px;
   border: none;
   border-radius: 50%;
-  background: white;
-  background: #f2f2f2;
+  background: rgba(245, 245, 245, 0.6);
+  background: whitesmoke;
   cursor: pointer;
   /* vertically center */
   -webkit-transform: translateY(-50%);
