@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="clearfix ph-70">
-    	<div class="col-sm-6">
+    	<div class="col-sm-12">
     		<small class="text-gray">Tiendas</small>
     		<h1><?php the_title();?></h1>
     		<ul class="list-unstyled pv-21">
@@ -18,11 +18,13 @@
     			<li>Sitio web: <a href="<?php the_field('sitio_web_estilo'); ?>"><?php the_field('sitio_web_estilo'); ?></a></li>
     			<li class="text-primary">Fuente: <?php the_field('fuente_estilo'); ?></li>
     		</ul>
-    		<img src="<?php the_field('foto_restaurante_estilo'); ?>" alt="" class="img-responsive">
     	</div>
     	<div class="col-sm-6">
     		<p><?php the_field('descripcion_larga_estilo'); ?></p>
     	</div>
+    	<div class="col-sm-6">
+    		<img src="<?php the_field('foto_restaurante_estilo'); ?>" alt="" class="img-responsive">
+    	</div>    	
     </div>
     <hr>
     <div class="ph-70">
