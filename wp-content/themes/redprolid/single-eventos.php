@@ -68,7 +68,7 @@
 			        <?php $pais_evento = get_field('pais_evento'); ?>
 							<?php if ($pais_evento!='') { ?>					      
 				      <h5 class="medium mb-0">País</h5>
-				      <p><?php echo $pais_evento; ?></p>
+				      <p><?php the_field('pais_evento'); ?></p>
 				      <?php } ?>
 			        <?php $lugar_evento = get_field('lugar_evento'); ?>
 							<?php if ($lugar_evento!='') { ?>				       
