@@ -30,8 +30,9 @@ get_header(); ?>
 	<section>
 		<div class="container">
 			<div class="row">
-				<?php echo $lugar = $_POST['lugar']; ?>
-				<?php echo $tipo_lugar = $_POST['tipo_lugar']; ?>
+				<?php $lugar = $_POST['lugar']; ?>
+				<?php $tipo_lugar = $_POST['tipo_lugar']; ?>
+				<?php $resultado = 0; ?>
 				<!-- Start the Loop. -->
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
         <?php query_posts( 'category_name='.$lugar.','.$tipo_lugar.'&posts_per_page=10&paged=' . $paged ); ?>          
@@ -50,7 +51,11 @@ get_header(); ?>
             	</div>
           	</div>
           </div>
+          <?php $resultados++; ?>
         <?php endwhile; ?>
+        <?php if ($resultados==0) { ?>
+        	<h3 class="medium text-center">No hay resultados disponibles para tu busqueda. <a href="<?php echo content_url('/'); ?>a-tu-estilo">Regresar</a></h3>
+        <?php } ?>
         <div class="text-center">
           <ul class="pager">
             <li><?php next_posts_link( 'Anteriores' ); ?></li>

@@ -35,7 +35,7 @@
 					<p>
 						<?php $pais_noticias = get_field('pais_noticias'); ?>
 						<?php if ($pais_noticias!='') { ?>						
-						<span class="medium">País:</span> <?php echo $pais_noticias; ?><br>
+						<span class="medium">País:</span> <?php the_field('pais_noticias'); ?><br>
 						<?php } ?>
 						<?php $tipo_recursos_noticias = get_field('tipo_recursos_noticias'); ?>
 						<?php $tag_tema_noticia = get_field('tag_tema_noticia'); ?>

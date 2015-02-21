@@ -21,7 +21,7 @@ get_header(); ?>
         </div>
         <div class="col-sm-6 col-xs-12">
           <nav class="text-right text-center-xs">
-            <a href="#" data-toggle="modal" data-target="#modalRecursos">¿Quieres compartir un recurso?</a> <span class="text-primary">|</span> <a href="<?php echo content_url('/'); ?>enterate">Entérate</a>
+            <a href="#" data-toggle="modal" data-target="#modalRecursos">¿Quieres compartir una publicación?</a> <span class="text-primary">|</span> <a href="<?php echo content_url('/'); ?>enterate">Entérate</a>
           </nav>	          
         </div>
       </div>
