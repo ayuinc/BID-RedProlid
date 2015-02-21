@@ -27,7 +27,7 @@ get_header(); ?>
   </div>
 </section>
 
-	<section class="bg-panel pv-21">
+	<section>
 		<div class="container">
 			<div class="row">
 				<!-- Start the Loop. -->
