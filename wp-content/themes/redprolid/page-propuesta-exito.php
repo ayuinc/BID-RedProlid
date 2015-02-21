@@ -4,37 +4,34 @@ Template Name: Propuesta Exito
 */
 
 get_header(); ?>
-
-    <!--HEADER-->
-    <?php get_template_part( 'include', 'header' ); ?>
     
-    <!--NAV-->
-    <?php get_template_part( 'include', 'nav' ); ?>
-    
-	<section class="mt-7"> 
-    <div class="container">
-      <?php the_breadcrumb(); ?> 
-      <div class="clearfix sub-header">
-        <div class="col-sm-1 col-xs-3">
-          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" width="100%"></div>
-        </div>
-        <div class="col-sm-5 col-xs-9">
-          <h1><?php the_title(); ?></h1>
-        </div>
-        <div class="col-sm-6 col-xs-12"></div>
-      </div>	
-    </div>
-	</section>    
-  <section id="dtl" class="pt-0">
-    <div class="container relative dtl-content">
-      <!-- Start the Loop. -->
-			<?php if ( have_posts() ) : ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-          <p class="text-right pt-14-100"><?php the_content(); ?></p> 
-				<?php endwhile; ?>
-			<?php endif; ?>                 
-    </div>
-  </section>      
+    <?php if ( is_user_logged_in() ) { ?>
+    	<h3 class="medium">¿Quieres compartir una noticia?</h3>
+    	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
+				<?php ninja_forms_display_form( 3 ); ?>
+			<?php } ?>
+		<?php } else { ?>
+			<div class="row">
+	  		<div class="col-sm-6 col-sm-offset-3">
+	  			<div class="user-sign-in-form pv-21">
+		  			<h2 class="medium">Ingresa o regístrate</h2>
+            <?php 
+              if ( is_user_logged_in() ) {
 
+                $current_user = wp_get_current_user();
+                echo '<div class="text-right">';
+                echo '<h4 class="light">Hola '.$current_user->user_nicename.'</h4>';
+								echo '<a href="'.wp_logout_url().'" title="Logout" class="light">Cierra tu sesión</a>';
+                echo '</div>';
 
-<?php get_footer(); ?>
+              } else {
+
+                echo do_shortcode('[dm_login_form]'); 
+
+              }
+            ?>
+           </div>
+	  		</div>
+	  	</div>
+  	<?php } ?>
+
