@@ -177,7 +177,7 @@ get_header(); ?>
 			  	<?php } ?>
 -->
 					<iframe
-src="http://redprolid.org/propuesta-recibida-noticias/" height="800" width="100%" frameborder="0" scrolling="no">You need an iframes capable browser to view this content.</iframe>
+src="http://redprolid.org/propuesta-recibida-noticias/" height="900" width="100%" frameborder="0" scrolling="no">You need an iframes capable browser to view this content.</iframe>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar X</button>
