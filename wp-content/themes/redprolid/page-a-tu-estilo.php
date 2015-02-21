@@ -46,9 +46,9 @@ get_header(); ?>
 		<div class="container">
 			<h3>Dónde puedo comer y comprar</h3>
 			<p>Te ofrecemos, ordenadas por ciudades, sugerencias de restaurantes y tiendas concretas de las principales ciudades de Latinoamérica para que, en tus viajes de trabajo o cuando asistas a foros y congresos, puedas tener mejores alternativas que la cafetería del hotel o el Mall al frente. En definitiva, donde poder darte un gusto.</p>
+			<form action="">
 			<div class="row">
 				<div class="col-sm-4">
-					<form action="">
 						<div class="form-group">
 							<select name="" id="" class="select-override form-control">
 								<option value="argentina-buenos-aires">Argentina, Buenos Aires</option>
@@ -92,15 +92,15 @@ get_header(); ?>
 								<option value="venezuela-valencia">Venezuela, Valencia</option>
 							</select>
 						</div>
-					</form>
 				</div>
 				<div class="col-sm-8 bg-secondary p-0-sm">
 					<nav class="custom-nav">
-						<a href="#">Restaurantes</a>
-						<a href="#">Tiendas</a>
+						<input type="checkbox" name="tipo_lugar"> Restaurantes
+						<input type="checkbox" name="tipo_lugar"> Tiendas
 					</nav>
 				</div>
 			</div>
+			</form>
 			<div class="row">
 				<!-- Start the Loop. -->
 				<?php if ( have_posts() ) : ?>
