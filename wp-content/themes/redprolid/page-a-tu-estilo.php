@@ -97,6 +97,7 @@ get_header(); ?>
 					<nav class="custom-nav">
 						<input type="checkbox" name="tipo_lugar"> Restaurantes
 						<input type="checkbox" name="tipo_lugar"> Tiendas
+						<button type="submit">Buscar</button>
 					</nav>
 				</div>
 			</div>
