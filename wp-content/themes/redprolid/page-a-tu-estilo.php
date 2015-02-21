@@ -138,7 +138,7 @@ get_header(); ?>
 			<?php if ( is_user_logged_in() ) { ?>
 				<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 12 ); } ?>	
 			<?php } else { ?>
-				<h3 class="medium text-center">Para hacer una recomendación es necesario <a href="<?php echo home_url('/'); ?>registrate/">ingresar a tu cuenta o registrarte</a> a Red PROLID.</h3>
+				<h4 class="medium text-center">Para hacer una recomendación es necesario <a href="<?php echo home_url('/'); ?>registrate/">ingresar a tu cuenta o registrarte</a> a Red PROLID.</h4>
 			<?php } ?>			
 					
 			<!--<form action="">
