@@ -39,7 +39,7 @@ get_header(); ?>
                     <div class="embed-responsive embed-responsive-16by9">
                       <iframe class="embed-responsive-item" width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video_homepage'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                     </div>
-                  </div>
+                  </div6
                   <div class="col-sm-5 minh-350 flex-middle-end">
                     <div class="slide-content relative">
                       <h3 class="medium text-gray-dark"><span class="uppercase"><?php the_title(); ?></h3>
