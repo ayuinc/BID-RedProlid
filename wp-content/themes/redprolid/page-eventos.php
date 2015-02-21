@@ -31,7 +31,7 @@ get_header(); ?>
     </div>
 	</section>		
 	
-	<section class="bg-panel pt-21 pb-28 mb-21">
+	<section class="bg-panel pv-35">
 	  <div class="container ph-70-md">
 	  	<h2>Últimos Eventos</h2>
 	  	<div id="carousel-eventos-destacados" class="carousel slide" data-ride="carousel">
@@ -64,7 +64,7 @@ get_header(); ?>
 											<strong>Convocan:</strong> <?php the_field('convocan'); ?>
 											<?php } ?>
 		                </p>
-		                <p class="text-right mt-14 medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Más Información >></a></p>
+		                <p class="text-right mt-14 medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Más información >></a></p>
 		        			</div>
 		        		</div>
 		        	</div>
