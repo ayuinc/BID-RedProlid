@@ -46,11 +46,11 @@ get_header(); ?>
 		<div class="container">
 			<h3>Dónde puedo comer y comprar</h3>
 			<p>Te ofrecemos, ordenadas por ciudades, sugerencias de restaurantes y tiendas concretas de las principales ciudades de Latinoamérica para que, en tus viajes de trabajo o cuando asistas a foros y congresos, puedas tener mejores alternativas que la cafetería del hotel o el Mall al frente. En definitiva, donde poder darte un gusto.</p>
-			<form action="">
+			<form action="/a-tu-estilo/a-tu-estilo-resultados-de-busqueda/" method="post">
 			<div class="row">
 				<div class="col-sm-4">
 						<div class="form-group">
-							<select name="" id="" class="select-override form-control">
+							<select name="lugar" id="" class="select-override form-control">
 								<option value="argentina-buenos-aires">Argentina, Buenos Aires</option>
 								<option value="argentina-cordova">Argentina, Córdova</option>
 								<option value="bolivia-la-paz">Bolivia, La Paz</option>

@@ -30,6 +30,8 @@ get_header(); ?>
 	<section>
 		<div class="container">
 			<div class="row">
+				<?php echo $lugar = $_POST['lugar']; ?>
+				<?php echo $tipo_lugar = $_POST['tipo_lugar']; ?>
 				<!-- Start the Loop. -->
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
         <?php query_posts( 'cat=300&posts_per_page=10&paged=' . $paged ); ?>          
