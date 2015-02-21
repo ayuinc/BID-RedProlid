@@ -33,7 +33,7 @@ get_header(); ?>
 	
 	<section class="bg-panel pv-28">
 	  <div class="container ph-70-md">
-	  	<h2>Últimos Eventos</h2>
+	  	<h2>Últimos eventos</h2>
 	  	<div id="carousel-eventos-destacados" class="carousel slide" data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
