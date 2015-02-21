@@ -6200,7 +6200,7 @@ div[id^="yop-poll-results-3"] {
   .dtl-carousel .dtl-item:hover {
     /*@include box-shadow-default;
     cursor: pointer;*/
-    opacity: 0.3; }
+    opacity: 0.7; }
 .dtl-carousel .dtl-icon {
   width: 35px;
   height: 35px;
