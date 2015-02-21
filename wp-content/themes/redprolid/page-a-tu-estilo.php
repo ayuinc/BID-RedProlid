@@ -95,8 +95,8 @@ get_header(); ?>
 				</div>
 				<div class="col-sm-8 bg-secondary p-0-sm">
 					<nav class="custom-nav">
-						<input type="checkbox" name="tipo_lugar" value="restaurantes"> Restaurantes
-						<input type="checkbox" name="tipo_lugar" value="tiendas"> Tiendas
+						<input type="radio" name="tipo_lugar" value="restaurantes"> Restaurantes
+						<input type="radio" name="tipo_lugar" value="tiendas"> Tiendas
 						<button type="submit">Buscar</button>
 					</nav>
 				</div>
