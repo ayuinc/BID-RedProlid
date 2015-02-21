@@ -37,7 +37,7 @@ get_header(); ?>
                 <div class="row">
                   <div class="col-sm-7 minh-350 flex-middle">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" width="100%" height="370" src="//www.youtube.com/embed/<?php the_field('id_video_homepage'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                      <iframe class="embed-responsive-item" width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video_homepage'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                   </div>
                   <div class="col-sm-5 minh-350 flex-middle-end">
