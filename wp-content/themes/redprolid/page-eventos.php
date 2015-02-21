@@ -33,7 +33,7 @@ get_header(); ?>
 	
 	<section class="bg-panel pt-21 pb-28 mb-21">
 	  <div class="container ph-70-md">
-	  	<h2>Eventos destacados</h2>
+	  	<h2>Últimos Eventos</h2>
 	  	<div id="carousel-eventos-destacados" class="carousel slide" data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
@@ -84,8 +84,8 @@ get_header(); ?>
 	</section> 
 	          
 	<section>
-	  <div class="container">
-			<h2>Próximos eventos</h2>
+	  <div class="container-sm">
+			<h2>Otros eventos</h2>
 			<hr>
     	<!-- Start the Loop. -->
     	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
