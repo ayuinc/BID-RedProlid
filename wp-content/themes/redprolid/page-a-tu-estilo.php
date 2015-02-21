@@ -108,14 +108,14 @@ get_header(); ?>
 					<?php while ( have_posts() ) : the_post(); ?>				            
             <div class="banner col-md-3 banner-label-bottom">
             	<div class="bg-white">
-	            	<div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
+	            	<div class="banner-pic" style="background-image: url(<?php the_field('foto_restaurante_estilo'); ?>)"></div>
 	            	<div class="banner-content flex-none">
 	            		<small>Restaurantes</small>
 		              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-		              <?php $publicacion = get_field('publicacion_noticias'); ?>
-		              <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
+		              <p class="mt-14"><?php the_field('comentario_estilo');?></p>
+		              <small><?php the_field('ciudad_pais_estilo');?></small>
 		              <div class="text-right banner-label">
-		              	<a href="#" class="vermas medium">Ver más &gt;&gt;</a>
+		              	<a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ver más &gt;&gt;</a>
 		              </div>
 	            	</div>
             	</div>
@@ -123,12 +123,6 @@ get_header(); ?>
           <?php endwhile; ?>
 				<?php endif; ?>				            				            
       </div>
-      <nav>
-			  <ul class="pager">
-			    <li><a href="#">Anteriores</a></li>
-			    <li><a href="#">Siguiente</a></li>
-			  </ul>
-			</nav>
 		</div>
 	</section>
 
