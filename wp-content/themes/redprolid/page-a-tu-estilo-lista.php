@@ -32,7 +32,7 @@ get_header(); ?>
 			<div class="row">
 				<!-- Start the Loop. -->
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-        <?php query_posts( 'cat=300&posts_per_page=10&offset=9&paged=' . $paged ); ?>          
+        <?php query_posts( 'cat=300&posts_per_page=10&paged=' . $paged ); ?>          
 				<?php while ( have_posts() ) : the_post(); ?>				            
           <div class="banner col-md-3 banner-label-bottom">
           	<div class="bg-white">
