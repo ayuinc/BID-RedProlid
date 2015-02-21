@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Eventos list
+Template Name: A tu estilo - list
 */
 get_header(); ?>
 
