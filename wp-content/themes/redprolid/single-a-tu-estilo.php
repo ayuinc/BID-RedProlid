@@ -20,11 +20,11 @@
     		</ul>
     	</div>
     	<div class="col-sm-6">
-    		<p><?php the_field('descripcion_larga_estilo'); ?></p>
-    	</div>
-    	<div class="col-sm-6">
     		<img src="<?php the_field('foto_restaurante_estilo'); ?>" alt="" class="img-responsive">
-    	</div>    	
+    	</div>     	
+    	<div class="col-sm-6">
+    		<p><?php the_field('descripcion_larga_estilo'); ?></p>
+    	</div>   	
     </div>
     <hr>
     <div class="ph-70">
