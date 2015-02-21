@@ -14,14 +14,14 @@ get_header(); ?>
     <div class="clearfix bg-panel sub-header">
       <div class="col-sm-7">
         <div>
-          <h1 class="">Eventos anteriores</h1>
+          <h1 class="">Resultados de búsqueda</h1>
           <nav class="mt-21">
-            <a href="<?php echo content_url('/'); ?>eventos">Eventos >></a>
+            <a href="<?php echo content_url('/'); ?>a-tu-estilo">A tu estilo >></a>
           </nav>
         </div>
       </div>
       <div class="sub-header-icon">
-        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-square-alpha.png" width="94px" height="auto" alt="">
+        <!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-square-alpha.png" width="94px" height="auto" alt="">-->
       </div>
     </div>  
   </div>
