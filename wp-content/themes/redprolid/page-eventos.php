@@ -31,7 +31,7 @@ get_header(); ?>
     </div>
 	</section>		
 	
-	<section class="bg-panel pv-35">
+	<section class="bg-panel pv-28">
 	  <div class="container ph-70-md">
 	  	<h2>Últimos Eventos</h2>
 	  	<div id="carousel-eventos-destacados" class="carousel slide" data-ride="carousel">
@@ -83,7 +83,7 @@ get_header(); ?>
 	  </div>
 	</section> 
 	          
-	<section>
+	<section class="pv-28">
 	  <div class="container-sm">
 			<h2>Otros eventos</h2>
 			<hr>
