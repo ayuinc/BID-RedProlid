@@ -2,7 +2,8 @@
 /*
 Template Name: Propuesta Exito - Noticias
 */
-?>
+
+get_header(); ?>
     
 <?php if ( is_user_logged_in() ) { ?>
 	<h3 class="medium">¿Quieres compartir una noticia?</h3>
