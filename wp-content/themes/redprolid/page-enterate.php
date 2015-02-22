@@ -210,25 +210,22 @@ get_header(); ?>
 				        	<?php endwhile; ?>
 			          <?php endif; ?> 
                 <div class="col-md-4 box-shadow pl-0 pr-0 enterate-calendar">
-
-	                  <h3 class="medium">Últimos eventos</h3>
-										<div class="row">
-						          <!-- Start the Loop. -->
-						          <?php if ( have_posts() ) : ?>
-						            <?php query_posts( 'category_name=eventos&posts_per_page=3&offset-1' ); ?>
-						            <?php while ( have_posts() ) : the_post(); ?>											
-												<div class="col-md-12">
-													<h4><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h4>
-													<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
-												</div>		
-							        	<?php endwhile; ?>
-						          <?php endif; ?> 											
-										</div>
-										<p class="text-right mr-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Eventos anteriores >></a></p>
-                  </div>
-
+                  <h3 class="medium">Últimos eventos</h3>
+									<div class="row">
+					          <!-- Start the Loop. -->
+					          <?php if ( have_posts() ) : ?>
+					            <?php query_posts( 'category_name=eventos&posts_per_page=3&offset-1' ); ?>
+					            <?php while ( have_posts() ) : the_post(); ?>											
+											<div class="col-md-12">
+												<h4><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h4>
+												<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+											</div>		
+						        	<?php endwhile; ?>
+					          <?php endif; ?> 	
+					          <p class="text-right mr-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Eventos anteriores >></a></p>										
+									</div>
+                </div>
               </div>
- 
           </div>
         </div>
       </div>
