@@ -57,6 +57,10 @@
 						<?php if ($recurso_organizacion!='') { ?>
 						<span class="medium">Organización:</span> <?php echo $recurso_organizacion; ?>
 						<?php } ?>
+						<?php $recurso_pais = get_field('recurso_pais'); ?>
+						<?php if ($recurso_pais!='') { ?>
+						<span class="medium">País:</span> <?php the_field('recurso_pais'); ?>
+						<?php } ?>						
 					</p>   		
 					<?php $recurso_link = get_field('recurso_link'); ?>
 					<?php if ($recurso_link!='') { ?>    
