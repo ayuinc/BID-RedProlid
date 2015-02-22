@@ -222,7 +222,7 @@ get_header(); ?>
 											</div>		
 						        	<?php endwhile; ?>
 					          <?php endif; ?> 	
-					          <p class="text-right mr-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Eventos anteriores >></a></p>										
+					          <p class="text-right mr-14"><a href="<?php echo home_url('/'); ?>eventos" class="medium">Eventos >></a></p>										
 									</div>
                 </div>
               </div>
