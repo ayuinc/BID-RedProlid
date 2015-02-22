@@ -12,11 +12,14 @@
 			<h2 class="medium mb-14"><?php the_title(); ?></h2>
 			<div class="banner half-height">
 				<?php if( get_field('imagen_evento') ) { ?>
-				<div class="banner-pic col-sm-3" style="background-image: url(<?php the_field('imagen_evento'); ?>)"><small><?php the_field('credito_imagen_evento'); ?></small></div>
-				<?php } else {?>
-				<div class="banner-pic bg-panel col-sm-3"></div>
-				<?php } ?>
+				<div class="col-sm-3">
+					<img src="<?php the_field('imagen_evento'); ?>">
+					<small><?php the_field('credito_imagen_evento'); ?></small>
+				</div>
 				<div class="banner-content col-sm-9">
+				<?php } else {?>
+				<div class="col-sm-12"></div>
+				<?php } ?>
 					<div class="row">
 						<div class="col-sm-7">
 							<?php $organizan_evento = get_field('organizan_evento'); ?>
