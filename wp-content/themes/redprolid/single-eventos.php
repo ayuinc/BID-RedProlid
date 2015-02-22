@@ -13,7 +13,7 @@
 			<div class="banner half-height">
 				<?php if( get_field('imagen_evento') ) { ?>
 				<div class="banner-pic col-sm-3" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
-				<small><?php the_field('redito_imagen_evento'); ?></small>
+				<small><?php the_field('credito_imagen_evento'); ?></small>
 				<?php } else {?>
 				<div class="banner-pic bg-panel col-sm-3"></div>
 				<?php } ?>
