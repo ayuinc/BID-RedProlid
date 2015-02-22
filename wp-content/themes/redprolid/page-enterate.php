@@ -216,9 +216,10 @@ get_header(); ?>
 					          <?php if ( have_posts() ) : ?>
 					            <?php query_posts( 'category_name=eventos&posts_per_page=3&offset-1' ); ?>
 					            <?php while ( have_posts() ) : the_post(); ?>											
-											<div class="col-md-12 width-hr">
+											<div class="col-md-12">
 												<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h5 class="medium mb-0 pb-0"><?php the_title(); ?></h5></a>
 												<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+												<hr>
 											</div>		
 						        	<?php endwhile; ?>
 					          <?php endif; ?> 	
