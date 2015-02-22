@@ -40,7 +40,7 @@ get_header(); ?>
 					<!-- Start the Loop. -->
 					<?php $aux = 0; ?>
 					<?php if ( have_posts() ) : ?>
-            <?php query_posts( array( 'category_name' => 'eventos-destacados', 'posts_per_page' => 3 ) ); ?>
+            <?php query_posts( array( 'category_name' => 'eventos-destacados', 'posts_per_page' => 4 ) ); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 		        	<div class="item <?php if ($aux == 0) { ?> active <?php $aux++; } ?>">
 		        		<div class="banner">
@@ -89,7 +89,7 @@ get_header(); ?>
 			<hr>
     	<!-- Start the Loop. -->
     	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-    	<?php query_posts( 'cat=11&posts_per_page=10&paged=' . $paged ); ?>
+    	<?php query_posts( 'cat=11&posts_per_page=4&paged=' . $paged ); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 	  	<div class="banner half-height">
 	  		<div class="banner-pic col-sm-2 bg-panel text-center lead-ch normalize-text">
