@@ -15,7 +15,7 @@ get_header(); ?>
     <!-- IF NO POSTS in FOROS -->
     <div class="ph-70 text-center">
     	<div class="container-sm">
-	    	<div class="row">
+	    	<div class="row pv-70">
 	    		<div class="col-sm-8 col-sm-offset-2">
 		    		<h3 class="medium text-center mt-35">!Hemos recibido tu propuesta!</h3>
 		    		<p class="text-center">Gracias por compartir tus ideas con la comunidad de Red PROLID.<br><a href="javascript:history.back();">Regresar</a></p>
