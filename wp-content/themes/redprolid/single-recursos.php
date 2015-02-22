@@ -12,7 +12,8 @@
   				<?php $folleto_recurso = get_field('folleto_recurso');?>
   				<?php if ($folleto_recurso!='') { ?>
   				<div class="pv-14">
-  					<img src="<?php echo $folleto_recurso; ?>" width="100%">   
+  					<img src="<?php echo $folleto_recurso; ?>" width="100%">
+  					<small><?php the_field('credito_imagen'); ?></small>   
   				</div>    
   				<?php } ?> 
   				<?php $folleto_adicional_recurso = get_field('folleto_adicional_recurso');?>
