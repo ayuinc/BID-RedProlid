@@ -209,7 +209,7 @@ get_header(); ?>
 	                </div>
 				        	<?php endwhile; ?>
 			          <?php endif; ?> 
-                <div class="col-md-4 box-shadow pl-0 pr-0 enterate-calendar">
+                <div class="col-md-4">
                   <h3 class="medium">Últimos eventos</h3>
 									<div class="row">
 					          <!-- Start the Loop. -->
