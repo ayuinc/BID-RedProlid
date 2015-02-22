@@ -35,8 +35,8 @@ get_header(); ?>
 			</div>
 			<div class="col-sm-5">
 				<h2 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h2>
-				<?php $tempDate = get_the_date(); ?>
-				<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+				<?php $tempDate = get_field('fecha_publicacion_video'); ?>
+				<small>Publicado por: <?php the_field('autor_video'); ?> - <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
 				<h3 class="pt-14 light"><?php the_field('descripcion_corta_video'); ?></h3>
 			</div>
     </div>
@@ -52,8 +52,8 @@ get_header(); ?>
 						<iframe width="100%" height="150" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
 						<h3 class="medium mt-7 mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 						<p class="mb-0"><?php the_field('descripcion_corta_video'); ?></p>
-						<?php $tempDate = get_the_date(); ?>
-						<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+						<?php $tempDate = get_field('fecha_publicacion_video'); ?>
+						<small>Publicado por: <?php the_field('autor_video'); ?> - <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
 					</div>																			
           <?php endwhile; ?>
         </div>
