@@ -193,7 +193,7 @@ get_header(); ?>
 			          <?php if ( have_posts() ) : ?>
 			            <?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 1 ) ); ?>
 			            <?php while ( have_posts() ) : the_post(); ?>	              
-	                <div class="col-md-6 pr-21">
+	                <div class="col-md-8">
 		                <div class="row">
 			                <div class="col-md-4">
 				                <img src="<?php the_field('imagen_evento');?>" width="100%">
@@ -209,7 +209,7 @@ get_header(); ?>
 	                </div>
 				        	<?php endwhile; ?>
 			          <?php endif; ?> 
-                <div class="col-md-6">
+                <div class="col-md-4">
                   <h3 class="medium">Últimos eventos</h3>
 									<div class="row">
 					          <!-- Start the Loop. -->
