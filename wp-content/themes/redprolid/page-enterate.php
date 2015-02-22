@@ -80,7 +80,7 @@ get_header(); ?>
               <div class="col-md-8 pl-0 pr-0">
                 <ul class="flex flex-row flex-space-between normalize-text mb-14">
                   <li>
-                    <h3 class="mb-14">Últimas publicaciones</h3>
+                    <h3 class="pb-14">Últimas publicaciones</h3>
                   </li>
                   <li>
                     <a href="<?php echo home_url('/'); ?>publicaciones" class="medium">Todas las publicaciones >></a>
