@@ -210,7 +210,7 @@ get_header(); ?>
 				        	<?php endwhile; ?>
 			          <?php endif; ?> 
                 <div class="col-md-4 box-shadow pl-0 pr-0 enterate-calendar">
-                  <div class="p-14 bg-panel-dark">
+
 	                  <h3 class="medium">Últimos eventos</h3>
 										<div class="row">
 						          <!-- Start the Loop. -->
@@ -226,7 +226,7 @@ get_header(); ?>
 										</div>
 										<p class="text-right mr-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Eventos anteriores >></a></p>
                   </div>
-                </div>
+
               </div>
  
           </div>
