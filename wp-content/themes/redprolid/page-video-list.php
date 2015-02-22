@@ -25,7 +25,7 @@ get_header(); ?>
       </div>
     </div>
     <div class="ph-70">
-  		<div class="row">
+  		<!--<div class="row">
   			<form action="">
   				<div class="col-sm-4 form-group">
   					<select name="" id="" class="form-control select-override">
@@ -34,7 +34,7 @@ get_header(); ?>
   				</div>
   			</form>
   		</div>
-		 <h2 class="mb-21">Del más antiguo al más nuevo</h2>
+		 <h2 class="mb-21">Del más antiguo al más nuevo</h2>-->
 			<div class="row">
       	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
       	<?php query_posts( 'cat=260&posts_per_page=10&paged=' . $paged ); ?>
