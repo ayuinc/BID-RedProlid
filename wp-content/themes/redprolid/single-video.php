@@ -27,18 +27,18 @@
 							<?php } ?>						
 						<br>
 						<?php } ?>
-						<?php $recurso_tema = get_field('recurso_tema'); ?>
-						<?php $tag_tema_recurso = get_field('tag_tema_recurso'); ?>
-						<?php if ($recurso_tema!='') { ?>						
-						<span class="medium">Tema:</span> <?php the_field('recurso_tema'); ?>
-							<?php if ($tag_tema_recurso!='') { ?>
-								<?php echo ', '.$tag_tema_recurso; ?>
+						<?php $tema_video = get_field('tema_video'); ?>
+						<?php $tag_tema_video = get_field('tag_tema_video'); ?>
+						<?php if ($tema_video!='') { ?>						
+						<span class="medium">Tema:</span> <?php the_field('tema_video'); ?>
+							<?php if ($tag_tema_video!='') { ?>
+								<?php echo ', '.$tag_tema_video; ?>
 							<?php } ?>							
 						<br>
 						<?php } ?>
-						<?php $recurso_organizacion = get_field('recurso_organizacion'); ?>
-						<?php if ($recurso_organizacion!='') { ?>
-						<span class="medium">Organización:</span> <?php echo $recurso_organizacion; ?>
+						<?php $organizacion_video = get_field('organizacion_video'); ?>
+						<?php if ($organizacion_video!='') { ?>
+						<span class="medium">Organización:</span> <?php echo $organizacion_video; ?>
 						<?php } ?>
 						<br>
 						<?php $pais_video = get_field('pais_video'); ?>
