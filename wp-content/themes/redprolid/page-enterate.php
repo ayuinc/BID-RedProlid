@@ -62,7 +62,7 @@ get_header(); ?>
           <div class="panel panel-custom">
             <div class="panel-heading mb-0">
               <ul class="list-unstyled">
-                <li class="title highlight-white text-gray-darker">Recursos</li>
+                <li class="title highlight-white text-gray-darker">Publicaciones</li>
                 <li class="rule"></li>
                 <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
               </ul>
@@ -80,7 +80,7 @@ get_header(); ?>
               <div class="col-md-8 pl-0 pr-0">
                 <ul class="flex flex-row flex-space-between normalize-text mb-14">
                   <li>
-                    <h3 class="medium">Últimas Publicaciones</h3>
+                    <h3 class="mb-14">Últimas publicaciones</h3>
                   </li>
                   <li>
                     <a href="<?php echo home_url('/'); ?>publicaciones" class="medium">Todas las publicaciones >></a>
