@@ -59,6 +59,7 @@
 						<?php } ?>
 						<br>
 						<?php $recurso_pais = get_field('recurso_pais'); ?>
+						<?php echo $recurso_pais; ?>
 						<?php if ($recurso_pais!='null') { ?>
 						<span class="medium">País:</span> <?php the_field('recurso_pais'); ?>
 						<?php } ?>						
