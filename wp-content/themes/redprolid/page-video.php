@@ -42,12 +42,11 @@ get_header(); ?>
     </div>
     <?php endwhile; ?>	
     <div class="panel panel-custom">         
-      <div class="panel-body pt-14">	
-      	<h2>Videos más vistos</h2>
+      <div class="panel-body pt-28">	
+      	<h2>Otros videos</h2>
       	<hr>
 				<div class="row">
-        	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-        	<?php query_posts( 'cat=258&posts_per_page=4&offset=1&paged=' . $paged ); ?>
+        	<?php query_posts( 'cat=258&posts_per_page=4&offset=1'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>    
 					<div class="col-sm-3">
 						<iframe width="100%" height="150" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -58,18 +57,6 @@ get_header(); ?>
 					</div>																			
           <?php endwhile; ?>
         </div>
-        <div class="row">
-          <div class="col-sm-12"> 
-            <!--Pagination-->
-            <div class="text-center">
-              <ul class="pager">
-                <li><?php next_posts_link( 'Anteriores' ); ?></li>
-                <li><?php previous_posts_link( 'Posteriores' ); ?></li>
-              </ul>
-            </div> 
-            <!--End.Pagination-->	  
-          </div>          
-				</div>
       </div>
     </div>
   </div>
