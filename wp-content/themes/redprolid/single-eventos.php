@@ -83,9 +83,12 @@
 				      <h5 class="medium mb-0">Lugar</h5>
 				      <p><?php echo $lugar_evento; ?></p>
 				      <?php } ?>
+				      <?php $hipervinculo = get_field('hipervinculo_evento');?>
+					    <?php if ($hipervinculo!='') { ?>
 					    <div>
-						    <a href="<?php the_field('hipervinculo_evento');?>" class="btn btn-primary">Ir al evento</a>
-					    </div>				      
+						    <a href="<?php the_field('hipervinculo_evento');?>" class="btn btn-primary" target="_blank">Ir al evento</a>
+					    </div>
+					    <?php } ?>				      
 						</div>
 					</div>
 				</div>
