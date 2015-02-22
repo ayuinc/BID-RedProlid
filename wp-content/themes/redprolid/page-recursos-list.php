@@ -51,7 +51,7 @@ get_header(); ?>
         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" width="94px" height="auto" alt="">
       </div>
     </div>	-->      
-    <div class="ph-70">
+    <div class="ph-70 mt-35">
       <div class="row">
         <div class="col-sm-12">
           <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
@@ -97,7 +97,7 @@ get_header(); ?>
 		        <div class="col-sm-6 col-xs-12"></div>
 		      </div>-->
 		      <?php if ( is_user_logged_in() ) { ?>
-		      	<h3 class="medium">¿Quieres compartir un recurso?</h3>
+		      	<h3 class="medium">¿Quieres compartir una publicación?</h3>
 		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
 							<?php ninja_forms_display_form( 10 ); ?>
 						<?php } ?>
