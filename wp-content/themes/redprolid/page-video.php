@@ -26,7 +26,7 @@ get_header(); ?>
         </nav>	          
       </div>
     </div>
-    <?php query_posts( 'cat=259&posts_per_page=10&paged=' . $paged ); ?>
+    <?php query_posts( 'cat=258&posts_per_page=1paged=' . $paged ); ?>
 		<?php while ( have_posts() ) : the_post(); ?> 
     <div class="row">
 			<div class="col-sm-7 relative">
@@ -47,7 +47,7 @@ get_header(); ?>
       	<hr>
 				<div class="row">
         	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-        	<?php query_posts( 'cat=260&posts_per_page=10&paged=' . $paged ); ?>
+        	<?php query_posts( 'cat=258&posts_per_page=4&offset=1&paged=' . $paged ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>    
 					<div class="col-sm-3">
 						<iframe width="100%" height="150" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
