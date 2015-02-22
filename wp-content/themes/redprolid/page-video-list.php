@@ -40,7 +40,14 @@ get_header(); ?>
       	<?php query_posts( 'cat=258&posts_per_page=10&offset=5&paged=' . $paged ); ?>
 				<?php while ( have_posts() ) : the_post(); ?>    
 				<div class="col-md-3">
-					<iframe width="100%" height="150" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+			    <?php $youtube = get_field('video_youtube'); ?>
+		    	<?php if ($youtube!='') { ?>
+		    		<iframe width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
+					<?php } ?>
+			    <?php $vimeo = get_field('video_vimeo'); ?>
+		    	<?php if ($vimeo!='') { ?>				
+						<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<?php } ?>
 					<h3 class="medium mt-7 mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 					<p class="mb-0"><?php the_field('descripcion_corta_video'); ?></p>
 					<?php $tempDate = get_field('fecha_publicacion_video'); ?>

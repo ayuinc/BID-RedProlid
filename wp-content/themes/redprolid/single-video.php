@@ -13,7 +13,14 @@
 			<?php $tempDate = get_field('fecha_publicacion_video'); ?>
 			<small>Publicado por: <?php the_field('organizacion_video'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small> 	    
 	    <div class="pv-21">
-	    	<iframe width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
+		    <?php $youtube = get_field('video_youtube'); ?>
+	    	<?php if ($youtube!='') { ?>
+	    		<iframe width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
+				<?php } ?>
+		    <?php $vimeo = get_field('video_vimeo'); ?>
+	    	<?php if ($vimeo!='') { ?>				
+					<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<?php } ?>
 				<p><?php the_field('descripcion_larga_video'); ?></p>
 	    </div> 
   	  <div class="row">
