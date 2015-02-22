@@ -18,8 +18,8 @@
 				, <strong><?php echo $pais_video; ?></strong>
 				<?php } ?>
 			</p> 	    
-	    <iframe width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
-	    <p class="mt-14"><?php the_field('descripcion_video'); ?></p>			   
+	    <iframe width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
+	    <p class="mt-14"><?php the_field('descripcion_larga_video'); ?></p>			   
 	    <div class="text-center mt-7 mb-7 ">
 	      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
 	    </div>   	    

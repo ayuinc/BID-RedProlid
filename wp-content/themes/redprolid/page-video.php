@@ -30,14 +30,14 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?> 
     <div class="row">
 			<div class="col-sm-7 relative">
-				<iframe width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+				<iframe width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
 				<div class="new-ribbon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/new-ribbon.png)"></div>
 			</div>
 			<div class="col-sm-5">
 				<h2 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h2>
 				<?php $tempDate = get_the_date(); ?>
 				<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
-				<h3 class="pt-14 light"><?php the_field('descripcion_video'); ?></h3>
+				<h3 class="pt-14 light"><?php the_field('descripcion_corta_video'); ?></h3>
 			</div>
     </div>
     <?php endwhile; ?>	
@@ -49,9 +49,9 @@ get_header(); ?>
         	<?php query_posts( 'cat=258&posts_per_page=4&offset=1'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>    
 					<div class="col-sm-3">
-						<iframe width="100%" height="150" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+						<iframe width="100%" height="150" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
 						<h3 class="medium mt-7 mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-						<p class="mb-0"><?php the_field('descripcion_video'); ?></p>
+						<p class="mb-0"><?php the_field('descripcion_corta_video'); ?></p>
 						<?php $tempDate = get_the_date(); ?>
 						<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
 					</div>																			

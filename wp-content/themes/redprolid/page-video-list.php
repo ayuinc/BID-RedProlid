@@ -40,9 +40,9 @@ get_header(); ?>
       	<?php query_posts( 'cat=258&posts_per_page=10&offset=5&paged=' . $paged ); ?>
 				<?php while ( have_posts() ) : the_post(); ?>    
 				<div class="col-md-3">
-					<iframe width="100%" height="150" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+					<iframe width="100%" height="150" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
 					<h3 class="medium mt-7 mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-					<p class="mb-0"><?php the_field('descripcion_video'); ?></p>
+					<p class="mb-0"><?php the_field('descripcion_corta_video'); ?></p>
 					<?php $tempDate = get_the_date(); ?>
 					<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
 				</div>																			
