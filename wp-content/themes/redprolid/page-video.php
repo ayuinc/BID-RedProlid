@@ -37,7 +37,7 @@ get_header(); ?>
 				<h2 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h2>
 				<?php $tempDate = get_the_date(); ?>
 				<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
-				<h3 class="mt-14 light"><?php the_field('descripcion_video'); ?></h3>
+				<h3 class="pt-14 light"><?php the_field('descripcion_video'); ?></h3>
 			</div>
     </div>
     <?php endwhile; ?>	
