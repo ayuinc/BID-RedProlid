@@ -46,7 +46,7 @@ get_header(); ?>
                       	<iframe src="//player.vimeo.com/video/<?php the_field('id_video_vimeo_homepage'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                       <?php } ?>                      
                     </div>
-                  </div6
+                  </div>
                   <div class="col-sm-5 minh-350 flex-middle-end">
                     <div class="slide-content relative">
                       <h3 class="medium text-gray-dark"><span class="uppercase"><?php the_title(); ?></h3>
