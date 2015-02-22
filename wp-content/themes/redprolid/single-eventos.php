@@ -58,6 +58,10 @@
 								<?php } ?>
 							</p>						    
 					    <?php } ?>
+					    <hr>
+					    <div class="text-right">
+						    <a href="<?php the_field('hipervinculo_evento');?>" class="btn btn-primary">Ir al evento</a>
+					    </div>
 						</div>
 						<div class="col-sm-5">
 							<h5 class="medium mb-0">Fecha de inicio</h5>
