@@ -40,7 +40,7 @@ get_header(); ?>
 					<!-- Start the Loop. -->
 					<?php $aux = 0; ?>
 					<?php if ( have_posts() ) : ?>
-            <?php query_posts( array( 'category_name' => 'eventos-destacados', 'posts_per_page' => 4 ) ); ?>
+            <?php query_posts( 'category_name=eventos&posts_per_page=3' ); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 		        	<div class="item <?php if ($aux == 0) { ?> active <?php $aux++; } ?>">
 		        		<div class="banner">
