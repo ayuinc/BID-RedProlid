@@ -45,7 +45,7 @@ get_header(); ?>
 		        	<div class="item <?php if ($aux == 0) { ?> active <?php $aux++; } ?>">
 		        		<div class="banner">
 			        		<?php $imagen_evento = get_field('imagen_evento'); ?>
-				        	<?php if ($image_evento!='') { ?>	
+				        	<?php if ($imagen_evento!='') { ?>	
 		        				<div class="banner-pic col-sm-4 mt-28" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
 		        			<?php } else { ?>
 		        				<div class="banner-pic col-sm-4 mt-28" style="background-image: url(<?php echo home_url('/'); ?>/wp-content/uploads/2015/02/eventos_redprolid.png);">
