@@ -37,7 +37,14 @@ get_header(); ?>
                 <div class="row">
                   <div class="col-sm-7 minh-350 flex-middle">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video_homepage'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	                    <?php $youtube = get_field('id_video_youtube_homepage'); ?>
+	                    <?php if ($youtube!='') { ?>
+                      <iframe class="embed-responsive-item" width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video_youtube_homepage'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                      <?php } ?>
+	                    <?php $vimeo = get_field('id_video_vimeo_homepage'); ?>
+	                    <?php if ($viemo!='') { ?>
+                      						<iframe src="//player.vimeo.com/video/<?php the_field('id_video_vimeo_homepage'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      <?php } ?>                      
                     </div>
                   </div6
                   <div class="col-sm-5 minh-350 flex-middle-end">
