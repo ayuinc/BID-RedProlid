@@ -6,7 +6,7 @@
   	    <?php if( get_field('imagen_noticias') ) { ?>
         <div class="col-sm-4">
           <img src="<?php the_field('imagen_noticias'); ?>" alt="<?php the_field('fuente_imagen_noticias'); ?>" class="img-responsive">
-          <small>Fuente: <?php the_field('fuente_imagen_noticias'); ?></small>
+          <small><?php the_field('fuente_imagen_noticias'); ?></small>
         </div>
         <div class="col-sm-7">
   	    <?php } else {?>
