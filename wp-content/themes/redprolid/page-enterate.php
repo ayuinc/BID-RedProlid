@@ -90,15 +90,15 @@ get_header(); ?>
                 	<!-- Start the Loop. -->
                 	<?php query_posts( 'category_name=recursos&posts_per_page=3' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>    
-			                  <li class="mb-14">
-			                    <h4 class="medium"><?php the_title(); ?></h4>
-			                    <p><?php the_field('recurso_descripcion'); ?></p>
-								          <p>
-											      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
-														<a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más >></a> 
-			                    </p>
-			                  </li>
-                        <hr>
+	                  <li class="mb-14">
+	                    <h4 class="medium"><?php the_title(); ?></h4>
+	                    <p><?php the_field('recurso_descripcion'); ?></p>
+						          <p>
+									      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
+												<a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más >></a> 
+	                    </p>
+	                  </li>
+                    <hr>
 			            <?php endwhile; ?>  
 			            <?php wp_reset_query(); ?>
                 </ul>
