@@ -12,7 +12,7 @@
 			<h2 class="medium mb-14"><?php the_title(); ?></h2>
 			<div class="banner half-height">
 				<?php if( get_field('imagen_evento') ) { ?>
-				<div class="col-sm-3">
+				<div class="col-sm-3 pt-21">
 					<img src="<?php the_field('imagen_evento'); ?>" width="100%">
 					<small><?php the_field('credito_imagen_evento'); ?></small>
 				</div>
