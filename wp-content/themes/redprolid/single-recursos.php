@@ -66,7 +66,7 @@
 					</p>   		
 					<?php $recurso_link = get_field('recurso_link'); ?>
 					<?php if ($recurso_link!='') { ?>    
-  		    <p class="text-right"><a href="<?php echo $recurso_link; ?>"  class="btn btn-primary">Ir al recurso</a></p>
+  		    <p class="text-right"><a href="<?php echo $recurso_link; ?>"  class="btn btn-primary">Ve a la publicación</a></p>
   		    <?php } ?>
   		    <div class="text-right">
   		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
