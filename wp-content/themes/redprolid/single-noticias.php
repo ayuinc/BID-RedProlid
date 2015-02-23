@@ -6,7 +6,7 @@
   	    <?php if( get_field('imagen_noticias') ) { ?>
         <div class="col-sm-4">
           <img src="<?php the_field('imagen_noticias'); ?>" alt="<?php the_field('fuente_imagen_noticias'); ?>" class="img-responsive">
-          <small>Fuente: <?php the_field('fuente_imagen_noticias'); ?></small>
+          <small><?php the_field('fuente_imagen_noticias'); ?></small>
         </div>
         <div class="col-sm-7">
   	    <?php } else {?>
@@ -35,7 +35,7 @@
 					<p>
 						<?php $pais_noticias = get_field('pais_noticias'); ?>
 						<?php if ($pais_noticias!='') { ?>						
-						<span class="medium">País:</span> <?php echo $pais_noticias; ?><br>
+						<span class="medium">País:</span> <?php the_field('pais_noticias'); ?><br>
 						<?php } ?>
 						<?php $tipo_recursos_noticias = get_field('tipo_recursos_noticias'); ?>
 						<?php $tag_tema_noticia = get_field('tag_tema_noticia'); ?>

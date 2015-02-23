@@ -12,7 +12,8 @@
   				<?php $folleto_recurso = get_field('folleto_recurso');?>
   				<?php if ($folleto_recurso!='') { ?>
   				<div class="pv-14">
-  					<img src="<?php echo $folleto_recurso; ?>" width="100%">   
+  					<img src="<?php echo $folleto_recurso; ?>" width="100%">
+  					<small><?php the_field('credito_imagen'); ?></small>   
   				</div>    
   				<?php } ?> 
   				<?php $folleto_adicional_recurso = get_field('folleto_adicional_recurso');?>
@@ -57,10 +58,15 @@
 						<?php if ($recurso_organizacion!='') { ?>
 						<span class="medium">Organización:</span> <?php echo $recurso_organizacion; ?>
 						<?php } ?>
+						<br>
+						<?php $recurso_pais = get_field('recurso_pais'); ?>
+						<?php if ($recurso_pais!='') { ?>
+						<span class="medium">País:</span> <?php the_field('recurso_pais'); ?>
+						<?php } ?>						
 					</p>   		
 					<?php $recurso_link = get_field('recurso_link'); ?>
 					<?php if ($recurso_link!='') { ?>    
-  		    <p class="text-right"><a href="<?php echo $recurso_link; ?>"  class="btn btn-primary">Ir al recurso</a></p>
+  		    <p class="text-right"><a href="<?php echo $recurso_link; ?>"  class="btn btn-primary">Ve a la publicación</a></p>
   		    <?php } ?>
   		    <div class="text-right">
   		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">

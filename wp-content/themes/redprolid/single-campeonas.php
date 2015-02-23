@@ -19,17 +19,30 @@
       <div class="row">
         <?php if( get_field('imagen_campeonas') ) { ?>
         <div class="col-md-3">
-          <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive">
+          <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
+          <?php if ($imagen_campeona!='') { ?>
+          <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
+          <?php } ?>
+          <?php $video = get_field('video_campeonas'); ?>
+          <?php if ($video!='') { ?>
+          <iframe class="embed-responsive-item" width="100%" height="229" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <?php } ?>
           <small><?php the_field('fuente_imagen_campeonas'); ?></small>
         </div>
         <div class="col-md-9">
         <?php } else {  } ?>
         <div class="row">
-	        <div class="col-sm-9">
+	        <div class="col-sm-12">
 		        <h2 class="lh-lg mb-0"><?php the_title(); ?></h2>
 		        <small><?php $tempDate = get_field(fecha_de_la_entrevista); ?>
             <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
-		        <?php the_field('posicion_campeona'); ?> 
+            <p>
+		        		<em>
+		        		<?php the_field('posicion_campeona'); ?>
+								<?php the_field('descripcion_campeona'); ?>
+		        		</em>
+            </p>
+            
 	        </div>
 	        <div class="col-sm-3">
 	        <ul class="list-inline text-right">
@@ -53,8 +66,7 @@
 	        	<?php } ?>
 	        </ul>
 	        </div>	        
-        </div>
-        <h4 class="pv-14 medium lh-lg"><?php the_field('descripcion_campeona'); ?></h4>	            
+        </div>	            
       </div>
       <div class="with-hr">
         <p><?php the_field('intro_entrevista_campeona'); ?></p>

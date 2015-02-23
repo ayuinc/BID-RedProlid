@@ -15,9 +15,9 @@ get_header(); ?>
           <h1>Encuestas anteriores</h1>
         </div>
         <div class="col-sm-6 col-xs-12">
-          <nav class="text-right text-center-xs">
+          <!--<nav class="text-right text-center-xs">
             <a href="<?php echo content_url('/'); ?>tu-opinion-cuenta">Tu opinión cuenta &gt;&gt;</a>
-          </nav>          
+          </nav>-->          
         </div>
       </div>
       <div>

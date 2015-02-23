@@ -21,11 +21,11 @@ get_header(); ?>
           <div class="col-xs-9 col-sm-4">
             <h1 class="brand-titular">Entérate</h1>
           </div>
-          <div class="col-xs-12 col-sm-7">
+          <!--<div class="col-xs-12 col-sm-7">
             <nav class="text-right text-center-xs mb-0 mt-0">
               <a href="#" data-toggle="modal" data-target="#modalRecursos">¿Quieres compartir un recurso?</a> 
             </nav>
-          </div>
+          </div>-->
         </div>
         <div class="row">
 	        <div class="col-md-12">
@@ -62,7 +62,7 @@ get_header(); ?>
           <div class="panel panel-custom">
             <div class="panel-heading mb-0">
               <ul class="list-unstyled">
-                <li class="title highlight-white text-gray-darker">Recursos</li>
+                <li class="title highlight-white text-gray-darker">Publicaciones</li>
                 <li class="rule"></li>
                 <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
               </ul>
@@ -80,25 +80,25 @@ get_header(); ?>
               <div class="col-md-8 pl-0 pr-0">
                 <ul class="flex flex-row flex-space-between normalize-text mb-14">
                   <li>
-                    <h3 class="medium">Últimos recursos</h3>
+                    <h3 class="pb-14">Últimas publicaciones</h3>
                   </li>
                   <li>
-                    <a href="<?php echo home_url('/'); ?>recursos" class="medium">Todos los recursos >></a>
+                    <a href="<?php echo home_url('/'); ?>publicaciones" class="medium">Todas las publicaciones >></a>
                   </li>
                 </ul>
                 <ul class="list-unstyled">
                 	<!-- Start the Loop. -->
                 	<?php query_posts( 'category_name=recursos&posts_per_page=3' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>    
-			                  <li class="mb-14">
-			                    <h4 class="medium"><?php the_title(); ?></h4>
-			                    <p><?php the_field('recurso_descripcion'); ?></p>
-								          <p>
-											      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
-														<a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más >></a> 
-			                    </p>
-			                  </li>
-                        <hr>
+	                  <li class="mb-14">
+	                    <h4 class="medium"><?php the_title(); ?></h4>
+	                    <p><?php the_field('recurso_descripcion'); ?></p>
+						          <p>
+									      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
+												<a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más >></a> 
+	                    </p>
+	                  </li>
+                    <hr>
 			            <?php endwhile; ?>  
 			            <?php wp_reset_query(); ?>
                 </ul>
@@ -182,43 +182,51 @@ get_header(); ?>
               <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
             </ul>
           </div>
-          <div class="row">
+          <!--<div class="row">
             <div class="col-md-12">
               <p class="text-right"><a href="<?php echo home_url('/'); ?>eventos" class="medium">Eventos aquí >></a></p>
             </div>
-          </div>             
+          </div>-->             
           <div class="panel-body" style="padding: 0; margin: 21px 0;">
-          <!-- Start the Loop. -->
-          <?php if ( have_posts() ) : ?>
-            <?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 1 ) ); ?>
-            <?php while ( have_posts() ) : the_post(); ?>
               <div class="row">
-                <div class="col-md-6 pr-21">
-	                <div class="row">
-		                <div class="col-md-4">
-			                <img src="<?php the_field('imagen_evento');?>" width="100%">
-		                </div>
-		                <div class="col-md-8">
-			                <h3 class="medium mb-0"><?php the_title(); ?></h3>
-                    	<?php $tempDate = get_field('fecha_evento'); ?>
-	                    <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
-			                <p class="mt-14"><?php the_field('descripcion_evento');?></p>
-			                <p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más información >></a></p>
+			          <!-- Start the Loop. -->
+			          <?php if ( have_posts() ) : ?>
+			            <?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 1 ) ); ?>
+			            <?php while ( have_posts() ) : the_post(); ?>	              
+	                <div class="col-md-8">
+		                <div class="row">
+			                <div class="col-md-4">
+				                <img src="<?php the_field('imagen_evento');?>" width="100%">
+			                </div>
+			                <div class="col-md-8">
+				                <h3 class="medium mb-0"><?php the_title(); ?></h3>
+	                    	<?php $tempDate = get_field('fecha_evento'); ?>
+		                    <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+				                <p class="mt-14"><?php the_field('descripcion_evento');?></p>
+				                <p class="text-right mr-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más información >></a></p>
+			                </div>
 		                </div>
 	                </div>
-                </div>
-                <div class="col-md-6 box-shadow pl-0 pr-0 enterate-calendar">
-                  <div class="p-14 bg-panel-dark">
-  									<?php
-  										if(is_active_sidebar('calendario-eventos')){
-  										dynamic_sidebar('calendario-eventos');
-  										}
-  									?>
-                  </div>
+				        	<?php endwhile; ?>
+			          <?php endif; ?> 
+                <div class="col-md-4">
+                  <h3 class="medium">Últimos eventos</h3>
+									<div class="row">
+					          <!-- Start the Loop. -->
+					          <?php if ( have_posts() ) : ?>
+					            <?php query_posts( 'category_name=eventos&posts_per_page=3&offset-1' ); ?>
+					            <?php while ( have_posts() ) : the_post(); ?>											
+											<div class="col-md-12">
+												<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h5 class="medium mb-0 pb-0"><?php the_title(); ?></h5></a>
+												<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+												<hr>
+											</div>		
+						        	<?php endwhile; ?>
+					          <?php endif; ?> 	
+					          <p class="text-right mr-14"><a href="<?php echo home_url('/'); ?>eventos" class="medium">Eventos >></a></p>										
+									</div>
                 </div>
               </div>
-            <?php endwhile; ?>
-          <?php endif; ?>  
           </div>
         </div>
       </div>
@@ -307,60 +315,6 @@ get_header(); ?>
           </div>
         </div>
       </div>
-    </section>
-    
-	<!-- Modal PUNTOS DE VISTA -->
-	<div class="modal fade" id="modalRecursos" tabindex="-1" role="dialog" aria-labelledby="modalRecursosLabel" aria-hidden="true">
-		<?php if ( is_user_logged_in() ) { ?>
-  	<div class="modal-dialog">
-  	<?php } else { ?>
-  	<div class="modal-dialog modal-lg">
-  	<?php } ?>
-	    <div class="modal-content bg-panel">
-	      <div class="modal-body">
-	        <!--<div class="clearfix sub-header sub-header-sm mb-0">
-		        <div class="col-sm-1 col-xs-3">
-		          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-topic-icon.png" alt="" width="100%"></div>
-		        </div>
-		        <div class="col-sm-5 col-xs-9"></div>
-		        <div class="col-sm-6 col-xs-12"></div>
-		      </div>-->
-		      <?php if ( is_user_logged_in() ) { ?>
-		      	<h3 class="medium">¿Quieres compartir un recurso?</h3>
-		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
-							<?php ninja_forms_display_form( 10 ); ?>
-						<?php } ?>
-					<?php } else { ?>
-						<div class="row">
-				  		<div class="col-sm-6 col-sm-offset-3">
-				  			<div class="user-sign-in-form pv-21">
-					  			<h2 class="medium">Ingresa o regístrate</h2>
-			            <?php 
-			              if ( is_user_logged_in() ) {
-
-			                $current_user = wp_get_current_user();
-			                echo '<div class="text-right">';
-			                echo '<h4 class="light">Hola '.$current_user->user_nicename.'</h4>';
-											echo '<a href="'.wp_logout_url().'" title="Logout" class="light">Cierra tu sesión</a>';
-			                echo '</div>';
-
-			              } else {
-
-			                echo do_shortcode('[dm_login_form]'); 
-
-			              }
-			            ?>
-			           </div>
-				  		</div>
-				  	</div>
-			  	<?php } ?>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar X</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<!-- END Modal PUNTOS DE VISTA-->    
+    </section>      
 
 <?php get_footer(); ?>    

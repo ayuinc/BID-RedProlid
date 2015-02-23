@@ -96,8 +96,8 @@ function login_header( $title = 'Log In', $message = '', $wp_error = '' ) {
 		$login_header_url   = network_home_url();
 		$login_header_title = get_current_site()->site_name;
 	} else {
-		$login_header_url   = __( 'https://wordpress.org/' );
-		$login_header_title = __( 'Powered by WordPress' );
+		$login_header_url   = __( 'https://redprolid.org/' );
+		$login_header_title = __( 'RedPROLID' );
 	}
 
 	/**
@@ -272,11 +272,11 @@ function retrieve_password() {
 	$errors = new WP_Error();
 
 	if ( empty( $_POST['user_login'] ) ) {
-		$errors->add('empty_username', __('<strong>ERROR</strong>: Enter a username or e-mail address.'));
+		$errors->add('empty_username', __('<strong>ERROR</strong>: Introduzca un nombre de usuario o dirección de correo electrónico.'));
 	} else if ( strpos( $_POST['user_login'], '@' ) ) {
 		$user_data = get_user_by( 'email', trim( $_POST['user_login'] ) );
 		if ( empty( $user_data ) )
-			$errors->add('invalid_email', __('<strong>ERROR</strong>: There is no user registered with that email address.'));
+			$errors->add('invalid_email', __('<strong>ERROR</strong>: No hay ningún usuario registrado con esa dirección de correo electrónico.'));
 	} else {
 		$login = trim($_POST['user_login']);
 		$user_data = get_user_by('login', $login);
@@ -293,7 +293,7 @@ function retrieve_password() {
 		return $errors;
 
 	if ( !$user_data ) {
-		$errors->add('invalidcombo', __('<strong>ERROR</strong>: Invalid username or e-mail.'));
+		$errors->add('invalidcombo', __('<strong>ERROR</strong>: Nombre de usuario o e-mail no válido.'));
 		return $errors;
 	}
 
@@ -330,7 +330,7 @@ function retrieve_password() {
 	$allow = apply_filters( 'allow_password_reset', true, $user_data->ID );
 
 	if ( ! $allow )
-		return new WP_Error('no_password_reset', __('Password reset is not allowed for this user'));
+		return new WP_Error('no_password_reset', __('El restablecimiento de contraseña no está permitido para este usuario'));
 	else if ( is_wp_error($allow) )
 		return $allow;
 
@@ -355,11 +355,11 @@ function retrieve_password() {
 	$hashed = $wp_hasher->HashPassword( $key );
 	$wpdb->update( $wpdb->users, array( 'user_activation_key' => $hashed ), array( 'user_login' => $user_login ) );
 
-	$message = __('Someone requested that the password be reset for the following account:') . "\r\n\r\n";
+	$message = __('Un restablecimiento de contraseña se ha solicitado para la siguiente cuenta:') . "\r\n\r\n";
 	$message .= network_home_url( '/' ) . "\r\n\r\n";
 	$message .= sprintf(__('Username: %s'), $user_login) . "\r\n\r\n";
-	$message .= __('If this was a mistake, just ignore this email and nothing will happen.') . "\r\n\r\n";
-	$message .= __('To reset your password, visit the following address:') . "\r\n\r\n";
+	$message .= __('Si esto es un error, simplemente ignora este mensaje y no pasará nada.') . "\r\n\r\n";
+	$message .= __('Para restablecer la contraseña, visita la siguiente dirección:') . "\r\n\r\n";
 	$message .= '<' . network_site_url("wp-login.php?action=rp&key=$key&login=" . rawurlencode($user_login), 'login') . ">\r\n";
 
 	if ( is_multisite() )
@@ -369,7 +369,7 @@ function retrieve_password() {
 		// we want to reverse this for the plain text arena of emails.
 		$blogname = wp_specialchars_decode(get_option('blogname'), ENT_QUOTES);
 
-	$title = sprintf( __('[%s] Password Reset'), $blogname );
+	$title = sprintf( __('[%s] Restablecer contraseña'), $blogname );
 
 	/**
 	 * Filter the subject of the password reset email.
@@ -390,7 +390,7 @@ function retrieve_password() {
 	$message = apply_filters( 'retrieve_password_message', $message, $key );
 
 	if ( $message && !wp_mail( $user_email, wp_specialchars_decode( $title ), $message ) )
-		wp_die( __('The e-mail could not be sent.') . "<br />\n" . __('Possible reason: your host may have disabled the mail() function.') );
+		wp_die( __('El e-mail no se ha podido enviar.') . "<br />\n" . __('Posible motivo: su servicio de hosting puede haber deshabilitado la función mail().') );
 
 	return true;
 }
@@ -495,9 +495,9 @@ case 'retrievepassword' :
 
 	if ( isset( $_GET['error'] ) ) {
 		if ( 'invalidkey' == $_GET['error'] )
-			$errors->add( 'invalidkey', __( 'Sorry, that key does not appear to be valid.' ) );
+			$errors->add( 'invalidkey', __( 'Lo sentimos, esta clave no parece ser válida.' ) );
 		elseif ( 'expiredkey' == $_GET['error'] )
-			$errors->add( 'expiredkey', __( 'Sorry, that key has expired. Please try again.' ) );
+			$errors->add( 'expiredkey', __( 'Lo sentimos, esta clave ha expirado. Por favor, inténtalo de nuevo.' ) );
 	}
 
 	$lostpassword_redirect = ! empty( $_REQUEST['redirect_to'] ) ? $_REQUEST['redirect_to'] : '';
@@ -517,7 +517,7 @@ case 'retrievepassword' :
 	 */
 	do_action( 'lost_password' );
 
-	login_header(__('Lost Password'), '<p class="message">' . __('Please enter your username or email address. You will receive a link to create a new password via email.') . '</p>', $errors);
+	login_header(__('Lost Password'), '<p class="message">' . __('Introduzca su nombre de usuario o su correo electrónico. Recibiras un enlace para crear una nueva contraseña por correo electrónico.') . '</p>', $errors);
 
 	$user_login = isset($_POST['user_login']) ? wp_unslash($_POST['user_login']) : '';
 
@@ -539,11 +539,11 @@ case 'retrievepassword' :
 	<p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_attr_e('Get New Password'); ?>" /></p>
 </form>
 
-<p id="nav">
-<a href="<?php echo esc_url( wp_login_url() ); ?>"><?php _e('Log in') ?></a>
+<!--<p id="nav">-->
+<!--<a href="<?php echo esc_url( wp_login_url() ); ?>"><?php _e('Log in') ?></a>-->
 <?php
-if ( get_option( 'users_can_register' ) ) :
-	$registration_url = sprintf( '<a href="%s">%s</a>', esc_url( wp_registration_url() ), __( 'Register' ) );
+//if ( get_option( 'users_can_register' ) ) :
+	//$registration_url = sprintf( '<a href="%s">%s</a>', esc_url( wp_registration_url() ), __( 'Register' ) );
 	/**
 	 * Filter the registration URL below the login form.
 	 *
@@ -551,10 +551,10 @@ if ( get_option( 'users_can_register' ) ) :
 	 *
 	 * @param string $registration_url Registration URL.
 	 */
-	echo ' | ' . apply_filters( 'register', $registration_url );
-endif;
+	//echo ' | ' . apply_filters( 'register', $registration_url );
+//endif;
 ?>
-</p>
+<!--</p>-->
 
 <?php
 login_footer('user_login');
@@ -590,7 +590,7 @@ case 'rp' :
 	$errors = new WP_Error();
 
 	if ( isset($_POST['pass1']) && $_POST['pass1'] != $_POST['pass2'] )
-		$errors->add( 'password_reset_mismatch', __( 'The passwords do not match.' ) );
+		$errors->add( 'password_reset_mismatch', __( 'Las contraseñas no coinciden.' ) );
 
 	/**
 	 * Fires before the password reset procedure is validated.
@@ -649,11 +649,11 @@ case 'rp' :
 <p id="nav">
 <a href="<?php echo esc_url( wp_login_url() ); ?>"><?php _e( 'Log in' ); ?></a>
 <?php
-if ( get_option( 'users_can_register' ) ) :
-	$registration_url = sprintf( '<a href="%s">%s</a>', esc_url( wp_registration_url() ), __( 'Register' ) );
+//if ( get_option( 'users_can_register' ) ) :
+	//$registration_url = sprintf( '<a href="%s">%s</a>', esc_url( wp_registration_url() ), __( 'Register' ) );
 	/** This filter is documented in wp-login.php */
-	echo ' | ' . apply_filters( 'register', $registration_url );
-endif;
+	//echo ' | ' . apply_filters( 'register', $registration_url );
+//endif;
 ?>
 </p>
 

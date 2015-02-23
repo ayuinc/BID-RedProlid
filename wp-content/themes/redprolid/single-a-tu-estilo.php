@@ -4,25 +4,27 @@
     <div class="clearfix sub-header">
       <div class="col-sm-12 col-xs-12 with-hr pv-0 mv-0">
         <nav class="text-right text-center-xs">
-          <a href="<?php echo home_url('/'); ?>eventos-anteriores">A tu estilo &gt;&gt;</a>
+          <a href="<?php echo home_url('/'); ?>a-tu-estilo">A tu estilo &gt;&gt;</a>
         </nav>          
       </div>
     </div>
     <div class="clearfix ph-70">
-    	<div class="col-sm-6">
+    	<div class="col-sm-12">
     		<small class="text-gray">Tiendas</small>
-    		<h1>Naf Naf</h1>
+    		<h1><?php the_title();?></h1>
     		<ul class="list-unstyled pv-21">
-    			<li>Calle 77 A #12-26</li>
-    			<li>Bogotá - Colombia</li>
-    			<li>Sitio web: <a href="#">nafnaf.com</a></li>
-    			<li class="text-primary">Fuente: Trip Advisor</li>
+    			<li><?php the_field('direccion_lugar_estilo') ?></li>
+    			<li><?php the_field('ciudad_pais_estilo');?></li>
+    			<li>Sitio web: <a href="<?php the_field('sitio_web_estilo'); ?>"><?php the_field('sitio_web_estilo'); ?></a></li>
+    			<li class="text-primary">Fuente: <?php the_field('fuente_estilo'); ?></li>
     		</ul>
-    		<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/img.png" alt="" class="img-responsive">
     	</div>
     	<div class="col-sm-6">
-    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed distinctio sapiente qui, hic quidem maxime libero debitis eius. Dolorum dolor quae porro, enim, quis maxime repellat incidunt sed illum ab.</p>
-    	</div>
+    		<img src="<?php the_field('foto_restaurante_estilo'); ?>" alt="" class="img-responsive">
+    	</div>     	
+    	<div class="col-sm-6">
+    		<p><?php the_field('descripcion_larga_estilo'); ?></p>
+    	</div>   	
     </div>
     <hr>
     <div class="ph-70">

@@ -37,7 +37,14 @@ get_header(); ?>
                 <div class="row">
                   <div class="col-sm-7 minh-350 flex-middle">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" width="100%" height="370" src="//www.youtube.com/embed/<?php the_field('id_video_homepage'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	                    <?php $youtube = get_field('id_video_youtube_homepage'); ?>
+	                    <?php if ($youtube!='') { ?>
+                      	<iframe class="embed-responsive-item" width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video_youtube_homepage'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                      <?php } ?>
+	                    <?php $vimeo = get_field('id_video_vimeo_homepage'); ?>
+	                    <?php if ($vimeo!='') { ?>
+                      	<iframe src="//player.vimeo.com/video/<?php the_field('id_video_vimeo_homepage'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      <?php } ?>                      
                     </div>
                   </div>
                   <div class="col-sm-5 minh-350 flex-middle-end">
@@ -62,7 +69,7 @@ get_header(); ?>
               <span class="icon-next"></span>
             </a>
           </div>
-          <h2 class="text-center mt-21 mb-0"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
+          <h2 class="text-center pt-21"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
         </div>
       </section>
       <section class="dtl-home pv-14">
@@ -71,8 +78,10 @@ get_header(); ?>
             <h2>Desarrolla tu liderazgo</h2>
             <p>Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
           </div>
+          <div class="pb-14">
           <!-- DTL CAROUSEL -->
           <?php get_template_part( 'include', 'dtl-carousel' ); ?>
+          </div>
         </div>
       </section>
       <section class="widgets pv-14">
@@ -146,7 +155,7 @@ get_header(); ?>
                       <div class="month mt-7 ml-7"><?php echo date_i18n('M', strtotime( $tempDate)); ?></div>
                     </div>
                     <h5><?php the_title(); ?></h5>
-                    <p class="event-des light"><?php the_field('descripcion_evento'); ?></p>
+                    <!--<p class="event-des light"><?php the_field('descripcion_evento'); ?></p>-->
                     <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Ve más</a>
                   <?php endwhile; ?>
                 </div>
@@ -222,15 +231,26 @@ get_header(); ?>
 								<?php while ( have_posts() ) : the_post(); ?>                   
                   <div class="panel-body pt-0 pb-0 pl-14 pr-14">
 	                  <div class="col-sm-5 pl-0">
-                    <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
-                    <small><?php the_field('fuente_imagen_campeonas'); ?></small>
-                  </div>
-	                  <div class="col-sm-7">
+			                <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
+			                <?php if ($imagen_campeona!='') { ?>
+	                    <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
+	                    <?php } ?>
+			                <?php $video = get_field('video_campeonas'); ?>
+			                <?php if ($video!='') { ?>
+	                    <iframe class="embed-responsive-item" width="100%" height="209" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	                    <?php } ?>
+											<small><?php the_field('fuente_imagen_campeonas'); ?></small>
+                  	</div>
+	                  <div class="col-sm-7 pr-0">
                     <h3 class="pt-0 medium mb-0 pb-0"><?php the_title(); ?></h3>
                     <small><?php $tempDate = get_field(fecha_de_la_entrevista); ?>
             <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
-                    <h5 class="medium mt-0"><?php the_field('posicion_campeona'); ?></h5>
-                    <p class="light"><?php the_field('descripcion_home_campeonas'); ?></p>
+                    <p class="light-italic">
+							        <em><?php the_field('posicion_campeona'); ?></em>
+                    </p>
+                    <p>
+							        <strong><?php the_field('descripcion_home_campeonas'); ?></strong>
+				            </p>
                     <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Entrevista completa</a>
                   </div> 
                   </div>
