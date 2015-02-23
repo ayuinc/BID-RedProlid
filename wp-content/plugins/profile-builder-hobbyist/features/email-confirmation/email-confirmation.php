@@ -347,7 +347,7 @@ function wppb_signup_user_notification( $user, $user_email, $activation_key, $me
 	}
 	
 	$subject = sprintf( apply_filters( 'wppb_signup_user_notification_email_subject', __( '[%1$s] Activate %2$s', 'profilebuilder'), $user_email, $user, $activation_key, $registration_page_url, $meta, $from_name, 'wppb_user_emailc_registr_w_email_confirm_email_subject' ), $from_name, $user );
-	$message = sprintf( apply_filters( 'wppb_signup_user_notification_email_content', __( "Para activar tu usuario, por favor sigue el siguiente enlace:\n\n %s \n\nDespués de activarlo*, recibirás otro correo electrónico con tu nombre de usuario.\n\n", "profilebuilder" ), $user_email, $user, $activation_key, $registration_page_url, $meta, $from_name, 'wppb_user_emailc_registr_w_email_confirm_email_content' ), '<a href="'.$registration_page_url.'">', $registration_page_url, '</a>.' );
+	$message = sprintf( apply_filters( 'wppb_signup_user_notification_email_content', __( "Ppara activar tu usuario, por favor sigue el siguiente enlace:\n\n %s \n\nDespués de activarlo*, recibirás otro correo electrónico con tu nombre de usuario.\n\n", "profilebuilder" ), $user_email, $user, $activation_key, $registration_page_url, $meta, $from_name, 'wppb_user_emailc_registr_w_email_confirm_email_content' ), '<a href="'.$registration_page_url.'">', $registration_page_url, '</a>.' );
 	
 	wppb_mail( $user_email, $subject, $message, $from_name, '', $user, '', $user_email, 'register_w_email_confirmation', $registration_page_url, $meta );
 	
@@ -481,7 +481,7 @@ function wppb_notify_user_registration_email( $bloginfo, $user_name, $email, $se
 		$user_message_subject = sprintf( __( '[%1$s] Your new account information', 'profilebuilder' ), $user_message_from, $user_name, $password );
 		$user_message_subject = apply_filters( 'wppb_register_user_email_subject_without_admin_approval', $user_message_subject, $email, $password, $user_message_subject, 'wppb_user_emailc_default_registration_email_subject' );
 		
-		$user_message_content = sprintf( __( 'Bienvenido a %1$s!<br/><br/><br/>Tu nombre de ususario es:%2$s y to contraseña:%3$s', 'profilebuilder' ), $user_message_from, $user_name, $password );
+		$user_message_content = sprintf( __( 'Bienvenido a %1$s!<br/><br/><br/>Tu nombre de ususario es:%2$s y tu contraseña:%3$s', 'profilebuilder' ), $user_message_from, $user_name, $password );
 		
 		if ( $adminApproval == 'yes' ){
 			$user_message_subject = apply_filters( 'wppb_register_user_email_subject_with_admin_approval', $user_message_subject, $email, $password, $user_message_subject, 'wppb_user_emailc_registration_with_admin_approval_email_subject' );
