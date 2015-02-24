@@ -103,7 +103,6 @@ get_header(); ?>
 	  	<div class="banner half-height">
 	  		<div class="banner-pic col-sm-2 bg-panel text-center lead-ch normalize-text">
 	  			<?php $tempDate = get_field('fecha_inicio_evento'); ?>
-	  			<?php the_field('fecha_inicio_evento'); ?>
 	  			<h3 class="h1"><?php echo date_i18n('j', strtotime( $tempDate)); ?></h3>
 			    <p><?php echo date_i18n('M', strtotime( $tempDate)); ?></p>
 	  		</div>
