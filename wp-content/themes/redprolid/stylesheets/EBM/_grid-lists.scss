@@ -20,7 +20,7 @@ $grid-list-item-height: 350px;
 		&.grid-list-#{$i} {
 			.grid-list-item,
 			.gallery-cell {
-				width: percentage($i/$grid-columns) - 0.30;
+				width: percentage(1/$i) - 0.30;
 			}
 		}
 	}
@@ -30,7 +30,7 @@ $grid-list-item-height: 350px;
 				&.grid-list-#{$i}-#{nth($breakpoints-sufix-list, $k)} {
 					.grid-list-item,
 					.gallery-cell {
-						$mobile-width: percentage($i/$grid-columns);
+						$mobile-width: percentage(1/$i);
 						width: $mobile-width;
 					}
 				}
@@ -54,6 +54,11 @@ $grid-list-item-height: 350px;
 			a {
 				display: block;
 			}
+		}
+	}
+	&.grid-list-full-width {
+		.grid-list-item {
+			width: 100%;
 		}
 	}
 }

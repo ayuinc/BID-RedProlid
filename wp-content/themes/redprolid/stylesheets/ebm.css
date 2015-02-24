@@ -15329,232 +15329,232 @@ a.bg-hover-linkedin:hover,
     min-height: 350px; }
   .grid-list.grid-list-1 .grid-list-item,
   .grid-list.grid-list-1 .gallery-cell {
-    width: 8.03333%; }
+    width: 99.7%; }
   .grid-list.grid-list-2 .grid-list-item,
   .grid-list.grid-list-2 .gallery-cell {
-    width: 16.36667%; }
+    width: 49.7%; }
   .grid-list.grid-list-3 .grid-list-item,
   .grid-list.grid-list-3 .gallery-cell {
-    width: 24.7%; }
+    width: 33.03333%; }
   .grid-list.grid-list-4 .grid-list-item,
   .grid-list.grid-list-4 .gallery-cell {
-    width: 33.03333%; }
+    width: 24.7%; }
   .grid-list.grid-list-5 .grid-list-item,
   .grid-list.grid-list-5 .gallery-cell {
-    width: 41.36667%; }
+    width: 19.7%; }
   .grid-list.grid-list-6 .grid-list-item,
   .grid-list.grid-list-6 .gallery-cell {
-    width: 49.7%; }
+    width: 16.36667%; }
   .grid-list.grid-list-7 .grid-list-item,
   .grid-list.grid-list-7 .gallery-cell {
-    width: 58.03333%; }
+    width: 13.98571%; }
   .grid-list.grid-list-8 .grid-list-item,
   .grid-list.grid-list-8 .gallery-cell {
-    width: 66.36667%; }
+    width: 12.2%; }
   .grid-list.grid-list-9 .grid-list-item,
   .grid-list.grid-list-9 .gallery-cell {
-    width: 74.7%; }
+    width: 10.81111%; }
   .grid-list.grid-list-10 .grid-list-item,
   .grid-list.grid-list-10 .gallery-cell {
-    width: 83.03333%; }
+    width: 9.7%; }
   .grid-list.grid-list-11 .grid-list-item,
   .grid-list.grid-list-11 .gallery-cell {
-    width: 91.36667%; }
+    width: 8.79091%; }
   .grid-list.grid-list-12 .grid-list-item,
   .grid-list.grid-list-12 .gallery-cell {
-    width: 99.7%; }
+    width: 8.03333%; }
   @media only screen and (max-width: 480px) {
     .grid-list.grid-list-1-xs .grid-list-item,
     .grid-list.grid-list-1-xs .gallery-cell {
-      width: 8.33333%; } }
+      width: 100%; } }
   @media only screen and (min-width: 768px) {
     .grid-list.grid-list-1-sm .grid-list-item,
     .grid-list.grid-list-1-sm .gallery-cell {
-      width: 8.33333%; } }
+      width: 100%; } }
   @media only screen and (min-width: 992px) {
     .grid-list.grid-list-1-md .grid-list-item,
     .grid-list.grid-list-1-md .gallery-cell {
-      width: 8.33333%; } }
+      width: 100%; } }
   @media only screen and (min-width: 1200px) {
     .grid-list.grid-list-1-lg .grid-list-item,
     .grid-list.grid-list-1-lg .gallery-cell {
-      width: 8.33333%; } }
+      width: 100%; } }
   @media only screen and (max-width: 480px) {
     .grid-list.grid-list-2-xs .grid-list-item,
     .grid-list.grid-list-2-xs .gallery-cell {
-      width: 16.66667%; } }
+      width: 50%; } }
   @media only screen and (min-width: 768px) {
     .grid-list.grid-list-2-sm .grid-list-item,
     .grid-list.grid-list-2-sm .gallery-cell {
-      width: 16.66667%; } }
+      width: 50%; } }
   @media only screen and (min-width: 992px) {
     .grid-list.grid-list-2-md .grid-list-item,
     .grid-list.grid-list-2-md .gallery-cell {
-      width: 16.66667%; } }
+      width: 50%; } }
   @media only screen and (min-width: 1200px) {
     .grid-list.grid-list-2-lg .grid-list-item,
     .grid-list.grid-list-2-lg .gallery-cell {
-      width: 16.66667%; } }
+      width: 50%; } }
   @media only screen and (max-width: 480px) {
     .grid-list.grid-list-3-xs .grid-list-item,
     .grid-list.grid-list-3-xs .gallery-cell {
-      width: 25%; } }
+      width: 33.33333%; } }
   @media only screen and (min-width: 768px) {
     .grid-list.grid-list-3-sm .grid-list-item,
     .grid-list.grid-list-3-sm .gallery-cell {
-      width: 25%; } }
+      width: 33.33333%; } }
   @media only screen and (min-width: 992px) {
     .grid-list.grid-list-3-md .grid-list-item,
     .grid-list.grid-list-3-md .gallery-cell {
-      width: 25%; } }
+      width: 33.33333%; } }
   @media only screen and (min-width: 1200px) {
     .grid-list.grid-list-3-lg .grid-list-item,
     .grid-list.grid-list-3-lg .gallery-cell {
-      width: 25%; } }
+      width: 33.33333%; } }
   @media only screen and (max-width: 480px) {
     .grid-list.grid-list-4-xs .grid-list-item,
     .grid-list.grid-list-4-xs .gallery-cell {
-      width: 33.33333%; } }
+      width: 25%; } }
   @media only screen and (min-width: 768px) {
     .grid-list.grid-list-4-sm .grid-list-item,
     .grid-list.grid-list-4-sm .gallery-cell {
-      width: 33.33333%; } }
+      width: 25%; } }
   @media only screen and (min-width: 992px) {
     .grid-list.grid-list-4-md .grid-list-item,
     .grid-list.grid-list-4-md .gallery-cell {
-      width: 33.33333%; } }
+      width: 25%; } }
   @media only screen and (min-width: 1200px) {
     .grid-list.grid-list-4-lg .grid-list-item,
     .grid-list.grid-list-4-lg .gallery-cell {
-      width: 33.33333%; } }
+      width: 25%; } }
   @media only screen and (max-width: 480px) {
     .grid-list.grid-list-5-xs .grid-list-item,
     .grid-list.grid-list-5-xs .gallery-cell {
-      width: 41.66667%; } }
+      width: 20%; } }
   @media only screen and (min-width: 768px) {
     .grid-list.grid-list-5-sm .grid-list-item,
     .grid-list.grid-list-5-sm .gallery-cell {
-      width: 41.66667%; } }
+      width: 20%; } }
   @media only screen and (min-width: 992px) {
     .grid-list.grid-list-5-md .grid-list-item,
     .grid-list.grid-list-5-md .gallery-cell {
-      width: 41.66667%; } }
+      width: 20%; } }
   @media only screen and (min-width: 1200px) {
     .grid-list.grid-list-5-lg .grid-list-item,
     .grid-list.grid-list-5-lg .gallery-cell {
-      width: 41.66667%; } }
+      width: 20%; } }
   @media only screen and (max-width: 480px) {
     .grid-list.grid-list-6-xs .grid-list-item,
     .grid-list.grid-list-6-xs .gallery-cell {
-      width: 50%; } }
+      width: 16.66667%; } }
   @media only screen and (min-width: 768px) {
     .grid-list.grid-list-6-sm .grid-list-item,
     .grid-list.grid-list-6-sm .gallery-cell {
-      width: 50%; } }
+      width: 16.66667%; } }
   @media only screen and (min-width: 992px) {
     .grid-list.grid-list-6-md .grid-list-item,
     .grid-list.grid-list-6-md .gallery-cell {
-      width: 50%; } }
+      width: 16.66667%; } }
   @media only screen and (min-width: 1200px) {
     .grid-list.grid-list-6-lg .grid-list-item,
     .grid-list.grid-list-6-lg .gallery-cell {
-      width: 50%; } }
+      width: 16.66667%; } }
   @media only screen and (max-width: 480px) {
     .grid-list.grid-list-7-xs .grid-list-item,
     .grid-list.grid-list-7-xs .gallery-cell {
-      width: 58.33333%; } }
+      width: 14.28571%; } }
   @media only screen and (min-width: 768px) {
     .grid-list.grid-list-7-sm .grid-list-item,
     .grid-list.grid-list-7-sm .gallery-cell {
-      width: 58.33333%; } }
+      width: 14.28571%; } }
   @media only screen and (min-width: 992px) {
     .grid-list.grid-list-7-md .grid-list-item,
     .grid-list.grid-list-7-md .gallery-cell {
-      width: 58.33333%; } }
+      width: 14.28571%; } }
   @media only screen and (min-width: 1200px) {
     .grid-list.grid-list-7-lg .grid-list-item,
     .grid-list.grid-list-7-lg .gallery-cell {
-      width: 58.33333%; } }
+      width: 14.28571%; } }
   @media only screen and (max-width: 480px) {
     .grid-list.grid-list-8-xs .grid-list-item,
     .grid-list.grid-list-8-xs .gallery-cell {
-      width: 66.66667%; } }
+      width: 12.5%; } }
   @media only screen and (min-width: 768px) {
     .grid-list.grid-list-8-sm .grid-list-item,
     .grid-list.grid-list-8-sm .gallery-cell {
-      width: 66.66667%; } }
+      width: 12.5%; } }
   @media only screen and (min-width: 992px) {
     .grid-list.grid-list-8-md .grid-list-item,
     .grid-list.grid-list-8-md .gallery-cell {
-      width: 66.66667%; } }
+      width: 12.5%; } }
   @media only screen and (min-width: 1200px) {
     .grid-list.grid-list-8-lg .grid-list-item,
     .grid-list.grid-list-8-lg .gallery-cell {
-      width: 66.66667%; } }
+      width: 12.5%; } }
   @media only screen and (max-width: 480px) {
     .grid-list.grid-list-9-xs .grid-list-item,
     .grid-list.grid-list-9-xs .gallery-cell {
-      width: 75%; } }
+      width: 11.11111%; } }
   @media only screen and (min-width: 768px) {
     .grid-list.grid-list-9-sm .grid-list-item,
     .grid-list.grid-list-9-sm .gallery-cell {
-      width: 75%; } }
+      width: 11.11111%; } }
   @media only screen and (min-width: 992px) {
     .grid-list.grid-list-9-md .grid-list-item,
     .grid-list.grid-list-9-md .gallery-cell {
-      width: 75%; } }
+      width: 11.11111%; } }
   @media only screen and (min-width: 1200px) {
     .grid-list.grid-list-9-lg .grid-list-item,
     .grid-list.grid-list-9-lg .gallery-cell {
-      width: 75%; } }
+      width: 11.11111%; } }
   @media only screen and (max-width: 480px) {
     .grid-list.grid-list-10-xs .grid-list-item,
     .grid-list.grid-list-10-xs .gallery-cell {
-      width: 83.33333%; } }
+      width: 10%; } }
   @media only screen and (min-width: 768px) {
     .grid-list.grid-list-10-sm .grid-list-item,
     .grid-list.grid-list-10-sm .gallery-cell {
-      width: 83.33333%; } }
+      width: 10%; } }
   @media only screen and (min-width: 992px) {
     .grid-list.grid-list-10-md .grid-list-item,
     .grid-list.grid-list-10-md .gallery-cell {
-      width: 83.33333%; } }
+      width: 10%; } }
   @media only screen and (min-width: 1200px) {
     .grid-list.grid-list-10-lg .grid-list-item,
     .grid-list.grid-list-10-lg .gallery-cell {
-      width: 83.33333%; } }
+      width: 10%; } }
   @media only screen and (max-width: 480px) {
     .grid-list.grid-list-11-xs .grid-list-item,
     .grid-list.grid-list-11-xs .gallery-cell {
-      width: 91.66667%; } }
+      width: 9.09091%; } }
   @media only screen and (min-width: 768px) {
     .grid-list.grid-list-11-sm .grid-list-item,
     .grid-list.grid-list-11-sm .gallery-cell {
-      width: 91.66667%; } }
+      width: 9.09091%; } }
   @media only screen and (min-width: 992px) {
     .grid-list.grid-list-11-md .grid-list-item,
     .grid-list.grid-list-11-md .gallery-cell {
-      width: 91.66667%; } }
+      width: 9.09091%; } }
   @media only screen and (min-width: 1200px) {
     .grid-list.grid-list-11-lg .grid-list-item,
     .grid-list.grid-list-11-lg .gallery-cell {
-      width: 91.66667%; } }
+      width: 9.09091%; } }
   @media only screen and (max-width: 480px) {
     .grid-list.grid-list-12-xs .grid-list-item,
     .grid-list.grid-list-12-xs .gallery-cell {
-      width: 100%; } }
+      width: 8.33333%; } }
   @media only screen and (min-width: 768px) {
     .grid-list.grid-list-12-sm .grid-list-item,
     .grid-list.grid-list-12-sm .gallery-cell {
-      width: 100%; } }
+      width: 8.33333%; } }
   @media only screen and (min-width: 992px) {
     .grid-list.grid-list-12-md .grid-list-item,
     .grid-list.grid-list-12-md .gallery-cell {
-      width: 100%; } }
+      width: 8.33333%; } }
   @media only screen and (min-width: 1200px) {
     .grid-list.grid-list-12-lg .grid-list-item,
     .grid-list.grid-list-12-lg .gallery-cell {
-      width: 100%; } }
+      width: 8.33333%; } }
   .grid-list.grid-list-centered {
     text-align: center; }
     .grid-list.grid-list-centered .grid-list-item {
@@ -15564,6 +15564,8 @@ a.bg-hover-linkedin:hover,
     float: right; }
   .grid-list.grid-list-anchors .grid-list-item a {
     display: block; }
+  .grid-list.grid-list-full-width .grid-list-item {
+    width: 100%; }
 
 .separator-primary {
   border-top: 2px solid #ed7133 !important;
