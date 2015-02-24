@@ -123,51 +123,31 @@ get_header(); ?>
               </div>
             </div>            
             <div class="panel-body pt-0">
-	            <div class="row">
-		            <div class="col-md-12">
-		              <div id="carousel-enterate" class="carousel slide" data-ride="carousel">
-		                <!-- Wrapper for slides -->
-		                <div class="carousel-inner pl-35 pr-35">
-		                  <ul class="grid-list grid-list-3 item active pl-7">	
-												<!-- Start the Loop. -->
-												<?php if ( have_posts() ) : ?>
-		                      <?php //query_posts( array( 'category_name' => 'ultimas-noticias', 'posts_per_page' => 3 ) ); ?>
-		                      <?php query_posts( 'category_name=noticias&posts_per_page=3'); ?> 
-		                      
-													<?php while ( have_posts() ) : the_post(); ?>
-						                  <li class="pl-14 pr-14">
-					                      <div class="p-14 bg-white">
-						                      <?php $imagen = get_field('imagen_noticias'); ?>
-					                      	<?php if( $imagen !='' ) { ?>
-						                        <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
-																	<?php } else {?>
-					                        	<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia-placeholder.png" alt="" class="img-responsive">
-																	<?php } ?>
-					                        <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0 pb-0"><?php the_title(); ?></h3></a>
-							                    <?php $publicacion = get_field('publicacion_noticias'); ?>
-							                    <small>
-							                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
-																		<?php } ?>
-																	</small>
-					                        <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
-					                        <small class="vermas"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
-					                      </div>
-					                    </li>
-							            <?php endwhile; ?>
-												<?php endif; ?>	
-		                  </ul>
-		                </div>
-		
-		                <!-- Controls -->
-		                <a class="left carousel-control" href="#carousel-enterate" role="button" data-slide="prev">
-		                  <span class="icon-prev"></span>
-		                </a>
-		                <a class="right carousel-control" href="#carousel-enterate" role="button" data-slide="next">
-		                  <span class="icon-next"></span>
-		                </a>
-		              </div> <!-- END:CAROUSEL -->			            
-		            </div>
-	            </div>
+              <div class="gallery js-flickity grid-list grid-list-full-width grid-list-1-xs" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": false }'>
+                <?php if ( have_posts() ) : ?>
+                  <?php query_posts( 'category_name=noticias&posts_per_page=3'); ?> 
+                  <?php while ( have_posts() ) : the_post(); ?>
+                    <div class="gallery-cell grid-list-item">
+                      <div class="p-14 bg-white">
+                        <?php $imagen = get_field('imagen_noticias'); ?>
+                        <?php if( $imagen !='' ) { ?>
+                          <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
+                        <?php } else {?>
+                          <img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia-placeholder.png" alt="" class="img-responsive">
+                        <?php } ?>
+                        <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0 pb-0"><?php the_title(); ?></h3></a>
+                        <?php $publicacion = get_field('publicacion_noticias'); ?>
+                        <small>
+                          <?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+                          <?php } ?>
+                        </small>
+                        <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
+                        <small class="vermas"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
+                      </div>
+                    </div>
+                  <?php endwhile; ?>
+                <?php endif; ?> 
+              </div>
             </div>
           </div>
         </div>
