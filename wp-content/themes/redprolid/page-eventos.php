@@ -98,8 +98,7 @@ get_header(); ?>
 			<h2>Otros eventos</h2>
 			<hr>
     	<!-- Start the Loop. -->
-    	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-    	<?php query_posts( 'cat=11&posts_per_page=4&offset=3&paged=' . $paged ); ?>
+    	<?php query_posts( 'cat=11&posts_per_page=4&offset=3'); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 	  	<div class="banner half-height">
 	  		<div class="banner-pic col-sm-2 bg-panel text-center lead-ch normalize-text">
@@ -136,12 +135,6 @@ get_header(); ?>
 	  		</div>
 	  	</div>
       <?php endwhile; ?> 
-      <div class="text-center">
-        <ul class="pager">
-          <li><?php next_posts_link( 'Anteriores' ); ?></li>
-          <li><?php previous_posts_link( 'Posteriores' ); ?></li>
-        </ul>
-      </div> 
 	  </div>
 	</section>
 	
