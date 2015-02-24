@@ -264,7 +264,7 @@ get_header(); ?>
           <div class="row">
             <div class="col-md-3 comentarios">
               <div class="panel-heading">
-                <h3 class="title text-gray-darker">Comentarios recientes</h3>
+                <h3 class="title text-gray-darker pt-14">Comentarios recientes</h3>
               </div>
               <div class="panel-body">
                   <ul class="list-unstyled list-group list-group-custom">
