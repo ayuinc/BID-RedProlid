@@ -4923,6 +4923,12 @@ ul.table-list {
 .modal-body {
   padding: 0 28px; }
 
+@media only screen and (min-width: 768px) {
+  .flickity-prev-next-button.previous {
+    left: -7%; }
+  .flickity-prev-next-button.next {
+    right: -7%; } }
+
 footer {
   background: #232323;
   margin-top: 35px;

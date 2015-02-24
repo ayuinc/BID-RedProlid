@@ -34,7 +34,7 @@ get_header(); ?>
 	<section class="bg-panel pv-28">
 	  <div class="container ph-70-md">
 	  	<h2>Últimos eventos</h2>
-	  	<div class="gallery js-flickity grid-list grid-list-12 grid-list-1-xs" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
+	  	<div class="gallery js-flickity grid-list grid-list-12 grid-list-1-xs" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": false }'>
 				<?php if ( have_posts() ) : ?>
         	<?php query_posts( 'category_name=eventos&posts_per_page=3&order=DESC' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
