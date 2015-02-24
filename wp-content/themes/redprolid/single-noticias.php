@@ -17,7 +17,7 @@
           <small>
           	<?php $tempDate_noticias = get_the_date(); ?>
             <?php echo date_i18n('j', strtotime( $tempDate_noticias)); ?> de <?php echo date_i18n('F', strtotime( $tempDate_noticias)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate_noticias)); ?>, <?php if ($publicacion!='') { ?><a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
-            <?php echo get_the_date(); ?>
+            <?php echo get_the_date('j F, Y'); ?>
   					<?php } ?>
   				</small>        
           <h4 class="mt-14 light lh-lg"><?php the_field('descripcion_rapida_noticias'); ?></h4>
