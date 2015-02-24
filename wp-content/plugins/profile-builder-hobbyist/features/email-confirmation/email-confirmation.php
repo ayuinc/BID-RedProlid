@@ -351,9 +351,8 @@ function wppb_signup_user_notification( $user, $user_email, $activation_key, $me
 		apply_filters( 
 			'wppb_signup_user_notification_email_content', 
 			__("Hola, \nPara activar tu cuenta de usuaria o usuario, por favor haz clic en el siguiente\n\n 
-				%s enlace: "),
-			__("\n\nInmediatamente después de hacerlo recibirás un nuevo correo electrónico con tu nombre de usuaria o usuario. \n\nSi tienes algún problema por favor escríbenos a: comunicate@redprolid.org \n\nMuchas gracias, \n\nEquipo de Red PROLID.\n\n", 
-				"profilebuilder"),	 
+				%s enlace: \n\nInmediatamente después de hacerlo recibirás un nuevo correo electrónico con tu nombre de usuaria o usuario. \n\nSi tienes algún problema por favor escríbenos a: comunicate@redprolid.org \n\nMuchas gracias, \n\nEquipo de Red PROLID.\n\n", 
+				"profilebuilder" ), 
 			$user_email, 
 			$user, 
 			$activation_key, 
