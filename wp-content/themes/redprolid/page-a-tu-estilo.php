@@ -46,11 +46,11 @@ get_header(); ?>
 		<div class="container">
 			<h3>Dónde puedo comer y comprar</h3>
 			<p>Te ofrecemos, ordenadas por ciudades, sugerencias de restaurantes y tiendas concretas de las principales ciudades de Latinoamérica para que, en tus viajes de trabajo o cuando asistas a foros y congresos, puedas tener mejores alternativas que la cafetería del hotel o el Mall al frente. En definitiva, donde poder darte un gusto.</p>
+			<form action="/a-tu-estilo/a-tu-estilo-resultados-de-busqueda/" method="post">
 			<div class="row">
 				<div class="col-sm-4">
-					<form action="">
 						<div class="form-group">
-							<select name="" id="" class="select-override form-control">
+							<select name="lugar" id="" class="select-override form-control">
 								<option value="argentina-buenos-aires">Argentina, Buenos Aires</option>
 								<option value="argentina-cordova">Argentina, Córdova</option>
 								<option value="bolivia-la-paz">Bolivia, La Paz</option>
@@ -92,30 +92,31 @@ get_header(); ?>
 								<option value="venezuela-valencia">Venezuela, Valencia</option>
 							</select>
 						</div>
-					</form>
 				</div>
 				<div class="col-sm-8 bg-secondary p-0-sm">
 					<nav class="custom-nav">
-						<a href="#">Restaurantes</a>
-						<a href="#">Tiendas</a>
+						<input type="radio" name="tipo_lugar" value="restaurantes"> Restaurantes
+						<input type="radio" name="tipo_lugar" value="tiendas"> Tiendas
+						<button type="submit">Buscar</button>
 					</nav>
 				</div>
 			</div>
+			</form>
 			<div class="row">
 				<!-- Start the Loop. -->
 				<?php if ( have_posts() ) : ?>
-          <?php query_posts( 'cat=256&posts_per_page=4' ); ?>
+          <?php query_posts( 'cat=266&posts_per_page=4' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>				            
             <div class="banner col-md-3 banner-label-bottom">
             	<div class="bg-white">
-	            	<div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
+	            	<div class="banner-pic" style="background-image: url(<?php the_field('foto_restaurante_estilo'); ?>)"></div>
 	            	<div class="banner-content flex-none">
 	            		<small>Restaurantes</small>
 		              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-		              <?php $publicacion = get_field('publicacion_noticias'); ?>
-		              <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
-		              <div class="text-right banner-label">
-		              	<a href="#" class="vermas medium">Ver más &gt;&gt;</a>
+		              <p class="mt-14"><?php the_field('descripcion_estilo');?></p>
+		              <small><?php the_field('direccion_lugar_estilo') ?><br><?php the_field('ciudad_pais_estilo');?></small>
+		              <div class="text-right banner-label mb-7">
+		              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ver más &gt;&gt;</a></small>
 		              </div>
 	            	</div>
             	</div>
@@ -123,12 +124,6 @@ get_header(); ?>
           <?php endwhile; ?>
 				<?php endif; ?>				            				            
       </div>
-      <nav>
-			  <ul class="pager">
-			    <li><a href="#">Anteriores</a></li>
-			    <li><a href="#">Siguiente</a></li>
-			  </ul>
-			</nav>
 		</div>
 	</section>
 
@@ -141,7 +136,12 @@ get_header(); ?>
 				</div>
 			</div>
 			<hr>
-			<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 12 ); } ?>			
+			<?php if ( is_user_logged_in() ) { ?>
+				<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 12 ); } ?>	
+			<?php } else { ?>
+				<h4 class="medium text-center">Para hacer una recomendación es necesario <a href="<?php echo home_url('/'); ?>registrate/">ingresar a tu cuenta o registrarte</a> a Red PROLID.</h4>
+			<?php } ?>			
+					
 			<!--<form action="">
 				<div class="row">
 					<div class="col-sm-4">

@@ -6,7 +6,7 @@
   	    <?php if( get_field('imagen_noticias') ) { ?>
         <div class="col-sm-4">
           <img src="<?php the_field('imagen_noticias'); ?>" alt="<?php the_field('fuente_imagen_noticias'); ?>" class="img-responsive">
-          <small>Fuente: <?php the_field('fuente_imagen_noticias'); ?></small>
+          <small><?php the_field('fuente_imagen_noticias'); ?></small>
         </div>
         <div class="col-sm-7">
   	    <?php } else {?>
@@ -15,8 +15,8 @@
           <h2 class="medium mb-0"><?php the_title(); ?></h2>
           <?php $publicacion = get_field('publicacion_noticias'); ?>
           <small>
-          	<?php $tempDate = get_the_date(); ?>
-            <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?>, <?php if ($publicacion!='') { ?><a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+          	<?php echo get_the_date('j F, Y'); ?>, <?php if ($publicacion!='') { ?><a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+            
   					<?php } ?>
   				</small>        
           <h4 class="mt-14 light lh-lg"><?php the_field('descripcion_rapida_noticias'); ?></h4>
@@ -35,7 +35,7 @@
 					<p>
 						<?php $pais_noticias = get_field('pais_noticias'); ?>
 						<?php if ($pais_noticias!='') { ?>						
-						<span class="medium">País:</span> <?php echo $pais_noticias; ?><br>
+						<span class="medium">País:</span> <?php the_field('pais_noticias'); ?><br>
 						<?php } ?>
 						<?php $tipo_recursos_noticias = get_field('tipo_recursos_noticias'); ?>
 						<?php $tag_tema_noticia = get_field('tag_tema_noticia'); ?>

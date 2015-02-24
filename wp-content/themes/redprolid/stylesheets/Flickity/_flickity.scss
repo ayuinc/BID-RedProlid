@@ -48,8 +48,8 @@
   height: 44px;
   border: none;
   border-radius: 50%;
-  background: white;
-  background: hsla(0, 0%, 100%, 0.75);
+  background: rgba(245, 245, 245, 0.6);
+  background: rgba(245, 245, 245, 1);
   cursor: pointer;
   /* vertically center */
   -webkit-transform: translateY(-50%);
@@ -96,12 +96,12 @@
 }
 
 .flickity-prev-next-button .arrow {
-  fill: #333;
+  fill: #ED7133;
 }
 
 /* color & size if no SVG - IE8 and Android 2.3 */
 .flickity-prev-next-button.no-svg {
-  color: #333;
+  color: #ED7133;
   font-size: 26px;
 }
 
@@ -125,7 +125,7 @@
   width: 10px;
   height: 10px;
   margin: 0 8px;
-  background: #333;
+  background: #ED7133;
   border-radius: 50%;
   filter: alpha(opacity=25); /* IE8 */
   opacity: 0.25;

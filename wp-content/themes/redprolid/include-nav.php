@@ -49,7 +49,7 @@
 				      "><i></i><span>Entérate</span></a>
             <ul class="list-unstyled dropdown-menu">
               <!--<li><a href="<?php echo home_url('/'); ?>poll">Tu opinión importa</a></li>-->
-              <li class="light"><a href="<?php echo home_url('/'); ?>recursos">Recursos</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>publicaciones">Publicaciones</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>noticias">Noticias</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>eventos">Eventos</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>boletin">Nuestro boletín</a></li>
@@ -69,13 +69,13 @@
             <a href="<?php echo home_url('/'); ?>charlacafe/" class="charla-cafe <?php if($segment1=='charlacafe'||$segment1=='webinar-principal'||$segment1=='webinarios-anteriores'){ echo 'active'; } ?>"><i></i><span>Charlacafé</span></a>
             <ul class="list-unstyled dropdown-menu">
               <li>
-              	<a href="<?php echo home_url('/'); ?>foros-proximamente">Foros virtuales →</a>
+              	<a href="<?php echo home_url('/'); ?>foros-proximamente">Foros virtuales <!--→--></a>
                 <!--<ul class="list-unstyled sub-menu">
                   <li  class="light" style="width:250px"><a href="#">¿Quieres ver los foros anteriores?</a></li>
                 </ul>-->              	
               </li>
               <li>
-              	<a href="<?php echo home_url('/'); ?>webinarios-proximamente">Webinarios →</a>
+              	<a href="<?php echo home_url('/'); ?>webinarios-proximamente">Webinarios  <!--→--></a>
                 <!--<ul class="list-unstyled sub-menu">
                   <li  class="light" style="width:250px"><a href="<?php echo home_url('/'); ?>webinarios-anteriores">¿Quieres ver los webinarios anteriores?</a></li>
                 </ul>--> 

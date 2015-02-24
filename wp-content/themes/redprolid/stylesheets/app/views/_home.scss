@@ -155,9 +155,9 @@ div[id^="yop-poll-results-3"] {
 		position: relative;
 		@include border-top-radius($border-radius-base);
 		@include border-bottom-radius($border-radius-base);
-		border: 1px solid darken(white, 3%);
+		/*border: 1px solid darken(white, 3%);*/
 		.bg-img-block {
-			height: 180px;
+			height: 115px;
 			@include border-top-radius($border-radius-base);
 		}
 		.dtl-title {
@@ -168,8 +168,9 @@ div[id^="yop-poll-results-3"] {
 			}
 		}
 		&:hover {
-			@include box-shadow-default;
-			cursor: pointer;
+			/*@include box-shadow-default;
+			cursor: pointer;*/
+			opacity:0.7;
 		}
 	}
 	.dtl-icon {

@@ -22,54 +22,55 @@ get_header(); ?>
       </div>
       <div class="col-sm-7 col-xs-12">
         <nav class="text-right text-center-xs">
-          <a href="#" data-toggle="modal" data-target="#modalVideos">¿Quieres compartir un video?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>video/videos-anteriores">Videos Anteriores</a> 
+          <a href="#" data-toggle="modal" data-target="#modalVideos">¿Quieres compartir un video?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>video/videos-anteriores">Videos anteriores</a> 
         </nav>	          
       </div>
     </div>
-    <?php query_posts( 'cat=259&posts_per_page=10&paged=' . $paged ); ?>
+    <?php query_posts( 'cat=258&posts_per_page=1paged=' . $paged ); ?>
 		<?php while ( have_posts() ) : the_post(); ?> 
     <div class="row">
 			<div class="col-sm-7 relative">
-				<iframe width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+		    <?php $youtube = get_field('video_youtube'); ?>
+	    	<?php if ($youtube!='') { ?>
+	    		<iframe width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
+				<?php } ?>
+		    <?php $vimeo = get_field('video_vimeo'); ?>
+	    	<?php if ($vimeo!='') { ?>				
+					<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<?php } ?>
 				<div class="new-ribbon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/new-ribbon.png)"></div>
 			</div>
 			<div class="col-sm-5">
-				<h2 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h2>
-				<?php $tempDate = get_the_date(); ?>
-				<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
-				<h3 class="mt-7 light"><?php the_field('descripcion_video'); ?></h3>
+				<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h2 class="medium mb-0"><?php the_title(); ?></h2></a>
+				<?php $tempDate = get_field('fecha_publicacion_video'); ?>
+				<small>Publicado por: <?php the_field('organizacion_video'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+				<h3 class="pt-14 light"><?php the_field('descripcion_corta_video'); ?></h3>
 			</div>
     </div>
     <?php endwhile; ?>	
     <div class="panel panel-custom">         
-      <div class="panel-body pt-14">	
-      	<h2>Videos más vistos</h2>
+      <div class="panel-body pt-28">	
+      	<h2>Otros videos</h2>
       	<hr>
 				<div class="row">
-        	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-        	<?php query_posts( 'cat=260&posts_per_page=10&paged=' . $paged ); ?>
+        	<?php query_posts( 'cat=258&posts_per_page=4&offset=1'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>    
 					<div class="col-sm-3">
-						<iframe width="100%" height="150" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-						<h3 class="medium mt-7 mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-						<p class="mb-0"><?php the_field('descripcion_video'); ?></p>
-						<?php $tempDate = get_the_date(); ?>
-						<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+				    <?php $youtube = get_field('video_youtube'); ?>
+			    	<?php if ($youtube!='') { ?>
+			    		<iframe width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
+						<?php } ?>
+				    <?php $vimeo = get_field('video_vimeo'); ?>
+			    	<?php if ($vimeo!='') { ?>				
+							<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<?php } ?>
+						<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0"><?php the_title(); ?></h3></a>
+						<p class="mb-0"><?php the_field('descripcion_corta_video'); ?></p>
+						<?php $tempDate = get_field('fecha_publicacion_video'); ?>
+						<small>Publicado por: <?php the_field('organizacion_video'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
 					</div>																			
           <?php endwhile; ?>
         </div>
-        <div class="row">
-          <div class="col-sm-12"> 
-            <!--Pagination-->
-            <div class="text-center">
-              <ul class="pager">
-                <li><?php next_posts_link( 'Anteriores' ); ?></li>
-                <li><?php previous_posts_link( 'Posteriores' ); ?></li>
-              </ul>
-            </div> 
-            <!--End.Pagination-->	  
-          </div>          
-				</div>
       </div>
     </div>
   </div>

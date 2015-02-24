@@ -63,8 +63,7 @@ get_header(); ?>
 			                    </h3>
 			                    <?php $publicacion = get_field('publicacion_noticias'); ?>
 			                    <small>
-			                    	<?php $tempDate = get_the_date(); ?>
-				                    <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+			                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
 														<?php } ?>
 													</small>
 			                    <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
@@ -100,8 +99,7 @@ get_header(); ?>
 		                    <h5 class="medium mb-0"><?php the_title(); ?></h5>
 		                    <?php $publicacion = get_field('publicacion_noticias'); ?>
 		                    <small>
-		                    	<?php $tempDate = get_the_date(); ?>
-			                    <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+		                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
 													<?php } ?>
 												</small>
 												<p class="mt-14"><?php the_field('descripcion_rapida_noticias'); ?></p>
@@ -144,13 +142,6 @@ get_header(); ?>
   	<?php } ?>
 	    <div class="modal-content bg-panel">
 	      <div class="modal-body">
-	        <!--<div class="clearfix sub-header sub-header-sm mb-0">
-		        <div class="col-sm-1 col-xs-3">
-		          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-topic-icon.png" alt="" width="100%"></div>
-		        </div>
-		        <div class="col-sm-5 col-xs-9"></div>
-		        <div class="col-sm-6 col-xs-12"></div>
-		      </div>-->
 		      <?php if ( is_user_logged_in() ) { ?>
 		      	<h3 class="medium">¿Quieres compartir una noticia?</h3>
 		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>

@@ -27,32 +27,42 @@ get_header(); ?>
           </nav>          
         </div>
       </div>
-			<h3 class="light text-justify mb-14">¿Te resulta difícil estar al día de todos los eventos sobre asuntos de género, políticas públicas, liderazgo y participación de la mujer en política? Aquí tratamos de sistematizar para ti todos esos eventos, incluyendo además los distintos programas de capacitación a los que te puedes presentar. Te ofrecemos también la posibilidad de que tú misma incluyas los eventos que pueden interesarnos y que encuentres que faltan en la sección.</h3>
+			<h3 class="light text-justify pb-28">¿Te resulta difícil estar al día de todos los eventos sobre asuntos de género, políticas públicas, liderazgo y participación de la mujer en política? Aquí tratamos de sistematizar para ti todos esos eventos, incluyendo además los distintos programas de capacitación a los que te puedes presentar. Te ofrecemos también la posibilidad de que tú misma incluyas los eventos que pueden interesarnos y que encuentres que faltan en la sección.</h3>
     </div>
 	</section>		
 	
-	<section class="bg-panel pt-21 pb-28 mb-21">
+	<section class="bg-panel pv-28">
 	  <div class="container ph-70-md">
-	  	<h2>Eventos destacados</h2>
+	  	<h2>Últimos eventos</h2>
 	  	<div id="carousel-eventos-destacados" class="carousel slide" data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
 					<!-- Start the Loop. -->
 					<?php $aux = 0; ?>
 					<?php if ( have_posts() ) : ?>
-            <?php query_posts( array( 'category_name' => 'eventos-destacados', 'posts_per_page' => 3 ) ); ?>
+            <?php query_posts( 'category_name=eventos&posts_per_page=3&order=DESC' ); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 		        	<div class="item <?php if ($aux == 0) { ?> active <?php $aux++; } ?>">
 		        		<div class="banner">
-		        			<div class="banner-pic col-sm-4 mt-28" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
+			        		<?php $imagen_evento = get_field('imagen_evento'); ?>
+				        	<?php if ($imagen_evento!='') { ?>	
+		        				<div class="banner-pic col-sm-4 mt-28" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
+		        			<?php } else { ?>
+		        				<div class="banner-pic col-sm-4 mt-28" style="background-image: url('/wp-content/uploads/2015/02/eventos_redprolid.png');"></div>
+		        			<?php } ?>
 		        			<div class="banner-content col-sm-8">
 		        				<h3 class="medium mt-7 mb-14 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 		        				<p><?php the_field('descripcion_evento'); ?></p>
 		        				<?php $tempDate = get_the_date(); ?>
 		              	<p>
-		                	<strong>Fecha:</strong> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php $lhora_evento = get_field('hora_evento'); ?><?php if ($hora_evento!='') { ?>, <?php the_field('hora_evento'); ?><?php } ?><br>
+								      <?php $tempDate = get_field('fecha_inicio_evento'); ?>
+								      <strong>Fecha de inicio:</strong> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php $lhora_evento = get_field('hora_evento'); ?><?php if ($hora_evento!='') { ?>, <?php the_field('hora_evento'); ?><?php } ?><br>
+								      <?php $tempDateFin = get_field('fecha_fin_evento'); ?>
+								      <?php if ($tempDateFin!='') { ?>
+								      <strong>Fecha de fin:</strong> <?php echo date_i18n('j', strtotime( $tempDateFin)); ?> de <?php echo date_i18n('F', strtotime( $tempDateFin)); ?> de <?php echo date_i18n('Y', strtotime( $tempDateFin)); ?><br>
+								      <?php } ?>
 		                	<?php $lugar_evento = get_field('lugar_evento'); ?>
-											<?php if ($lugar_evento!='') { ?>
+											<?php if ($lugar_evento!='') { ?>						
 		                	<strong>Lugar:</strong> <?php the_field('lugar_evento'); ?><br>
 		                	<?php } ?>
 		                	<?php $organizan_evento = get_field('organizan_evento'); ?>
@@ -64,7 +74,7 @@ get_header(); ?>
 											<strong>Convocan:</strong> <?php the_field('convocan'); ?>
 											<?php } ?>
 		                </p>
-		                <p class="text-right mt-14 medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Más Información >></a></p>
+		                <p class="text-right mt-14 medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Más información >></a></p>
 		        			</div>
 		        		</div>
 		        	</div>
@@ -83,17 +93,16 @@ get_header(); ?>
 	  </div>
 	</section> 
 	          
-	<section>
-	  <div class="container">
-			<h2>Próximos eventos</h2>
+	<section class="pv-28">
+	  <div class="container-sm">
+			<h2>Otros eventos</h2>
 			<hr>
     	<!-- Start the Loop. -->
-    	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-    	<?php query_posts( 'cat=11&posts_per_page=10&paged=' . $paged ); ?>
+    	<?php query_posts( 'cat=11&posts_per_page=4&offset=3'); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 	  	<div class="banner half-height">
 	  		<div class="banner-pic col-sm-2 bg-panel text-center lead-ch normalize-text">
-	  			<?php $tempDate = get_the_date(); ?>
+	  			<?php $tempDate = get_field('fecha_inicio_evento'); ?>
 	  			<h3 class="h1"><?php echo date_i18n('j', strtotime( $tempDate)); ?></h3>
 			    <p><?php echo date_i18n('M', strtotime( $tempDate)); ?></p>
 	  		</div>
@@ -126,12 +135,6 @@ get_header(); ?>
 	  		</div>
 	  	</div>
       <?php endwhile; ?> 
-      <div class="text-center">
-        <ul class="pager">
-          <li><?php next_posts_link( 'Anteriores' ); ?></li>
-          <li><?php previous_posts_link( 'Posteriores' ); ?></li>
-        </ul>
-      </div> 
 	  </div>
 	</section>
 	

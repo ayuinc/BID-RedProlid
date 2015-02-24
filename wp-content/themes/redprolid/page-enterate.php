@@ -62,7 +62,7 @@ get_header(); ?>
           <div class="panel panel-custom">
             <div class="panel-heading mb-0">
               <ul class="list-unstyled">
-                <li class="title highlight-white text-gray-darker">Recursos</li>
+                <li class="title highlight-white text-gray-darker">Publicaciones</li>
                 <li class="rule"></li>
                 <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
               </ul>
@@ -80,25 +80,25 @@ get_header(); ?>
               <div class="col-md-8 pl-0 pr-0">
                 <ul class="flex flex-row flex-space-between normalize-text mb-14">
                   <li>
-                    <h3 class="medium">Últimos recursos</h3>
+                    <h3 class="pb-14">Últimas publicaciones</h3>
                   </li>
                   <li>
-                    <a href="<?php echo home_url('/'); ?>recursos" class="medium">Todos los recursos >></a>
+                    <a href="<?php echo home_url('/'); ?>publicaciones" class="medium">Todas las publicaciones >></a>
                   </li>
                 </ul>
                 <ul class="list-unstyled">
                 	<!-- Start the Loop. -->
                 	<?php query_posts( 'category_name=recursos&posts_per_page=3' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>    
-			                  <li class="mb-14">
-			                    <h4 class="medium"><?php the_title(); ?></h4>
-			                    <p><?php the_field('recurso_descripcion'); ?></p>
-								          <p>
-											      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
-														<a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más >></a> 
-			                    </p>
-			                  </li>
-                        <hr>
+	                  <li class="mb-14">
+	                    <h4 class="medium"><?php the_title(); ?></h4>
+	                    <p><?php the_field('recurso_descripcion'); ?></p>
+						          <p>
+									      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
+												<a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más >></a> 
+	                    </p>
+	                  </li>
+                    <hr>
 			            <?php endwhile; ?>  
 			            <?php wp_reset_query(); ?>
                 </ul>
@@ -146,8 +146,7 @@ get_header(); ?>
 					                        <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0 pb-0"><?php the_title(); ?></h3></a>
 							                    <?php $publicacion = get_field('publicacion_noticias'); ?>
 							                    <small>
-							                    	<?php $tempDate = get_the_date(); ?>
-								                    <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+							                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
 																		<?php } ?>
 																	</small>
 					                        <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
@@ -182,43 +181,52 @@ get_header(); ?>
               <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
             </ul>
           </div>
-          <div class="row">
+          <!--<div class="row">
             <div class="col-md-12">
               <p class="text-right"><a href="<?php echo home_url('/'); ?>eventos" class="medium">Eventos aquí >></a></p>
             </div>
-          </div>             
+          </div>-->             
           <div class="panel-body" style="padding: 0; margin: 21px 0;">
-          <!-- Start the Loop. -->
-          <?php if ( have_posts() ) : ?>
-            <?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 1 ) ); ?>
-            <?php while ( have_posts() ) : the_post(); ?>
               <div class="row">
-                <div class="col-md-8 pr-21">
-	                <div class="row">
-		                <div class="col-md-4">
-			                <img src="<?php the_field('imagen_evento');?>" width="100%">
-		                </div>
-		                <div class="col-md-8">
-			                <h3 class="medium mb-0"><?php the_title(); ?></h3>
-                    	<?php $tempDate = get_field('fecha_evento'); ?>
-	                    <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
-			                <p class="mt-14"><?php the_field('descripcion_evento');?></p>
-			                <p class="text-right mr-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más información >></a></p>
+			          <!-- Start the Loop. -->
+			          <?php if ( have_posts() ) : ?>
+			            <?php query_posts( array( 'category_name' => 'eventos', 'posts_per_page' => 1 ) ); ?>
+			            <?php while ( have_posts() ) : the_post(); ?>	              
+	                <div class="col-md-8">
+		                <div class="row">
+			                <div class="col-md-4">
+				                <img src="<?php the_field('imagen_evento');?>" width="100%">
+			                </div>
+			                <div class="col-md-8">
+				                <h3 class="medium mb-0"><?php the_title(); ?></h3>
+	                    	<?php $tempDate = get_field('fecha_inicio_evento'); ?>
+		                    <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+				                <p class="mt-14"><?php the_field('descripcion_evento');?></p>
+				                <p class="text-right mr-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más información >></a></p>
+			                </div>
 		                </div>
 	                </div>
-                </div>
-                <div class="col-md-4 box-shadow pl-0 pr-0 enterate-calendar">
-                  <div class="p-14 bg-panel-dark">
-  									<?php
-  										if(is_active_sidebar('calendario-eventos')){
-  										dynamic_sidebar('calendario-eventos');
-  										}
-  									?>
-                  </div>
+				        	<?php endwhile; ?>
+			          <?php endif; ?> 
+                <div class="col-md-4">
+                  <h3 class="medium">Últimos eventos</h3>
+									<div class="row">
+					          <!-- Start the Loop. -->
+					          <?php if ( have_posts() ) : ?>
+					            <?php query_posts( 'category_name=eventos&posts_per_page=3&offset-1' ); ?>
+					            <?php while ( have_posts() ) : the_post(); ?>											
+											<div class="col-md-12">
+												<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h5 class="medium mb-0 pb-0"><?php the_title(); ?></h5></a>
+												<?php $tempDate1 = get_field('fecha_inicio_evento'); ?>
+												<small><?php echo date_i18n('j', strtotime( $tempDate1)); ?> de <?php echo date_i18n('F', strtotime( $tempDate1)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate1)); ?></small>
+												<hr>
+											</div>		
+						        	<?php endwhile; ?>
+					          <?php endif; ?> 	
+					          <p class="text-right mr-14"><a href="<?php echo home_url('/'); ?>eventos" class="medium">Eventos >></a></p>										
+									</div>
                 </div>
               </div>
-            <?php endwhile; ?>
-          <?php endif; ?>  
           </div>
         </div>
       </div>

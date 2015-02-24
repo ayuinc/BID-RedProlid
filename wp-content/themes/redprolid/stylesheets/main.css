@@ -3745,8 +3745,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height: 44px;
   border: none;
   border-radius: 50%;
-  background: white;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(245, 245, 245, 0.6);
+  background: whitesmoke;
   cursor: pointer;
   /* vertically center */
   -webkit-transform: translateY(-50%);
@@ -3794,11 +3794,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height: 60%; }
 
 .flickity-prev-next-button .arrow {
-  fill: #333; }
+  fill: #ED7133; }
 
 /* color & size if no SVG - IE8 and Android 2.3 */
 .flickity-prev-next-button.no-svg {
-  color: #333;
+  color: #ED7133;
   font-size: 26px; }
 
 /* ---- page dots ---- */
@@ -3820,7 +3820,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   width: 10px;
   height: 10px;
   margin: 0 8px;
-  background: #333;
+  background: #ED7133;
   border-radius: 50%;
   filter: alpha(opacity=25);
   /* IE8 */
@@ -6187,9 +6187,9 @@ div[id^="yop-poll-results-3"] {
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  border: 1px solid #f7f7f7; }
+  /*border: 1px solid darken(white, 3%);*/ }
   .dtl-carousel .dtl-item .bg-img-block {
-    height: 180px;
+    height: 115px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
   .dtl-carousel .dtl-item .dtl-title {
@@ -6198,10 +6198,9 @@ div[id^="yop-poll-results-3"] {
       text-align: center;
       font-size: 18px; }
   .dtl-carousel .dtl-item:hover {
-    -webkit-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
-    -moz-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
-    box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
-    cursor: pointer; }
+    /*@include box-shadow-default;
+    cursor: pointer;*/
+    opacity: 0.7; }
 .dtl-carousel .dtl-icon {
   width: 35px;
   height: 35px;

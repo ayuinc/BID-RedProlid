@@ -25,7 +25,7 @@ get_header(); ?>
       </div>
     </div>
     <div class="ph-70">
-  		<div class="row">
+  		<!--<div class="row">
   			<form action="">
   				<div class="col-sm-4 form-group">
   					<select name="" id="" class="form-control select-override">
@@ -34,17 +34,24 @@ get_header(); ?>
   				</div>
   			</form>
   		</div>
-		 <h2 class="mb-21">Del más antiguo al más nuevo</h2>
+		 <h2 class="mb-21">Del más antiguo al más nuevo</h2>-->
 			<div class="row">
       	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-      	<?php query_posts( 'cat=260&posts_per_page=10&paged=' . $paged ); ?>
+      	<?php query_posts( 'cat=258&posts_per_page=10&offset=5&paged=' . $paged ); ?>
 				<?php while ( have_posts() ) : the_post(); ?>    
 				<div class="col-md-3">
-					<iframe width="100%" height="150" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-					<h3 class="medium mt-7 mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-					<p class="mb-0"><?php the_field('descripcion_video'); ?></p>
-					<?php $tempDate = get_the_date(); ?>
-					<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+			    <?php $youtube = get_field('video_youtube'); ?>
+		    	<?php if ($youtube!='') { ?>
+		    		<iframe width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
+					<?php } ?>
+			    <?php $vimeo = get_field('video_vimeo'); ?>
+		    	<?php if ($vimeo!='') { ?>				
+						<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<?php } ?>
+					<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0"><?php the_title(); ?></h3></a>
+					<p class="mb-0"><?php the_field('descripcion_corta_video'); ?></p>
+					<?php $tempDate = get_field('fecha_publicacion_video'); ?>
+					<small>Publicado por: <?php the_field('organizacion_video'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
 				</div>																			
         <?php endwhile; ?>
       </div>

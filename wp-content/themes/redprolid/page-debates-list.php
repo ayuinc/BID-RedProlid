@@ -29,7 +29,7 @@ get_header(); ?>
       <div class="row">
         <div class="col-sm-12">
           <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-          <?php query_posts( 'category_name='.$categoria.'&posts_per_page=10&paged=' . $paged ); ?>
+          <?php query_posts( 'category_name='.$categoria.'&posts_per_page=10&offset=1&paged=' . $paged ); ?>
           <?php while ( have_posts() ) : the_post(); ?>
             <div class="title">
               <h3 class="medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>

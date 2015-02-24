@@ -37,7 +37,14 @@ get_header(); ?>
                 <div class="row">
                   <div class="col-sm-7 minh-350 flex-middle">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" width="100%" height="370" src="//www.youtube.com/embed/<?php the_field('id_video_homepage'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	                    <?php $youtube = get_field('id_video_youtube_homepage'); ?>
+	                    <?php if ($youtube!='') { ?>
+                      	<iframe class="embed-responsive-item" width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video_youtube_homepage'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                      <?php } ?>
+	                    <?php $vimeo = get_field('id_video_vimeo_homepage'); ?>
+	                    <?php if ($vimeo!='') { ?>
+                      	<iframe src="//player.vimeo.com/video/<?php the_field('id_video_vimeo_homepage'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      <?php } ?>                      
                     </div>
                   </div>
                   <div class="col-sm-5 minh-350 flex-middle-end">
@@ -62,7 +69,7 @@ get_header(); ?>
               <span class="icon-next"></span>
             </a>
           </div>
-          <h2 class="text-center mt-21 mb-0"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
+          <h2 class="text-center pt-21"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
         </div>
       </section>
       <section class="dtl-home pv-14">
@@ -71,8 +78,10 @@ get_header(); ?>
             <h2>Desarrolla tu liderazgo</h2>
             <p>Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
           </div>
+          <div class="pb-14">
           <!-- DTL CAROUSEL -->
           <?php get_template_part( 'include', 'dtl-carousel' ); ?>
+          </div>
         </div>
       </section>
       <section class="widgets pv-14">
@@ -116,8 +125,7 @@ get_header(); ?>
                         <h5><?php the_title(); ?></h5>
 		                    <?php $publicacion = get_field('publicacion_noticias'); ?>
 		                    <small class="date light">
-		                    	<?php $tempDate = get_the_date(); ?>
-			                    <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a><?php } ?> | <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary p">Lee más</a>
+		                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a><?php } ?> | <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary p">Lee más</a>
 												</small>                      
                       </li>
 											<?php endwhile; ?>                     
@@ -139,7 +147,7 @@ get_header(); ?>
                 <div class="panel-body pt-0">
                   <?php query_posts( 'category_name=eventos&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
-                  <?php $tempDate = get_field('fecha_evento'); ?>
+                  <?php $tempDate = get_field('fecha_inicio_evento'); ?>
                     <div class="events-calendar-placeholder mb-14">
                       <div class="day"><?php echo date_i18n('D', strtotime( $tempDate)); ?></div>
                       <div class="day-num"><?php echo date_i18n('d', strtotime( $tempDate)); ?></div>
@@ -166,7 +174,7 @@ get_header(); ?>
 									<?php while ( have_posts() ) : the_post(); ?>  
                     <?php the_content(); ?>
                     <!-- <div class="mt-sm text-right small">
-                      <a href="<?php echo get_permalink( get_the_ID() ); ?>">Resultados >></a>
+                      <a href="<?php //echo get_permalink( get_the_ID() ); ?>">Resultados >></a>
                     </div> -->
                   <?php endwhile; ?>
                 </div>
