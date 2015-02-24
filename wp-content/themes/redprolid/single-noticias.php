@@ -15,9 +15,8 @@
           <h2 class="medium mb-0"><?php the_title(); ?></h2>
           <?php $publicacion = get_field('publicacion_noticias'); ?>
           <small>
-          	<?php //echo $tempDate = get_the_date(); ?>
-          	<?php the_date('j de F de Y'); ?>
-            <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?>, <?php if ($publicacion!='') { ?><a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+          	<?php $tempDate_noticias = get_the_date(); ?>
+            <?php echo date_i18n('j', strtotime( $tempDate_noticias)); ?> de <?php echo date_i18n('F', strtotime( $tempDate_noticias)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate_noticias)); ?>, <?php if ($publicacion!='') { ?><a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
   					<?php } ?>
   				</small>        
           <h4 class="mt-14 light lh-lg"><?php the_field('descripcion_rapida_noticias'); ?></h4>
