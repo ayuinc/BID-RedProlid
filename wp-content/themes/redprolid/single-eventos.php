@@ -13,7 +13,12 @@
 			<div class="pv-21 half-height">
 				<?php if( get_field('imagen_evento') ) { ?>
 				<div class="col-sm-3">
-					<img src="<?php the_field('imagen_evento'); ?>" width="100%">
+      		<?php $imagen_evento = get_field('imagen_evento'); ?>
+        	<?php if ($imagen_evento!='') { ?>	
+    				<div class="banner-pic col-sm-4 mt-28" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
+    			<?php } else { ?>
+    				<div class="banner-pic col-sm-4 mt-28" style="background-image: url('/wp-content/uploads/2015/02/eventos_redprolid.png');"></div>
+    			<?php } ?>
 					<small><?php the_field('credito_imagen_evento'); ?></small>
 				</div>
 				<div class="banner-content col-sm-9">
