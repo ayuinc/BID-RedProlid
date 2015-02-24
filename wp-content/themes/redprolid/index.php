@@ -148,7 +148,7 @@ get_header(); ?>
                 <div class="panel-body pt-0">
                   <?php query_posts( 'category_name=eventos&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
-                  <?php $tempDate = get_field('fecha_evento'); ?>
+                  <?php $tempDate = get_field('fecha_inicio_evento'); ?>
                     <div class="events-calendar-placeholder mb-14">
                       <div class="day"><?php echo date_i18n('D', strtotime( $tempDate)); ?></div>
                       <div class="day-num"><?php echo date_i18n('d', strtotime( $tempDate)); ?></div>
