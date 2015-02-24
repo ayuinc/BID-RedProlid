@@ -5953,6 +5953,8 @@ form.search button {
   .banner.half-height .banner-pic,
   .banner.half-height .banner-content {
     min-height: 140px; }
+  .banner.borderless {
+    border: none; }
 
 .flex-none {
   display: block !important; }

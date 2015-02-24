@@ -38,8 +38,8 @@ get_header(); ?>
 				<?php if ( have_posts() ) : ?>
         	<?php query_posts( 'category_name=eventos&posts_per_page=3&order=DESC' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
-		  			<div class="gallery-cell grid-list-item" style="height: 350px;">
-		  				<div class="banner">
+		  			<div class="gallery-cell grid-list-item" style="min-height: 350px;">
+		  				<div class="banner borderless">
 		        		<?php $imagen_evento = get_field('imagen_evento'); ?>
 			        	<?php if ($imagen_evento!='') { ?>	
 	        				<div class="banner-pic col-sm-4 mt-28" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
