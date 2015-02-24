@@ -146,8 +146,7 @@ get_header(); ?>
 					                        <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0 pb-0"><?php the_title(); ?></h3></a>
 							                    <?php $publicacion = get_field('publicacion_noticias'); ?>
 							                    <small>
-							                    	<?php $tempDate = get_the_date(); ?>
-								                    <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+							                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
 																		<?php } ?>
 																	</small>
 					                        <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
@@ -200,7 +199,7 @@ get_header(); ?>
 			                </div>
 			                <div class="col-md-8">
 				                <h3 class="medium mb-0"><?php the_title(); ?></h3>
-	                    	<?php $tempDate = get_field('fecha_evento'); ?>
+	                    	<?php $tempDate = get_field('fecha_inicio_evento'); ?>
 		                    <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
 				                <p class="mt-14"><?php the_field('descripcion_evento');?></p>
 				                <p class="text-right mr-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más información >></a></p>
@@ -218,7 +217,8 @@ get_header(); ?>
 					            <?php while ( have_posts() ) : the_post(); ?>											
 											<div class="col-md-12">
 												<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h5 class="medium mb-0 pb-0"><?php the_title(); ?></h5></a>
-												<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+												<?php $tempDate1 = get_field('fecha_inicio_evento'); ?>
+												<small><?php echo date_i18n('j', strtotime( $tempDate1)); ?> de <?php echo date_i18n('F', strtotime( $tempDate1)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate1)); ?></small>
 												<hr>
 											</div>		
 						        	<?php endwhile; ?>

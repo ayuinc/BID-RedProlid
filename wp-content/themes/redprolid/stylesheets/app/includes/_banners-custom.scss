@@ -38,12 +38,6 @@
 			padding: $container-fluid;
 		}
 	}
-	// a:not(.btn) {
-	// 	color: $gray;
-	// }
-	// &:hover {
-	// 	background-color: $gray-lighter;
-	// }
 	&.banner-label-bottom {
 		.banner-label {
 			@include position(absolute, null null 0 0);
@@ -56,6 +50,9 @@
 			min-height: $banner-height / 2;
 		}
 	}	
+	&.borderless {
+		border: none;
+	}
 }
 
 .flex-none {

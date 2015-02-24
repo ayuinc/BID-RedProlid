@@ -31,12 +31,13 @@ get_header(); ?>
           <?php query_posts( 'category_name=eventos&posts_per_page=10&offset=4&paged=' . $paged ); ?>
           <?php while ( have_posts() ) : the_post(); ?>
             <div class="title">
-              <h3 class="medium text-primary mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-              <h5 class="medium"><span>Fecha:</span> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php $lhora_evento = get_field('hora_evento'); ?><?php if ($hora_evento!='') { ?>, <?php the_field('hora_evento'); ?><?php } ?></h5>
+              <h3 class="medium text-primary mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>         
             </div>
             <div class="content mb-14 event-destacados">
-					    <?php $tempDate = get_the_date(); ?>	            
-            	<p>
+              <p>
+	              <strong>Fecha de inicio:</strong> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php $lhora_evento = get_field('hora_evento'); ?><?php if ($hora_evento!='') { ?>, <?php the_field('hora_evento'); ?><?php } ?><br>
+					      <strong>Fecha de fin:</strong> <?php echo date_i18n('j', strtotime( $tempDateFin)); ?> de <?php echo date_i18n('F', strtotime( $tempDateFin)); ?> de <?php echo date_i18n('Y', strtotime( $tempDateFin)); ?><br>            
+								<?php $tempDate = get_the_date(); ?>	            
               	<?php $lugar_evento = get_field('lugar_evento'); ?>
 								<?php if ($lugar_evento!='') { ?>
               	<strong>Lugar:</strong> <?php the_field('lugar_evento'); ?><br>

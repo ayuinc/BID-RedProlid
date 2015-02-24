@@ -16,21 +16,21 @@ $grid-list-item-height: 350px;
 			min-height: $grid-list-item-height;
 		}
 	}
-	@for $i from 1 through 12 {
+	@for $i from 1 through $grid-columns {
 		&.grid-list-#{$i} {
 			.grid-list-item,
 			.gallery-cell {
-				width: percentage(1/$i) - 0.30;
+				width: percentage($i/$grid-columns) - 0.30;
 			}
 		}
 	}
-	@for $i from 1 through 12 {
+	@for $i from 1 through $grid-columns {
 		@for $k from 1 through length($breakpoints-sufix-list) {
 	    @media #{nth($media-control-list, $k)} {
 				&.grid-list-#{$i}-#{nth($breakpoints-sufix-list, $k)} {
 					.grid-list-item,
 					.gallery-cell {
-						$mobile-width: percentage(1/$i);
+						$mobile-width: percentage($i/$grid-columns);
 						width: $mobile-width;
 					}
 				}
