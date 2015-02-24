@@ -117,43 +117,45 @@ get_header(); ?>
                 <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
               </ul>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <p class="text-right mr-56"><a href="<?php echo home_url('/'); ?>noticias" class="medium">Todas las noticias >></a></p>
-            </div>
-          </div>            
-          <div class="gallery js-flickity grid-list grid-list-3 grid-list-1-xs grid-list-2-xs noticias-grid" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": false }'>
-            <div class="gallery-cell grid-list-item" style="min-height: 350px;">
-              <?php if ( have_posts() ) : ?>
-                <?php query_posts( 'cat=12&posts_per_page=3' ); ?>
-                <?php while ( have_posts() ) : the_post(); ?>                   
-                  <div class="banner banner-label-bottom">
-                    <div class="bg-white">
-                      <?php $imagen = get_field('imagen_noticias'); ?>
-                      <?php if ($imagen!='') { ?>
-                      <div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
-                      <?php } else { ?>
-                      <div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia-placeholder.png)"></div>
-                      <?php } ?>
-                      <div class="banner-content flex-none">
-                        <h3 class="medium mt-7 mb-0 pb-0">
-                          <a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a>
-                        </h3>
-                        <?php $publicacion = get_field('publicacion_noticias'); ?>
-                        <small>
-                          <?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="text-right mr-56"><a href="<?php echo home_url('/'); ?>noticias" class="medium">Todas las noticias >></a></p>
+                </div>
+              </div>            
+              <div class="gallery js-flickity grid-list grid-list-3 grid-list-1-xs grid-list-2-xs noticias-grid" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": false }'>
+                <?php if ( have_posts() ) : ?>
+                  <?php query_posts( 'cat=12&posts_per_page=3' ); ?>
+                  <?php while ( have_posts() ) : the_post(); ?>                   
+                    <div class="gallery-cell grid-list-item" style="min-height: 350px;">
+                      <div class="banner banner-label-bottom">
+                        <div class="bg-white">
+                          <?php $imagen = get_field('imagen_noticias'); ?>
+                          <?php if ($imagen!='') { ?>
+                          <div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
+                          <?php } else { ?>
+                          <div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia-placeholder.png)"></div>
                           <?php } ?>
-                        </small>
-                        <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
-                        <div class="text-right banner-label">
-                          <a href="<?php echo get_permalink( get_the_ID() ); ?>">Noticia completa >></a>
+                          <div class="banner-content flex-none">
+                            <h3 class="medium mt-7 mb-0 pb-0">
+                              <a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a>
+                            </h3>
+                            <?php $publicacion = get_field('publicacion_noticias'); ?>
+                            <small>
+                              <?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+                              <?php } ?>
+                            </small>
+                            <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
+                            <div class="text-right banner-label">
+                              <a href="<?php echo get_permalink( get_the_ID() ); ?>">Noticia completa >></a>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                <?php endwhile; ?>
-              <?php endif; ?>
+                  <?php endwhile; ?>
+                <?php endif; ?>
+              </div>
             </div>
           </div>
         </div>
