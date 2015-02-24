@@ -63,8 +63,7 @@ get_header(); ?>
 			                    </h3>
 			                    <?php $publicacion = get_field('publicacion_noticias'); ?>
 			                    <small>
-			                    	<?php $tempDate = get_the_date(); ?>
-				                    <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+			                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
 														<?php } ?>
 													</small>
 			                    <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
