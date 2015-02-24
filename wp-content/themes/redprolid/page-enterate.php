@@ -29,24 +29,24 @@ get_header(); ?>
         </div>
         <div class="row">
 	        <div class="col-md-12">
-	          <ul class="grid-list grid-list-5 text-center">
-	            <li class="pl-7 pr-7">
+	          <ul class="grid-list grid-list-5 text-center ph-ch-7">
+	            <li class="grid-list-item">
 	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-1.png" alt="">
 	            	<p class="brand-titular">De dónde podrás encontrar todos los recursos y artículos</p>
 	            </li>
-	            <li class="pl-7 pr-7">
+	            <li class="grid-list-item">
 		            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2.png" alt="">
 		            <p class="brand-titular">De las noticias y de los eventos que no podrás perderte </p>
 	            </li>
-	            <li class="pl-7 pr-7">
+	            <li class="grid-list-item">
 		            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3.png" alt="">
 		            <p class="brand-titular">De lo que otras mujeres, con intereses similares a los tuyos, piensan</p>
 	            </li>
-	            <li class="pl-7 pr-7">
+	            <li class="grid-list-item">
 	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt="">
 	            	<p class="brand-titular">De diversos videos que podrás ver y compratir</p>
 	            </li>
-	            <li class="pl-7 pr-7">
+	            <li class="grid-list-item">
 	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5.png" alt="">
 	            	<p class="brand-titular">De cómo estar conectada con lo que pasa en la Red PROLID</p>
 	            </li>
