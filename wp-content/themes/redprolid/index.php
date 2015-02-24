@@ -214,7 +214,7 @@ get_header(); ?>
                 <?php endwhile; ?>
               </div>
             </div>
-            <div class="col-md-6 p-14">
+            <div class="col-md-6 p-14 bg-panel">
               <div class="panel panel-custom">
 	              <div class="panel-heading">
                     <ul class="list-unstyled m-0">
