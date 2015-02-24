@@ -283,7 +283,7 @@ get_header(); ?>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-9 bg-panel p-14">
+            <div class="col-md-9 bg-panel ph-14">
               <div class="panel panel-custom hidden-sm-down">
                 <div class="panel-body tall pt-0">
                   <div class="panel-heading">
