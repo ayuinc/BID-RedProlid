@@ -186,7 +186,7 @@ get_header(); ?>
       <section class="pv-14">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 p-14">
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled m-0">
@@ -214,8 +214,8 @@ get_header(); ?>
                 <?php endwhile; ?>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="panel panel-custom highlight">  
+            <div class="col-md-6 p-14">
+              <div class="panel panel-custom">
 	              <div class="panel-heading">
                     <ul class="list-unstyled m-0">
                       <li class="title highlight-campeonas pl-14 text-gray-darker">Campeonas</li>
@@ -283,8 +283,8 @@ get_header(); ?>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-9">
-              <div class="panel panel-custom highlight hidden-sm-down">
+            <div class="col-md-9 bg-panel p-14">
+              <div class="panel panel-custom hidden-sm-down">
                 <div class="panel-body tall pt-0">
                   <div class="panel-heading">
                     <ul class="list-unstyled m-0">
