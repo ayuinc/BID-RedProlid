@@ -175,7 +175,7 @@ get_header(); ?>
 									<?php while ( have_posts() ) : the_post(); ?>  
                     <?php the_content(); ?>
                     <!-- <div class="mt-sm text-right small">
-                      <a href="<?php echo get_permalink( get_the_ID() ); ?>">Resultados >></a>
+                      <a href="<?php //echo get_permalink( get_the_ID() ); ?>">Resultados >></a>
                     </div> -->
                   <?php endwhile; ?>
                 </div>
