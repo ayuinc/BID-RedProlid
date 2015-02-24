@@ -38,7 +38,7 @@ get_header(); ?>
 				<?php if ( have_posts() ) : ?>
         	<?php query_posts( 'category_name=eventos&posts_per_page=3&order=DESC' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
-		  			<div class="grid-list-item">
+		  			<div class="grid-list-item" style="height: 350px;">
 		  				<div class="banner">
 		        		<?php $imagen_evento = get_field('imagen_evento'); ?>
 			        	<?php if ($imagen_evento!='') { ?>	
