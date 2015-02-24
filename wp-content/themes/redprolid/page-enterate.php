@@ -123,7 +123,7 @@ get_header(); ?>
                   <p class="text-right mr-56"><a href="<?php echo home_url('/'); ?>noticias" class="medium">Todas las noticias >></a></p>
                 </div>
               </div>            
-              <div class="gallery js-flickity grid-list grid-list-3 grid-list-1-xs grid-list-2-xs noticias-grid" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": false }'>
+              <div class="gallery js-flickity grid-list grid-list-3 grid-list-1-xs grid-list-2-xs noticias-grid" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false }'>
                 <?php if ( have_posts() ) : ?>
                   <?php query_posts( 'cat=12&posts_per_page=3' ); ?>
                   <?php while ( have_posts() ) : the_post(); ?>                   
