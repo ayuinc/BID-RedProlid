@@ -93,7 +93,7 @@ get_header(); ?>
 							</select>
 						</div>
 				</div>
-				<div class="col-sm-8 bg-secondary p-0-sm pv-7">
+				<div class="col-sm-8 bg-secondary p-0-sm p-7">
 					<nav class="custom-nav">
 						<input type="radio" name="tipo_lugar" value="restaurantes"> Restaurantes
 						<input type="radio" name="tipo_lugar" value="tiendas"> Tiendas
