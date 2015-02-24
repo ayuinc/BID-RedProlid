@@ -15564,6 +15564,8 @@ a.bg-hover-linkedin:hover,
     float: right; }
   .grid-list.grid-list-anchors .grid-list-item a {
     display: block; }
+  .grid-list.grid-list-full-width .grid-list-item {
+    width: 100%; }
 
 .separator-primary {
   border-top: 2px solid #ed7133 !important;

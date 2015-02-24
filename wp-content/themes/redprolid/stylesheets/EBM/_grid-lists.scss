@@ -16,7 +16,7 @@ $grid-list-item-height: 350px;
 			min-height: $grid-list-item-height;
 		}
 	}
-	@for $i from 1 through 12 {
+	@for $i from 1 through $grid-columns {
 		&.grid-list-#{$i} {
 			.grid-list-item,
 			.gallery-cell {
@@ -24,7 +24,7 @@ $grid-list-item-height: 350px;
 			}
 		}
 	}
-	@for $i from 1 through 12 {
+	@for $i from 1 through $grid-columns {
 		@for $k from 1 through length($breakpoints-sufix-list) {
 	    @media #{nth($media-control-list, $k)} {
 				&.grid-list-#{$i}-#{nth($breakpoints-sufix-list, $k)} {
@@ -54,6 +54,11 @@ $grid-list-item-height: 350px;
 			a {
 				display: block;
 			}
+		}
+	}
+	&.grid-list-full-width {
+		.grid-list-item {
+			width: 100%;
 		}
 	}
 }

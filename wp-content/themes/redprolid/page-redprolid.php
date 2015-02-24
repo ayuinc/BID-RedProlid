@@ -17,7 +17,7 @@ get_header(); ?>
 	    <section>
 		    <div class="container">
           <?php the_breadcrumb(); ?>
-          <div class="mh-350 pb-21 mb-21 bg-img-block-right bg-img-block-top" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right-half.png)">
+          <div class="mh-350 pb-21 mb-21 bg-img-block bg-img-block-right bg-img-block-top" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right-half.png)">
             <div class="clearfix sub-header no-border">
               <div class="col-sm-1 col-xs-3">
                 <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" alt="" width="100%"></div>

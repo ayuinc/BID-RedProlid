@@ -29,24 +29,24 @@ get_header(); ?>
         </div>
         <div class="row">
 	        <div class="col-md-12">
-	          <ul class="grid-list grid-list-5 text-center">
-	            <li class="pl-7 pr-7">
+	          <ul class="grid-list grid-list-5 text-center ph-ch-7">
+	            <li class="grid-list-item">
 	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-1.png" alt="">
 	            	<p class="brand-titular">De dónde podrás encontrar todos los recursos y artículos</p>
 	            </li>
-	            <li class="pl-7 pr-7">
+	            <li class="grid-list-item">
 		            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2.png" alt="">
 		            <p class="brand-titular">De las noticias y de los eventos que no podrás perderte </p>
 	            </li>
-	            <li class="pl-7 pr-7">
+	            <li class="grid-list-item">
 		            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3.png" alt="">
 		            <p class="brand-titular">De lo que otras mujeres, con intereses similares a los tuyos, piensan</p>
 	            </li>
-	            <li class="pl-7 pr-7">
+	            <li class="grid-list-item">
 	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt="">
 	            	<p class="brand-titular">De diversos videos que podrás ver y compratir</p>
 	            </li>
-	            <li class="pl-7 pr-7">
+	            <li class="grid-list-item">
 	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5.png" alt="">
 	            	<p class="brand-titular">De cómo estar conectada con lo que pasa en la Red PROLID</p>
 	            </li>
@@ -117,57 +117,45 @@ get_header(); ?>
                 <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
               </ul>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-	              <p class="text-right mr-56"><a href="<?php echo home_url('/'); ?>noticias" class="medium">Todas las noticias >></a></p>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="text-right mr-56"><a href="<?php echo home_url('/'); ?>noticias" class="medium">Todas las noticias >></a></p>
+                </div>
+              </div>            
+              <div class="gallery js-flickity grid-list grid-list-3 grid-list-1-xs grid-list-2-xs noticias-grid" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false }'>
+                <?php if ( have_posts() ) : ?>
+                  <?php query_posts( 'cat=12&posts_per_page=3' ); ?>
+                  <?php while ( have_posts() ) : the_post(); ?>                   
+                    <div class="gallery-cell grid-list-item" style="min-height: 350px;">
+                      <div class="banner banner-label-bottom">
+                        <div class="bg-white">
+                          <?php $imagen = get_field('imagen_noticias'); ?>
+                          <?php if ($imagen!='') { ?>
+                          <div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
+                          <?php } else { ?>
+                          <div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia-placeholder.png)"></div>
+                          <?php } ?>
+                          <div class="banner-content flex-none">
+                            <h3 class="medium mt-7 mb-0 pb-0">
+                              <a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a>
+                            </h3>
+                            <?php $publicacion = get_field('publicacion_noticias'); ?>
+                            <small>
+                              <?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+                              <?php } ?>
+                            </small>
+                            <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
+                            <div class="text-right banner-label">
+                              <a href="<?php echo get_permalink( get_the_ID() ); ?>">Noticia completa >></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <?php endwhile; ?>
+                <?php endif; ?>
               </div>
-            </div>            
-            <div class="panel-body pt-0">
-	            <div class="row">
-		            <div class="col-md-12">
-		              <div id="carousel-enterate" class="carousel slide" data-ride="carousel">
-		                <!-- Wrapper for slides -->
-		                <div class="carousel-inner pl-35 pr-35">
-		                  <ul class="grid-list grid-list-3 item active pl-7">	
-												<!-- Start the Loop. -->
-												<?php if ( have_posts() ) : ?>
-		                      <?php //query_posts( array( 'category_name' => 'ultimas-noticias', 'posts_per_page' => 3 ) ); ?>
-		                      <?php query_posts( 'category_name=noticias&posts_per_page=3'); ?> 
-		                      
-													<?php while ( have_posts() ) : the_post(); ?>
-						                  <li class="pl-14 pr-14">
-					                      <div class="p-14 bg-white">
-						                      <?php $imagen = get_field('imagen_noticias'); ?>
-					                      	<?php if( $imagen !='' ) { ?>
-						                        <img src="<?php the_field('imagen_noticias'); ?>" alt="" class="img-responsive">
-																	<?php } else {?>
-					                        	<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia-placeholder.png" alt="" class="img-responsive">
-																	<?php } ?>
-					                        <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0 pb-0"><?php the_title(); ?></h3></a>
-							                    <?php $publicacion = get_field('publicacion_noticias'); ?>
-							                    <small>
-							                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
-																		<?php } ?>
-																	</small>
-					                        <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
-					                        <small class="vermas"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
-					                      </div>
-					                    </li>
-							            <?php endwhile; ?>
-												<?php endif; ?>	
-		                  </ul>
-		                </div>
-		
-		                <!-- Controls -->
-		                <a class="left carousel-control" href="#carousel-enterate" role="button" data-slide="prev">
-		                  <span class="icon-prev"></span>
-		                </a>
-		                <a class="right carousel-control" href="#carousel-enterate" role="button" data-slide="next">
-		                  <span class="icon-next"></span>
-		                </a>
-		              </div> <!-- END:CAROUSEL -->			            
-		            </div>
-	            </div>
             </div>
           </div>
         </div>
