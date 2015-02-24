@@ -113,17 +113,7 @@
 			$('#entrevista_full').hide(100);
 			$('#boton_ocultar_entrevista_full').hide(100);
 		})		
-		
-    $(document).ready(function(){
-      $('.jcarousel').jcarousel();
-      $('.left.carousel-control').jcarouselControl({
-          target: '-=1'
-      });
-
-      $('.right.carousel-control').jcarouselControl({
-          target: '+=1'
-      });
-    });
+	
     
 		$('.icon[data-href]').each(function() { 
 		 $(this).attr('href', $(this).attr('data-href'));
