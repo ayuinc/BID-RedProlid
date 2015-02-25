@@ -1,3 +1,15 @@
+<?php
+/*
+Template Name: Tu opinion cuenta - single
+*/
+get_header(); ?>
+
+    <!--HEADER-->
+    <?php get_template_part( 'include', 'header' ); ?>
+    
+    <!--NAV-->
+    <?php get_template_part( 'include', 'nav' ); ?>
+
 <section class="bg-panel"> 
   <div class="container">
     <?php the_breadcrumb(); ?>
@@ -10,16 +22,17 @@
     </div>      
     <div class="ph-70">
     	<div class="bg-white border-radius p-21">
-  			<?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>	
-				<?php while ( have_posts() ) : the_post(); ?>  
-	    		<div class="ph-70">
-	            <?php the_content(); ?>
-	    			<!-- <h1>Qué es lo que más descuidas de tu vida personal cuando estás trabajando?</h1> -->
-	    		</div>
-	    		<hr>
-	    		<span class="text-gray">Agosto 1 / 2014</span>
-        <?php endwhile; ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+          <div class="ph-70-sm">
+            <?php get_template_part( 'content', 'page' ); ?>
+          </div>
+          <hr>
+          <!-- <span class="text-gray">Agosto 1 / 2014</span> -->
+        <?php endwhile; // end of the loop. ?>
     	</div>
     </div>
   </div> 
 </section>
+
+
+<?php get_footer(); ?>
