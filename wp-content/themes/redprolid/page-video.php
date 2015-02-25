@@ -58,11 +58,11 @@ get_header(); ?>
 					<div class="col-sm-3">
 				    <?php $youtube = get_field('video_youtube'); ?>
 			    	<?php if ($youtube!='') { ?>
-			    		<iframe width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
+			    		<iframe width="100%" height="220" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
 						<?php } ?>
 				    <?php $vimeo = get_field('video_vimeo'); ?>
 			    	<?php if ($vimeo!='') { ?>				
-							<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="220" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 						<?php } ?>
 						<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0"><?php the_title(); ?></h3></a>
 						<p class="mb-0"><?php the_field('descripcion_corta_video'); ?></p>
