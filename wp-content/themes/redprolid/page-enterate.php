@@ -235,11 +235,6 @@ get_header(); ?>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
                   </ul>
                 </div>
-                <div class="row">
-                	<div class="col-md-12 text-right">
-	                	<a href="<?php echo home_url('/'); ?>campeonas" class="medium">Entrevistas >></a>
-                	</div>
-                </div>
                 <div class="panel-body">
                   <div class="bg-white clearfix">
                   	<!-- Start the Loop. -->
@@ -262,6 +257,11 @@ get_header(); ?>
 										<?php endif; ?> 
                   </div>
                 </div>
+                <div class="row">
+                	<div class="col-md-12 text-right">
+	                	<a href="<?php echo home_url('/'); ?>campeonas" class="medium">Entrevistas >></a>
+                	</div>
+                </div>                
               </div>
             </div>
             <div class="col-sm-6">
@@ -280,7 +280,7 @@ get_header(); ?>
                   <h3 class="mediumt mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 									<?php $tempDate = get_the_date(); ?>
 									<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>                  
-                  <iframe width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="100%" height="320" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
                   <div class="text-right mt-21">
                     <p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más aquí >></a></p>
                   </div>
