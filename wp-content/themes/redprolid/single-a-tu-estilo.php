@@ -15,8 +15,14 @@
     		<ul class="list-unstyled pv-21">
     			<li><?php the_field('estilo_direccion_lugar') ?></li>
     			<li><?php the_field('ciudad_pais_estilo');?></li>
+    			<?php $estilo_sitio_web = get_field('estilo_sitio_web'); ?>
+    			<?php if ($estilo_sitio_web!='') { ?>
     			<li>Sitio web: <a href="<?php the_field('estilo_sitio_web'); ?>"><?php the_field('estilo_sitio_web'); ?></a></li>
+    			<?php } ?>
+    			<?php $estilo_fuente_link = get_field('estilo_fuente_link'); ?>
+    			<?php if ($estilo_fuente_link!='') { ?>    			
     			<li>Fuente: <a href="<?php the_field('estilo_fuente_link'); ?>" target="_blank"><?php the_field('estilo_fuente'); ?></a></li>
+    			<?php } ?>
     		</ul>
     	</div>
     	<div class="col-sm-6">
