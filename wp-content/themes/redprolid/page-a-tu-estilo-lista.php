@@ -30,8 +30,8 @@ get_header(); ?>
 	<section>
 		<div class="container">
 			<div class="row">
-				<?php $lugar = $_POST['lugar']; ?>
-				<?php $tipo_lugar = $_POST['tipo_lugar']; ?>
+				<?php echo $lugar = $_POST['lugar']; ?>
+				<?php echo $tipo_lugar = $_POST['tipo_lugar']; ?>
 				<?php $resultado = 0; ?>
 				<!-- Start the Loop. -->
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
@@ -46,7 +46,8 @@ get_header(); ?>
 			    			<div class="banner-pic" style="background-image: url(<?php the_field('estilo_foto_restaurante'); ?>)"></div>
 			    		<?php } ?>	          		
             	<div class="banner-content flex-none">
-            		<small>Restaurantes</small>
+	            	<?php	$category = get_the_category(); ?>
+            		<small><?php echo $category[2]->cat_name; ?></small>
 	              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 	              <p class="mt-14"><?php the_field('estilo_descripcion');?></p>
 	              <small><?php the_field('estilo_direccion_lugar') ?></small>
