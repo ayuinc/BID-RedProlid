@@ -61,7 +61,7 @@ get_header(); ?>
 	              <p class="mt-14"><?php echo $estilo_descripcion;?></p>
 	              <small><?php the_field('estilo_direccion_lugar') ?></small>
 	              <div class="text-right banner-label mb-7">
-	              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ver más &gt;&gt;</a></small>
+	              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ve más &gt;&gt;</a></small>
 	              </div>
             	</div>
           	</div>
