@@ -82,7 +82,7 @@ get_header(); ?>
 								<option value="panama,colon">Panamá, Colón</option>
 								<option value="paraguay,asuncion">Paraguay, Asunción</option>
 								<option value="paraguay,ciudad-del-este">Paraguay, Ciudad del Este</option>
-								<option value="peru,Lima">Perú, Lima</option>
+								<option value="peru,lima">Perú, Lima</option>
 								<option value="peru,cusco">Perú, Cusco</option>
 								<option value="republica-dominicana,santo-domingo">República Dominicana, Santo Domingo</option>
 								<option value="republica-dominicana,-santiago-de-los-caballeros">República Dominicana, Santiago de los Caballeros</option>
