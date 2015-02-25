@@ -30,8 +30,8 @@ get_header(); ?>
 	<section>
 		<div class="container">
 			<div class="row">
-				<?php echo $lugar = $_POST['lugar']; ?>
-				<?php echo $tipo_lugar = $_POST['tipo_lugar']; ?>
+				<?php $lugar = $_POST['lugar']; ?>
+				<?php $tipo_lugar = $_POST['tipo_lugar']; ?>
 				<?php $resultado = 0; ?>
 				<!-- Start the Loop. -->
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
