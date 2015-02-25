@@ -28,7 +28,7 @@
     		<?php } ?>
     	</div>     	
     	<div class="col-sm-6">
-    		<p><?php the_field('estilo_descripcion_larga'); ?></p>
+    		<p><?php the_field('estilo_descripcion'); ?></p>
     	</div>   	
     </div>
     <hr>
