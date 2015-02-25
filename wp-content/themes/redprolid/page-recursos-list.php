@@ -27,7 +27,7 @@ get_header(); ?>
       </div>
 	    <div class="row text-justify">
 				<div class="col-md-12">
-					<h3 class="light mb-14">Todos los días encontramos en los medios noticias, buenas o malas, que nos hablan de los avances o retrocesos de la mujer en el espacio público. Hemos recogido algunas de las más relevantes o significativas de entre las que tienen que ver con nosotras y nos ayudan a entender cómo está cambiando el mundo para las mujeres. Anímate a proponer las noticias que te parezcan destacadas.</h3>
+					<h3 class="light mb-14">Hemos identificado y ordenado para ti en este espacio diversas publicaciones sobre temas que nos interesan porque tratan sobre el liderazgo, la igualdad y el empoderamiento de la mujer: guías de capacitación, folletos, informes e investigaciones, legislación, libros, revistas, boletines, blogs...Por supuesto, también estás invitada a participar aportando tus comentarios a las publicaciones que te atraigan y compartiendo con nosotras las que te parezcan relevantes.</h3>
 				</div>
 	    </div>	
     </div>
