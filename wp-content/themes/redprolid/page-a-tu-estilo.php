@@ -125,7 +125,7 @@ get_header(); ?>
 	            	<div class="banner-content flex-none">
 		            	<?php
 									$category = get_the_category(); 
-									echo $category[0]->cat_name;
+									echo $category[2]->cat_name;
 									?>
 	            		<small>Restaurantes</small>
 		              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
