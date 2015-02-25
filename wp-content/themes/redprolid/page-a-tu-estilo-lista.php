@@ -37,6 +37,9 @@ get_header(); ?>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
         <?php query_posts( 'category_name='.$lugar.'&posts_per_page=10&paged=' . $paged ); ?>          
 				<?php while ( have_posts() ) : the_post(); ?>				            
+          
+          <?php	$category = get_the_category(); ?>
+          <?php if ($category==$tipo_lugar) { ?>
           <div class="banner col-md-3 banner-label-bottom">
           	<div class="bg-white">
 	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
@@ -46,7 +49,6 @@ get_header(); ?>
 			    			<div class="banner-pic" style="background-image: url(<?php the_field('estilo_foto_restaurante'); ?>)"></div>
 			    		<?php } ?>	          		
             	<div class="banner-content flex-none">
-	            	<?php	$category = get_the_category(); ?>
             		<small><?php echo $category[2]->cat_name; ?></small>
 	              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 	              <p class="mt-14"><?php the_field('estilo_descripcion');?></p>
@@ -58,6 +60,8 @@ get_header(); ?>
           	</div>
           </div>
           <?php $resultados++; ?>
+          <?php } ?>
+          
         <?php endwhile; ?>
         <?php if ($resultados==0) { ?>
         	<h3 class="medium text-center">No hay resultados disponibles para tu busqueda. <a href="<?php echo content_url('/'); ?>a-tu-estilo">Regresar</a></h3>
