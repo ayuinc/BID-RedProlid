@@ -30,7 +30,7 @@ get_header(); ?>
 	<section>
 		<div class="container">
 			<div class="row">
-				<?php $lugar = $_POST['lugar']; ?>
+				<?php echo $lugar = $_POST['lugar']; ?>
 				<?php $tipo_lugar = $_POST['tipo_lugar']; ?>
 				<?php $resultado = 0; ?>
 				<!-- Start the Loop. -->
