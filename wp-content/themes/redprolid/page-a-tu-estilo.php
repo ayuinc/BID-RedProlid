@@ -60,12 +60,12 @@ get_header(); ?>
 								<option value="brasil,brasilia">Brasil, Brasilia</option>
 								<option value="brasil,sao-paulo">Brasil, Sao Paulo</option>
 								<option value="brasil,rio-de-janeiro">Brasil, Rio de Janeiro</option>
-								<option value="chile,Santiago-de-chile">Chile, Santiago de Chile</option>
+								<option value="chile,santiago-de-chile">Chile, Santiago de Chile</option>
 								<option value="chile,concepcion">Chile, Concepción</option>
 								<option value="colombia,bogota">Colombia, Bogotá</option>
 								<option value="colombia,Medellin">Colombia, Medellín</option>
-								<option value="costa,rica-san-jose">Costa Rica, San José</option>
-								<option value="costa,rica-alajuela">Costa Rica, Alajuela</option>
+								<option value="costa-rica,san-jose">Costa Rica, San José</option>
+								<option value="costa-rica,alajuela">Costa Rica, Alajuela</option>
 								<option value="ecuador,quito">Ecuador, Quito</option>
 								<option value="ecuador,guayaquil">Ecuador, Guayaquil</option>
 								<option value="el-salvador,san-salvador">El Salvador, San Salvador</option>
