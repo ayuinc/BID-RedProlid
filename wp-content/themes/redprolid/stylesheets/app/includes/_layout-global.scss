@@ -252,3 +252,10 @@ ul.table-list {
 		}
 	}
 }
+
+/* HIDE POLL RESULTS ANCHORS */
+.hide-poll-results-anchor {
+	.poll-results-anchor {
+		display: none;
+	}
+}

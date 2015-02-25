@@ -4944,6 +4944,10 @@ ul.table-list {
   .flickity-prev-next-button.next {
     right: -7%; } }
 
+/* HIDE POLL RESULTS ANCHORS */
+.hide-poll-results-anchor .poll-results-anchor {
+  display: none; }
+
 footer {
   background: #232323;
   position: relative; }
@@ -5962,8 +5966,8 @@ form.search button {
     .banner .banner-label span {
       text-transform: uppercase; }
   .banner .banner-content {
-    min-height: 280px;
-    min-height: 17.5rem;
+    min-height: 310px;
+    min-height: 19.375rem;
     padding: 21px; }
     @media only screen and (max-width: 768px) {
       .banner .banner-content {
