@@ -111,10 +111,11 @@ get_header(); ?>
 					<?php while ( have_posts() ) : the_post(); ?>				            
             <div class="banner col-md-3 banner-label-bottom">
             	<div class="bg-white">
+	            	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
 					    	<?php if ($image_foto_nombre!='') { ?>
-				    			<div class="banner-pic" style="background-image: url('<?php echo home_url("/"); ?>fotos_restaurantes/<?php the_field("estilo_foto_nombre"); ?>')"></div>
+				    			<div class="banner-pic" style="background-image: url(<?php echo home_url("/"); ?>fotos_restaurantes/<?php the_field("estilo_foto_nombre"); ?>)"></div>
 				    		<?php } else { ?>
-				    			<div class="banner-pic" style="background-image: url('<?php the_field("estilo_foto_restaurante"); ?>')"></div>
+				    			<div class="banner-pic" style="background-image: url(<?php the_field("estilo_foto_restaurante"); ?>)"></div>
 				    		<?php } ?>	  
 	            	<div class="banner-content flex-none">
 	            		<small>Restaurantes</small>
