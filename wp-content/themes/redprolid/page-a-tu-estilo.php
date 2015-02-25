@@ -97,7 +97,7 @@ get_header(); ?>
 					<nav class="custom-nav">
 						<input type="radio" name="tipo_lugar" value="restaurantes"> <label class="text-white medium mr-21">Restaurantes</label>
 						<input type="radio" name="tipo_lugar" value="tiendas"> <label class="text-white medium">Tiendas</label>
-						<button type="submit" class="btn btn-primary ml-21">Buscar</button>
+						<button type="submit" class="btn btn-primary text-right">Buscar</button>
 					</nav>
 				</div>
 			</div>
