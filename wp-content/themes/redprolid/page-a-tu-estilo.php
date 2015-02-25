@@ -128,7 +128,7 @@ get_header(); ?>
 		              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 		              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
 		              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 100); ?>
-		              <p class="mt-14"><?php echo $estilo_descripcion;?></p>
+		              <p class="mt-14"><?php echo $estilo_descripcion;?>...</p>
 		              <small><?php the_field('estilo_direccion_lugar') ?></small>
 		              <div class="text-right banner-label mb-7">
 		              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ver más &gt;&gt;</a></small>
