@@ -24,7 +24,11 @@
 	    	<?php if ($image_foto_nombre!='') { ?>
     			<img src="<?php echo home_url('/'); ?>fotos_restaurantes/<?php the_field('estilo_foto_nombre'); ?>" alt="" class="img-responsive">
     		<?php } else { ?>
-    			<img src="<?php the_field('estilo_foto_restaurante'); ?>" alt="" class="img-responsive">
+    			<?php if ($image_foto_restaurante!='') { ?>
+    				<img src="<?php the_field("estilo_foto_restaurante"); ?>" alt="" class="img-responsive">
+    			<?php } else { ?>
+    				<img src="/wp-content/uploads/2015/02/eventos_redprolid.png" alt="" class="img-responsive">
+    			<?php } ?>    		
     		<?php } ?>
     	</div>     	
     	<div class="col-sm-6">
