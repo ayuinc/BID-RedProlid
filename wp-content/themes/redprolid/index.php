@@ -169,7 +169,7 @@ get_header(); ?>
                     <li class="icon" data-href="/tu-opinion-cuenta" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -168px;"></li>
                   </ul>
                 </div>
-                <div class="panel-body pt-0">
+                <div class="panel-body pt-0 hide-poll-results-anchor">
                   <?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
                     <?php the_content(); ?>

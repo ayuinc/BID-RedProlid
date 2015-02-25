@@ -22,7 +22,7 @@ get_header(); ?>
     </div>      
   </div> 
   <div class="container-sm">
-  	<div class="bg-white border-radius p-21">
+  	<div class="bg-white border-radius p-21 hide-poll-results-anchor">
       <?php while ( have_posts() ) : the_post(); ?>
         <?php the_content(); ?>        
         <!-- <span class="text-gray">Agosto 1 / 2014</span> -->

@@ -29,8 +29,8 @@
 		}
 	}
 	.banner-content {
-		min-height: $banner-height;
-		min-height: rem($banner-height);
+		min-height: $banner-height + 30;
+		min-height: rem($banner-height + 30);
 		padding: $container-fluid * 2;
 		@media #{$sm-down} {
 			min-height: $banner-height / 2;
