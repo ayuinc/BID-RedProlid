@@ -276,11 +276,18 @@ get_header(); ?>
                 <div class="panel-body pt-0">
 								<?php if ( have_posts() ) : ?>
                 <?php query_posts( array( 'category_name' => 'video', 'posts_per_page' => 1 ) ); ?>
-									<?php while ( have_posts() ) : the_post(); ?>	                
+									<?php while ( have_posts() ) : the_post(); ?>	                                 
+							    <?php $youtube = get_field('video_youtube'); ?>
+						    	<?php if ($youtube!='') { ?>
+						    		<iframe width="100%" height="300" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
+									<?php } ?>
+							    <?php $vimeo = get_field('video_vimeo'); ?>
+						    	<?php if ($vimeo!='') { ?>				
+										<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									<?php } ?>
                   <h3 class="mediumt mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 									<?php $tempDate = get_the_date(); ?>
-									<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>                  
-                  <iframe width="100%" height="320" src="//www.youtube.com/embed/<?php the_field('id_video'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+									<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small> 
                   <div class="text-right mt-21">
                     <p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más aquí >></a></p>
                   </div>
