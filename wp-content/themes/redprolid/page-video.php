@@ -68,8 +68,8 @@ get_header(); ?>
 						<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0"><?php the_title(); ?></h3></a>
 						<?php $tempDate = get_field('fecha_publicacion_video'); ?>
 						<small>Publicado por: <?php the_field('organizacion_video'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
-						<p><?php the_field('descripcion_corta_video'); ?></p>
-						<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></p>
+						<p class="pv-7"><?php the_field('descripcion_corta_video'); ?></p>
+						<small class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
 					</div>																			
           <?php endwhile; ?>
         </div>
