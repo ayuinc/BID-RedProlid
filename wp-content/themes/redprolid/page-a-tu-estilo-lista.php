@@ -30,8 +30,8 @@ get_header(); ?>
 	<section>
 		<div class="container">
 			<div class="row">
-				<?php echo $lugar = $_POST['lugar']; ?>
-				<?php echo $tipo_lugar = $_POST['tipo_lugar']; ?>
+				<?php $lugar = $_POST['lugar']; ?>
+				<?php $tipo_lugar = $_POST['tipo_lugar']; ?>
 				<?php $resultado = 0; ?>
 				<!-- Start the Loop. -->
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
@@ -61,7 +61,7 @@ get_header(); ?>
 	              <p class="mt-14"><?php echo $estilo_descripcion;?></p>
 	              <small><?php the_field('estilo_direccion_lugar') ?></small>
 	              <div class="text-right banner-label mb-7">
-	              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ver más &gt;&gt;</a></small>
+	              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ve más &gt;&gt;</a></small>
 	              </div>
             	</div>
           	</div>

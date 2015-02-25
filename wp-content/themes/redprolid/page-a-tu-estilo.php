@@ -53,8 +53,9 @@ get_header(); ?>
 				<div class="col-sm-4">
 						<div class="form-group">
 							<select name="lugar" id="" class="select-override form-control">
+								<option selected>- Selecciona - </option>
 								<option value="argentina,buenos-aires">Argentina, Buenos Aires</option>
-								<option value="argentina,cordova">Argentina, Córdova</option>
+								<option value="argentina,cordova">Argentina, Córdoba</option>
 								<option value="bolivia,la-paz">Bolivia, La Paz</option>
 								<option value="bolivia,santa-cruz">Bolivia, Santa Cruz</option>
 								<option value="brasil,brasilia">Brasil, Brasilia</option>
@@ -81,7 +82,6 @@ get_header(); ?>
 								<option value="nicaragua,managua">Nicaragua, Managua</option>
 								<option value="nicaragua,estelí">Nicaragua, Estelí</option>
 								<option value="panama,ciudad-de-panama">Panamá, Ciudad de Panamá</option>
-								<option value="panama,colon">Panamá, Colón</option>
 								<option value="paraguay,asuncion">Paraguay, Asunción</option>
 								<option value="paraguay,ciudad-del-este">Paraguay, Ciudad del Este</option>
 								<option value="peru,lima">Perú, Lima</option>
@@ -126,10 +126,12 @@ get_header(); ?>
 		            	<?php	$category = get_the_category(); ?>
 	            		<small><?php echo $category[2]->cat_name; ?></small>
 		              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-		              <p class="mt-14"><?php the_field('estilo_descripcion');?></p>
+		              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
+		              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 100); ?>
+		              <p class="mt-14"><?php echo $estilo_descripcion;?>...</p>
 		              <small><?php the_field('estilo_direccion_lugar') ?></small>
 		              <div class="text-right banner-label mb-7">
-		              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ver más &gt;&gt;</a></small>
+		              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ve más &gt;&gt;</a></small>
 		              </div>
 	            	</div>
             	</div>
