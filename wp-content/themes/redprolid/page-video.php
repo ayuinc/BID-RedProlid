@@ -43,8 +43,9 @@ get_header(); ?>
 			<div class="col-sm-5">
 				<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h2 class="medium mb-0"><?php the_title(); ?></h2></a>
 				<?php $tempDate = get_field('fecha_publicacion_video'); ?>
-			<small>Publicado por: <?php the_field('organizacion_video'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small> 	
+				<small>Publicado por: <?php the_field('organizacion_video'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small> 	
 				<h3 class="pt-14 light"><?php the_field('descripcion_corta_video'); ?></h3>
+				<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></p>
 			</div>
     </div>
     <?php endwhile; ?>	
@@ -68,6 +69,7 @@ get_header(); ?>
 						<p class="mb-0"><?php the_field('descripcion_corta_video'); ?></p>
 						<?php $tempDate = get_field('fecha_publicacion_video'); ?>
 						<small>Publicado por: <?php the_field('organizacion_video'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+						<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></p>
 					</div>																			
           <?php endwhile; ?>
         </div>
