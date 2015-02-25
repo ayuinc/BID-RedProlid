@@ -18,7 +18,9 @@ get_header(); ?>
       	<div class="col-sm-8">
 		      <div class="clearfix sub-header">
 		        <div class="col-sm-2 col-xs-3">
-		          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/a-tu-estilo.png" alt="" width="100%"></div>
+		          <div>
+			          <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/a-tu-estilo.png" alt="" width="100%">
+		          </div>
 		        </div>
 		        <div class="col-sm-5 col-xs-9">
 		          <h1><?php the_title(); ?></h1>
@@ -109,7 +111,11 @@ get_header(); ?>
 					<?php while ( have_posts() ) : the_post(); ?>				            
             <div class="banner col-md-3 banner-label-bottom">
             	<div class="bg-white">
-	            	<div class="banner-pic" style="background-image: url(<?php the_field('foto_restaurante_estilo'); ?>)"></div>
+					    	<?php if ($image_foto_nombre!='') { ?>
+				    			<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>fotos_restaurantes/<?php the_field('estilo_foto_nombre'); ?>)"></div>
+				    		<?php } else { ?>
+				    			<div class="banner-pic" style="background-image: url(<?php the_field('estilo_foto_restaurante'); ?>)"></div>
+				    		<?php } ?>	  
 	            	<div class="banner-content flex-none">
 	            		<small>Restaurantes</small>
 		              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
