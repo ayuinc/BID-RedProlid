@@ -47,7 +47,11 @@ get_header(); ?>
 				    	<?php if ($image_foto_nombre!='') { ?>
 			    			<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>fotos_restaurantes/<?php the_field('estilo_foto_nombre'); ?>)"></div>
 			    		<?php } else { ?>
-			    			<div class="banner-pic" style="background-image: url(<?php the_field('estilo_foto_restaurante'); ?>)"></div>
+			    			<?php if ($image_foto_restaurante!='') { ?>
+			    				<div class="banner-pic" style="background-image: url(<?php the_field("estilo_foto_restaurante"); ?>)"></div>
+			    			<?php } else { ?>
+			    				<div class="banner-pic" style="background-image: url(/wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
+			    			<?php } ?>
 			    		<?php } ?>	          		
             	<div class="banner-content flex-none">
             		<small><?php echo $category[2]->cat_name; ?></small>
