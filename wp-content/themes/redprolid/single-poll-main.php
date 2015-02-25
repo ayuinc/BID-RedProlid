@@ -24,7 +24,8 @@ get_header(); ?>
     	<div class="bg-white border-radius p-21">
         <?php while ( have_posts() ) : the_post(); ?>
           <div class="ph-70-sm">
-            <?php get_template_part( 'content', 'page' ); ?>
+            <?php the_content(); ?>
+            <!-- <?php get_template_part( 'content', 'page' ); ?> -->
           </div>
           <hr>
           <!-- <span class="text-gray">Agosto 1 / 2014</span> -->
