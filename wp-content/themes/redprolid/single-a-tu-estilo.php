@@ -16,7 +16,7 @@
     			<li><?php the_field('estilo_direccion_lugar') ?></li>
     			<li><?php the_field('ciudad_pais_estilo');?></li>
     			<li>Sitio web: <a href="<?php the_field('estilo_sitio_web'); ?>"><?php the_field('estilo_sitio_web'); ?></a></li>
-    			<li class="text-primary">Fuente: <?php the_field('estilo_fuente'); ?></li>
+    			<li>Fuente: <a href="<?php the_field('estilo_fuente_link'); ?>" target="_blank"><?php the_field('estilo_fuente'); ?></a></li>
     		</ul>
     	</div>
     	<div class="col-sm-6">
