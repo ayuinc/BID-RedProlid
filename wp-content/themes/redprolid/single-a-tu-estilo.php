@@ -10,7 +10,7 @@
     </div>
     <div class="clearfix ph-70">
     	<div class="col-sm-12">
-    		<small class="text-gray">Tiendas</small>
+    		<!--<small class="text-gray">Tiendas</small>-->
     		<h1><?php the_title();?></h1>
     		<ul class="list-unstyled pv-21">
     			<li><?php the_field('estilo_direccion_lugar') ?></li>
