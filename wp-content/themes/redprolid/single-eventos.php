@@ -33,7 +33,7 @@
 			        <h5 class="medium mb-0">Convocan</h5>
 			        <p><?php echo $convocan; ?></p>
 			        <?php } ?>
-			        <p><?php the_field('descripcion_evento'); ?></p>
+			        <p><?php the_field('contenido_evento'); ?></p>
 			        <?php $contacto_nombre_evento = get_field('contacto_nombre_evento'); ?>
 			        <?php if ($contacto_nombre_evento!='') { ?>
 			        <p>
