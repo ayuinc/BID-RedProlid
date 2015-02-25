@@ -146,7 +146,7 @@ get_header(); ?>
                               <?php } ?>
                             </small>
                             <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
-                            <div class="text-right banner-label">
+                            <div class="text-right banner-label p-7">
                               <small><a href="<?php echo get_permalink( get_the_ID() ); ?>">Noticia completa >></a></small>
                             </div>
                           </div>
