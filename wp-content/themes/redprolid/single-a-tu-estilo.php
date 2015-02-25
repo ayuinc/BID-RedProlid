@@ -20,7 +20,12 @@
     		</ul>
     	</div>
     	<div class="col-sm-6">
-    		<img src="<?php the_field('estilo_foto_restaurante'); ?>" alt="" class="img-responsive">
+	    	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
+	    	<?php if ($image_foto_nombre!='') { ?>
+    			<img src="/wp-content/uploads/fotos_restaurantes/<?php the_field('estilo_foto_nombre'); ?>" alt="" class="img-responsive">
+    		<?php } else { ?>
+    			<img src="<?php the_field('estilo_foto_restaurante'); ?>" alt="" class="img-responsive">
+    		<?php } ?>
     	</div>     	
     	<div class="col-sm-6">
     		<p><?php the_field('estilo_descripcion_larga'); ?></p>
