@@ -13,17 +13,17 @@
     		<small class="text-gray">Tiendas</small>
     		<h1><?php the_title();?></h1>
     		<ul class="list-unstyled pv-21">
-    			<li><?php the_field('direccion_lugar_estilo') ?></li>
+    			<li><?php the_field('estilo_direccion_lugar') ?></li>
     			<li><?php the_field('ciudad_pais_estilo');?></li>
-    			<li>Sitio web: <a href="<?php the_field('sitio_web_estilo'); ?>"><?php the_field('sitio_web_estilo'); ?></a></li>
-    			<li class="text-primary">Fuente: <?php the_field('fuente_estilo'); ?></li>
+    			<li>Sitio web: <a href="<?php the_field('estilo_sitio_web'); ?>"><?php the_field('estilo_sitio_web'); ?></a></li>
+    			<li class="text-primary">Fuente: <?php the_field('estilo_fuente'); ?></li>
     		</ul>
     	</div>
     	<div class="col-sm-6">
-    		<img src="<?php the_field('foto_restaurante_estilo'); ?>" alt="" class="img-responsive">
+    		<img src="<?php the_field('estilo_foto_restaurante'); ?>" alt="" class="img-responsive">
     	</div>     	
     	<div class="col-sm-6">
-    		<p><?php the_field('descripcion_larga_estilo'); ?></p>
+    		<p><?php the_field('estilo_descripcion_larga'); ?></p>
     	</div>   	
     </div>
     <hr>
