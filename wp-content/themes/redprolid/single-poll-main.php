@@ -28,6 +28,7 @@ get_header(); ?>
           </div>
           <hr>
           <!-- <span class="text-gray">Agosto 1 / 2014</span> -->
+        <?php endwhile; // end of the loop. ?>
     	</div>
     </div>
   </div> 
