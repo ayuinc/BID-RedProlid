@@ -213,6 +213,9 @@ ul.table-list {
 		height: 35px;
 		line-height: 2;
 		padding: 0 6px;
+		&:nth-child(n+2) {
+			margin-left: -4px;
+		}
 		&:hover {
 			cursor: pointer;
 			background-color: $brand-primary;
@@ -220,7 +223,7 @@ ul.table-list {
 	}
 	input[type="radio"] {
 		display: none;
-		&:checked ~ label {
+		&:checked + label {
 			background-color: $brand-primary;
 		}
 	}
