@@ -13,8 +13,7 @@
     		<!--<small class="text-gray">Tiendas</small>-->
     		<h1><?php the_title();?></h1>
     		<ul class="list-unstyled pv-21">
-    			<li><?php the_field('estilo_direccion_lugar') ?></li>
-    			<li><?php the_field('ciudad_pais_estilo');?></li>
+    			<li>Dirección: <?php the_field('estilo_direccion_lugar') ?></li>
     			<?php $estilo_sitio_web = get_field('estilo_sitio_web'); ?>
     			<?php if ($estilo_sitio_web!='') { ?>
     			<li>Sitio web: <a href="<?php the_field('estilo_sitio_web'); ?>"><?php the_field('estilo_sitio_web'); ?></a></li>
