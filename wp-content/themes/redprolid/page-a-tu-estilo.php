@@ -95,10 +95,16 @@ get_header(); ?>
 							</select>
 						</div>
 				</div>
-				<div class="col-sm-8 bg-secondary">
-					<nav class="custom-nav">
-						<input type="radio" name="tipo_lugar" value="restaurantes" selected> <label class="text-white medium mr-21">Restaurantes</label>
-						<input type="radio" name="tipo_lugar" value="tiendas"> <label class="text-white medium">Tiendas</label>
+				<div class="col-sm-8">
+					<nav class="custom-nav bg-secondary">
+						<label class="text-white medium mr-21" for="tipo_lugar">
+							<input type="radio" name="tipo_lugar" value="restaurantes" selected> 
+							Restaurantes
+						</label>
+						<label class="text-white medium" for="tipo_lugar">
+							<input type="radio" name="tipo_lugar" value="tiendas"> 
+							Tiendas
+						</label>
 						<button type="submit" class="btn btn-primary ml-21">Buscar</button>
 					</nav>
 				</div>
