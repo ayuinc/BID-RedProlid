@@ -4916,6 +4916,19 @@ ul.table-list {
   .custom-nav a:hover, .custom-nav a.active {
     background-color: #ed7133;
     text-decoration: none; }
+.custom-nav label {
+  display: inline-block;
+  margin: 0;
+  height: 35px;
+  line-height: 2;
+  padding: 0 6px; }
+  .custom-nav label:hover {
+    cursor: pointer;
+    background-color: #ed7133; }
+.custom-nav input[type="radio"] {
+  display: none; }
+  .custom-nav input[type="radio"]:checked ~ label {
+    background-color: #ed7133; }
 
 [data-href]:hover {
   cursor: pointer; }
