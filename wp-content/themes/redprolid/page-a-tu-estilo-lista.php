@@ -44,7 +44,7 @@ get_header(); ?>
             		<small>Restaurantes</small>
 	              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 	              <p class="mt-14"><?php the_field('estilo_descripcion');?></p>
-	              <small><?php the_field('estilo_direccion_lugar') ?><br><?php the_field('estilo_ciudad_pais');?></small>
+	              <small><?php the_field('estilo_direccion_lugar') ?></small>
 	              <div class="text-right banner-label mb-7">
 	              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ver más &gt;&gt;</a></small>
 	              </div>
