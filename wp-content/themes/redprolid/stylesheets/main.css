@@ -4922,7 +4922,7 @@ ul.table-list {
   height: 35px;
   line-height: 2;
   padding: 0 6px; }
-  .custom-nav label:nth-child(n+2) {
+  .custom-nav label:nth-child(n+3) {
     margin-left: -4px; }
   .custom-nav label:hover {
     cursor: pointer;

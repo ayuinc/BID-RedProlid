@@ -21,7 +21,7 @@ get_header(); ?>
         </div>
       </div>
       <div>
-        <ul class="grid-list grid-list-3">
+        <ul class="grid-list grid-list-3 grid-list-1-xs grid-list-2-sm">
         	<?php while ( have_posts() ) : the_post(); ?>
     			  <?php the_content(); ?>
     		  <?php endwhile; ?>
