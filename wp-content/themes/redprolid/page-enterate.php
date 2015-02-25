@@ -183,7 +183,12 @@ get_header(); ?>
 	                <div class="col-md-8">
 		                <div class="row">
 			                <div class="col-md-4">
-				                <img src="<?php the_field('imagen_evento');?>" width="100%">
+							      		<?php $imagen_evento = get_field('imagen_evento'); ?>
+							        	<?php if ($imagen_evento!='') { ?>	
+							    				<img src="<?php the_field('imagen_evento'); ?>" width="100%">
+							    			<?php } else { ?>
+							    				<img src="/wp-content/uploads/2015/02/eventos_redprolid.png" width="100%">
+							    			<?php } ?>
 			                </div>
 			                <div class="col-md-8">
 				                <h3 class="medium mb-0"><?php the_title(); ?></h3>
