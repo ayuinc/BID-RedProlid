@@ -4916,6 +4916,21 @@ ul.table-list {
   .custom-nav a:hover, .custom-nav a.active {
     background-color: #ed7133;
     text-decoration: none; }
+.custom-nav label {
+  display: inline-block;
+  margin: 0;
+  height: 35px;
+  line-height: 2;
+  padding: 0 6px; }
+  .custom-nav label:nth-child(n+2) {
+    margin-left: -4px; }
+  .custom-nav label:hover {
+    cursor: pointer;
+    background-color: #ed7133; }
+.custom-nav input[type="radio"] {
+  display: none; }
+  .custom-nav input[type="radio"]:checked + label {
+    background-color: #ed7133; }
 
 [data-href]:hover {
   cursor: pointer; }
@@ -5656,6 +5671,11 @@ form.form-search-inline button {
 .ninja-forms-form .ninja-forms-field:not(.btn) {
   width: 100%;
   background: white; }
+
+.field-wrap ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0; }
 
 .formBuilderError {
   color: red !important;

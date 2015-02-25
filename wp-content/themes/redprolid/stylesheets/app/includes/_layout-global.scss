@@ -207,6 +207,26 @@ ul.table-list {
 			text-decoration: none;
 		}
 	}
+	label {
+		display: inline-block;
+		margin: 0;
+		height: 35px;
+		line-height: 2;
+		padding: 0 6px;
+		&:nth-child(n+2) {
+			margin-left: -4px;
+		}
+		&:hover {
+			cursor: pointer;
+			background-color: $brand-primary;
+		}
+	}
+	input[type="radio"] {
+		display: none;
+		&:checked + label {
+			background-color: $brand-primary;
+		}
+	}
 }
 
 // DATA HREF 

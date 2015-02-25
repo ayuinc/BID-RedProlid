@@ -95,10 +95,10 @@ get_header(); ?>
 							</select>
 						</div>
 				</div>
-				<div class="col-sm-8 bg-secondary">
-					<nav class="custom-nav">
-						<input type="radio" name="tipo_lugar" value="restaurantes" selected> <label class="text-white medium mr-21">Restaurantes</label>
-						<input type="radio" name="tipo_lugar" value="tiendas"> <label class="text-white medium">Tiendas</label>
+				<div class="col-sm-8">
+					<nav class="custom-nav bg-secondary">
+						<input type="radio" name="tipo_lugar" value="restaurantes" id="restaurantes" selected> <label class="text-white medium mr-21" for="restaurantes">Restaurantes</label>
+						<input type="radio" name="tipo_lugar" value="tiendas" id="tiendas"> <label class="text-white medium" for="tiendas">Tiendas</label>
 						<button type="submit" class="btn btn-primary ml-21">Buscar</button>
 					</nav>
 				</div>
@@ -143,8 +143,8 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<section class="pv-21">
-		<div class="container pv-70">
+	<section class="pv-70">
+		<div class="container-sm">
 			<div class="row normalize-text">
 				<div class="col-sm-12">
 					<h3>¿Tienes alguna recomendación?</h3>
