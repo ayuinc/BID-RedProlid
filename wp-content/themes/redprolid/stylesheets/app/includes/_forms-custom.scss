@@ -58,6 +58,7 @@ form.form-search-inline {
 	}
 }
 
+// NINJA FORMS
 .ninja-forms-form {
 	label[for*="ninja"] {
 		@include book;
@@ -73,6 +74,20 @@ form.form-search-inline {
 	.ninja-forms-field{
 		&select {
 			@extend .select-override;
+		}
+	}
+}
+.field-wrap {
+	ul {
+		@include list-unstyled;
+	}
+	&.upload-wrap {
+		ul {
+			li {
+				&:last-child {
+					// display: none;
+				}
+			}
 		}
 	}
 }

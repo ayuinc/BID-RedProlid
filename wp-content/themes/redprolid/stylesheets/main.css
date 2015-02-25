@@ -5657,6 +5657,11 @@ form.form-search-inline button {
   width: 100%;
   background: white; }
 
+.field-wrap ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0; }
+
 .formBuilderError {
   color: red !important;
   font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;

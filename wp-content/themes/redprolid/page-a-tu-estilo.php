@@ -134,8 +134,8 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<section class="pv-21">
-		<div class="container pv-70">
+	<section class="pv-70">
+		<div class="container-sm">
 			<div class="row normalize-text">
 				<div class="col-sm-12">
 					<h3>¿Tienes alguna recomendación?</h3>
