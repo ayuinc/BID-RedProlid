@@ -10,7 +10,7 @@ get_header(); ?>
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
 
-<section class="bg-panel"> 
+<section class="bg-panel pb-56"> 
   <div class="container">
     <?php the_breadcrumb(); ?>
     <div class="clearfix sub-header">
@@ -20,18 +20,17 @@ get_header(); ?>
         </nav>          
       </div>
     </div>      
-    <div class="ph-70">
-    	<div class="bg-white border-radius p-21">
-        <?php while ( have_posts() ) : the_post(); ?>
-          <div class="ph-70-sm">
-            <?php the_content(); ?>
-          </div>
-          <hr>
-          <!-- <span class="text-gray">Agosto 1 / 2014</span> -->
-        <?php endwhile; // end of the loop. ?>
-    	</div>
-    </div>
   </div> 
+  <div class="container-sm">
+  	<div class="bg-white border-radius p-21">
+      <?php while ( have_posts() ) : the_post(); ?>
+        <?php the_content(); ?>        
+        <!-- <span class="text-gray">Agosto 1 / 2014</span> -->
+      <?php endwhile; // end of the loop. ?>
+      <hr>
+      
+  	</div>
+  </div>
 </section>
 
 

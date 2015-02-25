@@ -96,10 +96,10 @@ get_header(); ?>
 						</div>
 				</div>
 				<div class="col-sm-8">
-					<nav class="custom-nav bg-secondary">
+					<nav class="custom-nav bg-secondary clearfix">
 						<input type="radio" name="tipo_lugar" value="restaurantes" id="restaurantes" checked> <label class="text-white medium" for="restaurantes">Restaurantes</label>
 						<input type="radio" name="tipo_lugar" value="tiendas" id="tiendas"> <label class="text-white medium" for="tiendas">Tiendas</label>
-						<button type="submit" class="btn btn-primary ml-21">Buscar</button>
+						<button type="submit" class="btn btn-default ml-21 pull-right" style="padding: 7px 12px;">Buscar</button>
 					</nav>
 				</div>
 			</div>
