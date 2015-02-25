@@ -15382,17 +15382,17 @@ a.bg-hover-linkedin:hover,
     .grid-list.grid-list-1-xs > li,
     .grid-list.grid-list-1-xs .gallery-cell {
       width: 100%; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .grid-list.grid-list-1-sm .grid-list-item,
     .grid-list.grid-list-1-sm > li,
     .grid-list.grid-list-1-sm .gallery-cell {
       width: 100%; } }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
     .grid-list.grid-list-1-md .grid-list-item,
     .grid-list.grid-list-1-md > li,
     .grid-list.grid-list-1-md .gallery-cell {
       width: 100%; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .grid-list.grid-list-1-lg .grid-list-item,
     .grid-list.grid-list-1-lg > li,
     .grid-list.grid-list-1-lg .gallery-cell {
@@ -15402,17 +15402,17 @@ a.bg-hover-linkedin:hover,
     .grid-list.grid-list-2-xs > li,
     .grid-list.grid-list-2-xs .gallery-cell {
       width: 50%; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .grid-list.grid-list-2-sm .grid-list-item,
     .grid-list.grid-list-2-sm > li,
     .grid-list.grid-list-2-sm .gallery-cell {
       width: 50%; } }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
     .grid-list.grid-list-2-md .grid-list-item,
     .grid-list.grid-list-2-md > li,
     .grid-list.grid-list-2-md .gallery-cell {
       width: 50%; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .grid-list.grid-list-2-lg .grid-list-item,
     .grid-list.grid-list-2-lg > li,
     .grid-list.grid-list-2-lg .gallery-cell {
@@ -15422,17 +15422,17 @@ a.bg-hover-linkedin:hover,
     .grid-list.grid-list-3-xs > li,
     .grid-list.grid-list-3-xs .gallery-cell {
       width: 33.33333%; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .grid-list.grid-list-3-sm .grid-list-item,
     .grid-list.grid-list-3-sm > li,
     .grid-list.grid-list-3-sm .gallery-cell {
       width: 33.33333%; } }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
     .grid-list.grid-list-3-md .grid-list-item,
     .grid-list.grid-list-3-md > li,
     .grid-list.grid-list-3-md .gallery-cell {
       width: 33.33333%; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .grid-list.grid-list-3-lg .grid-list-item,
     .grid-list.grid-list-3-lg > li,
     .grid-list.grid-list-3-lg .gallery-cell {
@@ -15442,17 +15442,17 @@ a.bg-hover-linkedin:hover,
     .grid-list.grid-list-4-xs > li,
     .grid-list.grid-list-4-xs .gallery-cell {
       width: 25%; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .grid-list.grid-list-4-sm .grid-list-item,
     .grid-list.grid-list-4-sm > li,
     .grid-list.grid-list-4-sm .gallery-cell {
       width: 25%; } }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
     .grid-list.grid-list-4-md .grid-list-item,
     .grid-list.grid-list-4-md > li,
     .grid-list.grid-list-4-md .gallery-cell {
       width: 25%; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .grid-list.grid-list-4-lg .grid-list-item,
     .grid-list.grid-list-4-lg > li,
     .grid-list.grid-list-4-lg .gallery-cell {
@@ -15462,17 +15462,17 @@ a.bg-hover-linkedin:hover,
     .grid-list.grid-list-5-xs > li,
     .grid-list.grid-list-5-xs .gallery-cell {
       width: 20%; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .grid-list.grid-list-5-sm .grid-list-item,
     .grid-list.grid-list-5-sm > li,
     .grid-list.grid-list-5-sm .gallery-cell {
       width: 20%; } }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
     .grid-list.grid-list-5-md .grid-list-item,
     .grid-list.grid-list-5-md > li,
     .grid-list.grid-list-5-md .gallery-cell {
       width: 20%; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .grid-list.grid-list-5-lg .grid-list-item,
     .grid-list.grid-list-5-lg > li,
     .grid-list.grid-list-5-lg .gallery-cell {
@@ -15482,17 +15482,17 @@ a.bg-hover-linkedin:hover,
     .grid-list.grid-list-6-xs > li,
     .grid-list.grid-list-6-xs .gallery-cell {
       width: 16.66667%; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .grid-list.grid-list-6-sm .grid-list-item,
     .grid-list.grid-list-6-sm > li,
     .grid-list.grid-list-6-sm .gallery-cell {
       width: 16.66667%; } }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
     .grid-list.grid-list-6-md .grid-list-item,
     .grid-list.grid-list-6-md > li,
     .grid-list.grid-list-6-md .gallery-cell {
       width: 16.66667%; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .grid-list.grid-list-6-lg .grid-list-item,
     .grid-list.grid-list-6-lg > li,
     .grid-list.grid-list-6-lg .gallery-cell {
@@ -15502,17 +15502,17 @@ a.bg-hover-linkedin:hover,
     .grid-list.grid-list-7-xs > li,
     .grid-list.grid-list-7-xs .gallery-cell {
       width: 14.28571%; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .grid-list.grid-list-7-sm .grid-list-item,
     .grid-list.grid-list-7-sm > li,
     .grid-list.grid-list-7-sm .gallery-cell {
       width: 14.28571%; } }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
     .grid-list.grid-list-7-md .grid-list-item,
     .grid-list.grid-list-7-md > li,
     .grid-list.grid-list-7-md .gallery-cell {
       width: 14.28571%; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .grid-list.grid-list-7-lg .grid-list-item,
     .grid-list.grid-list-7-lg > li,
     .grid-list.grid-list-7-lg .gallery-cell {
@@ -15522,17 +15522,17 @@ a.bg-hover-linkedin:hover,
     .grid-list.grid-list-8-xs > li,
     .grid-list.grid-list-8-xs .gallery-cell {
       width: 12.5%; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .grid-list.grid-list-8-sm .grid-list-item,
     .grid-list.grid-list-8-sm > li,
     .grid-list.grid-list-8-sm .gallery-cell {
       width: 12.5%; } }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
     .grid-list.grid-list-8-md .grid-list-item,
     .grid-list.grid-list-8-md > li,
     .grid-list.grid-list-8-md .gallery-cell {
       width: 12.5%; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .grid-list.grid-list-8-lg .grid-list-item,
     .grid-list.grid-list-8-lg > li,
     .grid-list.grid-list-8-lg .gallery-cell {
@@ -15542,17 +15542,17 @@ a.bg-hover-linkedin:hover,
     .grid-list.grid-list-9-xs > li,
     .grid-list.grid-list-9-xs .gallery-cell {
       width: 11.11111%; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .grid-list.grid-list-9-sm .grid-list-item,
     .grid-list.grid-list-9-sm > li,
     .grid-list.grid-list-9-sm .gallery-cell {
       width: 11.11111%; } }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
     .grid-list.grid-list-9-md .grid-list-item,
     .grid-list.grid-list-9-md > li,
     .grid-list.grid-list-9-md .gallery-cell {
       width: 11.11111%; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .grid-list.grid-list-9-lg .grid-list-item,
     .grid-list.grid-list-9-lg > li,
     .grid-list.grid-list-9-lg .gallery-cell {
@@ -15562,17 +15562,17 @@ a.bg-hover-linkedin:hover,
     .grid-list.grid-list-10-xs > li,
     .grid-list.grid-list-10-xs .gallery-cell {
       width: 10%; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .grid-list.grid-list-10-sm .grid-list-item,
     .grid-list.grid-list-10-sm > li,
     .grid-list.grid-list-10-sm .gallery-cell {
       width: 10%; } }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
     .grid-list.grid-list-10-md .grid-list-item,
     .grid-list.grid-list-10-md > li,
     .grid-list.grid-list-10-md .gallery-cell {
       width: 10%; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .grid-list.grid-list-10-lg .grid-list-item,
     .grid-list.grid-list-10-lg > li,
     .grid-list.grid-list-10-lg .gallery-cell {
@@ -15582,17 +15582,17 @@ a.bg-hover-linkedin:hover,
     .grid-list.grid-list-11-xs > li,
     .grid-list.grid-list-11-xs .gallery-cell {
       width: 9.09091%; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .grid-list.grid-list-11-sm .grid-list-item,
     .grid-list.grid-list-11-sm > li,
     .grid-list.grid-list-11-sm .gallery-cell {
       width: 9.09091%; } }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
     .grid-list.grid-list-11-md .grid-list-item,
     .grid-list.grid-list-11-md > li,
     .grid-list.grid-list-11-md .gallery-cell {
       width: 9.09091%; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .grid-list.grid-list-11-lg .grid-list-item,
     .grid-list.grid-list-11-lg > li,
     .grid-list.grid-list-11-lg .gallery-cell {
@@ -15602,17 +15602,17 @@ a.bg-hover-linkedin:hover,
     .grid-list.grid-list-12-xs > li,
     .grid-list.grid-list-12-xs .gallery-cell {
       width: 8.33333%; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .grid-list.grid-list-12-sm .grid-list-item,
     .grid-list.grid-list-12-sm > li,
     .grid-list.grid-list-12-sm .gallery-cell {
       width: 8.33333%; } }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
     .grid-list.grid-list-12-md .grid-list-item,
     .grid-list.grid-list-12-md > li,
     .grid-list.grid-list-12-md .gallery-cell {
       width: 8.33333%; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .grid-list.grid-list-12-lg .grid-list-item,
     .grid-list.grid-list-12-lg > li,
     .grid-list.grid-list-12-lg .gallery-cell {
