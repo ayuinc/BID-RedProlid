@@ -387,9 +387,11 @@ function wppb_manual_activate_signup( $activation_key ) {
 		$meta = unserialize( $signup->meta );
 		$user_login = esc_sql( $signup->user_login );
 		$user_email = esc_sql( $signup->user_email );
+		
         /* the password is in hashed form in the signup table and we will copy it later to the user */
+    $password = esc_sql( $signup->password );
 		//$password = NULL;
-		$password = 'hola';
+
 
 		$user_id = username_exists($user_login);
 
@@ -492,7 +494,7 @@ function wppb_notify_user_registration_email( $bloginfo, $user_name, $email, $se
 	if ( isset( $send_credentials_via_email ) && ( $send_credentials_via_email == 'sending' ) ){
 		$user_message_from = apply_filters( 'wppb_register_from_email_message_user_email', $bloginfo );
 
-		$user_message_subject = sprintf( __( '%1$s Información de tu nueva cuenta', 'profilebuilder' ), $user_message_from, $user_name, $password );
+		$user_message_subject = sprintf( __( 'Red PROLID Información de tu nueva cuenta', 'profilebuilder' ), $user_message_from, $user_name, $password );
 		$user_message_subject = apply_filters( 'wppb_register_user_email_subject_without_admin_approval', $user_message_subject, $email, $password, $user_message_subject, 'wppb_user_emailc_default_registration_email_subject' );
 		
 		$user_message_content = sprintf( __( '¡Bienvenida o bienvenido a %1$s!<br/><br/><br/>Tu nombre de usuaria o usuario es: %2$s y tu contraseña: %3$s', 'profilebuilder' ), $user_message_from, $user_name, $password );
