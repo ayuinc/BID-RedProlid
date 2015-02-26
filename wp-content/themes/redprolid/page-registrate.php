@@ -25,9 +25,9 @@ get_header(); ?>
 	          <h1><?php the_title(); ?></h1>
 	        </div>
 	      </div>
-			  <div class="row">
+			  <div class="row pb-70">
 					<div class="col-md-10 col-md-offset-1">  	  
-			      <div class="row mt-21">
+			      <div class="row">
 				      <div class="col-md-6 formulario-perfil">
 					      <h3 class="medium text-left mt-35 mb-21">Crea tu perfil incluyendo los siguientes datos</h3>
 					      <small>campo requerido*</small>
