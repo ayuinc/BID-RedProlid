@@ -349,7 +349,8 @@ function wppb_signup_user_notification( $user, $user_email, $activation_key, $me
 	$subject = sprintf( apply_filters( 'wppb_signup_user_notification_email_subject', __( '%1$s - Cuenta activa %2$s', 'profilebuilder'), $user_email, $user, $activation_key, $registration_page_url, $meta, $from_name, 'wppb_user_emailc_registr_w_email_confirm_email_subject' ), $from_name, $user );
 	$message = sprintf( 
 		apply_filters('wppb_signup_user_notification_email_content', 
-			__('Hola, Para activar tu cuenta de usuaria o usuario, por favor haz clic en el siguiente enlace: Inmediatamente después de hacerlo recibirás un nuevo correo electrónico con tu nombre de usuaria o usuario. Si tienes algún problema por favor escríbenos a: comunicate@redprolid.org <br/><br/>Muchas gracias, Equipo de Red PROLID.', 
+			__('Hola, Para activar tu cuenta de usuaria o usuario, por favor haz clic en el siguiente
+				 enlace:\n\n%s\n\n Inmediatamente después de hacerlo recibirás un nuevo correo electrónico con tu nombre de usuaria o usuario.\n\nSi tienes algún problema por favor escríbenos a: comunicate@redprolid.org Muchas gracias, \n\nEquipo de Red PROLID.', 
 				'profilebuilder' ), 
 			$user_email, 
 			$user, 
