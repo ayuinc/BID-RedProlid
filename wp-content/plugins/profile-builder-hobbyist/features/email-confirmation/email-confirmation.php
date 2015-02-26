@@ -343,10 +343,10 @@ function wppb_signup_user_notification( $user, $user_email, $activation_key, $me
         else
             $post_content = '';
 
-		$registration_page_url = ( ( strpos( $post_content, '[wppb-register' ) !== false ) ? add_query_arg( array('activation_key' => $activation_key ), $permalink ) : add_query_arg( array('activation_key' => $activation_key ), get_bloginfo( 'url' ) ) );
+		$registration_page_url = ( ( strpos( $post_content, '[wppb-register]' ) !== false ) ? add_query_arg( array('activation_key' => $activation_key ), $permalink ) : add_query_arg( array('activation_key' => $activation_key ), get_bloginfo( 'url' ) ) );
 	}
 	
-	$subject = sprintf( apply_filters( 'wppb_signup_user_notification_email_subject', __( '%1$s Cuenta activa %2$s', 'profilebuilder'), $user_email, $user, $activation_key, $registration_page_url, $meta, $from_name, 'wppb_user_emailc_registr_w_email_confirm_email_subject' ), $from_name, $user );
+	$subject = sprintf( apply_filters( 'wppb_signup_user_notification_email_subject', __( '%1$s - Cuenta activa %2$s', 'profilebuilder'), $user_email, $user, $activation_key, $registration_page_url, $meta, $from_name, 'wppb_user_emailc_registr_w_email_confirm_email_subject' ), $from_name, $user );
 	$message = sprintf( 
 		apply_filters('wppb_signup_user_notification_email_content', 
 			__('Hola, <br/><br/>Para activar tu cuenta de usuaria o usuario, por favor haz clic en el siguiente
