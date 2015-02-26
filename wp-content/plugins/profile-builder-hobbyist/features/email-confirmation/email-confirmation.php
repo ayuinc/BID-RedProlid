@@ -388,7 +388,8 @@ function wppb_manual_activate_signup( $activation_key ) {
 		$user_login = esc_sql( $signup->user_login );
 		$user_email = esc_sql( $signup->user_email );
         /* the password is in hashed form in the signup table and we will copy it later to the user */
-		$password = NULL;
+		//$password = NULL;
+		$password = 'hola';
 
 		$user_id = username_exists($user_login);
 
