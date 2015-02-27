@@ -105,8 +105,12 @@ get_header(); ?>
             <?php endif; ?> 
           </ol>
 
-          <?php next_posts_link(); ?>
-          <?php previous_posts_link(); ?>
+          <div class="text-center">
+            <ul class="pager">
+              <li><?php next_posts_link( 'Anteriores' ); ?></li>
+              <li><?php previous_posts_link( 'Posteriores' ); ?></li>
+            </ul>
+          </div>
 
           <?php } else { ?>
           <h3 class="medium text-center">No insertaste ninguna palabra o frase para buscar. Vuelve a intentarlo.</h3>
