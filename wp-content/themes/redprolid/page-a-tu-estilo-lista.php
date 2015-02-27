@@ -20,9 +20,9 @@ get_header(); ?>
           </nav>
         </div>
       </div>
-      <div class="sub-header-icon">
-        <!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-square-alpha.png" width="94px" height="auto" alt="">-->
-      </div>
+      <!--<div class="sub-header-icon">
+        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-square-alpha.png" width="94px" height="auto" alt="">
+      </div>-->
     </div>  
   </div>
 </section>
