@@ -41,7 +41,7 @@ get_header(); ?>
           <?php	$category = get_the_category(); ?>
           <?php $category_check = strtolower ($category[2]->cat_name); ?>
           <?php if ($category_check==$tipo_lugar) { ?>
-          <div class="banner col-md-3 banner-label-bottom pb-21">
+          <div class="banner col-md-3 banner-label-bottom">
           	<div class="bg-white">
 	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
 				    	<?php if ($image_foto_nombre!='') { ?>

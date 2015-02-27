@@ -227,7 +227,7 @@ get_header(); ?>
         <div class="container">
           <div class="row">
             <div class="col-sm-6">
-              <div class="panel panel-custom">
+              <div class="panel panel-custom pr-14"">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
                     <li class="title text-gray-darker highlight-campeonas">Campeonas</li>

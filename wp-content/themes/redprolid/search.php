@@ -36,7 +36,7 @@ get_header(); ?>
 							<?php while ( have_posts() ) : the_post(); ?>
 								<?php $cantidad++; ?>
               <?php endwhile; ?>
-              <?php $cantidad; ?> Resultados								
+              <?php $cantidad; ?>							
             </span>
             </p>
           </div>
