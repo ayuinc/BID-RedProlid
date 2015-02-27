@@ -54,17 +54,13 @@ get_header(); ?>
               <nav><a href="#">Regístrate</a> / <a href="#">Inicia sesión</a></nav>
             </div>
           </div>
-          <form>
-            <div class="form-group">
-              <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
-            </div>
-            <div class="text-right">
-              <button type="submit" class="btn btn-primary">Envía tu propuesta</button>
-            </div>
-          </form>
-          <?php while ( have_posts() ) : the_post(); ?>
-		        <?php get_template_part( 'content', 'page' ); ?>
-		      <?php endwhile; // end of the loop. ?>
+          <div class="row">
+          	<div class="col-xs-12">
+		          <?php while ( have_posts() ) : the_post(); ?>
+				        <?php get_template_part( 'content', 'page' ); ?>
+				      <?php endwhile; // end of the loop. ?>
+				    </div>
+		      </div>
         </div>
       </div>
     </div>
