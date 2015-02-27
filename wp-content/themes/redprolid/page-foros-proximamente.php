@@ -29,7 +29,7 @@ get_header(); ?>
       <!-- END:IF POSTS in FOROS -->
     </div> 
     <!-- IF NO POSTS in FOROS -->
-    <div class="ph-70 text-center">
+    <div class="ph-70 text-center pb-35">
     	<h3>Próximamente anunciaremos nuestro primer foto virtual</h3>
     	<p class="light">¡Vuelve a visitar este espacio pronto!</p>
     	<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/charlacafe_forosV_paso01_V8-1.png">
