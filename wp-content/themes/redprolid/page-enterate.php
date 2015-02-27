@@ -223,11 +223,12 @@ get_header(); ?>
           </div>
         </div>
       </div>
+      
       <div class="bg-panel">
         <div class="container">
           <div class="row">
             <div class="col-sm-6">
-              <div class="panel panel-custom pr-14"">
+              <div class="panel panel-custom pr-14">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
                     <li class="title text-gray-darker highlight-campeonas">Campeonas</li>
@@ -307,7 +308,7 @@ get_header(); ?>
           <div class="col-md-6 separador-boletines pt-14 pb-14 pr-14 ">
             <h3 class="medium text-right">Suscríbete a nuestro boletín y descárgalo gratis </h3>
             <div class="text-right">
-              <a href="#" class="light" data-toggle="modal" data-target="#mailChimp">Aquí >></a>
+              <a href="#" class="light" data-toggle="modal" data-target="#Formboletin">Aquí >></a>
             </div>
           </div>
           <div class="col-md-3 mt-35 pl-14">
@@ -315,6 +316,30 @@ get_header(); ?>
           </div>
         </div>
       </div>
-    </section>      
+    </section>   
+    
+    
+	<!-- Modal NOTICIAS -->
+	<div class="modal fade" id="Formboletin" tabindex="-1" role="dialog" aria-labelledby="modalNoticiasLabel" aria-hidden="true">
+		<?php if ( is_user_logged_in() ) { ?>
+  	<div class="modal-dialog">
+  	<?php } else { ?>
+  	<div class="modal-dialog modal-lg">
+  	<?php } ?>
+	    <div class="modal-content bg-panel">
+	      <div class="modal-body">
+	      	<h3 class="medium">¿Quieres recibir el boletín de Red PROLID?</h3>
+	      	<p>Suscríbete a nuestro boletín y descárgalo gratis</p>
+	      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
+						<?php ninja_forms_display_form( 13 ); ?>
+					<?php } ?>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar X</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- END Modal NOTICIAS-->       
 
 <?php get_footer(); ?>    
