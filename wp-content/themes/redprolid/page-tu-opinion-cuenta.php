@@ -31,7 +31,7 @@ get_header(); ?>
         </div>
       </div>
       <div class="row pv-42">
-        <div class="col-sm-6 with-hr">
+        <div class="col-sm-4 with-hr">
           <!-- <h3>¿Qué es lo que más descuidas de tu vida personal cuando estás trabajando?</h3>
           <h4>Razones</h4>
           <ul class="list-unstyled">
@@ -43,7 +43,7 @@ get_header(); ?>
           <?php echo do_shortcode('[yop_poll id="-2"]'); ?>
            
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-8 ph-70-sm">
           <h3>Nos interesa lo que piensas</h3>
           <p>¿Qué temas te parecen relevantes para incluir en nuestras encuestas?</p>
           <div class="row">
