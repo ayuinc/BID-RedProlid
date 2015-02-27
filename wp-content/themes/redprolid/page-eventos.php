@@ -84,11 +84,8 @@ get_header(); ?>
 	  <div class="container-sm">
 			<h2>Otros eventos</h2>
 			<hr>
-    	<!-- Start the Loop. -->
-			<?php $week = date( 'W' ); ?>
-			<?php $year = date( 'Y' ); ?>
-			<?php $query = new WP_Query( 'year=' . $year . '&w=' . $week ); ?>   	
-    	<?php query_posts( 'cat=11&posts_per_page=4&offset=3&year='.$year.'&w='.$week''); ?>
+    	<!-- Start the Loop. -->	
+    	<?php query_posts( 'cat=11&posts_per_page=4&offset=3&year='); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 	  	<div class="banner half-height">
 	  		<div class="banner-pic col-sm-2 bg-panel text-center lead-ch normalize-text">
