@@ -32,7 +32,7 @@ get_header(); ?>
     <div class="ph-70 text-center">
     	<h3>Próximamente anunciaremos nuestro primer webinario</h3>
     	<p class="light">¡Vuelve a visitar este espacio pronto!</p>
-    	<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/webinario-foto.jpg">
+    	<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/webinarios_proximamente_V4-1.png">
     </div>
     <!-- END:IF NO POSTS in FOROS -->
   </div>
