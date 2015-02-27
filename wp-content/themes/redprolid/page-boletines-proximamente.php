@@ -17,7 +17,7 @@ get_header(); ?>
       <!-- IF POSTS in FOROS -->
       <div class="col-sm-1 col-xs-3">
 	      <div>
-		      <!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="100%">-->
+		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/boletin_suscribete.png" alt="" width="100%">
 			  </div>
 	    </div>
       <div class="col-sm-5 col-xs-9">
