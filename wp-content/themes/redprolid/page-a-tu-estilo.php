@@ -97,8 +97,8 @@ get_header(); ?>
 				</div>
 				<div class="col-sm-8">
 					<nav class="custom-nav bg-secondary clearfix">
-						<input type="radio" name="tipo_lugar" value="restaurantes" id="restaurantes" checked> <label class="text-white medium" for="restaurantes">Restaurantes</label>
-						<input type="radio" name="tipo_lugar" value="tiendas" id="tiendas"> <label class="text-white medium" for="tiendas">Tiendas</label>
+						<input type="radio" name="tipo_lugar" value="restaurantes" id="restaurantes" checked> <label class="text-white light" for="restaurantes">Restaurantes</label>
+						<input type="radio" name="tipo_lugar" value="tiendas" id="tiendas"> <label class="text-white light" for="tiendas">Tiendas</label>
 						<button type="submit" class="btn btn-default ml-21 pull-right borderless" style="padding: 7px 12px;">Busca</button>
 					</nav>
 				</div>
