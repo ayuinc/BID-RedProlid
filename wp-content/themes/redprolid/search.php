@@ -51,6 +51,13 @@ get_header(); ?>
 	        <?php $resultado = $_GET['s']; ?>
 	        <?php if ($resultado!='') { ?>
           <ol>
+
+            <?php 
+            // the query to set the posts per page to 3
+            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+            $args = array('posts_per_page' => 10, 'paged' => $paged );
+            query_posts($args); ?>
+
             <?php if ( have_posts() ) : ?>
               <?php while ( have_posts() ) : the_post(); ?>
               <li>
@@ -97,6 +104,10 @@ get_header(); ?>
               <?php endwhile; ?>
             <?php endif; ?> 
           </ol>
+
+          <?php next_posts_link(); ?>
+          <?php previous_posts_link(); ?>
+
           <?php } else { ?>
           <h3 class="medium text-center">No insertaste ninguna palabra o frase para buscar. Vuelve a intentarlo.</h3>
           <?php } ?>
