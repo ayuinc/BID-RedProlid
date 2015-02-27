@@ -29,14 +29,6 @@ get_header(); ?>
             Anímate a participar en nuestras encuestas, porque tu opinión nos interesa a todas. Cada mes te proponemos un sondeo sencillo sobre temas relevantes de nuestra red o temas que estén siendo objeto de debate en ese momento en la región.
           </h4>
         </div>
-        <div class="col-sm-4">
-          <div class="bg-panel border-radius p-21">
-            <h5 class="light">¿Quieres ver las encuestas anteriores?</h5>
-            <div class="text-right">
-              <a href="<?php echo content_url('/'); ?>resultados" class="btn btn-primary">Ver todas</a>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="row pv-42">
         <div class="col-sm-6 with-hr">
