@@ -28,7 +28,7 @@ get_header(); ?>
     </div> 
     <!-- IF NO POSTS in FOROS -->
     <div class="ph-70 text-center pb-35">
-    	<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/Screen-Shot-2015-02-27-at-9.49.16-AM.png" width="100%">
+    	<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/Screen-Shot-2015-02-27-at-9.49.16-AM.png" width="80%">
     </div>
     <!-- END:IF NO POSTS in FOROS -->
   </div>
