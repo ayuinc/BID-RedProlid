@@ -54,9 +54,13 @@ get_header(); ?>
               <nav><a href="#">Regístrate</a> / <a href="#">Inicia sesión</a></nav>
             </div>
           </div>
-          <?php while ( have_posts() ) : the_post(); ?>
-		        <?php get_template_part( 'content', 'page' ); ?>
-		      <?php endwhile; // end of the loop. ?>
+          <div class="row">
+          	<div class="col-xs-12">
+		          <?php while ( have_posts() ) : the_post(); ?>
+				        <?php get_template_part( 'content', 'page' ); ?>
+				      <?php endwhile; // end of the loop. ?>
+				    </div>
+		      </div>
         </div>
       </div>
     </div>
