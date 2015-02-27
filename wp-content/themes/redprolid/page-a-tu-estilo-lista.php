@@ -27,7 +27,7 @@ get_header(); ?>
   </div>
 </section>
 
-	<section>
+	<section class="pb-35">
 		<div class="container">
 			<div class="row">
 				<?php $lugar = $_POST['lugar']; ?>
