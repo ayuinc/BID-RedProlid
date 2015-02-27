@@ -38,9 +38,9 @@ get_header(); ?>
         <?php query_posts( 'category_name='.$lugar.'&posts_per_page=50&paged=' . $paged ); ?>          
 				<?php while ( have_posts() ) : the_post(); ?>				            
           
-          <?php	$category = get_the_category(); ?>
-          <?php echo $category_check = strtolower ($category[2]->slug); ?>
-          <?php if ($category_check==$tipo_lugar) { ?>
+          <?php	//$category = get_the_category(); ?>
+          <?php //echo $category_check = strtolower ($category[2]->slug); ?>
+          <?php //if ($category_check==$tipo_lugar) { ?>
           <div class="banner col-md-3 banner-label-bottom">
           	<div class="bg-white">
 	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
@@ -66,8 +66,8 @@ get_header(); ?>
             	</div>
           	</div>
           </div>
-          <?php $resultados++; ?>
-          <?php } ?>
+          <?php //$resultados++; ?>
+          <?php //} ?>
           
         <?php endwhile; ?>
         <?php if ($resultados==0) { ?>
