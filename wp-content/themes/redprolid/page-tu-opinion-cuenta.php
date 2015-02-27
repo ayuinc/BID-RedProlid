@@ -32,14 +32,16 @@ get_header(); ?>
       </div>
       <div class="row pv-42">
         <div class="col-sm-6 with-hr">
-          <h3>¿Qué es lo que más descuidas de tu vida personal cuando estás trabajando?</h3>
+          <!-- <h3>¿Qué es lo que más descuidas de tu vida personal cuando estás trabajando?</h3>
           <h4>Razones</h4>
           <ul class="list-unstyled">
             <li>- (Sí) Sed accumsan neque purus, ac tincidunt sapien selerisque.</li>
             <li>- (No) Sed accumsan neque purus, ac tincidunt sapien selerisque.</li>
           </ul>
-          <p class="text-gray">Agosto 2014</p>
+          <p class="text-gray">Agosto 2014</p> -->
           <!-- <?php the_content(); ?> -->
+          <?php echo do_shortcode('[yop_poll id="-2"]'); ?>
+           
         </div>
         <div class="col-sm-6">
           <h3>Nos interesa lo que piensas</h3>
