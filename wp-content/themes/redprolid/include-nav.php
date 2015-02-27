@@ -55,6 +55,8 @@
               <!--<li class="light"><a href="<?php echo home_url('/'); ?>boletin">Nuestro boletín</a></li>-->
               <li class="light"><a href="<?php echo home_url('/'); ?>boletines-proximamente/">Nuestro boletín</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>campeonas">Campeonas</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>puntos-de-vista">Puntos de vista</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>tu-opinion-cuenta">Tu opinion cuenta</a></li>
               <li class="light nav-video">
               	<img src="<?php echo home_url('/'); ?>wp-content/themes/redprolid/assets/icons/video-nav-main-menu.png"> <a href="<?php echo home_url('/'); ?>video" class="videos">Videos</a>
               </li>
