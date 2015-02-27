@@ -2,182 +2,74 @@
 /*
 Template Name: Tu Opinion Cuenta
 */
-
 get_header(); ?>
-
 <!--HEADER-->
 <?php get_template_part( 'include', 'header' ); ?>
-
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
-
-	<section class="mt-7"> 
+  <section id="toc-main">
     <div class="container">
-      <?php the_breadcrumb(); ?> 
+      <?php the_breadcrumb(); ?>
       <div class="clearfix sub-header">
         <div class="col-sm-1 col-xs-3">
-          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" width="100%"></div>
+          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon.png" alt="" width="100%"></div>
         </div>
-        <div class="col-sm-5 col-xs-9">
-          <h1><?php the_title(); ?></h1>
+        <div class="col-sm-5 col-xs-12">
+          <h1>Tu opinión cuenta</h1>
         </div>
         <div class="col-sm-6 col-xs-12">
-          <nav class="text-right text-center-xs">
+        	<nav class="text-right text-center-xs">
             <a href="<?php echo home_url('/'); ?>resultados/">¿Quieres ver las encuestas anteriores?</a>
-          </nav>	          
+          </nav>
         </div>
       </div>
-	    <div class="row text-justify">
-				<div class="col-md-12">
-					<h3 class="light mb-14">Todos los días encontramos en los medios noticias, buenas o malas, que nos hablan de los avances o retrocesos de la mujer en el espacio público. Hemos recogido algunas de las más relevantes o significativas de entre las que tienen que ver con nosotras y nos ayudan a entender cómo está cambiando el mundo para las mujeres. Anímate a proponer las noticias que te parezcan destacadas.</h3>
-				</div>
-	    </div>	
+      <div class="row">
+        <div class="col-sm-8">
+          <h4 class="light">
+            Anímate a participar en nuestras encuestas, porque tu opinión nos interesa a todas. Cada mes te proponemos un sondeo sencillo sobre temas relevantes de nuestra red o temas que estén siendo objeto de debate en ese momento en la región.
+          </h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="bg-panel border-radius p-21">
+            <h5 class="light">¿Quieres ver las encuestas anteriores?</h5>
+            <div class="text-right">
+              <a href="<?php echo content_url('/'); ?>resultados" class="btn btn-primary">Ver todas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pv-42">
+        <div class="col-sm-6 with-hr">
+          <h3>¿Qué es lo que más descuidas de tu vida personal cuando estás trabajando?</h3>
+          <h4>Razones</h4>
+          <ul class="list-unstyled">
+            <li>- (Sí) Sed accumsan neque purus, ac tincidunt sapien selerisque.</li>
+            <li>- (No) Sed accumsan neque purus, ac tincidunt sapien selerisque.</li>
+          </ul>
+          <p class="text-gray">Agosto 2014</p>
+          <!-- <?php the_content(); ?> -->
+        </div>
+        <div class="col-sm-6">
+          <h3>Nos interesa lo que piensas</h3>
+          <p>¿Qué temas te parecen relevantes para incluir en nuestras encuestas?</p>
+          <div class="row">
+            <div class="col-xs-6">
+              <label>Tu propuesta</label>
+            </div>
+            <div class="col-xs-6 text-right">
+              <nav><a href="#">Regístrate</a> / <a href="#">Inicia sesión</a></nav>
+            </div>
+          </div>
+          <form>
+            <div class="form-group">
+              <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="text-right">
+              <button type="submit" class="btn btn-primary">Envía tu propuesta</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-	</section>
-	
-	<section class="bg-panel pv-21">
-	  <div class="container">
-	    <div class="panel panel-custom">
-	      <div class="panel-heading mb-0 pb-0">
-					<h2>Últimas noticias</h2>
-	      </div>         
-	      <div class="panel-body pt-14">
-	        <div class="row">
-	          <div class="col-md-12">
-	            <div class="row noticias-grid">
-								<!-- Start the Loop. -->
-								<?php if ( have_posts() ) : ?>
-	                <?php query_posts( 'cat=12&posts_per_page=3' ); ?>
-									<?php while ( have_posts() ) : the_post(); ?>				            
-				            <div class="banner col-md-4 banner-label-bottom">
-				            	<div class="bg-white">
-					            	<?php $imagen = get_field('imagen_noticias'); ?>
-					            	<?php if ($imagen!='') { ?>
-					            	<div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
-					            	<?php } else { ?>
-					            	<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia-placeholder.png)"></div>
-					            	<?php } ?>
-					            	<div class="banner-content flex-none">
-			                    <h3 class="medium mt-7 mb-0 pb-0">
-			                    	<a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a>
-			                    </h3>
-			                    <?php $publicacion = get_field('publicacion_noticias'); ?>
-			                    <small>
-			                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
-														<?php } ?>
-													</small>
-			                    <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
-			                    <div class="text-right banner-label">
-						              	<a href="<?php echo get_permalink( get_the_ID() ); ?>">Noticia completa >></a>
-						              </div>
-					            	</div>
-				            	</div>
-				            </div>
-			            <?php endwhile; ?>
-								<?php endif; ?>				            				            
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	</section> 
-	          
-	<section>
-	  <div class="container">
-	    <div class="panel panel-custom">         
-	      <div class="panel-body pt-14">	      
-					<div class="row">
-	          <div class="col-md-8 pr-14">
-	            <h2>Otras noticias</h2>  
-	            <ul class="list-unstyled">
-	            	<!-- Start the Loop. -->
-	            	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-	            	<?php query_posts( 'cat=12&posts_per_page=6&offset=3&paged=' . $paged ); ?>
-								<?php while ( have_posts() ) : the_post(); ?>    
-		                  <li class="mb-14">
-		                    <h5 class="medium mb-0"><?php the_title(); ?></h5>
-		                    <?php $publicacion = get_field('publicacion_noticias'); ?>
-		                    <small>
-		                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
-													<?php } ?>
-												</small>
-												<p class="mt-14"><?php the_field('descripcion_rapida_noticias'); ?></p>
-												<small class="vermas"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Noticia completa >></a></small>
-		                  </li>
-	                    <hr> 
-		            <?php endwhile; ?> 
-	            </ul>
-	            <!--<div class="text-center">
-	              <ul class="pager">
-	                <li><?php //next_posts_link( 'Anteriores' ); ?></li>
-	                <li><?php //previous_posts_link( 'Posteriores' ); ?></li>
-	              </ul>
-	            </div>--> 	            
-	        	</div>
-	          <div class="col-md-4 mostrar-anteriores">
-	            <h4 class="medium text-gray-darker mb-14">Lo último en las redes</h4> 
-	          	<div class="mb-14">
-								<div class="fb-like-box bg-white" data-href="https://www.facebook.com/redprolid" data-width="350" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
-	          	</div>
-	          	<div class="mb-14">
-								<a class="twitter-timeline" width="350" height="310"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a> 
-	          	</div>
-	          	<div class="mb-14"> 
-								<div class="g-person" data-width="350" data-height="310" data-href="//plus.google.com/u/0/107403271684877473593" data-rel="author"></div>
-	          	</div>			            
-	          </div>
-					</div>
-	      </div>
-	    </div>
-	  </div>
-	</section>
-
-	<!-- Modal NOTICIAS -->
-	<div class="modal fade" id="modalNoticias" tabindex="-1" role="dialog" aria-labelledby="modalNoticiasLabel" aria-hidden="true">
-		<?php if ( is_user_logged_in() ) { ?>
-  	<div class="modal-dialog">
-  	<?php } else { ?>
-  	<div class="modal-dialog modal-lg">
-  	<?php } ?>
-	    <div class="modal-content bg-panel">
-	      <div class="modal-body">
-		      <?php if ( is_user_logged_in() ) { ?>
-		      	<h3 class="medium">¿Quieres compartir una noticia?</h3>
-		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
-							<?php ninja_forms_display_form( 3 ); ?>
-						<?php } ?>
-					<?php } else { ?>
-						<div class="row">
-				  		<div class="col-sm-6 col-sm-offset-3">
-				  			<div class="user-sign-in-form pv-21">
-					  			<h2 class="medium">Ingresa o regístrate</h2>
-			            <?php 
-			              if ( is_user_logged_in() ) {
-
-			                $current_user = wp_get_current_user();
-			                echo '<div class="text-right">';
-			                echo '<h4 class="light">Hola '.$current_user->user_nicename.'</h4>';
-											echo '<a href="'.wp_logout_url().'" title="Logout" class="light">Cierra tu sesión</a>';
-			                echo '</div>';
-
-			              } else {
-
-			                echo do_shortcode('[dm_login_form]'); 
-
-			              }
-			            ?>
-			           </div>
-				  		</div>
-				  	</div>
-			  	<?php } ?>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar X</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<!-- END Modal NOTICIAS-->
-
-<?php get_footer(); ?>    
+  </section>
+<?php get_footer(); ?>
