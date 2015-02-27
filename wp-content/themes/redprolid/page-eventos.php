@@ -33,10 +33,10 @@ get_header(); ?>
 	
 	<section class="bg-panel pv-28">
 	  <div class="container ph-70-md">
-	  	<h2>Últimos eventos</h2>
+	  	<h2>Próximos eventos</h2>
 	  	<div class="gallery js-flickity grid-list grid-list-full-width grid-list-1-xs" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": false }'>
 				<?php if ( have_posts() ) : ?>
-        	<?php query_posts( 'category_name=eventos&posts_per_page=3&order=DESC' ); ?>
+        	<?php query_posts( 'category_name=proximos-eventos&posts_per_page=3&order=DESC' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 		  			<div class="gallery-cell grid-list-item" style="min-height: 350px;">
 		  				<div class="banner borderless">
@@ -85,7 +85,10 @@ get_header(); ?>
 			<h2>Otros eventos</h2>
 			<hr>
     	<!-- Start the Loop. -->
-    	<?php query_posts( 'cat=11&posts_per_page=4&offset=3'); ?>
+			<?php $week = date( 'W' ); ?>
+			<?php $year = date( 'Y' ); ?>
+			<?php $query = new WP_Query( 'year=' . $year . '&w=' . $week ); ?>   	
+    	<?php query_posts( 'cat=11&posts_per_page=4&offset=3&year='.$year.'&w='.$week''); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 	  	<div class="banner half-height">
 	  		<div class="banner-pic col-sm-2 bg-panel text-center lead-ch normalize-text">
