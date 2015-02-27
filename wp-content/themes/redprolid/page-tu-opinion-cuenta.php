@@ -62,6 +62,9 @@ get_header(); ?>
               <button type="submit" class="btn btn-primary">Envía tu propuesta</button>
             </div>
           </form>
+          <?php while ( have_posts() ) : the_post(); ?>
+		        <?php get_template_part( 'content', 'page' ); ?>
+		      <?php endwhile; // end of the loop. ?>
         </div>
       </div>
     </div>
