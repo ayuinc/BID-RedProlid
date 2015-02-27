@@ -14,7 +14,7 @@ get_header(); ?>
     <div class="clearfix bg-panel sub-header">
       <div class="col-sm-7">
         <div>
-          <h1 class="">Resultados de búsqueda</h1>
+          <h1 class="">Resultados de la búsqueda</h1>
           <nav class="mt-21">
             <a href="<?php echo content_url('/'); ?>a-tu-estilo">A tu estilo >></a>
           </nav>
@@ -71,14 +71,14 @@ get_header(); ?>
           
         <?php endwhile; ?>
         <?php if ($resultados==0) { ?>
-        	<h3 class="medium text-center">No hay resultados disponibles para tu busqueda. <a href="<?php echo content_url('/'); ?>a-tu-estilo">Regresar</a></h3>
+        	<h3 class="medium text-center">No hay resultados disponibles para tu búsqueda. <a href="<?php echo content_url('/'); ?>a-tu-estilo">Regresa</a></h3>
         <?php } ?>
-        <div class="text-center">
+        <!--<div class="text-center">
           <ul class="pager">
             <li><?php next_posts_link( 'Anteriores' ); ?></li>
             <li><?php previous_posts_link( 'Posteriores' ); ?></li>
           </ul>
-        </div>             				            
+        </div>-->             				            
       </div>
 		</div>
 	</section>
