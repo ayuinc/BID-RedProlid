@@ -116,9 +116,6 @@ get_header(); ?>
           <h3 class="medium text-center">No insertaste ninguna palabra o frase para buscar. Vuelve a intentarlo.</h3>
           <?php } ?>
 
-          <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
-          <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
-
         </div>
         <div class="col-sm-1"></div>
       </div>
