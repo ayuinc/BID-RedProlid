@@ -71,7 +71,7 @@ get_header(); ?>
 								<option value="ecuador,guayaquil">Ecuador, Guayaquil</option>
 								<option value="el-salvador,san-salvador">El Salvador, San Salvador</option>
 								<option value="el-salvador,santa-ana">El Salvador, Santa Ana</option>
-								<option value="estados-unidos,new-york">Estados Unidos, New York</option>
+								<option value="estados-unidos,new-york">Estados Unidos, Nueva York</option>
 								<option value="estados-unidos,washington-dc">Estados Unidos, Washington DC</option>
 								<option value="guatemala,ciudad-de-guatemala">Guatemala, Ciudad de Guatemala</option>
 								<option value="guatemala,quetzaltenango">Guatemala, Quetzaltenango</option>
