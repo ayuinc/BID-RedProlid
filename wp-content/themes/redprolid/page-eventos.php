@@ -113,7 +113,12 @@ get_header(); ?>
             <strong>Convocan:</strong> <?php the_field('convocan'); ?>
             <?php } ?>
           </p>
-          <p>Para mayores informes contactar a <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_nombre_evento'); ?></a></p>
+	        <?php $contacto_nombre_evento = get_field('contacto_nombre_evento'); ?>
+	        <?php if ($contacto_nombre_evento!='') { ?>
+	        <p>
+		        Para mayores informes contactar a <?php the_field('contacto_nombre_evento'); ?> a través de su correo electrónico <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_email_evento'); ?></a>
+	        </p>
+	        <?php } ?>
           <small>
           	<?php if ($publicacion!='') { ?> 
 							/ <a href="<?php the_field('link_publicacion_noticias'); ?>"><?php the_field('publicacion_noticias'); ?></a>
