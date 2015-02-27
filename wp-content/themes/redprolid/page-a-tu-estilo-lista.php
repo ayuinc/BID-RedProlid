@@ -70,9 +70,9 @@ get_header(); ?>
           <?php //} ?>
           
         <?php endwhile; ?>
-        <?php if ($resultados==0) { ?>
-        	<h3 class="medium text-center">No hay resultados disponibles para tu búsqueda. <a href="<?php echo content_url('/'); ?>a-tu-estilo">Regresa</a></h3>
-        <?php } ?>
+        <?php //if ($resultados==0) { ?>
+        	<!--<h3 class="medium text-center">No hay resultados disponibles para tu búsqueda. <a href="<?php echo content_url('/'); ?>a-tu-estilo">Regresa</a></h3>-->
+        <?php //} ?>
         <!--<div class="text-center">
           <ul class="pager">
             <li><?php next_posts_link( 'Anteriores' ); ?></li>
