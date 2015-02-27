@@ -16,7 +16,9 @@ get_header(); ?>
     <div class="clearfix sub-header">
       <!-- IF POSTS in FOROS -->
       <div class="col-sm-1 col-xs-3">
-	      <!--<div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="100%"></div>-->
+	      <div>
+		      <!--<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="100%">-->
+			  </div>
 	    </div>
       <div class="col-sm-5 col-xs-9">
         <h1 class="brand-titular">Boletines</h1>
