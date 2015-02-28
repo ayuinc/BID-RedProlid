@@ -107,7 +107,7 @@ get_header(); ?>
 			<div class="row">
 				<!-- Start the Loop. -->
 				<?php if ( have_posts() ) : ?>
-          <?php query_posts( 'cat=266&posts_per_page=4' ); ?>
+          <?php query_posts( 'cat=266&posts_per_page=4&orderby=rand' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>				            
             <div class="banner col-md-3 banner-label-bottom">
             	<div class="bg-white">
