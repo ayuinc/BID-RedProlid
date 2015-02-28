@@ -124,8 +124,27 @@ get_header(); ?>
 				    		<?php } ?>	  
 	            	<div class="banner-content flex-none">
 		            	<?php	$category = get_the_category(); ?>
-	            		<small><?php echo $category[3]->cat_name; ?>
-	            		<?php echo $category[2]->cat_name; ?><?php echo $category[1]->cat_name; ?></small>
+		            	<?php $nombre1 = $category[3]->cat_name; ?>
+	            		<?php $nombre2 = $category[2]->cat_name; ?>
+	            		<?php $nombre3 = $category[1]->cat_name; ?>
+	            		<?php if ($nombre1=='Tienda') { ?>
+	            			<small>Tienda</small>
+	            		<?php } ?>
+	            		<?php if ($nombre2=='Tienda') { ?>
+	            			<small>Tienda</small>
+	            		<?php } ?>	            		
+	            		<?php if ($nombre3=='Tienda') { ?>
+	            			<small>Tienda</small>
+	            		<?php } ?>
+	            		<?php if ($nombre1=='Restaurantes') { ?>
+	            			<small>Restaurantes</small>
+	            		<?php } ?>
+	            		<?php if ($nombre2=='Restaurantes') { ?>
+	            			<small>Restaurantes</small>
+	            		<?php } ?>	            		
+	            		<?php if ($nombre3=='Restaurantes') { ?>
+	            			<small>Restaurantes</small>
+	            		<?php } ?>	            		
 		              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 		              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
 		              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 100); ?>
