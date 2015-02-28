@@ -124,7 +124,8 @@ get_header(); ?>
 				    		<?php } ?>	  
 	            	<div class="banner-content flex-none">
 		            	<?php	$category = get_the_category(); ?>
-	            		<small><?php echo $category[3]->cat_name; ?></small>
+	            		<small><?php echo $category[3]->cat_name; ?>
+	            		<?php echo $category[2]->cat_name; ?><?php echo $category[1]->cat_name; ?></small>
 		              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 		              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
 		              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 100); ?>
