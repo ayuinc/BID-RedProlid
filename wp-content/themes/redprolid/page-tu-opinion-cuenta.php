@@ -50,9 +50,9 @@ get_header(); ?>
             <div class="col-xs-6">
               <label>Tu propuesta</label>
             </div>
-            <div class="col-xs-6 text-right">
+            <!--<div class="col-xs-6 text-right">
               <nav><a href="#">Regístrate</a> / <a href="#">Inicia sesión</a></nav>
-            </div>
+            </div>-->
           </div>
           <div class="row">
           	<div class="col-xs-12">
