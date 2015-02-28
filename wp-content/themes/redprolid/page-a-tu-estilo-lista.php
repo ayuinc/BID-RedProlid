@@ -39,8 +39,8 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>				            
           
           <?php	$category = get_the_category(); ?>
-          <?php echo $category_check = strtolower ($category[3]->slug); ?>
-          <?php //if ($category_check==$tipo_lugar) { ?>
+          <?php $category_check = strtolower ($category[3]->slug); ?>
+          <?php if ($category_check==$tipo_lugar) { ?>
           <div class="banner col-md-3 banner-label-bottom">
           	<div class="bg-white">
 	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
@@ -54,7 +54,7 @@ get_header(); ?>
 			    			<?php } ?>
 			    		<?php } ?>	          		
             	<div class="banner-content flex-none">
-            		<small><?php echo $category[2]->cat_name; ?></small>
+            		<small><?php echo $category[3]->cat_name; ?></small>
 	              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 	              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
 	              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 150); ?>
@@ -66,13 +66,13 @@ get_header(); ?>
             	</div>
           	</div>
           </div>
-          <?php //$resultados++; ?>
-          <?php //} ?>
+          <?php $resultados++; ?>
+          <?php } ?>
           
         <?php endwhile; ?>
-        <?php //if ($resultados==0) { ?>
-        	<!--<h3 class="medium text-center">No hay resultados disponibles para tu búsqueda. <a href="<?php echo content_url('/'); ?>a-tu-estilo">Regresa</a></h3>-->
-        <?php //} ?>
+        <?php if ($resultados==0) { ?>
+        	<h3 class="medium text-center">No hay resultados disponibles para tu búsqueda. <a href="<?php echo content_url('/'); ?>a-tu-estilo">Regresa</a></h3>
+        <?php } ?>
         <!--<div class="text-center">
           <ul class="pager">
             <li><?php next_posts_link( 'Anteriores' ); ?></li>
