@@ -124,9 +124,9 @@ get_header(); ?>
 				    		<?php } ?>	  
 	            	<div class="banner-content flex-none">
 		            	<?php	$category = get_the_category(); ?>
-		            	<?php $nombre1 = $category[3]->cat_name; ?>
-	            		<?php $nombre2 = $category[2]->cat_name; ?>
-	            		<?php $nombre3 = $category[1]->cat_name; ?>
+		            	<?php echo $nombre1 = $category[3]->cat_name; ?>
+	            		<?php echo $nombre2 = $category[2]->cat_name; ?>
+	            		<?php echo $nombre3 = $category[1]->cat_name; ?>
 	            		<?php if ($nombre1=='Tienda') { ?>
 	            			<small>Tienda</small>
 	            		<?php } ?>
