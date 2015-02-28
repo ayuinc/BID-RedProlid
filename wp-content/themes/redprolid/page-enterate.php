@@ -32,7 +32,7 @@ get_header(); ?>
 	          <ul class="grid-list grid-list-5 text-center ph-ch-7">
 	            <li class="grid-list-item">
 	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-1.png" alt="">
-	            	<p class="brand-titular">De dónde podrás encontrar todos los recursos y artículos</p>
+	            	<p class="brand-titular">De dónde podrás encontrar todos los recursos</p>
 	            </li>
 	            <li class="grid-list-item">
 		            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2.png" alt="">
