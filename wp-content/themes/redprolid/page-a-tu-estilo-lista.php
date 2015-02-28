@@ -39,7 +39,7 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>				            
           
           <?php	$category = get_the_category(); ?>
-          <?php echo $category_check = strtolower ($category[2]->slug); ?>
+          <?php echo $category_check = strtolower ($category[3]->slug); ?>
           <?php //if ($category_check==$tipo_lugar) { ?>
           <div class="banner col-md-3 banner-label-bottom">
           	<div class="bg-white">
