@@ -167,7 +167,7 @@ get_header(); ?>
 			<div class="row normalize-text">
 				<div class="col-sm-12">
 					<h3>¿Tienes alguna recomendación?</h3>
-					<p class="mt-7">Anímate a mandarnos los nombres de los lugares que tú recomendarías, esos restaurantes donde siempre comes rico, esas tiendas donde encuentran ropa o complementos originales. Tú conoces tu ciudad como la palma de la mano, igual que conoces otras a  las que viajes con frecuencia. Tu opinión nos puede ser muy útil a todas las demás.</p>
+					<p class="mt-7">Anímate a mandarnos los nombres de los lugares que tú recomendarías, esos restaurantes donde siempre comes rico, esas tiendas donde encuentras ropa o complementos originales. Tú conoces tu ciudad como la palma de la mano, igual que conoces otras a  las que viajes con frecuencia. Tu opinión nos puede ser muy útil a todas las demás.</p>
 				</div>
 			</div>
 			<hr>
