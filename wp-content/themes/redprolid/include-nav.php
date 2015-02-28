@@ -14,7 +14,8 @@
           <li>
             <a href="<?php echo home_url('/'); ?>redprolid/" class="red-prolid <?php if($segment1=='redprolid' || $segment1=='contactanos'){ echo 'active'; } ?>"><i></i><span>Red PROLID</span></a>
             <ul class="list-unstyled dropdown-menu">
-              <li><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li>
+	            <li class="light"><a href="<?php echo home_url('/'); ?>tu-opinion-cuenta">Tu opinión cuenta</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li>
             </ul>
           </li>
           <li>
@@ -56,7 +57,6 @@
               <li class="light"><a href="<?php echo home_url('/'); ?>boletines-proximamente/">Nuestro boletín</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>campeonas">Campeonas</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>puntos-de-vista">Puntos de vista</a></li>
-              <li class="light"><a href="<?php echo home_url('/'); ?>tu-opinion-cuenta">Tu opinion cuenta</a></li>
               <li class="light nav-video">
               	<img src="<?php echo home_url('/'); ?>wp-content/themes/redprolid/assets/icons/video-nav-main-menu.png"> <a href="<?php echo home_url('/'); ?>video" class="videos">Videos</a>
               </li>
