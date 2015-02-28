@@ -127,14 +127,14 @@ get_header(); ?>
 		            	<?php echo $nombre1 = $category[3]->cat_name; ?>
 	            		<?php echo $nombre2 = $category[2]->cat_name; ?>
 	            		<?php echo $nombre3 = $category[1]->cat_name; ?>
-	            		<?php if ($nombre1=='Tienda') { ?>
-	            			<small>Tienda</small>
+	            		<?php if ($nombre1=='Tiendas') { ?>
+	            			<small>Tiendas</small>
 	            		<?php } ?>
-	            		<?php if ($nombre2=='Tienda') { ?>
-	            			<small>Tienda</small>
+	            		<?php if ($nombre2=='Tiendas') { ?>
+	            			<small>Tiendas</small>
 	            		<?php } ?>	            		
-	            		<?php if ($nombre3=='Tienda') { ?>
-	            			<small>Tienda</small>
+	            		<?php if ($nombre3=='Tiendas') { ?>
+	            			<small>Tiendas</small>
 	            		<?php } ?>
 	            		<?php if ($nombre1=='Restaurantes') { ?>
 	            			<small>Restaurantes</small>
