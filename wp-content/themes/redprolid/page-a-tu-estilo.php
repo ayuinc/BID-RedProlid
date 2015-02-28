@@ -97,7 +97,7 @@ get_header(); ?>
 				</div>
 				<div class="col-sm-8">
 					<nav class="custom-nav bg-secondary clearfix">
-						<input type="radio" name="tipo_lugar" value="restaurantes" id="restaurantes" checked> <label class="text-white light" for="restaurantes">Restaurante</label>
+						<input type="radio" name="tipo_lugar" value="restaurantes" id="restaurantes" checked> <label class="text-white light" for="restaurantes">Restaurantes</label>
 						<input type="radio" name="tipo_lugar" value="tiendas" id="tiendas"> <label class="text-white light" for="tiendas">Tiendas</label>
 						<button type="submit" class="btn btn-default ml-21 pull-right borderless" style="padding: 7px 12px;">Busca</button>
 					</nav>
@@ -128,22 +128,22 @@ get_header(); ?>
 	            		<?php $nombre2 = $category[2]->cat_name; ?>
 	            		<?php $nombre3 = $category[1]->cat_name; ?>
 	            		<?php if ($nombre1=='Tiendas') { ?>
-	            			<small>Tiendas</small>
+	            			<small>Tienda</small>
 	            		<?php } ?>
 	            		<?php if ($nombre2=='Tiendas') { ?>
-	            			<small>Tiendas</small>
+	            			<small>Tienda</small>
 	            		<?php } ?>	            		
 	            		<?php if ($nombre3=='Tiendas') { ?>
-	            			<small>Tiendas</small>
+	            			<small>Tienda</small>
 	            		<?php } ?>
 	            		<?php if ($nombre1=='Restaurantes') { ?>
-	            			<small>Restaurantes</small>
+	            			<small>Restaurante</small>
 	            		<?php } ?>
 	            		<?php if ($nombre2=='Restaurantes') { ?>
-	            			<small>Restaurantes</small>
+	            			<small>Restaurante</small>
 	            		<?php } ?>	            		
 	            		<?php if ($nombre3=='Restaurantes') { ?>
-	            			<small>Restaurantes</small>
+	            			<small>Restaurante</small>
 	            		<?php } ?>	            		
 		              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 		              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
