@@ -29,7 +29,7 @@ get_header(); ?>
 
 	<section class="pb-35">
 		<div class="container">
-			<div class="row">
+      <ul class="grid-list grid-list-3 grid-list-2-sm grid-list-1-xs isotope-grid">
 				<?php $lugar = $_POST['lugar']; ?>
 				<?php $tipo_lugar = $_POST['tipo_lugar']; ?>
 				<?php $resultado = 0; ?>
@@ -38,8 +38,9 @@ get_header(); ?>
         <?php query_posts( 'category_name='.$lugar.'&posts_per_page=50&paged=' . $paged ); ?>          
 				<?php while ( have_posts() ) : the_post(); ?>				            
 				<?php if ( in_category( $tipo_lugar )) { ?>
-          <div class="banner col-md-3 banner-label-bottom">
-          	<div class="bg-white">
+	       <li class="grid-list-item">
+	         <div class="banner bg-white">
+	           <div class="banner-pic">
 	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
 				    	<?php if ($image_foto_nombre!='') { ?>
 			    			<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>fotos_restaurantes/<?php the_field('estilo_foto_nombre'); ?>)"></div>
@@ -49,8 +50,9 @@ get_header(); ?>
 			    			<?php } else { ?>
 			    				<div class="banner-pic" style="background-image: url(/wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
 			    			<?php } ?>
-			    		<?php } ?>	          		
-            	<div class="banner-content flex-none">
+			    		<?php } ?>	
+	           </div>
+	           <div class="banner-content flex-none">
 	            	<?php if ($tipo_lugar=='restaurantes') { ?>
 	            	<small>Restaurante</small>	 
 	            	<?php } ?>
@@ -65,22 +67,20 @@ get_header(); ?>
 	              <div class="text-right banner-label mb-7">
 	              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ve más &gt;&gt;</a></small>
 	              </div>
-            	</div>
-          	</div>
-          </div>
-          <?php $resultados++; ?>
+	           </div>
+	         </div>
+	       </li>
+       	<?php $resultados++; ?>
 				<?php } ?>
         <?php endwhile; ?>
-        <?php if ($resultados==0) { ?>
-        	<h3 class="medium text-center">No hay resultados disponibles para tu búsqueda. <a href="<?php echo content_url('/'); ?>a-tu-estilo">Regresa</a></h3>
-        <?php } ?>
-        <!--<div class="text-center">
-          <ul class="pager">
-            <li><?php next_posts_link( 'Anteriores' ); ?></li>
-            <li><?php previous_posts_link( 'Posteriores' ); ?></li>
-          </ul>
-        </div>-->             				            
+      </ul>		
+      
+      <div>	
+      <?php if ($resultados==0) { ?>
+      	<h3 class="medium text-center">No hay resultados disponibles para tu búsqueda. <a href="<?php echo content_url('/'); ?>a-tu-estilo">Regresa</a></h3>
+      <?php } ?>			
       </div>
+
 		</div>
 	</section>
 
