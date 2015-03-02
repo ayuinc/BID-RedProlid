@@ -48,8 +48,8 @@
 						<?php $video_organizacion_video = get_field('video_organizacion'); ?>
 						<?php if ($video_organizacion!='') { ?>
 						<span class="medium">Organización:</span> <?php echo $video_organizacion; ?>
-						<?php } ?>
 						<br>
+						<?php } ?>
 						<?php $video_pais = get_field('video_pais'); ?>
 						<?php if ($video_pais!='') { ?>
 						<span class="medium">País:</span> <?php the_field('video_pais'); ?>
