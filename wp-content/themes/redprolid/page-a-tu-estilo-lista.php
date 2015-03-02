@@ -38,11 +38,6 @@ get_header(); ?>
         <?php query_posts( 'category_name='.$lugar.'&posts_per_page=50&paged=' . $paged ); ?>          
 				<?php while ( have_posts() ) : the_post(); ?>				            
 				<?php if ( in_category( $tipo_lugar )) { ?>
-					SIIII
-				<?php } else { ?>
-					NOOO
-				<?php } ?>
-
           <div class="banner col-md-3 banner-label-bottom">
           	<div class="bg-white">
 	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
@@ -68,7 +63,7 @@ get_header(); ?>
           	</div>
           </div>
           <?php $resultados++; ?>
-
+				<?php } ?>
         <?php endwhile; ?>
         <?php if ($resultados==0) { ?>
         	<h3 class="medium text-center">No hay resultados disponibles para tu búsqueda. <a href="<?php echo content_url('/'); ?>a-tu-estilo">Regresa</a></h3>
