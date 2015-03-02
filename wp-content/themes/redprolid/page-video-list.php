@@ -30,7 +30,7 @@ get_header(); ?>
       <?php query_posts( 'cat=258&posts_per_page=10&offset=5&paged=' . $paged ); ?>
       <?php while ( have_posts() ) : the_post(); ?>    
        <li class="grid-list-item">
-         <div class="banner bg-white half-height">
+         <div class="banner bg-white">
            <div class="banner-pic">
             <?php $youtube = get_field('video_youtube'); ?>
             <?php if ($youtube!='') { ?>
