@@ -51,7 +51,12 @@ get_header(); ?>
 			    			<?php } ?>
 			    		<?php } ?>	          		
             	<div class="banner-content flex-none">
-	            	<small><?php echo $tipo_lugar ?></small>	 
+	            	<?php if ($tipo_lugar=='restaurantes') { ?>
+	            	<small>Restaurante</small>	 
+	            	<?php } ?>
+	            	<?php if ($tipo_lugar=='tiendas') { ?>
+	            	<small>Tienda</small>	 
+	            	<?php } ?>	            	
 	              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 	              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
 	              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 150); ?>
