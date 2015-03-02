@@ -61,7 +61,7 @@ get_header(); ?>
 								<option value="brasilia">Brasil, Brasilia</option>
 								<option value="sao-paulo">Brasil, Sao Paulo</option>
 								<option value="rio-de-janeiro">Brasil, Rio de Janeiro</option>
-								<option value="santiago-de-chile">Chile, Santiago de Chile</option>
+								<option value="santiagodechile">Chile, Santiago de Chile</option>
 								<option value="concepcion">Chile, Concepción</option>
 								<option value="bogota">Colombia, Bogotá</option>
 								<option value="medellin">Colombia, Medellín</option>
