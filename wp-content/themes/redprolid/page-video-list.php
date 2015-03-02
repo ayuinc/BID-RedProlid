@@ -9,7 +9,7 @@ get_header(); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
 <section id="puntos-de-vista-anteriores">
-  <div class="container">
+  <div class="container pb-42">
     <?php the_breadcrumb(); ?>
     <div class="clearfix bg-panel sub-header">
       <div class="col-sm-7">
@@ -24,7 +24,7 @@ get_header(); ?>
         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/video-icon-square-alpha.png" width="94px" height="auto" alt="">
       </div>
     </div>
-    <div class="ph-70">
+    <div>
       <ul class="grid-list grid-list-3 grid-list-2-sm grid-list-1-xs isotope-grid">
       <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
       <?php query_posts( 'cat=258&posts_per_page=10&offset=5&paged=' . $paged ); ?>
