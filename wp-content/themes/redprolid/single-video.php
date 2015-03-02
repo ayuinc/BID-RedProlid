@@ -14,12 +14,7 @@
 			<?php $video_autor = get_field('video_autor'); ?>
 			<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
 			<small>
-				<?php if ($video_autor!='') { ?>
-				 <?php the_field('video_autor'); ?>
-				<?php } ?> 
-				<?php if ($video_fecha_publicacion!='') { ?>
-					<?php the_field('video_fecha_publicacion'); ?>
-				<?php } ?>
+				<?php if ($video_autor!='') { ?><?php the_field('video_autor'); ?><?php } ?><?php if ($video_fecha_publicacion!='') { ?>, <?php the_field('video_fecha_publicacion'); ?><?php } ?>
 			</small> 	    
 	    <div class="pv-21">
 		    <?php $youtube = get_field('video_youtube'); ?>
