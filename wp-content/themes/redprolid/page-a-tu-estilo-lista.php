@@ -47,26 +47,32 @@ get_header(); ?>
 	    		 		
 	    		<?php if ($nombre1==$tipo_lugar) { ?>
 	    			<?php $category_check = 'tienda'; ?>
+	    			<?php $category_name = 'Tienda'; ?>
 	    		<?php } ?>
 	    		<?php if ($nombre2==$tipo_lugar) { ?>
 	    			<?php $category_check = 'tienda'; ?>
+	    			<?php $category_name = 'Tienda'; ?>
 	    		<?php } ?>	            		
 	    		<?php if ($nombre3==$tipo_lugar) { ?>
 	    			<?php $category_check = 'tienda'; ?>
+	    			<?php $category_name = 'Tienda'; ?>
 	    		<?php } ?>
 	    		<?php if ($nombre1==$tipo_lugar) { ?>
 	    			<?php $category_check = 'restaurante'; ?>
+	    			<?php $category_name = 'Restaurante'; ?>
 	    		<?php } ?>
 	    		<?php if ($nombre2==$tipo_lugar) { ?>
 	    			<?php $category_check = 'restaurante'; ?>
+	    			<?php $category_name = 'Restaurante'; ?>
 	    		<?php } ?>	            		
 	    		<?php if ($nombre3==$tipo_lugar) { ?>
 	    			<?php $category_check = 'restaurante'; ?>
+	    			<?php $category_name = 'Restaurante'; ?>
 	    		<?php } ?>	
           
           <?php	$category = get_the_category(); ?>
           <?php $category_check = strtolower ($category[3]->slug); ?>
-          <?php //if ($category_check==$tipo_lugar) { ?>
+          <?php if ($category_check==$tipo_lugar) { ?>
           <div class="banner col-md-3 banner-label-bottom">
           	<div class="bg-white">
 	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
@@ -80,7 +86,7 @@ get_header(); ?>
 			    			<?php } ?>
 			    		<?php } ?>	          		
             	<div class="banner-content flex-none">
-            		<small><?php echo $category[3]->cat_name; ?></small>
+            		<small><?php echo $category_name; ?></small>
 	              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 	              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
 	              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 150); ?>
@@ -93,7 +99,7 @@ get_header(); ?>
           	</div>
           </div>
           <?php $resultados++; ?>
-          <?php //} ?>
+          <?php } ?>
           
         <?php endwhile; ?>
         <?php if ($resultados==0) { ?>
