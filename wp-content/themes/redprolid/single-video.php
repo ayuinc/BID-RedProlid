@@ -38,7 +38,7 @@
 						<?php } ?>
 						<?php $video_tema = get_field('video_tema'); ?>
 						<?php $video_tag_tema = get_field('video_tag_tema'); ?>
-						<?php if ($video_temavideo_!='') { ?>						
+						<?php if ($video_tema!='') { ?>						
 						<span class="medium">Tema:</span> <?php the_field('video_tema'); ?>
 							<?php if ($video_tag_tema!='') { ?>
 								<?php echo ', '.$video_tag_tema; ?>
