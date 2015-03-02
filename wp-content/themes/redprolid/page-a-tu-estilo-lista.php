@@ -35,8 +35,34 @@ get_header(); ?>
 				<?php $resultado = 0; ?>
 				<!-- Start the Loop. -->
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-        <?php query_posts( 'category_name=tiendas,'.$lugar.'&posts_per_page=50&paged=' . $paged ); ?>          
+        <?php query_posts( 'category_name=t'.$lugar.'&posts_per_page=50&paged=' . $paged ); ?>          
 				<?php while ( have_posts() ) : the_post(); ?>				            
+          
+	      	<?php $nombre1 = $category[3]->cat_name; ?>
+	    		<?php $nombre2 = $category[2]->cat_name; ?>
+	    		<?php $nombre3 = $category[1]->cat_name; ?>
+	      	<?php $nombre1 = strtolower ($nombre1); ?>
+	    		<?php $nombre2 = strtolower ($nombre2); ?>
+	    		<?php $nombre3 = strtolower ($nombre3); ?>	   
+	    		 		
+	    		<?php if ($nombre1==$tipo_lugar) { ?>
+	    			<small>Tienda</small>
+	    		<?php } ?>
+	    		<?php if ($nombre2==$tipo_lugar) { ?>
+	    			<small>Tienda</small>
+	    		<?php } ?>	            		
+	    		<?php if ($nombre3==$tipo_lugar) { ?>
+	    			<small>Tienda</small>
+	    		<?php } ?>
+	    		<?php if ($nombre1==$tipo_lugar) { ?>
+	    			<small>Restaurante</small>
+	    		<?php } ?>
+	    		<?php if ($nombre2==$tipo_lugar) { ?>
+	    			<small>Restaurante</small>
+	    		<?php } ?>	            		
+	    		<?php if ($nombre3==$tipo_lugar) { ?>
+	    			<small>Restaurante</small>
+	    		<?php } ?>	
           
           <?php	$category = get_the_category(); ?>
           <?php $category_check = strtolower ($category[3]->slug); ?>
