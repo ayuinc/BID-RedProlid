@@ -11,7 +11,12 @@
     <div class="ph-70">
 	    <h2 class="medium mb-0"><?php the_title(); ?></h2>
 			<?php $tempDate = get_field('video_fecha_publicacion'); ?>
-			<small>Publicado por: <?php the_field('video_organizacion'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small> 	    
+			<?php $video_autor = get_field('video_autor'); ?>
+			
+			<small>
+				<?php if ($video_autor!='') { ?>
+				Publicado por: <?php the_field('video_autor'); ?>
+				<?php } ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small> 	    
 	    <div class="pv-21">
 		    <?php $youtube = get_field('video_youtube'); ?>
 	    	<?php if ($youtube!='') { ?>
