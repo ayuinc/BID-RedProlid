@@ -64,7 +64,7 @@ get_header(); ?>
 	              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 150); ?>
 	              <p class="mt-14"><?php echo $estilo_descripcion;?></p>
 	              <small><?php the_field('estilo_direccion_lugar') ?></small>
-	              <div class="text-right">
+	              <div class="text-right pt-35">
 	              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ve más &gt;&gt;</a></small>
 	              </div>
 	           </div>
