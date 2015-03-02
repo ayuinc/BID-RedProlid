@@ -27,7 +27,7 @@ get_header(); ?>
     <div>
       <ul class="grid-list grid-list-3 grid-list-2-sm grid-list-1-xs isotope-grid">
       <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-      <?php query_posts( 'cat=258&posts_per_page=10&offset=5&paged=' . $paged ); ?>
+      <?php query_posts( 'cat=258&posts_per_page=50&offset=5&paged=' . $paged ); ?>
       <?php while ( have_posts() ) : the_post(); ?>    
        <li class="grid-list-item">
          <div class="banner bg-white">
