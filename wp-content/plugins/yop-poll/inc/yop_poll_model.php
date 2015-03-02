@@ -3272,7 +3272,7 @@
 				$template .= '<li style="list-style:none"><style type="text/css">' . self::return_poll_css( array( "location" => $location ) ) . '</style>';
 			}
 
-			$template .= '<div id="yop-poll-container-' . $poll_id . $unique_id . '" class="yop-poll-container bg-white box-shadow p-7">';
+			$template .= '<div id="yop-poll-container-' . $poll_id . $unique_id . '" class="yop-poll-container bg-white p-7">';
 			if ( !$msgDivS ){
 				$template .= '<div id="yop-poll-container-success-' . $poll_id . $unique_id . '" class="yop-poll-container-success"></div>';
 			}
