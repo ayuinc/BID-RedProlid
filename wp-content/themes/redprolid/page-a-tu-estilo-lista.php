@@ -41,9 +41,9 @@ get_header(); ?>
 	      	<?php $nombre1 = $category[3]->cat_name; ?>
 	    		<?php $nombre2 = $category[2]->cat_name; ?>
 	    		<?php $nombre3 = $category[1]->cat_name; ?>
-	      	<?php $nombre1 = strtolower ($nombre1); ?>
-	    		<?php $nombre2 = strtolower ($nombre2); ?>
-	    		<?php $nombre3 = strtolower ($nombre3); ?>	   
+	      	<?php echo $nombre1 = strtolower ($nombre1); ?>
+	    		<?php echo $nombre2 = strtolower ($nombre2); ?>
+	    		<?php echo $nombre3 = strtolower ($nombre3); ?>	   
 	    		 		
 	    		<?php if ($nombre1==$tipo_lugar) { ?>
           <div class="banner col-md-3 banner-label-bottom">
