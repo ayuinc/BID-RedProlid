@@ -50,8 +50,7 @@
 }
 .bg-img-block-no-cover {
 	@include bg-img-control;
-	background-size: 112px;
-	// background-size: inherit !important;
+	background-size: 98px;
 	background-position: center center;
 }
 .bg-img-block-center {

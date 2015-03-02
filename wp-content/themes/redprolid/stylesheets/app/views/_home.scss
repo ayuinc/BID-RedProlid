@@ -150,6 +150,11 @@ div[id^="yop-poll-results-3"] {
 		div {
 			min-height: 0 !important;
 		}
+		&:last-child {
+			.bg-img-block-no-cover {
+				background-size: 112px;
+			}
+		}
 	}
 	.dtl-item {
 		position: relative;
