@@ -40,6 +40,7 @@ get_header(); ?>
       	<?php query_posts( 'cat=258&posts_per_page=10&offset=5&paged=' . $paged ); ?>
 				<?php while ( have_posts() ) : the_post(); ?>    
 				<div class="col-md-3">
+					<div style="min-height:500px;">
 			    <?php $youtube = get_field('video_youtube'); ?>
 		    	<?php if ($youtube!='') { ?>
 		    		<iframe width="100%" height="220" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
@@ -54,6 +55,7 @@ get_header(); ?>
 					<small>Publicado por: <?php the_field('video_organizacion'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small> 	
 				</div>																			
         <?php endwhile; ?>
+				</div>
       </div>
       <div class="text-center">
         <ul class="pager">
