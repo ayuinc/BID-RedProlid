@@ -37,7 +37,7 @@ get_header(); ?>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
         <?php query_posts( 'category_name='.$lugar.'&posts_per_page=50&paged=' . $paged ); ?>          
 				<?php while ( have_posts() ) : the_post(); ?>				            
-          
+          <?php	$category = get_the_category(); ?>
 	      	<?php $nombre1 = $category[3]->cat_name; ?>
 	    		<?php $nombre2 = $category[2]->cat_name; ?>
 	    		<?php $nombre3 = $category[1]->cat_name; ?>
@@ -46,33 +46,6 @@ get_header(); ?>
 	    		<?php $nombre3 = strtolower ($nombre3); ?>	   
 	    		 		
 	    		<?php if ($nombre1==$tipo_lugar) { ?>
-	    			<?php $category_check = 'tienda'; ?>
-	    			<?php $category_name = 'Tienda'; ?>
-	    		<?php } ?>
-	    		<?php if ($nombre2==$tipo_lugar) { ?>
-	    			<?php $category_check = 'tienda'; ?>
-	    			<?php $category_name = 'Tienda'; ?>
-	    		<?php } ?>	            		
-	    		<?php if ($nombre3==$tipo_lugar) { ?>
-	    			<?php $category_check = 'tienda'; ?>
-	    			<?php $category_name = 'Tienda'; ?>
-	    		<?php } ?>
-	    		<?php if ($nombre1==$tipo_lugar) { ?>
-	    			<?php $category_check = 'restaurante'; ?>
-	    			<?php $category_name = 'Restaurante'; ?>
-	    		<?php } ?>
-	    		<?php if ($nombre2==$tipo_lugar) { ?>
-	    			<?php $category_check = 'restaurante'; ?>
-	    			<?php $category_name = 'Restaurante'; ?>
-	    		<?php } ?>	            		
-	    		<?php if ($nombre3==$tipo_lugar) { ?>
-	    			<?php $category_check = 'restaurante'; ?>
-	    			<?php $category_name = 'Restaurante'; ?>
-	    		<?php } ?>	
-          
-          <?php	$category = get_the_category(); ?>
-          <?php $category_check = strtolower ($category[3]->slug); ?>
-          <?php if ($category_check==$tipo_lugar) { ?>
           <div class="banner col-md-3 banner-label-bottom">
           	<div class="bg-white">
 	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
@@ -86,7 +59,7 @@ get_header(); ?>
 			    			<?php } ?>
 			    		<?php } ?>	          		
             	<div class="banner-content flex-none">
-            		<small><?php echo $category_name; ?></small>
+            		<small>Tienda</small>
 	              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 	              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
 	              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 150); ?>
@@ -99,8 +72,147 @@ get_header(); ?>
           	</div>
           </div>
           <?php $resultados++; ?>
-          <?php } ?>
-          
+	    		<?php } ?>
+	    		<?php if ($nombre2==$tipo_lugar) { ?>
+          <div class="banner col-md-3 banner-label-bottom">
+          	<div class="bg-white">
+	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
+				    	<?php if ($image_foto_nombre!='') { ?>
+			    			<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>fotos_restaurantes/<?php the_field('estilo_foto_nombre'); ?>)"></div>
+			    		<?php } else { ?>
+			    			<?php if ($image_foto_restaurante!='') { ?>
+			    				<div class="banner-pic" style="background-image: url(<?php the_field("estilo_foto_restaurante"); ?>)"></div>
+			    			<?php } else { ?>
+			    				<div class="banner-pic" style="background-image: url(/wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
+			    			<?php } ?>
+			    		<?php } ?>	          		
+            	<div class="banner-content flex-none">
+            		<small>Tienda</small>
+	              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+	              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
+	              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 150); ?>
+	              <p class="mt-14"><?php echo $estilo_descripcion;?></p>
+	              <small><?php the_field('estilo_direccion_lugar') ?></small>
+	              <div class="text-right banner-label mb-7">
+	              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ve más &gt;&gt;</a></small>
+	              </div>
+            	</div>
+          	</div>
+          </div>
+          <?php $resultados++; ?>
+	    		<?php } ?>	            		
+	    		<?php if ($nombre3==$tipo_lugar) { ?>
+          <div class="banner col-md-3 banner-label-bottom">
+          	<div class="bg-white">
+	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
+				    	<?php if ($image_foto_nombre!='') { ?>
+			    			<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>fotos_restaurantes/<?php the_field('estilo_foto_nombre'); ?>)"></div>
+			    		<?php } else { ?>
+			    			<?php if ($image_foto_restaurante!='') { ?>
+			    				<div class="banner-pic" style="background-image: url(<?php the_field("estilo_foto_restaurante"); ?>)"></div>
+			    			<?php } else { ?>
+			    				<div class="banner-pic" style="background-image: url(/wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
+			    			<?php } ?>
+			    		<?php } ?>	          		
+            	<div class="banner-content flex-none">
+            		<small>Tienda</small>
+	              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+	              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
+	              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 150); ?>
+	              <p class="mt-14"><?php echo $estilo_descripcion;?></p>
+	              <small><?php the_field('estilo_direccion_lugar') ?></small>
+	              <div class="text-right banner-label mb-7">
+	              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ve más &gt;&gt;</a></small>
+	              </div>
+            	</div>
+          	</div>
+          </div>
+          <?php $resultados++; ?>
+	    		<?php } ?>
+	    		<?php if ($nombre1==$tipo_lugar) { ?>
+          <div class="banner col-md-3 banner-label-bottom">
+          	<div class="bg-white">
+	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
+				    	<?php if ($image_foto_nombre!='') { ?>
+			    			<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>fotos_restaurantes/<?php the_field('estilo_foto_nombre'); ?>)"></div>
+			    		<?php } else { ?>
+			    			<?php if ($image_foto_restaurante!='') { ?>
+			    				<div class="banner-pic" style="background-image: url(<?php the_field("estilo_foto_restaurante"); ?>)"></div>
+			    			<?php } else { ?>
+			    				<div class="banner-pic" style="background-image: url(/wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
+			    			<?php } ?>
+			    		<?php } ?>	          		
+            	<div class="banner-content flex-none">
+            		<small>Restaurante</small>
+	              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+	              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
+	              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 150); ?>
+	              <p class="mt-14"><?php echo $estilo_descripcion;?></p>
+	              <small><?php the_field('estilo_direccion_lugar') ?></small>
+	              <div class="text-right banner-label mb-7">
+	              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ve más &gt;&gt;</a></small>
+	              </div>
+            	</div>
+          	</div>
+          </div>
+          <?php $resultados++; ?>
+	    		<?php } ?>
+	    		<?php if ($nombre2==$tipo_lugar) { ?>
+          <div class="banner col-md-3 banner-label-bottom">
+          	<div class="bg-white">
+	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
+				    	<?php if ($image_foto_nombre!='') { ?>
+			    			<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>fotos_restaurantes/<?php the_field('estilo_foto_nombre'); ?>)"></div>
+			    		<?php } else { ?>
+			    			<?php if ($image_foto_restaurante!='') { ?>
+			    				<div class="banner-pic" style="background-image: url(<?php the_field("estilo_foto_restaurante"); ?>)"></div>
+			    			<?php } else { ?>
+			    				<div class="banner-pic" style="background-image: url(/wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
+			    			<?php } ?>
+			    		<?php } ?>	          		
+            	<div class="banner-content flex-none">
+            		<small>Restaurante</small>
+	              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+	              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
+	              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 150); ?>
+	              <p class="mt-14"><?php echo $estilo_descripcion;?></p>
+	              <small><?php the_field('estilo_direccion_lugar') ?></small>
+	              <div class="text-right banner-label mb-7">
+	              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ve más &gt;&gt;</a></small>
+	              </div>
+            	</div>
+          	</div>
+          </div>
+          <?php $resultados++; ?>
+	    		<?php } ?>	            		
+	    		<?php if ($nombre3==$tipo_lugar) { ?>
+          <div class="banner col-md-3 banner-label-bottom">
+          	<div class="bg-white">
+	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
+				    	<?php if ($image_foto_nombre!='') { ?>
+			    			<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>fotos_restaurantes/<?php the_field('estilo_foto_nombre'); ?>)"></div>
+			    		<?php } else { ?>
+			    			<?php if ($image_foto_restaurante!='') { ?>
+			    				<div class="banner-pic" style="background-image: url(<?php the_field("estilo_foto_restaurante"); ?>)"></div>
+			    			<?php } else { ?>
+			    				<div class="banner-pic" style="background-image: url(/wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
+			    			<?php } ?>
+			    		<?php } ?>	          		
+            	<div class="banner-content flex-none">
+            		<small>Restaurante</small>
+	              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+	              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
+	              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 150); ?>
+	              <p class="mt-14"><?php echo $estilo_descripcion;?></p>
+	              <small><?php the_field('estilo_direccion_lugar') ?></small>
+	              <div class="text-right banner-label mb-7">
+	              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ve más &gt;&gt;</a></small>
+	              </div>
+            	</div>
+          	</div>
+          </div>
+          <?php $resultados++; ?>
+	    		<?php } ?>	
         <?php endwhile; ?>
         <?php if ($resultados==0) { ?>
         	<h3 class="medium text-center">No hay resultados disponibles para tu búsqueda. <a href="<?php echo content_url('/'); ?>a-tu-estilo">Regresa</a></h3>
