@@ -25,12 +25,12 @@ get_header(); ?>
       </div>
     </div>
     <div class="ph-70">
-      <ul class="grid-list grid-list-4 grid-list-2-sm grid-list-1-xs isotope-grid">
+      <ul class="grid-list grid-list-3 grid-list-2-sm grid-list-1-xs isotope-grid">
       <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
       <?php query_posts( 'cat=258&posts_per_page=10&offset=5&paged=' . $paged ); ?>
       <?php while ( have_posts() ) : the_post(); ?>    
        <li class="grid-list-item">
-         <div class="banner bg-white">
+         <div class="banner bg-white half-height">
            <div class="banner-pic">
             <?php $youtube = get_field('video_youtube'); ?>
             <?php if ($youtube!='') { ?>
@@ -41,7 +41,7 @@ get_header(); ?>
               <iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="220" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             <?php } ?>
            </div>
-           <div class="banner-content">
+           <div class="banner-content flex-none">
               <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0"><?php the_title(); ?></h3></a>
               <p class="mb-0"><?php the_field('video_descripcion_cortao'); ?></p>
               <?php $tempDate = get_field('video_fecha_publicacion'); ?>
