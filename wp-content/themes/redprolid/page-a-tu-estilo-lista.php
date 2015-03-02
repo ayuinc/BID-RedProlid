@@ -40,7 +40,7 @@ get_header(); ?>
           
           <?php	$category = get_the_category(); ?>
           <?php $category_check = strtolower ($category[3]->slug); ?>
-          <?php if ($category_check==$tipo_lugar) { ?>
+          <?php //if ($category_check==$tipo_lugar) { ?>
           <div class="banner col-md-3 banner-label-bottom">
           	<div class="bg-white">
 	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
@@ -67,7 +67,7 @@ get_header(); ?>
           	</div>
           </div>
           <?php $resultados++; ?>
-          <?php } ?>
+          <?php //} ?>
           
         <?php endwhile; ?>
         <?php if ($resultados==0) { ?>
