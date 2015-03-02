@@ -15,7 +15,7 @@
 			<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
 			<small>
 				<?php if ($video_autor!='') { ?>
-				Publicado por: <?php the_field('video_autor'); ?>
+				 <?php the_field('video_autor'); ?>
 				<?php } ?> 
 				<?php if ($video_fecha_publicacion!='') { ?>
 					<?php the_field('video_fecha_publicacion'); ?>
