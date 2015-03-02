@@ -49,9 +49,9 @@ get_header(); ?>
 						<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					<?php } ?>
 					<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0"><?php the_title(); ?></h3></a>
-					<p class="mb-0"><?php the_field('descripcion_corta_video'); ?></p>
-					<?php $tempDate = get_field('fecha_publicacion_video'); ?>
-					<small>Publicado por: <?php the_field('organizacion_video'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small> 	
+					<p class="mb-0"><?php the_field('video_descripcion_cortao'); ?></p>
+					<?php $tempDate = get_field('video_fecha_publicacion'); ?>
+					<small>Publicado por: <?php the_field('video_organizacion'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small> 	
 				</div>																			
         <?php endwhile; ?>
       </div>
