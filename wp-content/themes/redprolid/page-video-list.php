@@ -44,8 +44,11 @@ get_header(); ?>
            <div class="banner-content flex-none">
               <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0"><?php the_title(); ?></h3></a>
               <p class="mb-0"><?php the_field('video_descripcion_cortao'); ?></p>
-              <?php $tempDate = get_field('video_fecha_publicacion'); ?>
-              <small>Publicado por: <?php the_field('video_organizacion'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>   
+							<?php $video_autor = get_field('video_autor'); ?>
+							<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
+							<small>
+								<?php if ($video_autor!='') { ?><?php the_field('video_autor'); ?><?php } ?><?php if ($video_fecha_publicacion!='') { ?>, <?php the_field('video_fecha_publicacion'); ?><?php } ?>
+							</small> 
            </div>
          </div>
        </li>
