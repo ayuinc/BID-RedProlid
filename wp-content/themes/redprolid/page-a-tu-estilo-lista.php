@@ -37,7 +37,13 @@ get_header(); ?>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
         <?php query_posts( 'category_name='.$lugar.'&posts_per_page=50&paged=' . $paged ); ?>          
 				<?php while ( have_posts() ) : the_post(); ?>				            
-          <?php	$category = get_the_category(); ?>
+				<?php 
+				if ( in_category( 'tiendas' )) {
+					SIIII
+				} else {
+					NOOO
+				}
+				?>
 
           <div class="banner col-md-3 banner-label-bottom">
           	<div class="bg-white">
