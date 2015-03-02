@@ -37,7 +37,7 @@ get_header(); ?>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
         <?php query_posts( 'category_name='.$lugar.'&posts_per_page=50&paged=' . $paged ); ?>          
 				<?php while ( have_posts() ) : the_post(); ?>				            
-				<?php if ( in_category( 'tiendas' )) { ?>
+				<?php if ( in_category( $tipo_lugar )) { ?>
 					SIIII
 				<?php } else { ?>
 					NOOO
