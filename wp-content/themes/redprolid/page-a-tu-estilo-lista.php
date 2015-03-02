@@ -51,28 +51,7 @@ get_header(); ?>
 			    				<div class="banner-pic" style="background-image: url(/wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
 			    			<?php } ?>
 			    		<?php } ?>	          		
-            	<div class="banner-content flex-none">
-	            	<?php $nombre1 = $category[3]->cat_name; ?>
-            		<?php $nombre2 = $category[2]->cat_name; ?>
-            		<?php $nombre3 = $category[1]->cat_name; ?>
-            		<?php if ($nombre1=='Tiendas') { ?>
-            			<small>Tienda</small>
-            		<?php } ?>
-            		<?php if ($nombre2=='Tiendas') { ?>
-            			<small>Tienda</small>
-            		<?php } ?>	            		
-            		<?php if ($nombre3=='Tiendas') { ?>
-            			<small>Tienda</small>
-            		<?php } ?>
-            		<?php if ($nombre1=='Restaurantes') { ?>
-            			<small>Restaurante</small>
-            		<?php } ?>
-            		<?php if ($nombre2=='Restaurantes') { ?>
-            			<small>Restaurante</small>
-            		<?php } ?>	            		
-            		<?php if ($nombre3=='Restaurantes') { ?>
-            			<small>Restaurante</small>
-            		<?php } ?>	 
+            	<div class="banner-content flex-none">	 
 	              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 	              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
 	              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 150); ?>
