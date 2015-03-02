@@ -30,8 +30,8 @@ get_header(); ?>
 	<section class="pb-35">
 		<div class="container">
 			<div class="row">
-				<?php echo $lugar = $_POST['lugar']; ?>
-				<?php echo $tipo_lugar = $_POST['tipo_lugar']; ?>
+				<?php $lugar = $_POST['lugar']; ?>
+				<?php $tipo_lugar = $_POST['tipo_lugar']; ?>
 				<?php $resultado = 0; ?>
 				<!-- Start the Loop. -->
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
@@ -39,7 +39,7 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>				            
           
           <?php	$category = get_the_category(); ?>
-          <?php $category_check = strtolower ($category[3]->slug); ?>
+          <?php echo $category_check = strtolower ($category[3]->slug); ?>
           <?php //if ($category_check==$tipo_lugar) { ?>
           <div class="banner col-md-3 banner-label-bottom">
           	<div class="bg-white">
