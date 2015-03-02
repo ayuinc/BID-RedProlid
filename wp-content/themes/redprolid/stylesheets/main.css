@@ -6215,7 +6215,7 @@ div[id^="yop-poll-results-3"] {
 
 .dtl-carousel .grid-list-item div {
   min-height: 0 !important; }
-.dtl-carousel .grid-list-item:last-child .bg-img-block {
+.dtl-carousel .grid-list-item:last-child .bg-img-block-no-cover {
   background-size: 112px; }
 .dtl-carousel .dtl-item {
   position: relative;
