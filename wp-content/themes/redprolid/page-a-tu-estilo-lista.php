@@ -35,12 +35,12 @@ get_header(); ?>
 				<?php $resultado = 0; ?>
 				<!-- Start the Loop. -->
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-        <?php query_posts( 'cat=338&posts_per_page=50&paged=' . $paged ); ?>          
+        <?php query_posts( 'cat=328&posts_per_page=50&paged=' . $paged ); ?>          
 				<?php while ( have_posts() ) : the_post(); ?>				            
           
           <?php	$category = get_the_category(); ?>
           <?php $category_check = strtolower ($category[3]->slug); ?>
-          <?php if ($category_check==$tipo_lugar) { ?>
+          <?php //if ($category_check==$tipo_lugar) { ?>
           <div class="banner col-md-3 banner-label-bottom">
           	<div class="bg-white">
 	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
@@ -67,7 +67,7 @@ get_header(); ?>
           	</div>
           </div>
           <?php $resultados++; ?>
-          <?php } ?>
+          <?php //} ?>
           
         <?php endwhile; ?>
         <?php if ($resultados==0) { ?>
