@@ -12,11 +12,15 @@
 	    <h2 class="medium mb-0"><?php the_title(); ?></h2>
 			<?php $tempDate = get_field('video_fecha_publicacion'); ?>
 			<?php $video_autor = get_field('video_autor'); ?>
-			
+			<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
 			<small>
 				<?php if ($video_autor!='') { ?>
 				Publicado por: <?php the_field('video_autor'); ?>
-				<?php } ?> <?php the_field('video_fecha_publicacion') ?></small> 	    
+				<?php } ?> 
+				<?php if ($video_fecha_publicacion!='') { ?>
+					<?php the_field('video_fecha_publicacion'); ?>
+				<?php } ?>
+			</small> 	    
 	    <div class="pv-21">
 		    <?php $youtube = get_field('video_youtube'); ?>
 	    	<?php if ($youtube!='') { ?>
