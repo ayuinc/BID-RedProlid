@@ -46,7 +46,7 @@ get_header(); ?>
 					<?php } ?>
 			    <?php $vimeo = get_field('video_vimeo'); ?>
 		    	<?php if ($vimeo!='') { ?>				
-						<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="220" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					<?php } ?>
 					<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0"><?php the_title(); ?></h3></a>
 					<p class="mb-0"><?php the_field('video_descripcion_cortao'); ?></p>
