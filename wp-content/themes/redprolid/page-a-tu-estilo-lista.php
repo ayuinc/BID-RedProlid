@@ -46,22 +46,22 @@ get_header(); ?>
 	    		<?php $nombre3 = strtolower ($nombre3); ?>	   
 	    		 		
 	    		<?php if ($nombre1==$tipo_lugar) { ?>
-	    			<small>Tienda</small>
+	    			<?php $category_check = 'tienda'; ?>
 	    		<?php } ?>
 	    		<?php if ($nombre2==$tipo_lugar) { ?>
-	    			<small>Tienda</small>
+	    			<?php $category_check = 'tienda'; ?>
 	    		<?php } ?>	            		
 	    		<?php if ($nombre3==$tipo_lugar) { ?>
-	    			<small>Tienda</small>
+	    			<?php $category_check = 'tienda'; ?>
 	    		<?php } ?>
 	    		<?php if ($nombre1==$tipo_lugar) { ?>
-	    			<small>Restaurante</small>
+	    			<?php $category_check = 'restaurante'; ?>
 	    		<?php } ?>
 	    		<?php if ($nombre2==$tipo_lugar) { ?>
-	    			<small>Restaurante</small>
+	    			<?php $category_check = 'restaurante'; ?>
 	    		<?php } ?>	            		
 	    		<?php if ($nombre3==$tipo_lugar) { ?>
-	    			<small>Restaurante</small>
+	    			<?php $category_check = 'restaurante'; ?>
 	    		<?php } ?>	
           
           <?php	$category = get_the_category(); ?>
