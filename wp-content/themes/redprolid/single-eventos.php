@@ -35,7 +35,7 @@
 			        <?php } ?>
 			        <p><?php the_field('contenido_evento'); ?></p>
 			        <?php $subir_pdfword_evento = get_field('subir_pdfword_evento'); ?>
-			        <?php if ($subir_pdfword_evento!='') { ??>
+			        <?php if ($subir_pdfword_evento!='') { ?>
 			        <p><?php the_field('subir_pdfword_evento'); ?></p>
 			        <?php } ?>
 			        <?php $contacto_nombre_evento = get_field('contacto_nombre_evento'); ?>
