@@ -53,7 +53,7 @@ get_header(); ?>
     </div>
     <?php endwhile; ?>	
     <div class="panel panel-custom">         
-      <div class="panel-body pt-28">	
+      <div class="panel-body pv-28">	
       	<h2>Otros videos</h2>
       	<hr>
 				<div class="row">
