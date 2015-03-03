@@ -328,8 +328,7 @@ get_header(); ?>
   	<?php } ?>
 	    <div class="modal-content bg-panel">
 	      <div class="modal-body">
-	      	<h3 class="medium">¿Quieres recibir el boletín de Red PROLID?</h3>
-	      	<p>Suscríbete a nuestro boletín y descárgalo gratis</p>
+	      	<h3 class="medium pb-0 mb-0">¿Quieres recibir el boletín de Red PROLID?</h3>
 	      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
 						<?php ninja_forms_display_form( 13 ); ?>
 					<?php } ?>
