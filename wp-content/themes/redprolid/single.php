@@ -54,6 +54,18 @@ get_header(); ?>
     elseif ( $cat[0]->slug == 'eventos' ) {
       get_template_part( 'single-eventos' );
     }
+    
+    elseif ( $cat[0]->slug == 'otros-eventos' ) {
+      get_template_part( 'single-eventos' );
+    }
+    
+    elseif ( $cat[0]->slug == 'proximos-eventos' ) {
+      get_template_part( 'single-eventos' );
+    }
+
+    elseif ( $cat[0]->slug == 'evento-destacado' ) {
+      get_template_part( 'single-eventos' );
+    }            
 
     elseif ( $cat[0]->slug == 'campeonas' ) {
       get_template_part( 'single-campeonas' );

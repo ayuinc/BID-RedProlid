@@ -32,7 +32,7 @@ get_header(); ?>
 	          <ul class="grid-list grid-list-5 text-center ph-ch-7">
 	            <li class="grid-list-item">
 	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-1.png" alt="">
-	            	<p class="brand-titular">De dónde podrás encontrar todos los recursos y artículos</p>
+	            	<p class="brand-titular">De dónde podrás encontrar todos los recursos</p>
 	            </li>
 	            <li class="grid-list-item">
 		            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2.png" alt="">
@@ -328,8 +328,7 @@ get_header(); ?>
   	<?php } ?>
 	    <div class="modal-content bg-panel">
 	      <div class="modal-body">
-	      	<h3 class="medium">¿Quieres recibir el boletín de Red PROLID?</h3>
-	      	<p>Suscríbete a nuestro boletín y descárgalo gratis</p>
+	      	<h3 class="medium pb-0 mb-0">¿Quieres recibir el boletín de Red PROLID?</h3>
 	      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
 						<?php ninja_forms_display_form( 13 ); ?>
 					<?php } ?>

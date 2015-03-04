@@ -346,10 +346,10 @@ function wppb_signup_user_notification( $user, $user_email, $activation_key, $me
 		$registration_page_url = ( ( strpos( $post_content, '[wppb-register]' ) !== false ) ? add_query_arg( array('activation_key' => $activation_key ), $permalink ) : add_query_arg( array('activation_key' => $activation_key ), get_bloginfo( 'url' ) ) );
 	}
 	
-	$subject = sprintf( apply_filters( 'wppb_signup_user_notification_email_subject', __( '%1$s - Cuenta activa %2$s', 'profilebuilder'), $user_email, $user, $activation_key, $registration_page_url, $meta, $from_name, 'wppb_user_emailc_registr_w_email_confirm_email_subject' ), $from_name, $user );
+	$subject = sprintf( apply_filters( 'wppb_signup_user_notification_email_subject', __( 'Red PROLID - cuenta activa %2$s', 'profilebuilder'), $user_email, $user, $activation_key, $registration_page_url, $meta, $from_name, 'wppb_user_emailc_registr_w_email_confirm_email_subject' ), $from_name, $user );
 	$message = sprintf( 
 		apply_filters('wppb_signup_user_notification_email_content', 
-			__("Hola,\n\nPara activar tu cuenta de usuaria o usuario, por favor haz clic en el enlace.\n\nInmediatamente después de hacerlo recibirás un nuevo correo electrónico con tu nombre de usuaria o usuario.\n\nSi tienes algún problema por favor escríbenos a: comunicate@redprolid.org Muchas gracias,\n\nEquipo de Red PROLID.\n\n %s[ACTIVA TU CUENTA]", 
+			__("Hola,<br><br>Para activar tu cuenta de usuaria o usuario, por favor haz clic en el enlace (final de este mensaje)..\n\nInmediatamente después de hacerlo recibirás un nuevo correo electrónico con tu nombre de usuaria o usuario.<br><br>Si tienes algún problema por favor escríbenos a: comunicate@redprolid.org<br><br>Muchas gracias,<br><br>Equipo de Red PROLID.<br><br> %s[ACTIVA TU CUENTA]", 
 				'profilebuilder' ), 
 			$user_email, 
 			$user, 
@@ -497,7 +497,7 @@ function wppb_notify_user_registration_email( $bloginfo, $user_name, $email, $se
 		$user_message_subject = apply_filters( 'wppb_register_user_email_subject_without_admin_approval', $user_message_subject, $email, $password, $user_message_subject, 'wppb_user_emailc_default_registration_email_subject' );
 		
 		//$user_message_content = sprintf( __( '¡Bienvenida o bienvenido a %1$s!<br/><br/><br/>Tu nombre de usuaria o usuario es: %2$s y tu contraseña: %3$s', 'profilebuilder' ), $user_message_from, $user_name, $password );
-		$user_message_content = sprintf( __( '¡Bienvenida o bienvenido a Red PROLID!<br/><br/>Tu cuenta ha sido activa correctamente. Ingresa con tu nombre de usuario(a) y contraseña a través de este enlace: http://redprolid.org', 'profilebuilder' ), $user_message_from, $user_name, $password );
+		$user_message_content = sprintf( __( '¡Bienvenida o bienvenido a Red PROLID!<br/><br/>Tu cuenta ha sido activa correctamente. Ingresa con tu nombre de usuaria o usuario y contraseña a través de este enlace: http://redprolid.org', 'profilebuilder' ), $user_message_from, $user_name, $password );
 
 		if ( $adminApproval == 'yes' ){
 			$user_message_subject = apply_filters( 'wppb_register_user_email_subject_with_admin_approval', $user_message_subject, $email, $password, $user_message_subject, 'wppb_user_emailc_registration_with_admin_approval_email_subject' );

@@ -3265,7 +3265,7 @@ button.close {
 .bg-img-block-no-cover {
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 112px;
+  background-size: 98px;
   background-position: center center; }
 
 .bg-img-block-center {
@@ -6215,6 +6215,8 @@ div[id^="yop-poll-results-3"] {
 
 .dtl-carousel .grid-list-item div {
   min-height: 0 !important; }
+.dtl-carousel .grid-list-item:last-child .bg-img-block-no-cover {
+  background-size: 112px; }
 .dtl-carousel .dtl-item {
   position: relative;
   border-top-left-radius: 3px;

@@ -61,7 +61,7 @@ get_header(); ?>
 								<option value="brasilia">Brasil, Brasilia</option>
 								<option value="sao-paulo">Brasil, Sao Paulo</option>
 								<option value="rio-de-janeiro">Brasil, Rio de Janeiro</option>
-								<option value="santiago-de-chile">Chile, Santiago de Chile</option>
+								<option value="santiagodechile">Chile, Santiago de Chile</option>
 								<option value="concepcion">Chile, Concepción</option>
 								<option value="bogota">Colombia, Bogotá</option>
 								<option value="medellin">Colombia, Medellín</option>
@@ -97,7 +97,7 @@ get_header(); ?>
 				</div>
 				<div class="col-sm-8">
 					<nav class="custom-nav bg-secondary clearfix">
-						<input type="radio" name="tipo_lugar" value="restaurantes" id="restaurantes" checked> <label class="text-white light" for="restaurantes">Restaurante</label>
+						<input type="radio" name="tipo_lugar" value="restaurantes" id="restaurantes" checked> <label class="text-white light" for="restaurantes">Restaurantes</label>
 						<input type="radio" name="tipo_lugar" value="tiendas" id="tiendas"> <label class="text-white light" for="tiendas">Tiendas</label>
 						<button type="submit" class="btn btn-default ml-21 pull-right borderless" style="padding: 7px 12px;">Busca</button>
 					</nav>
@@ -107,7 +107,7 @@ get_header(); ?>
 			<div class="row">
 				<!-- Start the Loop. -->
 				<?php if ( have_posts() ) : ?>
-          <?php query_posts( 'cat=266&posts_per_page=4' ); ?>
+          <?php query_posts( 'cat=266&posts_per_page=4&orderby=rand' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>				            
             <div class="banner col-md-3 banner-label-bottom">
             	<div class="bg-white">
@@ -124,7 +124,27 @@ get_header(); ?>
 				    		<?php } ?>	  
 	            	<div class="banner-content flex-none">
 		            	<?php	$category = get_the_category(); ?>
-	            		<small><?php echo $category[2]->cat_name; ?></small>
+		            	<?php $nombre1 = $category[3]->cat_name; ?>
+	            		<?php $nombre2 = $category[2]->cat_name; ?>
+	            		<?php $nombre3 = $category[1]->cat_name; ?>
+	            		<?php if ($nombre1=='Tiendas') { ?>
+	            			<small>Tienda</small>
+	            		<?php } ?>
+	            		<?php if ($nombre2=='Tiendas') { ?>
+	            			<small>Tienda</small>
+	            		<?php } ?>	            		
+	            		<?php if ($nombre3=='Tiendas') { ?>
+	            			<small>Tienda</small>
+	            		<?php } ?>
+	            		<?php if ($nombre1=='Restaurantes') { ?>
+	            			<small>Restaurante</small>
+	            		<?php } ?>
+	            		<?php if ($nombre2=='Restaurantes') { ?>
+	            			<small>Restaurante</small>
+	            		<?php } ?>	            		
+	            		<?php if ($nombre3=='Restaurantes') { ?>
+	            			<small>Restaurante</small>
+	            		<?php } ?>	            		
 		              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 		              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
 		              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 100); ?>
@@ -147,7 +167,7 @@ get_header(); ?>
 			<div class="row normalize-text">
 				<div class="col-sm-12">
 					<h3>¿Tienes alguna recomendación?</h3>
-					<p class="mt-7">Anímate a mandarnos los nombres de los lugares que tú recomendarías, esos restaurantes donde siempre comes rico, esas tiendas donde encuentran ropa o complementos originales. Tú conoces tu ciudad como la palma de la mano, igual que conoces otras a  las que viajes con frecuencia. Tu opinión nos puede ser muy útil a todas las demás.</p>
+					<p class="mt-7">Anímate a mandarnos los nombres de los lugares que tú recomendarías, esos restaurantes donde siempre comes rico, esas tiendas donde encuentras ropa o complementos originales. Tú conoces tu ciudad como la palma de la mano, igual que conoces otras a  las que viajes con frecuencia. Tu opinión nos puede ser muy útil a todas las demás.</p>
 				</div>
 			</div>
 			<hr>

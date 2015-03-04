@@ -40,7 +40,7 @@ get_header(); ?>
           </ul>
           <p class="text-gray">Agosto 2014</p> -->
           <!-- <?php the_content(); ?> -->
-          <?php echo do_shortcode('[yop_poll id="-2"]'); ?>
+          <?php echo do_shortcode('[yop_poll id="3"]'); ?>
            
         </div>
         <div class="col-sm-8 ph-70-sm">
@@ -50,9 +50,9 @@ get_header(); ?>
             <div class="col-xs-6">
               <label>Tu propuesta</label>
             </div>
-            <div class="col-xs-6 text-right">
+            <!--<div class="col-xs-6 text-right">
               <nav><a href="#">Regístrate</a> / <a href="#">Inicia sesión</a></nav>
-            </div>
+            </div>-->
           </div>
           <div class="row">
           	<div class="col-xs-12">

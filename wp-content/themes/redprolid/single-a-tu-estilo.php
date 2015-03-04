@@ -8,7 +8,7 @@
         </nav>          
       </div>
     </div>
-    <div class="clearfix ph-70">
+    <div class="clearfix ph-70 pb-35">
     	<div class="col-sm-12">
     		<!--<small class="text-gray">Tiendas</small>-->
     		<h1><?php the_title();?></h1>

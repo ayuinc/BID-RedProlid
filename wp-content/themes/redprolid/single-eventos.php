@@ -20,7 +20,7 @@
     			<?php } ?>
 					<small><?php the_field('credito_imagen_evento'); ?></small>
 				</div>
-				<div class="banner-content col-sm-9">
+				<div class="banner-content col-sm-9 mb-35">
 					<div class="row">
 						<div class="col-sm-7">
 							<?php $organizan_evento = get_field('organizan_evento'); ?>
@@ -34,6 +34,10 @@
 			        <p><?php echo $convocan; ?></p>
 			        <?php } ?>
 			        <p><?php the_field('contenido_evento'); ?></p>
+			        <?php $subir_pdfword_evento = get_field('subir_pdfword_evento'); ?>
+			        <?php if ($subir_pdfword_evento!='') { ?>
+			        <p><a href="<?php the_field('subir_pdfword_evento'); ?>">Archivo</a></p>
+			        <?php } ?>
 			        <?php $contacto_nombre_evento = get_field('contacto_nombre_evento'); ?>
 			        <?php if ($contacto_nombre_evento!='') { ?>
 			        <p>

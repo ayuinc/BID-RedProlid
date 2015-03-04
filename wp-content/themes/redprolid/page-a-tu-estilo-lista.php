@@ -29,7 +29,7 @@ get_header(); ?>
 
 	<section class="pb-35">
 		<div class="container">
-			<div class="row">
+      <ul class="grid-list grid-list-3 grid-list-2-sm grid-list-1-xs isotope-grid">
 				<?php $lugar = $_POST['lugar']; ?>
 				<?php $tipo_lugar = $_POST['tipo_lugar']; ?>
 				<?php $resultado = 0; ?>
@@ -37,12 +37,10 @@ get_header(); ?>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
         <?php query_posts( 'category_name='.$lugar.'&posts_per_page=50&paged=' . $paged ); ?>          
 				<?php while ( have_posts() ) : the_post(); ?>				            
-          
-          <?php	//$category = get_the_category(); ?>
-          <?php //echo $category_check = strtolower ($category[2]->slug); ?>
-          <?php //if ($category_check==$tipo_lugar) { ?>
-          <div class="banner col-md-3 banner-label-bottom">
-          	<div class="bg-white">
+				<?php if ( in_category( $tipo_lugar )) { ?>
+	       <li class="grid-list-item">
+	         <div class="banner bg-white">
+	           <div class="banner-pic">
 	          	<?php $image_foto_nombre = get_field('estilo_foto_nombre'); ?>
 				    	<?php if ($image_foto_nombre!='') { ?>
 			    			<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>fotos_restaurantes/<?php the_field('estilo_foto_nombre'); ?>)"></div>
@@ -52,34 +50,37 @@ get_header(); ?>
 			    			<?php } else { ?>
 			    				<div class="banner-pic" style="background-image: url(/wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
 			    			<?php } ?>
-			    		<?php } ?>	          		
-            	<div class="banner-content flex-none">
-            		<small><?php echo $category[2]->cat_name; ?></small>
+			    		<?php } ?>	
+	           </div>
+	           <div class="banner-content flex-none">
+	            	<?php if ($tipo_lugar=='restaurantes') { ?>
+	            	<small>Restaurante</small>	 
+	            	<?php } ?>
+	            	<?php if ($tipo_lugar=='tiendas') { ?>
+	            	<small>Tienda</small>	 
+	            	<?php } ?>	            	
 	              <h3 class="medium mt-7 mb-0 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 	              <?php $estilo_descripcion = get_field('estilo_descripcion');?>
 	              <?php $estilo_descripcion = substr($estilo_descripcion, 0, 150); ?>
 	              <p class="mt-14"><?php echo $estilo_descripcion;?></p>
 	              <small><?php the_field('estilo_direccion_lugar') ?></small>
-	              <div class="text-right banner-label mb-7">
+	              <!--<div class="text-right">
 	              	<small><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="vermas medium">Ve más &gt;&gt;</a></small>
-	              </div>
-            	</div>
-          	</div>
-          </div>
-          <?php //$resultados++; ?>
-          <?php //} ?>
-          
+	              </div>-->
+	           </div>
+	         </div>
+	       </li>
+       	<?php $resultados++; ?>
+				<?php } ?>
         <?php endwhile; ?>
-        <?php //if ($resultados==0) { ?>
-        	<!--<h3 class="medium text-center">No hay resultados disponibles para tu búsqueda. <a href="<?php echo content_url('/'); ?>a-tu-estilo">Regresa</a></h3>-->
-        <?php //} ?>
-        <!--<div class="text-center">
-          <ul class="pager">
-            <li><?php next_posts_link( 'Anteriores' ); ?></li>
-            <li><?php previous_posts_link( 'Posteriores' ); ?></li>
-          </ul>
-        </div>-->             				            
+      </ul>		
+      
+      <div>	
+      <?php if ($resultados==0) { ?>
+      	<h3 class="medium text-center">No hay resultados disponibles para tu búsqueda. <a href="<?php echo content_url('/'); ?>a-tu-estilo">Regresa</a></h3>
+      <?php } ?>			
       </div>
+
 		</div>
 	</section>
 
