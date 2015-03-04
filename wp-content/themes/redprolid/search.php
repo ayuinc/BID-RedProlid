@@ -53,9 +53,9 @@ get_header(); ?>
           <ol>
 
             <?php 
-            // the query to set the posts per page to 3
+            // the query to set the posts per page to 10
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-            $args = array('posts_per_page' => 10, 'paged' => $paged );
+            $args = array('posts_per_page' => 15, 'paged' => $paged );
             query_posts($args); ?>
 
             <?php if ( have_posts() ) : ?>
