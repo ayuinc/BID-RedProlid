@@ -76,7 +76,7 @@ get_header(); ?>
                         <?php $tempDate = get_the_date(); ?>
                         <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>  
                         <p class="m-0">
-                          contenido
+                          <?php the_content(); ?>
                         </p>
                         <small><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
                         <hr>
