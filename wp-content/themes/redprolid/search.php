@@ -52,74 +52,49 @@ get_header(); ?>
           <?php $resultado = $_GET['s']; ?>
           <?php if ($resultado!='') { ?>  
             <?php 
-              // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-              // $args = array('posts_per_page' => 100, 'paged' => $paged );
-            // the query
-            $the_query = new WP_Query(); ?>
+              // Define custom query parameters
+              $custom_query_args = array( /* Parameters go here */ );
 
-            <?php if ( $the_query->have_posts() ) : ?>
+              // Get current page and append to custom query parameters array
+              $custom_query_args['paged'] = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 
-              <!-- pagination here -->
+              // Instantiate custom query
+              $custom_query = new WP_Query( $custom_query_args );
 
-              <!-- the loop -->
-              <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                <li>
-                  <h4 class="medium m-0"><?php the_title(); ?></h4>
-                  <?php $conte = (wp_get_post_terms(get_the_ID(),'country',array("fields" => "names"))[0]); ?>
-                  <?php $tempDate = get_the_date(); ?>
-                  <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>  
-                  <p class="m-0">
-                    <?php 
-                      // switch (true) {
-                      //   case the_field('contenido_punto_de_vista'):
-                      //     echo the_field('contenido_punto_de_vista');
-                      //     break;
-                      //   case the_field('contenido_campeona'):
-                      //     echo the_field('contenido_campeona');
-                      //     break;
-                      //   case the_field('contenido_concurso'):
-                      //     echo the_field('contenido_concurso');
-                      //     break;
-                      //   case the_field('contenido-debates'):
-                      //     echo the_field('contenido-debates');
-                      //     break;
-                      //   case the_field('contenido-dtl'):
-                      //     echo the_field('contenido-dtl');
-                      //     break;
-                      //   case the_field('contenido-dtl-seccion'):
-                      //     echo the_field('contenido-dtl-seccion');
-                      //     break; 
-                      //   case the_field('contenido_evento'):
-                      //     echo the_field('contenido_evento');
-                      //     break; 
-                      //   case the_field('contenido_noticias'):
-                      //     echo the_field('contenido_noticias');
-                      //     break;  
-                      //   case the_field('descripcion_video'):
-                      //     echo the_field('descripcion_video');
-                      //     break;                                        
-                      //}
-                    ?>
-                  </p>
-                  <small><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
-                  <hr>
-                </li>
-              <?php endwhile; ?>
-              <!-- end of the loop -->
+              // Pagination fix
+              $temp_query = $wp_query;
+              $wp_query   = NULL;
+              $wp_query   = $custom_query;
 
-              <!-- pagination here -->
-              <div class="text-center">
-                <ul class="pager">
-                  <li><?php previous_posts_link( 'Anterior' ); ?></li>
-                  <li><?php next_posts_link( 'Siguiente' ); ?></li>
-                </ul>
-              </div>
+              // Output custom query loop
+              if ( $custom_query->have_posts() ) :
+                  while ( $custom_query->have_posts() ) :
+                      $custom_query->the_post();?>
+                      <li>
+                        <h4 class="medium m-0"><?php the_title(); ?></h4>
+                        <?php $conte = (wp_get_post_terms(get_the_ID(),'country',array("fields" => "names"))[0]); ?>
+                        <?php $tempDate = get_the_date(); ?>
+                        <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>  
+                        <p class="m-0">
+                          contenido
+                        </p>
+                        <small><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
+                        <hr>
+                      </li>
+                <?php
+                  endwhile;
+              endif;
+              // Reset postdata
+              wp_reset_postdata();
 
-              <?php wp_reset_postdata(); ?>
+              // Custom query loop pagination
+              previous_posts_link( 'Older Posts' );
+              next_posts_link( 'Newer Posts', $custom_query->max_num_pages );
 
-            <?php else : ?>
-              <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-            <?php endif; ?>
+              // Reset main query object
+              $wp_query = NULL;
+              $wp_query = $temp_query;
+             ?>
           </ol>
           
 
