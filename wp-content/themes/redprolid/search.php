@@ -108,6 +108,12 @@ get_header(); ?>
               <!-- end of the loop -->
 
               <!-- pagination here -->
+              <div class="text-center">
+                <ul class="pager">
+                  <li><?php previous_posts_link( 'Anterior' ); ?></li>
+                  <li><?php next_posts_link( 'Siguiente' ); ?></li>
+                </ul>
+              </div>
 
               <?php wp_reset_postdata(); ?>
 
@@ -115,12 +121,7 @@ get_header(); ?>
               <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
             <?php endif; ?>
           </ol>
-          <div class="text-center">
-            <ul class="pager">
-              <li><?php previous_posts_link( 'Anterior' ); ?></li>
-              <li><?php next_posts_link( 'Siguiente' ); ?></li>
-            </ul>
-          </div>
+          
 
           <?php } else { ?>
           <h3 class="medium text-center">No insertaste ninguna palabra o frase para buscar. Vuelve a intentarlo.</h3>
