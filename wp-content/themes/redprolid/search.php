@@ -28,15 +28,15 @@ get_header(); ?>
             <p class="m-0">Resultados: 
             <span>
 						<?php 
-							// $num = $wp_query->post_count; 
-							// if (have_posts()) : 
-							// 	echo $num; 
-							// endif;?> 
-							<?php //$cantidad = 0; ?>
-							<?php //while ( have_posts() ) : the_post(); ?>
-								<?php //$cantidad++; ?>
-              <?php //endwhile; ?>
-              <?php //$cantidad; ?>							
+							 $num = $wp_query->post_count; 
+							 if (have_posts()) : 
+							 	echo $num; 
+							 endif;?> 
+							<?php $cantidad = 0; ?>
+							<?php while ( have_posts() ) : the_post(); ?>
+								<?php $cantidad++; ?>
+              <?php endwhile; ?>
+              <?php $cantidad; ?>							
             </span>
             </p>
           </div>
