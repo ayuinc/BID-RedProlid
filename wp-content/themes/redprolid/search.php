@@ -98,7 +98,7 @@ get_header(); ?>
                       //   case the_field('descripcion_video'):
                       //     echo the_field('descripcion_video');
                       //     break;                                        
-                      }
+                      //}
                     ?>
                   </p>
                   <small><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
