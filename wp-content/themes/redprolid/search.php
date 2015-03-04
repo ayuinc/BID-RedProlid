@@ -48,63 +48,73 @@ get_header(); ?>
       <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-10">
-	        <?php $resultado = $_GET['s']; ?>
-	        <?php if ($resultado!='') { ?>
           <ol>
-
+          <?php $resultado = $_GET['s']; ?>
+          <?php if ($resultado!='') { ?>  
             <?php 
-            // the query to set the posts per page to 10
-            $paged = (get_query_var('page')) ? get_query_var('page') : 1;
-            $args = array('posts_per_page' => 15, 'page' => $paged );
-            query_posts($args); ?>
+              $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+              $args = array('posts_per_page' => 15, 'paged' => $paged );
+            // the query
+            $the_query = new WP_Query( $args ); ?>
 
-            <?php if ( have_posts() ) : ?>
-              <?php while ( have_posts() ) : the_post(); ?>
-              <li>
-                <h4 class="medium m-0"><?php the_title(); ?></h4>
-                <?php $conte = (wp_get_post_terms(get_the_ID(),'country',array("fields" => "names"))[0]); ?>
-                <?php $tempDate = get_the_date(); ?>
-								<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>  
-                <p class="m-0">
-                  <?php 
-                    // switch (true) {
-                    //   case the_field('contenido_punto_de_vista'):
-                    //     echo the_field('contenido_punto_de_vista');
-                    //     break;
-                    //   case the_field('contenido_campeona'):
-                    //     echo the_field('contenido_campeona');
-                    //     break;
-                    //   case the_field('contenido_concurso'):
-                    //     echo the_field('contenido_concurso');
-                    //     break;
-                    //   case the_field('contenido-debates'):
-                    //     echo the_field('contenido-debates');
-                    //     break;
-                    //   case the_field('contenido-dtl'):
-                    //     echo the_field('contenido-dtl');
-                    //     break;
-                    //   case the_field('contenido-dtl-seccion'):
-                    //     echo the_field('contenido-dtl-seccion');
-                    //     break; 
-                    //   case the_field('contenido_evento'):
-                    //     echo the_field('contenido_evento');
-                    //     break; 
-                    //   case the_field('contenido_noticias'):
-                    //     echo the_field('contenido_noticias');
-                    //     break;  
-                    //   case the_field('descripcion_video'):
-                    //     echo the_field('descripcion_video');
-                    //     break;                                        
-                    // }
-                  ?>
-                </p>
-                <small><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
-                <hr>
-              </li>
+            <?php if ( $the_query->have_posts() ) : ?>
+
+              <!-- pagination here -->
+
+              <!-- the loop -->
+              <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                <li>
+                  <h4 class="medium m-0"><?php the_title(); ?></h4>
+                  <?php $conte = (wp_get_post_terms(get_the_ID(),'country',array("fields" => "names"))[0]); ?>
+                  <?php $tempDate = get_the_date(); ?>
+                  <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>  
+                  <p class="m-0">
+                    <?php 
+                      switch (true) {
+                        case the_field('contenido_punto_de_vista'):
+                          echo the_field('contenido_punto_de_vista');
+                          break;
+                        case the_field('contenido_campeona'):
+                          echo the_field('contenido_campeona');
+                          break;
+                        case the_field('contenido_concurso'):
+                          echo the_field('contenido_concurso');
+                          break;
+                        case the_field('contenido-debates'):
+                          echo the_field('contenido-debates');
+                          break;
+                        case the_field('contenido-dtl'):
+                          echo the_field('contenido-dtl');
+                          break;
+                        case the_field('contenido-dtl-seccion'):
+                          echo the_field('contenido-dtl-seccion');
+                          break; 
+                        case the_field('contenido_evento'):
+                          echo the_field('contenido_evento');
+                          break; 
+                        case the_field('contenido_noticias'):
+                          echo the_field('contenido_noticias');
+                          break;  
+                        case the_field('descripcion_video'):
+                          echo the_field('descripcion_video');
+                          break;                                        
+                      }
+                    ?>
+                  </p>
+                  <small><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
+                  <hr>
+                </li>
               <?php endwhile; ?>
-            <?php endif; ?> 
-          </ol>
+              <!-- end of the loop -->
 
+              <!-- pagination here -->
+
+              <?php wp_reset_postdata(); ?>
+
+            <?php else : ?>
+              <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+            <?php endif; ?>
+          </ol>
           <div class="text-center">
             <ul class="pager">
               <li><?php previous_posts_link( 'Anterior' ); ?></li>
@@ -115,6 +125,7 @@ get_header(); ?>
           <?php } else { ?>
           <h3 class="medium text-center">No insertaste ninguna palabra o frase para buscar. Vuelve a intentarlo.</h3>
           <?php } ?>
+
 
         </div>
         <div class="col-sm-1"></div>
