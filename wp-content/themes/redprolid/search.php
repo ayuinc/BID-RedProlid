@@ -85,8 +85,8 @@ get_header(); ?>
               wp_reset_postdata();
 
               // Custom query loop pagination
-              previous_posts_link( 'Older Posts' );
-              next_posts_link( 'Newer Posts', $custom_query->max_num_pages );
+              previous_posts_link( 'Anteriores' );
+              next_posts_link( 'Siguiente', $custom_query->max_num_pages );
 
               // Reset main query object
               $wp_query = NULL;
