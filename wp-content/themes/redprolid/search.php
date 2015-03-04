@@ -83,11 +83,15 @@ get_header(); ?>
               endif;
               // Reset postdata
               wp_reset_postdata();
-
-              // Custom query loop pagination
-              previous_posts_link( 'Anteriores' );
-              next_posts_link( 'Siguiente', $custom_query->max_num_pages );
-
+                ?>
+              <!-- Custom query loop pagination -->
+               <div class="text-center">
+                <ul class="pager">
+                  <li><?php previous_posts_link( 'Anterior' ); ?></li>
+                  <li><?php next_posts_link( 'Siguiente', $custom_query->max_num_pages ); ?></li>
+                </ul>
+              </div> 
+              <?php
               // Reset main query object
               $wp_query = NULL;
               $wp_query = $temp_query;
