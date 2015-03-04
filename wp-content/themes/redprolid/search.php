@@ -67,35 +67,35 @@ get_header(); ?>
 								<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>  
                 <p class="m-0">
                   <?php 
-                    switch (true) {
-                      case the_field('contenido_punto_de_vista'):
-                        echo the_field('contenido_punto_de_vista');
-                        break;
-                      case the_field('contenido_campeona'):
-                        echo the_field('contenido_campeona');
-                        break;
-                      case the_field('contenido_concurso'):
-                        echo the_field('contenido_concurso');
-                        break;
-                      case the_field('contenido-debates'):
-                        echo the_field('contenido-debates');
-                        break;
-                      case the_field('contenido-dtl'):
-                        echo the_field('contenido-dtl');
-                        break;
-                      case the_field('contenido-dtl-seccion'):
-                        echo the_field('contenido-dtl-seccion');
-                        break; 
-                      case the_field('contenido_evento'):
-                        echo the_field('contenido_evento');
-                        break; 
-                      case the_field('contenido_noticias'):
-                        echo the_field('contenido_noticias');
-                        break;  
-                      case the_field('descripcion_video'):
-                        echo the_field('descripcion_video');
-                        break;                                        
-                    }
+                    // switch (true) {
+                    //   case the_field('contenido_punto_de_vista'):
+                    //     echo the_field('contenido_punto_de_vista');
+                    //     break;
+                    //   case the_field('contenido_campeona'):
+                    //     echo the_field('contenido_campeona');
+                    //     break;
+                    //   case the_field('contenido_concurso'):
+                    //     echo the_field('contenido_concurso');
+                    //     break;
+                    //   case the_field('contenido-debates'):
+                    //     echo the_field('contenido-debates');
+                    //     break;
+                    //   case the_field('contenido-dtl'):
+                    //     echo the_field('contenido-dtl');
+                    //     break;
+                    //   case the_field('contenido-dtl-seccion'):
+                    //     echo the_field('contenido-dtl-seccion');
+                    //     break; 
+                    //   case the_field('contenido_evento'):
+                    //     echo the_field('contenido_evento');
+                    //     break; 
+                    //   case the_field('contenido_noticias'):
+                    //     echo the_field('contenido_noticias');
+                    //     break;  
+                    //   case the_field('descripcion_video'):
+                    //     echo the_field('descripcion_video');
+                    //     break;                                        
+                    // }
                   ?>
                 </p>
                 <small><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
