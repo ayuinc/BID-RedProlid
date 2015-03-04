@@ -54,9 +54,9 @@ get_header(); ?>
 
             <?php 
             // the query to set the posts per page to 10
-            //$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-            //$args = array('posts_per_page' => 15, 'paged' => $paged );
-            //query_posts($args); ?>
+            $paged = (get_query_var('page')) ? get_query_var('page') : 1;
+            $args = array('posts_per_page' => 15, 'page' => $paged );
+            query_posts($args); ?>
 
             <?php if ( have_posts() ) : ?>
               <?php while ( have_posts() ) : the_post(); ?>
