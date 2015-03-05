@@ -136,7 +136,7 @@ get_header(); ?>
                           <?php } else { ?>
                           <div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia-placeholder.png)"></div>
                           <?php } ?>
-                          <div class="banner-content flex-none">
+                          <div class="banner-content flex-none" style="min-height:13rem;">
                             <h3 class="medium mt-7 mb-0 pb-0">
                               <a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a>
                             </h3>
