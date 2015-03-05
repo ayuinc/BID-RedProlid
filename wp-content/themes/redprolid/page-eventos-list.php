@@ -35,8 +35,8 @@ get_header(); ?>
             </div>
             <div class="content mb-14 event-destacados">
               <p>
-	              <strong>Fecha de inicio:</strong> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php $lhora_evento = get_field('hora_evento'); ?><?php if ($hora_evento!='') { ?>, <?php the_field('hora_evento'); ?><?php } ?><br>
-					      <strong>Fecha de fin:</strong> <?php echo date_i18n('j', strtotime( $tempDateFin)); ?> de <?php echo date_i18n('F', strtotime( $tempDateFin)); ?> de <?php echo date_i18n('Y', strtotime( $tempDateFin)); ?><br>            
+	              <strong>Fecha inicio:</strong> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php $lhora_evento = get_field('hora_evento'); ?><?php if ($hora_evento!='') { ?>, <?php the_field('hora_evento'); ?><?php } ?><br>
+					      <strong>Fecha fin:</strong> <?php echo date_i18n('j', strtotime( $tempDateFin)); ?> de <?php echo date_i18n('F', strtotime( $tempDateFin)); ?> de <?php echo date_i18n('Y', strtotime( $tempDateFin)); ?><br>            
 								<?php $tempDate = get_the_date(); ?>	            
               	<?php $lugar_evento = get_field('lugar_evento'); ?>
 								<?php if ($lugar_evento!='') { ?>
