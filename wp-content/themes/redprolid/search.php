@@ -56,7 +56,7 @@ get_header(); ?>
               $custom_query_args = array( /* Parameters go here */ );
 
               // Get current page and append to custom query parameters array
-              $custom_query_args['paged'] = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+              //$custom_query_args['paged'] = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 
               // Instantiate custom query
               $custom_query = new WP_Query( $custom_query_args );
