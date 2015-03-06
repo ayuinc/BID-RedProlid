@@ -35,7 +35,8 @@
 	        <div class="col-sm-12">
 		        <h2 class="lh-lg mb-0"><?php the_title(); ?></h2>
 		        <small><?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
-            <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+            <!--<?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de --><?php echo date_i18n('Y', strtotime( $tempDate)); ?>
+	          </small>
             <p class="mt-14">
 	        		<em>
 	        		<?php the_field('posicion_campeona'); ?>
