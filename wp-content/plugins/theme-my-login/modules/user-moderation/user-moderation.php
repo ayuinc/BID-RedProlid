@@ -197,10 +197,10 @@ class Theme_My_Login_User_Moderation extends Theme_My_Login_Abstract {
 		if ( isset( $_GET['pending'] ) ) {
 			switch ( $_GET['pending'] ) {
 				case 'activation' :
-					$theme_my_login->errors->add( 'pending_activation', __( 'Your registration was successful but you must now confirm your email address before you can log in. Please check your email and click on the link provided.', 'theme-my-login' ), 'message' );
+					$theme_my_login->errors->add( 'pending_activation', __( 'Tu inscripción se ha realizado correctamente, pero ahora debes confirmar tu correo electrónico antes de iniciar la sesión. Por favor revisa tu correo electrónico y haz clic en el enlace proporcionado.', 'theme-my-login' ), 'message' );
 					break;
 				case 'approval' :
-					$theme_my_login->errors->add( 'pending_approval', __( 'Your registration was successful but you must now be approved by an administrator before you can log in. You will be notified by e-mail once your account has been reviewed.', 'theme-my-login' ), 'message' );
+					$theme_my_login->errors->add( 'pending_approval', __( 'Tu inscripción se ha realizado correctamente, pero ahora debe ser aprobado por un administrador antes de iniciar la sesión. Se te notificará por correo electrónico una vez que tu cuenta haya sido revisada.', 'theme-my-login' ), 'message' );
 					break;
 			}
 		}
