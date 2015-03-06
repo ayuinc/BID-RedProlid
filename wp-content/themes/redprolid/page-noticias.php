@@ -108,6 +108,9 @@ get_header(); ?>
 	                    <hr> 
 		            <?php endwhile; ?> 
 	            </ul>
+	            <div class="mt-28">
+		            <p class="text-right"><a href="<?php echo home_url('/'); ?>noticias-anteriores/">Ver todas las noticias >></a></p>
+	            </div>
 	            <!--<div class="text-center">
 	              <ul class="pager">
 	                <li><?php //next_posts_link( 'Anteriores' ); ?></li>
