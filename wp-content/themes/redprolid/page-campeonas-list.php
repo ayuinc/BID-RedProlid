@@ -27,7 +27,7 @@ get_header(); ?>
     <div class="ph-70">
       <div class="row">
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-        <?php query_posts( 'category_name=campeonas&posts_per_page=10&paged=' . $paged ); ?>
+        <?php query_posts( 'cat=2,-350&posts_per_page=10&paged=' . $paged ); ?>
         <?php while ( have_posts() ) : the_post(); ?>	      
 	      <div class="col-md-2">
           <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
