@@ -25,7 +25,8 @@
   	  <div class="row">
   			<div class="col-sm-12 with-hr">  	  
   		    <p><?php the_field('contenido_noticias'); ?></p>
-  		    <p class="text-right"><a href="<?php the_field('link_publicacion_noticias'); ?>"  class="btn btn-primary" target="_blank">Lee la noticia completa</a></p>
+  		    <!--<p class="text-right"><a href="<?php the_field('link_publicacion_noticias'); ?>"  class="btn btn-primary" target="_blank">Lee la noticia completa</a></p>-->
+  		    <iframe src="<?php the_field('link_publicacion_noticias'); ?>" width="100%"></iframe>
   		    <div class="text-right">
   		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
   		    </div>   
