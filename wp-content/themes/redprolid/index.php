@@ -17,9 +17,7 @@ get_header(); ?>
     
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
-    <style>
 
-    </style>
     <div class="mh-700">
       <section id="hero-unit">
         <div class="container pv-21">
@@ -283,7 +281,7 @@ get_header(); ?>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-9 bg-panel ph-14 pb-28">
+            <div class="col-md-9 bg-panel ph-14">
               <div class="panel panel-custom hidden-sm-down">
                 <div class="panel-body tall pt-0">
                   <div class="panel-heading">

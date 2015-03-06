@@ -10,7 +10,7 @@
  */
 ?>
 
-      <footer>
+      <footer class="mt-28">
         <div class="container text-center-xs">
           <div class="row to-top">
             <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/nav-footer-to-top.png" alt=""></a>
