@@ -85,7 +85,7 @@ get_header(); ?>
 			<h2>Otros eventos</h2>
 			<hr>
     	<!-- Start the Loop. -->	
-    	<?php query_posts( 'cat=348&posts_per_page=5'); ?>
+    	<?php query_posts( 'cat=348&posts_per_page=6'); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 	  	<div class="banner half-height pb-28">
 	  		<div class="banner-pic col-sm-2 bg-panel text-center lead-ch normalize-text">
