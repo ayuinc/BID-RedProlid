@@ -23,7 +23,7 @@ get_header(); ?>
         </div>
         <div class="col-sm-6 col-xs-12">
           <nav class="text-right text-center-xs">
-            <a href="#" data-toggle="modal" data-target="#modalNoticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/">¿Quieres ver las noticias anteriores?</a>
+            <a href="#" data-toggle="modal" data-target="#modalNoticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/page/2/">¿Quieres ver las noticias anteriores?</a>
           </nav>	          
         </div>
       </div>
@@ -109,7 +109,7 @@ get_header(); ?>
 		            <?php endwhile; ?> 
 	            </ul>
 	            <div class="mt-28">
-		            <p class="text-right"><a href="<?php echo home_url('/'); ?>noticias-anteriores/">Ver todas las noticias >></a></p>
+		            <p class="text-right"><a href="<?php echo home_url('/'); ?>noticias-anteriores/page/2/">Ver todas las noticias >></a></p>
 	            </div>
 	            <!--<div class="text-center">
 	              <ul class="pager">
