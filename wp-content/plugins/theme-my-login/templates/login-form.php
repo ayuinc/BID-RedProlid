@@ -4,7 +4,7 @@ If you would like to edit this file, copy it to your current theme's directory a
 Theme My Login will always look in your theme's directory first, before using this default template.
 */
 ?>
-<div class="login" id="theme-my-login<?php $template->the_instance(); ?>">
+<!--<div class="login" id="theme-my-login<?php $template->the_instance(); ?>">
 	<?php $template->the_action_template_message( 'login' ); ?>
 	<?php $template->the_errors(); ?>
 	<form name="loginform" id="loginform<?php $template->the_instance(); ?>" action="<?php $template->the_action_url( 'login' ); ?>" method="post">
@@ -31,4 +31,4 @@ Theme My Login will always look in your theme's directory first, before using th
 		</p>
 	</form>
 	<?php $template->the_action_links( array( 'login' => false ) ); ?>
-</div>
+</div>-->
