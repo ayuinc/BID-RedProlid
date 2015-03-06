@@ -28,7 +28,7 @@ get_header(); ?>
       <div class="row">
         <div class="col-sm-12">
           <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-          <?php query_posts( 'category_name=noticias&posts_per_page=10&offset=9&paged=' . $paged ); ?>
+          <?php query_posts( 'category_name=noticias&posts_per_page=10&paged=' . $paged ); ?>
           <?php while ( have_posts() ) : the_post(); ?>
             <div class="title">
               <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
@@ -46,8 +46,8 @@ get_header(); ?>
           <?php endwhile; ?>
           <div class="text-center">
             <ul class="pager">
-              <li><?php next_posts_link( 'Anteriores' ); ?></li>
-              <li><?php previous_posts_link( 'Posteriores' ); ?></li>
+	            <li><?php next_posts_link( 'Ve más' ); ?></li>
+	            <li><?php previous_posts_link( 'Posteriores' ); ?></li>
             </ul>
           </div>          
         </div>

@@ -27,7 +27,7 @@ get_header(); ?>
     <div class="ph-70">
       <div class="row">
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-        <?php query_posts( 'category_name=campeonas&posts_per_page=10&offset=1&paged=' . $paged ); ?>
+        <?php query_posts( 'category_name=campeonas&posts_per_page=10&paged=' . $paged ); ?>
         <?php while ( have_posts() ) : the_post(); ?>	      
 	      <div class="col-md-2">
           <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
@@ -58,7 +58,7 @@ get_header(); ?>
         <?php endwhile; ?>
         <div class="text-center">
           <ul class="pager">
-            <li><?php next_posts_link( 'Anteriores' ); ?></li>
+            <li><?php next_posts_link( 'Ve más' ); ?></li>
             <li><?php previous_posts_link( 'Posteriores' ); ?></li>
           </ul>
         </div>          
