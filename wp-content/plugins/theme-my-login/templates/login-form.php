@@ -4,7 +4,9 @@ If you would like to edit this file, copy it to your current theme's directory a
 Theme My Login will always look in your theme's directory first, before using this default template.
 */
 ?>
-<div class="login" id="theme-my-login<?php $template->the_instance(); ?>">
+
+	<?php header( "Location: http://redprolid.org/te-hemos-registrado-con-exito/" ); ?>
+
 	<div class="row">
 		<div class="container-sm">
 			<div class="col-md-12">
@@ -13,7 +15,10 @@ Theme My Login will always look in your theme's directory first, before using th
 		</div>
 	</div>
 	<?php $template->the_errors(); ?>
-	<!--<form name="loginform" id="loginform<?php //$template->the_instance(); ?>" action="<?php //$template->the_action_url( 'login' ); ?>" method="post">
+
+<!--
+<div class="login" id="theme-my-login<?php $template->the_instance(); ?>">
+	<form name="loginform" id="loginform<?php //$template->the_instance(); ?>" action="<?php //$template->the_action_url( 'login' ); ?>" method="post">
 		<p>
 			<label for="user_login<?php //$template->the_instance(); ?>"><?php _e( 'Username' ); ?></label>
 			<input type="text" name="log" id="user_login<?php //$template->the_instance(); ?>" class="input" value="<?php //$template->the_posted_value( 'log' ); ?>" size="20" />
@@ -35,6 +40,7 @@ Theme My Login will always look in your theme's directory first, before using th
 			<input type="hidden" name="instance" value="<?php //$template->the_instance(); ?>" />
 			<input type="hidden" name="action" value="login" />
 		</p>
-	</form>-->
+	</form>
 	<?php //$template->the_action_links( array( 'login' => false ) ); ?>
 </div>
+-->
