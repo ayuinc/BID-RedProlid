@@ -112,7 +112,15 @@
 			$('#boton_entrevista_full').show(100);
 			$('#entrevista_full').hide(100);
 			$('#boton_ocultar_entrevista_full').hide(100);
-		})		
+		})	
+		
+		//MOSTRAR Y OCULATAR NOTICIAS
+		$('#noticia_muestra').hide();
+		
+		$('#trigger_noticia').click(function() {
+			$('#noticia_muestra').show(100);
+		})
+		
 	
     
 		$('.icon[data-href]').each(function() { 

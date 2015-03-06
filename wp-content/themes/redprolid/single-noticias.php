@@ -25,8 +25,8 @@
   	  <div class="row">
   			<div class="col-sm-12 with-hr">  	  
   		    <p><?php the_field('contenido_noticias'); ?></p>
-  		    <!--<p class="text-right"><a href="<?php the_field('link_publicacion_noticias'); ?>"  class="btn btn-primary" target="_blank">Lee la noticia completa</a></p>-->
-  		    <div class="pv-35">
+  		    <p class="text-right"><a href="<?php the_field('link_publicacion_noticias'); ?>"  class="btn btn-primary" target="_blank" id="trigger_noticia">Lee la noticia completa</a></p>
+  		    <div class="pv-35" id="noticia_muestra">
   		    	<iframe src="<?php the_field('link_publicacion_noticias'); ?>" frameborder="0" width="100%" height="700"></iframe>
   		    </div>
   		    <div class="text-right">
