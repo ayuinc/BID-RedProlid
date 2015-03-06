@@ -25,7 +25,7 @@ get_header(); ?>
       </div>
     </div>  
     <div class="ph-70">
-      <div class="row">
+      <div class="row pb-35">
         <div class="col-sm-10 col-md-offset-1">
           <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
           <?php query_posts( 'category_name=eventos&posts_per_page=10&offset=8&paged=' . $paged ); ?>
@@ -59,7 +59,7 @@ get_header(); ?>
             </div>
             <hr>
           <?php endwhile; ?>
-          <div class="text-center pb-35">
+          <div class="text-center">
             <ul class="pager">
               <li><?php next_posts_link( 'Anteriores' ); ?></li>
               <li><?php previous_posts_link( 'Posteriores' ); ?></li>
