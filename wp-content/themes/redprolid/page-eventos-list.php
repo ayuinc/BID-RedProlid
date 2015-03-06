@@ -59,7 +59,7 @@ get_header(); ?>
             </div>
             <hr>
           <?php endwhile; ?>
-          <div class="text-center">
+          <div class="text-center pb-35">
             <ul class="pager">
               <li><?php next_posts_link( 'Anteriores' ); ?></li>
               <li><?php previous_posts_link( 'Posteriores' ); ?></li>
