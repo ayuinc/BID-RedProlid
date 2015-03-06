@@ -93,7 +93,7 @@ get_header(); ?>
 	  			<h3 class="h1"><?php echo date_i18n('j', strtotime( $tempDate)); ?></h3>
 			    <p><?php echo date_i18n('M', strtotime( $tempDate)); ?></p>
 	  		</div>
-	  		<div class="banner-content flex-none col-sm-10">
+	  		<div class="banner-content flex-none col-sm-10 pb-0">
 	  			<h4 class="medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h4>
           <p>
 	        	<?php $lugar_evento = get_field('lugar_evento'); ?>
