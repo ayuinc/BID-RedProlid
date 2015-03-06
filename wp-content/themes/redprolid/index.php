@@ -226,7 +226,7 @@ get_header(); ?>
                       <?php endwhile; ?>
                     </ul>
                   </div>             
-                <?php query_posts( 'category_name=campeonas&posts_per_page=1' ); ?>	
+                <?php query_posts( 'category_name=campeona-destacada&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                   
                   <div class="panel-body pt-0 pb-0 pl-14 pr-14">
 	                  <div class="col-sm-5 pl-0">
