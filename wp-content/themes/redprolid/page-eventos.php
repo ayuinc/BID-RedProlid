@@ -87,7 +87,7 @@ get_header(); ?>
     	<!-- Start the Loop. -->	
     	<?php query_posts( 'cat=348&posts_per_page=4'); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-	  	<div class="banner half-height">
+	  	<div class="banner half-height pb-28">
 	  		<div class="banner-pic col-sm-2 bg-panel text-center lead-ch normalize-text">
 	  			<?php $tempDate = get_field('fecha_inicio_evento'); ?>
 	  			<h3 class="h1"><?php echo date_i18n('j', strtotime( $tempDate)); ?></h3>
