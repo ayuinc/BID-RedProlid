@@ -23,7 +23,7 @@ get_header(); ?>
         </div>
         <div class="col-sm-6 col-xs-12">
           <nav class="text-right text-center-xs">
-            <a href="#" data-toggle="modal" data-target="#modalNoticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/page/2/">¿Quieres ver las noticias anteriores?</a>
+            <a href="#" data-toggle="modal" data-target="#modalNoticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/">¿Quieres ver las noticias anteriores?</a>
           </nav>	          
         </div>
       </div>
@@ -93,7 +93,7 @@ get_header(); ?>
 	            <ul class="list-unstyled">
 	            	<!-- Start the Loop. -->
 	            	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-	            	<?php query_posts( 'cat=12&posts_per_page=6&offset=3&paged=' . $paged ); ?>
+	            	<?php query_posts( 'cat=12&posts_per_page=8&offset=3&paged=' . $paged ); ?>
 								<?php while ( have_posts() ) : the_post(); ?>    
 		                  <li class="mb-14">
 		                    <h5 class="medium mb-0"><?php the_title(); ?></h5>
@@ -109,7 +109,7 @@ get_header(); ?>
 		            <?php endwhile; ?> 
 	            </ul>
 	            <div class="mt-28">
-		            <p class="text-right"><a href="<?php echo home_url('/'); ?>noticias-anteriores/page/2/">Ver todas las noticias >></a></p>
+		            <p class="text-right"><a href="<?php echo home_url('/'); ?>noticias-anteriores/">Ve más >></a></p>
 	            </div>
 	            <!--<div class="text-center">
 	              <ul class="pager">
