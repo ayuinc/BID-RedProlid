@@ -52,8 +52,9 @@ get_header(); ?>
 							<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Lee la noticia >></a></p>
             </div>
             <hr>
+            <?php $count++; ?>
           <?php endwhile; ?>
-          <?php echo $count; ?>
+          
           <?php if ($count!=0) { ?>
           <div class="text-center">
             <ul class="pager">
