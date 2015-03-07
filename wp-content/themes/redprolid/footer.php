@@ -116,19 +116,21 @@
 		
 		//MOSTRAR Y OCULATAR NOTICIAS
 		$('#noticia_muestra').hide();
-		
 		$('#trigger_noticia').click(function() {
 			$('#noticia_muestra').show(100);
 		})
 		
-	
+		//MOSTRAR Y OCULATAR EVENTO
+		$('#evento_muestra').hide();
+		$('#trigger_evento').click(function() {
+			$('#evento_muestra').show(100);
+		})
     
 		$('.icon[data-href]').each(function() { 
 		 $(this).attr('href', $(this).attr('data-href'));
 		});    
 		
 		$('.wppb-max-upload').hide();		
-
 		</script>    
     
 		<script>

@@ -95,9 +95,16 @@
 				      <?php $hipervinculo = get_field('hipervinculo_evento');?>
 					    <?php if ($hipervinculo!='') { ?>
 					    <div>
-						    <a href="<?php the_field('hipervinculo_evento');?>" class="btn btn-primary" target="_blank">Ir al evento</a>
-					    </div>
+						    <a class="btn btn-primary"  id="trigger_evento">Ir al evento</a>
+					    </div>				    
 					    <?php } ?>				      
+						</div>
+					</div>
+					<div class="row" id="evento_muestra">
+						<div class="col-sm-12">
+							<div class="pv-35">
+		  		    	<iframe src="<?php the_field('hipervinculo_evento');?>" frameborder="0" width="100%" height="700"></iframe>
+		  		    </div>	
 						</div>
 					</div>
 				</div>
