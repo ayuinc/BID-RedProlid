@@ -53,6 +53,7 @@ get_header(); ?>
             </div>
             <hr>
           <?php endwhile; ?>
+          <?php echo $count; ?>
           <?php if ($count!=0) { ?>
           <div class="text-center">
             <ul class="pager">
