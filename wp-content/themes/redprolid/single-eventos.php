@@ -1,3 +1,6 @@
+<?php
+    header('X-Frame-Options: GOFORIT'); 
+?>
 <section> 
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>
@@ -112,4 +115,3 @@
 		</div>      
   </div>      
 </section>
-<iframe src="http://facebook.com" frameborder="0" width="100%" height="700"></iframe>
