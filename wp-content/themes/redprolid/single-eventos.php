@@ -1,5 +1,6 @@
 <?php
     header('X-Frame-Options: GOFORIT'); 
+    header('X-Frame-Options: SAMEORIGIN'); 
 ?>
 <section> 
   <div class="container relative mb-14">
