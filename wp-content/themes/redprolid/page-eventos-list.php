@@ -72,7 +72,9 @@ get_header(); ?>
               <li><?php next_posts_link( 'Ve más' ); ?></li>
               <li><?php previous_posts_link( 'Posteriores' ); ?></li>
             </ul>
-          </div>          
+          </div>   
+					<?php $wp_query = null; $wp_query = $temp;?>
+					<?php remove_filter('post_limits', 'my_post_limit'); ?>                 
         </div>
       </div>          
     </div>
