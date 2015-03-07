@@ -29,14 +29,15 @@ get_header(); ?>
         <?php add_filter('post_limits', 'my_post_limit'); ?>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 				<?php
+				$count = 0;	
 				global $myOffset;
 				$myOffset = 1;
 				$temp = $wp_query;
 				$wp_query= null;
 				$wp_query = new WP_Query();
-				$wp_query->query('cat=2&offset='.$myOffset.'&posts_per_page=10'.'&paged='.$paged);
-				?>	        
-        <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+				$wp_query->query('cat=2&offset='.$myOffset.'&showposts=10&paged='.$paged);
+				?>	 					       
+        <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>        
 	      <div class="col-md-2">
           <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
           <?php if ($imagen_campeona!='') { ?>
@@ -67,13 +68,23 @@ get_header(); ?>
           </div> 
           <hr>   
         </div>
+        <?php $count++; ?>
         <?php endwhile; ?>
+          
+        <?php if ($count!=0) { ?>
         <div class="text-center">
           <ul class="pager">
             <li><?php next_posts_link( 'Ve más' ); ?></li>
             <li><?php previous_posts_link( 'Posteriores' ); ?></li>
           </ul>
-        </div>          
+        </div>  
+        <?php } else { ?>
+        	<div class="text-center pv-70">
+        		<h3 class="medium">No hay más eventos. <a href="javascript:history.back();">Regresa</a></h3>
+        	</div>
+        <?php } ?> 
+				<?php $wp_query = null; $wp_query = $temp;?>
+				<?php remove_filter('post_limits', 'my_post_limit'); ?>           
       </div>    
     </div>      
   </div>
