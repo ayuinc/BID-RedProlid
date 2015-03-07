@@ -127,8 +127,8 @@ get_header(); ?>
 	  		</div>
 	  	</div>
       <?php endwhile; ?> 
-      <div class="target-center">
-	      <p><a href="<?php echo home_url('/'); ?>eventos-anteriores">Ve más >></a></p>
+      <div class="pv-28">
+	      <p class="target-center"><a href="<?php echo home_url('/'); ?>eventos-anteriores">Ve más >></a></p>
       </div>
 	  </div>
 	</section>
