@@ -102,7 +102,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row" id="evento_muestra">
+			<div class="row">
 				<div class="col-sm-12">
 					<div class="pv-35">
   		    	<iframe src="<?php the_field('hipervinculo_evento');?>" frameborder="0" width="100%" height="700"></iframe>
