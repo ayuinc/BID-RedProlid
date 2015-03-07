@@ -37,7 +37,6 @@ get_header(); ?>
 					$wp_query = new WP_Query();
 					$wp_query->query('category_name=noticias&offset='.$myOffset.'&showposts=5'.'&paged='.$paged);
 					?>	        
-          <
           <?php //query_posts( 'category_name=noticias&posts_per_page=10&paged=' . $paged ); ?>
           <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
             <div class="title">
