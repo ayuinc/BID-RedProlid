@@ -1,7 +1,4 @@
-<?php
-    header('X-Frame-Options: GOFORIT'); 
-    header('X-Frame-Options: SAMEORIGIN'); 
-?>
+
 <section> 
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>
@@ -109,7 +106,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="pv-35">
-  		    	<iframe src="http://elcomercio.com" frameborder="0" width="100%" height="700"></iframe>
+  		    	<iframe src="<?php the_field('hipervinculo_evento'); ?>" frameborder="0" width="100%" height="700"></iframe>
   		    </div>	
 				</div>
 			</div>			
