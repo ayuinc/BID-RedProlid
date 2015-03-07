@@ -31,7 +31,7 @@ get_header(); ?>
 	        <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 					<?php
 					global $myOffset;
-					$myOffset = 11;
+					$myOffset = 1;
 					$temp = $wp_query;
 					$wp_query= null;
 					$wp_query = new WP_Query();
