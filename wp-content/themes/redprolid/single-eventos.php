@@ -109,7 +109,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="pv-35">
-  		    	<iframe src="http://google.com" frameborder="0" width="100%" height="700"></iframe>
+  		    	<iframe src="http://elcomercio.com" frameborder="0" width="100%" height="700"></iframe>
   		    </div>	
 				</div>
 			</div>			
