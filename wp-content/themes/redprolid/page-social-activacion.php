@@ -20,8 +20,10 @@ get_header(); ?>
 						<?php while ( have_posts() ) : the_post(); ?>		    	
 		    		<div class="col-sm-8 col-sm-offset-2">
 			    		<h3 class="medium text-center mt-35">Tu hemos registrado exitosamente.</h3>
-			    		<p>Pronto recibirás un nuevo correo con la confirmación de todos tus datos para poder acceder a Red PROLID.</p>
-			    		<?php the_content(); ?>
+			    		<p>Para poder terminar el proceso de registro necesitamos completes los siguientes datos.</p>
+			      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
+								<?php ninja_forms_display_form( 15 ); ?>
+							<?php } ?>
 		    		</div>
 						<?php endwhile; ?>
 					<?php endif; ?> 		    		
