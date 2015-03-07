@@ -59,7 +59,7 @@ get_header(); ?>
           <div class="text-center">
             <ul class="pager">
               <li><?php next_posts_link( 'Ve más' ); ?></li>
-              <li><?php previous_posts_link( 'Posteriores' ); ?></li>
+              <li><?php previous_posts_link( 'Anteriores' ); ?></li>
             </ul>
           </div>  
           <?php } else { ?>
