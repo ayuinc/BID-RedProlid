@@ -240,7 +240,7 @@ get_header(); ?>
                   <div class="bg-white clearfix">
                   	<!-- Start the Loop. -->
 										<?php if ( have_posts() ) : ?>
-                    <?php query_posts( array( 'category_name' => 'campeona-destacada', 'posts_per_page' => 1 ) ); ?>
+                    <?php query_posts( array( 'category_name' => 'campeonas', 'posts_per_page' => 1 ) ); ?>
 											<?php while ( have_posts() ) : the_post(); ?>
 													<?php setup_postdata($post); ?>
 			                    <div class="col-sm-6 arrow_box p-14">
