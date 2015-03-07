@@ -27,9 +27,19 @@ get_header(); ?>
     <div class="ph-70">
       <div class="row">
         <div class="col-sm-12">
-          <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-          <?php query_posts( 'category_name=noticias&posts_per_page=10&paged=' . $paged ); ?>
-          <?php while ( have_posts() ) : the_post(); ?>
+	        <?php add_filter('post_limits', 'my_post_limit'); ?>
+	        <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+					<?php
+					global $myOffset;
+					$myOffset = 11;
+					$temp = $wp_query;
+					$wp_query= null;
+					$wp_query = new WP_Query();
+					$wp_query->query('category_name=noticias&offset='.$myOffset.'&showposts=5'.'&paged='.$paged);
+					?>	        
+          <
+          <?php //query_posts( 'category_name=noticias&posts_per_page=10&paged=' . $paged ); ?>
+          <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
             <div class="title">
               <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
               <?php $publicacion = get_field('publicacion_noticias'); ?>
