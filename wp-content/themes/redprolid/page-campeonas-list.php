@@ -26,9 +26,17 @@ get_header(); ?>
     </div>  
     <div class="ph-70">
       <div class="row">
+        <?php add_filter('post_limits', 'my_post_limit'); ?>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-        <?php query_posts( 'cat=2,-350&posts_per_page=10&paged=' . $paged ); ?>
-        <?php while ( have_posts() ) : the_post(); ?>	      
+				<?php
+				global $myOffset;
+				$myOffset = 1;
+				$temp = $wp_query;
+				$wp_query= null;
+				$wp_query = new WP_Query();
+				$wp_query->query('cat=2,-350&offset='.$myOffset.'&posts_per_page=10'.'&paged='.$paged);
+				?>	        
+        <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 	      <div class="col-md-2">
           <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
           <?php if ($imagen_campeona!='') { ?>
