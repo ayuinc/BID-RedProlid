@@ -78,8 +78,8 @@ get_header(); ?>
             </ul>
           </div>  
           <?php } else { ?>
-          	<div class="text-center">
-          		<h3>No hay más eventos. <a href="javascript:history.back();">Regresa</a></h3>
+          	<div class="text-center pv-70">
+          		<h3 class="medium">No hay más eventos. <a href="javascript:history.back();">Regresa</a></h3>
           	</div>
           <?php } ?> 
 					<?php $wp_query = null; $wp_query = $temp;?>
