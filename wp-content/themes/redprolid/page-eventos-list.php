@@ -30,6 +30,7 @@ get_header(); ?>
 	        <?php add_filter('post_limits', 'my_post_limit'); ?>
 	        <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 					<?php
+					$count = 0;	
 					global $myOffset;
 					$myOffset = 11;
 					$temp = $wp_query;
@@ -66,13 +67,21 @@ get_header(); ?>
 							<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve evento >></a></p>
             </div>
             <hr>
+            <?php $count++; ?>
           <?php endwhile; ?>
+          
+          <?php if ($count!=0) { ?>
           <div class="text-center">
             <ul class="pager">
               <li><?php next_posts_link( 'Ve más' ); ?></li>
               <li><?php previous_posts_link( 'Posteriores' ); ?></li>
             </ul>
-          </div>   
+          </div>  
+          <?php } else { ?>
+          	<div class="text-center">
+          		<h3>No hay más eventos. <a href="javascript:history.back();">Regresa</a></h3>
+          	</div>
+          <?php } ?> 
 					<?php $wp_query = null; $wp_query = $temp;?>
 					<?php remove_filter('post_limits', 'my_post_limit'); ?>                 
         </div>
