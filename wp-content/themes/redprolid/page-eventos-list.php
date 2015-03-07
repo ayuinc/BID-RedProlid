@@ -28,16 +28,15 @@ get_header(); ?>
       <div class="row pb-35">
         <div class="col-sm-10 col-md-offset-1">
 	        <?php add_filter('post_limits', 'my_post_limit'); ?>
-	        <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 					<?php
 					global $myOffset;
 					$myOffset = 11;
 					$temp = $wp_query;
 					$wp_query= null;
 					$wp_query = new WP_Query();
-					$wp_query->query('category_name=eventos&offset='.$myOffset.'&posts_per_page=10'.'&paged='.$paged);
+					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+					$wp_query->query('category_name=eventos&offset='.$myOffset.'&showposts=10&paged='.$paged);
 					?>	        
-					<?php echo $paged; ?>
           <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>          
             <div class="title">
               <h3 class="medium text-primary mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>         
