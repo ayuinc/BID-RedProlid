@@ -21,7 +21,7 @@ get_header(); ?>
 		    		<div class="col-sm-8 col-sm-offset-2">
 			    		<h3 class="medium text-center mt-35">Tu hemos registrado exitosamente.</h3>
 			    		<p>Para poder terminar el proceso de registro necesitamos completes los siguientes datos.</p>
-			    		<div class="text-right">
+			    		<div class="text-left">
 			      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
 								<?php ninja_forms_display_form( 15 ); ?>
 							<?php } ?>
