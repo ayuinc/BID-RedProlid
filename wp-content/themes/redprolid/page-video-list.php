@@ -25,10 +25,19 @@ get_header(); ?>
       </div>
     </div>
     <div>
-      <ul class="grid-list grid-list-3 grid-list-2-sm grid-list-1-xs isotope-grid">
+      <ul class="grid-list grid-list-3 grid-list-2-sm grid-list-1-xs isotope-grid"> 
+      <?php add_filter('post_limits', 'my_post_limit'); ?>
       <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-      <?php query_posts( 'cat=258&posts_per_page=50&offset=5&paged=' . $paged ); ?>
-      <?php while ( have_posts() ) : the_post(); ?>    
+			<?php
+			$count = 0;	
+			global $myOffset;
+			$myOffset = 5;
+			$temp = $wp_query;
+			$wp_query= null;
+			$wp_query = new WP_Query();
+			$wp_query->query('cat=258&offset='.$myOffset.'&showposts=10&orderby=meta_value_num&meta_key=video_fecha_publicacion&paged='.$paged);
+			?>	 					       
+      <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>      
        <li class="grid-list-item">
          <div class="banner bg-white">
            <div class="banner-pic">
@@ -52,7 +61,23 @@ get_header(); ?>
            </div>
          </div>
        </li>
-       <?php endwhile; ?>
+	      <?php $count++; ?>
+	    <?php endwhile; ?>
+	    
+	    <?php if ($count!=0) { ?>
+	    <div class="text-center">
+	      <ul class="pager">
+	        <li><?php next_posts_link( 'Ve más' ); ?></li>
+	        <li><?php previous_posts_link( 'Anteriores' ); ?></li>
+	      </ul>
+	    </div>  
+	    <?php } else { ?>
+	    	<div class="text-center pv-70">
+	    		<h3 class="medium">No hay más videos. <a href="javascript:history.back();">Regresa</a></h3>
+	    	</div>
+	    <?php } ?> 
+			<?php $wp_query = null; $wp_query = $temp;?>
+			<?php remove_filter('post_limits', 'my_post_limit'); ?>  
       </ul>
       <div class="text-center">
         <ul class="pager">
