@@ -65,6 +65,7 @@ get_header(); ?>
 	    <?php endwhile; ?>
 	    
 	    <?php if ($count!=0) { ?>
+	    </ul>
 	    <div class="text-center">
 	      <ul class="pager">
 	        <li><?php next_posts_link( 'Ve más' ); ?></li>
@@ -78,7 +79,7 @@ get_header(); ?>
 	    <?php } ?> 
 			<?php $wp_query = null; $wp_query = $temp;?>
 			<?php remove_filter('post_limits', 'my_post_limit'); ?>  
-      </ul>
+      
       <div class="text-center">
         <ul class="pager">
           <li><?php next_posts_link( 'Anteriores' ); ?></li>
