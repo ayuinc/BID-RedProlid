@@ -123,10 +123,10 @@ function wp_authenticate_username_password($user, $username, $password) {
 		$error = new WP_Error();
 
 		if ( empty($username) )
-			$error->add('empty_username', __('<strong>ERROR</strong>: El campo de usuaria/usuario está vacio.'));
+			$error->add('empty_username', __('<p style="color:red !important;"><strong>Error</strong>: El campo de usuaria/usuario está vacio.</p>'));
 
 		if ( empty($password) )
-			$error->add('empty_password', __('<strong>ERROR</strong>: El campo de la contraseña está vacio.'));
+			$error->add('empty_password', __('<p style="color:red !important;"><strong>Error</strong>: El campo de la contraseña está vacio.</p>'));
 
 		return $error;
 	}
@@ -134,7 +134,7 @@ function wp_authenticate_username_password($user, $username, $password) {
 	$user = get_user_by('login', $username);
 
 	if ( !$user )
-		return new WP_Error( 'invalid_username', sprintf( __( '<strong>Error</strong>: Nombre de usuaria/usuario inválido. <a href="%s" title="Password Lost and Found">Lost your password</a>?' ), wp_lostpassword_url() ) );
+		return new WP_Error( 'invalid_username', sprintf( __( '<p style="color:red !important;"><strong>Error</strong>: Nombre de usuaria/usuario inválido. ¿<a href="%s" title="Password Lost and Found">Has perdido tu contraseña</a>?</p>' ), wp_lostpassword_url() ) );
 
 	/**
 	 * Filter whether the given user can be authenticated with the provided $password.
@@ -150,7 +150,7 @@ function wp_authenticate_username_password($user, $username, $password) {
 		return $user;
 
 	if ( !wp_check_password($password, $user->user_pass, $user->ID) )
-		return new WP_Error( 'incorrect_password', sprintf( __( '<strong>Error</strong>: la contraseña que has ingresado para el nombre de usuaria/usuario               <strong>%1$s</strong> es incorrecta. ¿<a href="%2$s" title="Password Lost and Found">Has perdido tu contraseña </a>?' ),
+		return new WP_Error( 'incorrect_password', sprintf( __( '<p style="color:red !important;"><strong>Error</strong>: la contraseña que has ingresado para el nombre de usuaria/usuario               <strong>%1$s</strong> es incorrecta. ¿<a href="%2$s" title="Password Lost and Found">Has perdido tu contraseña</a>?</p>' ),
 		$username, wp_lostpassword_url() ) );
 
 	return $user;
