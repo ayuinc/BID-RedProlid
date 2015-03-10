@@ -57,8 +57,9 @@ get_header(); ?>
       	<h2>Otros videos</h2>
       	<hr>
 				<div class="row">
-        	<?php query_posts( 'cat=258&posts_per_page=4&offset=1'); ?>
-					<?php while ( have_posts() ) : the_post(); ?>    
+        	<?php query_posts( 'cat=258&posts_per_page=4&offset=1&orderby=meta_value_num&meta_key=video_fecha_publicacion'); ?>
+					<?php while ( have_posts() ) : the_post(); ?>  
+					  
 					<div class="col-sm-3">
 				    <?php $youtube = get_field('video_youtube'); ?>
 			    	<?php if ($youtube!='') { ?>
@@ -78,7 +79,8 @@ get_header(); ?>
 						<small>
 							<a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a>
 						</small>
-					</div>																			
+					</div>			
+																					
           <?php endwhile; ?>
         </div>
       </div>
