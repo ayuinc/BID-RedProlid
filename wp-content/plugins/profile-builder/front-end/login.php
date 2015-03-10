@@ -69,7 +69,7 @@ function wppb_login_redirect( $redirect_to, $redirect_url, $user ){
                 $LostPassURL = apply_filters('wppb_pre_login_url_filter', $LostPassURL);
 
                 if ($user->get_error_code() == 'incorrect_password') {
-                    $error_string = '<strong>' . __('Error', 'profilebuilder') . '</strong>: ' . __('la contraseña que has ingresado para el nombre de usuaria/usuario es incorrecta', 'profilebuilder') . ' ';
+                    $error_string = '<strong>' . __('Error', 'profilebuilder') . '</strong>: ' . __('La contraseña que has ingresado para el nombre de usuaria/usuario es incorrecta', 'profilebuilder') . ' ';
                     $error_string .= '<a href="' . $LostPassURL . '" title="' . __('Password Lost and Found.', 'profilebuilder') . '">' . __('Has perdido tu contraseña', 'profilebuilder') . '</a>?';
 
                     // change the recover password link
