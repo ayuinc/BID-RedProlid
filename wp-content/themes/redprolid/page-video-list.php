@@ -68,8 +68,8 @@ get_header(); ?>
 	    </ul>
 	    <div class="text-center">
 	      <ul class="pager">
-	        <li><?php next_posts_link( 'Ve más' ); ?></li>
-	        <li><?php previous_posts_link( 'Anteriores' ); ?></li>
+	        <li class="grid-list-item"><?php next_posts_link( 'Ve más' ); ?></li>
+	        <li class="grid-list-item"><?php previous_posts_link( 'Anteriores' ); ?></li>
 	      </ul>
 	    </div>  
 	    <?php } else { ?>
