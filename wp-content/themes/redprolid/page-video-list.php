@@ -81,7 +81,7 @@ get_header(); ?>
 			<?php remove_filter('post_limits', 'my_post_limit'); ?>  
       
       <div class="text-center">
-        <ul class="pager">
+        <ul class="pager list-inline">
           <li><?php next_posts_link( 'Anteriores' ); ?></li>
           <li><?php previous_posts_link( 'Posteriores' ); ?></li>
         </ul>
