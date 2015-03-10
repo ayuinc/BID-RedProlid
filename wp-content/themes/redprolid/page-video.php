@@ -57,7 +57,7 @@ get_header(); ?>
       	<h2>Otros videos</h2>
       	<hr>
 				<div class="row">
-        	<?php query_posts( 'cat=258&posts_per_page=4&offset=1&orderby=meta_value_num&meta_key=video_fecha_publicacion'); ?>
+        	<?php query_posts( 'cat=258&posts_per_page=4&offset=2&orderby=meta_value_num&meta_key=video_fecha_publicacion'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>  
 					  
 					<div class="col-sm-3">
