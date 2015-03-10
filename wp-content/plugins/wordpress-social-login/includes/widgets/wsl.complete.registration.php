@@ -284,10 +284,10 @@ function wsl_process_login_complete_registration( $provider, $redirect_to, $hybr
 
 				<div id="welcome">
 					<p>
-						<?php printf( _wsl__( "Hi %s, you're one step away from completing your account.", 'wordpress-social-login' ), htmlentities( $hybridauth_user_profile->displayName ) ); ?>
+						<?php printf( _wsl__( "Hola %s, estás a un paso de completar tu registro satisfactoriamente.", 'wordpress-social-login' ), htmlentities( $hybridauth_user_profile->displayName ) ); ?>
 					</p>
 					<p>
-						<?php _wsl_e( "Please, fill in your information in the form below to continue", 'wordpress-social-login' ); ?>.
+						<?php _wsl_e( "Por favor, llena la información del siguiente formulario para continuar.", 'wordpress-social-login' ); ?>.
 					</p>
 				</div>
 
