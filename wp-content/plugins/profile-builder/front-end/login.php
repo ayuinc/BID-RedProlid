@@ -69,15 +69,15 @@ function wppb_login_redirect( $redirect_to, $redirect_url, $user ){
                 $LostPassURL = apply_filters('wppb_pre_login_url_filter', $LostPassURL);
 
                 if ($user->get_error_code() == 'incorrect_password') {
-                    $error_string = '<strong>' . __('ERROR', 'profilebuilder') . '</strong>: ' . __('The password you entered is incorrect.', 'profilebuilder') . ' ';
-                    $error_string .= '<a href="' . $LostPassURL . '" title="' . __('Password Lost and Found.', 'profilebuilder') . '">' . __('Lost your password', 'profilebuilder') . '</a>?';
+                    $error_string = '<strong>' . __('Error', 'profilebuilder') . '</strong>: ' . __('la contraseña que has ingresado para el nombre de usuaria/usuario es incorrecta', 'profilebuilder') . ' ';
+                    $error_string .= '<a href="' . $LostPassURL . '" title="' . __('Password Lost and Found.', 'profilebuilder') . '">' . __('Has perdido tu contraseña', 'profilebuilder') . '</a>?';
 
                     // change the recover password link
                     $error_string = str_replace(home_url('/wp-login.php?action=lostpassword'), $LostPassURL, $error_string);
                 }
                 if ($user->get_error_code() == 'invalid_username') {
-                    $error_string = '<strong>' . __('ERROR', 'profilebuilder') . '</strong>: ' . __('Invalid username.', 'profilebuilder') . ' ';
-                    $error_string .= '<a href="' . $LostPassURL . '" title="' . __('Password Lost and Found.', 'profilebuilder') . '">' . __('Lost your password', 'profilebuilder') . '</a>?';
+                    $error_string = '<strong>' . __('Error', 'profilebuilder') . '</strong>: ' . __('Nombre de usuaria/usuario invalido.', 'profilebuilder') . ' ';
+                    $error_string .= '<a href="' . $LostPassURL . '" title="' . __('Password Lost and Found.', 'profilebuilder') . '">' . __('Has perdido tu contraseña', 'profilebuilder') . '</a>?';
                 }
                 // if login with email is enabled change the word username with email
                 if ($wppb_generalSettings['loginWith'] == 'email')
@@ -86,7 +86,7 @@ function wppb_login_redirect( $redirect_to, $redirect_url, $user ){
             }
             // if the error string is empty it means that none of the fields were completed
             if (empty($error_string)) {
-                $error_string = '<strong>' . __('ERROR', 'profilebuilder') . '</strong>: ' . __('Both fields are empty.', 'profilebuilder') . ' ';
+                $error_string = '<strong>' . __('Error', 'profilebuilder') . '</strong>: ' . __('Los dos campos están vacios.', 'profilebuilder') . ' ';
                 $error_string = apply_filters('wppb_login_empty_fields_error_message', $error_string);
             }
 
