@@ -76,7 +76,7 @@ function wppb_login_redirect( $redirect_to, $redirect_url, $user ){
                     $error_string = str_replace(home_url('/wp-login.php?action=lostpassword'), $LostPassURL, $error_string);
                 }
                 if ($user->get_error_code() == 'invalid_username') {
-                    $error_string = '<strong>' . __('Error', 'profilebuilder') . '</strong>: ' . __('Nombre de usuaria/usuario invalido.', 'profilebuilder') . ' ';
+                    $error_string = '<strong>' . __('Error', 'profilebuilder') . '</strong>: ' . __('Nombre de usuaria/usuario inválido.', 'profilebuilder') . ' ';
                     $error_string .= '<a href="' . $LostPassURL . '" title="' . __('Password Lost and Found.', 'profilebuilder') . '">' . __('Has perdido tu contraseña', 'profilebuilder') . '</a>?';
                 }
                 // if login with email is enabled change the word username with email
