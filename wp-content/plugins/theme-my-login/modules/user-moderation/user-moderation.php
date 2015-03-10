@@ -154,11 +154,11 @@ class Theme_My_Login_User_Moderation extends Theme_My_Login_Abstract {
 			if ( array_key_exists( 'pending', (array) $userdata->$cap_key ) ) {
 				if ( 'email' == $this->get_option( 'type' ) ) {
 					return new WP_Error( 'pending', sprintf(
-						__( '<strong>ERROR</strong>: You have not yet confirmed your e-mail address. <a href="%s">Resend activation</a>?', 'theme-my-login' ),
+						__( '<p style="color:red"><strong>Error</strong>: Todavía no has confirmado tu dirección de correo electrónico. <a href="%s">Reenviar activación</a>?</p>', 'theme-my-login' ),
 						Theme_My_Login::get_page_link( 'login', array( 'action' => 'sendactivation', 'login' => $username ) )
 					) );
 				} else {
-					return new WP_Error( 'pending', __( '<strong>ERROR</strong>: Your registration has not yet been approved.', 'theme-my-login' ) );
+					return new WP_Error( 'pending', __( '<p style="color:red"><strong>Error</strong>: Tu registro aún no ha sido aprobado.</p>', 'theme-my-login' ) );
 				}
 			}
 		}
