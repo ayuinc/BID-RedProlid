@@ -10,12 +10,9 @@ get_header(); ?>
 
 
 	<section class="pv-70"> 
-    <div class="container">
-		      <?php while ( have_posts() ) : the_post(); ?>
-		      	<h1 class="medium ml-14"><?php the_title(); ?></h1>
-		        <?php get_template_part( 'content', 'page' ); ?>
-		      <?php endwhile; // end of the loop. ?>
-    </div>
+    <?php while ( have_posts() ) : the_post(); ?>
+      <?php get_template_part( 'content', 'page' ); ?>
+    <?php endwhile; // end of the loop. ?>
 	</section>	
 
 

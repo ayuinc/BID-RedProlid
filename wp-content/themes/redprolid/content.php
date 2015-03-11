@@ -36,6 +36,7 @@
 </div> -->
 
 <div class="container-sm">
+	<h1 class="medium ml-14"><?php the_title(); ?></h1>
 	<?php the_content(); ?>
 </div>
 <div class="container-sm">
