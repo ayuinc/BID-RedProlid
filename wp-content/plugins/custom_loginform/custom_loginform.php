@@ -26,6 +26,7 @@ function dlf_form() {
 	    	<span>|</span> 
 	    	<a href="<?php echo wp_lostpassword_url( get_bloginfo('url') ); ?>" class="light"  title="Olvidé mi contraseña">Olvidé mi contraseña</a>
 			</small>
+			<?php do_action( 'wordpress_social_login' ); ?>
 	    <!-- <a href="<?php //echo wp_lostpassword_url(); ?>" title="Lost Password">Lost Password</a> -->
 	    <!--<a href="<?php echo home_url('/'); ?>registrate">Regístrate</a>-->
 	  </div>
