@@ -8,14 +8,18 @@ get_header(); ?>
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
 
-  <div id="primary" class="site-content">
-    <div id="content" role="main">
 
-      <?php while ( have_posts() ) : the_post(); ?>
-        <?php get_template_part( 'content', 'page' ); ?>
-      <?php endwhile; // end of the loop. ?>
+	<section class="pv-70"> 
+    <div class="container">
+      <div class="clearfix sub-header">
+        <div class="col-sm-12 col-xs-12">
+		      <?php while ( have_posts() ) : the_post(); ?>
+		        <?php get_template_part( 'content', 'page' ); ?>
+		      <?php endwhile; // end of the loop. ?>
+        </div>
+      </div>
+    </div>
+	</section>	
 
-    </div><!-- #content -->
-  </div><!-- #primary -->
 
 <?php get_footer(); ?>
