@@ -315,7 +315,7 @@ get_header(); ?>
             </div>
           </div>
           <div class="col-md-3 mt-35 pl-14">
-            <a href="<?php echo home_url('/'); ?>boletin" class="btn btn-primary">Boletines</a>
+            <a href="<?php echo home_url('/'); ?>boletines-proximamente/" class="btn btn-primary">Boletines</a>
           </div>
         </div>
       </div>
