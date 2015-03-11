@@ -83,7 +83,7 @@ get_header(); ?>
 																					
           <?php endwhile; ?>
         </div>
-        <div class="row pb-35">
+        <div class="row pb-21">
 	        <div class="col-md-12">
 		        <p class="text-right"><a href="<?php echo home_url('/'); ?>video/videos-anteriores">Todos los videos >></a></p>
 	        </div>
