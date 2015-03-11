@@ -56,7 +56,7 @@ get_header(); ?>
       <div class="panel-body pv-28">	
       	<h2>Otros videos</h2>
       	<hr>
-				<div class="row pb-35">
+				<div class="row">
         	<?php query_posts( 'cat=258&posts_per_page=4&offset=2&orderby=meta_value_num&meta_key=video_fecha_publicacion'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>  
 					  
@@ -82,6 +82,11 @@ get_header(); ?>
 					</div>			
 																					
           <?php endwhile; ?>
+        </div>
+        <div class="row pb-49">
+	        <div class="col-md-12">
+		        <p class="text-right"><a href="<?php echo content_url('/'); ?>video/videos-anteriores/">Todos los videos >></a></p>
+	        </div>
         </div>
       </div>
     </div>
