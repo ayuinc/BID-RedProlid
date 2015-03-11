@@ -14,6 +14,7 @@ get_header(); ?>
       <div class="clearfix sub-header">
         <div class="col-sm-12 col-xs-12">
 		      <?php while ( have_posts() ) : the_post(); ?>
+		      	<h1 class="medium"><?php the_title(); ?></h1>
 		        <?php get_template_part( 'content', 'page' ); ?>
 		      <?php endwhile; // end of the loop. ?>
         </div>
