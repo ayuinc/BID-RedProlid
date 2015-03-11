@@ -324,7 +324,7 @@ class Theme_My_Login_Template extends Theme_My_Login_Abstract {
 	 *
 	 * @param array $args Optionally specify which actions to include/exclude. By default, all are included.
 	 */
-	public function the_action_links( $args = '' ) {
+	/*public function the_action_links( $args = '' ) {
 		if ( $action_links = $this->get_action_links( $args ) ) {
 			echo '<ul class="tml-action-links">' . "\n";
 			foreach ( (array) $action_links as $link ) {
@@ -332,7 +332,7 @@ class Theme_My_Login_Template extends Theme_My_Login_Abstract {
 			}
 			echo '</ul>' . "\n";
 		}
-	}
+	}*/
 
 	/**
 	 * Returns logged-in user links
