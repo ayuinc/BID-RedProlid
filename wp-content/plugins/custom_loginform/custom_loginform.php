@@ -21,7 +21,10 @@ function dlf_form() {
 	</div>
 	<div class="form-group row">
 	  <div class="col-xs-8">
-	    <?php do_action( 'wordpress_social_login' ); ?>
+	    <div>
+	    	<?php do_action( 'wordpress_social_login' ); ?>
+	    </div>
+	    <br>
 	    <small>
 	    	<a href="<?php echo home_url('/'); ?>registrate/" class="light">Regístrate</a> 
 	    	<span>|</span> 
