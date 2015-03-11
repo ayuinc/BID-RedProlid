@@ -287,8 +287,11 @@ get_header(); ?>
 										<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 									<?php } ?>
                   <h3 class="mediumt mt-14 pb-0 mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-									<?php $tempDate = get_the_date(); ?>
-									<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small> 
+									<?php $video_autor = get_field('video_autor'); ?>
+									<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
+									<small>
+										<?php if ($video_autor!='') { ?><?php the_field('video_autor'); ?><?php } ?><?php if ($video_fecha_publicacion!='') { ?>, <?php the_field('video_fecha_publicacion'); ?><?php } ?>
+									</small> 	 
                   <div class="text-right mt-21">
                     <p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más aquí >></a></p>
                   </div>
