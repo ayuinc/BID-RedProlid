@@ -85,7 +85,7 @@ get_header(); ?>
         </div>
         <div class="row pb-35">
 	        <div class="col-md-12">
-		        <p class="text-right"><a href="<?php echo content_url('/'); ?>video/videos-anteriores/">Todos los videos >></a></p>
+		        <p class="text-right"><a href="<?php echo home_url('/'); ?>video/videos-anteriores">Todos los videos >></a></p>
 	        </div>
         </div>
       </div>
