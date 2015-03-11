@@ -88,7 +88,7 @@ get_header(); ?>
                 </ul>
                 <ul class="list-unstyled">
                 	<!-- Start the Loop. -->
-                	<?php query_posts( 'category_name=recursos&posts_per_page=3' ); ?>	
+                	<?php query_posts( 'category_name=recursos&posts_per_page=3&meta_key=recurso_año_de_publicacion&orderby=meta_value_num' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>    
 	                  <li class="mb-14">
 	                    <h4 class="medium"><?php the_title(); ?></h4>
