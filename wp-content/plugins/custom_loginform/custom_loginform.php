@@ -20,7 +20,7 @@ function dlf_form() {
 	  <input  name="login_password" type="password" class="form-control login-field mb--7" value="" placeholder="Contraseña" id="login-pass" />
 	</div>
 	<div class="form-group row">
-	  <div class="col-xs-3">
+	  <div class="col-xs-8">
 	    <?php do_action( 'wordpress_social_login' ); ?>
 	    <small>
 	    	<a href="<?php echo home_url('/'); ?>registrate/" class="light">Regístrate</a> 
