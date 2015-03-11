@@ -59,7 +59,7 @@ get_header(); ?>
 					<?php
 					$count = 0;	
 					global $myOffset;
-					$myOffset = 2;
+					$myOffset = 3;
 					$temp = $wp_query;
 					$wp_query= null;
 					$wp_query = new WP_Query();
