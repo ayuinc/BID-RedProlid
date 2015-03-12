@@ -16,7 +16,7 @@ get_header(); ?>
       <?php the_breadcrumb(); ?> 
       <div class="clearfix sub-header">
         <div class="col-sm-5 col-xs-9">
-          <h1>Mapa del sitio</h1>
+          <h1 class="ml-0 pl-0">Mapa del sitio</h1>
         </div>
       </div>	
     </div>
