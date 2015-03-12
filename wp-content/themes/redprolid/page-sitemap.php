@@ -52,10 +52,26 @@ get_header(); ?>
 			    </ul>			    
 		    </div>
 		    <div class="col-sm-3">
+			    <h3 class="medium"><a href="<?php echo home_url('/'); ?>enterate/">Entérate</a></h3>
+			    <ul>
+				    <li><a href="<?php echo home_url('/'); ?>publicaciones/">Publicaciones</a></li>
+				    <li><a href="<?php echo home_url('/'); ?>noticias/">Noticias</a></li> 
+				    <li><a href="<?php echo home_url('/'); ?>eventos/">Eventos</a></li> 
+				    <li><a href="<?php echo home_url('/'); ?>boletines-proximamente/">Nuestro boletín</a></li> 
+				    <li><a href="<?php echo home_url('/'); ?>campeonas/">Campeonas</a></li>
+				    <li><a href="<?php echo home_url('/'); ?>puntos-de-vista/">Puntos de vista</a></li>
+				    <li><a href="<?php echo home_url('/'); ?>video/">Video</a></li>
+			    </ul>				    
 		    </div>	
 		    <div class="col-sm-3">
+			    <h3 class="medium"><a href="<?php echo home_url('/'); ?>concursos-proximamente/">Concursos</a></h3>		    
 		    </div>	
 		    <div class="col-sm-3">
+			    <h3 class="medium"><a href="<?php echo home_url('/'); ?>charlacafe/">Charlacafé</a></h3>
+			    <ul>
+				    <li><a href="<?php echo home_url('/'); ?>foros-proximamente/">Foros virtuales</a></li>
+				    <li><a href="<?php echo home_url('/'); ?>webinarios-proximamente/">Webinarios</a></li> 
+			    </ul>					    
 		    </div>			    		    	    		    
 	    </div>
 			<?php //if ( have_posts() ) : ?>
