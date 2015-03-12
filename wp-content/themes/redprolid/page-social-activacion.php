@@ -20,7 +20,7 @@ get_header(); ?>
 						<?php while ( have_posts() ) : the_post(); ?>		    	
 		    		<div class="col-sm-8 col-sm-offset-2">
 			    		<h3 class="medium text-center mt-35">Hemos recibido tu información</h3>
-			    		<p>Muy pronto te llegará un correo electrónico con la confirmación para que puedas ingresar a Red PROLID.</p>
+			    		<p>Porfavor llena el siguiente formulario.</p>
 			    		<div class="text-left">
 			      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
 								<?php ninja_forms_display_form( 15 ); ?>
