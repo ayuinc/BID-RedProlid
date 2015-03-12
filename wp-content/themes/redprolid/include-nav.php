@@ -1,4 +1,4 @@
-<div id="nav-main-menu" style="z-index:999" class="hidden-sm-down">
+<div id="nav-main-menu" style="z-index:999" class="hidden-md-down">
   <div class="container">
     <div class="flex-space-between">
       <div class="left" style="width: 68%; ">
