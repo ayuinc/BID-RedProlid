@@ -5677,6 +5677,11 @@ form.form-search-inline button {
 .ninja-forms-form .ninja-forms-field:not(.btn) {
   width: 100%;
   background: white; }
+.ninja-forms-form .ninja-forms-field {
+  color: #232323;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+  font-weight: 400;
+  font-style: normal; }
 
 .field-wrap ul {
   padding-left: 0;
