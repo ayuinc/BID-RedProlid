@@ -32,7 +32,7 @@ function dlf_form() {
 			</small>
 	  </div>
 	  <div class="col-xs-3">
-	    <input type="submit" name="dlf_submit" class="btn btn-primary btn-sm" value="Ingresa">
+	    <input type="submit" name="dlf_submit" class="btn btn-primary btn-sm" value="Ingresa" style="margin-left:12px;">
 	  </div>
 	</div>
 </form>
