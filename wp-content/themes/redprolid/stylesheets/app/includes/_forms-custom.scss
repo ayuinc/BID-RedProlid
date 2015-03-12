@@ -72,6 +72,8 @@ form.form-search-inline {
 		background: white;
 	}
 	.ninja-forms-field{
+		color: $gray-darker;
+		@include book;
 		&select {
 			@extend .select-override;
 		}
