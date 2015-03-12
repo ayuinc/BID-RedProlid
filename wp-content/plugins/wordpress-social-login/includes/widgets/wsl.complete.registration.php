@@ -284,10 +284,10 @@ function wsl_process_login_complete_registration( $provider, $redirect_to, $hybr
 
 				<div id="welcome">
 					<p>
-						<?php printf( _wsl__( "Hola %s, estás a un paso de completar tu registro satisfactoriamente.", 'wordpress-social-login' ), htmlentities( $hybridauth_user_profile->displayName ) ); ?>
+						<?php printf( _wsl__( "Hola %s, Tuitter necesita verificar tu identidad.", 'wordpress-social-login' ), htmlentities( $hybridauth_user_profile->displayName ) ); ?>
 					</p>
 					<p>
-						<?php _wsl_e( "Por favor, llena la información del siguiente formulario para continuar.", 'wordpress-social-login' ); ?>.
+						<?php _wsl_e( "Por favor, ingresa tu correo electrónico", 'wordpress-social-login' ); ?>.
 					</p>
 				</div>
 
