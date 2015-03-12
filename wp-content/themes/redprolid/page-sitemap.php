@@ -27,12 +27,24 @@ get_header(); ?>
 	</section>    
   <section id="dtl" class="pt-0">
     <div class="container relative dtl-content">
-      <!-- Start the Loop. -->
-			<?php if ( have_posts() ) : ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-          <p class="text-right pt-14-100"><?php the_content(); ?></p> 
-				<?php endwhile; ?>
-			<?php endif; ?>                 
+	    <div class="row">
+		    <div class="col-sm-4">
+			    <h3 class="medium"><a href="<?php echo home_url('/'); ?>redprolid/">Red PROLID</a></h3>
+			    <ul>
+				    <li><a href="<?php echo home_url('/'); ?>tu-opinion-cuenta/">Tu opinion cuenta</a></li>
+				    <li><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li>
+			    </ul>
+		    </div>
+		    <div class="col-sm-4">
+		    </div>
+		    <div class="col-sm-4">
+		    </div>		    		    
+	    </div>
+			<?php //if ( have_posts() ) : ?>
+				<?php //while ( have_posts() ) : the_post(); ?>
+          <!--<p class="text-right pt-14-100"><?php //the_content(); ?></p>--> 
+				<?php //endwhile; ?>
+			<?php //endif; ?>                 
     </div>
   </section>      
 
