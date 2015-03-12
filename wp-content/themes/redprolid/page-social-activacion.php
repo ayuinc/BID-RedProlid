@@ -20,7 +20,7 @@ get_header(); ?>
 						<?php while ( have_posts() ) : the_post(); ?>		    	
 		    		<div class="col-sm-8 col-sm-offset-2">
 			    		<h3 class="medium text-center mt-35">Hemos recibido tu información</h3>
-			    		<p>Porfavor llena el siguiente formulario.</p>
+			    		<p>Por favor llena el siguiente formulario:</p>
 			    		<div class="text-left">
 			      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
 								<?php ninja_forms_display_form( 15 ); ?>
