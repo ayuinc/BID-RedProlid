@@ -59,6 +59,8 @@ get_header(); ?>
 				    <li><a href="<?php echo home_url('/'); ?>video/">Video</a></li>
 			    </ul>				    
 		    </div>	
+	    </div>
+    	<div class="row">  
 		    <div class="col-sm-4">
 			    <h3 class="medium"><a href="<?php echo home_url('/'); ?>concursos-proximamente/">Concursos</a></h3>		    
 		    </div>	
@@ -68,7 +70,8 @@ get_header(); ?>
 				    <li><a href="<?php echo home_url('/'); ?>foros-proximamente/">Foros virtuales</a></li>
 				    <li><a href="<?php echo home_url('/'); ?>webinarios-proximamente/">Webinarios</a></li> 
 			    </ul>					    
-		    </div>			    		    	    		    
+		    </div>	
+		    <div class="col-sm-4"></div>		    		    	    		    
 	    </div>
 			<?php //if ( have_posts() ) : ?>
 				<?php //while ( have_posts() ) : the_post(); ?>
