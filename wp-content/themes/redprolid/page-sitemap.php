@@ -28,17 +28,36 @@ get_header(); ?>
   <section id="dtl" class="pt-0">
     <div class="container relative dtl-content">
 	    <div class="row">
-		    <div class="col-sm-4">
+		    <div class="col-sm-3">
 			    <h3 class="medium"><a href="<?php echo home_url('/'); ?>redprolid/">Red PROLID</a></h3>
 			    <ul>
 				    <li><a href="<?php echo home_url('/'); ?>tu-opinion-cuenta/">Tu opinion cuenta</a></li>
 				    <li><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li> 
 			    </ul>
 		    </div>
-		    <div class="col-sm-4">
+		    <div class="col-sm-3">
+			    <h3 class="medium"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/">Desarrolla tu liderazgo</a></h3>
+			    <ul>
+				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/">¿Adónde v@mos?</a></li>
+				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/carrera-de-vallas/">Carrera de vallas</a></li> 
+				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/nivelando-la-cancha/">Nivelando la cancha</a></li> 
+				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/listas-para-la-politica/">Listas para la política</a></li> 
+				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/">Agenda de género</a></li>
+				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/">Pistas</a></li> 
+				    <li>
+				    	<ul>
+					    	<li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a></li>
+					    	<li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-tu-estilo/">A tu estilo</a></li> 
+				    	</ul>
+				    </li>
+			    </ul>			    
 		    </div>
-		    <div class="col-sm-4">
-		    </div>		    		    
+		    <div class="col-sm-3">
+		    </div>	
+		    <div class="col-sm-3">
+		    </div>	
+		    <div class="col-sm-3">
+		    </div>			    		    	    		    
 	    </div>
 			<?php //if ( have_posts() ) : ?>
 				<?php //while ( have_posts() ) : the_post(); ?>
