@@ -95,8 +95,8 @@
             <?php if ($segment2!='a-tu-estilo') { ?>         
             <li>
               <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-tu-estilo/">
-                <img src="<?php echo content_url('/'); ?>uploads/2015/03/a-tu-estilo-rombo-bw.png" alt="" class="gs" style="width:136px !important">
-                <img src="<?php echo content_url('/'); ?>uploads/2015/03/a-tu-estilo-rombo.png" alt="" class="color" style="width:136px !important">
+                <img src="<?php echo content_url('/'); ?>uploads/2015/03/a-tu-estilo-rombo-bw.png" alt="" class="gs" >
+                <img src="<?php echo content_url('/'); ?>uploads/2015/03/a-tu-estilo-rombo.png" alt="" class="color" >
                 <div class="title">                  
                   <img src="<?php echo content_url('/'); ?>uploads/2015/02/a-tu-estilo.png" alt="">                  
                   <p class="medium">A tu estilo</p>
