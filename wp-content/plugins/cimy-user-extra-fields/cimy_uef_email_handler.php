@@ -39,7 +39,7 @@ function wp_new_user_notification_original($user_id, $plaintext_pass = '', $incl
 	if ( substr( $sitename, 0, 4 ) == 'www.' )
 		$sitename = substr( $sitename, 4 );
 
-	$from_email = 'wordpress@' . $sitename;
+	$from_email = 'info@' . $sitename;
 	$headers = sprintf("From: %s <%s>\r\n\\", $blogname, $from_email);
 
 	$message  = sprintf(__('New user registration on your site %s:'), $blogname) . "\r\n\r\n";
