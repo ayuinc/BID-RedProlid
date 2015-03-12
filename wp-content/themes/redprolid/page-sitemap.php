@@ -21,7 +21,7 @@ get_header(); ?>
       </div>	
     </div>
 	</section>    
-  <section id="dtl" class="pt-0">
+  <section id="dtl" class="pv-35">
     <div class="container relative dtl-content">
 	    <div class="row">
 		    <div class="col-sm-4">
@@ -60,7 +60,7 @@ get_header(); ?>
 			    </ul>				    
 		    </div>	
 	    </div>
-    	<div class="row">  
+    	<div class="row pt-35">  
 		    <div class="col-sm-4">
 			    <h3 class="medium"><a href="<?php echo home_url('/'); ?>concursos-proximamente/">Concursos</a></h3>		    
 		    </div>	
