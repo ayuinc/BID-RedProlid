@@ -20,7 +20,7 @@ function dlf_form() {
 	  <input  name="login_password" type="password" class="form-control login-field mb--7" value="" placeholder="Contraseña" id="login-pass" />
 	</div>
 	<div class="form-group row">
-	  <div class="col-xs-8">
+	  <div class="col-xs-9">
 	    <div>
 	    	<?php do_action( 'wordpress_social_login' ); ?>
 	    </div>
@@ -31,7 +31,7 @@ function dlf_form() {
 	    	<a href="<?php echo wp_lostpassword_url( get_bloginfo('url') ); ?>" class="light"  title="Olvidé mi contraseña">Olvidé mi contraseña</a>
 			</small>
 	  </div>
-	  <div class="col-xs-4 text-right">
+	  <div class="col-xs-3">
 	    <input type="submit" name="dlf_submit" class="btn btn-primary btn-sm" value="Ingresa">
 	  </div>
 	</div>
