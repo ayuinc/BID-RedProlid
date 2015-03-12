@@ -21,7 +21,7 @@ get_header(); ?>
       </div>	
     </div>
 	</section>    
-  <section id="dtl" class="pv-35">
+  <section id="dtl" class="pv-35 pl-7">
     <div class="container relative dtl-content">
 	    <div class="row">
 		    <div class="col-sm-4">
