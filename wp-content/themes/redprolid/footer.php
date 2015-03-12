@@ -10,7 +10,7 @@
  */
 ?>
 
-      <footer>
+      <footer class="mt-28">
         <div class="container text-center-xs">
           <div class="row to-top">
             <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/nav-footer-to-top.png" alt=""></a>
@@ -112,15 +112,25 @@
 			$('#boton_entrevista_full').show(100);
 			$('#entrevista_full').hide(100);
 			$('#boton_ocultar_entrevista_full').hide(100);
-		})		
-	
+		})	
+		
+		//MOSTRAR Y OCULATAR NOTICIAS
+		$('#noticia_muestra').hide();
+		$('#trigger_noticia').click(function() {
+			$('#noticia_muestra').show(100);
+		})
+		
+		//MOSTRAR Y OCULATAR EVENTO
+		$('#evento_muestra').hide();
+		$('#trigger_evento').click(function() {
+			$('#evento_muestra').show(100);
+		})
     
 		$('.icon[data-href]').each(function() { 
 		 $(this).attr('href', $(this).attr('data-href'));
 		});    
 		
 		$('.wppb-max-upload').hide();		
-
 		</script>    
     
 		<script>

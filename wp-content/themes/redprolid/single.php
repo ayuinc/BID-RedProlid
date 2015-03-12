@@ -70,6 +70,10 @@ get_header(); ?>
     elseif ( $cat[0]->slug == 'campeonas' ) {
       get_template_part( 'single-campeonas' );
     }
+    
+     elseif ( $cat[0]->slug == 'campeona-destacada' ) {
+      get_template_part( 'single-campeonas' );
+    }
 
     elseif ( $cat[0]->slug == 'webinario' ) {
       get_template_part( 'single-webinario' );

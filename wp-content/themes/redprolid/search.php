@@ -53,10 +53,10 @@ get_header(); ?>
           <ol>
 
             <?php 
-            // the query to set the posts per page to 3
-            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-            $args = array('posts_per_page' => 10, 'paged' => $paged );
-            query_posts($args); ?>
+            // the query to set the posts per page to 10
+            // $paged = (get_query_var('page')) ? get_query_var('page') : 1;
+            // $args = array('posts_per_page' => 15, 'page' => $paged );
+            // query_posts($args); ?>
 
             <?php if ( have_posts() ) : ?>
               <?php while ( have_posts() ) : the_post(); ?>
@@ -67,35 +67,35 @@ get_header(); ?>
 								<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>  
                 <p class="m-0">
                   <?php 
-                    switch (true) {
-                      case the_field('contenido_punto_de_vista'):
-                        echo the_field('contenido_punto_de_vista');
-                        break;
-                      case the_field('contenido_campeona'):
-                        echo the_field('contenido_campeona');
-                        break;
-                      case the_field('contenido_concurso'):
-                        echo the_field('contenido_concurso');
-                        break;
-                      case the_field('contenido-debates'):
-                        echo the_field('contenido-debates');
-                        break;
-                      case the_field('contenido-dtl'):
-                        echo the_field('contenido-dtl');
-                        break;
-                      case the_field('contenido-dtl-seccion'):
-                        echo the_field('contenido-dtl-seccion');
-                        break; 
-                      case the_field('contenido_evento'):
-                        echo the_field('contenido_evento');
-                        break; 
-                      case the_field('contenido_noticias'):
-                        echo the_field('contenido_noticias');
-                        break;  
-                      case the_field('descripcion_video'):
-                        echo the_field('descripcion_video');
-                        break;                                        
-                    }
+                    // switch (true) {
+                    //   case the_field('contenido_punto_de_vista'):
+                    //     echo the_field('contenido_punto_de_vista');
+                    //     break;
+                    //   case the_field('contenido_campeona'):
+                    //     echo the_field('contenido_campeona');
+                    //     break;
+                    //   case the_field('contenido_concurso'):
+                    //     echo the_field('contenido_concurso');
+                    //     break;
+                    //   case the_field('contenido-debates'):
+                    //     echo the_field('contenido-debates');
+                    //     break;
+                    //   case the_field('contenido-dtl'):
+                    //     echo the_field('contenido-dtl');
+                    //     break;
+                    //   case the_field('contenido-dtl-seccion'):
+                    //     echo the_field('contenido-dtl-seccion');
+                    //     break; 
+                    //   case the_field('contenido_evento'):
+                    //     echo the_field('contenido_evento');
+                    //     break; 
+                    //   case the_field('contenido_noticias'):
+                    //     echo the_field('contenido_noticias');
+                    //     break;  
+                    //   case the_field('descripcion_video'):
+                    //     echo the_field('descripcion_video');
+                    //     break;                                        
+                    // }
                   ?>
                 </p>
                 <small><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
@@ -107,8 +107,8 @@ get_header(); ?>
 
           <div class="text-center">
             <ul class="pager">
-              <li><?php previous_posts_link( 'Anterior' ); ?></li>
-              <li><?php next_posts_link( 'Siguiente' ); ?></li>
+              <li><?php previous_posts_link( 'Siguientes' ); ?></li>
+              <li><?php next_posts_link( 'Posteriores' ); ?></li>
             </ul>
           </div>
 

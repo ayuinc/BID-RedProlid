@@ -25,10 +25,19 @@ get_header(); ?>
       </div>
     </div>
     <div>
-      <ul class="grid-list grid-list-3 grid-list-2-sm grid-list-1-xs isotope-grid">
+      <ul class="grid-list grid-list-3 grid-list-2-sm grid-list-1-xs isotope-grid"> 
+      <?php add_filter('post_limits', 'my_post_limit'); ?>
       <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-      <?php query_posts( 'cat=258&posts_per_page=10&offset=5&paged=' . $paged ); ?>
-      <?php while ( have_posts() ) : the_post(); ?>    
+			<?php
+			$count = 0;	
+			global $myOffset;
+			$myOffset = 6;
+			$temp = $wp_query;
+			$wp_query= null;
+			$wp_query = new WP_Query();
+			$wp_query->query('cat=258&offset='.$myOffset.'&showposts=9&orderby=meta_value_num&meta_key=video_fecha_publicacion&ignore_sticky_posts=1&paged='.$paged);
+			?>	 					       
+      <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>      
        <li class="grid-list-item">
          <div class="banner bg-white">
            <div class="banner-pic">
@@ -41,22 +50,35 @@ get_header(); ?>
               <iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="220" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             <?php } ?>
            </div>
-           <div class="banner-content flex-none">
+           <div class="banner-content flex-none" style="min-height:12rem;">
               <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0"><?php the_title(); ?></h3></a>
               <p class="mb-0"><?php the_field('video_descripcion_cortao'); ?></p>
-              <?php $tempDate = get_field('video_fecha_publicacion'); ?>
-              <small>Publicado por: <?php the_field('video_organizacion'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>   
+							<?php $video_autor = get_field('video_autor'); ?>
+							<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
+							<small>
+								<?php if ($video_autor!='') { ?><?php the_field('video_autor'); ?><?php } ?><?php if ($video_fecha_publicacion!='') { ?>, <?php the_field('video_fecha_publicacion'); ?><?php } ?>
+							</small> 
            </div>
          </div>
        </li>
-       <?php endwhile; ?>
-      </ul>
-      <div class="text-center">
-        <ul class="pager">
-          <li><?php next_posts_link( 'Anteriores' ); ?></li>
-          <li><?php previous_posts_link( 'Posteriores' ); ?></li>
-        </ul>
-      </div> 
+	      <?php $count++; ?>
+	    <?php endwhile; ?>
+	    
+	    <?php if ($count!=0) { ?>
+	    </ul>
+	    <div class="text-center">
+	      <ul class="pager">
+	        <li><?php next_posts_link( 'Siguientes' ); ?></li>
+	        <li><?php previous_posts_link( 'Anteriores' ); ?></li>
+	      </ul>
+	    </div>  
+	    <?php } else { ?>
+	    	<div class="text-center pv-70">
+	    		<h3 class="medium">No hay más videos. <a href="javascript:history.back();">Regresa</a></h3>
+	    	</div>
+	    <?php } ?> 
+			<?php $wp_query = null; $wp_query = $temp;?>
+			<?php remove_filter('post_limits', 'my_post_limit'); ?>  
     </div>
   </div>
 </section>

@@ -55,7 +55,7 @@ get_header(); ?>
 					            	<?php if ($imagen!='') { ?>
 					            	<div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
 					            	<?php } else { ?>
-					            	<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia-placeholder.png)"></div>
+					            	<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
 					            	<?php } ?>
 					            	<div class="banner-content flex-none">
 			                    <h3 class="medium mt-7 mb-0 pb-0">
@@ -93,7 +93,7 @@ get_header(); ?>
 	            <ul class="list-unstyled">
 	            	<!-- Start the Loop. -->
 	            	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-	            	<?php query_posts( 'cat=12&posts_per_page=6&offset=3&paged=' . $paged ); ?>
+	            	<?php query_posts( 'cat=12&posts_per_page=8&offset=3&paged=' . $paged ); ?>
 								<?php while ( have_posts() ) : the_post(); ?>    
 		                  <li class="mb-14">
 		                    <h5 class="medium mb-0"><?php the_title(); ?></h5>
@@ -108,6 +108,9 @@ get_header(); ?>
 	                    <hr> 
 		            <?php endwhile; ?> 
 	            </ul>
+	            <div class="mt-28">
+		            <p class="text-right"><a href="<?php echo home_url('/'); ?>noticias-anteriores/">Ve más >></a></p>
+	            </div>
 	            <!--<div class="text-center">
 	              <ul class="pager">
 	                <li><?php //next_posts_link( 'Anteriores' ); ?></li>

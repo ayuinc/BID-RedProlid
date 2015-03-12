@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="ph-70">
-  		<h3 class="light text-justify mb-14">Esta es la sección donde incluimos las entrevistas con testimonios de aquellas mujeres latinoamericanas que han dejado huella y han marcado o van a marcar las agendas de sus países para imprimir mayor equidad en las políticas públicas y en el quehacer diario de la política.</h3>
+  		<h3 class="light text-justify mb-35">Aquí incluimos las entrevistas con testimonios de aquellas mujeres latinoamericanas que han dejado huella y han marcado o van a marcar las agendas de sus países para imprimir mayor equidad en las políticas públicas y en el quehacer diario de la política.</h3>
       <div class="row">
         <?php if( get_field('imagen_campeonas') ) { ?>
         <div class="col-md-3">
@@ -34,8 +34,12 @@
         <div class="row">
 	        <div class="col-sm-12">
 		        <h2 class="lh-lg mb-0"><?php the_title(); ?></h2>
-		        <small><?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
-            <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+		        <?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
+		        <?php if ($tempDate!='') { ?>
+		        <small>
+            <!--<?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de --><?php echo date_i18n('Y', strtotime( $tempDate)); ?>
+	          </small>     
+	          <?php } ?> 
             <p class="mt-14">
 	        		<em>
 	        		<?php the_field('posicion_campeona'); ?>

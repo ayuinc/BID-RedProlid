@@ -36,7 +36,7 @@ get_header(); ?>
 	  	<h2>Próximos eventos</h2>
 	  	<div class="gallery js-flickity grid-list grid-list-full-width grid-list-1-xs" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": false }'>
 				<?php if ( have_posts() ) : ?>
-        	<?php query_posts( 'category_name=proximos-eventos&posts_per_page=3&order=DESC' ); ?>
+        	<?php query_posts( 'category_name=proximos-eventos&posts_per_page=5&order=DESC' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 		  			<div class="gallery-cell grid-list-item" style="min-height: 350px;">
 		  				<div class="banner borderless">
@@ -52,10 +52,10 @@ get_header(); ?>
 	        				<?php $tempDate = get_the_date(); ?>
 	              	<p>
 							      <?php $tempDate = get_field('fecha_inicio_evento'); ?>
-							      <strong>Fecha de inicio:</strong> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php $lhora_evento = get_field('hora_evento'); ?><?php if ($hora_evento!='') { ?>, <?php the_field('hora_evento'); ?><?php } ?><br>
+							      <strong>Fecha inicio:</strong> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php $lhora_evento = get_field('hora_evento'); ?><?php if ($hora_evento!='') { ?>, <?php the_field('hora_evento'); ?><?php } ?><br>
 							      <?php $tempDateFin = get_field('fecha_fin_evento'); ?>
 							      <?php if ($tempDateFin!='') { ?>
-							      <strong>Fecha de fin:</strong> <?php echo date_i18n('j', strtotime( $tempDateFin)); ?> de <?php echo date_i18n('F', strtotime( $tempDateFin)); ?> de <?php echo date_i18n('Y', strtotime( $tempDateFin)); ?><br>
+							      <strong>Fecha fin:</strong> <?php echo date_i18n('j', strtotime( $tempDateFin)); ?> de <?php echo date_i18n('F', strtotime( $tempDateFin)); ?> de <?php echo date_i18n('Y', strtotime( $tempDateFin)); ?><br>
 							      <?php } ?>
 	                	<?php $lugar_evento = get_field('lugar_evento'); ?>
 										<?php if ($lugar_evento!='') { ?>						
@@ -85,15 +85,15 @@ get_header(); ?>
 			<h2>Otros eventos</h2>
 			<hr>
     	<!-- Start the Loop. -->	
-    	<?php query_posts( 'cat=348&posts_per_page=4'); ?>
+    	<?php query_posts( 'cat=348&posts_per_page=6'); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-	  	<div class="banner half-height">
+	  	<div class="banner half-height pb-28">
 	  		<div class="banner-pic col-sm-2 bg-panel text-center lead-ch normalize-text">
 	  			<?php $tempDate = get_field('fecha_inicio_evento'); ?>
 	  			<h3 class="h1"><?php echo date_i18n('j', strtotime( $tempDate)); ?></h3>
 			    <p><?php echo date_i18n('M', strtotime( $tempDate)); ?></p>
 	  		</div>
-	  		<div class="banner-content flex-none col-sm-10">
+	  		<div class="banner-content flex-none col-sm-10 pb-0">
 	  			<h4 class="medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h4>
           <p>
 	        	<?php $lugar_evento = get_field('lugar_evento'); ?>
@@ -127,6 +127,9 @@ get_header(); ?>
 	  		</div>
 	  	</div>
       <?php endwhile; ?> 
+      <div class="pv-28">
+	      <p class="text-center"><a href="<?php echo home_url('/'); ?>eventos-anteriores">Ve más >></a></p>
+      </div>
 	  </div>
 	</section>
 	

@@ -7,6 +7,22 @@
    */
 
 
+	 /**
+		 PAGINATION
+	**/
+	function my_post_limit($limit) { 
+		global $paged, $myOffset;
+		if (empty($paged)) {
+				$paged = 1;
+		}
+		$postperpage = intval(get_option('posts_per_page'));
+		$pgstrt = ((intval($paged) -1) * $postperpage) + $myOffset . ', ';
+		$limit = 'LIMIT '.$pgstrt.$postperpage;
+		return $limit;
+	} //end function my_post_limit
+		 
+
+
   /**
    * Register our sidebars and widgetized areas.
    *

@@ -88,7 +88,7 @@ get_header(); ?>
                 </ul>
                 <ul class="list-unstyled">
                 	<!-- Start the Loop. -->
-                	<?php query_posts( 'category_name=recursos&posts_per_page=3' ); ?>	
+                	<?php query_posts( 'category_name=recursos&posts_per_page=3&meta_key=recurso_año_de_publicacion&orderby=meta_value_num' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>    
 	                  <li class="mb-14">
 	                    <h4 class="medium"><?php the_title(); ?></h4>
@@ -136,7 +136,7 @@ get_header(); ?>
                           <?php } else { ?>
                           <div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/imagen-noticia-placeholder.png)"></div>
                           <?php } ?>
-                          <div class="banner-content flex-none">
+                          <div class="banner-content flex-none" style="min-height:13rem;">
                             <h3 class="medium mt-7 mb-0 pb-0">
                               <a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a>
                             </h3>
@@ -287,8 +287,11 @@ get_header(); ?>
 										<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 									<?php } ?>
                   <h3 class="mediumt mt-14 pb-0 mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-									<?php $tempDate = get_the_date(); ?>
-									<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small> 
+									<?php $video_autor = get_field('video_autor'); ?>
+									<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
+									<small>
+										<?php if ($video_autor!='') { ?><?php the_field('video_autor'); ?><?php } ?><?php if ($video_fecha_publicacion!='') { ?>, <?php the_field('video_fecha_publicacion'); ?><?php } ?>
+									</small> 	 
                   <div class="text-right mt-21">
                     <p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más aquí >></a></p>
                   </div>
@@ -312,7 +315,7 @@ get_header(); ?>
             </div>
           </div>
           <div class="col-md-3 mt-35 pl-14">
-            <a href="<?php echo home_url('/'); ?>boletin" class="btn btn-primary">Boletines</a>
+            <a href="<?php echo home_url('/'); ?>boletines-proximamente/" class="btn btn-primary">Boletines</a>
           </div>
         </div>
       </div>
@@ -328,8 +331,7 @@ get_header(); ?>
   	<?php } ?>
 	    <div class="modal-content bg-panel">
 	      <div class="modal-body">
-	      	<h3 class="medium">¿Quieres recibir el boletín de Red PROLID?</h3>
-	      	<p>Suscríbete a nuestro boletín y descárgalo gratis</p>
+	      	<h3 class="medium pb-0 mb-0">¿Quieres recibir el boletín de Red PROLID?</h3>
 	      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
 						<?php ninja_forms_display_form( 13 ); ?>
 					<?php } ?>

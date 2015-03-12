@@ -3,15 +3,16 @@
     <?php the_breadcrumb(); ?>
     <div class="ph-70 pv-21">
       <div class="row pb-14">
-  	    <?php if( get_field('imagen_noticias') ) { ?>
-        <div class="col-sm-4">
-          <img src="<?php the_field('imagen_noticias'); ?>" alt="<?php the_field('fuente_imagen_noticias'); ?>" class="img-responsive">
+      	<div class="col-sm-4">	
+      	<?php $imagen = get_field('imagen_noticias'); ?>
+      	<?php if ($imagen!='') { ?>
+      		<img src="<?php the_field('imagen_noticias'); ?>" alt="<?php the_field('fuente_imagen_noticias'); ?>" class="img-responsive">
+      	<?php } else { ?>
+      		<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png" alt="<?php the_field('fuente_imagen_noticias'); ?>" class="img-responsive">
+      	<?php } ?>	         
           <small><?php the_field('fuente_imagen_noticias'); ?></small>
         </div>
-        <div class="col-sm-7">
-  	    <?php } else {?>
-  	    <div class="col-sm-12">  
-        <?php } ?>
+  	    <div class="col-sm-7">  
           <h2 class="medium mb-0"><?php the_title(); ?></h2>
           <?php $publicacion = get_field('publicacion_noticias'); ?>
           <small>
@@ -25,7 +26,10 @@
   	  <div class="row">
   			<div class="col-sm-12 with-hr">  	  
   		    <p><?php the_field('contenido_noticias'); ?></p>
-  		    <p class="text-right"><a href="<?php the_field('link_publicacion_noticias'); ?>"  class="btn btn-primary">Lee la noticia completa</a></p>
+  		    <p class="text-right"><a class="btn btn-primary" id="trigger_noticia">Lee la noticia completa</a></p>
+  		    <div class="pv-35" id="noticia_muestra">
+  		    	<iframe src="<?php the_field('link_publicacion_noticias'); ?>" frameborder="0" width="100%" height="700"></iframe>
+  		    </div>
   		    <div class="text-right">
   		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
   		    </div>   

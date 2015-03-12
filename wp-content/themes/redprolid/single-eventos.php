@@ -1,3 +1,4 @@
+
 <section> 
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>
@@ -20,7 +21,7 @@
     			<?php } ?>
 					<small><?php the_field('credito_imagen_evento'); ?></small>
 				</div>
-				<div class="banner-content col-sm-9">
+				<div class="banner-content col-sm-9 mb-35">
 					<div class="row">
 						<div class="col-sm-7">
 							<?php $organizan_evento = get_field('organizan_evento'); ?>
@@ -34,6 +35,10 @@
 			        <p><?php echo $convocan; ?></p>
 			        <?php } ?>
 			        <p><?php the_field('contenido_evento'); ?></p>
+			        <?php $subir_pdfword_evento = get_field('subir_pdfword_evento'); ?>
+			        <?php if ($subir_pdfword_evento!='') { ?>
+			        <p><a href="<?php the_field('subir_pdfword_evento'); ?>">Archivo</a></p>
+			        <?php } ?>
 			        <?php $contacto_nombre_evento = get_field('contacto_nombre_evento'); ?>
 			        <?php if ($contacto_nombre_evento!='') { ?>
 			        <p>
@@ -91,13 +96,21 @@
 				      <?php $hipervinculo = get_field('hipervinculo_evento');?>
 					    <?php if ($hipervinculo!='') { ?>
 					    <div>
-						    <a href="<?php the_field('hipervinculo_evento');?>" class="btn btn-primary" target="_blank">Ir al evento</a>
-					    </div>
+						  	<a class="btn btn-primary"  id="trigger_evento">Ir al evento</a>
+						    <!--<a href="<?php the_field('hipervinculo_evento'); ?>" class="btn btn-primary" target="_blank">Ir al evento</a>-->
+					    </div>				    
 					    <?php } ?>				      
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="row" id="evento_muestra">
+				<div class="col-sm-12">
+					<div class="pv-35">
+  		    	<iframe src="<?php the_field('hipervinculo_evento'); ?>" frameborder="0" width="100%" height="700"></iframe>
+  		    </div>	
+				</div>
+			</div>			
 		</div>      
   </div>      
 </section>

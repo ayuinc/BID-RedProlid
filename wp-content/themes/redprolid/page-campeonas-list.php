@@ -26,9 +26,18 @@ get_header(); ?>
     </div>  
     <div class="ph-70">
       <div class="row">
+        <?php add_filter('post_limits', 'my_post_limit'); ?>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-        <?php query_posts( 'category_name=campeonas&posts_per_page=10&offset=1&paged=' . $paged ); ?>
-        <?php while ( have_posts() ) : the_post(); ?>	      
+				<?php
+				$count = 0;	
+				global $myOffset;
+				$myOffset = 1;
+				$temp = $wp_query;
+				$wp_query= null;
+				$wp_query = new WP_Query();
+				$wp_query->query('cat=2&offset='.$myOffset.'&showposts=10&paged='.$paged);
+				?>	 					       
+        <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>        
 	      <div class="col-md-2">
           <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
           <?php if ($imagen_campeona!='') { ?>
@@ -42,8 +51,12 @@ get_header(); ?>
         <div class="col-md-10">
           <div class="title">
             <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-		        <small><?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
-            <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>            
+		        <?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
+		        <?php if ($tempDate!='') { ?>
+		        <small>
+            <!--<?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de --><?php echo date_i18n('Y', strtotime( $tempDate)); ?>
+	          </small>     
+	          <?php } ?>   
             <p><?php the_field('posicion_campeona'); ?> <?php if (get_field('twitter_campeona')!='') { ?>/ <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank">@<?php the_field('twitter_campeona'); ?></a><?php } ?></p>
           </div>
           <div class="content mv-14">
@@ -55,13 +68,23 @@ get_header(); ?>
           </div> 
           <hr>   
         </div>
+        <?php $count++; ?>
         <?php endwhile; ?>
+          
+        <?php if ($count!=0) { ?>
         <div class="text-center">
           <ul class="pager">
-            <li><?php next_posts_link( 'Anteriores' ); ?></li>
-            <li><?php previous_posts_link( 'Posteriores' ); ?></li>
+            <li><?php next_posts_link( 'Siguientes' ); ?></li>
+            <li><?php previous_posts_link( 'Anteriores' ); ?></li>
           </ul>
-        </div>          
+        </div>  
+        <?php } else { ?>
+        	<div class="text-center pv-70">
+        		<h3 class="medium">No hay más eventos. <a href="javascript:history.back();">Regresa</a></h3>
+        	</div>
+        <?php } ?> 
+				<?php $wp_query = null; $wp_query = $temp;?>
+				<?php remove_filter('post_limits', 'my_post_limit'); ?>           
       </div>    
     </div>      
   </div>

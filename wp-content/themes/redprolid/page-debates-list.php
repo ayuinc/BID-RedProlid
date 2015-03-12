@@ -49,7 +49,7 @@ get_header(); ?>
           <?php endwhile; ?>
           <div class="text-center">
             <ul class="pager">
-              <li><?php next_posts_link( 'Anteriores' ); ?></li>
+              <li><?php next_posts_link( 'Siguientes' ); ?></li>
               <li><?php previous_posts_link( 'Posteriores' ); ?></li>
             </ul>
           </div>          

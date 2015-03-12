@@ -42,20 +42,24 @@ get_header(); ?>
 			</div>
 			<div class="col-sm-5">
 				<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h2 class="medium mb-0"><?php the_title(); ?></h2></a>
-				<?php $tempDate = get_field('video_fecha_publicacion'); ?>
-				<small>Publicado por: <?php the_field('video_organizacion'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small> 	
+				<?php $video_autor = get_field('video_autor'); ?>
+				<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
+				<small>
+					<?php if ($video_autor!='') { ?><?php the_field('video_autor'); ?><?php } ?><?php if ($video_fecha_publicacion!='') { ?>, <?php the_field('video_fecha_publicacion'); ?><?php } ?>
+				</small>  	
 				<h3 class="pt-14 light"><?php the_field('video_descripcion_corta'); ?></h3>
 				<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></p>
 			</div>
     </div>
     <?php endwhile; ?>	
     <div class="panel panel-custom">         
-      <div class="panel-body pt-28">	
+      <div class="panel-body pv-28">	
       	<h2>Otros videos</h2>
       	<hr>
-				<div class="row">
-        	<?php query_posts( 'cat=258&posts_per_page=4&offset=1'); ?>
-					<?php while ( have_posts() ) : the_post(); ?>    
+				<div class="row pb-35">
+        	<?php query_posts( 'cat=258&posts_per_page=4&offset=2&orderby=meta_value_num&meta_key=video_fecha_publicacion'); ?>
+					<?php while ( have_posts() ) : the_post(); ?>  
+					  
 					<div class="col-sm-3">
 				    <?php $youtube = get_field('video_youtube'); ?>
 			    	<?php if ($youtube!='') { ?>
@@ -66,14 +70,23 @@ get_header(); ?>
 							<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="220" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 						<?php } ?>
 						<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0"><?php the_title(); ?></h3></a>
-						<?php $tempDate = get_field('video_fecha_publicacion'); ?>
-						<small>Publicado por: <?php the_field('video_organizacion'); ?> el <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+						<?php $video_autor = get_field('video_autor'); ?>
+						<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
+						<small>
+							<?php if ($video_autor!='') { ?><?php the_field('video_autor'); ?><?php } ?><?php if ($video_fecha_publicacion!='') { ?>, <?php the_field('video_fecha_publicacion'); ?><?php } ?>
+						</small> 
 						<p class="pv-7"><?php the_field('video_descripcion_corta'); ?></p>
 						<small>
 							<a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a>
 						</small>
-					</div>																			
+					</div>			
+																					
           <?php endwhile; ?>
+        </div>
+        <div class="row pb-21">
+	        <div class="col-md-12">
+		        <p class="text-right"><a href="<?php echo home_url('/'); ?>video/videos-anteriores">Todos los videos >></a></p>
+	        </div>
         </div>
       </div>
     </div>

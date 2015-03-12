@@ -10,7 +10,7 @@ function dlf_form() {
 ?>
 
 <form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
-	<h4 class="medium mb-7 text-gray-darker">Mi información</h4>
+	<h4 class="medium mb-7 text-gray-darker">Ingresa a la red</h4>
 	<div class="form-group">
 	  <!-- <input name="login_name" id="login-name" type="text" class="form-control login-field" placeholder="Usuario o correo electrónico"> -->
 	  <input name="login_name" type="text" class="form-control login-field mb--7" value="" placeholder="Usuario" id="login-name" />
@@ -20,17 +20,19 @@ function dlf_form() {
 	  <input  name="login_password" type="password" class="form-control login-field mb--7" value="" placeholder="Contraseña" id="login-pass" />
 	</div>
 	<div class="form-group row">
-	  <div class="col-xs-7">
+	  <div class="col-xs-9">
+	    <div>
+	    	<?php do_action( 'wordpress_social_login' ); ?>
+	    </div>
+	    <br>
 	    <small>
 	    	<a href="<?php echo home_url('/'); ?>registrate/" class="light">Regístrate</a> 
 	    	<span>|</span> 
 	    	<a href="<?php echo wp_lostpassword_url( get_bloginfo('url') ); ?>" class="light"  title="Olvidé mi contraseña">Olvidé mi contraseña</a>
 			</small>
-	    <!-- <a href="<?php //echo wp_lostpassword_url(); ?>" title="Lost Password">Lost Password</a> -->
-	    <!--<a href="<?php echo home_url('/'); ?>registrate">Regístrate</a>-->
 	  </div>
-	  <div class="col-xs-5 text-right">
-	    <input type="submit" name="dlf_submit" class="btn btn-primary btn-sm" value="Ingresa">
+	  <div class="col-xs-3">
+	    <input type="submit" name="dlf_submit" class="btn btn-primary btn-sm" value="Ingresa" style="margin-left:12px;">
 	  </div>
 	</div>
 </form>

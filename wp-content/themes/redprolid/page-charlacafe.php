@@ -11,7 +11,7 @@ get_header(); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
 
-  <section class="mt-7 mb-21"> 
+  <section class="pv-28"> 
 	  <div class="container relative mb-14">
       <?php the_breadcrumb(); ?>
       <div class="clearfix sub-header">
@@ -24,7 +24,7 @@ get_header(); ?>
         <div class="col-sm-6 col-xs-12"></div>
       </div>
       <div class="ph-70">
-        <p class="lead text-justify">Seguro que tienes mucho que aportar en los debates que vamos a propiciar en esta sección: por un lado, los webinarios, más cortos, de aproximadamente una hora de duración ; y por otro, los foros virtuales que durarán alrededor de tres semanas, en  las cuales te animamos a intervenir para aportarnos tu experiencia y tu opinión...así como si nos estuviéramos tomando un café.</p>
+        <p class="lead text-justify">Seguro que tienes mucho que aportar en los debates que vamos a propiciar en esta sección: por un lado, los webinarios, más cortos, de aproximadamente una hora de duración; y por otro, los foros virtuales que durarán alrededor de tres semanas, en  las cuales te animamos a intervenir para aportarnos tu experiencia y tu opinión...así como si nos estuviéramos tomando un café.</p>
         <div class="row">
           <div class="col-sm-6">
             <a href="<?php echo home_url('/'); ?>foros-proximamente" class="block text-center"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/charlacafe-foros-virtuales.png" alt="" class=""></a>
