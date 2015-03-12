@@ -6222,8 +6222,7 @@ div[id^="yop-poll-results-3"] {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  /*border: 1px solid darken(white, 3%);*/ }
+  border-bottom-right-radius: 3px; }
   .dtl-carousel .dtl-item .bg-img-block {
     height: 115px;
     border-top-left-radius: 3px;
@@ -6234,8 +6233,7 @@ div[id^="yop-poll-results-3"] {
       text-align: center;
       font-size: 18px; }
   .dtl-carousel .dtl-item:hover {
-    /*@include box-shadow-default;
-    cursor: pointer;*/
+    cursor: pointer;
     opacity: 0.7; }
 .dtl-carousel .dtl-icon {
   width: 35px;
@@ -6246,31 +6244,6 @@ div[id^="yop-poll-results-3"] {
   right: 0;
   background-repeat: no-repeat;
   background-size: cover; }
-
-.bg-dtl-adonde-vamos {
-  background-color: #F05F6A; }
-
-.bg-dtl-agenda-genero {
-  background-color: #C02F73; }
-
-.bg-dtl-carrera-vallas {
-  background-color: #9A205C; }
-
-.bg-dtl-la-pinta {
-  background-color: #037E8F; }
-
-.bg-dtl-listas-politica {
-  background-color: #015A71; }
-
-.bg-dtl-nivelando-cancha {
-  background-color: #599A97; }
-
-.bg-dtl-pistas {
-  background-color: #007C8D; }
-
-.carousel-inner .slide-content {
-  bottom: 1.2rem;
-  z-index: 1000; }
 
 .red-prolid-grid:before, .red-prolid-grid:after {
   content: " ";

@@ -143,10 +143,7 @@ div[id^="yop-poll-results-3"] {
 	height: 300px;
 }
 .dtl-carousel {
-	// width: 2000px;
-	// position: absolute;
 	.grid-list-item {
-		// width: 240px !important;
 		div {
 			min-height: 0 !important;
 		}
@@ -160,7 +157,6 @@ div[id^="yop-poll-results-3"] {
 		position: relative;
 		@include border-top-radius($border-radius-base);
 		@include border-bottom-radius($border-radius-base);
-		/*border: 1px solid darken(white, 3%);*/
 		.bg-img-block {
 			height: 115px;
 			@include border-top-radius($border-radius-base);
@@ -173,8 +169,7 @@ div[id^="yop-poll-results-3"] {
 			}
 		}
 		&:hover {
-			/*@include box-shadow-default;
-			cursor: pointer;*/
+			cursor: pointer;
 			opacity:0.7;
 		}
 	}
@@ -189,36 +184,36 @@ div[id^="yop-poll-results-3"] {
 
 
 // DTL HOME CAROUSEL 
-$dtl-colors-list: 
-	$dtl-adonde-vamos,
-	$dtl-agenda-genero,
-	$dtl-carrera-vallas,
-	$dtl-la-pinta,
-	$dtl-listas-politica,
-	$dtl-nivelando-cancha,
-	$dtl-pistas;
+// $dtl-colors-list: 
+// 	$dtl-adonde-vamos,
+// 	$dtl-agenda-genero,
+// 	$dtl-carrera-vallas,
+// 	$dtl-la-pinta,
+// 	$dtl-listas-politica,
+// 	$dtl-nivelando-cancha,
+// 	$dtl-pistas;
 
-$dtl-colors-sufix-list:
-	"dtl-adonde-vamos",
-	"dtl-agenda-genero",
-	"dtl-carrera-vallas",
-	"dtl-la-pinta",
-	"dtl-listas-politica",
-	"dtl-nivelando-cancha",
-	"dtl-pistas";
+// $dtl-colors-sufix-list:
+// 	"dtl-adonde-vamos",
+// 	"dtl-agenda-genero",
+// 	"dtl-carrera-vallas",
+// 	"dtl-la-pinta",
+// 	"dtl-listas-politica",
+// 	"dtl-nivelando-cancha",
+// 	"dtl-pistas";
 
-@for $i from 1 through length($dtl-colors-list) {
-	.bg-#{nth($dtl-colors-sufix-list, $i)} {
-		background-color: #{nth($dtl-colors-list, $i)};
-	}
-}
+// @for $i from 1 through length($dtl-colors-list) {
+// 	.bg-#{nth($dtl-colors-sufix-list, $i)} {
+// 		background-color: #{nth($dtl-colors-list, $i)};
+// 	}
+// }
 
-.carousel-inner { 
-	.slide-content {
-		bottom: 1.2rem;
-		z-index: 1000;
-	}
-}
+// .carousel-inner { 
+// 	.slide-content {
+// 		bottom: 1.2rem;
+// 		z-index: 1000;
+// 	}
+// }
 
 
 

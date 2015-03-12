@@ -1,4 +1,4 @@
-<header class="pt-7 pb-7 hidden-sm-down">
+<header class="pt-7 pb-7 hidden-md-down">
   <div class="container">
     <div class="row">
       <div class="col-md-3">
