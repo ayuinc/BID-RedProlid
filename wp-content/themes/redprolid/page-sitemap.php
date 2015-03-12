@@ -24,14 +24,14 @@ get_header(); ?>
   <section id="dtl" class="pt-0">
     <div class="container relative dtl-content">
 	    <div class="row">
-		    <div class="col-sm-3">
+		    <div class="col-sm-4">
 			    <h3 class="medium"><a href="<?php echo home_url('/'); ?>redprolid/">Red PROLID</a></h3>
 			    <ul>
 				    <li><a href="<?php echo home_url('/'); ?>tu-opinion-cuenta/">Tu opinion cuenta</a></li>
 				    <li><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li> 
 			    </ul>
 		    </div>
-		    <div class="col-sm-3">
+		    <div class="col-sm-4">
 			    <h3 class="medium"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/">Desarrolla tu liderazgo</a></h3>
 			    <ul>
 				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/">¿Adónde v@mos?</a></li>
@@ -47,7 +47,7 @@ get_header(); ?>
 				    </li>
 			    </ul>			    
 		    </div>
-		    <div class="col-sm-3">
+		    <div class="col-sm-4">
 			    <h3 class="medium"><a href="<?php echo home_url('/'); ?>enterate/">Entérate</a></h3>
 			    <ul>
 				    <li><a href="<?php echo home_url('/'); ?>publicaciones/">Publicaciones</a></li>
@@ -59,10 +59,10 @@ get_header(); ?>
 				    <li><a href="<?php echo home_url('/'); ?>video/">Video</a></li>
 			    </ul>				    
 		    </div>	
-		    <div class="col-sm-3">
+		    <div class="col-sm-4">
 			    <h3 class="medium"><a href="<?php echo home_url('/'); ?>concursos-proximamente/">Concursos</a></h3>		    
 		    </div>	
-		    <div class="col-sm-3">
+		    <div class="col-sm-4">
 			    <h3 class="medium"><a href="<?php echo home_url('/'); ?>charlacafe/">Charlacafé</a></h3>
 			    <ul>
 				    <li><a href="<?php echo home_url('/'); ?>foros-proximamente/">Foros virtuales</a></li>
