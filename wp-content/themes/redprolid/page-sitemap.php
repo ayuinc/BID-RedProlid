@@ -24,14 +24,12 @@ get_header(); ?>
   <section id="dtl" class="pv-35 pl-7">
     <div class="container relative dtl-content">
 	    <div class="row">
-		    <div class="col-sm-4">
+		    <div class="col-sm-12">
 			    <a href="<?php echo home_url('/'); ?>redprolid/"><h3 class="medium">Red PROLID</h3></a>
 			    <ul>
 				    <li><a href="<?php echo home_url('/'); ?>tu-opinion-cuenta/">Tu opinion cuenta</a></li>
 				    <li><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li> 
 			    </ul>
-		    </div>
-		    <div class="col-sm-4">
 			    <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/"><h3 class="medium">Desarrolla tu liderazgo</h3></a>
 			    <ul>
 				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/">¿Adónde v@mos?</a></li>
@@ -46,8 +44,6 @@ get_header(); ?>
 				    	</ul>
 				    </li>
 			    </ul>			    
-		    </div>
-		    <div class="col-sm-4">
 			    <a href="<?php echo home_url('/'); ?>enterate/"><h3 class="medium">Entérate</h3></a>
 			    <ul>
 				    <li><a href="<?php echo home_url('/'); ?>publicaciones/">Publicaciones</a></li>
@@ -57,21 +53,14 @@ get_header(); ?>
 				    <li><a href="<?php echo home_url('/'); ?>campeonas/">Campeonas</a></li>
 				    <li><a href="<?php echo home_url('/'); ?>puntos-de-vista/">Puntos de vista</a></li>
 				    <li><a href="<?php echo home_url('/'); ?>video/">Video</a></li>
-			    </ul>				    
-		    </div>	
-	    </div>
-    	<div class="row pt-35">  
-		    <div class="col-sm-4">
+			    </ul>				    	
 			    <a href="<?php echo home_url('/'); ?>concursos-proximamente/"><h3 class="medium">Concursos</h3></a>		    
-		    </div>	
-		    <div class="col-sm-4">
 			    <a href="<?php echo home_url('/'); ?>charlacafe/"><h3 class="medium">Charlacafé</h3></a>
 			    <ul>
 				    <li><a href="<?php echo home_url('/'); ?>foros-proximamente/">Foros virtuales</a></li>
 				    <li><a href="<?php echo home_url('/'); ?>webinarios-proximamente/">Webinarios</a></li> 
 			    </ul>					    
-		    </div>	
-		    <div class="col-sm-4"></div>		    		    	    		    
+		    </div>	    		    	    		    
 	    </div>
 			<?php //if ( have_posts() ) : ?>
 				<?php //while ( have_posts() ) : the_post(); ?>
