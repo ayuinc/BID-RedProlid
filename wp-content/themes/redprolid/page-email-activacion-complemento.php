@@ -18,7 +18,7 @@ get_header(); ?>
 	    	<div class="row pv-49">
 	    		<div class="col-sm-8 col-sm-offset-2">
 		    		<h3 class="medium text-center mt-35">Hemos recibido tu información</h3>
-		    		<p>Muy pronto te llegará un correo electrónico de confirmación con el enlace para ingresar a Red PROLID.</p>
+		    		<p>Muy pronto te llegará un correo electrónico de confirmación con el enlace para ingresar a Red PROLID</p>
 	    		</div>
 	    	</div>	    	
     	</div>
