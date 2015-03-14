@@ -14,11 +14,13 @@ get_header(); ?>
 	<section class="mt-7"> 
     <div class="container">
       <?php the_breadcrumb(); ?> 
-      <div class="clearfix sub-header">
-        <div class="col-sm-5 col-xs-9">
-          <h1 class="ml-0 pl-0">Mapa del sitio</h1>
-        </div>
-      </div>	
+	    <div class="clearfix bg-panel sub-header">
+	      <div class="col-sm-7">
+	        <div>
+	          <h1>Mapa del sitio</h1>
+	        </div>
+	      </div>
+	    </div>	 
     </div>
 	</section>    
   <section id="dtl" class="pv-35 pl-7">
