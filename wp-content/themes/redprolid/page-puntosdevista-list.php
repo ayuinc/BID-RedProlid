@@ -20,8 +20,8 @@ get_header(); ?>
           </nav>
         </div>
       </div>
-      <div class="sub-header-icon" style="background-color:#c3bf9b">
-        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon-int.png" width="94px" height="auto" alt="">
+      <div class="sub-header-icon">
+        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon-int.png" width="100%" alt="">
       </div>
     </div>	      
     <div class="ph-70">
