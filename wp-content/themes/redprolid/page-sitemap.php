@@ -32,15 +32,44 @@ get_header(); ?>
 			    </ul>
 			    <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/"><h3 class="medium">Desarrolla tu liderazgo</h3></a>
 			    <ul>
-				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/">¿Adónde v@mos?</a></li>
-				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/carrera-de-vallas/">Carrera de vallas</a></li> 
-				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/nivelando-la-cancha/">Nivelando la cancha</a></li> 
-				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/listas-para-la-politica/">Listas para la política</a></li> 
-				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/">Agenda de género</a></li>
+				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/">¿Adónde v@mos?</a>
+				    	<ul>
+					    	<li><a href="<?php echo home_url('/'); ?>debates-anteriores/?categoria=a-donde-vamos">Debates anteriores</a></li>
+				    	</ul>
+				    </li>
+				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/carrera-de-vallas/">Carrera de vallas</a>
+				    	<ul>
+					    	<li><a href="<?php echo home_url('/'); ?>debates-anteriores/?categoria=carrera-de-vallas">Debates anteriores</a></li>
+				    	</ul>
+				    </li> 
+				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/nivelando-la-cancha/">Nivelando la cancha</a>
+				    	<ul>
+					    	<li><a href="<?php echo home_url('/'); ?>debates-anteriores/?categoria=nivelando-la-cancha">Debates anteriores</a></li>
+				    	</ul>
+				    </li> 
+				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/listas-para-la-politica/">Listas para la política</a>
+				    	<ul>
+					    	<li><a href="<?php echo home_url('/'); ?>debates-anteriores/?categoria=listas-para-la-politica">Debates anteriores</a></li>
+				    	</ul>
+				    </li> 
+				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/">Agenda de género</a>
+				    	<ul>
+					    	<li><a href="<?php echo home_url('/'); ?>debates-anteriores/?categoria=agenda-de-genero">Debates anteriores</a></li>
+				    	</ul>
+				    </li> 
 				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/">Pistas</a>
 				    	<ul>
-					    	<li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a></li>
-					    	<li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-tu-estilo/">A tu estilo</a></li> 
+					    	<li><a href="<?php echo home_url('/'); ?>debates-anteriores/?categoria=pistas-2">Debates anteriores</a></li>
+					    	<li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a>
+						    	<ul>
+							    	<li><a href="<?php echo home_url('/'); ?>debates-anteriores/?categoria=la-pinta-no-es-lo-de-menos">Debates anteriores</a></li>
+						    	</ul>
+						    </li> 
+					    	<li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-tu-estilo/">A tu estilo</a>>
+						    	<ul>
+							    	<li><a href="<?php echo home_url('/'); ?>debates-anteriores/?categoria=a-tu-estilo">Debates anteriores</a></li>
+						    	</ul>
+						    </li> 
 				    	</ul>
 				    </li>
 			    </ul>			    
