@@ -111,7 +111,11 @@ get_header(); ?>
 				    <li><a href="<?php echo home_url('/'); ?>foros-proximamente/">Foros virtuales</a></li>
 				    <li><a href="<?php echo home_url('/'); ?>webinarios-proximamente/">Webinarios</a></li> 
 			    </ul>	
-			    <a href="<?php echo home_url('/'); ?>registrate/"><h3 class="medium">¿Quieres ser parte de la Red PROLID?</h3></a>					    
+			    <h3 class="medium">¿Quieres ser parte de la Red PROLID?</h3>	
+			    <ul>
+				    <li><a href="<?php echo home_url('/'); ?>registrate/">Únete</a></li>
+			    </ul>	
+			    <a href="<?php echo home_url('/'); ?>terminos-y-condiciones/"><h3 class="medium">Términos y condiciones</h3></a>				    			    			    
 		    </div>	    		    	    		    
 	    </div>
 			<?php //if ( have_posts() ) : ?>
