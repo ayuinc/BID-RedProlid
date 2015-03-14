@@ -35,6 +35,16 @@
       <div class="col-sm-10 col-md-offset-1 with-hr pb-14 pl-0 pr-0 mt-14">  
 			  <h3 class="medium mb-0"><?php the_field('nombre_completo'); ?></h3>
 		    <?php the_field('contenido_punto_de_vista'); ?>
+        <div class="embed-responsive embed-responsive-16by9">
+          <?php $youtube = get_field('video_youtube_puntos_de_vista'); ?>
+          <?php if ($youtube!='') { ?>
+          	<iframe class="embed-responsive-item" width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('video_youtube_puntos_de_vista'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <?php } ?>
+          <?php $vimeo = get_field('video_vimeo_puntos_de_vista'); ?>
+          <?php if ($vimeo!='') { ?>
+          	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_puntos_de_vista'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <?php } ?>                      
+        </div>
 		    <div class="text-center mt-14">
 		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
 		    </div>   
