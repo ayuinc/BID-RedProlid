@@ -36,7 +36,7 @@ get_header(); ?>
 				<?php } ?>
 		    <?php $vimeo = get_field('video_vimeo'); ?>
 	    	<?php if ($vimeo!='') { ?>				
-					<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<iframe src="//player.vimeo.com/video/<?php the_field('video_video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				<?php } ?>
 				<div class="new-ribbon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/new-ribbon.png)"></div>
 			</div>

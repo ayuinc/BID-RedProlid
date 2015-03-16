@@ -47,7 +47,7 @@ get_header(); ?>
             <?php } ?>
             <?php $vimeo = get_field('video_vimeo'); ?>
             <?php if ($vimeo!='') { ?>        
-              <iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="220" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <iframe src="//player.vimeo.com/video/<?php the_field('video_video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="220" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             <?php } ?>
            </div>
            <div class="banner-content flex-none" style="min-height:12rem;">
