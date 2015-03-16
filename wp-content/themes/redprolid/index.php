@@ -29,7 +29,7 @@ get_header(); ?>
                   <div class="embed-responsive embed-responsive-16by9">
                     <?php $youtube = get_field('id_video_youtube_homepage'); ?>
                     <?php if ($youtube!='') { ?>
-                      <iframe class="embed-responsive-item" width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video_youtube_homepage'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                      <iframe class="embed-responsive-item" width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('id_video_youtube_homepage'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                     <?php } ?>
                     <?php $vimeo = get_field('id_video_vimeo_homepage'); ?>
                     <?php if ($vimeo!='') { ?>
