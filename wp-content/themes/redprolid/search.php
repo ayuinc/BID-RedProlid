@@ -63,8 +63,14 @@ get_header(); ?>
               <li>
                 <h4 class="medium m-0"><?php the_title(); ?></h4>
                 <?php $conte = (wp_get_post_terms(get_the_ID(),'country',array("fields" => "names"))[0]); ?>
-                <?php $tempDate = get_the_date(); ?>
-								<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>  
+                <?php if (is_category( '263' ;) { ?>
+                	<small>
+                		<strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?>
+                	</small>
+                <?php } else { ?>
+                	<?php $tempDate = get_the_date(); ?>
+									<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>  
+								<?php } ?>
                 <p class="m-0">
                   <?php 
                     // switch (true) {
@@ -108,7 +114,7 @@ get_header(); ?>
           <div class="text-center">
             <ul class="pager">
               <li><?php previous_posts_link( 'Siguientes' ); ?></li>
-              <li><?php next_posts_link( 'Posteriores' ); ?></li>
+              <li><?php next_posts_link( 'Anteriores' ); ?></li>
             </ul>
           </div>
 
