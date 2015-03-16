@@ -4,7 +4,6 @@ If you would like to edit this file, copy it to your current theme's directory a
 Theme My Login will always look in your theme's directory first, before using this default template.
 */
 ?>
-<?php wp_redirect( home_url('/recuperar-password/') ); exit; ?>
 <div class="login" id="theme-my-login<?php $template->the_instance(); ?>">
 	<?php $template->the_action_template_message( 'resetpass' ); ?>
 	<?php $template->the_errors(); ?>
@@ -33,5 +32,6 @@ Theme My Login will always look in your theme's directory first, before using th
 			<input type="hidden" name="action" value="resetpass" />
 		</p>
 	</form>
+	<?php wp_redirect( home_url('/recuperar-password/') ); exit; ?>
 	<?php $template->the_action_links( array( 'lostpassword' => false ) ); ?>
 </div>
