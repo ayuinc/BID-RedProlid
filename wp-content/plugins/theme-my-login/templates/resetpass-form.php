@@ -33,5 +33,5 @@ Theme My Login will always look in your theme's directory first, before using th
 		</p>
 	</form>
 	<?php $template->the_action_links( array( 'lostpassword' => false ) ); ?>
-	<?php wp_redirect( home_url('/thank-you/') ); exit; ?>
+	<?php wp_redirect( home_url('/recuperar-password/') ); exit; ?>
 </div>
