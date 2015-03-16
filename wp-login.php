@@ -536,7 +536,7 @@ case 'retrievepassword' :
 	 */
 	do_action( 'lostpassword_form' ); ?>
 	<input type="hidden" name="redirect_to" value="<?php echo esc_attr( $redirect_to ); ?>" />
-	<p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_attr_e('Get New Password'); ?>" /></p>
+	<p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="btn btn-primary" value="<?php esc_attr_e('Get New Password'); ?>" /></p>
 </form>
 
 <!--<p id="nav">-->
@@ -629,7 +629,7 @@ case 'rp' :
 	</p>
 
 	<div id="pass-strength-result" class="hide-if-no-js"><?php _e('Strength indicator'); ?></div>
-	<p class="description indicator-hint"><?php _e('Hint: The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! " ? $ % ^ &amp; ).'); ?></p>
+	<p class="description indicator-hint"><?php _e('Sugerencia: La contraseña debe tener al menos siete caracteres. Para hacerlo más fuerte, use letras mayúsculas y minúsculas, números y símbolos como ! " ? $ % ^ &amp; ).'); ?></p>
 
 	<br class="clear" />
 
