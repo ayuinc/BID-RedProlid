@@ -24,7 +24,7 @@ get_header(); ?>
           <div class="gallery js-flickity hidden-sm-down bg-panel border-radius p-21 bg-img-block bg-img-block-top bg-img-block-right" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png);" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
             <?php query_posts( 'category_name=video-homepage&posts_per_page=3' ); ?>  
             <?php while ( have_posts() ) : the_post(); ?>
-              <div class="grid-list-item gallery-cell clearfix minh-350">
+              <div class="grid-list-item gallery-cell clearfix minh-350" style="width: 100%;">
                 <div class="col-sm-7 minh-350 flex-middle">
                   <div class="embed-responsive embed-responsive-16by9">
                     <?php $youtube = get_field('id_video_youtube_homepage'); ?>
