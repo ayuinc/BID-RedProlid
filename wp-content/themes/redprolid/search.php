@@ -63,7 +63,7 @@ get_header(); ?>
               <li>
                 <h4 class="medium m-0"><?php the_title(); ?></h4>
                 <?php $conte = (wp_get_post_terms(get_the_ID(),'country',array("fields" => "names"))[0]); ?>
-                <?php $recursos_autor = get_field('recurso_autor'); ?>
+                <?php echo $recursos_autor = get_field('recurso_autor'); ?>
                 <?php if ($recursos_autor!='') { ?>
                 	<small>
                 		<strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?>
