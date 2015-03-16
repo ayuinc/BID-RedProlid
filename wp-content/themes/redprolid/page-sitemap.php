@@ -67,7 +67,7 @@ get_header(); ?>
 							    	<li><a href="<?php echo home_url('/'); ?>debates-anteriores/?categoria=la-pinta-no-es-lo-de-menos">Debates anteriores</a></li>
 						    	</ul>
 						    </li> 
-					    	<li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-tu-estilo/">A tu estilo</a>>
+					    	<li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-tu-estilo/">A tu estilo</a>
 						    	<ul>
 							    	<li><a href="<?php echo home_url('/'); ?>debates-anteriores/?categoria=a-tu-estilo">Debates anteriores</a></li>
 						    	</ul>
