@@ -28,7 +28,8 @@ function dlf_form() {
 	    <small>
 	    	<a href="<?php echo home_url('/'); ?>registrate/" class="light">Regístrate</a> 
 	    	<span>|</span> 
-	    	<a href="<?php echo wp_lostpassword_url( get_bloginfo('url') ); ?>" class="light"  title="Olvidé mi contraseña">Olvidé mi contraseña</a>
+	    	<!-- <a href="<?php echo wp_lostpassword_url( get_bloginfo('url') ); ?>" class="light"  title="Olvidé mi contraseña">Olvidé mi contraseña</a> -->
+	    	<?php echo do_shortcode('[[wppb-recover-password]'); ?>
 			</small>
 	  </div>
 	  <div class="col-xs-3">
