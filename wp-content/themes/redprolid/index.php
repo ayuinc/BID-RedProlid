@@ -21,51 +21,33 @@ get_header(); ?>
     <div class="mh-700">
       <section id="hero-unit">
         <div class="container pv-21">
-          <div id="carousel-home" class="hidden-sm-down carousel slide bg-panel border-radius p-21 bg-img-block bg-img-block-top bg-img-block-right" data-ride="carousel" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png);">
-            <!-- Indicators -->
-            <!-- <ol class="carousel-indicators">
-              <li data-target="#carousel-home" data-slide-to="0" class="active"></li> 
-            </ol> -->
-
-            <!-- Wrapper for slides -->
-          	<?php query_posts( 'category_name=video-homepage&posts_per_page=3' ); ?>	
-						<?php while ( have_posts() ) : the_post(); ?>  
-            <div class="carousel-inner">
-              <div class="item active">
-                <div class="row">
-                  <div class="col-sm-7 minh-350 flex-middle">
-                    <div class="embed-responsive embed-responsive-16by9">
-	                    <?php $youtube = get_field('id_video_youtube_homepage'); ?>
-	                    <?php if ($youtube!='') { ?>
-                      	<iframe class="embed-responsive-item" width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video_youtube_homepage'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                      <?php } ?>
-	                    <?php $vimeo = get_field('id_video_vimeo_homepage'); ?>
-	                    <?php if ($vimeo!='') { ?>
-                      	<iframe src="//player.vimeo.com/video/<?php the_field('id_video_vimeo_homepage'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                      <?php } ?>                      
+          <div class="gallery js-flickity hidden-sm-down bg-panel border-radius p-21 bg-img-block bg-img-block-top bg-img-block-right" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png);" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
+            <?php query_posts( 'category_name=video-homepage&posts_per_page=3' ); ?>  
+            <?php while ( have_posts() ) : the_post(); ?>
+              <div class="grid-list-item gallery-cell clearfix minh-350">
+                <div class="col-sm-7 minh-350 flex-middle">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <?php $youtube = get_field('id_video_youtube_homepage'); ?>
+                    <?php if ($youtube!='') { ?>
+                      <iframe class="embed-responsive-item" width="100%" height="350" src="//www.youtube.com/embed/<?php the_field('id_video_youtube_homepage'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <?php } ?>
+                    <?php $vimeo = get_field('id_video_vimeo_homepage'); ?>
+                    <?php if ($vimeo!='') { ?>
+                      <iframe src="//player.vimeo.com/video/<?php the_field('id_video_vimeo_homepage'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <?php } ?>                      
+                  </div>
+                </div>
+                <div class="col-sm-5 minh-350 flex-middle-end">
+                  <div class="slide-content relative">
+                    <h3 class="medium text-gray-dark"><span class="uppercase"><?php the_title(); ?></h3>
+                    <hr class="hr-white">
+                    <div class="text-right">
+                      <a href="<?php the_field('link_contenido_homepage'); ?>" class="btn btn-outline btn-white">Más aquí</a>
                     </div>
                   </div>
-                  <div class="col-sm-5 minh-350 flex-middle-end">
-                    <div class="slide-content relative">
-                      <h3 class="medium text-gray-dark"><span class="uppercase"><?php the_title(); ?></h3>
-                      <hr class="hr-white">
-                      <div class="text-right">
-                        <a href="<?php the_field('link_contenido_homepage'); ?>" class="btn btn-outline btn-white">Más aquí</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>          
+                </div>
               </div>
-            </div>
-						<?php endwhile; ?> 
-						
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
-              <span class="icon-prev"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
-              <span class="icon-next"></span>
-            </a>
+            <?php endwhile; ?> 
           </div>
           <h2 class="text-center pt-21"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
         </div>
