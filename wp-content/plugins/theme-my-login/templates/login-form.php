@@ -6,6 +6,7 @@ Theme My Login will always look in your theme's directory first, before using th
 ?>
 
 	<?php //header( "Location: http://redprolid.org/te-hemos-registrado-con-exito/" ); ?>
+	<?php wp_redirect( home_url('/te-hemos-registrado-con-exito/') ); exit; ?>
 
 	<div class="row">
 		<div class="container-sm">
