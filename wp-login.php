@@ -517,7 +517,7 @@ case 'retrievepassword' :
 	 */
 	do_action( 'lost_password' );
 
-	login_header(__('Lost Password'), '<p class="message">' . __('Introduzca su nombre de usuario o su correo electrónico. Recibiras un enlace para crear una nueva contraseña por correo electrónico.') . '</p>', $errors);
+	login_header(__('Lost Password'), '<p class="message">' . __('Por favor, escribe tu nombre de usuario o usuaria, o tu correo electrónico. Recibiras un enlace para crear una nueva contraseña por correo electrónico.') . '</p>', $errors);
 
 	$user_login = isset($_POST['user_login']) ? wp_unslash($_POST['user_login']) : '';
 
