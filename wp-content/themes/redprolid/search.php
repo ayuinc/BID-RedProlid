@@ -72,7 +72,7 @@ get_header(); ?>
                 	</p>
                 <?php } else { ?>
                 	<?php $tempDate = get_the_date(); ?>
-									<small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>  
+									<p><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>  
 								<?php } ?>
                 <p class="m-0">
                   <?php 
