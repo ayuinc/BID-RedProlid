@@ -423,6 +423,7 @@ add_filter('pre_get_posts','SearchFilter');
 
 function __my_registration_redirect()
 {
+  die();
     return home_url( '/te-hemos-registrado-con-exitos' );
 }
 add_filter( 'registration_redirect', '__my_registration_redirect' );
