@@ -25,7 +25,7 @@ Theme My Login will always look in your theme's directory first, before using th
 		<?php do_action( 'resetpassword_form' ); ?>
 
 		<p class="submit">
-			<input type="submit" name="wp-submit" id="wp-submit<?php $template->the_instance(); ?>" value="<?php esc_attr_e( 'Reset Password' ); ?>" />
+			<input type="submit" name="wp-submit" id="wp-submit<?php $template->the_instance(); ?>" value="<?php esc_attr_e( 'Reset Password' ); ?>" onsubmit="window.location.href='http://redprolid.org/recuperar-password/';" />
 			<input type="hidden" name="key" value="<?php $template->the_posted_value( 'key' ); ?>" />
 			<input type="hidden" name="login" id="user_login" value="<?php $template->the_posted_value( 'login' ); ?>" />
 			<input type="hidden" name="instance" value="<?php $template->the_instance(); ?>" />
@@ -33,9 +33,4 @@ Theme My Login will always look in your theme's directory first, before using th
 		</p>
 	</form>
 	<?php $template->the_action_links( array( 'lostpassword' => false ) ); ?>
-	<script type="text/javascript">
-		<!--
-		   window.location="http://redprolid.org/recuperar-password/";
-		//-->
-	</script>
 </div>
