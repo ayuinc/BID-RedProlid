@@ -22,7 +22,7 @@ Theme My Login will always look in your theme's directory first, before using th
 
 		<p class="description indicator-hint"><?php _e( 'Hint: The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers and symbols like ! " ? $ % ^ &amp; ).' ); ?></p>
 
-		<?php do_action( 'resetpassword_form' ); ?>
+		<?php //do_action( 'resetpassword_form' ); ?>
 
 		<p class="submit">
 			<input type="submit" name="wp-submit" id="wp-submit<?php $template->the_instance(); ?>" value="<?php esc_attr_e( 'Reset Password' ); ?>" />
