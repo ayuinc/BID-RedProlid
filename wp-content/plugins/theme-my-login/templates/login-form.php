@@ -43,4 +43,4 @@ Theme My Login will always look in your theme's directory first, before using th
 	<?php $template->the_action_links( array( 'login' => false ) ); ?>
 </div>
 
-	<?php //wp_redirect( home_url('/te-hemos-registrado-con-exito/') ); exit; ?>
+	<?php wp_redirect( home_url('/te-hemos-registrado-con-exito/') ); exit; ?>
