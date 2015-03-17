@@ -129,7 +129,7 @@ Theme My Login will always look in your theme's directory first, before using th
 			<td><input type="password" name="pass1" id="pass1" size="16" value="" autocomplete="off" /> <span class="description"><?php _e( 'If you would like to change the password type a new one. Otherwise leave this blank.' ); ?></span><br />
 				<input type="password" name="pass2" id="pass2" size="16" value="" autocomplete="off" /> <span class="description"><?php _e( 'Type your new password again.' ); ?></span><br />
 				<div id="pass-strength-result"><?php _e( 'Strength indicator', 'theme-my-login' ); ?></div>
-				<p class="description indicator-hint"><?php _e( 'Hint: The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers and symbols like ! " ? $ % ^ &amp; ).' ); ?></p>
+				<p class="description indicator-hint"><?php _e( 'Sugerencia: La contraseña debe tener al menos siete caracteres. Para hacerlo más fuerte, utilizar letras mayúsculas y minúsculas, números y símbolos como! ? "$% ^ & Amp;).' ); ?></p>
 			</td>
 		</tr>
 		<?php endif; ?>
