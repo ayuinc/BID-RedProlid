@@ -426,4 +426,12 @@ function __my_registration_redirect()
     return home_url( '/te-hemos-registrado-con-exitos' );
 }
 add_filter( 'registration_redirect', '__my_registration_redirect' );
+
+/*** Forcing redirect to $_SESSION['specific_referer'] after registration & login in OneAll Social Login ***/
+add_filter('oa_social_login_filter_registration_redirect_url', 'my_login_registration_redirect_filter', 10, 2);
+add_filter('oa_social_login_filter_login_redirect_url', 'my_login_registration_redirect_filter', 10, 2);
+function my_login_registration_redirect_filter ($url, $user_data)
+{
+  return die(print_r($_SESSION['specific_referer']));
+}
 ?>
