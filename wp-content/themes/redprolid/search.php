@@ -66,7 +66,9 @@ get_header(); ?>
                 <?php echo $recursos_autor = get_field('recurso_autor'); ?>
                 <?php if ($recursos_autor!='') { ?>
                 	<small>
-                		<strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?>
+                		<?php $recurso_autor = get_field('recurso_autor'); ?>
+										<?php if ($recurso_autor) { ?>
+                		<strong>Autor: <?php the_field('recurso_autor'); ?></strong>,<?php } ?> <?php the_field('recurso_año_de_publicacion'); ?>
                 	</small>
                 <?php } else { ?>
                 	<?php $tempDate = get_the_date(); ?>
