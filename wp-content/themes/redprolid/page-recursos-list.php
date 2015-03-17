@@ -71,7 +71,7 @@ get_header(); ?>
 		          <p>
 			          <?php $recurso_autor = get_field('recurso_autor'); ?>
 			          <?php if ($recurso_autor) { ?>
-					      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>,<?php } ?><?php the_field('recurso_año_de_publicacion'); ?> 
+					      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>,<?php } ?> <?php the_field('recurso_año_de_publicacion'); ?> 
 		  				</p>               
             </div>
             <div class="content mb-7">
