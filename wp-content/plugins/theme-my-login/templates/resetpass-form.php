@@ -20,7 +20,7 @@ Theme My Login will always look in your theme's directory first, before using th
 
 		<div id="pass-strength-result" class="hide-if-no-js"><?php _e( 'Strength indicator' ); ?></div>
 
-		<p class="description indicator-hint"><?php _e( 'Hint: The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers and symbols like ! " ? $ % ^ &amp; ).' ); ?></p>
+		<p class="description indicator-hint"><?php _e( 'Sugerencia: La contraseña debe tener al menos siete caracteres. Para hacerlo más fuerte, utilizar letras mayúsculas y minúsculas, números y símbolos como! ? "$% ^ & Amp;).' ); ?></p>
 
 		<?php do_action( 'resetpassword_form' ); ?>
 
