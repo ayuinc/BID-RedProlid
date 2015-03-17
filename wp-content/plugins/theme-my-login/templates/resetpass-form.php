@@ -7,7 +7,7 @@ Theme My Login will always look in your theme's directory first, before using th
 <div class="login" id="theme-my-login<?php $template->the_instance(); ?>">
 	<?php $template->the_action_template_message( 'resetpass' ); ?>
 	<?php $template->the_errors(); ?>
-	<form name="resetpasswordform" id="resetpasswordform<?php $template->the_instance(); ?>" action="<?php $template->the_action_url( 'resetpass' ); ?>" method="post" onsubmit="window.location.href='http://redprolid.org/recuperar-password/';">
+	<form name="resetpasswordform" id="resetpasswordform<?php $template->the_instance(); ?>" action="<?php $template->the_action_url( 'resetpass' ); ?>" method="post" onsubmit="redirect()">
 		<p>
 			<label for="pass1<?php $template->the_instance(); ?>"><?php _e( 'New password' ); ?></label>
 			<input autocomplete="off" name="pass1" id="pass1<?php $template->the_instance(); ?>" class="input" size="20" value="" type="password" autocomplete="off" />
@@ -33,4 +33,9 @@ Theme My Login will always look in your theme's directory first, before using th
 		</p>
 	</form>
 	<?php $template->the_action_links( array( 'lostpassword' => false ) ); ?>
+	<script>
+		function redirect(){
+			window.location.href='http://redprolid.org/recuperar-password/';
+		}
+	</script>
 </div>
