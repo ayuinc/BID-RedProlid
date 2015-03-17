@@ -50,7 +50,7 @@ get_header(); ?>
         <div class="col-sm-10">
 	        <?php $resultado = $_GET['s']; ?>
 	        <?php if ($resultado!='') { ?>
-          <ol>
+          <ul>
 
             <?php 
             // the query to set the posts per page to 10
@@ -112,7 +112,7 @@ get_header(); ?>
               </li>
               <?php endwhile; ?>
             <?php endif; ?> 
-          </ol>
+          </ul>
 
           <div class="text-center">
             <ul class="pager">
