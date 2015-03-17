@@ -69,7 +69,9 @@ get_header(); ?>
             <div class="title">
               <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 		          <p>
-					      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
+			          <?php $recurso_autor = get_field('recurso_autor'); ?>
+			          <?php if ($recurso_autor) { ?>
+					      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>,<?php } ?><?php the_field('recurso_año_de_publicacion'); ?> 
 		  				</p>               
             </div>
             <div class="content mb-7">
