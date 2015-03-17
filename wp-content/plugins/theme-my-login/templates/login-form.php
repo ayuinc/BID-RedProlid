@@ -3,7 +3,7 @@
 If you would like to edit this file, copy it to your current theme's directory and edit it there.
 Theme My Login will always look in your theme's directory first, before using this default template.
 */
-?>
+die();?>
 
 	<?php //header( "Location: http://redprolid.org/te-hemos-registrado-con-exito/" ); ?>
 
