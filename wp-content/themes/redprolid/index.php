@@ -44,6 +44,10 @@ get_header(); ?>
                 <div class="col-sm-5 minh-350 flex-middle-end">
                   <div class="slide-content relative">
                     <h3 class="medium text-gray-dark"><span class="uppercase"><?php the_title(); ?></h3>
+                    <?php $descripcion_home_campeonas = get_field('descripcion_home_campeonas'); ?>
+                    <?php if ($descripcion_home_campeonas!='') { ?>
+                    	<p><?php the_field('descripcion_home_campeonas'); ?></p>
+                    <?php } ?>
                     <hr class="hr-white">
                     <div class="text-right">
                       <?php $link_contenido_homepage = get_field('link_contenido_homepage'); ?>
