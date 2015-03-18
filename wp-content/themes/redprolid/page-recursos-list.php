@@ -72,7 +72,7 @@ get_header(); ?>
 			          <?php $coma = 0; ?>
 			          <?php $recurso_autor = get_field('recurso_autor'); ?>
 								<?php if ($recurso_autor!='') { ?>
-            		<strong>Autor: <?php the_field('recurso_autor'); ?></strong><?php } ?><?php $recurso_ano_de_publicacion = get_field('recurso_año_de_publicacion'); ?><?php if ($recurso_ano_de_publicacion!='') { ?><?php if ($coma==1) { ?>, <?php } ?> <?php the_field('recurso_año_de_publicacion'); ?><?php } ?>
+            		<strong>Autor: <?php the_field('recurso_autor'); ?></strong><?php $coma++; ?><?php } ?><?php $recurso_ano_de_publicacion = get_field('recurso_año_de_publicacion'); ?><?php if ($recurso_ano_de_publicacion!='') { ?><?php if ($coma==1) { ?>, <?php } ?> <?php the_field('recurso_año_de_publicacion'); ?><?php } ?>
 		  				</p>               
             </div>
             <div class="content mb-7">
