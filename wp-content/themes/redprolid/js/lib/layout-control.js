@@ -2,9 +2,13 @@
 (function() {
   'use-strict';
   $(document).ready(function() {
-    var pgwbrowser;
-    pgwbrowser = $.pgwbrowser();
-    console.log(pgwbrowser);
+    var isIE, pgwBrowser;
+    pgwBrowser = $.pgwBrowser();
+    console.log(pgwBrowser);
+    isIE = pgwBrowser['browser']['name'] === 'Internet Explorer' || 'IEMobile' ? true : false;
+    if (isIE) {
+      $('.site-wrapper').addClass('ie');
+    }
   });
 
 }).call(this);
