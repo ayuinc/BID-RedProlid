@@ -37,7 +37,7 @@ get_header(); ?>
                     <?php } ?>
                     <?php $imagen_campeonas = get_field('imagen_campeonas'); ?>
                     <?php if ($imagen_campeonas!='') { ?>
-                      <img src="<?php the_field('imagen_campeonas'); ?>" alt="" width="100%">
+                      <img src="<?php the_field('imagen_campeonas'); ?>" alt="" width="" height="420">
                     <?php } ?>                     
                   </div>
                 </div>
