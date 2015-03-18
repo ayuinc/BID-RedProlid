@@ -35,7 +35,10 @@ get_header(); ?>
                     <?php if ($vimeo!='') { ?>
                       <iframe src="//player.vimeo.com/video/<?php the_field('id_video_vimeo_homepage'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <?php } ?>
-                    <img src="<?php the_field('imagen_campeonas'); ?>" alt="">                     
+                    <?php $imagen_campeonas = get_field('imagen_campeonas'); ?>
+                    <?php if ($imagen_campeonas!='') { ?>
+                      <img src="<?php the_field('imagen_campeonas'); ?>" alt="" width="100%">
+                    <?php } ?>                     
                   </div>
                 </div>
                 <div class="col-sm-5 minh-350 flex-middle-end">
@@ -43,7 +46,12 @@ get_header(); ?>
                     <h3 class="medium text-gray-dark"><span class="uppercase"><?php the_title(); ?></h3>
                     <hr class="hr-white">
                     <div class="text-right">
-                      <a href="<?php the_field('link_contenido_homepage'); ?>" class="btn btn-outline btn-white">Más aquí</a>
+                      <?php $link_contenido_homepage = get_field('link_contenido_homepage'); ?>
+                      <?php if ($link_contenido_homepage!='') { ?>
+                        <a href="<?php the_field('link_contenido_homepage'); ?>" class="btn btn-outline btn-white">Más aquí</a>
+                      <?php } else  { ?>
+                        <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-outline btn-white">Más aquí</a>
+                      <?php } ?>
                     </div>
                   </div>
                 </div>
