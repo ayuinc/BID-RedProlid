@@ -35,8 +35,7 @@ get_header(); ?>
                     <?php if ($vimeo!='') { ?>
                       <iframe src="//player.vimeo.com/video/<?php the_field('id_video_vimeo_homepage'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <?php } ?>
-                    <img src="<?php the_field('magen_campeonas'); ?>" alt="">  
-                    <h2><?php the_title(); ?></h2>                   
+                    <img src="<?php the_field('imagen_campeonas'); ?>" alt="">                     
                   </div>
                 </div>
                 <div class="col-sm-5 minh-350 flex-middle-end">
