@@ -22,21 +22,19 @@ get_header(); ?>
       <section id="hero-unit">
         <div class="container pv-21">
           <div class="gallery js-flickity hidden-sm-down bg-panel border-radius p-21 bg-img-block bg-img-block-top bg-img-block-right" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png);" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 6000 }'>
-            <?php query_posts( 'category_name=campeonas&posts_per_page=5' ); ?>  
+            <?php query_posts( 'category_name=video-homepage&posts_per_page=5' ); ?>  
             <?php while ( have_posts() ) : the_post(); ?>
               <div class="grid-list-item gallery-cell clearfix minh-350" style="width: 100%;">
                 <div class="col-sm-7 minh-350 flex-middle">
                   <div class="embed-responsive embed-responsive-16by9">
-                    <?php //$youtube = get_field('id_video_youtube_homepage'); ?>
-                    <?php //if ($youtube!='') { ?>
-                      <!-- <iframe class="embed-responsive-item" width="100%" height="420" src="//www.youtube.com/embed/<?php //the_field('id_video_youtube_homepage'); ?>?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-                    <?php //} ?>
-                    <?php //$vimeo = get_field('id_video_vimeo_homepage'); ?>
-                    <?php //if ($vimeo!='') { ?>
-                      <!-- <iframe src="//player.vimeo.com/video/<?php //the_field('id_video_vimeo_homepage'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
-                    <?php //} ?>
-                    <img src="<?php the_field('magen_campeonas'); ?>" alt="">  
-                    <h2><?php the_title(); ?></h2>                   
+                    <?php $youtube = get_field('id_video_youtube_homepage'); ?>
+                    <?php if ($youtube!='') { ?>
+                      <iframe class="embed-responsive-item" width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('id_video_youtube_homepage'); ?>?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <?php } ?>
+                    <?php $vimeo = get_field('id_video_vimeo_homepage'); ?>
+                    <?php if ($vimeo!='') { ?>
+                      <iframe src="//player.vimeo.com/video/<?php the_field('id_video_vimeo_homepage'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <?php } ?>                      
                   </div>
                 </div>
                 <div class="col-sm-5 minh-350 flex-middle-end">
