@@ -3,30 +3,18 @@
 */
 .site-wrapper { 
 	&.ie {
-		.flex-middle,
-		.flex-middle-center,
+		// .flex-middle,
+		// .flex-middle-center,
 		.flex-middle-end,
 		.flex-space-between {
+			@include clearfix;
 			position: relative;
-			div {
-				position: absolute;
-				width: 100%;
-			}
-		}
-		.flex-middle {
-			div {
-				top: 45%;
-			}
-		}
-		.flex-middle-center {
-			div {
-				top: 45%;
-				left: 30%;
-			}
-		}
+		}		
 		.flex-middle-end {
 			div {
-				bottom: 0;
+				position: absolute;
+				width: 98%;
+				bottom: $container-fluid;
 				left: 0;
 				right: 0;
 			}

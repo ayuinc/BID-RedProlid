@@ -5,7 +5,7 @@
     var isIE, pgwBrowser;
     pgwBrowser = $.pgwBrowser();
     console.log(pgwBrowser);
-    isIE = pgwBrowser['browser']['group'] === 'Chrome' ? true : false;
+    isIE = pgwBrowser['browser']['group'] === 'Explorer' ? true : false;
     if (isIE) {
       $('.site-wrapper').addClass('ie');
     }
