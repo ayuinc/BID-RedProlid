@@ -5361,6 +5361,34 @@ header {
   -o-transform: translateX(0px);
   transform: translateX(0px); }
 
+/*
+	IE Control
+*/
+.site-wrapper.ie .flex-middle,
+.site-wrapper.ie .flex-middle-center,
+.site-wrapper.ie .flex-middle-end,
+.site-wrapper.ie .flex-space-between {
+  position: relative; }
+  .site-wrapper.ie .flex-middle div,
+  .site-wrapper.ie .flex-middle-center div,
+  .site-wrapper.ie .flex-middle-end div,
+  .site-wrapper.ie .flex-space-between div {
+    position: absolute;
+    width: 100%; }
+.site-wrapper.ie .flex-middle div {
+  top: 45%; }
+.site-wrapper.ie .flex-middle-center div {
+  top: 45%;
+  left: 30%; }
+.site-wrapper.ie .flex-middle-end div {
+  bottom: 0;
+  left: 0;
+  right: 0; }
+.site-wrapper.ie .flex-space-between .left {
+  float: left; }
+.site-wrapper.ie .flex-space-between .right {
+  float: right; }
+
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,
