@@ -5361,6 +5361,31 @@ header {
   -o-transform: translateX(0px);
   transform: translateX(0px); }
 
+/*
+	IE Control
+*/
+.site-wrapper.ie .flex-middle-end,
+.site-wrapper.ie .flex-space-between {
+  position: relative; }
+  .site-wrapper.ie .flex-middle-end:before, .site-wrapper.ie .flex-middle-end:after,
+  .site-wrapper.ie .flex-space-between:before,
+  .site-wrapper.ie .flex-space-between:after {
+    content: " ";
+    display: table; }
+  .site-wrapper.ie .flex-middle-end:after,
+  .site-wrapper.ie .flex-space-between:after {
+    clear: both; }
+.site-wrapper.ie .flex-middle-end div {
+  position: absolute;
+  width: 98%;
+  bottom: 10.5px;
+  left: 0;
+  right: 0; }
+.site-wrapper.ie .flex-space-between .left {
+  float: left; }
+.site-wrapper.ie .flex-space-between .right {
+  float: right; }
+
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,

@@ -60,15 +60,16 @@ get_header(); ?>
 
             <?php if ( have_posts() ) : ?>
               <?php while ( have_posts() ) : the_post(); ?>
-              <li>
+              <li class="list-unstyled">
                 <h4 class="medium m-0"><?php the_title(); ?></h4>
                 <?php $conte = (wp_get_post_terms(get_the_ID(),'country',array("fields" => "names"))[0]); ?>
                 <?php $recursos_autor = get_field('recurso_autor'); ?>
                 <?php if ($recursos_autor!='') { ?>
                 	<p>
+	                	<?php $coma = 0; ?>
                 		<?php $recurso_autor = get_field('recurso_autor'); ?>
 										<?php if ($recurso_autor!='') { ?>
-                		<strong>Autor: <?php the_field('recurso_autor'); ?></strong><?php } ?><?php $recurso_ano_de_publicacion = get_field('recurso_año_de_publicacion'); ?><?php if ($recurso_ano_de_publicacion!='') { ?>, <?php the_field('recurso_año_de_publicacion'); ?><?php } ?>
+                		<strong>Autor: <?php the_field('recurso_autor'); ?></strong><?php $coma++; ?><?php } ?><?php $recurso_ano_de_publicacion = get_field('recurso_año_de_publicacion'); ?><?php if ($recurso_ano_de_publicacion!='') { ?><?php if ($coma==1) { ?>, <?php } ?><?php the_field('recurso_año_de_publicacion'); ?><?php } ?>
                 	</p>
                 <?php } else { ?>
                 	<?php $tempDate = get_the_date(); ?>
@@ -116,8 +117,8 @@ get_header(); ?>
 
           <div class="text-center">
             <ul class="pager">
-              <li><?php previous_posts_link( 'Anteriores' ); ?></li>
-              <li><?php next_posts_link( 'Siguientes' ); ?></li>
+              <li><?php previous_posts_link( 'Siguientes' ); ?></li>
+              <li><?php next_posts_link( 'Anteriores' ); ?></li>
             </ul>
           </div>
 
