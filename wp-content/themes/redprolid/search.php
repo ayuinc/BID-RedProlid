@@ -60,7 +60,7 @@ get_header(); ?>
 
             <?php if ( have_posts() ) : ?>
               <?php while ( have_posts() ) : the_post(); ?>
-              <li>
+              <li class="list-unstyled">
                 <h4 class="medium m-0"><?php the_title(); ?></h4>
                 <?php $conte = (wp_get_post_terms(get_the_ID(),'country',array("fields" => "names"))[0]); ?>
                 <?php $recursos_autor = get_field('recurso_autor'); ?>
