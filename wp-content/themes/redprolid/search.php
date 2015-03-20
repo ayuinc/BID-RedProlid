@@ -117,8 +117,8 @@ get_header(); ?>
 
           <div class="text-center">
             <ul class="pager">
-              <li><?php previous_posts_link( 'Anteriores' ); ?></li>
               <li><?php next_posts_link( 'Siguientes' ); ?></li>
+              <li><?php previous_posts_link( 'Anteriores' ); ?></li>
             </ul>
           </div>
 
