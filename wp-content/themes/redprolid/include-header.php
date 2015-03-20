@@ -25,7 +25,8 @@
               echo '</div>';
 							
 							if ( ($current_user instanceof WP_User) ) {
-							    echo get_avatar( $current_user->user_avatar, 32 );
+                  //print_r($current_user);
+							    echo get_avatar( $current_user->ID);
 							}              
 
             } else {
