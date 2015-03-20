@@ -221,12 +221,10 @@ class Profile_Builder_Form_Creator{
 
                         switch ( $account_management_settings ){
                             case 'ec-no_aa-no':
-                                //$wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "La cuenta %1s se ha creado con éxito!", 'profilebuilder' ), $account_name ), $account_name );
-                                header('Location: http://redprolid.org/registro-confirmacion/');
+                                $wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "La cuenta %1s se ha creado con éxito!", 'profilebuilder' ), $account_name ), $account_name );
                                 break;
                             case 'ec-yes_aa-no':
-                            		header('Location: http://redprolid.org/registro-confirmacion/');
-                                //$wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "%1s antes de que puedas acceder a tu cuenta, es necesario confirmar tu dirección de correo electrónico. Por favor revisa tu correo y haz clic en el enlace de activación.", 'profilebuilder' ), $account_name ), $account_name );
+                                $wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "%1s antes de que puedas acceder a tu cuenta, es necesario confirmar tu dirección de correo electrónico. Por favor revisa tu correo y haz clic en el enlace de activación.", 'profilebuilder' ), $account_name ), $account_name );
                                 break;
                             case 'ec-no_aa-yes':
                                 $wppb_register_success_message = apply_filters( 'wppb_register_success_message', sprintf( __( "Before you can access your account %1s, an administrator has to approve it. You will be notified via email.", 'profilebuilder' ), $account_name ), $account_name );

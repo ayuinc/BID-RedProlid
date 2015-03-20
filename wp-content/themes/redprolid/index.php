@@ -263,7 +263,8 @@ get_header(); ?>
                   <ul class="list-unstyled list-group list-group-custom">
                     <?php
                     $args = array(
-                      'number' => '2'
+                      'number' => '3',
+                      'status' => 'approve'
                     );
                     $comments = get_comments($args);?>
 
