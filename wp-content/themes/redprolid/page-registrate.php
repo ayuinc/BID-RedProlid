@@ -16,6 +16,9 @@ get_header(); ?>
 		width: 68% !important;
 		font-size: 0.8rem !important;
 	}
+	#wppb-form-element-21{
+		display: none !important;
+	}
 </style>
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
