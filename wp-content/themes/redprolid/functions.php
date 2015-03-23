@@ -423,9 +423,9 @@ function SearchFilter($query) {
 }
 add_filter('pre_get_posts','SearchFilter');
 
-function wsl_redirect_to( $redirect_to ) {
-  //$user = get_user_by( 'email', 'user@example.com' );
-  return '#comments';
-}
-add_filter( 'wsl_hook_process_login_alter_redirect_to', 'wsl_redirect_to', 10, 1 );
+// function wsl_redirect_to( $redirect_to ) {
+//   //$user = get_user_by( 'email', 'user@example.com' );
+//   return '#comments';
+// }
+// add_filter( 'wsl_hook_process_login_alter_redirect_to', 'wsl_redirect_to', 10, 1 );
 ?>
