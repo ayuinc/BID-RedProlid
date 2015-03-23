@@ -12,9 +12,9 @@ get_header(); ?>
 <?php //query_posts( 'category_name=puntos-de-vista' ); ?> 
 
 <style>
-	input[type="text"].custom_field_upload{
-		width: 68%;
-		font-size: 0.8rem;
+	.custom_field_upload{
+		width: 68% !important;
+		font-size: 0.8rem !important;
 	}
 </style>
 	<?php if ( have_posts() ) : ?>
