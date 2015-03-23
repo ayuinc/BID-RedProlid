@@ -270,8 +270,8 @@ get_header(); ?>
 
                     <?php foreach ($comments as $comment) : ?>
                       <li class="mb-14">
-                        <?php print_r($comment); ?>
                         <p class="light"><?php echo($comment->comment_content);?></p>
+                        <small class="date light"><?php echo get_the_title( $comment->comment_post_ID ); ?></small>
                         <small class="date light"><?php echo($comment->comment_date);?> | <?php echo($comment->comment_author);?></small> 
                       </li>
                     <?php endforeach;?>
