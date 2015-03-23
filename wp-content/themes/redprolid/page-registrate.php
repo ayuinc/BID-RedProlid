@@ -16,7 +16,7 @@ get_header(); ?>
 		width: 68% !important;
 		font-size: 0.8rem !important;
 	}
-	#wppb-form-element-21{
+	.wppb-send-credentials-checkbox{
 		display: none !important;
 	}
 </style>
