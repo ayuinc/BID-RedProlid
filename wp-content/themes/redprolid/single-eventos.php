@@ -5,7 +5,7 @@
     <div class="clearfix sub-header">
       <div class="col-sm-12 col-xs-12 with-hr pv-0 mv-0">
         <nav class="text-right text-center-xs">
-          <a href="<?php echo home_url('/'); ?>eventos-anteriores">Eventos anteriores</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>eventos">Eventos</a> <!--<span class="text-primary"> </span> <?php previous_post_link('%link', '| Ve eventos anteriores', TRUE); ?>  <?php next_post_link( '%link', '| Ve próximos eventos', TRUE ); ?>-->
+           <a href="<?php echo home_url('/'); ?>eventos">Eventos</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>eventos-anteriores">Eventos anteriores</a><!--<span class="text-primary"> </span> <?php previous_post_link('%link', '| Ve eventos anteriores', TRUE); ?>  <?php next_post_link( '%link', '| Ve próximos eventos', TRUE ); ?>-->
         </nav>          
       </div>
     </div>
