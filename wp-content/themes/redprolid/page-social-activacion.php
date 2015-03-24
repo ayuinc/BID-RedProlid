@@ -18,7 +18,7 @@ get_header(); ?>
 	    	<div class="row pv-49">
 					<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ) : the_post(); ?>		    	
-		    		<div class="col-sm-8 col-sm-offset-2">
+		    		<div class="col-sm-12">
 			    		<h3 class="medium text-center mt-35">Hemos recibido tu información</h3>
 			    		<p>Por favor llena el siguiente formulario:</p>
 			    		<div class="text-left">
