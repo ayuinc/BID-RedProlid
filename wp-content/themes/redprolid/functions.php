@@ -426,7 +426,7 @@ add_filter('pre_get_posts','SearchFilter');
 function wsl_redirect_to( $redirect_to ) {
   //$user = get_user_by( 'email', 'user@example.com' );
   // die(print_r($redirect_to));
-  $user = wsl_process_login_end();
+  $user = do_action( "wsl_process_login_end_start" );
   die(print_r($user));
   return '#comments';
 }
