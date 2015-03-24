@@ -54,9 +54,9 @@ function dlf_auth( $username, $password ) {
 	}
 
 	if ( !is_wp_error($user) ) {
-		$actual_link = "$_SERVER[REQUEST_URI]";
+		// $actual_link = "$_SERVER[REQUEST_URI]";
 
-		wp_redirect(home_url($actual_link));
+		wp_redirect(home_url());
 
 	}
 }

@@ -271,6 +271,7 @@ get_header(); ?>
                     <?php foreach ($comments as $comment) : ?>
                       <li class="mb-14">
                         <p class="light"><?php echo($comment->comment_content);?></p>
+                        <small class="date light"><a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo get_the_title( $comment->comment_post_ID ); ?></a></small></br>
                         <small class="date light"><?php echo($comment->comment_date);?> | <?php echo($comment->comment_author);?></small> 
                       </li>
                     <?php endforeach;?>

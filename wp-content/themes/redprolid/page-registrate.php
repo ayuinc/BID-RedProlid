@@ -11,7 +11,15 @@ get_header(); ?>
 <?php get_template_part( 'include', 'nav' ); ?>
 <?php //query_posts( 'category_name=puntos-de-vista' ); ?> 
 
-
+<style>
+	.custom_field_upload{
+		width: 68% !important;
+		font-size: 0.8rem !important;
+	}
+	.wppb-send-credentials-checkbox{
+		display: none !important;
+	}
+</style>
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 		<section class="mt-7"> 
