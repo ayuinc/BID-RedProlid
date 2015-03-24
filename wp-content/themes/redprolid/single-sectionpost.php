@@ -4,7 +4,7 @@
       <div class="col-sm-9 pt-35">
         <div class="title">
           <h3><?php the_title(); ?></h3>
-          <p>FUENTE: <?php the_field('fuente-debates'); ?></p>
+          <p>FUENTE: ss<?php the_field('fuente-debates'); ?></p>
           <span>Blog: <?php the_field('blog-debates'); ?></span>
         </div>
         <div class="content">
