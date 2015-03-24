@@ -22,9 +22,10 @@ get_header(); ?>
 			    		<h3 class="medium text-center mt-35">Hemos recibido tu información</h3>
 			    		<p>Por favor llena el siguiente formulario:</p>
 			    		<div class="text-left">
-			      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
-								<?php ninja_forms_display_form( 15 ); ?>
-							<?php } ?>
+			      	<?php //if( function_exists( 'ninja_forms_display_form' ) ) { ?>
+								<?php //ninja_forms_display_form( 15 ); ?>
+							<?php //} ?>
+							<?php the_content(); ?>
 			    		</div>
 		    		</div>
 						<?php endwhile; ?>
