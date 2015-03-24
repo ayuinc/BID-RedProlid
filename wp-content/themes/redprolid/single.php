@@ -10,11 +10,13 @@ get_header(); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
 
+
 <div>
   <?php
     $post = $wp_query->post;
     $cat = get_the_category($post->id);
-    
+		$home_url = home_url('/'); 
+		   
     if ( $cat[0]->slug == 'puntos-de-vista' ) {
       get_template_part( 'single-puntosdevista' );
     }
@@ -37,7 +39,7 @@ get_header(); ?>
 
     elseif ( $cat[0]->slug == 'listas-para-la-politica' ) {
       //get_template_part( 'single-sectionpost' );
-      header("Location: http://redprolid.org/desarrolla-tu-liderazgo/listas-para-la-politica/");
+      header("Location: '.$home_url.'desarrolla-tu-liderazgo/listas-para-la-politica/");
     }
 
     elseif ( $cat[0]->slug == 'nivelando-la-cancha' ) {
