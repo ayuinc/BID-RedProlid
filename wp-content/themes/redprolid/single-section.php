@@ -33,7 +33,7 @@ foreach( $customposts as $post ) :  // start you custom loop
     <?php $vimeo = get_field('debate_imagen'); ?>
   	<?php if ($vimeo!='') { ?>		
   	<div class="pv-21">	
-			<img src="<?php the_field('debate_imagen'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
+			<img src="<?php the_field('debate_imagen'); ?>" alt="<?php the_title(); ?>" class="img-responsive" width="100%">
 		</div> 		
 		<?php } ?>		
         
