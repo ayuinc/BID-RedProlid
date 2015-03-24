@@ -36,7 +36,8 @@ get_header(); ?>
     }
 
     elseif ( $cat[0]->slug == 'listas-para-la-politica' ) {
-      get_template_part( 'single-sectionpost' );
+      //get_template_part( 'single-sectionpost' );
+      header("Location: http://redprolid.org/desarrolla-tu-liderazgo/listas-para-la-politica/");
     }
 
     elseif ( $cat[0]->slug == 'nivelando-la-cancha' ) {
