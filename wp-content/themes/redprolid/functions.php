@@ -423,7 +423,7 @@ function SearchFilter($query) {
 }
 add_filter('pre_get_posts','SearchFilter');
 
-function wsl_redirect_to( $redirect_to ) {
+function wsl_redirect_to( $redirect_to, $is_new_user ) {
   //$user = get_user_by( 'email', 'user@example.com' );
   die(print_r($is_new_user));
   return '#comments';
