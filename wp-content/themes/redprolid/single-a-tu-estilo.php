@@ -22,6 +22,10 @@
     			<?php if ($estilo_fuente_link!='') { ?>    			
     			<li><strong>Fuente:</strong> <a href="<?php the_field('estilo_fuente_link'); ?>" target="_blank"><?php the_field('estilo_fuente'); ?></a></li>
     			<?php } ?>
+    			<?php $estilo_fuente_link = get_field('quien_recomienda'); ?>
+    			<?php if ($estilo_fuente_link!='') { ?>    			
+    			<li><strong>Quien recomienda:</strong> <?php the_field('quien_recomienda'); ?></li>
+    			<?php } ?>    			
     		</ul>
     	</div>
     	<div class="col-sm-6">
