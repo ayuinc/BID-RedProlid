@@ -15,7 +15,7 @@
 
 		<div class="bbp-username">
 			<p>
-				<label for="user_login" class="hide"><?php _e( 'Username or Email', 'bbpress' ); ?>: </label>
+				<label for="user_login" class="hide"><?php _e( 'Email', 'bbpress' ); ?>: </label>
 				<input type="text" name="user_login" value="" size="20" id="user_login" tabindex="<?php bbp_tab_index(); ?>" />
 			</p>
 		</div>
