@@ -10,37 +10,46 @@ get_header(); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
 
+
 <div>
   <?php
     $post = $wp_query->post;
     $cat = get_the_category($post->id);
-    
+		$home_url = home_url('/'); 
+		   
     if ( $cat[0]->slug == 'puntos-de-vista' ) {
-      get_template_part( 'single-puntosdevista' );
+      //get_template_part( 'single-puntosdevista' );
+      header("Location: ".$home_url."desarrolla-tu-liderazgo/puntos-de-vista/");
     }
 
     elseif ( $cat[0]->slug == 'a-donde-vamos' ) {
-      get_template_part( 'single-sectionpost' );
+      //get_template_part( 'single-sectionpost' );
+      header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
     }
 
     elseif ( $cat[0]->slug == 'agenda-de-genero' ) {
-      get_template_part( 'single-sectionpost' );
+      //get_template_part( 'single-sectionpost' );
+      header("Location: ".$home_url."desarrolla-tu-liderazgo/agenda-de-genero/");
     }
 
     elseif ( $cat[0]->slug == 'carrera-de-vallas' ) {
-      get_template_part( 'single-sectionpost' );
+      //get_template_part( 'single-sectionpost' );
+      header("Location: ".$home_url."desarrolla-tu-liderazgo/carrera-de-vallas/");
     }
 
     elseif ( $cat[0]->slug == 'la-pinta-no-es-lo-de-menos' ) {
-      get_template_part( 'single-sectionpost' );
+      //get_template_part( 'single-sectionpost' );
+      header("Location: ".$home_url."desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/");
     }
 
     elseif ( $cat[0]->slug == 'listas-para-la-politica' ) {
-      get_template_part( 'single-sectionpost' );
+      //get_template_part( 'single-sectionpost' );
+      header("Location: ".$home_url."desarrolla-tu-liderazgo/listas-para-la-politica/");
     }
 
     elseif ( $cat[0]->slug == 'nivelando-la-cancha' ) {
-      get_template_part( 'single-sectionpost' );
+      //get_template_part( 'single-sectionpost' );
+      header("Location: ".$home_url."desarrolla-tu-liderazgo/nivelando-la-cancha/");
     }
 
     elseif ( $cat[0]->slug == 'noticias' ) {
