@@ -5,7 +5,7 @@ Theme My Login will always look in your theme's directory first, before using th
 */
 ?>
 <div class="login" id="theme-my-login<?php $template->the_instance(); ?>">
-	<?php $template->the_action_template_message( 'resetpass' ); ?>
+	<?php //$template->the_action_template_message( 'resetpass' ); ?>
 	<?php $template->the_errors(); ?>
 	<form name="resetpasswordform" id="resetpasswordform<?php $template->the_instance(); ?>" action="<?php $template->the_action_url( 'resetpass' ); ?>" method="post">
 		<p>
@@ -25,7 +25,7 @@ Theme My Login will always look in your theme's directory first, before using th
 		<?php do_action( 'resetpassword_form' ); ?>
 
 		<p class="submit">
-			<input type="submit" name="wp-submit" id="wp-submit<?php $template->the_instance(); ?>" value="<?php esc_attr_e( 'Reset Password' ); ?>" />
+			<input type="submit" name="wp-submit" id="wp-submit<?php $template->the_instance(); ?>" value="<?php esc_attr_e( 'Reset Password' ); ?>" class="btn btn-primary"/>
 			<input type="hidden" name="key" value="<?php $template->the_posted_value( 'key' ); ?>" />
 			<input type="hidden" name="login" id="user_login" value="<?php $template->the_posted_value( 'login' ); ?>" />
 			<input type="hidden" name="instance" value="<?php $template->the_instance(); ?>" />
