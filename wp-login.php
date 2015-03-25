@@ -293,7 +293,7 @@ function retrieve_password() {
 		return $errors;
 
 	if ( !$user_data ) {
-		$errors->add('invalidcombo', __('<strong>ERROR</strong>: Nombre de usuario o e-mail no válido.'));
+		$errors->add('invalidcombo', __('<strong>ERROR</strong>: E-mail no válido.'));
 		return $errors;
 	}
 
@@ -355,11 +355,11 @@ function retrieve_password() {
 	$hashed = $wp_hasher->HashPassword( $key );
 	$wpdb->update( $wpdb->users, array( 'user_activation_key' => $hashed ), array( 'user_login' => $user_login ) );
 
-	$message = __('Un restablecimiento de contraseña se ha solicitado para la siguiente cuenta:') . "\r\n\r\n";
-	$message .= network_home_url( '/' ) . "\r\n\r\n";
-	$message .= sprintf(__('Username: %s'), $user_login) . "\r\n\r\n";
-	$message .= __('Si esto es un error, simplemente ignora este mensaje y no pasará nada.') . "\r\n\r\n";
-	$message .= __('Para restablecer la contraseña, visita la siguiente dirección:') . "\r\n\r\n";
+	$message = __('Alguien ha solicitado que sea restaurada la contraseña de tu cuenta de Red PROLID.') . "\r\n\r\n";
+	//$message .= network_home_url( '/' ) . "\r\n\r\n";
+	//$message .= sprintf(__('Username: %s'), $user_login) . "\r\n\r\n";
+	$message .= __('Si ha sido un error, ignora este correo. Para restaurar la contraseña, haz clic aquí.') . "\r\n\r\n";
+	//$message .= __('Para restablecer la contraseña, visita la siguiente dirección:') . "\r\n\r\n";
 	$message .= '<' . network_site_url("wp-login.php?action=rp&key=$key&login=" . rawurlencode($user_login), 'login') . ">\r\n";
 
 	if ( is_multisite() )
