@@ -24,7 +24,7 @@
 
 		<div class="bbp-submit-wrapper">
 
-			<button type="submit" class="btn btn-primary" tabindex="<?php bbp_tab_index(); ?>" name="user-submit" class="button submit user-submit"><?php _e( 'Reset My Password', 'bbpress' ); ?></button>
+			<button type="submit" class="btn btn-primary" tabindex="<?php bbp_tab_index(); ?>" name="user-submit" class="button submit user-submit btn btn-primary"><?php _e( 'Reset My Password', 'bbpress' ); ?></button>
 
 			<?php bbp_user_lost_pass_fields(); ?>
 
