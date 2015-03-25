@@ -319,7 +319,7 @@ class Theme_My_Login extends Theme_My_Login_Abstract {
 						self::reset_password( $user, $_POST['pass1'] );
 
 						//$redirect_to = site_url( 'wp-login.php?resetpass=complete' );
-						$redirect_to = site_url( 'http://redprolid.org' );
+						$redirect_to = site_url( '/' );
 						wp_safe_redirect( $redirect_to );
 						exit;
 					}
