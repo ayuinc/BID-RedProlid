@@ -15,7 +15,30 @@ get_header(); ?>
     <div class="clearfix bg-panel sub-header">
       <div class="col-sm-7">
         <div>
-          <h1>Debates anteriores</h1>
+          <h1>
+	          Debates anteriores de 
+			      <?php if ($categoria=='a-donde-vamos') { ?> 
+		        ¿Adónde v@mos?
+		        <?php } ?>
+			      <?php if ($categoria=='carrera-de-vallas') { ?> 
+		        Carrera de vallas
+		        <?php } ?>  
+			      <?php if ($categoria=='nivelando-la-cancha') { ?> 
+		        Nivelando la cancha
+		        <?php } ?>        
+			      <?php if ($categoria=='listas-para-la-politica') { ?> 
+		        Listas para la política
+		        <?php } ?>     
+			      <?php if ($categoria=='agenda-de-genero') { ?> 
+		        Agenda de género
+		        <?php } ?> 
+			      <?php if ($categoria=='pistas-2') { ?> 
+		        Pistas
+		        <?php } ?> 
+			      <?php if ($categoria=='la-pinta-no-es-lo-de-menos') { ?> 
+		        La pinta no es lo de menos
+		        <?php } ?>   	          
+          </h1>
           <nav class="mt-21">
             <a href="/desarrolla-tu-liderazgo/<?php echo $categoria; ?> ">Atrás >></a>
           </nav>
