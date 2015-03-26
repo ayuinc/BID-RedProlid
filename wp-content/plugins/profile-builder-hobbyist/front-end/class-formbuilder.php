@@ -277,7 +277,7 @@ class Profile_Builder_Form_Creator{
 				elseif( $this->args['form_type'] == 'edit_profile' )
 					$button_name = __( 'Update', 'profilebuilder' );
 				?>			
-				<input name="<?php echo $this->args['form_type']; ?>" type="submit" id="<?php echo $this->args['form_type']; ?>" class="submit button" value="<?php echo apply_filters( 'wppb_'. $this->args['form_type'] .'_button_name', $button_name ); ?>" />
+				<input name="<?php echo $this->args['form_type']; ?>" type="submit" id="<?php echo $this->args['form_type']; ?>" class="btn btn-primary submit button" value="<?php echo apply_filters( 'wppb_'. $this->args['form_type'] .'_button_name', $button_name ); ?>" />
 				<input name="action" type="hidden" id="action" value="<?php echo $this->args['form_type']; ?>" />
 				<input name="form_name" type="hidden" id="form_name" value="<?php echo $this->args['form_name']; ?>" />
 			</p><!-- .form-submit -->
