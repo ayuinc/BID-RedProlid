@@ -17,7 +17,7 @@ get_header(); ?>
     $cat = get_the_category($post->id);
 		$home_url = home_url('/'); 
 
-    elseif ( $cat[0]->slug == 'a-donde-vamos' ) {
+    if ( $cat[0]->slug == 'a-donde-vamos' ) {
       //get_template_part( 'single-sectionpost' );
       header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
     }
@@ -47,7 +47,7 @@ get_header(); ?>
       header("Location: ".$home_url."desarrolla-tu-liderazgo/nivelando-la-cancha/");
     }
     
-    if ( $cat[0]->slug == 'puntos-de-vista' ) {
+    elseif ( $cat[0]->slug == 'puntos-de-vista' ) {
       get_template_part( 'single-puntosdevista' );
     }    
 
