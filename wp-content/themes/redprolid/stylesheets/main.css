@@ -6497,6 +6497,9 @@ div[id^="yop-poll-results-3"] {
   .ninja-forms-error-msg p {
     color: #FFF !important; }
 
+.ninja-forms-field {
+  margin-left: 0px !important; }
+
 .noticias-grid [class*="col-"] > div {
   background-color: white;
   padding: 10.5px;

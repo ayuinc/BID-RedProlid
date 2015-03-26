@@ -81,9 +81,13 @@
 }
 
 .ninja-forms-error-msg {
-	  background-color: red;
-	  padding:7px;
-	  p { 
-		  color:#FFF !important;
-	  }
+  background-color: red;
+  padding:7px;
+  p { 
+	  color:#FFF !important;
+  }
+}
+
+.ninja-forms-field {
+	margin-left:0px !important;	
 }
