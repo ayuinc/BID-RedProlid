@@ -63,7 +63,7 @@ function wppb_avatar_handler( $output, $form_location, $field, $user_id, $field_
 					
 					if ( $form_location == 'edit_profile' ){
 						if ( ( $input_value == '' ) || ( $input_value == $wp_upload_array['baseurl'].'/profile_builder/avatars/' ) ){
-							$output .= '<span class="wppb-avatar-nofile">'. __( 'Current avatar: No uploaded avatar', 'profilebuilder' ) . '</span>';
+							$output .= '<span class="wppb-avatar-nofile">'. __( 'Foto actual: Foto sin cargar', 'profilebuilder' ) . '</span>';
 						
 						}else{
 							//display the resized image
