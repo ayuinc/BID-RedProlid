@@ -21,7 +21,7 @@ get_header(); ?>
           </nav>
         </div>
       </div>
-      <div class="sub-header-icon">
+      <div class="p-7 text-right">
 	      <?php if ($categoria=='a-donde-vamos') { ?> 
         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png" width="94px" height="auto" alt="">
         <?php } ?>
