@@ -276,10 +276,10 @@ class Profile_Builder_Form_Creator{
 			<p class="form-submit">
 				<?php 
 				if( $this->args['form_type'] == 'register' )
-					$button_name = ( current_user_can( 'create_user' ) ? __( 'Add User', 'profilebuilder' ) : __( 'Register', 'profilebuilder' ) );
+					$button_name = ( current_user_can( 'create_user' ) ? __( 'Add User', 'profilebuilder' ) : __( 'Regístrate', 'profilebuilder' ) );
 					
 				elseif( $this->args['form_type'] == 'edit_profile' )
-					$button_name = __( 'Update', 'profilebuilder' );
+					$button_name = __( 'Actualiza tus datos', 'profilebuilder' );
 				?>			
 				<input name="<?php echo $this->args['form_type']; ?>" type="submit" id="<?php echo $this->args['form_type']; ?>" class="btn btn-primary submit button" value="<?php echo apply_filters( 'wppb_'. $this->args['form_type'] .'_button_name', $button_name ); ?>" />
 				<input name="action" type="hidden" id="action" value="<?php echo $this->args['form_type']; ?>" />
