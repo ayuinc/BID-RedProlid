@@ -15,7 +15,7 @@ get_header(); ?>
     <div class="clearfix bg-panel sub-header">
       <div class="col-sm-7">
         <div>
-          <h1>
+          <h2>
 	          Debates anteriores de 
 			      <?php if ($categoria=='a-donde-vamos') { ?> 
 		        ¿Adónde v@mos?
@@ -38,7 +38,7 @@ get_header(); ?>
 			      <?php if ($categoria=='la-pinta-no-es-lo-de-menos') { ?> 
 		        La pinta no es lo de menos
 		        <?php } ?>   	          
-          </h1>
+          </h2>
           <nav class="mt-21">
             <a href="/desarrolla-tu-liderazgo/<?php echo $categoria; ?> ">Atrás >></a>
           </nav>
