@@ -19,7 +19,7 @@ get_header(); ?>
 		   
     if ( $cat[0]->slug == 'puntos-de-vista' ) {
       //get_template_part( 'single-puntosdevista' );
-      header("Location: ".$home_url."desarrolla-tu-liderazgo/puntos-de-vista/");
+      header("Location: ".$home_url."puntos-de-vista/");
     }
 
     elseif ( $cat[0]->slug == 'a-donde-vamos' ) {
