@@ -6491,6 +6491,11 @@ div[id^="yop-poll-results-3"] {
 .wp-social-login-provider-list img {
   width: 50px; }
 
+.ninja-forms-error-msg {
+  background-color: red; }
+  .ninja-forms-error-msg p {
+    color: #FFF; }
+
 .noticias-grid [class*="col-"] > div {
   background-color: white;
   padding: 10.5px;
