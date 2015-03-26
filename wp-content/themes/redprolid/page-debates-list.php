@@ -16,7 +16,6 @@ get_header(); ?>
       <div class="col-sm-7">
         <div>
           <h2>
-	          Debates anteriores de 
 			      <?php if ($categoria=='a-donde-vamos') { ?> 
 		        ¿Adónde v@mos?
 		        <?php } ?>
@@ -37,7 +36,8 @@ get_header(); ?>
 		        <?php } ?> 
 			      <?php if ($categoria=='la-pinta-no-es-lo-de-menos') { ?> 
 		        La pinta no es lo de menos
-		        <?php } ?>   	          
+		        <?php } ?>   	   
+		        - debates anteriores     
           </h2>
           <nav class="mt-21">
             <a href="/desarrolla-tu-liderazgo/<?php echo $categoria; ?> ">Atrás >></a>
