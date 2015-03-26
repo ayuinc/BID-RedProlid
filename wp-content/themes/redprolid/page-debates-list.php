@@ -22,7 +22,27 @@ get_header(); ?>
         </div>
       </div>
       <div class="sub-header-icon">
-        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon-alpha.png" width="94px" height="auto" alt="">
+	      <?php if ($categoria=='a-donde-vamos') { ?> 
+        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png" width="94px" height="auto" alt="">
+        <?php } ?>
+	      <?php if ($categoria=='carrera-de-vallas') { ?> 
+        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-carrera-vallas-icon.png" width="94px" height="auto" alt="">
+        <?php } ?>  
+	      <?php if ($categoria=='nivelando-la-cancha') { ?> 
+        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-nivelando-cancha-icon.png" width="94px" height="auto" alt="">
+        <?php } ?>        
+	      <?php if ($categoria=='listas-para-la-politica') { ?> 
+        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-listas-politica-icon.png" width="94px" height="auto" alt="">
+        <?php } ?>     
+	      <?php if ($categoria=='agenda-de-genero') { ?> 
+        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-icon.png" width="94px" height="auto" alt="">
+        <?php } ?> 
+	      <?php if ($categoria=='pistas-2') { ?> 
+        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-pistas-icon.png" width="94px" height="auto" alt="">
+        <?php } ?> 
+	      <?php if ($categoria=='la-pinta-no-es-lo-de-menos') { ?> 
+        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-icon.png" width="94px" height="auto" alt="">
+        <?php } ?>                                         
       </div>
     </div>	      
     <div class="ph-70">
