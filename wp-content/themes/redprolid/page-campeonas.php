@@ -1,8 +1,7 @@
 <?php
-/**
- * The Template for displaying all single posts
- *
- */
+/*
+Template Name: Campeonas
+*/
 
 get_header(); ?>
 <!--HEADER-->
