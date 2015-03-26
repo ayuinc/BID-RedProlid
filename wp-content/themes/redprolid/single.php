@@ -16,11 +16,6 @@ get_header(); ?>
     $post = $wp_query->post;
     $cat = get_the_category($post->id);
 		$home_url = home_url('/'); 
-		   
-    if ( $cat[0]->slug == 'puntos-de-vista' ) {
-      //get_template_part( 'single-puntosdevista' );
-      header("Location: ".$home_url."puntos-de-vista/");
-    }
 
     elseif ( $cat[0]->slug == 'a-donde-vamos' ) {
       //get_template_part( 'single-sectionpost' );
@@ -51,6 +46,10 @@ get_header(); ?>
       //get_template_part( 'single-sectionpost' );
       header("Location: ".$home_url."desarrolla-tu-liderazgo/nivelando-la-cancha/");
     }
+    
+    if ( $cat[0]->slug == 'puntos-de-vista' ) {
+      get_template_part( 'single-puntosdevista' );
+    }    
 
     elseif ( $cat[0]->slug == 'noticias' ) {
       get_template_part( 'single-noticias' );
