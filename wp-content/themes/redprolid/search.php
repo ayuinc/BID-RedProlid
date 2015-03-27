@@ -72,9 +72,9 @@ get_header(); ?>
                 		<strong>Autor: <?php the_field('recurso_autor'); ?></strong><?php $coma++; ?><?php } ?><?php $recurso_ano_de_publicacion = get_field('recurso_año_de_publicacion'); ?><?php if ($recurso_ano_de_publicacion!='') { ?><?php if ($coma==1) { ?>, <?php } ?><?php the_field('recurso_año_de_publicacion'); ?><?php } ?>
                 	</p>
                 <?php } else { ?>
-                	<?php $fecha_entrevista = get_field ('fecha_entrevista'); ?>
-                	<?php if ($fecha_entrevista!='') { ?>
-                		<p><?php echo date_i18n('j', strtotime( $fecha_entrevista)); ?> de <?php echo date_i18n('F', strtotime( $fecha_entrevista)); ?> de <?php echo date_i18n('Y', strtotime( $fecha_entrevista)); ?></p> 
+                	<?php $fecha_de_la_entrevista = get_field ('fecha_de_la_entrevista'); ?>
+                	<?php if ($fecha_de_la_entrevista!='') { ?>
+                		<p><?php echo date_i18n('j', strtotime( $fecha_de_la_entrevista)); ?> de <?php echo date_i18n('F', strtotime( $fecha_de_la_entrevista)); ?> de <?php echo date_i18n('Y', strtotime( $fecha_de_la_entrevista)); ?></p> 
                 	<?php } ?>
                 	<?php $fecha_inicio_concurso = get_field ('fecha_inicio_concurso'); ?>
                 	<?php if ($fecha_inicio_concurso!='') { ?>
