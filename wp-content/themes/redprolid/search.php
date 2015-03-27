@@ -72,8 +72,24 @@ get_header(); ?>
                 		<strong>Autor: <?php the_field('recurso_autor'); ?></strong><?php $coma++; ?><?php } ?><?php $recurso_ano_de_publicacion = get_field('recurso_año_de_publicacion'); ?><?php if ($recurso_ano_de_publicacion!='') { ?><?php if ($coma==1) { ?>, <?php } ?><?php the_field('recurso_año_de_publicacion'); ?><?php } ?>
                 	</p>
                 <?php } else { ?>
-                	<?php $tempDate = get_the_date(); ?>
-									<p><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>  
+                	<?php $fecha_entrevista = get_field ('fecha_entrevista'); ?>
+                	<?php if ($fecha_entrevista!='') { ?>
+                		<p><?php echo date_i18n('j', strtotime( $fecha_entrevista)); ?> de <?php echo date_i18n('F', strtotime( $fecha_entrevista)); ?> de <?php echo date_i18n('Y', strtotime( $fecha_entrevista)); ?></p> 
+                	<?php } ?>
+                	<?php $fecha_inicio_concurso = get_field ('fecha_inicio_concurso'); ?>
+                	<?php if ($fecha_inicio_concurso!='') { ?>
+                		<p><?php echo date_i18n('j', strtotime( $fecha_inicio_concurso)); ?> de <?php echo date_i18n('F', strtotime( $fecha_inicio_concurso)); ?> de <?php echo date_i18n('Y', strtotime( $fecha_inicio_concurso)); ?></p> 
+                	<?php } ?>
+                	<?php $fecha_inicio_evento = get_field ('fecha_inicio_evento'); ?>
+                	<?php if ($fecha_inicio_evento!='') { ?>
+                		<p><?php echo date_i18n('j', strtotime( $fecha_inicio_evento)); ?> de <?php echo date_i18n('F', strtotime( $fecha_inicio_evento)); ?> de <?php echo date_i18n('Y', strtotime( $fecha_inicio_evento)); ?></p> 
+                	<?php } ?> 
+                	<?php $video_fecha_publicacion = get_field ('video_fecha_publicacion'); ?>
+                	<?php if ($video_fecha_publicacion!='') { ?>
+                		<p><?php echo date_i18n('j', strtotime( $video_fecha_publicacion)); ?> de <?php echo date_i18n('F', strtotime( $video_fecha_publicacion)); ?> de <?php echo date_i18n('Y', strtotime( $video_fecha_publicacion)); ?></p> 
+                	<?php } ?>                 	               	                	
+                	<?php //$tempDate = get_the_date(); ?>
+									 <!--<p><?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de <?php //echo date_i18n('Y', strtotime( $tempDate)); ?></p>--> 
 								<?php } ?>
                 <p class="m-0">
                   <?php 
