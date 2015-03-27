@@ -87,7 +87,11 @@ get_header(); ?>
                 	<?php $video_fecha_publicacion = get_field ('video_fecha_publicacion'); ?>
                 	<?php if ($video_fecha_publicacion!='') { ?>
                 		<p><?php echo date_i18n('j', strtotime( $video_fecha_publicacion)); ?> de <?php echo date_i18n('F', strtotime( $video_fecha_publicacion)); ?> de <?php echo date_i18n('Y', strtotime( $video_fecha_publicacion)); ?></p> 
-                	<?php } ?>                 	               	                	
+                	<?php } ?>    
+                	<?php if (in_category('noticias')) { ?>
+                		<?php $tempDate = get_the_date(); ?>
+                		<p><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>
+                	<?php } ?>            	               	                	
                 	<?php //$tempDate = get_the_date(); ?>
 									 <!--<p><?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de <?php //echo date_i18n('Y', strtotime( $tempDate)); ?></p>--> 
 								<?php } ?>
