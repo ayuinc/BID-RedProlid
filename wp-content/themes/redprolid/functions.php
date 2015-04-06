@@ -431,4 +431,13 @@ add_filter('pre_get_posts','SearchFilter');
 //   return '#comments';
 // }
 // add_filter( 'wsl_hook_process_login_alter_redirect_to', 'wsl_redirect_to', 10, 2 );
+
+function custom_register_redirect( $oldMessage, $oldLink ){
+    $new_url = 'http://www.my_site.com/my_page'; // here you can specify your own url
+    echo 'this one';
+
+    return '<font id="messageTextColor">' . sprintf(__( 'You will soon be redirected automatically. If you see this page for more than 3 seconds, please click %1$s.%2$s', 'profilebuilder'), '<a href="'.$new_url.'">'.__('here', 'profilebuilder').'</a>', '<meta http-equiv="Refresh" content="3;url='.$new_url.'" />') . '</font><br/><br/>';
+}
+add_filter ( 'wppb_register_redirect_after_creation1', 'custom_register_redirect', 10, 2 );
+
 ?>
