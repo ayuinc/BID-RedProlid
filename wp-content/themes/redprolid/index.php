@@ -71,42 +71,9 @@ get_header(); ?>
             <h2>Desarrolla tu liderazgo</h2>
             <p>Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
           </div>
-          <div id="carousel-home-dtl" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-home-dtl" data-slide-to="0" class="active"></li> 
-              <li data-target="#carousel-home-dtl" data-slide-to="1" class=""></li> 
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <ul class="grid-list grid-list-4 grid-list-1-xs dtl-carousel">
-			          	<?php //query_posts( 'category_name=home-desarrolla-tu-liderazgo' ); ?>	
-									<?php //while ( have_posts() ) : the_post(); ?>  									               
-                  <li>
-                    <div class="dtl-item" data-href="#">
-                      <div class="bg-img-block-no-cover bg-img-block" style="background-image: url();"></div>
-                      <div class="dtl-title">
-                        <h3><?php //the_title(); ?></h3>
-                        <div class="text-right">
-                          <a href="<?php //the_field('link_a_seccion_interna_home_dtl'); ?>" class="btn btn-xs btn-primary">Ver más</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <?php //endwhile; ?>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-home-dtl" role="button" data-slide="prev">
-              <span class="icon-prev out"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-home-dtl" role="button" data-slide="next">
-              <span class="icon-next out"></span>
-            </a>
+          <div class="pb-14">
+          <!-- DTL CAROUSEL -->
+          <?php get_template_part( 'include', 'dtl-carousel' ); ?>
           </div>
         </div>
       </section>
