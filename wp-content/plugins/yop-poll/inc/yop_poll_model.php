@@ -3191,6 +3191,8 @@
 
 			$template = stripslashes_deep( $template );
 			$template = str_ireplace( '%POLL-ID%', $poll_id . $unique_id, $template );
+			
+			$template = str_ireplace( '%POLL-NUM%', $poll_id, $template );
 
 
 			if ( 'yes' == $poll_options['poll_name_html_tags'] ){
@@ -3270,7 +3272,7 @@
 				$template .= '<li style="list-style:none"><style type="text/css">' . self::return_poll_css( array( "location" => $location ) ) . '</style>';
 			}
 
-			$template .= '<div id="yop-poll-container-' . $poll_id . $unique_id . '" class="yop-poll-container bg-white box-shadow p-7">';
+			$template .= '<div id="yop-poll-container-' . $poll_id . $unique_id . '" class="yop-poll-container bg-white p-7">';
 			if ( !$msgDivS ){
 				$template .= '<div id="yop-poll-container-success-' . $poll_id . $unique_id . '" class="yop-poll-container-success"></div>';
 			}
@@ -3278,7 +3280,7 @@
 				$template .= '<div id="yop-poll-container-error-' . $poll_id . $unique_id . '" class="yop-poll-container-error"></div>';
 			}
 
-			$template .= '<form id="yop-poll-form-' . $poll_id . $unique_id . '" class="yop-poll-forms bg-secondary">' . $temp . '<input type="hidden" id="yop-poll-tr-id-' . $poll_id . $unique_id . '" name="yop_poll_tr_id" value="' . $tr_id . '"/>' . wp_nonce_field( 'yop_poll-' . $poll_id . $unique_id . '-user-actions', 'yop-poll-nonce-' . $poll_id . $unique_id, false, false ) . '</form></div></li>';
+			$template .= '<form id="yop-poll-form-' . $poll_id . $unique_id . '" class="yop-poll-forms">' . $temp . '<input type="hidden" id="yop-poll-tr-id-' . $poll_id . $unique_id . '" name="yop_poll_tr_id" value="' . $tr_id . '"/>' . wp_nonce_field( 'yop_poll-' . $poll_id . $unique_id . '-user-actions', 'yop-poll-nonce-' . $poll_id . $unique_id, false, false ) . '</form></div></li>';
 			return $template;
 		}
 
@@ -3807,7 +3809,7 @@
 
 		public static function strip_all_tags( $template ) {
 
-			$tags = array( '%CAPTCHA-PLAY%', '%CAPTCHA-LABEL%', '%RELOAD-CAPTCHA-IMAGE%', '%CAPTCHA-IMAGE%', '%CAPTCHA-INPUT%', '%POLL-VIEW-ARCHIVE-LINK%', '%POLL-PAGE-URL%', '%POLL-VOTE-BUTTON%', '%POLL-START-DATE%', '%POLL-END-DATE%', '%POLL-ANSWER-RESULT-LABEL%', '%POLL-BACK-TO-VOTE-LINK%', '%POLL-VIEW-RESULT-LINK%', '%POLL-TOTAL-VOTERS%', '%POLL-TOTAL-ANSWERS%', '%POLL-TOTAL-VOTES%', '%POLL-ID%', '%POLL-NAME%', '%POLL-QUESTION%', '%POLL-ANSWER-RESULT-VOTES%', '%POLL-ANSWER-RESULT-PERCENTAGES%', '%POLL-ANSWER-RESULT-LABEL%', '%POLL-ANSWER-LABEL%', '%POLL-ANSWER-RESULT-BAR%', '%POLL-CUSTOM-FIELD-LABEL%', '%POLL-CUSTOM-FIELD-TEXT-INPUT%', '%POLL-OTHER-ANSWER-CHECK-INPUT%', '%POLL-OTHER-ANSWER-LABEL%', '%POLL-OTHER-ANSWER-TEXT-INPUT%', '%POLL-ANSWER-RESULT%', '%POLL-OTHER-ANSWER-RESULT%', '%POLL-ANSWER-RESULT-VOTES%', '%POLL-OTHER-ANSWER-RESULT-VOTES%', '%POLL-ANSWER-RESULT-PERCENTAGES%', '%POLL-OTHER-ANSWER-RESULT-PERCENTAGES%', '%POLL-ANSWER-CHECK-INPUT%', '%POLL-ANSWER-LABEL%', '%POLL-ANSWER-RESULT%' );
+			$tags = array( '%CAPTCHA-PLAY%', '%CAPTCHA-LABEL%', '%RELOAD-CAPTCHA-IMAGE%', '%CAPTCHA-IMAGE%', '%CAPTCHA-INPUT%', '%POLL-VIEW-ARCHIVE-LINK%', '%POLL-PAGE-URL%', '%POLL-VOTE-BUTTON%', '%POLL-START-DATE%', '%POLL-END-DATE%', '%POLL-ANSWER-RESULT-LABEL%', '%POLL-BACK-TO-VOTE-LINK%', '%POLL-VIEW-RESULT-LINK%', '%POLL-TOTAL-VOTERS%', '%POLL-TOTAL-ANSWERS%', '%POLL-TOTAL-VOTES%', '%POLL-ID%', '%POLL-NAME%', '%POLL-QUESTION%', '%POLL-ANSWER-RESULT-VOTES%', '%POLL-ANSWER-RESULT-PERCENTAGES%', '%POLL-ANSWER-RESULT-LABEL%', '%POLL-ANSWER-LABEL%', '%POLL-ANSWER-RESULT-BAR%', '%POLL-CUSTOM-FIELD-LABEL%', '%POLL-CUSTOM-FIELD-TEXT-INPUT%', '%POLL-OTHER-ANSWER-CHECK-INPUT%', '%POLL-OTHER-ANSWER-LABEL%', '%POLL-OTHER-ANSWER-TEXT-INPUT%', '%POLL-ANSWER-RESULT%', '%POLL-OTHER-ANSWER-RESULT%', '%POLL-ANSWER-RESULT-VOTES%', '%POLL-OTHER-ANSWER-RESULT-VOTES%', '%POLL-ANSWER-RESULT-PERCENTAGES%', '%POLL-OTHER-ANSWER-RESULT-PERCENTAGES%', '%POLL-ANSWER-CHECK-INPUT%', '%POLL-ANSWER-LABEL%', '%POLL-ANSWER-RESULT%', '%POLL-NUM%' );
 
 			foreach ( $tags as $tag ) {
 				$template = str_ireplace( $tag, '', $template );

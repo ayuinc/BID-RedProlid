@@ -15,6 +15,8 @@ $em-base: 14px;
   "includes/layout-global",
   "includes/layout-footer",
   "includes/layout-header",
+  // IE Control
+  "includes/ie-control",
   // "includes/layout-canvas-container",
   // BUTTONS & LINKS
   "includes/buttons-custom",
@@ -48,6 +50,6 @@ $em-base: 14px;
   "views/breadcrumbs.scss",
   "views/registrate.scss",
   "views/noticias.scss",
-  "views/eventos.scss",
+  "views/eventos.scss", 
   "views/boletin.scss",
   "views/dtl";

@@ -334,6 +334,7 @@ function wsl_process_login_end()
 			$user_id = wsl_process_login_create_wp_user( $provider, $hybridauth_user_profile, $requested_user_login, $requested_user_email );
 
 			$is_new_user = true;
+			$redirect_to = '/te-hemos-registrado-con-exito';
 		}
 	}
 

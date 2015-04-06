@@ -120,7 +120,7 @@ function display_setup_form( $error = null ) {
 				<input name="admin_password" type="password" id="pass1" size="25" value="" />
 				<p><input name="admin_password2" type="password" id="pass2" size="25" value="" /></p>
 				<div id="pass-strength-result"><?php _e('Strength indicator'); ?></div>
-				<p><?php _e('Hint: The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! " ? $ % ^ &amp; ).'); ?></p>
+				<p><?php _e('Sugerencia: La contraseña debe tener al menos siete caracteres. Para hacerlo más fuerte, utilizar letras mayúsculas y minúsculas, números y símbolos como! ? "$% ^ & Amp;).'); ?></p>
 			</td>
 		</tr>
 		<?php endif; ?>

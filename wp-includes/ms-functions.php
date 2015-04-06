@@ -850,7 +850,7 @@ function wpmu_signup_blog_notification( $domain, $path, $title, $user, $user_ema
 		 * @param array  $meta       By default, contains the requested privacy setting and lang_id.
 		 */
 		apply_filters( 'wpmu_signup_blog_notification_email',
-			__( "To activate your blog, please click the following link:\n\n%s\n\nAfter you activate, you will receive *another email* with your login.\n\nAfter you activate, you can visit your site here:\n\n%s" ),
+			__( "Para activar tu usuario, por favor sigue el siguiente enlace:\n\n %s \n\nDespués de activarlo*, recibirás otro correo electrónico con tu nombre de usuario.\n\nDespués de activarlo, puede visitar Red PROLID aquí:\n\n%s" ),
 			$domain, $path, $title, $user, $user_email, $key, $meta
 		),
 		$activate_url,

@@ -41,7 +41,7 @@ function wppb_check_username_value( $message, $field, $request_data, $form_locat
         if( $form_location == 'register' )
             $search_by_user_login = get_users( 'search='.$request_data['username'] );
         if( !empty( $search_by_user_login ) ){
-            return __( 'Ya existe este username.', 'profilebuilder' ) .'<br/>'. __( 'Por favor, pruebe con otro!', 'profilebuilder' );
+            return __( 'Este nombre de usuario ya existe.', 'profilebuilder' ) .'<br/>'. __( 'Please try a different one!', 'profilebuilder' );
         }
 
         $wppb_generalSettings = get_option('wppb_general_settings');

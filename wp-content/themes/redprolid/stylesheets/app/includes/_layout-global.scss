@@ -1,3 +1,8 @@
+.html,
+body {
+	overflow-x: hidden;
+}
+
 // GLOBAL SIZE CONTROL
 $banner-height: 280px;
 // Mobile header
@@ -156,3 +161,119 @@ ul.table-list {
 		}
 	}
 }
+
+// VIDEOS: 'New' Ribbon
+.new-ribbon {
+	@include bg-img-control;
+	@include position(absolute, 0 null null $grid-gutter-width);
+	width: 85px;
+	height: 84px;
+}
+
+// MODALS
+.modal-dialog {
+	z-index: 2000;
+}
+
+// USER SIGNIN FORM 
+.user-sign-in-form {
+	@include make-row();
+	.text-right:not(.col-xs-5) {
+		@extend .col-xs-10;
+	}
+	img {
+		height: auto;
+		display: block;
+		@extend .col-xs-2;
+	}
+}
+
+// BREADCRUMBS
+#breadcrumbs {
+	@media #{$sm-down} {
+		display: none;
+	}
+}
+
+// CUSTOM NAV 
+.custom-nav {
+	a {
+		display: inline-block;
+		color: white;
+		padding: 7px;
+		&:hover,
+		&.active {
+			background-color: $brand-primary;
+			text-decoration: none;
+		}
+	}
+	label {
+		display: inline-block;
+		margin: 0;
+		height: 35px;
+		line-height: 2;
+		padding: 0 6px;
+		&:nth-child(n+3) {
+			margin-left: -4px;
+		}
+		&:hover {
+			cursor: pointer;
+			background-color: $brand-primary;
+		}
+	}
+	input[type="radio"] {
+		display: none;
+		&:checked + label {
+			background-color: $brand-primary;
+		}
+	}
+}
+
+// DATA HREF 
+[data-href] {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+// MODALS
+.modal-body {
+	padding: 0 28px;
+}
+
+// FLICKITY
+.flickity-prev-next-button {
+	@media #{$sm-up} {
+		&.previous {
+			left: -7%;
+		}
+		&.next {
+			right: -7%;	
+		}
+	}
+}
+
+/* HIDE POLL RESULTS ANCHORS */
+.hide-poll-results-anchor {
+	.poll-results-anchor {
+		display: none;
+	}
+}
+.hide-other-polls-anchor {
+	.other-polls-anchor {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

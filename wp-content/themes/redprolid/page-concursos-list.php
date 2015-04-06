@@ -24,19 +24,22 @@ get_header(); ?>
     <div class="ph-70">
       <div class="row">
         <div class="col-sm-10 col-md-offset-1">
-          <?php query_posts( 'category_name=concursos' ); ?> 
+          <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+          <?php query_posts( 'category_name=concursos&posts_per_page=10&paged=' . $paged ); ?>
           <?php while ( have_posts() ) : the_post(); ?>
             <div class="title">
               <h3><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
             </div>
-            <div class="content mb-70">
+            <div class="content mb-7">
               <?php the_field('descripcion_concurso'); ?>
+							<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Ve más >></a></p>
             </div>
+            <hr>
           <?php endwhile; ?>
           <div class="text-center">
             <ul class="pager">
-              <li><a href="#">Previos</a></li>
-              <li><a href="#">Siguiente</a></li>
+	            <li><?php next_posts_link( 'Siguientes' ); ?></li>
+	            <li><?php previous_posts_link( 'Posteriores' ); ?></li>
             </ul>
           </div>
         </div>

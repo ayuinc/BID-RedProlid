@@ -5,7 +5,7 @@
 			    $segment2 = $elements[2] ; //For the 2nd segment
 			    $segment3 = $elements[3] ; //For the 3rd segment
 			?>       
-      <section id="dtl-grid">
+      <section id="dtl-grid" class="pv-21">
         <div class="container">
           <ul class="list-unstyled">
 	          <?php if ($segment2!='a-donde-vamos') { ?>
@@ -92,6 +92,18 @@
               </a>
             </li>
             <?php } ?>
+            <?php if ($segment2!='a-tu-estilo') { ?>         
+            <li>
+              <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-tu-estilo/">
+                <img src="<?php echo content_url('/'); ?>uploads/2015/03/a-tu-estilo-rombo-bw.png" alt="" class="gs" >
+                <img src="<?php echo content_url('/'); ?>uploads/2015/03/a-tu-estilo-rombo.png" alt="" class="color" >
+                <div class="title">                  
+                  <img src="<?php echo content_url('/'); ?>uploads/2015/02/a-tu-estilo.png" alt="">                  
+                  <p class="medium">A tu estilo</p>
+                </div>
+              </a>
+            </li>
+            <?php } ?>            
           </ul>
         </div>
       </section>  

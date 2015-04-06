@@ -21,34 +21,70 @@ get_header(); ?>
         </div>
       </div>
       <div class="sub-header-icon">
-        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-square.png" width="94px" height="auto" alt="">
+        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-square-alpha.png" width="94px" height="auto" alt="">
       </div>
     </div>  
     <div class="ph-70">
       <div class="row">
+        <?php add_filter('post_limits', 'my_post_limit'); ?>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-        <?php query_posts( 'category_name=campeonas&posts_per_page=10&paged=' . $paged ); ?>
-        <?php while ( have_posts() ) : the_post(); ?>	      
+				<?php
+				$count = 0;	
+				global $myOffset;
+				$myOffset = 1;
+				$temp = $wp_query;
+				$wp_query= null;
+				$wp_query = new WP_Query();
+				$wp_query->query('cat=2&offset='.$myOffset.'&showposts=10&paged='.$paged);
+				?>	 					       
+        <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>        
 	      <div class="col-md-2">
-		      <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive">
+          <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
+          <?php if ($imagen_campeona!='') { ?>
+          <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
+          <?php } ?>
+          <?php $video = get_field('video_campeonas'); ?>
+          <?php if ($video!='') { ?>
+          <iframe class="embed-responsive-item" width="100%" height="209" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <?php } ?>
 	      </div>
         <div class="col-md-10">
           <div class="title">
             <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-            <small><?php the_field('posicion_campeona'); ?> <?php if (get_field('twitter_campeona')!='') { ?>/ <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank">@<?php the_field('twitter_campeona'); ?></a><?php } ?></small>
+		        <?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
+		        <?php if ($tempDate!='') { ?>
+		        <small>
+            <!--<?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de --><?php echo date_i18n('Y', strtotime( $tempDate)); ?>
+	          </small>     
+	          <?php } ?>   
+            <p><?php the_field('posicion_campeona'); ?> <?php if (get_field('twitter_campeona')!='') { ?>/ <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank">@<?php the_field('twitter_campeona'); ?></a><?php } ?></p>
           </div>
-          <div class="content mt-14 mb-35">
-            <p><?php the_field('descripcion_campeona'); ?></p>
+          <div class="content mv-14">
+            <p>
+			        <strong><em><?php the_field('posicion_campeona'); ?></em></strong><br>
+			        <?php the_field('descripcion_home_campeonas'); ?> 
+            </p>
 						<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Lee la entrevista >></a></p>
-          </div>    
+          </div> 
+          <hr>   
         </div>
+        <?php $count++; ?>
         <?php endwhile; ?>
+          
+        <?php if ($count!=0) { ?>
         <div class="text-center">
           <ul class="pager">
-            <li><?php next_posts_link( 'Anteriores' ); ?></li>
-            <li><?php previous_posts_link( 'Posteriores' ); ?></li>
+            <li><?php next_posts_link( 'Siguientes' ); ?></li>
+            <li><?php previous_posts_link( 'Anteriores' ); ?></li>
           </ul>
-        </div>          
+        </div>  
+        <?php } else { ?>
+        	<div class="text-center pv-70">
+        		<h3 class="medium">No hay más eventos. <a href="javascript:history.back();">Regresa</a></h3>
+        	</div>
+        <?php } ?> 
+				<?php $wp_query = null; $wp_query = $temp;?>
+				<?php remove_filter('post_limits', 'my_post_limit'); ?>           
       </div>    
     </div>      
   </div>

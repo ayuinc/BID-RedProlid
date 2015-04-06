@@ -54,7 +54,7 @@ global $wp_version;
 
 $embed_vars = array(
     'disqusConfig' => array(
-        'platform' => 'wordpress@'.$wp_version,
+        'platform' => 'info@'.$wp_version,
         'language' => apply_filters( 'disqus_language_filter', '' ),
     ),
     'disqusIdentifier' => dsq_identifier_for_post( $post ),

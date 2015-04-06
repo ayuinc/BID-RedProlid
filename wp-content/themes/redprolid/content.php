@@ -35,9 +35,10 @@
   </div>
 </div> -->
 
-<div class="container grid-block-lg">
+<div class="container-sm">
+	<h1 class="medium"><?php the_title(); ?></h1>
 	<?php the_content(); ?>
 </div>
-<div class="container grid-block-lg">
+<div class="container-sm">
 	<?php get_post_meta(); ?>
 </div>	

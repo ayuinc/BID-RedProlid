@@ -193,7 +193,7 @@ class FBForm extends FBObject
 			}
 			else
 			{
-				$this->addError("You must enter a proper value for '" . $key . "'.");
+				$this->addError("Debe ingresar un valor adecuado para '" . $key . "'.");
 			}
 		}
 		return($storeData);

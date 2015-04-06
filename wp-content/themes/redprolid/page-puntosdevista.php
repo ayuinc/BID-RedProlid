@@ -4,66 +4,17 @@ Template Name: Puntos de vista
 */
 
 get_header(); ?>
+
 <!--HEADER-->
 <?php get_template_part( 'include', 'header' ); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
-<?php //query_posts( 'category_name=puntos-de-vista' ); ?> 
-<div class="mh-700">
-  <section id="puntos-de-vista">
-    <div class="container with-shadow mb-28">
-      <div class="clearfix sub-header">
-        <div class="col-sm-1 col-xs-3">
-          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt=""></div>
-        </div>
-        <div class="col-sm-5 col-xs-9">
-          <h1>Puntos de vista</h1>
-        </div>
-        <div class="col-sm-6 col-xs-12">
-          <nav class="text-right text-center-xs">
-            <a href="#">Puntos de vista anteriores</a> <span class="text-primary">|</span> <a href="#" data-toggle="modal" data-target="#myModal">¿Te gustaría proponernos un tema?</a>
-          </nav>          
-        </div>
-      </div>
-      <h4 class="light text-center">Te ofrecemos artículos escritos por mujeres líderes en la región latinoamericana: políticas, especialistas o profesionales relevantes que ponen sobre el papel su experiencia en pro de unas sociedades más equitativas.</h4>
-    </div>
-    <div class="container text-justify with-hr">
-      <div class="row">
-        <div class="col-sm-3">
-          <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" class="img-responsive">
-        </div>
-        <div class="col-sm-9">
-          <h3><?php the_field('nombre_completo'); ?>  <small>(Bolivia)</small></h3>
-          <p><?php the_field('profesion'); ?></p>
-          <p class="lh-lg text-justify">
-          	<?php the_field('descripcion_punto_de_vista'); ?>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container text-justify with-hr">
-  	  <h4><?php the_title(); ?></h4>
-      <p><?php the_field('contenido_punto_de_vista'); ?></p>
-      <div class="text-center">
-        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
-      </div>          
-    </div>
-    <div class="container text-justify with-hr">
-      <?php comments_template(); ?>
-		</div>	
-    </div>
-    <!--<div class="container with-shadow mh-350">
-    </div>
-    <div class="container with-hr">
-      <h4>Artículos comentados</h4>
-      <ul class="grid-list grid-list-2 pb-ch-7">
-        <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-        <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-        <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-        <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-        <li><a href="#">Lorem ipsum dolor sit amet, consectetur!</a>/ Loreto Sating</li>
-      </ul>
-    </div>-->
-  </section>
-</div>
+
+<?php query_posts( 'category_name=puntos-de-vista&posts_per_page=1' ); ?>	
+<?php while ( have_posts() ) : the_post(); ?> 
+	<?php $location =  get_permalink( get_the_ID() ); ?>
+	<?php wp_redirect( $location, $status ); ?>
+	<?php exit; ?>
+<?php endwhile; ?>
+
 <?php get_footer(); ?>

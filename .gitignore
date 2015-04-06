@@ -2,6 +2,8 @@
 wp-config.php
 .htaccess
 
+.DS_Store
+
 # Ignore Sass-Cache
 *.sass-cache
 .sass-cache/*

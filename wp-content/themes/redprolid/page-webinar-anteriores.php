@@ -19,7 +19,7 @@ get_header(); ?>
         <div>
           <h1>Webinarios anteriores</h1>
           <nav class="mt-21">
-            <a href="#">Charlacafé &gt;&gt;</a>
+            <a href="<?php echo content_url('/'); ?>charlacafe">Charlacafé &gt;&gt;</a>
           </nav>
         </div>
       </div>
@@ -41,26 +41,27 @@ get_header(); ?>
       <?php while ( have_posts() ) : the_post(); ?>
       <div class="banner">
         <div class="banner-pic bg-panel col-sm-4">
-          <iframe class="embed-responsive-item" width="100%" height="210" src="//www.youtube.com/embed/JJqT7jaHXN0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" width="100%" height="210" src="//www.youtube.com/embed/<?php the_field('video'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="banner-content col-sm-8">
             <h3 class="text-gray-dark"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
             <div>
-              <p><?php echo get_post_field('post_content', get_the_ID()); ?></p>
-              <span class="text-gray">177.001 visualizaciones</span>
+              <p><?php the_field('descripcion_resumen'); ?></p>
+              <span class="text-gray"><?php echo_post_views(get_the_ID()); ?> visualizaciones</span>
             </div>
             <div class="flex-space-between pt-21">
               <div class="left">
                 <strong>Fecha:</strong>
                 <div>
-                  <span>1 de septiembre de 2014</span> <span class="text-gray">07:00:00 a.m.</span>
+	                <?php $tempDate = $field = get_field('fecha_inicio_resumen'); ?>
+                  <span><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></span> a las <span class="text-gray"><?php the_field('hora_inicio_resumen'); ?> horas</span>
                 </div>
               </div>
               <div class="right flex-middle">
                 <nav>
                   <a href="<?php echo get_permalink( get_the_ID() ); ?>">Ver webinario</a> 
                   <span class="text-primary">|</span> 
-                  <a href="#">Resumen del webinario</a>
+                  <a href="<?php the_field('link_a_resumen'); ?>">Resumen del webinario</a>
                 </nav>
               </div>
             </div>

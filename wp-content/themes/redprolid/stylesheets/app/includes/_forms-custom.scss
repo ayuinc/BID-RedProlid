@@ -57,3 +57,65 @@ form.form-search-inline {
 		width: 50%;
 	}
 }
+
+// NINJA FORMS
+.ninja-forms-form {
+	label[for*="ninja"] {
+		@include book;
+	}
+	.field-wrap {
+		margin: 0;
+		padding: 9px 0;
+	}
+	.ninja-forms-field:not(.btn) {
+		width: 100%;
+		background: white;
+	}
+	.ninja-forms-field{
+		color: $gray-darker;
+		@include book;
+		&select {
+			@extend .select-override;
+		}
+	}
+}
+.field-wrap {
+	ul {
+		@include list-unstyled;
+	}
+	&.upload-wrap {
+		ul {
+			li {
+				&:last-child {
+					// display: none;
+				}
+			}
+		}
+	}
+}
+
+.formBuilderError {
+	color:red !important;
+	@include light;
+}
+
+.formBuilderFailure { 
+	border:none !important;
+	padding:10px !important;
+	background-color: none;
+	h4 {
+		@include medium;
+		color:red !important;
+	}
+	p {
+		color:red !important;
+	}
+	ul {
+		li {
+			a {
+				color:red !important;
+				@include light;
+			}
+		}
+	}
+}

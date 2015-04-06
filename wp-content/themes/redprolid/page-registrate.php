@@ -11,7 +11,15 @@ get_header(); ?>
 <?php get_template_part( 'include', 'nav' ); ?>
 <?php //query_posts( 'category_name=puntos-de-vista' ); ?> 
 
-
+<style>
+	.custom_field_upload{
+		width: 68% !important;
+		font-size: 0.8rem !important;
+	}
+	.wppb-send-credentials-checkbox{
+		display: none !important;
+	}
+</style>
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 		<section class="mt-7"> 
@@ -25,13 +33,9 @@ get_header(); ?>
 	          <h1><?php the_title(); ?></h1>
 	        </div>
 	      </div>
-	    </div>
-		</section>		
-		<section class="pt-7-100">	  
-		  <div class="container">
-			  <div class="row">
+			  <div class="row pb-70">
 					<div class="col-md-10 col-md-offset-1">  	  
-			      <div class="row mt-21">
+			      <div class="row">
 				      <div class="col-md-6 formulario-perfil">
 					      <h3 class="medium text-left mt-35 mb-21">Crea tu perfil incluyendo los siguientes datos</h3>
 					      <small>campo requerido*</small>
@@ -47,8 +51,8 @@ get_header(); ?>
 				    </div>
 					</div>
 			  </div>       
-		  </div>
-		</section>
+	    </div>
+		</section>		
 
 		<?php endwhile; ?>
 	<?php endif; ?> 

@@ -1,0 +1,32 @@
+/*
+	IE Control
+*/
+.site-wrapper { 
+	&.ie {
+		// .flex-middle,
+		// .flex-middle-center,
+		.flex-middle-end,
+		.flex-space-between {
+			@include clearfix;
+			position: relative;
+		}		
+		.flex-middle-end {
+			div {
+				position: absolute;
+				width: 98%;
+				bottom: $container-fluid;
+				left: 0;
+				right: 0;
+			}
+		}
+		.flex-space-between {
+			.left {
+				float: left;
+			}
+			.center {}
+			.right {
+				float: right;
+			}
+		}
+	}
+} 

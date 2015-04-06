@@ -68,7 +68,32 @@
 		padding: 5px 10px;
 	}
 }   
+
+.custom_field_checkbox {
+	width: 1rem !important;
+	position: relative;
+	top: 18px;
+	left: 20px;
+}
    
 .wp-social-login-provider-list img {
 	width:50px;
+}
+
+.ninja-forms-error-msg {
+  background-color: red;
+  padding:7px;
+  p { 
+	  color:#FFF !important;
+  }
+}
+
+.ninja-forms-field {
+	margin-left:0px !important;	
+}
+
+#wppb_form_success_message {
+  background-color: #008000;
+  padding:7px;
+  color:#FFF !important;
 }

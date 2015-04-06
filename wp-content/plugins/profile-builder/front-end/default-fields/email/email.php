@@ -39,7 +39,7 @@ function wppb_check_email_value( $message, $field, $request_data, $form_location
 		return wppb_required_field_error($field["field-title"]);
 
     if ( isset( $request_data['email'] ) && !is_email( trim( $request_data['email'] ) ) ){
-        return __( 'The email you entered is not a valid email address.', 'profilebuilder' );
+        return __( 'La dirección de correo electrónico que ha introducido no es una dirección de correo electrónico válida.', 'profilebuilder' );
     }
 	
 	if ( is_multisite() || ( !is_multisite() && ( isset( $wppb_generalSettings['emailConfirmation'] ) && ( $wppb_generalSettings['emailConfirmation'] == 'yes' ) ) ) ){

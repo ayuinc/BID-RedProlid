@@ -9,7 +9,8 @@
 	}
 	.banner-pic {
 		@include bg-img-control;
-		min-height: $banner-height;
+		min-height: $banner-height - 70;
+		min-height: rem($banner-height - 70);
 		// @media #{$sm-up} {
 		// 	padding: 0;
 		// }
@@ -20,15 +21,16 @@
 	}
 	.banner-label {
 		@include position(absolute, -14px null null $container-fluid);
-		text-align: center;
+		// text-align: center;
 		padding: 3px 7px;
+		width: 100%;
 		span {
 			text-transform: uppercase;
 		}
 	}
 	.banner-content {
-		min-height: $banner-height;
-		min-height: rem($banner-height);
+		min-height: $banner-height + 30;
+		min-height: rem($banner-height + 30);
 		padding: $container-fluid * 2;
 		@media #{$sm-down} {
 			min-height: $banner-height / 2;
@@ -36,15 +38,9 @@
 			padding: $container-fluid;
 		}
 	}
-	// a:not(.btn) {
-	// 	color: $gray;
-	// }
-	// &:hover {
-	// 	background-color: $gray-lighter;
-	// }
 	&.banner-label-bottom {
 		.banner-label {
-			@include position(absolute, null null 0 $container-fluid); 
+			@include position(absolute, null null 0 0);
 			top: inherit;
 		}
 	}
@@ -54,8 +50,11 @@
 			min-height: $banner-height / 2;
 		}
 	}	
+	&.borderless {
+		border: none;
+	}
 }
 
 .flex-none {
-	display: block;
+	display: block !important;
 }

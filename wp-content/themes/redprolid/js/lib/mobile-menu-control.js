@@ -10,6 +10,7 @@
       e.preventDefault();
       $siteWrapper.toggleClass('menu-on');
     });
+    transformicons.add('.tcon');
     $mobileNavRefGlobal = '';
     $mobileNavDisplayTriggers.on('click', '[href^=#]', function(e) {
       var $navRef, $navRefClass;

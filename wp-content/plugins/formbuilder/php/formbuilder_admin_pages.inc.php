@@ -65,7 +65,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 			$insertData['field_value'] = '';
 			$insertData['field_label'] = 'Name';
 			$insertData['required_data'] = 'any text';
-			$insertData['error_message'] = 'You must enter your name.';
+			$insertData['error_message'] = 'Debe introducir su nombre.';
 			$insertData['help_text'] = '';
 			$result = $wpdb->insert(FORMBUILDER_TABLE_FIELDS, $insertData);
 			if($result === false) $errorString .= "\nError inserting Name field: " . $wpdb->last_error;
@@ -79,7 +79,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 			$insertData['field_value'] = '';
 			$insertData['field_label'] = 'Email';
 			$insertData['required_data'] = 'email address';
-			$insertData['error_message'] = 'You must enter your email address.';
+			$insertData['error_message'] = 'Debe introducir su dirección de correo electrónico.';
 			$insertData['help_text'] = '';
 			$result = $wpdb->insert(FORMBUILDER_TABLE_FIELDS, $insertData);
 			if($result === false) $errorString .= "\nError inserting Email field: " . $wpdb->last_error;

@@ -284,10 +284,10 @@ function wsl_process_login_complete_registration( $provider, $redirect_to, $hybr
 
 				<div id="welcome">
 					<p>
-						<?php printf( _wsl__( "Hi %s, you're one step away from completing your account.", 'wordpress-social-login' ), htmlentities( $hybridauth_user_profile->displayName ) ); ?>
+						<?php printf( _wsl__( "Hola %s, Tuiter necesita verificar tu identidad", 'wordpress-social-login' ), htmlentities( $hybridauth_user_profile->displayName ) ); ?>
 					</p>
 					<p>
-						<?php _wsl_e( "Please, fill in your information in the form below to continue", 'wordpress-social-login' ); ?>.
+						<?php _wsl_e( "Por favor, ingresa tu correo electrónico", 'wordpress-social-login' ); ?>
 					</p>
 				</div>
 
@@ -332,7 +332,7 @@ function wsl_process_login_complete_registration( $provider, $redirect_to, $hybr
 									}
 								?>
 
-								<input type="submit" value="<?php _wsl_e( "Continue", 'wordpress-social-login' ); ?>" class="button-primary" > 
+								<input type="submit" value="<?php _wsl_e( "Continuar", 'wordpress-social-login' ); ?>" class="button-primary" > 
 							</td>
 						</tr>
 					</table> 
@@ -345,7 +345,7 @@ function wsl_process_login_complete_registration( $provider, $redirect_to, $hybr
 			</div>
 
 			<p class="back-to-home">
-				<a href="<?php echo site_url(); ?>">&#8592; <?php printf( _wsl__( "Back to %s", 'wordpress-social-login' ), get_bloginfo('name') ); ?></a>
+				<a href="<?php echo site_url(); ?>">&#8592; <?php printf( _wsl__( "Regresar a %s", 'wordpress-social-login' ), get_bloginfo('name') ); ?></a>
 			</p>
 		</div>
 

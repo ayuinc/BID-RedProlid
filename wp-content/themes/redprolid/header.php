@@ -47,21 +47,22 @@
     <script src="//use.typekit.net/nsv5vjx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 
-    <!-- APP STYLES -->
-    <link rel="stylesheet" href="<?php echo content_url('/'); ?>themes/redprolid/stylesheets/main.css">
-    <link rel="stylesheet" href="<?php echo content_url('/'); ?>themes/redprolid/stylesheets/ebm.css">
+    <?php wp_head(); ?> <!-- AVISAMOS QUE TERMINA EL HEAD -->
   </head>
   <body>
     <div class="site-wrapper pt-56-xs">
-      <div class="mobile-navbar hidden-sm-up"> <!-- MOBILE NAVBAR -->
+      <div class="mobile-navbar hidden-md-up"> <!-- MOBILE NAVBAR -->
         <div class="left">
-          <div class="logo" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png)"></div>
+          <div class="logo" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png)"></div>
         </div>
         <div class="right">
-          <a href="#" class="menu-trigger icon-menu">M</a>
+          <button type="button" class="tcon tcon-menu--xcross menu-trigger" aria-label="toggle menu">
+            <span class="tcon-menu__lines" aria-hidden="true"></span>
+            <span class="tcon-visuallyhidden">toggle menu</span>
+          </button>
         </div>
       </div> <!-- END:Mobile navbar -->
-      <div class="mobile-menu hidden-sm-up"> <!-- MOBILE MENU -->
+      <div class="mobile-menu hidden-md-up"> <!-- MOBILE MENU -->
         <div class="mobile-nav-display-triggers">
           <ul>
             <li>
@@ -201,17 +202,17 @@
           <div class="center">
             <ul>
               <li>
-                <a href="<?php echo home_url('/'); ?>foros-principal">Foros virtuales →</a>
+                <a href="<?php echo home_url('/'); ?>foros-proximamente">Foros virtuales</a>
               </li>
-              <li>
+              <!--<li>
                 <a href="#">¿Quieres ver los foros anteriores?</a>
-              </li>
+              </li>-->
               <li>
-                <a href="<?php echo home_url('/'); ?>webinar-principal">Webinarios →</a>
+                <a href="<?php echo home_url('/'); ?>webinarios-proximamente">Webinarios</a>
               </li>
-              <li>
+              <!--<li>
                 <a href="<?php echo home_url('/'); ?>webinarios-anteriores">Webinarios anteriores</a>
-              </li>
+              </li>-->
             </ul>
           </div>
           <div class="bottom"></div>

@@ -129,6 +129,10 @@ get_header(); ?>
 				<small class="text-gray">23 de Julio, 11:13:07 a.m.</small>
 			</div>
 		</div>
+		<?php while ( have_posts() ) : the_post(); ?>
+      <?php get_template_part( 'content', 'page' ); ?>
+      <?php comments_template( '', true ); ?>
+    <?php endwhile; // end of the loop. ?>
 	</section>
 
 

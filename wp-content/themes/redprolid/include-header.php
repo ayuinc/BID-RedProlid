@@ -1,4 +1,4 @@
-<header class="pt-7 pb-7 hidden-sm-down">
+<header class="pt-7 pb-7 hidden-md-down">
   <div class="container">
     <div class="row">
       <div class="col-md-3">
@@ -20,16 +20,19 @@
 
               $current_user = wp_get_current_user();
               echo '<div class="text-right">';
-              echo '<h4 class="light">Hola '.$current_user->user_nicename.'</h4>';
+              echo '<h4 class="light mb-0">Hola '.$current_user->user_nicename.'</h4>';
 							echo '<a href="'.wp_logout_url().'" title="Logout" class="light">Cierra tu sesión</a>';
               echo '</div>';
+							
+							if ( ($current_user instanceof WP_User) ) {
+                  //print_r($current_user);
+							    echo get_avatar( $current_user->ID);
+							}              
 
             } else {
-
               echo do_shortcode('[dm_login_form]'); 
-
             }
-          ?>
+          ?>       
         </div>
       </div>
     </div>

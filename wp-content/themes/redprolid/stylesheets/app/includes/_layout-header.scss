@@ -30,8 +30,19 @@ header {
 		padding: $container-fluid;
 		background-color: darken($panel-bg, 21%);
 		img {
-			width: 94px;
+			width: 77px;
 			height: auto;
+		}
+		&.boletines-icon {
+			width: 98px;
+			height: 81px;
+			img {
+				width: 100px;
+				height: auto;
+				position: absolute;
+				bottom: -23px;
+				left: 0;
+			}
 		}
 	}
 	&.no-border {
@@ -50,7 +61,7 @@ header {
 					position: absolute;
 					display: block;
 					width: 217%;
-					border-bottom: 1px dotted lighten($panel-bg, 3%);
+					border-bottom: 1px dotted $panel-bg;
 				}
 				&.col-sm-4 {
 					&:after {
@@ -76,6 +87,24 @@ header {
 			color: $gray-dark;
 		}
 	}
+	&.sub-header-sm {
+		> div:first-child {
+			padding-left: 0; 
+			img {
+				width: 42px;
+				height: auto;
+			}
+		}
+		> [class*="col-"] {
+			min-height: 112px;
+			min-height: rem(112px);
+		}
+		> div:nth-child(2) {
+			&:after {
+				border-bottom: 1px dotted $gray-dark;
+			}
+		}
+	}
 }
 
 /* 
@@ -85,7 +114,7 @@ header {
 
 */
 .mobile-navbar {
-	@include position(fixed, 0 0 null 0);
+	@include position(absolute, 0 0 null 0);
 	z-index: 1000;
 	width: 100%;
 	height: $mobile-navbar-height;
@@ -102,11 +131,11 @@ header {
 	.right {}
 	.logo {
 		@include bg-img-control;
-		width: $mobile-navbar-height - 7;
+		width: $mobile-navbar-height + 7;
 		height: $mobile-navbar-height - 7;
 	}
 	.menu-trigger {
-		background-color: $brand-primary;
+		// background-color: $brand-primary;
 		width: $mobile-navbar-height - 14;
 		height: $mobile-navbar-height - 14;
 		text-align: center;
