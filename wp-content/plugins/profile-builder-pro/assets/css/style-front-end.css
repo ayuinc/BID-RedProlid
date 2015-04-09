@@ -208,6 +208,7 @@ input#send_credentials_via_email{
 .wppb-user-forms .wppb-radios li{
 	display:inline-block;
 	padding:0 20px 0 0;
+    width: 96px;
 }
 
 .wppb-form-field .wppb-checkboxes label,
@@ -438,6 +439,13 @@ ul.wppb-profile li h3:first-child{
 	
 }
 
+@media screen and (max-width: 400px) {
+    .wppb-user-forms .wppb-checkboxes li,
+    .wppb-user-forms .wppb-radios li{
+        width: 67px;
+    }
+}
+
 /*--------------------------------------------------------------
 7.0 Password Strength
 --------------------------------------------------------------*/
@@ -468,3 +476,5 @@ ul.wppb-profile li h3:first-child{
     background-color: #c3ff88;
     border-color: #8dff1c;
 }
+
+

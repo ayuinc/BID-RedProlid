@@ -568,7 +568,7 @@ function wppb_password_strength_check(){
  * Create functions for repeating error messages in front-end forms
  */
 function wppb_required_field_error($field_title='') {
-    $required_error = apply_filters('wppb_required_error' , __('This field is required','profilebuilder') , $field_title);
+    $required_error = apply_filters('wppb_required_error' , 'Campo Obligatorio. Debe completar este campo.' , $field_title);
 
     return $required_error;
 

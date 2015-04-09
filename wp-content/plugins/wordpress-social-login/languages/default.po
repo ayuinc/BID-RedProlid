@@ -2658,28 +2658,28 @@ msgid ""
 msgstr ""
 
 #: wordpress-social-login/includes/widgets/wsl.users.gateway.php:122
-msgid "<strong>ERROR</strong>: Please type your e-mail address."
+msgid "<strong>ERROR</strong>: Por favor, ingrese su correo electrónico"
 msgstr ""
 
 #: wordpress-social-login/includes/widgets/wsl.users.gateway.php:127
-msgid "<strong>ERROR</strong>: Please enter a valid email address."
+msgid "<strong>ERROR</strong>: Por favor, ingrese un correo electrónico válido."
 msgstr ""
 
 #: wordpress-social-login/includes/widgets/wsl.users.gateway.php:132
-msgid "<strong>ERROR</strong>: Sorry, that email address is already used!"
+msgid "<strong>ERROR</strong>: El correo electrónico ingresado ya se encuentra en uso!"
 msgstr ""
 
 #: wordpress-social-login/includes/widgets/wsl.users.gateway.php:146
-msgid "<strong>ERROR</strong>: That username is not allowed."
+msgid "<strong>ERROR</strong>: El nombre de usuario no esta permitido."
 msgstr ""
 
 #: wordpress-social-login/includes/widgets/wsl.users.gateway.php:151
-msgid "<strong>ERROR</strong>: Username must be at least 4 characters."
+msgid "<strong>ERROR</strong>: El nombre de usuario debe tener al menos 4 caracteres."
 msgstr ""
 
 #: wordpress-social-login/includes/widgets/wsl.users.gateway.php:156
 msgid ""
-"<strong>ERROR</strong>: Sorry, usernames may not contain the character "
+"<strong>ERROR</strong>: El nombre de usuario no puede contener el caracter"
 "&#8220;_&#8221;!"
 msgstr ""
 

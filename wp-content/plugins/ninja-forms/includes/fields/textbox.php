@@ -278,7 +278,7 @@ function ninja_forms_field_text_pre_process( $field_id, $user_value ){
 	if( isset( $plugin_settings['invalid_email'] ) ){
 		$invalid_email = __( $plugin_settings['invalid_email'], 'ninja-forms' );
 	}else{
-		$invalid_email = __( 'Please enter a valid email address.', 'ninja-forms' );
+		$invalid_email = 'Por favor, ingrese un correo electrónico válido';
 	}
 	$field_row = $ninja_forms_processing->get_field_settings( $field_id );
 	$data = $field_row['data'];
