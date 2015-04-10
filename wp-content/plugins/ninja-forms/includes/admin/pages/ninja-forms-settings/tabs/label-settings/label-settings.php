@@ -72,7 +72,7 @@ function ninja_forms_register_label_settings_metabox(){
 			array(
 			 	'name' => 'invalid_email',
 				'type' => 'text',
-				'label' => __( 'Please enter a valid email address', 'ninja-forms' ),
+				'label' => 'Por favor, ingrese un correo electrónico válido',
 				'desc' => '',
 			),
 			array(

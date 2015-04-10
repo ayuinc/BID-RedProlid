@@ -541,7 +541,7 @@ msgstr ""
 
 #: includes/ninja-settings.php:16 includes/fields/textbox.php:281
 msgid "Please enter a valid email address."
-msgstr ""
+msgstr "Por favor, ingrese un correo electrónico válido"
 
 #: includes/ninja-settings.php:17 includes/admin/step-processing.php:11
 msgid "Processing"

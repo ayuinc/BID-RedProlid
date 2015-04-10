@@ -18,6 +18,20 @@ get_header(); ?>
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
 
+
+<style>
+
+    #home-comment {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; /* number of lines to show */
+        line-height: 22px;        /* fallback */
+        max-height: 66px;
+    }
+
+</style>
     <div class="mh-700">
       <section id="hero-unit">
         <div class="container pv-21">
@@ -270,7 +284,7 @@ get_header(); ?>
 
                     <?php foreach ($comments as $comment) : ?>
                       <li class="mb-14">
-                        <p class="light"><?php echo($comment->comment_content);?></p>
+                        <p class="light" id="home-comment"><?php echo($comment->comment_content);?></p>
                         <small class="date light"><a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo get_the_title( $comment->comment_post_ID ); ?></a></small></br>
                         <small class="date light"><?php echo($comment->comment_date);?> | <?php echo($comment->comment_author);?></small> 
                       </li>

@@ -13,7 +13,7 @@ function nf_get_settings(){
   $settings['honeypot_error'] = isset ( $settings['honeypot_error'] ) ? $settings['honeypot_error'] : __( 'Please leave the spam field blank.', 'ninja-forms' );
   $settings['timed_submit_error'] = isset ( $settings['timed_submit_error'] ) ? $settings['timed_submit_error'] : __( 'Please wait to submit the form.', 'ninja-forms' );
   $settings['javascript_error'] = isset ( $settings['javascript_error'] ) ? $settings['javascript_error'] : __( 'You cannot submit the form without Javascript enabled.', 'ninja-forms' );
-  $settings['invalid_email'] = isset ( $settings['invalid_email'] ) ? $settings['invalid_email'] : __( 'Please enter a valid email address.', 'ninja-forms' );
+  $settings['invalid_email'] = isset ( $settings['invalid_email'] ) ? $settings['invalid_email'] :  'Por favor, ingrese un correo electrónico válido.';
   $settings['process_label'] = isset ( $settings['process_label'] ) ? $settings['process_label'] : __( 'Processing', 'ninja-forms' );
   $settings['password_mismatch'] = isset ( $settings['password_mismatch'] ) ? $settings['password_mismatch'] : __( 'The passwords provided do not match.', 'ninja-forms' );
 

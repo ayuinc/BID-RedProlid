@@ -245,7 +245,7 @@ class Profile_Builder_Form_Creator{
                         return;
                     } elseif ( $this->args['form_type'] == 'edit_profile' ){
 						$redirect = apply_filters( 'wppb_edit_profile_redirect', $this->wppb_get_redirect() );
-						echo $form_message_tpl_start  . apply_filters( 'wppb_edit_profile_success_message', __( 'Su perfil ha sido actualizado con éxito!', 'profilebuilder' ) ) . $form_message_tpl_end . $redirect;
+						echo $form_message_tpl_start  . apply_filters( 'wppb_edit_profile_success_message', 'Has completado el proceso de registro en Red PROLID. Puedes empezar a navegar en el sitio.' ) . $form_message_tpl_end . $redirect;
 						//action hook after edit profile success
 	                    do_action('wppb_edit_profile_success', $_REQUEST, $this->args['form_name'], $user_id);
                         if ( apply_filters( 'wppb_no_form_after_profile_update', false ) )
@@ -255,7 +255,7 @@ class Profile_Builder_Form_Creator{
 				}
 			
 			}else
-				echo $message.apply_filters( 'wppb_general_top_error_message', '<p id="wppb_general_top_error_message">'.__( 'There was an error in the submitted form', 'profilebuilder' ).'</p>' );
+				echo $message.apply_filters( 'wppb_general_top_error_message', '<p id="wppb_general_top_error_message" style="color:#E45959!important; ">Hay un error en el formulario. Debes llenar correctamente los campos requeridos.</p>' );
 		
 		}else
 			echo $message;
@@ -279,7 +279,7 @@ class Profile_Builder_Form_Creator{
 					$button_name = ( current_user_can( 'create_user' ) ? __( 'Add User', 'profilebuilder' ) : __( 'Regístrate', 'profilebuilder' ) );
 					
 				elseif( $this->args['form_type'] == 'edit_profile' )
-					$button_name = __( 'Actualiza tus datos', 'profilebuilder' );
+					$button_name = __( 'Envía tus datos', 'profilebuilder' );
 				?>			
 				<input name="<?php echo $this->args['form_type']; ?>" type="submit" id="<?php echo $this->args['form_type']; ?>" class="btn btn-primary submit button" value="<?php echo apply_filters( 'wppb_'. $this->args['form_type'] .'_button_name', $button_name ); ?>" />
 				<input name="action" type="hidden" id="action" value="<?php echo $this->args['form_type']; ?>" />

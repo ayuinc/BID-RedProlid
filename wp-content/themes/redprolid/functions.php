@@ -431,4 +431,3 @@ add_filter('pre_get_posts','SearchFilter');
 //   return '#comments';
 // }
 // add_filter( 'wsl_hook_process_login_alter_redirect_to', 'wsl_redirect_to', 10, 2 );
-?>
