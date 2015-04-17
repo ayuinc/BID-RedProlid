@@ -140,9 +140,13 @@ class Profile_Builder_Form_Creator{
 		$redirect_location = ( wppb_check_missing_http( $this->args['redirect_url'] ) ? 'http://'.$this->args['redirect_url'] : $this->args['redirect_url'] );
 		
 		$redirect_url = apply_filters( 'wppb_redirect_url', '<a href="'.$redirect_location.'">'.__( 'here', 'profilebuilder' ).'</a>' );
-		
+        if( $this->args['form_type'] == 'register'){
+            wp_redirect( $redirect_location );
+        }
+
 		return apply_filters ( 'wppb_redirect_message_before_returning', '<p class="redirect_message">'.sprintf( __( 'Pronto será redirigido. Si usted ve esta página durante más de %1$d segundos, por favor haga clic en %2$s. %3$s', 'profilebuilder' ), $this->args['redirect_delay'], $redirect_url, '<meta http-equiv="Refresh" content="'.$this->args['redirect_delay'].';url='.$redirect_location.'" />' ).'</p>', $this->args );
-	}
+
+    }
 	
 	
 	function wppb_log_in_user(){
@@ -239,8 +243,13 @@ class Profile_Builder_Form_Creator{
                                 break;
                         }
                         $redirect = apply_filters( 'wppb_register_redirect', $this->wppb_get_redirect() );
-                        echo $form_message_tpl_start . $wppb_register_success_message  . $form_message_tpl_end . $redirect;
+                        //echo $form_message_tpl_start . $wppb_register_success_message  . $form_message_tpl_end . $redirect;
 						//action hook after registration success
+
+                        if( $this->args['form_type'] == 'register'){
+                            echo $redirect;
+                            return;
+                        }
 	                    do_action('wppb_register_success', $_REQUEST, $this->args['form_name'], $user_id);
                         return;
                     } elseif ( $this->args['form_type'] == 'edit_profile' ){
