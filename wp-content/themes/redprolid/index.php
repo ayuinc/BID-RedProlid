@@ -22,6 +22,7 @@ get_header(); ?>
 <style>
 
     #home-comment {
+
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -30,6 +31,7 @@ get_header(); ?>
         line-height: 22px;        /* fallback */
         max-height: 66px;
     }
+
 
 </style>
     <div class="mh-700">

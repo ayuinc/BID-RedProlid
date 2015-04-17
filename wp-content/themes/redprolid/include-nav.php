@@ -37,16 +37,18 @@
           </li>
           <li>
             <a href="<?php echo home_url('/'); ?>enterate" class="enterate 
-	            <?php if( $segment1=='enterate' || $segment1=='noticias' || $segment1=='eventos' || $segment1=='campeonas' || $segment1=='video' ) 
+	            <?php if( $segment1=='enterate' || $segment1=='noticias' || $segment1=='eventos' || $segment1=='campeonas' || $segment1=='video' && (is_home() != 1))
 		            { 	
-			            echo 'active';
+			            echo 'active ';
 			          } 
 				      ?>
-				      <?php if ( (in_category('ultimas-noticias')) OR (in_category('noticias')) OR (in_category('eventos')) OR (in_category('eventos-destacados')) OR (in_category('boletin')) OR (in_category('campeonas')) OR (in_category('videos-anteriores')) ) 
-					      {		            
-		            		echo 'active'; 
-		          	}
-		          ?>		
+				      <?php if ( (in_category('ultimas-noticias')) OR (in_category('noticias')) OR (in_category('eventos')) OR (in_category('eventos-destacados')) OR (in_category('boletin')) OR (in_category('campeonas')) OR (in_category('videos-anteriores')) OR (in_category('publicaciones')))
+                        {
+                            if(!is_home()){
+                                echo 'active';
+                            }
+                        }
+		          ?>
 				      "><i></i><span>Entérate</span></a>
             <ul class="list-unstyled dropdown-menu">
               <!--<li><a href="<?php echo home_url('/'); ?>poll">Tu opinión importa</a></li>-->
