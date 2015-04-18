@@ -16,7 +16,7 @@ get_header(); ?>
         <div>
           <h1>Entrevistas anteriores</h1>
           <nav class="mt-21">
-            <a href="<?php echo content_url('/'); ?>campeonas">Campeonas >></a>
+            <a href="<?php echo content_url('/'); ?>campeonas">Campeon@s >></a>
           </nav>
         </div>
       </div>

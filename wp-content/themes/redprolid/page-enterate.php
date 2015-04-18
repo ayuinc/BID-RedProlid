@@ -231,7 +231,7 @@ get_header(); ?>
               <div class="panel panel-custom pr-14">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
-                    <li class="title text-gray-darker highlight-campeonas">Campeonas</li>
+                    <li class="title text-gray-darker highlight-campeonas">Campeon@s</li>
                     <li class="rule"></li>
                     <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px 0px;"></li>
                   </ul>
