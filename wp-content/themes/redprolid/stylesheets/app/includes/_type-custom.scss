@@ -83,7 +83,7 @@ input[type=text],input[type=password], select, .form-control, textarea {
 	-webkit-appearance: none;
   -webkit-border-radius: 0px;
   @include light;
-  color:$gray-light;
+  color:$gray-dark;  
   font-size: 14px;
 }
 
