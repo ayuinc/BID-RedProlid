@@ -64,7 +64,7 @@ get_header(); ?>
               <ul class="list-unstyled">
                 <li class="title highlight-white text-gray-darker">Publicaciones</li>
                 <li class="rule"></li>
-                <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -43px;"></li>
+                <li class="icon" data-href="<?php echo home_url('/'); ?>publicaciones"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -43px;"></li>
               </ul>
             </div>
             <div class="panel-body">
@@ -114,7 +114,7 @@ get_header(); ?>
               <ul class="list-unstyled">
                 <li class="title text-gray-darker highlight-campeonas">Últimas noticias</li>
                 <li class="rule"></li>
-                <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -83px;"></li>
+                <li class="icon" data-href="<?php echo home_url('/'); ?>noticias"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -83px;"></li>
               </ul>
             </div>
             <div class="panel-body">
@@ -166,7 +166,7 @@ get_header(); ?>
             <ul class="list-unstyled">
               <li class="title title text-gray-darker highlight-white">Eventos</li>
               <li class="rule"></li>
-              <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -125px;"></li>
+              <li class="icon" data-href="<?php echo home_url('/'); ?>eventos"   style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -125px;"></li>
             </ul>
           </div>
           <!--<div class="row">
@@ -233,7 +233,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title text-gray-darker highlight-campeonas">Campeon@s</li>
                     <li class="rule"></li>
-                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
+                    <li class="icon" data-href="<?php echo home_url('/'); ?>campeonas"   style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body pt-0">
@@ -271,7 +271,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title text-gray-darker highlight-campeonas">Videos</li>
                     <li class="rule"></li>
-                    <li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
+                    <li class="icon" data-href="<?php echo home_url('/'); ?>video"   style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
                   </ul>
                 </div>
                 <div class="panel-body pt-0">
