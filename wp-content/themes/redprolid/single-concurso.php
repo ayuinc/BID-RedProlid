@@ -31,7 +31,7 @@
           <div class="content-display">
             <div class="text-right mt-14 mb-14">
               <a class="btn btn-primary" id="boton_entrevista_full" >Lee los Términos y Condiciones</a>
-              <a class="btn btn-primary" id="boton_ocultar_entrevista_full" >Ocultar la entrevista completa</a>
+              <a class="btn btn-primary" id="boton_ocultar_entrevista_full" >Ocultar el detalle</a>
             </div>
           </div>
           <div id="entrevista_full">

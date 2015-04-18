@@ -16,7 +16,7 @@
     			<li><strong>Dirección:</strong> <?php the_field('estilo_direccion_lugar') ?></li>
     			<?php $estilo_sitio_web = get_field('estilo_sitio_web'); ?>
     			<?php if ($estilo_sitio_web!='') { ?>
-    			<li><strong>Sitio web:</strong> <a href="<?php the_field('estilo_sitio_web'); ?>"><?php the_field('estilo_sitio_web'); ?></a></li>
+    			<li><strong>Sitio web:</strong> <a href="<?php the_field('estilo_sitio_web'); ?>" target="_blank"><?php the_field('estilo_sitio_web'); ?></a></li>
     			<?php } ?>
     			<?php $estilo_fuente_link = get_field('estilo_fuente_link'); ?>
     			<?php if ($estilo_fuente_link!='') { ?>    			
