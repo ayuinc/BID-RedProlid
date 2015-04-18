@@ -68,13 +68,15 @@
 }
 
 .comentarios {
-	.title {
-		margin:10px 0 16px 0 !important;
-	}
-	li {
-		border-bottom:1px solid #CCC;
-		padding-bottom:5px;
-	}
+  .title {
+    margin:10px 0 16px 0 !important;
+  }
+  li {
+    border-bottom:1px solid #CCC;
+    padding-bottom:5px;
+
+  }
+
 }
 
 .widgets {
@@ -183,6 +185,7 @@ div[id^="yop-poll-results-3"] {
 }
 
 
+
 // DTL HOME CAROUSEL 
 // $dtl-colors-list: 
 // 	$dtl-adonde-vamos,
@@ -216,9 +219,48 @@ div[id^="yop-poll-results-3"] {
 // }
 
 
+#home-comment {
 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-height: 22px;        /* fallback */
+  max-height: 66px;
+}
 
+.noticias_quickview {
+  color: transparent;
+  font-size: 16px;
+  >p,>div{
+    &:first-child{
+      font-size: 16px!important;
+      color: darkgray!important;
+      font-weight: 300;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 6; /* number of lines to show */
+      line-height: 18px!important;        /* fallback */
+      max-height: 108px!important;
+      >p, >div{
+        display: none;
+      }
+    }
+    display: none;
+  }
 
+}
 
-
-
+.noticias-grid{
+  display:table;
+  width:100%;
+  margin:0 auto;
+  .banner {
+    float:none!important;
+    display:table-cell;
+    vertical-align:top;
+  }
+}

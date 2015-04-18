@@ -18,22 +18,6 @@ get_header(); ?>
     <!--NAV-->
     <?php get_template_part( 'include', 'nav' ); ?>
 
-
-<style>
-
-    #home-comment {
-
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3; /* number of lines to show */
-        line-height: 22px;        /* fallback */
-        max-height: 66px;
-    }
-
-
-</style>
     <div class="mh-700">
       <section id="hero-unit">
         <div class="container pv-21">

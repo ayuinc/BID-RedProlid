@@ -6275,6 +6275,47 @@ div[id^="yop-poll-results-3"] {
   background-repeat: no-repeat;
   background-size: cover; }
 
+#home-comment {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  /* number of lines to show */
+  line-height: 22px;
+  /* fallback */
+  max-height: 66px; }
+
+.noticias_quickview {
+  color: transparent;
+  font-size: 16px; }
+  .noticias_quickview > p, .noticias_quickview > div {
+    display: none; }
+    .noticias_quickview > p:first-child, .noticias_quickview > div:first-child {
+      font-size: 16px !important;
+      color: darkgray !important;
+      font-weight: 300;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 6;
+      /* number of lines to show */
+      line-height: 18px !important;
+      /* fallback */
+      max-height: 108px !important; }
+      .noticias_quickview > p:first-child > p, .noticias_quickview > p:first-child > div, .noticias_quickview > div:first-child > p, .noticias_quickview > div:first-child > div {
+        display: none; }
+
+.noticias-grid {
+  display: table;
+  width: 100%;
+  margin: 0 auto; }
+  .noticias-grid .banner {
+    float: none !important;
+    display: table-cell;
+    vertical-align: top; }
+
 .red-prolid-grid:before, .red-prolid-grid:after {
   content: " ";
   display: table; }

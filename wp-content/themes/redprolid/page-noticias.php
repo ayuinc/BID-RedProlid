@@ -42,7 +42,7 @@ get_header(); ?>
 					<h2>Últimas noticias</h2>
 	      </div>         
 	      <div class="panel-body pt-14">
-	        <div class="row">
+	        <div class="row noticias-row">
 	          <div class="col-md-12">
 	            <div class="row noticias-grid">
 								<!-- Start the Loop. -->
@@ -66,7 +66,14 @@ get_header(); ?>
 			                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
 														<?php } ?>
 													</small>
-			                    <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
+			                    <div class="mt-14 noticias_quickview"><?php
+                                     $noteContent = get_field('descripcion_rapida_noticias');
+                                         if($noteContent != '' ){
+                                             the_field('descripcion_rapida_noticias');
+                                         }else{
+                                            the_field('contenido_noticias');
+                                         }
+                                    ;?></div>
 			                    <div class="text-right banner-label">
 						              	<a href="<?php echo get_permalink( get_the_ID() ); ?>">Noticia completa >></a>
 						              </div>
