@@ -6293,7 +6293,7 @@ div[id^="yop-poll-results-3"] {
     display: none; }
     .noticias_quickview > p:first-child, .noticias_quickview > div:first-child {
       font-size: 16px !important;
-      color: darkgray !important;
+      color: #232323 !important;
       font-weight: 300;
       overflow: hidden;
       text-overflow: ellipsis;
