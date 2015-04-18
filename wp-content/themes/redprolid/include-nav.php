@@ -52,16 +52,16 @@
 				      "><i></i><span>Entérate</span></a>
             <ul class="list-unstyled dropdown-menu">
               <!--<li><a href="<?php echo home_url('/'); ?>poll">Tu opinión importa</a></li>-->
-              <li class="light"><a href="<?php echo home_url('/'); ?>publicaciones">Publicaciones</a></li>
-              <li class="light"><a href="<?php echo home_url('/'); ?>noticias">Noticias</a></li>
-              <li class="light"><a href="<?php echo home_url('/'); ?>eventos">Eventos</a></li>
-              <!--<li class="light"><a href="<?php echo home_url('/'); ?>boletin">Nuestro boletín</a></li>-->
-              <li class="light"><a href="<?php echo home_url('/'); ?>boletines-proximamente/">Nuestro boletín</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>campeonas">Campeon@s</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>puntos-de-vista">Puntos de vista</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>noticias">Noticias</a></li>
               <li class="light nav-video">
               	<img src="<?php echo home_url('/'); ?>wp-content/themes/redprolid/assets/icons/video-nav-main-menu.png"> <a href="<?php echo home_url('/'); ?>video" class="videos">Videos</a>
               </li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>eventos">Eventos</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>publicaciones">Publicaciones</a></li>
+              <!--<li class="light"><a href="<?php echo home_url('/'); ?>boletin">Nuestro boletín</a></li>-->
+              <li class="light"><a href="<?php echo home_url('/'); ?>boletines-proximamente/">Nuestro boletín</a></li>
             </ul>
           </li>
           <li>
