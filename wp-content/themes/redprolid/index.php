@@ -248,7 +248,7 @@ get_header(); ?>
                       <li class="rule relative"></li>
 			                <?php query_posts( 'category_name=campeonas&posts_per_page=1' ); ?>	
 											<?php while ( have_posts() ) : the_post(); ?>                       
-                      <li class="icon" data-href="<?php echo get_permalink( get_the_ID() ); ?>" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
+                      <li class="icon" data-href="<?php echo get_permalink( get_the_ID() ); ?>"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
                       <?php endwhile; ?>
                     </ul>
                   </div>             
