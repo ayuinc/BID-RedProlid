@@ -58,9 +58,13 @@ get_header(); ?>
 					            	<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
 					            	<?php } ?>
 					            	<div class="banner-content flex-none">
-			                    <h3 class="medium mt-7 mb-0 pb-0">
-			                    	<a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a>
-			                    </h3>
+
+                                 <a href="<?php echo get_permalink( get_the_ID() ); ?>">
+			                        <h3 class="medium mt-7 mb-0 pb-0">
+			                    	    <?php the_title(); ?>
+                                    </h3>
+                                 </a>
+
 			                    <?php $publicacion = get_field('publicacion_noticias'); ?>
 			                    <small>
 			                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
