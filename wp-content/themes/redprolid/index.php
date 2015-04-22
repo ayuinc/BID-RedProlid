@@ -280,7 +280,7 @@ get_header(); ?>
             </div>
             <div class="col-md-9 bg-panel ph-14">
               <div class="panel panel-custom hidden-sm-down">
-                <div class="panel-body tall pt-0">
+                <div class="panel-body tall pt-14">
                   <div class="panel-heading">
                     <ul class="list-unstyled m-0">
                       <li class="title highlight-campeonas pl-14 text-gray-darker">Lo último en las redes</li>
