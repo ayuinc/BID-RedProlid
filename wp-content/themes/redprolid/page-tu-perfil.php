@@ -44,21 +44,18 @@ get_header(); ?>
           </ul>
         </div>
         <div class="col-sm-6 ph-70-sm">
-
-          //The Query
-          query_posts('author='.$current_user->ID);
+          <?php query_posts('author='.$current_user->ID); ?>
 
           //The Loop
-          <?php if(have_posts()) : ?>
-            <?php while(have_posts()) : the_post(); ?>
-            <div class="post"> 
-              <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-              <div class="entry">    
-                <?php the_content(); ?>
-              </div>
-            </div>  
-            <?php endwhile; ?>
-          <?php endif; ?> 
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+          <?php the_title(); ?>
+          <?php endwhile; else: ?>
+          <?php echo "Aun no tiene posts"; ?>
+          <?php endif; ?>
+
+          //Reset Query
+          <?php wp_reset_query(); ?>
         </div>
       </div>
     </div>
