@@ -26,7 +26,7 @@ get_header(); ?>
         </div>
       </div>
       <div class="row pv-42">
-        <div class="col-sm-8 ph-70-sm">
+        <div class="col-sm-6 ph-70-sm">
           <ul class="list-unstyled list-group list-group-custom">
           <?php
           $args = array(
@@ -43,7 +43,7 @@ get_header(); ?>
           <?php endforeach;?>
           </ul>
         </div>
-        <div class="col-sm-8 ph-70-sm">
+        <div class="col-sm-6 ph-70-sm">
           <?php
           if ( is_user_logged_in() ) {
 
