@@ -60,6 +60,7 @@ get_header(); ?>
             $all_fields = $sub->get_all_fields();
             // Echoes out the submitted value for a field
             echo $sub->get_field( 36 );
+            echo $sub->get_field( 39 );
           }
           ?>
         </div>
