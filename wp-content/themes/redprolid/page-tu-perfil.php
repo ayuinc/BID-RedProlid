@@ -25,6 +25,23 @@ get_header(); ?>
 		      </div>
         </div>
       </div>
+      <div class="row pv-42">
+        <ul class="list-unstyled list-group list-group-custom">
+        <?php
+        $args = array(
+          'user_id' => $current_user->ID
+        );
+        $comments = get_comments($args);?>
+
+        <?php foreach ($comments as $comment) : ?>
+          <li class="mb-14">
+            <p class="light" id="home-comment"><?php echo($comment->comment_content);?></p>
+            <small class="date light"><a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo get_the_title( $comment->comment_post_ID ); ?></a></small></br>
+            <small class="date light"><?php echo($comment->comment_date);?> | <?php echo($comment->comment_author);?></small> 
+          </li>
+        <?php endforeach;?>
+        </ul>
+      </div>
     </div>
   </section>
 <?php get_footer(); ?>
