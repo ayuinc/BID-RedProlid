@@ -46,21 +46,21 @@ get_header(); ?>
         <div class="col-sm-8 ph-70-sm">
           <?php
           $args = array(
-            'user_id'   => $user_id
+            'user_id'   => $current_user->ID
           );
           // This will return an array of sub objects.
           $subs = Ninja_Forms()->subs()->get( $args );
-          print_r($subs);
+
           // This is a basic example of how to interact with the returned objects.
           // See other documentation for all the methods and properties of the submission object.
-          // foreach ( $subs as $sub ) {
-          //   $form_id = $sub->form_id;
-          //   $user_id = $sub->user_id;
-          //   // Returns an array of [field_id] => [user_value] pairs
-          //   $all_fields = $sub->get_all_fields();
-          //   // Echoes out the submitted value for a field
-          //   echo $sub->get_field( 34 );
-          // }
+          foreach ( $subs as $sub ) {
+            // $form_id = $sub->form_id;
+            // $user_id = $sub->user_id;
+            // Returns an array of [field_id] => [user_value] pairs
+            $all_fields = $sub->get_all_fields();
+            // Echoes out the submitted value for a field
+            echo $sub->get_field( 36 );
+          }
           ?>
         </div>
       </div>
