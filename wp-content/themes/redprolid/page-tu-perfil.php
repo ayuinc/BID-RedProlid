@@ -45,23 +45,30 @@ get_header(); ?>
         </div>
         <div class="col-sm-8 ph-70-sm">
           <?php
-          $args = array(
-            'user_id'   => $current_user->ID
-          );
-          // This will return an array of sub objects.
-          $subs = Ninja_Forms()->subs()->get( $args );
+          if ( is_user_logged_in() ) {
 
-          // This is a basic example of how to interact with the returned objects.
-          // See other documentation for all the methods and properties of the submission object.
-          foreach ( $subs as $sub ) {
-            // $form_id = $sub->form_id;
-            // $user_id = $sub->user_id;
-            // Returns an array of [field_id] => [user_value] pairs
-            $all_fields = $sub->get_all_fields();
-            // Echoes out the submitted value for a field
-            echo $sub->get_field( 36 );
-            echo $sub->get_field( 39 );
-          }
+          global $current_user;
+                get_currentuserinfo();
+
+          echo 'User ID: ' . $current_user->ID . "\n";
+
+          //The Query
+          query_posts('author='.$current_user->ID);
+
+          //The Loop
+          if ( have_posts() ) : while ( have_posts() ) : the_post();
+          the_title();
+          echo "<br>";
+          endwhile; else:
+          echo "Aun no tiene posts";
+          endif;
+
+          //Reset Query
+          wp_reset_query();
+
+          } else {
+              echo 'Welcome, visitor!';
+          };
           ?>
         </div>
       </div>
