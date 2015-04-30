@@ -27,6 +27,8 @@ get_header(); ?>
       </div>
       <div class="row pv-42">
         <div class="col-sm-6 ph-70-sm">
+          <h1>Mis Cometarios</h1>
+          <div class="with-hr"></div>
           <ul class="list-unstyled list-group list-group-custom">
           <?php
           $args = array(
