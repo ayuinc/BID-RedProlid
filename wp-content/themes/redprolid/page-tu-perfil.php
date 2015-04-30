@@ -14,6 +14,7 @@ get_header(); ?>
       <div class="row pv-42">
         <div class="col-sm-4">
           <?php echo get_avatar( $current_user->ID); ?>
+          <h4 class="light mb-0"><?php echo $current_user->user_nicename; ?></h4>
         </div>
         <div class="col-sm-8 ph-70-sm">
           <div class="row">
@@ -51,7 +52,7 @@ get_header(); ?>
           <?php query_posts('author='.$current_user->ID); ?>
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-          <?php the_title(); ?>
+          <ol><?php the_title(); ?></ol>
           <br>
           <br>
           <?php endwhile; else: ?>
