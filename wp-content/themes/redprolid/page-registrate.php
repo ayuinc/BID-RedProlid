@@ -16,6 +16,9 @@ get_header(); ?>
 		width: 68% !important;
 		font-size: 0.8rem !important;
 	}
+	.custom_field_checkbox {
+		display: table;
+	}
 	.wppb-send-credentials-checkbox{
 		display: none !important;
 	}
