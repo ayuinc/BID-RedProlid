@@ -20,13 +20,13 @@
 
               $current_user = wp_get_current_user();
               echo '<div class="text-right">';
-              echo '<h4 class="light mb-0">Hola '.$current_user->user_nicename.'</h4>';
+              echo '<h4 class="light mb-0"><a href="'.home_url("/");.'tu-perfil">Hola '.$current_user->user_nicename.'</a></h4>';
 							echo '<a href="'.wp_logout_url().'" title="Logout" class="light">Cierra tu sesión</a>';
               echo '</div>';
 							
 							if ( ($current_user instanceof WP_User) ) {
                   //print_r($current_user);
-							    echo get_avatar( $current_user->ID);
+							    echo '<a href="'.home_url("/");.'tu-perfil">'.get_avatar( $current_user->ID);.'</a>';
 							}              
 
             } else {
