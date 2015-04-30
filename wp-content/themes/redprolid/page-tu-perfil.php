@@ -16,16 +16,6 @@ get_header(); ?>
           <?php echo get_avatar( $current_user->ID); ?>
         </div>
         <div class="col-sm-8 ph-70-sm">
-          <h3>Nos interesa lo que piensas</h3>
-          <p>¿Qué temas te parecen relevantes para incluir en nuestras encuestas?</p>
-          <div class="row">
-            <div class="col-xs-6">
-              <label>Tu propuesta</label>
-            </div>
-            <!--<div class="col-xs-6 text-right">
-              <nav><a href="#">Regístrate</a> / <a href="#">Inicia sesión</a></nav>
-            </div>-->
-          </div>
           <div class="row">
           	<div class="col-xs-12">
 				      <?php while ( have_posts() ) : the_post(); ?>
