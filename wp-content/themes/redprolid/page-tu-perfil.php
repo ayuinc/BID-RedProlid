@@ -44,33 +44,21 @@ get_header(); ?>
           </ul>
         </div>
         <div class="col-sm-6 ph-70-sm">
-          <?php
-          if ( is_user_logged_in() ) {
-
-          global $current_user;
-                get_currentuserinfo();
-
-          echo 'User ID: ' . $current_user->ID . "\n";
 
           //The Query
           query_posts('author='.$current_user->ID);
 
           //The Loop
-          if ( have_posts() ) : while ( have_posts() ) : the_post();
-          the_title();
-          echo "<br>";
-          echo "<br>";
-          endwhile; else:
-          echo "Aun no tiene posts";
-          endif;
-
-          //Reset Query
-          wp_reset_query();
-
-          } else {
-              echo 'Welcome, visitor!';
-          };
-          ?>
+          <?php if(have_posts()) : ?>
+            <?php while(have_posts()) : the_post(); ?>
+            <div class="post"> 
+              <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+              <div class="entry">    
+                <?php the_content(); ?>
+              </div>
+            </div>  
+            <?php endwhile; ?>
+          <?php endif; ?> 
         </div>
       </div>
     </div>
