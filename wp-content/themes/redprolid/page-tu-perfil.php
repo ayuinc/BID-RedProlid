@@ -45,16 +45,15 @@ get_header(); ?>
         </div>
         <div class="col-sm-6 ph-70-sm">
           <?php query_posts('author='.$current_user->ID); ?>
-
-          //The Loop
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
           <?php the_title(); ?>
+          <br>
+          <br>
           <?php endwhile; else: ?>
           <?php echo "Aun no tiene posts"; ?>
           <?php endif; ?>
 
-          //Reset Query
           <?php wp_reset_query(); ?>
         </div>
       </div>
