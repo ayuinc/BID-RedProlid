@@ -10,6 +10,11 @@ get_header(); ?>
 
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
+<style>
+	.custom_field_checkbox {
+		display: table;
+	}
+</style>
 <section> 
   <div class="container">
     <!-- IF NO POSTS in FOROS -->
