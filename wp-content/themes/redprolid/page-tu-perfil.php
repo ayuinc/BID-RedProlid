@@ -7,6 +7,11 @@ get_header(); ?>
 <?php get_template_part( 'include', 'header' ); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
+<style>
+	.custom_field_checkbox {
+		display: table;
+	}
+</style>
   <section id="toc-main">
     <div class="container">
       <?php the_breadcrumb(); ?>
@@ -28,7 +33,7 @@ get_header(); ?>
       </div>
       <div class="row pv-42">
         <div class="col-sm-6">
-          <h2>Mis cometarios</h2>
+          <h2 class="medium">Mis cometarios</h2>
           <div class="mb-25"></div>
           <ul class="list-unstyled list-group list-group-custom">
           <?php
@@ -47,7 +52,7 @@ get_header(); ?>
           </ul>
         </div>
         <div class="col-sm-6">
-          <h2>Mis publicaciones</h2>
+          <h2 class="medium">Mis publicaciones</h2>
           <div class="mb-35"></div>
           <?php query_posts('author='.$current_user->ID); ?>
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
