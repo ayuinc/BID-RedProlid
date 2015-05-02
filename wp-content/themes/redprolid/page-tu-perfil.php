@@ -29,7 +29,7 @@ get_header(); ?>
       <div class="row pv-42">
         <div class="col-sm-6 ph-70-sm">
           <h2>Mis Cometarios</h2>
-          <div class="with-hr mb-25"></div>
+          <div class="mb-25"></div>
           <ul class="list-unstyled list-group list-group-custom">
           <?php
           $args = array(
@@ -48,7 +48,7 @@ get_header(); ?>
         </div>
         <div class="col-sm-6 ph-70-sm">
           <h2>Mis Posts</h2>
-          <div class="with-hr mb-35"></div>
+          <div class="mb-35"></div>
           <?php query_posts('author='.$current_user->ID); ?>
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
