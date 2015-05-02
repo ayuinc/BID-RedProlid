@@ -51,7 +51,19 @@ get_header(); ?>
           <div class="mb-35"></div>
           <?php query_posts('author='.$current_user->ID); ?>
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-          <?php the_title(); ?>
+	          <div class="title">
+	            <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+	            <?php $publicacion = get_field('publicacion_noticias'); ?>
+	            <small>
+	            	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+								<?php } ?>
+							</small>              
+	          </div>
+	          <div class="content mb-7">
+	            <?php the_field('descripcion_rapida_noticias'); ?>
+							<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Lee la noticia >></a></p>
+	          </div>
+	          <hr>
           <?php endwhile; else: ?>
           <?php echo "Aun no tiene posts"; ?>
           <?php endif; ?>
