@@ -13,7 +13,7 @@ get_header(); ?>
 
       <div class="row pv-42">
         <div class="col-sm-4">
-          <?php echo get_avatar( $current_user->ID); ?>
+          <?php echo get_avatar( $current_user->ID, 250); ?>
           <h4 class="light mb-0"><?php echo $current_user->user_nicename; ?></h4>
         </div>
         <div class="col-sm-8 ph-70-sm">
