@@ -51,9 +51,7 @@ get_header(); ?>
           <div class="mb-35"></div>
           <?php query_posts('author='.$current_user->ID); ?>
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-          <ol>- <?php the_title(); ?></ol>
-          <br>
+          <?php the_title(); ?>
           <?php endwhile; else: ?>
           <?php echo "Aun no tiene posts"; ?>
           <?php endif; ?>
