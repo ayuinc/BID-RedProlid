@@ -27,7 +27,7 @@ get_header(); ?>
         </div>
       </div>
       <div class="row pv-42">
-        <div class="col-sm-6 ph-70-sm">
+        <div class="col-sm-6">
           <h2>Mis Cometarios</h2>
           <div class="mb-25"></div>
           <ul class="list-unstyled list-group list-group-custom">
@@ -46,7 +46,7 @@ get_header(); ?>
           <?php endforeach;?>
           </ul>
         </div>
-        <div class="col-sm-6 ph-70-sm">
+        <div class="col-sm-6">
           <h2>Mis Posts</h2>
           <div class="mb-35"></div>
           <?php query_posts('author='.$current_user->ID); ?>
