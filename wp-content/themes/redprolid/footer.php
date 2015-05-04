@@ -26,7 +26,7 @@
               <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-footer.png" width="322px" height="auto"></a>
             </div>
             <div class="col-md-3 text-right-sm">
-              <a href="http://www.iadb.org/" target="_blank"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_BID-footer.png" width="130px" height="auto"></a>
+              <a href="http://www.iadb.org/" target="_blank"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/BID_español_con-descriptor_blanco.png" width="130px" height="auto"></a>
             </div>
           </div>
           <div class="row">
