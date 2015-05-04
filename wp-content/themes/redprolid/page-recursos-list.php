@@ -13,8 +13,8 @@ get_header(); ?>
     <div class="container">
       <?php the_breadcrumb(); ?> 
       <div class="clearfix sub-header">
-        <div class="col-sm-1 col-xs-3">
-          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/publicaciones.png" alt="" width="100%"></div>
+        <div class="col-sm-1 col-xs-3 pl-0">
+          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/publicaciones.png" alt="" width="93px"></div>
         </div>
         <div class="col-sm-5 col-xs-9">
           <h1><?php the_title(); ?></h1>
