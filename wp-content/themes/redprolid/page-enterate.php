@@ -64,7 +64,7 @@ get_header(); ?>
               <ul class="list-unstyled">
                 <li class="title highlight-white text-gray-darker">Publicaciones</li>
                 <li class="rule"></li>
-                <li class="icon" data-href="<?php echo home_url('/'); ?>publicaciones"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/publicaciones-sml.png); background-repeat: no-repeat; background-position: 0px -43px;"></li>
+                <li class="icon" data-href="<?php echo home_url('/'); ?>publicaciones"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/publicaciones-sml.png); background-repeat: no-repeat;"></li>
               </ul>
             </div>
             <div class="panel-body">
