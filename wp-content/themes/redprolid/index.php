@@ -106,7 +106,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title highlight-white">Noticias</li>
                     <li class="rule"></li>
-                    <li class="icon" data-href="/noticias" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -84px;"></li>
+                    <li class="icon" data-href="/noticias" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-sml.png); background-repeat: no-repeat;"></li>
                   </ul>
                 </div>
                 <div class="panel-body">
