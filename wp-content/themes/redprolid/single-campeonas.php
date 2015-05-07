@@ -96,8 +96,7 @@
 						<?php } ?>					
 					<?php } ?>					
 				</p> 
-        <?php $video = get_field('video_campeonas'); ?>
-        <?php if ($video!='') { ?>				          
+        <?php if ($video=='') { ?>				          
         <div class="content-display">
           <div class="text-right mt-14 mb-14">
   	        <a class="btn btn-primary" id="boton_entrevista_full" >Lee la entrevista completa</a>
