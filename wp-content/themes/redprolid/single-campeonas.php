@@ -23,10 +23,6 @@
           <?php if ($imagen_campeona!='') { ?>
           <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
           <?php } ?>
-          <?php $video = get_field('video_campeonas'); ?>
-          <?php if ($video!='') { ?>
-          	<iframe class="embed-responsive-item" width="100%" height="229" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-          <?php } ?>
           <small><?php the_field('fuente_imagen_campeonas'); ?></small>
         </div>
         <div class="col-md-9">
@@ -46,7 +42,10 @@
 							<?php the_field('descripcion_campeona'); ?>
 	        		</em>
             </p>
-            
+	          <?php $video = get_field('video_campeonas'); ?>
+	          <?php if ($video!='') { ?>
+	          	<iframe class="embed-responsive-item" width="100%" height="229" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	          <?php } ?>
 	        </div>
 	        <div class="col-sm-3">
 	        <ul class="list-inline text-right">
