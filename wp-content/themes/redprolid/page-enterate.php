@@ -254,7 +254,7 @@ get_header(); ?>
 			                    <div class="col-sm-6 pl-0-sm pr-0 text-right">
 									          <?php $video = get_field('video_campeonas'); ?>
 									          <?php if ($video!='') { ?>
-									          	<iframe  class="embed-responsive-item" width="100%" height="290" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+									          	<iframe  class="embed-responsive-item" width="100%" height="283" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 									          <?php } else { ?>
 									          	<img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive" style="width: 100%;">
 									          <?php } ?>			                      
