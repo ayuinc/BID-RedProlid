@@ -44,7 +44,7 @@
             </p>
 	          <?php $video = get_field('video_campeonas'); ?>
 	          <?php if ($video!='') { ?>
-	          	<iframe  class="embed-responsive-item" width="100%" height="315" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	          	<iframe  class="embed-responsive-item" width="100%" height="450" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 	          <?php } ?>
 	        </div>
 	        <div class="col-sm-3">
@@ -95,13 +95,16 @@
 							<?php echo ', '.$tag_tema_campeona; ?>
 						<?php } ?>					
 					<?php } ?>					
-				</p>           
+				</p> 
+        <?php $video = get_field('video_campeonas'); ?>
+        <?php if ($video!='') { ?>				          
         <div class="content-display">
           <div class="text-right mt-14 mb-14">
   	        <a class="btn btn-primary" id="boton_entrevista_full" >Lee la entrevista completa</a>
   	        <a class="btn btn-primary" id="boton_ocultar_entrevista_full" >Ocultar la entrevista completa</a>
   	      </div>
         </div>
+        <?php } ?>
         <div id="entrevista_full">
 	        <hr>
 	        <?php $tempDate = get_field('fecha_entrevista'); ?>
