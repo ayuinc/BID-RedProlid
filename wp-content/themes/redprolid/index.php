@@ -229,14 +229,16 @@ get_header(); ?>
 	                    <?php } ?>
 			                <?php $video = get_field('video_campeonas'); ?>
 			                <?php if ($video!='') { ?>
-	                    <iframe class="embed-responsive-item" width="100%" height="209" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	                    <iframe class="embed-responsive-item" width="100%" height="209" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 	                    <?php } ?>
 											<small><?php the_field('fuente_imagen_campeonas'); ?></small>
                   	</div>
 	                  <div class="col-sm-7 pr-0">
                     <h3 class="pt-0 medium mb-0 pb-0"><?php the_title(); ?></h3>
                     <small><?php $tempDate = get_field(fecha_de_la_entrevista); ?>
-            <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+											<!--<?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de -->
+											<?php echo date_i18n('Y', strtotime( $tempDate)); ?>
+										</small>
                     <p class="light-italic">
 							        <em><?php the_field('posicion_campeona'); ?></em>
                     </p>

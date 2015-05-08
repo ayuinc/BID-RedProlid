@@ -245,7 +245,8 @@ get_header(); ?>
 													<?php setup_postdata($post); ?>
 			                    <div class="col-sm-6 arrow_box p-14">
 			                      <h3 class="medium mb-0 pb-0"><?php the_title(); ?></h3>
-			                      <small>(<?php the_field('pais_campeona'); ?>)</small>
+			                      <!--<?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de -->
+														<small><?php echo date_i18n('Y', strtotime( $tempDate)); ?>, (<?php the_field('pais_campeona'); ?>)</small>
 			                      <p><?php the_field('posicion_campeona'); ?></p>
 			                      <div class="mt-14">
 			                        <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee más</a>
@@ -254,7 +255,7 @@ get_header(); ?>
 			                    <div class="col-sm-6 pl-0-sm pr-0 text-right">
 									          <?php $video = get_field('video_campeonas'); ?>
 									          <?php if ($video!='') { ?>
-									          	<iframe  class="embed-responsive-item" width="100%" height="283" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+									          	<iframe  class="embed-responsive-item" width="100%" height="283" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 									          <?php } else { ?>
 									          	<img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive" style="width: 100%;">
 									          <?php } ?>			                      
