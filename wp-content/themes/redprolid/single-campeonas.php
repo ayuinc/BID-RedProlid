@@ -44,7 +44,7 @@
             </p>
 	          <?php $video = get_field('video_campeonas'); ?>
 	          <?php if ($video!='') { ?>
-	          	<iframe  class="embed-responsive-item" width="100%" height="450" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	          	<iframe  class="embed-responsive-item" width="100%" height="450" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 	          <?php } ?>
 	        </div>
 	        <div class="col-sm-3">
