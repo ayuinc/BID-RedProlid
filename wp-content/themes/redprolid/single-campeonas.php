@@ -36,11 +36,11 @@
             <!--<?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de --><?php echo date_i18n('Y', strtotime( $tempDate)); ?>
 	          </small>     
 	          <?php } ?> 
-            <p class="mv-14">
-	        		<em>
-	        		<?php the_field('posicion_campeona'); ?>
-							<?php the_field('descripcion_campeona'); ?>
-	        		</em>
+            <p class="mt-14">
+	            <strong><?php the_field('posicion_campeona'); ?></strong>
+            </p>
+            <p class="mb-7">
+	        		<em><?php the_field('descripcion_campeona'); ?></em>
             </p>
 	          <?php $video = get_field('video_campeonas'); ?>
 	          <?php if ($video!='') { ?>
