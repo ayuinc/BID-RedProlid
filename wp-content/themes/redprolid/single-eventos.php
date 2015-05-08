@@ -35,7 +35,7 @@
 			        <p><?php echo $convocan; ?></p>
 			        <?php } ?>
 			        <h5 class="medium mb-0">Descripción</h5>
-			        <p><?php the_field('contenido_evento'); ?></p>
+			        <?php the_field('contenido_evento'); ?>
 			        <?php $subir_pdfword_evento = get_field('subir_pdfword_evento'); ?>
 			        <?php if ($subir_pdfword_evento!='') { ?>
 			        <p><a href="<?php the_field('subir_pdfword_evento'); ?>" target="_blank">Archivo</a></p>
