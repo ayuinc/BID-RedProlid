@@ -6,7 +6,7 @@
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" alt="" width="100%"></div>
       </div>
       <div class="col-sm-4 col-xs-9">
-        <h1 class="brand-titular">Campeonas</h1>
+        <h1 class="brand-titular">Campeon@s</h1>
       </div>
       <div class="col-sm-7 col-xs-12">
         <nav class="text-right text-center-xs">
@@ -36,7 +36,7 @@
             <!--<?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de --><?php echo date_i18n('Y', strtotime( $tempDate)); ?>
 	          </small>     
 	          <?php } ?> 
-            <p class="mt-14">
+            <p class="mv-14">
 	        		<em>
 	        		<?php the_field('posicion_campeona'); ?>
 							<?php the_field('descripcion_campeona'); ?>
