@@ -13,7 +13,10 @@
     		<!--<small class="text-gray">Tiendas</small>-->
     		<h1><?php the_title();?></h1>
     		<ul class="list-unstyled pv-21">
+	    		<?php $autor_estilo = get_field('autor_estilo');?>
+	    		<?php if ($autor_estilo!='') { ?>
 	    		<li><strong>Recomendado por:</strong> <a href="mailto:<?php the_field('autor_email_estilo');?>"><?php the_field('autor_estilo');?></a></li>
+	    		<?php } ?>
     			<li><strong>Dirección:</strong> <?php the_field('estilo_direccion_lugar') ?></li>
     			<?php $estilo_sitio_web = get_field('estilo_sitio_web'); ?>
     			<?php if ($estilo_sitio_web!='') { ?>
