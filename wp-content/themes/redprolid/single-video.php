@@ -30,6 +30,10 @@
   			<div class="col-sm-12 with-hr">  	  
   		    <!--<p><?php //the_field('video_recurso_descripcion'); ?></p>-->
 					<p>
+		      	<?php $autor_video = get_field('autor_video'); ?>
+						<?php if ($autor_video!='') { ?>
+		      	<strong>Tema propuesto por:</strong> <a href="mailto:<?php the_field('autor_email_video'); ?>"><?php the_field('autor_video'); ?></a><br>
+		      	<?php } ?>							
 						<?php $video_tipo_recurso = get_field('video_tipo_recurso'); ?>
 						<?php $video_tag_tipo_de_recurso = get_field('video_tag_tipo_de_recurso'); ?>
 						<?php if ($video_tipo_recurso!='') { ?>	
