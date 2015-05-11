@@ -24,6 +24,11 @@
 				<div class="banner-content col-sm-9 mb-35">
 					<div class="row">
 						<div class="col-sm-7">
+			      	<?php $autor_evento = get_field('autor_evento'); ?>
+							<?php if ($autor_evento!='') { ?>
+							<h5 class="medium mb-0">Tema propuesto por</h5>
+			        <p><a href="mailto:<?php the_field('autor_email_evento'); ?>"><?php the_field('autor_evento'); ?></a></p>
+			      	<?php } ?>								
 							<?php $organizan_evento = get_field('organizan_evento'); ?>
 							<?php if ($organizan_evento!='') { ?>							
 							<h5 class="medium mb-0">Organizan</h5>
