@@ -34,6 +34,10 @@
   			<div class="col-sm-12 with-hr pv-21">
 	  			<div class="container-sm">
 					<p>
+		      	<?php $autor_noticias = get_field('autor_noticias'); ?>
+						<?php if ($autor_noticias!='') { ?>
+		      	<strong>Tema propuesto por:</strong> <a href="mailto:<?php the_field('autor_email_noticias'); ?>"><?php the_field('autor_noticias'); ?></a><br>
+		      	<?php } ?>						
 						<?php $pais_noticias = get_field('pais_noticias'); ?>
 						<?php if ($pais_noticias!='') { ?>						
 						<span class="medium">País:</span> <?php the_field('pais_noticias'); ?><br>
