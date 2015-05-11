@@ -39,7 +39,7 @@
             <p class="mt-14">
 	            <strong><?php the_field('posicion_campeona'); ?></strong>
             </p>
-            <p class="mb-7">
+            <p class="mb-21">
 	        		<em><?php the_field('descripcion_campeona'); ?></em>
             </p>
 	          <?php $video = get_field('video_campeonas'); ?>
@@ -74,6 +74,10 @@
       <div class="with-hr">
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
 	    	<p>
+	      	<?php $autor_campeona = get_field('autor_campeona'); ?>
+					<?php if ($autor_campeona!='') { ?>
+	      	<strong>Tema propuesto por:</strong> <a href="mailto:<?php the_field('autor_email_campeona'); ?>"><?php the_field('autor_campeona'); ?></a><br>
+	      	<?php } ?>
 	      	<?php $pais_campeona = get_field('pais_campeona'); ?>
 					<?php if ($pais_campeona!='') { ?>
 	      	<strong>País:</strong> <?php the_field('pais_campeona'); ?><br>
