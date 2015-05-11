@@ -32,6 +32,10 @@
   			<div class="col-sm-12 with-hr">  	  
   		    <p><?php the_field('recurso_descripcion'); ?></p>
 					<p>
+		      	<?php $autor_recurso = get_field('autor_recurso'); ?>
+						<?php if ($autor_recurso!='') { ?>
+		      	<strong>Tema propuesto por:</strong> <a href="mailto:<?php the_field('autor_email_recurso'); ?>"><?php the_field('autor_recurso'); ?></a><br>
+		      	<?php } ?>						
 						<?php $recurso_idioma = get_field('recurso_idioma'); ?>
 						<?php if ($recurso_idioma!='') { ?>							
 						<span class="medium">Idioma:</span> <?php echo $recurso_idioma; ?><br>
