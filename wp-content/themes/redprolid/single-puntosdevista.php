@@ -16,7 +16,7 @@
     </div>
     <div clas="row">
 	    <div class="col-md-10 col-md-offset-1 pl-0 pr-0">
-	    	<h3 class="pt-14-100 light mt-14">Te ofrecemos artículos escritos por líderes de la región latinoamericana: políticas y políticos, especialistas o profesionales relevantes que ponen sobre el papel su experiencia en pro de unas sociedades más equitativas.</h3>
+	    	<h3 class="pt-14-100 light mt-14 mb-21">Te ofrecemos artículos escritos por líderes de la región latinoamericana: políticas y políticos, especialistas o profesionales relevantes que ponen sobre el papel su experiencia en pro de unas sociedades más equitativas.</h3>
 	    </div>
     </div>
     <div class="row">
@@ -25,7 +25,13 @@
       </div>
       <div class="col-md-7">
         <h2 class="mt--5 mb-0 medium"><?php the_title(); ?></h2>
-        <p><?php the_field('profesion'); ?></p>
+        <p>
+	        <?php the_field('profesion'); ?><br>
+	      	<?php $autor_puntos = get_field('autor_puntos'); ?>
+					<?php if ($autor_puntos!='') { ?>
+	      	<small>Tema propuesto por <a href="mailto:<?php the_field('autor_email_puntos'); ?>"><?php the_field('autor_puntos'); ?></a>
+	      	<?php } ?>
+	      </p>
         <p class="text-left">
         	<?php the_field('descripcion_larga_punto_de_vista'); ?>
         </p>
