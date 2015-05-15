@@ -70,7 +70,7 @@ get_header(); ?>
 	          </div>
 	          <hr>
           <?php endwhile; else: ?>
-          <?php echo "Aun no tiene posts"; ?>
+          <?php echo "Aún no has subido un post"; ?>
           <?php endif; ?>
 
           <?php wp_reset_query(); ?>
