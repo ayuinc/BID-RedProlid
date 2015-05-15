@@ -20,7 +20,7 @@ Theme My Login will always look in your theme's directory first, before using th
 
 		<div id="pass-strength-result" class="hide-if-no-js"><?php _e( 'Strength indicator' ); ?></div>
 
-		<p class="description indicator-hint"><?php _e( 'Para hacerlo mas seguro utiliza letras mayusculas y minusculas, números y símbolos como! ? "$% ^ & Amp;).' ); ?></p>
+		<p class="description indicator-hint"><?php _e( 'Para hacerla más segura utiliza letras mayúsculas y minúsculas, números y símbolos como ! ? "$% ^ & Amp;).' ); ?></p>
 
 		<?php do_action( 'resetpassword_form' ); ?>
 
