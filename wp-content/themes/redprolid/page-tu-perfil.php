@@ -33,7 +33,7 @@ get_header(); ?>
       </div>
       <div class="row pv-42">
         <div class="col-sm-6">
-          <h2 class="medium">Mis cometarios</h2>
+          <h2 class="medium">Mis comentarios</h2>
           <div class="mb-25"></div>
           <ul class="list-unstyled list-group list-group-custom">
           <?php
