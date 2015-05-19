@@ -17,7 +17,7 @@
 			"Bangladesh",
 			"Barbados",
 			"Belarus",
-			"Belgium",
+			"Belgica",
 			"Belize",
 			"Benin",
 			"Bhutan",

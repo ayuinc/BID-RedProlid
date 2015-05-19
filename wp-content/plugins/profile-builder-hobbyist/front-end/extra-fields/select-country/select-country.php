@@ -22,7 +22,7 @@ function wppb_country_select_handler( $output, $form_location, $field, $user_id,
 ","Bangladés
 ","Barbados
 ","Baréin
-","Bélgica
+","Belgium
 ","Belice
 ","Benín
 ","Bielorrusia
