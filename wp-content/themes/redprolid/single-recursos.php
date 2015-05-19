@@ -30,16 +30,21 @@
       </div>
   	  <div class="row">
   			<div class="col-sm-12 with-hr">  	  
-  		    <p><?php the_field('recurso_descripcion'); ?></p>
+  		    <p><span class="medium">Descripción:</span> <?php the_field('recurso_descripcion'); ?></p>
 					<p>
-		      	<?php $autor_recurso = get_field('autor_recurso'); ?>
-						<?php if ($autor_recurso!='') { ?>
-		      	<strong>Tema propuesto por:</strong> <a href="mailto:<?php the_field('autor_email_recurso'); ?>"><?php the_field('autor_recurso'); ?></a><br>
-		      	<?php } ?>						
-						<?php $recurso_idioma = get_field('recurso_idioma'); ?>
-						<?php if ($recurso_idioma!='') { ?>							
-						<span class="medium">Idioma:</span> <?php echo $recurso_idioma; ?><br>
-						<?php } ?>
+
+		      			<!-- TEMA -->
+		      			<?php $recurso_tema = get_field('recurso_tema'); ?>
+						<?php $tag_tema_recurso = get_field('tag_tema_recurso'); ?>
+						<?php if ($recurso_tema!='') { ?>						
+						<span class="medium">Tema:</span> <?php the_field('recurso_tema'); ?>
+							<?php if ($tag_tema_recurso!='') { ?>
+								<?php echo ', '.$tag_tema_recurso; ?>
+							<?php } ?>								
+						<br>
+						<?php } ?>	
+						<!-- FIN TEMA -->	
+						<!-- TIPO DE RECURSO -->
 						<?php $recurso_tipo = get_field('recurso_tipo'); ?>
 						<?php $tag_tipo_de_recurso_recurso = get_field('tag_tipo_de_recurso_recurso'); ?>
 						<?php if ($recurso_tipo!='') { ?>	
@@ -48,25 +53,36 @@
 								<?php echo ', '.$tag_tipo_de_recurso_recurso; ?>
 							<?php } ?>						
 						<br>
-						<?php } ?>
-						<?php $recurso_tema = get_field('recurso_tema'); ?>
-						<?php $tag_tema_recurso = get_field('tag_tema_recurso'); ?>
-						<?php if ($recurso_tema!='') { ?>						
-						<span class="medium">Tema:</span> <?php the_field('recurso_tema'); ?>
-							<?php if ($tag_tema_recurso!='') { ?>
-								<?php echo ', '.$tag_tema_recurso; ?>
-							<?php } ?>							
+						<?php } ?>	
+						<!-- FIN TIPO DE RECURSO -->
+						<!-- PROPUESTO POR -->
+				      	<?php $autor_recurso = get_field('autor_recurso'); ?>
+						<?php if ($autor_recurso!='') { ?>
+				      	<strong>Subido por:</strong> <a href="mailto:<?php the_field('autor_email_recurso'); ?>"><?php the_field('autor_recurso'); ?></a>
+				      	<br>
+				      	<?php } ?>	
+				      	<!-- FIN PROPUESTO POR -->		
+						<!-- IDIOMA DE RECURSO -->	
+						<?php $recurso_idioma = get_field('recurso_idioma'); ?>
+						<?php if ($recurso_idioma!='') { ?>							
+						<span class="medium">Idioma:</span> <?php echo $recurso_idioma; ?>
 						<br>
 						<?php } ?>
+						<!-- FIN IDIOMA DE RECURSO -->	
+						<!-- ORGANIZACION DE RECURSO -->	
 						<?php $recurso_organizacion = get_field('recurso_organizacion'); ?>
 						<?php if ($recurso_organizacion!='') { ?>
 						<span class="medium">Organización:</span> <?php echo $recurso_organizacion; ?>
-						<?php } ?>
 						<br>
+						<?php } ?>
+						<!-- FIN ORGANIZACION DE RECURSO -->	
+						<!-- PAIS DE RECURSO -->	
 						<?php $recurso_pais = get_field('recurso_pais'); ?>
 						<?php if ($recurso_pais!='') { ?>
 						<span class="medium">País:</span> <?php the_field('recurso_pais'); ?>
-						<?php } ?>						
+						<br>
+						<?php } ?>		
+						<!-- FIN PAIS DE RECURSO -->					
 					</p>   		
 					<?php $recurso_link = get_field('recurso_link'); ?>
 					<?php if ($recurso_link!='') { ?>    
