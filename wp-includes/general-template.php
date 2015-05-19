@@ -507,8 +507,8 @@ function wp_lostpassword_url( $redirect = '' ) {
 		$args['redirect_to'] = $redirect;
 	}
 
-	$lostpassword_url = add_query_arg( $args, network_site_url('wp-login.php', 'login') );
-
+	// $lostpassword_url = add_query_arg( $args, network_site_url('wp-login.php', 'login') );
+	$lostpassword_url = 'lostpassword';
 	/**
 	 * Filter the Lost Password URL.
 	 *
