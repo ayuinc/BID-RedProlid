@@ -203,7 +203,7 @@ function wppb_user_email_customizer_add_mustache_in_backend(){
 	// we format the var like this for proper line breaks.
 	$uec_reset = __( "
 <p>Someone requested that the password be reset for the following account: {{site_name}}<br/>
-Username: {{username}}</p>
+Email: {{email}}</p>
 <p>If this was a mistake, just ignore this email and nothing will happen.</p>
 <p>To reset your password, visit the following address:<br/>
 {{{reset_link}}}</p>
