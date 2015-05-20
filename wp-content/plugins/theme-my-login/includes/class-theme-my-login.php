@@ -1049,7 +1049,7 @@ if(typeof wpOnload=='function')wpOnload()
 		}
 		$message = __( 'Someone requested that the password be reset for the following account:' ) . "\r\n\r\n";
 		$message .= network_home_url( '/' ) . "\r\n\r\n";
-		$message .= sprintf( __( 'Username: %s' ), $user_login ) . "\r\n\r\n";
+		$message .= sprintf( __( 'Email: %s' ), $user_email ) . "\r\n\r\n";
 		$message .= __( 'If this was a mistake, just ignore this email and nothing will happen.' ) . "\r\n\r\n";
 		$message .= __( 'To reset your password, visit the following address:' ) . "\r\n\r\n";
 		$message .= '<' . network_site_url( "wp-login.php?action=rp&key=$key&login=" . rawurlencode( $user_login ), 'login' ) . ">\r\n";
