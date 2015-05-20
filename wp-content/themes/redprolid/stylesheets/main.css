@@ -5736,6 +5736,9 @@ form.form-search-inline button {
     font-weight: 300;
     font-style: normal; }
 
+.wppb-form-error {
+  font-weight: bold; }
+
 #nav-main-menu {
   position: relative;
   z-index: 9999; }
