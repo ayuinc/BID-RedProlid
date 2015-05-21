@@ -24,6 +24,7 @@ get_header(); ?>
 		        </div>
 		        <div class="col-sm-5 col-xs-9">
 		          <h1><?php the_title(); ?></h1>
+		          <h4><?php the_field('subtitulo'); ?></h4>
 		        </div>
 		        <div class="col-sm-5 col-xs-12">
 		          <nav class="text-right text-center-xs">
