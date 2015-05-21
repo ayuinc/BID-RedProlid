@@ -28,7 +28,7 @@ get_header(); ?>
 		        </div>
 		        <div class="col-sm-5 col-xs-12">
 		          <nav class="text-right text-center-xs">
-		            <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a> <span class="brand-primary">|</span> <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/">Pistas</a>
+		          	<a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/">Pistas</a>
 		          </nav>          
 		        </div>
 		      </div>
