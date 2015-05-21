@@ -13,11 +13,11 @@ function dlf_form() {
 	<h4 class="medium mb-7 text-gray-darker">Ingresa a la red</h4>
 	<div class="form-group">
 	  <!-- <input name="login_name" id="login-name" type="text" class="form-control login-field" placeholder="Usuario o correo electrónico"> -->
-	  <input name="login_name" type="text" class="form-control login-field mb--7" value="" placeholder="Correo electrónico" id="login-name" required/>
+	  <input name="login_name" type="text" class="form-control login-field mb--7" value="" placeholder="Correo electrónico" id="login-name" required="true" oninvalid="this.setCustomValidity('Ingrese su correo electrónico')"/>
 	</div>
 	<div class="form-group">
 <!-- 	  <input name="login_password" type="password" class="form-control login-field" placeholder="Contraseña"> -->
-	  <input  name="login_password" type="password" class="form-control login-field mb--7" value="" placeholder="Contraseña" id="login-pass" required />
+	  <input  name="login_password" type="password" class="form-control login-field mb--7" value="" placeholder="Contraseña" id="login-pass" required="true" oninvalid="this.setCustomValidity('Ingrese su contraseña')"/>
 	</div>
 	<div class="form-group row">
 	  <div class="col-xs-9">
