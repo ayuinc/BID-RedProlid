@@ -109,6 +109,7 @@ get_header(); ?>
 				        </div>
 				        <div class="col-sm-5 col-xs-9">
 				          <h1 class="title-nivelando-la-cancha"><?php the_title(); ?></h1>
+				          <h4><?php the_field('subtitulo'); ?></h4>
 				        </div>
 				      </div>
 				      <div class="pb-21 clearfix">
