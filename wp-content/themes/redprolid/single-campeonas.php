@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="ph-70">
-  		<h3 class="light text-justify mb-35">Aquí incluimos las entrevistas con testimonios de aquellas mujeres latinoamericanas que han dejado huella y han marcado o van a marcar las agendas de sus países para imprimir mayor equidad en las políticas públicas y en el quehacer diario de la política.</h3>
+  		<h3 class="light text-justify mb-35">¿A qué mujeres líderes admiras en Latinoamérica y por qué? ¿Quiénes crees que han abierto camino? ¿Qué obstáculos encontraron y con qué apoyo contaron? ¿Qué te gustaría aprender/escuchar de ellas? ¿Quieres conocer sobre cómo concilian su vida familiar y laboral? ¿Y qué figuras masculinas consideras que han sabido entender e incorporar las agendas de género? Aquí incluimos las entrevistas con testimonios de aquellas mujeres latinoamericanas que han dejado huella o que van a marcar las agendas de sus países. Además daremos espacio a testimonios masculinos, porque queremos aprender de ellos también.</h3>
       <div class="row">
         <?php if( get_field('imagen_campeonas') ) { ?>
         <div class="col-md-3">

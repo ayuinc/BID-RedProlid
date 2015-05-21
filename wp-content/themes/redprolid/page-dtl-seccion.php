@@ -109,7 +109,7 @@ get_header(); ?>
 				        </div>
 				      </div>
 				      <div class="pb-21 clearfix">
-		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 relative pt-21" width="300px" height="auto">
+		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right ml-21 mr-21 relative pt-21" width="300px" height="auto">
 		          	<h3 class=" pt-14-100 light color-gray"><?php the_field('contenido-dtl-seccion'); ?></h3>
 		          </div>
 							<?php endif; ?>
