@@ -36,7 +36,7 @@ get_header(); ?>
 				        </div>
 				        <div class="col-sm-5 col-xs-9">
 				          <h1 class="title-a-donde-vamos"><?php the_title(); ?></h1>
-				          <h4 class="title-a-donde-vamos"><?php the_field('subtitulo'); ?></h4>
+				          <h4><?php the_field('subtitulo'); ?></h4>
 				        </div>
 		          </div>
 		          <div class="pb-21 clearfix">
@@ -50,6 +50,7 @@ get_header(); ?>
 				        </div>
 				        <div class="col-sm-5 col-xs-9">
 				          <h1 class="title-agenda-de-genero"><?php the_title(); ?></h1>
+				          <h4><?php the_field('subtitulo'); ?></h4>
 				        </div>
 				      </div>
 		          <div class="pb-21 clearfix">
@@ -94,7 +95,7 @@ get_header(); ?>
 				        </div>
 				        <div class="col-sm-5 col-xs-9">
 				          <h1 class="title-listas-para-la-politica"><?php the_title(); ?></h1>
-				          <h4 class="title-a-donde-vamos"><?php the_field('subtitulo'); ?></h4>
+				          <h4><?php the_field('subtitulo'); ?></h4>
 				        </div>
 				      </div>
 		          <div class="pb-21 clearfix">
