@@ -134,7 +134,7 @@ function wp_authenticate_username_password($user, $username, $password) {
 	$user = get_user_by('login', $username);
 
 	if ( !$user )
-		return new WP_Error( 'invalid_username', sprintf( __( '<p style="color:red !important;"><strong>Error</strong>: Nombre de usuaria/usuario inválido. ¿<a href="%s" title="Password Lost and Found">Has perdido tu contraseña</a>?</p>' ), wp_lostpassword_url() ) );
+		return new WP_Error( 'invalid_username', sprintf( __( '<p style="color:red !important;"><strong>Error</strong>: Nombre de usuaria/usuario inválido. <br>¿<a href="%s" title="Password Lost and Found">Has perdido tu contraseña</a>?</p>' ), wp_lostpassword_url() ) );
 
 	/**
 	 * Filter whether the given user can be authenticated with the provided $password.
