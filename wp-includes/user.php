@@ -149,7 +149,7 @@ function wp_authenticate_username_password($user, $username, $password) {
 	if ( is_wp_error($user) )
 		return $user;
 	if ( !wp_check_password($password, $user->user_pass, $user->ID) )
-		return new WP_Error( 'incorrect_password', sprintf( __( '<strong><p style="font-weight: 500; color:red !important;">Error: la contraseña que has ingresado para el correo electrónico %1$s es incorrecta. ¿<a style="color:red !important;" href="%2$s" title="Password Lost and Found">Has perdido tu contraseña</a>?</p></strong>' ),
+		return new WP_Error( 'incorrect_password', sprintf( __( '<strong><p style="font-weight: 500; color:red !important;">Error: la contraseña que has ingresado para el correo electrónico %1$s es incorrecta. <br> ¿<a style="color:red !important;" href="%2$s" title="Password Lost and Found">Has perdido tu contraseña</a>?</p></strong>' ),
 		$user->user_email, wp_lostpassword_url() ) );
 
 	return $user;
