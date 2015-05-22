@@ -246,18 +246,15 @@ class Profile_Builder_Form_Creator{
                         //echo $form_message_tpl_start . $wppb_register_success_message  . $form_message_tpl_end . $redirect;
 						//action hook after registration success
 
-                        if( $this->args['form_type'] == 'register'){
+                        if( $this->args['form_type'] == 'register'  && $this->args['form_type'] == 'edit_profile'){
                             echo $redirect;
                             return;
                         }
 	                    do_action('wppb_register_success', $_REQUEST, $this->args['form_name'], $user_id);
                         return;
                     } elseif ( $this->args['form_type'] == 'edit_profile' ){
-						//$redirect = apply_filters( 'wppb_edit_profile_redirect', $this->wppb_get_redirect() );
-						//echo $form_message_tpl_start  . apply_filters( 'wppb_edit_profile_success_message', 'Has completado el proceso de registro en Red PROLID. Puedes empezar a navegar en el sitio.' ) . $form_message_tpl_end . $redirect;
-	                    $redirect = apply_filters( 'wppb_register_redirect', $this->wppb_get_redirect() );
-	                    echo $redirect;
-	                    return;
+						$redirect = apply_filters( 'wppb_edit_profile_redirect', $this->wppb_get_redirect() );
+						echo $form_message_tpl_start  . apply_filters( 'wppb_edit_profile_success_message', 'Has completado el proceso de registro en Red PROLID. Puedes empezar a navegar en el sitio.' ) . $form_message_tpl_end . $redirect;
 						//action hook after edit profile success
 	                    do_action('wppb_edit_profile_success', $_REQUEST, $this->args['form_name'], $user_id);
                         if ( apply_filters( 'wppb_no_form_after_profile_update', false ) )
