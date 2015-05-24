@@ -274,7 +274,13 @@ get_header(); ?>
                       <li class="mb-14">
                         <p class="light" id="home-comment"><a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo get_the_title( $comment->comment_post_ID ); ?></a></p>
                         <small class="date light"><?php echo($comment->comment_content);?></small></br>
-                        <small class="date light"><?php echo($comment->comment_date);?> <?php //echo($comment->comment_author);?></small> 
+                        <small class="date light"><?php echo($comment->comment_date);?>
+                        <?php 
+	                        $category = get_the_category(); 
+													echo $category[0]->cat_name; 
+												?>
+												<?php //echo($comment->comment_author);?>
+												</small> 
                       </li>
                     <?php endforeach;?>
                     </ul>
