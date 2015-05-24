@@ -5,7 +5,7 @@
       <div class="col-sm-1 col-xs-3">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt="" width="100%"></div>
       </div>
-      <div class="col-sm-4 col-xs-9">
+      <div class="col-sm-4 col-xs-9 pl-21">
         <h1 class="brand-titular">Puntos de vista</h1>
       </div>
       <div class="col-sm-7 col-xs-12">
@@ -24,7 +24,7 @@
         <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" class="img-responsive">
       </div>
       <div class="col-md-7">
-        <h2 class="mt--5 mb-0 medium pl-21"><?php the_title(); ?></h2>
+        <h2 class="mt--5 mb-0 medium"><?php the_title(); ?></h2>
         <p>
 	        <?php the_field('profesion'); ?><br>
 	      	<?php $autor_puntos = get_field('autor_puntos'); ?>
