@@ -24,7 +24,7 @@
         <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" class="img-responsive">
       </div>
       <div class="col-md-7">
-        <h2 class="mt--5 mb-0 medium"><?php the_title(); ?></h2>
+        <h2 class="mt--5 mb-0 medium pl-21"><?php the_title(); ?></h2>
         <p>
 	        <?php the_field('profesion'); ?><br>
 	      	<?php $autor_puntos = get_field('autor_puntos'); ?>
