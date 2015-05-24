@@ -48,9 +48,9 @@ get_header(); ?>
 								<div class="col-sm-1 col-xs-3">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-icon.png"></div>
 				        </div>
-				        <div class="col-sm-5 col-xs-9">
-				          <h1 class="title-agenda-de-genero"><?php the_title(); ?></h1>
-				          <h4><?php the_field('subtitulo'); ?></h4>
+				        <div class="col-sm-5 col-xs-9 pl-21">
+				          <h1 class="title-a-donde-vamos"><?php the_title(); ?></h1>
+				          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
 				        </div>
 				      </div>
 		          <div class="pb-21 clearfix">
@@ -62,7 +62,7 @@ get_header(); ?>
 								<div class="col-sm-1 col-xs-3">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-carrera-vallas-icon.png"></div>
 				        </div>
-				        <div class="col-sm-5 col-xs-9">
+				        <div class="col-sm-5 col-xs-9 pl-21">
 				          <h1 class="title-carrera-de-vallas"><?php the_title(); ?></h1>
 				        </div>
 				      </div>
@@ -75,7 +75,7 @@ get_header(); ?>
 								<div class="col-sm-1 col-xs-3">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-icon.png"></div>
 				        </div>
-				        <div class="col-sm-6 col-xs-9">
+				        <div class="col-sm-6 col-xs-9 pl-21">
 				          <h1 class="title-la-pinta-no-es-lo-de-menos"><?php the_title(); ?></h1>
 				        </div>
 								<div class="col-sm-5 col-xs-12">
@@ -93,9 +93,9 @@ get_header(); ?>
 								<div class="col-sm-1 col-xs-3">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-listas-politica-icon.png"></div>
 				        </div>
-				        <div class="col-sm-5 col-xs-9">
-				          <h1 class="title-listas-para-la-politica"><?php the_title(); ?></h1>
-				          <h4><?php the_field('subtitulo'); ?></h4>
+				        <div class="col-sm-5 col-xs-9 pl-21">
+				          <h1 class="title-a-donde-vamos"><?php the_title(); ?></h1>
+				          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
 				        </div>
 				      </div>
 		          <div class="pb-21 clearfix">
@@ -107,9 +107,9 @@ get_header(); ?>
 								<div class="col-sm-1 col-xs-3">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-nivelando-cancha-icon.png"></div>
 				        </div>
-				        <div class="col-sm-5 col-xs-9">
-				          <h1 class="title-nivelando-la-cancha"><?php the_title(); ?></h1>
-				          <h4><?php the_field('subtitulo'); ?></h4>
+				        <div class="col-sm-5 col-xs-9 pl-21">
+				          <h1 class="title-a-donde-vamos"><?php the_title(); ?></h1>
+				          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
 				        </div>
 				      </div>
 				      <div class="pb-21 clearfix">
@@ -121,9 +121,9 @@ get_header(); ?>
 								<div class="col-sm-1 col-xs-3">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-pistas-icon.png"></div>
 				        </div>
-				        <div class="col-sm-5 col-xs-9">
-				          <h1 class="title-pistas-2"><?php the_title(); ?></h1>
-				          <h4><?php the_field('subtitulo'); ?></h4>
+				        <div class="col-sm-5 col-xs-9 pl-21">
+				          <h1 class="title-a-donde-vamos"><?php the_title(); ?></h1>
+				          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
 				        </div>
 				        <div class="col-sm-6 col-xs-12">
 								</div>
