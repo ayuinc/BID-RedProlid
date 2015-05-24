@@ -34,9 +34,9 @@ get_header(); ?>
 								<div class="col-sm-1 col-xs-3">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png"></div>
 				        </div>
-				        <div class="col-sm-5 col-xs-9">
+				        <div class="col-sm-5 col-xs-9 pl-21">
 				          <h1 class="title-a-donde-vamos"><?php the_title(); ?></h1>
-				          <h4><?php the_field('subtitulo'); ?></h4>
+				          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
 				        </div>
 		          </div>
 		          <div class="pb-21 clearfix">
