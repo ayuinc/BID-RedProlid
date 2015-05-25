@@ -280,7 +280,7 @@ get_header(); ?>
                           $categories = get_the_category($comment->comment_post_ID);
                           $cat_name = $categories[0]->name;
                         ?>
-                        |<a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo $cat_name; ?></a>
+                        | <a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo $cat_name; ?></a>
 												</small> 
                       </li>
                     <?php endforeach;?>
