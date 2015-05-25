@@ -24,7 +24,7 @@ get_header(); ?>
 		        </div>
 		        <div class="col-sm-5 col-xs-9">
 		          <h1><?php the_title(); ?></h1>
-		          <h4><?php the_field('subtitulo'); ?></h4>
+		          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
 		        </div>
 		        <div class="col-sm-5 col-xs-12">
 		          <nav class="text-right text-center-xs">
@@ -47,7 +47,7 @@ get_header(); ?>
 	
 	<section class="bg-panel pv-21">
 		<div class="container">
-			<h3>Dónde puedo comer y comprar</h3>
+			<h3 class="medium">Dónde puedo comer y comprar</h3>
 			<p>Te ofrecemos, ordenadas por ciudades, sugerencias de restaurantes y tiendas concretas de las principales ciudades de Latinoamérica para que, en tus viajes de trabajo o cuando asistas a foros y congresos, puedas tener mejores alternativas que la cafetería del hotel o el Mall al frente. En definitiva, donde poder darte un gusto.</p>
 			<form action="/a-tu-estilo/a-tu-estilo-resultados-de-busqueda/" method="post">
 			<div class="row">
