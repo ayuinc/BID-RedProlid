@@ -277,7 +277,6 @@ get_header(); ?>
                         <small class="date light"><?php echo($comment->comment_date);?>
 												<?php //echo($comment->comment_author);?>
                         <?php
-                          // global $post;
                           $categories = get_the_category($comment->comment_post_ID);
                           echo $categories[0]->name;
                         ?>
