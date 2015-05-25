@@ -279,7 +279,7 @@ get_header(); ?>
                         <?php
                           global $post;
                           $categories = get_the_category($comment->comment_post_ID);
-                          var_dump($categories);
+                          print_r($categories);
                         ?>
 												</small> 
                       </li>
