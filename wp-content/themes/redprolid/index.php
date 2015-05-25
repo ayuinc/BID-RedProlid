@@ -276,6 +276,7 @@ get_header(); ?>
                         <small class="date light"><?php echo($comment->comment_content);?></small></br>
                         <small class="date light"><?php echo($comment->comment_date);?>
 												<?php //echo($comment->comment_author);?>
+                        <?php get_the_category( $comment->comment_post_ID ); ?>
 												</small> 
                       </li>
                     <?php endforeach;?>
