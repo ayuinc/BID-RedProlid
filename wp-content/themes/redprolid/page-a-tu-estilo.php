@@ -11,7 +11,7 @@ get_header(); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
 
-	<section class="mt-7 pb-21> 
+	<section class="mt-7 pb-21"> 
     <div class="container">
       <?php the_breadcrumb(); ?>
       <div class="row">
