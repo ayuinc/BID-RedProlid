@@ -25,8 +25,8 @@ get_header(); ?>
 			<div class="container-sm">
 				<div class="row pv-49">
 					<div class="col-sm-8 col-sm-offset-2">
-						<h3 class="medium text-center mt-35">Tu perfil ha sido actua</h3>
-						<p>Puedas empezar a navegar en Red PROLID</p>
+						<h3 class="medium text-center mt-35">Tu perfil ha sido actualizado</h3>
+						<p>Sigue navegando en Red PROLID</p>
 					</div>
 				</div>
 			</div>
