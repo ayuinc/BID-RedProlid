@@ -39,7 +39,7 @@ get_header(); ?>
 		      </div>
       	</div>
       	<div class="col-sm-4 hidden-xs">
-					<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/a-tu-estilo-rombo.png" alt="" class="img-responsive">
+					<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/AtuEstilo.jpg" alt="" class="img-responsive">
       	</div>
       </div>
     </div>
