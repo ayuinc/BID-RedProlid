@@ -51,14 +51,14 @@ get_header(); ?>
             <?php } ?>
            </div>
            <div class="banner-content flex-none" style="height:12rem;">
-							<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="h5 medium mb-0"><?php the_title(); ?></h3></a>
+							<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="h5 medium mb-0 text-dark"><?php the_title(); ?></h3></a>
 							<?php $video_autor = get_field('video_autor'); ?>
 							<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
 							<small>
 								<?php if ($video_autor!='') { ?><?php the_field('video_autor'); ?><?php } ?><?php if ($video_fecha_publicacion!='') { ?>, <?php the_field('video_fecha_publicacion'); ?><?php } ?>
 							</small>  	
 							<p class="pt-14 light"><?php the_field('video_descripcion_corta'); ?></p>
-							<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></p>
+							<small class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
            </div>
          </div>
        </li>
