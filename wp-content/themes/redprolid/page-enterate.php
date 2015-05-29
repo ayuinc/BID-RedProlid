@@ -308,7 +308,7 @@ get_header(); ?>
                             <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
                           </div>
                         </div>
-                        <div class="row">
+                        <div class="row pt-14">
                           <div class="col-md-12"><?php the_field('descripcion_evento');?></div>
                           <p class="text-right mr-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más información >></a></p>
                         </div>
