@@ -161,7 +161,7 @@ get_header(); ?>
                 <div class="panel panel-custom pr-14">
                   <div class="panel-heading">
                     <ul class="list-unstyled">
-                      <li class="title text-gray-darker highlight-campeonas">Últimas noticias</li>
+                      <li class="title text-gray-darker highlight-white">Últimas noticias</li>
                       <li class="rule"></li>
                       <li class="icon" data-href="<?php echo home_url('/'); ?>noticias"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-sml.png); background-repeat: no-repeat;"></li>
                     </ul>
@@ -189,11 +189,11 @@ get_header(); ?>
                               <p class="medium giveMeEllipsis"><?php the_title(); ?></p>
                             </h5>
                             <?php $publicacion = get_field('publicacion_noticias'); ?>
-                            <?php if ($publicacion!='') { ?><a class="block" href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
-                              <?php } ?>
-                            <small>
-                              <?php echo get_the_date('j F, Y'); ?>
-                            </small>
+                            <?php if ($publicacion!='') { ?>
+                              <a class="block" href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+                              <small><?php echo get_the_date('j F, Y'); ?></small>
+                              <p><?php the_field('descripcion_rapida_noticias'); ?></p>
+                            <?php } ?>
                             <div class="text-right banner-label p-7">
                               <a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a>
                             </div>
@@ -210,7 +210,7 @@ get_header(); ?>
                 <div class="panel panel-custom">
                   <div class="panel-heading">
                     <ul class="list-unstyled">
-                      <li class="title text-gray-darker highlight-campeonas">Videos</li>
+                      <li class="title text-gray-darker highlight-white">Videos</li>
                       <li class="rule"></li>
                       <li class="icon" data-href="<?php echo home_url('/'); ?>video"   style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
                     </ul>
@@ -218,31 +218,28 @@ get_header(); ?>
                   <div class="panel-body pt-0">
                     <div class="row">
                       <div class="col-md-8">
-                        <p class="medium">Artículos escritos por líderes y especialistas</p>
+                        <p class="mr-56"><a href="<?php echo home_url('/'); ?>noticias" class="medium">Todos los videos >></a></p>
                       </div>
-                      <div class="col-md-4 text-right">
-                        <a href="<?php echo home_url('/'); ?>campeonas" class="medium">Artículos >></a>
-                      </div>
-                    </div>
-                    <?php if ( have_posts() ) : ?>
-                    <?php query_posts( array( 'category_name' => 'puntos-de-vista', 'posts_per_page' => 1 ) ); ?>
-                      <?php while ( have_posts() ) : the_post(); ?>
-                    <div class="bg-white clearfix">
-                      <div class="col-sm-5 pl-0">
-                        <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" class="img-responsive" style="width: 100%;">
-                      </div>
-                      <div class="col-sm-7 pl-7 pr-14 pt-14">
-                          <div class="triangle"></div>                                  
-                          <h3 class="medium mb-0 pb-0"><?php the_title(); ?></h3>
-                          <p>
-                            <?php the_field('descripcion_punto_de_vista'); ?>
-                          </p>
-                          <div class="text-right">
-                            <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee más</a>
-                          </div>   
+                    </div>                     
+                      <?php if ( have_posts() ) : ?>
+                        <?php query_posts( array( 'category_name' => 'video', 'posts_per_page' => 1 ) ); ?>
+                          <?php while ( have_posts() ) : the_post(); ?>                                  
+                          <h3 class="pb-0 mb-0"><?php the_title(); ?></h3>
+                          <?php $video_autor = get_field('video_autor'); ?>
+                          <?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
+                          <?php $video_descripcion_corta = get_field('video_descripcion_corta') ?>
+                          <?php if ($video_descripcion_corta !='') { ?> <?php the_field('video_descripcion_corta'); ?><?php } ?>
+                          <?php $youtube = get_field('video_youtube'); ?>
+                          <?php if ($youtube!='') { ?>
+                            <iframe width="100%" height="290" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
+                          <?php } ?>
+                          <?php $vimeo = get_field('video_video_vimeo'); ?>
+                          <?php if ($vimeo!='') { ?>        
+                            <iframe src="//player.vimeo.com/video/<?php the_field('video_video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                          <?php } ?>
                           <?php endwhile; ?>
-                        <?php endif; ?>                   
-                      </div>
+                        <?php endif; ?>            
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -251,6 +248,7 @@ get_header(); ?>
           </div>
         </div>
         <!-- termina 'Ultimas noticias' + 'Videos' -->
+        <div class="container">
         <div class="row">
           <div class="panel panel-custom">
             <div class="panel-heading mb-0">
@@ -299,6 +297,7 @@ get_header(); ?>
             </div>
           </div>
         </div>
+      </div> 
       <div class="bg-panel">
         <div class="container">
           <div class="panel panel-custom">

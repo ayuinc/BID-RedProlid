@@ -6383,7 +6383,8 @@ div[id^="yop-poll-results-3"] {
 
 .border-panel {
   border: 1px solid #bcbcbc;
-  padding: 7px; }
+  padding: 7px;
+  min-height: 100px; }
 
 .triangle {
   width: 0;
