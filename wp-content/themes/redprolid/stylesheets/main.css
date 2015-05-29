@@ -6384,7 +6384,7 @@ div[id^="yop-poll-results-3"] {
 .border-panel {
   border: 1px solid #bcbcbc;
   padding: 7px;
-  min-height: 100px; }
+  min-height: 398px; }
 
 .triangle {
   width: 0;
@@ -6439,17 +6439,15 @@ div[id^="yop-poll-results-3"] {
   content: '\2039';
   font-family: "proxima-nova", Helvetica, Arial, sans-serif; }
 
+.enterate-publicaciones .input-group input {
+  width: 220px !important; }
+
 .enterate-search {
-  position: relative;
-  min-height: 350px;
-  width: 350px; }
+  min-height: 250px; }
   .enterate-search .bookshelf {
-    position: absolute;
-    width: 350px;
-    height: 275px;
+    width: auto;
+    height: 210px;
     background: url(../assets/img/enterate-search.png) no-repeat center center;
-    bottom: -101px;
-    left: 0;
     background-size: cover; }
   .enterate-search form input[type="search"] {
     width: 275px !important; }
@@ -6490,6 +6488,9 @@ div[id^="yop-poll-results-3"] {
   border-width: 14px;
   margin-top: -14px;
   z-index: 100; }
+
+.full-bottom-border {
+  border-bottom: 1px solid #bcbcbc; }
 
 #breadcrumbs {
   list-style: none;

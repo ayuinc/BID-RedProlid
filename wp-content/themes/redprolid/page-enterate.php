@@ -212,7 +212,7 @@ get_header(); ?>
                     <ul class="list-unstyled">
                       <li class="title text-gray-darker highlight-white">Videos</li>
                       <li class="rule"></li>
-                      <li class="icon" data-href="<?php echo home_url('/'); ?>video"   style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
+                      <li class="icon" data-href="<?php echo home_url('/'); ?>video"   style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/camara.png); background-repeat: no-repeat;"></li>
                     </ul>
                   </div>
                   <div class="panel-body pt-0">
@@ -248,173 +248,80 @@ get_header(); ?>
           </div>
         </div>
         <!-- termina 'Ultimas noticias' + 'Videos' -->
+        <!-- inicia 'Publicaciones' + 'Eventos' -->
         <div class="container">
-        <div class="row">
-          <div class="panel panel-custom">
-            <div class="panel-heading mb-0">
-              <ul class="list-unstyled">
-                <li class="title highlight-white text-gray-darker">Publicaciones</li>
-                <li class="rule"></li>
-                <li class="icon" data-href="<?php echo home_url('/'); ?>publicaciones"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/publicaciones-sml.png); background-repeat: no-repeat;"></li>
-              </ul>
-            </div>
-            <div class="panel-body">
-              <div class="col-md-4 pl-0 pr-0">
-                <div class="enterate-search bg-panel p-14">
-                  <h2 class="mb-0">Búsqueda</h2>
-                  <hr class="hr-gray-light mt-7 mb-7">
-                  <p class="lead text-gray">Filtra tu búsqueda y encuentra lo que necesitas:</p>
-                  <?php get_search_form(); ?>
-                  <div class="bookshelf"></div>
-                </div>
-              </div>
-              <div class="col-md-8 pl-0 pr-0">
-                <ul class="flex flex-row flex-space-between normalize-text mb-14">
-                  <li>
-                    <h3 class="pb-14">Últimas publicaciones</h3>
-                  </li>
-                  <li>
-                    <a href="<?php echo home_url('/'); ?>publicaciones" class="medium">Todas las publicaciones >></a>
-                  </li>
-                </ul>
+        <div class="row full-bottom-border">
+          <div class="col-sm-6">
+            <div class="panel panel-custom pr-14">
+              <div class="panel-heading">
                 <ul class="list-unstyled">
-                	<!-- Start the Loop. -->
-                	<?php query_posts( 'category_name=recursos&posts_per_page=3&meta_key=recurso_año_de_publicacion&orderby=meta_value_num' ); ?>	
-									<?php while ( have_posts() ) : the_post(); ?>    
-	                  <li class="mb-14">
-	                    <h4 class="medium"><?php the_title(); ?></h4>
-	                    <p><?php the_field('recurso_descripcion'); ?></p>
-						          <p>
-									      <strong>Autor: <?php the_field('recurso_autor'); ?></strong>, <?php the_field('recurso_año_de_publicacion'); ?> 
-												<a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary">Lee más >></a> 
-	                    </p>
-	                  </li>
-                    <hr>
-			            <?php endwhile; ?>  
-			            <?php wp_reset_query(); ?>
+                  <li class="title text-gray-darker highlight-white">Publicaciones</li>
+                  <li class="rule"></li>
+                  <li class="icon" data-href="<?php echo home_url('/'); ?>publicaciones"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/publicaciones-sml.png); background-repeat: no-repeat;"></li>
                 </ul>
+              </div>
+              <div class="panel-body pt-0">            
+                <!-- loop noticias    -->
+                <div class="row">
+                  <div class="col-xs-6 enterate-publicaciones">
+                    <h3 class="mb-0">Búsqueda</h3>
+                    <hr class="hr-gray-light mt-7 mb-7">
+                    <p class="text-gray">Filtra tu búsqueda y encuentra lo que necesitas:</p>
+                    <?php get_search_form(); ?>
+                  </div>
+                  <div class="enterate-search col-xs-6">
+                    <div class="bookshelf"></div>
+                  </div>
+                <!-- loop noticias    -->
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div> 
-      <div class="bg-panel">
-        <div class="container">
-          <div class="panel panel-custom">
-            <div class="panel-heading">
-              <ul class="list-unstyled">
-                <li class="title text-gray-darker highlight-campeonas">Últimas noticias</li>
-                <li class="rule"></li>
-                <li class="icon" data-href="<?php echo home_url('/'); ?>noticias"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-sml.png); background-repeat: no-repeat;"></li>
-              </ul>
-            </div>
-            <div class="panel-body">
-              <div class="row">
-                <div class="col-md-12">
-                  <p class="text-right mr-56"><a href="<?php echo home_url('/'); ?>noticias" class="medium">Todas las noticias >></a></p>
-                </div>
-              </div>            
-              <div class="gallery js-flickity grid-list grid-list-3 grid-list-1-xs grid-list-2-xs noticias-grid" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false }'>
-                <?php if ( have_posts() ) : ?>
-                  <?php query_posts( 'cat=12&posts_per_page=3' ); ?>
-                  <?php while ( have_posts() ) : the_post(); ?>                   
-                    <div class="gallery-cell grid-list-item" style="min-height: 350px;">
-                      <div class="banner banner-label-bottom">
-                        <div class="bg-white">
-                          <?php $imagen = get_field('imagen_noticias'); ?>
-                          <?php if ($imagen!='') { ?>
-                          <div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
-                          <?php } else { ?>
-                          <div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
-                          <?php } ?>
-                          <div class="banner-content flex-none" style="min-height:13rem;">
-                            <h3 class="medium mt-7 mb-0 pb-0">
-                              <a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a>
-                            </h3>
-                            <?php $publicacion = get_field('publicacion_noticias'); ?>
-                            <small>
-                              <?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
-                              <?php } ?>
-                            </small>
-                            <p class="mt-14"><?php the_field('descripcion_rapida_noticias');?></p>
-                            <div class="text-right banner-label p-7">
-                              <small><a href="<?php echo get_permalink( get_the_ID() ); ?>">Noticia completa >></a></small>
-                            </div>
+          <div class="col-sm-6">
+            <div class="panel panel-custom">
+              <div class="panel-heading">
+                <ul class="list-unstyled">
+                  <li class="title text-gray-darker highlight-white">Eventos</li>
+                  <li class="rule"></li>
+                  <li class="icon" data-href="<?php echo home_url('/'); ?>eventos"   style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -125px;"></li>
+                </ul>
+              </div>
+              <div class="panel-body pt-0">
+                  <div class="row">
+                    <!-- Start the Loop. -->
+                    <?php if ( have_posts() ) : ?>
+                      <?php query_posts( array( 'category_name' => 'evento-destacado', 'posts_per_page' => 1 ) ); ?>
+                      <?php while ( have_posts() ) : the_post(); ?>               
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <?php $imagen_evento = get_field('imagen_evento'); ?>
+                            <?php if ($imagen_evento!='') { ?>  
+                              <img src="<?php the_field('imagen_evento'); ?>" width="100%">
+                            <?php } else { ?>
+                              <img src="/wp-content/uploads/2015/02/eventos_redprolid.png" width="100%">
+                            <?php } ?>
+                          </div>
+                          <div class="col-md-8">
+                            <h4 class="medium mb-0"><?php the_title(); ?></h4>
+                            <?php $tempDate = get_field('fecha_inicio_evento'); ?>
+                            <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
                           </div>
                         </div>
+                        <div class="row">
+                          <div class="col-md-12"><?php the_field('descripcion_evento');?></div>
+                          <p class="text-right mr-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más información >></a></p>
+                        </div>
                       </div>
-                    </div>
-                  <?php endwhile; ?>
-                <?php endif; ?>
+                      <?php endwhile; ?>
+                    <?php endif; ?> 
+                  </div>
               </div>
             </div>
-          </div>
+          </div>  
         </div>
       </div>
-      <div class="container">
-        <div class="panel panel-custom">
-          <div class="panel-heading">
-            <ul class="list-unstyled">
-              <li class="title title text-gray-darker highlight-white">Eventos</li>
-              <li class="rule"></li>
-              <li class="icon" data-href="<?php echo home_url('/'); ?>eventos"   style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -125px;"></li>
-            </ul>
-          </div>
-          <!--<div class="row">
-            <div class="col-md-12">
-              <p class="text-right"><a href="<?php echo home_url('/'); ?>eventos" class="medium">Eventos aquí >></a></p>
-            </div>
-          </div>-->             
-          <div class="panel-body" style="padding: 0; margin: 21px 0;">
-              <div class="row">
-			          <!-- Start the Loop. -->
-			          <?php if ( have_posts() ) : ?>
-			            <?php query_posts( array( 'category_name' => 'evento-destacado', 'posts_per_page' => 1 ) ); ?>
-			            <?php while ( have_posts() ) : the_post(); ?>	              
-	                <div class="col-md-8">
-		                <div class="row">
-			                <div class="col-md-4">
-							      		<?php $imagen_evento = get_field('imagen_evento'); ?>
-							        	<?php if ($imagen_evento!='') { ?>	
-							    				<img src="<?php the_field('imagen_evento'); ?>" width="100%">
-							    			<?php } else { ?>
-							    				<img src="/wp-content/uploads/2015/02/eventos_redprolid.png" width="100%">
-							    			<?php } ?>
-			                </div>
-			                <div class="col-md-8">
-				                <h3 class="medium mb-0"><?php the_title(); ?></h3>
-	                    	<?php $tempDate = get_field('fecha_inicio_evento'); ?>
-		                    <small><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
-				                <p class="mt-14"><?php the_field('descripcion_evento');?></p>
-				                <p class="text-right mr-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Más información >></a></p>
-			                </div>
-		                </div>
-	                </div>
-				        	<?php endwhile; ?>
-			          <?php endif; ?> 
-                <div class="col-md-4">
-                  <h3 class="medium">Próximos eventos</h3>
-									<div class="row">
-					          <!-- Start the Loop. -->
-					          <?php if ( have_posts() ) : ?>
-					            <?php query_posts( 'category_name=proximos-eventos&posts_per_page=3&offset-1' ); ?>
-					            <?php while ( have_posts() ) : the_post(); ?>											
-											<div class="col-md-12">
-												<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h5 class="medium mb-0 pb-0"><?php the_title(); ?></h5></a>
-												<?php $tempDate1 = get_field('fecha_inicio_evento'); ?>
-												<small><?php echo date_i18n('j', strtotime( $tempDate1)); ?> de <?php echo date_i18n('F', strtotime( $tempDate1)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate1)); ?></small>
-												<hr>
-											</div>		
-						        	<?php endwhile; ?>
-					          <?php endif; ?> 	
-					          <p class="text-right mr-14"><a href="<?php echo home_url('/'); ?>eventos" class="medium">Eventos >></a></p>										
-									</div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-      
+      <!-- termina 'Publicaciones' + 'Eventos' --> 
 
       <div class="container-sm pv-21">
         <div class="row">

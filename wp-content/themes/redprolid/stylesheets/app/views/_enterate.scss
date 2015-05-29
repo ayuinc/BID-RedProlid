@@ -15,7 +15,7 @@
 .border-panel {
 	border: 1px solid $gray-light;
 	padding: 7px;
-	min-height: 100px;
+	min-height: 398px;
 }
 
 .triangle {
@@ -75,18 +75,25 @@
 	font-family: $font-family-sans-serif;
 }
 
+.enterate-publicaciones {
+	.input-group {
+		input {
+			width: 220px !important;
+		}
+	}
+}
 
 .enterate-search {
-	position: relative;
-	min-height: 350px;
-	width: 350px;
+	// position: relative;
+	min-height: 250px;
+	// width: 350px;
 	.bookshelf {
-		position: absolute;
-		width: 350px;
-		height: 275px;
+		// position: absolute;
+		width: auto;
+		height: 210px;
 		background: url(../assets/img/enterate-search.png) no-repeat center center;
-		bottom: -101px;
-		left: 0;
+		// bottom: -101px;
+		// left: 0;
 		background-size: cover;
 	}
 	form {
@@ -139,4 +146,8 @@
 	border-width: 14px;
 	margin-top: -14px;
 	z-index: 100;
+}
+
+.full-bottom-border {
+	border-bottom: 1px solid $gray-light;
 }
