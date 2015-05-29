@@ -31,7 +31,7 @@ get_header(); ?>
 			<?php
 			$count = 0;	
 			global $myOffset;
-			$myOffset = 6;
+			$myOffset = 7;
 			$temp = $wp_query;
 			$wp_query= null;
 			$wp_query = new WP_Query();
