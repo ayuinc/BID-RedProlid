@@ -57,8 +57,8 @@ get_header(); ?>
 							<small>
 								<?php if ($video_autor!='') { ?><?php the_field('video_autor'); ?><?php } ?><?php if ($video_fecha_publicacion!='') { ?>, <?php the_field('video_fecha_publicacion'); ?><?php } ?>
 							</small>  	
-							<small><?php the_field('video_descripcion_corta'); ?></small>
-							<small class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
+							<p class="pt-14 light"><?php the_field('video_descripcion_corta'); ?></p>
+							<small class="text-right pb-14"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
            </div>
          </div>
        </li>
