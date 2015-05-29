@@ -51,7 +51,7 @@ get_header(); ?>
             <?php } ?>
            </div>
            <div class="banner-content flex-none" style="min-height:12rem;">
-              <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="h5 medium mb-0"><?php the_title(); ?></h3></a>
+              <h3 class="h5 medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
               <p class="mb-0"><?php the_field('video_descripcion_cortao'); ?></p>
 							<?php $video_autor = get_field('video_autor'); ?>
 							<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
