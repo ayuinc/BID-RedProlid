@@ -16,7 +16,7 @@ get_header(); ?>
         <div>
           <h1>Videos anteriores</h1>
           <nav class="mt-21">
-            <a href="<?php echo content_url('/'); ?>eventos">Videos >></a>
+            <a href="<?php echo content_url('/'); ?>video">Videos >></a>
           </nav>
         </div>
       </div>
