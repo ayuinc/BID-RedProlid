@@ -41,7 +41,7 @@ get_header(); ?>
 				<div class="new-ribbon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/new-ribbon.png)"></div>
 			</div>
 			<div class="col-sm-5">
-				<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="h5 medium mb-0"><?php the_title(); ?></h3></a>
+				<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h2 class="medium mb-0"><?php the_title(); ?></h2></a>
 				<?php $video_autor = get_field('video_autor'); ?>
 				<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
 				<small>
