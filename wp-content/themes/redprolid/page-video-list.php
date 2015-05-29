@@ -50,14 +50,14 @@ get_header(); ?>
               <iframe src="//player.vimeo.com/video/<?php the_field('video_video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="220" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             <?php } ?>
            </div>
-           <div class="banner-content flex-none" style="min-height:12rem;">
+           <div class="banner-content flex-none" style="height:12rem;">
 							<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="h5 medium mb-0"><?php the_title(); ?></h3></a>
 							<?php $video_autor = get_field('video_autor'); ?>
 							<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
 							<small>
 								<?php if ($video_autor!='') { ?><?php the_field('video_autor'); ?><?php } ?><?php if ($video_fecha_publicacion!='') { ?>, <?php the_field('video_fecha_publicacion'); ?><?php } ?>
 							</small>  	
-							<h3 class="pt-14 light"><?php the_field('video_descripcion_corta'); ?></h3>
+							<p class="pt-14 light"><?php the_field('video_descripcion_corta'); ?></p>
 							<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></p>
            </div>
          </div>
