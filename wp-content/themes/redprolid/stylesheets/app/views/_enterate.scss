@@ -12,6 +12,11 @@
 	}
 }
 
+.border-panel {
+	border: 1px solid $gray-light;
+	padding: 7px;
+}
+
 .triangle {
 	width: 0;
 	height: 0;
@@ -21,6 +26,16 @@
 	position: absolute;
 	left: -27px;
 	top: 25%;
+}
+
+.giveMeEllipsis {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2; /* number of lines to show */
+   line-height: 1;        /* fallback */
+   max-height: 1;       /* fallback */
 }
 
 .separador-boletines {

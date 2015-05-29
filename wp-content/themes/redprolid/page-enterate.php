@@ -154,7 +154,7 @@ get_header(); ?>
         </div>
         <!-- termina 'Campeonas' + 'Puntos de Vista' -->
         <!-- inicia 'Ultimas noticias' + 'Videos' -->
-        <div class="bg-panel">
+        <div class="">
           <div class="container">
             <div class="row">
               <div class="col-sm-6">
@@ -163,37 +163,45 @@ get_header(); ?>
                     <ul class="list-unstyled">
                       <li class="title text-gray-darker highlight-campeonas">Últimas noticias</li>
                       <li class="rule"></li>
-                      <li class="icon" data-href="<?php echo home_url('/'); ?>campeonas"   style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
+                      <li class="icon" data-href="<?php echo home_url('/'); ?>noticias"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-sml.png); background-repeat: no-repeat;"></li>
                     </ul>
                   </div>
                   <div class="panel-body pt-0">
                     <div class="row">
                       <div class="col-md-8">
-                        <p class="medium">Testimonios sobre el liderazgo femenino</p>
+                        <p class="mr-56"><a href="<?php echo home_url('/'); ?>noticias" class="medium">Todas las noticias >></a></p>
                       </div>
-                      <div class="col-md-4 text-right">
-                        <a href="<?php echo home_url('/'); ?>campeonas" class="medium">Entrevistas >></a>
-                      </div>
-                    </div>                
-                    <div class="bg-white clearfix">
-                      <!-- Start the Loop. -->
-                      <?php if ( have_posts() ) : ?>
-                      <?php query_posts( array( 'category_name' => 'campeonas', 'posts_per_page' => 1 ) ); ?>
-                        <?php while ( have_posts() ) : the_post(); ?>
-                            <?php setup_postdata($post); ?>
-                            <div class="col-sm-5 pl-0">
-                              <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive" style="width: 100%;">
+                    </div>             
+                    <!-- loop noticias    -->
+                    <div class="row">
+                    <?php if ( have_posts() ) : ?>
+                      <?php query_posts( 'cat=12&posts_per_page=2' ); ?>
+                      <?php while ( have_posts() ) : the_post(); ?>                   
+                        <div class="col-sm-6 bg-white">
+                          <div class="border-panel">
+                            <?php $imagen = get_field('imagen_noticias'); ?>
+                            <?php if ($imagen!='') { ?>
+                            <img src="<?php the_field('imagen_noticias'); ?>" style="width:100%;" alt="">
+                            <?php } else { ?>
+                            <img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png" style="width:100%;" alt="">
+                            <?php } ?>
+                            <h5 class="medium mt-7 mb-0 pb-0">
+                              <p class="medium giveMeEllipsis"><?php the_title(); ?></p>
+                            </h5>
+                            <?php $publicacion = get_field('publicacion_noticias'); ?>
+                            <?php if ($publicacion!='') { ?><a class="block" href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+                              <?php } ?>
+                            <small>
+                              <?php echo get_the_date('j F, Y'); ?>
+                            </small>
+                            <div class="text-right banner-label p-7">
+                              <a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a>
                             </div>
-                            <div class="col-sm-7 pl-7 pr-14 ptp-7">
-                              <div class="triangle"></div> 
-                              <h3 class="medium mb-0 pb-0"><?php the_title(); ?></h3>
-                              <p><?php the_field('descripcion_home_campeonas'); ?></p>
-                              <div class="text-right">
-                                <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee más</a>
-                              </div>
-                            </div>
-                        <?php endwhile; ?>
-                      <?php endif; ?> 
+                          </div>
+                        </div>
+                      <?php endwhile; ?>
+                    <?php endif; ?>
+                    <!-- loop noticias    -->
                     </div>
                   </div>
                 </div>
