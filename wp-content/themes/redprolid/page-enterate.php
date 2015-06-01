@@ -59,7 +59,7 @@ get_header(); ?>
         </div>
         <div class="row">
 	        <div class="col-md-12">	      
-	          <h3 class="light">Imagina esta sección como una biblioteca en la que almacenamos todo tipo de recursos de nuestra red:  libros, legislación, investigaciones, blogs y noticias, al igual que material audiovisual como entrevistas o vídeos. Queremos también incluir material eminentemente práctico como compendios de buenas prácticas, guías para las mujeres en el sector público o estudios de casos concretos. Aspiramos a que aquí puedas encontrar todo lo que puede serte útil en el desarrollo y fortalecimiento de tu liderazgo en el sector público y la política.</h3>
+	          <h3 class="light text-justify">Imagina esta sección como una biblioteca en la que almacenamos todo tipo de recursos de nuestra red:  libros, legislación, investigaciones, blogs y noticias, al igual que material audiovisual como entrevistas o vídeos. Queremos también incluir material eminentemente práctico como compendios de buenas prácticas, guías para las mujeres en el sector público o estudios de casos concretos. Aspiramos a que aquí puedas encontrar todo lo que puede serte útil en el desarrollo y fortalecimiento de tu liderazgo en el sector público y la política.</h3>
 	        </div>
         </div>
       </div>        
@@ -92,7 +92,12 @@ get_header(); ?>
                         <?php while ( have_posts() ) : the_post(); ?>
                             <?php setup_postdata($post); ?>
                             <div class="col-sm-5 pl-0">
-                              <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive" style="width: 100%;">
+                              <?php $video = get_field('video_campeonas'); ?>
+                              <?php if ($video!='') { ?>
+                                <iframe  class="embed-responsive-item" width="100%" height="220" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                              <?php } else { ?>
+                                <img src="<?php the_field('imagen_campeonas'); ?>" alt="" class="img-responsive" style="width: 100%;">
+                              <?php } ?>
                             </div>
                             <div class="col-sm-7 pl-7 pr-14 ptp-7">
                               <div class="triangle"></div> 
@@ -114,7 +119,7 @@ get_header(); ?>
                     <ul class="list-unstyled">
                       <li class="title text-gray-darker highlight-campeonas">Puntos de vista</li>
                       <li class="rule"></li>
-                      <li class="icon" data-href="<?php echo home_url('/'); ?>video"   style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
+                      <li class="icon" data-href="<?php echo home_url('/'); ?>puntos-de-vista"   style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -210px;"></li>
                     </ul>
                   </div>
                   <div class="panel-body pt-0">
@@ -123,7 +128,7 @@ get_header(); ?>
                         <p class="medium">Artículos escritos por líderes y especialistas</p>
                       </div>
                       <div class="col-md-4 text-right">
-                        <a href="<?php echo home_url('/'); ?>campeonas" class="medium">Artículos >></a>
+                        <a href="<?php echo home_url('/'); ?>puntos-de-vista" class="medium">Artículos >></a>
                       </div>
                     </div>
                     <?php if ( have_posts() ) : ?>

@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="ph-70">
-  		<h3 class="light text-justify mb-35">¿A qué mujeres líderes admiras en Latinoamérica y por qué? ¿Quiénes crees que han abierto camino? ¿Qué obstáculos encontraron y con qué apoyo contaron? ¿Qué te gustaría aprender/escuchar de ellas? ¿Quieres conocer sobre cómo concilian su vida familiar y laboral? ¿Y qué figuras masculinas consideras que han sabido entender e incorporar las agendas de género? Aquí incluimos las entrevistas con testimonios de aquellas mujeres latinoamericanas que han dejado huella o que van a marcar las agendas de sus países. Además daremos espacio a testimonios masculinos, porque queremos aprender de ellos también.</h3>
+  		<h3 class="light text-justify mb-35">¿A qué mujeres líderes admiras en Latinoamérica? ¿Quieres saber qué obstáculos encontraron y con qué apoyo contaron?¿Sabes qué figuras masculinas han sabido promover el liderazgo femenino e incorporar las agendas de género en su trabajo? Aquí incluimos los testimonios de aquellas mujeres latinoamericanas que han dejado huella o que van a marcar las agendas de sus países. Además daremos espacio a aquellos hombres líderes que están utilizando su influencia para abrir oportunidades al liderazgo femenino, porque los necesitamos como aliados también.</h3>
       <div class="row">
         <?php if( get_field('imagen_campeonas') ) { ?>
         <div class="col-md-3">
