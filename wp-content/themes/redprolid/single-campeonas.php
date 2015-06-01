@@ -49,7 +49,7 @@
 	          <?php $video_vimeo = get_field('video_vimeo_campeonas'); ?>
 	          <?php if ($video_vimeo!='') { ?>
 	          	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_campeonas'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	          <?php } ?>	          
+	          <?php } ?>         
 	        </div>
 	        <div class="col-sm-3">
 	        <ul class="list-inline text-right">
@@ -114,7 +114,6 @@
         <?php } ?>
         <div id="entrevista_full">
 	        <hr>
-	        <?php $tempDate = get_field('fecha_entrevista'); ?>
 	        <!--<h3 class="medium mt-21">Entrevista</h3>-->
           <p><?php the_field('entrevista_completa_campeona'); ?></p>         
         </div>
