@@ -225,12 +225,16 @@ get_header(); ?>
 	                  <div class="col-sm-5 pl-0">
 			                <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
 			                <?php if ($imagen_campeona!='') { ?>
-	                    <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
+	                    	<img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
 	                    <?php } ?>
 			                <?php $video = get_field('video_campeonas'); ?>
 			                <?php if ($video!='') { ?>
-	                    <iframe class="embed-responsive-item" width="100%" height="209" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	                    	<iframe class="embed-responsive-item" width="100%" height="209" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 	                    <?php } ?>
+			                <?php $video_vimeo = get_field('video_vimeo_campeonas'); ?>
+			                <?php if ($video_vimeo!='') { ?>
+		                    <iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_campeonas'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="551" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	                    <?php } ?>	                    
 											<small><?php the_field('fuente_imagen_campeonas'); ?></small>
                   	</div>
 	                  <div class="col-sm-7 pr-0">

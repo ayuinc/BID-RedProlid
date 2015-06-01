@@ -5,7 +5,7 @@
       <div class="col-sm-1 col-xs-3">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" alt="" width="100%"></div>
       </div>
-      <div class="col-sm-4 col-xs-9">
+      <div class="col-sm-4 col-xs-9 pl-14">
         <h1 class="brand-titular">Campeon@s</h1>
       </div>
       <div class="col-sm-7 col-xs-12">
@@ -46,6 +46,10 @@
 	          <?php if ($video!='') { ?>
 	          	<iframe  class="embed-responsive-item" width="100%" height="450" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 	          <?php } ?>
+	          <?php $video_vimeo = get_field('video_vimeo_campeonas'); ?>
+	          <?php if ($video_vimeo!='') { ?>
+	          	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_campeonas'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	          <?php } ?>         
 	        </div>
 	        <div class="col-sm-3">
 	        <ul class="list-inline text-right">
@@ -110,7 +114,6 @@
         <?php } ?>
         <div id="entrevista_full">
 	        <hr>
-	        <?php $tempDate = get_field('fecha_entrevista'); ?>
 	        <!--<h3 class="medium mt-21">Entrevista</h3>-->
           <p><?php the_field('entrevista_completa_campeona'); ?></p>         
         </div>

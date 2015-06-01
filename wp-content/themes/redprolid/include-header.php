@@ -20,7 +20,7 @@
 
               $current_user = wp_get_current_user();
               echo '<div class="text-right">';
-              echo '<h4 class="light mb-0">Hola '.$current_user->user_nicename.'</h4>';
+              echo '<h4 class="light mb-0">Hola '.$current_user->user_firstname.' '.$current_user->user_lastname.'</h4>';
 							echo '<a href="'.wp_logout_url().'" title="Logout" class="light">Cierra tu sesión</a> | <a href="'.home_url("/").'tu-perfil" class="light">Edita tu perfíl</a>';
               echo '</div>';
 							

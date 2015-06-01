@@ -16,7 +16,7 @@ get_header(); ?>
         <div>
           <h1>Videos anteriores</h1>
           <nav class="mt-21">
-            <a href="<?php echo content_url('/'); ?>eventos">Videos >></a>
+            <a href="<?php echo home_url('/'); ?>video">Videos >></a>
           </nav>
         </div>
       </div>
@@ -25,13 +25,13 @@ get_header(); ?>
       </div>
     </div>
     <div>
-      <ul class="grid-list grid-list-3 grid-list-2-sm grid-list-1-xs isotope-grid"> 
+      <ul class="grid-list grid-list-4 grid-list-2-sm grid-list-1-xs isotope-grid"> 
       <?php add_filter('post_limits', 'my_post_limit'); ?>
       <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 			<?php
 			$count = 0;	
 			global $myOffset;
-			$myOffset = 6;
+			$myOffset = 7;
 			$temp = $wp_query;
 			$wp_query= null;
 			$wp_query = new WP_Query();
@@ -50,14 +50,15 @@ get_header(); ?>
               <iframe src="//player.vimeo.com/video/<?php the_field('video_video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="220" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             <?php } ?>
            </div>
-           <div class="banner-content flex-none" style="min-height:12rem;">
-              <a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0"><?php the_title(); ?></h3></a>
-              <p class="mb-0"><?php the_field('video_descripcion_cortao'); ?></p>
+           <div class="banner-content flex-none" style="height:23rem;">
+							<a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-gray-darker"><h3 class="h5 medium mb-0"><?php the_title(); ?></h3></a>
 							<?php $video_autor = get_field('video_autor'); ?>
 							<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
 							<small>
 								<?php if ($video_autor!='') { ?><?php the_field('video_autor'); ?><?php } ?><?php if ($video_fecha_publicacion!='') { ?>, <?php the_field('video_fecha_publicacion'); ?><?php } ?>
-							</small> 
+							</small>  	
+							<p class="pt-14 light"><?php the_field('video_descripcion_corta'); ?></p>
+							<small class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve más >></a></small>
            </div>
          </div>
        </li>
