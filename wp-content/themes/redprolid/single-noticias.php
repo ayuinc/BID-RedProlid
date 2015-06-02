@@ -41,7 +41,8 @@
             <span class="medium">Tema:</span> <?php the_field('tema_noticias'); ?>
                 <?php if ($tag_tipo_de_recurso_noticia!='') { ?>
                   <?php echo ', '.$tag_tipo_de_recurso_noticia; ?>
-                <?php } ?>              
+                <?php } ?>
+            <br>                  
             <?php } ?>
             <?php if ($pais_noticias!='') { ?>            
             <span class="medium">País:</span> <?php the_field('pais_noticias'); ?><br>
