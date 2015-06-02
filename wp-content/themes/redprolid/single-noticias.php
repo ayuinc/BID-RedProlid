@@ -36,6 +36,7 @@
           <p>
             <?php $autor_noticias = get_field('autor_noticias'); ?>
             <?php $pais_noticias = get_field('pais_noticias'); ?>
+            <?php $tema_noticias = get_field('tema_noticias'); ?>
             <?php if ($tema_noticias!='') { ?>                  
             <span class="medium">Tema:</span> <?php the_field('tema_noticias'); ?>
                 <?php if ($tag_tipo_de_recurso_noticia!='') { ?>
@@ -54,7 +55,6 @@
                 <?php } ?>  
                 <br>          
             <?php } ?>
-            <?php $tema_noticias = get_field('tema_noticias'); ?>
             <?php $tag_tipo_de_recurso_noticia = get_field('tag_tipo_de_recurso_noticia'); ?>
             <?php if ($autor_noticias!='') { ?>
             <strong>Subido por:</strong> <a href="mailto:<?php the_field('autor_email_noticias'); ?>"><?php the_field('autor_noticias'); ?></a><br>
