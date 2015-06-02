@@ -19,7 +19,7 @@ get_header(); ?>
       <div class="row pv-42">
         <div class="col-sm-4">
           <?php echo get_avatar( $current_user->ID, 250); ?>
-          <h4 class="light pt-7 mb-0"><?php echo $current_user->user_nicename; ?></h4>
+          <h4 class="light pt-7 mb-0"><?php echo $current_user->display_name; ?></h4>
         </div>
         <div class="col-sm-8 ph-70-sm">
           <div class="row">
