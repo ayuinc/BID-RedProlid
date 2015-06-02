@@ -48,6 +48,11 @@
     <script>try{Typekit.load();}catch(e){}</script>
 
     <?php wp_head(); ?> <!-- AVISAMOS QUE TERMINA EL HEAD -->
+    <!--[if IE 9]>
+    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/app/vendor/html5shiv.js"></script>
+    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/app/vendor/respond.min.js"></script>
+    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/app/vendor/placeholders.min.js"></script>
+    <![endif]-->
   </head>
   <body>
     <div class="site-wrapper pt-56-xs">
