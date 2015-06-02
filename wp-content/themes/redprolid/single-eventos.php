@@ -76,13 +76,18 @@
 					    <?php } ?>
 						</div>
 						<div class="col-sm-5">
-							<h5 class="medium mb-0">Fecha inicio</h5>
+							<h5 class="medium mb-0">Fecha de inicio</h5>
 				      <?php $tempDate = get_field('fecha_inicio_evento'); ?>
 				      <p><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php $lhora_evento = get_field('hora_evento'); ?><?php if ($hora_evento!='') { ?>, <?php the_field('hora_evento'); ?><?php } ?></p>
 				      <?php $tempDateFin = get_field('fecha_fin_evento'); ?>
 				      <?php if ($tempDateFin!='') { ?>
-				      <h5 class="medium mb-0">Fecha fin</h5>
+				      <h5 class="medium mb-0">Fecha de fin</h5>
 				      <p><?php echo date_i18n('j', strtotime( $tempDateFin)); ?> de <?php echo date_i18n('F', strtotime( $tempDateFin)); ?> de <?php echo date_i18n('Y', strtotime( $tempDateFin)); ?></p>
+				      <?php } ?>
+			        <?php $lugar_evento = get_field('lugar_evento'); ?>
+							<?php if ($lugar_evento!='') { ?>				       
+				      <h5 class="medium mb-0">Dirección del evento</h5>
+				      <p><?php echo $lugar_evento; ?></p>
 				      <?php } ?>
 			        <?php $ciudad_evento = get_field('ciudad_evento'); ?>
 							<?php if ($ciudad_evento!='') { ?>				      
@@ -93,11 +98,6 @@
 							<?php if ($pais_evento!='') { ?>					      
 				      <h5 class="medium mb-0">País</h5>
 				      <p><?php the_field('pais_evento'); ?></p>
-				      <?php } ?>
-			        <?php $lugar_evento = get_field('lugar_evento'); ?>
-							<?php if ($lugar_evento!='') { ?>				       
-				      <h5 class="medium mb-0">Lugar</h5>
-				      <p><?php echo $lugar_evento; ?></p>
 				      <?php } ?>
 				      <?php $hipervinculo = get_field('hipervinculo_evento');?>
 					    <?php if ($hipervinculo!='') { ?>

@@ -30,10 +30,13 @@
   			<div class="col-sm-12 with-hr">  	  
   		    <!--<p><?php //the_field('video_recurso_descripcion'); ?></p>-->
 					<p>
-		      	<?php $autor_video = get_field('autor_video'); ?>
-						<?php if ($autor_video!='') { ?>
-		      	<strong>Tema propuesto por:</strong> <a href="mailto:<?php the_field('autor_email_video'); ?>"><?php the_field('autor_video'); ?></a><br>
-		      	<?php } ?>							
+						<?php if ($video_tema!='') { ?>						
+						<span class="medium">Tema:</span> <?php the_field('video_tema'); ?>
+							<?php if ($video_tag_tema!='') { ?>
+								<?php echo ', '.$video_tag_tema; ?>
+							<?php } ?>							
+						<br>
+						<?php } ?>
 						<?php $video_tipo_recurso = get_field('video_tipo_recurso'); ?>
 						<?php $video_tag_tipo_de_recurso = get_field('video_tag_tipo_de_recurso'); ?>
 						<?php if ($video_tipo_recurso!='') { ?>	
@@ -43,15 +46,12 @@
 							<?php } ?>						
 						<br>
 						<?php } ?>
+		      	<?php $autor_video = get_field('autor_video'); ?>
+						<?php if ($autor_video!='') { ?>
+		      	<strong>Tema propuesto por:</strong> <a href="mailto:<?php the_field('autor_email_video'); ?>"><?php the_field('autor_video'); ?></a><br>
+		      	<?php } ?>	
 						<?php $video_tema = get_field('video_tema'); ?>
 						<?php $video_tag_tema = get_field('video_tag_tema'); ?>
-						<?php if ($video_tema!='') { ?>						
-						<span class="medium">Tema:</span> <?php the_field('video_tema'); ?>
-							<?php if ($video_tag_tema!='') { ?>
-								<?php echo ', '.$video_tag_tema; ?>
-							<?php } ?>							
-						<br>
-						<?php } ?>
 						<?php $video_organizacion_video = get_field('video_organizacion'); ?>
 						<?php if ($video_organizacion!='') { ?>
 						<span class="medium">Organización:</span> <?php echo $video_organizacion; ?>

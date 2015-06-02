@@ -35,30 +35,30 @@
 	  			<div class="container-sm">
 					<p>
 		      	<?php $autor_noticias = get_field('autor_noticias'); ?>
+            <?php $pais_noticias = get_field('pais_noticias'); ?>
+            <?php if ($tema_noticias!='') { ?>                  
+            <span class="medium">Tema:</span> <?php the_field('tema_noticias'); ?>
+                <?php if ($tag_tipo_de_recurso_noticia!='') { ?>
+                  <?php echo ', '.$tag_tipo_de_recurso_noticia; ?>
+                <?php } ?>              
+            <?php } ?>
+            <?php if ($pais_noticias!='') { ?>            
+            <span class="medium">País:</span> <?php the_field('pais_noticias'); ?><br>
+            <?php } ?>
+            <?php $tipo_recursos_noticias = get_field('tipo_recursos_noticias'); ?>
+            <?php $tag_tema_noticia = get_field('tag_tema_noticia'); ?>
+            <?php if ($tipo_recursos_noticias!='') { ?>           
+            <span class="medium">Tipo de recurso:</span> <?php the_field('tipo_recursos_noticias'); ?>
+                <?php if ($tag_tema_noticia!='') { ?>
+                  <?php echo ', '.$tag_tema_noticia; ?>
+                <?php } ?>  
+                <br>          
+            <?php } ?>
+            <?php $tema_noticias = get_field('tema_noticias'); ?>
+            <?php $tag_tipo_de_recurso_noticia = get_field('tag_tipo_de_recurso_noticia'); ?>
 						<?php if ($autor_noticias!='') { ?>
-		      	<strong>Tema propuesto por:</strong> <a href="mailto:<?php the_field('autor_email_noticias'); ?>"><?php the_field('autor_noticias'); ?></a><br>
+		      	<strong>Subido por:</strong> <a href="mailto:<?php the_field('autor_email_noticias'); ?>"><?php the_field('autor_noticias'); ?></a><br>
 		      	<?php } ?>						
-						<?php $pais_noticias = get_field('pais_noticias'); ?>
-						<?php if ($pais_noticias!='') { ?>						
-						<span class="medium">País:</span> <?php the_field('pais_noticias'); ?><br>
-						<?php } ?>
-						<?php $tipo_recursos_noticias = get_field('tipo_recursos_noticias'); ?>
-						<?php $tag_tema_noticia = get_field('tag_tema_noticia'); ?>
-						<?php if ($tipo_recursos_noticias!='') { ?>						
-						<span class="medium">Tipo de recursos:</span> <?php the_field('tipo_recursos_noticias'); ?>
-								<?php if ($tag_tema_noticia!='') { ?>
-									<?php echo ', '.$tag_tema_noticia; ?>
-								<?php } ?>	
-								<br>					
-						<?php } ?>
-						<?php $tema_noticias = get_field('tema_noticias'); ?>
-						<?php $tag_tipo_de_recurso_noticia = get_field('tag_tipo_de_recurso_noticia'); ?>
-						<?php if ($tema_noticias!='') { ?>									
-						<span class="medium">Temas:</span> <?php the_field('tema_noticias'); ?>
-								<?php if ($tag_tipo_de_recurso_noticia!='') { ?>
-									<?php echo ', '.$tag_tipo_de_recurso_noticia; ?>
-								<?php } ?>							
-						<?php } ?>
 					</p> 
   				</div>
   			</div>
