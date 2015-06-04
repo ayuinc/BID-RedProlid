@@ -277,7 +277,7 @@ get_header(); ?>
                     <?php foreach ($comments as $comment) : ?>
                       <li class="mb-14">
                         <p class="light" id="home-comment"><a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo get_the_title( $comment->comment_post_ID ); ?></a></p>
-                        <small class="date light"><?php echo(substr( $comment->comment_content, 0, 50 )); ?></small></br>
+                        <small class="date light"><?php echo(substr( $comment->comment_content, 0, 250 )); ?></small></br>
                         <small class="date light"><?php echo($comment->comment_date);?> 
 												<?php //echo($comment->comment_author);?>
                         <?php
