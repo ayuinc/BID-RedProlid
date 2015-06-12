@@ -31,11 +31,12 @@ get_header(); ?>
 			<?php
 			$count = 0;	
 			global $myOffset;
-			$myOffset = 7;
+			$myOffset = 5;
 			$temp = $wp_query;
 			$wp_query= null;
 			$wp_query = new WP_Query();
-			$wp_query->query('cat=258&offset='.$myOffset.'&showposts=9&orderby=meta_value_num&meta_key=video_fecha_publicacion&ignore_sticky_posts=1&paged='.$paged);
+      //$wp_query->query('cat=258&offset='.$myOffset.'&showposts=9&orderby=meta_value_num&meta_key=video_fecha_publicacion&ignore_sticky_posts=1&paged='.$paged);
+			$wp_query->query('cat=258&offset='.$myOffset.$paged);
 			?>	 					       
       <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>      
        <li class="grid-list-item">
