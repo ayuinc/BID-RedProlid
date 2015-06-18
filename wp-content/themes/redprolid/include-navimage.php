@@ -15,7 +15,7 @@
                 <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.jpg" alt="" class="color">
                 <div class="title">                  
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png" alt="">                  
-                  <p class="medium">¿Adónde v@mos?</p>
+                  <p class="medium">ArTICuladas</p>
                 </div>
               </a>
             </li>
