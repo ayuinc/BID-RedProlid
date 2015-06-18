@@ -26,7 +26,7 @@ get_header(); ?>
         </nav>	          
       </div>
     </div>
-    <?php query_posts( 'cat=258&posts_per_page=1&orderby=date&order=DESC&paged=' . $paged ); ?>
+    <?php query_posts( 'cat=258&posts_per_page=1&orderby=video_fecha_publicacion&order=DESC&paged=' . $paged ); ?>
 		<?php while ( have_posts() ) : the_post(); ?> 
     <div class="row">
 			<div class="col-sm-7 relative">
@@ -58,7 +58,7 @@ get_header(); ?>
       	<hr>
 				<div class="row pb-35">
         	<?php //query_posts( 'cat=258&posts_per_page=4&offset=2&orderby=meta_value_num&meta_key=video_fecha_publicacion'); ?>
-        	<?php query_posts( 'cat=258&posts_per_page=4&offset=1&orderby=date&order=DESC'); ?>
+        	<?php query_posts( 'cat=258&posts_per_page=4&offset=1&orderby=video_fecha_publicacion&order=DESC'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>  
 					  
 					<div class="col-sm-3">
