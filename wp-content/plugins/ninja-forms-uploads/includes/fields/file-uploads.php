@@ -309,7 +309,7 @@ function ninja_forms_field_upload_display( $field_id, $data ){
 
 						//_e( 'Change Upload', 'ninja-forms-uploads' );
 						_e( '', 'ninja-forms-uploads' );
-						echo ':';
+						//echo ':';
 						?>
 
 
