@@ -427,12 +427,12 @@ add_filter('pre_get_posts','SearchFilter');
 add_filter('wp_mail_from', 'new_mail_from');
 add_filter('wp_mail_from_name', 'new_mail_from_name');
 
-// function new_mail_from($old) {
-//   return 'comunicate@redprolid.org';
-// }
-// function new_mail_from_name($old) {
-//   return 'RedPro';
-// }
+function new_mail_from($old) {
+  return 'comunicate@redprolid.org';
+}
+function new_mail_from_name($old) {
+  return 'RedProlid';
+}
 
 // function wsl_redirect_to( $redirect_to, $user_id ) {
 //   //$user = get_user_by( 'email', 'user@example.com' );
