@@ -10,7 +10,7 @@
       </div>
       <div class="col-sm-7 col-xs-12">
         <nav class="text-right text-center-xs">
-          <a href="#" data-toggle="modal" data-target="#modalCampeonas">Nos propones un tema</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores">¿Quieres leer nuestras entrevistas anteriores?</a>
+          <a href="#" data-toggle="modal" data-target="#modalCampeonas">¿Nos propones un tema?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores">Entrevistas anteriores</a>
         </nav>
       </div>
     </div>

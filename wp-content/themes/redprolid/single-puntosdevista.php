@@ -10,7 +10,7 @@
       </div>
       <div class="col-sm-7 col-xs-12">
         <nav class="text-right text-center-xs">
-           <a href="#" data-toggle="modal" data-target="#modalPuntosdevista">¿Te gustaría proponernos un tema?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>puntos-de-vista-anteriores">Puntos de vista anteriores</a>
+           <a href="#" data-toggle="modal" data-target="#modalPuntosdevista">¿Nos propones un tema?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>puntos-de-vista-anteriores">Puntos de vista anteriores</a>
         </nav>
       </div>
     </div>
