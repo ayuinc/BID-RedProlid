@@ -115,7 +115,7 @@ get_header(); ?>
                     	<?php query_posts( 'category_name=noticias&posts_per_page=3' ); ?>	
 											<?php while ( have_posts() ) : the_post(); ?>                    
                       <li class="mb-14">
-                        <h5><?php the_title(); ?></h5>
+                        <h5 class="light"><?php the_title(); ?></h5>
 		                    <?php $publicacion = get_field('publicacion_noticias'); ?>
 		                    <small class="date light">
 		                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a><?php } ?> | <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary p">Lee más</a>
