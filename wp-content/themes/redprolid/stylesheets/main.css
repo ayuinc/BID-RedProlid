@@ -6219,9 +6219,6 @@ form.search button {
   min-height: 425px;
   padding: 0 0 14px 0; }
   .widgets .container .row .col-md-3 .panel-custom .panel-body h5 {
-    font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
-    font-weight: 500;
-    font-style: normal;
     color: #565656 !important; }
   .widgets .container .row .col-md-3 .panel-custom .panel-body .list-unstyled li, .widgets .container .row .col-md-3 .panel-custom .panel-body .list-inline li {
     border-bottom: 1px solid #bcbcbc;
