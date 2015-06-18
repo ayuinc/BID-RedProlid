@@ -24,45 +24,13 @@
 				<div class="banner-content col-sm-9 mb-35">
 					<div class="row">
 						<div class="col-sm-7">
-			      	<?php $autor_evento = get_field('autor_evento'); ?>
-							<?php if ($autor_evento!='') { ?>
-							<h5 class="medium mb-0">Tema propuesto por</h5>
-			        <p><a href="mailto:<?php the_field('autor_email_evento'); ?>"><?php the_field('autor_evento'); ?></a></p>
-			      	<?php } ?>								
-							<?php $organizan_evento = get_field('organizan_evento'); ?>
-							<?php if ($organizan_evento!='') { ?>							
-							<h5 class="medium mb-0">Organizan</h5>
-			        <p><?php echo $organizan_evento; ?></p>
-			        <?php } ?>
-			        <?php $convocan = get_field('convocan'); ?>
-							<?php if ($convocan!='') { ?>
-			        <h5 class="medium mb-0">Convocan</h5>
-			        <p><?php echo $convocan; ?></p>
-			        <?php } ?>
 			        <h5 class="medium mb-0">Descripción</h5>
 			        <?php the_field('contenido_evento'); ?>
 			        <?php $subir_pdfword_evento = get_field('subir_pdfword_evento'); ?>
 			        <?php if ($subir_pdfword_evento!='') { ?>
 			        <p><a href="<?php the_field('subir_pdfword_evento'); ?>" target="_blank">Archivo</a></p>
 			        <?php } ?>
-			        <?php $contacto_nombre_evento = get_field('contacto_nombre_evento'); ?>
-			        <?php if ($contacto_nombre_evento!='') { ?>
-			        <p>
-				        Para mayores informes contactar a <?php the_field('contacto_nombre_evento'); ?> a través de su correo electrónico <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_email_evento'); ?></a>
-			        </p>
-			        <?php } ?>
-			        <hr>
-			        <?php $tipo_de_recurso_evento = get_field('tipo_de_recurso_evento'); ?>
-			        <?php $tag_tipo_de_recurso_evento = get_field('tag_tipo_de_recurso_evento'); ?>
-							<?php if ($tipo_de_recurso_evento!='') { ?>			        
-			        <h5 class="medium mb-0">Tipo de recurso</h5>
-					    <p>
-						    <?php the_field('tipo_de_recurso_evento') ?>
-								<?php if ($tag_tipo_de_recurso_evento!='') { ?>
-									<?php echo ', '.$tag_tipo_de_recurso_evento; ?>
-								<?php } ?>	
-							</p>					    
-					    <?php } ?>
+
 			        <?php $tema_evento = get_field('tema_evento'); ?>
 			        <?php $tag_tema_evento = get_field('tag_tema_evento'); ?>
 							<?php if ($tema_evento!='') { ?>						    
@@ -73,7 +41,45 @@
 									<?php echo ', '.$tag_tema_evento; ?>
 								<?php } ?>
 							</p>						    
-					    <?php } ?>
+					    <?php } ?>	
+					    
+							<?php $organizan_evento = get_field('organizan_evento'); ?>
+							<?php if ($organizan_evento!='') { ?>							
+							<h5 class="medium mb-0">Organizan</h5>
+			        <p><?php echo $organizan_evento; ?></p>
+			        <?php } ?>	
+			        
+			        <?php $tipo_de_recurso_evento = get_field('tipo_de_recurso_evento'); ?>
+			        <?php $tag_tipo_de_recurso_evento = get_field('tag_tipo_de_recurso_evento'); ?>
+							<?php if ($tipo_de_recurso_evento!='') { ?>			        
+			        <h5 class="medium mb-0">Tipo de recurso</h5>
+					    <p>
+						    <?php the_field('tipo_de_recurso_evento') ?>
+								<?php if ($tag_tipo_de_recurso_evento!='') { ?>
+									<?php echo ', '.$tag_tipo_de_recurso_evento; ?>
+								<?php } ?>	
+							</p>					    
+					    <?php } ?>			        					    		        
+			        
+			      	<?php $autor_evento = get_field('autor_evento'); ?>
+							<?php if ($autor_evento!='') { ?>
+							<h5 class="medium mb-0">Subido por</h5>
+			        <p><a href="mailto:<?php the_field('autor_email_evento'); ?>"><?php the_field('autor_evento'); ?></a></p>
+			      	<?php } ?>			
+
+			        <?php $convocan = get_field('convocan'); ?>
+							<?php if ($convocan!='') { ?>
+			        <h5 class="medium mb-0">Convocan</h5>
+			        <p><?php echo $convocan; ?></p>
+			        <?php } ?>
+
+			        <?php $contacto_nombre_evento = get_field('contacto_nombre_evento'); ?>
+			        <?php if ($contacto_nombre_evento!='') { ?>
+			        <p>
+				        Para mayores informes contactar a <?php the_field('contacto_nombre_evento'); ?> a través de su correo electrónico <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_email_evento'); ?></a>
+			        </p>
+			        <?php } ?>
+
 						</div>
 						<div class="col-sm-5">
 							<h5 class="medium mb-0">Fecha de inicio</h5>
