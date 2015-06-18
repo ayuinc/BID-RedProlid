@@ -24,12 +24,13 @@ function dlf_form() {
 	    <div>
 	    	<?php do_action( 'wordpress_social_login' ); ?>
 	    </div>
-	    <br>
-	    <p>
-	    	<a href="<?php echo home_url('/'); ?>registrate/" class="medium">Regístrate</a> 
-	    	<span>|</span> 
-	    	<a href="<?php echo wp_lostpassword_url( '/recuperar-password' ); ?>" class="medium"  title="Olvidé mi contraseña">Olvidé mi contraseña</a>
-			</p>
+	    <div class="mt-14">
+		    <p>
+		    	<a href="<?php echo home_url('/'); ?>registrate/" class="medium">Regístrate</a> 
+		    	<span>|</span> 
+		    	<a href="<?php echo wp_lostpassword_url( '/recuperar-password' ); ?>" class="medium"  title="Olvidé mi contraseña">Olvidé mi contraseña</a>
+				</p>
+	    </div>
 	  </div>
 	  <div class="col-xs-3">
 	    <input type="submit" name="dlf_submit" class="btn btn-primary btn-sm" value="Ingresa" style="margin-left:12px;">
