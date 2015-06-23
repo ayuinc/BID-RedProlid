@@ -264,7 +264,7 @@ class Profile_Builder_Form_Creator{
 				}
 			
 			}else
-				echo $message.apply_filters( 'wppb_general_top_error_message', '<p id="wppb_general_top_error_message" style="color:#E45959!important; font-weight: 500;">Hay un error en el formulario. Debes llenar correctamente los campos requeridos.</p>' );
+				echo $message.apply_filters( 'wppb_general_top_error_message', '<p id="wppb_general_top_error_message" style="color:#E45959!important; font-weight: 700;">Hay un error en el formulario. Debes llenar correctamente los campos requeridos.</p>' );
 		
 		}else
 			echo $message;
