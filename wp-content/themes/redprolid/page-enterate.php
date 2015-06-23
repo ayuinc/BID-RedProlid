@@ -223,7 +223,7 @@ get_header(); ?>
                   <div class="panel-body pt-0">
                     <div class="row">
                       <div class="col-md-8">
-                        <p class="mr-56"><a href="<?php echo home_url('/'); ?>videos" class="medium">Todos los videos >></a></p>
+                        <p class="mr-56"><a href="<?php echo home_url('/'); ?>video" class="medium">Todos los videos >></a></p>
                       </div>
                     </div>                     
                       <?php if ( have_posts() ) : ?>
