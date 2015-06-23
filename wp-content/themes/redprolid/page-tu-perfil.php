@@ -38,7 +38,8 @@ get_header(); ?>
           <ul class="list-unstyled list-group list-group-custom">
           <?php
           $args = array(
-            'user_id' => $current_user->ID
+            'user_id' => $current_user->ID,
+            'status'  => 'approve'
           );
           $comments = get_comments($args);?>
 
