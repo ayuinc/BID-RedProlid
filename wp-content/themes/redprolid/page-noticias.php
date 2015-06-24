@@ -23,7 +23,7 @@ get_header(); ?>
         </div>
         <div class="col-sm-6 col-xs-12">
           <nav class="text-right text-center-xs">
-            <a href="#" data-toggle="modal" data-target="#modalNoticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/">¿Quieres ver las noticias anteriores?</a>
+            <a href="#" data-toggle="modal" data-target="#modalNoticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/">Noticias anteriores</a>
           </nav>	          
         </div>
       </div>
