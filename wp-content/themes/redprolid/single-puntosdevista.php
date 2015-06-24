@@ -94,7 +94,7 @@
                     $categories = get_the_category($comment->comment_post_ID);
                     $cat_name = $categories[0]->name;
                   ?>
-                  | <a href="<?php echo get_permalink($comm_post_id); ?>"><?php echo $comment->comment_author; ?></a>
+                  | <span><?php echo $comment->comment_author; ?></span>
                   </small> 
                 </li>
             <?php endif; ?>
