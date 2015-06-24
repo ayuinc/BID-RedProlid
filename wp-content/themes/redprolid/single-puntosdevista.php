@@ -84,7 +84,19 @@
           <?php if ( $cat[0]->slug == "puntos-de-vista") : ?>
             <?php if ($prev_post_id != $comm_post_id) : ?>
               <?php $prev_post_id = $comm_post_id; ?>
-                <li><a href="<?php echo get_permalink( $comm_post_id ); ?>"><?php echo($comment->comment_content);?></a> / <?php echo($comment->comment_author);?></li>          
+                <!-- <li><a href="<?php //echo get_permalink( $comm_post_id ); ?>"><?php //echo($comment->comment_content);?></a> / <?php //echo($comment->comment_author);?></li>           -->
+                <li class="mb-14">
+                  <p class="light" id="home-comment"><a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo get_the_title( $comment->comment_post_ID ); ?></a></p>
+                  <small class="date light"><?php echo(substr( $comment->comment_content, 0, 250 )); ?></small></br>
+                  <small class="date light"><?php echo($comment->comment_date);?> 
+                  <?php //echo($comment->comment_author);?>
+                  <?php
+                    $categories = get_the_category($comment->comment_post_ID);
+                    $cat_name = $categories[0]->name;
+                  ?>
+                  | <a href="<?php echo get_permalink($comm_post_id); ?>"><?php echo $cat_name; ?></a>
+                  </small> 
+                </li>
             <?php endif; ?>
           <?php endif; ?>
           
