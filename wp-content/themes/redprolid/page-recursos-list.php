@@ -55,7 +55,7 @@ get_header(); ?>
       <div class="row">
         <div class="col-sm-12">
         	<?php add_filter('post_limits', 'my_post_limit'); ?>
-        	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 10; ?>
+        	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 					<?php
 					$count = 0;	
 					global $myOffset;
