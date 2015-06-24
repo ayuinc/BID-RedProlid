@@ -86,7 +86,7 @@
               <?php $prev_post_id = $comm_post_id; ?>
                 <!-- <li><a href="<?php //echo get_permalink( $comm_post_id ); ?>"><?php //echo($comment->comment_content);?></a> / <?php //echo($comment->comment_author);?></li>           -->
                 <li class="mb-14">
-                  <p class="light" id="home-comment"><a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo get_the_title( $comment->comment_post_ID ); ?></a></p>
+                  <!-- <p class="light" id="home-comment"><a href="<?php //echo get_permalink($comment->comment_post_ID); ?>"><?php //echo get_the_title( $comment->comment_post_ID ); ?></a></p> -->
                   <small class="date light"><?php echo(substr( $comment->comment_content, 0, 250 )); ?></small></br>
                   <small class="date light"><?php echo($comment->comment_date);?> 
                   <?php //echo($comment->comment_author);?>
