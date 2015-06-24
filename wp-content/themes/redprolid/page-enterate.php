@@ -31,28 +31,40 @@ get_header(); ?>
 	        <div class="col-md-12">
 	          <ul class="grid-list grid-list-6 text-center ph-ch-7">
 	            <li class="grid-list-item">
-		            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3.png" alt="">
+                <a href="<?php echo home_url('/'); ?>campeonas">
+  		            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3.png" alt="">
+                </a>
 		            <p class="brand-titular">De testimonios sobre liderazgo femenino por sus protagonistas</p>
 	            </li>
               <li class="grid-list-item">
-                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2n.png" alt="">
+                <a href="<?php echo home_url('/'); ?>puntos-de-vista">
+                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2n.png" alt="">
+                </a>
                 <p class="brand-titular">De los últimos temas de nuestro blog</p>
               </li>
               <li class="grid-list-item">
-                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3n.png" alt="">
+                <a href="<?php echo home_url('/'); ?>noticias">
+                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3n.png" alt="">
+                </a>
                 <p class="brand-titular">De las últimas noticias y eventos para que estés al día</p>
               </li>
 	            <li class="grid-list-item">
-	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt="">
-	            	<p class="brand-titular">De diversos videos que podrás ver y compartir</p>
+                <a href="<?php echo home_url('/'); ?>videos">
+  	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt="">
+	            	</a>
+                <p class="brand-titular">De diversos videos que podrás ver y compartir</p>
 	            </li>
               <li class="grid-list-item">
-                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5n.png" alt="">
+                <a href="<?php echo home_url('/'); ?>publicaciones">
+                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5n.png" alt="">
+                </a>
                 <p class="brand-titular">De dónde encontrar todas las publicaciones</p>
               </li>
 	            <li class="grid-list-item">
-	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5.png" alt="">
-	            	<p class="brand-titular">De cómo estar conectada con lo que pasa en la Red PROLID</p>
+                <a href="<?php echo home_url('/'); ?>eventos">
+  	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5.png" alt="">
+	            	</a>
+                <p class="brand-titular">De cómo estar conectada con lo que pasa en la Red PROLID</p>
 	            </li>
 	          </ul>
 	        </div>
