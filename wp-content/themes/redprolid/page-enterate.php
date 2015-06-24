@@ -49,7 +49,7 @@ get_header(); ?>
                 <p class="brand-titular">De las últimas noticias y eventos para que estés al día</p>
               </li>
 	            <li class="grid-list-item">
-                <a href="<?php echo home_url('/'); ?>videos">
+                <a href="<?php echo home_url('/'); ?>video">
   	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt="">
 	            	</a>
                 <p class="brand-titular">De diversos videos que podrás ver y compartir</p>
