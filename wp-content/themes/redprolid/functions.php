@@ -431,7 +431,7 @@ function new_mail_from($old) {
   return 'comunicate@redprolid.org';
 }
 function new_mail_from_name($old) {
-  return 'Red Prolid';
+  return 'Red PROLID';
 }
 
 // function wsl_redirect_to( $redirect_to, $user_id ) {
