@@ -32,9 +32,9 @@ $wc_comment_list_update_type = $wc_core->wc_options->wc_options_serialized->wc_c
             $('#wpcomm .wc_email').val($.cookie('wc_author_email'));
         }
 
-        // $('#wc_unsubscribe_message').delay(60000).fadeOut(1500, function () {
-        //     $(this).remove();
-        // });
+        $('#wc_unsubscribe_message').delay(4000).fadeOut(1500, function () {
+            $(this).remove();
+        });
 
     });
 </script>
