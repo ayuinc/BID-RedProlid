@@ -59,6 +59,7 @@ $header_text .= ' "' . get_the_title($post) . '"';
 
         <?php
         if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {
+            die('entro!!!! chupacabras');
             $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
             ?>
             <div id="wc_unsubscribe_message">
