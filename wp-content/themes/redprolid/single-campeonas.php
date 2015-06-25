@@ -53,6 +53,7 @@
 	        </div>
 	        <div class="col-sm-3">
 	        <ul class="list-inline text-right">
+	        	<li><strong>Sigueme en:</strong></li>
 		        <?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
 		        <?php $twitter_campeona = get_field('twitter_campeona'); ?>
 		        <?php $google_campeonas = get_field('google_campeonas'); ?>
