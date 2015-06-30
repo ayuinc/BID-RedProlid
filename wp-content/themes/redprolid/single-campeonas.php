@@ -81,11 +81,11 @@
 	    	<p>
 	      	<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
 					<?php if ($facebook_campeonas!='') { ?>
-	      	<strong>Sígueme en Facebook:</strong> <a href="mailto:<?php the_field('facebook_campeonas'); ?>"><?php the_field('facebook_campeonas'); ?></a><br>
+	      	<strong>Sígueme en Facebook:</strong> <a href="<?php the_field('facebook_campeonas'); ?>" target="_blank"><?php the_field('facebook_campeonas'); ?></a><br>
 	      	<?php } ?>
 	      	<?php $twitter_campeona = get_field('twitter_campeona'); ?>
 					<?php if ($twitter_campeona!='') { ?>
-	      	<strong>Sígueme en Twitter:</strong> <a href="mailto:<?php the_field('twitter_campeona'); ?>"><?php the_field('twitter_campeona'); ?></a><br>
+	      	<strong>Sígueme en Twitter:</strong> <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank"><?php the_field('twitter_campeona'); ?></a><br>
 	      	<?php } ?>	      	
 	      	<?php $autor_campeona = get_field('autor_campeona'); ?>
 					<?php if ($autor_campeona!='') { ?>
