@@ -65,7 +65,7 @@
 				<?php }	?>
       </div>
     </div>
-    <div class="row">
+    <!--<div class="row">
       <div class="col-sm-10 col-md-offset-1 pl-0 pr-0 mt-21">		  
 		    <h3 class="text-gray-darker">Artículos comentados</h3>
 		    <ul class="ml--14 grid-list grid-list-2 pb-ch-7 light">
@@ -84,9 +84,8 @@
           <?php if ( $cat[0]->slug == "puntos-de-vista") : ?>
             <?php if ($prev_post_id != $comm_post_id) : ?>
               <?php $prev_post_id = $comm_post_id; ?>
-                <!-- <li><a href="<?php //echo get_permalink( $comm_post_id ); ?>"><?php //echo($comment->comment_content);?></a> / <?php //echo($comment->comment_author);?></li>           -->
                 <li class="mb-14">
-                  <!-- <p class="light" id="home-comment"><a href="<?php //echo get_permalink($comment->comment_post_ID); ?>"><?php //echo get_the_title( $comment->comment_post_ID ); ?></a></p> -->
+
                   <small class="date light"><?php echo(substr( $comment->comment_content, 0, 250 )); ?></small></br>
                   <small class="date light"><?php echo($comment->comment_date);?> 
                   <?php //echo($comment->comment_author);?>
@@ -103,7 +102,7 @@
         <?php endforeach;?>
         </ul>
       </div>
-    </div>
+    </div>-->
   </div>
 </section>
 
@@ -124,7 +123,7 @@
 		        <div class="col-sm-6 col-xs-12"></div>
 		      </div>-->
 		      <?php if ( is_user_logged_in() ) { ?>
-		      	<h3 class="medium">¿Te gustaría proponernos un tema?</h3>
+		      	<h3 class="medium">Te gustaría proponernos un tema</h3>
 		      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
 							<?php ninja_forms_display_form( 9 ); ?>
 						<?php } ?>
