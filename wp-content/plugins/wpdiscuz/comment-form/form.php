@@ -32,7 +32,7 @@ $wc_comment_list_update_type = $wc_core->wc_options->wc_options_serialized->wc_c
             $('#wpcomm .wc_email').val($.cookie('wc_author_email'));
         }
 
-        $('#wc_unsubscribe_message').delay(4000).fadeOut(1500, function () {
+        $('#wc_unsubscribe_message').delay(6000).fadeOut(1500, function () {
             $(this).remove();
         });
 
@@ -58,15 +58,15 @@ $header_text .= ' "' . get_the_title($post) . '"';
     <div class="comments-area">
 
         <?php
-        // if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {
-            // die('entro!!!! chupacabras');
+        if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {
+            
             $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
             ?>
             <div id="wc_unsubscribe_message">
                 <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
             </div>
             <?php
-        // }
+        }
         ?>
 
         <?php if (comments_open($post->ID)) { ?>
