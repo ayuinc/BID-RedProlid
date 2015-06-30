@@ -51,34 +51,42 @@
 	          	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_campeonas'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	          <?php } ?>         
 	        </div>
-	        <div class="col-sm-3">
+	        <!--<div class="col-sm-3">
 	        <ul class="list-inline text-right">
 	        	<li><strong>Sigueme en:</strong></li>
-		        <?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
-		        <?php $twitter_campeona = get_field('twitter_campeona'); ?>
-		        <?php $google_campeonas = get_field('google_campeonas'); ?>
-		        <?php if ($facebook_campeonas!='') { ?>
+		        <?php //$facebook_campeonas = get_field('facebook_campeonas'); ?>
+		        <?php //$twitter_campeona = get_field('twitter_campeona'); ?>
+		        <?php //$google_campeonas = get_field('google_campeonas'); ?>
+		        <?php //if ($facebook_campeonas!='') { ?>
 		        <li>
-			        <a href="<?php echo $facebook_campeonas; ?>" target="_blank"><img src="http://redprolid.org/wp-content/uploads/2015/02/facebook.png"></a>
+			        <a href="<?php //echo $facebook_campeonas; ?>" target="_blank"><img src="http://redprolid.org/wp-content/themes/redprolid/assets/img/facebook2.png"></a>
 		        </li>
-		        <?php } ?>
-		        <?php if ($twitter_campeona!='') { ?>
+		        <?php //} ?>
+		        <?php //if ($twitter_campeona!='') { ?>
 	        	<li>
-		        	<a href="<?php echo $twitter_campeona; ?>" target="_blank"><img src="http://redprolid.org/wp-content/uploads/2015/02/twitter.png"></a>
+		        	<a href="<?php //echo $twitter_campeona; ?>" target="_blank"><img src="http://redprolid.org/wp-content/themes/redprolid/assets/img/twitter2.png"></a>
 	        	</li>
-	        	<?php } ?>
-	        	<?php if ($google_campeonas!='') { ?>
+	        	<?php //} ?>
+	        	<?php //if ($google_campeonas!='') { ?>
 	        	<li>
-		        	<a href="<?php echo $google_campeonas; ?>" target="_blank"><img src="http://redprolid.org/wp-content/uploads/2015/02/googleplus.png"></a>
+		        	<a href="<?php //echo $google_campeonas; ?>" target="_blank"><img src="http://redprolid.org/wp-content/themes/redprolid/assets/img/google-plus2.png"></a>
 	        	</li>
-	        	<?php } ?>
+	        	<?php //} ?>
 	        </ul>
-	        </div>	        
+	        </div>-->	        
         </div>	            
       </div>
       <div class="with-hr">
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
 	    	<p>
+	      	<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
+					<?php if ($facebook_campeonas!='') { ?>
+	      	<strong>Sígueme en Facebook:</strong> <a href="<?php the_field('facebook_campeonas'); ?>" target="_blank"><?php the_field('facebook_campeonas'); ?></a><br>
+	      	<?php } ?>
+	      	<?php $twitter_campeona = get_field('twitter_campeona'); ?>
+					<?php if ($twitter_campeona!='') { ?>
+	      	<strong>Sígueme en Twitter:</strong> <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank"><?php the_field('twitter_campeona'); ?></a><br>
+	      	<?php } ?>	      	
 	      	<?php $autor_campeona = get_field('autor_campeona'); ?>
 					<?php if ($autor_campeona!='') { ?>
 	      	<strong>Tema propuesto por:</strong> <a href="mailto:<?php the_field('autor_email_campeona'); ?>"><?php the_field('autor_campeona'); ?></a><br>
