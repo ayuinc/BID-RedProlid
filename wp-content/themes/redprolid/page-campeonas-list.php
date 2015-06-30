@@ -45,7 +45,7 @@ get_header(); ?>
           <?php } ?>
           <?php $video = get_field('video_campeonas'); ?>
           <?php if ($video!='') { ?>
-          	<img class="img-responsive"  alt="<?php the_title(); ?>" src="http://img.youtube.com/vi/?php the_field('video_campeonas'); ?>/maxresdefault.jpg" width="100%">
+          	<img class="img-responsive"  alt="<?php the_title(); ?>" src="http://img.youtube.com/vi/<?php the_field('video_campeonas'); ?>/maxresdefault.jpg" width="100%">
           <?php } ?>
 	      </div>
         <div class="col-md-10">
@@ -57,7 +57,7 @@ get_header(); ?>
             <!--<?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de --><?php echo date_i18n('Y', strtotime( $tempDate)); ?>
 	          </small>     
 	          <?php } ?>   
-            <p><?php the_field('posicion_campeona'); ?> <?php if (get_field('twitter_campeona')!='') { ?>/ <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank">@<?php the_field('twitter_campeona'); ?></a><?php } ?></p>
+            <p><?php the_field('posicion_campeona'); ?> <?php if (get_field('twitter_campeona')!='') { ?>/ <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank"><?php the_field('twitter_campeona'); ?></a><?php } ?></p>
           </div>
           <div class="content mv-14">
             <p>
