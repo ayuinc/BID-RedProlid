@@ -170,9 +170,9 @@ get_header(); ?>
       </section>
     <!--NAVIMAGEN-->
     <?php //get_template_part( 'include', 'navimage' ); ?>    
-    <section class="dtl-home pv-14">
+    <section class="dtl-home pv-28">
       <div class="container ph-70-sm">
-	      <h3 class="medium text-center">Desarrolla tu liderazgo</h3>
+	      <h3 class="text-center">Desarrolla tu liderazgo</h3>
 	      <div class="pb-14">
         <!-- DTL CAROUSEL -->
         <?php get_template_part( 'include', 'dtl-carousel' ); ?>
