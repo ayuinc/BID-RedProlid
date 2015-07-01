@@ -18,6 +18,7 @@ get_header(); ?>
           <!--<nav class="text-right text-center-xs">
             <a href="<?php echo content_url('/'); ?>tu-opinion-cuenta">Tu opinión cuenta &gt;&gt;</a>
           </nav>-->          
+          <img src="http://redprolid.org/wp-content/themes/redprolid/assets/img/toc-main-icon.png" alt="" width="100%">
         </div>
       </div>
       <div>
