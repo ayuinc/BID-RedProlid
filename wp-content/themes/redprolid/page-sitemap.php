@@ -61,19 +61,25 @@ get_header(); ?>
 				    </li> 
 				    <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/">Pistas</a>
 				    	<ul>
-					    	<!--<li><a href="<?php echo home_url('/'); ?>debates-anteriores/?categoria=pistas-2">Debates anteriores</a></li>-->
+					    	<li><a href="<?php echo home_url('/'); ?>debates-anteriores/?categoria=pistas-2">Debates anteriores</a></li>
 					    	<!--<li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a>
 						    	<ul>
 							    	<li><a href="<?php echo home_url('/'); ?>debates-anteriores/?categoria=la-pinta-no-es-lo-de-menos">Debates anteriores</a></li>
 						    	</ul>
 						    </li>--> 
-					    	<li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-tu-estilo/">A tu estilo</a></li> 
+					    	<li>
+					    		<ul>
+						    		<li>
+											<a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-tu-estilo/">A tu estilo</a>
+						    		</li>
+					    		</ul>
+					    	</li> 
 				    	</ul>
 				    </li>
 			    </ul>			    
 			    <a href="<?php echo home_url('/'); ?>enterate/"><h3 class="medium">Entérate</h3></a>
 			    <ul>
-				    <li><a href="<?php echo home_url('/'); ?>boletines-proximamente/">Nuestro boletín</a></li> 
+				    
 				    <li><a href="<?php echo home_url('/'); ?>campeonas/">Campeon@s</a>
 				    	<ul>
 					    	<li><a href="<?php echo home_url('/'); ?>campeonas/">¿Nos propones un tema?</a></li>
@@ -100,7 +106,7 @@ get_header(); ?>
 				    </li> 
 				    <li><a href="<?php echo home_url('/'); ?>eventos/">Eventos</a>
 				    	<ul>
-					    	<li><a href="<?php echo home_url('/'); ?>eventos/">¿Quieres compartir una evento?</a></li>
+					    	<li><a href="<?php echo home_url('/'); ?>eventos/">¿Quieres compartir un evento?</a></li>
 					    	<li><a href="<?php echo home_url('/'); ?>eventos/eventos-anteriores/">Eventos anteriores</a></li>
 				    	</ul>
 				    </li>	
@@ -108,7 +114,8 @@ get_header(); ?>
 				    	<ul>
 					    	<li><a href="<?php echo home_url('/'); ?>publicacion/">¿Quieres compartir una publicación?</a></li>
 				    	</ul>
-				    </li>			    				    
+				    </li>	
+				    <li><a href="<?php echo home_url('/'); ?>boletines-proximamente/">Nuestro boletín</a></li>	    				    
 			    </ul>				    	
 			    <a href="<?php echo home_url('/'); ?>concursos-proximamente/"><h3 class="medium">Concursos</h3></a>		    
 			    <a href="<?php echo home_url('/'); ?>charlacafe/"><h3 class="medium">Charlacafé</h3></a>
