@@ -51,6 +51,34 @@
           	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_puntos_de_vista'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           <?php } ?>                      
         </div>
+        <div class="with-hr">
+          <p>
+            <?php $facebook_puntosdevista = get_field('facebook_puntosdevista'); ?>
+            <?php if ($facebook_puntosdevista!='') { ?>
+            <strong>Sígueme en Facebook:</strong> <a href="<?php the_field('facebook_puntosdevista'); ?>" target="_blank"><?php the_field('facebook_puntosdevista'); ?></a><br>
+            <?php } ?>
+            <?php $twitter_puntosdevista = get_field('cuenta_de_twitter'); ?>
+            <?php if ($twitter_puntosdevista!='') { ?>
+            <strong>Sígueme en Twitter:</strong> <a href="<?php the_field('cuenta_de_twitter'); ?>" target="_blank"><?php the_field('cuenta_de_twittera'); ?></a><br>
+            <?php } ?>
+            <?php $google_puntosdevista = get_field('google_puntosdevista'); ?>
+            <?php if ($google_puntosdevista!='') { ?>
+            <strong>Sígueme en Google+:</strong> <a href="<?php the_field('google_puntosdevista'); ?>" target="_blank"><?php the_field('google_puntosdevista'); ?></a><br>
+            <?php } ?>
+            <?php $tema_puntosdevista = get_field('tema_puntosdevista'); ?>
+            <?php if ($tema_puntosdevista!='') { ?>
+            <strong>Sígueme en Tema:</strong> <a href="<?php the_field('tema_puntosdevista'); ?>" target="_blank"><?php the_field('tema_puntosdevista'); ?></a><br>
+            <?php } ?>
+            <?php $pais_puntosdevista = get_field('pais_puntosdevista'); ?>
+            <?php if ($pais_puntosdevista!='') { ?>
+            <strong>Sígueme en Pais:</strong> <a href="<?php the_field('pais_puntosdevista'); ?>" target="_blank"><?php the_field('pais_puntosdevista'); ?></a><br>
+            <?php } ?>
+            <?php $tipo_de_recurso_puntosdevista = get_field('tipo_de_recurso_puntosdevista'); ?>
+            <?php if ($tipo_de_recurso_puntosdevista!='') { ?>
+            <strong>Sígueme en Tipo de recurso:</strong> <a href="<?php the_field('tipo_de_recurso_puntosdevista'); ?>" target="_blank"><?php the_field('tipo_de_recurso_puntosdevista'); ?></a><br>
+            <?php } ?>
+          </p>  
+        </div>  
 		    <div class="text-center mt-14">
 		      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate-footer-icon.png" alt="">
 		    </div>   
