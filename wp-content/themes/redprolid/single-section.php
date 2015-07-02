@@ -8,7 +8,7 @@
 
 <?php
 
-$customposts = get_posts('category_name='.$segment2.'&showposts=1' ); // note: you assign your query to a custom post object ($customposts)
+$customposts = get_posts('category_name='.$segment3.'&showposts=1' ); // note: you assign your query to a custom post object ($customposts)
 
 foreach( $customposts as $post ) :  // start you custom loop
     setup_postdata($post); ?>
