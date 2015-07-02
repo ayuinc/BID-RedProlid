@@ -40,7 +40,7 @@ get_header(); ?>
 		        - debates anteriores     
           </h2>
           <nav class="mt-21">
-            <a href="/desarrolla-tu-liderazgo/<?php echo $categoria; ?> ">Atrász >></a>
+            <a href="/desarrolla-tu-liderazgo/<?php echo $categoria; ?> ">Atrás >></a>
           </nav>
         </div>
       </div>
