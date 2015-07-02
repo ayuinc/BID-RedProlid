@@ -13,6 +13,8 @@ get_header(); ?>
 
 <div>
   <?php
+    global $wc_core;
+    die(print_r($wc_core))
     $post = $wp_query->post;
     $cat = get_the_category($post->id);
 		$home_url = home_url('/'); 
