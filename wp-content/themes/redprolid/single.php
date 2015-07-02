@@ -19,31 +19,50 @@ get_header(); ?>
 
     if ( $cat[0]->slug == 'a-donde-vamos' ) {
       //get_template_part( 'single-sectionpost' );
-      // header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      
+      if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
+          $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
+      }
+      header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
     }
 
     elseif ( $cat[0]->slug == 'agenda-de-genero' ) {
       //get_template_part( 'single-sectionpost' );
+      if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
+          $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
+      }
       header("Location: ".$home_url."desarrolla-tu-liderazgo/agenda-de-genero/");
     }
 
     elseif ( $cat[0]->slug == 'carrera-de-vallas' ) {
       //get_template_part( 'single-sectionpost' );
+      if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
+          $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
+      }
       header("Location: ".$home_url."desarrolla-tu-liderazgo/carrera-de-vallas/");
     }
 
     elseif ( $cat[0]->slug == 'la-pinta-no-es-lo-de-menos' ) {
       //get_template_part( 'single-sectionpost' );
+      if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
+          $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
+      }
       header("Location: ".$home_url."desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/");
     }
 
     elseif ( $cat[0]->slug == 'listas-para-la-politica' ) {
       //get_template_part( 'single-sectionpost' );
+      if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
+          $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
+      }
       header("Location: ".$home_url."desarrolla-tu-liderazgo/listas-para-la-politica/");
     }
 
     elseif ( $cat[0]->slug == 'nivelando-la-cancha' ) {
       //get_template_part( 'single-sectionpost' );
+      if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
+          $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
+      }
       header("Location: ".$home_url."desarrolla-tu-liderazgo/nivelando-la-cancha/");
     }
     
