@@ -65,6 +65,10 @@
             <?php if ($google_puntosdevista!='') { ?>
             <strong>Sígueme en Google+:</strong> <a href="<?php the_field('google_puntosdevista'); ?>" target="_blank"><?php the_field('google_puntosdevista'); ?></a><br>
             <?php } ?>
+            <?php $linkedin_puntosdevista = get_field('linkedin_puntosdevista'); ?>
+            <?php if ($linkedin_puntosdevista!='') { ?>
+            <strong>Sígueme en LinkedIn:</strong> <a href="<?php the_field('linkedin_puntosdevista'); ?>" target="_blank"><?php the_field('linkedin_puntosdevista'); ?></a><br>
+            <?php } ?>
             <?php $tema_puntosdevista = get_field('tema_puntosdevista'); ?>
             <?php if ($tema_puntosdevista!='') { ?>
             <strong>Sígueme en Tema:</strong> <a href="<?php the_field('tema_puntosdevista'); ?>" target="_blank"><?php the_field('tema_puntosdevista'); ?></a><br>
