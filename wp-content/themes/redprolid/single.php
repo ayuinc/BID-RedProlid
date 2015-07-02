@@ -18,6 +18,7 @@ get_header(); ?>
 		$home_url = home_url('/'); 
 
     if ( $cat[0]->slug == 'a-donde-vamos' ) {
+      echo $cat[0]->slug;
       //get_template_part( 'single-sectionpost' );
       header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
     }
