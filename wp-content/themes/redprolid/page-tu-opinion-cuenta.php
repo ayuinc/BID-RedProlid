@@ -12,7 +12,7 @@ get_header(); ?>
       <?php the_breadcrumb(); ?>
       <div class="clearfix sub-header">
         <div class="col-sm-1 col-xs-3">
-          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon.png" alt="" width="100%"></div>
+          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon-cuadrado.png" alt="" width="100%"></div>
         </div>
         <div class="col-sm-5 col-xs-12">
           <h1>Tu opinión cuenta</h1>
