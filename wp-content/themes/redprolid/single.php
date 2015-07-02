@@ -19,7 +19,7 @@ get_header(); ?>
 
     if ( $cat[0]->slug == 'a-donde-vamos' ) {
       //get_template_part( 'single-sectionpost' );
-      header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      // header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
     }
 
     elseif ( $cat[0]->slug == 'agenda-de-genero' ) {
