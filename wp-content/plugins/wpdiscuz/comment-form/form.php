@@ -62,7 +62,7 @@ $header_text .= ' "' . get_the_title($post) . '"';
             
             $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
             ?>
-            <div id="wc_unsubscribe_message">
+            <div id="wc_unsubscribe_message" style="background:#79B17E">
                 <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
             </div>
             <?php
