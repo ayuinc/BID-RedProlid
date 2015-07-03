@@ -17,7 +17,7 @@
         	<?php if ($imagen_evento!='') { ?>	
     				<img src="<?php the_field('imagen_evento'); ?>" width="100%">
     			<?php } else { ?>
-    				<img src="/wp-content/uploads/2015/02/eventos_redprolid.png" width="100%">
+    				<!-- <img src="/wp-content/uploads/2015/02/eventos_redprolid.png" width="100%"> -->
     			<?php } ?>
 					<small><?php the_field('credito_imagen_evento'); ?></small>
 				</div>

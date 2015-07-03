@@ -8,7 +8,7 @@
         <?php if ($imagen!='') { ?>
           <img src="<?php the_field('imagen_noticias'); ?>" alt="<?php the_field('fuente_imagen_noticias'); ?>" class="img-responsive">
         <?php } else { ?>
-          <img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png" alt="<?php the_field('fuente_imagen_noticias'); ?>" class="img-responsive">
+          <!-- <img src="<?php //echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png" alt="<?php //the_field('fuente_imagen_noticias'); ?>" class="img-responsive"> -->
         <?php } ?>           
           <small><?php the_field('fuente_imagen_noticias'); ?></small>
         </div>
