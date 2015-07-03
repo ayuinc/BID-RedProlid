@@ -86,6 +86,14 @@
 	      	<?php $twitter_campeona = get_field('twitter_campeona'); ?>
 					<?php if ($twitter_campeona!='') { ?>
 	      	<strong>Sígueme en Twitter:</strong> <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank"><?php the_field('twitter_campeona'); ?></a><br>
+	      	<?php } ?>
+	      	<?php $google_campeona = get_field('google_campeona'); ?>
+					<?php if ($google_campeona!='') { ?>
+	      	<strong>Sígueme en Google :</strong> <a href="<?php the_field('google_campeona'); ?>" target="_blank">Google+</a><br>
+	      	<?php } ?>
+	      	<?php $linkedin_campeona = get_field('linkedin_campeona'); ?>
+					<?php if ($linkedin_campeona!='') { ?>
+	      	<strong>Sígueme en LinkedIn:</strong> <a href="<?php the_field('linkedin_campeona'); ?>" target="_blank">LinkedIn</a><br>
 	      	<?php } ?>	      	
 	      	<?php $autor_campeona = get_field('autor_campeona'); ?>
 					<?php if ($autor_campeona!='') { ?>

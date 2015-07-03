@@ -11,13 +11,14 @@ get_header(); ?>
     <div class="container">
       <?php the_breadcrumb(); ?>
       <div class="clearfix sub-header bg-panel">
-        <div class="col-sm-6 col-xs-12">
+        <div class="col-sm-10 col-xs-12">
           <h1>Encuestas anteriores</h1>
         </div>
-        <div class="col-sm-6 col-xs-12">
+        <div class="col-sm-2 col-xs-12">
           <!--<nav class="text-right text-center-xs">
             <a href="<?php echo content_url('/'); ?>tu-opinion-cuenta">Tu opinión cuenta &gt;&gt;</a>
           </nav>-->          
+          <img src="http://redprolid.org/wp-content/themes/redprolid/assets/img/toc-main-icon-cuadrado.png" alt="" width="94">
         </div>
       </div>
       <div>

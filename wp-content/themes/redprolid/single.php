@@ -10,41 +10,125 @@ get_header(); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
 
-
+<script>
+function delayer(){
+  setTimeout(window.location = "/", 20000);
+}
+</script>
 <div>
   <?php
+    global $wc_core;
+    // die(print_r($wc_core));
     $post = $wp_query->post;
     $cat = get_the_category($post->id);
 		$home_url = home_url('/'); 
 
     if ( $cat[0]->slug == 'a-donde-vamos' ) {
       //get_template_part( 'single-sectionpost' );
-      header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      
+      if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
+        $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
+        ?>
+        <div id="wc_unsubscribe_message" style="background:#79B17E">
+            <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
+        </div>
+        <nav class="mt-21 pb-21 text-center">
+          <a href="/">Inicio &gt;&gt;</a>
+        </nav>
+        <?php
+      }else{
+        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      }
     }
 
     elseif ( $cat[0]->slug == 'agenda-de-genero' ) {
       //get_template_part( 'single-sectionpost' );
-      header("Location: ".$home_url."desarrolla-tu-liderazgo/agenda-de-genero/");
+      if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
+          $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
+          ?>
+          <div id="wc_unsubscribe_message" style="background:#79B17E">
+              <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
+          </div>
+          <nav class="mt-21 pb-21 text-center">
+            <a href="/">Inicio &gt;&gt;</a>
+          </nav>
+          <?php
+      }
+      else{
+        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      }
     }
 
     elseif ( $cat[0]->slug == 'carrera-de-vallas' ) {
       //get_template_part( 'single-sectionpost' );
-      header("Location: ".$home_url."desarrolla-tu-liderazgo/carrera-de-vallas/");
+      if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
+          $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
+          ?>
+          <div id="wc_unsubscribe_message" style="background:#79B17E">
+              <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
+          </div>
+          <nav class="mt-21 pb-21 text-center">
+            <a href="/">Inicio &gt;&gt;</a>
+          </nav>
+          <?php
+      }
+      else{
+        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      }
     }
 
     elseif ( $cat[0]->slug == 'la-pinta-no-es-lo-de-menos' ) {
       //get_template_part( 'single-sectionpost' );
-      header("Location: ".$home_url."desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/");
+      if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
+          $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
+          ?>
+          <div id="wc_unsubscribe_message" style="background:#79B17E">
+              <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
+          </div>
+          <nav class="mt-21 pb-21 text-center">
+            <a href="/">Inicio &gt;&gt;</a>
+          </nav>
+          <?php
+      }
+      else{
+        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      }
     }
 
     elseif ( $cat[0]->slug == 'listas-para-la-politica' ) {
       //get_template_part( 'single-sectionpost' );
-      header("Location: ".$home_url."desarrolla-tu-liderazgo/listas-para-la-politica/");
+      if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
+          $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
+          ?>
+          <div id="wc_unsubscribe_message" style="background:#79B17E">
+              <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
+          </div>
+          <nav class="mt-21 pb-21 text-center">
+            <a href="/">Inicio &gt;&gt;</a>
+          </nav>
+          <?php
+      }
+      else{
+        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      }
     }
 
     elseif ( $cat[0]->slug == 'nivelando-la-cancha' ) {
       //get_template_part( 'single-sectionpost' );
-      header("Location: ".$home_url."desarrolla-tu-liderazgo/nivelando-la-cancha/");
+      if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
+          $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
+          ?>
+          <div id="wc_unsubscribe_message" style="background:#79B17E">
+              <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
+          </div>
+          <nav class="mt-21 pb-21 text-center">
+            <a href="/">Inicio &gt;&gt;</a>
+          </nav>
+          <?php
+      }
+      else{
+        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      }
     }
     
     elseif ( $cat[0]->slug == 'puntos-de-vista' ) {
