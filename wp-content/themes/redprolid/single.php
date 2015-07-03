@@ -12,7 +12,7 @@ get_header(); ?>
 
 <script>
 function delayer(){
-  setTimeout(window.location = "/home", 10000);
+  setTimeout(window.location = "/", 10000);
 }
 </script>
 <div>
@@ -47,6 +47,7 @@ function delayer(){
           <div id="wc_unsubscribe_message">
               <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
           </div>
+          <script>delayer();</script>
           <?php
       }
       else{
@@ -62,6 +63,7 @@ function delayer(){
           <div id="wc_unsubscribe_message">
               <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
           </div>
+          <script>delayer();</script>
           <?php
       }
       else{
@@ -77,6 +79,7 @@ function delayer(){
           <div id="wc_unsubscribe_message">
               <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
           </div>
+          <script>delayer();</script>
           <?php
       }
       else{
@@ -92,6 +95,7 @@ function delayer(){
           <div id="wc_unsubscribe_message">
               <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
           </div>
+          <script>delayer();</script>
           <?php
       }
       else{
@@ -107,6 +111,7 @@ function delayer(){
           <div id="wc_unsubscribe_message">
               <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
           </div>
+          <script>delayer();</script>
           <?php
       }
       else{
