@@ -12,7 +12,7 @@ get_header(); ?>
 
 <script>
 function delayer(){
-  setTimeout(window.location = "/", 10000);
+  setTimeout(window.location = "/", 20000);
 }
 </script>
 <div>
