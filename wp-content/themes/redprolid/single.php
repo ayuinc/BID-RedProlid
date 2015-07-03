@@ -32,8 +32,8 @@ function delayer(){
         <div id="wc_unsubscribe_message" style="background:#79B17E">
             <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
         </div>
-        <nav class="mt-21">
-          <a href="/desarrolla-tu-liderazgo/desarrolla-tu-liderazgo ">Inicio &gt;&gt;</a>
+        <nav class="mt-21 mb-21 text-center">
+          <a href="/">Inicio &gt;&gt;</a>
         </nav>
         <?php
       }else{
@@ -49,8 +49,8 @@ function delayer(){
           <div id="wc_unsubscribe_message" style="background:#79B17E">
               <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
           </div>
-          <nav class="mt-21">
-            <a href="/desarrolla-tu-liderazgo/desarrolla-tu-liderazgo ">Inicio &gt;&gt;</a>
+          <nav class="mt-21 mb-21 text-center">
+            <a href="/">Inicio &gt;&gt;</a>
           </nav>
           <?php
       }
@@ -67,8 +67,8 @@ function delayer(){
           <div id="wc_unsubscribe_message" style="background:#79B17E">
               <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
           </div>
-          <nav class="mt-21">
-            <a href="/desarrolla-tu-liderazgo/desarrolla-tu-liderazgo ">Inicio &gt;&gt;</a>
+          <nav class="mt-21 mb-21 text-center">
+            <a href="/">Inicio &gt;&gt;</a>
           </nav>
           <?php
       }
@@ -85,8 +85,8 @@ function delayer(){
           <div id="wc_unsubscribe_message" style="background:#79B17E">
               <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
           </div>
-          <nav class="mt-21">
-            <a href="/desarrolla-tu-liderazgo/desarrolla-tu-liderazgo ">Inicio &gt;&gt;</a>
+          <nav class="mt-21 mb-21 text-center">
+            <a href="/">Inicio &gt;&gt;</a>
           </nav>
           <?php
       }
@@ -103,8 +103,8 @@ function delayer(){
           <div id="wc_unsubscribe_message" style="background:#79B17E">
               <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
           </div>
-          <nav class="mt-21">
-            <a href="/desarrolla-tu-liderazgo/desarrolla-tu-liderazgo ">Inicio &gt;&gt;</a>
+          <nav class="mt-21 mb-21 text-center">
+            <a href="/">Inicio &gt;&gt;</a>
           </nav>
           <?php
       }
@@ -121,8 +121,8 @@ function delayer(){
           <div id="wc_unsubscribe_message" style="background:#79B17E">
               <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
           </div>
-          <nav class="mt-21">
-            <a href="/desarrolla-tu-liderazgo/desarrolla-tu-liderazgo ">Inicio &gt;&gt;</a>
+          <nav class="mt-21 mb-21 text-center">
+            <a href="/">Inicio &gt;&gt;</a>
           </nav>
           <?php
       }
