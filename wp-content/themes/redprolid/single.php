@@ -32,7 +32,6 @@ function delayer(){
         <div id="wc_unsubscribe_message">
             <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
         </div>
-        <script>delayer();</script>
         <?php
       }else{
         header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
