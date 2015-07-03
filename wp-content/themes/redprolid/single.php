@@ -24,13 +24,14 @@ get_header(); ?>
       
       if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
           $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
+          ?>
+          <div id="wc_unsubscribe_message">
+              <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
+          </div>
+          <?php
+      }else{
+        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
       }
-      header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
-      ?>
-      <div id="wc_unsubscribe_message">
-          <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
-      </div>
-      <?php
     }
 
     elseif ( $cat[0]->slug == 'agenda-de-genero' ) {
@@ -43,7 +44,9 @@ get_header(); ?>
           </div>
           <?php
       }
-      header("Location: ".$home_url."desarrolla-tu-liderazgo/agenda-de-genero/");
+      else{
+        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      }
     }
 
     elseif ( $cat[0]->slug == 'carrera-de-vallas' ) {
@@ -56,7 +59,9 @@ get_header(); ?>
           </div>
           <?php
       }
-      header("Location: ".$home_url."desarrolla-tu-liderazgo/carrera-de-vallas/");
+      else{
+        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      }
     }
 
     elseif ( $cat[0]->slug == 'la-pinta-no-es-lo-de-menos' ) {
@@ -69,7 +74,9 @@ get_header(); ?>
           </div>
           <?php
       }
-      header("Location: ".$home_url."desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/");
+      else{
+        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      }
     }
 
     elseif ( $cat[0]->slug == 'listas-para-la-politica' ) {
@@ -82,7 +89,9 @@ get_header(); ?>
           </div>
           <?php
       }
-      header("Location: ".$home_url."desarrolla-tu-liderazgo/listas-para-la-politica/");
+      else{
+        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      }
     }
 
     elseif ( $cat[0]->slug == 'nivelando-la-cancha' ) {
@@ -95,7 +104,9 @@ get_header(); ?>
           </div>
           <?php
       }
-      header("Location: ".$home_url."desarrolla-tu-liderazgo/nivelando-la-cancha/");
+      else{
+        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      }
     }
     
     elseif ( $cat[0]->slug == 'puntos-de-vista' ) {
