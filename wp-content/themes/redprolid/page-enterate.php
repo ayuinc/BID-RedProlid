@@ -200,7 +200,7 @@ get_header(); ?>
                             <?php if ($imagen!='') { ?>
                             <img src="<?php the_field('imagen_noticias'); ?>" style="width:100%;" alt="">
                             <?php } else { ?>
-                            <img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png" style="width:100%;" alt="">
+                            <!-- <img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png" style="width:100%;" alt=""> -->
                             <?php } ?>
                             <h5 class="medium mt-7 mb-0 pb-0">
                               <p class="medium giveMeEllipsis"><?php the_title(); ?></p>
