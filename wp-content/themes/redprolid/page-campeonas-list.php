@@ -1,4 +1,5 @@
 <?php
+die('entro');
 /*
 Template Name: Campeonas list
 */
