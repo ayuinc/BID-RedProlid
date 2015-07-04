@@ -861,7 +861,7 @@ class WC_Core {
         $unsubscribe_url = get_permalink($comment->comment_post_ID) . "?wpdiscuzSubscribeID=" . $email_data['id'] . "&key=" . $email_data['activation_key'] . '&#wc_unsubscribe_message';
         $message .= "<br/><br/><a href='$permalink'>$permalink</a>";
         $message .= "<br/><br/>$wc_new_comment_content";
-        $message .= "<br/><br/><a href='$unsubscribe_url'>" . $this->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe'] . "</a>";
+        // $message .= "<br/><br/><a href='$unsubscribe_url'>" . $this->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe'] . "</a>";
         $headers = array();
         $headers[] = "Content-Type: text/html; charset=UTF-8";
         $headers[] = "From: " . get_bloginfo('name') . "\r\n";
