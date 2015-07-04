@@ -58,7 +58,6 @@ get_header(); ?>
             <!--<?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de --><?php //echo date_i18n('Y', strtotime( $tempDate)); ?>
 	          </small>     
 	          <?php } ?>   
-
           </div>
           <div class="content mv-14">
             <p>
