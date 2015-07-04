@@ -47,6 +47,15 @@ get_header(); ?>
 
 
 
+          <div class="title">
+            <!-- <h3 class="medium mb-0"><a href="<?php //echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3> -->
+            <?php //$tempDate = get_field('fecha_de_la_entrevista'); ?>
+            <?php //if ($tempDate!='') { ?>
+            <small>
+            
+            </small>     
+            <?php //} ?> 
+          </div>
 
 
 
