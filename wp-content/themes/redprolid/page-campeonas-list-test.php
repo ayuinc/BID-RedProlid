@@ -1,7 +1,7 @@
 <?php
 die('entro plantilla');
 /*
-Template Name: Campeonas list
+Template Name: Campeonas list test
 */
 get_header(); ?>
 
