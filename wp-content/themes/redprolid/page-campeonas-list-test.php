@@ -44,17 +44,14 @@ get_header(); ?>
           <?php } ?>
         </div>
         <div class="col-md-10">
-          <div class="title">
-            <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-            <?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
-            <?php if ($tempDate!='') { ?>
-            <small>
-            <!--<?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de --><?php echo date_i18n('Y', strtotime( $tempDate)); ?>
-            </small>     
-            <?php } ?>   
-            <!-- <p><?php //the_field('posicion_campeona'); ?> <?php //if (get_field('twitter_campeona')!='') { ?>/ <a href="http://twitter.com/<?php //the_field('twitter_campeona'); ?>" target="_blank"><?php //the_field('twitter_campeona'); ?></a><?php } ?></p> -->
-          </div>
 
+          <div class="content mv-14">
+            <p>
+              <strong><em><?php the_field('posicion_campeona'); ?></em></strong><br>
+              <?php the_field('descripcion_home_campeonas'); ?> 
+            </p>
+            <p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Lee la entrevista >></a></p>
+          </div> 
           <hr>   
         </div>
 <?php get_footer(); ?>
