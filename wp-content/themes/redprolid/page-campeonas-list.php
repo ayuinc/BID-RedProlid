@@ -1,5 +1,5 @@
 <?php
-die('entro plantilla');
+// die('entro');
 /*
 Template Name: Campeonas list
 */
