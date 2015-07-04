@@ -1,7 +1,7 @@
 <?php
 die('entro plantilla');
 /*
-Template Name: Campeonas list
+Template Name: Campeonas list test
 */
 get_header(); ?>
 
@@ -46,7 +46,7 @@ get_header(); ?>
           <?php } ?>
           <?php $video = get_field('video_campeonas'); ?>
           <?php if ($video!='') { ?>
-          	<img class="img-responsive"  alt="<?php the_title(); ?>" src="http://img.youtube.com/vi/<?php the_field('video_campeonas'); ?>/0.jpg" width="100%">
+          	<img class="img-responsive"  alt="<?php the_title(); ?>" src="http://img.youtube.com/vi/<?php the_field('video_campeonas'); ?>/maxresdefault.jpg" width="100%">
           <?php } ?>
 	      </div>
         <div class="col-md-10">
