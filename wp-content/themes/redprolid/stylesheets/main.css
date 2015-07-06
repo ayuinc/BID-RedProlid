@@ -5175,6 +5175,10 @@ header {
     -o-justify-content: center;
     justify-content: center;
     -ms-flex-pack: center; }
+    .mobile-navbar .left button,
+    .mobile-navbar .right button {
+      position: relative;
+      bottom: 10px; }
   .mobile-navbar .logo {
     background-repeat: no-repeat;
     background-size: cover;
@@ -5242,10 +5246,6 @@ header {
     overflow-y: scroll; }
     .mobile-menu .mobile-nav-display .top {
       padding: 10.5px; }
-    .mobile-menu .mobile-nav-display .menu-trigger {
-      position: relative;
-      right: 0;
-      bottom: 5px; }
     .mobile-menu .mobile-nav-display .center > ul {
       padding-left: 0;
       list-style: none;

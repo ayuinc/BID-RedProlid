@@ -126,9 +126,12 @@ header {
 	.right {
 		height: $mobile-navbar-height;
 		@include flex-middle;
+		button {
+			position:relative;
+			bottom:10px;
+		}
 	}
 	.left {}
-	.right {}
 	.logo {
 		@include bg-img-control;
 		width: $mobile-navbar-height + 7;
@@ -187,11 +190,6 @@ header {
 		overflow-y: scroll;
 		.top {
 			padding: $container-fluid;
-		}
-		.menu-trigger {
-			position: relative;
-		  right: 0;
-		  bottom: 5px;
 		}
 		.center {
 			> ul {
