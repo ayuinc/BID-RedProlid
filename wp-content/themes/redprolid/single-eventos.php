@@ -12,16 +12,17 @@
     <div class="ph-70">
 			<h2 class="medium mb-14"><?php the_title(); ?></h2>
 			<div class="pv-21 half-height">
-				<div class="col-sm-3">
       		<?php $imagen_evento = get_field('imagen_evento'); ?>
         	<?php if ($imagen_evento!='') { ?>	
-    				<img src="<?php the_field('imagen_evento'); ?>" width="100%">
+					<div class="col-sm-3">        	
+	    				<img src="<?php the_field('imagen_evento'); ?>" width="100%">
+						<small><?php the_field('credito_imagen_evento'); ?></small>
+					</div>  
+					<div class="banner-content col-sm-9 mb-35">  				
     			<?php } else { ?>
     				<!-- <img src="/wp-content/uploads/2015/02/eventos_redprolid.png" width="100%"> -->
+    			<div class="banner-content col-sm-12 mb-35"> 
     			<?php } ?>
-					<small><?php the_field('credito_imagen_evento'); ?></small>
-				</div>
-				<div class="banner-content col-sm-9 mb-35">
 					<div class="row">
 						<div class="col-sm-7">
 			        <h5 class="medium mb-0">Descripción</h5>
