@@ -3,16 +3,18 @@
     <?php the_breadcrumb(); ?>
     <div class="ph-70 pv-21">
       <div class="row pb-14">
-        <div class="col-sm-4">  
+         
         <?php $imagen = get_field('imagen_noticias'); ?>
         <?php if ($imagen!='') { ?>
+        <div class="col-sm-4"> 
           <img src="<?php the_field('imagen_noticias'); ?>" alt="<?php the_field('fuente_imagen_noticias'); ?>" class="img-responsive">
+          <small><?php the_field('fuente_imagen_noticias'); ?></small>
+        </div>   
+        <div class="col-sm-8">         
         <?php } else { ?>
+        <div class="col-sm-12"> 
           <!-- <img src="<?php //echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png" alt="<?php //the_field('fuente_imagen_noticias'); ?>" class="img-responsive"> -->
         <?php } ?>           
-          <small><?php the_field('fuente_imagen_noticias'); ?></small>
-        </div>
-        <div class="col-sm-7">  
           <h2 class="medium mb-0"><?php the_title(); ?></h2>
           <?php $publicacion = get_field('publicacion_noticias'); ?>
           <small>
