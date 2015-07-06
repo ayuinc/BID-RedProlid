@@ -5242,6 +5242,8 @@ header {
     overflow-y: scroll; }
     .mobile-menu .mobile-nav-display .top {
       padding: 10.5px; }
+    .mobile-menu .mobile-nav-display .right button .tcon-menu__lines {
+      top: 0px; }
     .mobile-menu .mobile-nav-display .center > ul {
       padding-left: 0;
       list-style: none;

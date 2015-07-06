@@ -188,6 +188,13 @@ header {
 		.top {
 			padding: $container-fluid;
 		}
+		.right {
+			button {
+				.tcon-menu__lines {
+					top:0px;
+				}
+			}
+		}
 		.center {
 			> ul {
 				@include list-unstyled;
