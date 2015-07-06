@@ -43,10 +43,11 @@ get_header(); ?>
 		        		<?php $imagen_evento = get_field('imagen_evento'); ?>
 			        	<?php if ($imagen_evento!='') { ?>	
 	        				<div class="banner-pic col-sm-4 mt-28" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
-	        			<?php } else { ?>
-	        				<div class="banner-pic col-sm-4 mt-28" style="background-image: url('/wp-content/uploads/2015/02/eventos_redprolid.png');"></div>
-	        			<?php } ?>
 	        			<div class="banner-content col-sm-8">
+	        			<?php } else { ?>
+	        				<!--<div class="banner-pic col-sm-4 mt-28" style="background-image: url('/wp-content/uploads/2015/02/eventos_redprolid.png');"></div>-->
+	        			<div class="banner-content col-sm-12">
+	        			<?php } ?>
 	        				<h3 class="medium mt-7 mb-14 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 	        				<p><?php the_field('descripcion_evento'); ?></p>
 	        				<?php $tempDate = get_the_date(); ?>
