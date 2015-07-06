@@ -5178,7 +5178,7 @@ header {
     .mobile-navbar .left button,
     .mobile-navbar .right button {
       position: relative;
-      top: 0; }
+      bottom: 30%; }
   .mobile-navbar .logo {
     background-repeat: no-repeat;
     background-size: cover;
