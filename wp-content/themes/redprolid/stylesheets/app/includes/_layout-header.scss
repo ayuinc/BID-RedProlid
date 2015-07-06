@@ -188,12 +188,10 @@ header {
 		.top {
 			padding: $container-fluid;
 		}
-		.right {
-			button {
-				.tcon-menu__lines {
-					top:0px;
-				}
-			}
+		.menu-trigger {
+			position: relative;
+		  right: 0;
+		  bottom: 5px;
 		}
 		.center {
 			> ul {
