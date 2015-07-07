@@ -17,7 +17,7 @@ get_header(); ?>
         <div>
           <h2>
 			      <?php if ($categoria=='a-donde-vamos') { ?> 
-		        ¿Adónde v@mos?
+		        ArTICuladas
 		        <?php } ?>
 			      <?php if ($categoria=='carrera-de-vallas') { ?> 
 		        Carrera de vallas
