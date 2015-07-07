@@ -5175,10 +5175,6 @@ header {
     -o-justify-content: center;
     justify-content: center;
     -ms-flex-pack: center; }
-    .mobile-navbar .left button,
-    .mobile-navbar .right button {
-      position: relative;
-      bottom: 30%; }
   .mobile-navbar .logo {
     background-repeat: no-repeat;
     background-size: cover;
