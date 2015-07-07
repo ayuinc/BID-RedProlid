@@ -88,6 +88,9 @@
             <li>
               <a href="#mobile-nav-display-6">Charlacafé</a>
             </li>
+            <li>
+              <a href="<?php echo home_url("/"); ?>registrate" class="btn btn-primary">Únete</a>
+            </li>
           </ul>
         </div>
         <div class="mobile-nav-display" id="mobile-nav-display-1">
