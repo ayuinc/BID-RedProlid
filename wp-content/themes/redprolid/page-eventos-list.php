@@ -26,7 +26,7 @@ get_header(); ?>
     </div>  
     <div class="ph-70">
       <div class="row pb-35">
-        <div class="col-sm-10 col-md-offset-1">
+        <!-- <div class="col-sm-10 col-md-offset-1"> -->
 	        <?php add_filter('post_limits', 'my_post_limit'); ?>
 	        <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 					<?php
@@ -38,7 +38,13 @@ get_header(); ?>
 					$wp_query = new WP_Query();
 					$wp_query->query('category_name=otros-eventos&offset='.$myOffset.'&showposts=10&paged='.$paged);
 					?>	        
-          <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>          
+          <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+          <div class="banner-pic col-sm-2 bg-panel text-center lead-ch normalize-text">
+            <?php $tempDate = get_field('fecha_inicio_evento'); ?>
+            <h3 class="h1"><?php echo date_i18n('j', strtotime( $tempDate)); ?></h3>
+            <p><?php echo date_i18n('M', strtotime( $tempDate)); ?></p>
+          </div>
+          <div class="banner-content flex-none col-sm-10 pb-0">          
             <div class="title">
               <h3 class="medium text-primary mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>         
             </div>
@@ -67,6 +73,7 @@ get_header(); ?>
 							<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve evento >></a></p>
             </div>
             <hr>
+           </div> 
             <?php $count++; ?>
           <?php endwhile; ?>
           
@@ -84,7 +91,7 @@ get_header(); ?>
           <?php } ?> 
 					<?php $wp_query = null; $wp_query = $temp;?>
 					<?php remove_filter('post_limits', 'my_post_limit'); ?>                 
-        </div>
+        <!-- </div> -->
       </div>          
     </div>
   </div>
