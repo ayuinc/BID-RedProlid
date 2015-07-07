@@ -36,9 +36,10 @@ function delayer(){
           <a href="/">Inicio &gt;&gt;</a>
         </nav>
         <?php
-      }else{
-        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
       }
+      // else{
+      //   header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      // }
     }
 
     elseif ( $cat[0]->slug == 'agenda-de-genero' ) {
