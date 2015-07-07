@@ -127,8 +127,8 @@ header {
 		height: $mobile-navbar-height;
 		@include flex-middle;
 		button {
-			position:relative;
-			bottom:30%;
+			//position:relative;
+			//bottom:30%;
 		}
 	}
 	.left {}
