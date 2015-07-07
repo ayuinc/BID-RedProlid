@@ -90,9 +90,9 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 	  	<div class="banner half-height pb-28">
 	  		<div class="banner-pic col-sm-2 bg-panel text-center lead-ch normalize-text">
-	  			<?php $tempDate = get_field('fecha_inicio_evento'); ?>
-	  			<h3 class="h1"><?php echo date_i18n('j', strtotime( $tempDate)); ?></h3>
-			    <p><?php echo date_i18n('M', strtotime( $tempDate)); ?></p>
+	  			<?php $fecha_inicio_evento = get_field('fecha_inicio_evento'); ?>
+	  			<h3 class="h1"><?php echo date_i18n('j', strtotime( $fecha_inicio_evento)); ?></h3>
+			    <p><?php echo date_i18n('M', strtotime( $fecha_inicio_evento)); ?></p>
 	  		</div>
 	  		<div class="banner-content flex-none col-sm-10 pb-0">
 	  			<h4 class="medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h4>
