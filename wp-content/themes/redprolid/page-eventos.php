@@ -90,7 +90,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 	  	<div class="banner half-height pb-28">
 	  		<div class="banner-pic col-sm-2 bg-panel text-center lead-ch normalize-text">
-	  			<?php $fecha_inicio_evento = get_field('fecha_inicio_evento'); ?>
+	  			<?php echo $fecha_inicio_evento = get_field('fecha_inicio_evento'); ?>
 	  			<h3 class="h1"><?php echo date_i18n('j', strtotime( $fecha_inicio_evento)); ?></h3>
 			    <p><?php echo date_i18n('M', strtotime( $fecha_inicio_evento)); ?></p>
 	  		</div>
