@@ -37,7 +37,7 @@ get_header(); ?>
 					$wp_query= null;
 					$wp_query = new WP_Query();
           // $wp_query->query('category_name=otros-eventos&offset='.$myOffset.'&showposts=10&paged='.$paged);
-					$wp_query->query('category_name=otros-eventos&offset='.$myOffset.$paged'&orderby=fecha_inicio_evento&showposts=10');
+					$wp_query->query('category_name=otros-eventos&offset='.$myOffset.'&orderby=fecha_inicio_evento&showposts=10');
 					// $wp_query->query('cat=258&offset='.$myOffset.$paged.'&orderby=meta_value_num&meta_key=video_fecha_publicacion');
           ?>	        
           <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
