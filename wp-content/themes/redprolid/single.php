@@ -37,9 +37,10 @@ function delayer(){
         </nav>
         <?php
       }
-      // else{
-      //   header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
-      // }
+      else{
+        // header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+        get_template_part( 'single-desarrolla-tu-liderazgo' );
+      }
     }
 
     elseif ( $cat[0]->slug == 'agenda-de-genero' ) {
