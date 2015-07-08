@@ -89,7 +89,7 @@ get_header(); ?>
           		<h3 class="medium">No hay más eventos. <a href="javascript:history.back();">Regresa</a></h3>
           	</div>
           <?php } ?> 
-					// <?php $wp_query = null; $wp_query = $temp;?>
+					<?php //$wp_query = null; $wp_query = $temp;?>
 					<?php remove_filter('post_limits', 'my_post_limit'); ?>                 
         <!-- </div> -->
       </div>          
