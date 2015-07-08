@@ -4,9 +4,9 @@
     <div class="clearfix bg-panel sub-header">
       <div class="col-sm-7">
         <div>
-          <h1>Concurso</h1>
+          <h1>Desarrolla tu liderazgo</h1>
           <nav class="mt-21">
-            <a href="<?php echo content_url('/'); ?>concursos">Concursos >></a>
+            <!-- <a href="<?php echo content_url('/'); ?>concursos">Concursos >></a> -->
           </nav>
         </div>
       </div>
@@ -32,6 +32,13 @@
               <?php the_field('contenido-debates'); ?>
             </div>         
         </div>
+        <div class="comments mt-35">
+          <?php if ( is_user_logged_in() ) { ?>
+            <?php comments_template();?>
+          <?php } else { ?>
+            <p>Para poder comentar es necesario <a href="/registrate/">iniciar tu sesión o registrarse</a> a Red PROLD.</p>
+          <?php } ?>
+        </div> 
       </div>          
     </div>
   </div>
