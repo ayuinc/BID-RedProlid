@@ -33,7 +33,7 @@ get_header(); ?>
 					$count = 0;	
 					global $myOffset;
 					$myOffset = 6;
-					$temp = $wp_query;
+					// $temp = $wp_query;
 					$wp_query= null;
 					$wp_query = new WP_Query();
 					$wp_query->query('category_name=otros-eventos&offset='.$myOffset.'&showposts=10&paged='.$paged);
@@ -89,7 +89,7 @@ get_header(); ?>
           		<h3 class="medium">No hay más eventos. <a href="javascript:history.back();">Regresa</a></h3>
           	</div>
           <?php } ?> 
-					<?php $wp_query = null; $wp_query = $temp;?>
+					// <?php $wp_query = null; $wp_query = $temp;?>
 					<?php remove_filter('post_limits', 'my_post_limit'); ?>                 
         <!-- </div> -->
       </div>          
