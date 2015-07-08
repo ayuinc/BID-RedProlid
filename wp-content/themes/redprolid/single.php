@@ -57,7 +57,8 @@ function delayer(){
           <?php
       }
       else{
-        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+        // header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+        get_template_part( 'single-desarrolla-tu-liderazgo' );
       }
     }
 
@@ -75,7 +76,8 @@ function delayer(){
           <?php
       }
       else{
-        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+        // header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+        get_template_part( 'single-desarrolla-tu-liderazgo' );
       }
     }
 
@@ -93,7 +95,8 @@ function delayer(){
           <?php
       }
       else{
-        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+        // header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+        get_template_part( 'single-desarrolla-tu-liderazgo' );
       }
     }
 
@@ -111,7 +114,8 @@ function delayer(){
           <?php
       }
       else{
-        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+        // header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+        get_template_part( 'single-desarrolla-tu-liderazgo' );
       }
     }
 
@@ -129,7 +133,8 @@ function delayer(){
           <?php
       }
       else{
-        header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+        // header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+        get_template_part( 'single-desarrolla-tu-liderazgo' );
       }
     }
     
