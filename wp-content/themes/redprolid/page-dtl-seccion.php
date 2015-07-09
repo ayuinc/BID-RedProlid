@@ -35,7 +35,7 @@ get_header(); ?>
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png"></div>
 				        </div>
 				        <div class="col-sm-5 col-xs-12 pl-21">
-				          <h1 class="title-a-donde-vamos">ArTICuladas</h1>
+				          <h1 class="title-a-donde-vamos"><?php the_title(); ?></h1>
 				          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
 				        </div>
 		          </div>

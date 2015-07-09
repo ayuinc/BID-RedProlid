@@ -80,7 +80,7 @@ get_header(); ?>
       <section class="widgets pv-14">
         <div class="container">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 hidden-md-down">
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
@@ -258,7 +258,7 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      <section class="pv-14">
+      <section class="pv-14 hidden-md-down">
         <div class="container">
           <div class="row">
             <div class="col-md-3 comentarios">
