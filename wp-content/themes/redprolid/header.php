@@ -82,6 +82,9 @@
             <li>
               <a href="#mobile-nav-display-4">Entérate</a>
             </li>
+            <li>
+              <a href="<?php echo home_url('/'); ?>registrate/">Regístrate a la red</a>
+            </li>
             <!--<li>
               <a href="#mobile-nav-display-5">Concursos</a>
             </li>
@@ -144,7 +147,7 @@
                 <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/">Agenda de género</a>
               </li>
               <li>
-                <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas">Pistas →</a>
+                <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas">Pistas</a>
               </li>
               <li>
                 <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-tu-estilo/">A tu estilo</a>
