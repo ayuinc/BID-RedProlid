@@ -82,12 +82,12 @@
             <li>
               <a href="#mobile-nav-display-4">Entérate</a>
             </li>
-            <li>
+            <!--<li>
               <a href="#mobile-nav-display-5">Concursos</a>
             </li>
             <li>
               <a href="#mobile-nav-display-6">Charlacafé</a>
-            </li>
+            </li>-->
           </ul>
         </div>
         <div class="mobile-nav-display" id="mobile-nav-display-1">
@@ -147,7 +147,7 @@
                 <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas">Pistas →</a>
               </li>
               <li>
-                <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a>
+                <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-tu-estilo/">A tu estilo</a>
               </li>
             </ul>
           </div>
@@ -161,20 +161,26 @@
           <div class="center">
             <ul>
               <li>
+                <a href="<?php echo home_url('/'); ?>campeonas">Campeonas</a>
+              </li>
+              <li>
+                <a href="<?php echo home_url('/'); ?>puntos-de-vista">Puntos de vista</a>
+              </li>              
+              <li>
                 <a href="<?php echo home_url('/'); ?>noticias">Noticias</a>
               </li>
+              <li>
+                <a href="<?php echo home_url('/'); ?>video" class="videos">Videos</a>
+              </li>              
               <li>
                 <a href="<?php echo home_url('/'); ?>eventos">Eventos</a>
               </li>
               <li>
+                <a href="<?php echo home_url('/'); ?>publicaciones">Publicaciones</a>
+              </li>              
+              <!--<li>
                 <a href="<?php echo home_url('/'); ?>boletin">Nuestro boletín</a>
-              </li>
-              <li>
-                <a href="<?php echo home_url('/'); ?>campeonas">Campeonas</a>
-              </li>
-              <li>
-                <a href="<?php echo home_url('/'); ?>video" class="videos">Videos</a>
-              </li>
+              </li>-->
             </ul>
           </div>
           <div class="bottom"></div>
