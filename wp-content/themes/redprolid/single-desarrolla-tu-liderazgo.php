@@ -25,7 +25,7 @@
               <?php } ?>
               <?php $blog_debates = get_field('blog-debates'); ?>
               <?php if ($blog_debates!='') { ?>
-                <span>Blog: <?php echo $blog_debates; ?></span>
+                <span>FUENTE: <?php echo $blog_debates; ?></span>
               <?php } ?>
             </div>
             <div class="content">
