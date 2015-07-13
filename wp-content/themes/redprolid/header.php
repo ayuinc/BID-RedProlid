@@ -83,7 +83,7 @@
               <a href="#mobile-nav-display-4">Entérate</a>
             </li>
             <li>
-              <a href="<?php echo home_url('/'); ?>registrate/">Regístrate a la red</a>
+              <a href="<?php echo home_url('/'); ?>registrate/">Regístrate en la Red</a>
             </li>
             <!--<li>
               <a href="#mobile-nav-display-5">Concursos</a>
