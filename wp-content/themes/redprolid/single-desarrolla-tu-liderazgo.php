@@ -2,18 +2,18 @@
   <div class="container">
 		<?php the_breadcrumb(); ?>
     <div class="clearfix bg-panel sub-header">
-      <!--<div class="col-sm-7">
-        <div>
-          <h1>Desarrolla tu liderazgo</h1>
-          <nav class="mt-21">
-            <a href="<?php echo content_url('/'); ?>concursos">Concursos >></a>
-          </nav>
-        </div>
+      <div class="col-sm-7">
+	      <!--<div>
+	        <h1>Desarrolla tu liderazgo</h1>
+	        <nav class="mt-21">
+	          <a href="<?php echo content_url('/'); ?>concursos">Concursos >></a>
+	        </nav>
+	      </div>-->
       </div>
-      <div class="sub-header-icon">
+      <!--<div class="sub-header-icon">
         <img src="<?php //echo content_url('/'); ?>themes/redprolid/assets/icons/concursos-icon-circle-alpha.png" width="94px" height="auto" alt="">
-      </div>
-    </div>-->
+      </div>-->
+    </div>
     <div class="ph-70">
       <div class="row">
         <div class="col-sm-12">
