@@ -23,19 +23,19 @@ get_header(); ?>
       </div>
       <div>
         <ul class="grid-list grid-list-3 grid-list-1-xs grid-list-2-sm hide-other-polls-anchor">
-          <?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>	
+          <?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=10' ); ?>	
 					<?php while ( have_posts() ) : the_post(); ?> 
-						<?php echo $codigo_de_la_encuesta = get_field('codigo_de_la_encuesta'); ?> 
+						<?php $codigo_de_la_encuesta = get_field('codigo_de_la_encuesta'); ?> 
             <?php echo do_shortcode('[yop_poll id="'.$codigo_de_la_encuesta.'"]'); ?>
           <?php endwhile; ?>
         </ul>
       </div>
-      <!-- <div class="text-center">
+      <div class="text-center">
         <ul class="pager">
-          <li><a href="#">Previos</a></li>
-          <li><a href="#">Siguiente</a></li>
+          <li><?php next_posts_link( 'Siguientes' ); ?></li>
+          <li><?php previous_posts_link( 'Anteriores' ); ?></li>
         </ul>
-      </div> -->
+      </div>  
     </div>
   </section>
 <?php get_footer(); ?>    
