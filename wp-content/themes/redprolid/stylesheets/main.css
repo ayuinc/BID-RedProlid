@@ -6205,7 +6205,8 @@ form.search button {
   font-weight: 100 !important;
   width: 90%;
   position: relative;
-  top: 5px; }
+  top: 5px;
+  line-height: 125%; }
 
 .comentarios .title {
   margin: 10px 0 16px 0 !important; }
