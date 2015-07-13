@@ -86,7 +86,7 @@ get_header(); ?>
 							<?php } ?>
             </div>-->
 				    <div class="title">
-					    <h3 class="medium text-primary"><?php the_title(); ?></h3>
+					    <h3 class="medium text-primary"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 					    <p>FUENTE: <a href="<?php the_field('url');?>" target="_blank"><?php the_field('blog-debates');?><?php $debate_tipo_de_url=get_field('debate_tipo_de_url'); ?><?php if ($debate_tipo_de_url=='video') { ?><img src="http://redprolid.org/wp-content/themes/redprolid/assets/img/enterate-grid-4-01.png" alt="" style="margin:0 5px; width:20px"><?php } ?></a> <?php the_field('autor');?></p>
 				    </div>            
             <div class="content">
