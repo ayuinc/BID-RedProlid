@@ -17,17 +17,10 @@
     <div class="ph-70">
       <div class="row">
         <div class="col-sm-12">
-            <div class="title">
-              <h3 class="medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-              <?php $fuente_debates = get_field('fuente-debates'); ?>
-              <?php if ($fuente_debates!='') { ?>
-                <p>FUENTE: <?php echo $fuente_debates; ?></p>
-              <?php } ?>
-              <?php $blog_debates = get_field('blog-debates'); ?>
-              <?php if ($blog_debates!='') { ?>
-                <span>FUENTE: <?php echo $blog_debates; ?></span>
-              <?php } ?>
-            </div>
+				    <div class="title">
+					    <h3 class="medium text-primary"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
+					    <p>FUENTE: <a href="<?php the_field('url');?>" target="_blank"><?php the_field('blog-debates');?><?php $debate_tipo_de_url=get_field('debate_tipo_de_url'); ?><?php if ($debate_tipo_de_url=='video') { ?><img src="http://redprolid.org/wp-content/themes/redprolid/assets/img/enterate-grid-4-01.png" alt="" style="margin:0 5px; width:20px"><?php } ?></a> <?php the_field('autor');?></p>
+				    </div> 
             <div class="content">
               <?php the_field('contenido-debates'); ?>
             </div>         
