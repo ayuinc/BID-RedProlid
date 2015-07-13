@@ -165,8 +165,7 @@ get_header(); ?>
                 <div class="panel-body pt-0 hide-poll-results-anchor">
                   <?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
-                    <?php $codigo_de_la_encuesta = get_field("codigo_de_la_encuesta"); ?>
-                    <?php echo do_shortcode($codigo_de_la_encuesta); ?>
+                    <?php the_content(); ?>
                     <!-- <div class="mt-sm text-right small">
                       <a href="<?php //echo get_permalink( get_the_ID() ); ?>">Resultados >></a>
                     </div> -->
