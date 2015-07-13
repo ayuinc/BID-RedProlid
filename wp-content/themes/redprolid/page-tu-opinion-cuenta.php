@@ -40,6 +40,7 @@ get_header(); ?>
           </ul>
           <p class="text-gray">Agosto 2014</p> -->
           <!-- <?php the_content(); ?> -->
+          
           <?php echo do_shortcode('[yop_poll id="4"]'); ?>
            
         </div>
