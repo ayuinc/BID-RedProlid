@@ -15,7 +15,7 @@
       </div>
     </div>-->
     <div class="ph-70">
-      <div class="row">
+      <div class="row pt-35">
         <div class="col-sm-12">
 				    <div class="title">
 					    <h2 class="medium"><?php the_title(); ?></h2>
