@@ -23,9 +23,12 @@ get_header(); ?>
       </div>
       <div>
         <ul class="grid-list grid-list-3 grid-list-1-xs grid-list-2-sm hide-other-polls-anchor">
-        	<?php while ( have_posts() ) : the_post(); ?>
-    			  <?php the_content(); ?>
-    		  <?php endwhile; ?>
+          <?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>	
+					<?php while ( have_posts() ) : the_post(); ?> 
+						<?php $codigo_de_la_encuesta = get_field('codigo_de_la_encuesta'); ?> 
+            <?php echo do_shortcode('[yop_poll id="'.$codigo_de_la_encuesta.'"]'); ?>
+            ss
+          <?php endwhile; ?>
         </ul>
       </div>
       <!-- <div class="text-center">
