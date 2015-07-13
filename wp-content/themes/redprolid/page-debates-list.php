@@ -74,7 +74,7 @@ get_header(); ?>
           <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
           <?php query_posts( 'category_name='.$categoria.'&posts_per_page=10&offset=1&paged=' . $paged ); ?>
           <?php while ( have_posts() ) : the_post(); ?>
-            <div class="title">
+            <!--<div class="title">
               <h3 class="medium text-primary"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
               <?php $fuente_debates = get_field('fuente-debates'); ?>
               <?php if ($fuente_debates!='') { ?>
@@ -84,7 +84,11 @@ get_header(); ?>
               <?php if ($blog_debates!='') { ?>
               	<span>Blog: <?php echo $blog_debates; ?></span>
 							<?php } ?>
-            </div>
+            </div>-->
+				    <div class="title">
+					    <h3 class="medium text-primary"><?php the_title(); ?></h3>
+					    <p>FUENTE: <a href="<?php the_field('url');?>" target="_blank"><?php the_field('blog-debates');?><?php $debate_tipo_de_url=get_field('debate_tipo_de_url'); ?><?php if ($debate_tipo_de_url=='video') { ?><img src="http://redprolid.org/wp-content/themes/redprolid/assets/img/enterate-grid-4-01.png" alt="" style="margin:0 5px; width:20px"><?php } ?></a> <?php the_field('autor');?></p>
+				    </div>            
             <div class="content">
               <?php the_field('contenido-debates'); ?>
             </div>
