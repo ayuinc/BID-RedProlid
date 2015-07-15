@@ -6750,8 +6750,9 @@ div[id^="yop-poll-results-3"] {
   font-style: normal; }
 
 @media only screen and (max-width: 480px) {
+  .texto-anchor-quieres-compartir-un-evento,
   .texto-anchor-quieres-compartir-tu-pub,
-  .texto-anchor-quieres-compartir-un-evento {
+  .texto-anchor-nos-propones-un-tema {
     font-size: 22px; }
 
   .flickity-prev-next-button.previous {

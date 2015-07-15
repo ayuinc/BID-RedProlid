@@ -8,7 +8,7 @@
       <div class="col-sm-4 col-xs-12 text-center-xs  pl-14">
         <h1 class="brand-titular">Campeon@s</h1>
       </div>
-      <div class="col-sm-7 col-xs-12">
+      <div class="col-sm-7 col-xs-12 texto-anchor-nos-propones-un-tema">
         <nav class="text-right text-center-xs">
           <a href="#" data-toggle="modal" data-target="#modalCampeonas">¿Nos propones un tema?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores">Entrevistas anteriores</a>
         </nav>
