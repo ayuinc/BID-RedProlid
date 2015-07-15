@@ -82,7 +82,21 @@
   }
 
 }
-
+.punto-de-vista-img{
+	padding-left:0px !important;
+}
+.bg-panel-custom{
+	padding:14px;
+}
+.panel-body-custom{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.panel-body-custom > .col-sm-5{
+  padding-left: 14px;
+}
 .widgets {
 	.container .row {
 		.col-md-3 {
@@ -93,7 +107,7 @@
 			.panel-custom {
 				.title {
 					color:$gray-darker !important;
-				}
+				} 
 				.panel-body {
 					min-height:425px;
 					padding:0 0 14px 0;
@@ -257,7 +271,6 @@ div[id^="yop-poll-results-3"] {
   }
 
 }
-
 .noticias-grid{
   display:table;
   width:100%;
@@ -267,4 +280,63 @@ div[id^="yop-poll-results-3"] {
     display:table-cell;
     vertical-align:top;
   }
+}
+.campeonas-section{
+	padding-bottom:14px;
+	padding-top:14px;
+}
+.footer{
+	margin-top:28px;
+}
+@media only screen and (max-width: 480px){
+		.header-text {
+			font-size: 1.5rem !important;
+		}
+		.punto-de-vista-img{
+			padding-right: 0px ;
+			img{
+				padding-bottom: 14px;
+			}
+		}
+		.bg-panel-custom{
+		padding:0px;
+		}
+		.panel-body-custom{
+			padding: 0px 0px 0px 0px;
+		}
+		.panel-body-custom > .col-sm-5{
+		  padding-left: 10.5px;
+		}
+		.noticias{
+			font-size: 30px;			
+		}
+		.events-calendar-placeholder{
+				padding-left:25px;
+				padding-right:25px;
+			  position: relative;				
+			  left: 12px;
+			 .day{
+			 	  top: 3.7rem;
+	  			left: 0.9rem;
+			 }
+			 .day-num{
+				 	top: 2rem;
+	  			left: 5rem;
+			 }
+			 .month{
+          top: 5px;
+  				left: 5.4rem;			 	
+			 }		 
+		}
+		.title-news{
+		  font-size: 20px !important;
+		  text-align: center !important;		
+		  font-weight: 400 !important;		
+		}		
+		.campeonas-section{
+			padding-bottom:0px;
+		}
+		.footer{
+			margin-top: 0px;
+		}
 }

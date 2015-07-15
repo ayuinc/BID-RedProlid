@@ -142,7 +142,7 @@ get_header(); ?>
         <div class="container pb-0">
           <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate.png" alt="" class="ribbon">
           <div class="row">
-            <div class="col-sm-8 pt-70">
+            <div class="col-sm-8 pt-70 ph-14-xs">
 							<?php get_template_part( 'single-section' ); ?>
             </div>
             <div class="col-sm-4">
@@ -152,16 +152,16 @@ get_header(); ?>
                   <a href="/debates-anteriores?categoria=<?php echo $segment2; ?>" class="btn btn-primary">Archivos</a>
                 </div>
               </div>
-              <div class="pl-21 pr-21">
+              <div class="pl-21 pr-21 hidden-xs ">
 	            	<h4 class="mt-35 mb-14 medium text-gray-darker">Lo último en las redes</h4>
 	            	<div class="mb-14">
-									<div class="fb-like-box" data-width="100%" data-height="310" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+						<div class="fb-like-box" data-width="100%" data-height="310" data-href="https://www.facebook.com/redprolid" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
 	            	</div>
 	            	<div class="mb-14">
-									<a class="twitter-timeline" width="298" height="310"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a> 
+						<a class="twitter-timeline" width="298" height="310"  href="https://twitter.com/redprolid" data-widget-id="510444695814537216">Tuiteado por @redprolid</a> 
 	            	</div>
 	            	<div class="mb-14"> 
-									<div class="g-person" data-width="100%" data-height="310" data-href="//plus.google.com/u/0/107403271684877473593" data-rel="author"></div>
+						<div class="g-person" data-width="100%" data-height="310" data-href="//plus.google.com/u/0/107403271684877473593" data-rel="author"></div>
 	            	</div>
               </div>
             </div>
@@ -170,7 +170,7 @@ get_header(); ?>
       </section>
     <!--NAVIMAGEN-->
     <?php //get_template_part( 'include', 'navimage' ); ?>    
-    <section class="dtl-home pv-28">
+    <section class="dtl-home pv-28 mv-35-xs">
       <div class="container ph-70-sm">
 	      <h3 class="text-center">Desarrolla tu liderazgo</h3>
 	      <div class="pb-14">

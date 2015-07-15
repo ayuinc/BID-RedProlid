@@ -15,14 +15,14 @@ get_header(); ?>
     <div class="container">
       <?php the_breadcrumb(); ?> 
       <div class="clearfix sub-header">
-        <div class="col-sm-1 col-xs-3 pl-0">
+        <div class="col-sm-1 col-xs-12 text-center-xs pt-35-xs pl-0">
           <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-redondo.png" alt="" width="100%"></div>
         </div>
-        <div class="col-sm-5 col-xs-9">
+        <div class="col-sm-5 col-xs-12 text-center-xs ">
           <h1><?php the_title(); ?></h1>
         </div>
         <div class="col-sm-6 col-xs-12">
-          <nav class="text-right text-center-xs">
+          <nav class="text-anchor-quieres-compaartir-noticias text-right text-center-xs">
             <a href="#" data-toggle="modal" data-target="#modalNoticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/">Noticias anteriores</a>
           </nav>	          
         </div>
@@ -49,7 +49,7 @@ get_header(); ?>
 								<?php if ( have_posts() ) : ?>
 	                <?php query_posts( 'cat=12&posts_per_page=3' ); ?>
 									<?php while ( have_posts() ) : the_post(); ?>				            
-				            <div class="banner col-md-4 banner-label-bottom">
+				            <div class="banner col-md-4 col-xs-12 banner-label-bottom pb-21-xs">
 				            	<div class="bg-white">
 					            	<?php $imagen = get_field('imagen_noticias'); ?>
 					            	<?php if ($imagen!='') { ?>
@@ -70,7 +70,7 @@ get_header(); ?>
 			                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
 														<?php } ?>
 													</small>
-			                    <div class="mt-14 noticias_quickview"><?php
+			                    <div class="mt-14 noticias_quickview pb-14-xs"><?php
                                      $noteContent = get_field('descripcion_rapida_noticias');
                                          if($noteContent != '' ){
                                              the_field('descripcion_rapida_noticias');
@@ -129,7 +129,7 @@ get_header(); ?>
 	              </ul>
 	            </div>--> 	            
 	        	</div>
-	          <div class="col-md-4 mostrar-anteriores">
+	          <div class="col-md-4 mostrar-anteriores hidden-xs hidden-sm">
 	            <h4 class="medium text-gray-darker mb-14">Lo último en las redes</h4> 
 	          	<div class="mb-14">
 								<div class="fb-like-box bg-white" data-href="https://www.facebook.com/redprolid" data-width="350" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>

@@ -10,9 +10,9 @@
  */
 ?>
 
-      <footer class="mt-28">
+      <footer class="footer">
         <div class="container text-center-xs">
-          <div class="row to-top">
+          <div class="row to-top hidden-xs">
             <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/nav-footer-to-top.png" alt=""></a>
           </div>
           <div class="row pt-21">
@@ -23,7 +23,7 @@
               </ul>
             </div>
             <div class="col-md-6 text-center">
-              <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-footer.png" width="322px" height="auto"></a>
+              <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-footer.png" width="322px" height="auto" class="img-responsive"></a>
             </div>
             <div class="col-md-3 text-right-sm">
               <a href="http://www.iadb.org/" target="_blank"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/BID_logo_blanco.png" width="160px" height="auto"></a>

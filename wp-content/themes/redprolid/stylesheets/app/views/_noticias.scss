@@ -12,3 +12,14 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 480px){
+	 .text-anchor-quieres-compaartir-noticias > a{
+	   font-size: 22px;	
+	 }	
+	.noticias-grid .banner {
+      float: left !important;		
+	  display: table-cell;
+	  vertical-align: top;
+	} 
+}

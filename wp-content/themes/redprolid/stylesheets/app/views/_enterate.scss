@@ -151,3 +151,9 @@
 .full-bottom-border {
 	border-bottom: 1px solid $gray-light;
 }
+
+@media only screen and (max-width: 480px){
+	.responsive-grid-item {
+	  width: auto !important;
+	}
+}

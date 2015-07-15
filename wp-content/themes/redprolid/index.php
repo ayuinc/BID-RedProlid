@@ -62,7 +62,14 @@ get_header(); ?>
               </div>
             <?php endwhile; ?> 
           </div>
-          <h2 class="text-center pt-49"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
+          <h2 class="header-text text-center pt-49"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
+          <div class="row hidden-md hidden-lg">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8 text-center pt-14">
+              <a href="#"><button class="btn btn-primary">Regístrate en la Red</button></a>
+            </div>
+            <div class="col-xs-2"></div>
+          </div>
         </div>
       </section>
       <section class="dtl-home pv-14">
@@ -146,7 +153,7 @@ get_header(); ?>
                       <div class="day-num"><?php echo date_i18n('d', strtotime( $tempDate)); ?></div>
                       <div class="month mt-7 ml-7"><?php echo date_i18n('M', strtotime( $tempDate)); ?></div>
                     </div>
-                    <h5><?php the_title(); ?></h5>
+                    <h5 class="title-news"><?php the_title(); ?></h5>
                     <!--<p class="event-des light"><?php the_field('descripcion_evento'); ?></p>-->
                     <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Ve más</a>
                   <?php endwhile; ?>
@@ -174,7 +181,7 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      <section class="pv-14">
+      <section class="campeonas-section">
         <div class="container">
           <div class="row">
             <div class="col-md-6 p-14">
@@ -192,7 +199,7 @@ get_header(); ?>
                 <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                      
                 <div class="panel-body pt-0 pb-0">               
-                  <div class="col-sm-5 pl-0">
+                  <div class="col-sm-5 punto-de-vista-img">
                     <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
                   </div>
                   <div class="col-sm-7">
@@ -205,7 +212,7 @@ get_header(); ?>
                 <?php endwhile; ?>
               </div>
             </div>
-            <div class="col-md-6 p-14 bg-panel">
+            <div class="col-md-6 bg-panel-custom bg-panel">
               <div class="panel panel-custom">
 	              <div class="panel-heading">
                     <ul class="list-unstyled m-0">
@@ -219,8 +226,8 @@ get_header(); ?>
                   </div>             
                 <?php query_posts( 'category_name=campeona-destacada&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                   
-                  <div class="panel-body pt-0 pb-0 pl-14 pr-14">
-	                  <div class="col-sm-5 pl-0">
+                  <div class="panel-body panel-body-custom">
+	                  <div class="col-sm-5">
 			                <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
 			                <?php if ($imagen_campeona!='') { ?>
 	                    	<img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">

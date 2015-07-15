@@ -22,7 +22,15 @@
 		@extend .col-xs-11;
 	}
 }
+@media only screen and (max-width: 480px){
+  .dtl-custom-heading {
+  	position: relative !important;
+  	h1{
+  	  font-size: 30px;
+  	}
+  }
 
+}
 // .dtl-custom-heading {
 // 	width: 95%;
 // 	padding-left: 114px;
@@ -189,6 +197,11 @@
 	z-index: 100;
 }
 
+@media only screen and (max-width: 480px){
+	.sumate-al-debate .container {
+	  -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+	  box-shadow: none;
 
-
-
+	}
+}

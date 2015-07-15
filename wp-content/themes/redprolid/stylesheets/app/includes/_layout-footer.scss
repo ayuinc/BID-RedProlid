@@ -25,6 +25,9 @@ footer {
 }
 
 .social-links {
+	@media only screen and (max-width: 480px){
+	   padding-left: 50px;	
+	 }	
 	@include list-unstyled;
 	li {
 		float: left;
@@ -52,7 +55,6 @@ footer {
 		}
 	}
 }
-
 .site-map {
 	li {
 		a {

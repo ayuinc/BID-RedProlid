@@ -232,17 +232,6 @@ textarea {
   font-size: inherit;
   line-height: inherit; }
 
-a {
-  color: #ed7133;
-  text-decoration: none; }
-  a:hover, a:focus {
-    color: #c24c11;
-    text-decoration: underline; }
-  a:focus {
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px; }
-
 figure {
   margin: 0; }
 
@@ -252,7 +241,7 @@ img {
 .img-responsive {
   display: block;
   width: 100% \9;
-  max-width: 100%;
+  width: 100%;
   height: auto; }
 
 .img-rounded {
@@ -269,7 +258,7 @@ img {
   transition: all 0.2s ease-in-out;
   display: inline-block;
   width: 100% \9;
-  max-width: 100%;
+  width: 100%;
   height: auto; }
 
 .img-circle {
@@ -2913,7 +2902,7 @@ button.close {
     .carousel-inner > .item > a > img {
       display: block;
       width: 100% \9;
-      max-width: 100%;
+      width: 100%;
       height: auto;
       line-height: 1; }
   .carousel-inner > .active,
@@ -4975,6 +4964,9 @@ footer {
   padding-left: 0;
   list-style: none;
   margin: 0; }
+  @media only screen and (max-width: 480px) {
+    .social-links {
+      padding-left: 50px; } }
   .social-links li {
     float: left;
     border-right: 2px solid black;
@@ -6214,6 +6206,21 @@ form.search button {
   border-bottom: 1px solid #CCC;
   padding-bottom: 5px; }
 
+.punto-de-vista-img {
+  padding-left: 0px !important; }
+
+.bg-panel-custom {
+  padding: 14px; }
+
+.panel-body-custom {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 14px;
+  padding-right: 14px; }
+
+.panel-body-custom > .col-sm-5 {
+  padding-left: 14px; }
+
 .widgets .container .row .col-md-3 .highlight {
   background-color: #EBEADE;
   padding: 14px !important; }
@@ -6320,6 +6327,62 @@ div[id^="yop-poll-results-3"] {
     display: table-cell;
     vertical-align: top; }
 
+.campeonas-section {
+  padding-bottom: 14px;
+  padding-top: 14px; }
+
+.footer {
+  margin-top: 28px; }
+
+@media only screen and (max-width: 480px) {
+  .header-text {
+    font-size: 1.5rem !important; }
+
+  .punto-de-vista-img {
+    padding-right: 0px; }
+    .punto-de-vista-img img {
+      padding-bottom: 14px; }
+
+  .bg-panel-custom {
+    padding: 0px; }
+
+  .panel-body-custom {
+    padding: 0px 0px 0px 0px; }
+
+  .panel-body-custom > .col-sm-5 {
+    padding-left: 10.5px; }
+
+  .noticias {
+    font-size: 30px; }
+
+  .events-calendar-placeholder {
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    left: 12px; }
+    .events-calendar-placeholder .day {
+      top: 3.7rem;
+      left: 0.9rem; }
+    .events-calendar-placeholder .day-num {
+      top: 2rem;
+      left: 5rem; }
+    .events-calendar-placeholder .month {
+      top: 5px;
+      left: 5.4rem; }
+
+  .title-news {
+    font-size: 20px !important;
+    text-align: center !important;
+    font-weight: 400 !important; }
+
+  .campeonas-section {
+    padding-bottom: 0px; }
+
+  .footer {
+    margin-top: 0px; } }
+.header-text-quees-red-prolid {
+  color: white; }
+
 .red-prolid-grid:before, .red-prolid-grid:after {
   content: " ";
   display: table; }
@@ -6339,6 +6402,40 @@ div[id^="yop-poll-results-3"] {
   background: #ebeade !important;
   padding: 0 20px; }
 
+.img-aquienvadirgida {
+  padding-left: 14px; }
+
+.img-redprolidnace {
+  padding-right: 14px; }
+
+@media only screen and (max-width: 480px) {
+  .bg-transparent {
+    background-image: none !important; }
+
+  .header-text-quees-red-prolid {
+    color: #c3bf9b !important;
+    position: relative;
+    font-size: 30px;
+    left: 30px;
+    top: 8px; }
+
+  .red-prolid-grid li {
+    text-align: center !important;
+    float: none !important;
+    padding: 0rem;
+    width: 100%; }
+
+  .img-aquienvadirgida {
+    padding-left: 0px;
+    padding-bottom: 14px; }
+
+  .img-redprolidnace {
+    padding-right: 0px;
+    padding-bottom: 14px; }
+
+  .parrafo-nace-red-prolid > p {
+    padding-left: 14px;
+    padding-bottom: 14px; } }
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -6493,6 +6590,9 @@ div[id^="yop-poll-results-3"] {
 .full-bottom-border {
   border-bottom: 1px solid #bcbcbc; }
 
+@media only screen and (max-width: 480px) {
+  .responsive-grid-item {
+    width: auto !important; } }
 #breadcrumbs {
   list-style: none;
   margin: 0.7rem 0;
@@ -6508,6 +6608,10 @@ div[id^="yop-poll-results-3"] {
     font-size: 10px;
     margin-top: 5px; }
 
+@media only screen and (max-width: 480px) {
+  .header-text-tu-opinioncuenta {
+    text-align: center !important;
+    right: 3px !important; } }
 .formulario-perfil ul {
   list-style: none !important;
   padding-left: 0px; }
@@ -6578,12 +6682,42 @@ div[id^="yop-poll-results-3"] {
   padding: 7px;
   color: #FFF !important; }
 
+@media only screen and (max-width: 480px) {
+  .wppb-form-field input,
+  .wppb-form-field input[type="text"],
+  .wppb-form-field input[type="email"],
+  .wppb-form-field input[type="url"],
+  .wppb-form-field input[type="password"],
+  .wppb-form-field input[type="search"],
+  .wppb-form-field select,
+  .wppb-form-field textarea,
+  .wppb-radios,
+  #wppb-login-wrap .login-username input,
+  #wppb-login-wrap .login-password input {
+    width: 100% !important; }
+
+  .wppb-checkboxes {
+    width: 67px;
+    position: relative;
+    left: 208px;
+    bottom: 40px; }
+
+  #wppb-form-element-21 > labels {
+    padding-bottom: 0px; } }
 .noticias-grid [class*="col-"] > div {
   background-color: white;
   padding: 10.5px;
   min-height: 350px;
   min-height: 21.875rem; }
 
+@media only screen and (max-width: 480px) {
+  .text-anchor-quieres-compaartir-noticias > a {
+    font-size: 22px; }
+
+  .noticias-grid .banner {
+    float: left !important;
+    display: table-cell;
+    vertical-align: top; } }
 .event-separator {
   border-left: 1px solid #bcbcbc; }
 
@@ -6604,6 +6738,30 @@ div[id^="yop-poll-results-3"] {
   font-weight: 500;
   font-style: normal; }
 
+@media only screen and (max-width: 480px) {
+  .texto-anchor-quieres-compartir-tu-pub,
+  .texto-anchor-quieres-compartir-un-evento {
+    font-size: 22px; }
+
+  .flickity-prev-next-button.previous {
+    left: 0px; }
+
+  .flickity-prev-next-button {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    left: 236px;
+    height: 30px; }
+
+  .banner .banner-content {
+    min-height: 140px;
+    min-height: 8.75rem;
+    padding: 28px; }
+
+  .banner .banner-pic {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 210px !important; } }
 .boletin .mostrar-anteriores {
   border-bottom: 2px dotted #bcbcbc; }
 .boletin .buzon {
@@ -6645,6 +6803,11 @@ div[id^="yop-poll-results-3"] {
   .dtl-custom-heading h1 {
     border-bottom: 1px dotted #ebeade; }
 
+@media only screen and (max-width: 480px) {
+  .dtl-custom-heading {
+    position: relative !important; }
+    .dtl-custom-heading h1 {
+      font-size: 30px; } }
 .dtl-path {
   background: url(../assets/img/dtl-dtl-path.png) no-repeat center center;
   height: 397px;
@@ -6762,5 +6925,11 @@ div[id^="yop-poll-results-3"] {
 
 .z-index-100 {
   z-index: 100; }
+
+@media only screen and (max-width: 480px) {
+  .sumate-al-debate .container {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; } }
 
 /*# sourceMappingURL=main.css.map */

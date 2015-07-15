@@ -17,13 +17,13 @@ get_header(); ?>
 	    <section>
 		    <div class="container">
           <?php the_breadcrumb(); ?>
-          <div class="mh-350 pb-21 mb-21 bg-img-block bg-img-block-right bg-img-block-top" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right-half.png)">
+          <div class="bg-transparent mh-350 pb-21 mb-21 bg-img-block bg-img-block-right bg-img-block-top" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right-half.png)">
             <div class="clearfix sub-header no-border">
               <div class="col-sm-1 col-xs-3">
                 <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" alt="" width="100%"></div>
               </div>
               <div class="col-sm-6 col-xs-9">
-                <h1 class="text-white">¿Qué es Red PROLID?</h1>
+                <h1 class="header-text-quees-red-prolid">¿Qué es Red PROLID?</h1>
               </div>
             </div>
             <div class="row">
@@ -81,7 +81,7 @@ get_header(); ?>
 					      <?php the_field('quien_va_dirigida_redprolid'); ?>
 					    </div>
 					    <div class="col-sm-3 text-right pl-0 pr-0">
-					      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-a-quienes.jpg" alt="" width="100%" class="pl-14">
+					      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-a-quienes.jpg" alt="" width="100%" class="img-aquienvadirgida img-responsive">
 					    </div>
 					  </div>
 					</div>	 
@@ -95,9 +95,9 @@ get_header(); ?>
 					  </div>
 					  <div class="panel-body pt-0 pb-0">
 					    <div class="col-sm-3">
-					      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-como-nace.jpg" alt="" width="100%" class="pr-14">
+					      <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-como-nace.jpg" alt="" width="100%" class="img-redprolidnace img-responsive">
 					    </div>
-					    <div class="col-sm-9 text-left pl-0 pr-0">
+					    <div class="col-sm-9 text-left pl-0 pr-0 parrafo-nace-red-prolid">
 						    <?php the_field('como_nace_redprolid'); ?>
 					    </div>
 					  </div>
