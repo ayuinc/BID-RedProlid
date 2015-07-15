@@ -6743,11 +6743,25 @@ div[id^="yop-poll-results-3"] {
   .texto-anchor-quieres-compartir-un-evento {
     font-size: 22px; }
 
+  .flickity-prev-next-button.previous {
+    left: 0px; }
+
   .flickity-prev-next-button {
     position: absolute;
     top: 50%;
     width: 30px;
-    height: 30px; } }
+    left: 236px;
+    height: 30px; }
+
+  .banner .banner-content {
+    min-height: 140px;
+    min-height: 8.75rem;
+    padding: 28px; }
+
+  .banner .banner-pic {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 210px !important; } }
 .boletin .mostrar-anteriores {
   border-bottom: 2px dotted #bcbcbc; }
 .boletin .buzon {
