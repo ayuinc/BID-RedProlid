@@ -6591,9 +6591,7 @@ div[id^="yop-poll-results-3"] {
   border-bottom: 1px solid #bcbcbc; }
 
 @media only screen and (max-width: 480px) {
-  .grid-list-item,
-  .grid-list.grid-list-12-xs > li,
-  .grid-list.grid-list-12-xs .gallery-cell {
+  .responsive-grid-item {
     width: auto !important; } }
 #breadcrumbs {
   list-style: none;
@@ -6740,23 +6738,10 @@ div[id^="yop-poll-results-3"] {
   font-weight: 500;
   font-style: normal; }
 
-.galery .gallery-cell .grid-list-item {
-  min-height: 350px;
-  position: absolute;
-  left: 400%; }
-
 @media only screen and (max-width: 480px) {
   .texto-anchor-quieres-compartir-tu-pub,
   .texto-anchor-quieres-compartir-un-evento {
     font-size: 22px; }
-
-  .galery .gallery-cell .grid-list-item {
-    min-height: 350px;
-    position: absolute;
-    width: 180px !important;
-    left: 416%; }
-    .galery .gallery-cell .grid-list-item p {
-      font-size: 12px !important; }
 
   .flickity-prev-next-button {
     position: absolute;

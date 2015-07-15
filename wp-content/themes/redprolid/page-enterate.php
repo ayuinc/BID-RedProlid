@@ -30,37 +30,37 @@ get_header(); ?>
         <div class="row">
 	        <div class="col-md-12 ph-14-xs">
 	          <ul class="grid-list grid-list-6 text-center ph-ch-7">
-	            <li class="grid-list-item">
+	            <li class="grid-list-item responsive-grid-item">
                 <a href="<?php echo home_url('/'); ?>campeonas">
   		            <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3.png" alt="">
                 </a>
 		            <p class="brand-titular">De testimonios sobre liderazgo femenino por sus protagonistas</p>
 	            </li>
-              <li class="grid-list-item">
+              <li class="grid-list-item responsive-grid-item">
                 <a href="<?php echo home_url('/'); ?>puntos-de-vista">
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2n.png" alt="">
                 </a>
                 <p class="brand-titular">De los últimos temas de nuestro blog</p>
               </li>
-              <li class="grid-list-item">
+              <li class="grid-list-item responsive-grid-item">
                 <a href="<?php echo home_url('/'); ?>noticias">
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-3n.png" alt="">
                 </a>
                 <p class="brand-titular">De las últimas noticias y eventos para que estés al día</p>
               </li>
-	            <li class="grid-list-item">
+	            <li class="grid-list-item responsive-grid-item">
                 <a href="<?php echo home_url('/'); ?>video">
   	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-4.png" alt="">
 	            	</a>
                 <p class="brand-titular">De diversos videos que podrás ver y compartir</p>
 	            </li>
-              <li class="grid-list-item">
+              <li class="grid-list-item responsive-grid-item">
                 <a href="<?php echo home_url('/'); ?>publicaciones">
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5n.png" alt="">
                 </a>
                 <p class="brand-titular">De dónde encontrar todas las publicaciones</p>
               </li>
-	            <li class="grid-list-item">
+	            <li class="grid-list-item responsive-grid-item">
                 <a href="<?php echo home_url('/'); ?>eventos">
   	            	<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-5.png" alt="">
 	            	</a>

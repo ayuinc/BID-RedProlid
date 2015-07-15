@@ -153,9 +153,7 @@
 }
 
 @media only screen and (max-width: 480px){
-	.grid-list-item,
-	.grid-list.grid-list-12-xs > li,
-	.grid-list.grid-list-12-xs .gallery-cell {
+	.responsive-grid-item {
 	  width: auto !important;
 	}
 }
