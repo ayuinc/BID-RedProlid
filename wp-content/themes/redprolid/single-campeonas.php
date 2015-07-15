@@ -2,10 +2,10 @@
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>    
     <div class="clearfix sub-header">
-      <div class="col-sm-1 col-xs-3">
+      <div class="col-sm-1 col-xs-12 text-center-xs pt-35-xs">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" alt="" width="100%"></div>
       </div>
-      <div class="col-sm-4 col-xs-9 pl-14">
+      <div class="col-sm-4 col-xs-12 text-center-xs  pl-14">
         <h1 class="brand-titular">Campeon@s</h1>
       </div>
       <div class="col-sm-7 col-xs-12">
@@ -14,7 +14,7 @@
         </nav>
       </div>
     </div>
-    <div class="ph-70">
+    <div class="ph-70-sm ph-7-xs">
   		<h3 class="light text-justify mb-35">¿A qué mujeres líderes admiras en Latinoamérica? ¿Quieres saber qué obstáculos encontraron y con qué apoyo contaron?¿Sabes qué figuras masculinas han sabido promover el liderazgo femenino e incorporar las agendas de género en su trabajo? Aquí incluimos los testimonios de aquellas mujeres latinoamericanas que han dejado huella o que van a marcar las agendas de sus países. Además daremos espacio a aquellos hombres líderes que están utilizando su influencia para abrir oportunidades al liderazgo femenino, porque los necesitamos como aliados también.</h3>
       <div class="row">
         <?php if( get_field('imagen_campeonas') ) { ?>
@@ -28,7 +28,7 @@
         <div class="col-md-9">
         <?php } else {  } ?>
         <div class="row">
-	        <div class="col-sm-12">
+	        <div class="col-sm-12 col-xs-12 ph-21-xs">
 		        <h2 class="lh-lg mb-0"><?php the_title(); ?></h2>
 		        <?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
 		        <?php if ($tempDate!='') { ?>
