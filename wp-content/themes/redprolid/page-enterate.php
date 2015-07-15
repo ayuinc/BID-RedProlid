@@ -15,10 +15,10 @@ get_header(); ?>
 		  <div class="container relative mb-14">
 		     <?php the_breadcrumb(); ?>
         <div class="clearfix sub-header">
-          <div class="col-xs-3 col-sm-1">
-            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" class="img-responsive"></div>
+          <div class="col-xs-12 text-center-xs pt-35-xs col-sm-1">
+            <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" ></div>
           </div>
-          <div class="col-xs-9 col-sm-4">
+          <div class="col-xs-12 text-center-xs col-sm-4">
             <h1 class="brand-titular">Entérate</h1>
           </div>
           <!--<div class="col-xs-12 col-sm-7">
@@ -28,7 +28,7 @@ get_header(); ?>
           </div>-->
         </div>
         <div class="row">
-	        <div class="col-md-12">
+	        <div class="col-md-12 ph-14-xs">
 	          <ul class="grid-list grid-list-6 text-center ph-ch-7">
 	            <li class="grid-list-item">
                 <a href="<?php echo home_url('/'); ?>campeonas">
@@ -94,7 +94,7 @@ get_header(); ?>
                         <p class="medium">Testimonios sobre el liderazgo femenino</p>
                       </div>
                       <div class="col-md-4 text-right">
-                        <a href="<?php echo home_url('/'); ?>campeonas" class="medium">Entrevistas >></a>
+                        <a class="mb-21-xs" href="<?php echo home_url('/'); ?>campeonas" class="medium">Entrevistas >></a>
                       </div>
                     </div>                
                     <div class="bg-white clearfix">
@@ -103,7 +103,7 @@ get_header(); ?>
                       <?php query_posts( array( 'category_name' => 'campeonas', 'posts_per_page' => 1 ) ); ?>
                         <?php while ( have_posts() ) : the_post(); ?>
                             <?php setup_postdata($post); ?>
-                            <div class="col-sm-5 pl-0">
+                            <div class="col-sm-5 pl-0 pr-0-xs">
                               <?php $video = get_field('video_campeonas'); ?>
                               <?php if ($video!='') { ?>
                                 <iframe  class="embed-responsive-item" width="100%" height="220" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -140,23 +140,23 @@ get_header(); ?>
                         <p class="medium">Artículos escritos por líderes y especialistas</p>
                       </div>
                       <div class="col-md-4 text-right">
-                        <a href="<?php echo home_url('/'); ?>puntos-de-vista" class="medium">Artículos >></a>
+                        <a class="mb-21-xs" href="<?php echo home_url('/'); ?>puntos-de-vista" class="medium">Artículos >></a>
                       </div>
                     </div>
                     <?php if ( have_posts() ) : ?>
                     <?php query_posts( array( 'category_name' => 'puntos-de-vista', 'posts_per_page' => 1 ) ); ?>
                       <?php while ( have_posts() ) : the_post(); ?>
                     <div class="bg-white clearfix">
-                      <div class="col-sm-5 pl-0">
+                      <div class="col-sm-5 pl-0 pr-0-xs">
                         <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" class="img-responsive" style="width: 100%;">
                       </div>
                       <div class="col-sm-7 pl-7 pr-14 pt-14">
                           <div class="triangle"></div>                                  
-                          <h3 class="medium mb-0 pb-0"><?php the_title(); ?></h3>
-                          <p>
+                          <h3 class="medium mb-0 pb-0 pb-7-xs"><?php the_title(); ?></h3>
+                          <p class="pb-14-xs">
                             <?php the_field('descripcion_punto_de_vista'); ?>
                           </p>
-                          <div class="text-right">
+                          <div class="text-right pb-14-xs">
                             <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee más</a>
                           </div>   
                           <?php endwhile; ?>
@@ -195,7 +195,7 @@ get_header(); ?>
                       <?php query_posts( 'cat=12&posts_per_page=2' ); ?>
                       <?php while ( have_posts() ) : the_post(); ?>                   
                         <div class="col-sm-6 bg-white">
-                          <div class="border-panel">
+                          <div class="border-panel mb-14-xs">
                             <?php $imagen = get_field('imagen_noticias'); ?>
                             <?php if ($imagen!='') { ?>
                             <img src="<?php the_field('imagen_noticias'); ?>" style="width:100%;" alt="">
@@ -241,7 +241,7 @@ get_header(); ?>
                       <?php if ( have_posts() ) : ?>
                         <?php query_posts( array( 'category_name' => 'video', 'posts_per_page' => 1 ) ); ?>
                           <?php while ( have_posts() ) : the_post(); ?>                                  
-                          <h3 class="pb-0 mb-0"><?php the_title(); ?></h3>
+                          <h3 class="pb-0 mb-0 pb-14-xs"><?php the_title(); ?></h3>
                           <?php $video_autor = get_field('video_autor'); ?>
                           <?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
                           <?php $video_descripcion_corta = get_field('video_descripcion_corta') ?>

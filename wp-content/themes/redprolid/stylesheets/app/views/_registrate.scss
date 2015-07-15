@@ -97,3 +97,27 @@
   padding:7px;
   color:#FFF !important;
 }
+@media only screen and (max-width: 480px){
+	.wppb-form-field input, 
+	.wppb-form-field input[type="text"], 
+	.wppb-form-field input[type="email"], 
+	.wppb-form-field input[type="url"], 
+	.wppb-form-field input[type="password"], 
+	.wppb-form-field input[type="search"], 
+	.wppb-form-field select, 
+	.wppb-form-field textarea, 
+	.wppb-radios,
+	#wppb-login-wrap .login-username input, 
+	#wppb-login-wrap .login-password input{
+		 	width:100% !important;
+		 }
+	.wppb-checkboxes{
+	  width: 67px;
+	  position: relative;
+	  left: 208px;
+	  bottom: 40px;
+	}
+	#wppb-form-element-21 > labels{
+		padding-bottom:0px;
+	}
+}  

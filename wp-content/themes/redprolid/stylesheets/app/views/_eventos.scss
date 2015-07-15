@@ -23,3 +23,30 @@
 		}
 	}	
 }
+
+.galery .gallery-cell .grid-list-item {
+	min-height: 350px;
+  position: absolute;
+  left: 400%;
+}
+@media only screen and (max-width: 480px){
+   .texto-anchor-quieres-compartir-tu-pub,			
+   .texto-anchor-quieres-compartir-un-evento{
+   	 font-size: 22px;
+   }   
+   .galery .gallery-cell .grid-list-item{
+   	  min-height: 350px;
+	    position: absolute;
+	    width: 180px !important;
+  	  left: 416%;
+  	  p{
+        font-size: 12px !important;  	  	
+  	  }
+   }
+   .flickity-prev-next-button {
+	  position: absolute;
+	  top: 50%;
+	  width: 30px;
+	  height: 30px;
+	}
+}

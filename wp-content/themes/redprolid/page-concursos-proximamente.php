@@ -11,7 +11,7 @@ get_header(); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
 <section> 
-  <div class="container">
+  <div class="container hidden-xs ">
     <?php the_breadcrumb(); ?>
     <div class="clearfix sub-header">
       <!-- IF POSTS in FOROS -->

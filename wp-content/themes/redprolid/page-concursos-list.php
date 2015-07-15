@@ -8,7 +8,7 @@ get_header(); ?>
 <?php get_template_part( 'include', 'header' ); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
-<section id="puntos-de-vista-anteriores">
+<section id="puntos-de-vista-anteriores" class="hidden-xs">
   <div class="container">
     <?php the_breadcrumb(); ?>
     <div class="clearfix sub-header">

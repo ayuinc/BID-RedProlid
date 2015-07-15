@@ -12,7 +12,7 @@ get_header(); ?>
 <?php get_template_part( 'include', 'nav' ); ?>
 
   <section class="pv-28"> 
-	  <div class="container relative mb-14">
+	  <div class="container relative mb-14 hidden-xs">
       <?php the_breadcrumb(); ?>
       <div class="clearfix sub-header">
         <div class="col-sm-1 col-xs-3">

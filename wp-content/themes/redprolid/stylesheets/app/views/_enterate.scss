@@ -151,3 +151,11 @@
 .full-bottom-border {
 	border-bottom: 1px solid $gray-light;
 }
+
+@media only screen and (max-width: 480px){
+	.grid-list-item,
+	.grid-list.grid-list-12-xs > li,
+	.grid-list.grid-list-12-xs .gallery-cell {
+	  width: auto !important;
+	}
+}

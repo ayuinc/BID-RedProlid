@@ -15,38 +15,38 @@ get_header(); ?>
     <div class="container">
       <?php the_breadcrumb(); ?> 
       <div class="clearfix sub-header">
-        <div class="col-sm-1 col-xs-3">
+        <div class="col-sm-1 col-xs-12 text-center-xs pt-35-xs">
           <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-circle.png" alt="" width="100%"></div>
         </div>
-        <div class="col-sm-5 col-xs-9 pl-14">
+        <div class="col-sm-5 col-xs-12 text-center-xs  pl-14">
           <h1><?php the_title(); ?></h1>
         </div>
         <div class="col-sm-6 col-xs-12">
-          <nav class="text-right text-center-xs">
+          <nav class="text-right text-center-xs texto-anchor-quieres-compartir-un-evento">
             <a href="#" data-toggle="modal" data-target="#modalEventos">¿Quieres compartir un evento?</a> <span class="brand-primary">|</span> <a href="<?php echo home_url('/'); ?>eventos-anteriores">Eventos anteriores</a>
           </nav>          
         </div>
       </div>
-			<h3 class="light text-justify pb-28">¿Te resulta difícil estar al día de todos los eventos sobre asuntos de género, políticas públicas, liderazgo y participación de la mujer en política? Aquí tratamos de sistematizar para ti todos esos eventos, incluyendo además los distintos programas de capacitación a los que te puedes presentar. Te ofrecemos también la posibilidad de que tú misma incluyas los eventos que pueden interesarnos y que encuentres que faltan en la sección.</h3>
+			<h3 class="light text-justify pb-28 ph-14-xs">¿Te resulta difícil estar al día de todos los eventos sobre asuntos de género, políticas públicas, liderazgo y participación de la mujer en política? Aquí tratamos de sistematizar para ti todos esos eventos, incluyendo además los distintos programas de capacitación a los que te puedes presentar. Te ofrecemos también la posibilidad de que tú misma incluyas los eventos que pueden interesarnos y que encuentres que faltan en la sección.</h3>
     </div>
 	</section>		
 	
 	<section class="bg-panel pv-28">
 	  <div class="container ph-70-md">
 	  	<h2>Próximos eventos</h2>
-	  	<div class="gallery js-flickity grid-list grid-list-full-width grid-list-1-xs" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": false }'>
+	  	<div class="gallery js-flickity grid-list grid-list-full-width grid-list-12-xs" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": false }'>
 				<?php if ( have_posts() ) : ?>
         	<?php query_posts( 'category_name=proximos-eventos&posts_per_page=5&order=DESC' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
-		  			<div class="gallery-cell grid-list-item" style="min-height: 350px;">
+		  			<div class="galery gallery-cell grid-list-item" style="min-height: 350px;">
 		  				<div class="banner borderless">
 		        		<?php $imagen_evento = get_field('imagen_evento'); ?>
 			        	<?php if ($imagen_evento!='') { ?>	
-	        				<div class="banner-pic col-sm-4 mt-28" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
-	        			<div class="banner-content col-sm-8">
+	        				<div class="banner-pic col-sm-4 col-xs-12 mt-28" style="background-image: url(<?php the_field('imagen_evento'); ?>)"></div>
+	        			<div class="banner-content col-sm-8 col-xs-12">
 	        			<?php } else { ?>
 	        				<!--<div class="banner-pic col-sm-4 mt-28" style="background-image: url('/wp-content/uploads/2015/02/eventos_redprolid.png');"></div>-->
-	        			<div class="banner-content col-sm-12">
+	        			<div class="banner-content col-sm-12 col-xs-12">
 	        			<?php } ?>
 	        				<h3 class="medium mt-7 mb-14 pb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 	        				<p><?php the_field('descripcion_evento'); ?></p>
@@ -71,7 +71,7 @@ get_header(); ?>
 										<strong>Convocan:</strong> <?php the_field('convocan'); ?>
 										<?php } ?>
 	                </p>
-	                <p class="text-right mt-14 medium"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Más información >></a></p>
+	                <p class="text-right mt-14 medium pb-14-xs"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Más información >></a></p>
 	        			</div>
 	        		</div>
 		  			</div>

@@ -1,3 +1,6 @@
+.header-text-quees-red-prolid{
+	color: white;
+}
 .red-prolid-grid {
 	@include clearfix;
 	li {
@@ -18,4 +21,40 @@
 	img {
 		
 	}
+}
+.img-aquienvadirgida{
+	padding-left:14px;
+}
+.img-redprolidnace{
+	padding-right:14px;
+}
+@media only screen and (max-width: 480px){
+	.bg-transparent{
+		background-image: none !important;
+	}
+	.header-text-quees-red-prolid {
+	  color: #c3bf9b !important;
+	  position: relative;
+	  font-size: 30px;
+	  left: 30px;
+	  top: 8px;
+	}
+	.red-prolid-grid li {
+	  text-align: center !important;
+	  float: none !important;
+	  padding: 0rem;
+ 	  width: 100%;	  
+	} 
+	.img-aquienvadirgida{
+	  padding-left:0px;
+	  padding-bottom:14px;	  
+	} 
+	.img-redprolidnace{
+	  padding-right:0px;
+	  padding-bottom:14px;
+    }
+    .parrafo-nace-red-prolid > p{
+      padding-left:14px;
+	  padding-bottom:14px;    	
+    }
 }
