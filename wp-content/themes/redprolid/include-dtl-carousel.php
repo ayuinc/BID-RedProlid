@@ -1,10 +1,10 @@
 <div class="gallery js-flickity dtl-carousel grid-list grid-list-4 grid-list-1-xs"
-    data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
+    data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "draggable": false }'>
   <?php query_posts( 'category_name=home-desarrolla-tu-liderazgo&order=ASC' ); ?> 
   <?php while ( have_posts() ) : the_post(); ?>
 
     <div class="grid-list-item gallery-cell dtl-item" data-href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>">
-      <a href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>">
+      <a href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>" class="prueba">
         <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php the_field('imagen_home_dtl'); ?>);" data-href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>"></div>
         <div class="dtl-title pt-0">
           <h3><?php the_title(); ?></h3>

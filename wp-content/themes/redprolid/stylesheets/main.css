@@ -3728,15 +3728,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -ms-user-select: none;
   user-select: none; }
 
-.flickity-enabled.is-draggable .flickity-viewport {
-  cursor: move;
-  cursor: -webkit-grab;
-  cursor: grab; }
-
-.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
-  cursor: -webkit-grabbing;
-  cursor: grabbing; }
-
 /* ---- previous/next buttons ---- */
 .flickity-prev-next-button {
   position: absolute;
@@ -4975,7 +4966,10 @@ footer {
   padding-left: 0;
   list-style: none;
   margin: 0; }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 386px) {
+    .social-links {
+      padding-left: 80px; } }
+  @media only screen and (max-width: 320px) {
     .social-links {
       padding-left: 50px; } }
   .social-links li {
@@ -6379,15 +6373,15 @@ div[id^="yop-poll-results-3"] {
     .events-calendar-placeholder .day {
       position: absolute;
       top: 3.7rem;
-      left: 4rem; }
+      left: 6rem; }
     .events-calendar-placeholder .day-num {
       position: absolute;
       top: 5rem;
-      left: 7.9rem; }
+      left: 10rem; }
     .events-calendar-placeholder .month {
       position: absolute;
       top: 118px;
-      left: 8.2rem; }
+      left: 10.3rem; }
 
   .title-news {
     font-size: 20px !important;
@@ -6409,15 +6403,15 @@ div[id^="yop-poll-results-3"] {
     .events-calendar-placeholder .day {
       position: absolute;
       top: 3.7rem;
-      left: 5rem; }
+      left: 4rem; }
     .events-calendar-placeholder .day-num {
       position: absolute;
       top: 5rem;
-      left: 8.4rem; }
+      left: 8rem; }
     .events-calendar-placeholder .month {
       position: absolute;
       top: 117px;
-      left: 8.8rem; }
+      left: 8.4rem; }
 
   .title-news {
     font-size: 20px !important;
