@@ -4,17 +4,19 @@
   <?php while ( have_posts() ) : the_post(); ?>
 
     <div class="grid-list-item gallery-cell dtl-item" data-href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>">
-      <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php the_field('imagen_home_dtl'); ?>);"></div>
-      <div class="dtl-title pt-0">
-        <h3><?php the_title(); ?></h3>
-        <!--<div class="text-center">
-          <a href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>" class="btn btn-xs btn-primary">Ve más</a>
-        </div>-->
-      </div>
+      <a href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>">
+        <div class="bg-img-block-no-cover bg-img-block" style="background-image: url(<?php the_field('imagen_home_dtl'); ?>);" data-href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>"></div>
+        <div class="dtl-title pt-0">
+          <h3><?php the_title(); ?></h3>
+          <!--<div class="text-center">
+            <a href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>" class="btn btn-xs btn-primary">Ve más</a>
+          </div>-->
+        </div>
+      </a>
     </div>      
-    <a href="<?php the_field('link_a_seccion_interna_home_dtl'); ?>">
 
-    
-    </a>
+
+
+
   <?php endwhile; ?>
 </div>
