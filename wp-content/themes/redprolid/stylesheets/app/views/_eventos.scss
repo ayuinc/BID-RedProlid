@@ -23,21 +23,24 @@
 		}
 	}	
 }
-
-@media only screen and (max-width: 480px){
-   .texto-anchor-quieres-compartir-un-evento,
-   .texto-anchor-quieres-compartir-tu-pub,			
-   .texto-anchor-nos-propones-un-tema{
-   	 font-size: 22px;
-   	}   
+@media only screen and (max-width: 340px){
+	.flickity-prev-next-button {
+	  position: absolute;
+	  top: 50%;
+	  width: 30px;
+	  left: 260px;
+	  height: 30px;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 768px){   
    .flickity-prev-next-button.previous {
-		  left: 0px;
+		  left: 14px;
 		}
 	 .flickity-prev-next-button {
 		  position: absolute;
 		  top: 50%;
 		  width: 30px;
-		  left: 236px;
+		  left: 300px;
 		  height: 30px;
 		}
 	 .banner .banner-content {

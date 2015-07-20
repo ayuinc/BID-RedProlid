@@ -10,6 +10,14 @@ $(document).ready(function(){
   // $('div.yop-poll-answers ul li:first').addClass("mt-35");
   $('.yop-poll-answers ul li label').addClass('respuesta');
   $('[data-href]').click(function(e) {
+    maybe();
+  });
+
+  $('[data-href]').on("tap",function(){
+    maybe();
+  });
+});
+  function maybe(){
     var lastPath, locationArr, mainPath, pathObj;
     locationArr = window.location.pathname.split('/');
     lastPath = locationArr[locationArr.length - 1];
@@ -18,6 +26,6 @@ $(document).ready(function(){
     pathObj[mainPath] = lastPath;
     window.history.pushState(pathObj, '', lastPath);
     document.location.replace($(this).data('href'));
-  });
-});
+  }
+
 
