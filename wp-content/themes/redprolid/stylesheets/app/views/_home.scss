@@ -288,7 +288,7 @@ div[id^="yop-poll-results-3"] {
 .footer{
 	margin-top:28px;
 }
-@media only screen and (max-width: 480px){
+@media (max-width: 386px){
 		.header-text {
 			font-size: 1.5rem !important;
 		}
@@ -310,22 +310,30 @@ div[id^="yop-poll-results-3"] {
 		.noticias{
 			font-size: 30px;			
 		}
+		.row {
+			  margin-left: 0px !important;
+			  margin-right: 0px !important;
+			}
 		.events-calendar-placeholder{
-				padding-left:25px;
-				padding-right:25px;
-			  position: relative;				
+			  background-position-x: center;
+			  padding-left: 25px;
+			  padding-right: 25px;
+			  position: relative;
 			  left: 12px;
 			 .day{
-			 	  top: 3.7rem;
-	  			left: 0.9rem;
+			  position: absolute;
+			  top: 3.7rem;
+			  left:4rem;
 			 }
 			 .day-num{
-				 	top: 2rem;
-	  			left: 5rem;
+			  position: absolute;
+			  top: 5rem;
+			  left: 7.9rem;		 	
 			 }
 			 .month{
-          top: 5px;
-  				left: 5.4rem;			 	
+		 	  position:absolute;
+			  top: 118px;
+			  left: 8.2rem;
 			 }		 
 		}
 		.title-news{
@@ -339,4 +347,33 @@ div[id^="yop-poll-results-3"] {
 		.footer{
 			margin-top: 0px;
 		}
+}
+@media only screen  and (max-width: 320px) {
+	.events-calendar-placeholder{
+		  background-position-x: center;
+		  padding-left: 25px;
+		  padding-right: 25px;
+		  position: relative;
+		  left: 12px;
+		 .day{
+		  position: absolute;
+		  top: 3.7rem;
+		  left: 5rem;
+		 }
+		 .day-num{
+		  position: absolute;
+		  top: 5rem;
+      left: 8.4rem;		 	
+		 }
+		 .month{
+	 	  position:absolute;
+		  top: 117px;
+		  left: 8.8rem;
+		 }		 
+	}
+	.title-news{
+	  font-size: 20px !important;
+	  text-align: center !important;		
+	  font-weight: 400 !important;		
+	}	
 }

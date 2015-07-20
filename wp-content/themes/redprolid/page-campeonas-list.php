@@ -13,7 +13,7 @@ get_header(); ?>
   <div class="container">
     <?php the_breadcrumb(); ?>
     <div class="clearfix bg-panel sub-header">
-      <div class="col-sm-7">
+      <div class="col-sm-7 col-xs-12 text-center-xs pt-35-xs">
         <div>
           <h1>Entrevistas anteriores</h1>
           <nav class="mt-21">
@@ -21,11 +21,11 @@ get_header(); ?>
           </nav>
         </div>
       </div>
-      <div class="sub-header-icon">
+      <div class="sub-header-icon hidden-xs">
         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-square-alpha.png" width="94px" height="auto" alt="">
       </div>
     </div>  
-    <div class="ph-70">
+    <div class="ph-70-sm ph-14-xs">
       <div class="row">
         <?php add_filter('post_limits', 'my_post_limit'); ?>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>

@@ -6345,7 +6345,7 @@ div[id^="yop-poll-results-3"] {
 .footer {
   margin-top: 28px; }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 386px) {
   .header-text {
     font-size: 1.5rem !important; }
 
@@ -6366,20 +6366,28 @@ div[id^="yop-poll-results-3"] {
   .noticias {
     font-size: 30px; }
 
+  .row {
+    margin-left: 0px !important;
+    margin-right: 0px !important; }
+
   .events-calendar-placeholder {
+    background-position-x: center;
     padding-left: 25px;
     padding-right: 25px;
     position: relative;
     left: 12px; }
     .events-calendar-placeholder .day {
+      position: absolute;
       top: 3.7rem;
-      left: 0.9rem; }
+      left: 4rem; }
     .events-calendar-placeholder .day-num {
-      top: 2rem;
-      left: 5rem; }
+      position: absolute;
+      top: 5rem;
+      left: 7.9rem; }
     .events-calendar-placeholder .month {
-      top: 5px;
-      left: 5.4rem; }
+      position: absolute;
+      top: 118px;
+      left: 8.2rem; }
 
   .title-news {
     font-size: 20px !important;
@@ -6391,6 +6399,30 @@ div[id^="yop-poll-results-3"] {
 
   .footer {
     margin-top: 0px; } }
+@media only screen and (max-width: 320px) {
+  .events-calendar-placeholder {
+    background-position-x: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    left: 12px; }
+    .events-calendar-placeholder .day {
+      position: absolute;
+      top: 3.7rem;
+      left: 5rem; }
+    .events-calendar-placeholder .day-num {
+      position: absolute;
+      top: 5rem;
+      left: 8.4rem; }
+    .events-calendar-placeholder .month {
+      position: absolute;
+      top: 117px;
+      left: 8.8rem; }
+
+  .title-news {
+    font-size: 20px !important;
+    text-align: center !important;
+    font-weight: 400 !important; } }
 .header-text-quees-red-prolid {
   color: white; }
 
@@ -6749,20 +6781,22 @@ div[id^="yop-poll-results-3"] {
   font-weight: 500;
   font-style: normal; }
 
-@media only screen and (max-width: 480px) {
-  .texto-anchor-quieres-compartir-un-evento,
-  .texto-anchor-quieres-compartir-tu-pub,
-  .texto-anchor-nos-propones-un-tema {
-    font-size: 22px; }
-
+@media only screen and (max-width: 340px) {
+  .flickity-prev-next-button {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    left: 260px;
+    height: 30px; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .flickity-prev-next-button.previous {
-    left: 0px; }
+    left: 14px; }
 
   .flickity-prev-next-button {
     position: absolute;
     top: 50%;
     width: 30px;
-    left: 236px;
+    left: 300px;
     height: 30px; }
 
   .banner .banner-content {
