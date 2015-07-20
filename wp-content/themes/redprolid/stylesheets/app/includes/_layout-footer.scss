@@ -25,9 +25,12 @@ footer {
 }
 
 .social-links {
-	@media only screen and (max-width: 480px){
-	   padding-left: 50px;	
-	 }	
+	@media only screen and (max-width: 386px){
+	   padding-left: 80px;	
+	 }
+	@media only screen  and (max-width: 320px) {
+	  padding-left:50px;
+  } 	
 	@include list-unstyled;
 	li {
 		float: left;
@@ -78,3 +81,5 @@ footer {
 		}
 	}
 }
+
+

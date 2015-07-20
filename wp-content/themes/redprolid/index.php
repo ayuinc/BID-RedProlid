@@ -66,7 +66,7 @@ get_header(); ?>
           <div class="row hidden-md hidden-lg">
             <div class="col-xs-2"></div>
             <div class="col-xs-8 text-center pt-14">
-              <a href="#"><button class="btn btn-primary">Regístrate en la Red</button></a>
+              <a href="registrate"><button class="btn btn-primary">Regístrate en la Red</button></a>
             </div>
             <div class="col-xs-2"></div>
           </div>
