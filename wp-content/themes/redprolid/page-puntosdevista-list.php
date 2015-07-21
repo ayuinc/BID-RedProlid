@@ -12,7 +12,7 @@ get_header(); ?>
   <div class="container">
     <?php the_breadcrumb(); ?>
     <div class="clearfix bg-panel sub-header">
-      <div class="col-sm-7">
+      <div class="col-sm-7 col-xs-12 text-center-xs ">
         <div>
           <h1>Puntos de vista anteriores</h1>
           <nav class="mt-21">
@@ -20,7 +20,7 @@ get_header(); ?>
           </nav>
         </div>
       </div>
-      <div class="sub-header-icon" style="background-color:#AEAB8B;">
+      <div class="sub-header-icon hidden-xs" style="background-color:#AEAB8B;">
         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon-int.png" width="100%" alt="">
       </div>
     </div>	      

@@ -2,7 +2,7 @@
   <div class="container mt-7">
     <?php the_breadcrumb(); ?>
     <div class="clearfix sub-header">
-      <div class="col-sm-12">
+      <div class="col-sm-12 col-xs-12">
         <nav class="mt-21">
           <a href="<?php echo home_url('/'); ?>video/videos-anteriores">Video anteriores >></a>
         </nav>
