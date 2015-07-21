@@ -94,7 +94,7 @@ get_header(); ?>
                         <p class="medium">Testimonios sobre el liderazgo femenino</p>
                       </div>
                       <div class="col-md-4 text-right">
-                        <a class="mb-35-xs" href="<?php echo home_url('/'); ?>campeonas" class="medium">Entrevistas >></a>
+                        <a class="mb-56-xs" href="<?php echo home_url('/'); ?>campeonas" class="medium">Entrevistas >></a>
                       </div>
                     </div>                
                     <div class="bg-white clearfix">
@@ -115,7 +115,7 @@ get_header(); ?>
                               <div class="triangle hidden-xs"></div> 
                               <h3 class="medium mb-0 pb-0"><?php the_title(); ?></h3>
                               <p><?php the_field('descripcion_home_campeonas'); ?></p>
-                              <div class="text-right">
+                              <div class="text-right pb-14-xs">
                                 <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Lee más</a>
                               </div>
                             </div>
@@ -140,7 +140,7 @@ get_header(); ?>
                         <p class="medium">Artículos escritos por líderes y especialistas</p>
                       </div>
                       <div class="col-md-4 text-right">
-                        <a class="mb-35-xs" href="<?php echo home_url('/'); ?>puntos-de-vista" class="medium">Artículos >></a>
+                        <a class="mb-56-xs" href="<?php echo home_url('/'); ?>puntos-de-vista" class="medium">Artículos >></a>
                       </div>
                     </div>
                     <?php if ( have_posts() ) : ?>

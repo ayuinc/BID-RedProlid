@@ -212,7 +212,7 @@ get_header(); ?>
                 <?php endwhile; ?>
               </div>
             </div>
-            <div class="col-md-6 bg-panel-custom bg-panel">
+            <div class="col-md-6 bg-panel-custom bg-panel mb-14-xs">
               <div class="panel panel-custom">
 	              <div class="panel-heading">
                     <ul class="list-unstyled m-0">
