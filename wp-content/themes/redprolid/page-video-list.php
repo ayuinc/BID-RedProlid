@@ -12,7 +12,7 @@ get_header(); ?>
   <div class="container pb-42">
     <?php the_breadcrumb(); ?>
     <div class="clearfix bg-panel sub-header">
-      <div class="col-sm-7">
+      <div class="col-sm-7 col-xs-12 text-center-xs">
         <div>
           <h1>Videos anteriores</h1>
           <nav class="mt-21">
@@ -20,7 +20,7 @@ get_header(); ?>
           </nav>
         </div>
       </div>
-      <div class="sub-header-icon">
+      <div class="sub-header-icon hidden-xs">
         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/video-icon-square-alpha.png" width="94px" height="auto" alt="">
       </div>
     </div>

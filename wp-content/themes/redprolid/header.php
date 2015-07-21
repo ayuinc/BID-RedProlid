@@ -164,6 +164,9 @@
           <div class="center">
             <ul>
               <li>
+                <a href="<?php echo home_url('/'); ?>enterate">Entérate</a>
+              </li>            
+              <li>
                 <a href="<?php echo home_url('/'); ?>campeonas">Campeonas</a>
               </li>
               <li>

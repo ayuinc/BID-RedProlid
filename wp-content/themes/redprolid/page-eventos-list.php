@@ -20,11 +20,11 @@ get_header(); ?>
           </nav>
         </div>
       </div>
-      <div class="sub-header-icon">
+      <div class="sub-header-icon hidden-xs">
         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-square-alpha.png" width="94px" height="auto" alt="">
       </div>
     </div>  
-    <div class="ph-70">
+    <div class="ph-70-sm ph-7-xs">
       <div class="row pb-35">
         <!-- <div class="col-sm-10 col-md-offset-1"> -->
 	        <?php add_filter('post_limits', 'my_post_limit'); ?>
@@ -46,7 +46,7 @@ get_header(); ?>
             <h3 class="h1"><?php echo date_i18n('j', strtotime( $tempDate)); ?></h3>
             <p><?php echo date_i18n('M', strtotime( $tempDate)); ?></p>
           </div>
-          <div class="banner-content flex-none col-sm-10 pb-0">          
+          <div class="banner-content flex-none col-sm-10 pb-0 col-xs-12 text-center-xs">          
             <div class="title">
               <h3 class="medium text-primary mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>         
             </div>

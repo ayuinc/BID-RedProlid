@@ -1,7 +1,7 @@
 <section class="">
   <div class="container">
     <div class="row">
-      <div class="col-sm-9 pt-35">
+      <div class="col-sm-9 col-xs-12 pt-35 text-center-xs">
         <div class="title">
           <h3><?php the_title(); ?></h3>
           <p>FUENTE: <?php the_field('fuente-debates'); ?></p>

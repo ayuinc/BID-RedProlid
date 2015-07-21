@@ -15,14 +15,14 @@ get_header(); ?>
     <div class="container">
       <?php the_breadcrumb(); ?>
       <div class="row">
-      	<div class="col-sm-8">
+      	<div class="col-sm-8 col-xs-12">
 		      <div class="clearfix sub-header">
-		        <div class="col-sm-2 col-xs-3">
+		        <div class="col-sm-2 col-xs-12 text-center-xs pt-35-xs ">
 		          <div>
 			          <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/a-tu-estilo.png" alt="" width="100%">
 		          </div>
 		        </div>
-		        <div class="col-sm-5 col-xs-9">
+		        <div class="col-sm-5 col-xs-12 text-center-xs ">
 		          <h1><?php the_title(); ?></h1>
 		          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
 		        </div>
