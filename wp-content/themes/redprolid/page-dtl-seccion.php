@@ -40,7 +40,7 @@ get_header(); ?>
 				        </div>
 		          </div>
 		          <div class="pb-21 clearfix">
-		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mr-21 img-circle relative ml-56 mb-14" width="250px" height="auto">
+		          	<img src="<?php the_field('imagen-dtl-seccion'); ?>" alt="<?php the_title(); ?>" class="pull-right mh-0-xs mr-21-sm img-circle relative ml-56-sm mb-14" width="250px" height="auto">
 		          	<h3 class=" pt-14-100 light color-gray text-justify"><?php the_field('contenido-dtl-seccion'); ?></h3>
 		          </div>
 							<?php endif; ?>
@@ -48,7 +48,7 @@ get_header(); ?>
 								<div class="col-sm-1 col-xs-3 hidden-md-down">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-icon.png"></div>
 				        </div>
-				        <div class="col-sm-5 col-xs-12 pl-21">
+				        <div class="col-sm-5 col-xs-12 text-center-xs pl-21">
 				          <h1 class="title-agenda-de-genero"><?php the_title(); ?></h1>
 				          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
 				        </div>
@@ -62,7 +62,7 @@ get_header(); ?>
 								<div class="col-sm-1 col-xs-3 hidden-md-down">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-carrera-vallas-icon.png"></div>
 				        </div>
-				        <div class="col-sm-5 col-xs-12 pl-21">
+				        <div class="col-sm-5 col-xs-12 text-center-xs pl-21">
 				          <h1 class="title-carrera-de-vallas"><?php the_title(); ?></h1>
 				        </div>
 				      </div>
@@ -75,7 +75,7 @@ get_header(); ?>
 								<div class="col-sm-1 col-xs-3 hidden-md-down">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-icon.png"></div>
 				        </div>
-				        <div class="col-sm-6 col-xs-12">
+				        <div class="col-sm-6 col-xs-12 text-center-xs">
 				          <h1 class="title-la-pinta-no-es-lo-de-menos"><?php the_title(); ?></h1>
 				        </div>
 								<div class="col-sm-5 col-xs-12">
@@ -90,7 +90,7 @@ get_header(); ?>
 		          </div>
 							<?php endif; ?>
 							<?php if ($segment2 == "listas-para-la-politica") : ?>
-								<div class="col-sm-1 col-xs-3 hidden-md-down">
+								<div class="col-sm-1 col-xs-12 text-center-xs hidden-md-down">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-listas-politica-icon.png"></div>
 				        </div>
 				        <div class="col-sm-5 col-xs-12 text-center-xs pl-21">
@@ -104,7 +104,7 @@ get_header(); ?>
 		          </div>
 							<?php endif; ?>
 							<?php if ($segment2 == "nivelando-la-cancha") : ?>
-								<div class="col-sm-1 col-xs-3v">
+								<div class="col-sm-1 col-xs-12 text-center-xs">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-nivelando-cancha-icon.png"></div>
 				        </div>
 				        <div class="col-sm-5 col-xs-12 pl-21">
@@ -118,7 +118,7 @@ get_header(); ?>
 		          </div>
 							<?php endif; ?>
 							<?php if ($segment2 == "pistas-2") : ?>
-								<div class="col-sm-1 col-xs-3 hidden-md-down">
+								<div class="col-sm-1 col-xs-12 text-center-xs hidden-md-down">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-pistas-icon.png"></div>
 				        </div>
 				        <div class="col-sm-5 col-xs-12 pl-21">
@@ -142,7 +142,7 @@ get_header(); ?>
         <div class="container pb-0">
           <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-sumate-al-debate.png" alt="" class="ribbon">
           <div class="row">
-            <div class="col-sm-8 col-xs-12 pt-70 ph-14-xs">
+            <div class="col-sm-8 col-xs-12 text-center-xs pt-70 ph-14-xs">
 							<?php get_template_part( 'single-section' ); ?>
             </div>
             <div class="col-sm-4">

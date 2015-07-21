@@ -5145,7 +5145,9 @@ header {
   padding-left: 0;
   list-style: none;
   margin: 0;
-  padding: 0 10.5px; }
+  padding: 0 10.5px;
+  position: relative;
+  bottom: 6px; }
   .mobile-navbar .left,
   .mobile-navbar .right {
     height: 56px;

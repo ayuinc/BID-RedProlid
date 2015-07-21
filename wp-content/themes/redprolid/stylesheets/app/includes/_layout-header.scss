@@ -122,6 +122,8 @@ header {
 	border-bottom: 1px solid $gray-lighter;
 	@include flex-space-between;
 	padding: 0 $container-fluid;
+	position: relative;
+  bottom: 6px;
 	.left,
 	.right {
 		height: $mobile-navbar-height;
