@@ -1,3 +1,7 @@
+.tcon .tcon-menu--xcross .menu-trigger .tcon-transform {
+  position: relative;
+  bottom: 11px;
+}
 .tcon {
   appearance: none;
   border: none;
@@ -10,8 +14,6 @@
   user-select: none;
   width: $tcon-size;
   background: transparent;
-  position: relative;
-  bottom: 6px;
 
   > * {
     display: block;
