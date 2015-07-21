@@ -3626,10 +3626,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 /*========================================
 =                TRANSFORMICONS         =
 ========================================*/
-.tcon .tcon-menu--xcross .menu-trigger .tcon-transform {
-  position: relative;
-  bottom: 11px; }
-
 .tcon {
   appearance: none;
   border: none;
@@ -3642,8 +3638,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   user-select: none;
   width: 40px;
   background: transparent; }
-  .tcon > * {
-    display: block; }
   .tcon:focus {
     outline: 1px dotted #1E1C3D; }
 
@@ -5186,7 +5180,7 @@ header {
     height: 42px;
     text-align: center;
     color: white;
-    font-size: 40px; }
+    font-size: 16px; }
 
 .mobile-menu {
   position: fixed;
