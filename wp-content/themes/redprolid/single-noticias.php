@@ -1,7 +1,7 @@
 <section> 
   <div class="container relative">
     <?php the_breadcrumb(); ?>
-    <div class="ph-70 pv-21">
+    <div class="ph-70-sm ph-14-xs pv-21">
       <div class="row pb-14">
          
         <?php $imagen = get_field('imagen_noticias'); ?>

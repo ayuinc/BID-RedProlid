@@ -8,7 +8,7 @@
         </nav>
       </div>
     </div>
-    <div class="ph-70">
+    <div class="ph-70-sm ph-14-xs">
 	    <h2 class="medium mb-0"><?php the_title(); ?></h2>
 			<?php $video_autor = get_field('video_autor'); ?>
 			<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>

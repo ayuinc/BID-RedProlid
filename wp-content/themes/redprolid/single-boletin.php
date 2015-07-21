@@ -1,7 +1,7 @@
 	<section class="mt-7 mb-21"> 
 	  <div class="container relative mb-14">
       <?php the_breadcrumb(); ?>
-      <div class="ph-70">
+      <div class="ph-70-sm ph-14-xs">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 mostrar-anteriores">
 						<div class="row">
