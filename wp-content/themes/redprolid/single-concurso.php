@@ -2,7 +2,7 @@
   <div class="container">
 		<?php the_breadcrumb(); ?>
     <div class="clearfix bg-panel sub-header">
-      <div class="col-sm-7">
+      <div class="col-sm-7 col-xs-12">
         <div>
           <h1>Concurso</h1>
           <nav class="mt-21">
@@ -14,15 +14,15 @@
         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/concursos-icon-circle-alpha.png" width="94px" height="auto" alt="">
       </div>
     </div>
-    <div class="ph-70">
+    <div class="ph-70-sm ph-14-xs">
       <div class="row">
         <?php if( get_field('imagen_concurso') ) { ?>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-12 text-center-xs">
           <img src="<?php the_field('imagen_concurso'); ?>" alt="" class="img-responsive">
         </div>
-        <div class="col-sm-7">
+        <div class="col-sm-7 col-xs-12 text-center-xs">
         <?php } else {?>
-        <div class="col-sm-12">  
+        <div class="col-sm-12 col-xs-12 text-center-xs">  
         <?php } ?>
           <h2 class="lh-lg"><?php the_title(); ?></h2>
           <h4 class="light lh-lg"><?php the_field('descripcion_concurso'); ?></h4>

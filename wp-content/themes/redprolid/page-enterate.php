@@ -94,7 +94,7 @@ get_header(); ?>
                         <p class="medium">Testimonios sobre el liderazgo femenino</p>
                       </div>
                       <div class="col-md-4 text-right">
-                        <a class="mb-21-xs" href="<?php echo home_url('/'); ?>campeonas" class="medium">Entrevistas >></a>
+                        <a class="mb-35-xs" href="<?php echo home_url('/'); ?>campeonas" class="medium">Entrevistas >></a>
                       </div>
                     </div>                
                     <div class="bg-white clearfix">
@@ -112,7 +112,7 @@ get_header(); ?>
                               <?php } ?>
                             </div>
                             <div class="col-sm-7 pl-7 pr-14 ptp-7">
-                              <div class="triangle"></div> 
+                              <div class="triangle hidden-xs"></div> 
                               <h3 class="medium mb-0 pb-0"><?php the_title(); ?></h3>
                               <p><?php the_field('descripcion_home_campeonas'); ?></p>
                               <div class="text-right">
@@ -140,7 +140,7 @@ get_header(); ?>
                         <p class="medium">Artículos escritos por líderes y especialistas</p>
                       </div>
                       <div class="col-md-4 text-right">
-                        <a class="mb-21-xs" href="<?php echo home_url('/'); ?>puntos-de-vista" class="medium">Artículos >></a>
+                        <a class="mb-35-xs" href="<?php echo home_url('/'); ?>puntos-de-vista" class="medium">Artículos >></a>
                       </div>
                     </div>
                     <?php if ( have_posts() ) : ?>
@@ -151,7 +151,7 @@ get_header(); ?>
                         <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" class="img-responsive" style="width: 100%;">
                       </div>
                       <div class="col-sm-7 pl-7 pr-14 pt-14">
-                          <div class="triangle"></div>                                  
+                          <div class="triangle hidden-xs"></div>                                  
                           <h3 class="medium mb-0 pb-0 pb-7-xs"><?php the_title(); ?></h3>
                           <p class="pb-14-xs">
                             <?php the_field('descripcion_punto_de_vista'); ?>
@@ -180,7 +180,7 @@ get_header(); ?>
                     <ul class="list-unstyled">
                       <li class="title text-gray-darker highlight-white">Últimas noticias</li>
                       <li class="rule"></li>
-                      <li class="icon" data-href="<?php echo home_url('/'); ?>noticias"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-sml.png); background-repeat: no-repeat;"></li>
+                      <li class="icon hiden-xs" data-href="<?php echo home_url('/'); ?>noticias"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-sml.png); background-repeat: no-repeat;"></li>
                     </ul>
                   </div>
                   <div class="panel-body pt-0">

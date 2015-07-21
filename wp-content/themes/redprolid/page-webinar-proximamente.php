@@ -15,10 +15,10 @@ get_header(); ?>
     <?php the_breadcrumb(); ?>
     <div class="clearfix sub-header">
       <!-- IF POSTS in FOROS -->
-      <div class="col-sm-1 col-xs-3">
+      <div class="col-sm-1 col-xs-12 text-center-xs pt-35-xs">
 	      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="100%"></div>
 	    </div>
-      <div class="col-sm-5 col-xs-9">
+      <div class="col-sm-5 col-xs-12 text-center-xs ">
         <h1 class="brand-titular">Webinarios</h1>
       </div>
       <div class="col-sm-6 col-xs-12">
@@ -29,7 +29,7 @@ get_header(); ?>
       <!-- END:IF POSTS in FOROS -->
     </div> 
     <!-- IF NO POSTS in FOROS -->
-    <div class="ph-70 text-center pb-35">
+    <div class="ph-70-sm ph-14-xs text-center pb-35">
     	<h3>Próximamente anunciaremos nuestro primer webinario</h3>
     	<p class="light">¡Vuelve a visitar este espacio pronto!</p>
     	<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/02/webinarios_proximamente_V4-1.png">

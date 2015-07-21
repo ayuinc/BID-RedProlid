@@ -17,11 +17,11 @@ get_header(); ?>
 			  <div class="container relative">
 			    <?php the_breadcrumb(); ?>
 			    <div class="row">
-			      <div class="col-md-12">
+			      <div class="col-md-12 col-xs-12">
 			      </div>
 			    </div>
 			    <div class="row">
-				    <div class="col-sm-12">  
+				    <div class="col-sm-12 col-xs-12">  
 			        <h2 class="medium"><?php the_title(); ?></h2>
 			        <p><?php the_content(); ?></p>		        
 			      </div>

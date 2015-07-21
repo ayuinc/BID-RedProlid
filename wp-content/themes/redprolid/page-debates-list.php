@@ -68,9 +68,9 @@ get_header(); ?>
         <?php } ?>                                         
       </div>
     </div>	      
-    <div class="ph-70">
+    <div class="ph-70-sm ph-14-xs">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-xs-12">
           <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
           <?php query_posts( 'category_name='.$categoria.'&posts_per_page=10&offset=1&paged=' . $paged ); ?>
           <?php while ( have_posts() ) : the_post(); ?>
