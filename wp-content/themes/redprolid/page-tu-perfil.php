@@ -21,7 +21,7 @@ get_header(); ?>
           <?php echo get_avatar( $current_user->ID, 250); ?>
           <h4 class="light pt-7 mb-0"><?php echo $current_user->display_name; ?></h4>
         </div>
-        <div class="col-sm-8 ph-70-sm">
+        <div class="col-sm-8 ph-70-sm ph-14-xs">
           <div class="row">
           	<div class="col-xs-12">
 				      <?php while ( have_posts() ) : the_post(); ?>

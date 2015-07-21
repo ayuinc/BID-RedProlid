@@ -6391,6 +6391,9 @@ div[id^="yop-poll-results-3"] {
   .campeonas-section {
     padding-bottom: 0px; }
 
+  .debates-anteriores {
+    display: none; }
+
   .footer {
     margin-top: 0px; } }
 @media only screen and (max-width: 320px) {
@@ -6412,6 +6415,9 @@ div[id^="yop-poll-results-3"] {
       position: absolute;
       top: 117px;
       left: 8.4rem; }
+
+  .debates-anteriores {
+    display: none; }
 
   .title-news {
     font-size: 20px !important;

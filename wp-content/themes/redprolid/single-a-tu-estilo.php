@@ -49,7 +49,7 @@
     	</div>   	
     </div>
     <hr>
-    <div class="ph-70">
+    <div class="ph-70-sm ph-14-xs">
 	    <?php	if ( is_user_logged_in() ) { ?>
 				<?php comments_template();?>
 			<?php } else { ?>
