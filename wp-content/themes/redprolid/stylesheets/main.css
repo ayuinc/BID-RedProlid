@@ -3637,7 +3637,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   transition: 0.3s;
   user-select: none;
   width: 40px;
-  background: transparent; }
+  background: transparent;
+  position: relative;
+  bottom: 6px; }
   .tcon > * {
     display: block; }
   .tcon:focus {
@@ -5145,9 +5147,7 @@ header {
   padding-left: 0;
   list-style: none;
   margin: 0;
-  padding: 0 10.5px;
-  position: relative;
-  bottom: 6px; }
+  padding: 0 10.5px; }
   .mobile-navbar .left,
   .mobile-navbar .right {
     height: 56px;

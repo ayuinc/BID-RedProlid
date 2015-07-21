@@ -55,7 +55,7 @@
     <![endif]-->
   </head>
   <body>
-    <div class="site-wrapper pt-56-xs">
+    <div class="site-wrapper">
       <div class="mobile-navbar hidden-md-up"> <!-- MOBILE NAVBAR -->
         <div class="left">
           <div class="logo" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png)"></div>
