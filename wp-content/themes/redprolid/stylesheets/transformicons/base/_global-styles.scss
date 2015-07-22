@@ -11,10 +11,6 @@
   width: $tcon-size;
   background: transparent;
 
-  > * {
-    display: block;
-  }
-
   &:focus {
     outline: 1px dotted #1E1C3D;
   }
