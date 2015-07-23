@@ -56,9 +56,9 @@
   </head>
   <body>
     <div class="site-wrapper pt-63-xs">
-      <div class="mobile-navbar hidden-md-up"> <!-- MOBILE NAVBAR -->
+      <div class="mobile-navbar hidden-md hidden-lg"> <!-- MOBILE NAVBAR -->
         <div class="left">
-          <div class="logo" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png)"></div>
+          <a href="index"><div class="logo" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png)"></div></a>
         </div>
         <div class="right pr-14-xs">
           <button type="button" class="tcon tcon-menu--xcross menu-trigger pb-14-xs " aria-label="toggle menu">
@@ -67,7 +67,7 @@
           </button>
         </div>
       </div> <!-- END:Mobile navbar -->
-      <div class="mobile-menu hidden-md-up"> <!-- MOBILE MENU -->
+      <div class="mobile-menu hidden-md hidden-lg"> <!-- MOBILE MENU -->
         <div class="mobile-nav-display-triggers">
           <ul>
             <li>
