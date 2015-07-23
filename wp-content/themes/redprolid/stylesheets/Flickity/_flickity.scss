@@ -160,11 +160,17 @@
 @media (max-width: 386px){
   .flickity-prev-next-button.previous {
     position: relative;
-    left: 50px;
+    height: 60px;
+    width: 60px;
+    top: 35px;    
+    left: 98px;
    }
   .flickity-prev-next-button.next {
     position:relative;
-    left: 120px;
+    height: 60px;
+    width: 60px;
+    top: 35px;    
+    left: 162px;
    }   
   .flickity-page-dots {
     position: relative;
