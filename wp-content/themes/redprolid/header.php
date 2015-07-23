@@ -58,7 +58,7 @@
     <div class="site-wrapper pt-63-xs">
       <div class="mobile-navbar hidden-md hidden-lg"> <!-- MOBILE NAVBAR -->
         <div class="left">
-          <a href="index"><div class="logo" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png)"></div></a>
+          <a href="<?php echo home_url(); ?>"><div class="logo" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png)"></div></a>
         </div>
         <div class="right pr-14-xs">
           <button type="button" class="tcon tcon-menu--xcross menu-trigger pb-14-xs " aria-label="toggle menu">

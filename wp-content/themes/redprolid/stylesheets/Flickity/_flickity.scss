@@ -136,3 +136,40 @@
   filter: alpha(opacity=100); /* IE8 */
   opacity: 1;
 }
+@media only screen  and (max-width: 320px) { 
+  .flickity-prev-next-button.previous {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;
+    left: 74px;
+   }
+  .flickity-prev-next-button.next {
+    position: relative;
+    height: 60px;
+    left: 164px;
+    width: 60px;
+    top: 35px;
+   }   
+  .flickity-page-dots {
+    position: relative;
+    width: 100%;
+    bottom: 10px;
+  }  
+}
+@media (max-width: 386px){
+  .flickity-prev-next-button.previous {
+    position: relative;
+    left: 50px;
+   }
+  .flickity-prev-next-button.next {
+    position:relative;
+    left: 120px;
+   }   
+  .flickity-page-dots {
+    position: relative;
+    width: 100%;
+    bottom: 10px;
+  }
+}
+
