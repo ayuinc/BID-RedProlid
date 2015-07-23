@@ -136,18 +136,39 @@
   filter: alpha(opacity=100); /* IE8 */
   opacity: 1;
 }
+@media (max-width: 386px){
+  .flickity-prev-next-button.previous {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;    
+    left: 76px;
+   }
+  .flickity-prev-next-button.next {
+    position:relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;    
+    left: 155px;
+   }   
+  .flickity-page-dots {
+    position: relative;
+    width: 100%;
+    bottom: 10px;
+  }
+}
 @media only screen  and (max-width: 320px) { 
   .flickity-prev-next-button.previous {
     position: relative;
     height: 60px;
     width: 60px;
     top: 35px;
-    left: 74px;
+    left: 62px;
    }
   .flickity-prev-next-button.next {
     position: relative;
     height: 60px;
-    left: 164px;
+    left: 115px;
     width: 60px;
     top: 35px;
    }   
@@ -157,25 +178,5 @@
     bottom: 10px;
   }  
 }
-@media (max-width: 386px){
-  .flickity-prev-next-button.previous {
-    position: relative;
-    height: 60px;
-    width: 60px;
-    top: 35px;    
-    left: 98px;
-   }
-  .flickity-prev-next-button.next {
-    position:relative;
-    height: 60px;
-    width: 60px;
-    top: 35px;    
-    left: 162px;
-   }   
-  .flickity-page-dots {
-    position: relative;
-    width: 100%;
-    bottom: 10px;
-  }
-}
+
 
