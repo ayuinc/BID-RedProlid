@@ -60,7 +60,7 @@
         <div class="left">
           <a href="<?php echo home_url(); ?>"><div class="logo" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png)"></div></a>
         </div>
-        <div class="right pr-14-xs">
+        <div class="right pr-14-sm pr-14-xs">
           <button type="button" class="tcon tcon-menu--xcross menu-trigger pb-14-xs " aria-label="toggle menu">
             <span class="tcon-menu__lines" aria-hidden="true"></span>
             <span class="tcon-visuallyhidden">toggle menu</span>
