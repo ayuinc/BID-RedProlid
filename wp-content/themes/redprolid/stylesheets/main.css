@@ -3821,6 +3821,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   /* IE8 */
   opacity: 1; }
 
+@media (max-width: 780px) {
+  .flickity-prev-next-button.previous {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;
+    left: 230px !important; }
+
+  .flickity-prev-next-button.next {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;
+    left: 313px; }
+
+  .flickity-page-dots {
+    position: relative;
+    width: 100%;
+    bottom: 10px;
+    left: 28px; } }
 @media (max-width: 386px) {
   .flickity-prev-next-button.previous {
     position: relative;
@@ -6375,7 +6395,50 @@ div[id^="yop-poll-results-3"] {
 .footer {
   margin-top: 28px; }
 
+@media (max-width: 768px) {
+  .btn-custom-registrate {
+    padding: 6px 22px !important; }
+
+  .btn-custom-iniciasesion {
+    padding: 6px 48px !important; }
+
+  .noticias-post {
+    font-size: 45px; }
+
+  .campeonas-panel-home {
+    top: 35px; }
+
+  .events-calendar-placeholder {
+    width: 100%;
+    height: 210px;
+    background: url(../assets/img/home-events-calendar.png) no-repeat 288px center;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+    font-weight: 500;
+    font-style: normal; }
+    .events-calendar-placeholder .day {
+      position: absolute;
+      top: 120px;
+      left: 315px; }
+    .events-calendar-placeholder .day-num {
+      position: absolute;
+      top: 120px;
+      left: 366px; }
+    .events-calendar-placeholder .month {
+      position: absolute;
+      top: 190px;
+      left: 371px; }
+
+  .title-news {
+    font-size: 20px !important;
+    text-align: center !important;
+    font-weight: 200 !important; } }
 @media (max-width: 386px) {
+  .btn-custom-registrate {
+    padding: 6px 22px !important; }
+
+  .btn-custom-iniciasesion {
+    padding: 6px 48px !important; }
+
   .header-text {
     font-size: 1.5rem !important; }
 
@@ -6433,6 +6496,12 @@ div[id^="yop-poll-results-3"] {
   .footer {
     margin-top: 0px; } }
 @media only screen and (max-width: 320px) {
+  .btn-custom-registrate {
+    padding: 6px 22px !important; }
+
+  .btn-custom-iniciasesion {
+    padding: 6px 48px !important; }
+
   .events-calendar-placeholder {
     background-position-x: center;
     padding-left: 25px;
@@ -6487,6 +6556,9 @@ div[id^="yop-poll-results-3"] {
 .img-redprolidnace {
   padding-right: 14px; }
 
+@media (max-width: 768px) {
+  .bg-transparent {
+    background-image: none !important; } }
 @media only screen and (max-width: 480px) {
   .bg-transparent {
     background-image: none !important; }

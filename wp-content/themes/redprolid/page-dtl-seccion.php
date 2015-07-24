@@ -32,10 +32,10 @@ get_header(); ?>
 		          <!-- <div class="dtl-custom-heading"> -->
 
 							<?php if ($segment2 == "a-donde-vamos") : ?>
-								<div class="col-sm-1 col-xs-12 text-center-xs hidden-md-down">
+								<div class="col-lg-1 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs hidden-md-down">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png"></div>
 				        </div>
-				        <div class="col-sm-5 col-xs-12 text-center-xs pl-21">
+				        <div class="col-lg-5 col-sm-12 text-center-sm col-xs-12 text-center-xs pl-21">
 				          <h1 class="title-a-donde-vamos"><?php the_title(); ?></h1>
 				          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
 				        </div>
@@ -46,10 +46,10 @@ get_header(); ?>
 		          </div>
 							<?php endif; ?>
 							<?php if ($segment2 == "agenda-de-genero") : ?>
-								<div class="col-sm-1 col-xs-12 text-center-xs hidden-md-down">
+								<div class="col-lg-1 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs hidden-md-down">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-icon.png"></div>
 				        </div>
-				        <div class="col-sm-5 col-xs-12 text-center-xs pl-21">
+				        <div class="col-lg-5 col-sm-12 text-center-sm  col-xs-12 text-center-xs pl-21">
 				          <h1 class="title-agenda-de-genero"><?php the_title(); ?></h1>
 				          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
 				        </div>

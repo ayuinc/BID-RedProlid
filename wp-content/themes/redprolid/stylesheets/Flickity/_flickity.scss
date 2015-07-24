@@ -136,6 +136,28 @@
   filter: alpha(opacity=100); /* IE8 */
   opacity: 1;
 }
+@media (max-width: 780px){
+  .flickity-prev-next-button.previous {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;    
+    left: 230px !important;
+   }
+  .flickity-prev-next-button.next {
+    position:relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;    
+    left: 313px;
+   }   
+  .flickity-page-dots {
+    position: relative;
+    width: 100%;
+    bottom: 10px;
+    left: 28px;    
+  }  
+}
 @media (max-width: 386px){
   .flickity-prev-next-button.previous {
     position: relative;

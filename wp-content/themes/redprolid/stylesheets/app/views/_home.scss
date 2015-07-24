@@ -236,7 +236,6 @@ div[id^="yop-poll-results-3"] {
 // 	}
 // }
 
-
 #home-comment {
 
   overflow: hidden;
@@ -288,7 +287,55 @@ div[id^="yop-poll-results-3"] {
 .footer{
 	margin-top:28px;
 }
+@media (max-width: 768px){
+	.btn-custom-registrate{
+  	padding: 6px 22px !important;		
+	}
+	.btn-custom-iniciasesion {
+  	padding: 6px 48px !important;
+	}	
+	.noticias-post{
+   font-size: 45px;		
+	}
+	.campeonas-panel-home {
+  	top: 35px;
+  }
+	.events-calendar-placeholder {
+	  width: 100%;
+	  height: 210px;
+	  background: url(../assets/img/home-events-calendar.png) no-repeat 288px center;
+	  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+	  font-weight: 500;
+	  font-style: normal;	
+		.day {
+		  position: absolute;
+		  top: 120px;
+		  left: 315px;
+		}	
+		.day-num {
+		  position: absolute;
+		  top: 120px;
+		  left: 366px;	
+		}
+		.month {
+		  position: absolute;
+		  top: 190px;
+		  left: 371px;
+		}
+	}	
+	.title-news{
+	  font-size: 20px !important;
+	  text-align: center !important;		
+	  font-weight: 200 !important;		
+	}		
+}
 @media (max-width: 386px){
+		.btn-custom-registrate{
+	  	padding: 6px 22px !important;		
+		}
+		.btn-custom-iniciasesion {
+	  	padding: 6px 48px !important;
+		}	
 		.header-text {
 			font-size: 1.5rem !important;
 		}
@@ -352,6 +399,12 @@ div[id^="yop-poll-results-3"] {
 		}
 }
 @media only screen  and (max-width: 320px) {
+	.btn-custom-registrate{
+  	padding: 6px 22px !important;		
+	}
+	.btn-custom-iniciasesion {
+  	padding: 6px 48px !important;
+	}	
 	.events-calendar-placeholder{
 		  background-position-x: center;
 		  padding-left: 25px;
@@ -377,7 +430,6 @@ div[id^="yop-poll-results-3"] {
 	.debates-anteriores{
 		display:none;
 	}
-
 	.title-news{
 	  font-size: 20px !important;
 	  text-align: center !important;		

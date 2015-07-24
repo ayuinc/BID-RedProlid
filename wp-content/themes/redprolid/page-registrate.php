@@ -49,7 +49,7 @@ get_header(); ?>
 				      </div>
 				      <hr class="pv-14-xs hidden-md hidden-lg">
 							<div class="col-xs-12 pl-14-xs hidden-md hidden-lg">
-				        <div class="user-sign-in-form">
+				        <div class="user-sign-in-form" id="sign-in-form">
 				          <?php 
 				            if ( is_user_logged_in() ) {
 
