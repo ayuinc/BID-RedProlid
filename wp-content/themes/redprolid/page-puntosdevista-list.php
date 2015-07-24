@@ -25,7 +25,7 @@ get_header(); ?>
       </div>
     </div>	      
     <div class="ph-70">
-      <div class="row">
+      <div class="row ph-14-sm">
         <div class="col-sm-12">
           <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
           <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=10&offset=1paged=' . $paged ); ?>

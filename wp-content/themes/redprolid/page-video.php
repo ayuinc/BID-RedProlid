@@ -20,7 +20,7 @@ get_header(); ?>
       <div class="col-lg-4 col-sm-12 text-center-sm col-xs-12 text-center-xs ">
         <h1>Video</h1>
       </div>
-      <div class="col-sm-7 col-xs-12">
+      <div class="col-lg-7 col-sm-12 col-xs-12">
         <nav class="text-right-lg text-center-sm text-center-xs">
           <a href="#" data-toggle="modal" data-target="#modalVideos">¿Quieres compartir un video?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>video/videos-anteriores">Videos anteriores</a> 
         </nav>	          

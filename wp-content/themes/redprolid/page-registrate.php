@@ -70,7 +70,7 @@ get_header(); ?>
 				          ?>       
 				        </div>
 							</div>				      
-				      <div class="col-lg-5 col-sm-12 col-xs-12 text-center-xs">
+				      <div class="col-lg-5 col-sm-12 col-xs-12 text-center-sm text-center-xs">
 					      <h3 class="medium text-left-lg text-center-sm text-center-xs mt-14 mb-21">O utilizando las redes sociales</h3>
 					      <p><?php do_action( 'wordpress_social_login' ); ?></p>
 				      </div>			      
