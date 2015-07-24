@@ -29,10 +29,10 @@ get_header(); ?>
 	    <div class="container">
 	      <?php the_breadcrumb(); ?> 
 	      <div class="clearfix sub-header">
-	        <div class="col-sm-1 col-xs-12 text-center-xs pt-35-xs">
+	        <div class="col-lg-1 col-xs-12 col-sm-12 text-center-sm pt-35-sm text-center-xs pt-35-xs">
 	          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/registrate.png" alt="" width="100%"></div>
 	        </div>
-	        <div class="col-sm-11 col-xs-12 text-center-xs">
+	        <div class="col-lg-11 col-xs-12 col-sm-12 text-center-sm text-center-xs">
 	          <h1><?php the_title(); ?></h1>
 	        </div>
 	      </div>
@@ -44,7 +44,7 @@ get_header(); ?>
 					      <small>campo requerido*</small>
 				      	<?php the_content(); ?>
 				      </div>
-				      <div class="col-md-1 hidden-xs">
+				      <div class="col-md-1 hidden-xs hidden-sm">
 				      	<img src="http://redprolid.org/wp-content/themes/redprolid/assets/icons/division-02.png" alt="">
 				      </div>
 				      <hr class="pv-14-xs hidden-md hidden-lg">

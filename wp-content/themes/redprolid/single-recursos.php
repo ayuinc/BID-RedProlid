@@ -2,7 +2,7 @@
   <div class="container relative">
     <?php the_breadcrumb(); ?>
     <div class="ph-70-sm ph-14-xs pv-21">
-      <div class="row pb-14">
+      <div class="row pt-35-sm pb-14">
   	    <div class="col-sm-12 col-xs-12">  
           <h2 class="medium mb-0"><?php the_title(); ?></h2>
           <?php $publicacion = get_field('recurso_descripcion'); ?>

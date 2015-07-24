@@ -2,14 +2,14 @@
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>
     <div class="clearfix sub-header">
-      <div class="col-sm-1 hidden-xs">
+      <div class="col-lg-1  hidden-xs">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt="" width="100%"></div>
       </div>
-      <div class="col-sm-4 col-xs-12 text-center-xs pl-14">
+      <div class="col-lg-4 col-sm-12 text-center-sm  col-xs-12 text-center-xs pl-14">
         <h1 class="brand-titular">Puntos de vista</h1>
       </div>
-      <div class="col-sm-7 col-xs-12">
-        <nav class="text-right text-center-xs">
+      <div class="col-lg-7 col-sm-12 col-xs-12">
+        <nav class="text-right-lg text-center-sm text-center-xs">
            <a href="#" data-toggle="modal" data-target="#modalPuntosdevista">¿Nos propones un tema?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>puntos-de-vista-anteriores">Puntos de vista anteriores</a>
         </nav>
       </div>

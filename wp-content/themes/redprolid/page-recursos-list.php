@@ -13,13 +13,13 @@ get_header(); ?>
     <div class="container">
       <?php the_breadcrumb(); ?> 
       <div class="clearfix sub-header">
-        <div class="col-sm-1 col-xs-12 text-center-xs pt-35-xs pl-0">
+        <div class="col-lg-1 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs pl-0">
           <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/publicaciones-redondo.png" alt="" width="93px"></div>
         </div>
-        <div class="col-sm-5 col-xs-12 text-center-xs">
+        <div class="col-lg-5 col-sm-12 text-center-sm col-xs-12 text-center-xs">
           <h1><?php the_title(); ?></h1>
         </div>
-        <div class="col-sm-6 col-xs-12">
+        <div class="col-lg-6 col-sm-12 text-center-sm col-xs-12">
           <nav class="text-right text-center-xs texto-anchor-quieres-compartir-tu-pub">
             <a href="#" data-toggle="modal" data-target="#modalRecursos">¿Quieres compartir una publicación?</a> <span class="text-primary">|</span> <a href="<?php echo content_url('/'); ?>enterate">Entérate</a>
           </nav>	          
