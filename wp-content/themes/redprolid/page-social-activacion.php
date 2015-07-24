@@ -18,7 +18,7 @@ get_header(); ?>
 <section> 
   <div class="container">
     <!-- IF NO POSTS in FOROS -->
-    <div class="ph-70-sm ph-14-xs text-center">
+    <div class="ph-70-lg ph-14-xs text-center">
     	<div class="container-sm">
 	    	<div class="row pv-49">
 					<?php if ( have_posts() ) : ?>
