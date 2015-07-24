@@ -29,7 +29,7 @@ get_header(); ?>
 	    <div class="container">
 	      <?php the_breadcrumb(); ?> 
 	      <div class="clearfix sub-header">
-	        <div class="col-lg-1 col-xs-12 col-sm-12 text-center-sm pt-35-sm text-center-xs pt-35-xs">
+	        <div class="col-lg-1 col-xs-12 col-sm-12 text-center-sm pt-70-sm text-center-xs pt-35-xs">
 	          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/registrate.png" alt="" width="100%"></div>
 	        </div>
 	        <div class="col-lg-11 col-xs-12 col-sm-12 text-center-sm text-center-xs">
@@ -70,8 +70,8 @@ get_header(); ?>
 				          ?>       
 				        </div>
 							</div>				      
-				      <div class="col-md-5 col-xs-12 text-center-xs">
-					      <h3 class="medium text-left text-center-xs mt-14 mb-21">O utilizando las redes sociales</h3>
+				      <div class="col-lg-5 col-sm-12 col-xs-12 text-center-xs">
+					      <h3 class="medium text-left-lg text-center-sm text-center-xs mt-14 mb-21">O utilizando las redes sociales</h3>
 					      <p><?php do_action( 'wordpress_social_login' ); ?></p>
 				      </div>			      
 				    </div>
