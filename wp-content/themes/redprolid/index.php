@@ -130,7 +130,7 @@ get_header(); ?>
                       </li>
 											<?php endwhile; ?>                     
                     </ul>
-                    <a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary">Ve más</a>
+                    <a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary mv-21-xs ">Ve más</a>
 
                 </div>
               </div>
@@ -254,7 +254,7 @@ get_header(); ?>
                     <p>
 							        <strong><?php the_field('descripcion_home_campeonas'); ?></strong>
 				            </p>
-                    <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Entrevista completa</a>
+                    <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary mb-21-xs">Entrevista completa</a>
                   </div> 
                   </div>
                 <?php endwhile; ?>
