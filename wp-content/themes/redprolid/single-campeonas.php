@@ -2,13 +2,13 @@
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>    
     <div class="clearfix sub-header">
-      <div class="col-sm-1 col-xs-12 text-center-xs pt-35-xs">
+      <div class="col-lg-1 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" alt="" width="100%"></div>
       </div>
-      <div class="col-sm-4 col-xs-12 text-center-xs  pl-14">
+      <div class="col-lg-4 col-sm-12 text-center-sm col-xs-12 text-center-xs  pl-14">
         <h1 class="brand-titular">Campeon@s</h1>
       </div>
-      <div class="col-sm-7 col-xs-12 texto-anchor-nos-propones-un-tema">
+      <div class="col-lg-7 col-sm-12 text-center-sm col-xs-12 texto-anchor-nos-propones-un-tema">
         <nav class="text-right text-center-xs">
           <a href="#" data-toggle="modal" data-target="#modalCampeonas">¿Nos propones un tema?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores">Entrevistas anteriores</a>
         </nav>
@@ -143,7 +143,7 @@
 					<?php	if ( is_user_logged_in() ) { ?>
 						<?php comments_template();?>
 					<?php } else { ?>
-						<p>Para poder comentar es necesario <a href="/registrate/">iniciar tu sesión o registrarse</a> a Red PROLD.</p>
+				   <p>Para poder comentar es necesario que <a href="/registrate/">inicies tu sesión o te registres</a> en Red PROLID.</p>
 					<?php }	?>
   			</div>
   	  </div>

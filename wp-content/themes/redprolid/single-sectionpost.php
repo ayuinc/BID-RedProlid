@@ -17,7 +17,7 @@
 					<?php	if ( is_user_logged_in() ) { ?>
 						<?php comments_template();?>
 					<?php } else { ?>
-						<p>Para poder comentar es necesario <a href="/registrate/">iniciar tu sesión o registrarse</a> a Red PROLD.</p>
+           <p>Para poder comentar es necesario que <a href="/registrate/">inicies tu sesión o te registres</a> en Red PROLID.</p>
 					<?php }	?>
         </div> 
       </div>

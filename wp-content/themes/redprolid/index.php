@@ -66,7 +66,7 @@ get_header(); ?>
           <div class="row hidden-md hidden-lg">
             <div class="col-xs-2"></div>
             <div class="col-xs-8 text-center pt-14">
-              <a href="registrate"><button class="btn btn-primary">Regístrate en la Red</button></a>
+              <a href="registrate"><button class="btn-custom-registrate btn-md btn btn-primary">Regístrate en la Red</button></a> <a href="registrate#sign-in-form"><button class="btn-custom-iniciasesion bg-white border-top-primary border-right-primary  border-bottom-primary border-left-primary btn btn-white text-primary mt-14-xs">Inicia Sesión</button></a>
             </div>
             <div class="col-xs-2"></div>
           </div>
@@ -118,7 +118,7 @@ get_header(); ?>
                 </div>
                 <div class="panel-body">
 
-                    <ul class="list-unstyled list-group list-group-custom">
+                    <ul class="noticias-post list-unstyled list-group list-group-custom">
                     	<?php query_posts( 'category_name=noticias&posts_per_page=3' ); ?>	
 											<?php while ( have_posts() ) : the_post(); ?>                    
                       <li class="mb-14">
@@ -212,7 +212,7 @@ get_header(); ?>
                 <?php endwhile; ?>
               </div>
             </div>
-            <div class="col-md-6 bg-panel-custom bg-panel mb-14-xs">
+            <div class="col-md-6 campeonas-panel-home bg-panel-custom bg-panel mb-14-xs">
               <div class="panel panel-custom">
 	              <div class="panel-heading">
                     <ul class="list-unstyled m-0">
