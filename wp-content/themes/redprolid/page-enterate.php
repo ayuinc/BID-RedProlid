@@ -15,7 +15,7 @@ get_header(); ?>
 		  <div class="container relative mb-14">
 		     <?php the_breadcrumb(); ?>
         <div class="clearfix sub-header">
-          <div class="col-xs-12 text-center-xs col-sm-12 text-center-sm pt-35-xs col-lg-1">
+          <div class="col-xs-12 text-center-xs col-sm-12 pt-70-sm text-center-sm pt-35-xs col-lg-1">
             <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" ></div>
           </div>
           <div class="col-xs-12 text-center-xs col-sm-12 text-center-sm col-lg-4">

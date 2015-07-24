@@ -2,7 +2,7 @@
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>
     <div class="clearfix sub-header">
-      <div class="col-lg-1  hidden-xs">
+      <div class="col-lg-1 col-sm-12 text-center-sm hidden-xs">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt="" width="100%"></div>
       </div>
       <div class="col-lg-4 col-sm-12 text-center-sm  col-xs-12 text-center-xs pl-14">
@@ -37,7 +37,7 @@
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row ph-14-sm">
       <div class="col-sm-10 col-md-offset-1 with-hr pb-14 pl-0 pr-0 mt-14">  
 			  <h3 class="medium mb-0"><?php the_field('nombre_completo'); ?></h3>
 		    <?php the_field('contenido_punto_de_vista'); ?>
@@ -52,7 +52,7 @@
           <?php } ?>                      
         </div>
         <div class="with-hr">
-          <p>
+          <p class="ph-14-sm">
             <?php $facebook_puntosdevista = get_field('facebook_puntosdevista'); ?>
             <?php if ($facebook_puntosdevista!='') { ?>
             <strong>Sígueme en Facebook:</strong> <a href="<?php the_field('facebook_puntosdevista'); ?>" target="_blank"><?php the_field('facebook_puntosdevista'); ?></a><br>
