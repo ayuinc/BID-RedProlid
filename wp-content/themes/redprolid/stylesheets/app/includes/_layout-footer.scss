@@ -23,7 +23,17 @@ footer {
 	background-color: #292929;
 	padding:14px 0;
 }
-
+@media (max-width: 768px){
+	.img-responsive {
+	  display: initial;
+	  width: 100% \9;
+	  width: 70%;
+	  height: auto;
+	}
+	.social-links {
+	  padding-left: 260px !important;
+	}  
+}	
 .social-links {
 	@media only screen and (max-width: 386px){
 	   padding-left: 80px;	
