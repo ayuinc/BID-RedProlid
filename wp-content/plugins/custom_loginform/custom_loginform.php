@@ -26,7 +26,7 @@ function dlf_form() {
 	    </div>
 	  </div>
 	  <div class="col-lg-3 col-sm-12 text-left-sm col-xs-12 pv-14-xs pl-0-xs text-left-xs">
-	    <input type="submit" name="dlf_submit" class="ml-14-sm ml-0-xs btn btn-primary btn-sm" value="Ingresa" >
+	    <input type="submit" name="dlf_submit" class="ml-14-lg ml-0-sm ml-0-xs btn btn-primary btn-sm" value="Ingresa" >
 	  </div>
 	  <div class="col-xs-12 ph-0-xs text-left-xs">
 		  <p class="mt-14">
