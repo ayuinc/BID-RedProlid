@@ -6428,6 +6428,10 @@ div[id^="yop-poll-results-3"] {
       top: 190px;
       left: 371px; }
 
+  .widgets .container .row .col-md-3 .panel-custom .panel-body .btn {
+    position: absolute;
+    bottom: 0px; }
+
   .title-news {
     font-size: 20px !important;
     text-align: center !important;
@@ -6482,6 +6486,10 @@ div[id^="yop-poll-results-3"] {
       top: 118px;
       left: 10.3rem; }
 
+  .widgets .container .row .col-md-3 .panel-custom .panel-body .btn {
+    position: absolute;
+    bottom: 0px; }
+
   .title-news {
     font-size: 20px !important;
     text-align: center !important;
@@ -6520,6 +6528,10 @@ div[id^="yop-poll-results-3"] {
       position: absolute;
       top: 117px;
       left: 8.4rem; }
+
+  .widgets .container .row .col-md-3 .panel-custom .panel-body .btn {
+    position: absolute;
+    bottom: 0px; }
 
   .debates-anteriores {
     display: none; }
