@@ -130,7 +130,7 @@ get_header(); ?>
                       </li>
 											<?php endwhile; ?>                     
                     </ul>
-                    <a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary mv-21-xs ">Ve más</a>
+                    <a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary">Ve más</a>
 
                 </div>
               </div>
