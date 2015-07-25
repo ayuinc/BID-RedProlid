@@ -21,7 +21,7 @@ get_header(); ?>
     <div class="mh-700">
       <section id="hero-unit">
         <div class="container pv-21">
-          <div class="gallery js-flickity hidden-sm-down bg-panel border-radius p-21 bg-img-block bg-img-block-top bg-img-block-right" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png);" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 3000 }'>
+          <div class="gallery js-flickity hidden-xs hidden-sm hidden-md bg-panel border-radius p-21 bg-img-block bg-img-block-top bg-img-block-right" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png);" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 3000 }'>
             <?php query_posts( 'category_name=video-homepage&posts_per_page=5' ); ?>  
             <?php while ( have_posts() ) : the_post(); ?>
               <div class="grid-list-item gallery-cell clearfix minh-350" style="width: 100%;">
@@ -199,8 +199,8 @@ get_header(); ?>
                 <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                      
                 <div class="panel-body pt-0 pb-0">               
-                  <div class="col-sm-5text-center-sm punto-de-vista-img">
-                    <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
+                  <div class="col-sm-5 text-center-sm punto-de-vista-img">
+                    <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" style="width:100%;">
                   </div>
                   <div class="col-sm-7">
                     <h3 class="pt-0 medium mb-0"><?php the_title(); ?></h3>
