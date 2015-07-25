@@ -31,7 +31,7 @@ get_header(); ?>
 							<div class="clearfix sub-header">
 		          <!-- <div class="dtl-custom-heading"> -->
 
-							<?php if ($segment3 == "a-donde-vamos") : ?>
+							<?php if ($segment2 == "a-donde-vamos") : ?>
 								<div class="col-lg-1 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs hidden-md-down">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png"></div>
 				        </div>
@@ -45,7 +45,7 @@ get_header(); ?>
 		          	<h3 class=" pt-14-100 light color-gray text-justify"><?php the_field('contenido-dtl-seccion'); ?></h3>
 		          </div>
 							<?php endif; ?>
-							<?php if ($segment3 == "agenda-de-genero") : ?>
+							<?php if ($segment2 == "agenda-de-genero") : ?>
 								<div class="col-lg-1 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs hidden-md-down">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-icon.png"></div>
 				        </div>
@@ -59,7 +59,7 @@ get_header(); ?>
 		          	<h3 class=" pt-14-100 light color-gray text-justify"><?php the_field('contenido-dtl-seccion'); ?></h3>
 		          </div>
 							<?php endif; ?>
-							<?php if ($segment3 == "carrera-de-vallas") : ?>
+							<?php if ($segment2 == "carrera-de-vallas") : ?>
 								<div class="col-lg-1 col-sm-12 text-center-sm pt-70-sm col-xs-3 hidden-md-down">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-carrera-vallas-icon.png"></div>
 				        </div>
@@ -72,7 +72,7 @@ get_header(); ?>
 		          	<h3 class=" pt-14-100 light color-gray text-justify"><?php the_field('contenido-dtl-seccion'); ?></h3>
 		          </div>
 							<?php endif; ?>
-							<?php if ($segment3 == "la-pinta-no-es-lo-de-menos") : ?>
+							<?php if ($segment2 == "la-pinta-no-es-lo-de-menos") : ?>
 								<div class="col-lg-1 col-sm-12 text-center-sm pt-70-sm col-xs-3 hidden-md-down">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-icon.png"></div>
 				        </div>
@@ -90,7 +90,7 @@ get_header(); ?>
 		          	<h3 class=" pt-14-100 light color-gray text-justify"><?php the_field('contenido-dtl-seccion'); ?></h3>
 		          </div>
 							<?php endif; ?>
-							<?php if ($segment3 == "listas-para-la-politica") : ?>
+							<?php if ($segment2 == "listas-para-la-politica") : ?>
 								<div class="col-lg-1 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs hidden-md-down">
 				          <div><img class="txt-mt-res-landscape" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-listas-politica-icon.png"></div>
 				        </div>
@@ -104,7 +104,7 @@ get_header(); ?>
 		          	<h3 class=" pt-14-100 light color-gray text-justify"><?php the_field('contenido-dtl-seccion'); ?></h3>
 		          </div>
 							<?php endif; ?>
-							<?php if ($segment3 == "nivelando-la-cancha") : ?>
+							<?php if ($segment2 == "nivelando-la-cancha") : ?>
 								<div class="col-lg-1 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs">
 				          <div><img class=" txt-mt-res-landscape" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-nivelando-cancha-icon.png"></div>
 				        </div>
@@ -118,7 +118,7 @@ get_header(); ?>
 		          	<h3 class=" pt-14-100 light color-gray text-justify"><?php the_field('contenido-dtl-seccion'); ?></h3>
 		          </div>
 							<?php endif; ?>
-							<?php if ($segment3 == "pistas-2") : ?>
+							<?php if ($segment2 == "pistas-2") : ?>
 								<div class="col-lg-1 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs hidden-md-down">
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-pistas-icon.png"></div>
 				        </div>
