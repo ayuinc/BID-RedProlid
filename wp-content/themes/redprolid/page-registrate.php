@@ -29,7 +29,7 @@ get_header(); ?>
 	    <div class="container">
 	      <?php the_breadcrumb(); ?> 
 	      <div class="clearfix sub-header">
-	        <div class="col-lg-1 col-xs-12 col-sm-12 text-center-sm pt-70-sm text-center-xs pt-35-xs">
+	        <div class="icon-bienvenido col-lg-1 col-xs-12 col-sm-12 text-center-sm text-center-xs pt-35-xs">
 	          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/registrate.png" alt="" width="100%"></div>
 	        </div>
 	        <div class="col-lg-11 col-xs-12 col-sm-12 text-center-sm text-center-xs">

@@ -199,7 +199,7 @@ get_header(); ?>
                 <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                      
                 <div class="panel-body pt-0 pb-0">               
-                  <div class="col-sm-5 punto-de-vista-img">
+                  <div class="col-sm-5text-center-sm punto-de-vista-img">
                     <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
                   </div>
                   <div class="col-sm-7">

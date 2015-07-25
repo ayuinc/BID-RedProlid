@@ -14,7 +14,7 @@ get_header(); ?>
   <div class="container">
     <?php the_breadcrumb(); ?> 
     <div class="clearfix sub-header">
-      <div class="col-lg-1 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs pt-35-xs">
+      <div class="icon-videos col-lg-1 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/video-icon-circle.png" alt="" width="100%"></div>
       </div>
       <div class="col-lg-4 col-sm-12 text-center-sm col-xs-12 text-center-xs ">

@@ -16,7 +16,7 @@ get_header(); ?>
         <div>
           <h1>Puntos de vista anteriores</h1>
           <nav class="mt-21">
-            <a href="<?php echo content_url('/'); ?>puntos-de-vista">Puntos de vista >></a>
+            <a  href="<?php echo content_url('/'); ?>puntos-de-vista">Puntos de vista >></a>
           </nav>
         </div>
       </div>

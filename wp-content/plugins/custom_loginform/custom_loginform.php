@@ -10,7 +10,7 @@ function dlf_form() {
 ?>
 
 <form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
-	<h4 class="medium mb-7 text-gray-darker">Ingresa a la red</h4>
+	<h4 class="medium fs-30 text-center-sm text-center-xs pb-14-xs pb-14-sm mb-7 text-gray-darker">Ingresa a la red</h4>
 	<div class="form-group">
 	  <!-- <input name="login_name" id="login-name" type="text" class="form-control login-field" placeholder="Usuario o correo electrónico"> -->
 	  <input name="login_name" type="text" class="form-control login-field mb--7" value="" placeholder="Correo electrónico" id="login-name" required="true" oninvalid="this.setCustomValidity('Ingrese su correo electrónico')"/>

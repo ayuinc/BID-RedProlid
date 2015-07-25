@@ -41,7 +41,7 @@
     <meta name="twitter:image" content="<?php //echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png">
  -->
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="<?php echo content_url('/'); ?>themes/redprolid/assets/img/favicon.png">
+    <link rel="shortcut icon" href="<?php echo content_url('/'); ?>themes/redprolid/assets/img/favicon.ico.png">
 
     <!-- WebFonts -->
     <script src="//use.typekit.net/nsv5vjx.js"></script>
@@ -83,8 +83,32 @@
               <a href="#mobile-nav-display-4">Entérate</a>
             </li>
             <li>
+              <a href="registrate#sign-in-form">Inicia Sesión</a></li>
+            <li>
               <a href="<?php echo home_url('/'); ?>registrate/">Regístrate en la Red</a>
             </li>
+            <li>
+              <div class="col-sm-12 text-center-sm user-sign-in-form">
+                <?php 
+                  if ( is_user_logged_in() ) {
+
+                    $current_user = wp_get_current_user();
+                    echo '<div class="text-right text-left-sm text-left-xs pt-35-xs pt-35-sm">';
+                    echo '<h4 class="light mb-0">Hola '.$current_user->user_firstname.' '.$current_user->user_lastname.'</h4>';
+                    echo '<a href="'.wp_logout_url().'" title="Logout" class="medium pv-14-xs pv-21-sm">Cierra tu sesión</a> | <a href="'.home_url("/").'tu-perfil" class="medium">Edita tu perfíl</a>';
+                    echo '</div>';
+                    
+                    if ( ($current_user instanceof WP_User) ) {
+                        //print_r($current_user);
+                        echo '<a href="'.home_url("/").'tu-perfil">'.get_avatar( $current_user->ID).'</a>';
+                    }              
+
+                  } else {
+                    echo do_shortcode('[dm_login_form]'); 
+                  }
+                ?>       
+              </div> 
+          </li>            
             <!--<li>
               <a href="#mobile-nav-display-5">Concursos</a>
             </li>

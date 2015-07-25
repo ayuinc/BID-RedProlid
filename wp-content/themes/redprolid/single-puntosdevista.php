@@ -2,8 +2,8 @@
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>
     <div class="clearfix sub-header">
-      <div class="col-lg-1 col-sm-12 pt-70-sm text-center-sm hidden-xs">
-        <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt="" width="100%"></div>
+      <div class="icon-punto-de-vista col-lg-1 col-sm-12 text-center-sm hidden-xs">
+        <div><img class="txt-mt-res-landscape" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" alt="" width="100%"></div>
       </div>
       <div class="col-lg-4 col-sm-12 text-center-sm  col-xs-12 text-center-xs pl-14">
         <h1 class="brand-titular">Puntos de vista</h1>
@@ -20,7 +20,7 @@
 	    </div>
     </div>
     <div class="row">
-      <div class="col-md-3 col-md-offset-1">
+      <div class="col-md-3 col-sm-12 text-center-sm col-md-offset-1">
         <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" class="img-responsive">
       </div>
       <div class="col-md-7">
