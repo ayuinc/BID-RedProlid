@@ -82,7 +82,8 @@
             <li>
               <a href="#mobile-nav-display-4">Entérate</a>
             </li>
-            <?php { if (!is_user_logged_in() ) { ?>
+            <?php { if (is_user_logged_in() ) { ?>
+            <?php } else { ?>
             <li>
               <a href="<?php echo home_url('/'); ?>registrate#sign-in-form">Inicia Sesión</a></li>
             <li>
