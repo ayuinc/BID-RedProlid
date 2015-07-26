@@ -20,19 +20,19 @@ function dlf_form() {
 	  <input  name="login_password" type="password" class="form-control login-field mb--7" value="" placeholder="Contraseña" id="login-pass" required="true" oninvalid="this.setCustomValidity('Ingrese su contraseña')"/>
 	</div>
 	<div class="form-group row">
-	  <div class="col-xs-9">
+	  <div class="col-xs-12">
 	    <div>
 	    	<?php do_action( 'wordpress_social_login' ); ?>
 	    </div>
 	  </div>
-	  <div class="col-lg-3 col-sm-12 text-left-sm col-xs-12 pv-14-xs pl-0-xs text-left-xs">
+	  <div class="col-lg-3 col-sm-12 text-left-sm col-xs-12 pl-14-xs pv-14-xs pl-0-xs text-left-xs">
 	    <input type="submit" name="dlf_submit" class="ml-14-lg ml-0-sm ml-0-xs btn btn-primary btn-sm" value="Ingresa" >
 	  </div>
 	  <div class="col-xs-12 ph-0-xs text-left-xs">
 		  <p class="mt-14">
 	    	<a href="<?php echo home_url('/'); ?>registrate/" class="hidden-xs hidden-sm medium">Regístrate</a> 
 	    	<span class="hidden-xs hidden-sm">|</span> 
-	    	<a href="<?php echo wp_lostpassword_url( '/recuperar-password' ); ?>" class="medium"  title="Olvidé mi contraseña">Olvidé mi contraseña</a>
+	    	<a class="pl-14-xs" href="<?php echo wp_lostpassword_url( '/recuperar-password' ); ?>" class="medium"  title="Olvidé mi contraseña">Olvidé mi contraseña</a>
 			</p>
 	  </div>
 	</div>

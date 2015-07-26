@@ -248,6 +248,9 @@ header {
 }
 
 @media (max-width: 768px){
+	.fs-18-md{
+		font-size: 18px !important;
+	}
 	.mobile-menu .mobile-nav-display-triggers > ul > li a {
 	  display: inline-block;
 	  text-transform: uppercase;
@@ -256,6 +259,9 @@ header {
 	}
 }
 @media (max-width: 386px){
+	.fs-12-sm{
+		font-size: 12px !important;
+	}
 	.mobile-menu .mobile-nav-display-triggers > ul > li a {
 	  display: inline-block;
 	  text-transform: uppercase;
@@ -264,6 +270,9 @@ header {
 	}
 }
 @media only screen  and (max-width: 320px) {
+	.fs-12-xs{
+		font-size: 12px !important;
+	}
 	.mobile-menu .mobile-nav-display-triggers > ul > li a {
 	  display: inline-block;
 	  text-transform: uppercase;
