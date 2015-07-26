@@ -30,7 +30,6 @@
     <meta property="og:site_name" content="Red PROLID">
     <meta property="og:description" content="La Red PROLID es una plataforma para conectar, promover intercambios y aprendizajes entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica">
     <meta property="og:image" content="<?php //echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png">
-
     Twitter Cards
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@redprolid">
@@ -82,39 +81,42 @@
             <li>
               <a href="#mobile-nav-display-4">Entérate</a>
             </li>
-            <li>
-              <a href="registrate#sign-in-form">Inicia Sesión</a></li>
-            <li>
-              <a href="<?php echo home_url('/'); ?>registrate/">Regístrate en la Red</a>
-            </li>
-            <li>
-              <div class="col-sm-12 text-center-sm user-sign-in-form">
-                <?php 
-                  if ( is_user_logged_in() ) {
-
-                    $current_user = wp_get_current_user();
-                    echo '<div class="text-right text-left-sm text-left-xs pt-35-xs pt-35-sm">';
-                    echo '<h4 class="light mb-0">Hola '.$current_user->user_firstname.' '.$current_user->user_lastname.'</h4>';
-                    echo '<a href="'.wp_logout_url().'" title="Logout" class="medium pv-14-xs pv-21-sm">Cierra tu sesión</a> | <a href="'.home_url("/").'tu-perfil" class="medium">Edita tu perfíl</a>';
-                    echo '</div>';
-                    
-                    if ( ($current_user instanceof WP_User) ) {
-                        //print_r($current_user);
-                        echo '<a href="'.home_url("/").'tu-perfil">'.get_avatar( $current_user->ID).'</a>';
-                    }              
-
-                  } else {
-                    echo do_shortcode('[dm_login_form]'); 
-                  }
-                ?>       
-              </div> 
-          </li>            
+            <?php if (!is_user_logged_in() ) { ?>            
             <!--<li>
               <a href="#mobile-nav-display-5">Concursos</a>
             </li>
             <li>
               <a href="#mobile-nav-display-6">Charlacafé</a>
             </li>-->
+          </ul>
+        </div>
+        <div class="lista-sesion mt-35">
+          <ul class="pl-0">
+            <li>
+              <a  class=" pv-7 pl-14 text-primary" href="<?php echo home_url('/'); ?>registrate#sign-in-form">Inicia Sesión</a></li>
+            <li>
+              <a  class=" pv-7 pl-14 text-primary" href="<?php echo home_url('/'); ?>registrate/">Regístrate en la Red</a>
+            </li>
+            <?php } ?>
+            <li style="background-color: transparent;">
+              <div class="col-sm-12 text-center-sm user-sign-in-form">
+                <?php 
+                  if ( is_user_logged_in() ) {
+                    $current_user = wp_get_current_user();
+                    echo '<div class="text-right text-left-sm text-left-xs pt-35-xs pt-35-sm" style="width:100%;>';
+                    echo '< class="pt-7-xs" a href="'.home_url("/").'tu-perfil" style="width:20%; display: block !important;">'.get_avatar( $current_user->ID).'</a>';
+                    echo '<h4 class="light mb-7 pl-14">Hola '.$current_user->user_firstname.' '.$current_user->user_lastname.'</h4>';
+                    echo '<a class="p-0 fs-18-md fs-12-sm fs-12-xs " href="'.wp_logout_url().'" title="Logout" class="light pv-14-xs pv-21-sm" style="text-transform: none; color:#ed7133;">Cierra tu sesión | </a>   <a class="p-0 fs-18-md fs-12-sm fs-12-xs" href="'.home_url("/").'tu-perfil" class="light" style="text-transform: none; color:#ed7133;">  Edita tu perfíl</a>';
+                    echo '</div>';
+                    
+                    if ( ($current_user instanceof WP_User) ) {
+                        //print_r($current_user);
+                        echo '<a style="display:none;" href="'.home_url("/").'tu-perfil">'.get_avatar( $current_user->ID).'</a>';
+                    }              
+                  }
+                ?>       
+              </div> 
+            </li>            
           </ul>
         </div>
         <div class="mobile-nav-display" id="mobile-nav-display-1">
@@ -256,4 +258,3 @@
           <div class="bottom"></div>
         </div>
       </div> <!-- END:Mobile menu -->
-    

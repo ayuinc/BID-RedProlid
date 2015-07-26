@@ -5494,18 +5494,27 @@ header {
   transform: translateX(0px); }
 
 @media (max-width: 768px) {
+  .fs-18-md {
+    font-size: 18px !important; }
+
   .mobile-menu .mobile-nav-display-triggers > ul > li a {
     display: inline-block;
     text-transform: uppercase;
     font-size: 21px;
     color: #565656; } }
 @media (max-width: 386px) {
+  .fs-12-sm {
+    font-size: 12px !important; }
+
   .mobile-menu .mobile-nav-display-triggers > ul > li a {
     display: inline-block;
     text-transform: uppercase;
     font-size: 21px;
     color: #565656; } }
 @media only screen and (max-width: 320px) {
+  .fs-12-xs {
+    font-size: 12px !important; }
+
   .mobile-menu .mobile-nav-display-triggers > ul > li a {
     display: inline-block;
     text-transform: uppercase;
@@ -6002,6 +6011,18 @@ form.search button {
 form.search button {
   width: 42px;
   background: #ed7133 url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px; }
+
+.lista-sesion ul > li {
+  list-style: none; }
+  .lista-sesion ul > li:hover {
+    background-color: #ed7133; }
+  .lista-sesion ul > li a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 21px; }
+    .lista-sesion ul > li a:hover {
+      text-decoration: none;
+      color: white !important; }
 
 .nav-video {
   margin: 0;
@@ -6792,6 +6813,7 @@ div[id^="yop-poll-results-3"] {
   .bg-transparent {
     background-image: none !important; }
 
+  .icon-bienvenido,
   .icon-responsive-mt,
   .icon-enterate,
   .icon-campeonas,

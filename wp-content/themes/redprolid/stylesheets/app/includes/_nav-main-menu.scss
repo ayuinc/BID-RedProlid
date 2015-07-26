@@ -163,7 +163,23 @@ form.search {
 		background: $brand-primary url(../assets/icons/sprites-nav-main-menu.png) no-repeat 0px -252px;
 	}
 }
-
+.lista-sesion{
+	ul > li {
+		list-style: none;
+		&:hover{
+		  background-color: $brand-primary;		
+		}
+		a{
+			display: inline-block;
+		  text-transform: uppercase;
+		  font-size: 21px;
+		  &:hover{
+		  	text-decoration: none;
+		  	color: white !important;		  	
+		  }			
+		}
+	}
+}
 .nav-video {
 	margin:0;
 	padding: 0;
