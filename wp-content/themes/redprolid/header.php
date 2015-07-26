@@ -82,11 +82,13 @@
             <li>
               <a href="#mobile-nav-display-4">Entérate</a>
             </li>
+            <?php { if (!is_user_logged_in() ) { ?>
             <li>
               <a href="<?php echo home_url('/'); ?>registrate#sign-in-form">Inicia Sesión</a></li>
             <li>
               <a href="<?php echo home_url('/'); ?>registrate/">Regístrate en la Red</a>
             </li>
+            <?php } ?>
             <li>
               <div class="col-sm-12 text-center-sm user-sign-in-form">
                 <?php 
