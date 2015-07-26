@@ -15,7 +15,7 @@ get_header(); ?>
 		  <div class="container relative mb-14">
 		     <?php the_breadcrumb(); ?>
         <div class="clearfix sub-header">
-          <div class="col-xs-12 text-center-xs col-sm-12 pt-70-sm text-center-sm pt-35-xs col-lg-1">
+          <div class="icon-enterate col-xs-12 text-center-xs col-sm-12 text-center-sm pt-35-xs col-lg-1">
             <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" alt="" ></div>
           </div>
           <div class="col-xs-12 text-center-xs col-sm-12 text-center-sm col-lg-4">
@@ -147,7 +147,7 @@ get_header(); ?>
                     <?php query_posts( array( 'category_name' => 'puntos-de-vista', 'posts_per_page' => 1 ) ); ?>
                       <?php while ( have_posts() ) : the_post(); ?>
                     <div class="bg-white clearfix">
-                      <div class="col-sm-5 pl-0 pr-0-xs">
+                      <div class="col-sm-5 pl-0-sm pl-0 pr-0-xs">
                         <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" class="img-responsive" style="width: 100%;">
                       </div>
                       <div class="col-sm-7 pl-7 pr-14 pt-14">

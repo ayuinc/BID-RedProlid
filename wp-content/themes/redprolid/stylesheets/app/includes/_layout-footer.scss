@@ -30,20 +30,26 @@ footer {
 	  width: 70%;
 	  height: auto;
 	}
-	.social-links {
-	  padding-left: 260px !important;
-	}  
-}	
-.social-links {
-	@media only screen and (max-width: 386px){
-	   padding-left: 80px;	
-	 }
+}
+.social-links-content{	
+	@media only screen and  (max-width: 667px){
+      padding-left: 90px;
+      margin-bottom:14px;
+	}
+    @media only screen and (max-width : 568px){	
+      padding-left: 62px;
+      margin-bottom:14px;
+    }
 	@media only screen  and (max-width: 320px) {
-	  padding-left:50px;
+	  padding-left:0;
+	  margin-bottom:14px;
   } 	
+}  
+.social-links {
 	@include list-unstyled;
-	li {
+	a {
 		float: left;
+		color: white;
 		// margin-right: 12px;
 		border-right: 2px solid black;
 		padding: 0 12px;

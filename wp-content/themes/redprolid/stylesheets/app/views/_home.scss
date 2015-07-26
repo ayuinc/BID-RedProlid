@@ -287,7 +287,7 @@ div[id^="yop-poll-results-3"] {
 .footer{
 	margin-top:28px;
 }
-@media (max-width: 768px){
+@media only screen and (min-width : 670px) and (max-width: 768px){
 	.btn-custom-registrate{
   	padding: 6px 22px !important;		
 	}
@@ -332,6 +332,144 @@ div[id^="yop-poll-results-3"] {
 	  text-align: center !important;		
 	  font-weight: 200 !important;		
 	}		
+}
+@media (max-width:667px){
+  .btn-custom-registrate{
+  	padding: 6px 22px !important;		
+	}
+	.btn-custom-iniciasesion {
+	  padding: 6px 46px !important;
+	}
+	.noticias-post{
+   font-size: 45px;		
+	}
+	.campeonas-panel-home {
+  	top: 35px;
+  }
+	.events-calendar-placeholder {
+	  width: 100%;
+	  height: 210px;
+	  background: url(../assets/img/home-events-calendar.png) no-repeat 228px center;
+	  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+	  font-weight: 500;
+	  font-style: normal;	
+		.day {
+		  position: absolute;
+		  top: 120px;
+		  left: 256px;
+		}	
+		.day-num {
+		  position: absolute;
+		  top: 120px;
+		  left: 307px;	
+		}
+		.month {
+		  position: absolute;
+		  top: 190px;
+		  left: 310px;
+		}
+	}	
+	.widgets .container .row .col-md-3 .panel-custom .panel-body .btn {
+	  position: absolute;
+	  bottom: 0px;
+	}	
+	.title-news{
+	  font-size: 20px !important;
+	  text-align: center !important;		
+	  font-weight: 200 !important;		
+	}	
+}
+@media only screen and (max-width : 620px){
+  .btn-custom-registrate{
+  	padding: 6px 22px !important;		
+	}
+	.btn-custom-iniciasesion {
+	  padding: 6px 46px !important;
+	}
+	.noticias-post{
+   font-size: 45px;		
+	}
+	.campeonas-panel-home {
+  	top: 35px;
+  }
+	.events-calendar-placeholder {
+	  width: 100%;
+	  height: 210px;
+	  background: url(../assets/img/home-events-calendar.png) no-repeat 175px center;
+	  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+	  font-weight: 500;
+	  font-style: normal;	
+		.day {
+		  position: absolute;
+		  top: 120px;
+		  left: 210px;
+		}	
+		.day-num {
+		  position: absolute;
+		  top: 120px;
+		  left: 252px;	
+		}
+		.month {
+		  position: absolute;
+		  top: 190px;
+		  left: 258px;
+		}
+	}	
+	.widgets .container .row .col-md-3 .panel-custom .panel-body .btn {
+	  position: absolute;
+	  bottom: 0px;
+	}	
+	.title-news{
+	  font-size: 20px !important;
+	  text-align: center !important;		
+	  font-weight: 200 !important;		
+	}	
+}
+@media only screen and (max-width : 568px){
+  .btn-custom-registrate{
+  	padding: 6px 22px !important;		
+	}
+	.btn-custom-iniciasesion {
+	  padding: 6px 46px !important;
+	}
+	.noticias-post{
+   font-size: 45px;		
+	}
+	.campeonas-panel-home {
+  	top: 35px;
+  }
+	.events-calendar-placeholder {
+	  width: 100%;
+	  height: 210px;
+	  background: url(../assets/img/home-events-calendar.png) no-repeat 175px center;
+	  font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+	  font-weight: 500;
+	  font-style: normal;	
+		.day {
+		  position: absolute;
+		  top: 120px;
+		  left: 210px;
+		}	
+		.day-num {
+		  position: absolute;
+		  top: 120px;
+		  left: 252px;	
+		}
+		.month {
+		  position: absolute;
+		  top: 190px;
+		  left: 258px;
+		}
+	}	
+	.widgets .container .row .col-md-3 .panel-custom .panel-body .btn {
+	  position: absolute;
+	  bottom: 0px;
+	}	
+	.title-news{
+	  font-size: 20px !important;
+	  text-align: center !important;		
+	  font-weight: 200 !important;		
+	}	
 }
 @media (max-width: 386px){
 		.btn-custom-registrate{

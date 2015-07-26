@@ -96,7 +96,23 @@
   background-color: #008000;
   padding:7px;
   color:#FFF !important;
+}	
+@media (max-width: 768px){
+	.fs-30{
+	font-size: 30px;
+	}
 }
+@media only screen  and (max-width: 320px){
+	.fs-30{
+	font-size: 30px;
+	}
+}
+@media only screen and (max-width: 386px){
+	.fs-30{
+	font-size: 30px;
+	}
+}
+
 @media only screen and (max-width: 480px){
 	.wppb-form-field input, 
 	.wppb-form-field input[type="text"], 

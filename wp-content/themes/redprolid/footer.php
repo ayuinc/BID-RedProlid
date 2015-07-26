@@ -32,18 +32,19 @@
           <div class="row">
             <div class="col-lg-3 col-sm-12 text-center-sm">
               <p class="text-muted">Síguenos en las redes:</p>
-			  <div class="col-sm-12 text-center-sm">
-	              <ul class="list-unstyled social-links">
-	                <li><a href="https://www.facebook.com/redprolid" target="_blank"><i class="flaticon-facebook6"></i></a></li>
-	                <li><a href="https://twitter.com/RedPROLID" target="_blank"><i class="flaticon-social19"></i></a></li>
-	                <li><a href="https://plus.google.com/u/0/110729207092973287817/about" target="_blank"><i class="flaticon-google16"></i></a></li>
-	                <li><a href="https://www.youtube.com/channel/UCpntjKraZb6A3qpClZTA5aQ" target="_blank"><i class="flaticon-logo4"></i></a></li>
-	              </ul>			  	
-			  </div>
+              <div class="col-xs-3 col-sm-4 mr-49-sm hidden-lg"></div>
+								<div class="mr-21-sm pl-0-sm social-links-content col-lg-8 col-xs-8 col-sm-3 text-center-sm">
+		              <nav class="text-center-sm text-center-xs social-links">
+		                <a class="text-center-xs text-center-sm" href="https://www.facebook.com/redprolid" target="_blank"><i class="flaticon-facebook6"></i></a>
+		                <a class="text-center-xs text-center-sm" href="https://twitter.com/RedPROLID" target="_blank"><i class="flaticon-social19"></i></a>
+		                <a class="text-center-xs text-center-sm" href="https://plus.google.com/u/0/110729207092973287817/about" target="_blank"><i class="flaticon-google16"></i></a>
+		                <a class="text-center-xs text-center-sm" href="https://www.youtube.com/channel/UCpntjKraZb6A3qpClZTA5aQ" target="_blank"><i class="flaticon-logo4"></i></a>
+		              </nav>			  	
+								</div>						  		  
             </div>
-            <div class="col-lg-6 col-sm-12 text-center-sm text-center-lg pt-42">
+            <div class="col-lg-12 col-sm-12 text-center-sm pt-7-lg">
               <nav class="text-muted terms">
-                <a href="<?php echo content_url('/'); ?>terminos-y-condiciones/" class="text-white pr-7">Términos y condiciones</a>
+                <a href="<?php echo content_url('/'); ?>terminos-y-condiciones/" class="text-white pr-7-lg">Términos y condiciones</a>
               </nav>
             </div>
             <div class="col-md-3"></div>

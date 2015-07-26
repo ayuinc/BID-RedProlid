@@ -19,7 +19,7 @@ get_header(); ?>
 		      <div class="clearfix sub-header">
 		        <div class="col-lg-2 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs ">
 		          <div>
-			          <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/a-tu-estilo.png" alt="" width="100%">
+			          <img class="txt-mt-res-landscape" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/a-tu-estilo.png" alt="" width="100%">
 		          </div>
 		        </div>
 		        <div class="col-lg-5 col-sm-12 text-center-sm col-xs-12 text-center-xs ">

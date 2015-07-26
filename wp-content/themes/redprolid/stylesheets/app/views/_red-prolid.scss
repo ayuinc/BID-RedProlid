@@ -32,7 +32,49 @@
  .bg-transparent{
   	background-image: none !important;
  }	
+    .icon-responsive-mt,
+	.icon-enterate,
+	.icon-campeonas,
+	.icon-punto-de-vista,
+	.icon-noticias,
+	.icon-videos,
+	.icon-eventos,
+	.icon-publicaciones,
+	.icon-nuestro-boletin,
+	.icon-contactanos{
+		padding-top:70px !important;
+	}	
 }
+@media (max-width:667px){
+	.title-listas-para-la-politica,
+	.txt-mt-res-landscape,
+  	.icon-enterate,
+	.icon-campeonas,
+	.icon-punto-de-vista,
+	.icon-noticias,
+	.icon-videos,
+	.icon-eventos,
+	.icon-publicaciones,
+	.icon-nuestro-boletin,
+	.icon-contactanos{
+		padding-top:70px !important;
+	}		
+}
+@media (max-width: 568px){
+	.title-listas-para-la-politica,
+	.txt-mt-res-landscape,
+  	.icon-enterate,
+	.icon-campeonas,
+	.icon-punto-de-vista,
+	.icon-noticias,
+	.icon-videos,
+	.icon-eventos,
+	.icon-publicaciones,
+	.icon-nuestro-boletin,
+	.icon-contactanos{
+		padding-top:70px !important;
+	}	
+}	
 @media only screen and (max-width: 480px){
 	.bg-transparent{
 		background-image: none !important;
@@ -40,9 +82,6 @@
 	.header-text-quees-red-prolid {
 	  color: #c3bf9b !important;
 	  position: relative;
-	  font-size: 30px;
-	  left: 30px;
-	  top: 8px;
 	}
 	.red-prolid-grid li {
 	  text-align: center !important;

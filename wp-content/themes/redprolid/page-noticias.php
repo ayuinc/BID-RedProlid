@@ -15,8 +15,8 @@ get_header(); ?>
     <div class="container">
       <?php the_breadcrumb(); ?> 
       <div class="clearfix sub-header">
-        <div class="col-lg-1 col-sm-12 text-center-sm pt-70-sm hidden-xs">
-          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-redondo.png" alt="" width="100%"></div>
+        <div class="col-lg-1 col-sm-12 text-center-sm hidden-xs">
+          <div><img class="icon-noticias" src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-redondo.png" alt="" width="100%"></div>
         </div>
         <div class="col-lg-5 col-sm-12 text-center-sm col-xs-12 text-center-xs ">
           <h1><?php the_title(); ?></h1>

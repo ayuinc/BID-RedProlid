@@ -36,7 +36,7 @@ get_header(); ?>
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png"></div>
 				        </div>
 				        <div class="col-lg-5 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs pl-21">
-				          <h1 class="title-a-donde-vamos"><?php the_title(); ?></h1>
+				          <h1 class="title-a-donde-vamos txt-mt-res-landscape"><?php the_title(); ?></h1>
 				          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
 				        </div>
 		          </div>
@@ -50,7 +50,7 @@ get_header(); ?>
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-icon.png"></div>
 				        </div>
 				        <div class="col-lg-5 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs pl-21">
-				          <h1 class="title-agenda-de-genero"><?php the_title(); ?></h1>
+				          <h1 class="title-agenda-de-genero txt-mt-res-landscape"><?php the_title(); ?></h1>
 				          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
 				        </div>
 				      </div>
@@ -64,7 +64,7 @@ get_header(); ?>
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-carrera-vallas-icon.png"></div>
 				        </div>
 				        <div class="col-lg-5 col-sm-12 text-center-sm col-xs-12 text-center-xs pl-21">
-				          <h1 class="title-carrera-de-vallas"><?php the_title(); ?></h1>
+				          <h1 class="title-carrera-de-vallas txt-mt-res-landscape"><?php the_title(); ?></h1>
 				        </div>
 				      </div>
 		          <div class="pb-21 clearfix">
@@ -77,7 +77,7 @@ get_header(); ?>
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-icon.png"></div>
 				        </div>
 				        <div class="col-lg-6 col-sm-12 text-center-sm col-xs-12 text-center-xs">
-				          <h1 class="title-la-pinta-no-es-lo-de-menos"><?php the_title(); ?></h1>
+				          <h1 class="title-la-pinta-no-es-lo-de-menos txt-mt-res-landscape"><?php the_title(); ?></h1>
 				        </div>
 								<div class="col-lg-5 col-sm-12 pt-70-sm text-center-sm col-xs-12">
 									<nav class="text-right">
@@ -92,7 +92,7 @@ get_header(); ?>
 							<?php endif; ?>
 							<?php if ($segment2 == "listas-para-la-politica") : ?>
 								<div class="col-lg-1 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs hidden-md-down">
-				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-listas-politica-icon.png"></div>
+				          <div><img class="txt-mt-res-landscape" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-listas-politica-icon.png"></div>
 				        </div>
 				        <div class="col-lg-5 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs pl-21">
 				          <h1 class="title-listas-para-la-politica"><?php the_title(); ?></h1>
@@ -106,7 +106,7 @@ get_header(); ?>
 							<?php endif; ?>
 							<?php if ($segment2 == "nivelando-la-cancha") : ?>
 								<div class="col-lg-1 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs">
-				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-nivelando-cancha-icon.png"></div>
+				          <div><img class=" txt-mt-res-landscape" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-nivelando-cancha-icon.png"></div>
 				        </div>
 				        <div class="col-lg-5 col-sm-12 text-center-sm pt-70-sm col-xs-12 pl-21">
 				          <h1 class="title-nivelando-la-cancha"><?php the_title(); ?></h1>
@@ -123,7 +123,7 @@ get_header(); ?>
 				          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-pistas-icon.png"></div>
 				        </div>
 				        <div class="col-lg-5 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs pl-21">
-				          <h1 class="title-pistas-2"><?php the_title(); ?></h1>
+				          <h1 class="title-pistas-2 txt-mt-res-landscape"><?php the_title(); ?></h1>
 				          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
 				        </div>
 				        <div class="col-lg-6 col-sm-12 text-center-sm pt-70-sm col-xs-12 text-center-xs">

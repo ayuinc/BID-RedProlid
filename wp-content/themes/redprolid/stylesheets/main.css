@@ -250,9 +250,8 @@ img {
   vertical-align: middle; }
 
 .img-responsive {
-  display: block;
   width: 100% \9;
-  width: 100%;
+  width: 70%;
   height: auto; }
 
 .img-rounded {
@@ -267,9 +266,8 @@ img {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  display: inline-block;
   width: 100% \9;
-  width: 100%;
+  width: 70%;
   height: auto; }
 
 .img-circle {
@@ -2911,9 +2909,8 @@ button.close {
     transition: 0.6s ease-in-out left; }
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
-      display: block;
       width: 100% \9;
-      width: 100%;
+      width: 70%;
       height: auto;
       line-height: 1; }
   .carousel-inner > .active,
@@ -3835,6 +3832,66 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 60px;
     top: 35px;
     left: 277px; }
+
+  .flickity-page-dots {
+    position: relative;
+    width: 100%;
+    bottom: 10px;
+    right: 6px; } }
+@media (max-width: 667px) {
+  .flickity-prev-next-button.previous {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;
+    left: 207px; }
+
+  .flickity-prev-next-button.next {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;
+    left: 288px; }
+
+  .flickity-page-dots {
+    position: relative;
+    width: 100%;
+    bottom: 10px;
+    right: 6px; } }
+@media (max-width: 620px) {
+  .flickity-prev-next-button.previous {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;
+    left: 170px; }
+
+  .flickity-prev-next-button.next {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;
+    left: 246px; }
+
+  .flickity-page-dots {
+    position: relative;
+    width: 100%;
+    bottom: 10px;
+    right: 6px; } }
+@media (max-width: 568px) {
+  .flickity-prev-next-button.previous {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;
+    left: 170px; }
+
+  .flickity-prev-next-button.next {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;
+    left: 246px; }
 
   .flickity-page-dots {
     position: relative;
@@ -5023,35 +5080,40 @@ footer {
     display: initial;
     width: 100% \9;
     width: 70%;
-    height: auto; }
+    height: auto; } }
+@media only screen and (max-width: 667px) {
+  .social-links-content {
+    padding-left: 90px;
+    margin-bottom: 14px; } }
+@media only screen and (max-width: 568px) {
+  .social-links-content {
+    padding-left: 62px;
+    margin-bottom: 14px; } }
+@media only screen and (max-width: 320px) {
+  .social-links-content {
+    padding-left: 0;
+    margin-bottom: 14px; } }
 
-  .social-links {
-    padding-left: 260px !important; } }
 .social-links {
   padding-left: 0;
   list-style: none;
   margin: 0; }
-  @media only screen and (max-width: 386px) {
-    .social-links {
-      padding-left: 80px; } }
-  @media only screen and (max-width: 320px) {
-    .social-links {
-      padding-left: 50px; } }
-  .social-links li {
+  .social-links a {
     float: left;
+    color: white;
     border-right: 2px solid black;
     padding: 0 12px; }
-    .social-links li:last-child {
+    .social-links a:last-child {
       border: none; }
-    .social-links li:first-child {
+    .social-links a:first-child {
       padding: 0 12px 0 0; }
-    .social-links li a {
+    .social-links a a {
       color: white; }
-      .social-links li a:hover {
+      .social-links a a:hover {
         color: white; }
-        .social-links li a:hover i {
+        .social-links a a:hover i {
           color: white; }
-      .social-links li a i {
+      .social-links a a i {
         font-size: 21px;
         color: white; }
 
@@ -5423,6 +5485,24 @@ header {
   -o-transform: translateX(0px);
   transform: translateX(0px); }
 
+@media (max-width: 768px) {
+  .mobile-menu .mobile-nav-display-triggers > ul > li a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 21px;
+    color: #565656; } }
+@media (max-width: 386px) {
+  .mobile-menu .mobile-nav-display-triggers > ul > li a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 21px;
+    color: #565656; } }
+@media only screen and (max-width: 320px) {
+  .mobile-menu .mobile-nav-display-triggers > ul > li a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 21px;
+    color: #565656; } }
 /*
 	IE Control
 */
@@ -6404,7 +6484,7 @@ div[id^="yop-poll-results-3"] {
 .footer {
   margin-top: 28px; }
 
-@media (max-width: 768px) {
+@media only screen and (min-width: 670px) and (max-width: 768px) {
   .btn-custom-registrate {
     padding: 6px 22px !important; }
 
@@ -6436,6 +6516,129 @@ div[id^="yop-poll-results-3"] {
       position: absolute;
       top: 190px;
       left: 371px; }
+
+  .widgets .container .row .col-md-3 .panel-custom .panel-body .btn {
+    position: absolute;
+    bottom: 0px; }
+
+  .title-news {
+    font-size: 20px !important;
+    text-align: center !important;
+    font-weight: 200 !important; } }
+@media (max-width: 667px) {
+  .btn-custom-registrate {
+    padding: 6px 22px !important; }
+
+  .btn-custom-iniciasesion {
+    padding: 6px 46px !important; }
+
+  .noticias-post {
+    font-size: 45px; }
+
+  .campeonas-panel-home {
+    top: 35px; }
+
+  .events-calendar-placeholder {
+    width: 100%;
+    height: 210px;
+    background: url(../assets/img/home-events-calendar.png) no-repeat 228px center;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+    font-weight: 500;
+    font-style: normal; }
+    .events-calendar-placeholder .day {
+      position: absolute;
+      top: 120px;
+      left: 256px; }
+    .events-calendar-placeholder .day-num {
+      position: absolute;
+      top: 120px;
+      left: 307px; }
+    .events-calendar-placeholder .month {
+      position: absolute;
+      top: 190px;
+      left: 310px; }
+
+  .widgets .container .row .col-md-3 .panel-custom .panel-body .btn {
+    position: absolute;
+    bottom: 0px; }
+
+  .title-news {
+    font-size: 20px !important;
+    text-align: center !important;
+    font-weight: 200 !important; } }
+@media only screen and (max-width: 620px) {
+  .btn-custom-registrate {
+    padding: 6px 22px !important; }
+
+  .btn-custom-iniciasesion {
+    padding: 6px 46px !important; }
+
+  .noticias-post {
+    font-size: 45px; }
+
+  .campeonas-panel-home {
+    top: 35px; }
+
+  .events-calendar-placeholder {
+    width: 100%;
+    height: 210px;
+    background: url(../assets/img/home-events-calendar.png) no-repeat 175px center;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+    font-weight: 500;
+    font-style: normal; }
+    .events-calendar-placeholder .day {
+      position: absolute;
+      top: 120px;
+      left: 210px; }
+    .events-calendar-placeholder .day-num {
+      position: absolute;
+      top: 120px;
+      left: 252px; }
+    .events-calendar-placeholder .month {
+      position: absolute;
+      top: 190px;
+      left: 258px; }
+
+  .widgets .container .row .col-md-3 .panel-custom .panel-body .btn {
+    position: absolute;
+    bottom: 0px; }
+
+  .title-news {
+    font-size: 20px !important;
+    text-align: center !important;
+    font-weight: 200 !important; } }
+@media only screen and (max-width: 568px) {
+  .btn-custom-registrate {
+    padding: 6px 22px !important; }
+
+  .btn-custom-iniciasesion {
+    padding: 6px 46px !important; }
+
+  .noticias-post {
+    font-size: 45px; }
+
+  .campeonas-panel-home {
+    top: 35px; }
+
+  .events-calendar-placeholder {
+    width: 100%;
+    height: 210px;
+    background: url(../assets/img/home-events-calendar.png) no-repeat 175px center;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+    font-weight: 500;
+    font-style: normal; }
+    .events-calendar-placeholder .day {
+      position: absolute;
+      top: 120px;
+      left: 210px; }
+    .events-calendar-placeholder .day-num {
+      position: absolute;
+      top: 120px;
+      left: 252px; }
+    .events-calendar-placeholder .month {
+      position: absolute;
+      top: 190px;
+      left: 258px; }
 
   .widgets .container .row .col-md-3 .panel-custom .panel-body .btn {
     position: absolute;
@@ -6579,17 +6782,52 @@ div[id^="yop-poll-results-3"] {
 
 @media (max-width: 768px) {
   .bg-transparent {
-    background-image: none !important; } }
+    background-image: none !important; }
+
+  .icon-responsive-mt,
+  .icon-enterate,
+  .icon-campeonas,
+  .icon-punto-de-vista,
+  .icon-noticias,
+  .icon-videos,
+  .icon-eventos,
+  .icon-publicaciones,
+  .icon-nuestro-boletin,
+  .icon-contactanos {
+    padding-top: 70px !important; } }
+@media (max-width: 667px) {
+  .title-listas-para-la-politica,
+  .txt-mt-res-landscape,
+  .icon-enterate,
+  .icon-campeonas,
+  .icon-punto-de-vista,
+  .icon-noticias,
+  .icon-videos,
+  .icon-eventos,
+  .icon-publicaciones,
+  .icon-nuestro-boletin,
+  .icon-contactanos {
+    padding-top: 70px !important; } }
+@media (max-width: 568px) {
+  .title-listas-para-la-politica,
+  .txt-mt-res-landscape,
+  .icon-enterate,
+  .icon-campeonas,
+  .icon-punto-de-vista,
+  .icon-noticias,
+  .icon-videos,
+  .icon-eventos,
+  .icon-publicaciones,
+  .icon-nuestro-boletin,
+  .icon-contactanos {
+    padding-top: 70px !important; } }
 @media only screen and (max-width: 480px) {
   .bg-transparent {
     background-image: none !important; }
 
   .header-text-quees-red-prolid {
     color: #c3bf9b !important;
-    position: relative;
-    font-size: 30px;
-    left: 30px;
-    top: 8px; }
+    position: relative; }
 
   .red-prolid-grid li {
     text-align: center !important;
@@ -6854,6 +7092,15 @@ div[id^="yop-poll-results-3"] {
   padding: 7px;
   color: #FFF !important; }
 
+@media (max-width: 768px) {
+  .fs-30 {
+    font-size: 30px; } }
+@media only screen and (max-width: 320px) {
+  .fs-30 {
+    font-size: 30px; } }
+@media only screen and (max-width: 386px) {
+  .fs-30 {
+    font-size: 30px; } }
 @media only screen and (max-width: 480px) {
   .wppb-form-field input,
   .wppb-form-field input[type="text"],
@@ -6910,24 +7157,7 @@ div[id^="yop-poll-results-3"] {
   font-weight: 500;
   font-style: normal; }
 
-@media only screen and (max-width: 340px) {
-  .flickity-prev-next-button {
-    position: absolute;
-    top: 50%;
-    width: 30px;
-    left: 260px;
-    height: 30px; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-  .flickity-prev-next-button.previous {
-    left: 14px; }
-
-  .flickity-prev-next-button {
-    position: absolute;
-    top: 50%;
-    width: 30px;
-    left: 300px;
-    height: 30px; }
-
   .banner .banner-content {
     min-height: 140px;
     min-height: 8.75rem;
