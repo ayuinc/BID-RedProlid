@@ -40,6 +40,14 @@ footer {
       padding-left: 62px;
       margin-bottom:14px;
     }
+	@media only screen and (max-width: 414px){
+		  padding-left: 18px;
+		  margin-bottom: 14px; 
+	}  
+	@media only screen and (max-width: 386px){
+		  padding-left: 8px;
+		  margin-bottom: 14px;
+	}   
 	@media only screen  and (max-width: 320px) {
 	  padding-left:0;
 	  margin-bottom:14px;
