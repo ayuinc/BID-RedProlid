@@ -32,11 +32,17 @@ footer {
 	}
 }
 .social-links-content{	
+	@media only screen and  (max-width: 667px){
+      padding-left: 90px;
+      margin-bottom:14px;
+	}
     @media only screen and (max-width : 568px){	
       padding-left: 62px;
+      margin-bottom:14px;
     }
 	@media only screen  and (max-width: 320px) {
 	  padding-left:0;
+	  margin-bottom:14px;
   } 	
 }  
 .social-links {

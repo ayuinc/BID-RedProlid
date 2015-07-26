@@ -45,7 +45,23 @@
 		padding-top:70px !important;
 	}	
 }
+@media (max-width:667px){
+	.title-listas-para-la-politica,
+	.txt-mt-res-landscape,
+  	.icon-enterate,
+	.icon-campeonas,
+	.icon-punto-de-vista,
+	.icon-noticias,
+	.icon-videos,
+	.icon-eventos,
+	.icon-publicaciones,
+	.icon-nuestro-boletin,
+	.icon-contactanos{
+		padding-top:70px !important;
+	}		
+}
 @media (max-width: 568px){
+	.title-listas-para-la-politica,
 	.txt-mt-res-landscape,
   	.icon-enterate,
 	.icon-campeonas,

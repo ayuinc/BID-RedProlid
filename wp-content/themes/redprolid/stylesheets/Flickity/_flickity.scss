@@ -158,6 +158,28 @@
     right: 6px;   
   }  
 }
+@media (max-width:667px){
+    .flickity-prev-next-button.previous {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;    
+    left: 207px;
+   }
+  .flickity-prev-next-button.next {
+    position:relative;
+    height: 60px;
+    width: 60px;
+    top: 35px;    
+    left: 288px;
+   }   
+  .flickity-page-dots {
+    position: relative;
+    width: 100%;
+    bottom: 10px;
+    right: 6px;   
+  } 
+}
 @media  (max-width : 620px){
   .flickity-prev-next-button.previous {
     position: relative;
