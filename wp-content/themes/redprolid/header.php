@@ -83,7 +83,7 @@
               <a href="#mobile-nav-display-4">Entérate</a>
             </li>
             <li>
-              <a href="registrate#sign-in-form">Inicia Sesión</a></li>
+              <a href="<?php echo home_url('/'); ?>registrate#sign-in-form">Inicia Sesión</a></li>
             <li>
               <a href="<?php echo home_url('/'); ?>registrate/">Regístrate en la Red</a>
             </li>
