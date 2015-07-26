@@ -91,7 +91,6 @@
               <div class="col-sm-12 text-center-sm user-sign-in-form">
                 <?php 
                   if ( is_user_logged_in() ) {
-
                     $current_user = wp_get_current_user();
                     echo '<div class="text-right text-left-sm text-left-xs pt-35-xs pt-35-sm">';
                     echo '<h4 class="light mb-0">Hola '.$current_user->user_firstname.' '.$current_user->user_lastname.'</h4>';
@@ -102,9 +101,6 @@
                         //print_r($current_user);
                         echo '<a href="'.home_url("/").'tu-perfil">'.get_avatar( $current_user->ID).'</a>';
                     }              
-
-                  } else {
-                    echo do_shortcode('[dm_login_form]'); 
                   }
                 ?>       
               </div> 
