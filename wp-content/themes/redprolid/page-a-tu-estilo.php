@@ -17,17 +17,17 @@ get_header(); ?>
       <div class="row">
       	<div class="pt-70-sm col-lg-8 col-sm-12 col-xs-12">
 		      <div class="clearfix sub-header">
-		        <div class="col-lg-2 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs ">
+		        <div class="col-lg-2 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs txt-center-landscape-ipad ">
 		          <div>
 			          <img class="txt-mt-res-landscape" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/a-tu-estilo.png" alt="" width="100%">
 		          </div>
-		        </div>
-		        <div class="col-lg-5 col-sm-12 text-center-sm col-xs-12 text-center-xs ">
+		        </div> 
+		        <div class="col-lg-5 col-sm-12 text-center-sm col-xs-12 text-center-xs txt-center-landscape-ipad ">
 		          <h1><?php the_title(); ?></h1>
-		          <h4 class="medium"><?php the_field('subtitulo'); ?></h4>
+		          <h4 class="medium txt-center-landscape-ipad"><?php the_field('subtitulo'); ?></h4>
 		        </div>
 		        <div class="col-lg-5 col-sm-12 col-xs-12">
-		          <nav class="text-right-lg text-center-sm text-center-xs">
+		          <nav class="text-right-lg text-center-sm text-center-xs txt-center-landscape-ipad">
 		          	<a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/">Pistas</a>
 		          </nav>          
 		        </div>

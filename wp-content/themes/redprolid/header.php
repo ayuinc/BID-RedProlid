@@ -55,7 +55,7 @@
   </head>
   <body>
     <div class="site-wrapper pt-63-xs">
-      <div class="mobile-navbar hidden-md hidden-lg"> <!-- MOBILE NAVBAR -->
+      <div class="mobile-navbar hidden-lg"> <!-- MOBILE NAVBAR -->
         <div class="left">
           <a href="<?php echo home_url(); ?>"><div class="logo" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-header.png)"></div></a>
         </div>
@@ -66,7 +66,7 @@
           </button>
         </div>
       </div> <!-- END:Mobile navbar -->
-      <div class="mobile-menu hidden-md hidden-lg"> <!-- MOBILE MENU -->
+      <div class="mobile-menu  hidden-lg"> <!-- MOBILE MENU -->
         <div class="mobile-nav-display-triggers">
           <ul>
             <li>

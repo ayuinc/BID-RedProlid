@@ -6,10 +6,10 @@
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" alt="" width="100%"></div>
       </div>
       <div class="col-lg-4 col-sm-12 text-center-sm col-xs-12 text-center-xs  pl-14">
-        <h1 class="brand-titular">Campeon@s</h1>
+        <h1 class="brand-titular txt-center-landscape-ipad">Campeon@s</h1>
       </div>
       <div class="col-lg-7 col-sm-12 col-xs-12 texto-anchor-nos-propones-un-tema">
-        <nav class="text-right-lg text-center-sm text-center-xs">
+        <nav class="text-right-lg text-center-sm text-center-xs txt-center-landscape-ipad">
           <a href="#" data-toggle="modal" data-target="#modalCampeonas">¿Nos propones un tema?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores">Entrevistas anteriores</a>
         </nav>
       </div>

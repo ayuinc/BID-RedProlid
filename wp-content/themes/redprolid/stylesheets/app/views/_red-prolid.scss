@@ -28,6 +28,27 @@
 .img-redprolidnace{
 	padding-right:14px;
 }
+@media (max-width:1024px){
+ .txt-center-landscape-ipad{
+ 	text-align: center !important;
+ }
+ .bg-transparent{
+  	background-image: none !important;
+ }	.icon-bienvenido,
+    .icon-responsive-mt,
+	.icon-enterate,
+	.icon-campeonas,
+	.icon-punto-de-vista,
+	.icon-noticias,
+	.icon-videos,
+	.icon-eventos,
+	.icon-publicaciones,
+	.icon-nuestro-boletin,
+	.icon-contactanos{
+		padding-top:70px !important;
+		text-align: center !important;
+	}		
+}
 @media (max-width:768px){
  .bg-transparent{
   	background-image: none !important;

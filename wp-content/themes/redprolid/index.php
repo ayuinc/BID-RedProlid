@@ -266,7 +266,7 @@ get_header(); ?>
       <section class="pv-14 hidden-md-down">
         <div class="container">
           <div class="row">
-            <div class="col-md-3 comentarios">
+            <div class="col-lg-3 col-md-12 comentarios">
               <div class="panel-heading">
                 <h3 class="title text-gray-darker pt-14">Comentarios recientes</h3>
               </div>
@@ -296,7 +296,7 @@ get_header(); ?>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-9 bg-panel ph-14">
+            <div class="col-md-9 hidden-md bg-panel ph-14">
               <div class="panel panel-custom hidden-sm-down">
                 <div class="panel-body tall pt-14">
                   <div class="panel-heading">
