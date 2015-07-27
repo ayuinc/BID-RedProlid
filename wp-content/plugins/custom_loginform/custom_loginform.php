@@ -20,7 +20,7 @@ function dlf_form() {
 	  <input  name="login_password" type="password" class="form-control login-field mb--7" value="" placeholder="Contraseña" id="login-pass" required="true" oninvalid="this.setCustomValidity('Ingrese su contraseña')"/>
 	</div>
 	<div class="form-group row">
-	  <div class="col-xs-12">
+	  <div class="col-lg-9">
 	    <div>
 	    	<?php do_action( 'wordpress_social_login' ); ?>
 	    </div>
