@@ -63,7 +63,7 @@ get_header(); ?>
             <?php endwhile; ?> 
           </div>
           <h2 class="header-text text-center pt-49"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
-          <div class="row hidden-md hidden-lg">
+          <div class="row hidden-lg">
             <div class="col-xs-2"></div>
             <div class="col-xs-8 text-center pt-14">
               <a href="registrate"><button class="btn-custom-registrate btn-md btn btn-primary">Regístrate en la Red</button></a> <a href="registrate#sign-in-form"><button class="btn-custom-iniciasesion bg-white border-top-primary border-right-primary  border-bottom-primary border-left-primary btn btn-white text-primary mt-14-xs">Inicia Sesión</button></a>
