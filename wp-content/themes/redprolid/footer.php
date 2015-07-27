@@ -16,23 +16,24 @@
             <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/nav-footer-to-top.png" alt=""></a>
           </div>
           <div class="row pt-21">
-            <div class="col-lg-3 col-sm-12 text-center-sm">
+            <div class="col-lg-3 col-md-12 text-center-md col-sm-12 text-center-sm">
               <ul class="list-unstyled text-white site-map">
                 <li class="mb-7 light"><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li>
                 <li class="mb-7 light"><a href="<?php echo home_url('/'); ?>sitemap/">Mapa de sitio</a></li>
               </ul>
             </div>
-            <div class="col-lg-6 col-sm-12 text-center-sm text-center">
+            <div class="col-md-3"></div>
+            <div class="col-lg-6 col-md-6 text-center-md col-sm-12 text-center-sm text-center">
               <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-footer.png" width="322px" height="auto" class="img-responsive"></a>
             </div>
-            <div class="col-lg-3 col-sm-12 text-center-sm text-right-lg">
+            <div class="col-lg-3 pr-70-md col-md-3 text-left-md col-sm-12 text-center-sm text-right-lg">
               <a href="http://www.iadb.org/" target="_blank"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/BID_logo_blanco.png" width="160px" height="auto"></a>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-3 col-sm-12 text-center-sm">
+            <div class="col-lg-3 col-md-12 text-center-md col-sm-12 text-center-sm">
               <p class="text-muted">Síguenos en las redes:</p>
-              <div class="col-xs-3 col-sm-4 mr-49-sm hidden-lg"></div>
+              <div class="col-xs-3 hidden-md col-sm-4 mr-49-sm hidden-lg"></div>
 								<div class="mr-21-sm pl-0-sm social-links-content col-lg-8 col-xs-8 col-sm-3 text-center-sm">
 		              <nav class="text-center-sm text-center-xs social-links">
 		                <a class="text-center-xs text-center-sm" href="https://www.facebook.com/redprolid" target="_blank"><i class="flaticon-facebook6"></i></a>
@@ -42,7 +43,7 @@
 		              </nav>			  	
 								</div>						  		  
             </div>
-            <div class="col-lg-12 col-sm-12 text-center-sm pt-7-lg">
+            <div class="col-lg-12 col-sm-12 pt-7-md text-center-sm pt-7-lg">
               <nav class="text-muted terms">
                 <a href="<?php echo content_url('/'); ?>terminos-y-condiciones/" class="text-white pr-7-lg">Términos y condiciones</a>
               </nav>

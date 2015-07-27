@@ -3,7 +3,7 @@
     <?php the_breadcrumb(); ?>
     <div class="clearfix sub-header">
       <div class="col-sm-12 col-xs-12 with-hr pv-0 mv-0">
-        <nav class="text-right text-center-xs">
+        <nav class="text-right text-center-xs txt-center-landscape-ipad">
           <a href="<?php echo home_url('/'); ?>a-tu-estilo">A tu estilo &gt;&gt;</a>
         </nav>          
       </div>

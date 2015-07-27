@@ -15,14 +15,14 @@ get_header(); ?>
     <div class="container">
       <?php the_breadcrumb(); ?> 
       <div class="clearfix sub-header">
-        <div class="col-lg-1 col-sm-12 text-center-sm hidden-xs">
+        <div class="col-lg-1 col-sm-12 text-center-sm hidden-xs txt-center-landscape-ipad">
           <div><img class="icon-noticias" src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-redondo.png" alt="" width="100%"></div>
         </div>
-        <div class="col-lg-5 col-sm-12 text-center-sm col-xs-12 text-center-xs ">
+        <div class="col-lg-5 col-sm-12 text-center-sm col-xs-12 text-center-xs  txt-center-landscape-ipad">
           <h1><?php the_title(); ?></h1>
         </div>
         <div class="col-lg-6 col-sm-12 col-xs-12">
-          <nav class="text-right-lg  text-center-sm text-center-xs">
+          <nav class="text-right-lg  text-center-sm text-center-xs txt-center-landscape-ipad">
             <a href="#" data-toggle="modal" data-target="#modalNoticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/">Noticias anteriores</a>
           </nav>	          
         </div>
