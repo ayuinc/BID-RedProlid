@@ -287,6 +287,11 @@ div[id^="yop-poll-results-3"] {
 .footer{
 	margin-top:28px;
 }
+@media (max-width: 1024px){
+	.btn-custom-iniciasesion {
+  	padding: 6px 46px !important;
+	}	
+}
 @media only screen and (min-width : 670px) and (max-width: 768px){
 	.btn-custom-registrate{
   	padding: 6px 22px !important;		

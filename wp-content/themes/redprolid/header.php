@@ -100,13 +100,13 @@
             <?php } ?>
             <li style="background-color: transparent;">
               <div class="col-sm-12 text-center-sm user-sign-in-form">
-                <?php 
+                <?php  
                   if ( is_user_logged_in() ) {
                     $current_user = wp_get_current_user();
                     echo '<div class="text-right text-left-sm text-left-xs pt-35-xs pt-35-sm" style="width:100%;>';
                     echo '< class="pt-7-xs" a href="'.home_url("/").'tu-perfil" style="width:20%; display: block !important;">'.get_avatar( $current_user->ID).'</a>';
-                    echo '<h4 class="light mb-7 pl-14">Hola '.$current_user->user_firstname.' '.$current_user->user_lastname.'</h4>';
-                    echo '<a class="p-0 fs-18-md fs-12-sm fs-12-xs " href="'.wp_logout_url().'" title="Logout" class="light pv-14-xs pv-21-sm" style="text-transform: none; color:#ed7133;">Cierra tu sesión | </a>   <a class="p-0 fs-18-md fs-12-sm fs-12-xs" href="'.home_url("/").'tu-perfil" class="light" style="text-transform: none; color:#ed7133;">  Edita tu perfíl</a>';
+                    echo '<h4 class="light mb-7 pl-14" style="text-align: left;">Hola '.$current_user->user_firstname.' '.$current_user->user_lastname.'</h4>';
+                    echo '<a class="p-0 fs-18-md fs-12-sm fs-12-xs text-left-land-ipad" href="'.wp_logout_url().'" title="Logout" class="light pv-14-xs pv-21-sm" style="text-transform: none; color:#ed7133;text-align: left;">Cierra tu sesión | </a>   <a class="text-left-land-ipad p-0 fs-18-md fs-12-sm fs-12-xs" href="'.home_url("/").'tu-perfil" class="light" style="text-transform: none; color:#ed7133;text-align: left;">  Edita tu perfíl</a>';
                     echo '</div>';
                     
                     if ( ($current_user instanceof WP_User) ) {
