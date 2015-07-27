@@ -5493,6 +5493,9 @@ header {
   -o-transform: translateX(0px);
   transform: translateX(0px); }
 
+@media screen only and (max-width: 1024px) {
+  .text-left-land-ipad {
+    text-align: left !important; } }
 @media (max-width: 768px) {
   .fs-18-md {
     font-size: 18px !important; }
@@ -6513,6 +6516,9 @@ div[id^="yop-poll-results-3"] {
 .footer {
   margin-top: 28px; }
 
+@media (max-width: 1024px) {
+  .btn-custom-iniciasesion {
+    padding: 6px 46px !important; } }
 @media only screen and (min-width: 670px) and (max-width: 768px) {
   .btn-custom-registrate {
     padding: 6px 22px !important; }

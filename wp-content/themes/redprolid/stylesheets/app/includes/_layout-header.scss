@@ -246,7 +246,11 @@ header {
 		}
 	}
 }
-
+@media screen only and (max-width:1024px){
+	.text-left-land-ipad{
+  		text-align: left !important;
+	}
+}
 @media (max-width: 768px){
 	.fs-18-md{
 		font-size: 18px !important;
