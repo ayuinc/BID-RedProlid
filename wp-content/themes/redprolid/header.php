@@ -93,7 +93,7 @@
         <div class="lista-sesion mt-35">
           <ul class="pl-0">
             <li>
-              <a  class=" pv-7 pl-14 text-primary" href="<?php echo home_url('/'); ?>registrate#sign-in-form">Inicia Sesión</a></li>
+              <a  class=" pv-7 pl-14 text-primary" href="<?php echo home_url('/'); ?>login-movil">Inicia Sesión</a></li>
             <li>
               <a  class=" pv-7 pl-14 text-primary" href="<?php echo home_url('/'); ?>registrate/">Regístrate en la Red</a>
             </li>
