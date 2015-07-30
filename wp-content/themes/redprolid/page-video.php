@@ -14,14 +14,14 @@ get_header(); ?>
   <div class="container">
     <?php the_breadcrumb(); ?> 
     <div class="clearfix sub-header">
-      <div class="col-sm-1 col-xs-3">
+      <div class="icon-videos col-lg-1 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/video-icon-circle.png" alt="" width="100%"></div>
       </div>
-      <div class="col-sm-4 col-xs-9">
+      <div class="col-lg-4 col-sm-12 text-center-sm col-xs-12 text-center-xs ">
         <h1>Video</h1>
       </div>
-      <div class="col-sm-7 col-xs-12">
-        <nav class="text-right text-center-xs">
+      <div class="col-lg-7 col-sm-12 col-xs-12">
+        <nav class="text-right-lg text-center-sm text-center-xs">
           <a href="#" data-toggle="modal" data-target="#modalVideos">¿Quieres compartir un video?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>video/videos-anteriores">Videos anteriores</a> 
         </nav>	          
       </div>
@@ -29,7 +29,7 @@ get_header(); ?>
     <?php query_posts( 'cat=258&posts_per_page=1&orderby=meta_value_num&meta_key=video_fecha_publicacion&paged=' . $paged ); ?>
 		<?php while ( have_posts() ) : the_post(); ?> 
     <div class="row">
-			<div class="col-sm-7 relative">
+			<div class="col-lg-7 col-sm-12 relative">
 		    <?php $youtube = get_field('video_youtube'); ?>
 	    	<?php if ($youtube!='') { ?>
 	    		<iframe width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
@@ -40,7 +40,7 @@ get_header(); ?>
 				<?php } ?>
 				<div class="new-ribbon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/new-ribbon.png)"></div>
 			</div>
-			<div class="col-sm-5">
+			<div class="col-lg-5 col-sm-12">
 				<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h2 class="medium mb-0"><?php the_title(); ?></h2></a>
 				<?php $video_autor = get_field('video_autor'); ?>
 				<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
@@ -61,7 +61,7 @@ get_header(); ?>
         	<?php query_posts( 'cat=258&posts_per_page=4&offset=1&orderby=meta_value_num&meta_key=video_fecha_publicacion'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>  
 					  
-					<div class="col-sm-3">
+					<div class="col-lg-3 col-sm-12">
 				    <?php $youtube = get_field('video_youtube'); ?>
 			    	<?php if ($youtube!='') { ?>
 			    		<iframe width="100%" height="220" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     

@@ -23,22 +23,7 @@
 		}
 	}	
 }
-
-@media only screen and (max-width: 480px){
-   .texto-anchor-quieres-compartir-tu-pub,			
-   .texto-anchor-quieres-compartir-un-evento{
-   	 font-size: 22px;
-   }   
-   .flickity-prev-next-button.previous {
-		  left: 0px;
-		}
-	 .flickity-prev-next-button {
-		  position: absolute;
-		  top: 50%;
-		  width: 30px;
-		  left: 236px;
-		  height: 30px;
-		}
+@media only screen and (min-width: 480px) and (max-width: 768px){   
 	 .banner .banner-content {
 	  min-height: 140px;
 	  min-height: 8.75rem;

@@ -15,14 +15,14 @@ get_header(); ?>
     <div class="container">
       <?php the_breadcrumb(); ?> 
       <div class="clearfix sub-header">
-        <div class="col-sm-1 col-xs-12 text-center-xs pt-35-xs">
+        <div class="icon-eventos col-lg-1 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs txt-center-landscape-ipad">
           <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/eventos-icon-circle.png" alt="" width="100%"></div>
         </div>
-        <div class="col-sm-5 col-xs-12 text-center-xs  pl-14">
+        <div class="col-lg-5 col-sm-12 text-center-sm col-xs-12 text-center-xs   txt-center-landscape-ipad pl-14">
           <h1><?php the_title(); ?></h1>
         </div>
-        <div class="col-sm-6 col-xs-12">
-          <nav class="text-right text-center-xs texto-anchor-quieres-compartir-un-evento">
+        <div class="col-lg-6 col-sm-12  col-xs-12">
+          <nav class="text-right-lg text-center-xs text-center-sm txt-center-landscape-ipad">
             <a href="#" data-toggle="modal" data-target="#modalEventos">¿Quieres compartir un evento?</a> <span class="brand-primary">|</span> <a href="<?php echo home_url('/'); ?>eventos-anteriores">Eventos anteriores</a>
           </nav>          
         </div>

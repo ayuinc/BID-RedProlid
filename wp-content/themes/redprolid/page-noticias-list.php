@@ -20,13 +20,13 @@ get_header(); ?>
           </nav>
         </div>
       </div>
-      <div class="sub-header-icon">
+      <div class="sub-header-icon hidden-xs">
         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-redondo.png" width="94px" height="auto" alt="">
       </div>
     </div>	      
-    <div class="ph-70">
+    <div class="ph-70-sm ph-14-xs">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-xs-12">
 	        <?php add_filter('post_limits', 'my_post_limit'); ?>
 	        <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 					<?php

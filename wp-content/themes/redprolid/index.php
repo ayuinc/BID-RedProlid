@@ -21,7 +21,7 @@ get_header(); ?>
     <div class="mh-700">
       <section id="hero-unit">
         <div class="container pv-21">
-          <div class="gallery js-flickity hidden-sm-down bg-panel border-radius p-21 bg-img-block bg-img-block-top bg-img-block-right" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png);" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 3000 }'>
+          <div class="gallery js-flickity hidden-xs hidden-sm hidden-md bg-panel border-radius p-21 bg-img-block bg-img-block-top bg-img-block-right" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png);" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 3000 }'>
             <?php query_posts( 'category_name=video-homepage&posts_per_page=5' ); ?>  
             <?php while ( have_posts() ) : the_post(); ?>
               <div class="grid-list-item gallery-cell clearfix minh-350" style="width: 100%;">
@@ -63,10 +63,10 @@ get_header(); ?>
             <?php endwhile; ?> 
           </div>
           <h2 class="header-text text-center pt-49"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
-          <div class="row hidden-md hidden-lg">
+          <div class="row hidden-lg">
             <div class="col-xs-2"></div>
             <div class="col-xs-8 text-center pt-14">
-              <a href="#"><button class="btn btn-primary">Regístrate en la Red</button></a>
+              <a href="<?php echo home_url('/'); ?>registrate"><button class="btn-custom-registrate btn-md btn btn-primary">Regístrate en la Red</button></a> <a href="<?php echo home_url('/'); ?>registrate#sign-in-form"><button class="btn-custom-iniciasesion bg-white border-top-primary border-right-primary  border-bottom-primary border-left-primary btn btn-white text-primary mt-14-xs">Inicia Sesión</button></a>
             </div>
             <div class="col-xs-2"></div>
           </div>
@@ -118,7 +118,7 @@ get_header(); ?>
                 </div>
                 <div class="panel-body">
 
-                    <ul class="list-unstyled list-group list-group-custom">
+                    <ul class="noticias-post list-unstyled list-group list-group-custom">
                     	<?php query_posts( 'category_name=noticias&posts_per_page=3' ); ?>	
 											<?php while ( have_posts() ) : the_post(); ?>                    
                       <li class="mb-14">
@@ -199,8 +199,8 @@ get_header(); ?>
                 <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                      
                 <div class="panel-body pt-0 pb-0">               
-                  <div class="col-sm-5 punto-de-vista-img">
-                    <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
+                  <div class="col-sm-5 text-center-sm punto-de-vista-img">
+                    <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" style="width:100%;">
                   </div>
                   <div class="col-sm-7">
                     <h3 class="pt-0 medium mb-0"><?php the_title(); ?></h3>
@@ -212,7 +212,7 @@ get_header(); ?>
                 <?php endwhile; ?>
               </div>
             </div>
-            <div class="col-md-6 bg-panel-custom bg-panel">
+            <div class="col-md-6 campeonas-panel-home bg-panel-custom bg-panel mb-14-xs">
               <div class="panel panel-custom">
 	              <div class="panel-heading">
                     <ul class="list-unstyled m-0">
@@ -254,7 +254,7 @@ get_header(); ?>
                     <p>
 							        <strong><?php the_field('descripcion_home_campeonas'); ?></strong>
 				            </p>
-                    <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Entrevista completa</a>
+                    <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary mb-21-xs">Entrevista completa</a>
                   </div> 
                   </div>
                 <?php endwhile; ?>
@@ -266,7 +266,7 @@ get_header(); ?>
       <section class="pv-14 hidden-md-down">
         <div class="container">
           <div class="row">
-            <div class="col-md-3 comentarios">
+            <div class="col-lg-3 col-md-12 comentarios">
               <div class="panel-heading">
                 <h3 class="title text-gray-darker pt-14">Comentarios recientes</h3>
               </div>
@@ -296,7 +296,7 @@ get_header(); ?>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-9 bg-panel ph-14">
+            <div class="col-md-9 hidden-md bg-panel ph-14">
               <div class="panel panel-custom hidden-sm-down">
                 <div class="panel-body tall pt-14">
                   <div class="panel-heading">

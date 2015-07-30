@@ -9,7 +9,7 @@
         </nav>          
       </div>
     </div>
-    <div class="ph-70">
+    <div class="ph-70-sm ph-14-xs">
 			<h2 class="medium mb-14"><?php the_title(); ?></h2>
 			<div class="pv-21 half-height">
       		<?php $imagen_evento = get_field('imagen_evento'); ?>

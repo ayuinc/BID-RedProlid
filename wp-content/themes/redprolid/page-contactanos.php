@@ -17,10 +17,10 @@ get_header(); ?>
     <section id="contacto">
       <div class="container">
       	<div class="clearfix sub-header mb-0-xs">
-	        <div class="col-sm-1 col-xs-12 text-center-xs pt-35-xs">
+	        <div class="icon-contactanos col-lg-1 col-md-12 pl-70-md  col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs">
 	          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon.png" alt="" width="100%"></div>
 	        </div>
-	        <div class="col-sm-5 col-xs-12 text-center-xs pb-0-xs">
+	        <div class="col-lg-5  col-md-12 pl-70-md col-sm-12 text-center-sm col-xs-12 text-center-xs pb-0-xs">
 	          <h1>Contáctanos</h1>
 	        </div>
 	      </div>

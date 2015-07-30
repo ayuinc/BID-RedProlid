@@ -12,10 +12,10 @@ get_header(); ?>
   <div class="container">
     <?php the_breadcrumb(); ?>
     <div class="clearfix sub-header">
-      <div class="col-sm-1 col-xs-3">
+      <div class="col-sm-1 col-xs-12 text-center-xs pt-35-xs">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/concursos-icon-circle.png" alt="" width="100%"></div>
       </div>
-      <div class="col-sm-6 col-xs-9">
+      <div class="col-sm-6 col-xs-12 text-center-xs ">
         <h1>Concursos anteriores</h1>
       </div>
       <div class="col-sm-4 col-xs-12">

@@ -37,7 +37,7 @@
 .bg-img-block-no-cover {
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 112px;
+  background-size: 98px;
   background-position: center center; }
 
 .bg-img-block-center {
@@ -14054,7 +14054,7 @@ hr.hr-custom-white:before {
   background-color: #DC4335 !important; }
 
 .bg-google-plus-shade {
-  background-color: #8d2218 !important; }
+  background-color: #8d2219 !important; }
 
 .bg-youtube {
   background-color: #F23030 !important; }
@@ -14304,10 +14304,10 @@ a.text-pinterest:hover {
   .text-google-plus a {
     color: #DC4335 !important; }
     .text-google-plus a:hover {
-      color: #8d2218 !important; }
+      color: #8d2219 !important; }
 
 a.text-google-plus:hover {
-  color: #8d2218 !important; }
+  color: #8d2219 !important; }
 
 .text-youtube {
   color: #F23030 !important; }
@@ -15128,6 +15128,9 @@ a.bg-hover-linkedin:hover,
 
 .relative {
   position: relative; }
+
+.fixed {
+  position: fixed; }
 
 .flex-middle {
   display: -webkit-box;

@@ -1,7 +1,7 @@
 	<section class="mt-7 mb-21"> 
 	  <div class="container relative mb-14">
       <?php the_breadcrumb(); ?>
-      <div class="ph-70">
+      <div class="ph-70-sm ph-14-xs">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 mostrar-anteriores">
 						<div class="row">
@@ -195,7 +195,7 @@
 						<?php	if ( is_user_logged_in() ) { ?>
 							<?php comments_template();?>
 						<?php } else { ?>
-							<p>Para poder comentar es necesario <a href="/registrate/">iniciar tu sesión o registrarse</a> a Red PROLD.</p>
+				<p>Para poder comentar es necesario que <a href="/registrate/">inicies tu sesión o te registres</a> en Red PROLID.</p>
 						<?php }	?>
 		      </div>
 		    </div>
