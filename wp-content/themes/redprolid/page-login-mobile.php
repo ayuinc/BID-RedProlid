@@ -28,16 +28,7 @@ get_header(); ?>
 					<div class="col-md-10 col-md-offset-1">  	  
 			      <div class="row">
 				      <div class="col-md-6 formulario-perfil">
-					      <h3 class="medium text-left mt-35 mb-21">Crea tu perfil incluyendo los siguientes datos</h3>
-					      <small>campo requerido*</small>
 				      	<?php the_content(); ?>
-				      </div>
-				      <div class="col-md-1 col-xs-12 text-center-xs pv-21-xs">
-				      	<img src="http://redprolid.org/wp-content/themes/redprolid/assets/icons/division-02.png" alt="">
-				      </div>
-				      <div class="col-md-5 col-xs-12 text-center-xs">
-					      <h3 class="medium text-left text-center-xs mt-35 mb-21">Ingresa utilizando las redes sociales</h3>
-					      <p><?php do_action( 'wordpress_social_login' ); ?></p>
 				      </div>			      
 				    </div>
 					</div>
