@@ -10,7 +10,7 @@ get_header(); ?>
   <section id="toc-main">
     <div class="container">
       <?php the_breadcrumb(); ?>
-      <div class="clearfix sub-header">
+      <div class="row clearfix sub-header">
         <div class="col-sm-1 text-center col-xs-12">
           <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon.png" alt="" width="100%" class="pt-35-xs"></div>
         </div>
