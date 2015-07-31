@@ -5216,7 +5216,7 @@ header {
         content: " ";
         position: absolute;
         display: block;
-        width: 217%;
+        width: 270%;
         border-bottom: 1px dotted #ebeade; }
       .sub-header:not(.bg-panel) > div:nth-child(2).col-sm-4:after {
         width: 270%; }

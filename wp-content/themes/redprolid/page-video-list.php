@@ -11,7 +11,7 @@ get_header(); ?>
 <section id="puntos-de-vista-anteriores">
   <div class="container pb-42">
     <?php the_breadcrumb(); ?>
-    <div class="clearfix bg-panel sub-header">
+    <div class="row clearfix bg-panel sub-header">
       <div class="col-sm-7 col-xs-12 text-center-xs">
         <div>
           <h1>Videos anteriores</h1>

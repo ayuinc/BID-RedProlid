@@ -13,7 +13,7 @@ get_header(); ?>
 <section> 
   <div class="container">
     <?php the_breadcrumb(); ?>
-    <div class="clearfix sub-header">
+    <div class="row clearfix sub-header">
       <!-- IF POSTS in FOROS -->
       <div class="col-lg-1 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs">
 	      <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="100%"></div>

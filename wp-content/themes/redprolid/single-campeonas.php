@@ -1,14 +1,14 @@
 <section class="mt-7 "> 
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>    
-    <div class="clearfix sub-header">
+    <div class="row clearfix sub-header">
       <div class="icon-campeonas col-lg-1 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" alt="" width="100%"></div>
       </div>
       <div class="col-lg-4 col-sm-12 text-center-sm col-xs-12 text-center-xs pl-14">
         <h1 class="brand-titular txt-center-landscape-ipad">Campeon@s</h1>
       </div>
-      <div class="col-lg-6 pr-0-lg col-sm-12 col-xs-12 texto-anchor-nos-propones-un-tema">
+      <div class="col-lg-7 pr-0-lg col-sm-12 col-xs-12 texto-anchor-nos-propones-un-tema">
         <nav class="text-right text-center-sm text-center-xs txt-center-landscape-ipad">
           <a href="#" data-toggle="modal" data-target="#modalCampeonas">¿Nos propones un tema?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores">Entrevistas anteriores</a>
         </nav>
