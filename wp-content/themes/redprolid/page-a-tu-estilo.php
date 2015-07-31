@@ -27,7 +27,7 @@ get_header(); ?>
 		          <h4 class="medium txt-center-landscape-ipad"><?php the_field('subtitulo'); ?></h4>
 		        </div>
 		        <div class="col-lg-5 col-sm-12 col-xs-12">
-		          <nav class="text-right-lg text-center-sm text-center-xs txt-center-landscape-ipad">
+		          <nav class="text-right text-center-sm text-center-xs txt-center-landscape-ipad">
 		          	<a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/">Pistas</a>
 		          </nav>          
 		        </div>
@@ -39,7 +39,7 @@ get_header(); ?>
 		      </div>
       	</div>
       	<div class="col-sm-4 hidden-xs hidden-sm">
-					<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/AtuEstilo.jpg" alt="" style="width:100%;">
+					<img class="pt-70-lg mt-35-lg" src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/AtuEstilo.jpg" alt="" style="width:70%;">
       	</div>
       </div>
     </div>
