@@ -27,7 +27,7 @@ get_header(); ?>
           <h1 class="brand-titular">Foro virtual</h1>
         </div>
         <div class="col-sm-6 col-xs-12">
-          <nav class="text-right text-center-xs">
+          <nav class="text-right text-center-sm text-center-xs txt-center-landscape-ipad">
             <a href="<?php echo home_url('/'); ?>charlacafe">¿Quieres proponer un tema para los foros?</a> <span class="text-primary">|</span> <a href="#">Foros anteriores</a> <span class="text-primary">|</span> <a href="#">Charlacafé</a>
           </nav>
         </div>

@@ -22,8 +22,8 @@ get_header(); ?>
         <div class="col-sm-5 col-xs-9">
           <h1 class="brand-titular">Concursos</h1>
         </div>
-        <div class="col-sm-6 col-xs-12">
-          <nav class="text-right text-center-xs">
+        <div class="col-lg-6 pr-0-lg col-xs-12">
+          <nav class="text-right text-center-sm text-center-xs txt-center-landscape-ipad">
             <a href="#" data-toggle="modal" data-target="#modalConcurso">¿Quieres proponer un concurso?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>/concursos/concursos-anteriores">Concursos anteriores</a>
           </nav>
         </div>
