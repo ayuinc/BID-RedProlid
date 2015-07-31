@@ -7,7 +7,7 @@
         <?php $imagen = get_field('imagen_noticias'); ?>
         <?php if ($imagen!='') { ?>
         <div class="col-sm-12 text-center-sm col-lg-4"> 
-          <img src="<?php the_field('imagen_noticias'); ?>" alt="<?php the_field('fuente_imagen_noticias'); ?>" class="img-responsive">
+          <img src="<?php the_field('imagen_noticias'); ?>" alt="<?php the_field('fuente_imagen_noticias'); ?>" style="width:100%;">
           <small><?php the_field('fuente_imagen_noticias'); ?></small>
         </div>   
         <div class="col-sm-12 text-center-sm col-lg-8">         

@@ -8,8 +8,8 @@
       <div class="col-lg-4 col-sm-12 text-center-sm  col-xs-12 text-center-xs pl-14">
         <h1 class="brand-titular txt-center-landscape-ipad">Puntos de vista</h1>
       </div>
-      <div class="col-lg-7 col-sm-12 col-xs-12">
-        <nav class="text-right-lg text-center-sm text-center-xs txt-center-landscape-ipad">
+      <div class="col-lg-6 pr-0-lg col-sm-12 col-xs-12">
+        <nav class="text-right text-center-sm text-center-xs txt-center-landscape-ipad">
            <a href="#" data-toggle="modal" data-target="#modalPuntosdevista">¿Nos propones un tema?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>puntos-de-vista-anteriores">Puntos de vista anteriores</a>
         </nav>
       </div>
@@ -21,7 +21,7 @@
     </div>
     <div class="row">
       <div class="col-md-3 col-sm-12 text-center-sm col-md-offset-1">
-        <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" class="img-responsive">
+        <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="" style="width:100%;">
       </div>
       <div class="col-md-7">
         <h2 class="mt--5 pt-14-sm mb-0 medium"><?php the_title(); ?></h2>

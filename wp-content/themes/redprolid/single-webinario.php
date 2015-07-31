@@ -6,11 +6,11 @@
 	      <div class="col-sm-1 col-xs-12 text-center-xs ">
 	        <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" alt="" width="100%"></div>
 	      </div>
-	      <div class="col-sm-4 col-xs-12 text-center-xs ">
+	      <div class="col-lg-4 col-xs-12 text-center-xs ">
 	        <h1 class="brand-titular">Webinarios</h1>
 	      </div>
-	      <div class="col-sm-7 col-xs-12 text-center-xs ">
-	        <nav class="text-right text-center-xs">
+	      <div class="col-lg-6 pr-0-lg col-xs-12 text-center-xs ">
+	        <nav class="text-right text-center-sm text-center-xs txt-center-landscape-ipad">
 	          <a href="#" data-toggle="modal" data-target="#modalWebinarios">¿Quieres proponernos un tema?</a> <span class="brand-primary">|</span> <a href="<?php echo home_url('/'); ?>webinarios-anteriores">Webinarios anteriores</a>
 	        </nav>
 	      </div>

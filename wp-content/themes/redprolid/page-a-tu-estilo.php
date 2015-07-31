@@ -15,7 +15,7 @@ get_header(); ?>
     <div class="container">
       <?php the_breadcrumb(); ?>
       <div class="row">
-      	<div class="pt-70-sm col-lg-8 col-sm-12 col-xs-12">
+      	<div class="icon-tuestilo col-lg-8 col-sm-12 col-xs-12">
 		      <div class="clearfix sub-header">
 		        <div class="col-lg-2 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs txt-center-landscape-ipad ">
 		          <div>
@@ -33,13 +33,13 @@ get_header(); ?>
 		        </div>
 		      </div>
 		      <div class="row">
-			      <div class="col-lg-offset-2 col-sm-12 text-center-sm">
-							<p class="light text-justify">No todo es trabajo en esta vida, ni actividad política. Te gusta (¡nos gusta!) aprovechar el tiempo libre:  salir a comer con tu gente, ir de tiendas o tomarte un café en esos lugares especiales. En esta sección vas a encontrar las pistas para sacar partido a tu ocio más allá de las guías de viajes.</p>
+			      <div class=" col-sm-12 text-center-sm">
+					<p class="light text-justify">No todo es trabajo en esta vida, ni actividad política. Te gusta (¡nos gusta!) aprovechar el tiempo libre:  salir a comer con tu gente, ir de tiendas o tomarte un café en esos lugares especiales. En esta sección vas a encontrar las pistas para sacar partido a tu ocio más allá de las guías de viajes.</p>
 			      </div>		      	
 		      </div>
       	</div>
       	<div class="col-sm-4 hidden-xs hidden-sm">
-					<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/AtuEstilo.jpg" alt="" class="img-responsive">
+					<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/AtuEstilo.jpg" alt="" style="width:100%;">
       	</div>
       </div>
     </div>
