@@ -94,7 +94,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title highlight-white">Concursos</li>
                     <li class="rule"></li>
-                    <li class="icon" data-href="/concursos-proximamente/" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -42px;"></li>
+                    <a href="/concursos-proximamente/"><li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -42px;"></li></a>
                   </ul>
                 </div>
                 <div class="panel-body highlight">
@@ -114,7 +114,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title highlight-white">Noticias</li>
                     <li class="rule"></li>
-                    <li class="icon" data-href="/noticias" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-sml.png); background-repeat: no-repeat;"></li>
+                    <a href="/noticias"> <li class="icon"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-sml.png); background-repeat: no-repeat;"></li></a>
                   </ul>
                 </div>
                 <div class="panel-body">
@@ -142,7 +142,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title highlight-white">Eventos</li>
                     <li class="rule"></li>
-                    <li class="icon" data-href="/eventos" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -126px;"></li>
+                    <a href="/eventos"><li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -126px;"></li></a>
                   </ul>
                 </div>
                 <div class="panel-body pt-0">
