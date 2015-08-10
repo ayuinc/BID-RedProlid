@@ -39,7 +39,7 @@ get_header(); ?>
 				$wp_query->query('cat=2&offset='.$myOffset.'&showposts=10&paged='.$paged);
 				?>	 					       
         <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>        
-	      <div class="col-md-2">
+	      <div class="col-md-3">
           <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
           <?php if ($imagen_campeona!='') { ?>
           	<a href="<?php echo get_permalink( get_the_ID() ); ?>"><img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive"></a>
@@ -49,7 +49,7 @@ get_header(); ?>
           	<a href="<?php echo get_permalink( get_the_ID() ); ?>"><img class="img-responsive"  alt="<?php the_title(); ?>" src="http://img.youtube.com/vi/<?php the_field('video_campeonas'); ?>/0.jpg" width="100%"></a>
           <?php } ?>
 	      </div>
-        <div class="col-md-10">
+        <div class="col-md-9">
           <div class="title">
             <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 		        <?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
