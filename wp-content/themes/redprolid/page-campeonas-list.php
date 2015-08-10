@@ -46,7 +46,7 @@ get_header(); ?>
           <?php } ?>
           <?php $video = get_field('video_campeonas'); ?>
           <?php if ($video!='') { ?>
-          	<img class="img-responsive"  alt="<?php the_title(); ?>" src="http://img.youtube.com/vi/<?php the_field('video_campeonas'); ?>/0.jpg" width="100%">
+          	<a href="<?php echo get_permalink( get_the_ID() ); ?>"><img class="img-responsive"  alt="<?php the_title(); ?>" src="http://img.youtube.com/vi/<?php the_field('video_campeonas'); ?>/0.jpg" width="100%"></a>
           <?php } ?>
 	      </div>
         <div class="col-md-10">
