@@ -22,7 +22,7 @@
                 <li class="mb-7 light"><a href="<?php echo home_url('/'); ?>sitemap/">Mapa de sitio</a></li>
               </ul>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-3 hidden-lg"></div>
             <div class="col-lg-6 col-md-6 text-center-md col-sm-12 text-center-sm text-center">
               <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-footer.png" width="322px" height="auto" class="img-responsive"></a>
             </div>

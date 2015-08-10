@@ -5216,7 +5216,7 @@ header {
         content: " ";
         position: absolute;
         display: block;
-        width: 217%;
+        width: 270%;
         border-bottom: 1px dotted #ebeade; }
       .sub-header:not(.bg-panel) > div:nth-child(2).col-sm-4:after {
         width: 270%; }
@@ -6824,6 +6824,7 @@ div[id^="yop-poll-results-3"] {
 
   .icon-bienvenido,
   .icon-responsive-mt,
+  .icon-tuestilo,
   .icon-enterate,
   .icon-campeonas,
   .icon-punto-de-vista,
@@ -6841,6 +6842,7 @@ div[id^="yop-poll-results-3"] {
 
   .icon-bienvenido,
   .icon-responsive-mt,
+  .icon-tuestilo,
   .icon-enterate,
   .icon-campeonas,
   .icon-punto-de-vista,
@@ -6854,6 +6856,7 @@ div[id^="yop-poll-results-3"] {
 @media (max-width: 667px) {
   .title-listas-para-la-politica,
   .txt-mt-res-landscape,
+  .icon-tuestilo,
   .icon-enterate,
   .icon-campeonas,
   .icon-punto-de-vista,
@@ -6867,6 +6870,7 @@ div[id^="yop-poll-results-3"] {
 @media (max-width: 568px) {
   .title-listas-para-la-politica,
   .txt-mt-res-landscape,
+  .icon-tuestilo,
   .icon-enterate,
   .icon-campeonas,
   .icon-punto-de-vista,
@@ -7059,6 +7063,12 @@ div[id^="yop-poll-results-3"] {
 @media only screen and (max-width: 480px) {
   .responsive-grid-item {
     width: auto !important; } }
+@media (max-width: 386px) {
+  .ml-35-iph6 {
+    margin-left: 35px; } }
+@media only screen and (max-width: 320px) {
+  .ml-35-iph6 {
+    margin-left: 0px !important; } }
 #breadcrumbs {
   list-style: none;
   margin: 0.7rem 0;

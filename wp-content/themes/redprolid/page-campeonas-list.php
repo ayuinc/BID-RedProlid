@@ -42,7 +42,7 @@ get_header(); ?>
 	      <div class="col-md-2">
           <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
           <?php if ($imagen_campeona!='') { ?>
-          	<a href="<?php echo get_permalink( get_the_ID() ); ?>"><img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive"></a>
+          	<a href="<?php echo get_permalink( get_the_ID() ); ?>"><img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive"></ai
           <?php } ?>
           <?php $video = get_field('video_campeonas'); ?>
           <?php if ($video!='') { ?>
@@ -64,7 +64,7 @@ get_header(); ?>
 			        <strong><em><?php the_field('posicion_campeona'); ?></em></strong><br>
 			        <?php the_field('descripcion_home_campeonas'); ?> 
             </p>
-						<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Lee la entrevista >></a></p>
+						<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Entrevista completa aquí >></a></p>
           </div> 
           <hr>   
         </div>

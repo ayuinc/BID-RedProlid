@@ -36,7 +36,7 @@ get_header(); ?>
                 </a>
 		            <p class="brand-titular">De testimonios sobre liderazgo femenino por sus protagonistas</p>
 	            </li>
-              <li class="grid-list-item responsive-grid-item">
+              <li class="ml-35-iph6 grid-list-item responsive-grid-item">
                 <a href="<?php echo home_url('/'); ?>puntos-de-vista">
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-grid-2n.png" alt="">
                 </a>
