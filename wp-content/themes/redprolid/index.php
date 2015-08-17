@@ -139,8 +139,7 @@ get_header(); ?>
                       </div>
                     </div>
                   </div>
-									<?php endwhile; ?>                     
-                  <a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary">Ve más</a>
+									<?php endwhile; ?>
                 </div>
               </div>
             </div>
