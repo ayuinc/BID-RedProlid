@@ -77,23 +77,28 @@
 		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54e102b5429d3567" async="async"></script>  
     
 		<script>
-		$("#wppb-form-element-18").hide();
-		$("#wppb-form-element-19").hide();
+		var trabajo = $("#wppb-form-element-18");
+		var posicion = $("#wppb-form-element-19");
+
+		$("#wppb-form-element-18").remove();
+		$("#wppb-form-element-19").remove();
 			
 		$("#trabajo").change(function(){
 		  var name = $("#trabajo").val();
 		  if (name === 'Otro trabajo') { 
-				$("#wppb-form-element-18").show();
+		  	$("#wppb-form-element-16").after(trabajo);
+				// $("#wppb-form-element-18").show();
 		  } else {
-			  $("#wppb-form-element-18").hide();
+			  $("#wppb-form-element-18").remove();
 		  }
 		});
 		$("#posicion").change(function(){
 		  var name = $("#posicion").val();
-		  if (name === 'Otra posición') { 
-				$("#wppb-form-element-19").show();
+		  if (name === 'Otra posición') {
+		  	$("#wppb-form-element-17").after(posicion); 
+				// $("#wppb-form-element-19").show();
 		  } else {
-			  $("#wppb-form-element-19").hide();
+			  $("#wppb-form-element-19").remove();
 		  }
 		});		
 		
