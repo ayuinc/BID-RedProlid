@@ -1,7 +1,7 @@
 <div id="nav-main-menu" style="z-index:999" class="hidden-xs hidden-sm hidden-md">
   <div class="container">
     <div class="flex-space-between">
-      <div class="left" style="width: 68%; ">
+      <div class="left" style="width:50.5%;">
         <ul class="list-unstyled m-0">
           <?php 
             $uri = $_SERVER['REQUEST_URI'];
@@ -62,13 +62,13 @@
               <li class="light"><a href="<?php echo home_url('/'); ?>boletines-proximamente/">Nuestro boletín</a></li>
             </ul>
           </li>
-          <li>
+          <!--li>
             <a href="<?php echo home_url('/'); ?>concursos-proximamente" class="concursos <?php if($segment1=='concursos'){ echo 'active'; } ?>"><i></i><span>Concursos</span></a>
             <!--<ul class="list-unstyled dropdown-menu">
               <li class="light"><a href="<?php echo home_url('/'); ?>concursos-anteriores">Concursos anteriores</a></li>
-            </ul>-->
-          </li>
-          <li class="last-piece">
+            </ul>
+          </li-->
+          <!--li class="last-piece">
             <a href="<?php echo home_url('/'); ?>charlacafe/" class="charla-cafe <?php if($segment1=='charlacafe'||$segment1=='webinar-principal'||$segment1=='webinarios-anteriores'){ echo 'active'; } ?>"><i></i><span>Charlacafé</span></a>
             <ul class="list-unstyled dropdown-menu">
               <li>
@@ -78,11 +78,11 @@
                 </ul>-->              	
               </li>
               <li>
-              	<a href="<?php echo home_url('/'); ?>webinarios-proximamente">Webinarios  <!--→--></a>
+              	<!--a href="<?php echo home_url('/'); ?>webinarios-proximamente">Webinarios  <!--→--/a-->
                 <!--<ul class="list-unstyled sub-menu">
                   <li  class="light" style="width:250px"><a href="<?php echo home_url('/'); ?>webinarios-anteriores">¿Quieres ver los webinarios anteriores?</a></li>
-                </ul>--> 
-              </li>
+                </ul> 
+              </li-->
             </ul>
           </li>
         </ul>
