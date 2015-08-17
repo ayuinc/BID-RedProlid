@@ -12,20 +12,20 @@ get_header(); ?>
 	<section class="pv-7"> 
     <div class="container">
       <?php the_breadcrumb(); ?> 
-      <div class="clearfix sub-header">
-        <div class="col-sm-1 col-xs-3 pl-0">
+      <div class="row clearfix sub-header">
+        <div class="icon-publicaciones col-lg-1 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs pl-0 txt-center-landscape-ipad">
           <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/publicaciones-redondo.png" alt="" width="93px"></div>
         </div>
-        <div class="col-sm-5 col-xs-9">
+        <div class="col-lg-5 col-sm-12 text-center-sm col-xs-12 text-center-xs txt-center-landscape-ipad">
           <h1><?php the_title(); ?></h1>
         </div>
-        <div class="col-sm-6 col-xs-12">
-          <nav class="text-right text-center-xs">
+        <div class="col-lg-6 pr-0-lg col-sm-12  col-xs-12 ">
+          <nav class="text-right text-center-sm text-center-xs txt-center-landscape-ipad">
             <a href="#" data-toggle="modal" data-target="#modalRecursos">¿Quieres compartir una publicación?</a> <span class="text-primary">|</span> <a href="<?php echo content_url('/'); ?>enterate">Entérate</a>
           </nav>	          
         </div>
       </div>
-	    <div class="row text-justify">
+	    <div class="row text-justify ph-14-xs">
 				<div class="col-md-12">
 					<h3 class="light mb-14">Hemos identificado y ordenado para ti en este espacio diversas publicaciones sobre temas que nos interesan porque tratan sobre el liderazgo, la igualdad y el empoderamiento de la mujer: guías de capacitación, folletos, informes e investigaciones, legislación, libros, revistas, boletines, blogs...Por supuesto, también estás invitada a participar aportando tus comentarios a las publicaciones que te atraigan y compartiendo con nosotras las que te parezcan relevantes.</h3>
 				</div>
@@ -51,7 +51,7 @@ get_header(); ?>
         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/enterate-icon.png" width="94px" height="auto" alt="">
       </div>
     </div>	-->      
-    <div class="ph-70 mt-35">
+    <div class=" ph-14-xs ph-70-sm mt-35">
       <div class="row">
         <div class="col-sm-12">
         	<?php add_filter('post_limits', 'my_post_limit'); ?>
@@ -59,11 +59,13 @@ get_header(); ?>
 					<?php
 					$count = 0;	
 					global $myOffset;
-					$myOffset = 3;
+					//$myOffset = 0;
 					$temp = $wp_query;
 					$wp_query= null;
 					$wp_query = new WP_Query();
-					$wp_query->query('category_name=recursos&meta_key=recurso_año_de_publicacion&orderby=meta_value_num&offset='.$myOffset.'&showposts=10&paged='.$paged);
+					//$wp_query->query('category_name=recursos&meta_key=recurso_año_de_publicacion&orderby=meta_value_num&offset='.$myOffset.'&showposts=10&paged='.$paged);
+					//$wp_query->query('category_name=recursos&meta_key=recurso_año_de_publicacion&orderby=meta_value_num&showposts=10&paged='.$paged);
+					$wp_query->query('category_name=recursos&meta_key=recurso_año_de_publicacion&orderby=recurso_año_de_publicacion&showposts=10&paged='.$paged);
 					?>	 					       
 	        <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>            
             <div class="title">

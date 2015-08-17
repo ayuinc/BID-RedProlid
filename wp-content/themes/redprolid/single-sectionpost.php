@@ -1,7 +1,7 @@
 <section class="">
   <div class="container">
     <div class="row">
-      <div class="col-sm-9 pt-35">
+      <div class="col-sm-9 col-xs-12 pt-35 text-center-xs">
         <div class="title">
           <h3><?php the_title(); ?></h3>
           <p>FUENTE: <?php the_field('fuente-debates'); ?></p>
@@ -17,7 +17,7 @@
 					<?php	if ( is_user_logged_in() ) { ?>
 						<?php comments_template();?>
 					<?php } else { ?>
-						<p>Para poder comentar es necesario <a href="/registrate/">iniciar tu sesión o registrarse</a> a Red PROLD.</p>
+           <p>Para poder comentar es necesario que <a href="/registrate/">inicies tu sesión o te registres</a> en Red PROLID.</p>
 					<?php }	?>
         </div> 
       </div>

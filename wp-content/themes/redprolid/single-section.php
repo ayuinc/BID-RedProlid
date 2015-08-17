@@ -14,8 +14,8 @@ foreach( $customposts as $post ) :  // start you custom loop
     setup_postdata($post); ?>
 
     <div class="title">
-	    <h3><?php the_title(); ?></h3>
-	    <p>FUENTE: <a href="<?php the_field('url');?>" target="_blank"><?php the_field('blog-debates');?><?php $debate_tipo_de_url=get_field('debate_tipo_de_url'); ?><?php if ($debate_tipo_de_url=='video') { ?><img src="http://redprolid.org/wp-content/themes/redprolid/assets/img/enterate-grid-4-01.png" alt="" style="margin:0 5px; width:20px"><?php } ?></a>, <?php the_field('autor');?></p>
+	    <h4><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h4>
+	    <p>FUENTE: <a href="<?php the_field('url');?>" target="_blank"><?php the_field('blog-debates');?><?php $debate_tipo_de_url=get_field('debate_tipo_de_url'); ?><?php if ($debate_tipo_de_url=='video') { ?><img src="http://redprolid.org/wp-content/themes/redprolid/assets/img/enterate-grid-4-01.png" alt="" style="margin:0 5px; width:20px"><?php } ?></a> <?php the_field('autor');?></p>
     </div>
     
     <?php $youtube = get_field('debate_video_youtube'); ?>
@@ -47,7 +47,7 @@ foreach( $customposts as $post ) :  // start you custom loop
 			<?php	if ( is_user_logged_in() ) { ?>
 				<?php comments_template();?>
 			<?php } else { ?>
-				<p>Para poder comentar es necesario <a href="/registrate/">iniciar tu sesión o registrarse</a> a Red PROLD.</p>
+        <p>Para poder comentar es necesario que <a href="/registrate/">inicies tu sesión o te registres</a> en Red PROLID.</p>
 			<?php }	?>
     </div> 
 

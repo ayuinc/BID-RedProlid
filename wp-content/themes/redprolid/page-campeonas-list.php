@@ -1,4 +1,5 @@
 <?php
+// die('entro');
 /*
 Template Name: Campeonas list
 */
@@ -12,7 +13,7 @@ get_header(); ?>
   <div class="container">
     <?php the_breadcrumb(); ?>
     <div class="clearfix bg-panel sub-header">
-      <div class="col-sm-7">
+      <div class="col-sm-7 col-xs-12 text-center-xs pt-35-xs">
         <div>
           <h1>Entrevistas anteriores</h1>
           <nav class="mt-21">
@@ -20,11 +21,11 @@ get_header(); ?>
           </nav>
         </div>
       </div>
-      <div class="sub-header-icon">
+      <div class="sub-header-icon hidden-xs">
         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-square-alpha.png" width="94px" height="auto" alt="">
       </div>
     </div>  
-    <div class="ph-70">
+    <div class="ph-70-sm ph-14-xs">
       <div class="row">
         <?php add_filter('post_limits', 'my_post_limit'); ?>
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
@@ -38,33 +39,32 @@ get_header(); ?>
 				$wp_query->query('cat=2&offset='.$myOffset.'&showposts=10&paged='.$paged);
 				?>	 					       
         <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>        
-	      <div class="col-md-2">
+	      <div class="col-md-3">
           <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
           <?php if ($imagen_campeona!='') { ?>
-          <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
+          	<a href="<?php echo get_permalink( get_the_ID() ); ?>"><img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive"></a>
           <?php } ?>
           <?php $video = get_field('video_campeonas'); ?>
           <?php if ($video!='') { ?>
-          <iframe class="embed-responsive-item" width="100%" height="209" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          	<a href="<?php echo get_permalink( get_the_ID() ); ?>"><img class="img-responsive"  alt="<?php the_title(); ?>" src="http://img.youtube.com/vi/<?php the_field('video_campeonas'); ?>/0.jpg" width="100%"></a>
           <?php } ?>
 	      </div>
-        <div class="col-md-10">
+        <div class="col-md-9">
           <div class="title">
             <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
 		        <?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
 		        <?php if ($tempDate!='') { ?>
 		        <small>
-            <!--<?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de --><?php echo date_i18n('Y', strtotime( $tempDate)); ?>
+            <!--<?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de --><?php //echo date_i18n('Y', strtotime( $tempDate)); ?>
 	          </small>     
 	          <?php } ?>   
-            <p><?php the_field('posicion_campeona'); ?> <?php if (get_field('twitter_campeona')!='') { ?>/ <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank">@<?php the_field('twitter_campeona'); ?></a><?php } ?></p>
           </div>
           <div class="content mv-14">
             <p>
 			        <strong><em><?php the_field('posicion_campeona'); ?></em></strong><br>
 			        <?php the_field('descripcion_home_campeonas'); ?> 
             </p>
-						<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Lee la entrevista >></a></p>
+						<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Entrevista completa aquí >></a></p>
           </div> 
           <hr>   
         </div>

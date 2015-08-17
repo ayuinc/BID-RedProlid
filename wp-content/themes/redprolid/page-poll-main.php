@@ -11,13 +11,13 @@ get_header(); ?>
     <div class="container">
       <?php the_breadcrumb(); ?>
       <div class="clearfix sub-header">
-        <div class="col-sm-1 col-xs-3">
+        <div class="col-lg-1 col-sm-12 text-center-sm col-xs-3">
           <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/toc-main-icon.png" alt="" width="100%"></div>
         </div>
-        <div class="col-sm-5 col-xs-12">
+        <div class="col-lg-5 col-sm-12 text-center-sm col-xs-12">
           <h1>Tu opinión cuenta</h1>
         </div>
-        <div class="col-sm-6 col-xs-12"></div>
+        <div class="col-lg-6 col-sm-12 text-center-sm col-xs-12"></div>
       </div>
       <div class="row">
         <div class="col-sm-8">

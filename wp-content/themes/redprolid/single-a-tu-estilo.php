@@ -3,12 +3,12 @@
     <?php the_breadcrumb(); ?>
     <div class="clearfix sub-header">
       <div class="col-sm-12 col-xs-12 with-hr pv-0 mv-0">
-        <nav class="text-right text-center-xs">
+        <nav class="text-right text-center-xs txt-center-landscape-ipad">
           <a href="<?php echo home_url('/'); ?>a-tu-estilo">A tu estilo &gt;&gt;</a>
         </nav>          
       </div>
     </div>
-    <div class="clearfix ph-70 pb-35">
+    <div class="clearfix ph-70-sm ph-14-xs pb-35">
     	<div class="col-sm-12">
     		<!--<small class="text-gray">Tiendas</small>-->
     		<h1><?php the_title();?></h1>
@@ -49,11 +49,11 @@
     	</div>   	
     </div>
     <hr>
-    <div class="ph-70">
+    <div class="ph-70-sm ph-14-xs">
 	    <?php	if ( is_user_logged_in() ) { ?>
 				<?php comments_template();?>
 			<?php } else { ?>
-				<p>Para poder comentar es necesario <a href="/registrate/">iniciar tu sesión o registrarse</a> a Red PROLD.</p>
+				<p>Para poder comentar es necesario que <a href="/registrate/">inicies tu sesión o te registres</a> en Red PROLID.</p>
 			<?php }	?>
     </div>
 	</div>

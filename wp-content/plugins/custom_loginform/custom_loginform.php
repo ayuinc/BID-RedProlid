@@ -10,7 +10,7 @@ function dlf_form() {
 ?>
 
 <form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
-	<h4 class="medium mb-7 text-gray-darker">Ingresa a la red</h4>
+	<h4 class="medium fs-30 text-center-sm hidden-xs hidden-sm hidden-md pb-14-xs pb-14-sm mb-7 text-gray-darker">Ingresa a la red</h4>
 	<div class="form-group">
 	  <!-- <input name="login_name" id="login-name" type="text" class="form-control login-field" placeholder="Usuario o correo electrónico"> -->
 	  <input name="login_name" type="text" class="form-control login-field mb--7" value="" placeholder="Correo electrónico" id="login-name" required="true" oninvalid="this.setCustomValidity('Ingrese su correo electrónico')"/>
@@ -20,19 +20,20 @@ function dlf_form() {
 	  <input  name="login_password" type="password" class="form-control login-field mb--7" value="" placeholder="Contraseña" id="login-pass" required="true" oninvalid="this.setCustomValidity('Ingrese su contraseña')"/>
 	</div>
 	<div class="form-group row">
-	  <div class="col-xs-9">
+	  <div class="col-lg-9 col-xs-12">
 	    <div>
 	    	<?php do_action( 'wordpress_social_login' ); ?>
-	    </div>
-	    <br>
-	    <small>
-	    	<a href="<?php echo home_url('/'); ?>registrate/" class="light">Regístrate</a> 
-	    	<span>|</span> 
-	    	<a href="<?php echo wp_lostpassword_url( '/recuperar-password' ); ?>" class="light"  title="Olvidé mi contraseña">Olvidé mi contraseña</a>
-			</small>
+            </div>
 	  </div>
-	  <div class="col-xs-3">
-	    <input type="submit" name="dlf_submit" class="btn btn-primary btn-sm" value="Ingresa" style="margin-left:12px;">
+	  <div class="col-lg-3 col-sm-12 text-left-sm col-xs-12 pl-0-xs pv-14-xs pl-0-xs text-left-xs">
+	    <input type="submit" name="dlf_submit" class="ml-14-lg ml-0-sm ml-0-xs btn btn-primary btn-sm" value="Ingresa" >
+	  </div>
+	  <div class="col-xs-12 ph-0-xs text-left-xs">
+		  <p class="mt-14">
+	    	<a href="<?php echo home_url('/'); ?>registrate/" class="hidden-xs hidden-md hidden-sm medium">Regístrate</a> 
+	    	<span class="hidden-xs hidden-sm">|</span> 
+	    	<a class="pl-0-xs" href="<?php echo wp_lostpassword_url( '/recuperar-password' ); ?>" class="medium"  title="Olvidé mi contraseña">Olvidé mi contraseña</a>
+			</p>
 	  </div>
 	</div>
 </form>

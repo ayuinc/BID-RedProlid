@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
   // $('#yop-poll-name-1').addClass("hidden");
   $("div[id^='yop-poll-name']").addClass("hidden");
@@ -9,7 +11,7 @@ $(document).ready(function(){
   // votaButton.addClass("custom-vote");
   // $('div.yop-poll-answers ul li:first').addClass("mt-35");
   $('.yop-poll-answers ul li label').addClass('respuesta');
-  $('[data-href]').click(function(e) {
+  function maybe(){
     var lastPath, locationArr, mainPath, pathObj;
     locationArr = window.location.pathname.split('/');
     lastPath = locationArr[locationArr.length - 1];
@@ -18,6 +20,18 @@ $(document).ready(function(){
     pathObj[mainPath] = lastPath;
     window.history.pushState(pathObj, '', lastPath);
     document.location.replace($(this).data('href'));
+  }
+  $('[data-href]').click(function(e) {
+    maybe();
+  });
+
+  $('[data-href]').on("tap",function(){
+    maybe();
   });
 });
 
+$(document).ready(function(){
+  $(".prueba").click(function(){
+    console.log("yay :D");
+  });
+});

@@ -15,19 +15,7 @@
                 <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.jpg" alt="" class="color">
                 <div class="title">                  
                   <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-icon.png" alt="">                  
-                  <p class="medium">¿Adónde v@mos?</p>
-                </div>
-              </a>
-            </li>
-            <?php } ?>
-            <?php if ($segment2!='carrera-de-vallas') { ?>
-            <li>
-              <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/carrera-de-vallas/">
-                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-carrera-vallas-gs.jpg" alt="" class="gs">
-                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-carrera-vallas-col.jpg" alt="" class="color">
-                <div class="title">                  
-                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-carrera-vallas-icon.png" alt="">                  
-                  <p class="medium">Carrera de vallas</p>
+                  <p class="medium">ArTICuladas</p>
                 </div>
               </a>
             </li>
@@ -80,23 +68,11 @@
               </a>
             </li>  
             <?php } ?> 
-            <?php if ($segment2!='la-pinta-no-es-lo-de-menos') { ?>         
-            <li>
-              <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">
-                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-gs.jpg" alt="" class="gs">
-                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-col.jpg" alt="" class="color">
-                <div class="title">                  
-                  <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-la-pinta-icon.png" alt="">                  
-                  <p class="medium">La pinta no es lo de menos</p>
-                </div>
-              </a>
-            </li>
-            <?php } ?>
             <?php if ($segment2!='a-tu-estilo') { ?>         
             <li>
               <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-tu-estilo/">
-                <img src="<?php echo content_url('/'); ?>uploads/2015/03/a-tu-estilo-rombo1-bw.png" alt="" class="gs" style="width:141px;height:142px;">
-                <img src="<?php echo content_url('/'); ?>uploads/2015/03/a-tu-estilo-rombo1.png" alt="" class="color" style="width:141px;height:142px;">
+                <img src="<?php echo content_url('/'); ?>uploads/2015/03/a-tu-estilo-rombo1-bw.png" alt="" class="gs" >
+                <img src="<?php echo content_url('/'); ?>uploads/2015/03/a-tu-estilo-rombo1.png" alt="" class="color" >
                 <div class="title">                  
                   <img src="<?php echo content_url('/'); ?>uploads/2015/02/a-tu-estilo.png" alt="">                  
                   <p class="medium">A tu estilo</p>

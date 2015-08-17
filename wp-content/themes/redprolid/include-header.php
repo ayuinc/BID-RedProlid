@@ -1,4 +1,4 @@
-<header class="pt-7 pb-7 hidden-md-down">
+<header class="pt-7 pb-7 hidden-xs hidden-sm hidden-md">
   <div class="container">
     <div class="row">
       <div class="col-md-3">
@@ -20,8 +20,8 @@
 
               $current_user = wp_get_current_user();
               echo '<div class="text-right">';
-              echo '<h4 class="light mb-0">Hola '.$current_user->user_nicename.'</h4>';
-							echo '<a href="'.wp_logout_url().'" title="Logout" class="light">Cierra tu sesión</a> | <a href="'.home_url("/").'tu-perfil" class="light">Edita tu perfíl</a>';
+              echo '<h4 class="light mb-0">Hola '.$current_user->user_firstname.' '.$current_user->user_lastname.'</h4>';
+							echo '<a href="'.wp_logout_url().'" title="Logout" class="medium">Cierra tu sesión</a> | <a href="'.home_url("/").'tu-perfil" class="medium">Edita tu perfíl</a>';
               echo '</div>';
 							
 							if ( ($current_user instanceof WP_User) ) {

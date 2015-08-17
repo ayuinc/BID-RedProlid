@@ -21,7 +21,7 @@ get_header(); ?>
     <div class="mh-700">
       <section id="hero-unit">
         <div class="container pv-21">
-          <div class="gallery js-flickity hidden-sm-down bg-panel border-radius p-21 bg-img-block bg-img-block-top bg-img-block-right" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png);" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 6000 }'>
+          <div class="gallery js-flickity hidden-xs hidden-sm hidden-md bg-panel border-radius p-21 bg-img-block bg-img-block-top bg-img-block-right" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-network-right.png);" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 3000 }'>
             <?php query_posts( 'category_name=video-homepage&posts_per_page=5' ); ?>  
             <?php while ( have_posts() ) : the_post(); ?>
               <div class="grid-list-item gallery-cell clearfix minh-350" style="width: 100%;">
@@ -62,14 +62,27 @@ get_header(); ?>
               </div>
             <?php endwhile; ?> 
           </div>
-          <h2 class="text-center pt-49"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
+          <h2 class="header-text text-center pt-49 hidden-sm hidden-xs"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><br> <span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo<br>en el sector público en Latinoamérica</span></h2>
+          
+          <h2 class="header-text text-center hidden-lg"><strong><span class="text-secondary">La Red PROLID</span> es una plataforma para conectar, promover intercambios y aprendizajes</strong><span class="light">entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica</span></h2>
+          
+          <?php if ( is_user_logged_in() ) {  } else { ?>
+          <div class="row hidden-lg">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8 text-center pt-14">
+              <a href="<?php echo home_url('/'); ?>registrate"><button class="btn-custom-registrate btn-md btn btn-primary">Regístrate en la Red</button></a> 
+              <a href="<?php echo home_url('/'); ?>login-movil"><button class="btn-custom-iniciasesion bg-white border-top-primary border-right-primary  border-bottom-primary border-left-primary btn btn-white text-primary mt-14-xs">Inicia Sesión</button></a>
+            </div>
+            <div class="col-xs-2"></div>
+          </div>
+          <?php } ?>
         </div>
       </section>
       <section class="dtl-home pv-14">
         <div class="container ph-70-sm">
           <div class="text-center">
             <h2>Desarrolla tu liderazgo</h2>
-            <p>Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</p>
+            <h5 class="light">Imagina tu trayectoria profesional y/o política como una carrera deportiva. Necesitas tener claro el rumbo que has de tomar, y para ello te servirán de ayuda las redes sociales y las tecnologias de la información y la comunicación...</h5>
           </div>
           <div class="pb-14">
           <!-- DTL CAROUSEL -->
@@ -86,7 +99,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title highlight-white">Noticias</li>
                     <li class="rule"></li>
-                    <li class="icon" data-href="/noticias" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-sml.png); background-repeat: no-repeat;"></li>
+                    <a href="/noticias"> <li class="icon"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-sml.png); background-repeat: no-repeat;"></li></a>
                   </ul>
                 </div>
                 <div class="panel-body">
@@ -101,7 +114,6 @@ get_header(); ?>
                       <div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
                       <?php } ?>
                       <div class="banner-content flex-none">
-
                                <a href="<?php echo get_permalink( get_the_ID() ); ?>">
                             <h3 class="medium mt-7 mb-0 pb-0">
                               <?php the_title(); ?>
@@ -138,7 +150,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title highlight-white">Eventos</li>
                     <li class="rule"></li>
-                    <li class="icon" data-href="/eventos" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -126px;"></li>
+                    <a href="/eventos"><li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -126px;"></li></a>
                   </ul>
                 </div>
                 <div class="panel-body pt-0">
@@ -150,7 +162,7 @@ get_header(); ?>
                       <div class="day-num"><?php echo date_i18n('d', strtotime( $tempDate)); ?></div>
                       <div class="month mt-7 ml-7"><?php echo date_i18n('M', strtotime( $tempDate)); ?></div>
                     </div>
-                    <h5><?php the_title(); ?></h5>
+                    <h5 class="title-news"><?php the_title(); ?></h5>
                     <!--<p class="event-des light"><?php the_field('descripcion_evento'); ?></p>-->
                     <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Ve más</a>
                   <?php endwhile; ?>
@@ -169,10 +181,8 @@ get_header(); ?>
                 <div class="panel-body pt-0 hide-poll-results-anchor">
                   <?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>  
-                    <?php the_content(); ?>
-                    <!-- <div class="mt-sm text-right small">
-                      <a href="<?php //echo get_permalink( get_the_ID() ); ?>">Resultados >></a>
-                    </div> -->
+										<?php $codigo_de_la_encuesta = get_field('codigo_de_la_encuesta'); ?> 
+				            <?php echo do_shortcode('[yop_poll id="'.$codigo_de_la_encuesta.'"]'); ?>
                   <?php endwhile; ?>
                 </div>
               </div>
@@ -180,7 +190,7 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      <section class="pv-14">
+      <section class="campeonas-section">
         <div class="container">
           <div class="row">
             <div class="col-md-6 p-14">
@@ -198,8 +208,8 @@ get_header(); ?>
                 <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                      
                 <div class="panel-body pt-0 pb-0">               
-                  <div class="col-sm-5 pl-0">
-                    <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
+                  <div class="col-sm-5 text-center-sm punto-de-vista-img">
+                    <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" style="width:100%;">
                   </div>
                   <div class="col-sm-7">
                     <h3 class="pt-0 medium mb-0"><?php the_title(); ?></h3>
@@ -211,7 +221,7 @@ get_header(); ?>
                 <?php endwhile; ?>
               </div>
             </div>
-            <div class="col-md-6 p-14 bg-panel">
+            <div class="col-md-6 campeonas-panel-home bg-panel-custom bg-panel mb-14-xs">
               <div class="panel panel-custom">
 	              <div class="panel-heading">
                     <ul class="list-unstyled m-0">
@@ -225,16 +235,20 @@ get_header(); ?>
                   </div>             
                 <?php query_posts( 'category_name=campeona-destacada&posts_per_page=1' ); ?>	
 								<?php while ( have_posts() ) : the_post(); ?>                   
-                  <div class="panel-body pt-0 pb-0 pl-14 pr-14">
-	                  <div class="col-sm-5 pl-0">
+                  <div class="panel-body panel-body-custom">
+	                  <div class="col-sm-5">
 			                <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
 			                <?php if ($imagen_campeona!='') { ?>
-	                    <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
+	                    	<img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
 	                    <?php } ?>
 			                <?php $video = get_field('video_campeonas'); ?>
 			                <?php if ($video!='') { ?>
-	                    <iframe class="embed-responsive-item" width="100%" height="209" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	                    	<iframe class="embed-responsive-item" width="100%" height="209" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 	                    <?php } ?>
+			                <?php $video_vimeo = get_field('video_vimeo_campeonas'); ?>
+			                <?php if ($video_vimeo!='') { ?>
+		                    <iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_campeonas'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="551" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	                    <?php } ?>	                    
 											<small><?php the_field('fuente_imagen_campeonas'); ?></small>
                   	</div>
 	                  <div class="col-sm-7 pr-0">
@@ -249,7 +263,7 @@ get_header(); ?>
                     <p>
 							        <strong><?php the_field('descripcion_home_campeonas'); ?></strong>
 				            </p>
-                    <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary">Entrevista completa</a>
+                    <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-primary mb-21-xs">Entrevista completa</a>
                   </div> 
                   </div>
                 <?php endwhile; ?>
@@ -258,10 +272,10 @@ get_header(); ?>
           </div>
         </div>
       </section>
-      <section class="pv-14">
+      <section class="pv-14 hidden-md-down">
         <div class="container">
           <div class="row">
-            <div class="col-md-3 comentarios">
+            <div class="col-lg-3 col-md-12 comentarios">
               <div class="panel-heading">
                 <h3 class="title text-gray-darker pt-14">Comentarios recientes</h3>
               </div>
@@ -277,14 +291,21 @@ get_header(); ?>
                     <?php foreach ($comments as $comment) : ?>
                       <li class="mb-14">
                         <p class="light" id="home-comment"><a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo get_the_title( $comment->comment_post_ID ); ?></a></p>
-                        <small class="date light"><?php echo($comment->comment_content);?></small></br>
-                        <small class="date light"><?php echo($comment->comment_date);?> | <?php echo($comment->comment_author);?></small> 
+                        <small class="date light"><?php echo(substr( $comment->comment_content, 0, 250 )); ?></small></br>
+                        <small class="date light"><?php echo($comment->comment_date);?> 
+												<?php //echo($comment->comment_author);?>
+                        <?php
+                          $categories = get_the_category($comment->comment_post_ID);
+                          $cat_name = $categories[0]->name;
+                        ?>
+                        | <a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo $cat_name; ?></a>
+												</small> 
                       </li>
                     <?php endforeach;?>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-9 bg-panel ph-14">
+            <div class="col-md-9 hidden-md bg-panel ph-14">
               <div class="panel panel-custom hidden-sm-down">
                 <div class="panel-body tall pt-14">
                   <div class="panel-heading">

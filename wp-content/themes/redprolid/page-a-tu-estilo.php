@@ -11,34 +11,35 @@ get_header(); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
 
-	<section class="mt-7"> 
+	<section class="mt-7 pb-21"> 
     <div class="container">
       <?php the_breadcrumb(); ?>
       <div class="row">
-      	<div class="col-sm-8">
-		      <div class="clearfix sub-header">
-		        <div class="col-sm-2 col-xs-3">
+      	<div class="icon-tuestilo col-lg-12 col-sm-12 col-xs-12">
+		      <div class="row clearfix sub-header">
+		        <div class="col-lg-1 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs txt-center-landscape-ipad ">
 		          <div>
-			          <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/a-tu-estilo.png" alt="" width="100%">
+			          <img class="txt-mt-res-landscape" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/a-tu-estilo.png" alt="" width="100%">
 		          </div>
-		        </div>
-		        <div class="col-sm-5 col-xs-9">
+		        </div> 
+		        <div class="col-lg-4 col-sm-12 text-center-sm col-xs-12 text-center-xs txt-center-landscape-ipad ">
 		          <h1><?php the_title(); ?></h1>
+		          <h4 class="medium txt-center-landscape-ipad"><?php the_field('subtitulo'); ?></h4>
 		        </div>
-		        <div class="col-sm-5 col-xs-12">
-		          <nav class="text-right text-center-xs">
-		            <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a> <span class="brand-primary">|</span> <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/">Pistas</a>
+		        <div class="col-lg-7 col-sm-12 col-xs-12">
+		          <nav class="text-right text-center-sm text-center-xs txt-center-landscape-ipad">
+		          	<a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2/">Pistas</a>
 		          </nav>          
 		        </div>
 		      </div>
 		      <div class="row">
-			      <div class="col-sm-offset-2">
-							<p class="light text-justify">No todo es trabajo en esta vida, ni actividad política. Te gusta (¡nos gusta!) aprovechar el tiempo libre:  salir a comer con tu gente, ir de tiendas o tomarte un café en esos lugares especiales. En esta sección vas a encontrar las pistas para sacar partido a tu ocio más allá de las guías de viajes.</p>
+			      <div class=" col-lg-8 col-sm-12 text-center-sm">
+							<p class="pl-14-lg light text-justify">No todo es trabajo en esta vida, ni actividad política. Te gusta (¡nos gusta!) aprovechar el tiempo libre:  salir a comer con tu gente, ir de tiendas o tomarte un café en esos lugares especiales. En esta sección vas a encontrar las pistas para sacar partido a tu ocio más allá de las guías de viajes.</p>
 			      </div>		      	
+		      	<div class="col-lg-4 col-sm-4 hidden-xs hidden-sm">
+							<img  src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/AtuEstilo.jpg" alt="" style="width:100%;">
+		      	</div>
 		      </div>
-      	</div>
-      	<div class="col-sm-4 hidden-xs">
-					<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/a-tu-estilo-rombo.png" alt="" class="img-responsive">
       	</div>
       </div>
     </div>
@@ -46,7 +47,7 @@ get_header(); ?>
 	
 	<section class="bg-panel pv-21">
 		<div class="container">
-			<h3>Dónde puedo comer y comprar</h3>
+			<h3 class="medium">Dónde puedo comer y comprar</h3>
 			<p>Te ofrecemos, ordenadas por ciudades, sugerencias de restaurantes y tiendas concretas de las principales ciudades de Latinoamérica para que, en tus viajes de trabajo o cuando asistas a foros y congresos, puedas tener mejores alternativas que la cafetería del hotel o el Mall al frente. En definitiva, donde poder darte un gusto.</p>
 			<form action="/a-tu-estilo/a-tu-estilo-resultados-de-busqueda/" method="post">
 			<div class="row">

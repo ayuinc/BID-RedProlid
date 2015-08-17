@@ -1,4 +1,4 @@
-<div id="nav-main-menu" style="z-index:999" class="hidden-md-down">
+<div id="nav-main-menu" style="z-index:999" class="hidden-xs hidden-sm hidden-md">
   <div class="container">
     <div class="flex-space-between">
       <div class="left" style="width: 68%; ">
@@ -21,15 +21,13 @@
           <li>
             <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo" class="dtl <?php if($segment1=='desarrolla-tu-liderazgo'){ echo 'active'; } ?>"><i></i><span>Desarrolla tu liderazgo</span></a>
             <ul class="list-unstyled dropdown-menu">
-              <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/">¿Adónde v@mos?</a></li>
-              <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/carrera-de-vallas/">Carrera de vallas</a></li>
+              <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/a-donde-vamos/">ArTICuladas</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/nivelando-la-cancha/">Nivelando la cancha</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/listas-para-la-politica/">Listas para la política</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/agenda-de-genero/">Agenda de género</a></li>
               <li class="light">
                 <a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/pistas-2">Pistas →</a>
                 <ul class="list-unstyled sub-menu">
-                  <li class="light"><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/la-pinta-no-es-lo-de-menos/">La pinta no es lo de menos</a></li>
                   <li class="light"><a href="<?php echo home_url('/'); ?>a-tu-estilo/">A tu estilo</a></li>
                 </ul>
               </li>

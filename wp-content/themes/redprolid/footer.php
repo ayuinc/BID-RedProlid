@@ -10,38 +10,42 @@
  */
 ?>
 
-      <footer class="mt-28">
+      <footer class="footer">
         <div class="container text-center-xs">
-          <div class="row to-top">
+          <div class="row to-top hidden-xs">
             <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/nav-footer-to-top.png" alt=""></a>
           </div>
           <div class="row pt-21">
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-12 text-center-md col-sm-12 text-center-sm">
               <ul class="list-unstyled text-white site-map">
                 <li class="mb-7 light"><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li>
                 <li class="mb-7 light"><a href="<?php echo home_url('/'); ?>sitemap/">Mapa de sitio</a></li>
               </ul>
             </div>
-            <div class="col-md-6 text-center">
-              <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-footer.png" width="322px" height="auto"></a>
+            <div class="col-md-3 hidden-lg"></div>
+            <div class="col-lg-6 col-md-6 text-center-md col-sm-12 text-center-sm text-center">
+              <a href="#"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-footer.png" width="322px" height="auto" class="img-responsive"></a>
             </div>
-            <div class="col-md-3 text-right-sm">
+            <div class="col-lg-3 pr-70-md col-md-3 text-left-md col-sm-12 text-center-sm text-right-lg">
               <a href="http://www.iadb.org/" target="_blank"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/BID_logo_blanco.png" width="160px" height="auto"></a>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-12 text-center-md col-sm-12 text-center-sm">
               <p class="text-muted">Síguenos en las redes:</p>
-              <ul class="list-unstyled social-links">
-                <li><a href="https://www.facebook.com/redprolid" target="_blank"><i class="flaticon-facebook6"></i></a></li>
-                <li><a href="https://twitter.com/RedPROLID" target="_blank"><i class="flaticon-social19"></i></a></li>
-                <li><a href="https://plus.google.com/u/0/110729207092973287817/about" target="_blank"><i class="flaticon-google16"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCpntjKraZb6A3qpClZTA5aQ" target="_blank"><i class="flaticon-logo4"></i></a></li>
-              </ul>
+              <div class="col-xs-3 hidden-md col-sm-4 mr-49-sm hidden-lg"></div>
+								<div class="mr-21-sm pl-0-sm social-links-content col-lg-8 col-xs-8 col-sm-3 text-center-sm">
+		              <nav class="text-center-sm text-center-xs social-links">
+		                <a class="text-center-xs text-center-sm" href="https://www.facebook.com/redprolid" target="_blank"><i class="flaticon-facebook6"></i></a>
+		                <a class="text-center-xs text-center-sm" href="https://twitter.com/RedPROLID" target="_blank"><i class="flaticon-social19"></i></a>
+		                <a class="text-center-xs text-center-sm" href="https://plus.google.com/u/0/110729207092973287817/about" target="_blank"><i class="flaticon-google16"></i></a>
+		                <a class="text-center-xs text-center-sm" href="https://www.youtube.com/channel/UCpntjKraZb6A3qpClZTA5aQ" target="_blank"><i class="flaticon-logo4"></i></a>
+		              </nav>			  	
+								</div>						  		  
             </div>
-            <div class="col-md-6 text-center pt-42">
+            <div class="col-lg-12 col-sm-12 pt-7-md text-center-sm pt-7-lg">
               <nav class="text-muted terms">
-                <a href="<?php echo content_url('/'); ?>terminos-y-condiciones/" class="text-white pr-7">Términos y condiciones</a>
+                <a href="<?php echo content_url('/'); ?>terminos-y-condiciones/" class="text-white pr-7-lg">Términos y condiciones</a>
               </nav>
             </div>
             <div class="col-md-3"></div>

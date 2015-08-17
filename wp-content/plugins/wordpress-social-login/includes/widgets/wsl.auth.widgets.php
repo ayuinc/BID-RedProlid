@@ -173,7 +173,7 @@ do_action( 'wsl_render_login_form_start' );
 	$wsl_settings_use_popup = get_option( 'wsl_settings_use_popup' );
 
 	// if a user is visiting using a mobile device, WSL will fall back to more in page
-	$wsl_settings_use_popup = function_exists( 'wp_is_mobile' ) ? wp_is_mobile() ? 2 : $wsl_settings_use_popup : $wsl_settings_use_popup;
+	//$wsl_settings_use_popup = function_exists( 'wp_is_mobile' ) ? wp_is_mobile() ? 2 : $wsl_settings_use_popup : $wsl_settings_use_popup;
 
 	$no_idp_used = true;
 

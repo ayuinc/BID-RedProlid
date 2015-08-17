@@ -1,21 +1,21 @@
 <section class="mt-7 "> 
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>    
-    <div class="clearfix sub-header">
-      <div class="col-sm-1 col-xs-3">
+    <div class="row clearfix sub-header">
+      <div class="icon-campeonas col-lg-1 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" alt="" width="100%"></div>
       </div>
-      <div class="col-sm-4 col-xs-9">
-        <h1 class="brand-titular">Campeon@s</h1>
+      <div class="col-lg-4 col-sm-12 text-center-sm col-xs-12 text-center-xs pl-14">
+        <h1 class="brand-titular txt-center-landscape-ipad">Campeon@s</h1>
       </div>
-      <div class="col-sm-7 col-xs-12">
-        <nav class="text-right text-center-xs">
-          <a href="#" data-toggle="modal" data-target="#modalCampeonas">Nos propones un tema</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores">¿Quieres leer nuestras entrevistas anteriores?</a>
+      <div class="col-lg-7 pr-0-lg col-sm-12 col-xs-12 texto-anchor-nos-propones-un-tema">
+        <nav class="text-right text-center-sm text-center-xs txt-center-landscape-ipad">
+          <a href="#" data-toggle="modal" data-target="#modalCampeonas">¿Nos propones un tema?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>campeonas/campeonas-anteriores">Entrevistas anteriores</a>
         </nav>
       </div>
     </div>
-    <div class="ph-70">
-  		<h3 class="light text-justify mb-35">Aquí incluimos las entrevistas con testimonios de aquellas mujeres latinoamericanas que han dejado huella y han marcado o van a marcar las agendas de sus países para imprimir mayor equidad en las políticas públicas y en el quehacer diario de la política.</h3>
+    <div class="ph-70-sm ph-7-xs">
+  		<h3 class="light text-justify mb-35">¿A qué mujeres líderes admiras en Latinoamérica? ¿Quieres saber qué obstáculos encontraron y con qué apoyo contaron?¿Sabes qué figuras masculinas han sabido promover el liderazgo femenino e incorporar las agendas de género en su trabajo? Aquí incluimos los testimonios de aquellas mujeres latinoamericanas que han dejado huella o que van a marcar las agendas de sus países. Además daremos espacio a aquellos hombres líderes que están utilizando su influencia para abrir oportunidades al liderazgo femenino, porque los necesitamos como aliados también.</h3>
       <div class="row">
         <?php if( get_field('imagen_campeonas') ) { ?>
         <div class="col-md-3">
@@ -28,7 +28,7 @@
         <div class="col-md-9">
         <?php } else {  } ?>
         <div class="row">
-	        <div class="col-sm-12">
+	        <div class="col-sm-12 col-xs-12 ph-21-xs">
 		        <h2 class="lh-lg mb-0"><?php the_title(); ?></h2>
 		        <?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
 		        <?php if ($tempDate!='') { ?>
@@ -46,34 +46,55 @@
 	          <?php if ($video!='') { ?>
 	          	<iframe  class="embed-responsive-item" width="100%" height="450" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 	          <?php } ?>
+	          <?php $video_vimeo = get_field('video_vimeo_campeonas'); ?>
+	          <?php if ($video_vimeo!='') { ?>
+	          	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_campeonas'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	          <?php } ?>         
 	        </div>
-	        <div class="col-sm-3">
+	        <!--<div class="col-sm-3">
 	        <ul class="list-inline text-right">
-		        <?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
-		        <?php $twitter_campeona = get_field('twitter_campeona'); ?>
-		        <?php $google_campeonas = get_field('google_campeonas'); ?>
-		        <?php if ($facebook_campeonas!='') { ?>
+	        	<li><strong>Sigueme en:</strong></li>
+		        <?php //$facebook_campeonas = get_field('facebook_campeonas'); ?>
+		        <?php //$twitter_campeona = get_field('twitter_campeona'); ?>
+		        <?php //$google_campeonas = get_field('google_campeonas'); ?>
+		        <?php //if ($facebook_campeonas!='') { ?>
 		        <li>
-			        <a href="<?php echo $facebook_campeonas; ?>" target="_blank"><img src="http://redprolid.org/wp-content/uploads/2015/02/facebook.png"></a>
+			        <a href="<?php //echo $facebook_campeonas; ?>" target="_blank"><img src="http://redprolid.org/wp-content/themes/redprolid/assets/img/facebook2.png"></a>
 		        </li>
-		        <?php } ?>
-		        <?php if ($twitter_campeona!='') { ?>
+		        <?php //} ?>
+		        <?php //if ($twitter_campeona!='') { ?>
 	        	<li>
-		        	<a href="<?php echo $twitter_campeona; ?>" target="_blank"><img src="http://redprolid.org/wp-content/uploads/2015/02/twitter.png"></a>
+		        	<a href="<?php //echo $twitter_campeona; ?>" target="_blank"><img src="http://redprolid.org/wp-content/themes/redprolid/assets/img/twitter2.png"></a>
 	        	</li>
-	        	<?php } ?>
-	        	<?php if ($google_campeonas!='') { ?>
+	        	<?php //} ?>
+	        	<?php //if ($google_campeonas!='') { ?>
 	        	<li>
-		        	<a href="<?php echo $google_campeonas; ?>" target="_blank"><img src="http://redprolid.org/wp-content/uploads/2015/02/googleplus.png"></a>
+		        	<a href="<?php //echo $google_campeonas; ?>" target="_blank"><img src="http://redprolid.org/wp-content/themes/redprolid/assets/img/google-plus2.png"></a>
 	        	</li>
-	        	<?php } ?>
+	        	<?php //} ?>
 	        </ul>
-	        </div>	        
+	        </div>-->	        
         </div>	            
       </div>
       <div class="with-hr">
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
 	    	<p>
+	      	<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
+					<?php if ($facebook_campeonas!='') { ?>
+	      	<strong>Sígueme en Facebook:</strong> <a href="<?php the_field('facebook_campeonas'); ?>" target="_blank"><?php the_field('facebook_campeonas'); ?></a><br>
+	      	<?php } ?>
+	      	<?php $twitter_campeona = get_field('twitter_campeona'); ?>
+					<?php if ($twitter_campeona!='') { ?>
+	      	<strong>Sígueme en Twitter:</strong> <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank"><?php the_field('twitter_campeona'); ?></a><br>
+	      	<?php } ?>
+	      	<?php $google_campeona = get_field('google_campeona'); ?>
+					<?php if ($google_campeona!='') { ?>
+	      	<strong>Sígueme en Google :</strong> <a href="<?php the_field('google_campeona'); ?>" target="_blank">Google+</a><br>
+	      	<?php } ?>
+	      	<?php $linkedin_campeona = get_field('linkedin_campeona'); ?>
+					<?php if ($linkedin_campeona!='') { ?>
+	      	<strong>Sígueme en LinkedIn:</strong> <a href="<?php the_field('linkedin_campeona'); ?>" target="_blank">LinkedIn</a><br>
+	      	<?php } ?>	      	
 	      	<?php $autor_campeona = get_field('autor_campeona'); ?>
 					<?php if ($autor_campeona!='') { ?>
 	      	<strong>Tema propuesto por:</strong> <a href="mailto:<?php the_field('autor_email_campeona'); ?>"><?php the_field('autor_campeona'); ?></a><br>
@@ -110,7 +131,6 @@
         <?php } ?>
         <div id="entrevista_full">
 	        <hr>
-	        <?php $tempDate = get_field('fecha_entrevista'); ?>
 	        <!--<h3 class="medium mt-21">Entrevista</h3>-->
           <p><?php the_field('entrevista_completa_campeona'); ?></p>         
         </div>
@@ -123,7 +143,7 @@
 					<?php	if ( is_user_logged_in() ) { ?>
 						<?php comments_template();?>
 					<?php } else { ?>
-						<p>Para poder comentar es necesario <a href="/registrate/">iniciar tu sesión o registrarse</a> a Red PROLD.</p>
+				   <p>Para poder comentar es necesario que <a href="/registrate/">inicies tu sesión o te registres</a> en Red PROLID.</p>
 					<?php }	?>
   			</div>
   	  </div>

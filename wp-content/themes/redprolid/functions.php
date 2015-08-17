@@ -423,6 +423,17 @@ function SearchFilter($query) {
 }
 add_filter('pre_get_posts','SearchFilter');
 
+// Change default WordPress email address
+add_filter('wp_mail_from', 'new_mail_from');
+add_filter('wp_mail_from_name', 'new_mail_from_name');
+
+function new_mail_from($old) {
+  return 'comunicate@redprolid.org';
+}
+function new_mail_from_name($old) {
+  return 'Red PROLID';
+}
+
 // function wsl_redirect_to( $redirect_to, $user_id ) {
 //   //$user = get_user_by( 'email', 'user@example.com' );
 //   // die(print_r($redirect_to));

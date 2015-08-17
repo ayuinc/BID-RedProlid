@@ -15,15 +15,15 @@ get_header(); ?>
     <div class="container">
       <?php the_breadcrumb(); ?> 
       <div class="clearfix sub-header">
-        <div class="col-sm-1 col-xs-3 pl-0">
-          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-redondo.png" alt="" width="100%"></div>
+        <div class="col-lg-1 col-sm-12 text-center-sm hidden-xs txt-center-landscape-ipad">
+          <div><img class="icon-noticias" src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-redondo.png" alt="" width="100%"></div>
         </div>
-        <div class="col-sm-5 col-xs-9">
+        <div class="col-lg-5 col-sm-12 text-center-sm col-xs-12 text-center-xs  txt-center-landscape-ipad">
           <h1><?php the_title(); ?></h1>
         </div>
-        <div class="col-sm-6 col-xs-12">
-          <nav class="text-right text-center-xs">
-            <a href="#" data-toggle="modal" data-target="#modalNoticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/">¿Quieres ver las noticias anteriores?</a>
+        <div class="col-lg-6 pr-0-lg col-sm-12 col-xs-12">
+          <nav class="text-right text-center-sm text-center-xs txt-center-landscape-ipad">
+            <a href="#" data-toggle="modal" data-target="#modalNoticias">¿Quieres compartir una noticia?</a> | <a href="<?php echo home_url('/'); ?>noticias-anteriores/">Noticias anteriores</a>
           </nav>	          
         </div>
       </div>
@@ -49,13 +49,13 @@ get_header(); ?>
 								<?php if ( have_posts() ) : ?>
 	                <?php query_posts( 'cat=12&posts_per_page=3' ); ?>
 									<?php while ( have_posts() ) : the_post(); ?>				            
-				            <div class="banner col-md-4 banner-label-bottom">
+				            <div class="banner col-lg-4 col-sm-12 col-xs-12 banner-label-bottom pb-21-xs">
 				            	<div class="bg-white">
 					            	<?php $imagen = get_field('imagen_noticias'); ?>
 					            	<?php if ($imagen!='') { ?>
 					            	<div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
 					            	<?php } else { ?>
-					            	<div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
+					            	<!--<div class="banner-pic" style="background-image: url(<?php //echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png)"></div>-->
 					            	<?php } ?>
 					            	<div class="banner-content flex-none">
 
@@ -70,7 +70,7 @@ get_header(); ?>
 			                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
 														<?php } ?>
 													</small>
-			                    <div class="mt-14 noticias_quickview"><?php
+			                    <div class="mt-14 noticias_quickview pb-14-xs"><?php
                                      $noteContent = get_field('descripcion_rapida_noticias');
                                          if($noteContent != '' ){
                                              the_field('descripcion_rapida_noticias');
@@ -129,7 +129,7 @@ get_header(); ?>
 	              </ul>
 	            </div>--> 	            
 	        	</div>
-	          <div class="col-md-4 mostrar-anteriores">
+	          <div class="col-md-4 mostrar-anteriores hidden-xs hidden-sm">
 	            <h4 class="medium text-gray-darker mb-14">Lo último en las redes</h4> 
 	          	<div class="mb-14">
 								<div class="fb-like-box bg-white" data-href="https://www.facebook.com/redprolid" data-width="350" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>

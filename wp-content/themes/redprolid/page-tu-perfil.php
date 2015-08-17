@@ -19,9 +19,9 @@ get_header(); ?>
       <div class="row pv-42">
         <div class="col-sm-4">
           <?php echo get_avatar( $current_user->ID, 250); ?>
-          <h4 class="light pt-7 mb-0"><?php echo $current_user->user_nicename; ?></h4>
+          <h4 class="light pt-7 mb-0"><?php echo $current_user->display_name; ?></h4>
         </div>
-        <div class="col-sm-8 ph-70-sm">
+        <div class="col-sm-8 ph-70-sm ph-14-xs">
           <div class="row">
           	<div class="col-xs-12">
 				      <?php while ( have_posts() ) : the_post(); ?>
@@ -38,7 +38,8 @@ get_header(); ?>
           <ul class="list-unstyled list-group list-group-custom">
           <?php
           $args = array(
-            'user_id' => $current_user->ID
+            'user_id' => $current_user->ID,
+            'status'  => 'approve'
           );
           $comments = get_comments($args);?>
 

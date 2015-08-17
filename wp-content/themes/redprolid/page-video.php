@@ -13,23 +13,23 @@ get_header(); ?>
 <section> 
   <div class="container">
     <?php the_breadcrumb(); ?> 
-    <div class="clearfix sub-header">
-      <div class="col-sm-1 col-xs-3">
+    <div class="row clearfix sub-header">
+      <div class="icon-videos col-lg-1 col-sm-12 text-center-sm col-xs-12 text-center-xs pt-35-xs">
         <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/video-icon-circle.png" alt="" width="100%"></div>
       </div>
-      <div class="col-sm-4 col-xs-9">
+      <div class="col-lg-4 col-sm-12 text-center-sm col-xs-12 text-center-xs ">
         <h1>Video</h1>
       </div>
-      <div class="col-sm-7 col-xs-12">
-        <nav class="text-right text-center-xs">
+      <div class="col-lg-7 pr-0-lg col-sm-12 col-xs-12">
+        <nav class="text-right text-center-sm text-center-xs txt-center-landscape-ipad">
           <a href="#" data-toggle="modal" data-target="#modalVideos">¿Quieres compartir un video?</a> <span class="text-primary">|</span> <a href="<?php echo home_url('/'); ?>video/videos-anteriores">Videos anteriores</a> 
         </nav>	          
       </div>
     </div>
-    <?php query_posts( 'cat=258&posts_per_page=1paged=' . $paged ); ?>
+    <?php query_posts( 'cat=258&posts_per_page=1&orderby=meta_value_num&meta_key=video_fecha_publicacion&paged=' . $paged ); ?>
 		<?php while ( have_posts() ) : the_post(); ?> 
     <div class="row">
-			<div class="col-sm-7 relative">
+			<div class="col-lg-7 col-sm-12 relative">
 		    <?php $youtube = get_field('video_youtube'); ?>
 	    	<?php if ($youtube!='') { ?>
 	    		<iframe width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
@@ -40,7 +40,7 @@ get_header(); ?>
 				<?php } ?>
 				<div class="new-ribbon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/new-ribbon.png)"></div>
 			</div>
-			<div class="col-sm-5">
+			<div class="col-lg-5 col-sm-12">
 				<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h2 class="medium mb-0"><?php the_title(); ?></h2></a>
 				<?php $video_autor = get_field('video_autor'); ?>
 				<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
@@ -57,17 +57,19 @@ get_header(); ?>
       	<h2>Otros videos</h2>
       	<hr>
 				<div class="row pb-35">
-        	<?php query_posts( 'cat=258&posts_per_page=4&offset=2&orderby=meta_value_num&meta_key=video_fecha_publicacion'); ?>
+        	<?php //query_posts( 'cat=258&posts_per_page=4&offset=2&orderby=meta_value_num&meta_key=video_fecha_publicacion'); ?>
+        	<?php query_posts( 'cat=258&posts_per_page=4&offset=1&orderby=meta_value_num&meta_key=video_fecha_publicacion'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>  
 					  
-					<div class="col-sm-3">
+					<div class="col-lg-3 col-sm-12">
 				    <?php $youtube = get_field('video_youtube'); ?>
 			    	<?php if ($youtube!='') { ?>
 			    		<iframe width="100%" height="220" src="//www.youtube.com/embed/<?php the_field('video_youtube'); ?>?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>     
 						<?php } ?>
-				    <?php $vimeo = get_field('video_vimeo'); ?>
+				    <?php $vimeo = get_field('video_video_vimeo'); ?>
 			    	<?php if ($vimeo!='') { ?>				
-							<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="220" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							<iframe src="//player.vimeo.com/video/<?php the_field('video_video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="220" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							<!-- <iframe src="//player.vimeo.com/video/<?php //the_field('video_video_vimeo'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="220" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
 						<?php } ?>
 						<a href="<?php echo get_permalink( get_the_ID() ); ?>"><h3 class="medium mt-7 mb-0"><?php the_title(); ?></h3></a>
 						<?php $video_autor = get_field('video_autor'); ?>
@@ -85,7 +87,7 @@ get_header(); ?>
         </div>
         <div class="row pb-21">
 	        <div class="col-md-12">
-		        <p class="text-right"><a href="<?php echo home_url('/'); ?>video/videos-anteriores">Todos los videos >></a></p>
+		        <p class="text-right"><a href="<?php echo home_url('/'); ?>video/videos-anteriores">Ve más >></a></p>
 	        </div>
         </div>
       </div>

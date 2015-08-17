@@ -12,20 +12,20 @@ get_header(); ?>
   <div class="container">
     <?php the_breadcrumb(); ?>
     <div class="clearfix bg-panel sub-header">
-      <div class="col-sm-7">
+      <div class="col-sm-7 col-xs-12 text-center-xs ">
         <div>
           <h1>Puntos de vista anteriores</h1>
           <nav class="mt-21">
-            <a href="<?php echo content_url('/'); ?>puntos-de-vista">Puntos de vista >></a>
+            <a  href="<?php echo content_url('/'); ?>puntos-de-vista">Puntos de vista >></a>
           </nav>
         </div>
       </div>
-      <div class="sub-header-icon" style="background-color:#AEAB8B;">
-        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon-int.png" width="100%" alt="">
+      <div class="sub-header-icon hidden-xs" style="background-color:#AEAB8B;">
+        <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon-int.png" style"width=100%;" alt="">
       </div>
     </div>	      
     <div class="ph-70">
-      <div class="row">
+      <div class="row ph-14-sm">
         <div class="col-sm-12">
           <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
           <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=10&offset=1paged=' . $paged ); ?>

@@ -27,7 +27,7 @@ get_header(); ?>
         <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/webinarios-icon.png" width="94px" height="auto" alt="">
       </div>
     </div>
-    <div class="ph-70">
+    <div class="ph-70-sm ph-14-xs">
       <div class="row">
         <form action="">
           <div class="col-sm-4 form-group">

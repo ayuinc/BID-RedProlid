@@ -2,13 +2,13 @@
   <div class="container mt-7">
     <?php the_breadcrumb(); ?>
     <div class="clearfix sub-header">
-      <div class="col-sm-12">
+      <div class="col-sm-12 col-xs-12">
         <nav class="mt-21">
           <a href="<?php echo home_url('/'); ?>video/videos-anteriores">Video anteriores >></a>
         </nav>
       </div>
     </div>
-    <div class="ph-70">
+    <div class="ph-70-sm ph-14-xs">
 	    <h2 class="medium mb-0"><?php the_title(); ?></h2>
 			<?php $video_autor = get_field('video_autor'); ?>
 			<?php $video_fecha_publicacion = get_field('video_fecha_publicacion') ?>
@@ -30,10 +30,14 @@
   			<div class="col-sm-12 with-hr">  	  
   		    <!--<p><?php //the_field('video_recurso_descripcion'); ?></p>-->
 					<p>
-		      	<?php $autor_video = get_field('autor_video'); ?>
-						<?php if ($autor_video!='') { ?>
-		      	<strong>Tema propuesto por:</strong> <a href="mailto:<?php the_field('autor_email_video'); ?>"><?php the_field('autor_video'); ?></a><br>
-		      	<?php } ?>							
+						<?php $video_tema = get_field('video_tema'); ?>
+						<?php if ($video_tema!='') { ?>						
+						<span class="medium">Tema:</span> <?php the_field('video_tema'); ?>
+							<?php if ($video_tag_tema!='') { ?>
+								<?php echo ', '.$video_tag_tema; ?>
+							<?php } ?>							
+						<br>
+						<?php } ?>
 						<?php $video_tipo_recurso = get_field('video_tipo_recurso'); ?>
 						<?php $video_tag_tipo_de_recurso = get_field('video_tag_tipo_de_recurso'); ?>
 						<?php if ($video_tipo_recurso!='') { ?>	
@@ -43,15 +47,11 @@
 							<?php } ?>						
 						<br>
 						<?php } ?>
-						<?php $video_tema = get_field('video_tema'); ?>
+		      	<?php $autor_video = get_field('autor_video'); ?>
+						<?php if ($autor_video!='') { ?>
+		      	<strong>Tema propuesto por:</strong> <a href="mailto:<?php the_field('autor_email_video'); ?>"><?php the_field('autor_video'); ?></a><br>
+		      	<?php } ?>	
 						<?php $video_tag_tema = get_field('video_tag_tema'); ?>
-						<?php if ($video_tema!='') { ?>						
-						<span class="medium">Tema:</span> <?php the_field('video_tema'); ?>
-							<?php if ($video_tag_tema!='') { ?>
-								<?php echo ', '.$video_tag_tema; ?>
-							<?php } ?>							
-						<br>
-						<?php } ?>
 						<?php $video_organizacion_video = get_field('video_organizacion'); ?>
 						<?php if ($video_organizacion!='') { ?>
 						<span class="medium">Organización:</span> <?php echo $video_organizacion; ?>
@@ -70,7 +70,7 @@
 				<?php	if ( is_user_logged_in() ) { ?>
 					<?php comments_template();?>
 				<?php } else { ?>
-					<p>Para poder comentar es necesario <a href="/registrate/">iniciar tu sesión o registrarse</a> a Red PROLD.</p>
+					<p>Para poder comentar es necesario que <a href="/registrate/">inicies tu sesión o te registres</a> en Red PROLID.</p>
 				<?php }	?>
     </div>
   </div>
