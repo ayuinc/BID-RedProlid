@@ -80,27 +80,7 @@ get_header(); ?>
       <section class="widgets pv-14">
         <div class="container">
           <div class="row">
-            <div class="col-md-3">
-              <div class="panel panel-custom">
-                <div class="panel-heading">
-                  <ul class="list-unstyled">
-                    <li class="title highlight-white">Concursos</li>
-                    <li class="rule"></li>
-                    <li class="icon" data-href="/concursos-proximamente/" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -42px;"></li>
-                  </ul>
-                </div>
-                <div class="panel-body highlight">
-                	<?php //query_posts( 'category_name=concursos&posts_per_page=1' ); ?>	
-									<?php //while ( have_posts() ) : the_post(); ?>                 
-                    <img src="/wp-content/uploads/2014/10/Screen-Shot-2014-10-14-at-10.47.19-PM.png" alt="" class="img-responsive mb-14">
-                    <h5>¿Quieres ganar premios que te ayuden en tu desarrollo profesional? </h5>
-                    <p class="light">Participa en los concursos de la Red aportando ideas, relatando tus experiencias y compartiendo tu creatividad.</p>
-                    <a href="/concursos-proximamente/" class="btn btn-primary">Más información</a>
-                  <?php //endwhile; ?>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 noticias">
+            <div class="col-md-6 noticias">
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
@@ -110,21 +90,45 @@ get_header(); ?>
                   </ul>
                 </div>
                 <div class="panel-body">
+                	<?php query_posts( 'category_name=noticias&posts_per_page=2' ); ?>	
+									<?php while ( have_posts() ) : the_post(); ?>                    
+                  <div class="banner col-md-4 banner-label-bottom">
+                    <div class="bg-white">
+                      <?php $imagen = get_field('imagen_noticias'); ?>
+                      <?php if ($imagen!='') { ?>
+                      <div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
+                      <?php } else { ?>
+                      <div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
+                      <?php } ?>
+                      <div class="banner-content flex-none">
 
-                    <ul class="list-unstyled list-group list-group-custom">
-                    	<?php query_posts( 'category_name=noticias&posts_per_page=3' ); ?>	
-											<?php while ( have_posts() ) : the_post(); ?>                    
-                      <li class="mb-14">
-                        <h5><?php the_title(); ?></h5>
-		                    <?php $publicacion = get_field('publicacion_noticias'); ?>
-		                    <small class="date light">
-		                    	<?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a><?php } ?> | <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="text-primary p">Lee más</a>
-												</small>                      
-                      </li>
-											<?php endwhile; ?>                     
-                    </ul>
-                    <a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary">Ve más</a>
+                               <a href="<?php echo get_permalink( get_the_ID() ); ?>">
+                            <h3 class="medium mt-7 mb-0 pb-0">
+                              <?php the_title(); ?>
+                                  </h3>
+                               </a>
 
+                        <?php $publicacion = get_field('publicacion_noticias'); ?>
+                        <small>
+                          <?php echo get_the_date('j F, Y'); ?><?php if ($publicacion!='') { ?>, <a href="<?php the_field('link_publicacion_noticias'); ?>" target="_blank"><?php the_field('publicacion_noticias'); ?></a>
+                          <?php } ?>
+                        </small>
+                        <div class="mt-14 noticias_quickview"><?php
+                                   $noteContent = get_field('descripcion_rapida_noticias');
+                                       if($noteContent != '' ){
+                                           the_field('descripcion_rapida_noticias');
+                                       }else{
+                                          the_field('contenido_noticias');
+                                       }
+                                  ;?></div>
+                        <div class="text-right banner-label">
+                          <a href="<?php echo get_permalink( get_the_ID() ); ?>">Noticia completa >></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+									<?php endwhile; ?>                     
+                  <a href="<?php echo home_url('/'); ?>noticias" class="btn btn-primary">Ve más</a>
                 </div>
               </div>
             </div>

@@ -34,15 +34,28 @@ get_header(); ?>
                     <?php $vimeo = get_field('id_video_vimeo_homepage'); ?>
                     <?php if ($vimeo!='') { ?>
                       <iframe src="//player.vimeo.com/video/<?php the_field('id_video_vimeo_homepage'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    <?php } ?>                      
+                    <?php } ?>
+                    <?php $imagen_campeonas = get_field('imagen_campeonas'); ?>
+                    <?php if ($imagen_campeonas!='') { ?>
+                      <img src="<?php the_field('imagen_campeonas'); ?>" alt="" width="" height="420">
+                    <?php } ?>                     
                   </div>
                 </div>
                 <div class="col-sm-5 minh-350 flex-middle-end">
                   <div class="slide-content relative">
                     <h3 class="medium text-gray-dark"><span class="uppercase"><?php the_title(); ?></h3>
+                    <?php $descripcion_home_campeonas = get_field('descripcion_home_campeonas'); ?>
+                    <?php if ($descripcion_home_campeonas!='') { ?>
+                    	<p><?php the_field('descripcion_home_campeonas'); ?></p>
+                    <?php } ?>
                     <hr class="hr-white">
                     <div class="text-right">
-                      <a href="<?php the_field('link_contenido_homepage'); ?>" class="btn btn-outline btn-white">Más aquí</a>
+                      <?php $link_contenido_homepage = get_field('link_contenido_homepage'); ?>
+                      <?php if ($link_contenido_homepage!='') { ?>
+                        <a href="<?php the_field('link_contenido_homepage'); ?>" class="btn btn-outline btn-white">Más aquí</a>
+                      <?php } else  { ?>
+                        <a href="<?php echo get_permalink( get_the_ID() ); ?>" class="btn btn-outline btn-white">Más aquí</a>
+                      <?php } ?>
                     </div>
                   </div>
                 </div>
@@ -93,7 +106,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title highlight-white">Noticias</li>
                     <li class="rule"></li>
-                    <li class="icon" data-href="/noticias" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -84px;"></li>
+                    <li class="icon" data-href="/noticias" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-sml.png); background-repeat: no-repeat;"></li>
                   </ul>
                 </div>
                 <div class="panel-body">
@@ -198,11 +211,11 @@ get_header(); ?>
               <div class="panel panel-custom">
 	              <div class="panel-heading">
                     <ul class="list-unstyled m-0">
-                      <li class="title highlight-campeonas pl-14 text-gray-darker">Campeonas</li>
+                      <li class="title highlight-campeonas pl-14 text-gray-darker">Campeon@s</li>
                       <li class="rule relative"></li>
 			                <?php query_posts( 'category_name=campeonas&posts_per_page=1' ); ?>	
 											<?php while ( have_posts() ) : the_post(); ?>                       
-                      <li class="icon" data-href="<?php echo get_permalink( get_the_ID() ); ?>" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
+                      <li class="icon" data-href="<?php echo get_permalink( get_the_ID() ); ?>"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -252px;"></li>
                       <?php endwhile; ?>
                     </ul>
                   </div>             
@@ -216,14 +229,16 @@ get_header(); ?>
 	                    <?php } ?>
 			                <?php $video = get_field('video_campeonas'); ?>
 			                <?php if ($video!='') { ?>
-	                    <iframe class="embed-responsive-item" width="100%" height="209" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	                    <iframe class="embed-responsive-item" width="100%" height="209" src="//www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 	                    <?php } ?>
 											<small><?php the_field('fuente_imagen_campeonas'); ?></small>
                   	</div>
 	                  <div class="col-sm-7 pr-0">
                     <h3 class="pt-0 medium mb-0 pb-0"><?php the_title(); ?></h3>
                     <small><?php $tempDate = get_field(fecha_de_la_entrevista); ?>
-            <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></small>
+											<!--<?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de -->
+											<?php echo date_i18n('Y', strtotime( $tempDate)); ?>
+										</small>
                     <p class="light-italic">
 							        <em><?php the_field('posicion_campeona'); ?></em>
                     </p>
@@ -250,13 +265,15 @@ get_header(); ?>
                   <ul class="list-unstyled list-group list-group-custom">
                     <?php
                     $args = array(
-                      'number' => '2'
+                      'number' => '3',
+                      'status' => 'approve'
                     );
                     $comments = get_comments($args);?>
 
                     <?php foreach ($comments as $comment) : ?>
                       <li class="mb-14">
-                        <p class="light"><?php echo($comment->comment_content);?></p>
+                        <p class="light" id="home-comment"><a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo get_the_title( $comment->comment_post_ID ); ?></a></p>
+                        <small class="date light"><?php echo($comment->comment_content);?></small></br>
                         <small class="date light"><?php echo($comment->comment_date);?> | <?php echo($comment->comment_author);?></small> 
                       </li>
                     <?php endforeach;?>
@@ -265,7 +282,7 @@ get_header(); ?>
             </div>
             <div class="col-md-9 bg-panel ph-14">
               <div class="panel panel-custom hidden-sm-down">
-                <div class="panel-body tall pt-0">
+                <div class="panel-body tall pt-14">
                   <div class="panel-heading">
                     <ul class="list-unstyled m-0">
                       <li class="title highlight-campeonas pl-14 text-gray-darker">Lo último en las redes</li>
