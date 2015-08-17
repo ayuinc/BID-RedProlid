@@ -105,7 +105,7 @@ get_header(); ?>
                 <div class="panel-body">
                 	<?php query_posts( 'category_name=noticias&posts_per_page=2' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>                    
-                  <div class="banner col-md-6 banner-label-bottom">
+                  <div class="banner col-md-6 banner-label-bottom" style="border:none">
                     <div class="bg-white">
                       <?php $imagen = get_field('imagen_noticias'); ?>
                       <?php if ($imagen!='') { ?>
@@ -134,7 +134,7 @@ get_header(); ?>
                                        }
                                   ;?></div>
                         <div class="text-right banner-label">
-                          <a href="<?php echo get_permalink( get_the_ID() ); ?>">Noticia completa >></a>
+                          <a href="<?php echo get_permalink( get_the_ID() ); ?>">Lee más >></a>
                         </div>
                       </div>
                     </div>
