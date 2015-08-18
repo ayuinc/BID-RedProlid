@@ -253,14 +253,14 @@ div[id^="yop-poll-results-3"] {
   >p,>div{
     &:first-child{
       font-size: 16px!important;
-      color: #232323!important;
+      color: #555!important;
       font-weight: 300;
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 6; /* number of lines to show */
-      line-height: 18px!important;        /* fallback */
+      // line-height: 18px!important;        /* fallback */
       max-height: 108px!important;
       >p, >div{
         display: none;

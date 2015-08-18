@@ -6495,7 +6495,7 @@ div[id^="yop-poll-results-3"] {
     display: none; }
     .noticias_quickview > p:first-child, .noticias_quickview > div:first-child {
       font-size: 16px !important;
-      color: #232323 !important;
+      color: #555 !important;
       font-weight: 300;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -6503,8 +6503,6 @@ div[id^="yop-poll-results-3"] {
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 6;
       /* number of lines to show */
-      line-height: 18px !important;
-      /* fallback */
       max-height: 108px !important; }
       .noticias_quickview > p:first-child > p, .noticias_quickview > p:first-child > div, .noticias_quickview > div:first-child > p, .noticias_quickview > div:first-child > div {
         display: none; }
