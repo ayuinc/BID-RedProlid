@@ -115,9 +115,9 @@ get_header(); ?>
                       <?php } ?>
                       <div class="banner-content flex-none pv-21-lg ph-0-lg">
                                <a href="<?php echo get_permalink( get_the_ID() ); ?>">
-                            <h3 class="medium mt-7 mb-0 pb-0">
+                            <h5 class="bold mt-7 mb-0 pb-0">
                               <?php the_title(); ?>
-                                  </h3>
+                                  </h5>
                                </a>
 
                         <?php $publicacion = get_field('publicacion_noticias'); ?>
