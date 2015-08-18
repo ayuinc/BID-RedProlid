@@ -93,7 +93,7 @@ get_header(); ?>
       <section class="widgets pv-14">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 noticias">
+            <div class="col-md-6 noticias ph-0-xs">
               <div class="panel panel-custom">
                 <div class="panel-heading">
                   <ul class="list-unstyled">
@@ -102,10 +102,10 @@ get_header(); ?>
                     <a href="/noticias"> <li class="icon"  style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/noticias-sml.png); background-repeat: no-repeat;"></li></a>
                   </ul>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body pv-0-lg">
                 	<?php query_posts( 'category_name=noticias&posts_per_page=2' ); ?>	
 									<?php while ( have_posts() ) : the_post(); ?>                    
-                  <div class="banner col-md-6 banner-label-bottom" style="border:none">
+                  <div class="banner ph-0-xs col-md-6 banner-label-bottom" style="border:none">
                     <div class="bg-white">
                       <?php $imagen = get_field('imagen_noticias'); ?>
                       <?php if ($imagen!='') { ?>
@@ -113,7 +113,7 @@ get_header(); ?>
                       <?php } else { ?>
                       <div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
                       <?php } ?>
-                      <div class="banner-content flex-none">
+                      <div class="banner-content flex-none pv-21-lg ph-0-lg">
                                <a href="<?php echo get_permalink( get_the_ID() ); ?>">
                             <h3 class="medium mt-7 mb-0 pb-0">
                               <?php the_title(); ?>
@@ -132,8 +132,9 @@ get_header(); ?>
                                        }else{
                                           the_field('contenido_noticias');
                                        }
-                                  ;?></div>
-                        <div class="text-right banner-label">
+                                  ;?>
+                        </div>
+                        <div class="text-right banner-label pt-21-xs">
                           <a href="<?php echo get_permalink( get_the_ID() ); ?>">Lee más >></a>
                         </div>
                       </div>
