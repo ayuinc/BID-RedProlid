@@ -111,7 +111,7 @@ get_header(); ?>
                       <?php if ($imagen!='') { ?>
                       <div class="banner-pic" style="background-image: url(<?php the_field('imagen_noticias'); ?>)"></div>
                       <?php } else { ?>
-                      <div class="banner-pic" style="background-image: url(<?php echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png)"></div>
+                      <!-- <div class="banner-pic" style="background-image: url(<?php //echo home_url('/'); ?>wp-content/uploads/2015/02/eventos_redprolid.png)"></div> -->
                       <?php } ?>
                       <div class="banner-content flex-none pv-21-lg ph-0-lg">
                                <a href="<?php echo get_permalink( get_the_ID() ); ?>">
