@@ -1,7 +1,7 @@
 <div id="nav-main-menu" style="z-index:999" class="hidden-xs hidden-sm hidden-md">
   <div class="container">
     <div class="flex-space-between">
-      <div class="left" style="width:50.5%;">
+      <div class="left" style="width:40.5%;">
         <ul class="list-unstyled m-0">
           <?php 
             $uri = $_SERVER['REQUEST_URI'];
@@ -59,7 +59,7 @@
               <li class="light"><a href="<?php echo home_url('/'); ?>eventos">Eventos</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>publicaciones">Publicaciones</a></li>
               <!--<li class="light"><a href="<?php echo home_url('/'); ?>boletin">Nuestro boletín</a></li>-->
-              <li class="light"><a href="<?php echo home_url('/'); ?>boletines-proximamente/">Nuestro boletín</a></li>
+<!--               <li class="light"><a href="<?php echo home_url('/'); ?>boletines-proximamente/">Nuestro boletín</a></li> -->
             </ul>
           </li>
           <!--li>
