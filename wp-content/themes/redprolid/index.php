@@ -175,7 +175,7 @@ get_header(); ?>
                   <ul class="list-unstyled">
                     <li class="title highlight-white">Tu opinión cuenta</li>
                     <li class="rule"></li>
-                    <li class="icon" data-href="/tu-opinion-cuenta" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -168px;"></li>
+                    <a href="/tu-opinion-cuenta"><li class="icon" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/icons/sprites-home-grid.png); background-repeat: no-repeat; background-position: 0px -168px;"></li></a>
                   </ul>
                 </div>
                 <div class="panel-body pt-0 hide-poll-results-anchor">
