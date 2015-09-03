@@ -45,6 +45,7 @@ function delayer(){
     }
 
     elseif ( $cat[0]->slug == 'agenda-de-genero' ) {
+      echo $cat[0]->slug;
       //get_template_part( 'single-sectionpost' );
       if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
           $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
@@ -64,6 +65,7 @@ function delayer(){
     }
 
     elseif ( $cat[0]->slug == 'carrera-de-vallas' ) {
+      echo $cat[0]->slug;
       //get_template_part( 'single-sectionpost' );
       if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
           $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
@@ -83,6 +85,7 @@ function delayer(){
     }
 
     elseif ( $cat[0]->slug == 'la-pinta-no-es-lo-de-menos' ) {
+      echo $cat[0]->slug;
       //get_template_part( 'single-sectionpost' );
       if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
           $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
@@ -102,6 +105,7 @@ function delayer(){
     }
 
     elseif ( $cat[0]->slug == 'listas-para-la-politica' ) {
+      echo $cat[0]->slug;
       //get_template_part( 'single-sectionpost' );
       if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
           $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
@@ -121,6 +125,7 @@ function delayer(){
     }
 
     elseif ( $cat[0]->slug == 'nivelando-la-cancha' ) {
+      echo $cat[0]->slug;
       //get_template_part( 'single-sectionpost' );
       if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
           $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
@@ -197,6 +202,10 @@ function delayer(){
 
      elseif ( $cat[0]->slug == 'a-tu-estilo' ) {
       get_template_part( 'single-a-tu-estilo' );
+    }
+    else{
+      // header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+      get_template_part( 'single-desarrolla-tu-liderazgo' );
     }                    
   ?>
 </div>
