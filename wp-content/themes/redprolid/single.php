@@ -24,6 +24,7 @@ function delayer(){
 		$home_url = home_url('/'); 
 
     if ( $cat[0]->slug == 'a-donde-vamos' ) {
+      echo $cat[0]->slug;
       //get_template_part( 'single-sectionpost' );
       
       if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
