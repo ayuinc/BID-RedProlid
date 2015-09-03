@@ -137,6 +137,26 @@ function delayer(){
         get_template_part( 'single-desarrolla-tu-liderazgo' );
       }
     }
+
+    elseif ( $cat[0]->slug == 'pistas-2' ) {
+      //get_template_part( 'single-sectionpost' );
+      if (isset($_GET['wpdiscuzSubscribeID']) && isset($_GET['key'])) {       
+          $wc_core->wc_unsubscribe($_GET['wpdiscuzSubscribeID'], $_GET['key']);
+          ?>
+          <div id="wc_unsubscribe_message" style="background:#79B17E">
+              <span class="wc_unsubscribe_message"><?php echo $wc_core->wc_options->wc_options_serialized->wc_phrases['wc_unsubscribe_message']; ?></span>
+          </div>
+          <nav class="mt-21 pb-21 text-center">
+            <a href="/">Inicio &gt;&gt;</a>
+          </nav>
+          <?php
+      }
+      else{
+        echo $cat[0]->slug;
+        // header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
+        get_template_part( 'single-desarrolla-tu-liderazgo' );
+      }
+    }
     
     elseif ( $cat[0]->slug == 'puntos-de-vista' ) {
       get_template_part( 'single-puntosdevista' );
@@ -200,7 +220,7 @@ function delayer(){
     else{
       echo $cat[0]->slug;
       // header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
-      get_template_part( 'single-desarrolla-tu-liderazgo' );
+      // get_template_part( 'single-desarrolla-tu-liderazgo' );
     }                    
   ?>
 </div>
