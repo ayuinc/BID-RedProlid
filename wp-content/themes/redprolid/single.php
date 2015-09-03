@@ -152,7 +152,6 @@ function delayer(){
           <?php
       }
       else{
-        echo $cat[0]->slug;
         // header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
         get_template_part( 'single-desarrolla-tu-liderazgo' );
       }
@@ -216,11 +215,6 @@ function delayer(){
 
      elseif ( $cat[0]->slug == 'a-tu-estilo' ) {
       get_template_part( 'single-a-tu-estilo' );
-    }
-    else{
-      // echo $cat[0]->slug;
-      // header("Location: ".$home_url."desarrolla-tu-liderazgo/a-donde-vamos/");
-      // get_template_part( 'single-desarrolla-tu-liderazgo' );
     }                    
   ?>
 </div>
