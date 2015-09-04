@@ -79,7 +79,7 @@
             <?php } ?>
             <?php $tipo_de_recurso_puntosdevista = get_field('tipo_de_recurso_puntosdevista'); ?>
             <?php if ($tipo_de_recurso_puntosdevista!='') { ?>
-            <strong>Sígueme en Tipo de recurso:</strong> <a href="<?php the_field('tipo_de_recurso_puntosdevista'); ?>" target="_blank"><?php the_field('tipo_de_recurso_puntosdevista'); ?></a><br>
+            <strong>Tipo de recurso:</strong> <a><?php the_field('tipo_de_recurso_puntosdevista'); ?></a><br>
             <?php } ?>
           </p>  
         </div>  
