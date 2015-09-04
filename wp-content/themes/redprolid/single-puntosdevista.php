@@ -59,7 +59,7 @@
             <?php } ?>
             <?php $twitter_puntosdevista = get_field('cuenta_de_twitter'); ?>
             <?php if ($twitter_puntosdevista!='') { ?>
-            <strong>Sígueme en Twitter:</strong> <a href="<?php the_field('cuenta_de_twitter'); ?>" target="_blank"><?php the_field('cuenta_de_twitter'); ?></a><br>
+            <strong>Sígueme en Twitter:</strong> <a href="https://twitter.com/<?php the_field('cuenta_de_twitter'); ?>" target="_blank"><?php the_field('cuenta_de_twitter'); ?></a><br>
             <?php } ?>
             <?php $google_puntosdevista = get_field('google_puntosdevista'); ?>
             <?php if ($google_puntosdevista!='') { ?>
