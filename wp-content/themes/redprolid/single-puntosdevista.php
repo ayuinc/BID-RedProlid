@@ -69,13 +69,13 @@
             <?php if ($linkedin_puntosdevista!='') { ?>
             <strong>Sígueme en LinkedIn:</strong> <a href="<?php the_field('linkedin_puntosdevista'); ?>" target="_blank"><?php the_field('linkedin_puntosdevista'); ?></a><br>
             <?php } ?>
-            <?php $tema_puntosdevista = get_field('tema_puntosdevista'); ?>
-            <?php if ($tema_puntosdevista!='') { ?>
-            <strong>Sígueme en Tema:</strong> <a href="<?php the_field('tema_puntosdevista'); ?>" target="_blank"><?php the_field('tema_puntosdevista'); ?></a><br>
+            <?php $tema_pdv = get_field('tema_pdv'); ?>
+            <?php if ($tema_pdv!='') { ?>
+            <strong>Tema:</strong> <a href="<?php the_field('tema_pdv'); ?>" target="_blank"><?php the_field('tema_pdv'); ?></a><br>
             <?php } ?>
-            <?php $pais_puntosdevista = get_field('pais_puntosdevista'); ?>
-            <?php if ($pais_puntosdevista!='') { ?>
-            <strong>Sígueme en Pais:</strong> <a href="<?php the_field('pais_puntosdevista'); ?>" target="_blank"><?php the_field('pais_puntosdevista'); ?></a><br>
+            <?php $pais_pdv = get_field('pais_pdv'); ?>
+            <?php if ($pais_pdv!='') { ?>
+            <strong>Pais:</strong> <a href="<?php the_field('pais_pdv'); ?>" target="_blank"><?php the_field('pais_pdv'); ?></a><br>
             <?php } ?>
             <?php $tipo_de_recurso_puntosdevista = get_field('tipo_de_recurso_puntosdevista'); ?>
             <?php if ($tipo_de_recurso_puntosdevista!='') { ?>
