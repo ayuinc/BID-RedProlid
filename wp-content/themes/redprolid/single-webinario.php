@@ -26,7 +26,7 @@
 		    <div class="row">
 		      <div class="col-md-10 col-md-offset-1">		
 				    <h1 class="mb-14 medium"><?php the_title(); ?></h1>
-				    <p class="mt-14"><?php the_field('descripcion_resumen'); ?></p>
+				    
 				    <?php $video = get_field('video'); ?>
 				    <?php if ($video!='') { ?>
 	          <div class="row">
@@ -37,6 +37,7 @@
 		          </div>
 	          </div>
 	          <?php } ?>
+	          <p class="mt-14"><?php the_field('descripcion_resumen'); ?></p>
 	          <div class="row">
 		          <div class="col-md-12">
 			          <ul class="list-unstyled mt-35 mb-35 webinario-datos">
