@@ -14,7 +14,7 @@ get_header(); ?>
 	<?php //$location =  get_permalink( get_the_ID() ); ?>
 	<?php //wp_redirect( $location, $status ); ?>
 	<?php //exit; ?>
-	get_template_part( 'single-webinario' );
+	<?php get_template_part( 'single-webinario' ); ?>
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
