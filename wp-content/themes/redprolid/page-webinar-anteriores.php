@@ -60,8 +60,8 @@ get_header(); ?>
               <div class="right flex-middle">
                 <nav>
                   <a href="<?php echo get_permalink( get_the_ID() ); ?>">Ver webinario</a> 
-                  <span class="text-primary">|</span> 
-                  <a href="<?php the_field('link_a_resumen'); ?>">Resumen del webinario</a>
+                  <!-- <span class="text-primary">|</span>  -->
+                  <!-- <a href="<?php //the_field('link_a_resumen'); ?>">Resumen del webinario</a> -->
                 </nav>
               </div>
             </div>
