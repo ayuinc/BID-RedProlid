@@ -28,15 +28,6 @@ get_header(); ?>
       </div>
     </div>
     <div class="ph-70-sm ph-14-xs">
-      <div class="row">
-        <form action="">
-          <div class="col-sm-4 form-group">
-            <select name="" id="" class="form-control select-override">
-              <option value="Del más antiguo al más nuevo">Del más antiguo al más nuevo</option>
-            </select>
-          </div>
-        </form>
-      </div>
       <?php query_posts( 'category_name=webinario' ); ?> 
       <?php while ( have_posts() ) : the_post(); ?>
       <div class="banner">
