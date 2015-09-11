@@ -12,10 +12,11 @@
 
 <html <?php language_attributes(); ?>>
   <head>
+
     <meta charset="utf-8">
     <!-- Project SEO -->
-
-
+    <title><?php wp_title(''); ?></title>
+    
     <!-- Responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
