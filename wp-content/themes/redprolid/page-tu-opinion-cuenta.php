@@ -41,7 +41,7 @@ get_header(); ?>
           <p class="text-gray">Agosto 2014</p> -->
           <!-- <?php the_content(); ?> -->
           
-          <?php echo do_shortcode('[yop_poll id="5"]'); ?>
+          <?php echo do_shortcode('[yop_poll id="6"]'); ?>
            
         </div>
         <div class="col-sm-8 ph-70-sm pt-14-xs pl-14-xs">
