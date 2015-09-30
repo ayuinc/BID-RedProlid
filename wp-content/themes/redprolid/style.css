@@ -8,7 +8,7 @@ Version: 1.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, gray, white, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
-Text Domain: twentytwelve
+Text Domain: redprolid
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1762,5 +1762,10 @@ img#wpstats {
 	.comments-area article header time {
 		margin-left: 50px;
 		margin-left: 3.57142857rem;
+	}
+
+	div.bbpress-subscribe-link{
+		padding-left: 15px;
+		display: inline-block;
 	}
 }

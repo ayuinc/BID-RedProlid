@@ -21,7 +21,11 @@
 		return $limit;
 	} //end function my_post_limit
 		 
+  function redprolid_add_editor_styles() {
+    add_editor_style( 'forum-dates' );
+  }
 
+  add_action( 'init', 'redprolid_add_editor_styles' );
 
   /**
    * Register our sidebars and widgetized areas.
@@ -442,3 +446,27 @@ function new_mail_from_name($old) {
 //   return '#comments';
 // }
 // add_filter( 'wsl_hook_process_login_alter_redirect_to', 'wsl_redirect_to', 10, 2 );
+
+/*
+* BB PRESS FILTER FOR FORUM CONTENT
+*
+*/
+function rw_singleforum_description() {
+  echo '<div class="bbp-forum-content ph-70-lg ph-35-sm ph-7-xs pv-14 background-light-sepia">';
+  echo bbp_forum_content();
+  echo '</div>';
+}
+add_action( 'bbp_template_before_single_forum' , 'rw_singleforum_description');
+
+function my_custom_display_topic_index_query ($args) {
+  $args['orderby'] = 'post_date';
+  $args['order']   = 'DESC';
+  return $args;
+}
+add_filter('bbp_before_has_topics_parse_args', 'my_custom_display_topic_index_query' );
+
+function custom_bbp_show_lead_topic( $show_lead ) {
+  $show_lead[] = 'true';
+  return $show_lead;
+}
+add_filter('bbp_show_lead_topic', 'custom_bbp_show_lead_topic' );
