@@ -16,22 +16,22 @@ get_header(); ?>
 	<div class="container relative">
 	    <?php bbp_breadcrumb(); ?>
 	    <?php bbp_get_template_part( 'content', 'forum-header' ); ?>
-	    <div class="ph-70-sm ph-14-xs pv-7">
-	      <div class="row pt-14-sm pb-14">
+	    <div class="ph-70-sm ph-14-xs pv-21">
+	      <div class=" pt-14-sm pb-14">
 
-		<?php do_action( 'bbp_before_main_content' ); ?>
+				<?php do_action( 'bbp_before_main_content' ); ?>
 
-		<?php do_action( 'bbp_template_notices' ); ?>
+				<?php do_action( 'bbp_template_notices' ); ?>
 
-		<div id="forum-front" class="bbp-forum-front">
-			<div class="entry-content">
+				<div id="forum-front" class="bbp-forum-front">
+					<div class="entry-content">
 
-				<?php bbp_get_template_part( 'content', 'archive-forum' ); ?>
+						<?php bbp_get_template_part( 'content', 'archive-forum' ); ?>
 
-			</div>
-		</div><!-- #forum-front -->
+					</div>
+				</div><!-- #forum-front -->
 
-		<?php do_action( 'bbp_after_main_content' ); ?>
+				<?php do_action( 'bbp_after_main_content' ); ?>
 			</div>
 		</div>
 	</div>
