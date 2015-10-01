@@ -5901,6 +5901,13 @@ form.form-search-inline button {
 .wppb-form-error {
   font-weight: bold; }
 
+.orange-button {
+  border: 0px;
+  border-radius: 2px;
+  color: white !important;
+  background: #ed7133 !important;
+  padding: 10px; }
+
 #nav-main-menu {
   position: relative;
   z-index: 9999; }
