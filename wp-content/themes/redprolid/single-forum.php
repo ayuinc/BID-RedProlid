@@ -18,10 +18,10 @@ get_header(); ?>
   <div class="container relative">
     <?php bbp_breadcrumb(); ?>
     <?php bbp_get_template_part( 'content', 'forum-header' ); ?>
-    <div class="ph-70-sm ph-14-xs pv-7">
-      <div class="row pt-14-sm pb-14">
+    <div class="ph-70-sm ph-14-xs pv-21">
+      <div class="pt-14-sm pb-14">
 
-	<div class="container single-forum">
+	<div class="single-forum">
 	<?php do_action( 'bbp_before_main_content' ); ?>
 
 	<?php do_action( 'bbp_template_notices' ); ?>

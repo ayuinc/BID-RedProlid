@@ -18,8 +18,8 @@ get_header(); ?>
  	<div class="container relative">
     <?php bbp_breadcrumb(); ?>
     <?php bbp_get_template_part( 'content', 'forum-header' ); ?>
-	    <div class="ph-70-sm ph-14-xs pv-7">
-	      	<div class="row pt-14-sm pb-14">
+	    <div class="ph-70-sm ph-14-xs pv-21">
+	      	<div class="pt-14-sm pb-14">
 
 		<?php do_action( 'bbp_before_main_content' ); ?>
 
@@ -30,7 +30,7 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<div id="bbp-topic-wrapper-<?php bbp_topic_id(); ?>" class="bbp-topic-wrapper">
-						<h1 class="entry-title pv-14 background-light-sepia mb-0 light text-center"><?php bbp_topic_title();?></h1>
+						<h2 class="entry-title pv-14 background-light-sepia mb-0 light text-left ph-35"><?php bbp_topic_title();?></h2>
 						<div class="entry-content">
 							<?php bbp_get_template_part( 'content', 'single-topic' ); ?>
 						</div>

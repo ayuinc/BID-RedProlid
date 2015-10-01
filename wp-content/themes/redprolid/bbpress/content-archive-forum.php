@@ -13,15 +13,13 @@
 
 	<?php if ( bbp_allow_search() ) : ?>
 
-		<div class="bbp-search-form">
+		<div class="bbp-search-form pb-7">
 
 			<?php bbp_get_template_part( 'form', 'search' ); ?>
 
 		</div>
 
 	<?php endif; ?>
-
-	<?php bbp_breadcrumb(); ?>
 
 	<?php bbp_forum_subscription_link(); ?>
 

@@ -9,7 +9,7 @@
 
 ?>
 
-<ul id="bbp-forum-<?php bbp_forum_id(); ?>" class="forum type-forum status-publish hentry loop-item-0 odd bbp-forum-status-open bbp-forum-visibility-publish p-0">
+<ul id="bbp-forum-<?php bbp_forum_id(); ?>" class="forum type-forum status-publish hentry loop-item-0 odd bbp-forum-status-open bbp-forum-visibility-publish p-0 pb-14">
 
 	<li class="bbp-forum-info-archive">
 
