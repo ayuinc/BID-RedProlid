@@ -11,7 +11,7 @@
 
 <ul id="bbp-forum-<?php bbp_forum_id(); ?>" class="forum type-forum status-publish hentry loop-item-0 odd bbp-forum-status-open bbp-forum-visibility-publish p-0">
 
-	<li class="bbp-forum-info">
+	<li class="bbp-forum-info-archive">
 
 		<?php if ( bbp_is_user_home() && bbp_is_subscriptions() ) : ?>
 
@@ -51,10 +51,11 @@
 	</li>
 
 	<li class="">
-			<?php if ( !bbp_is_forum_category() && bbp_has_topics() ) : ?>
+		    <?php 
+		     if ( !bbp_is_forum_category() && bbp_has_topics( array('post_parent' => bbp_get_forum_id()))) :?>
 
-			<?php bbp_get_template_part( 'loop',  'forum-topics' ); ?>
-
+				<?php bbp_get_template_part( 'loop',  'forum-topics' ); ?>
+		
 		<?php endif; ?>
 	</li>
 

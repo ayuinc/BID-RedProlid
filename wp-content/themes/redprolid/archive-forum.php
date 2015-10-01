@@ -38,9 +38,11 @@ get_header(); ?>
 </section>
 	<script>
 	$( document ).ready(function() {
-		$.each( $('.bbp-topic-order') , function (index , value){ 
+		$.each( $('.forum'), function (hey1, foro) {
+			$.each( $(foro).find('.bbp-topic-order') , function (index , value) { 
 				$(value).html(index+1);
-			});
+			}) 
+		});
 	});
 	</script>
 <?php get_footer(); ?>
