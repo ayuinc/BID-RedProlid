@@ -36,6 +36,10 @@ get_header(); ?>
 				      <?php while ( have_posts() ) : the_post(); ?>
 		    			  <?php the_content(); ?>
 		    		  <?php endwhile; ?>
+              <?php  if ( !is_user_logged_in() ):?>
+                <h4 class="light pl-14-xs">
+                 Debes estar registrado y logueado para ingresar enviar tu sugerencia.</h4>
+              <?php endif; ?>
 				    </div>
 		      </div>
         </div>
