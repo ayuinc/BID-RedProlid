@@ -40,9 +40,12 @@ get_header(); ?>
           </ul>
           <p class="text-gray">Agosto 2014</p> -->
           <!-- <?php the_content(); ?> -->
-          
-          <?php echo do_shortcode('[yop_poll id="6"]'); ?>
            
+           <?php query_posts( 'category_name=tu-opinion-cuenta&posts_per_page=1' ); ?>  
+                  <?php while ( have_posts() ) : the_post(); ?>  
+                    <?php $codigo_de_la_encuesta = get_field('codigo_de_la_encuesta'); ?> 
+                    <?php echo do_shortcode('[yop_poll id="'.$codigo_de_la_encuesta.'"]'); ?>
+           <?php endwhile; ?>
         </div>
         <div class="col-sm-8 ph-70-sm pt-14-xs pl-14-xs">
           <h3 class="pl-14-xs">Nos interesa lo que piensas</h3>
