@@ -1,7 +1,7 @@
 <div id="nav-main-menu" style="z-index:999" class="hidden-xs hidden-sm hidden-md">
   <div class="container">
-    <div class="flex-space-between">
-      <div class="left" style="width:40.5%;">
+    <div class="row">
+      <div class="left col-sm-6">
         <ul class="list-unstyled m-0">
           <?php 
             $uri = $_SERVER['REQUEST_URI'];
@@ -87,7 +87,7 @@
           </li>
         </ul>
       </div>
-      <div class="right" style="width: 32%; ">
+      <div class="right col-sm-6">
         <!-- <form>
           <div class="input-group">
             <input type="search" class="form-control" placeholder="Buscar">
