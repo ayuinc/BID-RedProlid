@@ -215,7 +215,11 @@ function delayer(){
 
      elseif ( $cat[0]->slug == 'a-tu-estilo' ) {
       get_template_part( 'single-a-tu-estilo' );
-    }                    
+    }  
+    
+     elseif ( $cat[0]->slug == 'evento-peru2015' ) {
+      get_template_part( 'single-evento-peru2015' );
+    }                        
   ?>
 </div>
 <?php get_footer(); ?>
