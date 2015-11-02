@@ -217,8 +217,8 @@ function delayer(){
       get_template_part( 'single-a-tu-estilo' );
     }  
     
-     elseif ( $cat[0]->slug == 'evento-peru2015' ) {
-      get_template_part( 'single-evento-peru2015' );
+     elseif ( $cat[0]->slug == 'generico' ) {
+      get_template_part( 'single-generico' );
     }                        
   ?>
 </div>
