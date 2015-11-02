@@ -21,13 +21,13 @@
               $current_user = wp_get_current_user();
               echo '<div class="text-right">';
               echo '<h4 class="light mb-0">Hola '.$current_user->user_firstname.' '.$current_user->user_lastname.'</h4>';
-							echo '<a href="'.wp_logout_url().'" title="Logout" class="medium">Cierra tu sesión</a> | <a href="'.home_url("/").'tu-perfil" class="medium">Edita tu perfíl</a>';
+              echo '<a href="'.wp_logout_url().'" title="Logout" class="medium">Cierra tu sesión</a> | <a href="'.home_url("/").'tu-perfil" class="medium">Edita tu perfíl</a>';
               echo '</div>';
-							
-							if ( ($current_user instanceof WP_User) ) {
+              
+              if ( ($current_user instanceof WP_User) ) {
                   //print_r($current_user);
-							    echo '<a href="'.home_url("/").'tu-perfil">'.get_avatar( $current_user->ID).'</a>';
-							}              
+                  echo '<a href="'.home_url("/").'tu-perfil">'.get_avatar( $current_user->ID).'</a>';
+              }              
 
             } else {
               echo do_shortcode('[dm_login_form]'); 
