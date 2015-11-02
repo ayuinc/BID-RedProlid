@@ -11,7 +11,16 @@
         <div class="col-sm-12 with-hr">     
           <p><?php the_field('contenido'); ?></p> 
         </div>
-      </div>       
+      </div>   
+      <div class="row">
+        <div class="col-sm-12 pv-21">  
+          <?php if ( is_user_logged_in() ) { ?>
+            <?php comments_template();?>
+          <?php } else { ?>
+            <p>Para poder comentar es necesario que <a href="/registrate/">inicies tu sesión o te registres</a> en Red PROLID.</p>
+          <?php } ?>
+        </div>
+      </div>          
     </div>
   </div>      
 </section>
