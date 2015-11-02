@@ -9,7 +9,7 @@
       </div>
       <div class="row">
         <div class="col-sm-12 with-hr">     
-          <p><?php the_field('contenido_noticias'); ?></p> 
+          <p><?php the_field('contenido'); ?></p> 
         </div>
       </div>       
     </div>
