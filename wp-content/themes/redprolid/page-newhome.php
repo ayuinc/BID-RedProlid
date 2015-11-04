@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: new-home
+Template Name: Prototipo Homepage
 */
 
 get_header(); ?>
