@@ -27,6 +27,10 @@ get_header(); ?>
               <div class="grid-list-item gallery-cell clearfix minh-350" style="width: 100%;">
                 <div class="col-sm-7 minh-350 flex-middle">
                   <div class="embed-responsive embed-responsive-16by9">
+                    <?php $imagen_homepage = get_field('imagen_contenido_homepage'); ?>
+                    <?php if ($imagen_homepage!='') { ?>
+                      <img src"<?php the_field('imagen_contenido_homepage'); ?>" alt="<?php the_title(); ?>" >
+                    <?php } ?>
                     <?php $youtube = get_field('id_video_youtube_homepage'); ?>
                     <?php if ($youtube!='') { ?>
                       <iframe class="embed-responsive-item" width="100%" height="420" src="//www.youtube.com/embed/<?php the_field('id_video_youtube_homepage'); ?>?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
