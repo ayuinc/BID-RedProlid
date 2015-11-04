@@ -39,8 +39,7 @@
 		                <a class="text-center-xs text-center-sm" href="https://www.facebook.com/redprolid" target="_blank"><i class="flaticon-facebook6"></i></a>
 		                <a class="text-center-xs text-center-sm" href="https://twitter.com/RedPROLID" target="_blank"><i class="flaticon-social19"></i></a>
 		                <a class="text-center-xs text-center-sm" href="https://plus.google.com/u/0/110729207092973287817/about" target="_blank"><i class="flaticon-google16"></i></a>
-		                <a class="text-center-xs text-center-sm" href="https://www.youtube.com/channel/UCpntjKraZb6A3qpClZTA5aQ" target="_blank"><i class="flaticon-logo4"></i></a>
-		                <a class="text-center-xs text-center-sm" href="https://www.youtube.com/channel/UCpntjKraZb6A3qpClZTA5aQ" target="_blank"><i class="flaticon-logo4"></i></a>		                
+		                <a class="text-center-xs text-center-sm" href="https://www.youtube.com/channel/UCpntjKraZb6A3qpClZTA5aQ" target="_blank"><i class="flaticon-logo4"></i></a>	                
 		              </nav>			  	
 								</div>						  		  
             </div>
