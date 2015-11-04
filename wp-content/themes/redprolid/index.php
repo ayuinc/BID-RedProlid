@@ -29,7 +29,7 @@ get_header(); ?>
                   <div class="embed-responsive embed-responsive-16by9">
                     <?php $imagen_homepage = get_field('imagen_contenido_homepage'); ?>
                     <?php if ($imagen_homepage!='') { ?>
-                      <img src"<?php echo $imagen_homepage; ?>" alt="<?php the_title(); ?>" >
+                      <img src="<?php echo $imagen_homepage; ?>" alt="<?php the_title(); ?>" >
                     <?php } ?>
                     <?php $youtube = get_field('id_video_youtube_homepage'); ?>
                     <?php if ($youtube!='') { ?>
