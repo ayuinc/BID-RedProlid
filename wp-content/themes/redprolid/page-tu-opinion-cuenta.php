@@ -39,10 +39,8 @@ get_header(); ?>
             <li>- (No) Sed accumsan neque purus, ac tincidunt sapien selerisque.</li>
           </ul>
           <p class="text-gray">Agosto 2014</p> -->
-          <!-- <?php the_content(); ?> -->
-          
-          <?php echo do_shortcode('[yop_poll id="8"]'); ?>
-           
+          <!-- <?php the_content(); ?> --->
+          <?php echo do_shortcode('[yop_poll id="9"]'); ?>           
         </div>
         <div class="col-sm-8 ph-70-sm pt-14-xs pl-14-xs">
           <h3 class="pl-14-xs">Nos interesa lo que piensas</h3>
