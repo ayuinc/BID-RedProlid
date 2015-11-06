@@ -23,4 +23,10 @@
     <![endif]-->
   </head>
   <body>
-
+   <header class="header-content">
+       <div class="header-logo">
+           <div class="container-sm">
+               <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-head.png">
+           </div>
+       </div>
+   </header>
