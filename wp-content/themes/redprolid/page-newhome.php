@@ -6,7 +6,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content">
 		<div class="minh-490 bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/women.jpg)">
-			<div class="search-bar minh-70 bg-pink-redprolid flex-bar">
+			<div class="search-bar minh-70 p-21 bg-pink-redprolid flex-bar">
 					<p>Forma parte de la Red PROLID</p><input type="text"><input type="text"><button>REGÍSTRATE</button>
 			</div>
 		</div>
@@ -15,7 +15,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				<div class="row">
 			 		<div class="col-sm-12 col-md-12 col-xs-12">
 			 			<div class="icono-content text-center">
-			 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" class="img-responsive" style="width:20%;">
+			 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" class="img-responsive" style="width:6%;">
 			 			</div>
 			 			<div class="text-description">
 			 				<p class="text-gray">Somos una inciativa del Banco Interamericano de Desarrollo (BID) para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan -- o apiran a ocupar -- posciciones de liderazgo en la administración pública en América Latina.</p>			 				
