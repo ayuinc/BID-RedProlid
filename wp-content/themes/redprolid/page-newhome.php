@@ -9,7 +9,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			<div class="search-bar minh-70 bg-pink-redprolid flex"></div>
 		</div>
 		<div class="middle-content">
-		 	<div class="container-md">
+		 	<div class="container-sm">
 				<div class="row">
 			 		<div class="col-sm-12 col-md-12 col-xs-12">
 			 			<div class="text-description">
