@@ -26,7 +26,7 @@
    <header class="header-content">
        <div class="header-logo">
            <div class="container-sm text-center">
-               <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-head.png" class="img-responsive">
+               <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-head.png" class="img-responsive" style="width:50%;">
            </div>
        </div>
    </header>
