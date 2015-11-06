@@ -5,7 +5,7 @@ Template Name: Prototipo Homepage
 get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content">
-		<div class="minh-490 bg-gray">
+		<div class="minh-490 bg-gray bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/women.jpg)">
 			<div class="search-bar"></div>
 		</div>
 		<div class="middle-content">
