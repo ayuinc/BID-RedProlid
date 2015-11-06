@@ -23,7 +23,4 @@
     <![endif]-->
   </head>
   <body>
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/dev.redprolid

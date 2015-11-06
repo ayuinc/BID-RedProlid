@@ -23,7 +23,4 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	</div>
 <?php  get_footer(); ?>
 
-<<<<<<< HEAD
-=======
-<?php get_footer(); ?>
->>>>>>> origin/dev.redprolid
+
