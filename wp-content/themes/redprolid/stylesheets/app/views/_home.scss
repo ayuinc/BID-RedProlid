@@ -2,6 +2,14 @@
 .bg-pink-redprolid{
 	background-color:#e94472;
 }
+.flex{
+	display:flex;
+}
+.flex-bar{
+	display: flex;
+	align-self: flex-end;
+	width: 100%;
+}
 .dtl-home {
 	.list-unstyled {
 		margin-top:-1rem;

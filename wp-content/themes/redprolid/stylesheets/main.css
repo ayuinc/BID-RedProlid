@@ -6337,6 +6337,14 @@ form.search button {
 .bg-pink-redprolid {
   background-color: #e94472; }
 
+.flex {
+  display: flex; }
+
+.flex-bar {
+  display: flex;
+  align-self: flex-end;
+  width: 100%; }
+
 .dtl-home .list-unstyled, .dtl-home .list-inline {
   margin-top: -1rem; }
   .dtl-home .list-unstyled .title, .dtl-home .list-inline .title {
