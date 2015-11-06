@@ -6334,6 +6334,9 @@ form.search button {
   background: none repeat scroll 0% 0% #EBEADE;
   padding: 21px; }
 
+.bg-pink-redprolid {
+  background-color: #e94472; }
+
 .dtl-home .list-unstyled, .dtl-home .list-inline {
   margin-top: -1rem; }
   .dtl-home .list-unstyled .title, .dtl-home .list-inline .title {

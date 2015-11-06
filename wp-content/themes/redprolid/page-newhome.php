@@ -5,8 +5,9 @@ Template Name: Prototipo Homepage
 get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content">
-		<div class="minh-490 bg-gray bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/women.jpg)">
-			<div class="search-bar"></div>
+		<div class="minh-490 bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/women.jpg)">
+			<p class="text-white">Somos una inciativa del Banco Interamericano de Desarrollo (BID) para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan -- o apiran a ocupar -- posciciones de liderazgo en la administración pública en América Latina.</p>
+			<div class="search-bar minh-70 bg-pink-redprolid"></div>
 		</div>
 		<div class="middle-content">
 		 	<div class="container-md">
