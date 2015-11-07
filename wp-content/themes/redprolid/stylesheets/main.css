@@ -6343,7 +6343,7 @@ form.search button {
 
 .text-header-first {
   display: flex;
-  background-color: red;
+  color: white;
   width: 100%;
   display: -webkit-box;
   display: -moz-box;
@@ -6352,7 +6352,8 @@ form.search button {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
-  order: 1; }
+  order: 1;
+  align-self: flex-end; }
 
 .flex-bar {
   display: flex;
