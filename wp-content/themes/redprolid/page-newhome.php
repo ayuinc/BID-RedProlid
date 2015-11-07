@@ -43,25 +43,25 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		<section class="center-content text-center pv-70">
 			<div class="container-sm">
 				<div class="row">
-					<div class="col-sm-3">
+					<div class="col-sm-3 text-center">
 						<div class="icono-center-content">
-							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" class="img-responsive" style="width:12%;">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" class="img-responsive" style="width:50%;">
 							<div class="text-description-center">
 			 					<p class="pv-21 text-gray">Somos una inciativa del Banco Interamericano de Desarrollo (BID)</p>	
 			 				</div>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-3 text-center">
 						<div class="icono-center-content">
-							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" class="img-responsive" style="width:12%;">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" class="img-responsive" style="width:50%;">
 							<div class="text-description-center">
 			 					<p class="pv-21 text-gray">Somos una inciativa del Banco Interamericano de Desarrollo (BID)</p>	
 			 				</div>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-3 text-center">
 						<div class="icono-center-content">
-							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" class="img-responsive" style="width:12%;">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" class="img-responsive" style="width:50%;">
 							<div class="text-description-center">
 			 					<p class="pv-21 text-gray">Somos una inciativa del Banco Interamericano de Desarrollo (BID)</p>	
 			 				</div>
