@@ -6,7 +6,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content">
 		<div class="minh-490 bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/women.jpg)">
-			<div class="registrer-bar minh-70 p-21 bg-pink-redprolid flex-bar">
+			<div class="registrer-bar minh-70 p-21 bg-pink-redprolid flex-bar mh-70">
 					<p class="bold text-white pt-7">Forma parte de la Red PROLID</p>
 					<div class="col-sm-3 col-xs-12">
 						<input placeholder="Nombre" class="border-radius mh-14 col-sm-12 col-xs-12 p-7" type="text">					
@@ -14,7 +14,9 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					<div class="col-sm-3 col-xs-12">
 						<input placeholder="Correo Electrónico" class=" border-radius mh-14 col-sm-12 col-xs-12 p-7" type="text">						
 					</div>
-					<button class="btn btn-outline btn-white border-radius bold">REGÍSTRATE</button>
+					<div class="col-sm-3">
+						<button class="btn btn-outline btn-white border-radius bold">REGÍSTRATE</button>					
+					</div>
 			</div>
 		</div>
 		<div class="middle-content pv-70">
