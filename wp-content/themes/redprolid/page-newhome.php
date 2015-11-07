@@ -5,7 +5,7 @@ Template Name: Prototipo Homepage
 get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content bg-gray-lighter">
-		<div class="minh-490 bg-img-block flex">
+		<div class="minh-490 bg-img-block flex header-banner">
 			<div class="text-center text-header-first pt-70-lg mt-70-lg">
 				<div class="container-sm">
 					<small class="text-white">Únete a la Red</small>
