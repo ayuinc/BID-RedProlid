@@ -6345,6 +6345,9 @@ form.search button {
   align-self: flex-end;
   width: 100%; }
 
+.w-100 {
+  width: 100%; }
+
 .dtl-home .list-unstyled, .dtl-home .list-inline {
   margin-top: -1rem; }
   .dtl-home .list-unstyled .title, .dtl-home .list-inline .title {
