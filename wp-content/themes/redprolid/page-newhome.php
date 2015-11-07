@@ -76,7 +76,32 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			</div>
 		</section>
 		<section class="end-content text-center pv-70 bg-gray-lighter">
-			
+			<div class="container-sm">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="small-icon"></div>
+						<div class="img-center-content"></div>
+						<div class="col-sm-12 col-xs-12 bg-white">
+							<h5></h5>
+							<small></small>
+							<small></small>
+							<p></p>
+							<a class="text-primary">&#10145;</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div class="small-icon"></div>
+						<div class="img-center-content"></div>
+						<div class="col-sm-12 col-xs-12 bg-white">
+							<h5></h5>
+							<small></small>
+							<small></small>
+							<p></p>
+							<a class="text-primary">&#10145;</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 	</div>
 <?php  get_footer(); ?>
