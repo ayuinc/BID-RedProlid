@@ -79,7 +79,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					<div class="col-sm-6 col-xs-12">
 						<div class="small-icon"></div>
 						<div class="img-center-content">
-							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/dtl-agenda-genero-col.jpg" class="img-responsive">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-col.jpg" class="img-responsive">
 						</div>
 						<div class="col-sm-12 col-xs-12 bg-white">
 							<h5></h5>
@@ -92,7 +92,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					<div class="col-sm-6 col-xs-12">
 						<div class="small-icon"></div>
 						<div class="img-center-content">
-							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/dtl-adonde-vamos-col.jpg" class="img-responsive">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.jpg" class="img-responsive">
 						</div>
 						<div class="col-sm-12 col-xs-12 bg-white">
 							<h5></h5>
