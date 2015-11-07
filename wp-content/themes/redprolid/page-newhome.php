@@ -29,7 +29,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" class="img-responsive" style="width:6%;">
 			 			</div>
 			 			<div class="text-description">
-			 				<p class="pv-21  ph-70-md -gray-darker">Somos una inciativa del Banco Interamericano de Desarrollo (BID) para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan -- o apiran a ocupar -- posciciones de liderazgo en la administración pública en América Latina.</p>	
+			 				<p class="pv-21  ph-70-md mb-0 gray-darker">Somos una inciativa del Banco Interamericano de Desarrollo (BID) para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan -- o apiran a ocupar -- posciciones de liderazgo en la administración pública en América Latina.</p>	
 
 			 			</div>
 			 			<div class="video-intro text-center">
