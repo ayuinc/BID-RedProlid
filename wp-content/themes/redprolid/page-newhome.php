@@ -20,11 +20,11 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									<input placeholder="Nombre" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-LNAME" name="LNAME">			
 								</div>										
 								<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
-									<input placeholder="Correo Electrónico" name="EMAIL" class=" border-radius col-sm-12 col-xs-12 p-7 required email" type="emaill" id="mce-EMAIL">						
+									<input placeholder="Correo Electrónico" name="EMAIL" class=" border-radius col-sm-12 col-xs-12 p-7 required email" type="text" id="mce-EMAIL">						
 								</div>
 								<div style="position: absolute; left: -5000px;"><input type="text" name="b_242e37fe564525e1aad9cfc03_eb13f7ce93" tabindex="-1" value=""></div>
 								<div class="col-md-3 col-sm-12 col-xs-12 pv-14-xs text-center-xs text-left">
-									<input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-outline btn-white border-radius bold">					
+									<input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-outline btn-white border-radius bold" style="width:100%">					
 								</div>
 							</div>
 						</div>
@@ -43,7 +43,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 
 			 			</div>
 			 			<div class="video-intro text-center">
-			 				<iframe  class="wi-100" width="580" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" frameborder="0" allowfullscreen></iframe>
+			 				<iframe  class="wi-100" width="580" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" allowfullscreen></iframe>
 			 				 <p class="mv-21"><a class="text-primary medium" href="#">¿QUIERES SABER MÁS? &#10145;</a></p>
 			 			</div>
 			 		</div>
