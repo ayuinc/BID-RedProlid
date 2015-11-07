@@ -29,7 +29,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" class="img-responsive" style="width:6%;">
 			 			</div>
 			 			<div class="text-description">
-			 				<p class="pv-21 text-gray-darker">Somos una inciativa del Banco Interamericano de Desarrollo (BID) para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan -- o apiran a ocupar -- posciciones de liderazgo en la administración pública en América Latina.</p>	
+			 				<p class="pv-21  ph-70-md -gray-darker">Somos una inciativa del Banco Interamericano de Desarrollo (BID) para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan -- o apiran a ocupar -- posciciones de liderazgo en la administración pública en América Latina.</p>	
 
 			 			</div>
 			 			<div class="video-intro text-center">
@@ -46,13 +46,13 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	 				<h2 class="text-gray-darker bold">¿Qué ganas formando parte de la RED PROLID?</h2>
 	 			</div>
 	 			<div class="text-description-center-second">
-	 				<p class="pv-21 text-gray">Somos una comunidad que te ofrece varios beneficios que te ayudarán a fortalecer tu capacidad de liderazgo en el sector público de tu país.</p>
+	 				<p class="pv-21 f-13 text-gray-darker">Somos una comunidad que te ofrece varios beneficios que te ayudarán a fortalecer tu capacidad de liderazgo en el sector público de tu país.</p>
 				<div class="row">
 					<div class="col-sm-4 col-xs-12 text-center">
 						<div class="icono-center-content">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" class="img-responsive" style="width:40%;">
 							<div class="text-description-center">
-			 					<p class="pv-21 text-gray">Un lugar para encontrar información y recursos prácticos</p>	
+			 					<p class="pv-21 f-13 text-gray">Un lugar para encontrar información y recursos prácticos</p>	
 			 				</div>
 						</div>
 					</div>
@@ -60,7 +60,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="icono-center-content">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" class="img-responsive" style="width:40%;">
 							<div class="text-description-center">
-			 					<p class="pv-21 text-gray">Un espacio de diálogo en el que intercambiemos opiniones </p>	
+			 					<p class="pv-21 f-13 text-gray">Un espacio de diálogo en el que intercambiemos opiniones </p>	
 			 				</div>
 						</div>
 					</div>
@@ -68,7 +68,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="icono-center-content">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" class="img-responsive" style="width:40%;">
 							<div class="text-description-center">
-			 					<p class="pv-21 text-gray">Un espacio para desarrollar contactos profesionales</p>	
+			 					<p class="pv-21 f-13 text-gray">Un espacio para desarrollar contactos profesionales</p>	
 			 				</div>
 						</div>
 					</div>

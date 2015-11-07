@@ -6755,6 +6755,9 @@ div[id^="yop-poll-results-3"] {
   .header-text {
     font-size: 1.5rem !important; }
 
+  .icono-content img {
+    width: 12%; }
+
   .punto-de-vista-img {
     padding-right: 0px; }
     .punto-de-vista-img img {
