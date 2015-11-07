@@ -7,7 +7,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	<div class="site-content">
 		<div class="minh-490 bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/women.jpg)">
 			<div class="search-bar minh-70 p-21 bg-pink-redprolid flex-bar">
-					<p class="bold text-white pt-7">Forma parte de la Red PROLID</p><input type="text"><input type="text"><button class="btn btn-outline btn-white bold">REGÍSTRATE</button>
+					<p class="bold text-white pt-7">Forma parte de la Red PROLID</p><input class="col-xs-12 col-md-6 col-sm-12 border-radius mh-14" type="text"><input class="col-xs-12 col-md-6 col-sm-12 border-radius mh-14" type="text"><button class="btn btn-outline btn-white border-radius bold">REGÍSTRATE</button>
 			</div>
 		</div>
 		<div class="middle-content">
