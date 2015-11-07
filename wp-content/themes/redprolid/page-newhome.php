@@ -81,10 +81,10 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				<div class="row">
 					<div class="col-sm-6 col-xs-12 text-left ph-14">
 						<div class="small-icon text-left">
-							<img class="pv-7" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" style="width:13%"><p class="color-g">Campeon@s</p>							
+							<img class="pv-7" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/campeonas-icon-circle.png" style="width:13%"><p class="color-g inline-p">Campeon@s</p>							
 						</div>
 						<div class="img-center-content">
-							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" class="w-100">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/dtl-adonde-vamos-col.jpg" class="w-100">
 						</div>
 						<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
 							<h5 class="bold text-gray-darker mt-7">Carmen Omonte</h5>
@@ -96,7 +96,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</div>
 					<div class="col-sm-6 col-xs-12 text-left ph-14">
 						<div class="small-icon text-left">
-							<img class="pv-7" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" style="width:13%"><p class="color-g">Puntos de Vista</p>							
+							<img class="pv-7" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" style="width:13%"><p class="color-g inline-p">Puntos de Vista</p>							
 						</div>
 						<div class="img-center-content">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.jpg" class="w-100">

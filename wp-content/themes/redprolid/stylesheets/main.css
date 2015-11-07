@@ -6357,6 +6357,9 @@ form.search button {
 .color-g {
   color: #AEAB8B; }
 
+.inline-p {
+  display: inline; }
+
 .dtl-home .list-unstyled, .dtl-home .list-inline {
   margin-top: -1rem; }
   .dtl-home .list-unstyled .title, .dtl-home .list-inline .title {
