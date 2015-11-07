@@ -13770,13 +13770,13 @@ hr.hr-custom-white:before {
   right: 10.5px; }
 
 .border-radius {
-  border-radius: 3px; }
+  border-radius: 3px !important; }
 
 .border-radius-sm {
-  border-radius: 3px; }
+  border-radius: 3px !important; }
 
 .border-radius-lg {
-  border-radius: 5px; }
+  border-radius: 5px !important; }
 
 .borderless {
   border: none !important; }
