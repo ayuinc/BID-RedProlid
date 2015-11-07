@@ -44,7 +44,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 			</div>
 			 			<div class="video-intro text-center">
 			 				<iframe  class="wi-100" width="580" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" allowfullscreen></iframe>
-			 				 <p class="mv-21"><a class="text-primary medium" href="#">¿QUIERES SABER MÁS? &#10145;</a></p>
+			 				 <p class="mv-21"><a class="text-primary medium" href="#">¿QUIERES SABER MÁS? →</a></p>
 			 			</div>
 			 		</div>
 				</div> 			 		
@@ -103,7 +103,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<small class="italic">2014</small><br>
 							<small class="italic">"Creo que es fundamental que las mujeres creamos, en primer lugar, en nosotras mismas... "</small>
 							<p class="text-gray-darker f-15 pv-7">Congresista de la República del Perú (2011-2016), y exministra.</p>
-							<a class="text-primary f-15 bold">LEE LA ENTREVISTA &#10145;</a>
+							<a class="text-primary f-15 bold">LEE LA ENTREVISTA  →</a>
 						</div>
 					</div>
 					<div class="col-sm-6 col-xs-12 text-left ph-14">
@@ -116,7 +116,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
 							<h5 class="bold text-gray-darker mt-7">Niki Jhonson</h5>
 							<p class="text-gray-darker f-15 pv-7">Actualmente se desempeña como docente e invetigadora del instituto de Ciencia y Política (Facultad de Ciencias Sociales, Universidad de la República, Uruguay)</p>
-							<a class="text-primary f-15 bold">PARTICIPA EN LA CONVERSACIÓN &#10145;</a>
+							<a class="text-primary f-15 bold">PARTICIPA EN LA CONVERSACIÓN  →</a>
 						</div>
 					</div>
 				</div>
