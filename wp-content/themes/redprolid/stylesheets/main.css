@@ -6348,6 +6348,9 @@ form.search button {
 .w-100 {
   width: 100%; }
 
+.italic {
+  font-style: italic; }
+
 .dtl-home .list-unstyled, .dtl-home .list-inline {
   margin-top: -1rem; }
   .dtl-home .list-unstyled .title, .dtl-home .list-inline .title {
