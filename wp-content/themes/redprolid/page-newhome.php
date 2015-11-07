@@ -27,7 +27,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" class="img-responsive" style="width:6%;">
 			 			</div>
 			 			<div class="text-description">
-			 				<p class="pv-21 text-gray">Somos una inciativa del Banco Interamericano de Desarrollo (BID) para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan -- o apiran a ocupar -- posciciones de liderazgo en la administración pública en América Latina.</p>	
+			 				<p class="pv-21 text-gray-darker">Somos una inciativa del Banco Interamericano de Desarrollo (BID) para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan -- o apiran a ocupar -- posciciones de liderazgo en la administración pública en América Latina.</p>	
 
 			 			</div>
 			 			<div class="video-intro text-center">
@@ -41,7 +41,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		 	</div>
 		</section>
 		<section class="center-content text-center pv-70">
-			<div class="container-sm">
+			<div class="container-sm ph-49">
 	 			<div class="text-description-center-second">
 	 				<h2 class="text-gray-darker bold">¿Qué ganas formando parte de la RED PROLID?</h2>
 	 			</div>
@@ -74,6 +74,9 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</div>
 				</div>
 			</div>
+		</section>
+		<section class="end-content text-center pv-70 bg-gray-lighter">
+			
 		</section>
 	</div>
 <?php  get_footer(); ?>
