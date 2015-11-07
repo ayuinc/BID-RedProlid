@@ -17,7 +17,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									<input placeholder="Nombre" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-FNAME" name="FNAME" style="height:42px">			
 								</div>		
 								<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
-									<input placeholder="Nombre" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-LNAME" name="LNAME" style="height:42px">			
+									<input placeholder="Apellido" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-LNAME" name="LNAME" style="height:42px">			
 								</div>										
 								<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
 									<input placeholder="Correo Electrónico" name="EMAIL" class=" border-radius col-sm-12 col-xs-12 p-7 required email" type="text" id="mce-EMAIL" style="height:42px">						
