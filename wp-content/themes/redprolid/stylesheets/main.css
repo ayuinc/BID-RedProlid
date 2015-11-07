@@ -6361,6 +6361,9 @@ form.search button {
   width: 100%;
   order: 2; }
 
+.principal-text {
+  font-size: 30px; }
+
 .w-100 {
   width: 100%; }
 
