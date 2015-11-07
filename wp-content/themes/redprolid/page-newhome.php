@@ -32,7 +32,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 			</div>
 			 			<div class="video-intro text-center">
 			 				<iframe width="580" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" frameborder="0" allowfullscreen></iframe>
-			 				<a class="text-primary mv-21" href="#">¿QUIERES SABER MÁS? &#10145;</a>
+			 				 <p class="mv-21"><a class="text-primary medium" href="#">¿QUIERES SABER MÁS? &#10145;</a></p>
 			 			</div>
 			 		</div>
 				</div>
