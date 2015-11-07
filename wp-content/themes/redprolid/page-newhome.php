@@ -76,7 +76,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		<section class="end-content text-center pv-70 bg-gray-lighter">
 			<div class="container-sm">
 				<div class="row">
-					<div class="col-sm-6 col-xs-12">
+					<div class="col-sm-6 col-xs-12 text-left">
 						<div class="small-icon text-left">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" style="widht:3%">							
 						</div>
@@ -91,7 +91,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<a class="text-primary">LEE LA ENTREVISTA &#10145;</a>
 						</div>
 					</div>
-					<div class="col-sm-6 col-xs-12">
+					<div class="col-sm-6 col-xs-12 text-left">
 						<div class="small-icon text-left">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" style="widht:3%">							
 						</div>
