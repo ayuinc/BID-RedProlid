@@ -86,8 +86,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="img-center-content">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-col.jpg" class="w-100">
 						</div>
-						<div class="col-sm-12 col-xs-12 bg-white">
-							<h5 class="bold text-gray-darker">Carmen Omonte</h5>
+						<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
+							<h5 class="bold text-gray-darker mt-7">Carmen Omonte</h5>
 							<small class="italic">2014</small><br>
 							<small class="italic">"Creo que es fundamental que las mujeres creamos, en primer lugar, en nosotras mismas... "</small>
 							<p class="text-gray-darker f-13 pv-7">Congresista de la República del Perú (2011-2016), y exministra.</p>
@@ -101,8 +101,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="img-center-content">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.jpg" class="w-100">
 						</div>
-						<div class="col-sm-12 col-xs-12 bg-white">
-							<h5 class="bold text-gray-darker">Niki Jhonson</h5>
+						<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
+							<h5 class="bold text-gray-darker mt-7">Niki Jhonson</h5>
 							<p class="text-gray-darker f-13 pv-7">Actualmente se desempeña como docente e invetigadora del instituto de Ciencia y Política (Facultad de Ciencias Sociales, Universidad de la República, Uruguay)</p>
 							<a class="text-primary f-13 bold">PARTICIPA EN LA CONVERSACIÓN &#10145;</a>
 						</div>
