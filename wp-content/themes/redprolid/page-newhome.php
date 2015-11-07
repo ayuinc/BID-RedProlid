@@ -43,33 +43,32 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		<section class="center-content text-center pv-70">
 			<div class="container-sm">
 	 			<div class="text-description-center-second">
-	 				<h4 class="text-gray-darker bold">¿Qué ganas formando parte de la RED PROLID?</h4>
+	 				<h2 class="text-gray-darker bold">¿Qué ganas formando parte de la RED PROLID?</h2>
 	 			</div>
 	 			<div class="text-description-center-second">
-	 				<p class="pv-21 text-gray">Somos una inciativa del Banco Interamericano de Desarrollo (BID) para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan -- o apiran a ocupar -- posciciones de liderazgo en la administración pública en América Latina.</p>	
-	 			</div>
+	 				<p class="pv-21 text-gray">Somos una comunidad que te ofrece varios beneficios que te ayudarán a fortalecer tu capacidad de liderazgo en el sector público de tu país.</p>
 				<div class="row">
 					<div class="col-sm-4 col-xs-12 text-center">
 						<div class="icono-center-content">
-							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" class="img-responsive" style="width:50%;">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" class="img-responsive" style="width:40%;">
 							<div class="text-description-center">
-			 					<p class="pv-21 text-gray">Somos una inciativa del Banco Interamericano de Desarrollo (BID)</p>	
+			 					<p class="pv-21 text-gray">Un lugar para encontrar información y recursos prácticos</p>	
 			 				</div>
 						</div>
 					</div>
 					<div class="col-sm-4 col-xs-12 text-center">
 						<div class="icono-center-content">
-							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" class="img-responsive" style="width:50%;">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" class="img-responsive" style="width:40%;">
 							<div class="text-description-center">
-			 					<p class="pv-21 text-gray">Somos una inciativa del Banco Interamericano de Desarrollo (BID)</p>	
+			 					<p class="pv-21 text-gray">Un espacio de diálogo en el que intercambiemos opiniones </p>	
 			 				</div>
 						</div>
 					</div>
 					<div class="col-sm-4 col-xs-12 text-center">
 						<div class="icono-center-content">
-							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" class="img-responsive" style="width:50%;">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" class="img-responsive" style="width:40%;">
 							<div class="text-description-center">
-			 					<p class="pv-21 text-gray">Somos una inciativa del Banco Interamericano de Desarrollo (BID)</p>	
+			 					<p class="pv-21 text-gray">Un espacio para desarrollar contactos profesionales</p>	
 			 				</div>
 						</div>
 					</div>
