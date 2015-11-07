@@ -35,9 +35,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				 <p class="mv-21"><a class="text-primary medium" href="#">¿QUIERES SABER MÁS? &#10145;</a></p>
 			 			</div>
 			 		</div>
-				</div>
-		 		<div class="col-sm-12 col-md-12 col-xs-12"></div>	
-		 		<div class="col-sm-12 col-md-12 col-xs-12"></div>		 			 		
+				</div> 			 		
 		 	</div>
 		</section>
 		<section class="center-content text-center pv-70">
@@ -80,7 +78,9 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				<div class="row">
 					<div class="col-sm-6 col-xs-12">
 						<div class="small-icon"></div>
-						<div class="img-center-content"></div>
+						<div class="img-center-content">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/dtl-agenda-genero-col.jpg" class="img-responsive">
+						</div>
 						<div class="col-sm-12 col-xs-12 bg-white">
 							<h5></h5>
 							<small></small>
@@ -91,7 +91,9 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</div>
 					<div class="col-sm-6 col-xs-12">
 						<div class="small-icon"></div>
-						<div class="img-center-content"></div>
+						<div class="img-center-content">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/dtl-adonde-vamos-col.jpg" class="img-responsive">
+						</div>
 						<div class="col-sm-12 col-xs-12 bg-white">
 							<h5></h5>
 							<small></small>
