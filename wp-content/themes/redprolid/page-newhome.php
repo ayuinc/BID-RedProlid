@@ -6,7 +6,10 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content">
 		<div class="minh-490 bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/women.jpg)">
-			<div class="registrer-bar minh-70 pv-21 ph-56 bg-pink-redprolid text-center flex-res flex-bar">
+			<div class="text-header-first">
+				
+			</div>
+			<div class="registrer-bar minh-70 pt-14 ph-56 bg-pink-redprolid text-center flex-res flex-bar">
 					<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<div class="container">
 							<div class="row">
@@ -39,12 +42,12 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" class="img-responsive" style="width:6%;">
 			 			</div>
 			 			<div class="text-description">
-			 				<p class="pv-21  ph-70-md mb-0 gray-darker">Somos una inciativa del Banco Interamericano de Desarrollo (BID) para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan -- o apiran a ocupar -- posciciones de liderazgo en la administración pública en América Latina.</p>	
+			 				<p class="pv-21  ph-56-md mb-0 gray-darker">Somos una inciativa del Banco Interamericano de Desarrollo (BID) para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan -- o apiran a ocupar -- posciciones de liderazgo en la administración pública en América Latina.</p>	
 
 			 			</div>
 			 			<div class="video-intro text-center">
-			 				<iframe  class="wi-100" width="580" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" allowfullscreen></iframe>
-			 				 <p class="mv-21"><a class="text-primary medium" href="#">¿QUIERES SABER MÁS? →</a></p>
+			 				<iframe  class="wi-100" width="600" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" frameborder="0" allowfullscreen></iframe>
+			 				 <p class="mv-21"><a class="text-primary medium" href="#">¿QUIERES SABER MÁS? &#10145;</a></p>
 			 			</div>
 			 		</div>
 				</div> 			 		

@@ -6338,12 +6338,27 @@ form.search button {
   background-color: #e94472; }
 
 .flex {
-  display: flex; }
+  display: flex;
+  flex-flow: row wrap; }
+
+.text-header-first {
+  display: flex;
+  background-color: red;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  order: 1; }
 
 .flex-bar {
   display: flex;
   align-self: flex-end;
-  width: 100%; }
+  width: 100%;
+  order: 2; }
 
 .w-100 {
   width: 100%; }
