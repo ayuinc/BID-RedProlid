@@ -43,7 +43,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		<section class="center-content text-center pv-70">
 			<div class="container-sm">
 				<div class="row">
-					<div class="col-sm-3 text-center">
+					<div class="col-sm-4 col-xs-12 text-center">
 						<div class="icono-center-content">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" class="img-responsive" style="width:50%;">
 							<div class="text-description-center">
@@ -51,7 +51,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				</div>
 						</div>
 					</div>
-					<div class="col-sm-3 text-center">
+					<div class="col-sm-4 col-xs-12 text-center">
 						<div class="icono-center-content">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" class="img-responsive" style="width:50%;">
 							<div class="text-description-center">
@@ -59,7 +59,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				</div>
 						</div>
 					</div>
-					<div class="col-sm-3 text-center">
+					<div class="col-sm-4 col-xs-12 text-center">
 						<div class="icono-center-content">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" class="img-responsive" style="width:50%;">
 							<div class="text-description-center">
