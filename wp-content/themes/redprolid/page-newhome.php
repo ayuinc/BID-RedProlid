@@ -81,7 +81,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				<div class="row">
 					<div class="col-sm-6 col-xs-12 text-left ph-14">
 						<div class="small-icon text-left">
-							<img class="pv-7" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" style="width:20%">							
+							<img class="pv-7" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" style="width:18%">							
 						</div>
 						<div class="img-center-content">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-agenda-genero-col.jpg" class="w-100">
@@ -96,7 +96,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</div>
 					<div class="col-sm-6 col-xs-12 text-left ph-14">
 						<div class="small-icon text-left">
-							<img class="pv-7" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" style="width:20%">							
+							<img class="pv-7" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" style="width:18%">							
 						</div>
 						<div class="img-center-content">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.jpg" class="w-100">
