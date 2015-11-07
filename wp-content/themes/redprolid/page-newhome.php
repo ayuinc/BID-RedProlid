@@ -90,8 +90,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<h5 class="bold text-gray-darker mt-7">Carmen Omonte</h5>
 							<small class="italic">2014</small><br>
 							<small class="italic">"Creo que es fundamental que las mujeres creamos, en primer lugar, en nosotras mismas... "</small>
-							<p class="text-gray-darker f-13 pv-7">Congresista de la República del Perú (2011-2016), y exministra.</p>
-							<a class="text-primary f-13 bold">LEE LA ENTREVISTA &#10145;</a>
+							<p class="text-gray-darker f-15 pv-7">Congresista de la República del Perú (2011-2016), y exministra.</p>
+							<a class="text-primary f-15 bold">LEE LA ENTREVISTA &#10145;</a>
 						</div>
 					</div>
 					<div class="col-sm-6 col-xs-12 text-left ph-14">
@@ -103,8 +103,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						</div>
 						<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
 							<h5 class="bold text-gray-darker mt-7">Niki Jhonson</h5>
-							<p class="text-gray-darker f-13 pv-7">Actualmente se desempeña como docente e invetigadora del instituto de Ciencia y Política (Facultad de Ciencias Sociales, Universidad de la República, Uruguay)</p>
-							<a class="text-primary f-13 bold">PARTICIPA EN LA CONVERSACIÓN &#10145;</a>
+							<p class="text-gray-darker f-15 pv-7">Actualmente se desempeña como docente e invetigadora del instituto de Ciencia y Política (Facultad de Ciencias Sociales, Universidad de la República, Uruguay)</p>
+							<a class="text-primary f-15 bold">PARTICIPA EN LA CONVERSACIÓN &#10145;</a>
 						</div>
 					</div>
 				</div>

@@ -6351,8 +6351,8 @@ form.search button {
 .italic {
   font-style: italic; }
 
-.f-13 {
-  font-size: 13px; }
+.f-15 {
+  font-size: 15.5px !important; }
 
 .dtl-home .list-unstyled, .dtl-home .list-inline {
   margin-top: -1rem; }
