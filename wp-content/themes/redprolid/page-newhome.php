@@ -19,7 +19,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</div>
 			</div>
 		</div>
-		<div class="middle-content pv-70">
+		<section class="middle-content pv-70 bg-gray-lighter">
 		 	<div class="container-sm">
 				<div class="row">
 			 		<div class="col-sm-12 col-md-12 col-xs-12">
@@ -31,7 +31,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 
 			 			</div>
 			 			<div class="video-intro text-center">
-			 				<iframe width="580" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" frameborder="0" allowfullscreen></iframe>
+			 				<iframe class="img-responsive" width="580" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" frameborder="0" allowfullscreen></iframe>
 			 				 <p class="mv-21"><a class="text-primary medium" href="#">¿QUIERES SABER MÁS? &#10145;</a></p>
 			 			</div>
 			 		</div>
@@ -39,7 +39,37 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		 		<div class="col-sm-12 col-md-12 col-xs-12"></div>	
 		 		<div class="col-sm-12 col-md-12 col-xs-12"></div>		 			 		
 		 	</div>
-		</div>
+		</section>
+		<section class="center-content text-center">
+			<div class="container-sm">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="icono-center-content">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" class="img-responsive" style="width:8%;">
+							<div class="text-description-center">
+			 					<p class="pv-21 text-gray">Somos una inciativa del Banco Interamericano de Desarrollo (BID)</p>	
+			 				</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="icono-center-content">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" class="img-responsive" style="width:8%;">
+							<div class="text-description-center">
+			 					<p class="pv-21 text-gray">Somos una inciativa del Banco Interamericano de Desarrollo (BID)</p>	
+			 				</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="icono-center-content">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" class="img-responsive" style="width:8%;">
+							<div class="text-description-center">
+			 					<p class="pv-21 text-gray">Somos una inciativa del Banco Interamericano de Desarrollo (BID)</p>	
+			 				</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 <?php  get_footer(); ?>
 
