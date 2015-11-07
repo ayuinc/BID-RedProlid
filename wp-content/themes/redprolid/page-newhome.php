@@ -42,6 +42,12 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		</section>
 		<section class="center-content text-center pv-70">
 			<div class="container-sm">
+	 			<div class="text-description-center-second">
+	 				<h4 class="text-gray-darker bold">¿Qué ganas formando parte de la RED PROLID?</h4>
+	 			</div>
+	 			<div class="text-description-center-second">
+	 				<p class="pv-21 text-gray">Somos una inciativa del Banco Interamericano de Desarrollo (BID) para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan -- o apiran a ocupar -- posciciones de liderazgo en la administración pública en América Latina.</p>	
+	 			</div>
 				<div class="row">
 					<div class="col-sm-4 col-xs-12 text-center">
 						<div class="icono-center-content">
