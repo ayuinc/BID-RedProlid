@@ -6724,6 +6724,9 @@ div[id^="yop-poll-results-3"] {
     text-align: center !important;
     font-weight: 200 !important; } }
 @media only screen and (min-width: 387px) and (max-width: 667px) {
+  .wi-100 {
+    width: 100%; }
+
   .flex-res {
     display: -webkit-box;
     display: -moz-box;
@@ -6826,6 +6829,9 @@ div[id^="yop-poll-results-3"] {
     flex-direction: column;
     -ms-flex-direction: column; }
 
+  .wi-100 {
+    width: 100%; }
+
   .footer {
     margin-top: 0px; } }
 @media only screen and (max-width: 320px) {
@@ -6865,6 +6871,9 @@ div[id^="yop-poll-results-3"] {
     font-size: 20px !important;
     text-align: center !important;
     font-weight: 400 !important; }
+
+  .wi-100 {
+    width: 100%; }
 
   .flex-res {
     display: -webkit-box;
