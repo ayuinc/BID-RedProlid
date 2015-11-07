@@ -8,7 +8,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		<div class="minh-490 bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/women.jpg)">
 			<div class="text-center text-header-first pt-70-lg mt-70-lg">
 				<small class="text-white">Únete a la Red</small>
-				<h1 class="text-white mt-0">CONECTAMOS A MUJERES LÍDERES DEL <br> SECTOR PÚBLICO LATINOAMERICANO</h1>
+				<h1 class="text-white mt-0">CONECTAMOS A MUJERES LÍDERES DEL 	
+				 SECTOR PÚBLICO LATINOAMERICANO</h1>
 				<a href="#middle-content">
 					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACo0lEQVR4Xu2Z8VUUMRDGv6kAO5AOOCoAKtAOhAqwBOlAKwAqECtQKxA7kA6ggvENTvaFIedl93Yz2d3kz7t9b/L98s1kkhBWPmjl+tEANAesnEBLgZUboBXBlgItBVZOoKXAyg3QdoHnFGDmQyL6syY3BM3EzBsA3wHcEdHFGiAw8zWA9wDOBMAPACcq/GbpEFT8uer9KQDeABAIR/rjFRF9WqITmPkzgEvV9hvAaagBFsIFEd0sCQIzy6qL9WX8E0/02PUBCScsBsI28ULiRSOkEO4BvFVSs4dgxD8A2MjKB3e/6gR1V5CacDB3CEb8k9peFrgbyVZ4CRByxL9KgZjMnCHkiv8vAO0QpUmaVTr0Eb8TwNwg9BWfBWALhGMielFMvHsGZj7Vll6mkix4qTlm3weYmiDbyFktEKLzjDR02eKzHRDI1QhhH/G9AWg6yCnqq0JxdYIRL1MSV0rRzh7ZKWC2yLivdoGQED+oax0EQJ3gBmEs8YNSwNsJY4rfG0BpJ4wtfhQApSBMIX40AAkI0iRJRe6OndllOfGhHtN/ATjUvwcVvL0aoRwBphUdBYKKl0tbOZfIGE38qA6ImqV4d9gLwtTiJwGg6SD3iR8UyiAICfFfiOhjjhP7fDO4D9gVhJkHQ0iIvyWicJW9K3Sv/ycDMNQJJcVPlgKmWcp2QmnxRQDkOsFDfDEAKQhEdGycIvt82Oomy3lbICatATaYKYzdO6R5rysmvqgDoj4hrgnh+S1U+KLiXQBoOtwBeGcc8o2I5LKl6CiaApEL7GNs91hZVL19GywZPHqMlbDPL7Ul44dYLg4wToCXeLca4LHS22K6OqAGEA1ADavgOYfmAE/6NcRuDqhhFTzn0BzgSb+G2M0BNayC5xyaAzzp1xD7L9m2aEexDr5GAAAAAElFTkSuQmCC"/>
 				</a>
