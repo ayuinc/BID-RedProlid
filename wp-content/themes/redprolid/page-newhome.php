@@ -8,15 +8,18 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		<div class="minh-490 bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/women.jpg)">
 			<div class="registrer-bar minh-70 pv-21 ph-56 bg-pink-redprolid text-center flex-res flex-bar">
 					<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<div class="container-sm">
+						<div class="container">
 							<div class="row">
 								<div class="col-md-3 col-sm-12 col-xs-12 text-right text-center-xs">
 									<p class="bold text-white pt-7">Forma parte de la Red PROLID</p>					
 								</div>
-								<div class="col-md-3 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
+								<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
 									<input placeholder="Nombre" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-FNAME" name="FNAME">			
 								</div>		
-								<div class="col-md-3 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
+								<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
+									<input placeholder="Nombre" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-LNAME" name="LNAME">			
+								</div>										
+								<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
 									<input placeholder="Correo Electrónico" name="EMAIL" class=" border-radius col-sm-12 col-xs-12 p-7 required email" type="emaill" id="mce-EMAIL">						
 								</div>
 								<div style="position: absolute; left: -5000px;"><input type="text" name="b_242e37fe564525e1aad9cfc03_eb13f7ce93" tabindex="-1" value=""></div>
