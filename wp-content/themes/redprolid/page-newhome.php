@@ -5,7 +5,7 @@ Template Name: Prototipo Homepage
 get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content bg-gray-lighter">
-		<div class="minh-560 bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/women.jpg)">
+		<div class="minh-560 pv-70-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/women.jpg)">
 			<div class="text-center text-header-first pt-70-lg mt-70-lg">
 				<div class="container-sm">
 					<small class="text-gray-lighter">Únete a la Red</small>
@@ -16,7 +16,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</a>					
 				</div>
 			</div>
-			<div class="registrer-bar minh-70 pt-14 ph-56 bg-pink-redprolid text-center flex-res flex-bar">
+			<div class="registrer-bar minh-70 pt-14 ph-56-md bg-pink-redprolid text-center flex-res flex-bar">
 					<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<div class="container">
 							<div class="row">
