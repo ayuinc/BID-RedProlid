@@ -16,8 +16,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					<div class="col-md-3 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
 						<input placeholder="Correo Electrónico" class=" border-radius  col-sm-12 col-xs-12 p-7" type="text">						
 					</div>
-					<div class="col-md-3 col-sm-12 col-xs-12 pv-14-xs">
-						<button class="btn btn-lg btn-outline btn-white border-radius mh-14 bold">REGÍSTRATE</button>					
+					<div class="col-md-3 col-sm-12 col-xs-12 pv-14-xs text-center-xs text-left">
+						<button class="btn btn-lg btn-outline btn-white border-radius bold">REGÍSTRATE</button>					
 					</div>
 			</div>
 		</div>
