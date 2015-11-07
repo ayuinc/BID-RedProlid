@@ -7,7 +7,9 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	<div class="site-content">
 		<div class="minh-490 bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/women.jpg)">
 			<div class="first-text">
-				<small>Únete a la Red</small>
+				<div class="col-sm-12 col-xs-12">
+					<small>Únete a la Red</small>				
+				</div>
 			</div>
 			<div class="registrer-bar minh-70 pv-21 ph-56 bg-pink-redprolid text-center flex-res flex-bar">
 					<div class="col-md-3 col-sm-12 col-xs-12 text-right text-center-xs">
