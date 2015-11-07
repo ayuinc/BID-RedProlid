@@ -5,7 +5,7 @@ Template Name: Prototipo Homepage
 get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content bg-gray-lighter">
-		<div class="minh-560 pt-70-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/women.jpg)">
+		<div class="minh-560 pt-42-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>themes/redprolid/assets/img/women.jpg)">
 			<div class="text-center text-header-first pt-70-lg mt-70-lg">
 				<div class="container-sm">
 					<small class="text-gray-lighter">Únete a la Red</small>
