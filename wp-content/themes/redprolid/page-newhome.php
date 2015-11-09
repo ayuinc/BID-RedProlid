@@ -108,8 +108,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.jpg" class="w-100">
 						</div>
 						<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
-							<h5 class="bold text-gray-darker mt-7">Mirna Cunningham</h5>
-							<small class="italic pv-14">2015</small><br>
+							<h5 class="bold text-gray-darker mt-7">Mirna Cunningham <small class="italic">2015</small></h5>
 							<p class="text-gray-darker f-15 pv-7">Es la primera vicepresidenta del Consejo Directivo del Fondo para el Desarrollo de los Pueblos Indígenas de América Latina y el Caribe</p>
 							<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE LA ENTREVISTA  →</a>
 						</div>
