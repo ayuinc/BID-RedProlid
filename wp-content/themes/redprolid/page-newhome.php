@@ -8,7 +8,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		<div class="minh-560 pt-42-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/homepage_redprolid.jpg)">
 			<div class="text-center text-header-first pt-70-lg mt-70-lg">
 				<div class="container-sm">
-					<small class="text-gray-lighter">Únete a la Red</small>
+					<small class="text-gray-lighter fs-16">Únete a la Red</small>
 					<h1 class="h2 text-gray-lighter mt-0">CONECTAMOS A MUJERES LÍDERES DEL 	
 					 SECTOR PÚBLICO LATINOAMERICANO</h1>
 					<a class="mt-35" href="#middle-content">
@@ -107,8 +107,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="img-center-content">
 							<img src="<?php echo content_url('/'); ?>uploads/2015/11/foto-Myrna-Cunningham1.jpg" class="w-100">
 						</div>
-						<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
-							<h5 class="bold text-gray-darker mt-7">Mirna Cunningham <small class="italic">2015</small></h5>
+						<div class="col-sm-12 col-xs-12 h-207 bg-white ph-21 pt-7 pb-21">
+							<h5 class="bold text-gray-darker mt-7">Mirna Cunningham <br> <small class="italic">2015</small></h5>
 							<p class="text-gray-darker f-15 pv-7">Es la primera vicepresidenta del Consejo Directivo del Fondo para el Desarrollo de los Pueblos Indígenas de América Latina y el Caribe</p>
 							<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE LA ENTREVISTA  →</a>
 						</div>
@@ -120,7 +120,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="img-center-content">
 							<img src="<?php echo content_url('/'); ?>uploads/2015/11/rocio-silva.jpg" class="w-100">
 						</div>
-						<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
+						<div class="col-sm-12 col-xs-12 h-207 bg-white ph-21 pt-7 pb-21">
 							<h5 class="bold text-gray-darker mt-7">Rocío Silva Santisteban</h5>
 							<p class="text-gray-darker f-15 pv-7">Escritora, profesora universitaria, activista e investigadora en relaciones entre cultura y poder.</p>
 							<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">PARTICIPA EN LA CONVERSACIÓN  →</a>
