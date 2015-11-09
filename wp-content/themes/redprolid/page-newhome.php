@@ -5,9 +5,9 @@ Template Name: Prototipo Homepage
 get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content bg-gray-lighter">
-		<div class="minh-560 pt-42-xs bg-img-block header-banner flex">
+		<div class="minh-560 pt-42-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/homepage_redprolid.jpg)">
 			<div class="text-center text-header-first pt-70-lg mt-70-lg">
-				<div class="container-sm mt-70-lg pt-70-lg">
+				<div class="container-sm pt-70-lg mt-70-lg">
 					<small class="text-gray-lighter fs-16">Únete a la Red</small>
 					<h1 class="h2 text-gray-lighter mt-0">CONECTAMOS A MUJERES LÍDERES DEL 	
 					 SECTOR PÚBLICO LATINOAMERICANO</h1>
