@@ -53,7 +53,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 			</div>
 			 			<div class="video-intro text-center">
 			 				<iframe  class="wi-100" width="600" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" frameborder="0" allowfullscreen></iframe>
-			 				 <p class="mv-21"><a class="text-primary medium" href="#">¿QUIERES SABER MÁS? &#10145;</a></p>
+			 				 <p class="mv-21"><a class="text-primary medium" href="<?php echo home_url('/'); ?>redprolid/">¿QUIERES SABER MÁS? &#10145;</a></p>
 			 			</div>
 			 		</div>
 				</div> 			 		
@@ -108,11 +108,10 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.jpg" class="w-100">
 						</div>
 						<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
-							<h5 class="bold text-gray-darker mt-7">Carmen Omonte</h5>
-							<small class="italic pv-14">2014</small><br>
-							<small class="italic">"Creo que es fundamental que las mujeres creamos, en primer lugar, en nosotras mismas... "</small>
-							<p class="text-gray-darker f-15 pv-7">Congresista de la República del Perú (2011-2016), y exministra.</p>
-							<a class="text-primary f-15 bold">LEE LA ENTREVISTA  →</a>
+							<h5 class="bold text-gray-darker mt-7">Mirna Cunningham</h5>
+							<small class="italic pv-14">2015</small><br>
+							<p class="text-gray-darker f-15 pv-7">Es la primera vicepresidenta del Consejo Directivo del Fondo para el Desarrollo de los Pueblos Indígenas de América Latina y el Caribe</p>
+							<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE LA ENTREVISTA  →</a>
 						</div>
 					</div>
 					<div class="col-sm-6 col-xs-12 text-left ph-14">
@@ -123,9 +122,9 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.jpg" class="w-100">
 						</div>
 						<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
-							<h5 class="bold text-gray-darker mt-7">Niki Jhonson</h5>
-							<p class="text-gray-darker f-15 pv-7">Actualmente se desempeña como docente e invetigadora del instituto de Ciencia y Política (Facultad de Ciencias Sociales, Universidad de la República, Uruguay)</p>
-							<a class="text-primary f-15 bold">PARTICIPA EN LA CONVERSACIÓN  →</a>
+							<h5 class="bold text-gray-darker mt-7">Rocío Silva Santisteban</h5>
+							<p class="text-gray-darker f-15 pv-7">Escritora, profesora universitaria, activista e investigadora en relaciones entre cultura y poder.</p>
+							<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">PARTICIPA EN LA CONVERSACIÓN  →</a>
 						</div>
 					</div>
 				</div>
