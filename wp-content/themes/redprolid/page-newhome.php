@@ -5,7 +5,7 @@ Template Name: Prototipo Homepage
 get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content bg-gray-lighter">
-		<div class="minh-560 pt-42-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/homepage_redprolid.jpg)">
+		<div class="minh-560 pt-42-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/homepage_redprolid_overlay.jpg)">
 			<div class="text-center text-header-first pt-70-lg mt-70-lg">
 				<div class="container-sm pt-70-lg mt-70-lg">
 					<small class="text-gray-lighter fs-16">Únete a la Red</small>
@@ -122,7 +122,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						</div>
 						<div class="col-sm-12 col-xs-12 h-207 bg-white ph-21 pt-7 pb-21">
 							<h5 class="bold text-gray-darker mt-7">Rocío Silva Santisteban</h5>
-							<p class="text-gray-darker f-15 pv-7">Escritora, profesora universitaria, activista e investigadora en relaciones entre cultura y poder.</p>
+							<p class="text-gray-darker mb-42 f-15 pv-7">Escritora, profesora universitaria, activista e investigadora en relaciones entre cultura y poder.</p>
 							<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">PARTICIPA EN LA CONVERSACIÓN  →</a>
 						</div>
 					</div>
