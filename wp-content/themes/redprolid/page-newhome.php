@@ -105,7 +105,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<img class="pv-7" src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" style="width:13%"> <p class="color-g inline-p bold">Campeon@s</p>							
 						</div>
 						<div class="img-center-content">
-							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.jpg" class="w-100">
+							<img src="<?php echo content_url('/'); ?>uploads/2015/11/foto-Myrna-Cunningham1.jpg" class="w-100">
 						</div>
 						<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
 							<h5 class="bold text-gray-darker mt-7">Mirna Cunningham <small class="italic">2015</small></h5>
@@ -118,7 +118,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<img class="pv-7" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" style="width:13%"> <p class="color-g inline-p bold">Puntos de Vista</p>							
 						</div>
 						<div class="img-center-content">
-							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/dtl-adonde-vamos-col.jpg" class="w-100">
+							<img src="<?php echo content_url('/'); ?>uploads/2015/11/rocio-silva.jpg" class="w-100">
 						</div>
 						<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
 							<h5 class="bold text-gray-darker mt-7">Rocío Silva Santisteban</h5>
