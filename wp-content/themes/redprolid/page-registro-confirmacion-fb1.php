@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Registro Confirmacion FB
+Template Name: Registro Confirmacion FB1
 */
 
 get_header(); ?>
