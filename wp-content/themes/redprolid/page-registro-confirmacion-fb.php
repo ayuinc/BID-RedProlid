@@ -7,20 +7,6 @@ get_header(); ?>
 
 <html <?php language_attributes(); ?>>
   <head>
-	  <!-- Facebook Pixel Code -->
-		<script>
-		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-		document,'script','//connect.facebook.net/en_US/fbevents.js');
-		
-		fbq('init', '1005504112842099');
-		fbq('track', "PageView");</script>
-		<noscript><img height="1" width="1" style="display:none"
-		src="https://www.facebook.com/tr?id=1005504112842099&ev=PageView&noscript=1"
-		/></noscript>
-		<!-- End Facebook Pixel Code -->
     <meta charset="utf-8">
     <!-- Project SEO -->
     <title><?php wp_title(''); ?></title>
@@ -41,13 +27,20 @@ get_header(); ?>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/app/vendor/respond.min.js"></script>
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/app/vendor/placeholders.min.js"></script>
     <![endif]-->
-    <!--CRAZZYEGG-->
-		<script type="text/javascript">
-		setTimeout(function(){var a=document.createElement("script");
-		var b=document.getElementsByTagName("script")[0];
-		a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0039/9228.js?"+Math.floor(new Date().getTime()/3600000);
-		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-		</script>
+	  <!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+		document,'script','//connect.facebook.net/en_US/fbevents.js');
+		
+		fbq('init', '1005504112842099');
+		fbq('track', "PageView");</script>
+		<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=1005504112842099&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->		
   </head>
   <body>
    <header class="header-content">
@@ -55,7 +48,7 @@ get_header(); ?>
            <div class="container-sm text-center">
                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-head.png" class="img-responsive" style="width:40%;">
            </div>
-       </div>
+       </div>     
    </header>
 <section> 
   <div class="container">
