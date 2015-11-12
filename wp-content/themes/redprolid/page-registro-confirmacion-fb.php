@@ -43,10 +43,6 @@ get_header(); ?>
            </div>
        </div>
    </header>
-
-
-<!--NAV-->
-<?php get_template_part( 'include', 'nav' ); ?>
 <section> 
   <div class="container">
     <!-- IF NO POSTS in FOROS -->
