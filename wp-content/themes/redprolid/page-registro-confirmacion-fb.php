@@ -51,7 +51,7 @@ get_header(); ?>
 	    	<div class="row pv-49">
 	    		<div class="col-sm-8 col-sm-offset-2">
 		    		<h3 class="medium text-center mt-35">Hemos recibido tu información</h3>
-		    		<p>Por favor, ingresa tu correo electrónico y contraseña para que puedas empezar a navegar en Red PROLID</p>
+		    		<p>Conoce más de la red <a href="http://redprolid.org">aquí</a> </p>
 	    		</div>
 	    	</div>	    	
     	</div>
