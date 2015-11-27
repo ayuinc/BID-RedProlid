@@ -243,7 +243,7 @@ get_header(); ?>
 	                  <div class="col-sm-5">
 			                <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
 			                <?php if ($imagen_campeona!='') { ?>
-	                    	<img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive">
+	                    	<img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" width="100%">
 	                    <?php } ?>
 			                <?php $video = get_field('video_campeonas'); ?>
 			                <?php if ($video!='') { ?>
