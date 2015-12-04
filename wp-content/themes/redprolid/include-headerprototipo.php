@@ -36,7 +36,7 @@
           <div class="lower">
             <label for="op">click the text</label>
           </div>
-          <div class="overlay overlay-hugeinc">
+          <div class="overlay overlay-hugeinc bg-white-lighter">
                 <label for="op"></label>
                 <nav>
                   <ul>
