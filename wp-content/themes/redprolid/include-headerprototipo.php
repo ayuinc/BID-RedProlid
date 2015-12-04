@@ -39,7 +39,7 @@
           <div class="overlay overlay-hugeinc">
                 <label for="op"></label>
                 <nav>
-                  <ul>
+                  <ul class="text-gray">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Work</a></li>
