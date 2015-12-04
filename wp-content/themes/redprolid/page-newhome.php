@@ -45,10 +45,11 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		 	<div class="container-sm">
 				<div class="row">
 			 		<div class="col-sm-12 col-md-12 col-xs-12">
-			 			<div class="icono-content text-center">
+<!-- 			 			<div class="icono-content text-center">
 			 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" class="img-responsive" style="width:6%;">
-			 			</div>
+			 			</div> -->
 			 			<div class="text-description">
+			 				<h4 class="text-gray-darker bold mv-0">Conectamos a mujeres líderes del sector público <br> Latinoamericano</h4>
 			 				<p class="pv-21  ph-56-md mb-0 gray-darker text-center">Somos una iniciativa del Banco Interamericano de Desarrollo (BID)  para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan —o aspiran a ocupar— posiciones de liderazgo en la administración pública en América Latina. </p>	
 			 			</div>
 			 			<div class="video-intro text-center">
@@ -67,7 +68,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	 			<div class="text-description-center-second">
 	 				<p class="pv-21 f-13 text-gray-darker">Somos una comunidad que te ofrece varios beneficios que te ayudarán a fortalecer tu capacidad de liderazgo en el sector público de tu país.</p>
 				<div class="row">
-					<div class="col-sm-4 col-xs-12 text-center">
+					<div class="col-sm-3 col-xs-12 text-center">
 						<div class="icono-center-content">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" class="img-responsive" style="width:40%;">
 							<div class="text-description-center">
@@ -75,7 +76,15 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				</div>
 						</div>
 					</div>
-					<div class="col-sm-4 col-xs-12 text-center">
+					<div class="col-sm-3 col-xs-12 text-center">
+						<div class="icono-center-content">
+							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-2.png" class="img-responsive" style="width:40%;">
+							<div class="text-description-center">
+			 					<p class="pv-21 f-13 text-gray">Donde compartimos lo que sabemos y aprendemos de tus experiencias</p>	
+			 				</div>
+						</div>
+					</div>					
+					<div class="col-sm-3 col-xs-12 text-center">
 						<div class="icono-center-content">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" class="img-responsive" style="width:40%;">
 							<div class="text-description-center">
@@ -83,7 +92,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				</div>
 						</div>
 					</div>
-					<div class="col-sm-4 col-xs-12 text-center">
+					<div class="col-sm-3 col-xs-12 text-center">
 						<div class="icono-center-content">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" class="img-responsive" style="width:40%;">
 							<div class="text-description-center">
@@ -96,8 +105,13 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		</section>
 		<section class="end-content text-center pv-70 bg-gray-lighter">
 			<div class="container-sm">
+	 			<div class="icono-content text-center">
+	 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" class="img-responsive" style="width:6%;">
+	 			</div>			
 	 			<div class="text-description-center-end">
-	 				<h2 class="text-gray-darker bold">Lo último en la Red PROLID</h2>
+<!-- 	 				<h2 class="text-gray-darker bold">Lo último en la Red PROLID</h2> -->
+	 				<h2 class="text-gray-darker bold text-center">¿Como nace Red Prolid?</h2>
+	 				<p class="pv-21  ph-56-md mb-0 gray-darker text-center">La Red PROLID forma parte de los esfuerzos del Banco Interamercano de Desarrollo (BID) para promover el liderago y empoderamiento de las mujeres en la región. Desde 1998, el BID viene promoviendo la participación política y cívica de las mjueres en Américaa Latina y el Caribe a través del Programa de Apoyo al Liderazgo y Representación de la Mujer (PROLID)</p>
 	 			</div>			
 				<div class="row">
 					<div class="col-sm-6 col-xs-12 text-left ph-14">
