@@ -24,6 +24,9 @@
     <link rel="shortcut icon" href="<?php echo content_url('/'); ?>themes/redprolid/assets/img/favicon.ico.png">
 
     <!-- WebFonts -->
+    <!--New Menu-->
+    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/modernizr.custom.js" type="text/javascript"></script>   
+    <!---->
     <script src="//use.typekit.net/nsv5vjx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 
