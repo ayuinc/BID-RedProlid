@@ -4,7 +4,7 @@ Template Name: Prototipo Homepage
 */
 get_template_part( 'include', 'headerprototipo' ); ?>
 	
-		<div class="site-content bg-gray-lighter">
+		<div class="site-content bg-white">
 	<!-- 		<div class="minh-560 pt-42-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/homepage_redprolid_overlay.jpg)">
 				<div class="text-center text-header-first pt-70-lg mt-70-lg">
 					<div class="container-sm pt-70-lg mt-70-lg">
@@ -41,7 +41,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						</form>
 				</div>
 			</div> -->
-			<section id="middle-content" class="middle-content pv-70 bg-gray-lighter">
+			<section id="middle-content" class="middle-content pv-70 bg-white">
 			 	<div class="container-sm">
 					<div class="row">
 				 		<div class="col-sm-12 col-md-12 col-xs-12">
@@ -60,7 +60,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</div> 			 		
 			 	</div>
 			</section>
-			<section class="center-content text-center bg-white pv-70">
+			<section class="center-content text-center bg-gray-lighter pv-70">
 				<div class="container-sm ph-49">
 		 			<div class="text-description-center-first">
 		 				<h2 class="text-gray-darker bold">¿Qué ganas formando parte de la RED PROLID?</h2>
@@ -103,7 +103,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</div>
 				</div>
 			</section>
-			<section class="end-content text-center pv-70 bg-gray-lighter">
+			<section class="end-content text-center pv-70 bg-white">
 				<div class="container-sm">
 		 			<div class="icono-content text-center">
 		 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" class="img-responsive" style="width:6%;">

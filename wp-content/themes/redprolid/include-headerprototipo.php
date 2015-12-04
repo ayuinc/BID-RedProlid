@@ -30,14 +30,14 @@
 		</script>
   </head>
   <body>
-   <header class="header-content">
+   <header class="header-content bg-gray-lighter">
         <div class="header-menu left">
           <input type="checkbox" id="op"></input>
           <div class="lower">
-            <label for="op">click the text</label>
+            <label for="op"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAQ0lEQVQ4T82SwREAIAjD6ITFEVzRBfFwhTyQf9MjVwU8wXzI9iEQZWbNAkh7Z9vBJpAPHNhe6AUSfhLnd4CnjB1QwAWERRF1hcszqQAAAABJRU5ErkJggg=="/> MENU</label>
           </div>
-          <div class="overlay overlay-hugeinc">
-                <label for="op"></label>
+          <div class="overlay overlay-hugeinc bg-gray-lighter">
+                <label class="text-gray" for="op">CERRAR <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzUlEQVQ4T42TYRXCMAyErw5wAhLAQSQwBSAFFICEOAAJ4AQJvNtL9kqbdOxnu/uSXi4FAETkCOAE4KCqH55ln4hsADwAXFX1Xkx8M8FrBKnEO/t/IoCibVUxhARiSt4EsKXnCJKJAeyLeZBCrDO+2dueK1NMv2bACoTXoZgXC2AAqQeyVPbDH8AKpBN3HVSA9s28CqcTPSESe8cdpDUxcpviNCf1GMNRWek0Jx6kdM5rOYmiHLqdJbZdplA8CNvkHnCdzx7PP9aZnly4zl8NTn4w5oPSqAAAAABJRU5ErkJggg=="/></label>
                 <nav>
                   <ul class="text-gray">
                     <li><a href="#">Home</a></li>
