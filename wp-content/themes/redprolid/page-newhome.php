@@ -5,7 +5,7 @@ Template Name: Prototipo Homepage
 get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content bg-gray-lighter">
-		<div class="minh-560 pt-42-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/homepage_redprolid_overlay.jpg)">
+<!-- 		<div class="minh-560 pt-42-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/homepage_redprolid_overlay.jpg)">
 			<div class="text-center text-header-first pt-70-lg mt-70-lg">
 				<div class="container-sm pt-70-lg mt-70-lg">
 					<small class="text-gray-lighter fs-16">Únete a la Red</small>
@@ -40,7 +40,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						</div>
 					</form>
 			</div>
-		</div>
+		</div> -->
 		<section id="middle-content" class="middle-content pv-70 bg-gray-lighter">
 		 	<div class="container-sm">
 				<div class="row">
@@ -49,8 +49,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" class="img-responsive" style="width:6%;">
 			 			</div> -->
 			 			<div class="text-description">
-			 				<h4 class="text-gray-darker bold mv-0">Conectamos a mujeres líderes del sector público <br> Latinoamericano</h4>
-			 				<p class="pv-21  ph-56-md mb-0 gray-darker text-center">Somos una iniciativa del Banco Interamericano de Desarrollo (BID)  para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan —o aspiran a ocupar— posiciones de liderazgo en la administración pública en América Latina. </p>	
+			 				<h4 class="text-gray-darker bold mv-0 text-center">Conectamos a mujeres líderes del sector público <br> Latinoamericano</h4>
+			 				<p class="pv-21  ph-56-md mb-0 gray-darker text-justify">Somos una iniciativa del Banco Interamericano de Desarrollo (BID)  para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan —o aspiran a ocupar— posiciones de liderazgo en la administración pública en América Latina. </p>	
 			 			</div>
 			 			<div class="video-intro text-center">
 			 				<iframe  class="wi-100" width="600" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" frameborder="0" allowfullscreen></iframe>
@@ -68,34 +68,34 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	 			<div class="text-description-center-second">
 	 				<p class="pv-21 f-13 text-gray-darker">Somos una comunidad que te ofrece varios beneficios que te ayudarán a fortalecer tu capacidad de liderazgo en el sector público de tu país.</p>
 				<div class="row">
-					<div class="col-sm-3 col-xs-12 text-center">
-						<div class="icono-center-content">
+					<div class="col-sm-3 col-xs-12">
+						<div class="icono-center-content text-center">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" class="img-responsive" style="width:40%;">
-							<div class="text-description-center">
+							<div class="text-description-center text-justify">
 			 					<p class="pv-21 f-13 text-gray">Un lugar para encontrar información y recursos prácticos</p>	
 			 				</div>
 						</div>
 					</div>
-					<div class="col-sm-3 col-xs-12 text-center">
-						<div class="icono-center-content">
+					<div class="col-sm-3 col-xs-12">
+						<div class="icono-center-content text-center">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-2.png" class="img-responsive" style="width:40%;">
-							<div class="text-description-center">
+							<div class="text-description-center text-justify">
 			 					<p class="pv-21 f-13 text-gray">Donde compartimos lo que sabemos y aprendemos de tus experiencias</p>	
 			 				</div>
 						</div>
 					</div>					
-					<div class="col-sm-3 col-xs-12 text-center">
-						<div class="icono-center-content">
+					<div class="col-sm-3 col-xs-12">
+						<div class="icono-center-content text-center">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" class="img-responsive" style="width:40%;">
-							<div class="text-description-center">
+							<div class="text-description-center text-justify">
 			 					<p class="pv-21 f-13 text-gray">Un espacio de diálogo en el que intercambiemos opiniones </p>	
 			 				</div>
 						</div>
 					</div>
-					<div class="col-sm-3 col-xs-12 text-center">
-						<div class="icono-center-content">
+					<div class="col-sm-3 col-xs-12">
+						<div class="icono-center-content text-center">
 							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" class="img-responsive" style="width:40%;">
-							<div class="text-description-center">
+							<div class="text-description-center text-justify">
 			 					<p class="pv-21 f-13 text-gray">Un espacio para desarrollar contactos profesionales</p>	
 			 				</div>
 						</div>

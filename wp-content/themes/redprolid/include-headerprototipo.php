@@ -30,8 +30,23 @@
 		</script>
   </head>
   <body>
+   <div class="overlay overlay-hugeinc open">
+      <button type="button" class="overlay-close">Close</button>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+   </div>
    <header class="header-content">
-       <div class="header-logo">
+        <div class="header-menu left">
+          <button id="trigger-overlay" type="button">Open Overlay</button>
+        </div>
+       <div class="header-logo center">
            <div class="container-sm text-center">
                <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-head.png" class="img-responsive" style="width:40%;">
            </div>
