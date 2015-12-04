@@ -58,9 +58,7 @@
         </div>
       </section>
     </div> <!-- END:Site wrapper -->
-    
-    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/classie.js" type="text/javascript"></script>
-    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/menu.js" type="text/javascript"></script>   
+       
     <!--LIKE BOX FACEBOOK-->
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
