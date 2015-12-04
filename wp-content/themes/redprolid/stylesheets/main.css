@@ -6956,12 +6956,11 @@ input {
   background: #efefef !important; }
 
 .overlay label {
-  width: 58px;
+  width: 86px;
   height: 58px;
   position: absolute;
   left: 51px;
   top: 55px;
-  background: url("http://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png");
   z-index: 100;
   cursor: pointer; }
 
