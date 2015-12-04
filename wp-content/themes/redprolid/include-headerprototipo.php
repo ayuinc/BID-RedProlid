@@ -30,8 +30,8 @@
 		</script>
   </head>
   <body>
-   <div class="overlay overlay-hugeinc open">
-      <button type="button" class="overlay-close">Close</button>
+   <div class="overlay overlay-hugeinc">
+      <button type="button" class="overlay-close">X</button>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
