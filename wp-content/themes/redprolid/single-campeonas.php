@@ -21,7 +21,7 @@
         <div class="col-md-3">
           <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
           <?php if ($imagen_campeona!='') { ?>
-          <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="img-responsive pb-14">
+          <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" class="pb-14" width="100%">
           <?php } ?>
           <small><?php the_field('fuente_imagen_campeonas'); ?></small>
         </div>
