@@ -30,21 +30,24 @@
 		</script>
   </head>
   <body>
-   <div class="overlay overlay-hugeinc">
-      <button type="button" class="overlay-close">X</button>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-   </div>
    <header class="header-content">
         <div class="header-menu left">
-          <button id="trigger-overlay" type="button">Open Overlay</button>
+          <input type="checkbox" id="op"></input>
+          <div class="lower">
+            <label for="op">click the text</label>
+          </div>
+          <div class="overlay overlay-hugeinc">
+                <label for="op"></label>
+                <nav>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </nav>
+          </div>
         </div>
        <div class="header-logo center">
            <div class="container-sm text-center">

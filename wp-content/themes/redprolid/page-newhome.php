@@ -159,7 +159,5 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 
 		});
 	</script>
-  <script src="<?php echo content_url('/'); ?>themes/redprolid/js/classie.js" type="text/javascript"></script>
-  <script src="<?php echo content_url('/'); ?>themes/redprolid/js/menu.js" type="text/javascript"></script>	
 </body>
 
