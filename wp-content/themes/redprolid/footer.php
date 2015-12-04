@@ -76,8 +76,8 @@
     <script src="https://apis.google.com/js/platform.js" async defer>
       {lang: 'es'}
     </script>
-    <script src="themes/redprolid/js/classie.js" type="text/javascript"></script>
-    <script src="themes/redprolid/js/menu.js" type="text/javascript"></script>   
+    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/classie.js" type="text/javascript"></script>
+    <script src="<?php echo content_url('/'); ?>themes/redprolid/js/menu.js" type="text/javascript"></script>   
 		<!-- Go to www.addthis.com/dashboard to customize your tools -->
 		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54e102b5429d3567" async="async"></script>  
     
