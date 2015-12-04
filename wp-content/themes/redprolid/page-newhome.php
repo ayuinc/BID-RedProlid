@@ -113,7 +113,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	 				<h2 class="text-gray-darker bold text-center">¿Como nace Red Prolid?</h2>
 	 				<p class="pv-21  ph-56-md mb-0 gray-darker text-center">La Red PROLID forma parte de los esfuerzos del Banco Interamercano de Desarrollo (BID) para promover el liderago y empoderamiento de las mujeres en la región. Desde 1998, el BID viene promoviendo la participación política y cívica de las mjueres en Américaa Latina y el Caribe a través del Programa de Apoyo al Liderazgo y Representación de la Mujer (PROLID)</p>
 	 			</div>			
-				<div class="row">
+<!-- 				<div class="row">
 					<div class="col-sm-6 col-xs-12 text-left ph-14">
 						<div class="small-icon text-left">
 							<img class="pv-7" src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" style="width:13%"> <p class="color-g inline-p bold">Campeon@s</p>							
@@ -140,7 +140,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">PARTICIPA EN LA CONVERSACIÓN  →</a>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</section>
 	</div>
