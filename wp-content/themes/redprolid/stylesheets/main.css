@@ -6948,7 +6948,7 @@ input {
   cursor: pointer; }
 
 .overlay {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
@@ -6960,7 +6960,7 @@ input {
   height: 58px;
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: 55px;
   background: url("http://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png");
   z-index: 100;
   cursor: pointer; }
@@ -7006,7 +7006,8 @@ input {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
-  transition: opacity 0.5s, visibility 0s 0.5s; }
+  transition: opacity 0.5s, visibility 0s 0.5s;
+  z-index: 1; }
 
 #op:checked ~ .overlay-hugeinc {
   opacity: 1;
