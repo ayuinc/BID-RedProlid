@@ -6937,6 +6937,9 @@ div[id^="yop-poll-results-3"] {
     flex-direction: column;
     -ms-flex-direction: column; } }
 /*ESTILOS NEWS PAGES*/
+.w-22 {
+  width: 22%; }
+
 .w-68 {
   width: 68%; }
 
@@ -6959,6 +6962,15 @@ input {
   height: 58px;
   position: absolute;
   left: 51px;
+  top: 55px;
+  z-index: 100;
+  cursor: pointer; }
+
+.overlay label.cerrar {
+  width: 86px;
+  height: 58px;
+  position: absolute;
+  left: 181px;
   top: 55px;
   z-index: 100;
   cursor: pointer; }
@@ -6993,7 +7005,6 @@ input {
   text-decoration: none;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
-  font-family: 'NotCourierSans';
   text-transform: uppercase; }
 
 .overlay ul li a:hover,
