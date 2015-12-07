@@ -5,8 +5,7 @@ Template Name: Prototipo QuienesSomos
 get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content bg-gray-lighter">
-		<div class="minh-490 pt-42-xs flex">
-		 <div class="bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/rociosilva.png)">
+		<div class="minh-420 pt-42-xs flex bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/rociosilva.png)">
 			<div class="text-left text-header-first">
 				<div class="container ph-0-md pv-35-xs">
 					<small class="text-gray-lighter h6 bold">PUNTOS DE VISTA</small>
@@ -18,7 +17,6 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</a> -->					
 				</div>
 			</div>
-		 </div>
 				<div class="registrer-bar minh-70 pt-14 ph-56-md bg-gray-lighter text-center flex-res flex-bar">
 						<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							<div class="container">
