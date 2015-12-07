@@ -50,9 +50,9 @@
                <li class="text-primary mb-21">__</li>
                <li class="text-gray rem-12 pt-7">Forma parte de la Red PROLID</li>
                <li><input placeholder="Nombre" class="border-radius p-7 w-100" type="text" id="mce-FNAME" name="FNAME" style="height:42px"></li>
-               <li class="mv-7"><input placeholder="Apellido" class="border-radius p-7 w-100" type="text" id="mce-LNAME" name="LNAME" style="height:42px"></li>
-               <li class="mv-7"><input placeholder="Correo Electrónico" name="EMAIL" class=" border-radius required email w-100" type="text" id="mce-EMAIL" style="height:42px"></li>
-               <li class="mv-7"><input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-primary border-radius bold" style="width:100%"></li>
+               <li class="mv-14"><input placeholder="Apellido" class="border-radius p-7 w-100" type="text" id="mce-LNAME" name="LNAME" style="height:42px"></li>
+               <li class="mv-14"><input placeholder="Correo Electrónico" name="EMAIL" class=" border-radius required email w-100" type="text" id="mce-EMAIL" style="height:42px"></li>
+               <li class="mv-14"><input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-primary border-radius bold" style="width:100%"></li>
               </ul>
              </nav>
           </div>
@@ -62,11 +62,11 @@
         </div>
         <div class="header-right right text-right-xs col-sm-4 col-xs-8 col-md-4 col-lg-4">
           <!-- Facebook icon by Icons8 -->
-          <a href="https://www.facebook.com/redprolid"><img class="mt-21-sm mt-21-md mt-21-lg mt-14-xs icon icons8-Facebook icon-facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABA0lEQVRIS+2W7W3CQBBEHx3QQUgF0AEphXQAFQAV0AIlpINAB5RAKiBUAHrIhw7Lwtha/AdWOtnSfYxndm7XPTqKXkc4vAbQBFgB/Zay/gMzYJ3vr5LOhcauJdAIOACfdUAnYAt8tQTaAGO4zX8VoyZAU2AIDIAlIEg4UDowERdoEQ2krL8Fwh/wU4xwRkqmMw2Tvs/yGSqdEs2Lw8t5DgFSMh3lM7lSUEOnhkmXMym7/7u4pCGMrBoO7fyRMfHVvHnJQ4ASi6fn6A10NUzbWheSI9uEhfVem9B1DkOX5WGbOGbzl7kqRtrXL072bdotrH3ur218TQ9+aP1r/Jw8JEXTRWfl31Ab6JvgggAAAABJRU5ErkJggg==" width="26" height="26"></a>
+          <a href="https://www.facebook.com/redprolid" target="_blank"><img class="mt-21-sm mt-21-md mt-21-lg mt-14-xs icon icons8-Facebook icon-facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABA0lEQVRIS+2W7W3CQBBEHx3QQUgF0AEphXQAFQAV0AIlpINAB5RAKiBUAHrIhw7Lwtha/AdWOtnSfYxndm7XPTqKXkc4vAbQBFgB/Zay/gMzYJ3vr5LOhcauJdAIOACfdUAnYAt8tQTaAGO4zX8VoyZAU2AIDIAlIEg4UDowERdoEQ2krL8Fwh/wU4xwRkqmMw2Tvs/yGSqdEs2Lw8t5DgFSMh3lM7lSUEOnhkmXMym7/7u4pCGMrBoO7fyRMfHVvHnJQ4ASi6fn6A10NUzbWheSI9uEhfVem9B1DkOX5WGbOGbzl7kqRtrXL072bdotrH3ur218TQ9+aP1r/Jw8JEXTRWfl31Ab6JvgggAAAABJRU5ErkJggg==" width="26" height="26"></a>
           <!-- Twitter  icon by Icons8 -->
-          <a href=""></a><img class="mt-21-sm mt-21-md mt-21-lg mt-14-xs icon icons8-Twitter icon-twitter" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABTklEQVRIS+2W0U0DMRAFJxUAFUAHoQQ6ACoAOkgHQAVAB1ABUAHQQTqAEqADNJKNfMne2ebjvmLpdNF5veP3vGtlwUxjMROHHejfTkfW7QPfDRmPgWvAt/EvwEP6fQK8lzkikAt8HidgJnoL5r/St1dgVQO5u70U6A6jYcLDkbms7qlUFSlaA8uURPlXQN6pn4+Az4q1rhk4EoFukvdlLoEuFHgAPE+APgCtHYwI5OGaNKtqqItBSDOotK4XYvwtoCtVRZF1PcDzVLVVkAGW92lP9hT7k4plqw/H7jory2Y8A2zg1mE7DPonL5wC1Up4E64aC6lshb+Yqdv7ErhPzduiKDybmqI8r20C7yqkUctaQNpwkUBT57R1C0Sb2rTOhNoloDZsTNWGZ9LSR8aoxorzKhFuFdrIufQt/yZAi3U1RV3zu/8MXXaVwbNZ9wvt1TYbd/v+AQAAAABJRU5ErkJggg==" width="26" height="26">
-          <!-- LinkedIn icon by Icons8 -->
-          <img class="mt-21-sm mt-21-md mt-21-lg mt-14-xs icon icons8-LinkedIn icon-linkedin" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABBUlEQVRIS+2W4RHBQBCFv1RCB6iAFnRABzpAB1SATuiACtCBDphncmaTuczJTuRP7Ewmc8nevbzd9+6S0VJkLeHQDaAhsAN098QZmAO6fyJWOiX0y4k1EPWBV2CUAnoCJ2BSY3GbegTGUOx/jJEFmgFLYA3svwR2Ad2AXk2GLiAx0iU2P2WUqpYaL9YPk+hiFCYFcYTxARgYC+j5NAdsFCjGVN5ReRsFuhs28p0EswUWTQOpdBKJoqq8BeukfFS1iHy1+gOVFWS3oE3edDVcjQ5ja+Byjkt1KcPG3n8NFORaOE9qIGq3sPJ/T42pTokqjZzviUsu/eTB51k8OacbPyfJMngSXv+3bBvzLBPkAAAAAElFTkSuQmCC" width="26" height="26">
+          <a href="https://twitter.com/RedPROLID" target="_blank"><img class="mt-21-sm mt-21-md mt-21-lg mt-14-xs icon icons8-Twitter icon-twitter" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABTklEQVRIS+2W0U0DMRAFJxUAFUAHoQQ6ACoAOkgHQAVAB1ABUAHQQTqAEqADNJKNfMne2ebjvmLpdNF5veP3vGtlwUxjMROHHejfTkfW7QPfDRmPgWvAt/EvwEP6fQK8lzkikAt8HidgJnoL5r/St1dgVQO5u70U6A6jYcLDkbms7qlUFSlaA8uURPlXQN6pn4+Az4q1rhk4EoFukvdlLoEuFHgAPE+APgCtHYwI5OGaNKtqqItBSDOotK4XYvwtoCtVRZF1PcDzVLVVkAGW92lP9hT7k4plqw/H7jory2Y8A2zg1mE7DPonL5wC1Up4E64aC6lshb+Yqdv7ErhPzduiKDybmqI8r20C7yqkUctaQNpwkUBT57R1C0Sb2rTOhNoloDZsTNWGZ9LSR8aoxorzKhFuFdrIufQt/yZAi3U1RV3zu/8MXXaVwbNZ9wvt1TYbd/v+AQAAAABJRU5ErkJggg==" width="26" height="26">
+          <!-- LinkedIn icon by Icons8 --></a>
+          <a  href="https://twitter.com/RedPROLID" target="_blank"><img class="mt-21-sm mt-21-md mt-21-lg mt-14-xs icon icons8-LinkedIn icon-linkedin" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABBUlEQVRIS+2W4RHBQBCFv1RCB6iAFnRABzpAB1SATuiACtCBDphncmaTuczJTuRP7Ewmc8nevbzd9+6S0VJkLeHQDaAhsAN098QZmAO6fyJWOiX0y4k1EPWBV2CUAnoCJ2BSY3GbegTGUOx/jJEFmgFLYA3svwR2Ad2AXk2GLiAx0iU2P2WUqpYaL9YPk+hiFCYFcYTxARgYC+j5NAdsFCjGVN5ReRsFuhs28p0EswUWTQOpdBKJoqq8BeukfFS1iHy1+gOVFWS3oE3edDVcjQ5ja+Byjkt1KcPG3n8NFORaOE9qIGq3sPJ/T42pTokqjZzviUsu/eTB51k8OacbPyfJMngSXv+3bBvzLBPkAAAAAElFTkSuQmCC" width="26" height="26"></a>
         </div>
       </div>
      </div>
