@@ -59,7 +59,9 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 		</div> -->
 			 		<div class="col-md-8 col-sm-6 col-xs-12">
 			 			<div class="col-sm-6 col-xs-12">
-					 		 <h5 class="text-gray color-g inline-p bold">EVENTOS</h5>			
+					 		 <div class="col-sm-12 col-xs-12">
+					 		 	<h5 class="text-gray color-g inline-p bold">EVENTOS</h5>		
+					 		 </div>	
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
 			 						<img class="img-responsive" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
 			 					</div>
@@ -83,7 +85,9 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
 			 						<p>XX Congreso Internacional del <br> CLAD</p>
 			 					</div>
-			 					<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>eventos/">LEE TODOS LOS EVENTOS →</a>
+			 					<div class="col-sm-12 col-xs-12">
+			 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>eventos/">LEE TODOS LOS EVENTOS →</a>
+			 					</div>
 			 			</div>
 				 			<div class="col-sm-6 col-xs-12 text-left ph-14">
 				 				<div class="small-icon text-left">
