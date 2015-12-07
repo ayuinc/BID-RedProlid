@@ -7046,17 +7046,9 @@ input {
   -webkit-transform: translateY(-25%) rotateX(35deg);
   transform: translateY(-25%) rotateX(35deg); }
 
-/*IMG OVERLAY CLASS AND RESPONSIVE*/
-.logo-overlay {
+.custom-img {
   position: relative;
-  left: 3.3%; }
-
-.icon-facebook-overlay,
-.icon-twitter-overlay,
-.icon-linkedin-overlay {
-  position: relative;
-  left: 22.6%;
-  top: 3px; }
+  z-index: 10; }
 
 .header-text-quees-red-prolid {
   color: white; }

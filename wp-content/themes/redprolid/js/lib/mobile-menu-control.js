@@ -30,3 +30,13 @@
   });
 
 }).call(this);
+
+/*
+NEW MENU FUNCTION
+*/
+$( "#in" ).click(function() {
+  $('.logo-menu-redprolid .icon-facebook-overlay .icon-twitter-overlay .icon-linkedin-overlay ').addClass('custom-img')
+});
+$( "#out" ).click(function() {
+  $('.logo-menu-redprolid .icon-facebook-overlay .icon-twitter-overlay .icon-linkedin-overlay').removeClass('custom-img');
+});
