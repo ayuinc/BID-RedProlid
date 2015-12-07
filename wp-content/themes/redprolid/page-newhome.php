@@ -63,7 +63,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					 		 	<h5 class="text-gray color-g inline-p bold">EVENTOS</h5>		
 					 		 </div>	
 			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
-			 						<img class="w-100" src="<?php echo content_url('/'); ?><?php echo content_url('/'); ?>uploads/2015/11/cumbre.jpg">
+			 						<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2015/11/cumbre.jpg">
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6 pl-0-xs">
 			 						<p class="rem-08">III Cumbre Iberoamericana de <br class="hidden-xs"> Agendas Locales de Género <br class="hidden-xs"> Mujer y Ciudad-Unión <br class="hidden-xs"> Iberoamericana de <br class="hidden-xs"> Municipalistas (UIM)</p>
