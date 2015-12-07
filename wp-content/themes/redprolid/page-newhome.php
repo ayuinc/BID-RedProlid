@@ -7,7 +7,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	<div class="site-content bg-gray-lighter">
 		<div class="minh-490 pt-42-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/homepage_redprolid.jpg)">
 			<div class="text-left text-header-first">
-				<div class="container pl-14">
+				<div class="container ph-0">
 					<small class="text-gray-lighter h6 bold">PUNTOS DE VISTA</small>
 					<h1 class="h2 text-gray-lighter mv-0">Rocío Silva Santisteban</h1>
 					<p class="text-gray-lighter medium f-15 pb-7">Escritora, profesora universitaria, activista, investigadora y <br> exdirectora ejecutiva de la Coordinadora Nacional de Derechos <br> Humanos-Perú, escribe sobre el acoso político citando casos <br> concretos: Mujer en la política, muestrario de ataques.</p>
@@ -21,7 +21,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							<div class="container">
 								<div class="row">
-									<div class="col-md-3 col-sm-12 col-xs-12 text-right text-center-xs">
+									<div class="col-md-3 col-sm-12 col-xs-12 pl-0 text-center text-center-xs">
 										<p class="bold text-gray pt-7">Forma parte de la Red PROLID</p>					
 									</div>
 									<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
@@ -43,7 +43,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				</div>
 		</div>
 		<section id="middle-content" class="middle-content pv-70 bg-white">
-		 	<div class="container">
+		 	<div class="container mh-56">
 				<div class="row">
 <!-- 			 		<div class="col-sm-12 col-md-12 col-xs-12">
 			 			<div class="icono-content text-center pv-14">
@@ -85,22 +85,22 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
 			 						<p class="rem-08">XX Congreso Internacional del <br> CLAD</p>
 			 					</div>
-			 					<div class="col-sm-12 col-xs-12">
+			 					<div class="col-sm-12 col-xs-12 ph-0 pv-7">
 			 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>eventos/">LEE TODOS LOS EVENTOS →</a>
 			 					</div>
 			 			</div>
-				 			<div class="col-sm-6 col-xs-12 text-left ph-14">
+				 			<div class="col-sm-5 col-xs-12 text-left ph-14">
 				 				<div class="small-icon text-left">
 				 				<h5 class="text-gray color-g inline-p bold">DEBATE DE LA SEMANA</h5>							
 				 				</div>
 				 				<div class="img-center-content">
 				 				<img src="<?php echo content_url('/'); ?>uploads/2015/11/rocio-silva.jpg" class="w-100">
 				 				</div>
-				 				<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
+				 				<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
 				 					<h5 class="bold text-gray-darker mt-7">El Tuit de las poderosas</h5>
 				 					<p class="text-gray-darker inline-p f-18 pv-7">FUENTE:</p>
 				 					<p class="text-primary inline-p rem-08 pv-7"><a href="">Mujeres con poder y con twitter.</a></p><p class="text-gray inline-p rem-08 pv-7"><a href="">Sin Mordaza.</a></p>
-				 					<div class="col-sm-12 col-xs-12">
+				 					<div class="col-sm-12 col-xs-12 ph-0">
 				 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">INGRESA AL DEBATE  →</a>
 				 					</div>
 				 				</div>
