@@ -36,14 +36,16 @@ NEW MENU FUNCTION
 */
 $( "#in" ).click(function() {
   $('.logo-menu-redprolid').addClass('custom-img');
-  $('.icon-facebook-overlay').addClass('custom-img');
-  $('.icon-twitter-overlay').addClass('custom-img');
-  $('.icon-linkedin-overlay ').addClass('custom-img');
+  $('.logo-menu-redprolid').addClass('logo-menu-w');  
+  $('.icon-facebook').addClass('icon-facebook-overlay');
+  $('.icon-twitter').addClass('icon-twitter-overlay');
+  $('.icon-linkedin').addClass('icon-linkedin-overlay');
 });
 $( "#out" ).click(function() {
   $('.logo-menu-redprolid').removeClass('custom-img');
-  $('.icon-facebook-overlay').removeClass('custom-img');
-  $('.icon-twitter-overlay').removeClass('custom-img');
-  $('.icon-linkedin-overlay ').removeClass('custom-img');
+  $('.logo-menu-redprolid').removeClass('logo-menu-w');  
+  $('.icon-facebook').removeClass('icon-facebook-overlay');
+  $('.icon-twitter').removeClass('icon-twitter-overlay');
+  $('.icon-linkedin').removeClass('icon-linkedin-overlay');
 });
 
