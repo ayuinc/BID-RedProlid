@@ -42,7 +42,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						</form>
 				</div>
 		</div>
-		<section id="middle-content" class="middle-content pv-70 bg-white">
+		<section id="middle-content" class="middle-content pt-70 pb-56 bg-white">
 		 	<div class="container mh-56-md">
 				<div class="row">
 <!-- 			 		<div class="col-sm-12 col-md-12 col-xs-12">
