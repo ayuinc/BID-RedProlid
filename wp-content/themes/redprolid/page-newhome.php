@@ -8,10 +8,10 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		<div class="minh-490 pt-42-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/rociosilva.png)">
 			<div class="text-left text-header-first">
 				<div class="container ph-0-md pv-35-xs">
-					<small class="text-gray-light h6 bold">PUNTOS DE VISTA</small>
-					<h1 class="h2 text-gray-light mv-0">Rocío Silva Santisteban</h1>
-					<p class="text-gray-light medium f-15 pb-7">Escritora, profesora universitaria, activista, investigadora y <br> exdirectora ejecutiva de la Coordinadora Nacional de Derechos <br> Humanos-Perú, escribe sobre el acoso político citando casos <br> concretos: Mujer en la política, muestrario de ataques.</p>
-					<a class="text-gray-light f-12 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">LEE EL ARTÍCULO →</a>
+					<small class="text-gray-lighter h6 bold">PUNTOS DE VISTA</small>
+					<h1 class="h2 text-gray-lighter mv-0">Rocío Silva Santisteban</h1>
+					<p class="text-gray-lighter medium f-15 pb-7">Escritora, profesora universitaria, activista, investigadora y <br> exdirectora ejecutiva de la Coordinadora Nacional de Derechos <br> Humanos-Perú, escribe sobre el acoso político citando casos <br> concretos: Mujer en la política, muestrario de ataques.</p>
+					<a class="text-gray-lighter f-12 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">LEE EL ARTÍCULO →</a>
 <!-- 					<a class="mt-35" href="#middle-content">
 						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACo0lEQVR4Xu2Z8VUUMRDGv6kAO5AOOCoAKtAOhAqwBOlAKwAqECtQKxA7kA6ggvENTvaFIedl93Yz2d3kz7t9b/L98s1kkhBWPmjl+tEANAesnEBLgZUboBXBlgItBVZOoKXAyg3QdoHnFGDmQyL6syY3BM3EzBsA3wHcEdHFGiAw8zWA9wDOBMAPACcq/GbpEFT8uer9KQDeABAIR/rjFRF9WqITmPkzgEvV9hvAaagBFsIFEd0sCQIzy6qL9WX8E0/02PUBCScsBsI28ULiRSOkEO4BvFVSs4dgxD8A2MjKB3e/6gR1V5CacDB3CEb8k9peFrgbyVZ4CRByxL9KgZjMnCHkiv8vAO0QpUmaVTr0Eb8TwNwg9BWfBWALhGMielFMvHsGZj7Vll6mkix4qTlm3weYmiDbyFktEKLzjDR02eKzHRDI1QhhH/G9AWg6yCnqq0JxdYIRL1MSV0rRzh7ZKWC2yLivdoGQED+oax0EQJ3gBmEs8YNSwNsJY4rfG0BpJ4wtfhQApSBMIX40AAkI0iRJRe6OndllOfGhHtN/ATjUvwcVvL0aoRwBphUdBYKKl0tbOZfIGE38qA6ImqV4d9gLwtTiJwGg6SD3iR8UyiAICfFfiOhjjhP7fDO4D9gVhJkHQ0iIvyWicJW9K3Sv/ycDMNQJJcVPlgKmWcp2QmnxRQDkOsFDfDEAKQhEdGycIvt82Oomy3lbICatATaYKYzdO6R5rysmvqgDoj4hrgnh+S1U+KLiXQBoOtwBeGcc8o2I5LKl6CiaApEL7GNs91hZVL19GywZPHqMlbDPL7Ul44dYLg4wToCXeLca4LHS22K6OqAGEA1ADavgOYfmAE/6NcRuDqhhFTzn0BzgSb+G2M0BNayC5xyaAzzp1xD7L9m2aEexDr5GAAAAAElFTkSuQmCC"/>
 					</a> -->					
