@@ -872,4 +872,17 @@ input{
 	-webkit-transform: translateY(-25%) rotateX(35deg);
 	transform: translateY(-25%) rotateX(35deg);
 }
+
+/*IMG OVERLAY CLASS AND RESPONSIVE*/
+.logo-overlay{
+	position: relative;
+  left: 3.3%;
+}
+.icon-facebook-overlay,
+.icon-twitter-overlay,
+.icon-linkedin-overlay{
+  position: relative;
+  left: 22.6%;
+  top: 3px;
+}
 // @media only screen and (min-width: 299px) and (max-width:)
