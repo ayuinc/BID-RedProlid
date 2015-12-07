@@ -62,28 +62,28 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					 		 <div class="col-sm-12 col-xs-12">
 					 		 	<h5 class="text-gray color-g inline-p bold">EVENTOS</h5>		
 					 		 </div>	
-			 					<div class="col-xs-12 col-sm-6 col-md-6">
-			 						<img class="img-responsive" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
+			 					<div class="col-xs-12 col-sm-6 col-md-4">
+			 						<img class="w-100" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
-			 						<p>III Cumbre Iberoamericana de <br> Agendas Locales de Género <br> Mujer y Ciudad-Unión <br> Iberoamericana de <br> Municipalistas (UIM)</p>
+			 						<p class="fs-12">III Cumbre Iberoamericana de <br> Agendas Locales de Género <br> Mujer y Ciudad-Unión <br> Iberoamericana de <br> Municipalistas (UIM)</p>
+			 					</div>
+			 					<div class="col-xs-12 col-sm-6 col-md-4">
+			 						<img class="w-100" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
-			 						<img class="img-responsive" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
-			 					</div>
-			 					<div class="col-xs-12 col-sm-6 col-md-6">
-			 						<p>Abierta la convocatoria: <br>
+			 						<p class="fs-12">Abierta la convocatoria: <br>
 													premios a las mejores prácticas <br>
 													locales con enfoque de <br>
 													género-Unión Iberoamerciana <br>
 													de Municipalistas (UIM)
 									 </p>
 			 					</div>
-			 					<div class="col-xs-12 col-sm-6 col-md-6">
-			 						<img class="img-responsive" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
+			 					<div class="col-xs-12 col-sm-6 col-md-4">
+			 						<img class="w-100" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
-			 						<p>XX Congreso Internacional del <br> CLAD</p>
+			 						<p class="fs-12">XX Congreso Internacional del <br> CLAD</p>
 			 					</div>
 			 					<div class="col-sm-12 col-xs-12">
 			 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>eventos/">LEE TODOS LOS EVENTOS →</a>
