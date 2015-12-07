@@ -22,7 +22,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<div class="container">
 								<div class="row">
 									<div class="col-md-3 col-sm-12 col-xs-12 text-right text-center-xs">
-										<p class="bold text-white pt-7">Forma parte de la Red PROLID</p>					
+										<p class="bold text-gray pt-7">Forma parte de la Red PROLID</p>					
 									</div>
 									<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
 										<input placeholder="Nombre" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-FNAME" name="FNAME" style="height:42px">			
@@ -46,15 +46,15 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		 	<div class="container-sm">
 				<div class="row">
 			 		<div class="col-sm-12 col-md-12 col-xs-12">
-			 			<div class="icono-content text-center">
-			 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" class="img-responsive" style="width:6%;">
+			 			<div class="icono-content text-center pv-14">
+			 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon-home.png" class="img-responsive" style="width:6%;">
 			 			</div>
 			 			<div class="text-description">
-			 				<p class="pv-21  ph-56-md mb-0 gray-darker text-center">Somos una iniciativa del Banco Interamericano de Desarrollo (BID)  para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan —o aspiran a ocupar— posiciones de liderazgo en la administración pública en América Latina. </p>	
+<!-- 			 				<p class="pv-21  ph-56-md mb-0 gray-darker text-center">Somos una iniciativa del Banco Interamericano de Desarrollo (BID)  para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan —o aspiran a ocupar— posiciones de liderazgo en la administración pública en América Latina. </p>	 -->
 			 			</div>
 			 			<div class="video-intro text-center">
-			 				<iframe  class="wi-100" width="600" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" frameborder="0" allowfullscreen></iframe>
-			 				 <p class="mv-21"><a class="text-primary medium" href="<?php echo home_url('/'); ?>redprolid/">¿QUIERES SABER MÁS? &#10145;</a></p>
+<!-- 			 				<iframe  class="wi-100" width="600" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" frameborder="0" allowfullscreen></iframe>
+			 				 <p class="mv-21"><a class="text-primary medium" href="<?php echo home_url('/'); ?>redprolid/">¿QUIERES SABER MÁS? &#10145;</a></p> -->
 			 			</div>
 			 		</div>
 				</div> 			 		

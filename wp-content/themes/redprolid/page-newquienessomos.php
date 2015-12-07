@@ -71,7 +71,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="col-sm-3 col-xs-12">
 							<div class="icono-center-content text-center">
 								<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" class="img-responsive" style="width:40%;">
-								<div class="text-description-center text-justify">
+								<div class="text-description-center text-center">
 				 					<p class="pv-21 f-13 text-gray">Un lugar para encontrar información y recursos prácticos</p>	
 				 				</div>
 							</div>
@@ -79,7 +79,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="col-sm-3 col-xs-12">
 							<div class="icono-center-content text-center">
 								<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-2.png" class="img-responsive" style="width:40%;">
-								<div class="text-description-center text-justify">
+								<div class="text-description-center text-center">
 				 					<p class="pv-21 f-13 text-gray">Donde compartimos lo que sabemos y aprendemos de tus experiencias</p>	
 				 				</div>
 							</div>
@@ -87,7 +87,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="col-sm-3 col-xs-12">
 							<div class="icono-center-content text-center">
 								<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" class="img-responsive" style="width:40%;">
-								<div class="text-description-center text-justify">
+								<div class="text-description-center text-center">
 				 					<p class="pv-21 f-13 text-gray">Un espacio de diálogo en el que intercambiemos opiniones </p>	
 				 				</div>
 							</div>
@@ -95,7 +95,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="col-sm-3 col-xs-12">
 							<div class="icono-center-content text-center">
 								<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" class="img-responsive" style="width:40%;">
-								<div class="text-description-center text-justify">
+								<div class="text-description-center text-center">
 				 					<p class="pv-21 f-13 text-gray">Un espacio para desarrollar contactos profesionales</p>	
 				 				</div>
 							</div>
