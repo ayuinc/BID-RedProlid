@@ -45,19 +45,75 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		<section id="middle-content" class="middle-content pv-70 bg-white">
 		 	<div class="container-sm">
 				<div class="row">
-			 		<div class="col-sm-12 col-md-12 col-xs-12">
+<!-- 			 		<div class="col-sm-12 col-md-12 col-xs-12">
 			 			<div class="icono-content text-center pv-14">
-			 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon-home.png" class="img-responsive" style="width:6%;">
+			 				<img src="<?php //echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon-home.png" class="img-responsive" style="width:6%;">
 			 			</div>
 			 			<div class="text-description">
-<!-- 			 				<p class="pv-21  ph-56-md mb-0 gray-darker text-center">Somos una iniciativa del Banco Interamericano de Desarrollo (BID)  para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan —o aspiran a ocupar— posiciones de liderazgo en la administración pública en América Latina. </p>	 -->
+			 				<p class="pv-21  ph-56-md mb-0 gray-darker text-center">Somos una iniciativa del Banco Interamericano de Desarrollo (BID)  para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan —o aspiran a ocupar— posiciones de liderazgo en la administración pública en América Latina. </p>	
 			 			</div>
 			 			<div class="video-intro text-center">
-<!-- 			 				<iframe  class="wi-100" width="600" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" frameborder="0" allowfullscreen></iframe>
-			 				 <p class="mv-21"><a class="text-primary medium" href="<?php echo home_url('/'); ?>redprolid/">¿QUIERES SABER MÁS? &#10145;</a></p> -->
+			 				<iframe  class="wi-100" width="600" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" frameborder="0" allowfullscreen></iframe>
+			 				 <p class="mv-21"><a class="text-primary medium" href="<?php //echo home_url('/'); ?>redprolid/">¿QUIERES SABER MÁS? &#10145;</a></p>
 			 			</div>
+			 		</div> -->
+			 		<div class="col-md-8 col-sm-6 col-xs-12">
+			 			<div class="col-sm-6 col-xs-12">
+					 		 <h5 class="text-gray color-g inline-p bold">EVENTOS</h5>			
+			 					<div class="col-xs-12 col-sm-6 col-md-6">
+			 						<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
+			 					</div>
+			 					<div class="col-xs-12 col-sm-6 col-md-6">
+			 						<p>III Cumbre Iberoamericana de <br> Agendas Locales de Género <br> Mujer y Ciudad-Unión <br> Iberoamericana de <br> Municipalistas (UIM)</p>
+			 					</div>
+			 					<div class="col-xs-12 col-sm-6 col-md-6">
+			 						<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
+			 					</div>
+			 					<div class="col-xs-12 col-sm-6 col-md-6">
+			 						<p>Abierta la convocatoria: <br>
+													premios a las mejores prácticas <br>
+													locales con enfoque de <br>
+													género-Unión Iberoamerciana <br>
+													de Municipalistas (UIM)
+									 </p>
+			 					</div>
+			 					<div class="col-xs-12 col-sm-6 col-md-6">
+			 						<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
+			 					</div>
+			 					<div class="col-xs-12 col-sm-6 col-md-6">
+			 						<p>XX Congreso Internacional del <br> CLAD</p>
+			 					</div>
+			 					<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>eventos/">LEE TODOS LOS EVENTOS →</a>
+			 			</div>
+				 			<div class="col-sm-6 col-xs-12 text-left ph-14">
+				 				<div class="small-icon text-left">
+				 				<h5 class="text-gray color-g inline-p bold">DEBATE DE LA SEMANA</h5>							
+				 				</div>
+				 				<div class="img-center-content">
+				 				<img src="<?php echo content_url('/'); ?>uploads/2015/11/rocio-silva.jpg" class="w-100">
+				 				</div>
+				 				<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
+				 					<h5 class="bold text-gray-darker mt-7">El Tuit de las poderosas</h5>
+				 					<p class="text-gray-darker inline-p f-18 pv-7">FUENTE:</p>
+				 					<p class="text-primary inline-p f-15 pv-7"><a href="">Mujeres con poder y con twitter.</a></p><p class="text-gray inline-p f-15 pv-7"><a href="">Sin Mordaza.</a></p>
+				 					<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">INGRESA AL DEBATE  →</a>
+				 				</div>
+				 		</div>
+						</div> 			 		
+			 		<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="col-sm-8 col-xs-12 text-left ph-14">
+									<div class="small-icon text-left">
+										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
+									</div>
+									<div class="img-center-content">
+										<img src="<?php echo content_url('/'); ?>uploads/2015/11/foto-Myrna-Cunningham1.jpg" class="w-100">
+									</div>
+									<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
+										<p class="text-gray-darker f-15 pv-7 bold">Conoce a Mirna Cunningham, lideresa indígena nicaragüense.</p>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">MÁS AQUÍ  →</a>
+									</div>
+								</div>
 			 		</div>
-				</div> 			 		
 		 	</div>
 		</section>
 <!-- 		<section class="end-content text-center pv-70 bg-gray-lighter">
@@ -68,28 +124,28 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				<div class="row">
 					<div class="col-sm-6 col-xs-12 text-left ph-14">
 						<div class="small-icon text-left">
-							<img class="pv-7" src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" style="width:13%"> <p class="color-g inline-p bold">Campeon@s</p>							
+							<img class="pv-7" src="<?php //echo content_url('/'); ?>themes/redprolid/assets/icons/campeonas-icon-circle.png" style="width:13%"> <p class="color-g inline-p bold">Campeon@s</p>							
 						</div>
 						<div class="img-center-content">
-							<img src="<?php echo content_url('/'); ?>uploads/2015/11/foto-Myrna-Cunningham1.jpg" class="w-100">
+							<img src="<?php //echo content_url('/'); ?>uploads/2015/11/foto-Myrna-Cunningham1.jpg" class="w-100">
 						</div>
 						<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
 							<h5 class="bold text-gray-darker mt-7">Mirna Cunningham <small class="italic">2015</small></h5>
 							<p class="text-gray-darker f-15 pv-7">Es la primera vicepresidenta del Consejo Directivo del Fondo para el Desarrollo de los Pueblos Indígenas de América Latina y el Caribe</p>
-							<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE LA ENTREVISTA  →</a>
+							<a class="text-primary f-15 bold" href="<?php //echo home_url('/'); ?>mirna-cunningham/">LEE LA ENTREVISTA  →</a>
 						</div>
 					</div>
 					<div class="col-sm-6 col-xs-12 text-left ph-14">
 						<div class="small-icon text-left">
-							<img class="pv-7" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" style="width:13%"> <p class="color-g inline-p bold">Puntos de Vista</p>							
+							<img class="pv-7" src="<?php //echo content_url('/'); ?>themes/redprolid/assets/img/pdv-main-icon.png" style="width:13%"> <p class="color-g inline-p bold">Puntos de Vista</p>							
 						</div>
 						<div class="img-center-content">
-							<img src="<?php echo content_url('/'); ?>uploads/2015/11/rocio-silva.jpg" class="w-100">
+							<img src="<?php //echo content_url('/'); ?>uploads/2015/11/rocio-silva.jpg" class="w-100">
 						</div>
 						<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
 							<h5 class="bold text-gray-darker mt-7">Rocío Silva Santisteban</h5>
 							<p class="text-gray-darker f-15 pv-7">Escritora, profesora universitaria, activista e investigadora en relaciones entre cultura y poder.</p>
-							<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">PARTICIPA EN LA CONVERSACIÓN  →</a>
+							<a class="text-primary f-15 bold" href="<?php //echo home_url('/'); ?>rocio-silva-santisteban/">PARTICIPA EN LA CONVERSACIÓN  →</a>
 						</div>
 					</div>
 				</div>
