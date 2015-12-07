@@ -43,7 +43,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				</div>
 		</div>
 		<section id="middle-content" class="middle-content pv-70 bg-white">
-		 	<div class="container-sm">
+		 	<div class="container">
 				<div class="row">
 <!-- 			 		<div class="col-sm-12 col-md-12 col-xs-12">
 			 			<div class="icono-content text-center pv-14">
