@@ -69,7 +69,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 						<p class="rem-08">III Cumbre Iberoamericana de <br class="hidden-xs"> Agendas Locales de Género <br class="hidden-xs"> Mujer y Ciudad-Unión <br class="hidden-xs"> Iberoamericana de <br class="hidden-xs"> Municipalistas (UIM)</p>
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
-			 						<img class="w-100" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
+			 						<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2015/11/convocatoria.jpg">
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6 pl-0-xs">
 			 						<p class="rem-08">Abierta la convocatoria: <br class="hidden-xs">
@@ -80,7 +80,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									 </p>
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
-			 						<img class="w-100" src="<?php echo content_url('/'); ?>themes/redprolid//uploads/2015/09/COTJ7K6XAAAa8Ll.jpg-thumb.jpg">
+			 						<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2015/11/instituciones.png">
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6 pl-0-xs">
 			 						<p class="rem-08">XX Congreso Internacional del <br class="hidden-xs"> CLAD</p>
