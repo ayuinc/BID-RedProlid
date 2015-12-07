@@ -58,32 +58,32 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 			</div>
 			 		</div> -->
 			 		<div class="col-md-7 col-sm-6 col-xs-12">
-			 			<div class="col-sm-6 col-xs-12">
+			 			<div class="col-sm-6 col-xs-12 ph-0-xs">
 					 		 <div class="col-sm-12 col-xs-12 pl-0">
 					 		 	<h5 class="text-gray color-g inline-p bold">EVENTOS</h5>		
 					 		 </div>	
-			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0">
+			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
 			 						<img class="w-100" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
 			 					</div>
-			 					<div class="col-xs-12 col-sm-6 col-md-6">
-			 						<p class="rem-08">III Cumbre Iberoamericana de <br> Agendas Locales de Género <br> Mujer y Ciudad-Unión <br> Iberoamericana de <br> Municipalistas (UIM)</p>
+			 					<div class="col-xs-12 col-sm-6 col-md-6 pl-0-xs">
+			 						<p class="rem-08">III Cumbre Iberoamericana de <br class="hidden-xs"> Agendas Locales de Género <br class="hidden-xs"> Mujer y Ciudad-Unión <br class="hidden-xs"> Iberoamericana de <br class="hidden-xs"> Municipalistas (UIM)</p>
 			 					</div>
-			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0">
+			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
 			 						<img class="w-100" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
 			 					</div>
-			 					<div class="col-xs-12 col-sm-6 col-md-6">
-			 						<p class="rem-08">Abierta la convocatoria: <br>
-													premios a las mejores prácticas <br>
-													locales con enfoque de <br>
-													género-Unión Iberoamerciana <br>
+			 					<div class="col-xs-12 col-sm-6 col-md-6 pl-0-xs">
+			 						<p class="rem-08">Abierta la convocatoria: <br class="hidden-xs">
+													premios a las mejores prácticas <br class="hidden-xs">
+													locales con enfoque de <br class="hidden-xs">
+													género-Unión Iberoamerciana <br class="hidden-xs">
 													de Municipalistas (UIM)
 									 </p>
 			 					</div>
-			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0">
+			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
 			 						<img class="w-100" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
 			 					</div>
-			 					<div class="col-xs-12 col-sm-6 col-md-6">
-			 						<p class="rem-08">XX Congreso Internacional del <br> CLAD</p>
+			 					<div class="col-xs-12 col-sm-6 col-md-6 pl-0-xs">
+			 						<p class="rem-08">XX Congreso Internacional del <br class="hidden-xs"> CLAD</p>
 			 					</div>
 			 					<div class="col-sm-12 col-xs-12 ph-0 pv-7">
 			 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>eventos/">LEE TODOS LOS EVENTOS →</a>
@@ -106,8 +106,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				</div>
 				 		</div>
 						</div> 			 		
-			 		<div class="col-md-5 col-sm-6 col-xs-12">
-								<div class="col-sm-12 col-xs-12 text-left ph-14">
+			 		<div class="col-md-5 col-sm-6 col-xs-12 ph-0-xs">
+								<div class="col-sm-12 col-xs-12 text-left ph-14-md">
 									<div class="small-icon text-left">
 										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
 									</div>
