@@ -6999,7 +6999,7 @@ input {
   display: block;
   height: 20%;
   height: calc(100% / 5);
-  min-height: 54px; }
+  min-height: 38px; }
 
 .overlay ul li a {
   font-weight: 300;
