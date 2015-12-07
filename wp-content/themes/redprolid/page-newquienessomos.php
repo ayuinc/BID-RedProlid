@@ -105,8 +105,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			</section>
 			<section class="end-content text-center pv-70 bg-white">
 				<div class="container-sm">
-		 			<div class="icono-content text-center">
-		 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" class="img-responsive" style="width:6%;">
+		 			<div class="icono-content text-center pv-14">
+		 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon-home.png" class="img-responsive" style="width:6%;">
 		 			</div>			
 		 			<div class="text-description-center-end">
 	<!-- 	 				<h2 class="text-gray-darker bold">Lo último en la Red PROLID</h2> -->
