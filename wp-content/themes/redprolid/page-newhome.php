@@ -85,11 +85,11 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
 			 						<p class="rem-08">XX Congreso Internacional del <br> CLAD</p>
 			 					</div>
-			 					<div class="col-sm-12 col-xs-12 ph-7 pv-7">
+			 					<div class="col-sm-12 col-xs-12 ph-0 pv-7">
 			 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>eventos/">LEE TODOS LOS EVENTOS →</a>
 			 					</div>
 			 			</div>
-				 			<div class="col-sm-6 col-xs-12 text-left ph-14">
+				 			<div class="col-sm-6 col-xs-12 text-left ph-0">
 				 				<div class="small-icon text-left">
 				 				<h5 class="text-gray color-g inline-p bold">DEBATE DE LA SEMANA</h5>							
 				 				</div>
@@ -115,7 +115,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<img src="<?php echo content_url('/'); ?>uploads/2015/11/foto-Myrna-Cunningham1.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
-										<h4 class="text-gray-darker f-15 pv-7 bold">Conoce a Mirna Cunningham, lideresa indígena nicaragüense.</h4>
+										<h4 class="text-gray-darker pv-7 bold">Conoce a Mirna Cunningham, lideresa indígena nicaragüense.</h4>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">MÁS AQUÍ  →</a>
 									</div>
 								</div>
