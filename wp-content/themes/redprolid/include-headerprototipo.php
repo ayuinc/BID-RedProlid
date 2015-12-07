@@ -47,8 +47,9 @@
                <li><a href="#">Desarrolla tu liderazgo</a></li>
                <li><a href="#">Entérate</a></li>
                <li><a href="#">Contáctanos</a></li>
-               <li class="text-primary">__</li>
-               <li class="bold text-gray pt-7">Forma parte de la Red PROLID</li>
+               <li class="text-primary mb-21">__</li>
+               <li class="text-gray pt-7">Forma parte de la Red PROLID</li>
+               <li><input placeholder="Nombre" class="border-radius p-7" type="text" id="mce-FNAME" name="FNAME" style="height:42px"></li>
               </ul>
              </nav>
           </div>
