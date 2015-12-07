@@ -43,7 +43,7 @@
              <label class="cerrar text-gray" id="out" for="op">CERRAR <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzUlEQVQ4T42TYRXCMAyErw5wAhLAQSQwBSAFFICEOAAJ4AQJvNtL9kqbdOxnu/uSXi4FAETkCOAE4KCqH55ln4hsADwAXFX1Xkx8M8FrBKnEO/t/IoCibVUxhARiSt4EsKXnCJKJAeyLeZBCrDO+2dueK1NMv2bACoTXoZgXC2AAqQeyVPbDH8AKpBN3HVSA9s28CqcTPSESe8cdpDUxcpviNCf1GMNRWek0Jx6kdM5rOYmiHLqdJbZdplA8CNvkHnCdzx7PP9aZnly4zl8NTn4w5oPSqAAAAABJRU5ErkJggg=="/></label>
              <nav>
               <ul class="text-primary">
-               <li><a href="<?php echo home_url('/'); ?>">Acerca de Red Prolid</a></li>
+               <li><a href="<?php echo home_url('/'); ?>quienes-somos">Acerca de Red Prolid</a></li>
                <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo">Desarrolla tu liderazgo</a></li>
                <li><a href="<?php echo home_url('/'); ?>enterate">Entérate</a></li>
                <li><a href="<?php echo home_url('/'); ?>redprolid/contactanos/">Contáctanos</a></li>
