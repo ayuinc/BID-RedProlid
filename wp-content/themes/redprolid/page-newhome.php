@@ -61,13 +61,13 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 			<div class="col-sm-6 col-xs-12">
 					 		 <h5 class="text-gray color-g inline-p bold">EVENTOS</h5>			
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
-			 						<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
+			 						<img class="img-responsive" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
 			 						<p>III Cumbre Iberoamericana de <br> Agendas Locales de Género <br> Mujer y Ciudad-Unión <br> Iberoamericana de <br> Municipalistas (UIM)</p>
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
-			 						<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
+			 						<img class="img-responsive" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
 			 						<p>Abierta la convocatoria: <br>
@@ -78,7 +78,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									 </p>
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
-			 						<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
+			 						<img class="img-responsive" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
 			 						<p>XX Congreso Internacional del <br> CLAD</p>
@@ -101,7 +101,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 		</div>
 						</div> 			 		
 			 		<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="col-sm-8 col-xs-12 text-left ph-14">
+								<div class="col-sm-12 col-xs-12 text-left ph-14">
 									<div class="small-icon text-left">
 										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
 									</div>
