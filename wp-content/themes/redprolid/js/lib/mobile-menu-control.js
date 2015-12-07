@@ -35,8 +35,15 @@
 NEW MENU FUNCTION
 */
 $( "#in" ).click(function() {
-  $('.logo-menu-redprolid .icon-facebook-overlay .icon-twitter-overlay .icon-linkedin-overlay ').addClass('custom-img')
+  $('.logo-menu-redprolid').addClass('custom-img');
+  $('.icon-facebook-overlay').addClass('custom-img');
+  $('.icon-twitter-overlay').addClass('custom-img');
+  $('.icon-linkedin-overlay ').addClass('custom-img');
 });
 $( "#out" ).click(function() {
-  $('.logo-menu-redprolid .icon-facebook-overlay .icon-twitter-overlay .icon-linkedin-overlay').removeClass('custom-img');
+  $('.logo-menu-redprolid').removeClass('custom-img');
+  $('.icon-facebook-overlay').removeClass('custom-img');
+  $('.icon-twitter-overlay').removeClass('custom-img');
+  $('.icon-linkedin-overlay ').removeClass('custom-img');
 });
+
