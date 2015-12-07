@@ -17,32 +17,32 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</a> -->					
 				</div>
 			</div>
-			<div class="registrer-bar minh-70 pt-14 ph-56-md bg-gray-lighter text-center flex-res flex-bar">
-					<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<div class="container">
-							<div class="row">
-								<div class="col-md-3 col-sm-12 col-xs-12 text-right text-center-xs">
-									<p class="bold text-gray pt-7">Forma parte de la Red PROLID</p>					
-								</div>
-								<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
-									<input placeholder="Nombre" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-FNAME" name="FNAME" style="height:42px">			
-								</div>		
-								<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
-									<input placeholder="Apellido" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-LNAME" name="LNAME" style="height:42px">			
-								</div>										
-								<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
-									<input placeholder="Correo Electrónico" name="EMAIL" class=" border-radius col-sm-12 col-xs-12 p-7 required email" type="text" id="mce-EMAIL" style="height:42px">						
-								</div>
-								<div style="position: absolute; left: -5000px;"><input type="text" name="b_242e37fe564525e1aad9cfc03_eb13f7ce93" tabindex="-1" value=""></div>
-								<div class="col-md-3 col-sm-12 col-xs-12 pv-14-xs text-center-xs text-left">
-									<input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-primary border-radius bold" style="width:100%">					
+				<div class="registrer-bar minh-70 pt-14 ph-56-md bg-gray-lighter text-center flex-res flex-bar">
+						<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<div class="container">
+								<div class="row">
+									<div class="col-md-3 col-sm-12 col-xs-12 text-right text-center-xs">
+										<p class="bold text-white pt-7">Forma parte de la Red PROLID</p>					
+									</div>
+									<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
+										<input placeholder="Nombre" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-FNAME" name="FNAME" style="height:42px">			
+									</div>		
+									<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
+										<input placeholder="Apellido" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-LNAME" name="LNAME" style="height:42px">			
+									</div>										
+									<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
+										<input placeholder="Correo Electrónico" name="EMAIL" class=" border-radius col-sm-12 col-xs-12 p-7 required email" type="text" id="mce-EMAIL" style="height:42px">						
+									</div>
+									<div style="position: absolute; left: -5000px;"><input type="text" name="b_242e37fe564525e1aad9cfc03_eb13f7ce93" tabindex="-1" value=""></div>
+									<div class="col-md-3 col-sm-12 col-xs-12 pv-14-xs text-center-xs text-left bold">
+										<input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-primary border-radius bold" style="width:100%">					
+									</div>
 								</div>
 							</div>
-						</div>
-					</form>
-			</div>
+						</form>
+				</div>
 		</div>
-		<section id="middle-content" class="middle-content pv-70 bg-gray-lighter">
+		<section id="middle-content" class="middle-content pv-70 bg-white">
 		 	<div class="container-sm">
 				<div class="row">
 			 		<div class="col-sm-12 col-md-12 col-xs-12">
@@ -60,42 +60,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				</div> 			 		
 		 	</div>
 		</section>
-		<section class="center-content text-center bg-white pv-70">
-			<div class="container-sm ph-49">
-	 			<div class="text-description-center-first">
-	 				<h2 class="text-gray-darker bold">¿Qué ganas formando parte de la RED PROLID?</h2>
-	 			</div>
-	 			<div class="text-description-center-second">
-	 				<p class="pv-21 f-13 text-gray-darker">Somos una comunidad que te ofrece varios beneficios que te ayudarán a fortalecer tu capacidad de liderazgo en el sector público de tu país.</p>
-				<div class="row">
-					<div class="col-sm-4 col-xs-12 text-center">
-						<div class="icono-center-content">
-							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-3.png" class="img-responsive" style="width:40%;">
-							<div class="text-description-center">
-			 					<p class="pv-21 f-13 text-gray">Un lugar para encontrar información y recursos prácticos</p>	
-			 				</div>
-						</div>
-					</div>
-					<div class="col-sm-4 col-xs-12 text-center">
-						<div class="icono-center-content">
-							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-1.png" class="img-responsive" style="width:40%;">
-							<div class="text-description-center">
-			 					<p class="pv-21 f-13 text-gray">Un espacio de diálogo en el que intercambiemos opiniones </p>	
-			 				</div>
-						</div>
-					</div>
-					<div class="col-sm-4 col-xs-12 text-center">
-						<div class="icono-center-content">
-							<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/icons/red-prolid-grid-4.png" class="img-responsive" style="width:40%;">
-							<div class="text-description-center">
-			 					<p class="pv-21 f-13 text-gray">Un espacio para desarrollar contactos profesionales</p>	
-			 				</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="end-content text-center pv-70 bg-gray-lighter">
+<!-- 		<section class="end-content text-center pv-70 bg-gray-lighter">
 			<div class="container-sm">
 	 			<div class="text-description-center-end">
 	 				<h2 class="text-gray-darker bold">Lo último en la Red PROLID</h2>
@@ -129,7 +94,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 	</div>
 <?php  get_footer(); ?>
 <script type="text/javascript">
