@@ -7071,7 +7071,16 @@ input {
     left: -32%;
     top: 65px;
     z-index: 100;
-    cursor: pointer; } }
+    cursor: pointer; }
+
+  .icon-facebook-overlay {
+    left: 65.5% !important; }
+
+  .icon-twitter-overlay {
+    left: 76% !important; }
+
+  .icon-facebook-overlay {
+    left: 86.8% !important; } }
 .header-text-quees-red-prolid {
   color: white; }
 
