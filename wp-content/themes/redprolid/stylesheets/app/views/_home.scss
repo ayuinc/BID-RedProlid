@@ -873,8 +873,34 @@ input{
 	transform: translateY(-25%) rotateX(35deg);
 }
 .custom-img{
-	position: relative;
-	z-index:10;
+  position: fixed;
+  z-index: 10;
+  left: 39%;
 }
-
+.logo-menu-w{
+	width: 22%;
+}
+.icon-facebook-overlay{
+	@extend .custom-img;
+	left: 80.5% !important;
+}
+.icon-twitter-overlay{
+	@extend .custom-img;
+	left: 82.8% !important;
+}
+.icon-linkedin-overlay{
+	@extend .custom-img;
+	left: 84.8% !important;
+}
+@media only screen and (min-width:299px) and (max-width:680px){
+	.overlay label.cerrar {
+	    width: 86px;
+	    height: 58px;
+	    position: relative;
+	    left: -32%;
+	    top: 65px;
+	    z-index: 100;
+	    cursor: pointer;
+	}
+}
 // @media only screen and (min-width: 299px) and (max-width:)
