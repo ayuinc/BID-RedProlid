@@ -43,12 +43,14 @@
              <label class="cerrar text-gray" id="out" for="op">CERRAR <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzUlEQVQ4T42TYRXCMAyErw5wAhLAQSQwBSAFFICEOAAJ4AQJvNtL9kqbdOxnu/uSXi4FAETkCOAE4KCqH55ln4hsADwAXFX1Xkx8M8FrBKnEO/t/IoCibVUxhARiSt4EsKXnCJKJAeyLeZBCrDO+2dueK1NMv2bACoTXoZgXC2AAqQeyVPbDH8AKpBN3HVSA9s28CqcTPSESe8cdpDUxcpviNCf1GMNRWek0Jx6kdM5rOYmiHLqdJbZdplA8CNvkHnCdzx7PP9aZnly4zl8NTn4w5oPSqAAAAABJRU5ErkJggg=="/></label>
              <nav>
               <ul class="text-primary">
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Work</a></li>
-               <li><a href="#">Clients</a></li>
-               <li><a href="#">Contact</a></li>
+               <li><a href="#">Acerca de Red Prolid</a></li>
+               <li><a href="#">Desarrolla tu liderazgo</a></li>
+               <li><a href="#">Entérate</a></li>
+               <li><a href="#">Contáctanos</a></li>
               </ul>
+              <div class="text-center">
+                <hr class="text-primary">
+              </div>
              </nav>
           </div>
         </div>

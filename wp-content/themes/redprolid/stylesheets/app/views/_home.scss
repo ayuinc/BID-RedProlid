@@ -795,13 +795,13 @@ input{
 }
 
 .overlay nav {
-	text-align: center;
-	position: relative;
-	top: 50%;
-	height: 60%;
-	font-size: 54px;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+  text-align: center;
+  position: relative;
+  top: 30%;
+  height: 10%;
+  font-size: 20px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .overlay ul {
@@ -908,7 +908,7 @@ input{
 	.icon-twitter-overlay {
     left: 76% !important;
 	}
-	.icon-facebook-overlay {
+	.icon-linkedin-overlay {
     left: 86.8% !important;
 	}
 }
