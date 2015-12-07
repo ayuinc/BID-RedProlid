@@ -5,23 +5,24 @@ Template Name: Prototipo QuienesSomos
 get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content bg-gray-lighter">
-		<div class="minh-560 pt-42-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/homepage_redprolid.jpg)">
-			<div class="text-center text-header-first pt-70-lg mt-70-lg">
-				<div class="container-sm">
-					<small class="text-gray-lighter">Únete a la Red</small>
-					<h1 class="h2 text-gray-lighter mt-0">CONECTAMOS A MUJERES LÍDERES DEL 	
-					 SECTOR PÚBLICO LATINOAMERICANO</h1>
-					<a class="mt-35" href="#middle-content">
+		<div class="minh-490 pt-42-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/homepage_redprolid.jpg)">
+			<div class="text-left text-header-first pt-70-lg mt-70-lg">
+				<div class="container">
+					<small class="text-gray-lighter">PUNTOS DE VISTA</small>
+					<h1 class="h5 text-gray-lighter mt-0">Rocío Silva Santisteban</h1>
+					<p class="text-gray-lighter f-15 pv-7">Escritora, profesora universitaria, activista, investigadora y <br> exdirectora ejecutiva de la Coordinadora Nacional de Derechos <br> Humanos-Perú, escribe sobre el acoso político citando casos <br> concretos: Mujer en la política, muestrario de ataques.</p>
+					<a class="text-gray-lighter f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">PARTICIPA EN LA CONVERSACIÓN  →</a>
+<!-- 					<a class="mt-35" href="#middle-content">
 						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACo0lEQVR4Xu2Z8VUUMRDGv6kAO5AOOCoAKtAOhAqwBOlAKwAqECtQKxA7kA6ggvENTvaFIedl93Yz2d3kz7t9b/L98s1kkhBWPmjl+tEANAesnEBLgZUboBXBlgItBVZOoKXAyg3QdoHnFGDmQyL6syY3BM3EzBsA3wHcEdHFGiAw8zWA9wDOBMAPACcq/GbpEFT8uer9KQDeABAIR/rjFRF9WqITmPkzgEvV9hvAaagBFsIFEd0sCQIzy6qL9WX8E0/02PUBCScsBsI28ULiRSOkEO4BvFVSs4dgxD8A2MjKB3e/6gR1V5CacDB3CEb8k9peFrgbyVZ4CRByxL9KgZjMnCHkiv8vAO0QpUmaVTr0Eb8TwNwg9BWfBWALhGMielFMvHsGZj7Vll6mkix4qTlm3weYmiDbyFktEKLzjDR02eKzHRDI1QhhH/G9AWg6yCnqq0JxdYIRL1MSV0rRzh7ZKWC2yLivdoGQED+oax0EQJ3gBmEs8YNSwNsJY4rfG0BpJ4wtfhQApSBMIX40AAkI0iRJRe6OndllOfGhHtN/ATjUvwcVvL0aoRwBphUdBYKKl0tbOZfIGE38qA6ImqV4d9gLwtTiJwGg6SD3iR8UyiAICfFfiOhjjhP7fDO4D9gVhJkHQ0iIvyWicJW9K3Sv/ycDMNQJJcVPlgKmWcp2QmnxRQDkOsFDfDEAKQhEdGycIvt82Oomy3lbICatATaYKYzdO6R5rysmvqgDoj4hrgnh+S1U+KLiXQBoOtwBeGcc8o2I5LKl6CiaApEL7GNs91hZVL19GywZPHqMlbDPL7Ul44dYLg4wToCXeLca4LHS22K6OqAGEA1ADavgOYfmAE/6NcRuDqhhFTzn0BzgSb+G2M0BNayC5xyaAzzp1xD7L9m2aEexDr5GAAAAAElFTkSuQmCC"/>
-					</a>					
+					</a> -->					
 				</div>
 			</div>
-			<div class="registrer-bar minh-70 pt-14 ph-56-md bg-pink-redprolid text-center flex-res flex-bar">
+			<div class="registrer-bar minh-70 pt-14 ph-56-md bg-gray-lighter text-center flex-res flex-bar">
 					<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<div class="container">
 							<div class="row">
 								<div class="col-md-3 col-sm-12 col-xs-12 text-right text-center-xs">
-									<p class="bold text-white pt-7">Forma parte de la Red PROLID</p>					
+									<p class="bold text-gray pt-7">Forma parte de la Red PROLID</p>					
 								</div>
 								<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
 									<input placeholder="Nombre" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-FNAME" name="FNAME" style="height:42px">			
@@ -34,7 +35,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 								</div>
 								<div style="position: absolute; left: -5000px;"><input type="text" name="b_242e37fe564525e1aad9cfc03_eb13f7ce93" tabindex="-1" value=""></div>
 								<div class="col-md-3 col-sm-12 col-xs-12 pv-14-xs text-center-xs text-left">
-									<input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-outline btn-white border-radius bold" style="width:100%">					
+									<input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-primary border-radius bold" style="width:100%">					
 								</div>
 							</div>
 						</div>
