@@ -57,18 +57,18 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				 <p class="mv-21"><a class="text-primary medium" href="<?php //echo home_url('/'); ?>redprolid/">¿QUIERES SABER MÁS? &#10145;</a></p>
 			 			</div>
 			 		</div> -->
-			 		<div class="col-md-8 col-sm-6 col-xs-12">
+			 		<div class="col-md-7 col-sm-6 col-xs-12">
 			 			<div class="col-sm-6 col-xs-12">
-					 		 <div class="col-sm-12 col-xs-12">
+					 		 <div class="col-sm-12 col-xs-12 pl-0">
 					 		 	<h5 class="text-gray color-g inline-p bold">EVENTOS</h5>		
 					 		 </div>	
-			 					<div class="col-xs-12 col-sm-6 col-md-4">
+			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0">
 			 						<img class="w-100" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
 			 						<p class="rem-08">III Cumbre Iberoamericana de <br> Agendas Locales de Género <br> Mujer y Ciudad-Unión <br> Iberoamericana de <br> Municipalistas (UIM)</p>
 			 					</div>
-			 					<div class="col-xs-12 col-sm-6 col-md-4">
+			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0">
 			 						<img class="w-100" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
@@ -79,17 +79,17 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 													de Municipalistas (UIM)
 									 </p>
 			 					</div>
-			 					<div class="col-xs-12 col-sm-6 col-md-4">
+			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0">
 			 						<img class="w-100" src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/calendar.png">
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6">
 			 						<p class="rem-08">XX Congreso Internacional del <br> CLAD</p>
 			 					</div>
-			 					<div class="col-sm-12 col-xs-12 ph-0 pv-7">
+			 					<div class="col-sm-12 col-xs-12 ph-7 pv-7">
 			 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>eventos/">LEE TODOS LOS EVENTOS →</a>
 			 					</div>
 			 			</div>
-				 			<div class="col-sm-5 col-xs-12 text-left ph-14">
+				 			<div class="col-sm-6 col-xs-12 text-left ph-14">
 				 				<div class="small-icon text-left">
 				 				<h5 class="text-gray color-g inline-p bold">DEBATE DE LA SEMANA</h5>							
 				 				</div>
@@ -98,7 +98,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				</div>
 				 				<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
 				 					<h5 class="bold text-gray-darker mt-7">El Tuit de las poderosas</h5>
-				 					<p class="text-gray-darker inline-p f-18 pv-7">FUENTE:</p>
+				 					<p class="text-gray-darker inline-p f-15 pv-7">FUENTE:</p>
 				 					<p class="text-primary inline-p rem-08 pv-7"><a href="">Mujeres con poder y con twitter.</a></p><p class="text-gray inline-p rem-08 pv-7"><a href="">Sin Mordaza.</a></p>
 				 					<div class="col-sm-12 col-xs-12 ph-0">
 				 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">INGRESA AL DEBATE  →</a>
@@ -106,7 +106,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				</div>
 				 		</div>
 						</div> 			 		
-			 		<div class="col-md-4 col-sm-6 col-xs-12">
+			 		<div class="col-md-5 col-sm-6 col-xs-12">
 								<div class="col-sm-12 col-xs-12 text-left ph-14">
 									<div class="small-icon text-left">
 										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
@@ -114,8 +114,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									<div class="img-center-content">
 										<img src="<?php echo content_url('/'); ?>uploads/2015/11/foto-Myrna-Cunningham1.jpg" class="w-100">
 									</div>
-									<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
-										<p class="text-gray-darker f-15 pv-7 bold">Conoce a Mirna Cunningham, lideresa indígena nicaragüense.</p>
+									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
+										<h4 class="text-gray-darker f-15 pv-7 bold">Conoce a Mirna Cunningham, lideresa indígena nicaragüense.</h4>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">MÁS AQUÍ  →</a>
 									</div>
 								</div>
