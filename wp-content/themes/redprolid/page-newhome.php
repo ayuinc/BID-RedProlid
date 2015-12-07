@@ -59,7 +59,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 		</div> -->
 			 		<div class="col-md-7 col-sm-6 col-xs-12">
 			 			<div class="col-sm-6 col-xs-12 ph-0-xs">
-					 		 <div class="col-sm-12 col-xs-12 pl-0">
+					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
 					 		 	<h5 class="text-gray color-g inline-p bold">EVENTOS</h5>		
 					 		 </div>	
 			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
@@ -90,7 +90,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 					</div>
 			 			</div>
 				 			<div class="col-sm-6 col-xs-12 text-left ph-0">
-				 				<div class="small-icon text-left">
+				 				<div class="small-icon text-left pb-14">
 				 				<h5 class="text-gray color-g inline-p bold">DEBATE DE LA SEMANA</h5>							
 				 				</div>
 				 				<div class="img-center-content">
@@ -108,7 +108,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						</div> 			 		
 			 		<div class="col-md-5 col-sm-6 col-xs-12 ph-0-xs">
 								<div class="col-sm-12 col-xs-12 text-left ph-14-md">
-									<div class="small-icon text-left">
+									<div class="small-icon text-left pb-14">
 										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
 									</div>
 									<div class="img-center-content">
