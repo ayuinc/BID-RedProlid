@@ -7,7 +7,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	<div class="site-content bg-gray-lighter">
 		<div class="minh-490 pt-42-xs bg-img-block flex" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/homepage_redprolid.jpg)">
 			<div class="text-left text-header-first">
-				<div class="container">
+				<div class="container pl-14">
 					<small class="text-gray-lighter h6 bold">PUNTOS DE VISTA</small>
 					<h1 class="h2 text-gray-lighter mv-0">Rocío Silva Santisteban</h1>
 					<p class="text-gray-lighter medium f-15 pb-7">Escritora, profesora universitaria, activista, investigadora y <br> exdirectora ejecutiva de la Coordinadora Nacional de Derechos <br> Humanos-Perú, escribe sobre el acoso político citando casos <br> concretos: Mujer en la política, muestrario de ataques.</p>
@@ -99,8 +99,10 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				<div class="col-sm-12 col-xs-12 bg-white ph-21 pt-7 pb-21">
 				 					<h5 class="bold text-gray-darker mt-7">El Tuit de las poderosas</h5>
 				 					<p class="text-gray-darker inline-p f-18 pv-7">FUENTE:</p>
-				 					<p class="text-primary inline-p f-15 pv-7"><a href="">Mujeres con poder y con twitter.</a></p><p class="text-gray inline-p f-15 pv-7"><a href="">Sin Mordaza.</a></p>
-				 					<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">INGRESA AL DEBATE  →</a>
+				 					<p class="text-primary inline-p rem-08 pv-7"><a href="">Mujeres con poder y con twitter.</a></p><p class="text-gray inline-p rem-08 pv-7"><a href="">Sin Mordaza.</a></p>
+				 					<div class="col-sm-12 col-xs-12">
+				 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">INGRESA AL DEBATE  →</a>
+				 					</div>
 				 				</div>
 				 		</div>
 						</div> 			 		
