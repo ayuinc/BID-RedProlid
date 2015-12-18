@@ -18,7 +18,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<!--<div class="row">
 					<div class="col-md-10 col-md-offset-1 pt-21 pb-21">
 						<div class="row">
 							<div class="col-md-12">
@@ -36,8 +36,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
+				</div>-->
+				<!--<div class="row">
 					<div class="col-md-10 col-md-offset-1">
 						<div class="row">
 							<div class="col-md-8 pr-21">
@@ -58,13 +58,10 @@
 		                  <h3 class="pt-0 medium mb-0"><?php the_field('campeonas-titular-boletin'); ?></h3>
 		                  <h5 class="medium mt-0"><?php the_field('intro-campeonas-boletin'); ?></h5>
 		                  <p><?php the_field('desc-campeonas-boletin'); ?></p>
-		                  <?php //$tempDate = get_the_date(); ?>
-											<!--<small><?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de <?php //echo date_i18n('Y', strtotime( $tempDate)); ?></small>-->
 		                  <p class="text-right"><a href="<?php the_field('link-campeonas-boletin'); ?>">Entrevista completa >></a></p>
 		                </div> 
 									</div>								
 								</div>
-								
 								<div class="panel mb-35">
 									<div class="row"> 
 										<div class="col-md-12">								
@@ -75,19 +72,14 @@
 										</div>
 									</div>
 									<div class="row"> 
-		           
 		                <div class="col-md-12">
 		                  <h3 class="pt-0 medium mb-0"><?php the_field('agenda-titular-boletin'); ?></h3>
 		                  <p><?php the_field('agenda-desc-boletin'); ?></p>
 		                  <p class="medium"><?php the_field('agenda-pregunta-boletin'); ?></p>
-		                  <?php //$tempDate = get_the_date(); ?>
-											<!--<small><?php //echo date_i18n('j', strtotime( $tempDate)); ?> de <?php //echo date_i18n('F', strtotime( $tempDate)); ?> de <?php //echo date_i18n('Y', strtotime( $tempDate)); ?></small>-->
 		                  <p class="text-right"><a href="<?php the_field('agenda-link'); ?>">Ve comentario >></a></p>
 		                </div> 
-
 									</div>							
 								</div>	
-								
 								<div class="panel mb-35">
 									<div class="row"> 
 										<div class="col-md-12">								
@@ -189,7 +181,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 		    <div class="row">
 		      <div class="col-sm-10 col-md-offset-1">  
 						<?php	if ( is_user_logged_in() ) { ?>
