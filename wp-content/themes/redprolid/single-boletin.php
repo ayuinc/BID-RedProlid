@@ -21,7 +21,7 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 pt-21 pb-21">
 						<div class="row">
-							<div class="col-md-10 col-md-offset-1 pv-35">
+							<div class="col-md-10 col-md-offset-1 pv-35 text-justify">
 								<?php the_field('full_contenido'); ?>
 							</div>
 						</div>
