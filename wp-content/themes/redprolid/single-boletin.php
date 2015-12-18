@@ -18,6 +18,15 @@
 						</div>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 pt-21 pb-21">
+						<div class="row">
+							<div class="col-md-12">
+								<?php the_field('full_contenido'); ?>
+							</div>
+						</div>
+					</div>
+				</div>
 				<!--<div class="row">
 					<div class="col-md-10 col-md-offset-1 pt-21 pb-21">
 						<div class="row">
