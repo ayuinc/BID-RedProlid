@@ -6,7 +6,8 @@
 					<div class="col-md-10 col-md-offset-1 mostrar-anteriores">
 						<div class="row">
 							<div class="col-md-3">
-								<h2 class="medium mt-28 mb-0 h3">Boletín enero 2015</h2>
+								<h2 class="medium mt-28 mb-0 h3">Boletín<br><span class="small">Diciembre 2015</span></h2>
+								
 								<p class="mt-0"><a href="<?php echo home_url('/'); ?>boletin/boletines-anteriores">Boletínes anteriores >></a></p>
 							</div>
 							<div class="col-md-6">
