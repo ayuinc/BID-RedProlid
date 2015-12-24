@@ -58,7 +58,7 @@
               </li>
               <li class="light"><a href="<?php echo home_url('/'); ?>eventos">Eventos</a></li>
               <li class="light"><a href="<?php echo home_url('/'); ?>publicaciones">Publicaciones</a></li>
-              <!--<li class="light"><a href="<?php echo home_url('/'); ?>boletin">Nuestro boletín</a></li>-->
+              <li class="light"><a href="<?php echo home_url('/'); ?>boletin">Nuestro boletín</a></li>
 <!--               <li class="light"><a href="<?php echo home_url('/'); ?>boletines-proximamente/">Nuestro boletín</a></li> -->
             </ul>
           </li>
