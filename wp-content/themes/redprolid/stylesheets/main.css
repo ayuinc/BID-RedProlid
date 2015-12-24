@@ -6949,9 +6949,6 @@ div[id^="yop-poll-results-3"] {
 .w-68 {
   width: 68%; }
 
-input[type='checkbox'] {
-  display: none; }
-
 .lower label:hover {
   cursor: pointer; }
 
