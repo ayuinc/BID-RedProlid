@@ -350,11 +350,11 @@ get_header(); ?>
           <div class="col-md-6 separador-boletines pt-14 pb-14 pr-14 ">
             <h3 class="medium text-right">Suscríbete a nuestro boletín y descárgalo gratis </h3>
             <div class="text-right">
-              <a href="#" class="light" data-toggle="modal" data-target="#Formboletin">Aquí >></a>
+              <a href="http://redprolid.org/tu-perfil/" class="light" data-toggle="modal" data-target="#Formboletin">Aquí >></a>
             </div>
           </div>
           <div class="col-md-3 mt-35 pl-14">
-            <a href="<?php echo home_url('/'); ?>boletines-proximamente/" class="btn btn-primary">Boletines</a>
+            <a href="<?php echo home_url('/'); ?>boletin" class="btn btn-primary">Boletines</a>
           </div>
         </div>
       </div>
