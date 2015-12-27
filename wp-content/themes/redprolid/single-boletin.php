@@ -14,7 +14,7 @@
 							</div>
 							<a href="http://redprolid.org/tu-perfil/">					
 							<div class="col-md-3 relative">
-								<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/boletin_suscribete.png" class="absolute" style="top: 13px">
+								<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/boletin_suscribete.png" class="absolute" style="top: 13px; z-index: 1000;">
 							</div>	
 							</a>				
 						</div>
