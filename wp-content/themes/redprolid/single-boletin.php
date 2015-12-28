@@ -12,7 +12,7 @@
 							<div class="col-md-6">
 								<p class="text-center mt-21 mb-21"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/boletin_anterior_interna_V6-02.png"></p>
 							</div>
-							<a href="http://redprolid.org/tu-perfil/">					
+							<a href="http://redprolid.org/registrate/">					
 							<div class="col-md-3 relative">
 								<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/boletin_suscribete.png" class="absolute" style="top: 13px; z-index: 1000;">
 							</div>	
