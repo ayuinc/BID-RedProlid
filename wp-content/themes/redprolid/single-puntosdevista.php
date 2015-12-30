@@ -75,7 +75,7 @@
             <?php } ?>
             <?php $pais_pdv = get_field('pais_pdv'); ?>
             <?php if ($pais_pdv!='') { ?>
-            <strong>Pais:</strong> <a><?php the_field('pais_pdv'); ?></a><br>
+            <strong>País:</strong> <a><?php the_field('pais_pdv'); ?></a><br>
             <?php } ?>
             <?php $tipo_de_recurso_puntosdevista = get_field('tipo_de_recurso_puntosdevista'); ?>
             <?php if ($tipo_de_recurso_puntosdevista!='') { ?>
