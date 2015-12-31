@@ -280,13 +280,13 @@ get_header(); ?>
               <div class="panel-body pt-0">            
                 <!-- loop noticias    -->
                 <div class="row">
-                  <div class="col-xs-6 enterate-publicaciones">
+                  <div class="col-xs-7 enterate-publicaciones">
                     <h3 class="mb-0">Búsqueda</h3>
                     <hr class="hr-gray-light mt-7 mb-7">
                     <p class="text-gray">Filtra tu búsqueda y encuentra lo que necesitas:</p>
                     <?php get_search_form(); ?>
                   </div>
-                  <div class="enterate-search col-xs-6">
+                  <div class="enterate-search col-xs-5">
                     <div class="bookshelf"></div>
                   </div>
                 <!-- loop noticias    -->
@@ -370,7 +370,7 @@ get_header(); ?>
   	<?php } ?>
 	    <div class="modal-content bg-panel">
 	      <div class="modal-body">
-	      	<!--<h3 class="medium pb-0 mb-0">¿Quieres recibir el boletín de Red PROLID?</h3>-->
+	      	<h3 class="medium pb-0 mb-0">¿Quieres recibir el boletín de Red PROLID?</h3>
 	      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
 						<?php ninja_forms_display_form( 13 ); ?>
 					<?php } ?>
