@@ -354,7 +354,7 @@ get_header(); ?>
             </div>
           </div>
           <div class="col-md-3 mt-35 pl-14">
-            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#Formboletin">Boletines</a>
+            <a href="/boletin" class="btn btn-primary">Boletines</a>
           </div>
         </div>
       </div>
