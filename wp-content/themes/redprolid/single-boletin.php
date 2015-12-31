@@ -12,7 +12,7 @@
 							<div class="col-md-6">
 								<p class="text-center mt-21 mb-21"><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/boletin_anterior_interna_V6-02.png"></p>
 							</div>
-							<a href="http://redprolid.org/registrate/">					
+							<a href="" data-toggle="modal" data-target="#Formboletin">					
 							<div class="col-md-3 relative">
 								<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/boletin_suscribete.png" class="absolute" style="top: 13px; z-index: 1000;">
 							</div>	
@@ -205,3 +205,25 @@
 	  	</div>
 	  </div>      
 	</section>
+	
+	<!-- Modal NOTICIAS -->
+	<div class="modal fade" id="Formboletin" tabindex="-1" role="dialog" aria-labelledby="modalNoticiasLabel" aria-hidden="true">
+		<?php if ( is_user_logged_in() ) { ?>
+  	<div class="modal-dialog">
+  	<?php } else { ?>
+  	<div class="modal-dialog modal-lg">
+  	<?php } ?>
+	    <div class="modal-content bg-panel">
+	      <div class="modal-body">
+	      	<h3 class="medium pb-0 mb-0">¿Quieres recibir el boletín de Red PROLID?</h3>
+	      	<?php if( function_exists( 'ninja_forms_display_form' ) ) { ?>
+						<?php ninja_forms_display_form( 13 ); ?>
+					<?php } ?>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar X</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- END Modal NOTICIAS-->   
