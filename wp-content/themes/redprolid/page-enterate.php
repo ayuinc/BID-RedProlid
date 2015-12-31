@@ -284,7 +284,14 @@ get_header(); ?>
                     <h3 class="mb-0">Búsqueda</h3>
                     <hr class="hr-gray-light mt-7 mb-7">
                     <p class="text-gray">Filtra tu búsqueda y encuentra lo que necesitas:</p>
-                    <?php get_search_form(); ?>
+                    <form class="form-search-inline" action="<?php echo home_url( '/' ); ?>" method="get">
+											<div class="input-group">
+											  <input type="search" class="form-control" name="s" id="search" value="<?php echo get_search_query(); ?>" placeholder="Busca aquí..."/>
+											  <span class="input-group-btn" style="display:block;right: -2px;">
+											    <button type="submit" id="searchsubmit" class="btn btn-primary text-left"><p class="h3 light text-white mv-0">Buscar</p></button>
+											  </span>
+											</div><!-- /input-group -->
+										</form>
                   </div>
                   <div class="enterate-search col-xs-5">
                     <div class="bookshelf"></div>
