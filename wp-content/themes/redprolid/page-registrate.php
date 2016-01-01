@@ -35,7 +35,7 @@ get_header(); ?>
 	        <div class="col-lg-11 col-xs-12 col-sm-12 text-center-sm text-center-xs txt-center-landscape-ipad">
 		        <?php $flag = $_GET['flag']; ?>
 		        <?php if ($flag=="boletin") { ?>
-		        	<h1>Inscribirte para descargar el boletín</h1>
+		        	<h1>Inscríbete para descargar el boletín</h1>
 		        <?php } else { ?>
 	          	<h1><?php the_title(); ?></h1>
 	          <?php } ?>
