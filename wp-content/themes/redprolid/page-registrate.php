@@ -33,7 +33,7 @@ get_header(); ?>
 	          <div><img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/registrate.png" alt="" width="100%"></div>
 	        </div>
 	        <div class="col-lg-11 col-xs-12 col-sm-12 text-center-sm text-center-xs txt-center-landscape-ipad">
-		        <?php //$flag = $_GET['flag']; ?>
+		        <?php echo $flag = $_GET['flag']; ?>
 		        <?php //if ($flag=="boletin") { ?>
 		        	<h1>Inscribirte para descargar el boletín</h1>
 		        <? //} else { ?>
