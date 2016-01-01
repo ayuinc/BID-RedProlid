@@ -360,7 +360,7 @@ get_header(); ?>
 	            <?php	if ( is_user_logged_in() ) { ?>
 							<a href="" class="light" data-toggle="modal" data-target="#Formboletin">Aquí >></a>
 							<?php } else { ?>
-              <a href="/registrate" class="light">Aquí >></a>
+              <a href="/registrate?flag=boletin" class="light">Aquí >></a>
               <?php } ?>
             </div>
           </div>
