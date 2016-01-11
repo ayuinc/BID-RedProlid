@@ -7,8 +7,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	<div class="site-content bg-gray-lighter">
 		<div class="pt-42-xs " >
 				<div class="row">
-					<div class="col-md-2"></div>
-					<div class="col-md-4">
+					<div class="col-md-6 col-sm-6 minh-420 bg-white pt-70 ph-42">
 						<div class="text-left bg-white text-header-first">
 							<div class="container pv-35-xs">
 								<small class="text-gray-dark h6 bold mt-42">PUNTOS DE VISTA</small>
@@ -21,14 +20,14 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							</div>
 						</div>						
 					</div>
-					<div class="col-md-6 img-header flex bg-img-block minh-420 " style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/rociosilva.png)"></div>
+					<div class="col-md-6 col-sm-6 img-header flex bg-img-block minh-420 " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/maxresdefault.jpg)"></div>
 				</div>
 				<div class="registrer-bar minh-70 pt-14 ph-56-md bg-pink-redprolid text-center flex-res flex-bar">
 						<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							<div class="container">
 								<div class="row">
 									<div class="col-md-3 col-sm-12 col-xs-12 pl-0 text-center text-center-xs">
-										<p class="bold text-gray pt-7">Forma parte de la Red PROLID</p>					
+										<p class="bold text-white pt-7">Forma parte de la Red PROLID</p>					
 									</div>
 									<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
 										<input placeholder="Nombre" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-FNAME" name="FNAME" style="height:42px">			
@@ -41,7 +40,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>
 									<div style="position: absolute; left: -5000px;"><input type="text" name="b_242e37fe564525e1aad9cfc03_eb13f7ce93" tabindex="-1" value=""></div>
 									<div class="col-md-3 col-sm-12 col-xs-12 pv-14-xs text-center-xs text-left bold">
-										<input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-primary border-radius bold" style="width:100%">					
+										<input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-white borderless text-white border-radius bold" style="width:100%">					
 									</div>
 								</div>
 							</div>

@@ -30,6 +30,11 @@
 	width: 100%;
 	order:2;
 }
+input[type="checkbox"]{
+    box-sizing: border-box;
+    padding: 0;
+    visibility: hidden;
+}
 .w-100{
 	width:100%;
 }
