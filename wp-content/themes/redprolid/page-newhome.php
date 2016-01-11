@@ -5,19 +5,24 @@ Template Name: Prototipo QuienesSomos
 get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content bg-gray-lighter">
-		<div class="minh-420 pt-42-xs flex bg-img-block" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/rociosilva.png)">
-			<div class="text-left text-header-first">
-				<div class="container ph-0-md pv-35-xs">
-					<small class="text-gray-lighter h6 bold">PUNTOS DE VISTA</small>
-					<h1 class="h2 text-gray-lighter mv-0">Rocío Silva Santisteban</h1>
-					<p class="text-gray-lighter medium f-15 pb-7">Escritora, profesora universitaria, activista, investigadora y <br> exdirectora ejecutiva de la Coordinadora Nacional de Derechos <br> Humanos-Perú, escribe sobre el acoso político citando casos <br> concretos: Mujer en la política, muestrario de ataques.</p>
-					<a class="text-gray-lighter f-12 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">LEE EL ARTÍCULO →</a>
-					<!-- 					<a class="mt-35" href="#middle-content">
-						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACo0lEQVR4Xu2Z8VUUMRDGv6kAO5AOOCoAKtAOhAqwBOlAKwAqECtQKxA7kA6ggvENTvaFIedl93Yz2d3kz7t9b/L98s1kkhBWPmjl+tEANAesnEBLgZUboBXBlgItBVZOoKXAyg3QdoHnFGDmQyL6syY3BM3EzBsA3wHcEdHFGiAw8zWA9wDOBMAPACcq/GbpEFT8uer9KQDeABAIR/rjFRF9WqITmPkzgEvV9hvAaagBFsIFEd0sCQIzy6qL9WX8E0/02PUBCScsBsI28ULiRSOkEO4BvFVSs4dgxD8A2MjKB3e/6gR1V5CacDB3CEb8k9peFrgbyVZ4CRByxL9KgZjMnCHkiv8vAO0QpUmaVTr0Eb8TwNwg9BWfBWALhGMielFMvHsGZj7Vll6mkix4qTlm3weYmiDbyFktEKLzjDR02eKzHRDI1QhhH/G9AWg6yCnqq0JxdYIRL1MSV0rRzh7ZKWC2yLivdoGQED+oax0EQJ3gBmEs8YNSwNsJY4rfG0BpJ4wtfhQApSBMIX40AAkI0iRJRe6OndllOfGhHtN/ATjUvwcVvL0aoRwBphUdBYKKl0tbOZfIGE38qA6ImqV4d9gLwtTiJwGg6SD3iR8UyiAICfFfiOhjjhP7fDO4D9gVhJkHQ0iIvyWicJW9K3Sv/ycDMNQJJcVPlgKmWcp2QmnxRQDkOsFDfDEAKQhEdGycIvt82Oomy3lbICatATaYKYzdO6R5rysmvqgDoj4hrgnh+S1U+KLiXQBoOtwBeGcc8o2I5LKl6CiaApEL7GNs91hZVL19GywZPHqMlbDPL7Ul44dYLg4wToCXeLca4LHS22K6OqAGEA1ADavgOYfmAE/6NcRuDqhhFTzn0BzgSb+G2M0BNayC5xyaAzzp1xD7L9m2aEexDr5GAAAAAElFTkSuQmCC"/>
-					</a> -->					
+		<div class="minh-420 pt-42-xs flex bg-img-block" >
+				<div class="row">
+					<div class="col-md-6">
+						<div class="text-left text-header-first">
+							<div class="container ph-0-md pv-35-xs">
+								<small class="text-gray-dark h6 bold">PUNTOS DE VISTA</small>
+								<h1 class="h2 text-gray-dark mv-0">Rocío Silva Santisteban</h1>
+								<p class="text-gray-dark medium f-15 pb-7">Escritora, profesora universitaria, activista, investigadora y <br> exdirectora ejecutiva de la Coordinadora Nacional de Derechos <br> Humanos-Perú, escribe sobre el acoso político citando casos <br> concretos: Mujer en la política, muestrario de ataques.</p>
+								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">LEE EL ARTÍCULO →</a>
+								<!-- 					<a class="mt-35" href="#middle-content">
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACo0lEQVR4Xu2Z8VUUMRDGv6kAO5AOOCoAKtAOhAqwBOlAKwAqECtQKxA7kA6ggvENTvaFIedl93Yz2d3kz7t9b/L98s1kkhBWPmjl+tEANAesnEBLgZUboBXBlgItBVZOoKXAyg3QdoHnFGDmQyL6syY3BM3EzBsA3wHcEdHFGiAw8zWA9wDOBMAPACcq/GbpEFT8uer9KQDeABAIR/rjFRF9WqITmPkzgEvV9hvAaagBFsIFEd0sCQIzy6qL9WX8E0/02PUBCScsBsI28ULiRSOkEO4BvFVSs4dgxD8A2MjKB3e/6gR1V5CacDB3CEb8k9peFrgbyVZ4CRByxL9KgZjMnCHkiv8vAO0QpUmaVTr0Eb8TwNwg9BWfBWALhGMielFMvHsGZj7Vll6mkix4qTlm3weYmiDbyFktEKLzjDR02eKzHRDI1QhhH/G9AWg6yCnqq0JxdYIRL1MSV0rRzh7ZKWC2yLivdoGQED+oax0EQJ3gBmEs8YNSwNsJY4rfG0BpJ4wtfhQApSBMIX40AAkI0iRJRe6OndllOfGhHtN/ATjUvwcVvL0aoRwBphUdBYKKl0tbOZfIGE38qA6ImqV4d9gLwtTiJwGg6SD3iR8UyiAICfFfiOhjjhP7fDO4D9gVhJkHQ0iIvyWicJW9K3Sv/ycDMNQJJcVPlgKmWcp2QmnxRQDkOsFDfDEAKQhEdGycIvt82Oomy3lbICatATaYKYzdO6R5rysmvqgDoj4hrgnh+S1U+KLiXQBoOtwBeGcc8o2I5LKl6CiaApEL7GNs91hZVL19GywZPHqMlbDPL7Ul44dYLg4wToCXeLca4LHS22K6OqAGEA1ADavgOYfmAE/6NcRuDqhhFTzn0BzgSb+G2M0BNayC5xyaAzzp1xD7L9m2aEexDr5GAAAAAElFTkSuQmCC"/>
+								</a> -->					
+							</div>
+						</div>						
+					</div>
+					<div class="col-md-6" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/rociosilva.png)"></div>
 				</div>
-			</div>
-				<div class="registrer-bar minh-70 pt-14 ph-56-md bg-gray-lighter text-center flex-res flex-bar">
+				<div class="registrer-bar minh-70 pt-14 ph-56-md bg-pink-redprolid text-center flex-res flex-bar">
 						<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							<div class="container">
 								<div class="row">
