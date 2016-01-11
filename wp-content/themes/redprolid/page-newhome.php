@@ -5,12 +5,13 @@ Template Name: Prototipo QuienesSomos
 get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content bg-gray-lighter">
-		<div class="minh-420 pt-42-xs flex bg-img-block" >
+		<div class="pt-42-xs " >
 				<div class="row">
-					<div class="col-md-6">
-						<div class="text-left text-header-first">
-							<div class="container ph-0-md pv-35-xs">
-								<small class="text-gray-dark h6 bold">PUNTOS DE VISTA</small>
+					<div class="col-md-2"></div>
+					<div class="col-md-4">
+						<div class="text-left bg-white text-header-first">
+							<div class="container pv-35-xs">
+								<small class="text-gray-dark h6 bold mt-42">PUNTOS DE VISTA</small>
 								<h1 class="h2 text-gray-dark mv-0">Rocío Silva Santisteban</h1>
 								<p class="text-gray-dark medium f-15 pb-7">Escritora, profesora universitaria, activista, investigadora y <br> exdirectora ejecutiva de la Coordinadora Nacional de Derechos <br> Humanos-Perú, escribe sobre el acoso político citando casos <br> concretos: Mujer en la política, muestrario de ataques.</p>
 								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">LEE EL ARTÍCULO →</a>
@@ -20,7 +21,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							</div>
 						</div>						
 					</div>
-					<div class="col-md-6" style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/rociosilva.png)"></div>
+					<div class="col-md-6 img-header flex bg-img-block minh-420 " style="background-image: url(<?php echo content_url('/'); ?>uploads/2015/11/rociosilva.png)"></div>
 				</div>
 				<div class="registrer-bar minh-70 pt-14 ph-56-md bg-pink-redprolid text-center flex-res flex-bar">
 						<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
