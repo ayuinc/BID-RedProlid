@@ -69,19 +69,18 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					 		 </div>	
 			 					<div class="col-xs-12 col-sm-6 col-md-10 pl-0 ph-0-xs bg-img-block minh-140" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/twitter-phone.jpg)"></div>
 			 					<div class="col-xs-12 col-sm-6 col-md-10 ph-0 pl-0-xs">
-			 						<h5 class="mv-7 text-gray-darker medium">Esos tuits que están demás</h5>
+			 						<h5 class="mv-7 text-gray-darker bold">Esos tuits que están demás</h5>
 			 						<p class="rem-08 pv-7">¿Tiene derecho una política o político en el poder, que al cabo es una figura pública, a no ser recordado por errores fruto de la frivolidad o la prisa?</p>
-			 						<input type="submit" value="INGRESA" name="subscribe" id="mc-embedded-subscribe" class="btn btn-md btn-white btn-primary text-white border-radius bold pv-7" style="width:50%">
+			 						<input type="submit" value="INGRESA" name="subscribe" id="mc-embedded-subscribe" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7" style="width:50%">
 			 					</div>
-			 					<div class="col-xs-12 col-sm-6 col-md-10 pl-0 ph-0-xs bg-img-block minh-140" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/mujer-exitosa.jpg)"></div>
+			 					<div class="col-xs-12 col-sm-6 col-md-10 pl-0 ph-0-xs bg-img-block minh-140 mt-21" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/mujer-exitosa.jpg)"></div>
 			 					<div class="col-xs-12 col-sm-6 col-md-10 ph-0 pl-0-xs">
-			 						<p class="rem-08 pv-7">Abierta la convocatoria: 
-													premios a las mejores prácticas 
-													locales con enfoque de 
-													género-Unión Iberoamerciana 
-													de Municipalistas (UIM)
+			 						<h5 class="mv-7 text-gray-darker bold">Cuando la mujer elije y el hombre la sigue</h5>			 					
+			 						<p class="rem-08 pv-7">El Hombre concreto que tú conoces, en tu medio,¿renunciaría a su carrera por seguir a su paareja?
 									 </p>
+			 						<input type="submit" value="INGRESA" name="subscribe" id="mc-embedded-subscribe" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7" style="width:50%">									 
 			 					</div>
+			 					<div class="border-bottom-gray-lighter"></div>
 			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
 			 						<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2015/11/instituciones.png">
 			 					</div>
