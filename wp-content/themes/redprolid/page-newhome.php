@@ -48,7 +48,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				</div>
 		</div>
 		<section id="middle-content" class="middle-content bg-gray-lighter pb-56">
-		 	<div class="container mh-56-md">
+		 	<div class="container-fluid ml-56 mr-0">
 				<div class="row">
 					<!-- 			 		<div class="col-sm-12 col-md-12 col-xs-12">
 			 			<div class="icono-content text-center pv-14">
@@ -62,7 +62,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				 <p class="mv-21"><a class="text-primary medium" href="<?php //echo home_url('/'); ?>redprolid/">¿QUIERES SABER MÁS? &#10145;</a></p>
 			 			</div>
 			 		</div> -->
-			 		<div class="col-md-4 col-sm-6 col-xs-12">
+			 		<div class="col-md-4 col-sm-6 col-xs-12 pt-70">
 			 			<div class="col-sm-6 col-xs-12 ph-0-xs hidden-sm hidden-xs">
 					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
 					 		 	<h5 class="text-gray color-g inline-p bold">EVENTOS</h5>		
@@ -111,7 +111,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				</div>
 				 		</div>
 					</div> 			 		
-			 		<div class="col-md-8 col-sm-6 bg-white col-xs-12 ph-0-xs">
+			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs bg-white pt-70">
 								<div class="col-md-8 col-sm-12 col-xs-12 text-left ph-14-md">
 									<div class="small-icon text-left pb-14">
 										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
