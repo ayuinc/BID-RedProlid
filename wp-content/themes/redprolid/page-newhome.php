@@ -47,10 +47,10 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						</form>
 				</div>
 		</div>
-		<section id="middle-content" class="middle-content pt-70 pb-56 bg-white">
+		<section id="middle-content" class="middle-content bg-gray-lighter pb-56 bg-white">
 		 	<div class="container mh-56-md">
 				<div class="row">
-<!-- 			 		<div class="col-sm-12 col-md-12 col-xs-12">
+					<!-- 			 		<div class="col-sm-12 col-md-12 col-xs-12">
 			 			<div class="icono-content text-center pv-14">
 			 				<img src="<?php //echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon-home.png" class="img-responsive" style="width:6%;">
 			 			</div>
@@ -62,7 +62,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				 <p class="mv-21"><a class="text-primary medium" href="<?php //echo home_url('/'); ?>redprolid/">¿QUIERES SABER MÁS? &#10145;</a></p>
 			 			</div>
 			 		</div> -->
-			 		<div class="col-md-4 bg-gray-lighter col-sm-6 col-xs-12">
+			 		<div class="col-md-4 col-sm-6 col-xs-12">
 			 			<div class="col-sm-6 col-xs-12 ph-0-xs hidden-sm hidden-xs">
 					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
 					 		 	<h5 class="text-gray color-g inline-p bold">EVENTOS</h5>		
@@ -110,8 +110,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 					</div>
 				 				</div>
 				 		</div>
-						</div> 			 		
-			 		<div class="col-md-5 col-sm-6 col-xs-12 ph-0-xs">
+					</div> 			 		
+			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs">
 								<div class="col-sm-12 col-xs-12 text-left ph-14-md">
 									<div class="small-icon text-left pb-14">
 										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
@@ -125,7 +125,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>
 								</div>
 			 		</div>
-			 		<div class="col-sm-6 col-xs-12 ph-0-xs hidden-lg hidden-md">
+<!-- 			 		<div class="col-sm-8 col-xs-12 ph-0-xs hidden-lg hidden-md">
 					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
 					 		 	<h5 class="text-gray color-g inline-p bold">EVENTOS</h5>		
 					 		 </div>	
@@ -155,7 +155,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 					<div class="col-sm-12 col-xs-12 ph-0 pv-7">
 			 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>eventos/">LEE TODOS LOS EVENTOS →</a>
 			 					</div>
-			 		</div>
+			 		</div> -->
 		 	</div>
 		</section>
 <!-- 		<section class="end-content text-center pv-70 bg-gray-lighter">
