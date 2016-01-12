@@ -81,7 +81,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 						<input type="submit" value="INGRESA" name="subscribe" id="mc-embedded-subscribe" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7" style="width:50%">									 
 			 					</div>
 			 					<div class="border-bottom-gray-lighter"></div>
-			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
+<!-- 			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
 			 						<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2015/11/instituciones.png">
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6 pl-0-xs">
@@ -89,11 +89,11 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 					</div>
 			 					<div class="col-sm-12 col-xs-12 ph-0 pv-7">
 			 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>eventos/">LEE TODOS LOS EVENTOS →</a>
-			 					</div>
+			 					</div> -->
 			 			</div>
-				 			<div class="col-md-8 bg-white col-sm-6 col-xs-12 text-left ph-0">
+				 			<div class="col-md-8  col-sm-6 col-xs-12 text-left ph-0">
 				 				<div class="small-icon text-left pb-14">
-				 				<h5 class="text-gray color-g inline-p bold">DEBATE DE LA SEMANA</h5>							
+				 				<h5 class="text-gray-darker color-g inline-p bold">EVENTO</h5>							
 				 				</div>
 				 				<div class="img-center-content">
 				 				<img src="<?php echo content_url('/'); ?>uploads/2015/11/rocio-silva.jpg" class="w-100">
