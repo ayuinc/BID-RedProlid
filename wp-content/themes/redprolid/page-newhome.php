@@ -67,8 +67,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
 					 		 	<h5 class="text-gray-dark color-g inline-p bold">DEBATES EN ACCIÓN</h5>		
 					 		 </div>	
-			 					<div class="col-xs-12 col-sm-6 col-md-10 pl-0 ph-0-xs bg-img-block minh-70" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/twitter-phone.jpg)"></div>
-			 					<div class="col-xs-12 col-sm-6 col-md-6 pl-0-xs">
+			 					<div class="col-xs-12 col-sm-6 col-md-10 pl-0 ph-0-xs bg-img-block minh-140" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/twitter-phone.jpg)"></div>
+			 					<div class="col-xs-12 col-sm-6 col-md-10 pl-0-xs">
 			 						<p class="rem-08">III Cumbre Iberoamericana de <br class="hidden-xs"> Agendas Locales de Género <br class="hidden-xs"> Mujer y Ciudad-Unión <br class="hidden-xs"> Iberoamericana de <br class="hidden-xs"> Municipalistas (UIM)</p>
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
