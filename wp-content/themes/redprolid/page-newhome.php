@@ -62,14 +62,12 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				 <p class="mv-21"><a class="text-primary medium" href="<?php //echo home_url('/'); ?>redprolid/">¿QUIERES SABER MÁS? &#10145;</a></p>
 			 			</div>
 			 		</div> -->
-			 		<div class="col-md-4 col-sm-6 col-xs-12 pt-70">
-			 			<div class="col-sm-6 col-xs-12 ph-0-xs hidden-sm hidden-xs">
+			 		<div class="col-md-4 col-sm-6 col-xs-12 pt-70-md">
+			 			<div class="col-md-12 col-sm-6 col-xs-12 ph-0-xs hidden-sm hidden-xs">
 					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
-					 		 	<h5 class="text-gray color-g inline-p bold">EVENTOS</h5>		
+					 		 	<h5 class="text-gray-dark color-g inline-p bold">DEBATES EN ACCIÓN</h5>		
 					 		 </div>	
-			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
-			 						<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2015/11/cumbre.jpg">
-			 					</div>
+			 					<div class="col-xs-12 col-sm-6 col-md-10 pl-0 ph-0-xs bg-img-block minh-70" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/twitter-phone.jpg)"></div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6 pl-0-xs">
 			 						<p class="rem-08">III Cumbre Iberoamericana de <br class="hidden-xs"> Agendas Locales de Género <br class="hidden-xs"> Mujer y Ciudad-Unión <br class="hidden-xs"> Iberoamericana de <br class="hidden-xs"> Municipalistas (UIM)</p>
 			 					</div>
@@ -111,7 +109,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				</div>
 				 		</div>
 					</div> 			 		
-			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs bg-white pt-70">
+			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs bg-white pt-70-md">
 								<div class="col-md-8 col-sm-12 col-xs-12 text-left ph-14-md">
 									<div class="small-icon text-left pb-14">
 										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
