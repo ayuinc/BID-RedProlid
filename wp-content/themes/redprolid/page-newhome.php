@@ -7,7 +7,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	<div class="site-content bg-gray-lighter">
 		<div class="pt-42-xs " >
 				<div class="row">
-					<div class="col-md-6 col-sm-6 minh-420 bg-white pt-70 ph-42">
+					<div class="col-md-6 col-sm-6 minh-420 bg-white pt-70 ph-63">
 						<div class="text-left bg-white text-header-first">
 							<div class="container pv-35-xs">
 								<small class="text-gray-dark h6 bold mt-42">PUNTOS DE VISTA</small>
@@ -27,7 +27,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<div class="container">
 								<div class="row">
 									<div class="col-md-3 col-sm-12 col-xs-12 pl-0 text-center text-center-xs">
-										<p class="bold text-white pt-7">Forma parte de la Red PROLID</p>					
+										<p class="bold text-white text-left pt-7">Forma parte de la Red PROLID</p>					
 									</div>
 									<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
 										<input placeholder="Nombre" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-FNAME" name="FNAME" style="height:42px">			
