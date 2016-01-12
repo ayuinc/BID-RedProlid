@@ -80,8 +80,10 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									 </p>
 			 						<input type="submit" value="INGRESA" name="subscribe" id="mc-embedded-subscribe" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7" style="width:50%">									 
 			 					</div>
-			 					<div class="border-bottom-gray-light mv-35 col-md-12 col-sm-12"></div>
-			 					<a href=""><p class="text-gray-light text-right">Todos los debates →</p></a>
+			 					<div class="border-top-gray-light mv-35 col-md-12 col-sm-12">
+			 						<a href=""><p class="text-gray-light h5 text-right">Todos los debates →</p></a>
+			 					</div>
+			 					
 								<!-- 			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
 			 						<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2015/11/instituciones.png">
 			 					</div>
@@ -112,7 +114,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
 									</div>
 									<div class="img-center-content">
-										<img src="<?php echo content_url('/'); ?>uploads/2016/01/erika.jpg" class="w-100">
+										<img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
 										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann,experimentaria boliviana (1997 y 2005)</h4>
