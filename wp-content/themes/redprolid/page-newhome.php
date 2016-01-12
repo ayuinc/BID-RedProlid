@@ -98,7 +98,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				<div class="img-center-content">
 				 				<img src="<?php echo content_url('/'); ?>uploads/2015/11/rocio-silva.jpg" class="w-100">
 				 				</div>
-				 				<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
+				 				<div class="col-sm-12 col-xs-12  ph-0 pt-7 pb-21">
 				 					<h5 class="bold text-gray-darker mt-7">El Tuit de las poderosas</h5>
 				 					<p class="text-gray-darker inline-p f-15 pv-7">FUENTE:</p>
 				 					<p class="text-primary inline-p rem-08 pv-7"><a href="">Mujeres con poder y con twitter.</a></p><p class="text-gray inline-p rem-08 pv-7"><a href="">Sin Mordaza.</a></p>
