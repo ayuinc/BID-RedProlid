@@ -68,10 +68,10 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					 		 	<h5 class="text-gray-dark color-g inline-p bold">DEBATES EN ACCIÓN</h5>		
 					 		 </div>	
 			 					<div class="col-xs-12 col-sm-6 col-md-10 pl-0 ph-0-xs bg-img-block minh-140" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/twitter-phone.jpg)"></div>
-			 					<div class="col-xs-12 col-sm-6 col-md-10 pl-0-xs">
+			 					<div class="col-xs-12 col-sm-6 col-md-10 ph-0 pl-0-xs">
 			 						<p class="rem-08 pv-7">III Cumbre Iberoamericana de Agendas Locales de Género Mujer y Ciudad-Unión Iberoamericana de Municipalistas (UIM)</p>
 			 					</div>
-			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs bg-img-block minh-140" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/mujer-exitosa.jpg)"></div>
+			 					<div class="col-xs-12 col-sm-6 col-md-10 pl-0 ph-0-xs bg-img-block minh-140" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/mujer-exitosa.jpg)"></div>
 			 					<div class="col-xs-12 col-sm-6 col-md-10 ph-0 pl-0-xs">
 			 						<p class="rem-08 pv-7">Abierta la convocatoria: 
 													premios a las mejores prácticas 
