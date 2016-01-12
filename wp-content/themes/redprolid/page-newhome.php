@@ -47,7 +47,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						</form>
 				</div>
 		</div>
-		<section id="middle-content" class="middle-content bg-gray-lighter pb-56 bg-white">
+		<section id="middle-content" class="middle-content bg-gray-lighter pb-56">
 		 	<div class="container mh-56-md">
 				<div class="row">
 					<!-- 			 		<div class="col-sm-12 col-md-12 col-xs-12">
@@ -111,8 +111,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				</div>
 				 		</div>
 					</div> 			 		
-			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs">
-								<div class="col-sm-12 col-xs-12 text-left ph-14-md">
+			 		<div class="col-md-8 col-sm-6 bg-white col-xs-12 ph-0-xs">
+								<div class="col-md-8 col-sm-12 col-xs-12 text-left ph-14-md">
 									<div class="small-icon text-left pb-14">
 										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
 									</div>
