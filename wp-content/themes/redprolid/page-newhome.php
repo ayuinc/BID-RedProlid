@@ -63,7 +63,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 			</div>
 			 		</div> -->
 			 		<div class="col-md-4 col-sm-6 col-xs-12 pt-70-md">
-			 			<div class="col-md-12 col-sm-6 col-xs-12 ph-0-xs hidden-sm hidden-xs">
+			 			<div class="col-md-12 col-sm-6 col-xs-12 ph-0-xs ph-0-md hidden-sm hidden-xs">
 					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
 					 		 	<h5 class="text-gray-dark color-g inline-p bold">DEBATES EN ACCIÓN</h5>		
 					 		 </div>	
