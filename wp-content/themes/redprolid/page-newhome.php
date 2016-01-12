@@ -74,11 +74,11 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
 			 						<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2015/11/convocatoria.jpg">
 			 					</div>
-			 					<div class="col-xs-12 col-sm-6 col-md-6 pl-0-xs">
-			 						<p class="rem-08">Abierta la convocatoria: <br class="hidden-xs">
-													premios a las mejores prácticas <br class="hidden-xs">
-													locales con enfoque de <br class="hidden-xs">
-													género-Unión Iberoamerciana <br class="hidden-xs">
+			 					<div class="col-xs-12 col-sm-6 col-md-10 ph-0 pl-0-xs">
+			 						<p class="rem-08 pv-7">Abierta la convocatoria: 
+													premios a las mejores prácticas 
+													locales con enfoque de 
+													género-Unión Iberoamerciana 
 													de Municipalistas (UIM)
 									 </p>
 			 					</div>
