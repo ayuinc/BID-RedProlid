@@ -91,19 +91,17 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>eventos/">LEE TODOS LOS EVENTOS →</a>
 			 					</div> -->
 			 			</div>
-				 			<div class="col-md-8  col-sm-6 col-xs-12 text-left ph-0">
+				 			<div class="col-md-12  col-sm-6 col-xs-12 text-left ph-0">
 				 				<div class="small-icon text-left pv-14">
 				 					<h3 class="text-gray-darker color-g inline-p bold">EVENTO</h3>							
 				 				</div>
-				 				<div class="img-center-content">
-				 				<img src="<?php echo content_url('/'); ?>uploads/2015/11/rocio-silva.jpg" class="w-100">
+				 				<div class="img-center-content ph-0 col-md-10">
+				 				<img src="<?php echo content_url('/'); ?>uploads/2016/01/UIM.jpg">
 				 				</div>
 				 				<div class="col-sm-12 col-xs-12  ph-0 pt-7 pb-21">
-				 					<h5 class="bold text-gray-darker mt-7">El Tuit de las poderosas</h5>
-				 					<p class="text-gray-darker inline-p f-15 pv-7">FUENTE:</p>
-				 					<p class="text-primary inline-p rem-08 pv-7"><a href="">Mujeres con poder y con twitter.</a></p><p class="text-gray inline-p rem-08 pv-7"><a href="">Sin Mordaza.</a></p>
+				 					<p class="text-gray-dark rem-08 pv-7">III Cumbre Iberoamericana de Agendas Locales de Género Mujer y Ciudad-Unión Iberoamericana de Municipalistas (UIM)</p>
 				 					<div class="col-sm-12 col-xs-12 ph-0">
-				 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">INGRESA AL DEBATE  →</a>
+				 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">INGRESA →</a>
 				 					</div>
 				 				</div>
 				 		</div>
