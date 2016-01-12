@@ -62,7 +62,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 				 <p class="mv-21"><a class="text-primary medium" href="<?php //echo home_url('/'); ?>redprolid/">¿QUIERES SABER MÁS? &#10145;</a></p>
 			 			</div>
 			 		</div> -->
-			 		<div class="col-md-7 col-sm-6 col-xs-12">
+			 		<div class="col-md-4 bg-gray-lighter col-sm-6 col-xs-12">
 			 			<div class="col-sm-6 col-xs-12 ph-0-xs hidden-sm hidden-xs">
 					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
 					 		 	<h5 class="text-gray color-g inline-p bold">EVENTOS</h5>		
@@ -94,7 +94,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>eventos/">LEE TODOS LOS EVENTOS →</a>
 			 					</div>
 			 			</div>
-				 			<div class="col-sm-6 col-xs-12 text-left ph-0">
+				 			<div class="col-md-8 bg-white col-sm-6 col-xs-12 text-left ph-0">
 				 				<div class="small-icon text-left pb-14">
 				 				<h5 class="text-gray color-g inline-p bold">DEBATE DE LA SEMANA</h5>							
 				 				</div>
