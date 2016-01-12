@@ -99,7 +99,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				<div class="img-center-content ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/UIM.jpg); background-size: 64% !important;" >
 				 				</div>
 				 				<div class="col-sm-12 col-xs-12  ph-0 pt-7 pb-21">
-				 					<p class="text-gray-dark rem-08 pv-7">III Cumbre Iberoamericana de Agendas Locales de Género Mujer y Ciudad-Unión Iberoamericana de Municipalistas (UIM)</p>
+				 					<p class="text-gray-dark h3">III Cumbre Iberoamericana de Agendas Locales de Género Mujer y Ciudad-Unión Iberoamericana de Municipalistas (UIM)</p>
 				 					<div class="col-sm-12 col-xs-12 ph-0">
 				 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">INGRESA →</a>
 				 					</div>
@@ -112,12 +112,26 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
 									</div>
 									<div class="img-center-content">
-										<img src="<?php echo content_url('/'); ?>uploads/2015/11/foto-Myrna-Cunningham1.jpg" class="w-100">
+										<img src="<?php echo content_url('/'); ?>uploads/2016/01/erika.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
-										<h4 class="text-gray-darker pv-7 bold">Conoce a Mirna Cunningham, lideresa indígena nicaragüense.</h4>
-										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">MÁS AQUÍ  →</a>
+										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann,experimentaria boliviana (1997 y 2005)</h4>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
 									</div>
+									<div class="img-center-content">
+										<img src="<?php echo content_url('/'); ?>uploads/2016/01/aida-garcia naranjo.jpg" class="w-100">
+									</div>
+									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
+										<h4 class="text-gray-darker pt-7 bold">Aída García Naranjo Morales a sido ministra de embajadora del Perú en la República Oriental del Uruguay y representante del Perú ante la Asociación Latinoamericana de Integración (ALADI).</h4>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
+									</div>		
+									<div class="img-center-content">
+										<img src="<?php echo content_url('/'); ?>uploads/2016/01/aida-garcia naranjo.jpg" class="w-100">
+									</div>
+									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
+										<h4 class="text-gray-darker pt-7 bold"><strong>Liliana Soto</strong>, Presidenta del movimiento socialista y feminista Kuña Pyrenda (Paraguay).</h4>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
+									</div>																	
 								</div>
 			 		</div>
 <!-- 			 		<div class="col-sm-8 col-xs-12 ph-0-xs hidden-lg hidden-md">
