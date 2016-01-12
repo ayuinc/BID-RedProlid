@@ -81,7 +81,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 						<input type="submit" value="INGRESA" name="subscribe" id="mc-embedded-subscribe" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7" style="width:50%">									 
 			 					</div>
 			 					<div class="border-top-gray-light mv-35 col-md-12 col-sm-12">
-			 						<a href=""><p class="text-gray-light h5 text-right">Todos los debates →</p></a>
+			 						<a href=""><small class="text-gray-light h5 text-right">Todos los debates →</small></a>
 			 					</div>
 			 					
 								<!-- 			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
@@ -106,6 +106,9 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">INGRESA →</a>
 				 					</div>
 				 				</div>
+			 					<div class="border-top-gray-light mv-35 col-md-12 col-sm-12">
+			 						<a href=""><small class="text-gray-light h5 text-right">Todos los eventos →</small></a>
+			 					</div>				 				
 				 		</div>
 					</div> 			 		
 			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs bg-white pt-70-md">
