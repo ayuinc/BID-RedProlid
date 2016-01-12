@@ -81,7 +81,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 						<input type="submit" value="INGRESA" name="subscribe" id="mc-embedded-subscribe" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7" style="width:50%">									 
 			 					</div>
 			 					<div class="border-bottom-gray-light mv-35 col-md-12 col-sm-12"></div>
-<!-- 			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
+			 					<a href=""><p class="text-gray-light text-right">Todos los debates →</p></a>
+								<!-- 			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
 			 						<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2015/11/instituciones.png">
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-6 pl-0-xs">
@@ -95,7 +96,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				<div class="small-icon text-left pv-14">
 				 					<h3 class="text-gray-darker color-g inline-p bold">EVENTO</h3>							
 				 				</div>
-				 				<div class="img-center-content ph-0 col-md-12 bg-img-block minh-140	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/UIM.jpg); background-size: 64% !important;" >
+				 				<div class="img-center-content ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/UIM.jpg); background-size: 64% !important;" >
 				 				</div>
 				 				<div class="col-sm-12 col-xs-12  ph-0 pt-7 pb-21">
 				 					<p class="text-gray-dark rem-08 pv-7">III Cumbre Iberoamericana de Agendas Locales de Género Mujer y Ciudad-Unión Iberoamericana de Municipalistas (UIM)</p>
