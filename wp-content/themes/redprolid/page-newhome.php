@@ -7,7 +7,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	<div class="site-content bg-gray-lighter">
 		<div class="pt-42-xs " >
 				<div class="row bg-white">
-					<div class="col-md-6 col-sm-6 minh-420 bg-white pt-70 ph-63 hidden-xs hidden-sm">
+					<div class="col-md-6 col-sm-6 minh-210 bg-white pt-70-md mt-21-md ph-63 hidden-xs hidden-sm">
 						<div class="text-left bg-white text-header-first">
 							<div class="container pv-35-xs">
 								<small class="text-gray-dark h6 bold mt-42">PUNTOS DE VISTA</small>
