@@ -36,12 +36,13 @@
       <div class="row">
         <div class="header-left left">
           <input type="checkbox" id="op"></input>
-          <div class="lower mt-21 col-sm-4 col-xs-4 col-md-4 col-lg-4">
+          <div class="lower mt-42 col-sm-4 col-xs-4 col-md-4 col-lg-4">
            <label id="in" for="op"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAQ0lEQVQ4T82SwREAIAjD6ITFEVzRBfFwhTyQf9MjVwU8wXzI9iEQZWbNAkh7Z9vBJpAPHNhe6AUSfhLnd4CnjB1QwAWERRF1hcszqQAAAABJRU5ErkJggg=="/> MENU</label>
 
           </div>
           <div class="overlay overlay-hugeinc bg-gray-lighter">
-             <label class="cerrar text-gray" id="out" for="op">CERRAR <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzUlEQVQ4T42TYRXCMAyErw5wAhLAQSQwBSAFFICEOAAJ4AQJvNtL9kqbdOxnu/uSXi4FAETkCOAE4KCqH55ln4hsADwAXFX1Xkx8M8FrBKnEO/t/IoCibVUxhARiSt4EsKXnCJKJAeyLeZBCrDO+2dueK1NMv2bACoTXoZgXC2AAqQeyVPbDH8AKpBN3HVSA9s28CqcTPSESe8cdpDUxcpviNCf1GMNRWek0Jx6kdM5rOYmiHLqdJbZdplA8CNvkHnCdzx7PP9aZnly4zl8NTn4w5oPSqAAAAABJRU5ErkJggg=="/></label>
+          
+             <label class="cerrar text-gray" id="out" for="op">CERRAR<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzUlEQVQ4T42TYRXCMAyErw5wAhLAQSQwBSAFFICEOAAJ4AQJvNtL9kqbdOxnu/uSXi4FAETkCOAE4KCqH55ln4hsADwAXFX1Xkx8M8FrBKnEO/t/IoCibVUxhARiSt4EsKXnCJKJAeyLeZBCrDO+2dueK1NMv2bACoTXoZgXC2AAqQeyVPbDH8AKpBN3HVSA9s28CqcTPSESe8cdpDUxcpviNCf1GMNRWek0Jx6kdM5rOYmiHLqdJbZdplA8CNvkHnCdzx7PP9aZnly4zl8NTn4w5oPSqAAAAABJRU5ErkJggg=="/></label>
              <nav>
               <ul class="text-primary">
                <li><a href="<?php echo home_url('/'); ?>quienes-somos">Acerca de Red Prolid</a></li>

@@ -30,6 +30,11 @@
 	width: 100%;
 	order:2;
 }
+input[type="checkbox"]{
+    box-sizing: border-box;
+    padding: 0;
+    visibility: hidden;
+}
 .w-100{
 	width:100%;
 }
@@ -791,10 +796,10 @@ div[id^="yop-poll-results-3"] {
 	width: 86px;
 	height:58px;
 	position: absolute;	
-  left: 170px;
-	top: 57px;
+  	left: 170px;
+	top: 46px;
 	z-index: 100;
-  cursor:pointer;   
+    cursor:pointer;   
 }
 
 .overlay nav {
