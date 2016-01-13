@@ -6,7 +6,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	
 	<div class="site-content bg-gray-lighter">
 		<div class="pt-42-xs " >
-				<div class="row">
+				<div class="row bg-white">
 					<div class="col-md-6 col-sm-6 minh-420 bg-white pt-70 ph-63 hidden-xs hidden-sm">
 						<div class="text-left bg-white text-header-first">
 							<div class="container pv-35-xs">
@@ -20,7 +20,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							</div>
 						</div>						
 					</div>
-					<div class="col-md-6 col-sm-6 img-header flex bg-img-block minh-420 hidden-xs hidden-sm" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/maxresdefault.jpg)"></div>
+					<div class="col-md-6 col-sm-6 img-header flex bg-img-block minh-350 hidden-xs hidden-sm" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/maxresdefault.jpg)"></div>
 					<div class="col-md-12 col-sm-12 col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/maxresdefault.jpg)">
 							<div class="container pv-35-xs">
 								<small class="text-gray-lighter h6 bold mt-42">PUNTOS DE VISTA</small>
@@ -102,7 +102,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 								</div>
 			 		</div>			 		
 			 		<div class="col-md-4 col-sm-6 col-xs-12 pt-70-md ph-0-xs pv-70-xs">
-			 			<div class="col-md-12 col-sm-6 col-xs-12 ph-0-xs ph-0-md ">
+			 			<div class="col-md-10 col-sm-6 col-xs-12 ph-0-xs ph-0-md ">
 					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
 					 		 	<h5 class="text-gray-dark color-g inline-p bold">DEBATES EN ACCIÓN</h5>		
 					 		 </div>	
@@ -120,7 +120,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 						<input type="submit" value="INGRESA" name="subscribe" id="mc-embedded-subscribe" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7" style="width:50%">									 
 			 					</div>
 			 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-12 col-sm-12">
-			 						<a href=""><small class="text-gray-light">Todos los debates →</small></a>
+			 						<a class="" href=""><small class="text-gray-light pt-7">Todos los debates →</small></a>
 			 					</div>
 			 					
 								<!-- 			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
@@ -146,12 +146,12 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 					</div>
 				 				</div>
 			 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-12 col-sm-12">
-			 						<a href=""><small class="text-gray-light">Todos los eventos →</small></a>
+			 						<a href=""><small class="text-gray-light pt-7">Todos los eventos →</small></a>
 			 					</div>				 				
 				 		</div>
 					</div> 			 		
-			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs bg-white pt-70-md hidden-xs hidden-sm">
-								<div class="col-md-8 col-sm-12 col-xs-12 text-left ph-14-md">
+			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs bg-white pt-70-md pl-63-md hidden-xs hidden-sm">
+								<div class="col-md-9 col-sm-12 col-xs-12 text-left ph-14-md">
 									<div class="small-icon text-left pb-14">
 										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
 									</div>
