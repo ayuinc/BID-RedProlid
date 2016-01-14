@@ -53,7 +53,7 @@
                <li class="text-gray rem-12 pt-7">Forma parte de la Red PROLID</li>
                <li><input placeholder="Nombre" class="border-radius p-7 w-100" type="text" id="mce-FNAME" name="FNAME" style="height:42px"></li>
                <li class="mv-14"><input placeholder="Apellido" class="border-radius p-7 w-100" type="text" id="mce-LNAME" name="LNAME" style="height:42px"></li>
-               <li class="mv-14"><input placeholder="Correo Electrónico" name="EMAIL" class=" border-radius required email w-100" type="text" id="mce-EMAIL" style="height:42px"></li>
+               <li class="mv-14"><input placeholder="Correo electrónico" name="EMAIL" class=" border-radius required email w-100" type="text" id="mce-EMAIL" style="height:42px"></li>
                <li class="mv-14"><input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-primary border-radius bold" style="width:100%"></li>
               </ul>
              </nav>
