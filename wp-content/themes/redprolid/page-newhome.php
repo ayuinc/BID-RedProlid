@@ -38,7 +38,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<div class="container">
 								<div class="row">
 									<div class="col-md-4 col-sm-12 col-xs-12 pl-0 text-center text-center-xs">
-										<p class="bold text-white text-left pt-7">Forma parte de la Red PROLID</p>					
+										<p class="bold text-white text-center pt-7">Forma parte de la Red PROLID</p>					
 									</div>
 									<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
 										<input placeholder="Nombre" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-FNAME" name="FNAME" style="height:42px">			
@@ -133,11 +133,11 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>eventos/">LEE TODOS LOS EVENTOS →</a>
 			 					</div> -->
 			 			</div>			 			
-				 			<div class="col-md-12  col-sm-6 col-xs-12 text-left ph-0">
+				 			<div class="col-md-12 col-sm-6 col-xs-12 text-left ph-0">
 				 				<div class="small-icon text-left pv-14">
 				 					<h3 class="text-gray-darker color-g inline-p bold">EVENTO</h3>							
 				 				</div>
-				 				<div class="img-center-content ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/UIM.jpg); background-size: 64% !important;" >
+				 				<div class="img-center-content ph-0 col-md-12 bg-img-block minh-140	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/UIM.jpg); background-size: 64% !important;" >
 				 				</div>
 				 				<div class="col-sm-12 col-xs-12  ph-0 pt-7 pb-21">
 				 					<p class="text-gray-dark h3">III Cumbre Iberoamericana de Agendas Locales de Género Mujer y Ciudad-Unión Iberoamericana de Municipalistas (UIM)</p>
@@ -159,21 +159,21 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
-										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann,experimentaria boliviana (1997 y 2005)</h4>
+										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann,experimentaria boliviana (1997 - 2005)</h4>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
 									</div>
 									<div class="img-center-content">
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/aida-garcia-naranjo.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
-										<h4 class="text-gray-darker pt-7 bold">Aída García Naranjo Morales a sido ministra de embajadora del Perú en la República Oriental del Uruguay y representante del Perú ante la Asociación Latinoamericana de Integración (ALADI).</h4>
+										<h4 class="text-gray-darker pt-7 bold">Aída García Naranjo ha sido ministra de la Mujer y Desarrollo Social del Perú (2011)</h4>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
 									</div>		
 									<div class="img-center-content">
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/Lilian-Soto1.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
-										<h4 class="text-gray-darker pt-7 bold">Liliana Soto, Presidenta del movimiento socialista y feminista Kuña Pyrenda (Paraguay).</h4>
+										<h4 class="text-gray-darker pt-7 bold">Liliana Soto, presidenta del movimiento socialista y feminista Kuña Pyrenda (Paraguay).</h4>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
 									</div>																	
 								</div>
