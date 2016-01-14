@@ -124,7 +124,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 		</div>
 					</div> 			 		
 			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs bg-white pt-70-md pr-0-md ph-70-md hidden-xs hidden-sm">
-								<div class="col-md-12 col-sm-12 col-xs-12 text-left ph-0-md">
+								<div class="col-md-12 col-sm-12 col-xs-12 text-left">
 									<div class="small-icon text-left pb-14">
 										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
 									</div>
