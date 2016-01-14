@@ -49,7 +49,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<input placeholder="Apellido" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-LNAME" name="LNAME" style="height:42px">			
 									</div>										
 									<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
-										<input placeholder="Correo Electrónico" name="EMAIL" class=" border-radius col-sm-12 col-xs-12 p-7 required email" type="text" id="mce-EMAIL" style="height:42px">						
+										<input placeholder="Correo electrónico" name="EMAIL" class=" border-radius col-sm-12 col-xs-12 p-7 required email" type="text" id="mce-EMAIL" style="height:42px">						
 									</div>
 									<div style="position: absolute; left: -5000px;"><input type="text" name="b_242e37fe564525e1aad9cfc03_eb13f7ce93" tabindex="-1" value=""></div>
 									<div class="col-md-2 col-sm-12 col-xs-12 pv-14-xs text-center-xs text-left bold">
@@ -84,7 +84,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
-										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann,experimentaria boliviana (1997 - 2005)</h4>
+										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann, exparlamentaria boliviana (1997-2005)</h4>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>entrevista-a-erika-brockmann/">LEE MÁS  →</a>
 									</div>
 									<div class="img-center-content">
@@ -160,7 +160,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
-										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann,experimentaria boliviana (1997 - 2005)</h4>
+										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann, exparlamentaria boliviana (1997-2005)</h4>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>entrevista-a-erika-brockmann/">LEE MÁS  →</a>
 									</div>
 									<div class="img-center-content">
