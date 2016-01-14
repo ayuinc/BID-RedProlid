@@ -30,6 +30,7 @@
 	width: 100%;
 	order:2;
 }
+
 input[type="checkbox"]{
     box-sizing: border-box;
     padding: 0;
@@ -349,6 +350,11 @@ div[id^="yop-poll-results-3"] {
 }
 .footer{
 	margin-top:28px;
+}
+@media (min-width: 1300px){
+	.container {
+	    width: 1376px !important;
+	}
 }
 @media (max-width: 1024px){
 	.btn-custom-iniciasesion {
