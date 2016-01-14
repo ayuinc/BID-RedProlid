@@ -117,8 +117,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 					<div class="col-xs-12 col-sm-6 col-md-10 pl-0 ph-0-xs bg-img-block minh-140 mt-21" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/mujer-exitosa.jpg)"></div>
 			 					<div class="col-xs-12 col-sm-6 col-md-10 ph-0 pl-0-xs">
 			 						<h5 class="mv-7 text-gray-darker bold">Cuando la mujer elije y el hombre la sigue</h5>			 					
-			 						<p class="rem-08 pv-7">El Hombre concreto que tú conoces, en tu medio,¿renunciaría a su carrera por seguir a su paareja?
-									 </p>
+			 						<p class="rem-08 pv-7">El hombre concreto que tú conoces, en tu medio, ¿renunciaría a su carrera por seguir a su pareja?</p>
 			 						<a href="<?php echo home_url('/'); ?>cuando-la-mujer-elige-y-el-hombre-la-sigue/" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7">INGRESA</a>								 
 			 					</div>
 			 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-12 col-sm-12">
