@@ -82,21 +82,21 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
-										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann,experimentaria boliviana (1997 y 2005)</h4>
+										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann,experimentaria boliviana (1997 - 2005)</h4>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
 									</div>
 									<div class="img-center-content">
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/aida-garcia-naranjo.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
-										<h4 class="text-gray-darker pt-7 bold">Aída García Naranjo Morales a sido ministra de embajadora del Perú en la República Oriental del Uruguay y representante del Perú ante la Asociación Latinoamericana de Integración (ALADI).</h4>
+										<h4 class="text-gray-darker pt-7 bold">Aída García Naranjo ha sido ministra de la Mujer y Desarrollo Social del Perú (2011)</h4>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
 									</div>		
 									<div class="img-center-content">
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/Lilian-Soto1.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
-										<h4 class="text-gray-darker pt-7 bold">Liliana Soto, Presidenta del movimiento socialista y feminista Kuña Pyrenda (Paraguay).</h4>
+										<h4 class="text-gray-darker pt-7 bold">Liliana Soto, presidenta del movimiento socialista y feminista Kuña Pyrenda (Paraguay).</h4>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
 									</div>																	
 								</div>
