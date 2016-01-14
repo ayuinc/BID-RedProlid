@@ -62,7 +62,7 @@
         <div class="header-center center col-sm-4 col-xs-4 col-md-4 col-lg-4">
           <img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/logo_redprolid-head.png" class="img-responsive w-68 hidden-xs hidden-sm logo-menu-redprolid">
         </div>
-        <div class="header-right right text-right-xs col-sm-4 col-xs-8 col-md-4 col-lg-4">
+        <div class="header-right pr-70-md text-right right text-right-xs col-sm-4 col-xs-8 col-md-4 col-lg-4">
           <!-- Facebook icon by Icons8 -->
           <a href="https://www.facebook.com/redprolid" target="_blank"><img class="mt-21-sm mt-21-md mt-21-lg mt-14-xs icon icons8-Facebook icon-facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABA0lEQVRIS+2W7W3CQBBEHx3QQUgF0AEphXQAFQAV0AIlpINAB5RAKiBUAHrIhw7Lwtha/AdWOtnSfYxndm7XPTqKXkc4vAbQBFgB/Zay/gMzYJ3vr5LOhcauJdAIOACfdUAnYAt8tQTaAGO4zX8VoyZAU2AIDIAlIEg4UDowERdoEQ2krL8Fwh/wU4xwRkqmMw2Tvs/yGSqdEs2Lw8t5DgFSMh3lM7lSUEOnhkmXMym7/7u4pCGMrBoO7fyRMfHVvHnJQ4ASi6fn6A10NUzbWheSI9uEhfVem9B1DkOX5WGbOGbzl7kqRtrXL072bdotrH3ur218TQ9+aP1r/Jw8JEXTRWfl31Ab6JvgggAAAABJRU5ErkJggg==" width="26" height="26"></a>
           <!-- Twitter  icon by Icons8 -->
