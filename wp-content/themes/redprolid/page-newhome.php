@@ -137,7 +137,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				<div class="small-icon text-left pv-14">
 				 					<h3 class="text-gray-darker color-g inline-p bold">EVENTO</h3>							
 				 				</div>
-				 				<div class="img-center-content ph-0 col-md-12 bg-img-block minh-140	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/UIM.jpg); background-size: 64% !important;" >
+				 				<div class="img-center-content ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/UIM.jpg); background-size: 64% !important;" >
 				 				</div>
 				 				<div class="col-sm-12 col-xs-12  ph-0 pt-7 pb-21">
 				 					<p class="text-gray-dark h3">III Cumbre Iberoamericana de Agendas Locales de Género Mujer y Ciudad-Unión Iberoamericana de Municipalistas (UIM)</p>
