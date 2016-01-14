@@ -9,7 +9,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				<div class="row bg-white">
 					<div class="col-md-6 col-sm-6 minh-210 bg-white pt-70-md mt-21-md ph-63 hidden-xs hidden-sm">
 						<div class="text-left bg-white text-header-first">
-							<div class="container pv-35-xs">
+							<div class="container pl-70-md pv-35-xs">
 								<small class="text-gray h6 mt-42">PUNTOS DE VISTA</small>
 								<h1 class="h2 text-gray-dark mv-0 pt-21">Alicia del Águila</h1>
 								<h3 class="text-gray-dark medium">Perú: lecciones de un retroceso</h3>
