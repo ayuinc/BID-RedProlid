@@ -60,49 +60,49 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs bg-white ph-0-xs pv-70-xs pt-70-md hidden-md hidden-lg">
 								<div class="col-md-8 col-sm-12 col-xs-12 text-left ph-14-md">
 									<div class="small-icon text-left pb-14">
-										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
+										<h3 class="text-gray-darker color-g inline-p bold">CAMPEON@S</h3>							
 									</div>
 									<div class="img-center-content">
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.jpg" class="w-100">
 									</div>
-									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
+									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann, exparlamentaria boliviana (1997-2005)</h4>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>entrevista-a-erika-brockmann/">LEE MÁS  →</a>
 									</div>
 									<div class="img-center-content">
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/aida-garcia-naranjo.jpg" class="w-100">
 									</div>
-									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
+									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 bold">Aída García Naranjo ha sido ministra de la Mujer y Desarrollo Social del Perú (2011)</h4>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>aida-garcia-naranjo-morales/">LEE MÁS  →</a>
 									</div>		
 									<div class="img-center-content">
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/Lilian-Soto1.jpg" class="w-100">
 									</div>
-									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
+									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 bold">Liliana Soto, presidenta del movimiento socialista y feminista Kuña Pyrenda (Paraguay).</h4>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>lilian-soto/">LEE MÁS  →</a>
 									</div>																	
 								</div>
 			 		</div>			 		
-			 		<div class="col-md-4 col-sm-6 col-xs-12 pt-70-md pl-35-md pr-70-md ph-0-xs pv-70-xs">
+			 		<div class="col-md-4 col-sm-6 col-xs-12 pt-70-md pl-21-md pr-56-md ph-0-xs pv-70-xs">
 			 			<div class="col-md-12 col-sm-6 col-xs-12 ph-0-xs ph-0-md ">
 					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
-					 		 	<h5 class="text-gray-dark color-g inline-p bold">DEBATES EN ACCIÓN</h5>		
+					 		 	<h3 class="text-gray-darker color-g inline-p bold">DEBATES EN ACCIÓN</h3>		
 					 		 </div>	
-			 					<div class="col-xs-12 col-sm-6 col-md-12 pl-0 ph-0-xs bg-img-block minh-140" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/twitter-phone.jpg)"></div>
-			 					<div class="col-xs-12 col-sm-6 col-md-12 ph-0 pl-0-xs">
+			 					<div class="col-xs-12 col-sm-6 col-md-11 pl-0 ph-0-xs bg-img-block minh-140" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/twitter-phone.jpg)"></div>
+			 					<div class="col-xs-12 col-sm-6 col-md-11 ph-0 pl-0-xs">
 			 						<h5 class="mv-7 text-gray-darker bold">Esos tuits que están demás</h5>
 			 						<p class="rem-08 pv-7">¿Tiene derecho una política o político en el poder, que al cabo es una figura pública, a no ser recordado por errores fruto de la frivolidad o la prisa? </p>
 			 						<a href="<?php echo home_url('/'); ?>esos-tuits-que-estan-de-mas/" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7">INGRESA</a>
 			 					</div>
-			 					<div class="col-xs-12 col-sm-6 col-md-12 pl-0 ph-0-xs bg-img-block minh-140 mt-21" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/mujer-exitosa.jpg)"></div>
-			 					<div class="col-xs-12 col-sm-6 col-md-12 ph-0 pl-0-xs">
+			 					<div class="col-xs-12 col-sm-6 col-md-11 pl-0 ph-0-xs bg-img-block minh-140 mt-42" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/mujer-exitosa.jpg)"></div>
+			 					<div class="col-xs-12 col-sm-6 col-md-11 ph-0 pl-0-xs">
 			 						<h5 class="mv-7 text-gray-darker bold">Cuando la mujer elige y el hombre la sigue</h5>			 					
 			 						<p class="rem-08 pv-7">El hombre concreto que tú conoces, en tu medio, ¿renunciaría a su carrera por seguir a su pareja?</p>
 			 						<a href="<?php echo home_url('/'); ?>cuando-la-mujer-elige-y-el-hombre-la-sigue/" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7">INGRESA</a>								 
 			 					</div>
-			 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-12 col-sm-12">
+			 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-11 col-sm-12">
 			 						<a class="" href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/"><small class="text-gray-light pt-7">Todos los debates →</small></a>
 			 					</div>		 		
 			 			</div>			 			
@@ -126,7 +126,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs bg-white pv-70-md pr-0-md ph-70-md hidden-xs hidden-sm">
 								<div class="col-md-12 col-sm-12 col-xs-12 text-left">
 									<div class="small-icon text-left pb-14">
-										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
+										<h3 class="text-gray-darker color-g inline-p bold">CAMPEON@S</h3>							
 									</div>
 									<div class="img-center-content">
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.jpg" class="w-100">
