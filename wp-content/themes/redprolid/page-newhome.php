@@ -46,7 +46,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<input placeholder="Correo electrónico" name="EMAIL" class=" border-radius col-sm-12 col-xs-12 p-7 required email" type="text" id="mce-EMAIL" style="height:42px">						
 									</div>
 									<div style="position: absolute; left: -5000px;"><input type="text" name="b_242e37fe564525e1aad9cfc03_eb13f7ce93" tabindex="-1" value=""></div>
-									<div class="col-md-3 col-sm-12 col-xs-12 pv-14-xs text-center-xs text-left bold">
+									<div class="col-md-3 col-sm-12 col-xs-12 pr-35-md pv-14-xs text-center-xs text-left bold">
 										<input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-white btn-outline text-white border-radius bold" style="width:100%">					
 									</div>
 								</div>
@@ -123,8 +123,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 					</div>				 				
 				 		</div>
 					</div> 			 		
-			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs bg-white pt-70-md pr-0-md pl-70-md hidden-xs hidden-sm">
-								<div class="col-md-9 col-sm-12 col-xs-12 text-left pl-35-md pr-0-md">
+			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs bg-white pt-70-md pr-0-md pl-21-md hidden-xs hidden-sm">
+								<div class="col-md-9 col-sm-12 col-xs-12 text-left  ph-0-md">
 									<div class="small-icon text-left pb-14">
 										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
 									</div>
