@@ -11,9 +11,10 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="text-left bg-white text-header-first">
 							<div class="container pv-35-xs">
 								<small class="text-gray-dark h6 bold mt-42">PUNTOS DE VISTA</small>
-								<h1 class="h2 text-gray-dark mv-0">Rocío Silva Santisteban</h1>
-								<p class="text-gray-dark medium f-15 pb-7">Escritora, profesora universitaria, activista, investigadora y <br> exdirectora ejecutiva de la Coordinadora Nacional de Derechos <br> Humanos-Perú, escribe sobre el acoso político citando casos <br> concretos: Mujer en la política, muestrario de ataques.</p>
-								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">LEE EL ARTÍCULO →</a>
+								<h1 class="h2 text-gray-dark mv-0">Alicia del Águila</h1>
+								<h3>Perú: lecciones de un retroceso</h3>
+								<p class="text-gray-dark medium f-15 pb-7">Doctora en Ciencias Sociales por la Universidad Nacional Mayor de San Marcos (Lima), magister en Ciencias Sociales por FLACSO (México) y bachiller en Sociología por Pontificia Universidad Católica del Perú.</p>
+								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>alicia-del-aguila/">LEE EL ARTÍCULO →</a>
 								<!-- 					<a class="mt-35" href="#middle-content">
 									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACo0lEQVR4Xu2Z8VUUMRDGv6kAO5AOOCoAKtAOhAqwBOlAKwAqECtQKxA7kA6ggvENTvaFIedl93Yz2d3kz7t9b/L98s1kkhBWPmjl+tEANAesnEBLgZUboBXBlgItBVZOoKXAyg3QdoHnFGDmQyL6syY3BM3EzBsA3wHcEdHFGiAw8zWA9wDOBMAPACcq/GbpEFT8uer9KQDeABAIR/rjFRF9WqITmPkzgEvV9hvAaagBFsIFEd0sCQIzy6qL9WX8E0/02PUBCScsBsI28ULiRSOkEO4BvFVSs4dgxD8A2MjKB3e/6gR1V5CacDB3CEb8k9peFrgbyVZ4CRByxL9KgZjMnCHkiv8vAO0QpUmaVTr0Eb8TwNwg9BWfBWALhGMielFMvHsGZj7Vll6mkix4qTlm3weYmiDbyFktEKLzjDR02eKzHRDI1QhhH/G9AWg6yCnqq0JxdYIRL1MSV0rRzh7ZKWC2yLivdoGQED+oax0EQJ3gBmEs8YNSwNsJY4rfG0BpJ4wtfhQApSBMIX40AAkI0iRJRe6OndllOfGhHtN/ATjUvwcVvL0aoRwBphUdBYKKl0tbOZfIGE38qA6ImqV4d9gLwtTiJwGg6SD3iR8UyiAICfFfiOhjjhP7fDO4D9gVhJkHQ0iIvyWicJW9K3Sv/ycDMNQJJcVPlgKmWcp2QmnxRQDkOsFDfDEAKQhEdGycIvt82Oomy3lbICatATaYKYzdO6R5rysmvqgDoj4hrgnh+S1U+KLiXQBoOtwBeGcc8o2I5LKl6CiaApEL7GNs91hZVL19GywZPHqMlbDPL7Ul44dYLg4wToCXeLca4LHS22K6OqAGEA1ADavgOYfmAE/6NcRuDqhhFTzn0BzgSb+G2M0BNayC5xyaAzzp1xD7L9m2aEexDr5GAAAAAElFTkSuQmCC"/>
 								</a> -->					
@@ -24,9 +25,10 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					<div class="col-md-12 col-sm-12 col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/maxresdefault.jpg)">
 							<div class="container pv-35-xs">
 								<small class="text-gray-lighter h6 bold mt-42">PUNTOS DE VISTA</small>
-								<h1 class="h2 text-gray-lighter mv-0">Rocío Silva Santisteban</h1>
-								<p class="text-gray-lighter medium f-15 pb-7">Escritora, profesora universitaria, activista, investigadora y <br> exdirectora ejecutiva de la Coordinadora Nacional de Derechos <br> Humanos-Perú, escribe sobre el acoso político citando casos <br> concretos: Mujer en la política, muestrario de ataques.</p>
-								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">LEE EL ARTÍCULO →</a>
+								<h1 class="h2 text-gray-lighter mv-0">Alicia del Águila</h1>
+								<h3>Perú: lecciones de un retroceso</h3>
+								<p class="text-gray-lighter medium f-15 pb-7">Doctora en Ciencias Sociales por la Universidad Nacional Mayor de San Marcos (Lima), magister en Ciencias Sociales por FLACSO (México) y bachiller en Sociología por Pontificia Universidad Católica del Perú.</p>
+								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>alicia-del-aguila/">LEE EL ARTÍCULO →</a>
 								<!-- 					<a class="mt-35" href="#middle-content">
 									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACo0lEQVR4Xu2Z8VUUMRDGv6kAO5AOOCoAKtAOhAqwBOlAKwAqECtQKxA7kA6ggvENTvaFIedl93Yz2d3kz7t9b/L98s1kkhBWPmjl+tEANAesnEBLgZUboBXBlgItBVZOoKXAyg3QdoHnFGDmQyL6syY3BM3EzBsA3wHcEdHFGiAw8zWA9wDOBMAPACcq/GbpEFT8uer9KQDeABAIR/rjFRF9WqITmPkzgEvV9hvAaagBFsIFEd0sCQIzy6qL9WX8E0/02PUBCScsBsI28ULiRSOkEO4BvFVSs4dgxD8A2MjKB3e/6gR1V5CacDB3CEb8k9peFrgbyVZ4CRByxL9KgZjMnCHkiv8vAO0QpUmaVTr0Eb8TwNwg9BWfBWALhGMielFMvHsGZj7Vll6mkix4qTlm3weYmiDbyFktEKLzjDR02eKzHRDI1QhhH/G9AWg6yCnqq0JxdYIRL1MSV0rRzh7ZKWC2yLivdoGQED+oax0EQJ3gBmEs8YNSwNsJY4rfG0BpJ4wtfhQApSBMIX40AAkI0iRJRe6OndllOfGhHtN/ATjUvwcVvL0aoRwBphUdBYKKl0tbOZfIGE38qA6ImqV4d9gLwtTiJwGg6SD3iR8UyiAICfFfiOhjjhP7fDO4D9gVhJkHQ0iIvyWicJW9K3Sv/ycDMNQJJcVPlgKmWcp2QmnxRQDkOsFDfDEAKQhEdGycIvt82Oomy3lbICatATaYKYzdO6R5rysmvqgDoj4hrgnh+S1U+KLiXQBoOtwBeGcc8o2I5LKl6CiaApEL7GNs91hZVL19GywZPHqMlbDPL7Ul44dYLg4wToCXeLca4LHS22K6OqAGEA1ADavgOYfmAE/6NcRuDqhhFTzn0BzgSb+G2M0BNayC5xyaAzzp1xD7L9m2aEexDr5GAAAAAElFTkSuQmCC"/>
 								</a> -->					
@@ -83,21 +85,21 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
 										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann,experimentaria boliviana (1997 - 2005)</h4>
-										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>entrevista-a-erika-brockmann/">LEE MÁS  →</a>
 									</div>
 									<div class="img-center-content">
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/aida-garcia-naranjo.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
 										<h4 class="text-gray-darker pt-7 bold">Aída García Naranjo ha sido ministra de la Mujer y Desarrollo Social del Perú (2011)</h4>
-										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>aida-garcia-naranjo-morales/">LEE MÁS  →</a>
 									</div>		
 									<div class="img-center-content">
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/Lilian-Soto1.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
 										<h4 class="text-gray-darker pt-7 bold">Liliana Soto, presidenta del movimiento socialista y feminista Kuña Pyrenda (Paraguay).</h4>
-										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>lilian-soto/">LEE MÁS  →</a>
 									</div>																	
 								</div>
 			 		</div>			 		
@@ -109,18 +111,18 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 					<div class="col-xs-12 col-sm-6 col-md-10 pl-0 ph-0-xs bg-img-block minh-140" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/twitter-phone.jpg)"></div>
 			 					<div class="col-xs-12 col-sm-6 col-md-10 ph-0 pl-0-xs">
 			 						<h5 class="mv-7 text-gray-darker bold">Esos tuits que están demás</h5>
-			 						<p class="rem-08 pv-7">¿Tiene derecho una política o político en el poder, que al cabo es una figura pública, a no ser recordado por errores fruto de la frivolidad o la prisa?</p>
-			 						<input type="submit" value="INGRESA" name="subscribe" id="mc-embedded-subscribe" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7" style="width:50%">
+			 						<p class="rem-08 pv-7">¿Tiene derecho una política o político en el poder, que al cabo es una figura pública, a no ser recordado por errores fruto de la frivolidad o la prisa? </p>
+			 						<a href="<?php echo home_url('/'); ?>esos-tuits-que-estan-de-mas/" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7">INGRESA</a>
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-10 pl-0 ph-0-xs bg-img-block minh-140 mt-21" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/mujer-exitosa.jpg)"></div>
 			 					<div class="col-xs-12 col-sm-6 col-md-10 ph-0 pl-0-xs">
 			 						<h5 class="mv-7 text-gray-darker bold">Cuando la mujer elije y el hombre la sigue</h5>			 					
 			 						<p class="rem-08 pv-7">El Hombre concreto que tú conoces, en tu medio,¿renunciaría a su carrera por seguir a su paareja?
 									 </p>
-			 						<input type="submit" value="INGRESA" name="subscribe" id="mc-embedded-subscribe" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7" style="width:50%">									 
+			 						<a href="<?php echo home_url('/'); ?>cuando-la-mujer-elige-y-el-hombre-la-sigue/" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7">INGRESA</a>								 
 			 					</div>
 			 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-12 col-sm-12">
-			 						<a class="" href=""><small class="text-gray-light pt-7">Todos los debates →</small></a>
+			 						<a class="" href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/"><small class="text-gray-light pt-7">Todos los debates →</small></a>
 			 					</div>
 			 					
 								<!-- 			 					<div class="col-xs-12 col-sm-6 col-md-4 pl-0 ph-0-xs">
@@ -140,13 +142,13 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				<div class="img-center-content ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/UIM.jpg); background-size: 64% !important;" >
 				 				</div>
 				 				<div class="col-sm-12 col-xs-12  ph-0 pt-7 pb-21">
-				 					<p class="text-gray-dark h3">III Cumbre Iberoamericana de Agendas Locales de Género Mujer y Ciudad-Unión Iberoamericana de Municipalistas (UIM)</p>
+				 					<p class="text-gray-dark h3">III Cumbre Iberoamericana de Agendas Locales de Género Mujer y Ciudad- Unión Iberoamericana de Municipalistas (UIM)</p>
 				 					<div class="col-sm-12 col-xs-12 ph-0">
-				 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>rocio-silva-santisteban/">INGRESA →</a>
+				 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>iii-cumbre-iberoamericana-de-agendas-locales-de-genero-mujer-y-ciudad/">INGRESA →</a>
 				 					</div>
 				 				</div>
 			 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-12 col-sm-12">
-			 						<a href=""><small class="text-gray-light pt-7">Todos los eventos →</small></a>
+			 						<a href="<?php echo home_url('/'); ?>eventos/"><small class="text-gray-light pt-7">Todos los eventos →</small></a>
 			 					</div>				 				
 				 		</div>
 					</div> 			 		
@@ -160,21 +162,21 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
 										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann,experimentaria boliviana (1997 - 2005)</h4>
-										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>entrevista-a-erika-brockmann/">LEE MÁS  →</a>
 									</div>
 									<div class="img-center-content">
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/aida-garcia-naranjo.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
 										<h4 class="text-gray-darker pt-7 bold">Aída García Naranjo ha sido ministra de la Mujer y Desarrollo Social del Perú (2011)</h4>
-										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>aida-garcia-naranjo-morales/">LEE MÁS  →</a>
 									</div>		
 									<div class="img-center-content">
 										<img src="<?php echo content_url('/'); ?>uploads/2016/01/Lilian-Soto1.jpg" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
 										<h4 class="text-gray-darker pt-7 bold">Liliana Soto, presidenta del movimiento socialista y feminista Kuña Pyrenda (Paraguay).</h4>
-										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>mirna-cunningham/">LEE MÁS  →</a>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>lilian-soto/">LEE MÁS  →</a>
 									</div>																	
 								</div>
 			 		</div>
