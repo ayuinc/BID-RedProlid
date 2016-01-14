@@ -148,7 +148,10 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
 										<h4 class="text-gray-darker pt-7 bold">Liliana Soto, presidenta del movimiento socialista y feminista Kuña Pyrenda (Paraguay).</h4>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>lilian-soto/">LEE MÁS  →</a>
-									</div>																	
+									</div>
+				 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-12 col-sm-12">
+				 						<a href="<?php echo home_url('/'); ?>articulos/"><small class="text-gray-light pt-7">Todos los artículos →</small></a>
+				 					</div>																										
 								</div>
 			 		</div>
 		 	</div>
