@@ -35,8 +35,8 @@
       <div class="row">
         <div class="header-left left">
           <input type="checkbox" id="op"></input>
-          <div class="lower mt-42 col-sm-4 col-xs-4 col-md-4 col-lg-4 text-center pl-0-md">
-           <label id="in" for="op" class="pr-70-md"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAQ0lEQVQ4T82SwREAIAjD6ITFEVzRBfFwhTyQf9MjVwU8wXzI9iEQZWbNAkh7Z9vBJpAPHNhe6AUSfhLnd4CnjB1QwAWERRF1hcszqQAAAABJRU5ErkJggg=="/> MENU</label>
+          <div class="lower mt-42 col-sm-4 col-xs-4 col-md-4 col-lg-4 text-left pl-63-md">
+           <label id="in" for="op" class="pl-35-md"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAQ0lEQVQ4T82SwREAIAjD6ITFEVzRBfFwhTyQf9MjVwU8wXzI9iEQZWbNAkh7Z9vBJpAPHNhe6AUSfhLnd4CnjB1QwAWERRF1hcszqQAAAABJRU5ErkJggg=="/> MENU</label>
 
           </div>
           <div class="overlay overlay-hugeinc bg-gray-lighter">
