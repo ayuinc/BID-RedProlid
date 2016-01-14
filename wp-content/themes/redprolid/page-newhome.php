@@ -10,9 +10,9 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					<div class="col-md-6 col-sm-6 minh-210 bg-white pt-70-md mt-21-md ph-63 hidden-xs hidden-sm">
 						<div class="text-left bg-white text-header-first">
 							<div class="container pv-35-xs">
-								<small class="text-gray-dark h6 bold mt-42">PUNTOS DE VISTA</small>
+								<small class="text-gray h6 mt-42 mb-21">PUNTOS DE VISTA</small>
 								<h1 class="h2 text-gray-dark mv-0">Alicia del Águila</h1>
-								<h3>Perú: lecciones de un retroceso</h3>
+								<h3 class="text-gray-dark medium">Perú: lecciones de un retroceso</h3>
 								<p class="text-gray-dark medium f-15 pb-7">Doctora en Ciencias Sociales por la Universidad Nacional Mayor de San Marcos (Lima), magister en Ciencias Sociales por FLACSO (México) y bachiller en Sociología por Pontificia Universidad Católica del Perú.</p>
 								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>alicia-del-aguila/">LEE EL ARTÍCULO →</a>
 								<!-- 					<a class="mt-35" href="#middle-content">
