@@ -37,7 +37,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							<div class="container">
 								<div class="row">
-									<div class="col-md-3 col-sm-12 col-xs-12 pl-0 text-center text-center-xs">
+									<div class="col-md-4 col-sm-12 col-xs-12 pl-0 text-center text-center-xs">
 										<p class="bold text-white text-left pt-7">Forma parte de la Red PROLID</p>					
 									</div>
 									<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
@@ -50,7 +50,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<input placeholder="Correo Electrónico" name="EMAIL" class=" border-radius col-sm-12 col-xs-12 p-7 required email" type="text" id="mce-EMAIL" style="height:42px">						
 									</div>
 									<div style="position: absolute; left: -5000px;"><input type="text" name="b_242e37fe564525e1aad9cfc03_eb13f7ce93" tabindex="-1" value=""></div>
-									<div class="col-md-3 col-sm-12 col-xs-12 pv-14-xs text-center-xs text-left bold">
+									<div class="col-md-2 col-sm-12 col-xs-12 pv-14-xs text-center-xs text-left bold">
 										<input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-white btn-outline text-white border-radius bold" style="width:100%">					
 									</div>
 								</div>
