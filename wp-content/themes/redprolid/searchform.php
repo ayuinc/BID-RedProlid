@@ -4,5 +4,5 @@
 	  <span class="input-group-btn" style="display:block;right: -2px;">
 	    <button type="submit" id="searchsubmit" class="btn btn-primary text-left " style="width: 106px !important ; background-position-x: 58px;"><p class="h3 light text-white mv-0">Buscar</p></button>
 	  </span>
-	</div><!-- /input-group -->
+	</div>
 </form>
