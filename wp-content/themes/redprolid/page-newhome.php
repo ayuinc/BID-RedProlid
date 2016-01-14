@@ -9,7 +9,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				<div class="row bg-white">
 					<div class="col-md-6 col-sm-6 minh-210 bg-white pt-70-md mt-21-md ph-63 hidden-xs hidden-sm">
 						<div class="text-left bg-white text-header-first">
-							<div class="container pl-70-md pv-35-xs">
+							<div class="container pl-35-md pv-35-xs">
 								<small class="text-gray h6 mt-42">PUNTOS DE VISTA</small>
 								<h1 class="h2 text-gray-dark mv-0 pt-21">Alicia del Águila</h1>
 								<h3 class="text-gray-dark medium">Perú: lecciones de un retroceso</h3>
@@ -33,7 +33,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							<div class="container">
 								<div class="row">
-									<div class="col-md-3 col-sm-12 col-xs-12 pl-56-md  text-center-xs">
+									<div class="col-md-3 col-sm-12 col-xs-12 pl-21-md  text-center-xs">
 										<p class="bold text-white text-left pt-7">Súmate a Red PROLID</p>					
 									</div>
 									<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
@@ -85,7 +85,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>																	
 								</div>
 			 		</div>			 		
-			 		<div class="col-md-4 col-sm-6 col-xs-12 pt-70-md ph-63-md ph-0-xs pv-70-xs">
+			 		<div class="col-md-4 col-sm-6 col-xs-12 pt-70-md pl-35-md pr-70-md ph-0-xs pv-70-xs">
 			 			<div class="col-md-12 col-sm-6 col-xs-12 ph-0-xs ph-0-md ">
 					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
 					 		 	<h5 class="text-gray-dark color-g inline-p bold">DEBATES EN ACCIÓN</h5>		
@@ -123,7 +123,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 					</div>				 				
 				 		</div>
 					</div> 			 		
-			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs bg-white pt-70-md pr-0-md pl-21-md hidden-xs hidden-sm">
+			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs bg-white pt-70-md pr-0-md ph-70-md hidden-xs hidden-sm">
 								<div class="col-md-9 col-sm-12 col-xs-12 text-left  ph-0-md">
 									<div class="small-icon text-left pb-14">
 										<h5 class="text-gray color-g inline-p bold">CAMPEON@S</h5>							
