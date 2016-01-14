@@ -34,7 +34,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<div class="container">
 								<div class="row">
 									<div class="col-md-4 col-sm-12 col-xs-12 pl-0  text-center-xs">
-										<p class="bold text-white text-left pt-7">Forma parte de la Red PROLID</p>					
+										<p class="bold text-white text-left pt-7">Súmate a Red PROLID</p>					
 									</div>
 									<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
 										<input placeholder="Nombre" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-FNAME" name="FNAME" style="height:42px">			
@@ -85,7 +85,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>																	
 								</div>
 			 		</div>			 		
-			 		<div class="col-md-4 col-sm-6 col-xs-12 pt-70-md ph-0-xs pv-70-xs">
+			 		<div class="col-md-4 col-sm-6 col-xs-12 pt-70-md ph-63-md ph-0-xs pv-70-xs">
 			 			<div class="col-md-10 col-sm-6 col-xs-12 ph-0-xs ph-0-md ">
 					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
 					 		 	<h5 class="text-gray-dark color-g inline-p bold">DEBATES EN ACCIÓN</h5>		
@@ -98,7 +98,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-10 pl-0 ph-0-xs bg-img-block minh-140 mt-21" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/mujer-exitosa.jpg)"></div>
 			 					<div class="col-xs-12 col-sm-6 col-md-10 ph-0 pl-0-xs">
-			 						<h5 class="mv-7 text-gray-darker bold">Cuando la mujer elije y el hombre la sigue</h5>			 					
+			 						<h5 class="mv-7 text-gray-darker bold">Cuando la mujer elige y el hombre la sigue</h5>			 					
 			 						<p class="rem-08 pv-7">El hombre concreto que tú conoces, en tu medio, ¿renunciaría a su carrera por seguir a su pareja?</p>
 			 						<a href="<?php echo home_url('/'); ?>cuando-la-mujer-elige-y-el-hombre-la-sigue/" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7">INGRESA</a>								 
 			 					</div>
