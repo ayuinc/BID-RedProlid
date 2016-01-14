@@ -22,13 +22,12 @@
     <script src="<?php echo content_url('/'); ?>themes/redprolid/js/app/vendor/placeholders.min.js"></script>
     <![endif]-->
     <!--CRAZZYEGG-->
-    <!--registrate hoy-->
-    <script type="text/javascript">
-    setTimeout(function(){var a=document.createElement("script");
-    var b=document.getElementsByTagName("script")[0];
-    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0039/9228.js?"+Math.floor(new Date().getTime()/3600000);
-    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-    </script>
+		<script type="text/javascript">
+		setTimeout(function(){var a=document.createElement("script");
+		var b=document.getElementsByTagName("script")[0];
+		a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0044/7636.js?"+Math.floor(new Date().getTime()/3600000);
+		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+		</script> 
   </head>
   <body>
    <header class="header-content bg-gray-lighter minh-70">
@@ -45,6 +44,7 @@
              <label class="cerrar text-gray" id="out" for="op">CERRAR <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzUlEQVQ4T42TYRXCMAyErw5wAhLAQSQwBSAFFICEOAAJ4AQJvNtL9kqbdOxnu/uSXi4FAETkCOAE4KCqH55ln4hsADwAXFX1Xkx8M8FrBKnEO/t/IoCibVUxhARiSt4EsKXnCJKJAeyLeZBCrDO+2dueK1NMv2bACoTXoZgXC2AAqQeyVPbDH8AKpBN3HVSA9s28CqcTPSESe8cdpDUxcpviNCf1GMNRWek0Jx6kdM5rOYmiHLqdJbZdplA8CNvkHnCdzx7PP9aZnly4zl8NTn4w5oPSqAAAAABJRU5ErkJggg=="/></label>
              <nav>
               <ul class="text-primary">
+               <li><a href="<?php echo home_url('/'); ?>registrate-hoy/">Inicio</a></li>
                <li><a href="<?php echo home_url('/'); ?>quienes-somos">Acerca de Red Prolid</a></li>
                <li><a href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo">Desarrolla tu liderazgo</a></li>
                <li><a href="<?php echo home_url('/'); ?>enterate">Entérate</a></li>
@@ -71,5 +71,5 @@
           <a  href="https://twitter.com/RedPROLID" target="_blank"><img class="mt-21-sm mt-21-md mt-21-lg mt-14-xs icon icons8-LinkedIn icon-linkedin" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABBUlEQVRIS+2W4RHBQBCFv1RCB6iAFnRABzpAB1SATuiACtCBDphncmaTuczJTuRP7Ewmc8nevbzd9+6S0VJkLeHQDaAhsAN098QZmAO6fyJWOiX0y4k1EPWBV2CUAnoCJ2BSY3GbegTGUOx/jJEFmgFLYA3svwR2Ad2AXk2GLiAx0iU2P2WUqpYaL9YPk+hiFCYFcYTxARgYC+j5NAdsFCjGVN5ReRsFuhs28p0EswUWTQOpdBKJoqq8BeukfFS1iHy1+gOVFWS3oE3edDVcjQ5ja+Byjkt1KcPG3n8NFORaOE9qIGq3sPJ/T42pTokqjZzviUsu/eTB51k8OacbPyfJMngSXv+3bBvzLBPkAAAAAElFTkSuQmCC" width="26" height="26"></a>
         </div>
       </div>
-     </div>
+     </div>     
    </header>

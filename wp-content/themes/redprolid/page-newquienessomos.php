@@ -111,7 +111,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 		 			<div class="text-description-center-end">
 	<!-- 	 				<h2 class="text-gray-darker bold">Lo último en la Red PROLID</h2> -->
 		 				<h2 class="text-gray-darker bold text-center">¿Como nace Red Prolid?</h2>
-		 				<p class="pv-21  ph-56-md mb-0 gray-darker text-center">La Red PROLID forma parte de los esfuerzos del Banco Interamercano de Desarrollo (BID) para promover el liderago y empoderamiento de las mujeres en la región. Desde 1998, el BID viene promoviendo la participación política y cívica de las mjueres en Américaa Latina y el Caribe a través del Programa de Apoyo al Liderazgo y Representación de la Mujer (PROLID)</p>
+		 				<p class="pv-21  ph-56-md mb-0 gray-darker text-center">La Red PROLID entra dentro de los esfuerzos del Banco Interamercano de Desarrollo (BID) para promover el liderago y empoderamiento de las mujeres en la región. Desde 1998, el BID viene promoviendo la participación política y cívica de las mjueres en Américaa Latina y el Caribe a través del Programa de Apoyo al Liderazgo y Representación de la Mujer (PROLID)</p>
 		 			</div>			
 	<!-- 				<div class="row">
 						<div class="col-sm-6 col-xs-12 text-left ph-14">
