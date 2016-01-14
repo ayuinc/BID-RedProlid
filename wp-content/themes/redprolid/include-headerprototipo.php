@@ -42,7 +42,7 @@
           </div>
           <div class="overlay overlay-hugeinc bg-gray-lighter">
           
-             <label class="cerrar text-gray" id="out" for="op">CERRAR<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzUlEQVQ4T42TYRXCMAyErw5wAhLAQSQwBSAFFICEOAAJ4AQJvNtL9kqbdOxnu/uSXi4FAETkCOAE4KCqH55ln4hsADwAXFX1Xkx8M8FrBKnEO/t/IoCibVUxhARiSt4EsKXnCJKJAeyLeZBCrDO+2dueK1NMv2bACoTXoZgXC2AAqQeyVPbDH8AKpBN3HVSA9s28CqcTPSESe8cdpDUxcpviNCf1GMNRWek0Jx6kdM5rOYmiHLqdJbZdplA8CNvkHnCdzx7PP9aZnly4zl8NTn4w5oPSqAAAAABJRU5ErkJggg=="/></label>
+             <label class="cerrar text-gray" id="out" for="op">CERRAR <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzUlEQVQ4T42TYRXCMAyErw5wAhLAQSQwBSAFFICEOAAJ4AQJvNtL9kqbdOxnu/uSXi4FAETkCOAE4KCqH55ln4hsADwAXFX1Xkx8M8FrBKnEO/t/IoCibVUxhARiSt4EsKXnCJKJAeyLeZBCrDO+2dueK1NMv2bACoTXoZgXC2AAqQeyVPbDH8AKpBN3HVSA9s28CqcTPSESe8cdpDUxcpviNCf1GMNRWek0Jx6kdM5rOYmiHLqdJbZdplA8CNvkHnCdzx7PP9aZnly4zl8NTn4w5oPSqAAAAABJRU5ErkJggg=="/></label>
              <nav>
               <ul class="text-primary">
                <li><a href="<?php echo home_url('/'); ?>quienes-somos">Acerca de Red Prolid</a></li>
@@ -53,7 +53,7 @@
                <li class="text-gray rem-12 pt-7">Forma parte de la Red PROLID</li>
                <li><input placeholder="Nombre" class="border-radius p-7 w-100" type="text" id="mce-FNAME" name="FNAME" style="height:42px"></li>
                <li class="mv-14"><input placeholder="Apellido" class="border-radius p-7 w-100" type="text" id="mce-LNAME" name="LNAME" style="height:42px"></li>
-               <li class="mv-14"><input placeholder="Correo Electrónico" name="EMAIL" class=" border-radius required email w-100" type="text" id="mce-EMAIL" style="height:42px"></li>
+               <li class="mv-14"><input placeholder="Correo electrónico" name="EMAIL" class=" border-radius required email w-100" type="text" id="mce-EMAIL" style="height:42px"></li>
                <li class="mv-14"><input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-primary border-radius bold" style="width:100%"></li>
               </ul>
              </nav>
