@@ -31,7 +31,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				</div>
 				<div class="registrer-bar minh-70 pt-14 ph-70-md bg-pink-redprolid text-center flex-res flex-bar">
 						<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							<div class="container">
+							<div class="container-search-bar">
 								<div class="row">
 									<div class="col-md-3 col-sm-12 col-xs-12 pl-21-md  text-center-xs">
 										<p class="bold text-white text-left pt-7">Súmate a Red PROLID</p>					
