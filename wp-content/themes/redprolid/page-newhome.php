@@ -46,7 +46,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<input placeholder="Correo electrónico" name="EMAIL" class=" border-radius col-sm-12 col-xs-12 p-7 required email" type="text" id="mce-EMAIL" style="height:42px">						
 									</div>
 									<div style="position: absolute; left: -5000px;"><input type="text" name="b_242e37fe564525e1aad9cfc03_eb13f7ce93" tabindex="-1" value=""></div>
-									<div class="col-md-3 col-sm-12 col-xs-12 pr-35-md pv-14-xs text-center-xs text-left bold">
+									<div class="col-md-3 col-sm-12 col-xs-12 pr-56-md pv-14-xs text-center-xs text-left bold">
 										<input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-white btn-outline text-white border-radius bold" style="width:100%">					
 									</div>
 								</div>
