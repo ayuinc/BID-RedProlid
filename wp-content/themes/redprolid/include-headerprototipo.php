@@ -35,7 +35,7 @@
       <div class="row">
         <div class="header-left left">
           <input type="checkbox" id="op"></input>
-          <div class="lower mt-42 col-sm-4 col-xs-4 col-md-4 col-lg-4 text-left pl-63-md">
+          <div class="lower mt-42 col-sm-4 col-xs-4 col-md-4 col-lg-4 text-left pl-49-md">
            <label id="in" for="op" class="pl-35-md"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAQ0lEQVQ4T82SwREAIAjD6ITFEVzRBfFwhTyQf9MjVwU8wXzI9iEQZWbNAkh7Z9vBJpAPHNhe6AUSfhLnd4CnjB1QwAWERRF1hcszqQAAAABJRU5ErkJggg=="/> MENU</label>
 
           </div>
@@ -68,7 +68,7 @@
           <!-- Twitter  icon by Icons8 -->
           <a href="https://twitter.com/RedPROLID" target="_blank"><img class="mt-21-sm mt-21-md mt-21-lg mt-14-xs icon icons8-Twitter icon-twitter" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABTklEQVRIS+2W0U0DMRAFJxUAFUAHoQQ6ACoAOkgHQAVAB1ABUAHQQTqAEqADNJKNfMne2ebjvmLpdNF5veP3vGtlwUxjMROHHejfTkfW7QPfDRmPgWvAt/EvwEP6fQK8lzkikAt8HidgJnoL5r/St1dgVQO5u70U6A6jYcLDkbms7qlUFSlaA8uURPlXQN6pn4+Az4q1rhk4EoFukvdlLoEuFHgAPE+APgCtHYwI5OGaNKtqqItBSDOotK4XYvwtoCtVRZF1PcDzVLVVkAGW92lP9hT7k4plqw/H7jory2Y8A2zg1mE7DPonL5wC1Up4E64aC6lshb+Yqdv7ErhPzduiKDybmqI8r20C7yqkUctaQNpwkUBT57R1C0Sb2rTOhNoloDZsTNWGZ9LSR8aoxorzKhFuFdrIufQt/yZAi3U1RV3zu/8MXXaVwbNZ9wvt1TYbd/v+AQAAAABJRU5ErkJggg==" width="26" height="26">
           <!-- LinkedIn icon by Icons8 --></a>
-          <a  href="https://twitter.com/RedPROLID" target="_blank"><img class="mt-21-sm mt-21-md mr-21-md mt-21-lg mt-14-xs icon icons8-LinkedIn icon-linkedin" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABBUlEQVRIS+2W4RHBQBCFv1RCB6iAFnRABzpAB1SATuiACtCBDphncmaTuczJTuRP7Ewmc8nevbzd9+6S0VJkLeHQDaAhsAN098QZmAO6fyJWOiX0y4k1EPWBV2CUAnoCJ2BSY3GbegTGUOx/jJEFmgFLYA3svwR2Ad2AXk2GLiAx0iU2P2WUqpYaL9YPk+hiFCYFcYTxARgYC+j5NAdsFCjGVN5ReRsFuhs28p0EswUWTQOpdBKJoqq8BeukfFS1iHy1+gOVFWS3oE3edDVcjQ5ja+Byjkt1KcPG3n8NFORaOE9qIGq3sPJ/T42pTokqjZzviUsu/eTB51k8OacbPyfJMngSXv+3bBvzLBPkAAAAAElFTkSuQmCC" width="26" height="26"></a>
+          <a  href="https://twitter.com/RedPROLID" target="_blank"><img class="mt-21-sm mt-21-md mr-14-md mt-21-lg mt-14-xs icon icons8-LinkedIn icon-linkedin" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABBUlEQVRIS+2W4RHBQBCFv1RCB6iAFnRABzpAB1SATuiACtCBDphncmaTuczJTuRP7Ewmc8nevbzd9+6S0VJkLeHQDaAhsAN098QZmAO6fyJWOiX0y4k1EPWBV2CUAnoCJ2BSY3GbegTGUOx/jJEFmgFLYA3svwR2Ad2AXk2GLiAx0iU2P2WUqpYaL9YPk+hiFCYFcYTxARgYC+j5NAdsFCjGVN5ReRsFuhs28p0EswUWTQOpdBKJoqq8BeukfFS1iHy1+gOVFWS3oE3edDVcjQ5ja+Byjkt1KcPG3n8NFORaOE9qIGq3sPJ/T42pTokqjZzviUsu/eTB51k8OacbPyfJMngSXv+3bBvzLBPkAAAAAElFTkSuQmCC" width="26" height="26"></a>
         </div>
       </div>
      </div>     

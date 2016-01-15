@@ -7,7 +7,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	<div class="site-content bg-gray-lighter">
 		<div class="pt-42-xs " >
 				<div class="row bg-white">
-					<div class="col-md-6 col-sm-6 minh-210 bg-white pt-70-md mt-21-md ph-63 hidden-xs hidden-sm">
+					<div class="col-md-6 col-sm-6 minh-210 bg-white pt-70-md mt-21-md ph-49-md hidden-xs hidden-sm">
 						<div class="text-left bg-white text-header-first">
 							<div class="container pl-35-md pv-35-xs">
 								<small class="text-gray h6 mt-42">PUNTOS DE VISTA</small>
@@ -29,7 +29,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							</div>
 					</div>
 				</div>
-				<div class="registrer-bar minh-70 pt-14 ph-70-md bg-pink-redprolid text-center flex-res flex-bar">
+				<div class="registrer-bar minh-70 pt-14 ph-63-md bg-pink-redprolid text-center flex-res flex-bar">
 						<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							<div class="container-search-bar">
 								<div class="row">
