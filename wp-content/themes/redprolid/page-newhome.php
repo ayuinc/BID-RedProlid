@@ -54,6 +54,13 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						</form>
 				</div>
 		</div>
+		<section class="content-info-mujeres">
+			 <div class="container-md bg-white">
+			 		<h5 class="text-gray-darker color-g bold">CONECTAMOS A MUJERES LÍDERES DEL SECTOR PÚBLICO LATINOAMERICANO</h5>
+			 		<p class="rem-09 "> Somos una iniciativa del Banco Interamericano de Desarrollo (BID)  para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan —o aspiran a ocupar— posiciones de liderazgo en la administración pública en América Latina. </p>	
+				 		<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>aida-garcia-naranjo-morales/">DESCUBRE MÁS  →</a>
+			 </div>
+		</section>
 		<section id="middle-content" class="middle-content bg-gray-lighter">
 		 	<div class="container-fluid ml-56-md mr-0">
 				<div class="row">
@@ -113,7 +120,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				<div class="small-icon text-left pv-14">
 				 					<h3 class="text-gray-darker color-g inline-p bold">EVENTO</h3>							
 				 				</div>
-				 				<div class="video-center-content col-md-12 col-xs-12 ph-0 ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/ides.png); background-size: 64% !important;" >
+				 				<div class="video-center-content col-md-12 col-xs-12 ph-0 ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/indes.png); background-size: cover !important;" >
 				 				</div>
 				 				<div class="col-sm-12 col-xs-12  ph-0 pt-7 pb-21">
 				 					<p class="text-gray-dark h3">Atención al cierre de psotulación para el curso: Cambio organizacional para una gestión efectiva</p>
