@@ -102,14 +102,14 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					 		 </div>	
 			 					<div class="col-xs-12 col-sm-6 col-md-11 pl-0 ph-0-xs bg-img-block minh-140" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/twitter-phone.jpg)"></div>
 			 					<div class="col-xs-12 col-sm-6 col-md-11 ph-0 pl-0-xs">
-			 						<h5 class="mv-7 text-gray-darker bold">En las redes sociales, como en una ventanilla </h5>
-			 						<p class="rem-10 pv-7">¿Qué clase de mensajes transmites desde tu cuentas institucionales?¿Qué clase de información recibes de la ciudadanía? </p>
+			 						<h5 class="mb-0 pt-7 text-gray-darker bold">En las redes sociales, como en una ventanilla </h5>
+			 						<p class="rem-10 mb-0">¿Qué clase de mensajes transmites desde tu cuentas institucionales?¿Qué clase de información recibes de la ciudadanía? </p>
 			 						<a href="<?php echo home_url('/'); ?>esos-tuits-que-estan-de-mas/" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7">INGRESA</a>
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-11 pl-0 ph-0-xs bg-img-block minh-140 mt-42" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/mujer-exitosa.jpg)"></div>
 			 					<div class="col-xs-12 col-sm-6 col-md-11 ph-0 pl-0-xs">
-			 						<h5 class="mv-7 text-gray-darker bold">Ahora mandan ellas</h5>			 					
-			 						<p class="rem-10 pv-7">¿Sabías que en América Latina hay un 25% de asientos municipales ocupados por mujeres, pero la cifra baja a la mitad cuando hablamos de alcaldías?¿En qué puede mirarse América Latina en el espejo español?¿Nos faltan leyes para lograrlo, nos faltan voluntad política masculina, nos faltan partidos políticos convencidos?</p>
+			 						<h5 class="mb-0 pt-7 text-gray-darker bold">Ahora mandan ellas</h5>			 					
+			 						<p class="rem-10 mb-0">¿Sabías que en América Latina hay un 25% de asientos municipales ocupados por mujeres, pero la cifra baja a la mitad cuando hablamos de alcaldías?¿En qué puede mirarse América Latina en el espejo español?¿Nos faltan leyes para lograrlo, nos faltan voluntad política masculina, nos faltan partidos políticos convencidos?</p>
 			 						<a href="<?php echo home_url('/'); ?>cuando-la-mujer-elige-y-el-hombre-la-sigue/" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7">INGRESA</a>								 
 			 					</div>
 			 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-11 col-sm-12">
