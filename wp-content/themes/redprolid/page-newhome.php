@@ -55,7 +55,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				</div>
 		</div>
 		<section class="content-info-mujeres">
-			 <div class="container-md bg-white">
+			 <div class="container-sm bg-white">
 			 		<h5 class="text-gray-darker color-g bold">CONECTAMOS A MUJERES LÍDERES DEL SECTOR PÚBLICO LATINOAMERICANO</h5>
 			 		<p class="rem-09 "> Somos una iniciativa del Banco Interamericano de Desarrollo (BID)  para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan —o aspiran a ocupar— posiciones de liderazgo en la administración pública en América Latina. </p>	
 				 		<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>aida-garcia-naranjo-morales/">DESCUBRE MÁS  →</a>
