@@ -105,18 +105,20 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 			<div class="col-md-12 col-sm-6 col-xs-12 ph-0-xs ph-0-md ">
 					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
 					 		 	<h3 class="text-gray-darker color-g inline-p bold">DEBATES EN ACCIÓN</h3>		
-					 		 </div>	
+					 		 </div>
+					 		 	<a href="<?php echo home_url('/'); ?>en-las-redes-sociales-como-en-una-ventanilla/">	
 			 					<div class="col-xs-12 col-sm-6 col-md-11 pl-0 ph-0-xs bg-img-block minh-140" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/twitter-phone.jpg)"></div>
+					 		 	</a>
 			 					<div class="col-xs-12 col-sm-6 col-md-11 ph-0 pl-0-xs">
 			 						<h5 class="mb-0 pt-7 text-gray-darker bold">En las redes sociales, como en una ventanilla </h5>
 			 						<p class="rem-10 mb-0 pv-7">¿Qué clase de mensajes transmites desde tu cuentas institucionales?¿Qué clase de información recibes de la ciudadanía? </p>
-			 						<a href="<?php echo home_url('/'); ?>esos-tuits-que-estan-de-mas/" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7">INGRESA</a>
+			 						<a href="<?php echo home_url('/'); ?>en-las-redes-sociales-como-en-una-ventanilla/" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7">INGRESA</a>
 			 					</div>
-			 					<div class="col-xs-12 col-sm-6 col-md-11 pl-0 ph-0-xs bg-img-block minh-140 mt-42" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/mujer-exitosa.jpg)"></div>
+			 					<a href="<?php echo home_url('/'); ?>ahora-mandan-ellas-2/"><div class="col-xs-12 col-sm-6 col-md-11 pl-0 ph-0-xs bg-img-block minh-140 mt-42" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/mujer-exitosa.jpg)"></div></a>
 			 					<div class="col-xs-12 col-sm-6 col-md-11 ph-0 pl-0-xs">
 			 						<h5 class="mb-0 pt-7 text-gray-darker bold">Ahora mandan ellas</h5>			 					
 			 						<p class="rem-10 mb-0 pv-7">¿Sabías que en América Latina hay un 25% de asientos municipales ocupados por mujeres, pero la cifra baja a la mitad cuando hablamos de alcaldías?¿En qué puede mirarse América Latina en el espejo español?¿Nos faltan leyes para lograrlo, nos faltan voluntad política masculina, nos faltan partidos políticos convencidos?</p>
-			 						<a href="<?php echo home_url('/'); ?>cuando-la-mujer-elige-y-el-hombre-la-sigue/" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7">INGRESA</a>								 
+			 						<a href="<?php echo home_url('/'); ?>ahora-mandan-ellas-2/" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7">INGRESA</a>								 
 			 					</div>
 			 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-11 col-sm-12">
 			 						<a class="" href="<?php echo home_url('/'); ?>desarrolla-tu-liderazgo/"><small class="text-gray-light pt-7">Todos los debates →</small></a>
@@ -126,12 +128,12 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				<div class="small-icon text-left pv-14">
 				 					<h3 class="text-gray-darker color-g inline-p bold">EVENTO</h3>							
 				 				</div>
-				 				<div class="video-center-content col-md-12 col-xs-12 ph-0 ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/indes.png); background-size: cover !important;" >
+				 				<a href="<?php echo home_url('/'); ?>abierta-la-convocatoria-para-postular-al-curso-mejorando-la-implementacion-en-los-programas-publico/"><div class="video-center-content col-md-12 col-xs-12 ph-0 ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/indes.png); background-size: cover !important;" ></a>
 				 				</div>
 				 				<div class="col-sm-12 col-xs-12  ph-0 pt-7 pb-21">
 				 					<p class="text-gray-dark h3">Atención al cierre de psotulación para el curso: Cambio organizacional para una gestión efectiva</p>
 				 					<div class="col-sm-12 col-xs-12 ph-0">
-				 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>iii-cumbre-iberoamericana-de-agendas-locales-de-genero-mujer-y-ciudad/">INGRESA →</a>
+				 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>abierta-la-convocatoria-para-postular-al-curso-mejorando-la-implementacion-en-los-programas-publico/">INGRESA →</a>
 				 					</div>
 				 				</div>
 			 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-12 col-sm-12">
