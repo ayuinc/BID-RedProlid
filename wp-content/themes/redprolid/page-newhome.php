@@ -139,27 +139,27 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<h3 class="text-gray-darker color-g inline-p bold">CAMPEON@S</h3>							
 									</div>
 									<div class="video-center-content col-md-12 ph-0">
-										<img src="http://img.youtube.com/vi/aUbYK4pzXoo/sddefault.jpg" alt="" class="w-100">
+										<img src="http://img.youtube.com/vi/aUbYK4pzXoo/maxresdefault.jpg" alt="" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 mb-0 bold">Yokasta Guzmán</h4>
-										<p class="rem-10 pv-7">"La mujer se ha ido preparando...hay más mujeres con maestrías que hombres, hay más mujeres que están en la universidad que hombres..."</p>
+										<p class="rem-10 pv-7 mb-0">"La mujer se ha ido preparando...hay más mujeres con maestrías que hombres, hay más mujeres que están en la universidad que hombres..."</p>
 										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>entrevista-a-erika-brockmann/">LEE MÁS  →</a>
 									</div>
 									<div class="video-center-content col-md-12 ph-0">
-										<img src="http://img.youtube.com/vi/Ix6pfhqoJ0o/sddefault.jpg" alt="" class="w-100">
+										<img src="http://img.youtube.com/vi/Ix6pfhqoJ0o/maxresdefault.jpg" alt="" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 mb-0 bold">Isabel Saint Malo</h4>
-										<p class="rem-10 mb-7">"Lo fundamental de la equidad de género es reconocer que los hombres y las mujeres tenemos distintas cosas que aportar y eso justamente es lo que hace necesario y valioso la participación de las mujeres..."</p>
+										<p class="rem-10 pv-7 mb-0">"Lo fundamental de la equidad de género es reconocer que los hombres y las mujeres tenemos distintas cosas que aportar y eso justamente es lo que hace necesario y valioso la participación de las mujeres..."</p>
 										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>aida-garcia-naranjo-morales/">LEE MÁS  →</a>
 									</div>		
 									<div class="video-center-content col-md-12  ph-0">
-										<img src="http://img.youtube.com/vi/4HoI8imRidM/sddefault.jpg" alt="" class="w-100">
+										<img src="http://img.youtube.com/vi/4HoI8imRidM/maxresdefault.jpg" alt="" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 mb-0 bold">Carolina Trivelli</h4>
-										<p class="rem-10 pv-7">"Lo primero que les diría (a las mujeres)...olvídense de la culpa porque no hay culpa asociada al proceso de querer ser mejor, de querer ser exitosa, de querer llegar más adelante"</p>
+										<p class="rem-10 pv-7 mb-0">"Lo primero que les diría (a las mujeres)...olvídense de la culpa porque no hay culpa asociada al proceso de querer ser mejor, de querer ser exitosa, de querer llegar más adelante"</p>
 										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>lilian-soto/">LEE MÁS  →</a>
 									</div>
 				 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-12 col-sm-12">
