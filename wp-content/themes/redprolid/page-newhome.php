@@ -11,21 +11,21 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="text-left bg-white text-header-first">
 							<div class="container pl-35-md pv-35-xs">
 								<small class="text-gray h6 mt-42">PUNTOS DE VISTA</small>
-								<h1 class="h2 text-gray-dark mv-0 pt-21">Alicia del Águila</h1>
-								<h3 class="text-gray-dark medium">Perú: lecciones de un retroceso</h3>
-								<p class="text-gray-dark medium f-15 pb-7">Doctora en Ciencias Sociales por la Universidad Nacional Mayor de San Marcos (Lima), magister en Ciencias Sociales por FLACSO (México) y bachiller en Sociología por Pontificia Universidad Católica del Perú.</p>
-								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>alicia-del-aguila/">LEE EL ARTÍCULO →</a>			
+								<h1 class="h2 text-gray-dark mv-0 pt-21">Delia Ferreira</h1>
+								<h3 class="text-gray-dark medium">Cinco estrategias para financiar la carrera política de una mujer</h3>
+								<p class="text-gray-dark medium f-15 pb-7">Consultora internacional, especialista en partidos políticos, asuntos electorales, financiamiento de la política y género.</p>
+								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>delia-ferreira/">LEE EL ARTÍCULO →</a>			
 							</div>
 						</div>						
 					</div>
-					<div class="col-md-6 col-sm-6 img-header flex bg-img-block minh-350 hidden-xs hidden-sm" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/maxresdefault.jpg)"></div>
-					<div class="col-md-12 col-sm-12 col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/maxresdefault.jpg)">
+					<div class="col-md-6 col-sm-6 img-header flex bg-img-block minh-350 hidden-xs hidden-sm" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/img_2016_02.png)"></div>
+					<div class="col-md-12 col-sm-12 col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/img_2016_02.png)">
 							<div class="container pv-35-xs">
 								<small class="text-gray-lighter h6 bold mt-42">PUNTOS DE VISTA</small>
-								<h1 class="h2 text-gray-lighter mv-0">Alicia del Águila</h1>
-								<h3>Perú: lecciones de un retroceso</h3>
-								<p class="text-gray-lighter medium f-15 pb-7">Doctora en Ciencias Sociales por la Universidad Nacional Mayor de San Marcos (Lima), magister en Ciencias Sociales por FLACSO (México) y bachiller en Sociología por Pontificia Universidad Católica del Perú.</p>
-								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>alicia-del-aguila/">LEE EL ARTÍCULO →</a>				
+								<h1 class="h2 text-gray-lighter mv-0">Delia Ferreira</h1>
+								<h3>Cinco estrategias para financiar la carrera política de una mujer</h3>
+								<p class="text-gray-lighter medium f-15 pb-7">Consultora internacional, especialista en partidos políticos, asuntos electorales, financiamiento de la política y género.</p>
+								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>delia-ferreira/">LEE EL ARTÍCULO →</a>				
 							</div>
 					</div>
 				</div>
@@ -62,25 +62,28 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									<div class="small-icon text-left pb-14">
 										<h3 class="text-gray-darker color-g inline-p bold">CAMPEON@S</h3>							
 									</div>
-									<div class="img-center-content">
-										<img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.jpg" class="w-100">
+									<div class="video-center-content col-xs-12 ph-0">
+										<iframe height="200" src="https://www.youtube.com/embed/aUbYK4pzXoo" class="w-100" frameborder="0" allowfullscreen></iframe>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
-										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann, exparlamentaria boliviana (1997-2005)</h4>
+										<h4 class="text-gray-darker pt-7 medium">Yokasta Guzmán</h4>
+										<p class="rem-08 pv-7">"La mujer se ha ido preparando...hay más mujeres con maestrías que hombres, hay más mujeres que están en la universidad que hombres..."</p>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>entrevista-a-erika-brockmann/">LEE MÁS  →</a>
 									</div>
-									<div class="img-center-content">
-										<img src="<?php echo content_url('/'); ?>uploads/2016/01/aida-garcia-naranjo.jpg" class="w-100">
+									<div class="video-center-content col-xs-12 ph-0">
+										<iframe  height="200" src="https://www.youtube.com/embed/Ix6pfhqoJ0o" class="w-100" frameborder="0" allowfullscreen></iframe>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
-										<h4 class="text-gray-darker pt-7 bold">Aída García Naranjo ha sido ministra de la Mujer y Desarrollo Social del Perú (2011)</h4>
+										<h4 class="text-gray-darker pt-7 medium">Isabel Saint Malo</h4>
+										<p class="rem-08 pv-7">"Lo fundamental de la equidad de género es reconocer que los hombres y las mujeres tenemos distintas cosas que aportar y eso justamente es lo que hace necesario y valioso la participación de las mujeres..."</p>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>aida-garcia-naranjo-morales/">LEE MÁS  →</a>
 									</div>		
-									<div class="img-center-content">
-										<img src="<?php echo content_url('/'); ?>uploads/2016/01/Lilian-Soto1.jpg" class="w-100">
+									<div class="video-center-content col-xs-12 ph-0">
+										<iframe  height="200" src="https://www.youtube.com/embed/4HoI8imRidM" class="w-100" frameborder="0" allowfullscreen></iframe>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
-										<h4 class="text-gray-darker pt-7 bold">Liliana Soto, presidenta del movimiento socialista y feminista Kuña Pyrenda (Paraguay).</h4>
+										<h4 class="text-gray-darker pt-7 medium">Carolina Trivelli</h4>
+										<p class="rem-08 pv-7">"Lo primero que les diría (a las mujeres)...olvídense de la culpa porque no hay culpa asociada al proceso de querer ser mejor, de querer ser exitosa, de querer llegar más adelante"</p>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>lilian-soto/">LEE MÁS  →</a>
 									</div>																	
 								</div>
@@ -92,14 +95,14 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					 		 </div>	
 			 					<div class="col-xs-12 col-sm-6 col-md-11 pl-0 ph-0-xs bg-img-block minh-140" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/twitter-phone.jpg)"></div>
 			 					<div class="col-xs-12 col-sm-6 col-md-11 ph-0 pl-0-xs">
-			 						<h5 class="mv-7 text-gray-darker bold">Esos tuits que están demás</h5>
-			 						<p class="rem-08 pv-7">¿Tiene derecho una política o político en el poder, que al cabo es una figura pública, a no ser recordado por errores fruto de la frivolidad o la prisa? </p>
+			 						<h5 class="mv-7 text-gray-darker bold">En las redes sociales, como en una ventanilla </h5>
+			 						<p class="rem-08 pv-7">¿Qué clase de mensajes transmites desde tu cuentas institucionales?¿Qué clase de información recibes de la ciudadanía? </p>
 			 						<a href="<?php echo home_url('/'); ?>esos-tuits-que-estan-de-mas/" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7">INGRESA</a>
 			 					</div>
 			 					<div class="col-xs-12 col-sm-6 col-md-11 pl-0 ph-0-xs bg-img-block minh-140 mt-42" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/mujer-exitosa.jpg)"></div>
 			 					<div class="col-xs-12 col-sm-6 col-md-11 ph-0 pl-0-xs">
-			 						<h5 class="mv-7 text-gray-darker bold">Cuando la mujer elige y el hombre la sigue</h5>			 					
-			 						<p class="rem-08 pv-7">El hombre concreto que tú conoces, en tu medio, ¿renunciaría a su carrera por seguir a su pareja?</p>
+			 						<h5 class="mv-7 text-gray-darker bold">Ahora mandan ellas</h5>			 					
+			 						<p class="rem-08 pv-7">¿Sabías que en América Latina hay un 25% de asientos municipales ocupados por mujeres, pero la cifra baja a la mitad cuando hablamos de alcaldías?¿En qué puede mirarse América Latina en el espejo español?¿Nos faltan leyes para lograrlo, nos faltan voluntad política masculina, nos faltan partidos políticos convencidos?</p>
 			 						<a href="<?php echo home_url('/'); ?>cuando-la-mujer-elige-y-el-hombre-la-sigue/" class="btn btn-sm btn-white btn-primary text-white border-radius bold pv-7">INGRESA</a>								 
 			 					</div>
 			 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-11 col-sm-12">
@@ -110,10 +113,10 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				<div class="small-icon text-left pv-14">
 				 					<h3 class="text-gray-darker color-g inline-p bold">EVENTO</h3>							
 				 				</div>
-				 				<div class="img-center-content ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/UIM.jpg); background-size: 64% !important;" >
+				 				<div class="video-center-content col-md-12 col-xs-12 ph-0 ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/ides.png); background-size: 64% !important;" >
 				 				</div>
 				 				<div class="col-sm-12 col-xs-12  ph-0 pt-7 pb-21">
-				 					<p class="text-gray-dark h3">III Cumbre Iberoamericana de Agendas Locales de Género Mujer y Ciudad- Unión Iberoamericana de Municipalistas (UIM)</p>
+				 					<p class="text-gray-dark h3">Atención al cierre de psotulación para el curso: Cambio organizacional para una gestión efectiva</p>
 				 					<div class="col-sm-12 col-xs-12 ph-0">
 				 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>iii-cumbre-iberoamericana-de-agendas-locales-de-genero-mujer-y-ciudad/">INGRESA →</a>
 				 					</div>
@@ -128,25 +131,28 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									<div class="small-icon text-left pb-14">
 										<h3 class="text-gray-darker color-g inline-p bold">CAMPEON@S</h3>							
 									</div>
-									<div class="img-center-content">
-										<img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.jpg" class="w-100">
+									<div class="video-center-content col-md-12  ph-0">
+										<iframe height="400" src="https://www.youtube.com/embed/aUbYK4pzXoo" class="w-100" frameborder="0" allowfullscreen></iframe>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
-										<h4 class="text-gray-darker pt-7 bold">Erika Brockmann, exparlamentaria boliviana (1997-2005)</h4>
+										<h4 class="text-gray-darker pt-7 bold">Yokasta Guzmán</h4>
+										<p class="rem-08 pv-7">"La mujer se ha ido preparando...hay más mujeres con maestrías que hombres, hay más mujeres que están en la universidad que hombres..."</p>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>entrevista-a-erika-brockmann/">LEE MÁS  →</a>
 									</div>
-									<div class="img-center-content">
-										<img src="<?php echo content_url('/'); ?>uploads/2016/01/aida-garcia-naranjo.jpg" class="w-100">
+									<div class="video-center-content col-md-12  ph-0">
+										<iframe  height="400" src="https://www.youtube.com/embed/Ix6pfhqoJ0o" class="w-100" frameborder="0" allowfullscreen></iframe>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
-										<h4 class="text-gray-darker pt-7 bold">Aída García Naranjo ha sido ministra de la Mujer y Desarrollo Social del Perú (2011)</h4>
+										<h4 class="text-gray-darker pt-7 bold">Isabel Saint Malo</h4>
+										<p class="rem-08 pv-7">"Lo fundamental de la equidad de género es reconocer que los hombres y las mujeres tenemos distintas cosas que aportar y eso justamente es lo que hace necesario y valioso la participación de las mujeres..."</p>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>aida-garcia-naranjo-morales/">LEE MÁS  →</a>
 									</div>		
-									<div class="img-center-content">
-										<img src="<?php echo content_url('/'); ?>uploads/2016/01/Lilian-Soto1.jpg" class="w-100">
+									<div class="video-center-content col-md-12  ph-0">
+										<iframe  height="400" src="https://www.youtube.com/embed/4HoI8imRidM" class="w-100" frameborder="0" allowfullscreen></iframe>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
-										<h4 class="text-gray-darker pt-7 bold">Liliana Soto, presidenta del movimiento socialista y feminista Kuña Pyrenda (Paraguay).</h4>
+										<h4 class="text-gray-darker pt-7 bold">Carolina Trivelli</h4>
+										<p class="rem-08 pv-7">"Lo primero que les diría (a las mujeres)...olvídense de la culpa porque no hay culpa asociada al proceso de querer ser mejor, de querer ser exitosa, de querer llegar más adelante"</p>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>lilian-soto/">LEE MÁS  →</a>
 									</div>
 				 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-12 col-sm-12">
