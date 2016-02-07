@@ -139,7 +139,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<h3 class="text-gray-darker color-g inline-p bold">CAMPEON@S</h3>							
 									</div>
 									<div class="video-center-content col-md-12 ph-0">
-										<img src="http://img.youtube.com/vi/aUbYK4pzXoo/hqdefault.jpg" alt="" class="w-100">
+										<img src="http://img.youtube.com/vi/aUbYK4pzXoo/sddefault.jpg" alt="" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker mb-0 bold">Yokasta Guzmán</h4>
@@ -147,7 +147,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>entrevista-a-erika-brockmann/">LEE MÁS  →</a>
 									</div>
 									<div class="video-center-content col-md-12 ph-0">
-										<img src="http://img.youtube.com/vi/Ix6pfhqoJ0o/hqdefault.jpg" alt="" class="w-100">
+										<img src="http://img.youtube.com/vi/Ix6pfhqoJ0o/sddefault.jpg" alt="" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker mb-0 bold">Isabel Saint Malo</h4>
@@ -155,7 +155,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>aida-garcia-naranjo-morales/">LEE MÁS  →</a>
 									</div>		
 									<div class="video-center-content col-md-12  ph-0">
-										<img src="http://img.youtube.com/vi/4HoI8imRidM/hqdefault.jpg" alt="" class="w-100">
+										<img src="http://img.youtube.com/vi/4HoI8imRidM/sddefault.jpg" alt="" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker mb-0 bold">Carolina Trivelli</h4>
