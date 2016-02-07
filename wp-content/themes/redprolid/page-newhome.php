@@ -12,7 +12,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<div class="container pl-35-md pv-35-xs">
 								<small class="text-gray h6 mt-42">PUNTOS DE VISTA</small>
 								<h1 class="h2 text-gray-dark mv-0 pt-21">Delia Ferreira</h1>
-								<h3 class="text-gray-dark medium">Cinco estrategias para financiar la carrera política de una mujer</h3>
+								<h4 class="text-gray-dark medium">Cinco estrategias para financiar la carrera política de una mujer</h4>
 								<p class="text-gray-dark medium f-15 pb-7">Consultora internacional, especialista en partidos políticos, asuntos electorales, financiamiento de la política y género.</p>
 								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>delia-ferreira/">LEE EL ARTÍCULO →</a>			
 							</div>
