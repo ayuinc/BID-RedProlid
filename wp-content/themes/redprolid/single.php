@@ -219,11 +219,7 @@ function delayer(){
     
      elseif ( $cat[0]->slug == 'generico' ) {
       get_template_part( 'single-generico' );
-    }  
-    
-     elseif ( $cat[0]->slug == 'campeonas-entrevistas' ) {
-      get_template_part( 'single-campeonasentrevistas' );
-    }                            
+    }                             
   ?>
 </div>
 <?php get_footer(); ?>
