@@ -70,7 +70,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<h3 class="text-gray-darker color-g inline-p bold">CAMPEON@S</h3>							
 									</div>
 									<div class="video-center-content col-xs-12 ph-0">
-										<iframe height="200" src="https://www.youtube.com/embed/aUbYK4pzXoo" class="w-100" frameborder="0" allowfullscreen></iframe>
+										<img src="http://img.youtube.com/vi/aUbYK4pzXoo/mqdefault.jpg" alt="" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 medium">Yokasta Guzmán</h4>
