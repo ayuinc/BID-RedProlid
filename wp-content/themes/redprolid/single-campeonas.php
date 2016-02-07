@@ -1,5 +1,5 @@
-<?php $flag = $_GET['flag']; ?>
-<?php if ($flag=='') ?>
+<?php echo $flag = $_GET['flag']; ?>
+
 <section class="mt-7 "> 
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>    
@@ -206,7 +206,6 @@
 	  </div>
 	</div>
 
-<?php } else { ?>
-Nueva ersion
-<?php } ?>
+
+
 
