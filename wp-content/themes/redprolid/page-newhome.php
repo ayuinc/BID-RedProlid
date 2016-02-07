@@ -78,7 +78,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>entrevista-a-erika-brockmann/">LEE MÁS  →</a>
 									</div>
 									<div class="video-center-content col-xs-12 ph-0">
-										<iframe  height="200" src="https://www.youtube.com/embed/Ix6pfhqoJ0o" class="w-100" frameborder="0" allowfullscreen></iframe>
+										<img src="http://img.youtube.com/vi/Ix6pfhqoJ0o/mqdefault.jpg" alt="" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 medium">Isabel Saint Malo</h4>
@@ -86,7 +86,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>aida-garcia-naranjo-morales/">LEE MÁS  →</a>
 									</div>		
 									<div class="video-center-content col-xs-12 ph-0">
-										<iframe  height="200" src="https://www.youtube.com/embed/4HoI8imRidM" class="w-100" frameborder="0" allowfullscreen></iframe>
+										<img src="http://img.youtube.com/vi/4HoI8imRidM/mqdefault.jpg" alt="" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 medium">Carolina Trivelli</h4>
@@ -138,16 +138,16 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									<div class="small-icon text-left pb-14">
 										<h3 class="text-gray-darker color-g inline-p bold">CAMPEON@S</h3>							
 									</div>
-									<div class="video-center-content col-md-12  ph-0">
-										<iframe height="400" src="https://www.youtube.com/embed/aUbYK4pzXoo" class="w-100" frameborder="0" allowfullscreen></iframe>
+									<div class="video-center-content col-md-12 ph-0">
+										<img src="http://img.youtube.com/vi/aUbYK4pzXoo/mqdefault.jpg" alt="" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
 										<h4 class="text-gray-darker pt-7 bold">Yokasta Guzmán</h4>
 										<p class="rem-08 pv-7">"La mujer se ha ido preparando...hay más mujeres con maestrías que hombres, hay más mujeres que están en la universidad que hombres..."</p>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>entrevista-a-erika-brockmann/">LEE MÁS  →</a>
 									</div>
-									<div class="video-center-content col-md-12  ph-0">
-										<iframe  height="400" src="https://www.youtube.com/embed/Ix6pfhqoJ0o" class="w-100" frameborder="0" allowfullscreen></iframe>
+									<div class="video-center-content col-md-12 ph-0">
+										<img src="http://img.youtube.com/vi/Ix6pfhqoJ0o/mqdefault.jpg" alt="" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
 										<h4 class="text-gray-darker pt-7 bold">Isabel Saint Malo</h4>
@@ -155,7 +155,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>aida-garcia-naranjo-morales/">LEE MÁS  →</a>
 									</div>		
 									<div class="video-center-content col-md-12  ph-0">
-										<iframe  height="400" src="https://www.youtube.com/embed/4HoI8imRidM" class="w-100" frameborder="0" allowfullscreen></iframe>
+										<img src="http://img.youtube.com/vi/4HoI8imRidM/mqdefault.jpg" alt="" class="w-100">
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-21">
 										<h4 class="text-gray-darker pt-7 bold">Carolina Trivelli</h4>
