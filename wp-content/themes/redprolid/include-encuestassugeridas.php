@@ -14,7 +14,7 @@
 			</div>
 			<div class="col-md-6 col-xs-12">
 				<div class="col-md-12 col-xs-12 ph-0 img-entrevistas-sugeridas pb-14">
-					<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2015/11/Lilian-Soto1.jpg">
+					<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/isabel.png">
 				</div>
 				<p class="rem-10 bold">Isabel Saint Malo</p>
 				<p class="rem-08 pv-0 medium">"Lo fundamental de la equidad de género es reconocer que los hombres y las mujeres tenemos distintas cosas que aportar y eso justamente es lo que hace necesario y valioso la participación de las mujeres..."</p>		
@@ -52,7 +52,7 @@
 			</div>		
 			<div class="col-md-6 col-xs-12">
 				<div class="col-md-12 col-xs-12 ph-0 img-entrevistas-sugeridas pb-14">
-					<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2015/11/Lilian-Soto1.jpg">
+					<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/isabel.png">
 				</div>
 				<p class="rem-10 bold">Isabel Saint Malo</p>
 				<p class="rem-08 pv-0 medium">"Lo fundamental de la equidad de género es reconocer que los hombres y las mujeres tenemos distintas cosas que aportar y eso justamente es lo que hace necesario y valioso la participación de las mujeres..."</p>		
