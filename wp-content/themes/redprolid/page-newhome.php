@@ -36,7 +36,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							<div class="container-search-bar">
 								<div class="row">
 									<div class="col-md-3 col-sm-12 col-xs-12 pl-21-md  text-center-xs">
-										<p class="bold text-white text-left pt-7">Súmate a Red PROLID</p>					
+										<p class="bold text-white text-left pt-7 h3">Súmate a Red PROLID</p>					
 									</div>
 									<div class="col-md-2 col-sm-12 col-xs-12 col-xs-12 pv-7-xs">
 										<input placeholder="Nombre" class="border-radius  col-sm-12 col-xs-12 p-7" type="text" id="mce-FNAME" name="FNAME" style="height:42px">			
