@@ -3,7 +3,7 @@
 <?php if ($flag!='') { ?>
 <section class="bg-gray-lighter pv-70 entrevista-a">
 	<div class="container-sm ph-56-md">
-		<h3 class="text-gray-darker color-g bold text-left"><?php the_title(); ?></h3>
+		<h3 class="text-gray-darker color-g bold text-left pb-0"><?php the_title(); ?></h3>
 		<?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
 		<?php if ($tempDate!='') { ?>
 		<p class="thin text-gray text-left">Publicado el<?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>
