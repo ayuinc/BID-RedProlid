@@ -22,21 +22,23 @@
       	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_campeonas'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="340" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <?php } ?> 			
 		</div>
-		<h5 class="pt-14"><?php the_field('posicion_campeona'); ?></h5>
-		<p class="text-gray f-s-19 mv-14"><?php the_field('descripcion_campeona'); ?></p>
+		<p class="text-gray f-s-19 mv-14"><?php the_field('posicion_campeona'); ?></p>
+		<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
+    <?php $twitter_campeona = get_field('twitter_campeona'); ?>
 		<div class="collapse-bio">
 			<div class="row">
 				<div class="col-xs-12 hidden-md hidden-lg text-left thin">
-					Sígueme en las redes <a href=""></a><a href=""></a>
+					Sígueme en las redes 
+					<a href="<?php echo $facebook_campeonas; ?>" target="_blank"></a><a href="<?php echo $twitter_campeona; ?>" target="_blank"></a>
 				</div>
 				<div class="col-md-6 col-xs-12 text-left">
 					<a id="btnbiografia">Lee su biografía v</a>
 				</div>
 				<div class="col-md-6 hidden-xs hidden-sm text-right thin">
-					Sígueme en las redes <a href=""></a><a href=""></a>
+					Sígueme en las redes <a href="<?php echo $facebook_campeonas; ?>" target="_blank"></a><a href="<?php echo $twitter_campeona; ?>" target="_blank"></a>
 				</div>
 				<div class="col-md-12 col-xs-12 pv-21">
-					<p class="text-gray thin"> Fue parlamentaria boliviana entre 1997 y 2005 por el Movimiento de la Izquierda Revolucionaria organización con la que se vinculó desde 1974. Fue la cuarta senadora titular en la historia de la República de Bolivia. Presidió, durante cinco años, la Comisión de Descentralización y Desarrollo Local del Senado, y promovió la constitución de las primeras comisiones de Ética Parlamentaria. Impulsó y propuso importantes iniciativas legislativas en los ámbitos municipal, territorial y pro equidad de género, así como reformas constitucionales entre el 2002-2004. Fundadora – hace 32 años- y miembro del Directorio del Centro de Promoción de la Mujer Gregoria Apaza, del Foro Político Nacional de Mujeres y miembro de la Coordinadora de la Mujer. Psicóloga de profesión, con estudios de post grado en género y desarrollo. Magíster en Ciencia Política y cuenta con un diplomado en Educación Superior.</p>
+					<p class="text-gray thin"><?php the_field('descripcion_campeona'); ?></p>
 				</div>
 			</div>
 		</div>
