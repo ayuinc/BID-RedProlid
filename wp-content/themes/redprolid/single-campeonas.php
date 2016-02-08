@@ -1,5 +1,5 @@
 
-<?php //$flag = $_GET['flag']; ?>
+<?php $flag = $_GET['flag']; ?>
 <?php if ($flag!='') { ?>
 			<section class="bg-gray-lighter pv-70 entrevista-a">
 				 <div class="container-sm ph-56-md">
