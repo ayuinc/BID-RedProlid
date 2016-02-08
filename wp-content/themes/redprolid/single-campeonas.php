@@ -11,7 +11,7 @@
 		<div class="text-center">
       <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
       <?php if ($imagen_campeona!='') { ?>
-      <img  src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" width="100%">
+      <img src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" width="100%">
       <?php } ?>			
       <?php $video = get_field('video_campeonas'); ?>
       <?php if ($video!='') { ?>
@@ -49,6 +49,17 @@
 		</div>
 		<div class="row mh-0 pt-35">
 			<h5>Entrevistas Sugeridas</h5>
+			<?php
+			$wp_query = new WP_Query(array( 'cat' => 2 ));
+			$wp_query->query($args);
+			while ($wp_query->have_posts()) : $wp_query->the_post();
+			?>
+			
+			<?php the_field('imagen_campeonas'); ?>
+			
+			<?php endwhile; ?>
+			
+			
 			<div class="col-md-6 ph-0 col-xs-12">
 				<div class="col-md-12 ph-0 col-xs-12 img-entrevistas-sugeridas">
 					<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/01/aida-garcia-naranjo.jpg">
