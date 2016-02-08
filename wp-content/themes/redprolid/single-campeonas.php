@@ -1,4 +1,4 @@
-<?php $flag = $_GET['flag']; ?>
+<?php //$flag = $_GET['flag']; ?>
 <?php if ($flag!='') { ?>
 			<section class="bg-gray-lighter pv-70 entrevista-a">
 				 <div class="container-sm ph-56-md">
@@ -280,5 +280,24 @@
 	</div>
 
 <?php } ?>
+<script type="text/javascript">
+	$('a[href^="#"]').on('click', function(event) {
 
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+	});
+</script>
+<script>
+		$("#btnbiografia").on('click',function(e){
+	   e.preventDefault();
+	   $(this).parents().toggleClass('active');
+	 });
+</script>
 

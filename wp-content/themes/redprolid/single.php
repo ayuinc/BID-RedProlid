@@ -1,3 +1,7 @@
+<?php $flag = $_GET['flag']; ?>
+<?php if ($flag!='') { ?>
+	<?php get_template_part( 'include', 'headerprototipo' ); ?>
+<?php } else { ?>	
 <?php
 /**
  * The Template for displaying all single posts
@@ -9,6 +13,8 @@ get_header(); ?>
 <?php get_template_part( 'include', 'header' ); ?>
 <!--NAV-->
 <?php get_template_part( 'include', 'nav' ); ?>
+<?php } ?>
+
 
 <script>
 function delayer(){
@@ -222,4 +228,5 @@ function delayer(){
     }                             
   ?>
 </div>
+
 <?php get_footer(); ?>
