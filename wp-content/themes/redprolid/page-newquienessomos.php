@@ -116,11 +116,13 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							 	 	 	<div class="col-md-6 col-xs-12 text-left">
 							 	 	 		<a id="btnbiografia">Lee su biografía v</a>
 							 	 	 	</div>
-							 	 	 	<div class="col-md-6 col-xs-12 text-right">
+							 	 	 	<div class="col-md-6 col-xs-12 text-right thin">
 							 	 	 		Sígueme en las redes <a href=""></a><a href=""></a>
 							 	 	 	</div>
+							 	 	 	<div class="col-md-12-col-xs-12">
+							 	 	 		<p> Fue parlamentaria boliviana entre 1997 y 2005 por el Movimiento de la Izquierda Revolucionaria organización con la que se vinculó desde 1974. Fue la cuarta senadora titular en la historia de la República de Bolivia. Presidió, durante cinco años, la Comisión de Descentralización y Desarrollo Local del Senado, y promovió la constitución de las primeras comisiones de Ética Parlamentaria. Impulsó y propuso importantes iniciativas legislativas en los ámbitos municipal, territorial y pro equidad de género, así como reformas constitucionales entre el 2002-2004. Fundadora – hace 32 años- y miembro del Directorio del Centro de Promoción de la Mujer Gregoria Apaza, del Foro Político Nacional de Mujeres y miembro de la Coordinadora de la Mujer. Psicóloga de profesión, con estudios de post grado en género y desarrollo. Magíster en Ciencia Política y cuenta con un diplomado en Educación Superior.</p>
+							 	 	 	</div>
 							 	 	 </div>
-							 	 	 <p> </p>
 							 	 </div>
 							 	 <div class="border-bottom-gray-lighter"></div>
 					</div>
