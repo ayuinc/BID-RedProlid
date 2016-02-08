@@ -15,11 +15,11 @@
       <?php } ?>			
       <?php $video = get_field('video_campeonas'); ?>
       <?php if ($video!='') { ?>
-      	<iframe  class="embed-responsive-item" width="100%" height="450" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      	<iframe  class="embed-responsive-item" width="100%" height="360" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       <?php } ?>
       <?php $video_vimeo = get_field('video_vimeo_campeonas'); ?>
       <?php if ($video_vimeo!='') { ?>
-      	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_campeonas'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_campeonas'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <?php } ?> 			
 		</div>
 		<h5 class="pt-14"><?php the_field('posicion_campeona'); ?></h5>
