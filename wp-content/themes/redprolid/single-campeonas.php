@@ -1,5 +1,5 @@
 <?php $flag = $_GET['flag']; ?>
-<?php if ($flag!='') { ?>
+<?php //if ($flag!='') { ?>
 			<section class="bg-gray-lighter pv-70 entrevista-a">
 				 <div class="container-sm ph-56-md">
 							 		<h3 class="text-gray-darker color-g bold text-left"><?php the_title(); ?></h3>
@@ -73,7 +73,7 @@
 				</div>
 			</section>
 				
-<?php } else { ?>
+<?php //} else { ?>
 
 <section class="mt-7 "> 
   <div class="container relative mb-14">
@@ -281,7 +281,10 @@
 	  </div>
 	</div>
 
-<?php } ?>
+
+<?php //} ?>
+
+
 <script type="text/javascript">
 	$('a[href^="#"]').on('click', function(event) {
 
@@ -302,4 +305,5 @@
 	   $(this).parents().toggleClass('active');
 	 });
 </script>
+
 
