@@ -11,7 +11,8 @@
 		<div class="text-center">
 			<img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.png">
 		</div>
-		<p class="text-gray f-s-19 mv-14">"Esta suerte de invisibilización de las mujeres puede ser revertida a través de estos medios alternativos (redes sociales), en los cuales uno tiene el control sobre el mensaje y la serenidad suficiente para saber exactamente qué palabras usar".</p>
+		<h4><?php the_field('posicion_campeona'); ?></h4>
+		<p class="text-gray f-s-19 mv-14"><?php the_field('descripcion_campeona'); ?></p>
 		<div class="collapse-bio">
 			<div class="row">
 				<div class="col-xs-12 hidden-md hidden-lg text-left thin">
@@ -53,7 +54,7 @@
 			Está además la cuestión del gobierno abierto y el gobierno electrónico, hoy en boga. Son modelos de gestión que los  gobiernos deberán asumir. Ello implica respetar genuinamente el derecho a la libre expresión y al libre acceso a la información pública. Las mujeres tenemos que montarnos en esta corriente, asumir un liderazgo, ser un referente que valga la pena escuchar. Ahí las redes nos sirven para diseminar nuestro mensaje y la información ayudando a  construir y fortalecer nuestra relación con la sociedad, clave para el desarrollo de nuestro liderazgo. A mí me parece sensacional, además de divertido, porque el twitter es divertido. El fácil acceso  a toda la información que está circulando es genial  pero implica un desafío saber discernir y priorizar aquella relevante y pertinente a nuestros intereses para incorporarla a nuestros archivos personales
 			</p>
 		</div>
-		<div class="row mh-0">
+		<div class="row mh-0 pt-35">
 			<h5>Entrevistas Sugeridas</h5>
 			<div class="col-md-6 ph-0 col-xs-12">
 				<div class="col-md-12 ph-0 col-xs-12 img-entrevistas-sugeridas">
