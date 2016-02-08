@@ -11,7 +11,7 @@
 		<div class="text-center">
 			<img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.png">
 		</div>
-		<h4><?php the_field('posicion_campeona'); ?></h4>
+		<h5 class="pt-14"><?php the_field('posicion_campeona'); ?></h5>
 		<p class="text-gray f-s-19 mv-14"><?php the_field('descripcion_campeona'); ?></p>
 		<div class="collapse-bio">
 			<div class="row">
