@@ -22,7 +22,7 @@
       	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_campeonas'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="340" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <?php } ?> 			
 		</div>
-		<p class="text-gray f-s-19 mv-14"><?php the_field('posicion_campeona'); ?></p>
+		<p class="text-gray-dark f-s-19 mv-14"><?php the_field('posicion_campeona'); ?></p>
 		<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
     <?php $twitter_campeona = get_field('twitter_campeona'); ?>
 		<div class="collapse-bio">
