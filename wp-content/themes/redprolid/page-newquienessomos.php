@@ -148,7 +148,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="row">
 							 <div class="col-md-2"></div>
 							 <div class="col-md-8">
-							 	 <img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.png" class="img-responsive" style="width:40%;">
+							 	 <img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.png">
 							 </div>
 							 <div class="col-md-2"></div>
 						</div>
