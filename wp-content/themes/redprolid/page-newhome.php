@@ -19,17 +19,19 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						</div>						
 					</div>
 					<div class="col-md-6 col-sm-6 img-header flex bg-img-block minh-350 hidden-xs hidden-sm" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/img_2016_02.png)"></div>
-					<div class="col-md-12 col-sm-12 col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/img_2016_02.png)">
+					<div class="col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/img_2016_02.png)">
+					</div>					
+					<div class="col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/img_2016_02.png)">
 							<div class="container pv-35-xs">
-								<small class="text-gray-lighter h6 bold mt-42">PUNTOS DE VISTA</small>
-								<h1 class="h2 text-gray-lighter mv-0">Delia Ferreira</h1>
+								<small class="text-gray-darker h6 bold mt-42">PUNTOS DE VISTA</small>
+								<h1 class="h2 text-gray-darker mv-0">Delia Ferreira</h1>
 								<h3>Cinco estrategias para financiar la carrera política de una mujer</h3>
-								<p class="text-gray-lighter medium f-15 pb-7">Consultora internacional, especialista en partidos políticos, asuntos electorales, financiamiento de la política y género.</p>
+								<p class="text-gray medium f-15 pb-7">Consultora internacional, especialista en partidos políticos, asuntos electorales, financiamiento de la política y género.</p>
 								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>delia-ferreira/">LEE EL ARTÍCULO →</a>				
 							</div>
 					</div>
 				</div>
-				<div class="registrer-bar minh-70 pt-14 ph-63-md bg-pink-redprolid text-center flex-res flex-bar">
+				<div class="registrer-bar minh-70 pt-14 ph-7-xs ph-63-md bg-pink-redprolid text-center flex-res flex-bar">
 						<form action="//redprolid.us9.list-manage.com/subscribe/post?u=242e37fe564525e1aad9cfc03&amp;id=eb13f7ce93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							<div class="container-search-bar">
 								<div class="row">
@@ -62,10 +64,10 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 </div>
 		</section>
 		<section id="middle-content" class="middle-content bg-gray-lighter">
-		 	<div class="container-fluid ml-56-md mr-0">
+		 	<div class="container-fluid ml-56-md ph-0-xs mr-0">
 				<div class="row">
 			 		<div class="col-md-8 col-sm-6 col-xs-12 ph-0-xs bg-white ph-0-xs pv-70-xs pt-70-md hidden-md hidden-lg">
-								<div class="col-md-8 col-sm-12 col-xs-12 text-left ph-14-md">
+								<div class="col-md-8 col-sm-12 col-xs-12 text-left  ph-14-md">
 									<div class="small-icon text-left pb-14">
 										<h3 class="text-gray-darker color-g inline-p bold">CAMPEON@S</h3>							
 									</div>
@@ -101,7 +103,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>																	
 								</div>
 			 		</div>			 		
-			 		<div class="col-md-4 col-sm-6 col-xs-12 pt-70-md pl-21-md pr-56-md ph-0-xs pv-70-xs">
+			 		<div class="col-md-4 col-sm-6 col-xs-12 pt-70-md pl-21-md pr-56-md ph-7-xs pv-70-xs">
 			 			<div class="col-md-12 col-sm-6 col-xs-12 ph-0-xs ph-0-md ">
 					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
 					 		 	<h3 class="text-gray-darker color-g inline-p bold">DEBATES EN ACCIÓN</h3>		
