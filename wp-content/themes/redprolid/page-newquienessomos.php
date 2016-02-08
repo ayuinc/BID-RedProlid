@@ -103,9 +103,9 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</div>
 				</div>
 			</section>
-			<section class="bg-white-lighter">
+			<section class="text-center bg-gray-lighter pv-70">
 				 <div class="container-sm">
-							 		<h4 class="text-gray-darker color-g bold">Erika Brockmann, exparlamentaria boliviana (1997-2005)</h4>
+							 		<h3 class="text-gray-darker color-g bold">Erika Brockmann, exparlamentaria boliviana (1997-2005)</h3>
 							 		<p class="thin text-gary">Publicado el 2015</p>
 							 	 <img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.png">
 					</div>
