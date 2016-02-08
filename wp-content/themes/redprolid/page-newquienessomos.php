@@ -111,6 +111,11 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							 	 	<img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.png">
 							 	 </div>
 							 	 <p>"Aquí va el texto que habla sobre ella"</p>
+							 	 <button data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+										<div id="demo" class="collapse">
+										Lorem ipsum dolor text....
+										</div>
 							 	 <div class="collapse">
 							 	 	 <div class="row">
 							 	 	 	<div class="col-md-6 col-xs-12 text-left">
