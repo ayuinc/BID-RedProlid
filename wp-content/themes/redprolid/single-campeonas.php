@@ -29,10 +29,10 @@
 					Sígueme en las redes
 					<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
 					<?php if ($facebook_campeonas!='') { ?> 
-					<a href="<?php echo $facebook_campeonas; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/facebook2.png" alt="Facebook"></a>
+					<a href="<?php echo $facebook_campeonas; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/facebook2.png" alt="Facebook" width="22"></a>
 					<?php } ?>
 					<?php if ($twitter_campeona!='') { ?>
-					<a href="<?php echo $twitter_campeona; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/twitter2.png" alt="Facebook"></a>
+					<a href="<?php echo $twitter_campeona; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/twitter2.png" alt="Twitter" width="22"></a>
 					<?php } ?>
 				</div>
 				<div class="col-md-6 col-xs-12 text-left">
@@ -42,11 +42,11 @@
 					Sígueme en las redes 
 					<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
 					<?php if ($facebook_campeonas!='') { ?> 
-					<a href="<?php echo $facebook_campeonas; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/facebook2.png" alt="Facebook"></a>
+					<a href="<?php echo $facebook_campeonas; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/facebook2.png" alt="Facebook" width="22"></a>
 					<?php } ?>
 					<?php $twitter_campeona = get_field('twitter_campeona'); ?>
 					<?php if ($twitter_campeona!='') { ?>
-					<a href="<?php echo $twitter_campeona; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/twitter2.png" alt="Facebook"></a>
+					<a href="<?php echo $twitter_campeona; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/twitter2.png" alt="Twitter" width="22"></a>
 					<?php } ?>
 				</div>
 				<div class="col-md-12 col-xs-12 pv-21">
