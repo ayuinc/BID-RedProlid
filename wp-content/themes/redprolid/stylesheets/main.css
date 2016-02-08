@@ -6361,6 +6361,23 @@ form.search button {
   width: 100%;
   order: 2; }
 
+.collapse-bio {
+  border-bottom: none;
+  transition: all 0.8s;
+  height: 136px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0px;
+  margin: 0px; }
+
+.collapse-bio.active {
+  transition: all 0.8s,max-height 8.8s;
+  max-height: 4.8s;
+  height: auto;
+  overflow: hidden;
+  z-index: 200;
+  color: #444; }
+
 input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;

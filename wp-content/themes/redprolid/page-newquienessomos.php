@@ -110,22 +110,17 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							 	 <div class="text-center">
 							 	 	<img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.png">
 							 	 </div>
-							 	 <p>"Aquí va el texto que habla sobre ella"</p>
-							 	 <button data-toggle="collapse" data-target="#demo">Collapsible</button>
-
-										<div id="demo" class="collapse">
-										Lorem ipsum dolor text....
-										</div>
-							 	 <div class="collapse">
+							 	 <p class="text-gray rem-09">"Esta suerte de invisibilización de las mujeres puede ser revertida a través de estos medios alternativos (redes sociales), en los cuales uno tiene el control sobre el mensaje y la serenidad suficiente para saber exactamente qué palabras usar".</p>
+							 	 <div class="collapse-bio">
 							 	 	 <div class="row">
 							 	 	 	<div class="col-md-6 col-xs-12 text-left">
-							 	 	 		<a href="">Lee su biografía</a>
+							 	 	 		<a id="btnbiografia">Lee su biografía v</a>
 							 	 	 	</div>
 							 	 	 	<div class="col-md-6 col-xs-12 text-right">
 							 	 	 		Sígueme en las redes <a href=""></a><a href=""></a>
 							 	 	 	</div>
 							 	 	 </div>
-							 	 	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore minus corporis aut molestias reprehenderit nulla id incidunt, perspiciatis fuga consectetur facilis officiis deleniti voluptates, magnam harum rerum doloribus nisi voluptas.</p>
+							 	 	 <p> </p>
 							 	 </div>
 							 	 <div class="border-bottom-gray-lighter"></div>
 					</div>
@@ -187,6 +182,12 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 	    }
 
 		});
+	</script>
+	<script>
+			$("#btnbiografia").on('click',function(e){
+		   e.preventDefault();
+		   $(this).parents().toggleClass('active');
+		 });
 	</script>
 </body>
 
