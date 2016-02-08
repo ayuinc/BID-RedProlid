@@ -102,7 +102,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						</div>
 					</div>
 				</div>
-			</section>		
+			</section>	
 			<section class="end-content text-center pv-70 bg-white">
 				<div class="container-sm">
 		 			<div class="icono-content text-center pv-14">

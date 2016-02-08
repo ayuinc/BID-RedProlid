@@ -73,7 +73,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>
 									<div class="video-center-content col-xs-12 ph-0">
 										<a href="<?php echo home_url('/'); ?>yokasta-guzman/">
-											<img src="http://img.youtube.com/vi/aUbYK4pzXoo/mqdefault.jpg" alt="" class="w-100">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/01/yoko.png" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
@@ -83,7 +83,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>
 									<div class="video-center-content col-xs-12 ph-0">
 										<a href="<?php echo home_url('/'); ?>isabel-saint-malo/">
-											<img src="http://img.youtube.com/vi/Ix6pfhqoJ0o/mqdefault.jpg" alt="" class="w-100">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/01/isabel.png" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
@@ -93,7 +93,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>		
 									<div class="video-center-content col-xs-12 ph-0">
 										<a href="<?php echo home_url('/'); ?>carolina-trivelli-2/">
-											<img src="http://img.youtube.com/vi/4HoI8imRidM/mqdefault.jpg" alt="" class="w-100">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/01/carolina.png" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">

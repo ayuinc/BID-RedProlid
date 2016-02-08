@@ -1,3 +1,4 @@
+
 <?php //$flag = $_GET['flag']; ?>
 <?php if ($flag!='') { ?>
 			<section class="bg-gray-lighter pv-70 entrevista-a">
@@ -71,8 +72,10 @@
 							 	 </div>
 					</div>
 				</div>
-			</section>	
+			</section>
+				
 <?php } else { ?>
+
 <section class="mt-7 "> 
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>    
@@ -280,6 +283,8 @@
 	</div>
 
 <?php } ?>
+
+
 <script type="text/javascript">
 	$('a[href^="#"]').on('click', function(event) {
 
@@ -300,4 +305,3 @@
 	   $(this).parents().toggleClass('active');
 	 });
 </script>
-
