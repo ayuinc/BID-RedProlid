@@ -103,28 +103,51 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</div>
 				</div>
 			</section>
-			<section class="bg-gray-lighter  pv-70">
+			<section class="bg-gray-lighter pv-70 entrevista-a">
 				 <div class="container-sm ph-56-md">
 							 		<h3 class="text-gray-darker color-g bold text-left">Erika Brockmann, exparlamentaria boliviana (1997-2005)</h3>
 							 		<p class="thin text-gray text-left">Publicado el 2015</p>
 							 	 <div class="text-center">
 							 	 	<img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.png">
 							 	 </div>
-							 	 <p class="text-gray rem-09">"Esta suerte de invisibilización de las mujeres puede ser revertida a través de estos medios alternativos (redes sociales), en los cuales uno tiene el control sobre el mensaje y la serenidad suficiente para saber exactamente qué palabras usar".</p>
+							 	 <p class="text-gray f-s-19 mv-14">"Esta suerte de invisibilización de las mujeres puede ser revertida a través de estos medios alternativos (redes sociales), en los cuales uno tiene el control sobre el mensaje y la serenidad suficiente para saber exactamente qué palabras usar".</p>
 							 	 <div class="collapse-bio">
 							 	 	 <div class="row">
+							 	 	 	<div class="col-xs-12 hidden-md hidden-lg text-left thin">
+							 	 	 		Sígueme en las redes <a href=""></a><a href=""></a>
+							 	 	 	</div>
 							 	 	 	<div class="col-md-6 col-xs-12 text-left">
 							 	 	 		<a id="btnbiografia">Lee su biografía v</a>
 							 	 	 	</div>
-							 	 	 	<div class="col-md-6 col-xs-12 text-right thin">
+							 	 	 	<div class="col-md-6 hidden-xs hidden-sm text-right thin">
 							 	 	 		Sígueme en las redes <a href=""></a><a href=""></a>
 							 	 	 	</div>
-							 	 	 	<div class="col-md-12-col-xs-12">
-							 	 	 		<p> Fue parlamentaria boliviana entre 1997 y 2005 por el Movimiento de la Izquierda Revolucionaria organización con la que se vinculó desde 1974. Fue la cuarta senadora titular en la historia de la República de Bolivia. Presidió, durante cinco años, la Comisión de Descentralización y Desarrollo Local del Senado, y promovió la constitución de las primeras comisiones de Ética Parlamentaria. Impulsó y propuso importantes iniciativas legislativas en los ámbitos municipal, territorial y pro equidad de género, así como reformas constitucionales entre el 2002-2004. Fundadora – hace 32 años- y miembro del Directorio del Centro de Promoción de la Mujer Gregoria Apaza, del Foro Político Nacional de Mujeres y miembro de la Coordinadora de la Mujer. Psicóloga de profesión, con estudios de post grado en género y desarrollo. Magíster en Ciencia Política y cuenta con un diplomado en Educación Superior.</p>
+							 	 	 	<div class="col-md-12 col-xs-12 pv-21">
+							 	 	 		<p class="text-gray thin"> Fue parlamentaria boliviana entre 1997 y 2005 por el Movimiento de la Izquierda Revolucionaria organización con la que se vinculó desde 1974. Fue la cuarta senadora titular en la historia de la República de Bolivia. Presidió, durante cinco años, la Comisión de Descentralización y Desarrollo Local del Senado, y promovió la constitución de las primeras comisiones de Ética Parlamentaria. Impulsó y propuso importantes iniciativas legislativas en los ámbitos municipal, territorial y pro equidad de género, así como reformas constitucionales entre el 2002-2004. Fundadora – hace 32 años- y miembro del Directorio del Centro de Promoción de la Mujer Gregoria Apaza, del Foro Político Nacional de Mujeres y miembro de la Coordinadora de la Mujer. Psicóloga de profesión, con estudios de post grado en género y desarrollo. Magíster en Ciencia Política y cuenta con un diplomado en Educación Superior.</p>
 							 	 	 	</div>
 							 	 	 </div>
 							 	 </div>
-							 	 <div class="border-bottom-gray-lighter"></div>
+							 	 <div class="border-bottom-gray-light pv-14	"></div>
+							 	 <div class="entrevista">
+							 	 		<h4 class="text-gray-darker color-g bold text-left">En su opinión, ¿se está cumpliendo la Ley de Paridad en Bolivia?</h4>
+												<p class="rem-10 text-gray">En Bolivia sí se cumplió con la Ley de Paridad en las últimas elecciones del 12 de octubre de 2014, tal como quedó en evidencia en la conformación de la Asamblea Legislativa Plurinacional. Las cifras son elocuentes: en la Asamblea Legislativa las mujeres tienen una representación incluso mayor que los hombres: 63 diputadas frente a 60 diputados (51%-49%). En cuanto a la Cámara Alta, las mujeres ocupan 16 bancas (44%). El cumplimiento efectivo de la paridad orienta el nuevo concepto  e idea de la democracia paritaria que queremos construir en el ámbito de la representación política.  Por estos resultados, Bolivia  está entre los primeros países que materializó la paridad, y este hecho nos convierte en un referente regional reconocido por la Unión Interparlamentaria, junto a otros países de la región, como Ecuador y Costa Rica. Sin embargo, reitero que la política y la democracia nos obliga a plantear metas y objetivos de participación que superen la aritmética simple.</p>
+							 	 </div>
+							 	 <div class="row">
+							 	 	<h5>Entrevistas Sugeridas</h5>
+							 	 	<div class="col-md-6 col-xs-12">
+							 	 		<div class="colmd-12 col-xs-12 img-entrevistas-sugeridas">
+							 	 				<img src="<?php echo content_url('/'); ?>uploads/2016/01/aida-garcia-naranjo.jpg">
+							 	 		</div>
+												<span>Aída García Naranjo ha sido ministra y embajadora del Perú en la República del Uruguay y representante del Perú ante la Asociación Latinoamericana de Integración (ALADI)</span>
+							 	 		<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>carolina-trivelli-2/">LEE MÁS  →</a>
+							 	 	</div>
+							 	 	<div class="col-md-6 col-xs-12"></div>
+							 	 		<div class="colmd-12 col-xs-12 img-entrevistas-sugeridas">
+							 	 				<img src="<?php echo content_url('/'); ?>uploads/2015/11/Lilian-Soto1-300x207.jpg">
+							 	 		</div>
+													<span>Liliana Soto, Presidenta del movimiento socialista y feminista Kuña Pyrenda (Paraguay)</span>		
+													<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>carolina-trivelli-2/">LEE MÁS  →</a>									
+							 	 </div>
 					</div>
 				</div>
 			</section>			
