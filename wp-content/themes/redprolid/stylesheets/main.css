@@ -6364,7 +6364,7 @@ form.search button {
 .collapse-bio {
   border-bottom: none;
   transition: all 0.8s;
-  height: 136px;
+  height: 24px;
   overflow: hidden;
   cursor: pointer;
   padding: 0px;
@@ -6373,7 +6373,7 @@ form.search button {
 .collapse-bio.active {
   transition: all 0.8s,max-height 8.8s;
   max-height: 4.8s;
-  height: auto;
+  height: 200px;
   overflow: hidden;
   z-index: 200;
   color: #444; }
