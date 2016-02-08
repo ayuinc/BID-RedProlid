@@ -136,7 +136,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							 	 	<h5>Entrevistas Sugeridas</h5>
 							 	 	<div class="col-md-6 ph-0 col-xs-12">
 							 	 		<div class="col-md-12 col-xs-12 img-entrevistas-sugeridas">
-							 	 				<img src="<?php echo content_url('/'); ?>uploads/2016/01/aida-garcia-naranjo.jpg">
+							 	 				<img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/01/aida-garcia-naranjo.jpg">
 							 	 		</div>
 												<span>Aída García Naranjo ha sido ministra y embajadora del Perú en la República del Uruguay y representante del Perú ante la Asociación Latinoamericana de Integración (ALADI)</span>
 							 	 		<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>carolina-trivelli-2/">LEE MÁS  →</a>
