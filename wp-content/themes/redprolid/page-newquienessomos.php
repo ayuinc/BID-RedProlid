@@ -143,6 +143,17 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</div> -->
 				</div>
 			</section>
+			<section>
+				<div class="container-sm">
+						<div class="row">
+							 <div class="col-md-2"></div>
+							 <div class="col-md-8">
+							 	 <img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.png" class="img-responsive" style="width:40%;">
+							 </div>
+							 <div class="col-md-2"></div>
+						</div>
+				</div>
+			</section>
 		</div>
 	<?php  get_footer(); ?>
 	<script type="text/javascript">
