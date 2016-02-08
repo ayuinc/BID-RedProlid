@@ -21,7 +21,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					<div class="col-md-6 col-sm-6 img-header flex bg-img-block minh-350 hidden-xs hidden-sm" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/img_2016_02.png)"></div>
 					<div class="col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/img_2016_02.png)">
 					</div>					
-					<div class="col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/img_2016_02.png)">
+					<div class="col-xs-12 content-header-responsive hidden-md hidden-lg">
 							<div class="container pv-35-xs">
 								<small class="text-gray-darker h6 bold mt-42">PUNTOS DE VISTA</small>
 								<h1 class="h2 text-gray-darker mv-0">Delia Ferreira</h1>
