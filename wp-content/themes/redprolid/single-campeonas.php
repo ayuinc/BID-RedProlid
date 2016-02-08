@@ -23,19 +23,31 @@
       <?php } ?> 			
 		</div>
 		<p class="text-gray-dark f-s-19 mv-14"><?php the_field('posicion_campeona'); ?></p>
-		<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
-    <?php $twitter_campeona = get_field('twitter_campeona'); ?>
 		<div class="collapse-bio">
 			<div class="row">
 				<div class="col-xs-12 hidden-md hidden-lg text-left thin">
-					Sígueme en las redes 
-					<a href="<?php echo $facebook_campeonas; ?>" target="_blank"></a><a href="<?php echo $twitter_campeona; ?>" target="_blank"></a>
+					Sígueme en las redes
+					<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
+					<?php if ($facebook_campeonas!='') { ?> 
+					<a href="<?php echo $facebook_campeonas; ?>" target="_blank"></a>
+					<?php } ?>
+					<?php if ($twitter_campeona!='') { ?>
+					<a href="<?php echo $twitter_campeona; ?>" target="_blank"></a>
+					<?php } ?>
 				</div>
 				<div class="col-md-6 col-xs-12 text-left">
 					<a id="btnbiografia">Lee su biografía v</a>
 				</div>
 				<div class="col-md-6 hidden-xs hidden-sm text-right thin">
-					Sígueme en las redes <a href="<?php echo $facebook_campeonas; ?>" target="_blank"></a><a href="<?php echo $twitter_campeona; ?>" target="_blank"></a>
+					Sígueme en las redes 
+					<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
+					<?php if ($facebook_campeonas!='') { ?> 
+					<a href="<?php echo $facebook_campeonas; ?>" target="_blank"></a>
+					<?php } ?>
+					<?php $twitter_campeona = get_field('twitter_campeona'); ?>
+					<?php if ($twitter_campeona!='') { ?>
+					<a href="<?php echo $twitter_campeona; ?>" target="_blank"></a>
+					<?php } ?>
 				</div>
 				<div class="col-md-12 col-xs-12 pv-21">
 					<p class="text-gray thin"><?php the_field('descripcion_campeona'); ?></p>
