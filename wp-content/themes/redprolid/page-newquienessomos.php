@@ -103,6 +103,14 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</div>
 				</div>
 			</section>
+			<section class="bg-white-lighter">
+				 <div class="container-sm">
+							 		<h4 class="text-gray-darker color-g bold">Erika Brockmann, exparlamentaria boliviana (1997-2005)</h4>
+							 		<p class="thin text-gary">Publicado el 2015</p>
+							 	 <img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.png">
+					</div>
+				</div>
+			</section>			
 			<section class="end-content text-center pv-70 bg-white">
 				<div class="container-sm">
 		 			<div class="icono-content text-center pv-14">
@@ -143,19 +151,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					</div> -->
 				</div>
 			</section>
-			<section class="bg-white-lighter">
-				<div class="container-sm">
-						<div class="row">
-							 <div class="col-md-2"></div>
-							 <div class="col-md-8 col-xs-12">
-							 		<h4 class="text-gray-darker color-g bold">Erika Brockmann, exparlamentaria boliviana (1997-2005)</h4>
-							 		<p class="thin text-gary">Publicado el 2015</p>
-							 	 <img src="<?php echo content_url('/'); ?>uploads/2016/01/ericka.png">
-							 </div>
-							 <div class="col-md-2"></div>
-						</div>
-				</div>
-			</section>
+
 		</div>
 	<?php  get_footer(); ?>
 	<script type="text/javascript">
