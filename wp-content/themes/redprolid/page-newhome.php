@@ -72,34 +72,34 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<h3 class="text-gray-darker color-g inline-p bold">CAMPEON@S</h3>							
 									</div>
 									<div class="video-center-content col-xs-12 ph-0">
-										<a href="<?php echo home_url('/'); ?>yokasta-guzman/">
+										<a href="<?php echo home_url('/'); ?>yokasta-guzman/?flag=1">
 											<img src="<?php echo content_url('/'); ?>uploads/2016/01/yoko.png" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 medium">Yokasta Guzmán</h4>
 										<p class="rem-10 pv-7">"La mujer se ha ido preparando...hay más mujeres con maestrías que hombres, hay más mujeres que están en la universidad que hombres..."</p>
-										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>entrevista-a-erika-brockmann/">LEE MÁS  →</a>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>yokasta-guzman/?flag=1">LEE MÁS  →</a>
 									</div>
 									<div class="video-center-content col-xs-12 ph-0">
-										<a href="<?php echo home_url('/'); ?>isabel-saint-malo/">
+										<a href="<?php echo home_url('/'); ?>isabel-saint-malo/?flag=1">
 											<img src="<?php echo content_url('/'); ?>uploads/2016/01/isabel.png" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 medium">Isabel Saint Malo</h4>
 										<p class="rem-10 pv-7">"Lo fundamental de la equidad de género es reconocer que los hombres y las mujeres tenemos distintas cosas que aportar y eso justamente es lo que hace necesario y valioso la participación de las mujeres..."</p>
-										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>isabel-saint-malo/">LEE MÁS  →</a>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>isabel-saint-malo/?flag=1">LEE MÁS  →</a>
 									</div>		
 									<div class="video-center-content col-xs-12 ph-0">
-										<a href="<?php echo home_url('/'); ?>carolina-trivelli-2/">
+										<a href="<?php echo home_url('/'); ?>carolina-trivelli-2/?flag=1">
 											<img src="<?php echo content_url('/'); ?>uploads/2016/01/carolina.png" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 medium">Carolina Trivelli</h4>
 										<p class="rem-10 pv-7">"Lo primero que les diría (a las mujeres)...olvídense de la culpa porque no hay culpa asociada al proceso de querer ser mejor, de querer ser exitosa, de querer llegar más adelante"</p>
-										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>carolina-trivelli-2/">LEE MÁS  →</a>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>carolina-trivelli-2/?flag=1">LEE MÁS  →</a>
 									</div>																	
 								</div>
 			 		</div>			 		
@@ -150,34 +150,34 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<h3 class="text-gray-darker color-g inline-p bold">CAMPEON@S</h3>							
 									</div>
 									<div class="video-center-content col-md-12 ph-0">
-										<a href="<?php echo home_url('/'); ?>yokasta-guzman/">
+										<a href="<?php echo home_url('/'); ?>yokasta-guzman/?flag=1">
 											<img src="http://img.youtube.com/vi/aUbYK4pzXoo/maxresdefault.jpg" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 mb-0 bold">Yokasta Guzmán</h4>
 										<p class="rem-10 pv-7 mb-0">"La mujer se ha ido preparando...hay más mujeres con maestrías que hombres, hay más mujeres que están en la universidad que hombres..."</p>
-										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>yokasta-guzman/">LEE MÁS  →</a>
+										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>yokasta-guzman/?flag=1">LEE MÁS  →</a>
 									</div>
 									<div class="video-center-content col-md-12 ph-0">
-										<a href="<?php echo home_url('/'); ?>isabel-saint-malo/">
+										<a href="<?php echo home_url('/'); ?>isabel-saint-malo/?flag=1">
 											<img src="http://img.youtube.com/vi/Ix6pfhqoJ0o/maxresdefault.jpg" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 mb-0 bold">Isabel Saint Malo</h4>
 										<p class="rem-10 pv-7 mb-0">"Lo fundamental de la equidad de género es reconocer que los hombres y las mujeres tenemos distintas cosas que aportar y eso justamente es lo que hace necesario y valioso la participación de las mujeres..."</p>
-										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>isabel-saint-malo/">LEE MÁS  →</a>
+										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>isabel-saint-malo/?flag=1">LEE MÁS  →</a>
 									</div>		
 									<div class="video-center-content col-md-12  ph-0">
-										<a href="<?php echo home_url('/'); ?>carolina-trivelli-2/">
+										<a href="<?php echo home_url('/'); ?>carolina-trivelli-2/?flag=1">
 											<img src="http://img.youtube.com/vi/4HoI8imRidM/maxresdefault.jpg" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
 										<h4 class="text-gray-darker pt-7 mb-0 bold">Carolina Trivelli</h4>
 										<p class="rem-10 pv-7 mb-0">"Lo primero que les diría (a las mujeres)...olvídense de la culpa porque no hay culpa asociada al proceso de querer ser mejor, de querer ser exitosa, de querer llegar más adelante"</p>
-										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>carolina-trivelli-2/">LEE MÁS  →</a>
+										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>carolina-trivelli-2/?flag=1">LEE MÁS  →</a>
 									</div>
 				 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-12 col-sm-12">
 				 						<a href="<?php echo home_url('/'); ?>articulos/"><small class="text-gray-light pt-7">Todos los artículos →</small></a>
