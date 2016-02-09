@@ -49,12 +49,12 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 				<img src="<?php echo content_url('/'); ?>themes/redprolid/assets/img/red-prolid-red-prolid-icon.png" class="img-responsive" style="width:6%;">
 				 			</div> -->
 				 			<div class="text-description">
-				 				<h4 class="text-gray-darker bold mv-0 text-center">Conectamos a mujeres líderes del sector público <br> Latinoamericano</h4>
-				 				<p class="pv-21  ph-56-md mb-0 gray-darker text-justify">Somos una iniciativa del Banco Interamericano de Desarrollo (BID)  para el intercambio de experiencias e ideas entre mujeres que hacen política y que ocupan —o aspiran a ocupar— posiciones de liderazgo en la administración pública en América Latina. </p>	
+				 				<h4 class="text-gray-darker bold mv-0 text-center">Red PROLID</h4>
+				 				<p class="pv-21  ph-56-md mb-0 gray-darker text-justify">Somos una plataforma para conectar, promover intercambios y aprendizajes entre mujeres que ocupan o aspiran a ocupar posiciones de liderazgo en el sector público en Latinoamérica </p>	
 				 			</div>
 				 			<div class="video-intro text-center">
 				 				<iframe  class="wi-100" width="600" height="315" src="https://www.youtube.com/embed/NOZGTyHWs9M" frameborder="0" allowfullscreen></iframe>
-				 				 <p class="mv-21"><a class="text-primary medium" href="<?php echo home_url('/'); ?>redprolid/">¿QUIERES SABER MÁS? &#10145;</a></p>
+				 				 <!--<p class="mv-21"><a class="text-primary medium" href="<?php echo home_url('/'); ?>redprolid/">¿QUIERES SABER MÁS? &#10145;</a></p>-->
 				 			</div>
 				 		</div>
 					</div> 			 		
