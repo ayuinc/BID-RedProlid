@@ -1,7 +1,7 @@
 
 <?php $flag = $_GET['flag']; ?>
 <?php if ($flag!='') { ?>
-<section class="bg-gray-lighter pv-70 entrevista-a">
+<section class="bg-white pv-70 entrevista-a">
 	<div class="container-sm ph-56-md">
 		<h3 class="text-gray-darker color-g bold text-left pb-0"><?php the_title(); ?></h3>
 		<?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
@@ -46,7 +46,7 @@
 					<?php } ?>
 					<?php $twitter_campeona = get_field('twitter_campeona'); ?>
 					<?php if ($twitter_campeona!='') { ?>
-					<a href="<?php echo $twitter_campeona; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/twitter2.png" alt="Twitter" width="22"></a>
+					<a href="<?php echo $twitter_campeona; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/twitter2.png" alt="Twitter" `width="22"></a>
 					<?php } ?>
 				</div>
 				<div class="col-md-12 col-xs-12 pv-21">
