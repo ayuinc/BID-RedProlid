@@ -28,7 +28,7 @@
 				<div class="col-xs-12 hidden-md hidden-lg text-left thin">
 					<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
 					<?php $twitter_campeona = get_field('twitter_campeona'); ?>
-					<?php if ($facebook_campeonas!='') AND ($twitter_campeona!='') { ?>
+					<?php if (($facebook_campeonas!='') && ($twitter_campeona!='')) { ?>
 					Sígueme en las redes
 					<?php } ?>
 					<?php if ($facebook_campeonas!='') { ?> 
@@ -44,7 +44,7 @@
 				<div class="col-md-6 hidden-xs hidden-sm text-right thin"> 
 					<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
 					<?php $twitter_campeona = get_field('twitter_campeona'); ?>
-					<?php if ($facebook_campeonas!='') AND ($twitter_campeona!='') { ?>
+					<?php if (($facebook_campeonas!='') && ($twitter_campeona!='')) { ?>
 					Sígueme en las redes
 					<?php } ?>
 					<?php if ($facebook_campeonas!='') { ?> 
