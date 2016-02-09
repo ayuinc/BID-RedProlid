@@ -39,7 +39,7 @@
 					<?php } ?>
 				</div>
 				<div class="col-md-6 col-xs-12 text-left">
-					<a id="btnbiografia">Lee su biografía v</a>
+					<a id="btnbiografia">Lee su breve biografía</a>
 				</div>
 				<div class="col-md-6 hidden-xs hidden-sm text-right thin"> 
 					<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>

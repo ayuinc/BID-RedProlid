@@ -1,5 +1,5 @@
 		<div class="row mh-0 pt-35">
-			<h5 class="pb-14">Entrevistas Sugeridas</h5>
+			<h5 class="pb-14">Entrevistas sugeridas</h5>
 			
 			<?php $nombretitulo=get_the_title(); ?>
 			

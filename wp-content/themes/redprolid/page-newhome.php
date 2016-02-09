@@ -106,7 +106,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 			 		<div class="col-md-4 col-sm-6 col-xs-12 pt-70-md pl-21-md pr-56-md ph-7-xs pv-70-xs">
 			 			<div class="col-md-12 col-sm-6 col-xs-12 ph-0-xs ph-0-md ">
 					 		 <div class="col-sm-12 col-xs-12 pl-0 pb-14">
-					 		 	<h3 class="text-gray-darker color-g inline-p bold">DEBATES EN ACCIÓN</h3>		
+					 		 	<h3 class="text-gray-darker color-g inline-p bold">DEBATES EN CURSO</h3>		
 					 		 </div>
 					 		 	<a href="<?php echo home_url('/'); ?>en-las-redes-sociales-como-en-una-ventanilla/">	
 			 					<div class="col-xs-12 col-sm-6 col-md-11 pl-0 ph-0-xs bg-img-block minh-140" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/twitter-phone.jpg)"></div>
@@ -134,7 +134,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 					 				<div class="video-center-content col-md-12 col-xs-12 ph-0 ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/indes.png); background-size: cover !important;" ></div>
 						 		</a>
 				 				<div class="col-sm-12 col-xs-12  ph-0 pt-7 pb-21">
-				 					<p class="text-gray-dark h3">Atención al cierre de psotulación para el curso: Cambio organizacional para una gestión efectiva</p>
+				 					<p class="text-gray-dark h3">Atención al cierre de postulación para el curso: Cambio organizacional para una gestión efectiva</p>
 				 					<div class="col-sm-12 col-xs-12 ph-0">
 				 						<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>abierta-la-convocatoria-para-postular-al-curso-mejorando-la-implementacion-en-los-programas-publico/">INGRESA →</a>
 				 					</div>
