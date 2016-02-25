@@ -10,7 +10,9 @@
 		<div class="text-center">
       <?php $imagen_punto_de_vista = get_field('imagen_punto_de_vista'); ?>
       <?php if ($imagen_punto_de_vista!='') { ?>
-      <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" style="width:100%;">
+      	<div class="pv-21">
+      		<img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" style="width:100%;">
+      	</div>
       <?php } ?>			
       <?php $video = get_field('video_youtube_puntos_de_vista'); ?>
       <?php if ($video!='') { ?>
