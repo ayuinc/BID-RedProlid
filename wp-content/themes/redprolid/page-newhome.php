@@ -15,12 +15,12 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 								<h4 class="text-gray-dark bold">Pasos cortos en un camino largo: retos para el liderazgo político de la mujer indígena en América Latina</h4>
 								<p class="text-gray-dark medium f-15 pb-7">Investigadora asociada del Instituto de Estudios Peruanos (IEP).
 								Ha sido directora de políticas indígenas del Viceministerio de Interculturalidad del Ministerio de Cultura de Perú (2013-2014).</p>
-								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>delia-ferreira/">LEE EL ARTÍCULO →</a>			
+								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>anahi-durand/?flag=1/">LEE EL ARTÍCULO →</a>			
 							</div>
 						</div>						
 					</div>
-					<a href="<?php echo home_url('/'); ?>delia-ferreira/"><div class="col-md-6 col-sm-6 img-header flex bg-img-block minh-350 hidden-xs hidden-sm" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/anahi_durand.PNG)"></div></a>
-					<a href="<?php echo home_url('/'); ?>delia-ferreira/"><div class="col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/anahi_durand.PNG)"></div></a>					
+					<a href="<?php echo home_url('/'); ?>anahi-durand/?flag=1/"><div class="col-md-6 col-sm-6 img-header flex bg-img-block minh-350 hidden-xs hidden-sm" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/02/anahi_durand.PNG)"></div></a>
+					<a href="<?php echo home_url('/'); ?>anahi-durand/?flag=1/"><div class="col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/02/anahi_durand.PNG)"></div></a>					
 					<div class="col-xs-12 content-header-responsive hidden-md hidden-lg">
 							<div class="container pv-35-xs">
 								<small class="text-gray-darker h6 bold mt-42">PUNTOS DE VISTA</small>
@@ -28,7 +28,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 								<h4 class="text-gray-dark bold">Pasos cortos en un camino largo: retos para el liderazgo político de la mujer indígena en América Latina</h4>
 								<p class="text-gray-dark medium f-15 pb-7">Investigadora asociada del Instituto de Estudios Peruanos (IEP).
 								Ha sido directora de políticas indígenas del Viceministerio de Interculturalidad del Ministerio de Cultura de Perú (2013-2014).</p>
-								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>delia-ferreira/">LEE EL ARTÍCULO →</a>				
+								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>anahi-durand/?flag=1/">LEE EL ARTÍCULO →</a>				
 							</div>
 					</div>
 				</div>
