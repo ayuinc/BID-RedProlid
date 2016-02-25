@@ -21,12 +21,16 @@
       	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_campeonas'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="340" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <?php } ?> 			
 		</div>
-		<p class="text-gray-dark f-s-19 mv-14"><?php the_field('posicion_campeona'); ?></p>
+    <?php the_field('profesion'); ?>
+  	<?php $autor_puntos = get_field('autor_puntos'); ?>
+		<?php if ($autor_puntos!='') { ?>
+  	<p class="text-gray-dark f-s-19 mv-14">Tema propuesto por <a href="mailto:<?php the_field('autor_email_puntos'); ?>"><?php the_field('autor_puntos'); ?></p>
+  	<?php } ?>		
 		<div class="collapse-bio">
 			<div class="row">
 				<div class="col-xs-12 hidden-md hidden-lg text-left thin">
-					<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
-					<?php $twitter_campeona = get_field('twitter_campeona'); ?>
+					<?php $facebook_campeonas = get_field('facebook_puntosdevista'); ?>
+					<?php $twitter_campeona = get_field('cuenta_de_twitter'); ?>
 					<?php if (($facebook_campeonas!='') && ($twitter_campeona!='')) { ?>
 					Sígueme en las redes
 					<?php } ?>
@@ -41,8 +45,8 @@
 					<a id="btnbiografia">Lee su breve biografía</a>
 				</div>
 				<div class="col-md-6 hidden-xs hidden-sm text-right thin"> 
-					<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
-					<?php $twitter_campeona = get_field('twitter_campeona'); ?>
+					<?php $facebook_campeonas = get_field('facebook_puntosdevista'); ?>
+					<?php $twitter_campeona = get_field('cuenta_de_twitter'); ?>
 					<?php if (($facebook_campeonas!='') && ($twitter_campeona!='')) { ?>
 					Sígueme en las redes
 					<?php } ?>
@@ -54,7 +58,7 @@
 					<?php } ?>
 				</div>
 				<div class="col-md-12 col-xs-12 pv-21">
-					<p class="text-gray thin"><?php the_field('descripcion_campeona'); ?></p>
+					<p class="text-gray thin"><?php the_field('descripcion_larga_punto_de_vista'); ?></p>
 				</div>
 			</div>
 		</div>
