@@ -11,21 +11,23 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 						<div class="text-left bg-white text-header-first">
 							<div class="container pl-35-md pv-35-xs">
 								<small class="text-gray h6 mt-42">PUNTOS DE VISTA</small>
-								<h1 class="h2 text-gray-dark mv-0 pt-21">Delia Ferreira</h1>
-								<h4 class="text-gray-dark bold">Cinco estrategias para financiar la carrera política de una mujer</h4>
-								<p class="text-gray-dark medium f-15 pb-7">Consultora internacional, especialista en partidos políticos, asuntos electorales, financiamiento de la política y género.</p>
+								<h1 class="h2 text-gray-dark mv-0 pt-21">Anahí Durand</h1>
+								<h4 class="text-gray-dark bold">Pasos cortos en un camino largo: retos para el liderazgo político de la mujer indígena en América Latina</h4>
+								<p class="text-gray-dark medium f-15 pb-7">Investigadora asociada del Instituto de Estudios Peruanos (IEP).
+								Ha sido directora de políticas indígenas del Viceministerio de Interculturalidad del Ministerio de Cultura de Perú (2013-2014).</p>
 								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>delia-ferreira/">LEE EL ARTÍCULO →</a>			
 							</div>
 						</div>						
 					</div>
-					<a href="<?php echo home_url('/'); ?>delia-ferreira/"><div class="col-md-6 col-sm-6 img-header flex bg-img-block minh-350 hidden-xs hidden-sm" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/img_2016_02.png)"></div></a>
-					<a href="<?php echo home_url('/'); ?>delia-ferreira/"><div class="col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/img_2016_02.png)"></div></a>					
+					<a href="<?php echo home_url('/'); ?>delia-ferreira/"><div class="col-md-6 col-sm-6 img-header flex bg-img-block minh-350 hidden-xs hidden-sm" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/anahi_durand.png)"></div></a>
+					<a href="<?php echo home_url('/'); ?>delia-ferreira/"><div class="col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/anahi_durand.png)"></div></a>					
 					<div class="col-xs-12 content-header-responsive hidden-md hidden-lg">
 							<div class="container pv-35-xs">
 								<small class="text-gray-darker h6 bold mt-42">PUNTOS DE VISTA</small>
-								<h1 class="h2 text-gray-darker mv-0">Delia Ferreira</h1>
-								<h3>Cinco estrategias para financiar la carrera política de una mujer</h3>
-								<p class="text-gray medium f-15 pb-7">Consultora internacional, especialista en partidos políticos, asuntos electorales, financiamiento de la política y género.</p>
+								<h1 class="h2 text-gray-dark mv-0 pt-21">Anahí Durand</h1>
+								<h4 class="text-gray-dark bold">Pasos cortos en un camino largo: retos para el liderazgo político de la mujer indígena en América Latina</h4>
+								<p class="text-gray-dark medium f-15 pb-7">Investigadora asociada del Instituto de Estudios Peruanos (IEP).
+								Ha sido directora de políticas indígenas del Viceministerio de Interculturalidad del Ministerio de Cultura de Perú (2013-2014).</p>
 								<a class="text-primary f-12 bold" href="<?php echo home_url('/'); ?>delia-ferreira/">LEE EL ARTÍCULO →</a>				
 							</div>
 					</div>
@@ -71,34 +73,36 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<h3 class="text-gray-darker color-g inline-p bold">CAMPEON@S</h3>							
 									</div>
 									<div class="video-center-content col-xs-12 ph-0">
-										<a href="<?php echo home_url('/'); ?>yokasta-guzman/?flag=1">
-											<img src="<?php echo content_url('/'); ?>uploads/2016/02/yoko.png" alt="" class="w-100">
+										<a href="<?php echo home_url('/'); ?>entrevista-a-gloria-young/?flag=1">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/02/gloria_young.png" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
-										<h4 class="text-gray-darker pt-7 medium">Yokasta Guzmán</h4>
-										<p class="rem-10 pv-7">"La mujer se ha ido preparando...hay más mujeres con maestrías que hombres, hay más mujeres que están en la universidad que hombres..."</p>
-										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>yokasta-guzman/?flag=1">LEE MÁS  →</a>
+										<h4 class="text-gray-darker pt-7 medium">Gloria Young</h4>
+										<p class="rem-10 pv-7">"Los hombres que hoy se atreven a apoyar a las mujeres son hombres que van a
+													pasar a la historia"
+										</p>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>entrevista-a-gloria-young/?flag=1">LEE MÁS  →</a>
 									</div>
 									<div class="video-center-content col-xs-12 ph-0">
-										<a href="<?php echo home_url('/'); ?>isabel-saint-malo/?flag=1">
-											<img src="<?php echo content_url('/'); ?>uploads/2016/02/isabel.png" alt="" class="w-100">
+										<a href="<?php echo home_url('/'); ?>epsy-campbell/?flag=1">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/02/epsy_campbell.png" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
-										<h4 class="text-gray-darker pt-7 medium">Isabel Saint Malo</h4>
-										<p class="rem-10 pv-7">"Lo fundamental de la equidad de género es reconocer que los hombres y las mujeres tenemos distintas cosas que aportar y eso justamente es lo que hace necesario y valioso la participación de las mujeres..."</p>
-										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>isabel-saint-malo/?flag=1">LEE MÁS  →</a>
+										<h4 class="text-gray-darker pt-7 medium">Epsy Campbell</h4>
+										<p class="rem-10 pv-7">"...Los hombres deben estar protagonizando con las mujeres la apertura de puertas para que mujeres asuman puestos relevantes..."</p>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>epsy-campbell/?flag=1">LEE MÁS  →</a>
 									</div>		
 									<div class="video-center-content col-xs-12 ph-0">
-										<a href="<?php echo home_url('/'); ?>carolina-trivelli-2/?flag=1">
-											<img src="<?php echo content_url('/'); ?>uploads/2016/02/carolina.png" alt="" class="w-100">
+										<a href="<?php echo home_url('/'); ?>otilia-lux/?flag=1">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/02/otilia_lux.png" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
-										<h4 class="text-gray-darker pt-7 medium">Carolina Trivelli</h4>
-										<p class="rem-10 pv-7">"Lo primero que les diría (a las mujeres)...olvídense de la culpa porque no hay culpa asociada al proceso de querer ser mejor, de querer ser exitosa, de querer llegar más adelante"</p>
-										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>carolina-trivelli-2/?flag=1">LEE MÁS  →</a>
+										<h4 class="text-gray-darker pt-7 medium">Otilia Lux de Cotí</h4>
+										<p class="rem-10 pv-7">"Yo le diría a las jóvenes que participen en la política...que no tengan miedo,¡participen!"</p>
+										<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>otilia-lux/?flag=1">LEE MÁS  →</a>
 									</div>																	
 								</div>
 			 		</div>			 		
@@ -149,34 +153,36 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 										<h3 class="text-gray-darker color-g inline-p bold">CAMPEON@S</h3>							
 									</div>
 									<div class="video-center-content col-md-12 ph-0">
-										<a href="<?php echo home_url('/'); ?>yokasta-guzman/?flag=1">
-											<img src="<?php echo content_url('/'); ?>uploads/2016/02/yoko.png" alt="" class="w-100">
+										<a href="<?php echo home_url('/'); ?>entrevista-a-gloria-young/?flag=1">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/02/gloria_young.png" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
-										<h4 class="text-gray-darker pt-7 mb-0 bold">Yokasta Guzmán</h4>
-										<p class="rem-10 pv-7 mb-0">"La mujer se ha ido preparando...hay más mujeres con maestrías que hombres, hay más mujeres que están en la universidad que hombres..."</p>
-										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>yokasta-guzman/?flag=1">LEE MÁS  →</a>
+										<h4 class="text-gray-darker pt-7 mb-0 bold">Gloria Young</h4>
+										<p class="rem-10 pv-7 mb-0">"Los hombres que hoy se atreven a apoyar a las mujeres son hombres que van a
+													pasar a la historia"
+										</p>
+										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>entrevista-a-gloria-young/?flag=1">LEE MÁS  →</a>
 									</div>
 									<div class="video-center-content col-md-12 ph-0">
-										<a href="<?php echo home_url('/'); ?>isabel-saint-malo/?flag=1">
-											<img src="<?php echo content_url('/'); ?>uploads/2016/02/isabel.png" alt="" class="w-100">
+										<a href="<?php echo home_url('/'); ?>epsy-campbell/?flag=1">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/02/epsy_campbell.png" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
-										<h4 class="text-gray-darker pt-7 mb-0 bold">Isabel Saint Malo</h4>
-										<p class="rem-10 pv-7 mb-0">"Lo fundamental de la equidad de género es reconocer que los hombres y las mujeres tenemos distintas cosas que aportar y eso justamente es lo que hace necesario y valioso la participación de las mujeres..."</p>
-										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>isabel-saint-malo/?flag=1">LEE MÁS  →</a>
+										<h4 class="text-gray-darker pt-7 mb-0 bold">Epsy Campbell</h4>
+										<p class="rem-10 pv-7 mb-0">"...Los hombres deben estar protagonizando con las mujeres la apertura de puertas para que mujeres asuman puestos relevantes..." </p>
+										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>epsy-campbell/?flag=1">LEE MÁS  →</a>
 									</div>		
 									<div class="video-center-content col-md-12  ph-0">
-										<a href="<?php echo home_url('/'); ?>carolina-trivelli-2/?flag=1">
-											<img src="<?php echo content_url('/'); ?>uploads/2016/02/carolina.png" alt="" class="w-100">
+										<a href="<?php echo home_url('/'); ?>otilia-lux/?flag=1">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/02/otilia_lux.png" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
-										<h4 class="text-gray-darker pt-7 mb-0 bold">Carolina Trivelli</h4>
-										<p class="rem-10 pv-7 mb-0">"Lo primero que les diría (a las mujeres)...olvídense de la culpa porque no hay culpa asociada al proceso de querer ser mejor, de querer ser exitosa, de querer llegar más adelante"</p>
-										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>carolina-trivelli-2/?flag=1">LEE MÁS  →</a>
+										<h4 class="text-gray-darker pt-7 mb-0 bold">Otilia Lux de Cotí</h4>
+										<p class="rem-10 pv-7 mb-0">"Yo le diría a las jóvenes que participen en la política...que no tengan miedo,¡participen!"</p>
+										<a class="text-primary f-13 bold" href="<?php echo home_url('/'); ?>otilia-lux/?flag=1">LEE MÁS  →</a>
 									</div>
 				 					<div class="border-top-gray-light text-right ph-0 mv-35 col-md-12 col-sm-12">
 				 						<a href="<?php echo home_url('/'); ?>articulos/"><small class="text-gray-light pt-7">Todos los artículos →</small></a>
