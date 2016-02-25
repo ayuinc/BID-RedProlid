@@ -7,12 +7,10 @@
 		<?php if ($tempDate!='') { ?>
 		<p class="thin text-gray text-left">Publicado el<?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>
 		<?php } ?> 							 		
-		<div class="text-center">
+		<div class="text-center pt-21 pb-21">
       <?php $imagen_punto_de_vista = get_field('imagen_punto_de_vista'); ?>
       <?php if ($imagen_punto_de_vista!='') { ?>
-      	<div class="pv-21">
-      		<img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" style="width:100%;">
-      	</div>
+      	<img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" style="width:100%;">
       <?php } ?>			
       <?php $video = get_field('video_youtube_puntos_de_vista'); ?>
       <?php if ($video!='') { ?>
