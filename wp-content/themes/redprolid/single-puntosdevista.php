@@ -1,3 +1,85 @@
+<?php $flag = $_GET['flag']; ?>
+<?php if ($flag!='') { ?>
+<section class="bg-white pv-70 entrevista-a">
+	<div class="container-sm ph-56-md">
+		<h3 class="text-gray-darker color-g bold text-left pb-0 mb-0"><?php the_title(); ?></h3>
+		<?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
+		<?php if ($tempDate!='') { ?>
+		<p class="thin text-gray text-left">Publicado el<?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>
+		<?php } ?> 							 		
+		<div class="text-center">
+      <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
+      <?php if ($imagen_campeona!='') { ?>
+      <img src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" width="100%">
+      <?php } ?>			
+      <?php $video = get_field('video_campeonas'); ?>
+      <?php if ($video!='') { ?>
+      	<iframe  class="embed-responsive-item" width="100%" height="340" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      <?php } ?>
+      <?php $video_vimeo = get_field('video_vimeo_campeonas'); ?>
+      <?php if ($video_vimeo!='') { ?>
+      	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_campeonas'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="340" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <?php } ?> 			
+		</div>
+		<p class="text-gray-dark f-s-19 mv-14"><?php the_field('posicion_campeona'); ?></p>
+		<div class="collapse-bio">
+			<div class="row">
+				<div class="col-xs-12 hidden-md hidden-lg text-left thin">
+					<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
+					<?php $twitter_campeona = get_field('twitter_campeona'); ?>
+					<?php if (($facebook_campeonas!='') && ($twitter_campeona!='')) { ?>
+					Sígueme en las redes
+					<?php } ?>
+					<?php if ($facebook_campeonas!='') { ?> 
+					<a href="<?php echo $facebook_campeonas; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/facebook2.png" alt="Facebook" width="22"></a>
+					<?php } ?>
+					<?php if ($twitter_campeona!='') { ?>
+					<a href="<?php echo $twitter_campeona; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/twitter2.png" alt="Twitter" width="22"></a>
+					<?php } ?>
+				</div>
+				<div class="col-md-6 col-xs-12 text-left">
+					<a id="btnbiografia">Lee su breve biografía</a>
+				</div>
+				<div class="col-md-6 hidden-xs hidden-sm text-right thin"> 
+					<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
+					<?php $twitter_campeona = get_field('twitter_campeona'); ?>
+					<?php if (($facebook_campeonas!='') && ($twitter_campeona!='')) { ?>
+					Sígueme en las redes
+					<?php } ?>
+					<?php if ($facebook_campeonas!='') { ?> 
+					<a href="<?php echo $facebook_campeonas; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/facebook2.png" alt="Facebook" width="22"></a>
+					<?php } ?>
+					<?php if ($twitter_campeona!='') { ?>
+					<a href="<?php echo $twitter_campeona; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/twitter2.png" alt="Twitter" width="22"></a>
+					<?php } ?>
+				</div>
+				<div class="col-md-12 col-xs-12 pv-21">
+					<p class="text-gray thin"><?php the_field('descripcion_campeona'); ?></p>
+				</div>
+			</div>
+		</div>
+		<div class="border-bottom-gray-light pv-14"></div>
+		<div class="entrevista">
+			<p><?php the_field('intro_entrevista_campeona'); ?></p>
+			<?php the_field('entrevista_completa_campeona'); ?>
+		</div>
+		<?php get_template_part( 'include', 'encuestassugeridas' ); ?>
+	  <div class="row">
+			<div class="col-sm-12 pv-21">  
+				<?php	if ( is_user_logged_in() ) { ?>
+					<?php comments_template();?>
+				<?php } else { ?>
+			   <p>Para poder comentar es necesario que <a href="/registrate/">inicies tu sesión o te registres</a> en Red PROLID.</p>
+				<?php }	?>
+			</div>
+		</div>
+	</div>
+</section>
+				
+<?php } else { ?>
+
+
+
 <section id="puntos-de-vista" class="mt-7">
   <div class="container relative mb-14">
     <?php the_breadcrumb(); ?>
@@ -190,4 +272,26 @@
 	    </div>
 	  </div>
 	</div>
-	<!-- END Modal PUNTOS DE VISTA-->
+<?php } ?>
+
+
+<script type="text/javascript">
+	$('a[href^="#"]').on('click', function(event) {
+
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+	});
+</script>
+<script>
+		$("#btnbiografia").on('click',function(e){
+	   e.preventDefault();
+	   $(this).parents().toggleClass('active');
+	 });
+</script>
