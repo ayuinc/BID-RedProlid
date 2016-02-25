@@ -8,15 +8,15 @@
 		<p class="thin text-gray text-left">Publicado el<?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>
 		<?php } ?> 							 		
 		<div class="text-center">
-      <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
-      <?php if ($imagen_campeona!='') { ?>
-      <img src="<?php the_field('imagen_campeonas'); ?>" alt="<?php the_title(); ?>" width="100%">
+      <?php $imagen_punto_de_vista = get_field('imagen_punto_de_vista'); ?>
+      <?php if ($imagen_punto_de_vista!='') { ?>
+      <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" style="width:100%;">
       <?php } ?>			
-      <?php $video = get_field('video_campeonas'); ?>
+      <?php $video = get_field('video_youtube_puntos_de_vista'); ?>
       <?php if ($video!='') { ?>
       	<iframe  class="embed-responsive-item" width="100%" height="340" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       <?php } ?>
-      <?php $video_vimeo = get_field('video_vimeo_campeonas'); ?>
+      <?php $video_vimeo = get_field('video_vimeo_puntos_de_vista'); ?>
       <?php if ($video_vimeo!='') { ?>
       	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_campeonas'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="340" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <?php } ?> 			
@@ -61,7 +61,7 @@
 		<div class="border-bottom-gray-light pv-14"></div>
 		<div class="entrevista">
 			<p><?php the_field('intro_entrevista_campeona'); ?></p>
-			<?php the_field('entrevista_completa_campeona'); ?>
+			<?php the_field('contenido_punto_de_vista'); ?>
 		</div>
 		<?php get_template_part( 'include', 'encuestassugeridas' ); ?>
 	  <div class="row">
@@ -77,8 +77,6 @@
 </section>
 				
 <?php } else { ?>
-
-
 
 <section id="puntos-de-vista" class="mt-7">
   <div class="container relative mb-14">
@@ -179,44 +177,6 @@
 				<?php }	?>
       </div>
     </div>
-    <!--<div class="row">
-      <div class="col-sm-10 col-md-offset-1 pl-0 pr-0 mt-21">		  
-		    <h3 class="text-gray-darker">Artículos comentados</h3>
-		    <ul class="ml--14 grid-list grid-list-2 pb-ch-7 light">
-        <?php 
-        $args = array(
-          'number' => '3'
-        );
-        $prev_post_id = '';
-        $comments = get_comments();?>
-
-        <?php foreach ($comments as $comment) : ?>
-          <?php   
-            $comm_post_id = $comment->comment_post_ID; 
-            $cat = get_the_category( $comm_post_id );
-          ?>
-          <?php if ( $cat[0]->slug == "puntos-de-vista") : ?>
-            <?php if ($prev_post_id != $comm_post_id) : ?>
-              <?php $prev_post_id = $comm_post_id; ?>
-                <li class="mb-14">
-
-                  <small class="date light"><?php echo(substr( $comment->comment_content, 0, 250 )); ?></small></br>
-                  <small class="date light"><?php echo($comment->comment_date);?> 
-                  <?php //echo($comment->comment_author);?>
-                  <?php
-                    $categories = get_the_category($comment->comment_post_ID);
-                    $cat_name = $categories[0]->name;
-                  ?>
-                  | <span><?php echo $comment->comment_author; ?></span>
-                  </small> 
-                </li>
-            <?php endif; ?>
-          <?php endif; ?>
-          
-        <?php endforeach;?>
-        </ul>
-      </div>
-    </div>-->
   </div>
 </section>
 
