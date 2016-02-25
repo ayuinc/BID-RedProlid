@@ -19,8 +19,8 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 							</div>
 						</div>						
 					</div>
-					<a href="<?php echo home_url('/'); ?>delia-ferreira/"><div class="col-md-6 col-sm-6 img-header flex bg-img-block minh-350 hidden-xs hidden-sm" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/anahi_durand.png)"></div></a>
-					<a href="<?php echo home_url('/'); ?>delia-ferreira/"><div class="col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/anahi_durand.png)"></div></a>					
+					<a href="<?php echo home_url('/'); ?>delia-ferreira/"><div class="col-md-6 col-sm-6 img-header flex bg-img-block minh-350 hidden-xs hidden-sm" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/anahi_durand.PNG)"></div></a>
+					<a href="<?php echo home_url('/'); ?>delia-ferreira/"><div class="col-xs-12 img-header flex bg-img-block minh-420 hidden-md hidden-lg " style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/anahi_durand.PNG)"></div></a>					
 					<div class="col-xs-12 content-header-responsive hidden-md hidden-lg">
 							<div class="container pv-35-xs">
 								<small class="text-gray-darker h6 bold mt-42">PUNTOS DE VISTA</small>
@@ -74,7 +74,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>
 									<div class="video-center-content col-xs-12 ph-0">
 										<a href="<?php echo home_url('/'); ?>entrevista-a-gloria-young/?flag=1">
-											<img src="<?php echo content_url('/'); ?>uploads/2016/02/gloria_young.png" alt="" class="w-100">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/02/gloria_young.PNG" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
@@ -86,7 +86,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>
 									<div class="video-center-content col-xs-12 ph-0">
 										<a href="<?php echo home_url('/'); ?>epsy-campbell/?flag=1">
-											<img src="<?php echo content_url('/'); ?>uploads/2016/02/epsy_campbell.png" alt="" class="w-100">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/02/epsy_campbell.PNG" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
@@ -96,7 +96,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>		
 									<div class="video-center-content col-xs-12 ph-0">
 										<a href="<?php echo home_url('/'); ?>otilia-lux/?flag=1">
-											<img src="<?php echo content_url('/'); ?>uploads/2016/02/otilia_lux.png" alt="" class="w-100">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/02/otilia_lux.PNG" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
@@ -134,7 +134,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 					<h3 class="text-gray-darker color-g inline-p bold">EVENTO</h3>							
 				 				</div>
 				 				<a href="<?php echo home_url('/'); ?>abierta-la-convocatoria-para-postular-al-curso-mejorando-la-implementacion-en-los-programas-publico/">
-					 				<div class="video-center-content col-md-12 col-xs-12 ph-0 ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/indes.png); background-size: cover !important;" ></div>
+					 				<div class="video-center-content col-md-12 col-xs-12 ph-0 ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/indes.PNG); background-size: cover !important;" ></div>
 						 		</a>
 				 				<div class="col-sm-12 col-xs-12  ph-0 pt-7 pb-21">
 				 					<p class="text-gray-dark h3">Atención al cierre de postulación para el curso: Cambio organizacional para una gestión efectiva</p>
@@ -154,7 +154,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>
 									<div class="video-center-content col-md-12 ph-0">
 										<a href="<?php echo home_url('/'); ?>entrevista-a-gloria-young/?flag=1">
-											<img src="<?php echo content_url('/'); ?>uploads/2016/02/gloria_young.png" alt="" class="w-100">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/02/gloria_young.PNG" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
@@ -166,7 +166,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>
 									<div class="video-center-content col-md-12 ph-0">
 										<a href="<?php echo home_url('/'); ?>epsy-campbell/?flag=1">
-											<img src="<?php echo content_url('/'); ?>uploads/2016/02/epsy_campbell.png" alt="" class="w-100">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/02/epsy_campbell.PNG" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
@@ -176,7 +176,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 									</div>		
 									<div class="video-center-content col-md-12  ph-0">
 										<a href="<?php echo home_url('/'); ?>otilia-lux/?flag=1">
-											<img src="<?php echo content_url('/'); ?>uploads/2016/02/otilia_lux.png" alt="" class="w-100">
+											<img src="<?php echo content_url('/'); ?>uploads/2016/02/otilia_lux.PNG" alt="" class="w-100">
 										</a>
 									</div>
 									<div class="col-sm-12 col-xs-12 bg-white ph-0 pt-7 pb-42">
