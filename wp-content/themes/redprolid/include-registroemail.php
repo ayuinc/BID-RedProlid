@@ -10,8 +10,8 @@
 						<input placeholder="Correo electrónico" name="EMAIL" class="bdr-rds col-sm-12 col-xs-12 p-7 required email" type="text" id="mce-EMAIL" style="height:42px">						
 					</div>
 					<div style="position: absolute; left: -5000px;"><input type="text" name="b_242e37fe564525e1aad9cfc03_eb13f7ce93" tabindex="-1" value=""></div>
-					<div class="col-md-4 col-sm-12 col-xs-12 pv-14-xs text-center-xs text-left bold pl-0-md">
-						<input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg text-white bold btn-primary bdr-rds" style="width:100%">					
+					<div class="col-md-4 col-sm-12 col-xs-12 pv-14-xs text-center-xs text-left bold">
+						<input type="submit" value="REGÍSTRATE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg text-white bold bg-pink-redprolid bdr-rds" style="width:100%">					
 					</div>
 				</div>
 			</div>
