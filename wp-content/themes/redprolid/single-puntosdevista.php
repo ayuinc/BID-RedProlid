@@ -7,18 +7,18 @@
 		<?php if ($tempDate!='') { ?>
 		<p class="thin text-gray text-left">Publicado el<?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>
 		<?php } ?> 							 		
-		<div class="text-center">
+		<div class="text-center pt-21 pb-21">
       <?php $imagen_punto_de_vista = get_field('imagen_punto_de_vista'); ?>
       <?php if ($imagen_punto_de_vista!='') { ?>
-      <img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" style="width:100%;">
+      	<img src="<?php the_field('imagen_punto_de_vista'); ?>" alt="<?php the_title(); ?>" style="width:100%;">
       <?php } ?>			
       <?php $video = get_field('video_youtube_puntos_de_vista'); ?>
       <?php if ($video!='') { ?>
-      	<iframe  class="embed-responsive-item" width="100%" height="340" src="https://www.youtube.com/embed/<?php the_field('video_campeonas'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      	<iframe  class="embed-responsive-item" width="100%" height="340" src="https://www.youtube.com/embed/<?php the_field('video_youtube_puntos_de_vista'); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       <?php } ?>
       <?php $video_vimeo = get_field('video_vimeo_puntos_de_vista'); ?>
       <?php if ($video_vimeo!='') { ?>
-      	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_campeonas'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="340" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      	<iframe src="//player.vimeo.com/video/<?php the_field('video_vimeo_puntos_de_vista'); ?>?color=1f3340&title=0&byline=0&portrait=0" width="100%" height="340" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <?php } ?> 			
 		</div>
     <?php the_field('profesion'); ?>
@@ -58,6 +58,7 @@
 					<?php } ?>
 				</div>
 				<div class="col-md-12 col-xs-12 pv-21">
+					<h3 class="medium mb-0"><?php the_field('nombre_completo'); ?></h3>
 					<p class="text-gray thin"><?php the_field('descripcion_larga_punto_de_vista'); ?></p>
 				</div>
 			</div>
