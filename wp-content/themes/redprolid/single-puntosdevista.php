@@ -2,7 +2,7 @@
 <?php if ($flag!='') { ?>
 <section class="bg-white pv-70 entrevista-a">
 	<div class="container-sm ph-56-md">
-		<h3 class="text-gray-darker color-g bold text-left pb-0 mb-0"><?php the_title(); ?></h3>
+		<h3 class="medium mb-0"><?php the_field('nombre_completo'); ?></h3>		
 		<?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
 		<?php if ($tempDate!='') { ?>
 		<p class="thin text-gray text-left">Publicado el<?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>
@@ -42,7 +42,7 @@
 					<?php } ?>
 				</div>
 				<div class="col-md-6 col-xs-12 text-left">
-					<a id="btnbiografia">Lee su breve biografía</a>
+					<a id="btnbiografia">Lee su breve biografía <img src="<?php echo content_url('/'); ?>uploads/2016/02/arrow-down-o.svg" alt="arrow down"></a>
 				</div>
 				<div class="col-md-6 hidden-xs hidden-sm text-right thin"> 
 					<?php $facebook_campeonas = get_field('facebook_puntosdevista'); ?>
@@ -58,7 +58,7 @@
 					<?php } ?>
 				</div>
 				<div class="col-md-12 col-xs-12 pv-21">
-					<h3 class="medium mb-0"><?php the_field('nombre_completo'); ?></h3>
+					<h3 class="text-gray-darker color-g bold text-left pb-0 mb-0"><?php the_title(); ?></h3>
 					<p class="text-gray thin"><?php the_field('descripcion_larga_punto_de_vista'); ?></p>
 				</div>
 			</div>
