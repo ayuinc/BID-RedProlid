@@ -2,7 +2,27 @@
 			<h5 class="pb-14">Entrevistas sugeridas</h5>
 			
 			<?php $nombretitulo=get_the_title(); ?>
+
+			<?php if ($nombretitulo=='Anahí Durand') { ?>
+			<div class="col-md-6 ph-0 col-xs-12">
+				<div class="col-md-12 ph-0 col-xs-12 img-entrevistas-sugeridas pb-14">
+					<a href="<?php echo home_url('/'); ?>delia-ferreira/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/DEliaFerreira.png"></a>
+				</div>
+				<p class="rem-10 bold">Delia Ferreira</p>
+				<p class="rem-08 pv-0 medium">Consultora Internacional, especialista en partidos políticos, asuntos electorales, financiamiento de la política y género.</p>
+				<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>delia-ferreira/?flag=1">LEE MÁS  →</a>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="col-md-12 col-xs-12 ph-0 img-entrevistas-sugeridas pb-14">
+					<a href="<?php echo home_url('/'); ?>alicia-del-aguila/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/aliciaalguila.jpg"></a>
+				</div>
+				<p class="rem-10 bold">Alicia del Águila</p>
+				<p class="rem-08 pv-0 medium">"Las mujeres siguen disponiendo de mucho menos dinero para invertir en las campañas y tienen menos oportunidades para aparecer en medios"</p>		
+				<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>alicia-del-aguila/?flag=1">LEE MÁS  →</a>	
+			</div>
+			<?php } ?>
 			
+
 			<?php if ($nombretitulo=='Carolina Trivelli') { ?>
 			<div class="col-md-6 ph-0 col-xs-12">
 				<div class="col-md-12 ph-0 col-xs-12 img-entrevistas-sugeridas pb-14">
