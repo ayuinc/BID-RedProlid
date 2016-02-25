@@ -23,7 +23,7 @@
 			<?php } ?>
 			
 
-			<?php if ($nombretitulo=='Carolina Trivelli') { ?>
+			<?php if ($nombretitulo=='Gloria Young') { ?>
 			<div class="col-md-6 ph-0 col-xs-12">
 				<div class="col-md-12 ph-0 col-xs-12 img-entrevistas-sugeridas pb-14">
 					<a href="<?php echo home_url('/'); ?>yokasta-guzman/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/yoko.png"></a>
@@ -42,7 +42,7 @@
 			</div>
 			<?php } ?>
 			
-			<?php if ($nombretitulo=='Isabel Saint Malo') { ?>
+			<?php if ($nombretitulo=='Epsy Campbell') { ?>
 			<div class="col-md-6 ph-0 col-xs-12">
 				<div class="col-md-12 ph-0 col-xs-12 img-entrevistas-sugeridas pb-14">
 					<a href="<?php echo home_url('/'); ?>yokasta-guzman/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/yoko.png"></a>
@@ -61,7 +61,7 @@
 			</div>	
 			<?php } ?>
 		
-			<?php if ($nombretitulo=='Yokasta Guzmán') { ?>
+			<?php if ($nombretitulo=='Otilia Lux de Cotí') { ?>
 			<div class="col-md-6 col-xs-12">
 				<div class="col-md-12 col-xs-12 ph-0 img-entrevistas-sugeridas pb-14">
 					<a href="<?php echo home_url('/'); ?>carolina-trivelli-2/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/carolina.png"></a>
