@@ -69,6 +69,7 @@
 			<?php the_field('contenido_punto_de_vista'); ?>
 		</div>
 		<?php get_template_part( 'include', 'encuestassugeridas' ); ?>
+		<?php get_template_part( 'include', 'registroemail' ); ?>
 	  <div class="row">
 			<div class="col-sm-12 pv-21">  
 				<?php	if ( is_user_logged_in() ) { ?>
