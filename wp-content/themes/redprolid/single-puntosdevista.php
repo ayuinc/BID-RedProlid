@@ -2,7 +2,7 @@
 <?php if ($flag!='') { ?>
 <section class="bg-white pv-70 entrevista-a">
 	<div class="container-sm ph-56-md">
-		<h3 class="medium mb-0"><?php the_field('nombre_completo'); ?></h3>		
+		<h4 class="bold mb-0"><?php the_field('nombre_completo'); ?></h4>		
 		<?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
 		<?php if ($tempDate!='') { ?>
 		<p class="thin text-gray text-left">Publicado el<?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>
