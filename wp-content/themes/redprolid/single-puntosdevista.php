@@ -42,7 +42,7 @@
 					<?php } ?>
 				</div>
 				<div class="col-md-6 col-xs-12 text-left">
-					<a id="btnbiografia">Lee su breve biografía <img src="<?php echo content_url('/'); ?>uploads/2016/02/arrow-down-o.svg" alt="arrow down"></a>
+					<a id="btnbiografia">Lee su breve biografía <img style="width:5%;" src="<?php echo content_url('/'); ?>uploads/2016/02/arrow-down-o.svg" alt="arrow down"></a>
 				</div>
 				<div class="col-md-6 hidden-xs hidden-sm text-right thin"> 
 					<?php $facebook_campeonas = get_field('facebook_puntosdevista'); ?>
