@@ -134,7 +134,7 @@ get_template_part( 'include', 'headerprototipo' ); ?>
 				 					<h3 class="text-gray-darker color-g inline-p bold">EVENTO</h3>							
 				 				</div>
 				 				<a href="<?php echo home_url('/'); ?>abierta-la-convocatoria-para-postular-al-curso-mejorando-la-implementacion-en-los-programas-publico/">
-					 				<div class="video-center-content col-md-12 col-xs-12 ph-0 ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/indes.PNG); background-size: cover !important;" ></div>
+					 				<div class="video-center-content col-md-12 col-xs-12 ph-0 ph-0 col-md-12 bg-img-block minh-210	bg-white" style="background-image: url(<?php echo content_url('/'); ?>uploads/2016/01/indes.png); background-size: cover !important;" ></div>
 						 		</a>
 				 				<div class="col-sm-12 col-xs-12  ph-0 pt-7 pb-21">
 				 					<p class="text-gray-dark h3">Atención al cierre de postulación para el curso: Cambio organizacional para una gestión efectiva</p>
