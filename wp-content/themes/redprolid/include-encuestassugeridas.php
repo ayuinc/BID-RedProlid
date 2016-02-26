@@ -29,7 +29,7 @@
 					<a href="<?php echo home_url('/'); ?>epsy-campbell/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/epsy_campbell.PNG"></a>
 				</div>
 				<p class="rem-10 bold">Epsy Campbell</p>
-				<p class="rem-08 pv-0 medium"></p>
+				<p class="rem-08 pv-0 medium">"...Los hombres deben estar protagonizando con las mujeres la apertura de puertas para que mujeres asuman puestos relevantes..."</p>
 				<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>epsy-campbell/?flag=1">LEE MÁS  →</a>
 			</div>
 			<div class="col-md-6 col-xs-12">
@@ -61,7 +61,7 @@
 			</div>	
 			<?php } ?>
 		
-			<?php if ($nombretitulo=='Otilia Lux de Cotí ') { ?>
+			<?php if ($nombretitulo=='Otilia Lux de Cotí') { ?>
 			<div class="col-md-6 col-xs-12">
 				<div class="col-md-12 col-xs-12 ph-0 img-entrevistas-sugeridas pb-14">
 					<a href="<?php echo home_url('/'); ?>entrevista-a-gloria-young/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/gloria_young.PNG"></a>
@@ -75,7 +75,7 @@
 					<a href="<?php echo home_url('/'); ?>epsy-campbell/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/epsy_campbell.PNG"></a>
 				</div>
 				<p class="rem-10 bold">Epsy Campbell</p>
-				<p class="rem-08 pv-0 medium"></p>
+				<p class="rem-08 pv-0 medium">"...Los hombres deben estar protagonizando con las mujeres la apertura de puertas para que mujeres asuman puestos relevantes..."</p>
 				<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>epsy-campbell/?flag=1">LEE MÁS  →</a>
 			</div>
 			<?php } ?>							
