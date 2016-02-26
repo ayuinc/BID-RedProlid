@@ -40,7 +40,7 @@
 				<p class="rem-08 pv-0 medium">"Yo le diría a las jóvenes que participen en la política...que no tengan miedo, ¡participen!" </p>		
 				<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>otilia-lux/?flag=1">LEE MÁS  →</a>	
 			</div>
-			<div class="col-md-12 col-xs-12">
+			<div class="col-md-12 col-xs-12 ph-0-md">
 				<?php get_template_part( 'include', 'registroemail' ); ?>
 			</div>
 			<?php } ?>
@@ -62,7 +62,7 @@
 				<p class="rem-08 pv-0 medium">"Los hombres que hoy se atreven a apoyar a las mujeres son hombres que van a pasar a la historia"</p>		
 				<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>entrevista-a-gloria-young/?flag=1">LEE MÁS  →</a>	
 			</div>	
-			<div class="col-md-12 col-xs-12">
+			<div class="col-md-12 col-xs-12 ph-0-md">
 				<?php get_template_part( 'include', 'registroemail' ); ?>
 			</div>
 			<?php } ?>
@@ -84,7 +84,7 @@
 				<p class="rem-08 pv-0 medium">"...Los hombres deben estar protagonizando con las mujeres la apertura de puertas para que mujeres asuman puestos relevantes..."</p>
 				<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>epsy-campbell/?flag=1">LEE MÁS  →</a>
 			</div>
-			<div class="col-md-12 col-xs-12">
+			<div class="col-md-12 col-xs-12 ph-0-md">
 				<?php get_template_part( 'include', 'registroemail' ); ?>
 			</div>
 			<?php } ?>							
