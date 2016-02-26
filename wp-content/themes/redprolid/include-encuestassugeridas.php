@@ -23,7 +23,7 @@
 			<?php } ?>
 			
 
-			<?php if ($nombretitulo=='Gloria Young') { ?>
+			<?php if ($nombretitulo=='Entrevista a Gloria Young') { ?>
 			<div class="col-md-6 ph-0 col-xs-12">
 				<div class="col-md-12 ph-0 col-xs-12 img-entrevistas-sugeridas pb-14">
 					<a href="<?php echo home_url('/'); ?>epsy-campbell/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/epsy_campbell.PNG"></a>
