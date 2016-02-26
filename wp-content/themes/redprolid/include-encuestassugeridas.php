@@ -24,7 +24,7 @@
 			
 
 			<?php if ($nombretitulo=='Entrevista a Gloria Young') { ?>
-			<div class="col-md-6 ph-0 col-xs-12">
+			<div class="col-md-6 ph-0 col-xs-12 pl-0-md">
 				<div class="col-md-12 ph-0 col-xs-12 img-entrevistas-sugeridas pb-14">
 					<a href="<?php echo home_url('/'); ?>epsy-campbell/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/epsy_campbell.PNG"></a>
 				</div>
@@ -46,7 +46,7 @@
 			<?php } ?>
 			
 			<?php if ($nombretitulo=='Epsy Campbell') { ?>
-			<div class="col-md-6 col-xs-12">
+			<div class="col-md-6 col-xs-12 pl-0-md">
 				<div class="col-md-12 col-xs-12 ph-0 img-entrevistas-sugeridas pb-14">
 					<a href="<?php echo home_url('/'); ?>otilia-lux/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/otilia_lux.PNG"></a>
 				</div>
@@ -68,7 +68,7 @@
 			<?php } ?>
 		
 			<?php if ($nombretitulo=='Otilia Lux') { ?>
-			<div class="col-md-6 col-xs-12">
+			<div class="col-md-6 col-xs-12 pl-0-md">
 				<div class="col-md-12 col-xs-12 ph-0 img-entrevistas-sugeridas pb-14">
 					<a href="<?php echo home_url('/'); ?>entrevista-a-gloria-young/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/gloria_young.PNG"></a>
 				</div>
