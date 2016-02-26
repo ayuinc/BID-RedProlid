@@ -20,6 +20,7 @@
 				<p class="rem-08 pv-0 medium">"Las mujeres siguen disponiendo de mucho menos dinero para invertir en las campañas y tienen menos oportunidades para aparecer en medios"</p>		
 				<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>alicia-del-aguila/?flag=1">LEE MÁS  →</a>	
 			</div>
+			<?php get_template_part( 'include', 'registroemail' ); ?>
 			<?php } ?>
 			
 
