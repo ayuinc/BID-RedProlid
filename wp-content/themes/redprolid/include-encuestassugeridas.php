@@ -6,7 +6,7 @@
 			<?php if ($nombretitulo=='Anahí Durand') { ?>
 			<div class="col-md-6 ph-0 col-xs-12">
 				<div class="col-md-12 ph-0 col-xs-12 img-entrevistas-sugeridas pb-14">
-					<a href="<?php echo home_url('/'); ?>anahi-durand/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/anahi_durand.PNG"></a>
+					<a href="<?php echo home_url('/'); ?>anahi_durand/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/anahi_durand.PNG"></a>
 				</div>
 				<p class="rem-10 bold">Anahí Durand</p>
 				<p class="rem-08 pv-0 medium">investigadora asociada del Instituto de Estudios Peruanos (IEP). Ha sido directora de políticas indígenas del Viceministerio de Interculturalidad del Ministerio de Cultura de Perú (2013-2014).</p>
