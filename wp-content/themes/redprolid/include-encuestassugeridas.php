@@ -34,13 +34,6 @@
 			</div>
 			<div class="col-md-6 col-xs-12">
 				<div class="col-md-12 col-xs-12 ph-0 img-entrevistas-sugeridas pb-14">
-<<<<<<< HEAD
-					<a href="<?php echo home_url('/'); ?>otilia-lux/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/isabel.png"></a>
-				</div>
-				<p class="rem-10 bold">Otilia Lux de Cotí</p>
-				<p class="rem-08 pv-0 medium">"Yo le diría a las jóvenes que participen en la política...que no tengan miedo,¡participen!"</p>		
-				<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>otilia-lux/?flag=1">LEE MÁS  →</a>	
-=======
 					<a href="<?php echo home_url('/'); ?>otilia-lux/?flag=1"><img class="w-100" src="<?php echo content_url('/'); ?>uploads/2016/02/otilia_lux.PNG"></a>
 				</div>
 				<p class="rem-10 bold">Otilia Lux de Cotí</p>
@@ -49,7 +42,6 @@
 			</div>
 			<div class="col-md-12 col-xs-12 ph-0-md">
 				<?php get_template_part( 'include', 'registroemail' ); ?>
->>>>>>> 407723b7a1fe37d4301638e322a938cb328c1a52
 			</div>
 			<?php } ?>
 			
