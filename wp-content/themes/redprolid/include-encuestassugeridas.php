@@ -41,6 +41,7 @@
 				<p class="rem-08 pv-0 medium">"Yo le diría a las jóvenes que participen en la política...que no tengan miedo, ¡participen!" </p>		
 				<a class="text-primary f-15 bold" href="<?php echo home_url('/'); ?>otilia-lux/?flag=1">LEE MÁS  →</a>	
 			</div>
+			<?php get_template_part( 'include', 'registroemail' ); ?>
 			<?php } ?>
 			
 			<?php if ($nombretitulo=='Epsy Campbell') { ?>
