@@ -33,7 +33,7 @@ get_header(); ?>
             <?php while ( have_posts() ) : the_post(); ?>
               <div class="title">
                 <h3 class="medium text-primary mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
-                <h5 class="medium"><span>Fecha:</span> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></h5>
+                <!--<h5 class="medium"><span>Fecha:</span> <?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?></h5>-->
               </div>
               <div class="content mb-14 event-destacados">
   							<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>">Ve el boletín >></a></p>
