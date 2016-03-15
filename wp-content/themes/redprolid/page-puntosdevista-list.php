@@ -27,7 +27,10 @@ get_header(); ?>
     <div class="ph-70">
       <div class="row ph-14-sm">
         <div class="col-sm-12">
-          <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+          <?php add_filter('post_limits', 'my_post_limit'); ?>
+          <?php
+          $count = 0; 
+          $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
           <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=10&offset=1paged=' . $paged ); ?>
           <?php while ( have_posts() ) : the_post(); ?>
             <div class="title">
@@ -39,13 +42,22 @@ get_header(); ?>
 							<p class="text-right"><a href="<?php echo get_permalink( get_the_ID() ); ?>" class="medium">Lee el artículo >></a></p>
             </div>
             <hr>
+            <?php $count++; ?>
           <?php endwhile; ?>
-          <div class="text-center">
-            <ul class="pager">
-              <li><?php next_posts_link( 'Anteriores' ); ?></li>
-              <li><?php previous_posts_link( 'Posteriores' ); ?></li>
-            </ul>
-          </div>          
+          <?php if ($count != 0) { ?>
+            <div class="text-center">
+              <ul class="pager">
+                <li><?php next_posts_link( 'Anteriores' ); ?></li>
+                <li><?php previous_posts_link( 'Posteriores' ); ?></li>
+              </ul>
+            </div>          
+          <?php } else { ?>
+            <div class="text-center pv-70">
+              <h3 class="medium">No hay más eventos. <a href="javascript:history.back();">Regresa</a></h3>
+            </div>
+          <?php } ?>
+          <?php $wp_query = null; $wp_query = $temp;?>
+          <?php remove_filter('post_limits', 'my_post_limit'); ?>           
         </div>
       </div>          
     </div>
