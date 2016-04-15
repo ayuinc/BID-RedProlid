@@ -162,11 +162,11 @@
 	    	<p>
 	      	<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
 					<?php if ($facebook_campeonas!='') { ?>
-	      	<strong>Sígueme en Facebook:</strong> <a href="<?php the_field('facebook_campeonas'); ?>" target="_blank"><?php the_field('facebook_campeonas'); ?></a><br>
+	      	<strong>Sígueme en Facebook:</strong> <a href="<?php echo $facebook_campeonas; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/facebook2.png" alt="Facebook" width="22"></a><br>
 	      	<?php } ?>
 	      	<?php $twitter_campeona = get_field('twitter_campeona'); ?>
 					<?php if ($twitter_campeona!='') { ?>
-	      	<strong>Sígueme en Twitter:</strong> <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank"><?php the_field('twitter_campeona'); ?></a><br>
+	      	<strong>Sígueme en Twitter:</strong> <a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/twitter2.png" alt="Twitter" width="22"></a><br>
 	      	<?php } ?>
 	      	<?php $google_campeona = get_field('google_campeona'); ?>
 					<?php if ($google_campeona!='') { ?>
