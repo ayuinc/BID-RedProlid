@@ -162,7 +162,7 @@
 	    	<p>
 	      	<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
 					<?php if ($facebook_campeonas!='') { ?>
-	      	<strong>Sígueme en Facebook:</strong> <a href="<?php echo $facebook_campeonas; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/facebook2.png" alt="Facebook" width="22"></a>
+	      	<strong>Sígueme: </strong> <a href="<?php echo $facebook_campeonas; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/facebook2.png" alt="Facebook" width="22"></a>
 	      	<?php } ?>
 	      	<?php $twitter_campeona = get_field('twitter_campeona'); ?>
 					<?php if ($twitter_campeona!='') { ?>
