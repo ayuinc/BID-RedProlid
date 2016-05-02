@@ -167,16 +167,17 @@
 	      	<?php } ?>
 	      	<?php $twitter_campeona = get_field('twitter_campeona'); ?>
 					<?php if ($twitter_campeona!='') { ?>
-	      	<a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/twitter2.png" alt="Twitter" width="22"></a><br>
+	      	<a href="http://twitter.com/<?php the_field('twitter_campeona'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/twitter2.png" alt="Twitter" width="22"></a>
 	      	<?php } ?>
 	      	<?php $google_campeona = get_field('google_campeona'); ?>
 					<?php if ($google_campeona!='') { ?>
-					<a href="<?php the_field('google_campeona'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/05/Google-Plus-Filled-50.png" alt="Google" width="22"></a><br>
+					<a href="<?php the_field('google_campeona'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/05/Google-Plus-Filled-50.png" alt="Google" width="22"></a>
 	      	<?php } ?>
 	      	<?php $linkedin_campeona = get_field('linkedin_campeonas'); ?>
 					<?php if ($linkedin_campeona!='') { ?>
-	      	<a href="<?php the_field('linkedin_campeonas'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/05/LinkedIn-Filled-50.png" alt="Linkedin" width="22"></a><br>
-	      	<?php } ?>	      	
+	      	<a href="<?php the_field('linkedin_campeonas'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/05/LinkedIn-Filled-50.png" alt="Linkedin" width="22"></a>
+	      	<?php } ?>
+	      	<br>	      	
 	      	<?php $autor_campeona = get_field('autor_campeona'); ?>
 					<?php if ($autor_campeona!='') { ?>
 	      	<strong>Tema propuesto por:</strong> <a href="mailto:<?php the_field('autor_email_campeona'); ?>"><?php the_field('autor_campeona'); ?></a><br>
