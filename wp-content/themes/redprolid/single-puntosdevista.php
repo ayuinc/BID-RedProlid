@@ -146,16 +146,17 @@
 		      	<?php } ?>            
             <?php $twitter_puntosdevista = get_field('cuenta_de_twitter'); ?>
             <?php if ($twitter_puntosdevista!='') { ?>
-            <a href="http://twitter.com/<?php the_field('cuenta_de_twitter'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/twitter2.png" alt="Twitter" width="22"></a><br>
+            <a href="http://twitter.com/<?php the_field('cuenta_de_twitter'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/twitter2.png" alt="Twitter" width="22"></a>
             <?php } ?>
             <?php $google_puntosdevista = get_field('google_puntosdevista'); ?>
             <?php if ($google_puntosdevista!='') { ?>
-            <a href="<?php the_field('google_puntosdevista'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/05/Google-Plus-Filled-50.png" alt="Google" width="22"></a><br>
+            <a href="<?php the_field('google_puntosdevista'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/05/Google-Plus-Filled-50.png" alt="Google" width="22"></a>
             <?php } ?>
             <?php $linkedin_puntosdevista = get_field('linkedin_puntosdevista'); ?>
             <?php if ($linkedin_puntosdevista!='') { ?>
-            <a href="<?php the_field('linkedin_puntosdevista'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/05/LinkedIn-Filled-50.png" alt="Linkedin" width="22"></a><br>
+            <a href="<?php the_field('linkedin_puntosdevista'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/05/LinkedIn-Filled-50.png" alt="Linkedin" width="22"></a>
             <?php } ?>
+            <br>
             <?php $tema_pdv = get_field('tema_pdv'); ?>
             <?php if ($tema_pdv!='') { ?>
             <strong>Tema:</strong> <a><?php the_field('tema_pdv'); ?></a><br>
