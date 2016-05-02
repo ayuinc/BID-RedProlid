@@ -145,7 +145,7 @@
 		      	<?php } ?>            
             <?php $twitter_puntosdevista = get_field('cuenta_de_twitter'); ?>
             <?php if ($twitter_puntosdevista!='') { ?>
-            <strong>Sígueme en Twitter:</strong> <a href="https://twitter.com/<?php the_field('cuenta_de_twitter'); ?>" target="_blank"><?php the_field('cuenta_de_twitter'); ?></a><br>
+            <a href="http://twitter.com/<?php the_field('cuenta_de_twitter'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/twitter2.png" alt="Twitter" width="22"></a><br>
             <?php } ?>
             <?php $google_puntosdevista = get_field('google_puntosdevista'); ?>
             <?php if ($google_puntosdevista!='') { ?>
