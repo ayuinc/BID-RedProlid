@@ -139,10 +139,10 @@
         </div>
         <div class="col-sm-12 with-hr">
           <p class="ph-14-sm">
-            <?php $facebook_puntosdevista = get_field('facebook_puntosdevista'); ?>
-            <?php if ($facebook_puntosdevista!='') { ?>
-            <strong>Sígueme en Facebook:</strong> <a href="<?php the_field('facebook_puntosdevista'); ?>" target="_blank"><?php the_field('facebook_puntosdevista'); ?></a><br>
-            <?php } ?>
+		      	<?php $facebook_puntosdevista = get_field('facebook_puntosdevista'); ?>
+						<?php if ($facebook_puntosdevista!='') { ?>
+		      	<strong>Sígueme: </strong> <a href="<?php echo $facebook_puntosdevista; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/facebook2.png" alt="Facebook" width="22"></a>
+		      	<?php } ?>            
             <?php $twitter_puntosdevista = get_field('cuenta_de_twitter'); ?>
             <?php if ($twitter_puntosdevista!='') { ?>
             <strong>Sígueme en Twitter:</strong> <a href="https://twitter.com/<?php the_field('cuenta_de_twitter'); ?>" target="_blank"><?php the_field('cuenta_de_twitter'); ?></a><br>
