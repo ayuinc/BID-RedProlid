@@ -160,9 +160,10 @@
       <div class="with-hr">
         <p><?php the_field('intro_entrevista_campeona'); ?></p>
 	    	<p>
+		    	<strong>Sígueme: </strong> 
 	      	<?php $facebook_campeonas = get_field('facebook_campeonas'); ?>
 					<?php if ($facebook_campeonas!='') { ?>
-	      	<strong>Sígueme: </strong> <a href="<?php echo $facebook_campeonas; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/facebook2.png" alt="Facebook" width="22"></a>
+	      	<a href="<?php echo $facebook_campeonas; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/facebook2.png" alt="Facebook" width="22"></a>
 	      	<?php } ?>
 	      	<?php $twitter_campeona = get_field('twitter_campeona'); ?>
 					<?php if ($twitter_campeona!='') { ?>
@@ -170,11 +171,11 @@
 	      	<?php } ?>
 	      	<?php $google_campeona = get_field('google_campeona'); ?>
 					<?php if ($google_campeona!='') { ?>
-	      	<strong>Sígueme en Google :</strong> <a href="<?php the_field('google_campeona'); ?>" target="_blank">Google+</a><br>
+					<a href="<?php the_field('google_campeona'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/05/Google-Plus-Filled-50.png" alt="Google" width="22"></a><br>
 	      	<?php } ?>
 	      	<?php $linkedin_campeona = get_field('linkedin_campeonas'); ?>
 					<?php if ($linkedin_campeona!='') { ?>
-	      	<strong>Sígueme en LinkedIn:</strong> <a href="<?php the_field('linkedin_campeonas'); ?>" target="_blank">LinkedIn</a><br>
+	      	<a href="<?php the_field('linkedin_campeonas'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/05/LinkedIn-Filled-50.png" alt="Linkedin" width="22"></a><br>
 	      	<?php } ?>	      	
 	      	<?php $autor_campeona = get_field('autor_campeona'); ?>
 					<?php if ($autor_campeona!='') { ?>

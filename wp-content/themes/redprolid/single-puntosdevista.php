@@ -139,9 +139,10 @@
         </div>
         <div class="col-sm-12 with-hr">
           <p class="ph-14-sm">
+	          <strong>Sígueme: </strong>
 		      	<?php $facebook_puntosdevista = get_field('facebook_puntosdevista'); ?>
 						<?php if ($facebook_puntosdevista!='') { ?>
-		      	<strong>Sígueme: </strong> <a href="<?php echo $facebook_puntosdevista; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/facebook2.png" alt="Facebook" width="22"></a>
+		      	<a href="<?php echo $facebook_puntosdevista; ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/02/facebook2.png" alt="Facebook" width="22"></a>
 		      	<?php } ?>            
             <?php $twitter_puntosdevista = get_field('cuenta_de_twitter'); ?>
             <?php if ($twitter_puntosdevista!='') { ?>
@@ -149,11 +150,11 @@
             <?php } ?>
             <?php $google_puntosdevista = get_field('google_puntosdevista'); ?>
             <?php if ($google_puntosdevista!='') { ?>
-            <strong>Sígueme en Google+:</strong> <a href="<?php the_field('google_puntosdevista'); ?>" target="_blank"><?php the_field('google_puntosdevista'); ?></a><br>
+            <a href="<?php the_field('google_puntosdevista'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/05/Google-Plus-Filled-50.png" alt="Google" width="22"></a><br>
             <?php } ?>
             <?php $linkedin_puntosdevista = get_field('linkedin_puntosdevista'); ?>
             <?php if ($linkedin_puntosdevista!='') { ?>
-            <strong>Sígueme en LinkedIn:</strong> <a href="<?php the_field('linkedin_puntosdevista'); ?>" target="_blank"><?php the_field('linkedin_puntosdevista'); ?></a><br>
+            <a href="<?php the_field('linkedin_puntosdevista'); ?>" target="_blank"><img src="<?php echo content_url('/'); ?>uploads/2016/05/LinkedIn-Filled-50.png" alt="Linkedin" width="22"></a><br>
             <?php } ?>
             <?php $tema_pdv = get_field('tema_pdv'); ?>
             <?php if ($tema_pdv!='') { ?>
