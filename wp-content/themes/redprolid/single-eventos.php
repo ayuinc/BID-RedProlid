@@ -74,10 +74,10 @@
 			        <p><?php echo $convocan; ?></p>
 			        <?php } ?>
 
-			        <?php $contacto_nombre_evento = get_field('contacto_nombre_evento'); ?>
-			        <?php if ($contacto_nombre_evento!='') { ?>
+			        <?php $contacto_email_evento = get_field('contacto_email_evento'); ?>
+			        <?php if ($contacto_email_evento!='') { ?>
 			        <p>
-				        Para mayores informes contactar a <?php the_field('contacto_nombre_evento'); ?> a través de su correo electrónico <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_email_evento'); ?></a>
+				        Para mayores informes contactar a <?php //the_field('contacto_nombre_evento'); ?> través de su correo electrónico <a href="mailto:<?php the_field('contacto_email_evento'); ?>"><?php the_field('contacto_email_evento'); ?></a>
 			        </p>
 			        <?php } ?>
 
