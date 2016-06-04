@@ -36,7 +36,7 @@ get_header(); ?>
 	  	<h2>Próximos eventos</h2>
 	  	<div class="gallery js-flickity grid-list grid-list-full-width grid-list-12-xs" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": false }'>
 				<?php if ( have_posts() ) : ?>
-        	<?php query_posts( 'category_name=proximos-eventos&posts_per_page=5&order=DESC' ); ?>
+        	<?php query_posts( 'category_name=proximos-eventos&posts_per_page=10&order=DESC' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 		  			<div class="galery gallery-cell grid-list-item" style="min-height: 350px;">
 		  				<div class="banner borderless">
