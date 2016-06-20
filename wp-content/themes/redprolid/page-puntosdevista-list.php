@@ -33,6 +33,7 @@ get_header(); ?>
           $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
           <?php query_posts( 'category_name=puntos-de-vista&posts_per_page=10&offset=1&paged=' . $paged ); ?>
           <?php while ( have_posts() ) : the_post(); ?>
+          kk
             <div class="title">
               <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
               <span><?php the_field('profesion'); ?></span>
