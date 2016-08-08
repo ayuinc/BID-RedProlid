@@ -5052,6 +5052,8 @@ ul.table-list {
 .hide-poll-results-anchor .poll-results-anchor {
   display: none; }
 
+.hide-other-polls-anchor li {
+  height: 400px; }
 .hide-other-polls-anchor .other-polls-anchor {
   display: none; }
 
