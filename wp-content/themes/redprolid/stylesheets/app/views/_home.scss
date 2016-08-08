@@ -217,10 +217,11 @@ input[type="checkbox"]{
 				.yop-poll-answers li:nth-child(6) {
 					display: none;
 				}
-				// .yop-poll-container {
+				.yop-poll-container {
+					height:400px;
 				// 	padding:0px !important;
 				// 	width:100%;
-				// }
+				}
 				.yop-poll-question {
 					// padding:10px !important;
 					font-size: 18px;
