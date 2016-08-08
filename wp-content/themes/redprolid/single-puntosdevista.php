@@ -5,7 +5,7 @@
 		<h4 class="bold mb-0"><?php the_field('nombre_completo'); ?></h4>		
 		<?php $tempDate = get_field('fecha_publicacion_puntosdevista'); ?>
 		<?php if ($tempDate!='') { ?>
-		<p class="thin text-gray text-left">Publicado el<?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>
+		<p class="thin text-gray text-left">Publicado el <?php echo date_i18n('d, M del Y', strtotime( $tempDate)); ?></p>
 		<?php } ?> 							 		
 		<div class="text-center pt-21 pb-21">
       <?php $imagen_punto_de_vista = get_field('imagen_punto_de_vista'); ?>
@@ -113,7 +113,7 @@
         <h2 class="mt--5 pt-14-sm mb-0 medium"><?php the_title(); ?></h2>
 		    <?php $tempDate = get_field('fecha_publicacion_puntosdevista'); ?>
 				<?php if ($tempDate!='') { ?>
-				<p class="thin text-gray text-left">Publicado el<?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>
+				<p class="thin text-gray text-left">Publicado el <?php echo date_i18n('d, M del Y', strtotime( $tempDate)); ?></p>
 				<?php } ?> 		
         <p>
 	        <?php the_field('profesion'); ?><br>
