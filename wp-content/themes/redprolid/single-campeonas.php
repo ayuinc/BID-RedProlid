@@ -6,7 +6,7 @@
 		<h3 class="text-gray-darker color-g bold text-left pb-0 mb-0"><?php the_title(); ?></h3>
 		<?php $tempDate = get_field('fecha_de_la_entrevista'); ?>
 		<?php if ($tempDate!='') { ?>
-		<p class="thin text-gray text-left">Publicado el<?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>
+		<p class="thin text-gray text-left">Publicado el <?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>
 		<?php } ?> 							 		
 		<div class="text-center">
       <?php $imagen_campeona = get_field('imagen_campeonas'); ?>
