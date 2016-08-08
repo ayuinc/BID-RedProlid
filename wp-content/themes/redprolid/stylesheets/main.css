@@ -6517,8 +6517,6 @@ input[type="checkbox"] {
   padding-left: 3px; }
 .widgets #opinion .panel .panel-body .yop-poll-answers li:nth-child(6) {
   display: none; }
-.widgets #opinion .panel .panel-body .yop-poll-container {
-  height: 400px; }
 .widgets #opinion .panel .panel-body .yop-poll-question {
   font-size: 18px; }
 
