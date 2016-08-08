@@ -111,6 +111,10 @@
       </div>
       <div class="col-md-7">
         <h2 class="mt--5 pt-14-sm mb-0 medium"><?php the_title(); ?></h2>
+		    <?php $tempDate = get_field('fecha_publicacion_puntosdevista'); ?>
+				<?php if ($tempDate!='') { ?>
+				<p class="thin text-gray text-left">Publicado el<?php echo date_i18n('Y', strtotime( $tempDate)); ?></p>
+				<?php } ?> 		
         <p>
 	        <?php the_field('profesion'); ?><br>
 	      	<?php $autor_puntos = get_field('autor_puntos'); ?>
