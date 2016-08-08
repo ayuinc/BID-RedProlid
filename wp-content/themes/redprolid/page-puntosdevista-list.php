@@ -27,12 +27,18 @@ get_header(); ?>
     <div class="ph-70">
       <div class="row ph-14-sm">
         <div class="col-sm-12">
-          <?php add_filter('post_limits', 'my_post_limit'); ?>
-          <?php
-          $count = 0; 
-          $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-          <?php query_posts( 'category_name=puntos-de-vista&showposts=10&offset=1&paged='.$paged ); ?>
-          <?php while ( have_posts() ) : the_post(); ?>
+	        <?php add_filter('post_limits', 'my_post_limit'); ?>
+	        <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+					<?php
+					$count = 0;	
+					global $myOffset;
+					$myOffset = 1;
+					$temp = $wp_query;
+					$wp_query= null;
+					$wp_query = new WP_Query();
+					$wp_query->query('cat=2&offset='.$myOffset.'&showposts=10&paged='.$paged);
+					?>	 					       
+	        <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>    	        
             <div class="title">
               <h3 class="medium mb-0"><a href="<?php echo get_permalink( get_the_ID() ); ?>"><?php the_title(); ?></a></h3>
               <span><?php the_field('profesion'); ?></span>
