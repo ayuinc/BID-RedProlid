@@ -85,7 +85,7 @@
 						<div class="col-sm-5">
 							<h5 class="medium mb-0">Fecha de inicio</h5>
 				      <?php $tempDate = get_field('fecha_inicio_evento'); ?>
-				      <p><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php $lhora_evento = get_field('hora_evento'); ?><?php if ($hora_evento!='') { ?>, <?php the_field('hora_evento'); ?><?php } ?></p>
+				      <p><?php echo date_i18n('j', strtotime( $tempDate)); ?> de <?php echo date_i18n('F', strtotime( $tempDate)); ?> de <?php echo date_i18n('Y', strtotime( $tempDate)); ?><?php $hora_evento = get_field('hora_evento'); ?><?php if ($hora_evento!='') { ?>, <?php the_field('hora_evento'); ?><?php } ?></p>
 				      <?php $tempDateFin = get_field('fecha_fin_evento'); ?>
 				      <?php if ($tempDateFin!='') { ?>
 				      <h5 class="medium mb-0">Fecha de fin</h5>
